@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_rpc/include/rpc_base.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e4ad71b8cc97fe2e4a95227cc389988e.html">svc_rpc</a></li><li class="navelem"><a class="el" href="../../dir_48bf1703043dd255f84e45145260ba0d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">rpc_base.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - base rpc  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/d14/tuya__slist_8h_source.html">tuya_slist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d56/tal__workq__service_8h_source.html">tal_workq_service.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d77/tal__sw__timer_8h_source.html">tal_sw_timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd7/tal__mutex_8h_source.html">tal_mutex.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+rpc_base.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d96/rpc__base_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__rpc_2include_2rpc__base_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__rpc_2include_2rpc__base_8h" id="ainclude_2components_2svc__rpc_2include_2rpc__base_8h">
+<area shape="rect" title="Common process &#45; base rpc" alt="" coords="435,5,589,61"/>
+<area shape="rect" href="../../d6/d14/tuya__slist_8h.html" title="tuya sigle direciton list module" alt="" coords="255,184,353,211"/>
+<area shape="rect" href="../../dd/d56/tal__workq__service_8h.html" title=" " alt="" coords="371,109,523,136"/>
+<area shape="rect" href="../../d6/d77/tal__sw__timer_8h.html" title="Common process &#45; Initialization" alt="" coords="516,259,633,285"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="613,109,713,136"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,333,517,360"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,408,139,435"/>
+<area shape="rect" title=" " alt="" coords="163,408,237,435"/>
+<area shape="rect" title=" " alt="" coords="262,408,333,435"/>
+<area shape="rect" title=" " alt="" coords="357,408,432,435"/>
+<area shape="rect" title=" " alt="" coords="457,408,527,435"/>
+<area shape="rect" title=" " alt="" coords="552,408,635,435"/>
+<area shape="rect" title=" " alt="" coords="659,408,730,435"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,408,893,435"/>
+<area shape="rect" href="../../df/d01/tal__workqueue_8h.html" title="tuya workqueue module" alt="" coords="377,184,508,211"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="393,259,493,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dfb/rpc__base_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__rpc_2include_2rpc__base_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__rpc_2include_2rpc__base_8hdep" id="ainclude_2components_2svc__rpc_2include_2rpc__base_8hdep">
+<area shape="rect" title="Common process &#45; base rpc" alt="" coords="219,5,373,61"/>
+<area shape="rect" href="../../dd/d94/svc__rpc_8h.html" title="rcp relate" alt="" coords="201,109,391,151"/>
+<area shape="rect" href="../../d2/d9a/lan__rpc_8h.html" title="Common process &#45; json rpc" alt="" coords="5,206,195,247"/>
+<area shape="rect" href="../../d6/d85/rpc__node_8h_source.html" title=" " alt="" coords="219,199,373,255"/>
+<area shape="rect" href="../../db/d49/rpc__pipe_8h.html" title="rcp pipe" alt="" coords="277,303,430,359"/>
+</map>
+</div>
+</div>
+<p><a href="../../d6/d1f/rpc__base_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a019d79a9d7363289cc3c34ee0767ce53"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#a019d79a9d7363289cc3c34ee0767ce53">rpc_recv_cb</a>) (char *addr, uint8_t *data, uint32_t data_len, void *priv_data, uint16_t sequence)</td></tr>
+<tr class="memdesc:a019d79a9d7363289cc3c34ee0767ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc received callback  <a href="../../d6/d1f/rpc__base_8h.html#a019d79a9d7363289cc3c34ee0767ce53">更多...</a><br /></td></tr>
+<tr class="separator:a019d79a9d7363289cc3c34ee0767ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e36da4aa53a0413e22e08b84f807be"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#a27e36da4aa53a0413e22e08b84f807be">rpc_reply_cb</a>) (char *addr, uint8_t *data, uint32_t data_len, void *priv_data, uint8_t *fuck_key)</td></tr>
+<tr class="memdesc:a27e36da4aa53a0413e22e08b84f807be"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc reply callback  <a href="../../d6/d1f/rpc__base_8h.html#a27e36da4aa53a0413e22e08b84f807be">更多...</a><br /></td></tr>
+<tr class="separator:a27e36da4aa53a0413e22e08b84f807be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a3f6959bef36f063d919f3a7b2781e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#a50a3f6959bef36f063d919f3a7b2781e">rpc_send_cb</a>) (char *addr, uint8_t *data, uint32_t data_len, void *priv_data)</td></tr>
+<tr class="memdesc:a50a3f6959bef36f063d919f3a7b2781e"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc send callback  <a href="../../d6/d1f/rpc__base_8h.html#a50a3f6959bef36f063d919f3a7b2781e">更多...</a><br /></td></tr>
+<tr class="separator:a50a3f6959bef36f063d919f3a7b2781e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afda4613ad02780a2d93c0d724936b034"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#afda4613ad02780a2d93c0d724936b034">rpc_base_frame_process</a> (<a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *base, char *addr, uint8_t *frame, uint32_t frame_len, uint8_t *fuck_key)</td></tr>
+<tr class="memdesc:afda4613ad02780a2d93c0d724936b034"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc base reply  <a href="../../d6/d1f/rpc__base_8h.html#afda4613ad02780a2d93c0d724936b034">更多...</a><br /></td></tr>
+<tr class="separator:afda4613ad02780a2d93c0d724936b034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac337fd38e3debf085418c7911bee08b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#aac337fd38e3debf085418c7911bee08b">rpc_base_init</a> (<a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *base, <a class="el" href="../../de/dbe/structrpc__base__cfg__t.html">rpc_base_cfg_t</a> *cfg)</td></tr>
+<tr class="memdesc:aac337fd38e3debf085418c7911bee08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc base init  <a href="../../d6/d1f/rpc__base_8h.html#aac337fd38e3debf085418c7911bee08b">更多...</a><br /></td></tr>
+<tr class="separator:aac337fd38e3debf085418c7911bee08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f5c9f7f1b2a5bb20dd8e0d53cbe040"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#ad7f5c9f7f1b2a5bb20dd8e0d53cbe040">rpc_base_notify</a> (<a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *base, <a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:ad7f5c9f7f1b2a5bb20dd8e0d53cbe040"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc base notify  <a href="../../d6/d1f/rpc__base_8h.html#ad7f5c9f7f1b2a5bb20dd8e0d53cbe040">更多...</a><br /></td></tr>
+<tr class="separator:ad7f5c9f7f1b2a5bb20dd8e0d53cbe040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d897ef48296af54daf2c55497d8574"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#aa7d897ef48296af54daf2c55497d8574">rpc_base_reply</a> (<a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *base, <a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> *msg, uint16_t sequence)</td></tr>
+<tr class="memdesc:aa7d897ef48296af54daf2c55497d8574"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc base reply  <a href="../../d6/d1f/rpc__base_8h.html#aa7d897ef48296af54daf2c55497d8574">更多...</a><br /></td></tr>
+<tr class="separator:aa7d897ef48296af54daf2c55497d8574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf774c674e68aba25237b1617bb8006f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/rpc__base_8h.html#abf774c674e68aba25237b1617bb8006f">rpc_base_request</a> (<a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *base, <a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:abf774c674e68aba25237b1617bb8006f"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc base request  <a href="../../d6/d1f/rpc__base_8h.html#abf774c674e68aba25237b1617bb8006f">更多...</a><br /></td></tr>
+<tr class="separator:abf774c674e68aba25237b1617bb8006f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - base rpc </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-09-01</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2018-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a019d79a9d7363289cc3c34ee0767ce53" name="a019d79a9d7363289cc3c34ee0767ce53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a019d79a9d7363289cc3c34ee0767ce53">&#9670;&nbsp;</a></span>rpc_recv_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* rpc_recv_cb) (char *addr, uint8_t *data, uint32_t data_len, void *priv_data, uint16_t sequence)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc received callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>peer addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>received data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>received length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priv_data</td><td>user private data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sequence</td><td>sequence</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a27e36da4aa53a0413e22e08b84f807be" name="a27e36da4aa53a0413e22e08b84f807be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e36da4aa53a0413e22e08b84f807be">&#9670;&nbsp;</a></span>rpc_reply_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* rpc_reply_cb) (char *addr, uint8_t *data, uint32_t data_len, void *priv_data, uint8_t *fuck_key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc reply callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>peer addr, if NULL means timeout </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>received data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data_len</td><td>received length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priv_data</td><td>user private data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fuck_key</td><td>fast useful channel key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a50a3f6959bef36f063d919f3a7b2781e" name="a50a3f6959bef36f063d919f3a7b2781e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a3f6959bef36f063d919f3a7b2781e">&#9670;&nbsp;</a></span>rpc_send_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* rpc_send_cb) (char *addr, uint8_t *data, uint32_t data_len, void *priv_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc send callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>peer addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>send data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>send length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priv_data</td><td>user private data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="afda4613ad02780a2d93c0d724936b034" name="afda4613ad02780a2d93c0d724936b034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda4613ad02780a2d93c0d724936b034">&#9670;&nbsp;</a></span>rpc_base_frame_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rpc_base_frame_process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>frame_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>fuck_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc base reply </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>peer addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>received frame data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame_len</td><td>received frame len </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fuck_key</td><td>fast useful channel key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aac337fd38e3debf085418c7911bee08b" name="aac337fd38e3debf085418c7911bee08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac337fd38e3debf085418c7911bee08b">&#9670;&nbsp;</a></span>rpc_base_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rpc_base_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dbe/structrpc__base__cfg__t.html">rpc_base_cfg_t</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc base init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>refer to <a class="el" href="../../de/dbe/structrpc__base__cfg__t.html">rpc_base_cfg_t</a> struct</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad7f5c9f7f1b2a5bb20dd8e0d53cbe040" name="ad7f5c9f7f1b2a5bb20dd8e0d53cbe040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f5c9f7f1b2a5bb20dd8e0d53cbe040">&#9670;&nbsp;</a></span>rpc_base_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rpc_base_notify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc base notify </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>refer to <a class="el" href="../../de/dbe/structrpc__base__cfg__t.html">rpc_base_cfg_t</a> struct</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa7d897ef48296af54daf2c55497d8574" name="aa7d897ef48296af54daf2c55497d8574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d897ef48296af54daf2c55497d8574">&#9670;&nbsp;</a></span>rpc_base_reply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rpc_base_reply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>sequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc base reply </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>refer to <a class="el" href="../../de/dbe/structrpc__base__cfg__t.html">rpc_base_cfg_t</a> struct </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sequence</td><td>sequence</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abf774c674e68aba25237b1617bb8006f" name="abf774c674e68aba25237b1617bb8006f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf774c674e68aba25237b1617bb8006f">&#9670;&nbsp;</a></span>rpc_base_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rpc_base_request </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc base request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>refer to <a class="el" href="../../d9/d10/structrpc__msg__t.html">rpc_msg_t</a> struct</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

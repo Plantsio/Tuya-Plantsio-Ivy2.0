@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/mqtt/tuya_svc_mqtt_direct.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_ab84e3900246cdbef7e23a2a925ca49c.html">mqtt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_svc_mqtt_direct.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TUYA_SVC_MQTT_DIRECT_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TUYA_SVC_MQTT_DIRECT_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/da6/base__event_8h.html">base_event.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define EVENT_MQTT_DIRECT_CONNECTED    &quot;mqtt.dir.con&quot;</span>  <span class="comment">// mqtt connect</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define EVENT_MQTT_DIRECT_DISCONNECTED &quot;mqtt.dir.disc&quot;</span> <span class="comment">// mqtt disconnect</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#af30355312dcb67c9abc34c67a71dc8d9">   28</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#af30355312dcb67c9abc34c67a71dc8d9">REV_BIND_TOKEN_CB</a>)(IN CONST CHAR_T *token);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a344738b67da8cc7f4b23b77a2866478e">   37</a></span>OPERATE_RET <a class="code hl_function" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a344738b67da8cc7f4b23b77a2866478e">tuya_svc_mqtt_direct_register_cb</a>(<a class="code hl_typedef" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#af30355312dcb67c9abc34c67a71dc8d9">REV_BIND_TOKEN_CB</a> cb);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a03498289ae591954c3efad8766f64021">   44</a></span>OPERATE_RET <a class="code hl_function" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a03498289ae591954c3efad8766f64021">tuya_svc_mqtt_direct_start</a>(VOID);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a25d6f8e895686e2eb130e7a8922d5396">   51</a></span>OPERATE_RET <a class="code hl_function" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a25d6f8e895686e2eb130e7a8922d5396">tuya_svc_mqtt_direct_stop</a>(VOID);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#adbacff10c17781cc9786cc5e3966096c">   58</a></span>BOOL_T <a class="code hl_function" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#adbacff10c17781cc9786cc5e3966096c">tuya_svc_mqtt_direct_is_connected</a>(VOID);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a518c1deeba3be22b29a26fb906638ff8">   65</a></span>VOID <a class="code hl_function" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a518c1deeba3be22b29a26fb906638ff8">tuya_svc_mqtt_direct_set_env</a>(CHAR_T *env);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">//__TUYA_SVC_MQTT_DIRECT_H__</span></div>
+<div class="ttc" id="abase__event_8h_html"><div class="ttname"><a href="../../d6/da6/base__event_8h.html">base_event.h</a></div><div class="ttdoc">tuya simple event module</div></div>
+<div class="ttc" id="atuya__svc__mqtt__direct_8h_html_a03498289ae591954c3efad8766f64021"><div class="ttname"><a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a03498289ae591954c3efad8766f64021">tuya_svc_mqtt_direct_start</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_direct_start(VOID)</div><div class="ttdoc">Start mqtt direct service</div></div>
+<div class="ttc" id="atuya__svc__mqtt__direct_8h_html_a25d6f8e895686e2eb130e7a8922d5396"><div class="ttname"><a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a25d6f8e895686e2eb130e7a8922d5396">tuya_svc_mqtt_direct_stop</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_direct_stop(VOID)</div><div class="ttdoc">Close mqtt direct service</div></div>
+<div class="ttc" id="atuya__svc__mqtt__direct_8h_html_a344738b67da8cc7f4b23b77a2866478e"><div class="ttname"><a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a344738b67da8cc7f4b23b77a2866478e">tuya_svc_mqtt_direct_register_cb</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_direct_register_cb(REV_BIND_TOKEN_CB cb)</div><div class="ttdoc">Register token callback</div></div>
+<div class="ttc" id="atuya__svc__mqtt__direct_8h_html_a518c1deeba3be22b29a26fb906638ff8"><div class="ttname"><a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#a518c1deeba3be22b29a26fb906638ff8">tuya_svc_mqtt_direct_set_env</a></div><div class="ttdeci">VOID tuya_svc_mqtt_direct_set_env(CHAR_T *env)</div><div class="ttdoc">Set environment for direct connect</div></div>
+<div class="ttc" id="atuya__svc__mqtt__direct_8h_html_adbacff10c17781cc9786cc5e3966096c"><div class="ttname"><a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#adbacff10c17781cc9786cc5e3966096c">tuya_svc_mqtt_direct_is_connected</a></div><div class="ttdeci">BOOL_T tuya_svc_mqtt_direct_is_connected(VOID)</div><div class="ttdoc">Whether mqtt direct is connected or not</div></div>
+<div class="ttc" id="atuya__svc__mqtt__direct_8h_html_af30355312dcb67c9abc34c67a71dc8d9"><div class="ttname"><a href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html#af30355312dcb67c9abc34c67a71dc8d9">REV_BIND_TOKEN_CB</a></div><div class="ttdeci">VOID(* REV_BIND_TOKEN_CB)(IN CONST CHAR_T *token)</div><div class="ttdoc">callback when received token</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_direct.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

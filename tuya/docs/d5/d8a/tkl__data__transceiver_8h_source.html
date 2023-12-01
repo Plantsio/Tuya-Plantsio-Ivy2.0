@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_data_transceiver.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_data_transceiver.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d8a/tkl__data__transceiver_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_DATA_TRANSCEIVER_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_DATA_TRANSCEIVER_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * Zigbee data receive handle mode</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// handling process to TAL, no need to participate in SDK </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    HANDLE_TUYA_SDK_MODE = 0,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// just notify the tuya TAL that the data is received, </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// and the processing process is handed over to the SDK </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    HANDLE_NATIVE_SDK_MODE = 1</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} TKL_HANDLE_MODE_E;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * Zigbee zcl head structure</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#af8b150e8d49c0f878243567bd5698824">   38</a></span>    UINT8_T  <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#af8b150e8d49c0f878243567bd5698824">frame_type</a>;    </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#afc7cd8a5f138bbc20409ebc44688338d">   39</a></span>    UINT8_T  <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#afc7cd8a5f138bbc20409ebc44688338d">manu_spec</a>;     </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#af107b6c9417a1ce9e1c6cac48a3f8bd0">   40</a></span>    UINT8_T  <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#af107b6c9417a1ce9e1c6cac48a3f8bd0">direction</a>;     </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#a160963e5ea39f661619cf3f2f6baafe5">   41</a></span>    UINT8_T  <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#a160963e5ea39f661619cf3f2f6baafe5">disable_rsp</a>;   </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#a3b694be3e016f7663087c8660bf46805">   42</a></span>    UINT16_T <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#a3b694be3e016f7663087c8660bf46805">manu_code</a>;     </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#a2cb8277c898a617e1d6db2ebaf6f988d">   43</a></span>    UINT8_T  <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#a2cb8277c898a617e1d6db2ebaf6f988d">seq_number</a>;    </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../de/d48/structTKL__ZCL__HDR__T.html#a5d40c1e51cfe23ebf5bb40098ff0e45c">   44</a></span>    UINT8_T  <a class="code hl_variable" href="../../de/d48/structTKL__ZCL__HDR__T.html#a5d40c1e51cfe23ebf5bb40098ff0e45c">command_id</a>;    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <a class="code hl_struct" href="../../de/d48/structTKL__ZCL__HDR__T.html">TKL_ZCL_HDR_T</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * Zigbee zcl frame structure</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">   50</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d2/d74/structTKL__ZCL__FRAME__T.html#a32520dc621856804b4ed5ce160ea2703">   51</a></span>    <a class="code hl_struct" href="../../de/d48/structTKL__ZCL__HDR__T.html">TKL_ZCL_HDR_T</a> <a class="code hl_variable" href="../../d2/d74/structTKL__ZCL__FRAME__T.html#a32520dc621856804b4ed5ce160ea2703">zcl_hdr</a>;  </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d2/d74/structTKL__ZCL__FRAME__T.html#af0bdaaa0957195d3d9c7a297d4d26ab8">   52</a></span>    UINT8_T <a class="code hl_variable" href="../../d2/d74/structTKL__ZCL__FRAME__T.html#af0bdaaa0957195d3d9c7a297d4d26ab8">payload_len</a>;    </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d2/d74/structTKL__ZCL__FRAME__T.html#a649720a1c3c2f1923ce0a717c6cb2148">   53</a></span>    UINT8_T *<a class="code hl_variable" href="../../d2/d74/structTKL__ZCL__FRAME__T.html#a649720a1c3c2f1923ce0a717c6cb2148">payload</a>;       </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <a class="code hl_struct" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * Zigbee zcl write attribute record format</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d6/d43/structTKL__ATTR__REC__T.html">   59</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d6/d43/structTKL__ATTR__REC__T.html#a11e57e88e16be0a3605eac9fd1b2bed2">   60</a></span>    UINT16_T <a class="code hl_variable" href="../../d6/d43/structTKL__ATTR__REC__T.html#a11e57e88e16be0a3605eac9fd1b2bed2">attr_id</a>;       </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d6/d43/structTKL__ATTR__REC__T.html#ac7bb76b6baa0f543990e4ea1a721d8fe">   61</a></span>    UINT8_T  <a class="code hl_variable" href="../../d6/d43/structTKL__ATTR__REC__T.html#ac7bb76b6baa0f543990e4ea1a721d8fe">data_type</a>;     </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d6/d43/structTKL__ATTR__REC__T.html#aa55a728de119abb8e212e7874aec98e2">   62</a></span>    UINT8_T  <a class="code hl_variable" href="../../d6/d43/structTKL__ATTR__REC__T.html#aa55a728de119abb8e212e7874aec98e2">data_len</a>;      </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d6/d43/structTKL__ATTR__REC__T.html#a94924e2a7df2ac913e6e718e3b617f96">   63</a></span>    UINT8_T  *<a class="code hl_variable" href="../../d6/d43/structTKL__ATTR__REC__T.html#a94924e2a7df2ac913e6e718e3b617f96">attr_data</a>;    </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <a class="code hl_struct" href="../../d6/d43/structTKL__ATTR__REC__T.html">TKL_ATTR_REC_T</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * Zigbee zdp frame structure</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../db/dfa/structTKL__ZDP__FRAME__T.html">   69</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../db/dfa/structTKL__ZDP__FRAME__T.html#a5112ccd598be41545918a550e16ba601">   70</a></span>    UINT8_T <a class="code hl_variable" href="../../db/dfa/structTKL__ZDP__FRAME__T.html#a5112ccd598be41545918a550e16ba601">zdo_len</a>;            </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../db/dfa/structTKL__ZDP__FRAME__T.html#a828e3748bfe1e8725bc4ec67245802e0">   71</a></span>    CONST UINT8_T *<a class="code hl_variable" href="../../db/dfa/structTKL__ZDP__FRAME__T.html#a828e3748bfe1e8725bc4ec67245802e0">zdo_buffer</a>;  </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <a class="code hl_struct" href="../../db/dfa/structTKL__ZDP__FRAME__T.html">TKL_ZDP_FRAME_T</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * Zigbee data receive address structure</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d7/d19/structTKL__RECV__ADDR__T.html">   77</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d7/d19/structTKL__RECV__ADDR__T.html#a257f282ca93ead5e598bc72d9c732540">   78</a></span>    UINT16_T <a class="code hl_variable" href="../../d7/d19/structTKL__RECV__ADDR__T.html#a257f282ca93ead5e598bc72d9c732540">src_addr</a>;      </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d7/d19/structTKL__RECV__ADDR__T.html#ae1358e65a358121d13329f92d7ce7ae9">   79</a></span>    UINT16_T <a class="code hl_variable" href="../../d7/d19/structTKL__RECV__ADDR__T.html#ae1358e65a358121d13329f92d7ce7ae9">group_addr</a>;    </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>} <a class="code hl_struct" href="../../d7/d19/structTKL__RECV__ADDR__T.html">TKL_RECV_ADDR_T</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * Zigbee data send address structure</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d4/d37/unionTKL__SEND__ADDR__T.html">   85</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d4/d37/unionTKL__SEND__ADDR__T.html#abc64cd5e296efd3229fb4971db091326">   86</a></span>    UINT16_T <a class="code hl_variable" href="../../d4/d37/unionTKL__SEND__ADDR__T.html#abc64cd5e296efd3229fb4971db091326">dst_addr</a>;      </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d4/d37/unionTKL__SEND__ADDR__T.html#aa65ffaa416d272794c4cd1887efc60d3">   87</a></span>    UINT16_T <a class="code hl_variable" href="../../d4/d37/unionTKL__SEND__ADDR__T.html#aa65ffaa416d272794c4cd1887efc60d3">group_addr</a>;    </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <a class="code hl_union" href="../../d4/d37/unionTKL__SEND__ADDR__T.html">TKL_SEND_ADDR_T</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * Zigbee auxiliary info structure</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../dd/d83/structTKL__ZG__AUX__T.html">   93</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../dd/d83/structTKL__ZG__AUX__T.html#a2babf873b1e3131c718d0c700204896d">   94</a></span>    <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">ZG_DELIVERY_MODE_E</a> <a class="code hl_variable" href="../../dd/d83/structTKL__ZG__AUX__T.html#a2babf873b1e3131c718d0c700204896d">mode</a>;    </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../dd/d83/structTKL__ZG__AUX__T.html#a05e8c5c429a1c248a829df87bc4fb162">   95</a></span>    UINT8_T  <a class="code hl_variable" href="../../dd/d83/structTKL__ZG__AUX__T.html#a05e8c5c429a1c248a829df87bc4fb162">src_ep</a>;            </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../dd/d83/structTKL__ZG__AUX__T.html#a10f08b2b1439238192f00e7099795192">   96</a></span>    UINT8_T  <a class="code hl_variable" href="../../dd/d83/structTKL__ZG__AUX__T.html#a10f08b2b1439238192f00e7099795192">dst_ep</a>;            </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../dd/d83/structTKL__ZG__AUX__T.html#a1a784cb6aa25fd49902fab4366d7f3a2">   97</a></span>    UINT16_T <a class="code hl_variable" href="../../dd/d83/structTKL__ZG__AUX__T.html#a1a784cb6aa25fd49902fab4366d7f3a2">profile</a>;           </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../dd/d83/structTKL__ZG__AUX__T.html#a61ff980becfbde23426753b7d8a5537c">   98</a></span>    UINT16_T <a class="code hl_variable" href="../../dd/d83/structTKL__ZG__AUX__T.html#a61ff980becfbde23426753b7d8a5537c">cluster</a>;           </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <a class="code hl_union" href="../../d4/d37/unionTKL__SEND__ADDR__T.html">TKL_SEND_ADDR_T</a> send;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <a class="code hl_struct" href="../../d7/d19/structTKL__RECV__ADDR__T.html">TKL_RECV_ADDR_T</a> recv;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    } addr;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>} <a class="code hl_struct" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">typedef</span> VOID_T (*TKL_PRE_SEND_CB)(UINT8_T seq_num);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">typedef</span> VOID_T (*TKL_POST_SEND_CB)(INT_T state, UINT8_T seq_num);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * Zigbee data send callback collection</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d4/dc0/structTKL__ZG__SEND__CB.html">  112</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    TKL_PRE_SEND_CB  pre_send_cb;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    TKL_POST_SEND_CB post_send_cb;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>} <a class="code hl_struct" href="../../d4/dc0/structTKL__ZG__SEND__CB.html">TKL_ZG_SEND_CB</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * Zigbee zcl layer command receive callback </span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">typedef</span> ZG_CMD_STATUS_E (*TKL_ZCL_CMD_CB)(<a class="code hl_struct" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *auxiliary, </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                                            <a class="code hl_struct" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a> *frame,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                                            TKL_HANDLE_MODE_E *mode);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * Zigbee zdp layer command receive callback </span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">typedef</span> ZG_CMD_STATUS_E (*TKL_ZDP_CMD_CB)(<a class="code hl_struct" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *auxiliary, </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                            <a class="code hl_struct" href="../../db/dfa/structTKL__ZDP__FRAME__T.html">TKL_ZDP_FRAME_T</a> *frame,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                                            TKL_HANDLE_MODE_E *mode);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> Zigbee zcl write attribute callback </span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">typedef</span> ZG_CMD_STATUS_E (*TKL_WRITE_ATTR_CB)(UINT8_T ep_id,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                                            UINT16_T cluster_id,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                                            <a class="code hl_struct" href="../../d6/d43/structTKL__ATTR__REC__T.html">TKL_ATTR_REC_T</a> *attr_rec);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * Zigbee data receive callback collection</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../db/d5a/structTKL__ZG__RECV__CB.html">  138</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="comment">// pre remote write attribute callback</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    TKL_WRITE_ATTR_CB pre_write_attr_cb;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="comment">// post remote write attribute callback</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    TKL_WRITE_ATTR_CB post_write_attr_cb;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">// zdp message receive callback</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    TKL_ZDP_CMD_CB recv_zdp_cmd_cb;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="comment">// zcl general message receive callback</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    TKL_ZCL_CMD_CB recv_zcl_cmd_general_cb;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// zcl specific to a cluster message receive callback,</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="comment">// include not register cluster message</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    TKL_ZCL_CMD_CB recv_zcl_cmd_specific_cb;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>} <a class="code hl_struct" href="../../db/d5a/structTKL__ZG__RECV__CB.html">TKL_ZG_RECV_CB</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="../../d5/d8a/tkl__data__transceiver_8h.html#a639b0b95823172f5ec473ce49f00f66b">  158</a></span>UINT8_T <a class="code hl_function" href="../../d5/d8a/tkl__data__transceiver_8h.html#a639b0b95823172f5ec473ce49f00f66b">tkl_zcl_seq_num_get</a>(VOID_T);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="../../d5/d8a/tkl__data__transceiver_8h.html#aa264a2e2d692259fa6e018c390575d95">  166</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d8a/tkl__data__transceiver_8h.html#aa264a2e2d692259fa6e018c390575d95">tkl_zg_register_recv_cb</a>(<a class="code hl_struct" href="../../db/d5a/structTKL__ZG__RECV__CB.html">TKL_ZG_RECV_CB</a> *recv_cb);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../d5/d8a/tkl__data__transceiver_8h.html#a52a0a0f12b4dfd63c7f40a613cdb460d">  174</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d8a/tkl__data__transceiver_8h.html#a52a0a0f12b4dfd63c7f40a613cdb460d">tkl_zg_register_send_cb</a>(<a class="code hl_struct" href="../../d4/dc0/structTKL__ZG__SEND__CB.html">TKL_ZG_SEND_CB</a> *send_cb);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../d5/d8a/tkl__data__transceiver_8h.html#a3b3ad9d566d9d602e983a72323088466">  183</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d8a/tkl__data__transceiver_8h.html#a3b3ad9d566d9d602e983a72323088466">tkl_zg_aps_send</a>(<a class="code hl_struct" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *auxiliary, <a class="code hl_struct" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a> *zcl_data);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__ATTR__REC__T_html"><div class="ttname"><a href="../../d6/d43/structTKL__ATTR__REC__T.html">TKL_ATTR_REC_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:59</div></div>
+<div class="ttc" id="astructTKL__ATTR__REC__T_html_a11e57e88e16be0a3605eac9fd1b2bed2"><div class="ttname"><a href="../../d6/d43/structTKL__ATTR__REC__T.html#a11e57e88e16be0a3605eac9fd1b2bed2">TKL_ATTR_REC_T::attr_id</a></div><div class="ttdeci">UINT16_T attr_id</div><div class="ttdoc">attribute id</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:60</div></div>
+<div class="ttc" id="astructTKL__ATTR__REC__T_html_a94924e2a7df2ac913e6e718e3b617f96"><div class="ttname"><a href="../../d6/d43/structTKL__ATTR__REC__T.html#a94924e2a7df2ac913e6e718e3b617f96">TKL_ATTR_REC_T::attr_data</a></div><div class="ttdeci">UINT8_T * attr_data</div><div class="ttdoc">attribute data</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:63</div></div>
+<div class="ttc" id="astructTKL__ATTR__REC__T_html_aa55a728de119abb8e212e7874aec98e2"><div class="ttname"><a href="../../d6/d43/structTKL__ATTR__REC__T.html#aa55a728de119abb8e212e7874aec98e2">TKL_ATTR_REC_T::data_len</a></div><div class="ttdeci">UINT8_T data_len</div><div class="ttdoc">atttribute data len</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:62</div></div>
+<div class="ttc" id="astructTKL__ATTR__REC__T_html_ac7bb76b6baa0f543990e4ea1a721d8fe"><div class="ttname"><a href="../../d6/d43/structTKL__ATTR__REC__T.html#ac7bb76b6baa0f543990e4ea1a721d8fe">TKL_ATTR_REC_T::data_type</a></div><div class="ttdeci">UINT8_T data_type</div><div class="ttdoc">attribute data type</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:61</div></div>
+<div class="ttc" id="astructTKL__RECV__ADDR__T_html"><div class="ttname"><a href="../../d7/d19/structTKL__RECV__ADDR__T.html">TKL_RECV_ADDR_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:77</div></div>
+<div class="ttc" id="astructTKL__RECV__ADDR__T_html_a257f282ca93ead5e598bc72d9c732540"><div class="ttname"><a href="../../d7/d19/structTKL__RECV__ADDR__T.html#a257f282ca93ead5e598bc72d9c732540">TKL_RECV_ADDR_T::src_addr</a></div><div class="ttdeci">UINT16_T src_addr</div><div class="ttdoc">nwk source address</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:78</div></div>
+<div class="ttc" id="astructTKL__RECV__ADDR__T_html_ae1358e65a358121d13329f92d7ce7ae9"><div class="ttname"><a href="../../d7/d19/structTKL__RECV__ADDR__T.html#ae1358e65a358121d13329f92d7ce7ae9">TKL_RECV_ADDR_T::group_addr</a></div><div class="ttdeci">UINT16_T group_addr</div><div class="ttdoc">group id,if not ZG_MULTICAST_MODE setting 0</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:79</div></div>
+<div class="ttc" id="astructTKL__ZCL__FRAME__T_html"><div class="ttname"><a href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:50</div></div>
+<div class="ttc" id="astructTKL__ZCL__FRAME__T_html_a32520dc621856804b4ed5ce160ea2703"><div class="ttname"><a href="../../d2/d74/structTKL__ZCL__FRAME__T.html#a32520dc621856804b4ed5ce160ea2703">TKL_ZCL_FRAME_T::zcl_hdr</a></div><div class="ttdeci">TKL_ZCL_HDR_T zcl_hdr</div><div class="ttdoc">ZCL layer heade</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:51</div></div>
+<div class="ttc" id="astructTKL__ZCL__FRAME__T_html_a649720a1c3c2f1923ce0a717c6cb2148"><div class="ttname"><a href="../../d2/d74/structTKL__ZCL__FRAME__T.html#a649720a1c3c2f1923ce0a717c6cb2148">TKL_ZCL_FRAME_T::payload</a></div><div class="ttdeci">UINT8_T * payload</div><div class="ttdoc">ZCL layer payload</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:53</div></div>
+<div class="ttc" id="astructTKL__ZCL__FRAME__T_html_af0bdaaa0957195d3d9c7a297d4d26ab8"><div class="ttname"><a href="../../d2/d74/structTKL__ZCL__FRAME__T.html#af0bdaaa0957195d3d9c7a297d4d26ab8">TKL_ZCL_FRAME_T::payload_len</a></div><div class="ttdeci">UINT8_T payload_len</div><div class="ttdoc">ZCL layer payload length</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:52</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html">TKL_ZCL_HDR_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:37</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_a160963e5ea39f661619cf3f2f6baafe5"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#a160963e5ea39f661619cf3f2f6baafe5">TKL_ZCL_HDR_T::disable_rsp</a></div><div class="ttdeci">UINT8_T disable_rsp</div><div class="ttdoc">disable default response</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:41</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_a2cb8277c898a617e1d6db2ebaf6f988d"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#a2cb8277c898a617e1d6db2ebaf6f988d">TKL_ZCL_HDR_T::seq_number</a></div><div class="ttdeci">UINT8_T seq_number</div><div class="ttdoc">ZCL transaction sequence number</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:43</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_a3b694be3e016f7663087c8660bf46805"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#a3b694be3e016f7663087c8660bf46805">TKL_ZCL_HDR_T::manu_code</a></div><div class="ttdeci">UINT16_T manu_code</div><div class="ttdoc">manufacturer code if manu_spec set 1</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:42</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_a5d40c1e51cfe23ebf5bb40098ff0e45c"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#a5d40c1e51cfe23ebf5bb40098ff0e45c">TKL_ZCL_HDR_T::command_id</a></div><div class="ttdeci">UINT8_T command_id</div><div class="ttdoc">ZCL command id</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:44</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_af107b6c9417a1ce9e1c6cac48a3f8bd0"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#af107b6c9417a1ce9e1c6cac48a3f8bd0">TKL_ZCL_HDR_T::direction</a></div><div class="ttdeci">UINT8_T direction</div><div class="ttdoc">data transmission direction</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:40</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_af8b150e8d49c0f878243567bd5698824"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#af8b150e8d49c0f878243567bd5698824">TKL_ZCL_HDR_T::frame_type</a></div><div class="ttdeci">UINT8_T frame_type</div><div class="ttdoc">ZCL frame type</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:38</div></div>
+<div class="ttc" id="astructTKL__ZCL__HDR__T_html_afc7cd8a5f138bbc20409ebc44688338d"><div class="ttname"><a href="../../de/d48/structTKL__ZCL__HDR__T.html#afc7cd8a5f138bbc20409ebc44688338d">TKL_ZCL_HDR_T::manu_spec</a></div><div class="ttdeci">UINT8_T manu_spec</div><div class="ttdoc">manufacturer specific</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:39</div></div>
+<div class="ttc" id="astructTKL__ZDP__FRAME__T_html"><div class="ttname"><a href="../../db/dfa/structTKL__ZDP__FRAME__T.html">TKL_ZDP_FRAME_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:69</div></div>
+<div class="ttc" id="astructTKL__ZDP__FRAME__T_html_a5112ccd598be41545918a550e16ba601"><div class="ttname"><a href="../../db/dfa/structTKL__ZDP__FRAME__T.html#a5112ccd598be41545918a550e16ba601">TKL_ZDP_FRAME_T::zdo_len</a></div><div class="ttdeci">UINT8_T zdo_len</div><div class="ttdoc">ZDO layer data length</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:70</div></div>
+<div class="ttc" id="astructTKL__ZDP__FRAME__T_html_a828e3748bfe1e8725bc4ec67245802e0"><div class="ttname"><a href="../../db/dfa/structTKL__ZDP__FRAME__T.html#a828e3748bfe1e8725bc4ec67245802e0">TKL_ZDP_FRAME_T::zdo_buffer</a></div><div class="ttdeci">CONST UINT8_T * zdo_buffer</div><div class="ttdoc">ZDO layer data buffer</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:71</div></div>
+<div class="ttc" id="astructTKL__ZG__AUX__T_html"><div class="ttname"><a href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:93</div></div>
+<div class="ttc" id="astructTKL__ZG__AUX__T_html_a05e8c5c429a1c248a829df87bc4fb162"><div class="ttname"><a href="../../dd/d83/structTKL__ZG__AUX__T.html#a05e8c5c429a1c248a829df87bc4fb162">TKL_ZG_AUX_T::src_ep</a></div><div class="ttdeci">UINT8_T src_ep</div><div class="ttdoc">source endpoint</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:95</div></div>
+<div class="ttc" id="astructTKL__ZG__AUX__T_html_a10f08b2b1439238192f00e7099795192"><div class="ttname"><a href="../../dd/d83/structTKL__ZG__AUX__T.html#a10f08b2b1439238192f00e7099795192">TKL_ZG_AUX_T::dst_ep</a></div><div class="ttdeci">UINT8_T dst_ep</div><div class="ttdoc">destination endpoint</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:96</div></div>
+<div class="ttc" id="astructTKL__ZG__AUX__T_html_a1a784cb6aa25fd49902fab4366d7f3a2"><div class="ttname"><a href="../../dd/d83/structTKL__ZG__AUX__T.html#a1a784cb6aa25fd49902fab4366d7f3a2">TKL_ZG_AUX_T::profile</a></div><div class="ttdeci">UINT16_T profile</div><div class="ttdoc">profile of message</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:97</div></div>
+<div class="ttc" id="astructTKL__ZG__AUX__T_html_a2babf873b1e3131c718d0c700204896d"><div class="ttname"><a href="../../dd/d83/structTKL__ZG__AUX__T.html#a2babf873b1e3131c718d0c700204896d">TKL_ZG_AUX_T::mode</a></div><div class="ttdeci">ZG_DELIVERY_MODE_E mode</div><div class="ttdoc">delivery mode</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:94</div></div>
+<div class="ttc" id="astructTKL__ZG__AUX__T_html_a61ff980becfbde23426753b7d8a5537c"><div class="ttname"><a href="../../dd/d83/structTKL__ZG__AUX__T.html#a61ff980becfbde23426753b7d8a5537c">TKL_ZG_AUX_T::cluster</a></div><div class="ttdeci">UINT16_T cluster</div><div class="ttdoc">cluster of message</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:98</div></div>
+<div class="ttc" id="astructTKL__ZG__RECV__CB_html"><div class="ttname"><a href="../../db/d5a/structTKL__ZG__RECV__CB.html">TKL_ZG_RECV_CB</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:138</div></div>
+<div class="ttc" id="astructTKL__ZG__SEND__CB_html"><div class="ttname"><a href="../../d4/dc0/structTKL__ZG__SEND__CB.html">TKL_ZG_SEND_CB</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:112</div></div>
+<div class="ttc" id="atkl__data__transceiver_8h_html_a3b3ad9d566d9d602e983a72323088466"><div class="ttname"><a href="../../d5/d8a/tkl__data__transceiver_8h.html#a3b3ad9d566d9d602e983a72323088466">tkl_zg_aps_send</a></div><div class="ttdeci">OPERATE_RET tkl_zg_aps_send(TKL_ZG_AUX_T *auxiliary, TKL_ZCL_FRAME_T *zcl_data)</div><div class="ttdoc">sending data in APS layer</div></div>
+<div class="ttc" id="atkl__data__transceiver_8h_html_a52a0a0f12b4dfd63c7f40a613cdb460d"><div class="ttname"><a href="../../d5/d8a/tkl__data__transceiver_8h.html#a52a0a0f12b4dfd63c7f40a613cdb460d">tkl_zg_register_send_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zg_register_send_cb(TKL_ZG_SEND_CB *send_cb)</div><div class="ttdoc">register data send callback</div></div>
+<div class="ttc" id="atkl__data__transceiver_8h_html_a639b0b95823172f5ec473ce49f00f66b"><div class="ttname"><a href="../../d5/d8a/tkl__data__transceiver_8h.html#a639b0b95823172f5ec473ce49f00f66b">tkl_zcl_seq_num_get</a></div><div class="ttdeci">UINT8_T tkl_zcl_seq_num_get(VOID_T)</div><div class="ttdoc">get zcl transaction sequence number</div></div>
+<div class="ttc" id="atkl__data__transceiver_8h_html_aa264a2e2d692259fa6e018c390575d95"><div class="ttname"><a href="../../d5/d8a/tkl__data__transceiver_8h.html#aa264a2e2d692259fa6e018c390575d95">tkl_zg_register_recv_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zg_register_recv_cb(TKL_ZG_RECV_CB *recv_cb)</div><div class="ttdoc">register data receive callback</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a></div><div class="ttdoc">Common process - zigbee stack</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">ZG_DELIVERY_MODE_E</a></div><div class="ttdeci">ZG_DELIVERY_MODE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:93</div></div>
+<div class="ttc" id="aunionTKL__SEND__ADDR__T_html"><div class="ttname"><a href="../../d4/d37/unionTKL__SEND__ADDR__T.html">TKL_SEND_ADDR_T</a></div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:85</div></div>
+<div class="ttc" id="aunionTKL__SEND__ADDR__T_html_aa65ffaa416d272794c4cd1887efc60d3"><div class="ttname"><a href="../../d4/d37/unionTKL__SEND__ADDR__T.html#aa65ffaa416d272794c4cd1887efc60d3">TKL_SEND_ADDR_T::group_addr</a></div><div class="ttdeci">UINT16_T group_addr</div><div class="ttdoc">group id,if not ZG_MULTICAST_MODE setting 0</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:87</div></div>
+<div class="ttc" id="aunionTKL__SEND__ADDR__T_html_abc64cd5e296efd3229fb4971db091326"><div class="ttname"><a href="../../d4/d37/unionTKL__SEND__ADDR__T.html#abc64cd5e296efd3229fb4971db091326">TKL_SEND_ADDR_T::dst_addr</a></div><div class="ttdeci">UINT16_T dst_addr</div><div class="ttdoc">nwk destination address</div><div class="ttdef"><b>Definition:</b> tkl_data_transceiver.h:86</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

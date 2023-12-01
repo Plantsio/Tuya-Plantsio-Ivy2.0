@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/base_db/include/tuya_ws_db.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8b596159f42cda0ae8ead7927697069e.html">base_db</a></li><li class="navelem"><a class="el" href="../../dir_367303f8501c4aa285e87eb0ca7ab261.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_ws_db.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d13/tuya__ws__db_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef _TUYA_WS_DB_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define _TUYA_WS_DB_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#ab1a4dc0d98ec648413ed417f928ceab9">   26</a></span><span class="keyword">typedef</span> BYTE_T <a class="code hl_typedef" href="../../d2/d13/tuya__ws__db_8h.html#ab1a4dc0d98ec648413ed417f928ceab9">VAR_TP_T</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define VT_CHAR 0       </span><span class="comment">// char, same as int, need 11+6 byte</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define VT_BYTE 1       </span><span class="comment">// byte, same as int, need 11+6 byte</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define VT_SHORT 2      </span><span class="comment">// short, same as int, need 11+6 byte</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define VT_USHORT 3     </span><span class="comment">// unsigned short, same as int, need 11+6 byte</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define VT_INT 4        </span><span class="comment">// int, need 11+6 byte when serialize to json format</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define VT_BOOL 5       </span><span class="comment">// bool, need 6+6 byte when serialize to json format</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define VT_STRING 6     </span><span class="comment">// string, need len+6 byte when serialize to json format</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define VT_RAW 7        </span><span class="comment">// raw, need len/3*4+len%3?4:0+6 (base64 encode) when serialize to json format</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../dc/d14/structTY__DB__RW__S.html">   40</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    CHAR_T *key;    <span class="comment">// property name</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_typedef" href="../../d2/d13/tuya__ws__db_8h.html#ab1a4dc0d98ec648413ed417f928ceab9">VAR_TP_T</a> vt;    <span class="comment">// property type</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    VOID *val;      <span class="comment">// property value</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    USHORT_T len;   <span class="comment">// property length</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <a class="code hl_struct" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a71b9bb6d4774329da7aa4b6b2d5f0278">   58</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a71b9bb6d4774329da7aa4b6b2d5f0278">ws_db_init</a>(IN CONST CHAR_T *fs_storge_path, IN CONST BYTE_T *p_key);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#ac6fd692590e0910a66eda4b65709e3c1">   68</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#ac6fd692590e0910a66eda4b65709e3c1">ws_db_init_mf</a>(VOID);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a385b9da6343a65dd2477188ad041b9dd">   75</a></span>VOID <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a385b9da6343a65dd2477188ad041b9dd">ws_db_uninit</a>(VOID) ;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a92d41db87ec393cd3dba09325b4ba6bc">   82</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a92d41db87ec393cd3dba09325b4ba6bc">ws_db_format</a>(VOID);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a87df35aebe5644710060ae1052af2676">   89</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a87df35aebe5644710060ae1052af2676">ws_db_rebuild</a>(VOID);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a65bc7d20e6e3d0feebd5db5219f4a9a7">   98</a></span>CHAR_T* <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a65bc7d20e6e3d0feebd5db5219f4a9a7">ws_db_get_storage_path</a>(VOID);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#ab07c8df9f6221ba7ca202a35919cacc3">  108</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#ab07c8df9f6221ba7ca202a35919cacc3">wd_common_write</a>(IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a92309aef28c9d07694f368c2f5684958">  120</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a92309aef28c9d07694f368c2f5684958">wd_common_read</a>(IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#ac9aeb6e9428dbb825c53856a450f251a">  136</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#ac9aeb6e9428dbb825c53856a450f251a">wd_common_fuzzy_read</a>(IN CONST CHAR_T *fuzzy_name, INOUT UINT_T *index, OUT BYTE_T **data, OUT UINT_T *len);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#acf74d898a9063854bda275df8691eeba">  144</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#acf74d898a9063854bda275df8691eeba">wd_common_free_data</a>(IN BYTE_T *data);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a211e0fcc239b157a6805b0f2593b10a3">  152</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a211e0fcc239b157a6805b0f2593b10a3">wd_common_delete</a>(IN CONST CHAR_T *key);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a0d780cf8b1364edb469700506b76f7c0">  162</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a0d780cf8b1364edb469700506b76f7c0">wd_common_fuzzy_delete</a>(IN CONST CHAR_T *key);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#af2738e9107062ba165d7e717dce1aae1">  172</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#af2738e9107062ba165d7e717dce1aae1">wd_common_exist</a>(IN CONST CHAR_T *key, OUT BOOL_T *exist);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#abe240a8943ccbe90ac53f4dd59aa1577">  182</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#abe240a8943ccbe90ac53f4dd59aa1577">wd_protected_write</a>(IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#aabd7fcbafe0360b9e0bde164108e664f">  194</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#aabd7fcbafe0360b9e0bde164108e664f">wd_protected_read</a>(IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a478d5da3e545c3df54d88a0ccc4b8794">  202</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a478d5da3e545c3df54d88a0ccc4b8794">wd_protected_delete</a>(IN CONST CHAR_T *key);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a784ac3c50cf8c527dc33763ce962fa1c">  213</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a784ac3c50cf8c527dc33763ce962fa1c">wd_user_param_write</a>(IN CONST BYTE_T *data, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a11583ff5eee8276eaa9bb653a99bc30d">  225</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a11583ff5eee8276eaa9bb653a99bc30d">wd_user_param_read</a>(OUT BYTE_T **buf, OUT UINT_T *len);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#ab7ce6f2075f21a9efdab9865ef23be81">  236</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#ab7ce6f2075f21a9efdab9865ef23be81">wd_utils_serialize</a>(IN CONST <a class="code hl_struct" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt, OUT CHAR_T **out, OUT UINT_T *out_len);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#abd191e8f62b53493191b016a588fb1c3">  246</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#abd191e8f62b53493191b016a588fb1c3">wd_utils_serialize_save</a>(IN CONST CHAR_T *key, IN CONST <a class="code hl_struct" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#af3ef0b53a7cfa836d678450af4052464">  259</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#af3ef0b53a7cfa836d678450af4052464">wd_utils_serialize_restore</a>(IN CONST CHAR_T *key, INOUT <a class="code hl_struct" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a539fff7e6e505c9194c21299422c1ae3">  271</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a539fff7e6e505c9194c21299422c1ae3">wd_utils_deserialize</a>(IN CONST CHAR_T *in, INOUT <a class="code hl_struct" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="../../d2/d13/tuya__ws__db_8h.html#a5f60c83890de2cd8401e675c14393478">  279</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d13/tuya__ws__db_8h.html#a5f60c83890de2cd8401e675c14393478">wd_utils_free_outbuf</a>(IN CHAR_T *out_buf);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="ttc" id="astructTY__DB__RW__S_html"><div class="ttname"><a href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a></div><div class="ttdoc">tuya key-value database property, used for serialize/deserialize data to json format</div><div class="ttdef"><b>Definition:</b> tuya_ws_db.h:40</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a0d780cf8b1364edb469700506b76f7c0"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a0d780cf8b1364edb469700506b76f7c0">wd_common_fuzzy_delete</a></div><div class="ttdeci">OPERATE_RET wd_common_fuzzy_delete(IN CONST CHAR_T *key)</div><div class="ttdoc">fuzzy delete the entry from key-value database</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a11583ff5eee8276eaa9bb653a99bc30d"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a11583ff5eee8276eaa9bb653a99bc30d">wd_user_param_read</a></div><div class="ttdeci">OPERATE_RET wd_user_param_read(OUT BYTE_T **buf, OUT UINT_T *len)</div><div class="ttdoc">read the user parameter from tuya key-value database</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a211e0fcc239b157a6805b0f2593b10a3"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a211e0fcc239b157a6805b0f2593b10a3">wd_common_delete</a></div><div class="ttdeci">OPERATE_RET wd_common_delete(IN CONST CHAR_T *key)</div><div class="ttdoc">delete the entry from key-value database</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a385b9da6343a65dd2477188ad041b9dd"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a385b9da6343a65dd2477188ad041b9dd">ws_db_uninit</a></div><div class="ttdeci">VOID ws_db_uninit(VOID)</div><div class="ttdoc">tuya key-value database de-initialization</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a478d5da3e545c3df54d88a0ccc4b8794"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a478d5da3e545c3df54d88a0ccc4b8794">wd_protected_delete</a></div><div class="ttdeci">OPERATE_RET wd_protected_delete(IN CONST CHAR_T *key)</div><div class="ttdoc">delete the entry from protected storage</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a539fff7e6e505c9194c21299422c1ae3"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a539fff7e6e505c9194c21299422c1ae3">wd_utils_deserialize</a></div><div class="ttdeci">OPERATE_RET wd_utils_deserialize(IN CONST CHAR_T *in, INOUT TY_DB_RW_S *rw, IN CONST UINT_T rw_cnt)</div><div class="ttdoc">tuya key-value deserialize, transfer the data from json format to property array</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a5f60c83890de2cd8401e675c14393478"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a5f60c83890de2cd8401e675c14393478">wd_utils_free_outbuf</a></div><div class="ttdeci">OPERATE_RET wd_utils_free_outbuf(IN CHAR_T *out_buf)</div><div class="ttdoc">free the buffer which allocated by wd_utils_serialize_restore</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a65bc7d20e6e3d0feebd5db5219f4a9a7"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a65bc7d20e6e3d0feebd5db5219f4a9a7">ws_db_get_storage_path</a></div><div class="ttdeci">CHAR_T * ws_db_get_storage_path(VOID)</div><div class="ttdoc">tuya key-value database get storage path</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a71b9bb6d4774329da7aa4b6b2d5f0278"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a71b9bb6d4774329da7aa4b6b2d5f0278">ws_db_init</a></div><div class="ttdeci">OPERATE_RET ws_db_init(IN CONST CHAR_T *fs_storge_path, IN CONST BYTE_T *p_key)</div><div class="ttdoc">tuya key-value database initialization</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a784ac3c50cf8c527dc33763ce962fa1c"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a784ac3c50cf8c527dc33763ce962fa1c">wd_user_param_write</a></div><div class="ttdeci">OPERATE_RET wd_user_param_write(IN CONST BYTE_T *data, IN CONST UINT_T len)</div><div class="ttdoc">write the user parameter to tuya key-value database</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a87df35aebe5644710060ae1052af2676"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a87df35aebe5644710060ae1052af2676">ws_db_rebuild</a></div><div class="ttdeci">OPERATE_RET ws_db_rebuild(VOID)</div><div class="ttdoc">tuya key-value database rebuild to recycle</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a92309aef28c9d07694f368c2f5684958"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a92309aef28c9d07694f368c2f5684958">wd_common_read</a></div><div class="ttdeci">OPERATE_RET wd_common_read(IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len)</div><div class="ttdoc">tuya key-value database read entry</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_a92d41db87ec393cd3dba09325b4ba6bc"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#a92d41db87ec393cd3dba09325b4ba6bc">ws_db_format</a></div><div class="ttdeci">OPERATE_RET ws_db_format(VOID)</div><div class="ttdoc">tuya key-value database format</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_aabd7fcbafe0360b9e0bde164108e664f"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#aabd7fcbafe0360b9e0bde164108e664f">wd_protected_read</a></div><div class="ttdeci">OPERATE_RET wd_protected_read(IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len)</div><div class="ttdoc">tuya protected storage read entry</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_ab07c8df9f6221ba7ca202a35919cacc3"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#ab07c8df9f6221ba7ca202a35919cacc3">wd_common_write</a></div><div class="ttdeci">OPERATE_RET wd_common_write(IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len)</div><div class="ttdoc">tuya key-value database write entry</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_ab1a4dc0d98ec648413ed417f928ceab9"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#ab1a4dc0d98ec648413ed417f928ceab9">VAR_TP_T</a></div><div class="ttdeci">BYTE_T VAR_TP_T</div><div class="ttdoc">tuya key-value database property define, used for serialize/deserialize data to json format</div><div class="ttdef"><b>Definition:</b> tuya_ws_db.h:26</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_ab7ce6f2075f21a9efdab9865ef23be81"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#ab7ce6f2075f21a9efdab9865ef23be81">wd_utils_serialize</a></div><div class="ttdeci">OPERATE_RET wd_utils_serialize(IN CONST TY_DB_RW_S *rw, IN CONST UINT_T rw_cnt, OUT CHAR_T **out, OUT UINT_T *out_len)</div><div class="ttdoc">tuya key-value serialize, transfer the data from TY_DB_RW_S array to json format</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_abd191e8f62b53493191b016a588fb1c3"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#abd191e8f62b53493191b016a588fb1c3">wd_utils_serialize_save</a></div><div class="ttdeci">OPERATE_RET wd_utils_serialize_save(IN CONST CHAR_T *key, IN CONST TY_DB_RW_S *rw, IN CONST UINT_T rw_cnt)</div><div class="ttdoc">tuya key-value serialize and save in tuya key-value database</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_abe240a8943ccbe90ac53f4dd59aa1577"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#abe240a8943ccbe90ac53f4dd59aa1577">wd_protected_write</a></div><div class="ttdeci">OPERATE_RET wd_protected_write(IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len)</div><div class="ttdoc">tuya protected storage write entry</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_ac6fd692590e0910a66eda4b65709e3c1"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#ac6fd692590e0910a66eda4b65709e3c1">ws_db_init_mf</a></div><div class="ttdeci">OPERATE_RET ws_db_init_mf(VOID)</div><div class="ttdoc">tuya key-value database initialization in mf</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_ac9aeb6e9428dbb825c53856a450f251a"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#ac9aeb6e9428dbb825c53856a450f251a">wd_common_fuzzy_read</a></div><div class="ttdeci">OPERATE_RET wd_common_fuzzy_read(IN CONST CHAR_T *fuzzy_name, INOUT UINT_T *index, OUT BYTE_T **data, OUT UINT_T *len)</div><div class="ttdoc">tuya key-value database fuzzy read entry</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_acf74d898a9063854bda275df8691eeba"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#acf74d898a9063854bda275df8691eeba">wd_common_free_data</a></div><div class="ttdeci">OPERATE_RET wd_common_free_data(IN BYTE_T *data)</div><div class="ttdoc">free the buffer which allocated by wd_common_read or wd_common_fuzzy_read</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_af2738e9107062ba165d7e717dce1aae1"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#af2738e9107062ba165d7e717dce1aae1">wd_common_exist</a></div><div class="ttdeci">OPERATE_RET wd_common_exist(IN CONST CHAR_T *key, OUT BOOL_T *exist)</div><div class="ttdoc">check the entry from key-value database</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html_af3ef0b53a7cfa836d678450af4052464"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html#af3ef0b53a7cfa836d678450af4052464">wd_utils_serialize_restore</a></div><div class="ttdeci">OPERATE_RET wd_utils_serialize_restore(IN CONST CHAR_T *key, INOUT TY_DB_RW_S *rw, IN CONST UINT_T rw_cnt)</div><div class="ttdoc">tuya key-value serialize restore, will read the data from tuya key-value database and restore to data...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

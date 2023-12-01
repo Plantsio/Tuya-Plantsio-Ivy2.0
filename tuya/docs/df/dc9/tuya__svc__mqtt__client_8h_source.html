@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/mqtt/tuya_svc_mqtt_client.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_ab84e3900246cdbef7e23a2a925ca49c.html">mqtt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_svc_mqtt_client.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/dc9/tuya__svc__mqtt__client_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef __TUYA_SVC_MQTT_CLIENT_H__</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define __TUYA_SVC_MQTT_CLIENT_H__</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d34/tuya__svc__netmgr_8h.html">tuya_svc_netmgr.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef QOS1_PUBACK_TIMEOUT</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define QOS1_PUBACK_TIMEOUT 3 </span><span class="comment">// qos1 publish respond timeout(s)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#ifndef QOS1_PUBLISH_SLOT_CNT</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define QOS1_PUBLISH_SLOT_CNT 8 </span><span class="comment">// slot count waiting for puback(new publish will be refused)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef QOS1_PUBACK_TIMEOUT_LIMIT</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define QOS1_PUBACK_TIMEOUT_LIMIT 3 </span><span class="comment">// continuous timeout count for qos1 publish(mqtt will close and reconnect)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifndef MAX_RANDOM_DELAY_BEFORE_RECONNECT</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define MAX_RANDOM_DELAY_BEFORE_RECONNECT (5*60) </span><span class="comment">// max random delay when connection broken(s)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#ifndef MQTT_HEATBEAT_INTERVAL</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define MQTT_HEATBEAT_INTERVAL (60) </span><span class="comment">// mqtt heartbeat interval(s)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifndef STACK_SIZE_MQTT_CLIENT</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define STACK_SIZE_MQTT_CLIENT (4*1024) </span><span class="comment">// stack size of mqtt client(Byte)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#ifndef MQTT_RECV_BUF_SIZE</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#define MQTT_RECV_BUF_SIZE (512)    </span><span class="comment">// size of mqtt recv buffer(Byte)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifndef MQTT_MAX_MESSGAE_SIZE</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#define MQTT_MAX_MESSGAE_SIZE (4096) </span><span class="comment">// max size of mqtt msg(Byte, RTOS only)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#ifndef MQTT_RECV_SELECT_TIMEOUT</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#define MQTT_RECV_SELECT_TIMEOUT (3000) </span><span class="comment">// powser saving need consider (ms)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">typedef</span> VOID* MQTT_HANDLE; <span class="comment">//Definition of MQTT client handler</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a4cad07e78742ef2d5f22f29cdd8dbe63">   75</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a4cad07e78742ef2d5f22f29cdd8dbe63">CB_MQTT_DATA_RECV</a>)(CHAR_T *topic, BYTE_T *data, UINT_T len);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html">   80</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#a0b90bf0217d39aa00562c615384acc3b">   82</a></span>    CHAR_T *<a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#a0b90bf0217d39aa00562c615384acc3b">broker_domain</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#a970e7b37e1e203fb99bda0596491c17c">   84</a></span>    UINT_T <a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#a970e7b37e1e203fb99bda0596491c17c">broker_port</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#abe46b8096f241bf90f8d19f93a3e4b58">   87</a></span>    CHAR_T *<a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#abe46b8096f241bf90f8d19f93a3e4b58">subcribe_topic</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#ad7db8aecf5568ae13290a666327a95bd">   89</a></span>    CHAR_T *<a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#ad7db8aecf5568ae13290a666327a95bd">client_id</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#a670a19b9166fa81c8418b193eea87eea">   91</a></span>    CHAR_T *<a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#a670a19b9166fa81c8418b193eea87eea">user_name</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#a40eefad8e4663fa1d3d95dc4830ca2f4">   93</a></span>    CHAR_T *<a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#a40eefad8e4663fa1d3d95dc4830ca2f4">passwd</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#a03d46a5cf7ac2b6067c642a03736a853">   95</a></span>    UINT_T <a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#a03d46a5cf7ac2b6067c642a03736a853">heartbeat</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../dd/d93/structmqtt__ctx__t.html#a7ee7c2b86a093aebe2b53b444f015a36">   98</a></span>    <a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a4cad07e78742ef2d5f22f29cdd8dbe63">CB_MQTT_DATA_RECV</a> <a class="code hl_variable" href="../../dd/d93/structmqtt__ctx__t.html#a7ee7c2b86a093aebe2b53b444f015a36">cb_data_recv</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>} <a class="code hl_struct" href="../../dd/d93/structmqtt__ctx__t.html">mqtt_ctx_t</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#acc42f7abcb27a491906f5898dc9eb3f0">  104</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    MQTT_CFG_LINKAGE,       <span class="comment">// linkage used for connection (netmgr_linkage_t*) (default: current active linkage)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    MQTT_CFG_HEARTBEAT,     <span class="comment">// heartbeat interval (UINT:s) (default: MQTT_HEATBEAT_INTERVAL)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    MQTT_CFG_SLEEP_WITHOUT_PERMIT, <span class="comment">// (UINT:s)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    MQTT_CFG_SOCKET_FD, <span class="comment">// get mqtt client socket fd (readonly) (INT_T)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    MQTT_CFG_DISCONNECT_WHEN_STOP, <span class="comment">// disconnect from broker immediately when stop is called (BOOL_T) (default: true)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    MQTT_CFG_MAX</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>} <a class="code hl_enumeration" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#acc42f7abcb27a491906f5898dc9eb3f0">mqtt_cfg_e</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#afc8a3c9ce08147a991b0b6264a5fc6c4">  120</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#afc8a3c9ce08147a991b0b6264a5fc6c4">CB_MQTT_PUB_INFORM</a>)(OPERATE_RET op_ret, VOID *ctx);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html">  125</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#a30e025af4fc41fb8cfdfc03177b01d2d">  127</a></span>    CHAR_T *<a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#a30e025af4fc41fb8cfdfc03177b01d2d">publish_topic</a>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#a272609688120c2c988b23f1ee2af7a34">  129</a></span>    BYTE_T <a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#a272609688120c2c988b23f1ee2af7a34">qos</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#a882ed93422303a1b9d55a09b6c119666">  131</a></span>    BYTE_T *<a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#a882ed93422303a1b9d55a09b6c119666">data</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#ac9a85990932a5952893ac09875f5ca30">  133</a></span>    UINT_T <a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#ac9a85990932a5952893ac09875f5ca30">len</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#a3706442e6a61014f856288a4a40a8e59">  135</a></span>    UINT_T <a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#a3706442e6a61014f856288a4a40a8e59">timeout</a>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#a86d9e28601b1fcae6be3cbe9dd4bd9db">  137</a></span>    <a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#afc8a3c9ce08147a991b0b6264a5fc6c4">CB_MQTT_PUB_INFORM</a> <a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#a86d9e28601b1fcae6be3cbe9dd4bd9db">cb_pub_inform</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../dd/dc1/structmqtt__msg__t.html#add733ddc3ef1c7a528c3221d56c7bc37">  139</a></span>    VOID *<a class="code hl_variable" href="../../dd/dc1/structmqtt__msg__t.html#add733ddc3ef1c7a528c3221d56c7bc37">ctx</a>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>} <a class="code hl_struct" href="../../dd/dc1/structmqtt__msg__t.html">mqtt_msg_t</a>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../d9/dcd/structmqtt__subscribe__t.html">  145</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="../../d9/dcd/structmqtt__subscribe__t.html#a1c97d574a93bccdceb2f7f23606b59e0">  147</a></span>    CHAR_T **<a class="code hl_variable" href="../../d9/dcd/structmqtt__subscribe__t.html#a1c97d574a93bccdceb2f7f23606b59e0">topics</a>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d9/dcd/structmqtt__subscribe__t.html#a91ac076aabb3bae05b3bcc9bbf53a889">  149</a></span>    BYTE_T <a class="code hl_variable" href="../../d9/dcd/structmqtt__subscribe__t.html#a91ac076aabb3bae05b3bcc9bbf53a889">cnt</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d9/dcd/structmqtt__subscribe__t.html#affea6e56652905f8df5b8e8aa3bd5d6e">  151</a></span>    <a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a4cad07e78742ef2d5f22f29cdd8dbe63">CB_MQTT_DATA_RECV</a> <a class="code hl_variable" href="../../d9/dcd/structmqtt__subscribe__t.html#affea6e56652905f8df5b8e8aa3bd5d6e">cb_data_recv</a>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="../../d9/dcd/structmqtt__subscribe__t.html#ab64782a099db4ab37f4539a0b28423ab">  153</a></span>    BOOL_T <a class="code hl_variable" href="../../d9/dcd/structmqtt__subscribe__t.html#ab64782a099db4ab37f4539a0b28423ab">auto_resub</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>} <a class="code hl_struct" href="../../d9/dcd/structmqtt__subscribe__t.html">mqtt_subscribe_t</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a6ed22d71b7355ef33354b95704fe1b56">  159</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a6ed22d71b7355ef33354b95704fe1b56">CB_MQTT_CONNECTED</a>)(VOID);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8ddf7f037e3f7d631a198250f7e9cca5">  163</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8ddf7f037e3f7d631a198250f7e9cca5">CB_MQTT_DISCONNECTED</a>)(VOID);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aaa406d6d9d9f6257952dc26b09bbce39">  169</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aaa406d6d9d9f6257952dc26b09bbce39">CB_MQTT_CONNECT_DENY</a>)(BYTE_T deny_times);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aa9e59ac93b2d05fee8f218ecd4d775ae">  179</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aa9e59ac93b2d05fee8f218ecd4d775ae">tuya_svc_mqtt_client_create</a>(<a class="code hl_struct" href="../../dd/d93/structmqtt__ctx__t.html">mqtt_ctx_t</a> *ctx, MQTT_HANDLE *handle);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#ab0102673f479122776cac95436fca62d">  188</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#ab0102673f479122776cac95436fca62d">tuya_svc_mqtt_client_destroy</a>(MQTT_HANDLE *handle);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a55a70dedb506a09c9c66169426d08118">  197</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a55a70dedb506a09c9c66169426d08118">tuya_svc_mqtt_client_start</a>(MQTT_HANDLE *handle);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a32fea4f1440e17107420027a44e9090d">  206</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a32fea4f1440e17107420027a44e9090d">tuya_svc_mqtt_client_stop</a>(MQTT_HANDLE *handle);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8db35dc9e61af836a0118c44a4522871">  215</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8db35dc9e61af836a0118c44a4522871">tuya_svc_mqtt_client_restart</a>(MQTT_HANDLE *handle);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#adb02c31b0cd6c05930d79d8d03aa3738">  227</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#adb02c31b0cd6c05930d79d8d03aa3738">tuya_svc_mqtt_client_register_cb</a>(MQTT_HANDLE handle, <a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a6ed22d71b7355ef33354b95704fe1b56">CB_MQTT_CONNECTED</a> cb_connected,</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                                             <a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8ddf7f037e3f7d631a198250f7e9cca5">CB_MQTT_DISCONNECTED</a> cb_disconnected, <a class="code hl_typedef" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aaa406d6d9d9f6257952dc26b09bbce39">CB_MQTT_CONNECT_DENY</a> cb_connect_deny);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#ad9368306cfda5f697468c72777907b6e">  237</a></span>BOOL_T <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#ad9368306cfda5f697468c72777907b6e">tuya_svc_mqtt_client_is_connected</a>(MQTT_HANDLE *handle);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a07e3c9aa0f2f648d8536e54191fcced1">  248</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a07e3c9aa0f2f648d8536e54191fcced1">tuya_svc_mqtt_client_set_cfg</a>(MQTT_HANDLE *handle, <a class="code hl_enumeration" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#acc42f7abcb27a491906f5898dc9eb3f0">mqtt_cfg_e</a> cfg, VOID* data);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a3c223497aef1a38e9a95909dc2186f97">  259</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a3c223497aef1a38e9a95909dc2186f97">tuya_svc_mqtt_client_get_cfg</a>(MQTT_HANDLE *handle, <a class="code hl_enumeration" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#acc42f7abcb27a491906f5898dc9eb3f0">mqtt_cfg_e</a> cfg, VOID* data);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a41d256e2ef7cb20be0712454b351826e">  269</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a41d256e2ef7cb20be0712454b351826e">tuya_svc_mqtt_client_publish</a>(MQTT_HANDLE *handle, <a class="code hl_struct" href="../../dd/dc1/structmqtt__msg__t.html">mqtt_msg_t</a>* msg);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#af916e32568c404573dbcca1ea45e77b1">  279</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#af916e32568c404573dbcca1ea45e77b1">tuya_svc_mqtt_client_subscribe</a>(MQTT_HANDLE *handle, <a class="code hl_struct" href="../../d9/dcd/structmqtt__subscribe__t.html">mqtt_subscribe_t</a>* sub);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a5c8b12794c2b4fd118af2d08eb6c590a">  289</a></span>OPERATE_RET <a class="code hl_function" href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a5c8b12794c2b4fd118af2d08eb6c590a">tuya_svc_mqtt_client_unsubscribe</a>(MQTT_HANDLE *handle, <a class="code hl_struct" href="../../d9/dcd/structmqtt__subscribe__t.html">mqtt_subscribe_t</a>* sub);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#endif </span><span class="comment">//__TUYA_SVC_MQTT_CLIENT_H__</span></div>
+<div class="ttc" id="astructmqtt__ctx__t_html"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html">mqtt_ctx_t</a></div><div class="ttdoc">Definition of mqtt client context</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:80</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_a03d46a5cf7ac2b6067c642a03736a853"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#a03d46a5cf7ac2b6067c642a03736a853">mqtt_ctx_t::heartbeat</a></div><div class="ttdeci">UINT_T heartbeat</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:95</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_a0b90bf0217d39aa00562c615384acc3b"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#a0b90bf0217d39aa00562c615384acc3b">mqtt_ctx_t::broker_domain</a></div><div class="ttdeci">CHAR_T * broker_domain</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:82</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_a40eefad8e4663fa1d3d95dc4830ca2f4"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#a40eefad8e4663fa1d3d95dc4830ca2f4">mqtt_ctx_t::passwd</a></div><div class="ttdeci">CHAR_T * passwd</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:93</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_a670a19b9166fa81c8418b193eea87eea"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#a670a19b9166fa81c8418b193eea87eea">mqtt_ctx_t::user_name</a></div><div class="ttdeci">CHAR_T * user_name</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:91</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_a7ee7c2b86a093aebe2b53b444f015a36"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#a7ee7c2b86a093aebe2b53b444f015a36">mqtt_ctx_t::cb_data_recv</a></div><div class="ttdeci">CB_MQTT_DATA_RECV cb_data_recv</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:98</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_a970e7b37e1e203fb99bda0596491c17c"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#a970e7b37e1e203fb99bda0596491c17c">mqtt_ctx_t::broker_port</a></div><div class="ttdeci">UINT_T broker_port</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:84</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_abe46b8096f241bf90f8d19f93a3e4b58"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#abe46b8096f241bf90f8d19f93a3e4b58">mqtt_ctx_t::subcribe_topic</a></div><div class="ttdeci">CHAR_T * subcribe_topic</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:87</div></div>
+<div class="ttc" id="astructmqtt__ctx__t_html_ad7db8aecf5568ae13290a666327a95bd"><div class="ttname"><a href="../../dd/d93/structmqtt__ctx__t.html#ad7db8aecf5568ae13290a666327a95bd">mqtt_ctx_t::client_id</a></div><div class="ttdeci">CHAR_T * client_id</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:89</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html">mqtt_msg_t</a></div><div class="ttdoc">Definition of mqtt msg to publish</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:125</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_a272609688120c2c988b23f1ee2af7a34"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#a272609688120c2c988b23f1ee2af7a34">mqtt_msg_t::qos</a></div><div class="ttdeci">BYTE_T qos</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:129</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_a30e025af4fc41fb8cfdfc03177b01d2d"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#a30e025af4fc41fb8cfdfc03177b01d2d">mqtt_msg_t::publish_topic</a></div><div class="ttdeci">CHAR_T * publish_topic</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:127</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_a3706442e6a61014f856288a4a40a8e59"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#a3706442e6a61014f856288a4a40a8e59">mqtt_msg_t::timeout</a></div><div class="ttdeci">UINT_T timeout</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:135</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_a86d9e28601b1fcae6be3cbe9dd4bd9db"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#a86d9e28601b1fcae6be3cbe9dd4bd9db">mqtt_msg_t::cb_pub_inform</a></div><div class="ttdeci">CB_MQTT_PUB_INFORM cb_pub_inform</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:137</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_a882ed93422303a1b9d55a09b6c119666"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#a882ed93422303a1b9d55a09b6c119666">mqtt_msg_t::data</a></div><div class="ttdeci">BYTE_T * data</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:131</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_ac9a85990932a5952893ac09875f5ca30"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#ac9a85990932a5952893ac09875f5ca30">mqtt_msg_t::len</a></div><div class="ttdeci">UINT_T len</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:133</div></div>
+<div class="ttc" id="astructmqtt__msg__t_html_add733ddc3ef1c7a528c3221d56c7bc37"><div class="ttname"><a href="../../dd/dc1/structmqtt__msg__t.html#add733ddc3ef1c7a528c3221d56c7bc37">mqtt_msg_t::ctx</a></div><div class="ttdeci">VOID * ctx</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:139</div></div>
+<div class="ttc" id="astructmqtt__subscribe__t_html"><div class="ttname"><a href="../../d9/dcd/structmqtt__subscribe__t.html">mqtt_subscribe_t</a></div><div class="ttdoc">Definition of mqtt subscribe</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:145</div></div>
+<div class="ttc" id="astructmqtt__subscribe__t_html_a1c97d574a93bccdceb2f7f23606b59e0"><div class="ttname"><a href="../../d9/dcd/structmqtt__subscribe__t.html#a1c97d574a93bccdceb2f7f23606b59e0">mqtt_subscribe_t::topics</a></div><div class="ttdeci">CHAR_T ** topics</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:147</div></div>
+<div class="ttc" id="astructmqtt__subscribe__t_html_a91ac076aabb3bae05b3bcc9bbf53a889"><div class="ttname"><a href="../../d9/dcd/structmqtt__subscribe__t.html#a91ac076aabb3bae05b3bcc9bbf53a889">mqtt_subscribe_t::cnt</a></div><div class="ttdeci">BYTE_T cnt</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:149</div></div>
+<div class="ttc" id="astructmqtt__subscribe__t_html_ab64782a099db4ab37f4539a0b28423ab"><div class="ttname"><a href="../../d9/dcd/structmqtt__subscribe__t.html#ab64782a099db4ab37f4539a0b28423ab">mqtt_subscribe_t::auto_resub</a></div><div class="ttdeci">BOOL_T auto_resub</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:153</div></div>
+<div class="ttc" id="astructmqtt__subscribe__t_html_affea6e56652905f8df5b8e8aa3bd5d6e"><div class="ttname"><a href="../../d9/dcd/structmqtt__subscribe__t.html#affea6e56652905f8df5b8e8aa3bd5d6e">mqtt_subscribe_t::cb_data_recv</a></div><div class="ttdeci">CB_MQTT_DATA_RECV cb_data_recv</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:151</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a07e3c9aa0f2f648d8536e54191fcced1"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a07e3c9aa0f2f648d8536e54191fcced1">tuya_svc_mqtt_client_set_cfg</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_set_cfg(MQTT_HANDLE *handle, mqtt_cfg_e cfg, VOID *data)</div><div class="ttdoc">Get cfg of mqtt client</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a32fea4f1440e17107420027a44e9090d"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a32fea4f1440e17107420027a44e9090d">tuya_svc_mqtt_client_stop</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_stop(MQTT_HANDLE *handle)</div><div class="ttdoc">Stop mqtt client (disconnect from mqtt broker)</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a3c223497aef1a38e9a95909dc2186f97"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a3c223497aef1a38e9a95909dc2186f97">tuya_svc_mqtt_client_get_cfg</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_get_cfg(MQTT_HANDLE *handle, mqtt_cfg_e cfg, VOID *data)</div><div class="ttdoc">Get cfg of mqtt client</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a41d256e2ef7cb20be0712454b351826e"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a41d256e2ef7cb20be0712454b351826e">tuya_svc_mqtt_client_publish</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_publish(MQTT_HANDLE *handle, mqtt_msg_t *msg)</div><div class="ttdoc">Publish mqtt msg to broker</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a4cad07e78742ef2d5f22f29cdd8dbe63"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a4cad07e78742ef2d5f22f29cdd8dbe63">CB_MQTT_DATA_RECV</a></div><div class="ttdeci">VOID(* CB_MQTT_DATA_RECV)(CHAR_T *topic, BYTE_T *data, UINT_T len)</div><div class="ttdoc">Callback when recv msg from broker</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:75</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a55a70dedb506a09c9c66169426d08118"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a55a70dedb506a09c9c66169426d08118">tuya_svc_mqtt_client_start</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_start(MQTT_HANDLE *handle)</div><div class="ttdoc">Start mqtt client (or reconnect to broker when disconnected)</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a5c8b12794c2b4fd118af2d08eb6c590a"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a5c8b12794c2b4fd118af2d08eb6c590a">tuya_svc_mqtt_client_unsubscribe</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_unsubscribe(MQTT_HANDLE *handle, mqtt_subscribe_t *sub)</div><div class="ttdoc">Unsubcribe topics within one mqtt request</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a6ed22d71b7355ef33354b95704fe1b56"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a6ed22d71b7355ef33354b95704fe1b56">CB_MQTT_CONNECTED</a></div><div class="ttdeci">VOID(* CB_MQTT_CONNECTED)(VOID)</div><div class="ttdoc">MQTT client is connected to broker</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:159</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a8db35dc9e61af836a0118c44a4522871"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8db35dc9e61af836a0118c44a4522871">tuya_svc_mqtt_client_restart</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_restart(MQTT_HANDLE *handle)</div><div class="ttdoc">Restart mqtt client (or reconnect to broker when disconnected)</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_a8ddf7f037e3f7d631a198250f7e9cca5"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#a8ddf7f037e3f7d631a198250f7e9cca5">CB_MQTT_DISCONNECTED</a></div><div class="ttdeci">VOID(* CB_MQTT_DISCONNECTED)(VOID)</div><div class="ttdoc">MQTT client is disconnected from broker</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:163</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_aa9e59ac93b2d05fee8f218ecd4d775ae"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aa9e59ac93b2d05fee8f218ecd4d775ae">tuya_svc_mqtt_client_create</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_create(mqtt_ctx_t *ctx, MQTT_HANDLE *handle)</div><div class="ttdoc">Create mqtt client</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_aaa406d6d9d9f6257952dc26b09bbce39"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#aaa406d6d9d9f6257952dc26b09bbce39">CB_MQTT_CONNECT_DENY</a></div><div class="ttdeci">VOID(* CB_MQTT_CONNECT_DENY)(BYTE_T deny_times)</div><div class="ttdoc">MQTT client is not permited to connect to broker</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:169</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_ab0102673f479122776cac95436fca62d"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#ab0102673f479122776cac95436fca62d">tuya_svc_mqtt_client_destroy</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_destroy(MQTT_HANDLE *handle)</div><div class="ttdoc">Close and destroy mqtt client</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_acc42f7abcb27a491906f5898dc9eb3f0"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#acc42f7abcb27a491906f5898dc9eb3f0">mqtt_cfg_e</a></div><div class="ttdeci">mqtt_cfg_e</div><div class="ttdoc">Definition of mqtt cfg type</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:104</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_ad9368306cfda5f697468c72777907b6e"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#ad9368306cfda5f697468c72777907b6e">tuya_svc_mqtt_client_is_connected</a></div><div class="ttdeci">BOOL_T tuya_svc_mqtt_client_is_connected(MQTT_HANDLE *handle)</div><div class="ttdoc">Mqtt broker is connected or not</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_adb02c31b0cd6c05930d79d8d03aa3738"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#adb02c31b0cd6c05930d79d8d03aa3738">tuya_svc_mqtt_client_register_cb</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_register_cb(MQTT_HANDLE handle, CB_MQTT_CONNECTED cb_connected, CB_MQTT_DISCONNECTED cb_disconnected, CB_MQTT_CONNECT_DENY cb_connect_deny)</div><div class="ttdoc">Register event handers of MQTT client</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_af916e32568c404573dbcca1ea45e77b1"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#af916e32568c404573dbcca1ea45e77b1">tuya_svc_mqtt_client_subscribe</a></div><div class="ttdeci">OPERATE_RET tuya_svc_mqtt_client_subscribe(MQTT_HANDLE *handle, mqtt_subscribe_t *sub)</div><div class="ttdoc">Subcribe topics within one mqtt request</div></div>
+<div class="ttc" id="atuya__svc__mqtt__client_8h_html_afc8a3c9ce08147a991b0b6264a5fc6c4"><div class="ttname"><a href="../../df/dc9/tuya__svc__mqtt__client_8h.html#afc8a3c9ce08147a991b0b6264a5fc6c4">CB_MQTT_PUB_INFORM</a></div><div class="ttdeci">VOID(* CB_MQTT_PUB_INFORM)(OPERATE_RET op_ret, VOID *ctx)</div><div class="ttdoc">Async callback that indicates QOS1 publish success or not.</div><div class="ttdef"><b>Definition:</b> tuya_svc_mqtt_client.h:120</div></div>
+<div class="ttc" id="atuya__svc__netmgr_8h_html"><div class="ttname"><a href="../../df/d34/tuya__svc__netmgr_8h.html">tuya_svc_netmgr.h</a></div><div class="ttdoc">TUYA network manager service</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

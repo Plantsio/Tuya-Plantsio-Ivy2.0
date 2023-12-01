@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/init/include/tkl_init_common.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_945761b91ca7d88d015bf5cfa152d494.html">init</a></li><li class="navelem"><a class="el" href="../../dir_4918dc50b8ab2b2df1b446be98ca6a02.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_init_common.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/da0/tkl__init__common_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_INIT_COMMON_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_INIT_COMMON_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/dd1/tkl__rtc_8h.html">tkl_rtc.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d2b/tkl__watchdog_8h.html">tkl_watchdog.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/db7/tkl__flash_8h.html">tkl_flash.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * @brief the description of tuya kernel adapter layer rtc</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d4/d6a/structTKL__RTC__DESC__T.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    OPERATE_RET     (*init)                 (VOID_T);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    OPERATE_RET     (*deinit)               (VOID_T);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    OPERATE_RET     (*time_get)             (TIME_T *time_sec);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    OPERATE_RET     (*time_set)             (TIME_T  time_sec);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <a class="code hl_struct" href="../../d4/d6a/structTKL__RTC__DESC__T.html">TKL_RTC_DESC_T</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d8/da0/tkl__init__common_8h.html#ad237e827aa5f3585a0513c55448e83e3">   37</a></span><a class="code hl_struct" href="../../d4/d6a/structTKL__RTC__DESC__T.html">TKL_RTC_DESC_T</a>* <a class="code hl_function" href="../../d8/da0/tkl__init__common_8h.html#ad237e827aa5f3585a0513c55448e83e3">tkl_rtc_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../da/db9/structTKL__WATCHDOG__DESC__T.html">   43</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    UINT_T          (*init)                 (<a class="code hl_struct" href="../../de/d90/structTUYA__WDOG__BASE__CFG__T.html">TUYA_WDOG_BASE_CFG_T</a> *cfg);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    OPERATE_RET     (*deinit)               (VOID_T);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    OPERATE_RET     (*refresh)              (VOID_T);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <a class="code hl_struct" href="../../da/db9/structTKL__WATCHDOG__DESC__T.html">TKL_WATCHDOG_DESC_T</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d8/da0/tkl__init__common_8h.html#a4315582245bdb829c2f3b5116fbb84d2">   54</a></span><a class="code hl_struct" href="../../da/db9/structTKL__WATCHDOG__DESC__T.html">TKL_WATCHDOG_DESC_T</a>* <a class="code hl_function" href="../../d8/da0/tkl__init__common_8h.html#a4315582245bdb829c2f3b5116fbb84d2">tkl_watchdog_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../df/d5c/structTKL__FLASH__DESC__T.html">   59</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    OPERATE_RET     (*read)                 (CONST UINT_T addr, UCHAR_T *dst, CONST UINT_T size);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    OPERATE_RET     (*write)                (CONST UINT_T addr, CONST UCHAR_T *src, CONST UINT_T size);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    OPERATE_RET     (*erase)                (CONST UINT_T addr, CONST UINT_T size);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    OPERATE_RET     (*lock)                 (CONST UINT_T addr, CONST UINT_T size);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    OPERATE_RET     (*unlock)               (CONST UINT_T addr, CONST UINT_T size);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    OPERATE_RET     (*get_one_type_info)    (TUYA_FLASH_TYPE_E type, <a class="code hl_struct" href="../../d4/da6/structTUYA__FLASH__BASE__INFO__T.html">TUYA_FLASH_BASE_INFO_T</a>* info);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>} <a class="code hl_struct" href="../../df/d5c/structTKL__FLASH__DESC__T.html">TKL_FLASH_DESC_T</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../d8/da0/tkl__init__common_8h.html#a047c00ac5deff7cd82323c606168d30b">   73</a></span><a class="code hl_struct" href="../../df/d5c/structTKL__FLASH__DESC__T.html">TKL_FLASH_DESC_T</a>* <a class="code hl_function" href="../../d8/da0/tkl__init__common_8h.html#a047c00ac5deff7cd82323c606168d30b">tkl_flash_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">// __TKL_INIT_COMMON_H__</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="ttc" id="astructTKL__FLASH__DESC__T_html"><div class="ttname"><a href="../../df/d5c/structTKL__FLASH__DESC__T.html">TKL_FLASH_DESC_T</a></div><div class="ttdoc">the description of tuya kernel adapter layer flash</div><div class="ttdef"><b>Definition:</b> tkl_init_common.h:59</div></div>
+<div class="ttc" id="astructTKL__RTC__DESC__T_html"><div class="ttname"><a href="../../d4/d6a/structTKL__RTC__DESC__T.html">TKL_RTC_DESC_T</a></div><div class="ttdef"><b>Definition:</b> tkl_init_common.h:25</div></div>
+<div class="ttc" id="astructTKL__WATCHDOG__DESC__T_html"><div class="ttname"><a href="../../da/db9/structTKL__WATCHDOG__DESC__T.html">TKL_WATCHDOG_DESC_T</a></div><div class="ttdoc">the description of tuya kernel adapter layer watchdog</div><div class="ttdef"><b>Definition:</b> tkl_init_common.h:43</div></div>
+<div class="ttc" id="astructTUYA__FLASH__BASE__INFO__T_html"><div class="ttname"><a href="../../d4/da6/structTUYA__FLASH__BASE__INFO__T.html">TUYA_FLASH_BASE_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:393</div></div>
+<div class="ttc" id="astructTUYA__WDOG__BASE__CFG__T_html"><div class="ttname"><a href="../../de/d90/structTUYA__WDOG__BASE__CFG__T.html">TUYA_WDOG_BASE_CFG_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:1210</div></div>
+<div class="ttc" id="atkl__flash_8h_html"><div class="ttname"><a href="../../d9/db7/tkl__flash_8h.html">tkl_flash.h</a></div><div class="ttdoc">Common process - adapter the flash api</div></div>
+<div class="ttc" id="atkl__init__common_8h_html_a047c00ac5deff7cd82323c606168d30b"><div class="ttname"><a href="../../d8/da0/tkl__init__common_8h.html#a047c00ac5deff7cd82323c606168d30b">tkl_flash_desc_get</a></div><div class="ttdeci">TKL_FLASH_DESC_T * tkl_flash_desc_get(VOID_T)</div><div class="ttdoc">register flash description to tuya object manage</div></div>
+<div class="ttc" id="atkl__init__common_8h_html_a4315582245bdb829c2f3b5116fbb84d2"><div class="ttname"><a href="../../d8/da0/tkl__init__common_8h.html#a4315582245bdb829c2f3b5116fbb84d2">tkl_watchdog_desc_get</a></div><div class="ttdeci">TKL_WATCHDOG_DESC_T * tkl_watchdog_desc_get(VOID_T)</div><div class="ttdoc">register watchdog description to tuya object manage</div></div>
+<div class="ttc" id="atkl__init__common_8h_html_ad237e827aa5f3585a0513c55448e83e3"><div class="ttname"><a href="../../d8/da0/tkl__init__common_8h.html#ad237e827aa5f3585a0513c55448e83e3">tkl_rtc_desc_get</a></div><div class="ttdeci">TKL_RTC_DESC_T * tkl_rtc_desc_get(VOID_T)</div><div class="ttdoc">register rtc description to tuya object manage</div></div>
+<div class="ttc" id="atkl__rtc_8h_html"><div class="ttname"><a href="../../d5/dd1/tkl__rtc_8h.html">tkl_rtc.h</a></div><div class="ttdoc">Common process - adapter the rtc api</div></div>
+<div class="ttc" id="atkl__watchdog_8h_html"><div class="ttname"><a href="../../d7/d2b/tkl__watchdog_8h.html">tkl_watchdog.h</a></div><div class="ttdoc">Common process - adapter the watchdog api</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

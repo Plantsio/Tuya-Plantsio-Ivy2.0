@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: PWM 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">PWM 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md274"></a>
+简要说明</h1>
+<p >PWM（Pulse Width Modulation）,即脉冲宽度调制，其是利用微处理器的数字输出来对模拟电路进行控制的一种有效的技术。</p>
+<p ><img src="http://c.biancheng.net/cpp/uploads/allimg/140318/1-14031Q32Z0X1.png" alt="img" class="inline"/></p>
+<p >如上图所示，是一个周期频率是100Hz的pwm波形，高电平占空比为40，低电平占空比为60，通过调节高电平占空比的值，即可以改变模拟输出值的大小。</p>
+<h1><a class="anchor" id="autotoc_md275"></a>
+Api描述</h1>
+<h3><a class="anchor" id="autotoc_md276"></a>
+tkl_pwm_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_init(TUYA_PWM_NUM_E ch_id, CONST TUYA_PWM_BASE_CFG_T *cfg);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>通过端口号和基础配置初始化对应的pwm实例，返回初始化结果 。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号。</li>
+<li><p class="startli"><code>cfg</code>: pwm基础配置，包含输出极性，占空比，频率 。</p>
+<p class="startli">```c typedef struct { TUYA_PWM_POLARITY_E polarity; TUYA_PWM_COUNT_E count_mode; //pulse duty cycle = duty / cycle; exp duty = 5000,cycle = 10000; pulse duty cycle = 50% UINT_T duty; UINT_T cycle; UINT_T frequency; // (bet: Hz) } <a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html" title="pwm config">TUYA_PWM_BASE_CFG_T</a>; ```</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md277"></a>
+polarity:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_PWM_NEGATIVE   </td><td class="markdownTableBodyLeft">PWM低有效输出   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_PWM_POSITIVE   </td><td class="markdownTableBodyLeft">PWM高有效输出   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md278"></a>
+count_mode：</h4>
+<p >计数模式，有TUYA_PWM_CNT_UP和TUYA_PWM_CNT_UP_AND_DOWN两种。</p>
+<h4><a class="anchor" id="autotoc_md279"></a>
+duty：</h4>
+<p >占空比，和cycle搭配使用，输出 = duty / cycle 。</p>
+<h4><a class="anchor" id="autotoc_md280"></a>
+cycle：</h4>
+<p >周期，或颗粒度，输出 = duty / cycle。</p>
+<h4><a class="anchor" id="autotoc_md281"></a>
+frequency：</h4>
+<p >输出频率，单位Hz。</p>
+<ul>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md282"></a>
+tkl_pwm_deinit</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_deinit(TUYA_PWM_NUM_E ch_id);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>pwm实例反初始化。</li>
+<li>该接口会停止pwm实例正在进行的传输（如果有），并且释放相关的软硬件资源。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md283"></a>
+tkl_pwm_start</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_start(TUYA_PWM_NUM_E ch_id);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>启动pwm。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md284"></a>
+tkl_pwm_stop</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_stop(TUYA_PWM_NUM_E ch_id);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>停止pwm。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md285"></a>
+tkl_pwm_multichannel_start</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_multichannel_start(TUYA_PWM_NUM_E *ch_id, UINT8_T num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>同时启动多通道pwm，用于多路组合输出，用于对时序要求比较严格的场景。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号列表，数组。</li>
+<li>num：启动的通道号数目</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md286"></a>
+tkl_pwm_multichannel_stop</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_multichannel_stop(TUYA_PWM_NUM_E *ch_id, UINT8_T num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>同时停止多通道pwm，用于多路组合输出，对时序要求比较严格的场景。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号列表，数组。</li>
+<li>num：需要关闭的通道号数目</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md287"></a>
+tkl_pwm_info_set</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_info_set(TUYA_PWM_NUM_E ch_id, CONST TUYA_PWM_BASE_CFG_T *info);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>重设pwm配置参数，pwm start之后可动态修改配置，补充重新start。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号。</li>
+<li><code>info</code>: pwm基础配置，包含输出极性，占空比，频率 。其结构体参数见上文描述</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md288"></a>
+tkl_pwm_info_get</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_pwm_info_get(TUYA_PWM_NUM_E ch_id, TUYA_PWM_BASE_CFG_T *info);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:</li>
+<li>参数:<ul>
+<li><code>ch_id</code>: 通道号。</li>
+<li><code>info</code>: pwm基础配置，包含输出极性，占空比，频率 。其结构体参数见上文描述</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md289"></a>
+示例1</h1>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> tuya_pwm_test(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;    </div>
+<div class="line">    <a class="code hl_struct" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> cfg = {.polarity = TUYA_PWM_POSITIVE,\</div>
+<div class="line">                         .duty = 1000,</div>
+<div class="line">                         .cycle = 10000,</div>
+<div class="line">                         .frequency = 1000};</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/dc2/tkl__pwm_8h.html#af0309ee0e371b7fc57f0533c78519d9d">tkl_pwm_init</a>(TUYA_PWM_NUM_0, &amp;cfg);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/dc2/tkl__pwm_8h.html#aabce27fc08498163004fd2bd7942e9a9">tkl_pwm_start</a>(TUYA_PWM_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#aaa4f53a68df9873bb6636b5867b223d0">tkl_system_delay</a>(5000);</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/dc2/tkl__pwm_8h.html#a5ba0651c2c3ec28d563cafd861e6497c">tkl_pwm_info_get</a>(TUYA_PWM_NUM_0, &amp;cfg);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span>(cfg.duty !=5000){</div>
+<div class="line">        cfg.duty =5000;</div>
+<div class="line">    }</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/dc2/tkl__pwm_8h.html#a6d7ec9c59e554ccbd5d91815f19450c5">tkl_pwm_info_set</a>(TUYA_PWM_NUM_0, &amp;cfg);</div>
+<div class="line">    <span class="comment">//delay</span></div>
+<div class="line">    <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#aaa4f53a68df9873bb6636b5867b223d0">tkl_system_delay</a>(5000);</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/dc2/tkl__pwm_8h.html#a52aee102b4812413c7459999b4cf6213">tkl_pwm_stop</a>(TUYA_PWM_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/dc2/tkl__pwm_8h.html#a32559666ea1f8ecbbe844e68f76a8880">tkl_pwm_deinit</a>(TKL_PWM1_CH);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="ttc" id="astructTUYA__PWM__BASE__CFG__T_html"><div class="ttname"><a href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a></div><div class="ttdoc">pwm config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:824</div></div>
+<div class="ttc" id="atkl__pwm_8h_html_a32559666ea1f8ecbbe844e68f76a8880"><div class="ttname"><a href="../../d2/dc2/tkl__pwm_8h.html#a32559666ea1f8ecbbe844e68f76a8880">tkl_pwm_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_pwm_deinit(TUYA_PWM_NUM_E ch_id)</div><div class="ttdoc">pwm deinit</div></div>
+<div class="ttc" id="atkl__pwm_8h_html_a52aee102b4812413c7459999b4cf6213"><div class="ttname"><a href="../../d2/dc2/tkl__pwm_8h.html#a52aee102b4812413c7459999b4cf6213">tkl_pwm_stop</a></div><div class="ttdeci">OPERATE_RET tkl_pwm_stop(TUYA_PWM_NUM_E ch_id)</div><div class="ttdoc">pwm stop</div></div>
+<div class="ttc" id="atkl__pwm_8h_html_a5ba0651c2c3ec28d563cafd861e6497c"><div class="ttname"><a href="../../d2/dc2/tkl__pwm_8h.html#a5ba0651c2c3ec28d563cafd861e6497c">tkl_pwm_info_get</a></div><div class="ttdeci">OPERATE_RET tkl_pwm_info_get(TUYA_PWM_NUM_E ch_id, TUYA_PWM_BASE_CFG_T *info)</div><div class="ttdoc">get pwm info</div></div>
+<div class="ttc" id="atkl__pwm_8h_html_a6d7ec9c59e554ccbd5d91815f19450c5"><div class="ttname"><a href="../../d2/dc2/tkl__pwm_8h.html#a6d7ec9c59e554ccbd5d91815f19450c5">tkl_pwm_info_set</a></div><div class="ttdeci">OPERATE_RET tkl_pwm_info_set(TUYA_PWM_NUM_E ch_id, CONST TUYA_PWM_BASE_CFG_T *info)</div><div class="ttdoc">set pwm info</div></div>
+<div class="ttc" id="atkl__pwm_8h_html_aabce27fc08498163004fd2bd7942e9a9"><div class="ttname"><a href="../../d2/dc2/tkl__pwm_8h.html#aabce27fc08498163004fd2bd7942e9a9">tkl_pwm_start</a></div><div class="ttdeci">OPERATE_RET tkl_pwm_start(TUYA_PWM_NUM_E ch_id)</div><div class="ttdoc">pwm start</div></div>
+<div class="ttc" id="atkl__pwm_8h_html_af0309ee0e371b7fc57f0533c78519d9d"><div class="ttname"><a href="../../d2/dc2/tkl__pwm_8h.html#af0309ee0e371b7fc57f0533c78519d9d">tkl_pwm_init</a></div><div class="ttdeci">OPERATE_RET tkl_pwm_init(TUYA_PWM_NUM_E ch_id, CONST TUYA_PWM_BASE_CFG_T *cfg)</div><div class="ttdoc">pwm init</div></div>
+<div class="ttc" id="atkl__system_8h_html_aaa4f53a68df9873bb6636b5867b223d0"><div class="ttname"><a href="../../de/d57/tkl__system_8h.html#aaa4f53a68df9873bb6636b5867b223d0">tkl_system_delay</a></div><div class="ttdeci">VOID_T tkl_system_delay(UINT_T num_ms)</div><div class="ttdoc">system delay</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

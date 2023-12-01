@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/nb/include/tkl_nbiot_psm.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_5f0cc14919f4ea638bae0e0d6e877847.html">nb</a></li><li class="navelem"><a class="el" href="../../dir_8cbb9b6f25454b81c061e4a45ef8276f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_nbiot_psm.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d32/tkl__nbiot__psm_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_NBIOT_PSM_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_NBIOT_PSM_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d5b/tkl__nbiot__comm_8h.html">tkl_nbiot_comm.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> UCHAR_T TKL_LOCK_HANDLE;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    TKL_NB_FIRST_BOOT_UP       = 0,     <span class="comment">/* 1st boot up */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    TKL_NB_DEEP_SLEEP          = 1,     <span class="comment">/* deep sleep */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    TKL_NB_DEEPER_SLEEP        = 2,     <span class="comment">/* power off */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    TKL_NB_SYS_RESET           = 3,     <span class="comment">/* long press shutdown or sys_reset */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    TKL_NB_WDT_HW_RESET        = 4,     <span class="comment">/* wdt hw reset */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TKL_NB_WDT_SW_RESET        = 5,     <span class="comment">/* wdt sw reset */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TKL_NB_FORCED_SHUT_DOWN    = 6,     <span class="comment">/* forced shut down */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TKL_NB_FORCED_RESET        = 7,     <span class="comment">/* forced reset */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    TKL_NB_POWER_ON_INVALID    = 0xFF,   <span class="comment">/* invalid result */</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    TKL_NB_POWER_ON_RESULT_MAX</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} TKL_NB_POWER_ON_RESULT_E;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TKL_PSM_SLEEP_NONE   = 0,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    TKL_PSM_LIGHT_SLEEP  = 1,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    TKL_PSM_DEEP_SLEEP   = 2,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TKL_PSM_DEEPER_SLEEP = 3,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    TKL_PSM_SLEEP_MAX    = 4,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} TKL_NB_PSM_SLP_TYPE_E;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    TKL_WAKEUP_FROM_NONE,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    TKL_WAKEUP_FROM_POR, <span class="comment">// power on  or reset</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    TKL_WAKEUP_FROM_RTC,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    TKL_WAKEUP_FROM_KEY,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}TKL_NB_WAKEUP_SOURCE_E;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#abac2771851516800cab4d852d30a07f2">   56</a></span><span class="keyword">typedef</span> VOID_T (*<a class="code hl_typedef" href="../../d8/d32/tkl__nbiot__psm_8h.html#abac2771851516800cab4d852d30a07f2">TKL_NB_PSM_NOTIFY_CB_T</a>)(TKL_NB_PSM_SLP_TYPE_E sleep_type);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#ab4f039d802e09732701d6b4007ecb768">   63</a></span><span class="keyword">typedef</span> VOID_T (*<a class="code hl_typedef" href="../../d8/d32/tkl__nbiot__psm_8h.html#ab4f039d802e09732701d6b4007ecb768">TKL_NB_SLP_TIMER_CB_T</a>)(PVOID_T user_data);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a28490cd1c9ade02797968a80f5616bb0">   70</a></span><span class="keyword">typedef</span> VOID_T (*<a class="code hl_typedef" href="../../d8/d32/tkl__nbiot__psm_8h.html#a28490cd1c9ade02797968a80f5616bb0">TKL_NB_WAKEUP_CB</a>)(PVOID_T user_data);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a1aca12afbca26ad3c6fed3ee2ae1d316">   77</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a1aca12afbca26ad3c6fed3ee2ae1d316">tkl_nbiot_psm_plat_config</a>(VOID);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a89f30b27cf4782afb5b5fb7917670dae">   85</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a89f30b27cf4782afb5b5fb7917670dae">tkl_nbiot_psm_sleep_notify_reg</a>(<a class="code hl_typedef" href="../../d8/d32/tkl__nbiot__psm_8h.html#abac2771851516800cab4d852d30a07f2">TKL_NB_PSM_NOTIFY_CB_T</a> cb);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a28e0427f4e235300257fab9f4a80afe4">   94</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a28e0427f4e235300257fab9f4a80afe4">tkl_nbiot_psm_create_sleeplock</a>(CONST PCHAR_T lock_name, UCHAR_T *handle);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a5f1328ad2e46f333a051b23a85e7192e">  102</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a5f1328ad2e46f333a051b23a85e7192e">tkl_nbiot_psm_acquire_sleeplock</a>(UCHAR_T handle);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a1392995fa8295580e5948d88fca390f7">  110</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a1392995fa8295580e5948d88fca390f7">tkl_nbiot_psm_release_sleeplock</a>(UCHAR_T handle);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a4252b54b333751d29a434e0f7b732151">  117</a></span>VOID <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a4252b54b333751d29a434e0f7b732151">tkl_nbiot_psm_force_sleep</a>(VOID);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a8a17e707bac5cba0a9b661d72c40eb05">  125</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a8a17e707bac5cba0a9b661d72c40eb05">tkl_nbiot_psm_get_poweron_result</a>(TKL_NB_POWER_ON_RESULT_E *result);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a9373b8e489f5cf46f43db319eac56bcc">  133</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a9373b8e489f5cf46f43db319eac56bcc">tkl_nbiot_psm_get_wakeup_source</a>(TKL_NB_WAKEUP_SOURCE_E *src);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a23b9e635df6143ab4ccc24933632caf7">  143</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a23b9e635df6143ab4ccc24933632caf7">tkl_nbiot_psm_rtc_timer_create</a>(UINT_T time_period_sec, BOOL_T is_periodic,<a class="code hl_typedef" href="../../d8/d32/tkl__nbiot__psm_8h.html#ab4f039d802e09732701d6b4007ecb768">TKL_NB_SLP_TIMER_CB_T</a> cb);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a094e5b99a345a01ab4e5fd3a5a4413e5">  151</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a094e5b99a345a01ab4e5fd3a5a4413e5">tkl_nbiot_psm_rtc_timer_start</a>(VOID);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a5d62b64a535f4722ce09db354a068571">  159</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a5d62b64a535f4722ce09db354a068571">tkl_nbiot_psm_rtc_timer_stop</a>(VOID);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a8da112ae7fda4c007d0602eb0a3bdabf">  167</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a8da112ae7fda4c007d0602eb0a3bdabf">tkl_nbiot_psm_rtc_timer_delete</a>(VOID);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a1f0f0a8df4c2d7d8ea2cf26a9f45e5a5">  174</a></span>BOOL_T <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a1f0f0a8df4c2d7d8ea2cf26a9f45e5a5">tkl_nbiot_psm_usb_is_active</a>(VOID);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../d8/d32/tkl__nbiot__psm_8h.html#a47c386713b327dc04953248a1fac8a70">  183</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d32/tkl__nbiot__psm_8h.html#a47c386713b327dc04953248a1fac8a70">tkl_nbiot_psm_wakeup_pin_cfg</a>(INT_T pin_num, <a class="code hl_typedef" href="../../d8/d32/tkl__nbiot__psm_8h.html#a28490cd1c9ade02797968a80f5616bb0">TKL_NB_WAKEUP_CB</a> wakeup_cb);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="atkl__nbiot__comm_8h_html"><div class="ttname"><a href="../../de/d5b/tkl__nbiot__comm_8h.html">tkl_nbiot_comm.h</a></div><div class="ttdoc">Common process - common defination</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a094e5b99a345a01ab4e5fd3a5a4413e5"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a094e5b99a345a01ab4e5fd3a5a4413e5">tkl_nbiot_psm_rtc_timer_start</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_rtc_timer_start(VOID)</div><div class="ttdoc">Start a rtc timer</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a1392995fa8295580e5948d88fca390f7"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a1392995fa8295580e5948d88fca390f7">tkl_nbiot_psm_release_sleeplock</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_release_sleeplock(UCHAR_T handle)</div><div class="ttdoc">Release the sleeplock, allow psm</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a1aca12afbca26ad3c6fed3ee2ae1d316"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a1aca12afbca26ad3c6fed3ee2ae1d316">tkl_nbiot_psm_plat_config</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_plat_config(VOID)</div><div class="ttdoc">Set config about the paltform</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a1f0f0a8df4c2d7d8ea2cf26a9f45e5a5"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a1f0f0a8df4c2d7d8ea2cf26a9f45e5a5">tkl_nbiot_psm_usb_is_active</a></div><div class="ttdeci">BOOL_T tkl_nbiot_psm_usb_is_active(VOID)</div><div class="ttdoc">Check the usb is active</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a23b9e635df6143ab4ccc24933632caf7"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a23b9e635df6143ab4ccc24933632caf7">tkl_nbiot_psm_rtc_timer_create</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_rtc_timer_create(UINT_T time_period_sec, BOOL_T is_periodic, TKL_NB_SLP_TIMER_CB_T cb)</div><div class="ttdoc">Create rtc timer</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a28490cd1c9ade02797968a80f5616bb0"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a28490cd1c9ade02797968a80f5616bb0">TKL_NB_WAKEUP_CB</a></div><div class="ttdeci">VOID_T(* TKL_NB_WAKEUP_CB)(PVOID_T user_data)</div><div class="ttdoc">prototype of the ext trigger call back</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_psm.h:70</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a28e0427f4e235300257fab9f4a80afe4"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a28e0427f4e235300257fab9f4a80afe4">tkl_nbiot_psm_create_sleeplock</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_create_sleeplock(CONST PCHAR_T lock_name, UCHAR_T *handle)</div><div class="ttdoc">Create a psm manager lock</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a4252b54b333751d29a434e0f7b732151"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a4252b54b333751d29a434e0f7b732151">tkl_nbiot_psm_force_sleep</a></div><div class="ttdeci">VOID tkl_nbiot_psm_force_sleep(VOID)</div><div class="ttdoc">Force enter psm mode</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a47c386713b327dc04953248a1fac8a70"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a47c386713b327dc04953248a1fac8a70">tkl_nbiot_psm_wakeup_pin_cfg</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_wakeup_pin_cfg(INT_T pin_num, TKL_NB_WAKEUP_CB wakeup_cb)</div><div class="ttdoc">Specify a pin for wakeup trigger</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a5d62b64a535f4722ce09db354a068571"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a5d62b64a535f4722ce09db354a068571">tkl_nbiot_psm_rtc_timer_stop</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_rtc_timer_stop(VOID)</div><div class="ttdoc">Stop rtc timer</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a5f1328ad2e46f333a051b23a85e7192e"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a5f1328ad2e46f333a051b23a85e7192e">tkl_nbiot_psm_acquire_sleeplock</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_acquire_sleeplock(UCHAR_T handle)</div><div class="ttdoc">Acquire the sleeplock, keep awake</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a89f30b27cf4782afb5b5fb7917670dae"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a89f30b27cf4782afb5b5fb7917670dae">tkl_nbiot_psm_sleep_notify_reg</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_sleep_notify_reg(TKL_NB_PSM_NOTIFY_CB_T cb)</div><div class="ttdoc">Regist the PSM sleep notify cb</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a8a17e707bac5cba0a9b661d72c40eb05"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a8a17e707bac5cba0a9b661d72c40eb05">tkl_nbiot_psm_get_poweron_result</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_get_poweron_result(TKL_NB_POWER_ON_RESULT_E *result)</div><div class="ttdoc">Get the power on reason</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a8da112ae7fda4c007d0602eb0a3bdabf"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a8da112ae7fda4c007d0602eb0a3bdabf">tkl_nbiot_psm_rtc_timer_delete</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_rtc_timer_delete(VOID)</div><div class="ttdoc">Del rtc timer</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_a9373b8e489f5cf46f43db319eac56bcc"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#a9373b8e489f5cf46f43db319eac56bcc">tkl_nbiot_psm_get_wakeup_source</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_psm_get_wakeup_source(TKL_NB_WAKEUP_SOURCE_E *src)</div><div class="ttdoc">Get the wake up reason</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_ab4f039d802e09732701d6b4007ecb768"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#ab4f039d802e09732701d6b4007ecb768">TKL_NB_SLP_TIMER_CB_T</a></div><div class="ttdeci">VOID_T(* TKL_NB_SLP_TIMER_CB_T)(PVOID_T user_data)</div><div class="ttdoc">prototype of the sleep timer call back</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_psm.h:63</div></div>
+<div class="ttc" id="atkl__nbiot__psm_8h_html_abac2771851516800cab4d852d30a07f2"><div class="ttname"><a href="../../d8/d32/tkl__nbiot__psm_8h.html#abac2771851516800cab4d852d30a07f2">TKL_NB_PSM_NOTIFY_CB_T</a></div><div class="ttdeci">VOID_T(* TKL_NB_PSM_NOTIFY_CB_T)(TKL_NB_PSM_SLP_TYPE_E sleep_type)</div><div class="ttdoc">prototype of the PSM notify call back</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_psm.h:56</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_endpoint_register.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_endpoint_register.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d32/tkl__endpoint__register_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_ENDPOINT_REGISTER_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_ENDPOINT_REGISTER_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * attribute instantiation structure </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html#a06b2ff5cb98371e1793ebbde5a325516">   26</a></span>    UINT16_T        <a class="code hl_variable" href="../../da/dae/structTKL__ATTR__T.html#a06b2ff5cb98371e1793ebbde5a325516">attr_id</a>;    </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html#a27678770c20345c9f3f25fdd1052b445">   27</a></span>    <a class="code hl_enumeration" href="../../d0/d77/tuya__zigbee__attribute_8h.html#a5485fd055dc44241a38afb226c599d51">ZG_ATTR_TYPE_E</a>  <a class="code hl_variable" href="../../da/dae/structTKL__ATTR__T.html#a27678770c20345c9f3f25fdd1052b445">type</a>;       </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html#a2188bb14eb8010d789dcabc0887e2168">   28</a></span>    UINT8_T         <a class="code hl_variable" href="../../da/dae/structTKL__ATTR__T.html#a2188bb14eb8010d789dcabc0887e2168">size</a>;       </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html#a03401c9ab69480bd8e1c521c6182951e">   29</a></span>    UINT8_T         <a class="code hl_variable" href="../../da/dae/structTKL__ATTR__T.html#a03401c9ab69480bd8e1c521c6182951e">mask</a>;       </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html#a449ebcf19865505ec4340418bfffb069">   30</a></span>    UINT8_T         <a class="code hl_variable" href="../../da/dae/structTKL__ATTR__T.html#a449ebcf19865505ec4340418bfffb069">flag</a>;       </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../da/dae/structTKL__ATTR__T.html#a17bb446ad8a4782e3cc06aa92cbdc9ae">   31</a></span>    VOID_T          *<a class="code hl_variable" href="../../da/dae/structTKL__ATTR__T.html#a17bb446ad8a4782e3cc06aa92cbdc9ae">value</a>;     </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <a class="code hl_struct" href="../../da/dae/structTKL__ATTR__T.html">TKL_ATTR_T</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * cluster instantiation structure </span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d4/de3/structTKL__CLUSTER__T.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d4/de3/structTKL__CLUSTER__T.html#a72888ef53c7c6bf6226185e27d18bd08">   38</a></span>    UINT16_T    <a class="code hl_variable" href="../../d4/de3/structTKL__CLUSTER__T.html#a72888ef53c7c6bf6226185e27d18bd08">cluster_id</a>;     </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d4/de3/structTKL__CLUSTER__T.html#a509360234b102483e55620f35902860e">   39</a></span>    <a class="code hl_struct" href="../../da/dae/structTKL__ATTR__T.html">TKL_ATTR_T</a>  *<a class="code hl_variable" href="../../d4/de3/structTKL__CLUSTER__T.html#a509360234b102483e55620f35902860e">attr_list</a>;     </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d4/de3/structTKL__CLUSTER__T.html#a2a1725be6a331bad00805bc29c39a6da">   40</a></span>    UINT8_T     <a class="code hl_variable" href="../../d4/de3/structTKL__CLUSTER__T.html#a2a1725be6a331bad00805bc29c39a6da">attr_sums</a>;      </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <a class="code hl_struct" href="../../d4/de3/structTKL__CLUSTER__T.html">TKL_CLUSTER_T</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * Zigbee cluster triplet structure</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html">   46</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#a67be88ef8ff3be91558ea3d9b25af032">   47</a></span>    UINT8_T  <a class="code hl_variable" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#a67be88ef8ff3be91558ea3d9b25af032">ep_id</a>;             </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#a957f323151d8a839dca78d201c1373d7">   48</a></span>    UINT8_T  <a class="code hl_variable" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#a957f323151d8a839dca78d201c1373d7">is_server</a>;         </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#aea3eeb5476a60ccb37526723fcdfb47f">   49</a></span>    UINT16_T <a class="code hl_variable" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#aea3eeb5476a60ccb37526723fcdfb47f">cluster_id</a>;        </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <a class="code hl_struct" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html">TKL_CLUSTER_TRIPLET_T</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * endpoint instantiation structure </span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html">   55</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#ad8b56bdfe4ce708ed7b12959c87cf8de">   56</a></span>    UINT8_T         <a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#ad8b56bdfe4ce708ed7b12959c87cf8de">ep_id</a>;                  </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#a27b9f1a31cddee7ede27cf783602381f">   57</a></span>    <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">ZG_PROFILE_ID_E</a> <a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#a27b9f1a31cddee7ede27cf783602381f">profile</a>;                </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#a8202d3ed90fedc8204ede13fe86da0d8">   58</a></span>    ZG_DEV_ID_E     <a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#a8202d3ed90fedc8204ede13fe86da0d8">dev_id</a>;                 </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#ae3c964683e1875443835a5780343b897">   59</a></span>    UINT8_T         <a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#ae3c964683e1875443835a5780343b897">server_cluster_sums</a>;    </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#aeeb4543d7e73297c74588936150eaa8c">   60</a></span>    <a class="code hl_struct" href="../../d4/de3/structTKL__CLUSTER__T.html">TKL_CLUSTER_T</a>   *<a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#aeeb4543d7e73297c74588936150eaa8c">server_cluster_list</a>;   </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#a7eca5a2e3f020f5a3db04d5759e82430">   61</a></span>    UINT8_T         <a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#a7eca5a2e3f020f5a3db04d5759e82430">client_cluster_sums</a>;    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d4/dae/structTKL__ENDPOINT__T.html#a1af5b2dca15c9862fb8ca923abcdcf06">   62</a></span>    <a class="code hl_struct" href="../../d4/de3/structTKL__CLUSTER__T.html">TKL_CLUSTER_T</a>   *<a class="code hl_variable" href="../../d4/dae/structTKL__ENDPOINT__T.html#a1af5b2dca15c9862fb8ca923abcdcf06">client_cluster_list</a>;   </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <a class="code hl_struct" href="../../d4/dae/structTKL__ENDPOINT__T.html">TKL_ENDPOINT_T</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * device version definitions</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4d">   68</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4dada4b34a0785c79c9c58fa81c2e7b6b5d">   69</a></span>    <a class="code hl_enumvalue" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4dada4b34a0785c79c9c58fa81c2e7b6b5d">DEV_VER_ZHA</a> = 0x00,         </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4da4d008fedd5ab9863efae75f6bb0c90ca">   70</a></span>    <a class="code hl_enumvalue" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4da4d008fedd5ab9863efae75f6bb0c90ca">DEV_VER_ZG30</a>,               </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4da3a03ef81c6030921119f36696cfb0700">   71</a></span>    <a class="code hl_enumvalue" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4da3a03ef81c6030921119f36696cfb0700">DEV_VER_ZLL</a>,                </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}<a class="code hl_enumeration" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4d">TKL_DEV_VER_E</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a264a5373a6b29173dace9d4fa1bc1d37">   80</a></span>UINT8_T <a class="code hl_function" href="../../de/d32/tkl__endpoint__register_8h.html#a264a5373a6b29173dace9d4fa1bc1d37">tkl_zg_endpoint_count_get</a>(VOID_T);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a940edf7925de49dd09af4b96ad28deee">   90</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d32/tkl__endpoint__register_8h.html#a940edf7925de49dd09af4b96ad28deee">tkl_zg_endpoint_register</a>(CONST <a class="code hl_struct" href="../../d4/dae/structTKL__ENDPOINT__T.html">TKL_ENDPOINT_T</a> *ep_desc, UINT8_T sums);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a01c818fa99e38314ea5dbc4ecaaed425">   98</a></span>BOOL_T <a class="code hl_function" href="../../de/d32/tkl__endpoint__register_8h.html#a01c818fa99e38314ea5dbc4ecaaed425">tkl_zg_match_cluster</a>(<a class="code hl_struct" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html">TKL_CLUSTER_TRIPLET_T</a> *triplet);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a72793561b6a3cddcf9aa6b016eb1e54c">  108</a></span>BOOL_T <a class="code hl_function" href="../../de/d32/tkl__endpoint__register_8h.html#a72793561b6a3cddcf9aa6b016eb1e54c">tkl_zg_attr_get</a>(<a class="code hl_struct" href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html">TKL_CLUSTER_TRIPLET_T</a> *triplet, UINT16_T attr_id, <a class="code hl_struct" href="../../da/dae/structTKL__ATTR__T.html">TKL_ATTR_T</a> *out_attr);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../de/d32/tkl__endpoint__register_8h.html#a819fe68a7b088f3ec3aebadf58975339">  116</a></span><a class="code hl_enumeration" href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4d">TKL_DEV_VER_E</a> <a class="code hl_function" href="../../de/d32/tkl__endpoint__register_8h.html#a819fe68a7b088f3ec3aebadf58975339">tkl_zg_endpoint_to_device_version</a>(UINT8_T ep_id);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__ATTR__T_html"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html">TKL_ATTR_T</a></div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:25</div></div>
+<div class="ttc" id="astructTKL__ATTR__T_html_a03401c9ab69480bd8e1c521c6182951e"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html#a03401c9ab69480bd8e1c521c6182951e">TKL_ATTR_T::mask</a></div><div class="ttdeci">UINT8_T mask</div><div class="ttdoc">attributes mask</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:29</div></div>
+<div class="ttc" id="astructTKL__ATTR__T_html_a06b2ff5cb98371e1793ebbde5a325516"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html#a06b2ff5cb98371e1793ebbde5a325516">TKL_ATTR_T::attr_id</a></div><div class="ttdeci">UINT16_T attr_id</div><div class="ttdoc">attributes id</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:26</div></div>
+<div class="ttc" id="astructTKL__ATTR__T_html_a17bb446ad8a4782e3cc06aa92cbdc9ae"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html#a17bb446ad8a4782e3cc06aa92cbdc9ae">TKL_ATTR_T::value</a></div><div class="ttdeci">VOID_T * value</div><div class="ttdoc">the default value of attribute</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:31</div></div>
+<div class="ttc" id="astructTKL__ATTR__T_html_a2188bb14eb8010d789dcabc0887e2168"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html#a2188bb14eb8010d789dcabc0887e2168">TKL_ATTR_T::size</a></div><div class="ttdeci">UINT8_T size</div><div class="ttdoc">length of attributes value</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:28</div></div>
+<div class="ttc" id="astructTKL__ATTR__T_html_a27678770c20345c9f3f25fdd1052b445"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html#a27678770c20345c9f3f25fdd1052b445">TKL_ATTR_T::type</a></div><div class="ttdeci">ZG_ATTR_TYPE_E type</div><div class="ttdoc">attributes data type</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:27</div></div>
+<div class="ttc" id="astructTKL__ATTR__T_html_a449ebcf19865505ec4340418bfffb069"><div class="ttname"><a href="../../da/dae/structTKL__ATTR__T.html#a449ebcf19865505ec4340418bfffb069">TKL_ATTR_T::flag</a></div><div class="ttdeci">UINT8_T flag</div><div class="ttdoc">indicates whether ATT supports the scene</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:30</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__TRIPLET__T_html"><div class="ttname"><a href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html">TKL_CLUSTER_TRIPLET_T</a></div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:46</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__TRIPLET__T_html_a67be88ef8ff3be91558ea3d9b25af032"><div class="ttname"><a href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#a67be88ef8ff3be91558ea3d9b25af032">TKL_CLUSTER_TRIPLET_T::ep_id</a></div><div class="ttdeci">UINT8_T ep_id</div><div class="ttdoc">endpoint id</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:47</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__TRIPLET__T_html_a957f323151d8a839dca78d201c1373d7"><div class="ttname"><a href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#a957f323151d8a839dca78d201c1373d7">TKL_CLUSTER_TRIPLET_T::is_server</a></div><div class="ttdeci">UINT8_T is_server</div><div class="ttdoc">cluster is server or client</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:48</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__TRIPLET__T_html_aea3eeb5476a60ccb37526723fcdfb47f"><div class="ttname"><a href="../../d2/d78/structTKL__CLUSTER__TRIPLET__T.html#aea3eeb5476a60ccb37526723fcdfb47f">TKL_CLUSTER_TRIPLET_T::cluster_id</a></div><div class="ttdeci">UINT16_T cluster_id</div><div class="ttdoc">cluster id,see ZG_CLUSTER_ID_E</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:49</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__T_html"><div class="ttname"><a href="../../d4/de3/structTKL__CLUSTER__T.html">TKL_CLUSTER_T</a></div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:37</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__T_html_a2a1725be6a331bad00805bc29c39a6da"><div class="ttname"><a href="../../d4/de3/structTKL__CLUSTER__T.html#a2a1725be6a331bad00805bc29c39a6da">TKL_CLUSTER_T::attr_sums</a></div><div class="ttdeci">UINT8_T attr_sums</div><div class="ttdoc">how many attributes does a cluster have</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:40</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__T_html_a509360234b102483e55620f35902860e"><div class="ttname"><a href="../../d4/de3/structTKL__CLUSTER__T.html#a509360234b102483e55620f35902860e">TKL_CLUSTER_T::attr_list</a></div><div class="ttdeci">TKL_ATTR_T * attr_list</div><div class="ttdoc">a list of attributes definitions</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:39</div></div>
+<div class="ttc" id="astructTKL__CLUSTER__T_html_a72888ef53c7c6bf6226185e27d18bd08"><div class="ttname"><a href="../../d4/de3/structTKL__CLUSTER__T.html#a72888ef53c7c6bf6226185e27d18bd08">TKL_CLUSTER_T::cluster_id</a></div><div class="ttdeci">UINT16_T cluster_id</div><div class="ttdoc">cluster id, see ZG_CLUSTER_ID_E</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:38</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html">TKL_ENDPOINT_T</a></div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:55</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_a1af5b2dca15c9862fb8ca923abcdcf06"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#a1af5b2dca15c9862fb8ca923abcdcf06">TKL_ENDPOINT_T::client_cluster_list</a></div><div class="ttdeci">TKL_CLUSTER_T * client_cluster_list</div><div class="ttdoc">client cluster</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:62</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_a27b9f1a31cddee7ede27cf783602381f"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#a27b9f1a31cddee7ede27cf783602381f">TKL_ENDPOINT_T::profile</a></div><div class="ttdeci">ZG_PROFILE_ID_E profile</div><div class="ttdoc">profile of endpoint</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:57</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_a7eca5a2e3f020f5a3db04d5759e82430"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#a7eca5a2e3f020f5a3db04d5759e82430">TKL_ENDPOINT_T::client_cluster_sums</a></div><div class="ttdeci">UINT8_T client_cluster_sums</div><div class="ttdoc">the number of clusters on the client side</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:61</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_a8202d3ed90fedc8204ede13fe86da0d8"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#a8202d3ed90fedc8204ede13fe86da0d8">TKL_ENDPOINT_T::dev_id</a></div><div class="ttdeci">ZG_DEV_ID_E dev_id</div><div class="ttdoc">device id of endpoint</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:58</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_ad8b56bdfe4ce708ed7b12959c87cf8de"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#ad8b56bdfe4ce708ed7b12959c87cf8de">TKL_ENDPOINT_T::ep_id</a></div><div class="ttdeci">UINT8_T ep_id</div><div class="ttdoc">endpoint id</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:56</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_ae3c964683e1875443835a5780343b897"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#ae3c964683e1875443835a5780343b897">TKL_ENDPOINT_T::server_cluster_sums</a></div><div class="ttdeci">UINT8_T server_cluster_sums</div><div class="ttdoc">the number of clusters on the server side</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:59</div></div>
+<div class="ttc" id="astructTKL__ENDPOINT__T_html_aeeb4543d7e73297c74588936150eaa8c"><div class="ttname"><a href="../../d4/dae/structTKL__ENDPOINT__T.html#aeeb4543d7e73297c74588936150eaa8c">TKL_ENDPOINT_T::server_cluster_list</a></div><div class="ttdeci">TKL_CLUSTER_T * server_cluster_list</div><div class="ttdoc">server cluster</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:60</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a01c818fa99e38314ea5dbc4ecaaed425"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a01c818fa99e38314ea5dbc4ecaaed425">tkl_zg_match_cluster</a></div><div class="ttdeci">BOOL_T tkl_zg_match_cluster(TKL_CLUSTER_TRIPLET_T *triplet)</div><div class="ttdoc">match cluster on endpoint</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a264a5373a6b29173dace9d4fa1bc1d37"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a264a5373a6b29173dace9d4fa1bc1d37">tkl_zg_endpoint_count_get</a></div><div class="ttdeci">UINT8_T tkl_zg_endpoint_count_get(VOID_T)</div><div class="ttdoc">get the total number of endpoints</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a6af56ceed0c467372d0b0ed3ed4b3e4d"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4d">TKL_DEV_VER_E</a></div><div class="ttdeci">TKL_DEV_VER_E</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:68</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a6af56ceed0c467372d0b0ed3ed4b3e4da3a03ef81c6030921119f36696cfb0700"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4da3a03ef81c6030921119f36696cfb0700">DEV_VER_ZLL</a></div><div class="ttdeci">@ DEV_VER_ZLL</div><div class="ttdoc">Zigbee Light link</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:71</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a6af56ceed0c467372d0b0ed3ed4b3e4da4d008fedd5ab9863efae75f6bb0c90ca"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4da4d008fedd5ab9863efae75f6bb0c90ca">DEV_VER_ZG30</a></div><div class="ttdeci">@ DEV_VER_ZG30</div><div class="ttdoc">Zigbee3.0</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:70</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a6af56ceed0c467372d0b0ed3ed4b3e4dada4b34a0785c79c9c58fa81c2e7b6b5d"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a6af56ceed0c467372d0b0ed3ed4b3e4dada4b34a0785c79c9c58fa81c2e7b6b5d">DEV_VER_ZHA</a></div><div class="ttdeci">@ DEV_VER_ZHA</div><div class="ttdoc">Zigbee HA</div><div class="ttdef"><b>Definition:</b> tkl_endpoint_register.h:69</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a72793561b6a3cddcf9aa6b016eb1e54c"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a72793561b6a3cddcf9aa6b016eb1e54c">tkl_zg_attr_get</a></div><div class="ttdeci">BOOL_T tkl_zg_attr_get(TKL_CLUSTER_TRIPLET_T *triplet, UINT16_T attr_id, TKL_ATTR_T *out_attr)</div><div class="ttdoc">get attribute details</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a819fe68a7b088f3ec3aebadf58975339"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a819fe68a7b088f3ec3aebadf58975339">tkl_zg_endpoint_to_device_version</a></div><div class="ttdeci">TKL_DEV_VER_E tkl_zg_endpoint_to_device_version(UINT8_T ep_id)</div><div class="ttdoc">[TUYA_WEAK_ATTRIBUTE function],set device version according to ep_id</div></div>
+<div class="ttc" id="atkl__endpoint__register_8h_html_a940edf7925de49dd09af4b96ad28deee"><div class="ttname"><a href="../../de/d32/tkl__endpoint__register_8h.html#a940edf7925de49dd09af4b96ad28deee">tkl_zg_endpoint_register</a></div><div class="ttdeci">OPERATE_RET tkl_zg_endpoint_register(CONST TKL_ENDPOINT_T *ep_desc, UINT8_T sums)</div><div class="ttdoc">endpoint used by dynamically registered uplayer, only be called once in the initialization process.</div></div>
+<div class="ttc" id="atuya__zigbee__attribute_8h_html_a5485fd055dc44241a38afb226c599d51"><div class="ttname"><a href="../../d0/d77/tuya__zigbee__attribute_8h.html#a5485fd055dc44241a38afb226c599d51">ZG_ATTR_TYPE_E</a></div><div class="ttdeci">ZG_ATTR_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_attribute.h:36</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a></div><div class="ttdoc">Common process - zigbee stack</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">ZG_PROFILE_ID_E</a></div><div class="ttdeci">ZG_PROFILE_ID_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:106</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

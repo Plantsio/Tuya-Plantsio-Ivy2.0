@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: HTTP 协议</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">HTTP 协议 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >这个项目将会介绍 <code>http</code> 协议和使用相关接口进行 <code>post</code>，<code>get</code> 等操作。</p>
+<ul>
+<li><code>HTTP</code> 简介</li>
+</ul>
+<p ><code>HTTP（HyperText Transfer Protocol）</code>，超文本传输协议，是一个客户端和服务器端请求和应答的标准（通常采用 <code>TCP</code> 协议）。</p>
+<ul>
+<li><code>HTTPS</code> 简介</li>
+</ul>
+<p ><code>HTTPS</code> 基于 <code>HTTP</code> 协议，通过 <code>SSL</code> 或 <code>TLS</code> 提供加密处理数据、验证对方身份以及数据完整性保护。</p>
+<p >因为 <code>HTTP</code> 协议传数数据时使用的是明文，非常不安全，所以 <code>tuyaos</code> 采用 <code>tls</code> 协议对 <code>TCP</code> 传输数据的时候进行了加密。</p>
+<p >在内部开发中，涂鸦设备与涂鸦服务器之间的交互，大多使用的是 <code>atop</code> 接口。<code>atop</code> 接口可以理解为涂鸦设备与涂鸦云端的一种俗称约定，例如使用 <code>tuya.xxx.weather.get</code> <code>API</code> 接口就可以访问涂鸦服务器，获取当前的天气状态。</p>
+<p >但是直接暴露接口名称，对涂鸦服务器来说非常不安全，所以此例程中，都是设备通过域名去访问。如果开发者有相关需求需要 <code>atop</code> 接口，可以直接联系产品经理。</p>
+<ul>
+<li><code>HTTP</code> 请求消息</li>
+</ul>
+<p ><code>HTTP</code> 请求消息的格式如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657003314dbefd3d68b2.png" alt="知识点学习-http 请求消息.png" class="inline"/></p>
+<p ><code>tuyaos</code> 内部已经替我们做了一些处理，外部提供了 <code>HTTP</code> 接口，我们只需要重点关注请求的方式、域名、请求体中的数据即可。</p>
+<ul>
+<li><code>HTTP</code> 响应消息</li>
+</ul>
+<p >响应消息就是服务器响应给客户端的消息内容，也叫作响应报文。响应消息的格式如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657004246a2a0a49412d.png" alt="知识点学习-http 响应消息.png" class="inline"/></p>
+<p >此例程只介绍设备（客服端）的使用，服务器端请开发者自行配置。</p>
+<ul>
+<li>请求方式</li>
+</ul>
+<p ><code>HTTP</code> 请求方式，用来表明请求 <code>URL</code> 指定的资源不同的操作方式。<code>HTTP1.1</code> 中共定义了8种不同的请求方式。但此例程只介绍最常用的 <code>post</code> 和 <code>get</code> 请求方式。 <code>tuyaos</code> 支持带参数请求。例：<code>iot_httpc_raw_post（"www.baidu.com/index.html?demo=123"，strlen（"index.html?demo=123"，p_http_hander）;</code></p>
+<ul>
+<li>请求方式 <code>post</code></li>
+</ul>
+<p ><code>post</code>，向服务器提交资源（例如提交表单或上传文件）。数据被包含在请求体中提交给服务器。</p>
+<p >使用<code>iot_httpc_raw_post</code>或者 <code>httpc_raw_post</code> 函数发起 <code>post</code> 请求。函数的形参介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/165700483824724189b8f.png" alt="知识点学习-iot_httpc_raw_post 形参介绍.png" class="inline"/></p>
+<p >使用<code>iot_httpc_raw_write_content</code>或者<code>httpc_raw_write_content</code>函数填充 <code>post</code> 数据。函数的形参介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/165700526171642c97ab5.png" alt="知识点学习-iot_httpc_raw_write_content 参数介绍.png" class="inline"/></p>
+<p ><code>post</code> 完数据之后记得要使用 <code>iot_httpc_raw_close</code> 或者 <code>httpc_raw_close</code> 函数关闭请求，因为 <code>HTTP</code> 是无连接的，发完数据就要关闭。</p>
+<ul>
+<li>请求方式 <code>get</code></li>
+</ul>
+<p ><code>get</code>，发送请求来获得服务器上的资源。</p>
+<p >使用 <code>iot_httpc_raw_get</code> 或者 <code>httpc_raw_get</code> 函数发起 <code>get</code> 请求。函数的形参介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657006294d4b86855856.png" alt="知识点学习-iot_httpc_raw_write_content 参数介绍.png" class="inline"/></p>
+<p >使用 <code>iot_httpc_raw_read_resp_header</code> 或者 <code>httpc_raw_read_resp_header</code>函数获取响应报文信息。响应报文信息中需要重点关注状态码（响应码），完整的响应码可参考<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">MDN官方文档</a>。 函数的形参介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/16570066453c1d84782b5.png" alt="知识点学习-httpc_raw_read_resp_header 形参介绍.png" class="inline"/></p>
+<p >使用 <code>iot_httpc_raw_read_content</code> 或者 <code>httpc_raw_read_content</code> 获取数据。函数的形参介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/16570067925b99a480dca.png" alt="知识点学习-iot_httpc_raw_read_content 形参介绍 12138.png" class="inline"/></p>
+<p ><code>get</code> 完数据之后记得要使用 <code>iot_httpc_raw_close</code> 或者 <code>httpc_raw_close</code> 函数关闭请求，因为 <code>HTTP</code> 是无连接的，发完数据就要关闭。</p>
+<h1><a class="anchor" id="autotoc_md107"></a>
+流程介绍</h1>
+<p >相关函数目录： <code>software/TuyaOS/include/components/svc_api_iot/include/tuya_iot_internal_api.h</code></p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/16570088687acf29f4f60.png" alt="知识点学习-http 流程介绍 12139.png" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

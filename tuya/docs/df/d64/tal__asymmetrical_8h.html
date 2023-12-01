@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_security/include/tal_asymmetrical.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_152ff88ceaf92386bbbcab641a4b8ccf.html">tal_security</a></li><li class="navelem"><a class="el" href="../../dir_a488653c6eb5f2ff1d231bae86c2d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_asymmetrical.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the asymmetrical api provide by OS  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tkl_asymmetrical.h&quot;</code><br />
+<code>#include &quot;tuya_iot_config.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d4f/tuya__tls_8h_source.html">tuya_tls.h</a>&quot;</code><br />
+<code>#include &quot;mbedtls/rsa.h&quot;</code><br />
+<code>#include &quot;mbedtls/ecdsa.h&quot;</code><br />
+<code>#include &quot;mbedtls/pk.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_asymmetrical.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/da4/tal__asymmetrical_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__security_2include_2tal__asymmetrical_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__security_2include_2tal__asymmetrical_8h" id="ainclude_2components_2tal__security_2include_2tal__asymmetrical_8h">
+<area shape="rect" title="Common process &#45; adapter the asymmetrical api provide by OS" alt="" coords="437,5,590,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="391,259,539,285"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,333,139,360"/>
+<area shape="rect" href="../../d3/d87/tkl__asymmetrical_8h_source.html" title=" " alt="" coords="335,184,483,211"/>
+<area shape="rect" href="../../d8/d4f/tuya__tls_8h.html" title="Common process &#45; tls include" alt="" coords="470,109,557,136"/>
+<area shape="rect" title=" " alt="" coords="581,109,691,136"/>
+<area shape="rect" title=" " alt="" coords="715,109,845,136"/>
+<area shape="rect" title=" " alt="" coords="869,109,976,136"/>
+<area shape="rect" title=" " alt="" coords="624,333,699,360"/>
+<area shape="rect" title=" " alt="" coords="723,333,794,360"/>
+<area shape="rect" title=" " alt="" coords="819,333,893,360"/>
+<area shape="rect" title=" " alt="" coords="163,333,234,360"/>
+<area shape="rect" title=" " alt="" coords="259,333,341,360"/>
+<area shape="rect" title=" " alt="" coords="366,333,437,360"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="461,333,600,360"/>
+<area shape="rect" title=" " alt="" coords="559,184,611,211"/>
+<area shape="rect" href="../../d1/dde/tuya__cert__manager_8h.html" title="Tuya Cert Manager include" alt="" coords="635,184,794,211"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="739,259,832,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d6f/tal__asymmetrical_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__security_2include_2tal__asymmetrical_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__security_2include_2tal__asymmetrical_8hdep" id="ainclude_2components_2tal__security_2include_2tal__asymmetrical_8hdep">
+<area shape="rect" title="Common process &#45; adapter the asymmetrical api provide by OS" alt="" coords="5,5,159,61"/>
+<area shape="rect" href="../../d9/df0/tal__security_8h.html" title="tal_security file include" alt="" coords="5,109,159,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../df/d64/tal__asymmetrical_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a4e0b48c110b90fa0f104a0b1d51a2707"><td class="memItemLeft" align="right" valign="top"><a id="a4e0b48c110b90fa0f104a0b1d51a2707" name="a4e0b48c110b90fa0f104a0b1d51a2707"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OUTPUT_FORMAT_DER</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4e0b48c110b90fa0f104a0b1d51a2707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf363e0542fc6efc1ca43383fbc8464f"><td class="memItemLeft" align="right" valign="top"><a id="aaf363e0542fc6efc1ca43383fbc8464f" name="aaf363e0542fc6efc1ca43383fbc8464f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OUTPUT_FORMAT_PEM</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aaf363e0542fc6efc1ca43383fbc8464f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3e4120ba5f980e8403d4fc82dd69a6"><td class="memItemLeft" align="right" valign="top"><a id="a6a3e4120ba5f980e8403d4fc82dd69a6" name="a6a3e4120ba5f980e8403d4fc82dd69a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OUTPUT_MODE_NONE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a6a3e4120ba5f980e8403d4fc82dd69a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2b1902ac9ce428cb6e411412d05733"><td class="memItemLeft" align="right" valign="top"><a id="aba2b1902ac9ce428cb6e411412d05733" name="aba2b1902ac9ce428cb6e411412d05733"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OUTPUT_MODE_PRIVATE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aba2b1902ac9ce428cb6e411412d05733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6566bf5ce8ac5f45fa80727950f3faf8"><td class="memItemLeft" align="right" valign="top"><a id="a6566bf5ce8ac5f45fa80727950f3faf8" name="a6566bf5ce8ac5f45fa80727950f3faf8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OUTPUT_MODE_PUBLIC</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a6566bf5ce8ac5f45fa80727950f3faf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a95b6204d0da2d50002ea16e8293837f6"><td class="memItemLeft" align="right" valign="top"><a id="a95b6204d0da2d50002ea16e8293837f6" name="a95b6204d0da2d50002ea16e8293837f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>test_ty_asymmetric</b> (void)</td></tr>
+<tr class="separator:a95b6204d0da2d50002ea16e8293837f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f6352917f394993da21b00b6241f68"><td class="memItemLeft" align="right" valign="top"><a id="a00f6352917f394993da21b00b6241f68" name="a00f6352917f394993da21b00b6241f68"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_Buf_Convert_Pk</b> (const char *in_buf, int intput_mode, int input_format, mbedtls_pk_context *key)</td></tr>
+<tr class="separator:a00f6352917f394993da21b00b6241f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc972df9b03ac4d4dff605025aa98793"><td class="memItemLeft" align="right" valign="top"><a id="adc972df9b03ac4d4dff605025aa98793" name="adc972df9b03ac4d4dff605025aa98793"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_gen_key</b> (mbedtls_pk_type_t type, mbedtls_ecp_group_id grp_id, int rsa_keysize, mbedtls_pk_context *key)</td></tr>
+<tr class="separator:adc972df9b03ac4d4dff605025aa98793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c238724d9150df6977af851109d3524"><td class="memItemLeft" align="right" valign="top"><a id="a7c238724d9150df6977af851109d3524" name="a7c238724d9150df6977af851109d3524"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_Pk_Convert_Buf</b> (mbedtls_pk_context *key, int output_mode, int output_format, uint8_t *output_buf, uint32_t output_buf_len)</td></tr>
+<tr class="separator:a7c238724d9150df6977af851109d3524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the asymmetrical api provide by OS </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-04-22</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

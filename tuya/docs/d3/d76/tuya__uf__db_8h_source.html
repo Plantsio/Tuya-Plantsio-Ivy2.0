@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/base_uf/include/tuya_uf_db.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_a9c04470734d48d9a4389e419542ace8.html">base_uf</a></li><li class="navelem"><a class="el" href="../../dir_5ba4bed164d824fbb46dd010f92c9396.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_uf_db.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d76/tuya__uf__db_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef _TUYA_UF_DB_H_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define _TUYA_UF_DB_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">   22</a></span><span class="keyword">typedef</span> VOID <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a467636e27b454054b3846c79671f7a76">   28</a></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a467636e27b454054b3846c79671f7a76">ufmode_t</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define UF_SEEK_SET 0   </span><span class="comment">// seek from head of the file</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define UF_SEEK_CUR 1   </span><span class="comment">// seek from current position</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define UF_SEEK_END 2   </span><span class="comment">// seek from end of the file</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a84d17bbe8f3f0c7221e6bb5b3b04faf8">   38</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a84d17bbe8f3f0c7221e6bb5b3b04faf8">uf_db_init</a>(VOID);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#aea1f8055efa6d73b7553f84b260ee615">   49</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#aea1f8055efa6d73b7553f84b260ee615">uf_db_user_param_write</a>(IN BYTE_T *data, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a879b00e8c15fbf7518e145bb0b62281a">   60</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a879b00e8c15fbf7518e145bb0b62281a">uf_db_user_param_read</a>(OUT BYTE_T **buf, OUT UINT_T *len);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a674e684d91cbbe9db66277d97df89aee">   69</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a674e684d91cbbe9db66277d97df89aee">ufinit</a>(VOID);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">   81</a></span><a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a>* <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a>(IN CHAR_T *filepath, IN CHAR_T *mode);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">   89</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">   97</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">ufdelete</a>(IN CHAR_T *filepath);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">  107</a></span>UINT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UCHAR_T *buf, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a51279a9747e262ab6c86e587a553457f">  116</a></span>UINT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a51279a9747e262ab6c86e587a553457f">ufwrite_raw_start</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51">  125</a></span>UINT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51">ufwrite_raw_end</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">  136</a></span>UINT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">ufread</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UCHAR_T *buf, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a29d37bfdb6f1213ed4586133a2cf97e5">  146</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a29d37bfdb6f1213ed4586133a2cf97e5">ufseek</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UINT_T offset, IN CONST <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a467636e27b454054b3846c79671f7a76">ufmode_t</a> uf_mode);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a9f0faf51de4e035582bee5e21d893df5">  154</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a9f0faf51de4e035582bee5e21d893df5">uftell</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a10a59cefa7bc7685c6b9d8d684996365">  162</a></span>BOOL_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a10a59cefa7bc7685c6b9d8d684996365">ufeof</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a584f65db86a653e01a06efded5775ee7">  170</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a584f65db86a653e01a06efded5775ee7">ufgetsize</a>(IN CHAR_T *filepath);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#ab110bc62da08a573890f7740a9422216">  180</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#ab110bc62da08a573890f7740a9422216">ufprintf</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * stream, IN <span class="keyword">const</span> <span class="keywordtype">char</span>* pFmt, ...);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#af8bd7311bcc0c14d3da3a4b1d6f23ed1">  191</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#af8bd7311bcc0c14d3da3a4b1d6f23ed1">ufscanf</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * stream, IN INT_T count, IN PCHAR_T pFmt, ...);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a3d78a76f5e3756a5b8688b725df765a5">  199</a></span>BOOL_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a3d78a76f5e3756a5b8688b725df765a5">ufexist</a>(IN CHAR_T *filepath);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a0be797a8ed0e8c64c04f6a94eba1ee7c">  211</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a0be797a8ed0e8c64c04f6a94eba1ee7c">ufaccess</a>(IN CHAR_T *filepath, IN INT_T mode);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a16bddbaf774c1298983c482966c33af9">  221</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a16bddbaf774c1298983c482966c33af9">ufflush</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * stream);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a2fe9fbd7d72362c78491eef9f2b35984">  231</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a2fe9fbd7d72362c78491eef9f2b35984">ufsync</a>(IN INT_T fd);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a74d758d848fe9b2e341dfa68b9d63741">  241</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a74d758d848fe9b2e341dfa68b9d63741">ufileno</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * stream);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#ad8a0ff5e415a99f8d682f732a0540e91">  249</a></span>INT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#ad8a0ff5e415a99f8d682f732a0540e91">ufgetc</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a3a5c65f28a969cd074c7001f78fdad74">  261</a></span>CHAR_T *<a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a3a5c65f28a969cd074c7001f78fdad74">ufgets</a>(IN CHAR_T *s, IN INT_T n, IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../d3/d76/tuya__uf__db_8h.html#a64ef94662de3b0f5191d31a44ce31967">  268</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a64ef94662de3b0f5191d31a44ce31967">ufformat</a>(VOID);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="ttc" id="atuya__uf__db_8h_html_a0465ba7327d4da574ed5e5efbe6e4376"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a></div><div class="ttdeci">uFILE * ufopen(IN CHAR_T *filepath, IN CHAR_T *mode)</div><div class="ttdoc">open a unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a0be797a8ed0e8c64c04f6a94eba1ee7c"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a0be797a8ed0e8c64c04f6a94eba1ee7c">ufaccess</a></div><div class="ttdeci">INT_T ufaccess(IN CHAR_T *filepath, IN INT_T mode)</div><div class="ttdoc">test the permission of the unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a10a59cefa7bc7685c6b9d8d684996365"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a10a59cefa7bc7685c6b9d8d684996365">ufeof</a></div><div class="ttdeci">BOOL_T ufeof(IN uFILE *fd)</div><div class="ttdoc">check if the current offset reach the end of the file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a147b22c554979eeca1e275c9b42c136f"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">ufdelete</a></div><div class="ttdeci">OPERATE_RET ufdelete(IN CHAR_T *filepath)</div><div class="ttdoc">delete the unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a16bddbaf774c1298983c482966c33af9"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a16bddbaf774c1298983c482966c33af9">ufflush</a></div><div class="ttdeci">INT_T ufflush(IN uFILE *stream)</div><div class="ttdoc">flush the unique file, write the cache to physical disk</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a184dfd8e1512dba4615dbe9d8c0efe32"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">ufread</a></div><div class="ttdeci">UINT_T ufread(IN uFILE *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</div><div class="ttdoc">read from unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a25420c33900c400dd875fb78ea629a6b"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a></div><div class="ttdeci">VOID uFILE</div><div class="ttdoc">unique file handle</div><div class="ttdef"><b>Definition:</b> tuya_uf_db.h:22</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a29d37bfdb6f1213ed4586133a2cf97e5"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a29d37bfdb6f1213ed4586133a2cf97e5">ufseek</a></div><div class="ttdeci">INT_T ufseek(IN uFILE *fd, IN UINT_T offset, IN CONST ufmode_t uf_mode)</div><div class="ttdoc">seek to the offset of the unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a2fe9fbd7d72362c78491eef9f2b35984"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a2fe9fbd7d72362c78491eef9f2b35984">ufsync</a></div><div class="ttdeci">INT_T ufsync(IN INT_T fd)</div><div class="ttdoc">sync the unique file, write the file info to pysical disk</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a3a5c65f28a969cd074c7001f78fdad74"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a3a5c65f28a969cd074c7001f78fdad74">ufgets</a></div><div class="ttdeci">CHAR_T * ufgets(IN CHAR_T *s, IN INT_T n, IN uFILE *stream)</div><div class="ttdoc">read a line from unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a3d78a76f5e3756a5b8688b725df765a5"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a3d78a76f5e3756a5b8688b725df765a5">ufexist</a></div><div class="ttdeci">BOOL_T ufexist(IN CHAR_T *filepath)</div><div class="ttdoc">check if unique file is exist</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a467636e27b454054b3846c79671f7a76"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a467636e27b454054b3846c79671f7a76">ufmode_t</a></div><div class="ttdeci">unsigned char ufmode_t</div><div class="ttdoc">unique file mode</div><div class="ttdef"><b>Definition:</b> tuya_uf_db.h:28</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a51279a9747e262ab6c86e587a553457f"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a51279a9747e262ab6c86e587a553457f">ufwrite_raw_start</a></div><div class="ttdeci">UINT_T ufwrite_raw_start(IN uFILE *fd)</div><div class="ttdoc">enter ufwrite raw mode</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a584f65db86a653e01a06efded5775ee7"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a584f65db86a653e01a06efded5775ee7">ufgetsize</a></div><div class="ttdeci">INT_T ufgetsize(IN CHAR_T *filepath)</div><div class="ttdoc">get the size of the unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a5f00d43fb0201c0bd692040d9e534859"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a></div><div class="ttdeci">OPERATE_RET ufclose(IN uFILE *fd)</div><div class="ttdoc">close a unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a64ef94662de3b0f5191d31a44ce31967"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a64ef94662de3b0f5191d31a44ce31967">ufformat</a></div><div class="ttdeci">OPERATE_RET ufformat(VOID)</div><div class="ttdoc">format uf flash</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a674e684d91cbbe9db66277d97df89aee"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a674e684d91cbbe9db66277d97df89aee">ufinit</a></div><div class="ttdeci">OPERATE_RET ufinit(VOID)</div><div class="ttdoc">unique file system initialization</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a74d758d848fe9b2e341dfa68b9d63741"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a74d758d848fe9b2e341dfa68b9d63741">ufileno</a></div><div class="ttdeci">INT_T ufileno(IN uFILE *stream)</div><div class="ttdoc">get the file description</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a757d1775b1402a3ad834aca0c51aec51"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51">ufwrite_raw_end</a></div><div class="ttdeci">UINT_T ufwrite_raw_end(IN uFILE *fd)</div><div class="ttdoc">Exit ufwrite raw mode</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a84d17bbe8f3f0c7221e6bb5b3b04faf8"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a84d17bbe8f3f0c7221e6bb5b3b04faf8">uf_db_init</a></div><div class="ttdeci">OPERATE_RET uf_db_init(VOID)</div><div class="ttdoc">tuya unique file database system initialization</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a879b00e8c15fbf7518e145bb0b62281a"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a879b00e8c15fbf7518e145bb0b62281a">uf_db_user_param_read</a></div><div class="ttdeci">OPERATE_RET uf_db_user_param_read(OUT BYTE_T **buf, OUT UINT_T *len)</div><div class="ttdoc">read user parameter from unique file database</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a9f0faf51de4e035582bee5e21d893df5"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a9f0faf51de4e035582bee5e21d893df5">uftell</a></div><div class="ttdeci">INT_T uftell(IN uFILE *fd)</div><div class="ttdoc">get current offset of the unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_ab110bc62da08a573890f7740a9422216"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#ab110bc62da08a573890f7740a9422216">ufprintf</a></div><div class="ttdeci">INT_T ufprintf(IN uFILE *stream, IN const char *pFmt,...)</div><div class="ttdoc">write a specail format to unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_ad8a0ff5e415a99f8d682f732a0540e91"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#ad8a0ff5e415a99f8d682f732a0540e91">ufgetc</a></div><div class="ttdeci">INT_T ufgetc(IN uFILE *stream)</div><div class="ttdoc">read a character from unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_aea1f8055efa6d73b7553f84b260ee615"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#aea1f8055efa6d73b7553f84b260ee615">uf_db_user_param_write</a></div><div class="ttdeci">OPERATE_RET uf_db_user_param_write(IN BYTE_T *data, IN CONST UINT_T len)</div><div class="ttdoc">write user parameter to unique file database</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_af8bd7311bcc0c14d3da3a4b1d6f23ed1"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#af8bd7311bcc0c14d3da3a4b1d6f23ed1">ufscanf</a></div><div class="ttdeci">INT_T ufscanf(IN uFILE *stream, IN INT_T count, IN PCHAR_T pFmt,...)</div><div class="ttdoc">read a special format from unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_af97a9279316ced48c68512871b5f2839"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a></div><div class="ttdeci">UINT_T ufwrite(IN uFILE *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</div><div class="ttdoc">write to unique file</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_devos/include/tuya_devos_utils.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c5ad9f57be95c42b41325f1bc9ebae91.html">svc_devos</a></li><li class="navelem"><a class="el" href="../../dir_11ce8152c603a5102f0c89f0ddb7981a.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_devos_utils.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Utilities of DevOS  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_com_defs.h&quot;</code><br />
+<code>#include &quot;ty_cJSON.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d62/gw__intf_8h_source.html">gw_intf.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_devos_utils.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d2e/tuya__devos__utils_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__devos_2include_2tuya__devos__utils_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__devos_2include_2tuya__devos__utils_8h" id="ainclude_2components_2svc__devos_2include_2tuya__devos__utils_8h">
+<area shape="rect" title="Utilities of DevOS" alt="" coords="1576,5,1755,61"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="1766,259,1941,285"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="1663,333,1756,360"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="1538,109,1619,136"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="686,408,834,435"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="299,483,432,509"/>
+<area shape="rect" title=" " alt="" coords="820,483,895,509"/>
+<area shape="rect" title=" " alt="" coords="919,483,990,509"/>
+<area shape="rect" title=" " alt="" coords="1565,483,1640,509"/>
+<area shape="rect" title=" " alt="" coords="522,483,593,509"/>
+<area shape="rect" title=" " alt="" coords="617,483,700,509"/>
+<area shape="rect" title=" " alt="" coords="725,483,795,509"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="5,483,144,509"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="893,184,1051,211"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="334,333,434,360"/>
+<area shape="rect" href="../../d7/d3e/tuya__iot__internal__api_8h.html" title=" " alt="" coords="1555,184,1725,211"/>
+<area shape="rect" href="../../d1/db6/tal__memory_8h.html" title="Common process &#45; adapter the memory api provide by OS" alt="" coords="611,333,722,360"/>
+<area shape="rect" href="../../d1/d82/cJSON_8h_source.html" title=" " alt="" coords="1566,259,1639,285"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="1051,333,1141,360"/>
+<area shape="rect" href="../../d0/d7d/tuya__smartpointer_8h.html" title="tuya reference data module" alt="" coords="1115,259,1269,285"/>
+<area shape="rect" href="../../d6/d5e/uni__queue_8h.html" title="tuya common queue module" alt="" coords="373,259,475,285"/>
+<area shape="rect" href="../../d6/d14/tuya__slist_8h.html" title="tuya sigle direciton list module" alt="" coords="929,333,1026,360"/>
+<area shape="rect" href="../../d0/da4/tuya__hlist_8h.html" title="tuya hash list module" alt="" coords="1341,333,1440,360"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="846,259,989,285"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="59,259,159,285"/>
+<area shape="rect" href="../../d2/d5e/uni__network_8h.html" title="Tuya iotdns module is the DNS service module provided by Tuya, which ensures that developers can prov..." alt="" coords="184,259,299,285"/>
+<area shape="rect" href="../../de/d25/mix__method_8h.html" title="tuya common api module" alt="" coords="499,259,615,285"/>
+<area shape="rect" href="../../de/de7/tuya__hashmap_8h.html" title="tuya hasmap module" alt="" coords="640,259,771,285"/>
+<area shape="rect" href="../../da/dd9/tkl__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="1217,333,1317,360"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="797,333,904,360"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="147,333,258,360"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d80/tuya__devos__utils_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__devos_2include_2tuya__devos__utils_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__devos_2include_2tuya__devos__utils_8hdep" id="ainclude_2components_2svc__devos_2include_2tuya__devos__utils_8hdep">
+<area shape="rect" title="Utilities of DevOS" alt="" coords="478,5,657,61"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="483,109,651,165"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="5,213,161,269"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="186,213,365,269"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="389,213,556,269"/>
+<area shape="rect" href="../../df/d69/smart__frame_8h.html" title="Common process &#45; Initialization" alt="" coords="580,213,744,269"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="768,213,945,269"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="969,213,1147,269"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="194,317,357,373"/>
+</map>
+</div>
+</div>
+<p><a href="../../da/d19/tuya__devos__utils_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8713a7b7c06d38260e5228c648b5272c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dbb/structDP__REPT__FLOW__CTRL__UNIT.html">DP_REPT_FLOW_CTRL_UNIT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a8713a7b7c06d38260e5228c648b5272c">get_all_dp_flow_ctrl_rule</a> (VOID)</td></tr>
+<tr class="memdesc:a8713a7b7c06d38260e5228c648b5272c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DP flow control rules  <a href="../../da/d19/tuya__devos__utils_8h.html#a8713a7b7c06d38260e5228c648b5272c">更多...</a><br /></td></tr>
+<tr class="separator:a8713a7b7c06d38260e5228c648b5272c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add16e88a4057d25e25a1d41d05aecd7a"><td class="memItemLeft" align="right" valign="top">GW_WORK_STAT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#add16e88a4057d25e25a1d41d05aecd7a">get_gw_active</a> (VOID)</td></tr>
+<tr class="memdesc:add16e88a4057d25e25a1d41d05aecd7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get activation state  <a href="../../da/d19/tuya__devos__utils_8h.html#add16e88a4057d25e25a1d41d05aecd7a">更多...</a><br /></td></tr>
+<tr class="separator:add16e88a4057d25e25a1d41d05aecd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2fbe4f24bbcab312666c20695adfd9"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#aed2fbe4f24bbcab312666c20695adfd9">get_gw_auth_status</a> (VOID)</td></tr>
+<tr class="memdesc:aed2fbe4f24bbcab312666c20695adfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway's authentication status  <a href="../../da/d19/tuya__devos__utils_8h.html#aed2fbe4f24bbcab312666c20695adfd9">更多...</a><br /></td></tr>
+<tr class="separator:aed2fbe4f24bbcab312666c20695adfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77ea7fac46cad55b4c83f432b4f463d"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#ac77ea7fac46cad55b4c83f432b4f463d">get_gw_bind_status</a> (VOID)</td></tr>
+<tr class="memdesc:ac77ea7fac46cad55b4c83f432b4f463d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway's dp bind status  <a href="../../da/d19/tuya__devos__utils_8h.html#ac77ea7fac46cad55b4c83f432b4f463d">更多...</a><br /></td></tr>
+<tr class="separator:ac77ea7fac46cad55b4c83f432b4f463d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62378bad015339d7bd7ee5f0032dd994"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a62378bad015339d7bd7ee5f0032dd994">get_gw_country_code</a> (VOID)</td></tr>
+<tr class="memdesc:a62378bad015339d7bd7ee5f0032dd994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway country code  <a href="../../da/d19/tuya__devos__utils_8h.html#a62378bad015339d7bd7ee5f0032dd994">更多...</a><br /></td></tr>
+<tr class="separator:a62378bad015339d7bd7ee5f0032dd994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfa485ef50d0abcfbc51bd984fe695e"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a7dfa485ef50d0abcfbc51bd984fe695e">get_gw_dev_id</a> (VOID)</td></tr>
+<tr class="memdesc:a7dfa485ef50d0abcfbc51bd984fe695e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway's device id  <a href="../../da/d19/tuya__devos__utils_8h.html#a7dfa485ef50d0abcfbc51bd984fe695e">更多...</a><br /></td></tr>
+<tr class="separator:a7dfa485ef50d0abcfbc51bd984fe695e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3720ae2001748e53ccff4a4382eb63ad"><td class="memItemLeft" align="right" valign="top">GW_EXT_STAT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a3720ae2001748e53ccff4a4382eb63ad">get_gw_ext_stat</a> (VOID)</td></tr>
+<tr class="memdesc:a3720ae2001748e53ccff4a4382eb63ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DevOS extension state  <a href="../../da/d19/tuya__devos__utils_8h.html#a3720ae2001748e53ccff4a4382eb63ad">更多...</a><br /></td></tr>
+<tr class="separator:a3720ae2001748e53ccff4a4382eb63ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6ff96cb114d36cb7d068cf64f2620a"><td class="memItemLeft" align="right" valign="top">GW_NW_STAT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a5c6ff96cb114d36cb7d068cf64f2620a">get_gw_nw_status</a> (VOID)</td></tr>
+<tr class="memdesc:a5c6ff96cb114d36cb7d068cf64f2620a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device network linkage state  <a href="../../da/d19/tuya__devos__utils_8h.html#a5c6ff96cb114d36cb7d068cf64f2620a">更多...</a><br /></td></tr>
+<tr class="separator:a5c6ff96cb114d36cb7d068cf64f2620a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6549cd7f2dbc9e3432b8ccf81fa9d0ec"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a6549cd7f2dbc9e3432b8ccf81fa9d0ec">get_gw_region</a> (VOID)</td></tr>
+<tr class="memdesc:a6549cd7f2dbc9e3432b8ccf81fa9d0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway region  <a href="../../da/d19/tuya__devos__utils_8h.html#a6549cd7f2dbc9e3432b8ccf81fa9d0ec">更多...</a><br /></td></tr>
+<tr class="separator:a6549cd7f2dbc9e3432b8ccf81fa9d0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d0fadb22c991caf731230366adcc07"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#ab6d0fadb22c991caf731230366adcc07">get_gw_ssid</a> (VOID)</td></tr>
+<tr class="memdesc:ab6d0fadb22c991caf731230366adcc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway's ssid  <a href="../../da/d19/tuya__devos__utils_8h.html#ab6d0fadb22c991caf731230366adcc07">更多...</a><br /></td></tr>
+<tr class="separator:ab6d0fadb22c991caf731230366adcc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02370851fda66e2e10f212c866274575"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a02370851fda66e2e10f212c866274575">get_gw_sw_ver</a> (GW_PERMIT_DEV_TP_T tp)</td></tr>
+<tr class="memdesc:a02370851fda66e2e10f212c866274575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gateway's mcu software version  <a href="../../da/d19/tuya__devos__utils_8h.html#a02370851fda66e2e10f212c866274575">更多...</a><br /></td></tr>
+<tr class="separator:a02370851fda66e2e10f212c866274575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe983d3dace6361ee0c215eebf988d00"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#afe983d3dace6361ee0c215eebf988d00">gw_active_get_ext_param</a> (VOID)</td></tr>
+<tr class="memdesc:afe983d3dace6361ee0c215eebf988d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension params for activation  <a href="../../da/d19/tuya__devos__utils_8h.html#afe983d3dace6361ee0c215eebf988d00">更多...</a><br /></td></tr>
+<tr class="separator:afe983d3dace6361ee0c215eebf988d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741b37827fc154bf85346e23688ee784"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a741b37827fc154bf85346e23688ee784">gw_active_get_support_election</a> (VOID)</td></tr>
+<tr class="memdesc:a741b37827fc154bf85346e23688ee784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get election enable or not  <a href="../../da/d19/tuya__devos__utils_8h.html#a741b37827fc154bf85346e23688ee784">更多...</a><br /></td></tr>
+<tr class="separator:a741b37827fc154bf85346e23688ee784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a876181d1be3e2df0ea8f177b994e8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a77a876181d1be3e2df0ea8f177b994e8">gw_active_set_ext_param</a> (IN CHAR_T *param)</td></tr>
+<tr class="memdesc:a77a876181d1be3e2df0ea8f177b994e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extension params for activation  <a href="../../da/d19/tuya__devos__utils_8h.html#a77a876181d1be3e2df0ea8f177b994e8">更多...</a><br /></td></tr>
+<tr class="separator:a77a876181d1be3e2df0ea8f177b994e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0856f91cb20c6b6dfab6a24652ce10"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a0e0856f91cb20c6b6dfab6a24652ce10">gw_active_set_support_election</a> (BOOL_T enable)</td></tr>
+<tr class="memdesc:a0e0856f91cb20c6b6dfab6a24652ce10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set election enable or not  <a href="../../da/d19/tuya__devos__utils_8h.html#a0e0856f91cb20c6b6dfab6a24652ce10">更多...</a><br /></td></tr>
+<tr class="separator:a0e0856f91cb20c6b6dfab6a24652ce10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208f03428983277bc165910da66aa47c"><td class="memItemLeft" align="right" valign="top"><a id="a208f03428983277bc165910da66aa47c" name="a208f03428983277bc165910da66aa47c"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>gw_cad_ver_update</b> (CHAR_T *old_ver, CHAR_T *new_ver, IN CONST DEV_TYPE_T tp, IN CONST <a class="el" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attr, IN CONST UINT_T attr_num)</td></tr>
+<tr class="separator:a208f03428983277bc165910da66aa47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1158572f69cf2034cffa6c6d32f653c"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#aa1158572f69cf2034cffa6c6d32f653c">gw_dp_flow_ctrl_cfg_proc</a> (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *result)</td></tr>
+<tr class="memdesc:aa1158572f69cf2034cffa6c6d32f653c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse DP flow control rules  <a href="../../da/d19/tuya__devos__utils_8h.html#aa1158572f69cf2034cffa6c6d32f653c">更多...</a><br /></td></tr>
+<tr class="separator:aa1158572f69cf2034cffa6c6d32f653c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec2cd86a998588236c76153652bdb51"><td class="memItemLeft" align="right" valign="top"><a id="a4ec2cd86a998588236c76153652bdb51" name="a4ec2cd86a998588236c76153652bdb51"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>gw_ext_active_start</b> (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *root)</td></tr>
+<tr class="separator:a4ec2cd86a998588236c76153652bdb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be29419f6e2e45cc1ea5a7f01facd93"><td class="memItemLeft" align="right" valign="top"><a id="a5be29419f6e2e45cc1ea5a7f01facd93" name="a5be29419f6e2e45cc1ea5a7f01facd93"></a>
+<a class="el" href="../../df/d27/structTY__EXT__AUTH__INFO.html">TY_EXT_AUTH_INFO</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>gw_get_ext_auth_info</b> (VOID_T)</td></tr>
+<tr class="separator:a5be29419f6e2e45cc1ea5a7f01facd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650496bbfe8eed967f5f1b53e292ae6f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a650496bbfe8eed967f5f1b53e292ae6f">gw_get_ip</a> (<a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *p_ip)</td></tr>
+<tr class="memdesc:a650496bbfe8eed967f5f1b53e292ae6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device IP  <a href="../../da/d19/tuya__devos__utils_8h.html#a650496bbfe8eed967f5f1b53e292ae6f">更多...</a><br /></td></tr>
+<tr class="separator:a650496bbfe8eed967f5f1b53e292ae6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81531bc627313697be1b21ae7d6a3993"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a81531bc627313697be1b21ae7d6a3993">gw_get_mac</a> (<a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *p_mac)</td></tr>
+<tr class="memdesc:a81531bc627313697be1b21ae7d6a3993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device MAC  <a href="../../da/d19/tuya__devos__utils_8h.html#a81531bc627313697be1b21ae7d6a3993">更多...</a><br /></td></tr>
+<tr class="separator:a81531bc627313697be1b21ae7d6a3993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78ca295776ddaff2da6b59175c372a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d07/structGW__STRIDE__UPDATE__S.html">GW_STRIDE_UPDATE_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#ae78ca295776ddaff2da6b59175c372a8">gw_get_new_pid_key</a> (VOID)</td></tr>
+<tr class="memdesc:ae78ca295776ddaff2da6b59175c372a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stride info  <a href="../../da/d19/tuya__devos__utils_8h.html#ae78ca295776ddaff2da6b59175c372a8">更多...</a><br /></td></tr>
+<tr class="separator:ae78ca295776ddaff2da6b59175c372a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ec87d901e7726feabc708108423c2a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a87ec87d901e7726feabc708108423c2a">gw_get_rssi</a> (SCHAR_T *p_rssi)</td></tr>
+<tr class="memdesc:a87ec87d901e7726feabc708108423c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device RSSI level  <a href="../../da/d19/tuya__devos__utils_8h.html#a87ec87d901e7726feabc708108423c2a">更多...</a><br /></td></tr>
+<tr class="separator:a87ec87d901e7726feabc708108423c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472d5f7baad8c75bbc3be4e40afb18cd"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a472d5f7baad8c75bbc3be4e40afb18cd">gw_get_udf</a> (VOID)</td></tr>
+<tr class="memdesc:a472d5f7baad8c75bbc3be4e40afb18cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get user defined features(udf) for activation  <a href="../../da/d19/tuya__devos__utils_8h.html#a472d5f7baad8c75bbc3be4e40afb18cd">更多...</a><br /></td></tr>
+<tr class="separator:a472d5f7baad8c75bbc3be4e40afb18cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2113ae6a6bad1858ece0b76d2edb1c6"><td class="memItemLeft" align="right" valign="top"><a id="ab2113ae6a6bad1858ece0b76d2edb1c6" name="ab2113ae6a6bad1858ece0b76d2edb1c6"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>gw_init_auth_info</b> (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *auth_info)</td></tr>
+<tr class="separator:ab2113ae6a6bad1858ece0b76d2edb1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086b951e78156340d3ffa5ac1f51dfb2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a086b951e78156340d3ffa5ac1f51dfb2">gw_load_sum_time_zone_tbl</a> (IN CONST CHAR_T *tm_zone)</td></tr>
+<tr class="memdesc:a086b951e78156340d3ffa5ac1f51dfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load summer timezone talbe  <a href="../../da/d19/tuya__devos__utils_8h.html#a086b951e78156340d3ffa5ac1f51dfb2">更多...</a><br /></td></tr>
+<tr class="separator:a086b951e78156340d3ffa5ac1f51dfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2535f7f028060c7eff3b7c8e9a1902fc"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a2535f7f028060c7eff3b7c8e9a1902fc">gw_oem_set</a> (IN CONST BOOL_T oem)</td></tr>
+<tr class="memdesc:a2535f7f028060c7eff3b7c8e9a1902fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable oem or not  <a href="../../da/d19/tuya__devos__utils_8h.html#a2535f7f028060c7eff3b7c8e9a1902fc">更多...</a><br /></td></tr>
+<tr class="separator:a2535f7f028060c7eff3b7c8e9a1902fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994735faa9c0264bf923450d3674f95e"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a994735faa9c0264bf923450d3674f95e">gw_register_cbs</a> (IN CONST <a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs)</td></tr>
+<tr class="memdesc:a994735faa9c0264bf923450d3674f95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set DevOS event handlers  <a href="../../da/d19/tuya__devos__utils_8h.html#a994735faa9c0264bf923450d3674f95e">更多...</a><br /></td></tr>
+<tr class="separator:a994735faa9c0264bf923450d3674f95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9040c3f00e5858cc24966ed36da7e8f0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a9040c3f00e5858cc24966ed36da7e8f0">gw_save_auth_token</a> (IN CONST CHAR_T *token, IN CONST CHAR_T *region, IN CONST CHAR_T *regist_key)</td></tr>
+<tr class="memdesc:a9040c3f00e5858cc24966ed36da7e8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save network configuration token  <a href="../../da/d19/tuya__devos__utils_8h.html#a9040c3f00e5858cc24966ed36da7e8f0">更多...</a><br /></td></tr>
+<tr class="separator:a9040c3f00e5858cc24966ed36da7e8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd89ccfaa38a2c5b95d879eed1d6440"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#abbd89ccfaa38a2c5b95d879eed1d6440">gw_set_psk30_cfg</a> (BOOL_T flag)</td></tr>
+<tr class="memdesc:abbd89ccfaa38a2c5b95d879eed1d6440"><td class="mdescLeft">&#160;</td><td class="mdescRight">set psk30 cfg flag  <a href="../../da/d19/tuya__devos__utils_8h.html#abbd89ccfaa38a2c5b95d879eed1d6440">更多...</a><br /></td></tr>
+<tr class="separator:abbd89ccfaa38a2c5b95d879eed1d6440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc808567143fa15afaabf5599ae763d3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#acc808567143fa15afaabf5599ae763d3">gw_set_udf</a> (IN CONST CHAR_T *udf)</td></tr>
+<tr class="memdesc:acc808567143fa15afaabf5599ae763d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set user defined features(udf) for activation  <a href="../../da/d19/tuya__devos__utils_8h.html#acc808567143fa15afaabf5599ae763d3">更多...</a><br /></td></tr>
+<tr class="separator:acc808567143fa15afaabf5599ae763d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35713bdb0a8bf9e614ee56186d7007ec"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a35713bdb0a8bf9e614ee56186d7007ec">gw_update_versions</a> (VOID)</td></tr>
+<tr class="memdesc:a35713bdb0a8bf9e614ee56186d7007ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force to upload all versions  <a href="../../da/d19/tuya__devos__utils_8h.html#a35713bdb0a8bf9e614ee56186d7007ec">更多...</a><br /></td></tr>
+<tr class="separator:a35713bdb0a8bf9e614ee56186d7007ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fca66199ea31209e911966d1ac7609a"><td class="memItemLeft" align="right" valign="top"><a id="a6fca66199ea31209e911966d1ac7609a" name="a6fca66199ea31209e911966d1ac7609a"></a>
+BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><b>gw_upload_rst_log_get</b> (VOID)</td></tr>
+<tr class="memdesc:a6fca66199ea31209e911966d1ac7609a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable reset log upload or not <br /></td></tr>
+<tr class="separator:a6fca66199ea31209e911966d1ac7609a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa34892fb57d767f20866c4706f1578f"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#aaa34892fb57d767f20866c4706f1578f">gw_upload_rst_log_set</a> (IN CONST BOOL_T upload)</td></tr>
+<tr class="memdesc:aaa34892fb57d767f20866c4706f1578f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable reset log upload or not  <a href="../../da/d19/tuya__devos__utils_8h.html#aaa34892fb57d767f20866c4706f1578f">更多...</a><br /></td></tr>
+<tr class="separator:aaa34892fb57d767f20866c4706f1578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47d08ccc8c2ea7045199fb6627e02e5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#af47d08ccc8c2ea7045199fb6627e02e5">gw_user_token_bind</a> (IN CONST CHAR_T *token)</td></tr>
+<tr class="memdesc:af47d08ccc8c2ea7045199fb6627e02e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set network configuration token  <a href="../../da/d19/tuya__devos__utils_8h.html#af47d08ccc8c2ea7045199fb6627e02e5">更多...</a><br /></td></tr>
+<tr class="separator:af47d08ccc8c2ea7045199fb6627e02e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40cadcfa3284a1262c048bae1932a98"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#aa40cadcfa3284a1262c048bae1932a98">is_gw_oem</a> (VOID)</td></tr>
+<tr class="memdesc:aa40cadcfa3284a1262c048bae1932a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether oem is enabled or not  <a href="../../da/d19/tuya__devos__utils_8h.html#aa40cadcfa3284a1262c048bae1932a98">更多...</a><br /></td></tr>
+<tr class="separator:aa40cadcfa3284a1262c048bae1932a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43101058f8c4cdee1b035f93cb8f90f0"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a43101058f8c4cdee1b035f93cb8f90f0">set_gw_active</a> (GW_WORK_STAT_T stat)</td></tr>
+<tr class="memdesc:a43101058f8c4cdee1b035f93cb8f90f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set activation state  <a href="../../da/d19/tuya__devos__utils_8h.html#a43101058f8c4cdee1b035f93cb8f90f0">更多...</a><br /></td></tr>
+<tr class="separator:a43101058f8c4cdee1b035f93cb8f90f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf543f9e1ccecc366d723a26812ffa80"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#abf543f9e1ccecc366d723a26812ffa80">set_gw_ext_stat</a> (IN CONST GW_EXT_STAT_T ext_stat)</td></tr>
+<tr class="memdesc:abf543f9e1ccecc366d723a26812ffa80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set DevOS extension state  <a href="../../da/d19/tuya__devos__utils_8h.html#abf543f9e1ccecc366d723a26812ffa80">更多...</a><br /></td></tr>
+<tr class="separator:abf543f9e1ccecc366d723a26812ffa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78734a5ea4117431a83a7d6febc75e79"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a78734a5ea4117431a83a7d6febc75e79">tuya_get_serialno</a> (VOID)</td></tr>
+<tr class="memdesc:a78734a5ea4117431a83a7d6febc75e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get serial number  <a href="../../da/d19/tuya__devos__utils_8h.html#a78734a5ea4117431a83a7d6febc75e79">更多...</a><br /></td></tr>
+<tr class="separator:a78734a5ea4117431a83a7d6febc75e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cd2f3259ec2f4bd61522ac710f2d9e"><td class="memItemLeft" align="right" valign="top"><a id="ab0cd2f3259ec2f4bd61522ac710f2d9e" name="ab0cd2f3259ec2f4bd61522ac710f2d9e"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_dev_get_attach_attr</b> (GW_PERMIT_DEV_TP_T tp, <a class="el" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attr)</td></tr>
+<tr class="separator:ab0cd2f3259ec2f4bd61522ac710f2d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba43c25fa1d2d9e72545b3c916c8ed9d"><td class="memItemLeft" align="right" valign="top"><a id="aba43c25fa1d2d9e72545b3c916c8ed9d" name="aba43c25fa1d2d9e72545b3c916c8ed9d"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_dev_set_attach_attr</b> (GW_PERMIT_DEV_TP_T tp, <a class="el" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attr)</td></tr>
+<tr class="separator:aba43c25fa1d2d9e72545b3c916c8ed9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6362e236a952e899704cd79307c377de"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#a6362e236a952e899704cd79307c377de">tuya_iot_dev_update_attachs</a> (UINT_T attr_num, <a class="el" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attrs)</td></tr>
+<tr class="memdesc:a6362e236a952e899704cd79307c377de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update versions of all attach modules.  <a href="../../da/d19/tuya__devos__utils_8h.html#a6362e236a952e899704cd79307c377de">更多...</a><br /></td></tr>
+<tr class="separator:a6362e236a952e899704cd79307c377de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38114067ed7f65735346eab53c5f2b1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/tuya__devos__utils_8h.html#ab38114067ed7f65735346eab53c5f2b1">ty_init_rtc</a> (INT_T timeval)</td></tr>
+<tr class="memdesc:ab38114067ed7f65735346eab53c5f2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize rtc module  <a href="../../da/d19/tuya__devos__utils_8h.html#ab38114067ed7f65735346eab53c5f2b1">更多...</a><br /></td></tr>
+<tr class="separator:ab38114067ed7f65735346eab53c5f2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Utilities of DevOS </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a8713a7b7c06d38260e5228c648b5272c" name="a8713a7b7c06d38260e5228c648b5272c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8713a7b7c06d38260e5228c648b5272c">&#9670;&nbsp;</a></span>get_all_dp_flow_ctrl_rule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dbb/structDP__REPT__FLOW__CTRL__UNIT.html">DP_REPT_FLOW_CTRL_UNIT</a> * get_all_dp_flow_ctrl_rule </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get DP flow control rules </p>
+<dl class="section return"><dt>返回</dt><dd>See <a class="el" href="../../d7/dbb/structDP__REPT__FLOW__CTRL__UNIT.html" title="Definition of dp report flow control unit">DP_REPT_FLOW_CTRL_UNIT</a>, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="add16e88a4057d25e25a1d41d05aecd7a" name="add16e88a4057d25e25a1d41d05aecd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add16e88a4057d25e25a1d41d05aecd7a">&#9670;&nbsp;</a></span>get_gw_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GW_WORK_STAT_T get_gw_active </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get activation state </p>
+<dl class="section return"><dt>返回</dt><dd>Work state, see GW_WORK_STAT_T </dd></dl>
+
+</div>
+</div>
+<a id="aed2fbe4f24bbcab312666c20695adfd9" name="aed2fbe4f24bbcab312666c20695adfd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2fbe4f24bbcab312666c20695adfd9">&#9670;&nbsp;</a></span>get_gw_auth_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T get_gw_auth_status </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway's authentication status </p>
+<dl class="section return"><dt>返回</dt><dd>TRUE if authorized, otherwise return FALSE </dd></dl>
+
+</div>
+</div>
+<a id="ac77ea7fac46cad55b4c83f432b4f463d" name="ac77ea7fac46cad55b4c83f432b4f463d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77ea7fac46cad55b4c83f432b4f463d">&#9670;&nbsp;</a></span>get_gw_bind_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T get_gw_bind_status </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway's dp bind status </p>
+<dl class="section return"><dt>返回</dt><dd>Dp bind status, return FALSE if not exist </dd></dl>
+
+</div>
+</div>
+<a id="a62378bad015339d7bd7ee5f0032dd994" name="a62378bad015339d7bd7ee5f0032dd994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62378bad015339d7bd7ee5f0032dd994">&#9670;&nbsp;</a></span>get_gw_country_code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * get_gw_country_code </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway country code </p>
+<dl class="section return"><dt>返回</dt><dd>Country code as a string, return NULL if not exist </dd></dl>
+
+</div>
+</div>
+<a id="a7dfa485ef50d0abcfbc51bd984fe695e" name="a7dfa485ef50d0abcfbc51bd984fe695e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dfa485ef50d0abcfbc51bd984fe695e">&#9670;&nbsp;</a></span>get_gw_dev_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * get_gw_dev_id </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway's device id </p>
+<dl class="section return"><dt>返回</dt><dd>Device id as a string, return NULL if not exist </dd></dl>
+
+</div>
+</div>
+<a id="a3720ae2001748e53ccff4a4382eb63ad" name="a3720ae2001748e53ccff4a4382eb63ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3720ae2001748e53ccff4a4382eb63ad">&#9670;&nbsp;</a></span>get_gw_ext_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GW_EXT_STAT_T get_gw_ext_stat </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get DevOS extension state </p>
+<dl class="section return"><dt>返回</dt><dd>Extension state, see GW_EXT_STAT_T </dd></dl>
+
+</div>
+</div>
+<a id="a5c6ff96cb114d36cb7d068cf64f2620a" name="a5c6ff96cb114d36cb7d068cf64f2620a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6ff96cb114d36cb7d068cf64f2620a">&#9670;&nbsp;</a></span>get_gw_nw_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GW_NW_STAT_T get_gw_nw_status </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device network linkage state </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">nw_stat</td><td>Linkage state, see GW_NW_STAT_T</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6549cd7f2dbc9e3432b8ccf81fa9d0ec" name="a6549cd7f2dbc9e3432b8ccf81fa9d0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6549cd7f2dbc9e3432b8ccf81fa9d0ec">&#9670;&nbsp;</a></span>get_gw_region()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * get_gw_region </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway region </p>
+<dl class="section return"><dt>返回</dt><dd>Region as a string, return NULL if not exist </dd></dl>
+
+</div>
+</div>
+<a id="ab6d0fadb22c991caf731230366adcc07" name="ab6d0fadb22c991caf731230366adcc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d0fadb22c991caf731230366adcc07">&#9670;&nbsp;</a></span>get_gw_ssid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * get_gw_ssid </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway's ssid </p>
+<dl class="section return"><dt>返回</dt><dd>SSID as a string, return NULL if not exist </dd></dl>
+
+</div>
+</div>
+<a id="a02370851fda66e2e10f212c866274575" name="a02370851fda66e2e10f212c866274575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02370851fda66e2e10f212c866274575">&#9670;&nbsp;</a></span>get_gw_sw_ver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * get_gw_sw_ver </td>
+          <td>(</td>
+          <td class="paramtype">GW_PERMIT_DEV_TP_T&#160;</td>
+          <td class="paramname"><em>tp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get gateway's mcu software version </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tp</td><td>device type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Version as a string, return NULL if not exist </dd></dl>
+
+</div>
+</div>
+<a id="afe983d3dace6361ee0c215eebf988d00" name="afe983d3dace6361ee0c215eebf988d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe983d3dace6361ee0c215eebf988d00">&#9670;&nbsp;</a></span>gw_active_get_ext_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * gw_active_get_ext_param </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension params for activation </p>
+<dl class="section return"><dt>返回</dt><dd>NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a741b37827fc154bf85346e23688ee784" name="a741b37827fc154bf85346e23688ee784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741b37827fc154bf85346e23688ee784">&#9670;&nbsp;</a></span>gw_active_get_support_election()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T gw_active_get_support_election </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get election enable or not </p>
+<dl class="section return"><dt>返回</dt><dd>TRUE on enable, False on disable </dd></dl>
+
+</div>
+</div>
+<a id="a77a876181d1be3e2df0ea8f177b994e8" name="a77a876181d1be3e2df0ea8f177b994e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a876181d1be3e2df0ea8f177b994e8">&#9670;&nbsp;</a></span>gw_active_set_ext_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_active_set_ext_param </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set extension params for activation </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>Extension params</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0e0856f91cb20c6b6dfab6a24652ce10" name="a0e0856f91cb20c6b6dfab6a24652ce10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0856f91cb20c6b6dfab6a24652ce10">&#9670;&nbsp;</a></span>gw_active_set_support_election()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_active_set_support_election </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set election enable or not </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>election is supported or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa1158572f69cf2034cffa6c6d32f653c" name="aa1158572f69cf2034cffa6c6d32f653c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1158572f69cf2034cffa6c6d32f653c">&#9670;&nbsp;</a></span>gw_dp_flow_ctrl_cfg_proc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * gw_dp_flow_ctrl_cfg_proc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse DP flow control rules </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>Json encoded flow control rules</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Buffer of flow control rules, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a650496bbfe8eed967f5f1b53e292ae6f" name="a650496bbfe8eed967f5f1b53e292ae6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650496bbfe8eed967f5f1b53e292ae6f">&#9670;&nbsp;</a></span>gw_get_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_get_ip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *&#160;</td>
+          <td class="paramname"><em>p_ip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device IP </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_ip</td><td>Device IP, see <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a81531bc627313697be1b21ae7d6a3993" name="a81531bc627313697be1b21ae7d6a3993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81531bc627313697be1b21ae7d6a3993">&#9670;&nbsp;</a></span>gw_get_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_get_mac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>p_mac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device MAC </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_mac</td><td>Device MAC, see <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae78ca295776ddaff2da6b59175c372a8" name="ae78ca295776ddaff2da6b59175c372a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78ca295776ddaff2da6b59175c372a8">&#9670;&nbsp;</a></span>gw_get_new_pid_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d07/structGW__STRIDE__UPDATE__S.html">GW_STRIDE_UPDATE_S</a> * gw_get_new_pid_key </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get stride info </p>
+<dl class="section return"><dt>返回</dt><dd>NULL on faile, others see <a class="el" href="../../db/d07/structGW__STRIDE__UPDATE__S.html" title="Definition of stride update info">GW_STRIDE_UPDATE_S</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87ec87d901e7726feabc708108423c2a" name="a87ec87d901e7726feabc708108423c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ec87d901e7726feabc708108423c2a">&#9670;&nbsp;</a></span>gw_get_rssi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_get_rssi </td>
+          <td>(</td>
+          <td class="paramtype">SCHAR_T *&#160;</td>
+          <td class="paramname"><em>p_rssi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device RSSI level </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_rssi</td><td>Device RSSI level, if(*p_rssi == 99) then do't support get RSSI</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a472d5f7baad8c75bbc3be4e40afb18cd" name="a472d5f7baad8c75bbc3be4e40afb18cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472d5f7baad8c75bbc3be4e40afb18cd">&#9670;&nbsp;</a></span>gw_get_udf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * gw_get_udf </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get user defined features(udf) for activation </p>
+<dl class="section return"><dt>返回</dt><dd>NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a086b951e78156340d3ffa5ac1f51dfb2" name="a086b951e78156340d3ffa5ac1f51dfb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086b951e78156340d3ffa5ac1f51dfb2">&#9670;&nbsp;</a></span>gw_load_sum_time_zone_tbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_load_sum_time_zone_tbl </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>tm_zone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load summer timezone talbe </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tm_zone</td><td>Summer timezone table</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2535f7f028060c7eff3b7c8e9a1902fc" name="a2535f7f028060c7eff3b7c8e9a1902fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2535f7f028060c7eff3b7c8e9a1902fc">&#9670;&nbsp;</a></span>gw_oem_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID gw_oem_set </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>oem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable oem or not </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oem</td><td>Enable or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a994735faa9c0264bf923450d3674f95e" name="a994735faa9c0264bf923450d3674f95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a994735faa9c0264bf923450d3674f95e">&#9670;&nbsp;</a></span>gw_register_cbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID gw_register_cbs </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *&#160;</td>
+          <td class="paramname"><em>cbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set DevOS event handlers </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbs</td><td>Handler of event, see <a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html" title="Definition of gateway callback funtions">TY_IOT_CBS_S</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9040c3f00e5858cc24966ed36da7e8f0" name="a9040c3f00e5858cc24966ed36da7e8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9040c3f00e5858cc24966ed36da7e8f0">&#9670;&nbsp;</a></span>gw_save_auth_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_save_auth_token </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>regist_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save network configuration token </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>Token got from network configuration</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abbd89ccfaa38a2c5b95d879eed1d6440" name="abbd89ccfaa38a2c5b95d879eed1d6440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd89ccfaa38a2c5b95d879eed1d6440">&#9670;&nbsp;</a></span>gw_set_psk30_cfg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID gw_set_psk30_cfg </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set psk30 cfg flag </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>TRUE or FALSE </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc808567143fa15afaabf5599ae763d3" name="acc808567143fa15afaabf5599ae763d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc808567143fa15afaabf5599ae763d3">&#9670;&nbsp;</a></span>gw_set_udf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_set_udf </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>udf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set user defined features(udf) for activation </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a35713bdb0a8bf9e614ee56186d7007ec" name="a35713bdb0a8bf9e614ee56186d7007ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35713bdb0a8bf9e614ee56186d7007ec">&#9670;&nbsp;</a></span>gw_update_versions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_update_versions </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force to upload all versions </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaa34892fb57d767f20866c4706f1578f" name="aaa34892fb57d767f20866c4706f1578f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa34892fb57d767f20866c4706f1578f">&#9670;&nbsp;</a></span>gw_upload_rst_log_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID gw_upload_rst_log_set </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>upload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable reset log upload or not </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">upload</td><td>Enable or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af47d08ccc8c2ea7045199fb6627e02e5" name="af47d08ccc8c2ea7045199fb6627e02e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47d08ccc8c2ea7045199fb6627e02e5">&#9670;&nbsp;</a></span>gw_user_token_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET gw_user_token_bind </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set network configuration token </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>Token got from network configuration</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa40cadcfa3284a1262c048bae1932a98" name="aa40cadcfa3284a1262c048bae1932a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40cadcfa3284a1262c048bae1932a98">&#9670;&nbsp;</a></span>is_gw_oem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T is_gw_oem </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether oem is enabled or not </p>
+<dl class="section return"><dt>返回</dt><dd>TRUE on positive, FALSE on negative </dd></dl>
+
+</div>
+</div>
+<a id="a43101058f8c4cdee1b035f93cb8f90f0" name="a43101058f8c4cdee1b035f93cb8f90f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43101058f8c4cdee1b035f93cb8f90f0">&#9670;&nbsp;</a></span>set_gw_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID set_gw_active </td>
+          <td>(</td>
+          <td class="paramtype">GW_WORK_STAT_T&#160;</td>
+          <td class="paramname"><em>stat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set activation state </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stat</td><td>Work state, see GW_WORK_STAT_T </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf543f9e1ccecc366d723a26812ffa80" name="abf543f9e1ccecc366d723a26812ffa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf543f9e1ccecc366d723a26812ffa80">&#9670;&nbsp;</a></span>set_gw_ext_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID set_gw_ext_stat </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST GW_EXT_STAT_T&#160;</td>
+          <td class="paramname"><em>ext_stat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set DevOS extension state </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ext_stat</td><td>Extension state, see GW_EXT_STAT_T </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78734a5ea4117431a83a7d6febc75e79" name="a78734a5ea4117431a83a7d6febc75e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78734a5ea4117431a83a7d6febc75e79">&#9670;&nbsp;</a></span>tuya_get_serialno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tuya_get_serialno </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get serial number </p>
+<dl class="section return"><dt>返回</dt><dd>Buffer of serial number, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a6362e236a952e899704cd79307c377de" name="a6362e236a952e899704cd79307c377de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6362e236a952e899704cd79307c377de">&#9670;&nbsp;</a></span>tuya_iot_dev_update_attachs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_dev_update_attachs </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>attr_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update versions of all attach modules. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr_num</td><td>Count of attach modules </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attrs</td><td>Attributes of attach modules</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for attach modules updating in case of dynamic add/remove/update. Info of main netlink module will also be included when upload.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab38114067ed7f65735346eab53c5f2b1" name="ab38114067ed7f65735346eab53c5f2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38114067ed7f65735346eab53c5f2b1">&#9670;&nbsp;</a></span>ty_init_rtc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_init_rtc </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>timeval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize rtc module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeval</td><td>Time interval to update local time</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

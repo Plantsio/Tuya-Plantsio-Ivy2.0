@@ -1,0 +1,1597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_network/include/tal_network.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_ea0af2e080205485d24ed10dc31fbb63.html">tal_network</a></li><li class="navelem"><a class="el" href="../../dir_ab0a090100194fe03a3428d83ee4b27b.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_network.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_network.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/ddd/tal__network_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__network_2include_2tal__network_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__network_2include_2tal__network_8h" id="ainclude_2components_2tal__network_2include_2tal__network_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="365,5,520,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d86/tal__network_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__network_2include_2tal__network_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__network_2include_2tal__network_8hdep" id="ainclude_2components_2tal__network_2include_2tal__network_8hdep">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="655,5,810,61"/>
+<area shape="rect" href="../../d3/d1b/httpc_8h.html" title="HTTP Client Module" alt="" coords="301,117,476,158"/>
+<area shape="rect" href="../../d2/d9a/lan__rpc_8h.html" title="Common process &#45; json rpc" alt="" coords="742,117,931,158"/>
+<area shape="rect" href="../../d2/d5e/uni__network_8h.html" title="Tuya iotdns module is the DNS service module provided by Tuya, which ensures that developers can prov..." alt="" coords="540,109,717,165"/>
+<area shape="rect" href="../../da/dec/wifi__netcfg__frame__transporter_8h_source.html" title=" " alt="" coords="956,109,1163,165"/>
+<area shape="rect" href="../../dc/d26/http__inf_8h.html" title="Wrapper of HTTP request and response" alt="" coords="293,228,484,269"/>
+<area shape="rect" href="../../d9/d3a/http__manager_8h.html" title="wrapper for HTTP session manager" alt="" coords="113,221,269,277"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="5,436,183,492"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="631,213,789,284"/>
+<area shape="rect" href="../../d6/da6/base__event_8h.html" title="tuya simple event module" alt="" coords="1073,332,1227,388"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="445,332,613,388"/>
+<area shape="rect" href="../../d2/dac/tuya__svc__upgrade__http_8h.html" title="TUYA OTA service" alt="" coords="637,332,826,388"/>
+<area shape="rect" href="../../df/d34/tuya__svc__netmgr_8h.html" title="TUYA network manager service" alt="" coords="1073,436,1227,492"/>
+<area shape="rect" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html" title="TUYA mqtt direct service" alt="" coords="1251,436,1465,492"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="467,540,646,596"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="997,644,1175,700"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="1123,540,1335,596"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="475,644,638,700"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="259,436,415,492"/>
+<area shape="rect" href="../../da/d19/tuya__devos__utils_8h.html" title="Utilities of DevOS" alt="" coords="439,436,618,492"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="643,436,809,492"/>
+<area shape="rect" href="../../df/d69/smart__frame_8h.html" title="Common process &#45; Initialization" alt="" coords="833,436,997,492"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/d87/tal__network_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afb73f69317f52b725c19abbe75485a6b"><td class="memItemLeft" align="right" valign="top"><a id="afb73f69317f52b725c19abbe75485a6b" name="afb73f69317f52b725c19abbe75485a6b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TAL_FD_CLR</b>(n,  p)&#160;&#160;&#160;<a class="el" href="../../d5/d87/tal__network_8h.html#ae2d45fadf7cf9674c47df6e092572cc2">tal_net_fd_clear</a>(n, p)</td></tr>
+<tr class="separator:afb73f69317f52b725c19abbe75485a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec01c5e05bd5aceb933547004ba6786"><td class="memItemLeft" align="right" valign="top"><a id="adec01c5e05bd5aceb933547004ba6786" name="adec01c5e05bd5aceb933547004ba6786"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TAL_FD_ISSET</b>(n,  p)&#160;&#160;&#160;<a class="el" href="../../d5/d87/tal__network_8h.html#a7031132d45191637cd4e4311aa106341">tal_net_fd_isset</a>(n,p)</td></tr>
+<tr class="separator:adec01c5e05bd5aceb933547004ba6786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8976e323d07661bf01e89bdbb1f414ee"><td class="memItemLeft" align="right" valign="top"><a id="a8976e323d07661bf01e89bdbb1f414ee" name="a8976e323d07661bf01e89bdbb1f414ee"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TAL_FD_SET</b>(n,  p)&#160;&#160;&#160;<a class="el" href="../../d5/d87/tal__network_8h.html#af2cba4d041db51890d99129d7dd3006d">tal_net_fd_set</a>(n, p)</td></tr>
+<tr class="separator:a8976e323d07661bf01e89bdbb1f414ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecc221c00fd3345ed0153e90d7af006"><td class="memItemLeft" align="right" valign="top"><a id="a6ecc221c00fd3345ed0153e90d7af006" name="a6ecc221c00fd3345ed0153e90d7af006"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TAL_FD_ZERO</b>(p)&#160;&#160;&#160;<a class="el" href="../../d5/d87/tal__network_8h.html#a030090432a3631e93848aaba4c573192">tal_net_fd_zero</a>(p)</td></tr>
+<tr class="separator:a6ecc221c00fd3345ed0153e90d7af006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69346a21fdc8ea9fc40b7f52cf64cbc0"><td class="memItemLeft" align="right" valign="top"><a id="a69346a21fdc8ea9fc40b7f52cf64cbc0" name="a69346a21fdc8ea9fc40b7f52cf64cbc0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_IPADDR_ANY</b>&#160;&#160;&#160;((UINT32_T)0x00000000UL)</td></tr>
+<tr class="separator:a69346a21fdc8ea9fc40b7f52cf64cbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64c323c3e9baaeb0176cd47b88c0ec3"><td class="memItemLeft" align="right" valign="top"><a id="ae64c323c3e9baaeb0176cd47b88c0ec3" name="ae64c323c3e9baaeb0176cd47b88c0ec3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_IPADDR_BROADCAST</b>&#160;&#160;&#160;((UINT32_T)0xffffffffUL)</td></tr>
+<tr class="separator:ae64c323c3e9baaeb0176cd47b88c0ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122362cd4de1005669cb071e1f66db62"><td class="memItemLeft" align="right" valign="top"><a id="a122362cd4de1005669cb071e1f66db62" name="a122362cd4de1005669cb071e1f66db62"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_IPADDR_LOOPBACK</b>&#160;&#160;&#160;((UINT32_T)0x7f000001UL)</td></tr>
+<tr class="separator:a122362cd4de1005669cb071e1f66db62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0f0bfb7aef417230ff09091333a16aa9"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a0f0bfb7aef417230ff09091333a16aa9">tal_net_accept</a> (CONST INT_T fd, TUYA_IP_ADDR_T *addr, UINT16_T *port)</td></tr>
+<tr class="memdesc:a0f0bfb7aef417230ff09091333a16aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept the coming socket connection of the server fd  <a href="../../d5/d87/tal__network_8h.html#a0f0bfb7aef417230ff09091333a16aa9">更多...</a><br /></td></tr>
+<tr class="separator:a0f0bfb7aef417230ff09091333a16aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ae97994f501494ae23e7b7e5227c50"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a78ae97994f501494ae23e7b7e5227c50">tal_net_addr2str</a> (TUYA_IP_ADDR_T ipaddr)</td></tr>
+<tr class="memdesc:a78ae97994f501494ae23e7b7e5227c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change ip address to string  <a href="../../d5/d87/tal__network_8h.html#a78ae97994f501494ae23e7b7e5227c50">更多...</a><br /></td></tr>
+<tr class="separator:a78ae97994f501494ae23e7b7e5227c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408a4559941ed95ee19d61c39e6feca0"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a408a4559941ed95ee19d61c39e6feca0">tal_net_bind</a> (CONST INT_T fd, CONST TUYA_IP_ADDR_T addr, CONST UINT16_T port)</td></tr>
+<tr class="memdesc:a408a4559941ed95ee19d61c39e6feca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind to network  <a href="../../d5/d87/tal__network_8h.html#a408a4559941ed95ee19d61c39e6feca0">更多...</a><br /></td></tr>
+<tr class="separator:a408a4559941ed95ee19d61c39e6feca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ad9a5b482ec312e4ac19edfdc6cb59"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#ac7ad9a5b482ec312e4ac19edfdc6cb59">tal_net_close</a> (CONST INT_T fd)</td></tr>
+<tr class="memdesc:ac7ad9a5b482ec312e4ac19edfdc6cb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close file descriptors  <a href="../../d5/d87/tal__network_8h.html#ac7ad9a5b482ec312e4ac19edfdc6cb59">更多...</a><br /></td></tr>
+<tr class="separator:ac7ad9a5b482ec312e4ac19edfdc6cb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc3f1715a9455d943ecaa6bf04d6720"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a2dc3f1715a9455d943ecaa6bf04d6720">tal_net_connect</a> (CONST INT_T fd, CONST TUYA_IP_ADDR_T addr, CONST UINT16_T port)</td></tr>
+<tr class="memdesc:a2dc3f1715a9455d943ecaa6bf04d6720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to network  <a href="../../d5/d87/tal__network_8h.html#a2dc3f1715a9455d943ecaa6bf04d6720">更多...</a><br /></td></tr>
+<tr class="separator:a2dc3f1715a9455d943ecaa6bf04d6720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92918116b0bfce36ca1fcaf78463b59d"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a92918116b0bfce36ca1fcaf78463b59d">tal_net_connect_raw</a> (CONST INT_T fd, VOID_T *p_socket, CONST INT_T len)</td></tr>
+<tr class="memdesc:a92918116b0bfce36ca1fcaf78463b59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to network with raw data  <a href="../../d5/d87/tal__network_8h.html#a92918116b0bfce36ca1fcaf78463b59d">更多...</a><br /></td></tr>
+<tr class="separator:a92918116b0bfce36ca1fcaf78463b59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5153cf80cb627bdba262ccb718026c28"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a5153cf80cb627bdba262ccb718026c28">tal_net_disable_nagle</a> (CONST INT_T fd)</td></tr>
+<tr class="memdesc:a5153cf80cb627bdba262ccb718026c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable nagle option of socket fd  <a href="../../d5/d87/tal__network_8h.html#a5153cf80cb627bdba262ccb718026c28">更多...</a><br /></td></tr>
+<tr class="separator:a5153cf80cb627bdba262ccb718026c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d45fadf7cf9674c47df6e092572cc2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#ae2d45fadf7cf9674c47df6e092572cc2">tal_net_fd_clear</a> (INT_T fd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="memdesc:ae2d45fadf7cf9674c47df6e092572cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear file descriptor from set  <a href="../../d5/d87/tal__network_8h.html#ae2d45fadf7cf9674c47df6e092572cc2">更多...</a><br /></td></tr>
+<tr class="separator:ae2d45fadf7cf9674c47df6e092572cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7031132d45191637cd4e4311aa106341"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a7031132d45191637cd4e4311aa106341">tal_net_fd_isset</a> (INT_T fd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="memdesc:a7031132d45191637cd4e4311aa106341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check file descriptor is in set  <a href="../../d5/d87/tal__network_8h.html#a7031132d45191637cd4e4311aa106341">更多...</a><br /></td></tr>
+<tr class="separator:a7031132d45191637cd4e4311aa106341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cba4d041db51890d99129d7dd3006d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#af2cba4d041db51890d99129d7dd3006d">tal_net_fd_set</a> (INT_T fd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="memdesc:af2cba4d041db51890d99129d7dd3006d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add file descriptor to set  <a href="../../d5/d87/tal__network_8h.html#af2cba4d041db51890d99129d7dd3006d">更多...</a><br /></td></tr>
+<tr class="separator:af2cba4d041db51890d99129d7dd3006d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030090432a3631e93848aaba4c573192"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a030090432a3631e93848aaba4c573192">tal_net_fd_zero</a> (<a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="memdesc:a030090432a3631e93848aaba4c573192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all file descriptor in set  <a href="../../d5/d87/tal__network_8h.html#a030090432a3631e93848aaba4c573192">更多...</a><br /></td></tr>
+<tr class="separator:a030090432a3631e93848aaba4c573192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830fb9accf4d40c983ff016b9712bfa0"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a830fb9accf4d40c983ff016b9712bfa0">tal_net_get_errno</a> (VOID)</td></tr>
+<tr class="memdesc:a830fb9accf4d40c983ff016b9712bfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get error code of network  <a href="../../d5/d87/tal__network_8h.html#a830fb9accf4d40c983ff016b9712bfa0">更多...</a><br /></td></tr>
+<tr class="separator:a830fb9accf4d40c983ff016b9712bfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9a390aaf12315d7b6fad8f751030a2"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a9a9a390aaf12315d7b6fad8f751030a2">tal_net_get_nonblock</a> (CONST INT_T fd)</td></tr>
+<tr class="memdesc:a9a9a390aaf12315d7b6fad8f751030a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get no block file descriptors  <a href="../../d5/d87/tal__network_8h.html#a9a9a390aaf12315d7b6fad8f751030a2">更多...</a><br /></td></tr>
+<tr class="separator:a9a9a390aaf12315d7b6fad8f751030a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539a7510c7fa4389c5436570a974bebb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a539a7510c7fa4389c5436570a974bebb">tal_net_get_socket_ip</a> (INT_T fd, TUYA_IP_ADDR_T *addr)</td></tr>
+<tr class="memdesc:a539a7510c7fa4389c5436570a974bebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ip address by socket fd  <a href="../../d5/d87/tal__network_8h.html#a539a7510c7fa4389c5436570a974bebb">更多...</a><br /></td></tr>
+<tr class="separator:a539a7510c7fa4389c5436570a974bebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c27c1899802d7aef7c7a60d55fe54b5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a5c27c1899802d7aef7c7a60d55fe54b5">tal_net_gethostbyname</a> (CONST CHAR_T *domain, TUYA_IP_ADDR_T *addr)</td></tr>
+<tr class="memdesc:a5c27c1899802d7aef7c7a60d55fe54b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get address information by domain  <a href="../../d5/d87/tal__network_8h.html#a5c27c1899802d7aef7c7a60d55fe54b5">更多...</a><br /></td></tr>
+<tr class="separator:a5c27c1899802d7aef7c7a60d55fe54b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2180fbf8a76693addb76c52ec6eb88"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a8f2180fbf8a76693addb76c52ec6eb88">tal_net_getsockopt</a> (CONST INT_T fd, CONST TUYA_OPT_LEVEL level, CONST TUYA_OPT_NAME optname, VOID_T *optval, INT_T *optlen)</td></tr>
+<tr class="memdesc:a8f2180fbf8a76693addb76c52ec6eb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get socket options  <a href="../../d5/d87/tal__network_8h.html#a8f2180fbf8a76693addb76c52ec6eb88">更多...</a><br /></td></tr>
+<tr class="separator:a8f2180fbf8a76693addb76c52ec6eb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb95d37c8aa1edc7d333edcff01fff4f"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#afb95d37c8aa1edc7d333edcff01fff4f">tal_net_listen</a> (CONST INT_T fd, CONST INT_T backlog)</td></tr>
+<tr class="memdesc:afb95d37c8aa1edc7d333edcff01fff4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listen to network  <a href="../../d5/d87/tal__network_8h.html#afb95d37c8aa1edc7d333edcff01fff4f">更多...</a><br /></td></tr>
+<tr class="separator:afb95d37c8aa1edc7d333edcff01fff4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58eaddf3dda6a69a476fa30759c70118"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a58eaddf3dda6a69a476fa30759c70118">tal_net_recv</a> (CONST INT_T fd, VOID_T *buf, CONST UINT_T nbytes)</td></tr>
+<tr class="memdesc:a58eaddf3dda6a69a476fa30759c70118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data from network  <a href="../../d5/d87/tal__network_8h.html#a58eaddf3dda6a69a476fa30759c70118">更多...</a><br /></td></tr>
+<tr class="separator:a58eaddf3dda6a69a476fa30759c70118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba140b9368a5d1b6c3b226aba06146c"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a9ba140b9368a5d1b6c3b226aba06146c">tal_net_recv_nd_size</a> (CONST INT_T fd, VOID_T *buf, CONST UINT_T buf_size, CONST UINT_T nd_size)</td></tr>
+<tr class="memdesc:a9ba140b9368a5d1b6c3b226aba06146c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data from network with need size  <a href="../../d5/d87/tal__network_8h.html#a9ba140b9368a5d1b6c3b226aba06146c">更多...</a><br /></td></tr>
+<tr class="separator:a9ba140b9368a5d1b6c3b226aba06146c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fabdd99e80435a33a0450adb20976a7"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a4fabdd99e80435a33a0450adb20976a7">tal_net_recvfrom</a> (CONST INT_T fd, VOID_T *buf, CONST UINT_T nbytes, TUYA_IP_ADDR_T *addr, UINT16_T *port)</td></tr>
+<tr class="memdesc:a4fabdd99e80435a33a0450adb20976a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data from specified server  <a href="../../d5/d87/tal__network_8h.html#a4fabdd99e80435a33a0450adb20976a7">更多...</a><br /></td></tr>
+<tr class="separator:a4fabdd99e80435a33a0450adb20976a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad108e0648c270a535850f7ed5bff9b22"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#ad108e0648c270a535850f7ed5bff9b22">tal_net_select</a> (CONST INT_T maxfd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *readfds, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *writefds, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *errorfds, CONST UINT_T ms_timeout)</td></tr>
+<tr class="memdesc:ad108e0648c270a535850f7ed5bff9b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available file descriptors  <a href="../../d5/d87/tal__network_8h.html#ad108e0648c270a535850f7ed5bff9b22">更多...</a><br /></td></tr>
+<tr class="separator:ad108e0648c270a535850f7ed5bff9b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04174a0d51d8241cffca6b2422024569"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a04174a0d51d8241cffca6b2422024569">tal_net_send</a> (CONST INT_T fd, CONST VOID_T *buf, CONST UINT_T nbytes)</td></tr>
+<tr class="memdesc:a04174a0d51d8241cffca6b2422024569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to network  <a href="../../d5/d87/tal__network_8h.html#a04174a0d51d8241cffca6b2422024569">更多...</a><br /></td></tr>
+<tr class="separator:a04174a0d51d8241cffca6b2422024569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286b3f36538c338365df0703bcc99197"><td class="memItemLeft" align="right" valign="top">TUYA_ERRNO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a286b3f36538c338365df0703bcc99197">tal_net_send_to</a> (CONST INT_T fd, CONST VOID_T *buf, CONST UINT_T nbytes, CONST TUYA_IP_ADDR_T addr, CONST UINT16_T port)</td></tr>
+<tr class="memdesc:a286b3f36538c338365df0703bcc99197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to specified server  <a href="../../d5/d87/tal__network_8h.html#a286b3f36538c338365df0703bcc99197">更多...</a><br /></td></tr>
+<tr class="separator:a286b3f36538c338365df0703bcc99197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088e487cf20282deb2b06f074a6073d7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a088e487cf20282deb2b06f074a6073d7">tal_net_set_block</a> (CONST INT_T fd, CONST BOOL_T block)</td></tr>
+<tr class="memdesc:a088e487cf20282deb2b06f074a6073d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set block flag for file descriptors  <a href="../../d5/d87/tal__network_8h.html#a088e487cf20282deb2b06f074a6073d7">更多...</a><br /></td></tr>
+<tr class="separator:a088e487cf20282deb2b06f074a6073d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b0ffb03650630cdbf3199bd756fa3d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a77b0ffb03650630cdbf3199bd756fa3d">tal_net_set_broadcast</a> (CONST INT_T fd)</td></tr>
+<tr class="memdesc:a77b0ffb03650630cdbf3199bd756fa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable broadcast option of socket fd  <a href="../../d5/d87/tal__network_8h.html#a77b0ffb03650630cdbf3199bd756fa3d">更多...</a><br /></td></tr>
+<tr class="separator:a77b0ffb03650630cdbf3199bd756fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b2c8cb4070e303c876b65c075eb4c5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#ad4b2c8cb4070e303c876b65c075eb4c5">tal_net_set_bufsize</a> (CONST INT_T fd, CONST INT_T buf_size, CONST TUYA_TRANS_TYPE_E type)</td></tr>
+<tr class="memdesc:ad4b2c8cb4070e303c876b65c075eb4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set buffer_size option of socket fd  <a href="../../d5/d87/tal__network_8h.html#ad4b2c8cb4070e303c876b65c075eb4c5">更多...</a><br /></td></tr>
+<tr class="separator:ad4b2c8cb4070e303c876b65c075eb4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907dc353c740354ba6685a06d3097258"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a907dc353c740354ba6685a06d3097258">tal_net_set_keepalive</a> (INT_T fd, CONST BOOL_T alive, CONST UINT_T idle, CONST UINT_T intr, CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:a907dc353c740354ba6685a06d3097258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set keepalive option of socket fd to monitor the connection  <a href="../../d5/d87/tal__network_8h.html#a907dc353c740354ba6685a06d3097258">更多...</a><br /></td></tr>
+<tr class="separator:a907dc353c740354ba6685a06d3097258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1f62ac6f3154c8d85271952d0cf482"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a7e1f62ac6f3154c8d85271952d0cf482">tal_net_set_reuse</a> (CONST INT_T fd)</td></tr>
+<tr class="memdesc:a7e1f62ac6f3154c8d85271952d0cf482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable reuse option of socket fd  <a href="../../d5/d87/tal__network_8h.html#a7e1f62ac6f3154c8d85271952d0cf482">更多...</a><br /></td></tr>
+<tr class="separator:a7e1f62ac6f3154c8d85271952d0cf482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85087d59397a5a171f70db8b2c9768ef"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a85087d59397a5a171f70db8b2c9768ef">tal_net_set_timeout</a> (CONST INT_T fd, CONST INT_T ms_timeout, CONST TUYA_TRANS_TYPE_E type)</td></tr>
+<tr class="memdesc:a85087d59397a5a171f70db8b2c9768ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set timeout option of socket fd  <a href="../../d5/d87/tal__network_8h.html#a85087d59397a5a171f70db8b2c9768ef">更多...</a><br /></td></tr>
+<tr class="separator:a85087d59397a5a171f70db8b2c9768ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d0db8a4d4fa53cd71d2f32b6d2d701"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a18d0db8a4d4fa53cd71d2f32b6d2d701">tal_net_setsockopt</a> (CONST INT_T fd, CONST TUYA_OPT_LEVEL level, CONST TUYA_OPT_NAME optname, CONST VOID_T *optval, CONST INT_T optlen)</td></tr>
+<tr class="memdesc:a18d0db8a4d4fa53cd71d2f32b6d2d701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set socket options  <a href="../../d5/d87/tal__network_8h.html#a18d0db8a4d4fa53cd71d2f32b6d2d701">更多...</a><br /></td></tr>
+<tr class="separator:a18d0db8a4d4fa53cd71d2f32b6d2d701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d7e2d90b144ca0ba31b100bf0eeef4"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a69d7e2d90b144ca0ba31b100bf0eeef4">tal_net_socket_create</a> (CONST TUYA_PROTOCOL_TYPE_E type)</td></tr>
+<tr class="memdesc:a69d7e2d90b144ca0ba31b100bf0eeef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a tcp/udp socket  <a href="../../d5/d87/tal__network_8h.html#a69d7e2d90b144ca0ba31b100bf0eeef4">更多...</a><br /></td></tr>
+<tr class="separator:a69d7e2d90b144ca0ba31b100bf0eeef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa2e0b5b83f181d2fb79c5b438a7874"><td class="memItemLeft" align="right" valign="top">TUYA_IP_ADDR_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/tal__network_8h.html#a6fa2e0b5b83f181d2fb79c5b438a7874">tal_net_str2addr</a> (CONST CHAR_T *ip_str)</td></tr>
+<tr class="memdesc:a6fa2e0b5b83f181d2fb79c5b438a7874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change ip string to address  <a href="../../d5/d87/tal__network_8h.html#a6fa2e0b5b83f181d2fb79c5b438a7874">更多...</a><br /></td></tr>
+<tr class="separator:a6fa2e0b5b83f181d2fb79c5b438a7874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a0f0bfb7aef417230ff09091333a16aa9" name="a0f0bfb7aef417230ff09091333a16aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0bfb7aef417230ff09091333a16aa9">&#9670;&nbsp;</a></span>tal_net_accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_net_accept </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_IP_ADDR_T *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T *&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accept the coming socket connection of the server fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>address information of server </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>port information of server</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for accepting the coming socket connection of the server fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the file descriptor, -1 means failed </dd></dl>
+
+</div>
+</div>
+<a id="a78ae97994f501494ae23e7b7e5227c50" name="a78ae97994f501494ae23e7b7e5227c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ae97994f501494ae23e7b7e5227c50">&#9670;&nbsp;</a></span>tal_net_addr2str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tal_net_addr2str </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_IP_ADDR_T&#160;</td>
+          <td class="paramname"><em>ipaddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change ip address to string </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipaddr</td><td>ip address</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to change ip address(in host byte order) to string(in IPv4 numbers-and-dots(xx.xx.xx.xx) notion).</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>ip string </dd></dl>
+
+</div>
+</div>
+<a id="a408a4559941ed95ee19d61c39e6feca0" name="a408a4559941ed95ee19d61c39e6feca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408a4559941ed95ee19d61c39e6feca0">&#9670;&nbsp;</a></span>tal_net_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_bind </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_IP_ADDR_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT16_T&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bind to network </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>address information of server </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>port information of server</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for binding to network.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="ac7ad9a5b482ec312e4ac19edfdc6cb59" name="ac7ad9a5b482ec312e4ac19edfdc6cb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ad9a5b482ec312e4ac19edfdc6cb59">&#9670;&nbsp;</a></span>tal_net_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_close </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close file descriptors </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to close file descriptors.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a2dc3f1715a9455d943ecaa6bf04d6720" name="a2dc3f1715a9455d943ecaa6bf04d6720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc3f1715a9455d943ecaa6bf04d6720">&#9670;&nbsp;</a></span>tal_net_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_connect </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_IP_ADDR_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT16_T&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect to network </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>address information of server </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>port information of server</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for connecting to network.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a92918116b0bfce36ca1fcaf78463b59d" name="a92918116b0bfce36ca1fcaf78463b59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92918116b0bfce36ca1fcaf78463b59d">&#9670;&nbsp;</a></span>tal_net_connect_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_connect_raw </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>p_socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect to network with raw data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_socket</td><td>raw socket data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data lenth</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for connecting to network with raw data.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a5153cf80cb627bdba262ccb718026c28" name="a5153cf80cb627bdba262ccb718026c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5153cf80cb627bdba262ccb718026c28">&#9670;&nbsp;</a></span>tal_net_disable_nagle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_disable_nagle </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable nagle option of socket fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to disable nagle option of socket fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae2d45fadf7cf9674c47df6e092572cc2" name="ae2d45fadf7cf9674c47df6e092572cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d45fadf7cf9674c47df6e092572cc2">&#9670;&nbsp;</a></span>tal_net_fd_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_fd_clear </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>fds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear file descriptor from set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fds</td><td>set of file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to clear file descriptor from set.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7031132d45191637cd4e4311aa106341" name="a7031132d45191637cd4e4311aa106341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7031132d45191637cd4e4311aa106341">&#9670;&nbsp;</a></span>tal_net_fd_isset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_fd_isset </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>fds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check file descriptor is in set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fds</td><td>set of file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check the file descriptor is in set.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af2cba4d041db51890d99129d7dd3006d" name="af2cba4d041db51890d99129d7dd3006d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cba4d041db51890d99129d7dd3006d">&#9670;&nbsp;</a></span>tal_net_fd_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_fd_set </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>fds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add file descriptor to set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fds</td><td>set of file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to add file descriptor to set.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a030090432a3631e93848aaba4c573192" name="a030090432a3631e93848aaba4c573192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030090432a3631e93848aaba4c573192">&#9670;&nbsp;</a></span>tal_net_fd_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_fd_zero </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>fds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear all file descriptor in set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fds</td><td>set of file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to clear all file descriptor in set.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a830fb9accf4d40c983ff016b9712bfa0" name="a830fb9accf4d40c983ff016b9712bfa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830fb9accf4d40c983ff016b9712bfa0">&#9670;&nbsp;</a></span>tal_net_get_errno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_get_errno </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get error code of network </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting error code of network.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>UNW_SUCCESS on success. Others on error, please refer to tuya_os_adapter_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a9a9a390aaf12315d7b6fad8f751030a2" name="a9a9a390aaf12315d7b6fad8f751030a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9a390aaf12315d7b6fad8f751030a2">&#9670;&nbsp;</a></span>tal_net_get_nonblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_net_get_nonblock </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get no block file descriptors </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get no block file descriptors.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the count of no block file descriptors. </dd></dl>
+
+</div>
+</div>
+<a id="a539a7510c7fa4389c5436570a974bebb" name="a539a7510c7fa4389c5436570a974bebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539a7510c7fa4389c5436570a974bebb">&#9670;&nbsp;</a></span>tal_net_get_socket_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_get_socket_ip </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_IP_ADDR_T *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ip address by socket fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addr</td><td>ip address</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting ip address by socket fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5c27c1899802d7aef7c7a60d55fe54b5" name="a5c27c1899802d7aef7c7a60d55fe54b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c27c1899802d7aef7c7a60d55fe54b5">&#9670;&nbsp;</a></span>tal_net_gethostbyname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_gethostbyname </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_IP_ADDR_T *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get address information by domain </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>domain information </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>address information</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting address information by domain.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8f2180fbf8a76693addb76c52ec6eb88" name="a8f2180fbf8a76693addb76c52ec6eb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2180fbf8a76693addb76c52ec6eb88">&#9670;&nbsp;</a></span>tal_net_getsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_getsockopt </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_OPT_LEVEL&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_OPT_NAME&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get socket options </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>getting level </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optname</td><td>the name of the option </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">optval</td><td>the value of option </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">optlen</td><td>the length of the option value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting socket options.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afb95d37c8aa1edc7d333edcff01fff4f" name="afb95d37c8aa1edc7d333edcff01fff4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb95d37c8aa1edc7d333edcff01fff4f">&#9670;&nbsp;</a></span>tal_net_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_listen </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>backlog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Listen to network </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">backlog</td><td>max count of backlog connection</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for listening to network.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a58eaddf3dda6a69a476fa30759c70118" name="a58eaddf3dda6a69a476fa30759c70118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58eaddf3dda6a69a476fa30759c70118">&#9670;&nbsp;</a></span>tal_net_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_recv </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>nbytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive data from network </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>receive data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td>buffer lenth</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for receiving data from network</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a9ba140b9368a5d1b6c3b226aba06146c" name="a9ba140b9368a5d1b6c3b226aba06146c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba140b9368a5d1b6c3b226aba06146c">&#9670;&nbsp;</a></span>tal_net_recv_nd_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_net_recv_nd_size </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>nd_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive data from network with need size </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>receive data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td>buffer lenth </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nd_size</td><td>the need size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for receiving data from network with need size</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&gt;0 on success. Others on error </dd></dl>
+
+</div>
+</div>
+<a id="a4fabdd99e80435a33a0450adb20976a7" name="a4fabdd99e80435a33a0450adb20976a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fabdd99e80435a33a0450adb20976a7">&#9670;&nbsp;</a></span>tal_net_recvfrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_recvfrom </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_IP_ADDR_T *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T *&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive data from specified server </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>receive data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td>buffer lenth </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>address information of server </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>port information of server</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for receiving data from specified server</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="ad108e0648c270a535850f7ed5bff9b22" name="ad108e0648c270a535850f7ed5bff9b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad108e0648c270a535850f7ed5bff9b22">&#9670;&nbsp;</a></span>tal_net_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_net_select </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>maxfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>readfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>writefds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *&#160;</td>
+          <td class="paramname"><em>errorfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>ms_timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get available file descriptors </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxfd</td><td>max count of file descriptor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">readfds</td><td>a set of readalbe file descriptor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">writefds</td><td>a set of writable file descriptor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">errorfds</td><td>a set of except file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms_timeout</td><td>time out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get available file descriptors.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the count of available file descriptors. </dd></dl>
+
+</div>
+</div>
+<a id="a04174a0d51d8241cffca6b2422024569" name="a04174a0d51d8241cffca6b2422024569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04174a0d51d8241cffca6b2422024569">&#9670;&nbsp;</a></span>tal_net_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_send </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>nbytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send data to network </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>send data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td>buffer lenth</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for sending data to network</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a286b3f36538c338365df0703bcc99197" name="a286b3f36538c338365df0703bcc99197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286b3f36538c338365df0703bcc99197">&#9670;&nbsp;</a></span>tal_net_send_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_ERRNO tal_net_send_to </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_IP_ADDR_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT16_T&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send data to specified server </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>send data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbytes</td><td>buffer lenth </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>address information of server </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>port information of server</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for sending data to network</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success. Others on error, please refer to the error no of the target system </dd></dl>
+
+</div>
+</div>
+<a id="a088e487cf20282deb2b06f074a6073d7" name="a088e487cf20282deb2b06f074a6073d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088e487cf20282deb2b06f074a6073d7">&#9670;&nbsp;</a></span>tal_net_set_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_set_block </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set block flag for file descriptors </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>block flag</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to set block flag for file descriptors.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a77b0ffb03650630cdbf3199bd756fa3d" name="a77b0ffb03650630cdbf3199bd756fa3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b0ffb03650630cdbf3199bd756fa3d">&#9670;&nbsp;</a></span>tal_net_set_broadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_set_broadcast </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable broadcast option of socket fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to enable broadcast option of socket fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad4b2c8cb4070e303c876b65c075eb4c5" name="ad4b2c8cb4070e303c876b65c075eb4c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b2c8cb4070e303c876b65c075eb4c5">&#9670;&nbsp;</a></span>tal_net_set_bufsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_set_bufsize </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_TRANS_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set buffer_size option of socket fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_size</td><td>buffer size in byte </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>transfer type, receive or send</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting buffer_size option of socket fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a907dc353c740354ba6685a06d3097258" name="a907dc353c740354ba6685a06d3097258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907dc353c740354ba6685a06d3097258">&#9670;&nbsp;</a></span>tal_net_set_keepalive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_set_keepalive </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>alive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>idle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>intr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set keepalive option of socket fd to monitor the connection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alive</td><td>keepalive option, enable or disable option </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idle</td><td>keep idle option, if the connection has no data exchange with the idle time(in seconds), start probe. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr</td><td>keep interval option, the probe time interval. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>keep count option, probe count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to set keepalive option of socket fd to monitor the connection.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7e1f62ac6f3154c8d85271952d0cf482" name="a7e1f62ac6f3154c8d85271952d0cf482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1f62ac6f3154c8d85271952d0cf482">&#9670;&nbsp;</a></span>tal_net_set_reuse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_set_reuse </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable reuse option of socket fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to enable reuse option of socket fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a85087d59397a5a171f70db8b2c9768ef" name="a85087d59397a5a171f70db8b2c9768ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85087d59397a5a171f70db8b2c9768ef">&#9670;&nbsp;</a></span>tal_net_set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>ms_timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_TRANS_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set timeout option of socket fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms_timeout</td><td>timeout in ms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>transfer type, receive or send</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting timeout option of socket fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a18d0db8a4d4fa53cd71d2f32b6d2d701" name="a18d0db8a4d4fa53cd71d2f32b6d2d701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d0db8a4d4fa53cd71d2f32b6d2d701">&#9670;&nbsp;</a></span>tal_net_setsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_net_setsockopt </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_OPT_LEVEL&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST TUYA_OPT_NAME&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST VOID_T *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set socket options </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file descriptor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>setting level </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optname</td><td>the name of the option </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optval</td><td>the value of option </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optlen</td><td>the length of the option value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting socket options.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a69d7e2d90b144ca0ba31b100bf0eeef4" name="a69d7e2d90b144ca0ba31b100bf0eeef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d7e2d90b144ca0ba31b100bf0eeef4">&#9670;&nbsp;</a></span>tal_net_socket_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_net_socket_create </td>
+          <td>(</td>
+          <td class="paramtype">CONST TUYA_PROTOCOL_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a tcp/udp socket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>protocol type, tcp or udp</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for creating a tcp/udp socket.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>file descriptor </dd></dl>
+
+</div>
+</div>
+<a id="a6fa2e0b5b83f181d2fb79c5b438a7874" name="a6fa2e0b5b83f181d2fb79c5b438a7874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa2e0b5b83f181d2fb79c5b438a7874">&#9670;&nbsp;</a></span>tal_net_str2addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_IP_ADDR_T tal_net_str2addr </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>ip_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change ip string to address </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip_str</td><td>ip string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to change ip string to address.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>ip address </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

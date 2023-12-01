@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_rpc/include/rpc_pipe.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e4ad71b8cc97fe2e4a95227cc389988e.html">svc_rpc</a></li><li class="navelem"><a class="el" href="../../dir_48bf1703043dd255f84e45145260ba0d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">rpc_pipe.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d49/rpc__pipe_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __RPC_PIPE_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __RPC_PIPE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d94/svc__rpc_8h.html">svc_rpc.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;rpc_node.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">typedef</span> void (*tuya_rpc_pipe_reply_cb)(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <a class="code hl_struct" href="../../db/d03/structrpc__node__t.html">rpc_node_t</a> *node, uint8_t *data, uint16_t data_len, <span class="keywordtype">void</span> *args);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">typedef</span> void (*tuya_rpc_pipe_recv_cb)(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <a class="code hl_struct" href="../../db/d03/structrpc__node__t.html">rpc_node_t</a> *node, uint8_t *data, uint16_t data_len, uint16_t sequence);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../dd/d13/structtuya__rpc__pipe__call__t.html">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    uint8_t                 *data;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    uint16_t                 data_len;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    tuya_rpc_pipe_reply_cb   reply_cb;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span>                    *args;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint32_t                 sec;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <a class="code hl_struct" href="../../dd/d13/structtuya__rpc__pipe__call__t.html">tuya_rpc_pipe_call_t</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">int</span> tuya_rpc_pipe_call_async(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <a class="code hl_struct" href="../../dd/d13/structtuya__rpc__pipe__call__t.html">tuya_rpc_pipe_call_t</a> *pipe);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">int</span> tuya_rpc_pipe_reply(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <a class="code hl_struct" href="../../db/d03/structrpc__node__t.html">rpc_node_t</a> *node, uint8_t *data, uint16_t data_len, uint16_t sequence);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">int</span> tuya_rpc_pipe_recv_register(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, tuya_rpc_pipe_recv_cb pipe_recv_cb, <span class="keywordtype">void</span> *args);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructrpc__node__t_html"><div class="ttname"><a href="../../db/d03/structrpc__node__t.html">rpc_node_t</a></div><div class="ttdef"><b>Definition:</b> rpc_node.h:21</div></div>
+<div class="ttc" id="astructtuya__rpc__pipe__call__t_html"><div class="ttname"><a href="../../dd/d13/structtuya__rpc__pipe__call__t.html">tuya_rpc_pipe_call_t</a></div><div class="ttdef"><b>Definition:</b> rpc_pipe.h:21</div></div>
+<div class="ttc" id="astructtuya__rpc__t_html"><div class="ttname"><a href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a></div><div class="ttdef"><b>Definition:</b> svc_rpc.h:44</div></div>
+<div class="ttc" id="asvc__rpc_8h_html"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html">svc_rpc.h</a></div><div class="ttdoc">rcp relate</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

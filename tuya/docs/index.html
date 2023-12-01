@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TuyaOS 快速体验</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">TuyaOS 快速体验 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><a class="anchor" id="md_README"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+简介</h1>
+<p ><a href="https://developer.tuya.com/cn/tuyaos"><code>TuyaOS</code></a> 是基于 <code>RTOS</code>、<code>Linux</code>、<code>Non-OS</code> 等设计的应用于物联网（<code>IoT</code>）领域面向全连接、全场景的分布式跨平台操作系统，具备轻量级、互联互通、安全传输、组件丰富、快速开发等关键能力，广泛应用于电工照明、大小家电、视频监控、中控网关、安防传感、工业农业等物联网设备。</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+目录</h1>
+<div class="fragment"><div class="line">&lt;TuyaOS-x.x.x-tuyaos-iot-xxxxxxx&gt;</div>
+<div class="line">|---adapter                     #适配层定义</div>
+<div class="line">|---apps                        #demo程序</div>
+<div class="line">|---build                       #编译配置</div>
+<div class="line">|---docs                        #文档</div>
+<div class="line">|---include                     #头文件，包括公共头文件和组件头文件</div>
+<div class="line">|---libs                        #libtuyaos-iot/ipc/gw.a，独立链接的.a文件</div>
+<div class="line">|---scripts                     #工具、脚本</div>
+<div class="line">|---vendor                      #原厂库，空，第一次编译按需下载</div>
+<div class="line">|---build.sh/py                 #tuyaos编译入口</div>
+<div class="line">|---README.md</div>
+<div class="line">|---LICENSE</div>
+<div class="line">|---CHANGELOG</div>
+<div class="line">|---RELEASELOG</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+开发</h1>
+<p >通过 <a href="https://developer.tuya.com/cn/ide"><code>TuyaOS Wind IDE</code></a> 可以快速下载 <a href="https://developer.tuya.com/cn/tuyaos"><code>TuyaOS</code></a> 开发框架，并创建产品开发工程。具体操作请参照<a href="https://developer.tuya.com/cn/docs/iot-device-dev/Development-Tools?id=Kb0vhc1zz50dk">获取<code>TuyaOS</code>开发框架</a>。</p>
+<p ><code>TuyaOS</code> 开发框架提供了演示程序，帮助开发者更快的了解如何基于 <code>TuyaOS</code> 开发框架进行二次开发，细节请参照 <code>apps</code> 目录下的演示程序源码。同时也提供演示程序的快速学习文档，操作方式请参照 <a href="https://developer.tuya.com/cn/docs/iot-device-dev/Development-Tools?id=Kb0vhc1zz50dk">Demo程序Quick Start</a>。</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+编译</h1>
+<p >通过 <code>IDE</code> 提供了方便快捷的一键编译功能来编译用户应用程序或者是<code>TuyaOS</code>开发框架自带的演示程序，具体操作流程请参照<a href="https://developer.tuya.com/cn/docs/iot-device-dev/Development-Tools?id=Kb0vhc1zz50dk">编译Demo</a>。</p>
+<p >或者是在 <code>IDE</code> 的终端界面执行命令编译用户应用程序或者是<code>TuyaOS</code>开发框架自带的演示程序，示例如下（每个框架带的演示程序名称不一样，此处假设示例程序名称<code>tuyaos_demo_rtos_func</code>）：</p>
+<div class="fragment"><div class="line">./build_app.sh apps/tuyaos_demo_rtos_func tuyaos_demo_rtos_func 1.0.0</div>
+</div><!-- fragment --><p >生成的产物保存于<code>./apps/tuyaos_demo_rtos_func/output/</code>目录下，详情参照示例程序的帮助文档。</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+烧录</h1>
+<p >在实际生产过程中，需要有专门的生产系统和工具。对于生产系统和工具，涂鸦有一套完整的智慧生产体系，可以参考<a href="https://developer.tuya.com/cn/docs/iot/flash-and-authorize?id=Kaytfatwdbfj2">烧录授权</a>来自己开发的产品仅是批量的烧录和授权。</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+FAQ</h1>
+<p >在使用过程中，如果遇到问题，可以访问涂鸦开发者平台<a href="https://developer.tuya.com/cn/docs/iot-device-dev/faq?id=Kaiuyfi4402ee">Wi-Fi设备接入-故障排除</a>，按照自己遇到的问题分类，寻找合适的解决方法。 </p>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

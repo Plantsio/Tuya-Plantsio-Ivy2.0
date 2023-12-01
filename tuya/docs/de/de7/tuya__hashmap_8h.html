@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_hashmap.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_hashmap.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya hasmap module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_hashmap.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/db2/tuya__hashmap_8h__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__hashmap_8h" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__hashmap_8h" id="ainclude_2adapter_2utilities_2include_2tuya__hashmap_8h">
+<area shape="rect" title="tuya hasmap module" alt="" coords="350,5,535,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d90/tuya__hashmap_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__hashmap_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__hashmap_8hdep" id="ainclude_2adapter_2utilities_2include_2tuya__hashmap_8hdep">
+<area shape="rect" title="tuya hasmap module" alt="" coords="411,5,597,47"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="425,95,583,165"/>
+<area shape="rect" href="../../d6/da6/base__event_8h.html" title="tuya simple event module" alt="" coords="243,213,397,269"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="552,317,720,373"/>
+<area shape="rect" href="../../d2/dac/tuya__svc__upgrade__http_8h.html" title="TUYA OTA service" alt="" coords="541,213,731,269"/>
+<area shape="rect" href="../../df/d34/tuya__svc__netmgr_8h.html" title="TUYA network manager service" alt="" coords="243,317,397,373"/>
+<area shape="rect" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html" title="TUYA mqtt direct service" alt="" coords="5,317,219,373"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="293,421,472,477"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="133,525,310,581"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="7,421,219,477"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="335,525,497,581"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="1330,421,1486,477"/>
+<area shape="rect" href="../../da/d19/tuya__devos__utils_8h.html" title="Utilities of DevOS" alt="" coords="547,421,725,477"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="750,421,917,477"/>
+<area shape="rect" href="../../df/d69/smart__frame_8h.html" title="Common process &#45; Initialization" alt="" coords="941,421,1105,477"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="1129,421,1306,477"/>
+</map>
+</div>
+</div>
+<p><a href="../../de/de7/tuya__hashmap_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a1c145b99fddeb41f4d328bc972cc7285"><td class="memItemLeft" align="right" valign="top"><a id="a1c145b99fddeb41f4d328bc972cc7285" name="a1c145b99fddeb41f4d328bc972cc7285"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAP_MISSING</b>&#160;&#160;&#160;-2  /* No such element */</td></tr>
+<tr class="memdesc:a1c145b99fddeb41f4d328bc972cc7285"><td class="mdescLeft">&#160;</td><td class="mdescRight">define some special error code for hashmap module <br /></td></tr>
+<tr class="separator:a1c145b99fddeb41f4d328bc972cc7285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c36fe02bdc6a868db8020ad2adebd6a"><td class="memItemLeft" align="right" valign="top"><a id="a3c36fe02bdc6a868db8020ad2adebd6a" name="a3c36fe02bdc6a868db8020ad2adebd6a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAP_OK</b>&#160;&#160;&#160;0 	/* OK */</td></tr>
+<tr class="separator:a3c36fe02bdc6a868db8020ad2adebd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104e90bcefdce9ee5c03b41af0252dcf"><td class="memItemLeft" align="right" valign="top"><a id="a104e90bcefdce9ee5c03b41af0252dcf" name="a104e90bcefdce9ee5c03b41af0252dcf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAP_OMEM</b>&#160;&#160;&#160;-1 	/* Out of Memory */</td></tr>
+<tr class="separator:a104e90bcefdce9ee5c03b41af0252dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084e3085f0617a188a6a0a0acaa0e935"><td class="memItemLeft" align="right" valign="top"><a id="a084e3085f0617a188a6a0a0acaa0e935" name="a084e3085f0617a188a6a0a0acaa0e935"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_HASHMAP_FOR_EACH_DATA</b>(in,  key,  data_iter)&#160;&#160;&#160;    for(data_iter = NULL; <a class="el" href="../../de/de7/tuya__hashmap_8h.html#ae6844fc281512ea4cf53047c12560d5e">tuya_hashmap_data_traversal</a>(in, key, (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">ANY_T_ITER</a> *)&amp;data_iter) == MAP_OK; /*empty*/)</td></tr>
+<tr class="memdesc:a084e3085f0617a188a6a0a0acaa0e935"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse all data with same key <br /></td></tr>
+<tr class="separator:a084e3085f0617a188a6a0a0acaa0e935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a63a42c2de7a032134a456b74484c480c"><td class="memItemLeft" align="right" valign="top"><a id="a63a42c2de7a032134a456b74484c480c" name="a63a42c2de7a032134a456b74484c480c"></a>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>ANY_T</b></td></tr>
+<tr class="memdesc:a63a42c2de7a032134a456b74484c480c"><td class="mdescLeft">&#160;</td><td class="mdescRight">any_t is a pointer. This allows you to put arbitrary structures in the hashmap. <br /></td></tr>
+<tr class="separator:a63a42c2de7a032134a456b74484c480c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68c545b97bbd1694aac93a6d3e756da"><td class="memItemLeft" align="right" valign="top"><a id="aa68c545b97bbd1694aac93a6d3e756da" name="aa68c545b97bbd1694aac93a6d3e756da"></a>
+typedef <a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ANY_T_ITER</b></td></tr>
+<tr class="memdesc:aa68c545b97bbd1694aac93a6d3e756da"><td class="mdescLeft">&#160;</td><td class="mdescRight">any_t_iter is a iterator which used to traverse the hashmap <br /></td></tr>
+<tr class="separator:aa68c545b97bbd1694aac93a6d3e756da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d5478f91cf4ed8b9b163ef53b52497"><td class="memItemLeft" align="right" valign="top"><a id="a94d5478f91cf4ed8b9b163ef53b52497" name="a94d5478f91cf4ed8b9b163ef53b52497"></a>
+typedef <a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MAP_T</b></td></tr>
+<tr class="memdesc:a94d5478f91cf4ed8b9b163ef53b52497"><td class="mdescLeft">&#160;</td><td class="mdescRight">map_t is a pointer to an internally maintained data structure. Clients of this package do not need to know how hashmaps are represented. They see and manipulate only map_t's. <br /></td></tr>
+<tr class="separator:a94d5478f91cf4ed8b9b163ef53b52497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae6844fc281512ea4cf53047c12560d5e"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#ae6844fc281512ea4cf53047c12560d5e">tuya_hashmap_data_traversal</a> (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, const CHAR_T *key, <a class="el" href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">ANY_T_ITER</a> *arg_iterator)</td></tr>
+<tr class="memdesc:ae6844fc281512ea4cf53047c12560d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse all data with same key  <a href="../../de/de7/tuya__hashmap_8h.html#ae6844fc281512ea4cf53047c12560d5e">更多...</a><br /></td></tr>
+<tr class="separator:ae6844fc281512ea4cf53047c12560d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f8bc4a832cf48cb4d1a87d9a624658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a48f8bc4a832cf48cb4d1a87d9a624658">tuya_hashmap_free</a> (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in)</td></tr>
+<tr class="memdesc:a48f8bc4a832cf48cb4d1a87d9a624658"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the hashmap  <a href="../../de/de7/tuya__hashmap_8h.html#a48f8bc4a832cf48cb4d1a87d9a624658">更多...</a><br /></td></tr>
+<tr class="separator:a48f8bc4a832cf48cb4d1a87d9a624658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcbff6b355275367455b0028b955c9e"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#afbcbff6b355275367455b0028b955c9e">tuya_hashmap_get</a> (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, const CHAR_T *key, <a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> *arg)</td></tr>
+<tr class="memdesc:afbcbff6b355275367455b0028b955c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an element from the hashmap  <a href="../../de/de7/tuya__hashmap_8h.html#afbcbff6b355275367455b0028b955c9e">更多...</a><br /></td></tr>
+<tr class="separator:afbcbff6b355275367455b0028b955c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94d05504fcc53ca2ba684c828760e0d"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#ab94d05504fcc53ca2ba684c828760e0d">tuya_hashmap_length</a> (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in)</td></tr>
+<tr class="memdesc:ab94d05504fcc53ca2ba684c828760e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current size of the hashmap  <a href="../../de/de7/tuya__hashmap_8h.html#ab94d05504fcc53ca2ba684c828760e0d">更多...</a><br /></td></tr>
+<tr class="separator:ab94d05504fcc53ca2ba684c828760e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af204a4b755889d5e1a266ba5430bbdf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#af204a4b755889d5e1a266ba5430bbdf5">tuya_hashmap_new</a> (UINT_T table_size)</td></tr>
+<tr class="memdesc:af204a4b755889d5e1a266ba5430bbdf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a new empty hashmap  <a href="../../de/de7/tuya__hashmap_8h.html#af204a4b755889d5e1a266ba5430bbdf5">更多...</a><br /></td></tr>
+<tr class="separator:af204a4b755889d5e1a266ba5430bbdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5d546bc51dea0e98cd402c550af915"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a6a5d546bc51dea0e98cd402c550af915">tuya_hashmap_put</a> (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, const CHAR_T *key, const <a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> data)</td></tr>
+<tr class="memdesc:a6a5d546bc51dea0e98cd402c550af915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an element to the hashmap  <a href="../../de/de7/tuya__hashmap_8h.html#a6a5d546bc51dea0e98cd402c550af915">更多...</a><br /></td></tr>
+<tr class="separator:a6a5d546bc51dea0e98cd402c550af915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e5c9a1300896281541f08563c6d7d2"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#ae0e5c9a1300896281541f08563c6d7d2">tuya_hashmap_remove</a> (<a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, CHAR_T *key, <a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> data)</td></tr>
+<tr class="memdesc:ae0e5c9a1300896281541f08563c6d7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove an element from the hashmap  <a href="../../de/de7/tuya__hashmap_8h.html#ae0e5c9a1300896281541f08563c6d7d2">更多...</a><br /></td></tr>
+<tr class="separator:ae0e5c9a1300896281541f08563c6d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya hasmap module </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ae6844fc281512ea4cf53047c12560d5e" name="ae6844fc281512ea4cf53047c12560d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6844fc281512ea4cf53047c12560d5e">&#9670;&nbsp;</a></span>tuya_hashmap_data_traversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_hashmap_data_traversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">ANY_T_ITER</a> *&#160;</td>
+          <td class="paramname"><em>arg_iterator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>traverse all data with same key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the hashmap </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key of element </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arg_iterator</td><td>the traverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MAP_OK on success, others on failed, please refer to the define of hashmap error code <br  />
+</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>if arg_iterator is NULL, fetch the first element, otherwise, fetch the next element </dd></dl>
+
+</div>
+</div>
+<a id="a48f8bc4a832cf48cb4d1a87d9a624658" name="a48f8bc4a832cf48cb4d1a87d9a624658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f8bc4a832cf48cb4d1a87d9a624658">&#9670;&nbsp;</a></span>tuya_hashmap_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_hashmap_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the hashmap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the hashmap need to free</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>must remove all element first, otherwise, it will cause element leak </dd></dl>
+
+</div>
+</div>
+<a id="afbcbff6b355275367455b0028b955c9e" name="afbcbff6b355275367455b0028b955c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcbff6b355275367455b0028b955c9e">&#9670;&nbsp;</a></span>tuya_hashmap_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_hashmap_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get an element from the hashmap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the hashmap </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key of the element </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">arg</td><td>the first value that the key matches </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MAP_OK on success, others on failed, please refer to the define of hashmap error code <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="ab94d05504fcc53ca2ba684c828760e0d" name="ab94d05504fcc53ca2ba684c828760e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94d05504fcc53ca2ba684c828760e0d">&#9670;&nbsp;</a></span>tuya_hashmap_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_hashmap_length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get current size of the hashmap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the hashmap </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current size </dd></dl>
+
+</div>
+</div>
+<a id="af204a4b755889d5e1a266ba5430bbdf5" name="af204a4b755889d5e1a266ba5430bbdf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af204a4b755889d5e1a266ba5430bbdf5">&#9670;&nbsp;</a></span>tuya_hashmap_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> tuya_hashmap_new </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>table_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a new empty hashmap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">table_size</td><td>the hash table size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>a new empty hashmap </dd></dl>
+
+</div>
+</div>
+<a id="a6a5d546bc51dea0e98cd402c550af915" name="a6a5d546bc51dea0e98cd402c550af915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5d546bc51dea0e98cd402c550af915">&#9670;&nbsp;</a></span>tuya_hashmap_put()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_hashmap_put </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an element to the hashmap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the hashmap </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key of hash element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the data of hash element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MAP_OK on success, others on failed, please refer to the define of hashmap error code</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>For same key, it does not replace it. it is inserted in the head of the list </dd></dl>
+
+</div>
+</div>
+<a id="ae0e5c9a1300896281541f08563c6d7d2" name="ae0e5c9a1300896281541f08563c6d7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e5c9a1300896281541f08563c6d7d2">&#9670;&nbsp;</a></span>tuya_hashmap_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_hashmap_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove an element from the hashmap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the hashmap </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key of element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the data of the element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MAP_OK on success, others on failed, please refer to the define of hashmap error code <br  />
+</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>if data is NULL,then delete the first note match key.if data is not null, then delete the node match key and data. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

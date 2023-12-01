@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/protocol/com_protocol.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_918bb30143969d0d99fd0eb2e5439120.html">protocol</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">com_protocol.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d0b/com__protocol_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef _COM_PROTOCOL_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define _COM_PROTOCOL_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../dd/d0b/com__protocol_8h.html#a8c2b834fdfbed13d36f6a10b9e95051f">   30</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d0b/com__protocol_8h.html#a8c2b834fdfbed13d36f6a10b9e95051f">parse_data_with_cmd</a>(IN CONST DP_CMD_TYPE_E cmd, IN BYTE_T *data, IN CONST INT_T len, OUT CHAR_T **out_data);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dd/d0b/com__protocol_8h.html#a6ea410de445b2e46488edec1b59749f0">   44</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d0b/com__protocol_8h.html#a6ea410de445b2e46488edec1b59749f0">pack_data_with_cmd</a>(IN CONST DP_CMD_TYPE_E cmd, IN CONST CHAR_T *src, \</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                               IN CONST UINT_T pro, IN CONST UINT_T num, \</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                               OUT BYTE_T **out, OUT UINT_T *out_len);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/***********************************************************</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">*  Function: parse_data_with_cmd</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">*  Input: cmd data len</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">*  Output: out_data</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">*  Return: OPERATE_RET</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">***********************************************************/</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../dd/d0b/com__protocol_8h.html#a5d4358847f23faa26790ee898e43c770">   67</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d0b/com__protocol_8h.html#a5d4358847f23faa26790ee898e43c770">tuya_parse_protocol_data</a>(IN CONST DP_CMD_TYPE_E cmd, IN CONST CHAR_T *pv, IN BYTE_T *data, \</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                     IN CONST INT_T len, IN CONST CHAR_T *key, OUT CHAR_T **out_data);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../dd/d0b/com__protocol_8h.html#a7e4cb987bd0ecb68d61fb971a81f90c7">   84</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d0b/com__protocol_8h.html#a7e4cb987bd0ecb68d61fb971a81f90c7">tuya_pack_protocol_data</a>(IN CONST DP_CMD_TYPE_E cmd, IN CONST CHAR_T *pv, IN CONST CHAR_T *src, \</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                    IN CONST UINT_T pro, IN CONST UINT_T num, IN UINT_T from, IN BYTE_T *key, \</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                    OUT CHAR_T **out, OUT UINT_T *out_len);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="acom__protocol_8h_html_a5d4358847f23faa26790ee898e43c770"><div class="ttname"><a href="../../dd/d0b/com__protocol_8h.html#a5d4358847f23faa26790ee898e43c770">tuya_parse_protocol_data</a></div><div class="ttdeci">OPERATE_RET tuya_parse_protocol_data(IN CONST DP_CMD_TYPE_E cmd, IN CONST CHAR_T *pv, IN BYTE_T *data, IN CONST INT_T len, IN CONST CHAR_T *key, OUT CHAR_T **out_data)</div><div class="ttdoc">parse protocol data</div></div>
+<div class="ttc" id="acom__protocol_8h_html_a6ea410de445b2e46488edec1b59749f0"><div class="ttname"><a href="../../dd/d0b/com__protocol_8h.html#a6ea410de445b2e46488edec1b59749f0">pack_data_with_cmd</a></div><div class="ttdeci">OPERATE_RET pack_data_with_cmd(IN CONST DP_CMD_TYPE_E cmd, IN CONST CHAR_T *src, IN CONST UINT_T pro, IN CONST UINT_T num, OUT BYTE_T **out, OUT UINT_T *out_len)</div><div class="ttdoc">pack data</div></div>
+<div class="ttc" id="acom__protocol_8h_html_a7e4cb987bd0ecb68d61fb971a81f90c7"><div class="ttname"><a href="../../dd/d0b/com__protocol_8h.html#a7e4cb987bd0ecb68d61fb971a81f90c7">tuya_pack_protocol_data</a></div><div class="ttdeci">OPERATE_RET tuya_pack_protocol_data(IN CONST DP_CMD_TYPE_E cmd, IN CONST CHAR_T *pv, IN CONST CHAR_T *src, IN CONST UINT_T pro, IN CONST UINT_T num, IN UINT_T from, IN BYTE_T *key, OUT CHAR_T **out, OUT UINT_T *out_len)</div><div class="ttdoc">pack protocol data</div></div>
+<div class="ttc" id="acom__protocol_8h_html_a8c2b834fdfbed13d36f6a10b9e95051f"><div class="ttname"><a href="../../dd/d0b/com__protocol_8h.html#a8c2b834fdfbed13d36f6a10b9e95051f">parse_data_with_cmd</a></div><div class="ttdeci">OPERATE_RET parse_data_with_cmd(IN CONST DP_CMD_TYPE_E cmd, IN BYTE_T *data, IN CONST INT_T len, OUT CHAR_T **out_data)</div><div class="ttdoc">parse data</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

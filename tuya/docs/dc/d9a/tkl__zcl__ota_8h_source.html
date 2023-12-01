@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_zcl_ota.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_zcl_ota.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/d9a/tkl__zcl__ota_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_ZCL_OTA_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_ZCL_OTA_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * zigbee ota end result micro</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#a2540c985771a96abf5944c25e5ee80e0">   23</a></span><span class="preprocessor">#define ZG_OTA_DOWNLOAD_AND_VERIFY_SUCCESS 0 </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#a21f20945786b3d0fe01b703afa6c2003">   24</a></span><span class="preprocessor">#define ZG_OTA_DOWNLOAD_TIME_OUT           1 </span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#a98dc0727a2e5878de67831d5c92bf5a2">   25</a></span><span class="preprocessor">#define ZG_OTA_VERIFY_FAILED               2 </span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#a06fb30b1334b194bfa23c88b7993d985">   26</a></span><span class="preprocessor">#define ZG_OTA_SERVER_ABORTED              3 </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#afa7172c9642d6cbfcd60381473d0c8f9">   27</a></span><span class="preprocessor">#define ZG_OTA_CLIENT_ABORTED              4 </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#acefbe4589534ab4d838cfd51b665dc45">   28</a></span><span class="preprocessor">#define ZG_OTA_ERASE_FAILED                5 </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">typedef</span> VOID_T (*TKL_ZG_OTA_START_CB)(UINT32_T image_size, VOID_T* argv);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">typedef</span> VOID_T (*TKL_ZG_OTA_END_CB)(UINT8_T result);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * zigbee ota callback collection</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d2/d72/structTKL__ZG__OTA__CB.html">   38</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// zigbee ota start callback</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TKL_ZG_OTA_START_CB start_notify;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// zigbee ota end callback</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    TKL_ZG_OTA_END_CB end_notify;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_struct" href="../../d2/d72/structTKL__ZG__OTA__CB.html">TKL_ZG_OTA_CB</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#a7b5321ef648981c07e4a39143d0f7483">   51</a></span>VOID_T <a class="code hl_function" href="../../dc/d9a/tkl__zcl__ota_8h.html#a7b5321ef648981c07e4a39143d0f7483">tkl_zg_diff_ota_disable</a>(BOOL_T is_enable);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#a81b79fed3eb1d0c197e9d792cbb20ec9">   59</a></span>OPERATE_RET <a class="code hl_function" href="../../dc/d9a/tkl__zcl__ota_8h.html#a81b79fed3eb1d0c197e9d792cbb20ec9">tkl_zg_register_ota_cb</a>(<a class="code hl_struct" href="../../d2/d72/structTKL__ZG__OTA__CB.html">TKL_ZG_OTA_CB</a> *ota_cb);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#ac002327bd792cf2aa550ad221ba6d06a">   75</a></span>VOID_T <a class="code hl_function" href="../../dc/d9a/tkl__zcl__ota_8h.html#ac002327bd792cf2aa550ad221ba6d06a">tkl_ota_init</a>(UINT_T app_ver, UINT16_T manuf_id, UINT16_T image_type);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../dc/d9a/tkl__zcl__ota_8h.html#ae55b4bb3e30fcb86cba145ac47a7c484">   88</a></span>VOID_T <a class="code hl_function" href="../../dc/d9a/tkl__zcl__ota_8h.html#ae55b4bb3e30fcb86cba145ac47a7c484">tkl_ota_auto_query_enable</a>(BOOL_T enable);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__ZG__OTA__CB_html"><div class="ttname"><a href="../../d2/d72/structTKL__ZG__OTA__CB.html">TKL_ZG_OTA_CB</a></div><div class="ttdef"><b>Definition:</b> tkl_zcl_ota.h:38</div></div>
+<div class="ttc" id="atkl__zcl__ota_8h_html_a7b5321ef648981c07e4a39143d0f7483"><div class="ttname"><a href="../../dc/d9a/tkl__zcl__ota_8h.html#a7b5321ef648981c07e4a39143d0f7483">tkl_zg_diff_ota_disable</a></div><div class="ttdeci">VOID_T tkl_zg_diff_ota_disable(BOOL_T is_enable)</div><div class="ttdoc">zigbee differential OTA disable(default enable)</div></div>
+<div class="ttc" id="atkl__zcl__ota_8h_html_a81b79fed3eb1d0c197e9d792cbb20ec9"><div class="ttname"><a href="../../dc/d9a/tkl__zcl__ota_8h.html#a81b79fed3eb1d0c197e9d792cbb20ec9">tkl_zg_register_ota_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zg_register_ota_cb(TKL_ZG_OTA_CB *ota_cb)</div><div class="ttdoc">zigbee ota callback register</div></div>
+<div class="ttc" id="atkl__zcl__ota_8h_html_ac002327bd792cf2aa550ad221ba6d06a"><div class="ttname"><a href="../../dc/d9a/tkl__zcl__ota_8h.html#ac002327bd792cf2aa550ad221ba6d06a">tkl_ota_init</a></div><div class="ttdeci">VOID_T tkl_ota_init(UINT_T app_ver, UINT16_T manuf_id, UINT16_T image_type)</div><div class="ttdoc">ota init this API will insert to native SDK</div></div>
+<div class="ttc" id="atkl__zcl__ota_8h_html_ae55b4bb3e30fcb86cba145ac47a7c484"><div class="ttname"><a href="../../dc/d9a/tkl__zcl__ota_8h.html#ae55b4bb3e30fcb86cba145ac47a7c484">tkl_ota_auto_query_enable</a></div><div class="ttdeci">VOID_T tkl_ota_auto_query_enable(BOOL_T enable)</div><div class="ttdoc">ota auto query enable this API will insert to native SDK</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

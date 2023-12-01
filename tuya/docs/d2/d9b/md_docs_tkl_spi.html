@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: SPI 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">SPI 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md291"></a>
+简要说明</h1>
+<p >SPI（Serial Peripheral Interface）是一种高速、全双工、同步的通信总线。SPI以主从方式工作，通常有一个主设备和一个或多个从设备。</p>
+<p >SPI 控制器的信号线描述如下：</p>
+<ul>
+<li>MISO：主设备数据输入，从设备数据输出；</li>
+<li>MOSI：主设备数据输出，从设备数据输入；</li>
+<li>SCK： 时钟信号，由主设备产生；</li>
+<li>CS：从设备使能信号，由主设备控制。这个信号可以是SPI外设的一部分，也可用GPIO引脚实现。</li>
+</ul>
+<p >SPI 典型接线方式如下：</p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/fd2d8ee2-cef2-44a0-ae58-7039833d1e0c.png" alt="image-20220411140500420" class="inline"/></p>
+<p >SPI总线支持的四种工作方式，取决于串行同步时钟极性CPOL和串行同步时钟相位CPHA的组合。</p>
+<p >CPOL是用来决定SCLK时钟信号空闲时的电平，CPOL=0，空闲电平为低电平，CPOL=1时，空闲电平为高电平。CPHA是用来决定采样时刻的，CPHA=0，在每个周期的第一个时钟沿采样，第二个时钟沿数据输出；CPHA=1，在每个周期的第二个时钟沿采样，第一个时钟沿数据输出。SPI主模块和与之通信的外设时钟相位和极性应该一致。</p>
+<p >四种工作方式时序描述如下：</p>
+<p >模式0：CPOL= 0，CPHA=0。SCK串行时钟线空闲是为低电平，数据在SCK时钟的上升沿被采样，数据在SCK时钟的下降沿切换</p>
+<p >模式1：CPOL= 0，CPHA=1。SCK串行时钟线空闲是为低电平，数据在SCK时钟的下降沿被采样，数据在SCK时钟的上升沿切换</p>
+<p >模式2：CPOL= 1，CPHA=0。SCK串行时钟线空闲是为高电平，数据在SCK时钟的下降沿被采样，数据在SCK时钟的上升沿切换</p>
+<p >模式3：CPOL= 1，CPHA=1。SCK串行时钟线空闲是为高电平，数据在SCK时钟的上升沿被采样，数据在SCK时钟的下降沿切换</p>
+<h1><a class="anchor" id="autotoc_md292"></a>
+Api描述</h1>
+<h3><a class="anchor" id="autotoc_md293"></a>
+tkl_spi_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_init(TUYA_SPI_NUM_E port, CONST TUYA_SPI_BASE_CFG_T *cfg);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>通过端口号和基础配置初始化对应的spi实例，返回初始化结果 。</li>
+</ul>
+</li>
+<li><p class="startli">参数:</p><ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>cfg</code>: spi基础配置 。</li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line">    TUYA_SPI_ROLE_E      role;</div>
+<div class="line">    TUYA_SPI_MODE_E      mode;</div>
+<div class="line">    TUYA_SPI_TYPE_E      type;</div>
+<div class="line">    TUYA_SPI_DATABITS_E  databits;</div>
+<div class="line">    TUYA_SPI_BIT_ORDER_E bitorder;</div>
+<div class="line">    UINT_T               freq_hz;</div>
+<div class="line">    UINT_T               spi_dma_flags; </div>
+<div class="line">} <a class="code hl_struct" href="../../d8/d4a/structTUYA__SPI__BASE__CFG__T.html">TUYA_SPI_BASE_CFG_T</a>;</div>
+<div class="ttc" id="astructTUYA__SPI__BASE__CFG__T_html"><div class="ttname"><a href="../../d8/d4a/structTUYA__SPI__BASE__CFG__T.html">TUYA_SPI_BASE_CFG_T</a></div><div class="ttdoc">spi config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:895</div></div>
+</div><!-- fragment --></li>
+</ul>
+<h4><a class="anchor" id="autotoc_md294"></a>
+TUYA_SPI_ROLE_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_SPI_ROLE_INACTIVE   </td><td class="markdownTableBodyLeft">spi闲置   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_SPI_ROLE_MASTER   </td><td class="markdownTableBodyLeft">spi全双工主模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_SPI_ROLE_SLAVE   </td><td class="markdownTableBodyLeft">spi全双工从模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_SPI_ROLE_MASTER_SIMPLEX   </td><td class="markdownTableBodyLeft">spi半双工主模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_SPI_ROLE_SLAVE_SIMPLEX   </td><td class="markdownTableBodyLeft">spi半双工从模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md295"></a>
+TUYA_SPI_MODE_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_SPI_MODE0   </td><td class="markdownTableBodyLeft">CPOL = 0, CPHA = 0   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_SPI_MODE1   </td><td class="markdownTableBodyLeft">CPOL = 0, CPHA = 1   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_SPI_MODE2   </td><td class="markdownTableBodyLeft">CPOL = 1, CPHA = 0   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_SPI_MODE3   </td><td class="markdownTableBodyLeft">CPOL = 1, CPHA = 1   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md296"></a>
+TUYA_SPI_TYPE_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TUYA_SPI_AUTO_TYPE   </td><td class="markdownTableBodyLeft">SS管脚模式，硬件自动配置   </td><td class="markdownTableBodyLeft">SS：slave select，对应CS片选管脚    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">TUYA_SPI_SOFT_TYPE   </td><td class="markdownTableBodyLeft">SS管脚模式，软件手动配置   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TUYA_SPI_SOFT_ONE_WIRE_TYPE   </td><td class="markdownTableBodyLeft">三线模式，SS管脚无效   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md297"></a>
+TUYA_SPI_DATABITS_E：</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TUYA_SPI_DATA_BIT8   </td><td class="markdownTableBodyLeft">8位数据位模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">TUYA_SPI_DATA_BIT16   </td><td class="markdownTableBodyLeft">16位数据位模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md298"></a>
+TUYA_SPI_BIT_ORDER_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TUYA_SPI_ORDER_MSB2LSB   </td><td class="markdownTableBodyLeft">高位（MSB）在前，低位（LSB）在后   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">TUYA_SPI_ORDER_LSB2MSB   </td><td class="markdownTableBodyLeft">低位（LSB）在前，高位（MSB）在后   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md299"></a>
+tkl_spi_deinit</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_deinit(TUYA_SPI_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>SPI实例反初始化。该接口会停止SPI</li>
+<li>实例正在进行的传输（如果有），并且释放相关的软硬件资源。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md300"></a>
+tkl_spi_send</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_send(TUYA_SPI_NUM_E port, VOID_T *data, UINT16_T size);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>SPI启动数据发送。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>data</code>: 待发送数据的缓冲区地址。</li>
+<li><code>size</code>: 待发送数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md301"></a>
+tkl_spi_recv</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_recv(TUYA_SPI_NUM_E port, VOID_T *data, UINT16_T size);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>SPI启动数据接收。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>data</code>: 待接收数据的缓冲区地址。</li>
+<li><code>size</code>: 待接收数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md302"></a>
+tkl_spi_transfer</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_transfer(TUYA_SPI_NUM_E port, VOID_T* send_buf, VOID_T* receive_buf, UINT32_T length);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>SPI启动数据传输。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>send_buf</code>: 待发送数据的缓冲区地址。</li>
+<li><code>receive_buf</code>: 待接收数据的缓冲区地址。</li>
+<li>length：长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md303"></a>
+tkl_spi_abort_transfer</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_abort_transfer(TUYA_SPI_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>SPI终止数据传输，或者终止数据发送(接收)。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md304"></a>
+tkl_spi_get_status</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_get_status(TUYA_SPI_NUM_E port, TUYA_SPI_STATUS_T *status); </div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>获取当前时刻SPI的状态。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>:端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>SPI状态的结构体，spi的状态定义见TUYA_SPI_STATUS_T的定义。</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md305"></a>
+TUYA_SPI_STATUS_T:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">busy : 1   </td><td class="markdownTableBodyLeft">传输/收发忙状态位   </td><td class="markdownTableBodyLeft">1有效    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">data_lost : 1   </td><td class="markdownTableBodyLeft">数据丢失   </td><td class="markdownTableBodyLeft">1有效    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">mode_fault : 1   </td><td class="markdownTableBodyLeft">模式错误   </td><td class="markdownTableBodyLeft">1有效   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md306"></a>
+tkl_spi_irq_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_irq_init(TUYA_SPI_NUM_E port, TUYA_SPI_IRQ_CB cb);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>SPI的中断初始化。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>:端口号。</li>
+<li><code>cb</code>:中断回调函数。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md307"></a>
+tkl_spi_irq_enable</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_irq_enable(TUYA_SPI_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>使能SPI的中断。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>:端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md308"></a>
+tkl_spi_irq_disable</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_spi_irq_disable(TUYA_SPI_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>关闭SPI的中断。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>:端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_SPI定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md309"></a>
+tkl_spi_get_data_count</h3>
+<div class="fragment"><div class="line">INT32_T tkl_spi_get_data_count(TUYA_SPI_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>获取spi传输字节长度。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>:端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>&lt;0,err。&gt;= 0,上次传输的字节长度。可以是tkl_spi_send, tkl_spi_recv 和tkl_spi_transfer任一个的操作。</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md310"></a>
+示例</h1>
+<h2><a class="anchor" id="autotoc_md311"></a>
+1.spi示例一</h2>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> tuya_spi_test1(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    <a class="code hl_struct" href="../../d8/d4a/structTUYA__SPI__BASE__CFG__T.html">TUYA_SPI_BASE_CFG_T</a> cfg;</div>
+<div class="line">    <a class="code hl_struct" href="../../d4/d2c/structTUYA__SPI__STATUS__T.html">TUYA_SPI_STATUS_T</a> status；</div>
+<div class="line">    <span class="comment">//receive buffer</span></div>
+<div class="line">    <span class="keywordtype">char</span> rcv_buf[8];</div>
+<div class="line">    <span class="comment">//data to send</span></div>
+<div class="line">    <span class="keywordtype">char</span> send_buf[8] = {0,1,2,3,4,5,6,7};</div>
+<div class="line">    </div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_0, TUYA_SPI0_MISO);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_1, TUYA_SPI0_MOSI);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_2, TUYA_SPI0_CS);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_3, TUYA_SPI0_CLK);</div>
+<div class="line">    </div>
+<div class="line">    cfg.role = TUYA_SPI_ROLE_MASTER;</div>
+<div class="line">    cfg.mode = TUYA_SPI_MODE0;</div>
+<div class="line">    cfg.type = TUYA_SPI_AUTO_TYPE;</div>
+<div class="line">    cfg.databits = TUYA_SPI_DATA_BIT8；</div>
+<div class="line">    cfg.bitorder = TUYA_SPI_ORDER_MSB2LSB；</div>
+<div class="line">    cfg.freq_hz = 1000000；</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a7f913fc08fc2d0005a6737268ee6d803">tkl_spi_init</a>(TUYA_SPI_NUM_0, &amp;cfg);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a2e98695cdbd10802e47d9d9ccf436bb7">tkl_spi_send</a>(TUYA_SPI_NUM_0, send_buf, 8);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a>(TUYA_SPI_NUM_0, &amp;status);</div>
+<div class="line">    <span class="keywordflow">while</span> (status.busy) {</div>
+<div class="line">        <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a>(TUYA_SPI_NUM_0, &amp;status);</div>
+<div class="line">        <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a>(2);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#ab4aa0ff75995f3463687c039fb2cc665">tkl_spi_recv</a>(TUYA_SPI_NUM_0, rcv_buf, 8);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a>(TUYA_SPI_NUM_0, &amp;status);</div>
+<div class="line">    <span class="keywordflow">while</span> (status.busy) {</div>
+<div class="line">        <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a>(TUYA_SPI_NUM_0, &amp;status);</div>
+<div class="line">        <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a>(2);</div>
+<div class="line">    }</div>
+<div class="line">    ret = <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a7ac27a8f422c1b9921d1b2817588f473">tkl_spi_transfer</a>(TUYA_SPI_NUM_0, send_buf,rcv_buf, 6);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a>(TUYA_SPI_NUM_0, &amp;status);</div>
+<div class="line">    <span class="keywordflow">while</span> (status.busy) {</div>
+<div class="line">        <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a>(TUYA_SPI_NUM_0, &amp;status);</div>
+<div class="line">        <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a>(2);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">//uninitialize iic </span></div>
+<div class="line">    ret = <a class="code hl_function" href="../../d3/d6a/tkl__spi_8h.html#a64c4227fd00c06c40c3fd6939d5dcca6">tkl_spi_deinit</a>(TUYA_SPI_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line">       <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="ttc" id="astructTUYA__SPI__STATUS__T_html"><div class="ttname"><a href="../../d4/d2c/structTUYA__SPI__STATUS__T.html">TUYA_SPI_STATUS_T</a></div><div class="ttdoc">SPI Status</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:924</div></div>
+<div class="ttc" id="atkl__spi_8h_html_a00f517bc568dc9d8afd0b49d6c0ddec5"><div class="ttname"><a href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a></div><div class="ttdeci">OPERATE_RET tkl_spi_get_status(TUYA_SPI_NUM_E port, TUYA_SPI_STATUS_T *status)</div><div class="ttdoc">get spi status.</div></div>
+<div class="ttc" id="atkl__spi_8h_html_a2e98695cdbd10802e47d9d9ccf436bb7"><div class="ttname"><a href="../../d3/d6a/tkl__spi_8h.html#a2e98695cdbd10802e47d9d9ccf436bb7">tkl_spi_send</a></div><div class="ttdeci">OPERATE_RET tkl_spi_send(TUYA_SPI_NUM_E port, VOID_T *data, UINT16_T size)</div></div>
+<div class="ttc" id="atkl__spi_8h_html_a64c4227fd00c06c40c3fd6939d5dcca6"><div class="ttname"><a href="../../d3/d6a/tkl__spi_8h.html#a64c4227fd00c06c40c3fd6939d5dcca6">tkl_spi_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_spi_deinit(TUYA_SPI_NUM_E port)</div><div class="ttdoc">spi deinit</div></div>
+<div class="ttc" id="atkl__spi_8h_html_a7ac27a8f422c1b9921d1b2817588f473"><div class="ttname"><a href="../../d3/d6a/tkl__spi_8h.html#a7ac27a8f422c1b9921d1b2817588f473">tkl_spi_transfer</a></div><div class="ttdeci">OPERATE_RET tkl_spi_transfer(TUYA_SPI_NUM_E port, VOID_T *send_buf, VOID_T *receive_buf, UINT32_T length)</div><div class="ttdoc">spi transfer</div></div>
+<div class="ttc" id="atkl__spi_8h_html_a7f913fc08fc2d0005a6737268ee6d803"><div class="ttname"><a href="../../d3/d6a/tkl__spi_8h.html#a7f913fc08fc2d0005a6737268ee6d803">tkl_spi_init</a></div><div class="ttdeci">OPERATE_RET tkl_spi_init(TUYA_SPI_NUM_E port, CONST TUYA_SPI_BASE_CFG_T *cfg)</div><div class="ttdoc">spi init</div></div>
+<div class="ttc" id="atkl__spi_8h_html_ab4aa0ff75995f3463687c039fb2cc665"><div class="ttname"><a href="../../d3/d6a/tkl__spi_8h.html#ab4aa0ff75995f3463687c039fb2cc665">tkl_spi_recv</a></div><div class="ttdeci">OPERATE_RET tkl_spi_recv(TUYA_SPI_NUM_E port, VOID_T *data, UINT16_T size)</div></div>
+<div class="ttc" id="atkl__system_8h_html_a40368a68dded70ff7b869b20814925de"><div class="ttname"><a href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a></div><div class="ttdeci">VOID_T tkl_system_sleep(UINT_T num_ms)</div><div class="ttdoc">system sleep</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md312"></a>
+2.spi使用中断示例二</h2>
+<div class="fragment"><div class="line">int event_flag = -1;</div>
+<div class="line">static void spi_event_cb(TUYA_SPI_NUM_E port, TUYA_SPI_IRQ_EVT_E event)</div>
+<div class="line">{</div>
+<div class="line">    //printf(&quot;\nspi_event_cb_fun:%d\n&quot;,event);</div>
+<div class="line">    event_flag = event；</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">void tuya_spi_test2(void)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    TUYA_SPI_BASE_CFG_T cfg;</div>
+<div class="line">    TUYA_SPI_STATUS_T status；</div>
+<div class="line">    //receive buffer</div>
+<div class="line">    char rcv_buf[6];</div>
+<div class="line">    //data to send</div>
+<div class="line">    char send_buf[6] = {0x90,0x0,0x0,0x0,0x0,0x0};</div>
+<div class="line">    </div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_0, TUYA_SPI0_MISO);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_1, TUYA_SPI0_MOSI);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_2, TUYA_SPI0_CS);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_3, TUYA_SPI0_CLK);</div>
+<div class="line">    </div>
+<div class="line">    cfg.role = TUYA_SPI_ROLE_MASTER;</div>
+<div class="line">    cfg.mode = TUYA_SPI_MODE0;</div>
+<div class="line">    cfg.type = TUYA_SPI_AUTO_TYPE;</div>
+<div class="line">    cfg.databits = TUYA_SPI_DATA_BIT8；</div>
+<div class="line">    cfg.bitorder = TUYA_SPI_ORDER_MSB2LSB；</div>
+<div class="line">    cfg.freq_hz = 1000000；</div>
+<div class="line">    </div>
+<div class="line">    ret = tkl_spi_init(TUYA_SPI_NUM_0, &amp;cfg);</div>
+<div class="line">    if (ret != OPRT_OK) {</div>
+<div class="line">        //fail</div>
+<div class="line">        return;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    tkl_spi_irq_init(TUYA_SPI_NUM_0 , spi_event_cb);</div>
+<div class="line">    tkl_spi_irq_enable(TUYA_SPI_NUM_0);</div>
+<div class="line">    </div>
+<div class="line">    event_flag = -1;</div>
+<div class="line">    ret = tkl_spi_transfer(TUYA_SPI_NUM_0, send_buf,rcv_buf, 6);</div>
+<div class="line">    if (ret &lt; 0) {</div>
+<div class="line">        //failed</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    while (TUYA_SPI_EVENT_TRANSFER_COMPLETE != event_flag) {</div>
+<div class="line">        tkl_system_sleep(2);</div>
+<div class="line">    }</div>
+<div class="line">    //up Transfer Complete</div>
+<div class="line">    event_flag = -1;</div>
+<div class="line">    ret = tkl_spi_send(TUYA_SPI_NUM_0, send_buf, 6);</div>
+<div class="line">    if (ret &lt; 0) {</div>
+<div class="line">        //failed</div>
+<div class="line">    }</div>
+<div class="line">    while (TUYA_SPI_EVENT_TX_COMPLETE != event_flag) {</div>
+<div class="line">        tkl_system_sleep(2);</div>
+<div class="line">    }</div>
+<div class="line">    // up send Complete,</div>
+<div class="line">    </div>
+<div class="line">    event_flag = -1;</div>
+<div class="line">    ret = tkl_spi_recv(TUYA_SPI_NUM_0, rcv_buf, 6);</div>
+<div class="line">    if (ret &lt; 0) {</div>
+<div class="line">        //failed</div>
+<div class="line">    }</div>
+<div class="line">    while (TUYA_SPI_EVENT_RX_COMPLETE != event_flag) {</div>
+<div class="line">        tkl_system_sleep(2);</div>
+<div class="line">    }</div>
+<div class="line">    // up recv Complete,</div>
+<div class="line">    tkl_spi_irq_disable(TUYA_SPI_NUM_0);</div>
+<div class="line">    //uninitialize iic </div>
+<div class="line">    ret = tkl_spi_deinit(TUYA_SPI_NUM_0);</div>
+<div class="line">    if (ret != 0) {</div>
+<div class="line">       //failed</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

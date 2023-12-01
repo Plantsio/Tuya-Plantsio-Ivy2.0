@@ -1,0 +1,1318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/bluetooth/include/tkl_bluetooth_bredr.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_e44cb4a927933abdcaee8424a81e0728.html">bluetooth</a></li><li class="navelem"><a class="el" href="../../dir_fbd8516dd310fd4505d68d6c04b71808.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_bluetooth_bredr.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is tkl_bluetooth_bredr file  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tuya_error_code.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_bluetooth_bredr.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/db2/tkl__bluetooth__bredr_8h__incl.png" border="0" usemap="#ainclude_2adapter_2bluetooth_2include_2tkl__bluetooth__bredr_8h" alt=""/></div>
+<map name="ainclude_2adapter_2bluetooth_2include_2tkl__bluetooth__bredr_8h" id="ainclude_2adapter_2bluetooth_2include_2tkl__bluetooth__bredr_8h">
+<area shape="rect" title="This is tkl_bluetooth_bredr file" alt="" coords="453,5,643,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="418,109,566,136"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../de/dcf/tkl__bluetooth__bredr_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d11/structTUYA__BT__BREDR__EVENT__T.html">TUYA_BT_BREDR_EVENT_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:af59ba2cb952ead4d6c639181cbf04518"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#af59ba2cb952ead4d6c639181cbf04518">TUYA_BT_BREDR_EVT_FUNC_CB</a>) (<a class="el" href="../../df/d11/structTUYA__BT__BREDR__EVENT__T.html">TUYA_BT_BREDR_EVENT_T</a> *p_event)</td></tr>
+<tr class="separator:af59ba2cb952ead4d6c639181cbf04518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a321c6cfc42d15ffcaf5c1c0933f50f7f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7f">TUYA_BT_BREDR_CONTROL_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa86e2663c042d90674a8479b012db6727">TUYA_BT_BREDR_RCP_START</a> = 0x01
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa0b312de676566909dfb735d0b9b9c3ca">TUYA_BT_BREDR_RCP_PLAY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa98fa45047069d5b350d3d244d1802847">TUYA_BT_BREDR_RCP_STOP</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa6e79540d0d58639e652e73385c009b49">TUYA_BT_BREDR_RCP_PAUSE</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa5e8569892e00ad5e7377f251ce478887">TUYA_BT_BREDR_RCP_NEXT</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa453fb124169538a8f8417c87fb755c8a">TUYA_BT_BREDR_RCP_PREV</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa812b6ff9b4cfbdc22d25d1ea03f61dd7">TUYA_BT_BREDR_RCP_FORWARD</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fabf52d004620b8f2864beb93d78e8589c">TUYA_BT_BREDR_RCP_REWIND</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa1b24b4a004218c0afea9fc39eef80a2b">TUYA_BT_BREDR_RCP_REPEAT</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fafc905e8eafc79161ec20a641dcdbd45e">TUYA_BT_BREDR_RCP_MUTE</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fab624f6708b908b9d12572c39b6e5054f">TUYA_BT_BREDR_RCP_VOLUME_UP</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fac5801e36566154e82533a1d245c01709">TUYA_BT_BREDR_RCP_VOLUME_DOWN</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa78f8e6ba68c0611df37ef0a492fef5b5">TUYA_BT_BREDR_HFP_START</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fad88181305f233f76bf12de1707839055">TUYA_BT_BREDR_HFP_ANSWER</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa57f297084343a8c9c5efe4ec5e06279d">TUYA_BT_BREDR_HFP_HANGUP</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa42015b5517eb504fcfb5f4707d847647">TUYA_BT_BREDR_HFP_REJECT</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa82879732f15717829004823aff792b91">TUYA_BT_BREDR_HFP_CALL</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7faa185b8ad2f3d2cfafb11a1bf744866a0">TUYA_BT_BREDR_HFP_UPDATE_BATTERY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fabb06f15eb682b80da867f70d30a64d19">TUYA_BT_BREDR_HFP_VOLUME_UP</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fac25c06cd8db9853d0ce05e7e6d1f7663">TUYA_BT_BREDR_HFP_VOLUME_DOWN</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa86929224756078f741ea390db14f61f6">TUYA_BT_BREDR_HFP_SET_VOLUME</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa2b9da71e969d8911f56a0965afe2acb3">TUYA_BT_BREDR_HFP_GET_VOLUME</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa237a4dedc4580f04a6cd0574fa1cf8d1">TUYA_BT_BREDR_A2DP_DISCONNECT</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7faf38803b73b4cf2569d2efd0d64590036">TUYA_BT_BREDR_HFP_DISCONNECT</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7faa3c3d46a1aa7a5616cf06caf4db7c02d">TUYA_BT_BREDR_START_CONNECTION</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7fa24901b652f2b24566ebbbaf19f892b4d">TUYA_BT_BREDR_CANCEL_CONNECTION</a>
+<br />
+ }</td></tr>
+<tr class="separator:a321c6cfc42d15ffcaf5c1c0933f50f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c35e714c71cdb900b07a7fe2fc6674"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674">TUYA_BT_BREDR_EVENT_TYPE_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a2b07248e758f2becb3e4d58f96effa26">TUYA_BT_BREDR_STACK_INIT</a> = 0x01
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a297d39b0bfcf5905f1bbbcb5a121115f">TUYA_BT_BREDR_STACK_DEINIT</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a21ae16c377fbda20741250463e2177cd">TUYA_BT_BREDR_STACK_RESET</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a040ec2718358a8e00a0ed867ab481fef">TUYA_BT_BREDR_GAP_EVT_CONNECT</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a92c17546122782cc3f9a3d5ea6bc6d70">TUYA_BT_BREDR_GAP_EVT_DISCONNECT</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a1fdc93c4987d9f73b118207424cb0f97">TUYA_BT_BREDR_GAP_EVT_PAIR</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674adafb5acadbe20e8fa7600379c4955479">TUYA_BT_BREDR_GAP_INFO_INQUIRY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674ad48cad5d60e7e7fbd049b5a58d6ca60e">TUYA_BT_BREDR_STREAM_STATUS</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674a891c032a54008a6684a2984f3a81dfb4">TUYA_BT_BREDR_PHONE_STATUS</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad2c35e714c71cdb900b07a7fe2fc6674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1f1b925eb888239ea7e8f8dc8e5242"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242">TUYA_BT_BREDR_PHONE_STATUS_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242a70a85df19aae46f98cc0ee2d9fb5cb6e">TUYA_BT_PHONE_STATUS_IDLE</a> = 0x01
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242a014dc99db85bc1a57a36bea361c395aa">TUYA_BT_PHONE_STATUS_CONNECTED</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242a0d2a09eb9a4de6fddb3873bd5c77c6dd">TUYA_BT_PHONE_STATUS_DISCONNECTED</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242a4f373372a8a87132f42cdaba8a5f5796">TUYA_BT_PHONE_INCOMING</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242aa08d3f808041e06614fb83f7a410a10f">TUYA_BT_PHONE_OUTGOING</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242af1a9d15fe8593037b5e3288a970db8d1">TUYA_BT_PHONE_ACTIVE</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242ab9f5c57556ad6faa22df5e463bd2b5cc">TUYA_BT_PHONE_HANGUP</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242aa460f0bb55e94d49672533211366bafa">TUYA_BT_PHONE_VOLOUME_CHANGED</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242a67e3f2daf92a7f2faac17148fc388f41">TUYA_BT_PHONE_UPDATE_BATTERY</a>
+<br />
+ }</td></tr>
+<tr class="separator:a6c1f1b925eb888239ea7e8f8dc8e5242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bd197bbf2357e2a0e37cbc25e8fe6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a> { <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6ba0d77b24309170fe5c207d853a7d47747">TUYA_BT_BREDR_ROLE_MASTER</a> = 0x01
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6badaa88fa467f8c0f8f869a0c28ef26b55">TUYA_BT_BREDR_ROLE_SLAVE</a> = 0x02
+ }</td></tr>
+<tr class="separator:a75bd197bbf2357e2a0e37cbc25e8fe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a3e416613f18b1be3cae5f7b2031a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6">TUYA_BT_BREDR_STEAM_STATUS_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6a2dead174d5594b44791d8a46a1290a23">TUYA_BT_STREAM_STATUS_IDLE</a> = 0x01
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6abd95a472a04a4c32a4ade31b7077964a">TUYA_BT_STREAM_STATUS_CONNECTED</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6af35da2b288c75773b82e53656fea136a">TUYA_BT_STREAM_STATUS_DISCONNECTED</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6a8df6d1d0d7a0d45d72df9906705ccc80">TUYA_BT_STREAM_STATUS_START</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6a5cc14ef65dc9ad7cc6f5f31d853e93fb">TUYA_BT_STREAM_STATUS_SUSPENDING</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6afdd7fced262ff6b1cbc1d0df7268a09f">TUYA_BT_STREAM_STATUS_STOP</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad8a3e416613f18b1be3cae5f7b2031a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aedc3eb775bbfb6d6921ab384e3c839"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839">TUYA_BT_PAIR_EVENT_TYPE_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839ae17847a1f52562507233176ad8a044e3">TUYA_BT_PAIR_BOND_START</a> = 0x01
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839aadd592c60628c9f477e3a7492772a901">TUYA_BT_PAIR_BOND_REQUEST</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839a8d29e4f2623786bc17a38c8add799b84">TUYA_BT_PAIR_BOND_CONFIRM</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839a8b0ed5fbc06c205eecfdc9380ad10989">TUYA_BT_PAIR_BOND_SUCCESS</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839a1c6a2cadaf091f8b59693af9f79b11da">TUYA_BT_PAIR_BOND_FAIL</a>
+<br />
+ }</td></tr>
+<tr class="separator:a2aedc3eb775bbfb6d6921ab384e3c839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbf97f6ae6e6d8266ff3e581972031d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031d">TUYA_BT_PAIR_IO_CAP_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031da2b314a1733ce2545b8e922bf5b4d83c8">TUYA_BT_IO_CAP_DISPLAY_ONLY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031da1e28f1c85d9e0e83b9822f3cf7746f0b">TUYA_BT_IO_CAP_DISPLAY_YES_NO</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031dac5e5ab42cf00d445a3f6c765cffbab04">TUYA_BT_IO_CAP_KEYBOARD_ONLY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031da83fa77e31e38cd061a09549a27f405f7">TUYA_BT_IO_CAP_NO_INPUT_NO_OUTPUT</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031da068492ffd5f4da507fcace98c470dae2">TUYA_BT_IO_CAP_KEYBOARD_DISPLAY</a>
+<br />
+ }</td></tr>
+<tr class="separator:affbf97f6ae6e6d8266ff3e581972031d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006cfa5684620d2f2564dcb287ab0691"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a006cfa5684620d2f2564dcb287ab0691">TUYA_BT_PAIR_MODE_E</a> { <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a006cfa5684620d2f2564dcb287ab0691ae7bd37d5f481803db279267f6c9e6624">TUYA_BT_PAIR_MODE_NO_PAIRING</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a006cfa5684620d2f2564dcb287ab0691aa43f6afc7d88e79b994f05df19b15337">TUYA_BT_PAIR_MODE_WAIT_FOR_REQ</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a006cfa5684620d2f2564dcb287ab0691a805ac5a5ef245403d5456b6af0476971">TUYA_BT_PAIR_MODE_INITIATE</a>
+ }</td></tr>
+<tr class="separator:a006cfa5684620d2f2564dcb287ab0691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012da325a7bb180a9f93d204cd5c789f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a012da325a7bb180a9f93d204cd5c789f">TUYA_BT_PAIR_REQUEST_T</a> { <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a012da325a7bb180a9f93d204cd5c789fa6aa0098e2aa2fff2e2491060c41a4256">TUYA_BT_PAIR_REQUEST_CONFIRMATION</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a012da325a7bb180a9f93d204cd5c789fa94bc14d52e0cfb4f4663f78211f8c614">TUYA_BT_PAIR_REQUEST_PASSKEY</a>
+, <b>TUYA_BT_PAIR_REQUEST_PRESSKEY</b>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a012da325a7bb180a9f93d204cd5c789faf005afe97917177ad2fb45941084db73">TUYA_BT_PAIR_REQUEST_PIN</a>
+ }</td></tr>
+<tr class="separator:a012da325a7bb180a9f93d204cd5c789f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4914a3731dfca25ceffc721ac46626"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626">TUYA_BT_SCAN_MODE_E</a> { <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626a28693042dc43f3c88db68a74299e3f4d">TUYA_BT_BREDR_MODE_IDLE</a> = 0x00
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626ad3a7a2eb79177aa5fbbfdd9364dc19d5">TUYA_BT_BREDR_MODE_SCAN_INQUIRY_ONLY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626aa9905827abe6436cbe3e52ae176d3d38">TUYA_BT_BREDR_MODE_SCAN_PAGE_ONLY</a>
+, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626ab2839136caef5cb715f15bd0b07d7fc0">TUYA_BT_BREDR_MODE_SCAN_INQUIRY_AND_SCAN_PAGE</a>
+ }</td></tr>
+<tr class="separator:a5d4914a3731dfca25ceffc721ac46626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4285137ec3ec336b0884976b590123fd"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a4285137ec3ec336b0884976b590123fd">tkl_bt_bredr_control</a> (<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7f">TUYA_BT_BREDR_CONTROL_E</a> crtl_event, UCHAR_T *user_data, USHORT_T data_len)</td></tr>
+<tr class="memdesc:a4285137ec3ec336b0884976b590123fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the audio or phone, please refer to @TUYA_BT_BREDR_CONTROL_E.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a4285137ec3ec336b0884976b590123fd">更多...</a><br /></td></tr>
+<tr class="separator:a4285137ec3ec336b0884976b590123fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d546f2ff304f39442fb60ed3a56c336"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6d546f2ff304f39442fb60ed3a56c336">tkl_bt_bredr_deinit</a> (<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a> role)</td></tr>
+<tr class="memdesc:a6d546f2ff304f39442fb60ed3a56c336"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Init the Bluetooth BR-EDR Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6d546f2ff304f39442fb60ed3a56c336">更多...</a><br /></td></tr>
+<tr class="separator:a6d546f2ff304f39442fb60ed3a56c336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af50e587678ae46e5f32fa479c81f8307"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#af50e587678ae46e5f32fa479c81f8307">tkl_bt_bredr_enable</a> (<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626">TUYA_BT_SCAN_MODE_E</a> mode)</td></tr>
+<tr class="memdesc:af50e587678ae46e5f32fa479c81f8307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Bluetooth BR-EDR Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#af50e587678ae46e5f32fa479c81f8307">更多...</a><br /></td></tr>
+<tr class="separator:af50e587678ae46e5f32fa479c81f8307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc67a3725f10ba606b4488a987850e0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a1fc67a3725f10ba606b4488a987850e0">tkl_bt_bredr_equalizer_set</a> (UCHAR_T eq_mode, UCHAR_T *eq_data, USHORT_T eq_data_len)</td></tr>
+<tr class="memdesc:a1fc67a3725f10ba606b4488a987850e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the bredr eq  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a1fc67a3725f10ba606b4488a987850e0">更多...</a><br /></td></tr>
+<tr class="separator:a1fc67a3725f10ba606b4488a987850e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a7321d58a0a1e540114edefeb44163"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a05a7321d58a0a1e540114edefeb44163">tkl_bt_bredr_equalizer_switch</a> (UCHAR_T eq_mode, BOOL_T enable)</td></tr>
+<tr class="memdesc:a05a7321d58a0a1e540114edefeb44163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swicth the bredr eq mode  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a05a7321d58a0a1e540114edefeb44163">更多...</a><br /></td></tr>
+<tr class="separator:a05a7321d58a0a1e540114edefeb44163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ebae325dc3199ed921b0a8890c2006"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a44ebae325dc3199ed921b0a8890c2006">tkl_bt_bredr_init</a> (<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a> role, <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#af59ba2cb952ead4d6c639181cbf04518">TUYA_BT_BREDR_EVT_FUNC_CB</a> p_event, VOID_T *user_data)</td></tr>
+<tr class="memdesc:a44ebae325dc3199ed921b0a8890c2006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the Bluetooth BR-EDR Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a44ebae325dc3199ed921b0a8890c2006">更多...</a><br /></td></tr>
+<tr class="separator:a44ebae325dc3199ed921b0a8890c2006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e8976563c8292436407274cba1836a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a87e8976563c8292436407274cba1836a">tkl_bt_bredr_inquiry_enable</a> (BOOL_T enable)</td></tr>
+<tr class="memdesc:a87e8976563c8292436407274cba1836a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Bluetooth BR-EDR Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a87e8976563c8292436407274cba1836a">更多...</a><br /></td></tr>
+<tr class="separator:a87e8976563c8292436407274cba1836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f2bcdddffc309cb7c6ceef6b98fc93"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a61f2bcdddffc309cb7c6ceef6b98fc93">tkl_bt_bredr_noise_set</a> (UCHAR_T noise_mode, USHORT_T noise_data)</td></tr>
+<tr class="memdesc:a61f2bcdddffc309cb7c6ceef6b98fc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the bredr noise  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a61f2bcdddffc309cb7c6ceef6b98fc93">更多...</a><br /></td></tr>
+<tr class="separator:a61f2bcdddffc309cb7c6ceef6b98fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ea04432a4cb8f763666332d89e4498"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a26ea04432a4cb8f763666332d89e4498">tkl_bt_bredr_noise_switch</a> (UCHAR_T noise_mode, BOOL_T enable)</td></tr>
+<tr class="memdesc:a26ea04432a4cb8f763666332d89e4498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swicth the bredr noise mode  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a26ea04432a4cb8f763666332d89e4498">更多...</a><br /></td></tr>
+<tr class="separator:a26ea04432a4cb8f763666332d89e4498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f5a0042df3ff18c4f46f537677e011"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a89f5a0042df3ff18c4f46f537677e011">tkl_bt_bredr_page_enable</a> (BOOL_T enable, <a class="el" href="../../d9/d7b/structTUYA__BT__GAP__ADDR__T.html">TUYA_BT_GAP_ADDR_T</a> *p_peer_addr)</td></tr>
+<tr class="memdesc:a89f5a0042df3ff18c4f46f537677e011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Bluetooth BR-EDR Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a89f5a0042df3ff18c4f46f537677e011">更多...</a><br /></td></tr>
+<tr class="separator:a89f5a0042df3ff18c4f46f537677e011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d702f6cef006dca8de6f51cb92e506c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a7d702f6cef006dca8de6f51cb92e506c">tkl_bt_bredr_pair_set</a> (<a class="el" href="../../d4/daa/structTUYA__BT__PAIR__INIT__PARAM__T.html">TUYA_BT_PAIR_INIT_PARAM_T</a> pair)</td></tr>
+<tr class="memdesc:a7d702f6cef006dca8de6f51cb92e506c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Bluetooth BR-EDR pair mode Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a7d702f6cef006dca8de6f51cb92e506c">更多...</a><br /></td></tr>
+<tr class="separator:a7d702f6cef006dca8de6f51cb92e506c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939e899702589062cf3bbe54803b601a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a939e899702589062cf3bbe54803b601a">tkl_bt_bredr_reset</a> (<a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a> role)</td></tr>
+<tr class="memdesc:a939e899702589062cf3bbe54803b601a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the Bluetooth BR-EDR Interface.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a939e899702589062cf3bbe54803b601a">更多...</a><br /></td></tr>
+<tr class="separator:a939e899702589062cf3bbe54803b601a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cc8efaa68f05e89409f33dcd33c1a2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ac3cc8efaa68f05e89409f33dcd33c1a2">tkl_bt_gap_address_get</a> (<a class="el" href="../../d9/d7b/structTUYA__BT__GAP__ADDR__T.html">TUYA_BT_GAP_ADDR_T</a> *p_peer_addr)</td></tr>
+<tr class="memdesc:ac3cc8efaa68f05e89409f33dcd33c1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the BT Address  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ac3cc8efaa68f05e89409f33dcd33c1a2">更多...</a><br /></td></tr>
+<tr class="separator:ac3cc8efaa68f05e89409f33dcd33c1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b262dfd74554bde235f9101a8ce6f0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a08b262dfd74554bde235f9101a8ce6f0">tkl_bt_gap_address_set</a> (<a class="el" href="../../d9/d7b/structTUYA__BT__GAP__ADDR__T.html">TUYA_BT_GAP_ADDR_T</a> CONST *p_peer_addr)</td></tr>
+<tr class="memdesc:a08b262dfd74554bde235f9101a8ce6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the BT Address  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a08b262dfd74554bde235f9101a8ce6f0">更多...</a><br /></td></tr>
+<tr class="separator:a08b262dfd74554bde235f9101a8ce6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062d831e1851d1bc2fadb5b66f53fb3b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a062d831e1851d1bc2fadb5b66f53fb3b">tkl_bt_gap_disconnect</a> (<a class="el" href="../../d9/d05/structTUYA__BT__PAIR__BOND__INFO__T.html">TUYA_BT_PAIR_BOND_INFO_T</a> *bond_info)</td></tr>
+<tr class="memdesc:a062d831e1851d1bc2fadb5b66f53fb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">disconnect the link.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a062d831e1851d1bc2fadb5b66f53fb3b">更多...</a><br /></td></tr>
+<tr class="separator:a062d831e1851d1bc2fadb5b66f53fb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfd402287c879a53cf8dfc14d483070"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a4cfd402287c879a53cf8dfc14d483070">tkl_bt_gap_name_get</a> (CHAR_T *name)</td></tr>
+<tr class="memdesc:a4cfd402287c879a53cf8dfc14d483070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the BT GAP Name  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a4cfd402287c879a53cf8dfc14d483070">更多...</a><br /></td></tr>
+<tr class="separator:a4cfd402287c879a53cf8dfc14d483070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594c48eb947e7f2d71d2d512c32468fc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a594c48eb947e7f2d71d2d512c32468fc">tkl_bt_gap_name_set</a> (CHAR_T *name)</td></tr>
+<tr class="memdesc:a594c48eb947e7f2d71d2d512c32468fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the BT GAP Name  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a594c48eb947e7f2d71d2d512c32468fc">更多...</a><br /></td></tr>
+<tr class="separator:a594c48eb947e7f2d71d2d512c32468fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2814dd765147034c92d966f9ced186c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ab2814dd765147034c92d966f9ced186c">tkl_bt_gap_paring_delete</a> (<a class="el" href="../../d9/d05/structTUYA__BT__PAIR__BOND__INFO__T.html">TUYA_BT_PAIR_BOND_INFO_T</a> *bond_info)</td></tr>
+<tr class="memdesc:ab2814dd765147034c92d966f9ced186c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the pair informations.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ab2814dd765147034c92d966f9ced186c">更多...</a><br /></td></tr>
+<tr class="separator:ab2814dd765147034c92d966f9ced186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008c3d64c20801eb6fcbe3907b121dd9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a008c3d64c20801eb6fcbe3907b121dd9">tkl_bt_gap_paring_enable_send</a> (BOOL_T en)</td></tr>
+<tr class="memdesc:a008c3d64c20801eb6fcbe3907b121dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Disable pair when pairing request  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a008c3d64c20801eb6fcbe3907b121dd9">更多...</a><br /></td></tr>
+<tr class="separator:a008c3d64c20801eb6fcbe3907b121dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e7a7e0c420427b5b99032c24f8a5a8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a76e7a7e0c420427b5b99032c24f8a5a8">tkl_bt_gap_paring_passkey_send</a> (UINT_T passkey)</td></tr>
+<tr class="memdesc:a76e7a7e0c420427b5b99032c24f8a5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send paring passkey when in keyboard mode.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a76e7a7e0c420427b5b99032c24f8a5a8">更多...</a><br /></td></tr>
+<tr class="separator:a76e7a7e0c420427b5b99032c24f8a5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2cc9f0376ffbf47f490091ef13fea7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#acf2cc9f0376ffbf47f490091ef13fea7">tkl_bt_gap_paring_request</a> (<a class="el" href="../../db/d6a/structTUYA__BT__PAIR__DEVICE__T.html">TUYA_BT_PAIR_DEVICE_T</a> *p_device)</td></tr>
+<tr class="memdesc:acf2cc9f0376ffbf47f490091ef13fea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request the pair while in BT-Master Mode.  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#acf2cc9f0376ffbf47f490091ef13fea7">更多...</a><br /></td></tr>
+<tr class="separator:acf2cc9f0376ffbf47f490091ef13fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9b6dcfd1191a789e75ec7c5fdeb578"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a0d9b6dcfd1191a789e75ec7c5fdeb578">tkl_bt_pairing_status_get</a> (VOID_T)</td></tr>
+<tr class="memdesc:a0d9b6dcfd1191a789e75ec7c5fdeb578"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if device is paired  <a href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a0d9b6dcfd1191a789e75ec7c5fdeb578">更多...</a><br /></td></tr>
+<tr class="separator:a0d9b6dcfd1191a789e75ec7c5fdeb578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >This is tkl_bluetooth_bredr file </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-08-10</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2031 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="af59ba2cb952ead4d6c639181cbf04518" name="af59ba2cb952ead4d6c639181cbf04518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59ba2cb952ead4d6c639181cbf04518">&#9670;&nbsp;</a></span>TUYA_BT_BREDR_EVT_FUNC_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TUYA_BT_BREDR_EVT_FUNC_CB) (<a class="el" href="../../df/d11/structTUYA__BT__BREDR__EVENT__T.html">TUYA_BT_BREDR_EVENT_T</a> *p_event)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >&lt; Tuya Bluetooth BR-EDR Callback Register function definition </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a321c6cfc42d15ffcaf5c1c0933f50f7f" name="a321c6cfc42d15ffcaf5c1c0933f50f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321c6cfc42d15ffcaf5c1c0933f50f7f">&#9670;&nbsp;</a></span>TUYA_BT_BREDR_CONTROL_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7f">TUYA_BT_BREDR_CONTROL_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa86e2663c042d90674a8479b012db6727" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa86e2663c042d90674a8479b012db6727"></a>TUYA_BT_BREDR_RCP_START&#160;</td><td class="fielddoc"><p >Start to control Audio </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa0b312de676566909dfb735d0b9b9c3ca" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa0b312de676566909dfb735d0b9b9c3ca"></a>TUYA_BT_BREDR_RCP_PLAY&#160;</td><td class="fielddoc"><p >Play Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa98fa45047069d5b350d3d244d1802847" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa98fa45047069d5b350d3d244d1802847"></a>TUYA_BT_BREDR_RCP_STOP&#160;</td><td class="fielddoc"><p >Stop Playing Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa6e79540d0d58639e652e73385c009b49" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa6e79540d0d58639e652e73385c009b49"></a>TUYA_BT_BREDR_RCP_PAUSE&#160;</td><td class="fielddoc"><p >Pause Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa5e8569892e00ad5e7377f251ce478887" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa5e8569892e00ad5e7377f251ce478887"></a>TUYA_BT_BREDR_RCP_NEXT&#160;</td><td class="fielddoc"><p >Play Next Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa453fb124169538a8f8417c87fb755c8a" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa453fb124169538a8f8417c87fb755c8a"></a>TUYA_BT_BREDR_RCP_PREV&#160;</td><td class="fielddoc"><p >Play Previous Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa812b6ff9b4cfbdc22d25d1ea03f61dd7" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa812b6ff9b4cfbdc22d25d1ea03f61dd7"></a>TUYA_BT_BREDR_RCP_FORWARD&#160;</td><td class="fielddoc"><p >Forward Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fabf52d004620b8f2864beb93d78e8589c" name="a321c6cfc42d15ffcaf5c1c0933f50f7fabf52d004620b8f2864beb93d78e8589c"></a>TUYA_BT_BREDR_RCP_REWIND&#160;</td><td class="fielddoc"><p >Rewind Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa1b24b4a004218c0afea9fc39eef80a2b" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa1b24b4a004218c0afea9fc39eef80a2b"></a>TUYA_BT_BREDR_RCP_REPEAT&#160;</td><td class="fielddoc"><p >Repeat Music </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fafc905e8eafc79161ec20a641dcdbd45e" name="a321c6cfc42d15ffcaf5c1c0933f50f7fafc905e8eafc79161ec20a641dcdbd45e"></a>TUYA_BT_BREDR_RCP_MUTE&#160;</td><td class="fielddoc"><p >Mute for Music, user_data: NULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fab624f6708b908b9d12572c39b6e5054f" name="a321c6cfc42d15ffcaf5c1c0933f50f7fab624f6708b908b9d12572c39b6e5054f"></a>TUYA_BT_BREDR_RCP_VOLUME_UP&#160;</td><td class="fielddoc"><p >Volume up for Music, step: 1, user_data: NULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fac5801e36566154e82533a1d245c01709" name="a321c6cfc42d15ffcaf5c1c0933f50f7fac5801e36566154e82533a1d245c01709"></a>TUYA_BT_BREDR_RCP_VOLUME_DOWN&#160;</td><td class="fielddoc"><p >Volume down for Music, step: 1, user_data: NULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa78f8e6ba68c0611df37ef0a492fef5b5" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa78f8e6ba68c0611df37ef0a492fef5b5"></a>TUYA_BT_BREDR_HFP_START&#160;</td><td class="fielddoc"><p >Start to control Phone </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fad88181305f233f76bf12de1707839055" name="a321c6cfc42d15ffcaf5c1c0933f50f7fad88181305f233f76bf12de1707839055"></a>TUYA_BT_BREDR_HFP_ANSWER&#160;</td><td class="fielddoc"><p >Answer the Phone </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa57f297084343a8c9c5efe4ec5e06279d" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa57f297084343a8c9c5efe4ec5e06279d"></a>TUYA_BT_BREDR_HFP_HANGUP&#160;</td><td class="fielddoc"><p >Hang Up the Phone </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa42015b5517eb504fcfb5f4707d847647" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa42015b5517eb504fcfb5f4707d847647"></a>TUYA_BT_BREDR_HFP_REJECT&#160;</td><td class="fielddoc"><p >Reject the Phone </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa82879732f15717829004823aff792b91" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa82879732f15717829004823aff792b91"></a>TUYA_BT_BREDR_HFP_CALL&#160;</td><td class="fielddoc"><p >Call the Phone </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7faa185b8ad2f3d2cfafb11a1bf744866a0" name="a321c6cfc42d15ffcaf5c1c0933f50f7faa185b8ad2f3d2cfafb11a1bf744866a0"></a>TUYA_BT_BREDR_HFP_UPDATE_BATTERY&#160;</td><td class="fielddoc"><p >Update Battery to the Phone </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fabb06f15eb682b80da867f70d30a64d19" name="a321c6cfc42d15ffcaf5c1c0933f50f7fabb06f15eb682b80da867f70d30a64d19"></a>TUYA_BT_BREDR_HFP_VOLUME_UP&#160;</td><td class="fielddoc"><p >Volume up for the phone, step: 1, user_data: NULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fac25c06cd8db9853d0ce05e7e6d1f7663" name="a321c6cfc42d15ffcaf5c1c0933f50f7fac25c06cd8db9853d0ce05e7e6d1f7663"></a>TUYA_BT_BREDR_HFP_VOLUME_DOWN&#160;</td><td class="fielddoc"><p >Volume down for the phone, step: 1, user_data: NULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa86929224756078f741ea390db14f61f6" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa86929224756078f741ea390db14f61f6"></a>TUYA_BT_BREDR_HFP_SET_VOLUME&#160;</td><td class="fielddoc"><p >Set the volume for the phone, post volume percent into adapter. Eg: Set Volume into 50%[Range: 0-100],we should post 50(or hex: 0x32) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa2b9da71e969d8911f56a0965afe2acb3" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa2b9da71e969d8911f56a0965afe2acb3"></a>TUYA_BT_BREDR_HFP_GET_VOLUME&#160;</td><td class="fielddoc"><p >Get the volume from the phone, user_data: NULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa237a4dedc4580f04a6cd0574fa1cf8d1" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa237a4dedc4580f04a6cd0574fa1cf8d1"></a>TUYA_BT_BREDR_A2DP_DISCONNECT&#160;</td><td class="fielddoc"><p >Request Disconnect A2DP Profile </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7faf38803b73b4cf2569d2efd0d64590036" name="a321c6cfc42d15ffcaf5c1c0933f50f7faf38803b73b4cf2569d2efd0d64590036"></a>TUYA_BT_BREDR_HFP_DISCONNECT&#160;</td><td class="fielddoc"><p >Request Disconnect HFP Profile </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7faa3c3d46a1aa7a5616cf06caf4db7c02d" name="a321c6cfc42d15ffcaf5c1c0933f50f7faa3c3d46a1aa7a5616cf06caf4db7c02d"></a>TUYA_BT_BREDR_START_CONNECTION&#160;</td><td class="fielddoc"><p >Request Connect One Device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a321c6cfc42d15ffcaf5c1c0933f50f7fa24901b652f2b24566ebbbaf19f892b4d" name="a321c6cfc42d15ffcaf5c1c0933f50f7fa24901b652f2b24566ebbbaf19f892b4d"></a>TUYA_BT_BREDR_CANCEL_CONNECTION&#160;</td><td class="fielddoc"><p >Cancel Connecting One Device </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad2c35e714c71cdb900b07a7fe2fc6674" name="ad2c35e714c71cdb900b07a7fe2fc6674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c35e714c71cdb900b07a7fe2fc6674">&#9670;&nbsp;</a></span>TUYA_BT_BREDR_EVENT_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad2c35e714c71cdb900b07a7fe2fc6674">TUYA_BT_BREDR_EVENT_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a2b07248e758f2becb3e4d58f96effa26" name="ad2c35e714c71cdb900b07a7fe2fc6674a2b07248e758f2becb3e4d58f96effa26"></a>TUYA_BT_BREDR_STACK_INIT&#160;</td><td class="fielddoc"><p >Init Bluetooth BR-EDR Stack, return refer@Stack Error Code.result </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a297d39b0bfcf5905f1bbbcb5a121115f" name="ad2c35e714c71cdb900b07a7fe2fc6674a297d39b0bfcf5905f1bbbcb5a121115f"></a>TUYA_BT_BREDR_STACK_DEINIT&#160;</td><td class="fielddoc"><p >Deinit Bluetooth BR-EDR Stack </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a21ae16c377fbda20741250463e2177cd" name="ad2c35e714c71cdb900b07a7fe2fc6674a21ae16c377fbda20741250463e2177cd"></a>TUYA_BT_BREDR_STACK_RESET&#160;</td><td class="fielddoc"><p >Reset Bluetooth BR-EDR Stack </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a040ec2718358a8e00a0ed867ab481fef" name="ad2c35e714c71cdb900b07a7fe2fc6674a040ec2718358a8e00a0ed867ab481fef"></a>TUYA_BT_BREDR_GAP_EVT_CONNECT&#160;</td><td class="fielddoc"><p >General Connected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a92c17546122782cc3f9a3d5ea6bc6d70" name="ad2c35e714c71cdb900b07a7fe2fc6674a92c17546122782cc3f9a3d5ea6bc6d70"></a>TUYA_BT_BREDR_GAP_EVT_DISCONNECT&#160;</td><td class="fielddoc"><p >General Disconnected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a1fdc93c4987d9f73b118207424cb0f97" name="ad2c35e714c71cdb900b07a7fe2fc6674a1fdc93c4987d9f73b118207424cb0f97"></a>TUYA_BT_BREDR_GAP_EVT_PAIR&#160;</td><td class="fielddoc"><p >General Pairing </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674adafb5acadbe20e8fa7600379c4955479" name="ad2c35e714c71cdb900b07a7fe2fc6674adafb5acadbe20e8fa7600379c4955479"></a>TUYA_BT_BREDR_GAP_INFO_INQUIRY&#160;</td><td class="fielddoc"><p >Report Device Info inquiry </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674ad48cad5d60e7e7fbd049b5a58d6ca60e" name="ad2c35e714c71cdb900b07a7fe2fc6674ad48cad5d60e7e7fbd049b5a58d6ca60e"></a>TUYA_BT_BREDR_STREAM_STATUS&#160;</td><td class="fielddoc"><p >Report BR-EDR Stream Status </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad2c35e714c71cdb900b07a7fe2fc6674a891c032a54008a6684a2984f3a81dfb4" name="ad2c35e714c71cdb900b07a7fe2fc6674a891c032a54008a6684a2984f3a81dfb4"></a>TUYA_BT_BREDR_PHONE_STATUS&#160;</td><td class="fielddoc"><p >Report Phone Status </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6c1f1b925eb888239ea7e8f8dc8e5242" name="a6c1f1b925eb888239ea7e8f8dc8e5242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1f1b925eb888239ea7e8f8dc8e5242">&#9670;&nbsp;</a></span>TUYA_BT_BREDR_PHONE_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a6c1f1b925eb888239ea7e8f8dc8e5242">TUYA_BT_BREDR_PHONE_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242a70a85df19aae46f98cc0ee2d9fb5cb6e" name="a6c1f1b925eb888239ea7e8f8dc8e5242a70a85df19aae46f98cc0ee2d9fb5cb6e"></a>TUYA_BT_PHONE_STATUS_IDLE&#160;</td><td class="fielddoc"><p >Current Device Being in Idle Mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242a014dc99db85bc1a57a36bea361c395aa" name="a6c1f1b925eb888239ea7e8f8dc8e5242a014dc99db85bc1a57a36bea361c395aa"></a>TUYA_BT_PHONE_STATUS_CONNECTED&#160;</td><td class="fielddoc"><p >HFP Connected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242a0d2a09eb9a4de6fddb3873bd5c77c6dd" name="a6c1f1b925eb888239ea7e8f8dc8e5242a0d2a09eb9a4de6fddb3873bd5c77c6dd"></a>TUYA_BT_PHONE_STATUS_DISCONNECTED&#160;</td><td class="fielddoc"><p >HFP Disonnected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242a4f373372a8a87132f42cdaba8a5f5796" name="a6c1f1b925eb888239ea7e8f8dc8e5242a4f373372a8a87132f42cdaba8a5f5796"></a>TUYA_BT_PHONE_INCOMING&#160;</td><td class="fielddoc"><p >Incoming phone, indicate the status for device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242aa08d3f808041e06614fb83f7a410a10f" name="a6c1f1b925eb888239ea7e8f8dc8e5242aa08d3f808041e06614fb83f7a410a10f"></a>TUYA_BT_PHONE_OUTGOING&#160;</td><td class="fielddoc"><p >Outgoing phone, indicate the status for device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242af1a9d15fe8593037b5e3288a970db8d1" name="a6c1f1b925eb888239ea7e8f8dc8e5242af1a9d15fe8593037b5e3288a970db8d1"></a>TUYA_BT_PHONE_ACTIVE&#160;</td><td class="fielddoc"><p >Currently, the device is being phone active </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242ab9f5c57556ad6faa22df5e463bd2b5cc" name="a6c1f1b925eb888239ea7e8f8dc8e5242ab9f5c57556ad6faa22df5e463bd2b5cc"></a>TUYA_BT_PHONE_HANGUP&#160;</td><td class="fielddoc"><p >Hang Up phone, indicate the status for device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242aa460f0bb55e94d49672533211366bafa" name="a6c1f1b925eb888239ea7e8f8dc8e5242aa460f0bb55e94d49672533211366bafa"></a>TUYA_BT_PHONE_VOLOUME_CHANGED&#160;</td><td class="fielddoc"><p >Indicate the volume changed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c1f1b925eb888239ea7e8f8dc8e5242a67e3f2daf92a7f2faac17148fc388f41" name="a6c1f1b925eb888239ea7e8f8dc8e5242a67e3f2daf92a7f2faac17148fc388f41"></a>TUYA_BT_PHONE_UPDATE_BATTERY&#160;</td><td class="fielddoc"><p >Update the battery </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a75bd197bbf2357e2a0e37cbc25e8fe6b" name="a75bd197bbf2357e2a0e37cbc25e8fe6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bd197bbf2357e2a0e37cbc25e8fe6b">&#9670;&nbsp;</a></span>TUYA_BT_BREDR_ROLE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a75bd197bbf2357e2a0e37cbc25e8fe6ba0d77b24309170fe5c207d853a7d47747" name="a75bd197bbf2357e2a0e37cbc25e8fe6ba0d77b24309170fe5c207d853a7d47747"></a>TUYA_BT_BREDR_ROLE_MASTER&#160;</td><td class="fielddoc"><p >BR-EDR Role: Master, Not Central From Core Spec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a75bd197bbf2357e2a0e37cbc25e8fe6badaa88fa467f8c0f8f869a0c28ef26b55" name="a75bd197bbf2357e2a0e37cbc25e8fe6badaa88fa467f8c0f8f869a0c28ef26b55"></a>TUYA_BT_BREDR_ROLE_SLAVE&#160;</td><td class="fielddoc"><p >BR-EDR Role: Slave </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad8a3e416613f18b1be3cae5f7b2031a6" name="ad8a3e416613f18b1be3cae5f7b2031a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a3e416613f18b1be3cae5f7b2031a6">&#9670;&nbsp;</a></span>TUYA_BT_BREDR_STEAM_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#ad8a3e416613f18b1be3cae5f7b2031a6">TUYA_BT_BREDR_STEAM_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad8a3e416613f18b1be3cae5f7b2031a6a2dead174d5594b44791d8a46a1290a23" name="ad8a3e416613f18b1be3cae5f7b2031a6a2dead174d5594b44791d8a46a1290a23"></a>TUYA_BT_STREAM_STATUS_IDLE&#160;</td><td class="fielddoc"><p >Current Audio Streaming Being in Idle Mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a3e416613f18b1be3cae5f7b2031a6abd95a472a04a4c32a4ade31b7077964a" name="ad8a3e416613f18b1be3cae5f7b2031a6abd95a472a04a4c32a4ade31b7077964a"></a>TUYA_BT_STREAM_STATUS_CONNECTED&#160;</td><td class="fielddoc"><p >A2DP Connected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a3e416613f18b1be3cae5f7b2031a6af35da2b288c75773b82e53656fea136a" name="ad8a3e416613f18b1be3cae5f7b2031a6af35da2b288c75773b82e53656fea136a"></a>TUYA_BT_STREAM_STATUS_DISCONNECTED&#160;</td><td class="fielddoc"><p >A2DP Disonnected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a3e416613f18b1be3cae5f7b2031a6a8df6d1d0d7a0d45d72df9906705ccc80" name="ad8a3e416613f18b1be3cae5f7b2031a6a8df6d1d0d7a0d45d72df9906705ccc80"></a>TUYA_BT_STREAM_STATUS_START&#160;</td><td class="fielddoc"><p >Current Audio Streaming Has been started. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a3e416613f18b1be3cae5f7b2031a6a5cc14ef65dc9ad7cc6f5f31d853e93fb" name="ad8a3e416613f18b1be3cae5f7b2031a6a5cc14ef65dc9ad7cc6f5f31d853e93fb"></a>TUYA_BT_STREAM_STATUS_SUSPENDING&#160;</td><td class="fielddoc"><p >Current Audio Streaming Being in Suspend Mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a3e416613f18b1be3cae5f7b2031a6afdd7fced262ff6b1cbc1d0df7268a09f" name="ad8a3e416613f18b1be3cae5f7b2031a6afdd7fced262ff6b1cbc1d0df7268a09f"></a>TUYA_BT_STREAM_STATUS_STOP&#160;</td><td class="fielddoc"><p >Current Audio Streaming Has been stoped. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2aedc3eb775bbfb6d6921ab384e3c839" name="a2aedc3eb775bbfb6d6921ab384e3c839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aedc3eb775bbfb6d6921ab384e3c839">&#9670;&nbsp;</a></span>TUYA_BT_PAIR_EVENT_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a2aedc3eb775bbfb6d6921ab384e3c839">TUYA_BT_PAIR_EVENT_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2aedc3eb775bbfb6d6921ab384e3c839ae17847a1f52562507233176ad8a044e3" name="a2aedc3eb775bbfb6d6921ab384e3c839ae17847a1f52562507233176ad8a044e3"></a>TUYA_BT_PAIR_BOND_START&#160;</td><td class="fielddoc"><p >Indicatet the pairing procedure running </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2aedc3eb775bbfb6d6921ab384e3c839aadd592c60628c9f477e3a7492772a901" name="a2aedc3eb775bbfb6d6921ab384e3c839aadd592c60628c9f477e3a7492772a901"></a>TUYA_BT_PAIR_BOND_REQUEST&#160;</td><td class="fielddoc"><p >After the phone request pairing with any passkey, we need to input the passkey </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2aedc3eb775bbfb6d6921ab384e3c839a8d29e4f2623786bc17a38c8add799b84" name="a2aedc3eb775bbfb6d6921ab384e3c839a8d29e4f2623786bc17a38c8add799b84"></a>TUYA_BT_PAIR_BOND_CONFIRM&#160;</td><td class="fielddoc"><p >After the phone request pairing with one passkey, we can show it and do confirm </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2aedc3eb775bbfb6d6921ab384e3c839a8b0ed5fbc06c205eecfdc9380ad10989" name="a2aedc3eb775bbfb6d6921ab384e3c839a8b0ed5fbc06c205eecfdc9380ad10989"></a>TUYA_BT_PAIR_BOND_SUCCESS&#160;</td><td class="fielddoc"><p >Pairing successfully </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2aedc3eb775bbfb6d6921ab384e3c839a1c6a2cadaf091f8b59693af9f79b11da" name="a2aedc3eb775bbfb6d6921ab384e3c839a1c6a2cadaf091f8b59693af9f79b11da"></a>TUYA_BT_PAIR_BOND_FAIL&#160;</td><td class="fielddoc"><p >Pairing fail </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="affbf97f6ae6e6d8266ff3e581972031d" name="affbf97f6ae6e6d8266ff3e581972031d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbf97f6ae6e6d8266ff3e581972031d">&#9670;&nbsp;</a></span>TUYA_BT_PAIR_IO_CAP_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#affbf97f6ae6e6d8266ff3e581972031d">TUYA_BT_PAIR_IO_CAP_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="affbf97f6ae6e6d8266ff3e581972031da2b314a1733ce2545b8e922bf5b4d83c8" name="affbf97f6ae6e6d8266ff3e581972031da2b314a1733ce2545b8e922bf5b4d83c8"></a>TUYA_BT_IO_CAP_DISPLAY_ONLY&#160;</td><td class="fielddoc"><p >Display Only Device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="affbf97f6ae6e6d8266ff3e581972031da1e28f1c85d9e0e83b9822f3cf7746f0b" name="affbf97f6ae6e6d8266ff3e581972031da1e28f1c85d9e0e83b9822f3cf7746f0b"></a>TUYA_BT_IO_CAP_DISPLAY_YES_NO&#160;</td><td class="fielddoc"><p >Display and Yes and No Capable </p>
+</td></tr>
+<tr><td class="fieldname"><a id="affbf97f6ae6e6d8266ff3e581972031dac5e5ab42cf00d445a3f6c765cffbab04" name="affbf97f6ae6e6d8266ff3e581972031dac5e5ab42cf00d445a3f6c765cffbab04"></a>TUYA_BT_IO_CAP_KEYBOARD_ONLY&#160;</td><td class="fielddoc"><p >Keyboard Only </p>
+</td></tr>
+<tr><td class="fieldname"><a id="affbf97f6ae6e6d8266ff3e581972031da83fa77e31e38cd061a09549a27f405f7" name="affbf97f6ae6e6d8266ff3e581972031da83fa77e31e38cd061a09549a27f405f7"></a>TUYA_BT_IO_CAP_NO_INPUT_NO_OUTPUT&#160;</td><td class="fielddoc"><p >No Display or Input Device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="affbf97f6ae6e6d8266ff3e581972031da068492ffd5f4da507fcace98c470dae2" name="affbf97f6ae6e6d8266ff3e581972031da068492ffd5f4da507fcace98c470dae2"></a>TUYA_BT_IO_CAP_KEYBOARD_DISPLAY&#160;</td><td class="fielddoc"><p >Both Keyboard and Display Capable </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a006cfa5684620d2f2564dcb287ab0691" name="a006cfa5684620d2f2564dcb287ab0691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006cfa5684620d2f2564dcb287ab0691">&#9670;&nbsp;</a></span>TUYA_BT_PAIR_MODE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a006cfa5684620d2f2564dcb287ab0691">TUYA_BT_PAIR_MODE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a006cfa5684620d2f2564dcb287ab0691ae7bd37d5f481803db279267f6c9e6624" name="a006cfa5684620d2f2564dcb287ab0691ae7bd37d5f481803db279267f6c9e6624"></a>TUYA_BT_PAIR_MODE_NO_PAIRING&#160;</td><td class="fielddoc"><p >Pairing is not allowed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a006cfa5684620d2f2564dcb287ab0691aa43f6afc7d88e79b994f05df19b15337" name="a006cfa5684620d2f2564dcb287ab0691aa43f6afc7d88e79b994f05df19b15337"></a>TUYA_BT_PAIR_MODE_WAIT_FOR_REQ&#160;</td><td class="fielddoc"><p >Wait for a pairing request or slave security request </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a006cfa5684620d2f2564dcb287ab0691a805ac5a5ef245403d5456b6af0476971" name="a006cfa5684620d2f2564dcb287ab0691a805ac5a5ef245403d5456b6af0476971"></a>TUYA_BT_PAIR_MODE_INITIATE&#160;</td><td class="fielddoc"><p >Don't wait, initiate a pairing request or slave security request </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a012da325a7bb180a9f93d204cd5c789f" name="a012da325a7bb180a9f93d204cd5c789f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a012da325a7bb180a9f93d204cd5c789f">&#9670;&nbsp;</a></span>TUYA_BT_PAIR_REQUEST_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a012da325a7bb180a9f93d204cd5c789f">TUYA_BT_PAIR_REQUEST_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a012da325a7bb180a9f93d204cd5c789fa6aa0098e2aa2fff2e2491060c41a4256" name="a012da325a7bb180a9f93d204cd5c789fa6aa0098e2aa2fff2e2491060c41a4256"></a>TUYA_BT_PAIR_REQUEST_CONFIRMATION&#160;</td><td class="fielddoc"><p >Confirmation request then should send pair_enable </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a012da325a7bb180a9f93d204cd5c789fa94bc14d52e0cfb4f4663f78211f8c614" name="a012da325a7bb180a9f93d204cd5c789fa94bc14d52e0cfb4f4663f78211f8c614"></a>TUYA_BT_PAIR_REQUEST_PASSKEY&#160;</td><td class="fielddoc"><p >passkey request then should enter passkey <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a012da325a7bb180a9f93d204cd5c789faf005afe97917177ad2fb45941084db73" name="a012da325a7bb180a9f93d204cd5c789faf005afe97917177ad2fb45941084db73"></a>TUYA_BT_PAIR_REQUEST_PIN&#160;</td><td class="fielddoc"><p >pin request then should enter pair_enable </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5d4914a3731dfca25ceffc721ac46626" name="a5d4914a3731dfca25ceffc721ac46626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4914a3731dfca25ceffc721ac46626">&#9670;&nbsp;</a></span>TUYA_BT_SCAN_MODE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626">TUYA_BT_SCAN_MODE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5d4914a3731dfca25ceffc721ac46626a28693042dc43f3c88db68a74299e3f4d" name="a5d4914a3731dfca25ceffc721ac46626a28693042dc43f3c88db68a74299e3f4d"></a>TUYA_BT_BREDR_MODE_IDLE&#160;</td><td class="fielddoc"><p >device is idle mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5d4914a3731dfca25ceffc721ac46626ad3a7a2eb79177aa5fbbfdd9364dc19d5" name="a5d4914a3731dfca25ceffc721ac46626ad3a7a2eb79177aa5fbbfdd9364dc19d5"></a>TUYA_BT_BREDR_MODE_SCAN_INQUIRY_ONLY&#160;</td><td class="fielddoc"><p >device is only inquiry_scan mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5d4914a3731dfca25ceffc721ac46626aa9905827abe6436cbe3e52ae176d3d38" name="a5d4914a3731dfca25ceffc721ac46626aa9905827abe6436cbe3e52ae176d3d38"></a>TUYA_BT_BREDR_MODE_SCAN_PAGE_ONLY&#160;</td><td class="fielddoc"><p >device is only page_scan mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5d4914a3731dfca25ceffc721ac46626ab2839136caef5cb715f15bd0b07d7fc0" name="a5d4914a3731dfca25ceffc721ac46626ab2839136caef5cb715f15bd0b07d7fc0"></a>TUYA_BT_BREDR_MODE_SCAN_INQUIRY_AND_SCAN_PAGE&#160;</td><td class="fielddoc"><p >device is both inquiry_scan and page_scan mode </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a4285137ec3ec336b0884976b590123fd" name="a4285137ec3ec336b0884976b590123fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4285137ec3ec336b0884976b590123fd">&#9670;&nbsp;</a></span>tkl_bt_bredr_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_control </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a321c6cfc42d15ffcaf5c1c0933f50f7f">TUYA_BT_BREDR_CONTROL_E</a>&#160;</td>
+          <td class="paramname"><em>crtl_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>user_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT_T&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control the audio or phone, please refer to @TUYA_BT_BREDR_CONTROL_E. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">crtl_event</td><td>control operations. [in] user_data: post the user-data for audio-control. [in] data_len: post the user-data length for audio-control.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a6d546f2ff304f39442fb60ed3a56c336" name="a6d546f2ff304f39442fb60ed3a56c336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d546f2ff304f39442fb60ed3a56c336">&#9670;&nbsp;</a></span>tkl_bt_bredr_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a>&#160;</td>
+          <td class="paramname"><em>role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-Init the Bluetooth BR-EDR Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">role</td><td>De-init the bt bredr role;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="af50e587678ae46e5f32fa479c81f8307" name="af50e587678ae46e5f32fa479c81f8307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af50e587678ae46e5f32fa479c81f8307">&#9670;&nbsp;</a></span>tkl_bt_bredr_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a5d4914a3731dfca25ceffc721ac46626">TUYA_BT_SCAN_MODE_E</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the Bluetooth BR-EDR Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>see TUYA_BT_SCAN_MODE_E</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a1fc67a3725f10ba606b4488a987850e0" name="a1fc67a3725f10ba606b4488a987850e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc67a3725f10ba606b4488a987850e0">&#9670;&nbsp;</a></span>tkl_bt_bredr_equalizer_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_equalizer_set </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>eq_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>eq_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT_T&#160;</td>
+          <td class="paramname"><em>eq_data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control the bredr eq </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eq_mode</td><td>control equalizer mode. [in] eq_data: post the eq-data for eq. [in] eq_data_len: post the eq-data length for eq.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a05a7321d58a0a1e540114edefeb44163" name="a05a7321d58a0a1e540114edefeb44163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a7321d58a0a1e540114edefeb44163">&#9670;&nbsp;</a></span>tkl_bt_bredr_equalizer_switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_equalizer_switch </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>eq_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swicth the bredr eq mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eq_mode</td><td>Switch equalizer mode. [in] enable: Enable the current mode or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a44ebae325dc3199ed921b0a8890c2006" name="a44ebae325dc3199ed921b0a8890c2006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ebae325dc3199ed921b0a8890c2006">&#9670;&nbsp;</a></span>tkl_bt_bredr_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a>&#160;</td>
+          <td class="paramname"><em>role</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#af59ba2cb952ead4d6c639181cbf04518">TUYA_BT_BREDR_EVT_FUNC_CB</a>&#160;</td>
+          <td class="paramname"><em>p_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init the Bluetooth BR-EDR Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">role</td><td>Init the bt bredr role; [in] p_event: register callback; [in] user_data: Init the user data;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a87e8976563c8292436407274cba1836a" name="a87e8976563c8292436407274cba1836a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e8976563c8292436407274cba1836a">&#9670;&nbsp;</a></span>tkl_bt_bredr_inquiry_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_inquiry_enable </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the Bluetooth BR-EDR Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>TRUE: Enable the bluetooth bredr inquiry. FALSE: Disable the bluetooth bredr inquiry.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a61f2bcdddffc309cb7c6ceef6b98fc93" name="a61f2bcdddffc309cb7c6ceef6b98fc93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f2bcdddffc309cb7c6ceef6b98fc93">&#9670;&nbsp;</a></span>tkl_bt_bredr_noise_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_noise_set </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>noise_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT_T&#160;</td>
+          <td class="paramname"><em>noise_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control the bredr noise </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">noise_mode</td><td>control noise mode. [in] noise_data: post the noise data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a26ea04432a4cb8f763666332d89e4498" name="a26ea04432a4cb8f763666332d89e4498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ea04432a4cb8f763666332d89e4498">&#9670;&nbsp;</a></span>tkl_bt_bredr_noise_switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_noise_switch </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>noise_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swicth the bredr noise mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">noise_mode</td><td>Switch noise mode. [in] enable: Enable the current mode or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a89f5a0042df3ff18c4f46f537677e011" name="a89f5a0042df3ff18c4f46f537677e011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f5a0042df3ff18c4f46f537677e011">&#9670;&nbsp;</a></span>tkl_bt_bredr_page_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_page_enable </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d7b/structTUYA__BT__GAP__ADDR__T.html">TUYA_BT_GAP_ADDR_T</a> *&#160;</td>
+          <td class="paramname"><em>p_peer_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the Bluetooth BR-EDR Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>TRUE: Enable the bluetooth bredr page. FALSE: Disable the bluetooth bredr page. [in] peer_addr: peer address for device which should be paging. if is NULL, will page the last device</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a7d702f6cef006dca8de6f51cb92e506c" name="a7d702f6cef006dca8de6f51cb92e506c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d702f6cef006dca8de6f51cb92e506c">&#9670;&nbsp;</a></span>tkl_bt_bredr_pair_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_pair_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/daa/structTUYA__BT__PAIR__INIT__PARAM__T.html">TUYA_BT_PAIR_INIT_PARAM_T</a>&#160;</td>
+          <td class="paramname"><em>pair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Bluetooth BR-EDR pair mode Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pair</td><td>Bluetooth BR-EDR pair mode; [in] user_data: Init the user data;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a939e899702589062cf3bbe54803b601a" name="a939e899702589062cf3bbe54803b601a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939e899702589062cf3bbe54803b601a">&#9670;&nbsp;</a></span>tkl_bt_bredr_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_bredr_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dcf/tkl__bluetooth__bredr_8h.html#a75bd197bbf2357e2a0e37cbc25e8fe6b">TUYA_BT_BREDR_ROLE_E</a>&#160;</td>
+          <td class="paramname"><em>role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the Bluetooth BR-EDR Interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">role</td><td>Reset the bt bredr role;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="ac3cc8efaa68f05e89409f33dcd33c1a2" name="ac3cc8efaa68f05e89409f33dcd33c1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3cc8efaa68f05e89409f33dcd33c1a2">&#9670;&nbsp;</a></span>tkl_bt_gap_address_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_address_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d7b/structTUYA__BT__GAP__ADDR__T.html">TUYA_BT_GAP_ADDR_T</a> *&#160;</td>
+          <td class="paramname"><em>p_peer_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the BT Address </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_peer_addr</td><td>get peer address for BT;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a08b262dfd74554bde235f9101a8ce6f0" name="a08b262dfd74554bde235f9101a8ce6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b262dfd74554bde235f9101a8ce6f0">&#9670;&nbsp;</a></span>tkl_bt_gap_address_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_address_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d7b/structTUYA__BT__GAP__ADDR__T.html">TUYA_BT_GAP_ADDR_T</a> CONST *&#160;</td>
+          <td class="paramname"><em>p_peer_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the BT Address </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_peer_addr</td><td>set peer address for BT;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a062d831e1851d1bc2fadb5b66f53fb3b" name="a062d831e1851d1bc2fadb5b66f53fb3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062d831e1851d1bc2fadb5b66f53fb3b">&#9670;&nbsp;</a></span>tkl_bt_gap_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d05/structTUYA__BT__PAIR__BOND__INFO__T.html">TUYA_BT_PAIR_BOND_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>bond_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>disconnect the link. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bond_info</td><td>disconnect the bond info.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a4cfd402287c879a53cf8dfc14d483070" name="a4cfd402287c879a53cf8dfc14d483070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfd402287c879a53cf8dfc14d483070">&#9670;&nbsp;</a></span>tkl_bt_gap_name_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_name_get </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the BT GAP Name </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_peer_addr</td><td>get local bluetooth gap name for BT;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a594c48eb947e7f2d71d2d512c32468fc" name="a594c48eb947e7f2d71d2d512c32468fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594c48eb947e7f2d71d2d512c32468fc">&#9670;&nbsp;</a></span>tkl_bt_gap_name_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_name_set </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the BT GAP Name </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_peer_addr</td><td>set local bluetooth gap name for BT;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="ab2814dd765147034c92d966f9ced186c" name="ab2814dd765147034c92d966f9ced186c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2814dd765147034c92d966f9ced186c">&#9670;&nbsp;</a></span>tkl_bt_gap_paring_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_paring_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d05/structTUYA__BT__PAIR__BOND__INFO__T.html">TUYA_BT_PAIR_BOND_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>bond_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the pair informations. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bond_info</td><td>delete the bond info.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a008c3d64c20801eb6fcbe3907b121dd9" name="a008c3d64c20801eb6fcbe3907b121dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008c3d64c20801eb6fcbe3907b121dd9">&#9670;&nbsp;</a></span>tkl_bt_gap_paring_enable_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_paring_enable_send </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>en</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or Disable pair when pairing request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">en</td><td>TRUE for enable and FALSE for disable pair</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a76e7a7e0c420427b5b99032c24f8a5a8" name="a76e7a7e0c420427b5b99032c24f8a5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e7a7e0c420427b5b99032c24f8a5a8">&#9670;&nbsp;</a></span>tkl_bt_gap_paring_passkey_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_paring_passkey_send </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>passkey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send paring passkey when in keyboard mode. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">passkey</td><td>eg: 0x0001E240 means the passkey is 123456</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="acf2cc9f0376ffbf47f490091ef13fea7" name="acf2cc9f0376ffbf47f490091ef13fea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2cc9f0376ffbf47f490091ef13fea7">&#9670;&nbsp;</a></span>tkl_bt_gap_paring_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_bt_gap_paring_request </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d6a/structTUYA__BT__PAIR__DEVICE__T.html">TUYA_BT_PAIR_DEVICE_T</a> *&#160;</td>
+          <td class="paramname"><em>p_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Request the pair while in BT-Master Mode. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>request security pairing mode for BT; [in] bond_info: post the major information for pairing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a0d9b6dcfd1191a789e75ec7c5fdeb578" name="a0d9b6dcfd1191a789e75ec7c5fdeb578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9b6dcfd1191a789e75ec7c5fdeb578">&#9670;&nbsp;</a></span>tkl_bt_pairing_status_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_bt_pairing_status_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if device is paired </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">NULL</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE FALSE </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

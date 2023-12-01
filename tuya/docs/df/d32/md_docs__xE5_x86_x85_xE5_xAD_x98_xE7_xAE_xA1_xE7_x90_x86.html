@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 内存管理</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">内存管理 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >涂鸦<code>TuyaOS</code>提供了内存管理接口，开发者可以分配、释放内存。</p>
+<h1><a class="anchor" id="autotoc_md143"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md144"></a>
+申请内存</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#define Malloc(req_size) tal_malloc(req_size)</span></div>
+<div class="line"> </div>
+<div class="line">VOID_T *<a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a>(SIZE_T size);</div>
+<div class="ttc" id="atal__memory_8h_html_a46e0bcc120599603d9dae091abc5a36d"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a></div><div class="ttdeci">VOID_T * tal_malloc(SIZE_T size)</div><div class="ttdoc">Alloc memory of system</div></div>
+</div><!-- fragment --><p >此接口用于申请内存，可以直接使用<code>Malloc</code>。注意释放的时候使用<code>Free</code>。</p>
+<h2><a class="anchor" id="autotoc_md145"></a>
+释放内存</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#define Free(ptr) tal_free(ptr)</span></div>
+<div class="line"> </div>
+<div class="line">VOID_T <a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a>(VOID_T* ptr);</div>
+<div class="ttc" id="atal__memory_8h_html_a5e0e4741554159aa4c9e1fc68e09bb23"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a></div><div class="ttdeci">VOID_T tal_free(VOID_T *ptr)</div><div class="ttdoc">Free memory of system</div></div>
+</div><!-- fragment --><p >此接口用于释放使用<code>Malloc</code>申请到的内存。</p>
+<h1><a class="anchor" id="autotoc_md146"></a>
+使用示例</h1>
+<div class="fragment"><div class="line"><span class="comment">// 在完成系统初始化之后调用此接口测试内存分配</span></div>
+<div class="line">VOID test_memory()</div>
+<div class="line">{</div>
+<div class="line">    CHAR_T* p = (CHAR_T*)<a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a>(100);</div>
+<div class="line">    <span class="keywordflow">if</span> (!p) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;null point&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">Free</a>(p);</div>
+<div class="line">    p = NULL;       </div>
+<div class="line">}</div>
+<div class="ttc" id="atal__memory_8h_html_a0b8e3b7d52eecc10d64e8242fc30c816"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">Free</a></div><div class="ttdeci">#define Free(ptr)</div><div class="ttdoc">free memory</div><div class="ttdef"><b>Definition:</b> tal_memory.h:42</div></div>
+<div class="ttc" id="atal__memory_8h_html_a0d6680b29e31ae0ce8627f5a12b31e11"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a></div><div class="ttdeci">#define Malloc(req_size)</div><div class="ttdoc">malloc memory</div><div class="ttdef"><b>Definition:</b> tal_memory.h:25</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

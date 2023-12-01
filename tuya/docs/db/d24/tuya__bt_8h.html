@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_bt/include/tuya_bt.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_35f715468f31c6c7586f390b1ee97684.html">svc_bt</a></li><li class="navelem"><a class="el" href="../../dir_39f43fcfdf7e04947741557bfcacc95f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_bt.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tuya_cloud_com_defs.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/dad/base__event__info_8h_source.html">base_event_info.h</a>&quot;</code><br />
+<code>#include &quot;tal_bluetooth_def.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_bt.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d8b/tuya__bt_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__bt_2include_2tuya__bt_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__bt_2include_2tuya__bt_8h" id="ainclude_2components_2svc__bt_2include_2tuya__bt_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="395,5,579,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="359,169,507,196"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="221,95,395,121"/>
+<area shape="rect" href="../../d9/dad/base__event__info_8h.html" title="tuya simple event module" alt="" coords="471,95,612,121"/>
+<area shape="rect" href="../../d3/d33/tal__bluetooth__def_8h_source.html" title=" " alt="" coords="636,95,783,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="104,244,237,271"/>
+<area shape="rect" title=" " alt="" coords="261,244,336,271"/>
+<area shape="rect" title=" " alt="" coords="361,244,431,271"/>
+<area shape="rect" title=" " alt="" coords="5,244,80,271"/>
+<area shape="rect" title=" " alt="" coords="455,244,526,271"/>
+<area shape="rect" title=" " alt="" coords="551,244,633,271"/>
+<area shape="rect" title=" " alt="" coords="658,244,729,271"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="753,244,892,271"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="100,169,193,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../db/d24/tuya__bt_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d49/structTUYA__BLE__BT__PARA.html">TUYA_BLE_BT_PARA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a158539c5b2d62ff5e40b63a22bdc4f72"><td class="memItemLeft" align="right" valign="top"><a id="a158539c5b2d62ff5e40b63a22bdc4f72" name="a158539c5b2d62ff5e40b63a22bdc4f72"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_BLE_ABILITY_ALL</b>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:a158539c5b2d62ff5e40b63a22bdc4f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9146f43082cb864a806ac711ac6b0e8"><td class="memItemLeft" align="right" valign="top"><a id="ad9146f43082cb864a806ac711ac6b0e8" name="ad9146f43082cb864a806ac711ac6b0e8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_BLE_ABILITY_DP_CTRL</b>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:ad9146f43082cb864a806ac711ac6b0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd72262e9a782ddc7b505a29de692713"><td class="memItemLeft" align="right" valign="top"><a id="afd72262e9a782ddc7b505a29de692713" name="afd72262e9a782ddc7b505a29de692713"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_BLE_ABILITY_NETCFG</b>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:afd72262e9a782ddc7b505a29de692713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef971f555ccba4398983918dbb82499"><td class="memItemLeft" align="right" valign="top"><a id="a8ef971f555ccba4398983918dbb82499" name="a8ef971f555ccba4398983918dbb82499"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_BLE_ABILITY_NONE</b>&#160;&#160;&#160;0x0</td></tr>
+<tr class="separator:a8ef971f555ccba4398983918dbb82499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a7ea2518f1db453754e7db2104c704679"><td class="memItemLeft" align="right" valign="top"><a id="a7ea2518f1db453754e7db2104c704679" name="a7ea2518f1db453754e7db2104c704679"></a>
+typedef UINT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>BT_DP_GET_TM_CB</b>) (CHAR_T *time_str)</td></tr>
+<tr class="separator:a7ea2518f1db453754e7db2104c704679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0ad3e3cafb85bff0f57c6656fafb4b"><td class="memItemLeft" align="right" valign="top"><a id="aee0ad3e3cafb85bff0f57c6656fafb4b" name="aee0ad3e3cafb85bff0f57c6656fafb4b"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>BT_DP_QUERY_CB</b>) (VOID_T)</td></tr>
+<tr class="separator:aee0ad3e3cafb85bff0f57c6656fafb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2098d7c05cdffa8dd03894a1b08a1a9a"><td class="memItemLeft" align="right" valign="top"><a id="a2098d7c05cdffa8dd03894a1b08a1a9a" name="a2098d7c05cdffa8dd03894a1b08a1a9a"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>GET_BT_CONN_STAT_CB</b>) (IN CONST <a class="el" href="../../db/d24/tuya__bt_8h.html#a1e428785ac9ffbc0e33fd18c248c7640">TUYA_BT_CONN_STAT</a> stat)</td></tr>
+<tr class="separator:a2098d7c05cdffa8dd03894a1b08a1a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d73d4213f86896a283913e1268936d"><td class="memItemLeft" align="right" valign="top"><a id="a07d73d4213f86896a283913e1268936d" name="a07d73d4213f86896a283913e1268936d"></a>
+typedef BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_BLE_ABILITY_T</b></td></tr>
+<tr class="separator:a07d73d4213f86896a283913e1268936d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ae8a2b021854325411bb3ca60bbe06102"><td class="memItemLeft" align="right" valign="top"><a id="ae8a2b021854325411bb3ca60bbe06102" name="ae8a2b021854325411bb3ca60bbe06102"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#ae8a2b021854325411bb3ca60bbe06102">TUYA_BLE_BIND_TYPE</a> { <b>TUYA_BLE_OP_UNBIND</b> = 0
+, <b>TUYA_BLE_OP_BIND</b>
+ }</td></tr>
+<tr class="memdesc:ae8a2b021854325411bb3ca60bbe06102"><td class="mdescLeft">&#160;</td><td class="mdescRight">bind type for bluetooth remote controller <br /></td></tr>
+<tr class="separator:ae8a2b021854325411bb3ca60bbe06102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e428785ac9ffbc0e33fd18c248c7640"><td class="memItemLeft" align="right" valign="top"><a id="a1e428785ac9ffbc0e33fd18c248c7640" name="a1e428785ac9ffbc0e33fd18c248c7640"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a1e428785ac9ffbc0e33fd18c248c7640">TUYA_BT_CONN_STAT</a> { <br />
+&#160;&#160;<b>TUYA_BT_UNBONDING_UNCONN</b> = 0
+, <b>TUYA_BT_UNBONDING_CONN</b>
+, <b>TUYA_BT_BONDING_UNCONN</b>
+, <b>TUYA_BT_BONDING_CONN</b>
+, <br />
+&#160;&#160;<b>TUYA_BT_UNKNOW_STATUS</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a1e428785ac9ffbc0e33fd18c248c7640"><td class="mdescLeft">&#160;</td><td class="mdescRight">connection status for bluetooth <br /></td></tr>
+<tr class="separator:a1e428785ac9ffbc0e33fd18c248c7640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c429ffca863f85bb13fe3f10595e01"><td class="memItemLeft" align="right" valign="top"><a id="a41c429ffca863f85bb13fe3f10595e01" name="a41c429ffca863f85bb13fe3f10595e01"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a41c429ffca863f85bb13fe3f10595e01">TUYA_BT_SERV_STAT</a> { <b>TUYA_BT_SERV_OPENED</b> = 0
+, <b>TUYA_BT_SERV_OPENING</b>
+, <b>TUYA_BT_SERV_CLOSED</b>
+, <b>TUYA_BT_SERV_CLOSING</b>
+ }</td></tr>
+<tr class="memdesc:a41c429ffca863f85bb13fe3f10595e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">status for bluetooth service <br /></td></tr>
+<tr class="separator:a41c429ffca863f85bb13fe3f10595e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1c667f4d7fa92f68aaf1b9593c5bdbcf"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a1c667f4d7fa92f68aaf1b9593c5bdbcf">is_bt_connected</a> (VOID_T)</td></tr>
+<tr class="memdesc:a1c667f4d7fa92f68aaf1b9593c5bdbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check bluetooth is connected.  <a href="../../db/d24/tuya__bt_8h.html#a1c667f4d7fa92f68aaf1b9593c5bdbcf">更多...</a><br /></td></tr>
+<tr class="separator:a1c667f4d7fa92f68aaf1b9593c5bdbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b9a1e0a1f76af43fc159d95da14f45"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a45b9a1e0a1f76af43fc159d95da14f45">tuya_ble_disable_expt_unbind</a> (VOID_T)</td></tr>
+<tr class="memdesc:a45b9a1e0a1f76af43fc159d95da14f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable function for execept unbinding  <a href="../../db/d24/tuya__bt_8h.html#a45b9a1e0a1f76af43fc159d95da14f45">更多...</a><br /></td></tr>
+<tr class="separator:a45b9a1e0a1f76af43fc159d95da14f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaad2603213132713f7f722b82d4faf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d24/tuya__bt_8h.html#a41c429ffca863f85bb13fe3f10595e01">TUYA_BT_SERV_STAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#afaad2603213132713f7f722b82d4faf0">tuya_ble_get_serv_stat</a> (VOID_T)</td></tr>
+<tr class="memdesc:afaad2603213132713f7f722b82d4faf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of bluetooth service  <a href="../../db/d24/tuya__bt_8h.html#afaad2603213132713f7f722b82d4faf0">更多...</a><br /></td></tr>
+<tr class="separator:afaad2603213132713f7f722b82d4faf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b0aa7ccacb11dde9a4689b3ed86946"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a40b0aa7ccacb11dde9a4689b3ed86946">tuya_ble_lowpower_handle</a> (VOID_T)</td></tr>
+<tr class="memdesc:a40b0aa7ccacb11dde9a4689b3ed86946"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop ble netcfg and plug_play when dev under lowpower status  <a href="../../db/d24/tuya__bt_8h.html#a40b0aa7ccacb11dde9a4689b3ed86946">更多...</a><br /></td></tr>
+<tr class="separator:a40b0aa7ccacb11dde9a4689b3ed86946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fec6ca891076b190a16cea91c39a751"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a9fec6ca891076b190a16cea91c39a751">tuya_ble_monitor_init</a> (VOID_T)</td></tr>
+<tr class="memdesc:a9fec6ca891076b190a16cea91c39a751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitor for bluetooth  <a href="../../db/d24/tuya__bt_8h.html#a9fec6ca891076b190a16cea91c39a751">更多...</a><br /></td></tr>
+<tr class="separator:a9fec6ca891076b190a16cea91c39a751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a72776990dc50f13ff5ba4ac8866fe2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a3a72776990dc50f13ff5ba4ac8866fe2">tuya_ble_reg_get_bt_stat_cb</a> (IN CONST GET_BT_CONN_STAT_CB bt_conn_stat_cb)</td></tr>
+<tr class="memdesc:a3a72776990dc50f13ff5ba4ac8866fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function for getting the connection status of bluetooth  <a href="../../db/d24/tuya__bt_8h.html#a3a72776990dc50f13ff5ba4ac8866fe2">更多...</a><br /></td></tr>
+<tr class="separator:a3a72776990dc50f13ff5ba4ac8866fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e26487d889fa4137aa274ef0d8e663"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a42e26487d889fa4137aa274ef0d8e663">tuya_ble_rept_netcfg_stat</a> (IN UINT_T type)</td></tr>
+<tr class="memdesc:a42e26487d889fa4137aa274ef0d8e663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report netcfg status  <a href="../../db/d24/tuya__bt_8h.html#a42e26487d889fa4137aa274ef0d8e663">更多...</a><br /></td></tr>
+<tr class="separator:a42e26487d889fa4137aa274ef0d8e663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfe0bcb0b6e31c303487ca05d66ae1b"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a2cfe0bcb0b6e31c303487ca05d66ae1b">tuya_ble_restart_adv</a> (VOID_T)</td></tr>
+<tr class="memdesc:a2cfe0bcb0b6e31c303487ca05d66ae1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resend the ble adv data to hal and start ble adv  <a href="../../db/d24/tuya__bt_8h.html#a2cfe0bcb0b6e31c303487ca05d66ae1b">更多...</a><br /></td></tr>
+<tr class="separator:a2cfe0bcb0b6e31c303487ca05d66ae1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9e172e48404479a6ab8edb29dfc5e5"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a9f9e172e48404479a6ab8edb29dfc5e5">tuya_ble_set_bt_para</a> (<a class="el" href="../../d0/d49/structTUYA__BLE__BT__PARA.html">TUYA_BLE_BT_PARA</a> *para)</td></tr>
+<tr class="memdesc:a9f9e172e48404479a6ab8edb29dfc5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parameters for bluetooth.  <a href="../../db/d24/tuya__bt_8h.html#a9f9e172e48404479a6ab8edb29dfc5e5">更多...</a><br /></td></tr>
+<tr class="separator:a9f9e172e48404479a6ab8edb29dfc5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c83a3c0d0dcd130600cb8be57cf125"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a75c83a3c0d0dcd130600cb8be57cf125">tuya_ble_set_serv_switch</a> (BOOL_T swith)</td></tr>
+<tr class="memdesc:a75c83a3c0d0dcd130600cb8be57cf125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set enable switch for bluetooth service  <a href="../../db/d24/tuya__bt_8h.html#a75c83a3c0d0dcd130600cb8be57cf125">更多...</a><br /></td></tr>
+<tr class="separator:a75c83a3c0d0dcd130600cb8be57cf125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9deae2035a74840c965b2134e196a3"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a4b9deae2035a74840c965b2134e196a3">tuya_ble_set_startup_attr</a> (TUYA_BLE_ABILITY_T attr)</td></tr>
+<tr class="memdesc:a4b9deae2035a74840c965b2134e196a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set abilitiy attribute of bluetooth  <a href="../../db/d24/tuya__bt_8h.html#a4b9deae2035a74840c965b2134e196a3">更多...</a><br /></td></tr>
+<tr class="separator:a4b9deae2035a74840c965b2134e196a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6129765af39701c96ed923c14fb66dae"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a6129765af39701c96ed923c14fb66dae">tuya_ble_start_user_beacon_adv</a> (UCHAR_T *data, UCHAR_T len, UINT_T sec_time)</td></tr>
+<tr class="memdesc:a6129765af39701c96ed923c14fb66dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start user defined advertising of bluetooth with time limited  <a href="../../db/d24/tuya__bt_8h.html#a6129765af39701c96ed923c14fb66dae">更多...</a><br /></td></tr>
+<tr class="separator:a6129765af39701c96ed923c14fb66dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2b22a32e15bb1250eba9976573ed02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d24/tuya__bt_8h.html#a1e428785ac9ffbc0e33fd18c248c7640">TUYA_BT_CONN_STAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a5c2b22a32e15bb1250eba9976573ed02">tuya_bt_get_connect_status</a> (VOID)</td></tr>
+<tr class="memdesc:a5c2b22a32e15bb1250eba9976573ed02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get connection status of bluetooth  <a href="../../db/d24/tuya__bt_8h.html#a5c2b22a32e15bb1250eba9976573ed02">更多...</a><br /></td></tr>
+<tr class="separator:a5c2b22a32e15bb1250eba9976573ed02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904babe0ef2b5e8cbf0e9a4c23e4a1de"><td class="memItemLeft" align="right" valign="top"><a id="a904babe0ef2b5e8cbf0e9a4c23e4a1de" name="a904babe0ef2b5e8cbf0e9a4c23e4a1de"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble</b> (VOID_T)</td></tr>
+<tr class="separator:a904babe0ef2b5e8cbf0e9a4c23e4a1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413e575597f9ef617a5127871a566fae"><td class="memItemLeft" align="right" valign="top"><a id="a413e575597f9ef617a5127871a566fae" name="a413e575597f9ef617a5127871a566fae"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_active</b> (VOID_T)</td></tr>
+<tr class="separator:a413e575597f9ef617a5127871a566fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced64f30fad3611f0059a5f2892f00d7"><td class="memItemLeft" align="right" valign="top"><a id="aced64f30fad3611f0059a5f2892f00d7" name="aced64f30fad3611f0059a5f2892f00d7"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_combos</b> (UINT32_T flag)</td></tr>
+<tr class="separator:aced64f30fad3611f0059a5f2892f00d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acddd7bfe9ea4a4a16a1264eab4249213"><td class="memItemLeft" align="right" valign="top"><a id="acddd7bfe9ea4a4a16a1264eab4249213" name="acddd7bfe9ea4a4a16a1264eab4249213"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_dp_ctrl</b> (VOID_T)</td></tr>
+<tr class="separator:acddd7bfe9ea4a4a16a1264eab4249213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101c7a4bd837c6de2bb324e58e89ce63"><td class="memItemLeft" align="right" valign="top"><a id="a101c7a4bd837c6de2bb324e58e89ce63" name="a101c7a4bd837c6de2bb324e58e89ce63"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_mftst</b> (VOID_T)</td></tr>
+<tr class="separator:a101c7a4bd837c6de2bb324e58e89ce63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6047d18a214a181128de71ddea855d3"><td class="memItemLeft" align="right" valign="top"><a id="ad6047d18a214a181128de71ddea855d3" name="ad6047d18a214a181128de71ddea855d3"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_netcfg</b> (VOID_T)</td></tr>
+<tr class="separator:ad6047d18a214a181128de71ddea855d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889d5872efd6a778d69f9188b26921b8"><td class="memItemLeft" align="right" valign="top"><a id="a889d5872efd6a778d69f9188b26921b8" name="a889d5872efd6a778d69f9188b26921b8"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_psk30</b> (VOID_T)</td></tr>
+<tr class="separator:a889d5872efd6a778d69f9188b26921b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0ecf72b1b8e31e67e5215e9b6eaf68"><td class="memItemLeft" align="right" valign="top"><a id="acc0ecf72b1b8e31e67e5215e9b6eaf68" name="acc0ecf72b1b8e31e67e5215e9b6eaf68"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_enable_ble_timer</b> (VOID_T)</td></tr>
+<tr class="separator:acc0ecf72b1b8e31e67e5215e9b6eaf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622a319ed7e5c9781f3c2dc2f208c1e6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a622a319ed7e5c9781f3c2dc2f208c1e6">tuya_set_bt_device_name</a> (CHAR_T *dev_name)</td></tr>
+<tr class="memdesc:a622a319ed7e5c9781f3c2dc2f208c1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set name for bluetooth device.  <a href="../../db/d24/tuya__bt_8h.html#a622a319ed7e5c9781f3c2dc2f208c1e6">更多...</a><br /></td></tr>
+<tr class="separator:a622a319ed7e5c9781f3c2dc2f208c1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b928f2939f8ddad3bd4400450658523"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a8b928f2939f8ddad3bd4400450658523">tuya_svc_bt_init</a> (VOID_T)</td></tr>
+<tr class="memdesc:a8b928f2939f8ddad3bd4400450658523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init tuya bluetooth service  <a href="../../db/d24/tuya__bt_8h.html#a8b928f2939f8ddad3bd4400450658523">更多...</a><br /></td></tr>
+<tr class="separator:a8b928f2939f8ddad3bd4400450658523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76786ee2aab709914ea99ac473ad99e5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#a76786ee2aab709914ea99ac473ad99e5">ty_bt_dp_report</a> (IN CONST DP_REPT_TYPE_E dp_rept_type, IN CONST VOID_T *data, IN BOOL_T sync)</td></tr>
+<tr class="memdesc:a76786ee2aab709914ea99ac473ad99e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report dp by bluetooth  <a href="../../db/d24/tuya__bt_8h.html#a76786ee2aab709914ea99ac473ad99e5">更多...</a><br /></td></tr>
+<tr class="separator:a76786ee2aab709914ea99ac473ad99e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af799ad73c170a39446d0a9181c547513"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#af799ad73c170a39446d0a9181c547513">ty_bt_support_dp_sync_report</a> (BOOL_T flag)</td></tr>
+<tr class="memdesc:af799ad73c170a39446d0a9181c547513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support dp sync report by bluetooth  <a href="../../db/d24/tuya__bt_8h.html#af799ad73c170a39446d0a9181c547513">更多...</a><br /></td></tr>
+<tr class="separator:af799ad73c170a39446d0a9181c547513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6b5886274edfecc73bf32df4ad55b8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/tuya__bt_8h.html#acb6b5886274edfecc73bf32df4ad55b8">ty_bt_update_local_key</a> (UINT8_T *p_buf, UINT8_T len)</td></tr>
+<tr class="memdesc:acb6b5886274edfecc73bf32df4ad55b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update local key  <a href="../../db/d24/tuya__bt_8h.html#acb6b5886274edfecc73bf32df4ad55b8">更多...</a><br /></td></tr>
+<tr class="separator:acb6b5886274edfecc73bf32df4ad55b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a1c667f4d7fa92f68aaf1b9593c5bdbcf" name="a1c667f4d7fa92f68aaf1b9593c5bdbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c667f4d7fa92f68aaf1b9593c5bdbcf">&#9670;&nbsp;</a></span>is_bt_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T is_bt_connected </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check bluetooth is connected. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check whether the bluetooth is connected.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>be connected or not </dd></dl>
+
+</div>
+</div>
+<a id="a45b9a1e0a1f76af43fc159d95da14f45" name="a45b9a1e0a1f76af43fc159d95da14f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b9a1e0a1f76af43fc159d95da14f45">&#9670;&nbsp;</a></span>tuya_ble_disable_expt_unbind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_disable_expt_unbind </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable function for execept unbinding </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for disable function for execept unbinding</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="afaad2603213132713f7f722b82d4faf0" name="afaad2603213132713f7f722b82d4faf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaad2603213132713f7f722b82d4faf0">&#9670;&nbsp;</a></span>tuya_ble_get_serv_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d24/tuya__bt_8h.html#a41c429ffca863f85bb13fe3f10595e01">TUYA_BT_SERV_STAT</a> tuya_ble_get_serv_stat </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get status of bluetooth service </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get status of the bluetooth service.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>status of the bluetooth service </dd></dl>
+
+</div>
+</div>
+<a id="a40b0aa7ccacb11dde9a4689b3ed86946" name="a40b0aa7ccacb11dde9a4689b3ed86946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b0aa7ccacb11dde9a4689b3ed86946">&#9670;&nbsp;</a></span>tuya_ble_lowpower_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_lowpower_handle </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop ble netcfg and plug_play when dev under lowpower status </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for stopping ble netcfg and plug_play when dev under lowpower status</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a9fec6ca891076b190a16cea91c39a751" name="a9fec6ca891076b190a16cea91c39a751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fec6ca891076b190a16cea91c39a751">&#9670;&nbsp;</a></span>tuya_ble_monitor_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_ble_monitor_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Monitor for bluetooth </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for monitor for bluetooth. if the device connected cloud, start advertisement, otherwise stoo it.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3a72776990dc50f13ff5ba4ac8866fe2" name="a3a72776990dc50f13ff5ba4ac8866fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a72776990dc50f13ff5ba4ac8866fe2">&#9670;&nbsp;</a></span>tuya_ble_reg_get_bt_stat_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_ble_reg_get_bt_stat_cb </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST GET_BT_CONN_STAT_CB&#160;</td>
+          <td class="paramname"><em>bt_conn_stat_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback function for getting the connection status of bluetooth </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bt_conn_stat_cb</td><td>callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for registering callback function for getting the connection status of bluetooth</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a42e26487d889fa4137aa274ef0d8e663" name="a42e26487d889fa4137aa274ef0d8e663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e26487d889fa4137aa274ef0d8e663">&#9670;&nbsp;</a></span>tuya_ble_rept_netcfg_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_rept_netcfg_stat </td>
+          <td>(</td>
+          <td class="paramtype">IN UINT_T&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report netcfg status </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>0-report 1-query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for reporting netcfg status</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a2cfe0bcb0b6e31c303487ca05d66ae1b" name="a2cfe0bcb0b6e31c303487ca05d66ae1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cfe0bcb0b6e31c303487ca05d66ae1b">&#9670;&nbsp;</a></span>tuya_ble_restart_adv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_restart_adv </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resend the ble adv data to hal and start ble adv </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>note</p>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a9f9e172e48404479a6ab8edb29dfc5e5" name="a9f9e172e48404479a6ab8edb29dfc5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9e172e48404479a6ab8edb29dfc5e5">&#9670;&nbsp;</a></span>tuya_ble_set_bt_para()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_set_bt_para </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d49/structTUYA__BLE__BT__PARA.html">TUYA_BLE_BT_PARA</a> *&#160;</td>
+          <td class="paramname"><em>para</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set parameters for bluetooth. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">para</td><td>parameters for bluetooth</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting parameters for bluetooth. this API should be called before bluetooth initialized.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a75c83a3c0d0dcd130600cb8be57cf125" name="a75c83a3c0d0dcd130600cb8be57cf125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c83a3c0d0dcd130600cb8be57cf125">&#9670;&nbsp;</a></span>tuya_ble_set_serv_switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_set_serv_switch </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>swith</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set enable switch for bluetooth service </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">switch</td><td>enable switch: TRUE-open, FALSE-close</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting enable switch for bluetooth service, it should be called before sdk initialization.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a4b9deae2035a74840c965b2134e196a3" name="a4b9deae2035a74840c965b2134e196a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9deae2035a74840c965b2134e196a3">&#9670;&nbsp;</a></span>tuya_ble_set_startup_attr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_ble_set_startup_attr </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_BLE_ABILITY_T&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set abilitiy attribute of bluetooth </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to set abilitiy attribute of bluetooth.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a6129765af39701c96ed923c14fb66dae" name="a6129765af39701c96ed923c14fb66dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6129765af39701c96ed923c14fb66dae">&#9670;&nbsp;</a></span>tuya_ble_start_user_beacon_adv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_ble_start_user_beacon_adv </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>sec_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start user defined advertising of bluetooth with time limited </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>adv data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>adv data lenth </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sec_time</td><td>time in second</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for registering callback function for advertisement scanning raw data processing</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5c2b22a32e15bb1250eba9976573ed02" name="a5c2b22a32e15bb1250eba9976573ed02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2b22a32e15bb1250eba9976573ed02">&#9670;&nbsp;</a></span>tuya_bt_get_connect_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d24/tuya__bt_8h.html#a1e428785ac9ffbc0e33fd18c248c7640">TUYA_BT_CONN_STAT</a> tuya_bt_get_connect_status </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get connection status of bluetooth </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting the connection status of bluetooth</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>connection status </dd></dl>
+
+</div>
+</div>
+<a id="a622a319ed7e5c9781f3c2dc2f208c1e6" name="a622a319ed7e5c9781f3c2dc2f208c1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622a319ed7e5c9781f3c2dc2f208c1e6">&#9670;&nbsp;</a></span>tuya_set_bt_device_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_set_bt_device_name </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set name for bluetooth device. </p>
+<p >Set device name for bluetooth.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_name</td><td>device name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting name for bluetooth device. this API should be called before bluetooth initialized.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_name</td><td>device name for bluetooth</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting device name for bluetooth. this API should be called before bluetooth initialized.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8b928f2939f8ddad3bd4400450658523" name="a8b928f2939f8ddad3bd4400450658523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b928f2939f8ddad3bd4400450658523">&#9670;&nbsp;</a></span>tuya_svc_bt_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_bt_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init tuya bluetooth service </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for initializing tuya bluetooth service</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a76786ee2aab709914ea99ac473ad99e5" name="a76786ee2aab709914ea99ac473ad99e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76786ee2aab709914ea99ac473ad99e5">&#9670;&nbsp;</a></span>ty_bt_dp_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_bt_dp_report </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST DP_REPT_TYPE_E&#160;</td>
+          <td class="paramname"><em>dp_rept_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN BOOL_T&#160;</td>
+          <td class="paramname"><em>sync</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report dp by bluetooth </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_rept_type</td><td>dp report type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>dp data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>true-support sync report</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for reporting dp data</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af799ad73c170a39446d0a9181c547513" name="af799ad73c170a39446d0a9181c547513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af799ad73c170a39446d0a9181c547513">&#9670;&nbsp;</a></span>ty_bt_support_dp_sync_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T ty_bt_support_dp_sync_report </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Support dp sync report by bluetooth </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>true - enable, false - disable</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to support dp sync report by bluetooth</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="acb6b5886274edfecc73bf32df4ad55b8" name="acb6b5886274edfecc73bf32df4ad55b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6b5886274edfecc73bf32df4ad55b8">&#9670;&nbsp;</a></span>ty_bt_update_local_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_bt_update_local_key </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>p_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update local key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_buf</td><td>local key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>lenth of local key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for update local key.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tuya_zigbee_stack.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_zigbee_stack.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/dba/tuya__zigbee__stack_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TUYA_ZIGBEE_STACK_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TUYA_ZIGBEE_STACK_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define TUYA_ZDO_ENDPOINT           0x00</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define TUYA_PRIMARY_ENDPOINT       0x01</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define TUYA_BROADCAST_ENDPOINT     0xFF</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define TUYA_GATEWAY_ADDRESS        0x0000</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">   29</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25">   30</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25">ZG_SCAN_DURATION_0</a> = 0, </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f">   31</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f">ZG_SCAN_DURATION_1</a>,     </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603">   32</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603">ZG_SCAN_DURATION_2</a>,     </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7">   33</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7">ZG_SCAN_DURATION_3</a>,     </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c">   34</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c">ZG_SCAN_DURATION_4</a>,     </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf">   35</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf">ZG_SCAN_DURATION_5</a>,     </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72">   36</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72">ZG_SCAN_DURATION_6</a>,     </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee">   37</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee">ZG_SCAN_DURATION_7</a>,     </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788">   38</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788">ZG_SCAN_DURATION_8</a>,     </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169">   39</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169">ZG_SCAN_DURATION_9</a>,     </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be">   40</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be">ZG_SCAN_DURATION_10</a>,    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0">   41</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0">ZG_SCAN_DURATION_11</a>,    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916">   42</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916">ZG_SCAN_DURATION_12</a>,    </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea">   43</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea">ZG_SCAN_DURATION_13</a>,    </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e">   44</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e">ZG_SCAN_DURATION_14</a>,    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">ZG_SCAN_DURATION_E</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> *  ZCL data frame type</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34c">   51</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed">   52</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed">ZG_ZCL_FRAME_TYPE_GLOBAL</a> = 0,       </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974">   53</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974">ZG_ZCL_FRAME_TYPE_SPEC_TO_CLUSTER</a>,  </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34c">ZG_ZCL_FRAME_TYPE_E</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> *  ZCL data direction</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5">   59</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1">   60</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1">ZG_ZCL_DATA_CLIENT_TO_SERVER</a> = 0,   </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba">   61</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba">ZG_ZCL_DATA_SERVER_TO_CLIENT</a>,       </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5">ZG_ZCL_DATA_DIRECTION_E</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> *  zigbee node type</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">   67</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c">   68</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c">ZG_ROUTER</a> = 0,              </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14">   69</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14">ZG_END_DEVICE</a>,              </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89">   70</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89">ZG_SLEEPY_END_DEVICE</a>,       </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456">   71</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456">ZG_UNKNOWN_DEVICE</a> = 0xFF,   </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * zigbee network type</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">   77</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285">   78</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285">ZG_DISTRIBUTE_NWK</a> = 0,      </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f">   79</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f">ZG_CENTRALIZED_NWK</a>,         </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * zigbee cluster mask</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aa">   85</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01">   86</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01">ZG_CLUSTER_MASK_SERVER</a> = 0x40,  </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195">   87</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195">ZG_CLUSTER_MASK_CLIENT</a> = 0x80,  </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aa">ZG_CLUSTER_MASK_E</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * Zigbee data delivery mode</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">   93</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae">   94</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae">ZG_ADDR_UNKNOWN</a> = 0x00,     </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531">   95</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531">ZG_UNICAST_MODE</a>,            </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb">   96</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb">ZG_MULTICAST_MODE</a>,          </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a">   97</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a">ZG_BROADCAST_MODE</a>,          </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e">   98</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e">ZG_BINDING_MODE</a>,            </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5">   99</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5">ZG_MULTI_BINDING_MODE</a>,      </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">ZG_DELIVERY_MODE_E</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> *  zigbee profile ID</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">  106</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b">  107</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b">ZHA_PROFILE_ID</a> = 0x0104,    </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4">  108</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4">ZGP_PROFILE_ID</a> = 0xA1E0,    </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f">  109</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f">ZHC_PROFILE_ID</a> = 0x0108,    </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce">  110</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce">ZSE_PROFILE_ID</a> = 0x0109,    </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f">  111</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f">ZCBA_PROFILE_ID</a> = 0x0105,   </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378">  112</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378">ZIPM_PROFILE_ID</a> = 0x0101,   </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e">  113</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e">ZTA_PROFILE_ID</a> = 0x0107,    </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd">  114</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd">ZAMI_PROFILE_ID</a> = 0x0109,   </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001">  115</a></span>    <a class="code hl_enumvalue" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001">ZLL_PROFILE_ID</a> = 0xC05E,    </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>} <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">ZG_PROFILE_ID_E</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * zigbee device ID</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    ZG_DEVICE_ID_ON_OFF_SWITCH = 0x0000,        <span class="comment">// on off switch</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    ZG_DEVICE_ID_LEVEL_CONTROL_SWITCH = 0x0001,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    ZG_DEVICE_ID_ON_OFF_OUTPUT = 0x0002,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    ZG_DEVICE_ID_LEVEL_CONTROL_OUTPUT = 0x0003,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    ZG_DEVICE_ID_SCENE_SELECTOR = 0x0004,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    ZG_DEVICE_ID_CONFIG_TOOL = 0x0005,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    ZG_DEVICE_ID_REMOTE_CONTROL = 0x0006,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    ZG_DEVICE_ID_COMBINED_INTERFACE = 0x0007,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    ZG_DEVICE_ID_RANGE_EXTENDER = 0x0008,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    ZG_DEVICE_ID_MAINS_POWER_OUTLET = 0x0009,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    ZG_DEVICE_ID_DOOR_LOCK = 0x000a,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    ZG_DEVICE_ID_DOOR_LOCK_CONTROLLER = 0x000b,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    ZG_DEVICE_ID_SIMPLE_SENSOR = 0x000c,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    ZG_DEVICE_ID_CONSUMPTION_AWARENESS_DEVICE = 0x000d,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    ZG_DEVICE_ID_HOME_GATEWAY = 0x0050,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    ZG_DEVICE_ID_SMART_PLUG = 0x0051,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    ZG_DEVICE_ID_WHITE_GOODS = 0x0052,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    ZG_DEVICE_ID_METER_INTERFACE = 0x0053,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    ZG_DEVICE_ID_ON_OFF_LIGHT = 0x0100,             <span class="comment">// on off light</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    ZG_DEVICE_ID_DIMMABLE_LIGHT = 0x0101,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    ZG_DEVICE_ID_COLOR_DIMMABLE_LIGHT = 0x0102,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    ZG_DEVICE_ID_ON_OFF_LIGHT_SWITCH = 0x0103,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    ZG_DEVICE_ID_DIMMER_SWITCH = 0x0104,</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    ZG_DEVICE_ID_COLOR_DIMMER_SWITCH = 0x0105,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    ZG_DEVICE_ID_LIGHT_SENSOR = 0x0106,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    ZG_DEVICE_ID_OCCUPANCY_SENSOR = 0x0107,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    ZG_DEVICE_ID_SHADE = 0x0200,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    ZG_DEVICE_ID_SHADE_CONTROLLER = 0x0201,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    ZG_DEVICE_ID_WINDOW_COVERING_DEVICE = 0x0202,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    ZG_DEVICE_ID_WINDOW_COVERING_CONTROLLER = 0x0203,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    ZG_DEVICE_ID_HEATING_COOLING_UNIT = 0x0300,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    ZG_DEVICE_ID_THERMOSTAT = 0x0301,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    ZG_DEVICE_ID_TEMPERATURE_SENSOR = 0x0302,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    ZG_DEVICE_ID_PUMP = 0x0303,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    ZG_DEVICE_ID_PUMP_CONTROLLER = 0x0304,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    ZG_DEVICE_ID_PRESSURE_SENSOR = 0x0305,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    ZG_DEVICE_ID_FLOW_SENSOR = 0x0306,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    ZG_DEVICE_ID_MINI_SPLIT_AC = 0x0307,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    ZG_DEVICE_ID_IAS_CIE = 0x0400,</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    ZG_DEVICE_ID_IAS_ANCILLARY_CONTROL = 0x0401,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    ZG_DEVICE_ID_IAS_ZONE = 0x0402,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    ZG_DEVICE_ID_IAS_WARNING = 0x0403,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>} ZG_DEV_ID_E;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> * zigbee cluster ID</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    CLUSTER_BASIC_CLUSTER_ID = 0x0000,          <span class="comment">// basic cluster id</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    CLUSTER_POWER_CONFIG_CLUSTER_ID = 0x0001,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    CLUSTER_DEVICE_TEMP_CLUSTER_ID = 0x0002,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    CLUSTER_IDENTIFY_CLUSTER_ID = 0x0003,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    CLUSTER_GROUPS_CLUSTER_ID = 0x0004,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    CLUSTER_SCENES_CLUSTER_ID = 0x0005,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    CLUSTER_ON_OFF_CLUSTER_ID = 0x0006,         <span class="comment">// on off cluster id</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    CLUSTER_ON_OFF_SWITCH_CONFIG_CLUSTER_ID = 0x0007,</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    CLUSTER_LEVEL_CONTROL_CLUSTER_ID = 0x0008,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    CLUSTER_ALARM_CLUSTER_ID = 0x0009,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    CLUSTER_TIME_CLUSTER_ID = 0x000A,</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    CLUSTER_RSSI_LOCATION_CLUSTER_ID = 0x000B,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    CLUSTER_BINARY_INPUT_BASIC_CLUSTER_ID = 0x000F,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    CLUSTER_COMMISSIONING_CLUSTER_ID = 0x0015,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    CLUSTER_PARTITION_CLUSTER_ID = 0x0016,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    CLUSTER_OTA_BOOTLOAD_CLUSTER_ID = 0x0019,</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    CLUSTER_POWER_PROFILE_CLUSTER_ID = 0x001A,</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    CLUSTER_APPLIANCE_CONTROL_CLUSTER_ID = 0x001B,</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    CLUSTER_POLL_CONTROL_CLUSTER_ID = 0x0020,</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    CLUSTER_GREEN_POWER_CLUSTER_ID = 0x0021,</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    CLUSTER_KEEPALIVE_CLUSTER_ID = 0x0025,</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    CLUSTER_SHADE_CONFIG_CLUSTER_ID = 0x0100,</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    CLUSTER_DOOR_LOCK_CLUSTER_ID = 0x0101,</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    CLUSTER_WINDOW_COVERING_CLUSTER_ID = 0x0102,</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    CLUSTER_BARRIER_CONTROL_CLUSTER_ID = 0x0103,</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    CLUSTER_PUMP_CONFIG_CONTROL_CLUSTER_ID = 0x0200,</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    CLUSTER_THERMOSTAT_CLUSTER_ID = 0x0201,</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    CLUSTER_FAN_CONTROL_CLUSTER_ID = 0x0202,</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    CLUSTER_DEHUMID_CONTROL_CLUSTER_ID = 0x0203,</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    CLUSTER_THERMOSTAT_UI_CONFIG_CLUSTER_ID = 0x0204,</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    CLUSTER_COLOR_CONTROL_CLUSTER_ID = 0x0300,</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    CLUSTER_BALLAST_CONFIGURATION_CLUSTER_ID = 0x0301,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    CLUSTER_ILLUM_MEASUREMENT_CLUSTER_ID = 0x0400,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    CLUSTER_ILLUM_LEVEL_SENSING_CLUSTER_ID = 0x0401,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    CLUSTER_TEMP_MEASUREMENT_CLUSTER_ID = 0x0402,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    CLUSTER_PRESSURE_MEASUREMENT_CLUSTER_ID = 0x0403,</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    CLUSTER_FLOW_MEASUREMENT_CLUSTER_ID = 0x0404,</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    CLUSTER_RELATIVE_HUMIDITY_MEASUREMENT_CLUSTER_ID = 0x0405,</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    CLUSTER_OCCUPANCY_SENSING_CLUSTER_ID = 0x0406,</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    CLUSTER_CARBON_MONOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x040C,</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    CLUSTER_CARBON_DIOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x040D,</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    CLUSTER_ETHYLENE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x040E,</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    CLUSTER_ETHYLENE_OXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x040F,</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    CLUSTER_HYDROGEN_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0410,</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    CLUSTER_HYDROGEN_SULPHIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0411,</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    CLUSTER_NITRIC_OXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0412,</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    CLUSTER_NITROGEN_DIOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0413,</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    CLUSTER_OXYGEN_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0414,</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    CLUSTER_OZONE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0415,</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    CLUSTER_SULFUR_DIOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0416,</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    CLUSTER_DISSOLVED_OXYGEN_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0417,</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    CLUSTER_BROMATE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0418,</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    CLUSTER_CHLORAMINES_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0419,</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    CLUSTER_CHLORINE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x041A,</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    CLUSTER_FECAL_COLIFORM_AND_E_COLI_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x041B,</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    CLUSTER_FLUORIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x041C,</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    CLUSTER_HALOACETIC_ACIDS_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x041D,</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    CLUSTER_TOTAL_TRIHALOMETHANES_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x041E,</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    CLUSTER_TOTAL_COLIFORM_BACTERIA_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x041F,</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    CLUSTER_TURBIDITY_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0420,</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    CLUSTER_COPPER_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0421,</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    CLUSTER_LEAD_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0422,</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    CLUSTER_MANGANESE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0423,</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    CLUSTER_SULFATE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0424,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    CLUSTER_BROMODICHLOROMETHANE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0425,</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    CLUSTER_BROMOFORM_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0426,</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    CLUSTER_CHLORODIBROMOMETHANE_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0427,</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    CLUSTER_CHLOROFORM_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0428,</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    CLUSTER_SODIUM_CONCENTRATION_MEASUREMENT_CLUSTER_ID = 0x0429,</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    CLUSTER_IAS_ZONE_CLUSTER_ID = 0x0500,</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    CLUSTER_IAS_ACE_CLUSTER_ID = 0x0501,</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    CLUSTER_IAS_WD_CLUSTER_ID = 0x0502,</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    CLUSTER_GENERIC_TUNNEL_CLUSTER_ID = 0x0600,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    CLUSTER_BACNET_PROTOCOL_TUNNEL_CLUSTER_ID = 0x0601,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    CLUSTER_11073_PROTOCOL_TUNNEL_CLUSTER_ID = 0x0614,</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    CLUSTER_ISO7816_PROTOCOL_TUNNEL_CLUSTER_ID = 0x0615,</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    CLUSTER_PRICE_CLUSTER_ID = 0x0700,</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    CLUSTER_DEMAND_RESPONSE_LOAD_CONTROL_CLUSTER_ID = 0x0701,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    CLUSTER_SIMPLE_METERING_CLUSTER_ID = 0x0702,</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    CLUSTER_MESSAGING_CLUSTER_ID = 0x0703,</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    CLUSTER_TUNNELING_CLUSTER_ID = 0x0704,</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    CLUSTER_PREPAYMENT_CLUSTER_ID = 0x0705,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    CLUSTER_ENERGY_MANAGEMENT_CLUSTER_ID = 0x0706,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    CLUSTER_CALENDAR_CLUSTER_ID = 0x0707,</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    CLUSTER_DEVICE_MANAGEMENT_CLUSTER_ID = 0x0708,</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    CLUSTER_EVENTS_CLUSTER_ID = 0x0709,</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    CLUSTER_MDU_PAIRING_CLUSTER_ID = 0x070A,</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    CLUSTER_SUB_GHZ_CLUSTER_ID = 0x070B,</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    CLUSTER_KEY_ESTABLISHMENT_CLUSTER_ID = 0x0800,</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    CLUSTER_INFORMATION_CLUSTER_ID = 0x0900,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    CLUSTER_DATA_SHARING_CLUSTER_ID = 0x0901,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    CLUSTER_GAMING_CLUSTER_ID = 0x0902,</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    CLUSTER_DATA_RATE_CONTROL_CLUSTER_ID = 0x0903,</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    CLUSTER_VOICE_OVER_ZIGBEE_CLUSTER_ID = 0x0904,</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    CLUSTER_CHATTING_CLUSTER_ID = 0x0905,</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    CLUSTER_PAYMENT_CLUSTER_ID = 0x0A01,</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    CLUSTER_BILLING_CLUSTER_ID = 0x0A02,</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    CLUSTER_APPLIANCE_IDENTIFICATION_CLUSTER_ID = 0x0B00,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    CLUSTER_METER_IDENTIFICATION_CLUSTER_ID = 0x0B01,</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    CLUSTER_APPLIANCE_EVENTS_AND_ALERT_CLUSTER_ID = 0x0B02,</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    CLUSTER_APPLIANCE_STATISTICS_CLUSTER_ID = 0x0B03,</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    CLUSTER_ELECTRICAL_MEASUREMENT_CLUSTER_ID = 0x0B04,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    CLUSTER_DIAGNOSTICS_CLUSTER_ID = 0x0B05,</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    CLUSTER_ZLL_COMMISSIONING_CLUSTER_ID = 0x1000,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    CLUSTER_SAMPLE_MFG_SPECIFIC_CLUSTER_ID = 0xFC00,</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    CLUSTER_OTA_CONFIGURATION_CLUSTER_ID = 0xFC01,</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    CLUSTER_MFGLIB_CLUSTER_ID = 0xFC02,</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    CLUSTER_SL_WWAH_CLUSTER_ID = 0xFC57,</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="comment">// tuya private cluster</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    CLUSTER_TUYA_COMMON_CLUSTER_ID = 0xE000,</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    CLUSTER_TUYA_ELECTRICIAN_CLUSTER_ID = 0xE001,</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    CLUSTER_TUYA_SENSOR_CLUSTER_ID = 0xE002,</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    CLUSTER_TUYA_LIGHT_CLUSTER_ID = 0xE003,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    CLUSTER_TUYA_MANAGER_CLUSTER_ID = 0xEE00,</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    CLUSTER_PRIVATE_TUYA_CLUSTER_ID = 0xEF00,</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    CLUSTER_TUYA_MF_TEST_CLUSTER_ID = 0xEEFF,</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>} ZG_CLUSTER_ID_E;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment"> * Zigbee standard command status</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  TUYA_ZCL_STA_SUCCESS                     = 0x00,</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  TUYA_ZCL_STA_FAILURE                     = 0x01,</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  TUYA_ZCL_STA_NOT_AUTHORIZED              = 0x7E,</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  TUYA_ZCL_STA_MALFORMED_COMMAND           = 0x80,</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  TUYA_ZCL_STA_UNSUP_COMMAND               = 0x81,</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  TUYA_ZCL_STA_UNSUP_GENERAL_COMMAND       = 0x82,</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  TUYA_ZCL_STA_UNSUP_MANUF_CLUSTER_COMMAND = 0x83,</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  TUYA_ZCL_STA_UNSUP_MANUF_GENERAL_COMMAND = 0x84,</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  TUYA_ZCL_STA_INVALID_FIELD               = 0x85,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  TUYA_ZCL_STA_UNSUPPORTED_ATTRIBUTE       = 0x86,</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  TUYA_ZCL_STA_INVALID_VALUE               = 0x87,</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  TUYA_ZCL_STA_READ_ONLY                   = 0x88,</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  TUYA_ZCL_STA_INSUFFICIENT_SPACE          = 0x89,</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  TUYA_ZCL_STA_DUPLICATE_EXISTS            = 0x8A,</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  TUYA_ZCL_STA_NOT_FOUND                   = 0x8B,</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  TUYA_ZCL_STA_UNREPORTABLE_ATTRIBUTE      = 0x8C,</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  TUYA_ZCL_STA_INVALID_DATA_TYPE           = 0x8D,</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  TUYA_ZCL_STA_INVALID_SELECTOR            = 0x8E,</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  TUYA_ZCL_STA_WRITE_ONLY                  = 0x8F,</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  TUYA_ZCL_STA_INCONSISTENT_STARTUP_STATE  = 0x90,</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  TUYA_ZCL_STA_DEFINED_OUT_OF_BAND         = 0x91,</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  TUYA_ZCL_STA_ACTION_DENIED               = 0x93,</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  TUYA_ZCL_STA_TIMEOUT                     = 0x94,</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  TUYA_ZCL_STA_ABORT                       = 0x95,</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  TUYA_ZCL_STA_INVALID_IMAGE               = 0x96,</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  TUYA_ZCL_STA_WAIT_FOR_DATA               = 0x97,</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  TUYA_ZCL_STA_NO_IMAGE_AVAILABLE          = 0x98,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  TUYA_ZCL_STA_REQUIRE_MORE_IMAGE          = 0x99,</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  TUYA_ZCL_STA_NOTIFICATION_PENDING        = 0x9A,</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  TUYA_ZCL_STA_HARDWARE_FAILURE            = 0xC0,</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  TUYA_ZCL_STA_SOFTWARE_FAILURE            = 0xC1,</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  TUYA_ZCL_STA_UNSUPPORTED_CLUSTER         = 0xC3,</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  TUYA_ZCL_STA_LIMIT_REACHED               = 0xC4,</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>} ZG_CMD_STATUS_E;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment"> * zigbee attribute types</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/d77/tuya__zigbee__attribute_8h.html">tuya_zigbee_attribute.h</a>&quot;</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment"> * zigbee command ID</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d01/tuya__zigbee__command_8h.html">tuya_zigbee_command.h</a>&quot;</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="atuya__zigbee__attribute_8h_html"><div class="ttname"><a href="../../d0/d77/tuya__zigbee__attribute_8h.html">tuya_zigbee_attribute.h</a></div><div class="ttdoc">Common process - zigbee attribute</div></div>
+<div class="ttc" id="atuya__zigbee__command_8h_html"><div class="ttname"><a href="../../dd/d01/tuya__zigbee__command_8h.html">tuya_zigbee_command.h</a></div><div class="ttdoc">Common process - zigbee command</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">ZG_PROFILE_ID_E</a></div><div class="ttdeci">ZG_PROFILE_ID_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:106</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4">ZGP_PROFILE_ID</a></div><div class="ttdeci">@ ZGP_PROFILE_ID</div><div class="ttdoc">green power</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:108</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd">ZAMI_PROFILE_ID</a></div><div class="ttdeci">@ ZAMI_PROFILE_ID</div><div class="ttdoc">Advanced metering initiative</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:114</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e">ZTA_PROFILE_ID</a></div><div class="ttdeci">@ ZTA_PROFILE_ID</div><div class="ttdoc">Telecom application</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:113</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f">ZHC_PROFILE_ID</a></div><div class="ttdeci">@ ZHC_PROFILE_ID</div><div class="ttdoc">personal,home and hospital care</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:109</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce">ZSE_PROFILE_ID</a></div><div class="ttdeci">@ ZSE_PROFILE_ID</div><div class="ttdoc">Smart energy</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:110</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f">ZCBA_PROFILE_ID</a></div><div class="ttdeci">@ ZCBA_PROFILE_ID</div><div class="ttdoc">Commerical building automation</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:111</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001">ZLL_PROFILE_ID</a></div><div class="ttdeci">@ ZLL_PROFILE_ID</div><div class="ttdoc">ZLL profile</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:115</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378">ZIPM_PROFILE_ID</a></div><div class="ttdeci">@ ZIPM_PROFILE_ID</div><div class="ttdoc">Industial plant monitoring</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:112</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b">ZHA_PROFILE_ID</a></div><div class="ttdeci">@ ZHA_PROFILE_ID</div><div class="ttdoc">home automation</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:107</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bd"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">ZG_SCAN_DURATION_E</a></div><div class="ttdeci">ZG_SCAN_DURATION_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:29</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e">ZG_SCAN_DURATION_14</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_14</div><div class="ttdoc">314.57 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:44</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea">ZG_SCAN_DURATION_13</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_13</div><div class="ttdoc">157.28 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:43</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c">ZG_SCAN_DURATION_4</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_4</div><div class="ttdoc">307.2 ms</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:34</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0">ZG_SCAN_DURATION_11</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_11</div><div class="ttdoc">39.32 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:41</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be">ZG_SCAN_DURATION_10</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_10</div><div class="ttdoc">19.66 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:40</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f">ZG_SCAN_DURATION_1</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_1</div><div class="ttdoc">38.4 ms</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:31</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603">ZG_SCAN_DURATION_2</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_2</div><div class="ttdoc">76.8 ms</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:32</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7">ZG_SCAN_DURATION_3</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_3</div><div class="ttdoc">153.6 ms</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:33</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72">ZG_SCAN_DURATION_6</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_6</div><div class="ttdoc">1.23 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:36</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee">ZG_SCAN_DURATION_7</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_7</div><div class="ttdoc">2.46 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:37</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf">ZG_SCAN_DURATION_5</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_5</div><div class="ttdoc">614.4 ms</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:35</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169">ZG_SCAN_DURATION_9</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_9</div><div class="ttdoc">9.83 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:39</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788">ZG_SCAN_DURATION_8</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_8</div><div class="ttdoc">4.92 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:38</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25">ZG_SCAN_DURATION_0</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_0</div><div class="ttdoc">19.2 ms</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:30</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916">ZG_SCAN_DURATION_12</a></div><div class="ttdeci">@ ZG_SCAN_DURATION_12</div><div class="ttdoc">78.64 sec</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:42</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a2e6c451808453fab6a5404d5b53287e5"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5">ZG_ZCL_DATA_DIRECTION_E</a></div><div class="ttdeci">ZG_ZCL_DATA_DIRECTION_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:59</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1">ZG_ZCL_DATA_CLIENT_TO_SERVER</a></div><div class="ttdeci">@ ZG_ZCL_DATA_CLIENT_TO_SERVER</div><div class="ttdoc">server to client</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:60</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba">ZG_ZCL_DATA_SERVER_TO_CLIENT</a></div><div class="ttdeci">@ ZG_ZCL_DATA_SERVER_TO_CLIENT</div><div class="ttdoc">client to server</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:61</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a></div><div class="ttdeci">ZG_NODE_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:67</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14">ZG_END_DEVICE</a></div><div class="ttdeci">@ ZG_END_DEVICE</div><div class="ttdoc">the device type is end-device</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:69</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c">ZG_ROUTER</a></div><div class="ttdeci">@ ZG_ROUTER</div><div class="ttdoc">the device type is router</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:68</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89">ZG_SLEEPY_END_DEVICE</a></div><div class="ttdeci">@ ZG_SLEEPY_END_DEVICE</div><div class="ttdoc">the device type is end-device</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:70</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456">ZG_UNKNOWN_DEVICE</a></div><div class="ttdeci">@ ZG_UNKNOWN_DEVICE</div><div class="ttdoc">the device type unknown</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:71</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a6adac7d0c69ec2af755dfd20c79c5acd"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a></div><div class="ttdeci">ZG_NWK_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:77</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285">ZG_DISTRIBUTE_NWK</a></div><div class="ttdeci">@ ZG_DISTRIBUTE_NWK</div><div class="ttdoc">the zigbee network type is distribute network</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:78</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f">ZG_CENTRALIZED_NWK</a></div><div class="ttdeci">@ ZG_CENTRALIZED_NWK</div><div class="ttdoc">the zigbee network type is centralized network</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:79</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">ZG_DELIVERY_MODE_E</a></div><div class="ttdeci">ZG_DELIVERY_MODE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:93</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5">ZG_MULTI_BINDING_MODE</a></div><div class="ttdeci">@ ZG_MULTI_BINDING_MODE</div><div class="ttdoc">multi binding mode for sending</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:99</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a">ZG_BROADCAST_MODE</a></div><div class="ttdeci">@ ZG_BROADCAST_MODE</div><div class="ttdoc">broadcast addr mode for sending and receiving</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:97</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531">ZG_UNICAST_MODE</a></div><div class="ttdeci">@ ZG_UNICAST_MODE</div><div class="ttdoc">unicast addr mode for sending and receiving</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:95</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e">ZG_BINDING_MODE</a></div><div class="ttdeci">@ ZG_BINDING_MODE</div><div class="ttdoc">binding mode for sending</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:98</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb">ZG_MULTICAST_MODE</a></div><div class="ttdeci">@ ZG_MULTICAST_MODE</div><div class="ttdoc">multicast_ addr mode for sending and receiving</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:96</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae">ZG_ADDR_UNKNOWN</a></div><div class="ttdeci">@ ZG_ADDR_UNKNOWN</div><div class="ttdoc">addr mode unknown when not joined network</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:94</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_ab1ed012f746ebc0b2941942136f894aa"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aa">ZG_CLUSTER_MASK_E</a></div><div class="ttdeci">ZG_CLUSTER_MASK_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:85</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01">ZG_CLUSTER_MASK_SERVER</a></div><div class="ttdeci">@ ZG_CLUSTER_MASK_SERVER</div><div class="ttdoc">A server cluster</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:86</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195">ZG_CLUSTER_MASK_CLIENT</a></div><div class="ttdeci">@ ZG_CLUSTER_MASK_CLIENT</div><div class="ttdoc">A client cluster</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:87</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_acc630e720e78c13f1de31f840688d34c"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34c">ZG_ZCL_FRAME_TYPE_E</a></div><div class="ttdeci">ZG_ZCL_FRAME_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:51</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974">ZG_ZCL_FRAME_TYPE_SPEC_TO_CLUSTER</a></div><div class="ttdeci">@ ZG_ZCL_FRAME_TYPE_SPEC_TO_CLUSTER</div><div class="ttdoc">command is specific to a cluster</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:53</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed">ZG_ZCL_FRAME_TYPE_GLOBAL</a></div><div class="ttdeci">@ ZG_ZCL_FRAME_TYPE_GLOBAL</div><div class="ttdoc">command acts across the entire profile</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

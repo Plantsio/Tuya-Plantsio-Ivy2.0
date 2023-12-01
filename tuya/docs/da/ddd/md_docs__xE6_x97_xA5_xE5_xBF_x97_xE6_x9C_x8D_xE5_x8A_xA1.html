@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 日志服务</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">日志服务 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><code>TuyaOS</code>提供按照模块、分级别的日志记录能力，开发者可以根据自己的需求，选择合适的日志级别进行日志记录输出，同时也可以设置默认输出的日志级别，控制只输出默认输出日志级别以上的日志。<code>TuyaOS</code>的日志模块，支持灵活的添加输出的出口，开发者可以根据自己的需求，将日志输出到串口、文件或者是网络上。</p>
+<p ><code>TuyaOS</code>同时也支持在线日志的模式，开发者可以在涂鸦<code>IoT</code>平台上，通过设备命令，设置日志的级别和输出出口，如果输出出口是<code>MQTT</code>，并且网络正常，客户即可在涂鸦<code>IoT</code>平台上看到设备日志信息。</p>
+<h1><a class="anchor" id="autotoc_md148"></a>
+日志级别信息</h1>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line">    TAL_LOG_LEVEL_ERR,      <span class="comment">// error </span></div>
+<div class="line">    TAL_LOG_LEVEL_WARN,     <span class="comment">// warning</span></div>
+<div class="line">    TAL_LOG_LEVEL_NOTICE,   <span class="comment">// notice</span></div>
+<div class="line">    TAL_LOG_LEVEL_INFO,     <span class="comment">// information</span></div>
+<div class="line">    TAL_LOG_LEVEL_DEBUG,    <span class="comment">// debug</span></div>
+<div class="line">    TAL_LOG_LEVEL_TRACE,    <span class="comment">// detail trace</span></div>
+<div class="line">} TAL_LOG_LEVEL_E;</div>
+</div><!-- fragment --><p> <code>TuyaOS</code> 定义了6个日志级别，其中<code>TAL_LOG_LEVEL_INFO</code>,<code>TAL_LOG_LEVEL_DEBUG</code>,<code>TAL_LOG_LEVEL_TRACE</code>在发布固件中默认不可见，但可以通过接口设置日志级别而恢复输出。</p>
+<h1><a class="anchor" id="autotoc_md149"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md150"></a>
+日志输出宏</h2>
+<div class="fragment"><div class="line"><span class="comment">// log output</span></div>
+<div class="line">TAL_PR_ERR(fmt, ...)    <span class="comment">// error </span></div>
+<div class="line">TAL_PR_WARN(fmt, ...)   <span class="comment">// warnning </span></div>
+<div class="line">TAL_PR_NOTICE(fmt, ...) <span class="comment">// notice </span></div>
+<div class="line">TAL_PR_INFO(fmt, ...)   <span class="comment">// information</span></div>
+<div class="line">TAL_PR_DEBUG(fmt, ...)  <span class="comment">// debug</span></div>
+<div class="line">TAL_PR_TRACE(fmt, ...)  <span class="comment">// detail trace</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// data dump</span></div>
+<div class="line">TAL_PR_HEXDUMP_ERR(title, buf, size)        <span class="comment">// error </span></div>
+<div class="line">TAL_PR_HEXDUMP_WARN(title, buf, size)       <span class="comment">// warnning </span></div>
+<div class="line">TAL_PR_HEXDUMP_NOTICE(title, buf, size)     <span class="comment">// notice </span></div>
+<div class="line">TAL_PR_HEXDUMP_INFO(title, buf, size)       <span class="comment">// information</span></div>
+<div class="line">TAL_PR_HEXDUMP_DEBUG(title, buf, size)      <span class="comment">// debug</span></div>
+<div class="line">TAL_PR_HEXDUMP_TRACE(title, buf, size)      <span class="comment">// detail trace</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md151"></a>
+添加日志output</h2>
+<div class="fragment"><div class="line"><span class="comment">// prototype of log output function</span></div>
+<div class="line"><span class="keyword">typedef</span> VOID (*LOG_OUTPUT)(IN CONST      CHAR_T *str);</div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET tal_log_add_output_term(CONST CHAR_T *name, CONST TAL_LOG_OUTPUT_CB term);</div>
+</div><!-- fragment --><p> 此接口可以自定义一个输出终端，需要自己按照<code>LOG_OUTPUT</code>原型实现一个接口，并且添加到日志服务。后续日志输出会额外新增一个输出接口（原来的输出方式会继续保留）。</p>
+<h2><a class="anchor" id="autotoc_md152"></a>
+删除日志output</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">VOID tal_log_del_output_term(CONST CHAR_T *name);</div>
+</div><!-- fragment --><p >此接口用于删除通过接口<code>tal_log_add_output_term</code>设置的日志输出终端。</p>
+<h2><a class="anchor" id="autotoc_md153"></a>
+设置日志输出级别</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET tal_log_set_manage_attr(CONST TAL_LOG_LEVEL_E level);</div>
+</div><!-- fragment --><p >此接口用于设置默认的日志输出级别。设置日志级别可以控制日志输出，如果需要输出的日志级别小于当前的日志级别，则可以输出；否则，则不会输出。</p>
+<h2><a class="anchor" id="autotoc_md154"></a>
+获取日志输出级别</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET tal_log_get_log_manage_attr(TAL_LOG_LEVEL_E *level);</div>
+</div><!-- fragment --><p >此接口用于获取默认的日志输出级别。</p>
+<h3><a class="anchor" id="autotoc_md155"></a>
+使用示例</h3>
+<div class="fragment"><div class="line"><span class="comment">// 一个把日志记录到文件的日志输出接口</span></div>
+<div class="line">VOID log_output_to_file(IN CONST      CHAR_T *str)</div>
+<div class="line">{ </div>
+<div class="line">    <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * fp = NULL;</div>
+<div class="line">    </div>
+<div class="line">    fp = <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a>(<span class="stringliteral">&quot;log&quot;</span>, <span class="stringliteral">&quot;w+&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">if</span>(NULL == fp) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;log uf file can&#39;t open and write data!&quot;</span>);</div>
+<div class="line">        return ;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    uiWriteCnt = <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a>(fp, str, strlen(str));</div>
+<div class="line">    <span class="keywordflow">if</span>(uiWriteCnt != strlen(str)) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;log uf file write data error!&quot;</span>);</div>
+<div class="line">        return ;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a>(fp);</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 在完成系统初始化之后调用此接口测试内存分配</span></div>
+<div class="line">VOID sample_logoutput_test()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 日志级别</span></div>
+<div class="line">    tal_log_set_manage_attr(TY_LOG_LEVEL_DEBUG);</div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;a debug log&quot;</span>);</div>
+<div class="line">    tal_log_set_manage_attr(TY_LOG_LEVEL_NOTICE);</div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;another debug log&quot;</span>);</div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;an error log&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 新增一个新的终端</span></div>
+<div class="line">    tal_log_add_output_term(<span class="stringliteral">&quot;filelog&quot;</span>, log_output_to_file);</div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;another debug log&quot;</span>);</div>
+<div class="line">    TAL_PR_ERR(<span class="stringliteral">&quot;another error log&quot;</span>);</div>
+<div class="line">    tal_log_del_output_term(<span class="stringliteral">&quot;filelog&quot;</span>);</div>
+<div class="line">    TAL_PR_ERR(<span class="stringliteral">&quot;another error log&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="ttc" id="atuya__uf__db_8h_html_a0465ba7327d4da574ed5e5efbe6e4376"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a></div><div class="ttdeci">uFILE * ufopen(IN CHAR_T *filepath, IN CHAR_T *mode)</div><div class="ttdoc">open a unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a25420c33900c400dd875fb78ea629a6b"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a></div><div class="ttdeci">VOID uFILE</div><div class="ttdoc">unique file handle</div><div class="ttdef"><b>Definition:</b> tuya_uf_db.h:22</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a5f00d43fb0201c0bd692040d9e534859"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a></div><div class="ttdeci">OPERATE_RET ufclose(IN uFILE *fd)</div><div class="ttdoc">close a unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_af97a9279316ced48c68512871b5f2839"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a></div><div class="ttdeci">UINT_T ufwrite(IN uFILE *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</div><div class="ttdoc">write to unique file</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

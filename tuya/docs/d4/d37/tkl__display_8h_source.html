@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/display/include/tkl_display.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_bb576c34de85c123beeba8be951a0bd9.html">display</a></li><li class="navelem"><a class="el" href="../../dir_970f189050e9baad66b7b644419d2688.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_display.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d37/tkl__display_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef __TKL_DISPLAY_H__</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define __TKL_DISPLAY_H__</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    TKL_DISP_LCD = 0,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TKL_DISP_VGA,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TKL_DISP_HDMI,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TKL_DISP_DP,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    TKL_DISP_NUM</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} TKL_DISP_PORT_E;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    TKL_DISP_PIXEL_FMT_ABGR = 0,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TKL_DISP_PIXEL_FMT_RGBX,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    TKL_DISP_PIXEL_FMT_RGBA,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    TKL_DISP_PIXEL_FMT_ARGB,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TKL_DISP_PIXEL_FMT_RGB565,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} TKL_DISP_PIXEL_FMT_E;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    TKL_DISP_ROTATION_0 = 0,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    TKL_DISP_ROTATION_90,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    TKL_DISP_ROTATION_180,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    TKL_DISP_ROTATION_270</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} TKL_DISP_ROTATION_E;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    TKL_DISP_POWER_OFF = 0,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    TKL_DISP_POWER_ON,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    TKL_DISP_POWER_NUM</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} TKL_DISP_POWER_MODE_E;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../db/d09/unionTKL__DISP__COLOR__U.html">   57</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">struct </span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        UINT16_T b : 5;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        UINT16_T g : 6;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        UINT16_T r : 5;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }c16;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        UINT8_T b;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        UINT8_T g;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        UINT8_T r;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }c24;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        UINT8_T b;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        UINT8_T g;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        UINT8_T r;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        UINT8_T a;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    } c32;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    UINT_T full;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>} <a class="code hl_union" href="../../db/d09/unionTKL__DISP__COLOR__U.html">TKL_DISP_COLOR_U</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d3/d82/structTKL__DISP__RECT__S.html">   82</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    INT_T x;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    INT_T y;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    INT_T width;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    INT_T height;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <a class="code hl_struct" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">   90</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> *buffer;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_struct" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> rect;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    TKL_DISP_PIXEL_FMT_E format;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    INT_T priority;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>} <a class="code hl_struct" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">typedef</span> VOID (*TKL_DISP_VSYNC_CB)(TKL_DISP_PORT_E port, INT64_T timestamp);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">typedef</span> VOID (*TKL_DISP_HOTPLUG_CB)(TKL_DISP_PORT_E port, BOOL_T connected);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../db/d9a/structTKL__DISP__EVENT__HANDLER__S.html">  101</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    TKL_DISP_VSYNC_CB vsync_cb;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    TKL_DISP_HOTPLUG_CB hotplug_cb;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>} <a class="code hl_struct" href="../../db/d9a/structTKL__DISP__EVENT__HANDLER__S.html">TKL_DISP_EVENT_HANDLER_S</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../da/dfa/structTKL__DISP__INFO__S.html">  106</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    INT_T width;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    INT_T height;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    INT_T bpp;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    INT_T dpi;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    INT_T fps;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    TKL_DISP_PIXEL_FMT_E format;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    TKL_DISP_ROTATION_E rotation;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>} <a class="code hl_struct" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">  117</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    INT_T device_id;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    VOID_T *device_info;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    TKL_DISP_PORT_E device_port;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a54d9a645ad489615b09c51e98d6f2aa6">  131</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a54d9a645ad489615b09c51e98d6f2aa6">tkl_disp_init</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../db/d9a/structTKL__DISP__EVENT__HANDLER__S.html">TKL_DISP_EVENT_HANDLER_S</a> *event_handler);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a775b44a7ef6fb06539636758a1756158">  139</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a775b44a7ef6fb06539636758a1756158">tkl_disp_deinit</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a3151d4a39b8d8527fe2b8bb1fcda8696">  148</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a3151d4a39b8d8527fe2b8bb1fcda8696">tkl_disp_set_info</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *info);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a792caef7c94d3f10a0c466747a3687bf">  157</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a792caef7c94d3f10a0c466747a3687bf">tkl_disp_get_info</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *info);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#ad12f90e274972c638f43fb9c815beed5">  167</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#ad12f90e274972c638f43fb9c815beed5">tkl_disp_blit</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *buf, <a class="code hl_struct" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> *rect);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a08e6ef2d0f8403eeede51a6af23c2a4d">  177</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a08e6ef2d0f8403eeede51a6af23c2a4d">tkl_disp_fill</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> *rect, <a class="code hl_union" href="../../db/d09/unionTKL__DISP__COLOR__U.html">TKL_DISP_COLOR_U</a> color);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#ad1c8eb5d2d47220dedf851736f934655">  185</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#ad1c8eb5d2d47220dedf851736f934655">tkl_disp_flush</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#ae19340c452c43460e157359cc205016a">  193</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#ae19340c452c43460e157359cc205016a">tkl_disp_wait_vsync</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#ac34a9646489730e5f5e184715f1b1e80">  202</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#ac34a9646489730e5f5e184715f1b1e80">tkl_disp_set_brightness</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, INT_T brightness);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a1c0aab76151887d17566ff2c4d2ad4b5">  211</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a1c0aab76151887d17566ff2c4d2ad4b5">tkl_disp_get_brightness</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, INT_T *brightness);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a67dc354568301340071b5d514daf08a4">  220</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a67dc354568301340071b5d514daf08a4">tkl_disp_set_power_mode</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, TKL_DISP_POWER_MODE_E power_mode);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a0357643554a4d7ca0297cb7f77c9825f">  229</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a0357643554a4d7ca0297cb7f77c9825f">tkl_disp_get_power_mode</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, TKL_DISP_POWER_MODE_E *power_mode);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a068d4c6df9117e45644a2de8a1b8f906">  238</a></span><a class="code hl_struct" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *<a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a068d4c6df9117e45644a2de8a1b8f906">tkl_disp_alloc_framebuffer</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a8e12fc2a65238e65a13b22235d4f838c">  247</a></span>VOID_T <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a8e12fc2a65238e65a13b22235d4f838c">tkl_disp_free_framebuffer</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *buf);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831">  256</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831">tkl_disp_get_capabilities</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> **cfg);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="../../d4/d37/tkl__display_8h.html#a7112cdbc85097fe4397614fcc5f1093c">  265</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d37/tkl__display_8h.html#a7112cdbc85097fe4397614fcc5f1093c">tkl_disp_free_capabilities</a>(<a class="code hl_struct" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="code hl_struct" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *cfg);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__DISP__DEVICE__S_html"><div class="ttname"><a href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a></div><div class="ttdef"><b>Definition:</b> tkl_display.h:118</div></div>
+<div class="ttc" id="astructTKL__DISP__EVENT__HANDLER__S_html"><div class="ttname"><a href="../../db/d9a/structTKL__DISP__EVENT__HANDLER__S.html">TKL_DISP_EVENT_HANDLER_S</a></div><div class="ttdef"><b>Definition:</b> tkl_display.h:101</div></div>
+<div class="ttc" id="astructTKL__DISP__FRAMEBUFFER__S_html"><div class="ttname"><a href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a></div><div class="ttdef"><b>Definition:</b> tkl_display.h:91</div></div>
+<div class="ttc" id="astructTKL__DISP__INFO__S_html"><div class="ttname"><a href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a></div><div class="ttdef"><b>Definition:</b> tkl_display.h:107</div></div>
+<div class="ttc" id="astructTKL__DISP__RECT__S_html"><div class="ttname"><a href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a></div><div class="ttdef"><b>Definition:</b> tkl_display.h:83</div></div>
+<div class="ttc" id="atkl__display_8h_html_a0357643554a4d7ca0297cb7f77c9825f"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a0357643554a4d7ca0297cb7f77c9825f">tkl_disp_get_power_mode</a></div><div class="ttdeci">OPERATE_RET tkl_disp_get_power_mode(TKL_DISP_DEVICE_S *display_device, TKL_DISP_POWER_MODE_E *power_mode)</div><div class="ttdoc">Gets the display screen's power state</div></div>
+<div class="ttc" id="atkl__display_8h_html_a068d4c6df9117e45644a2de8a1b8f906"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a068d4c6df9117e45644a2de8a1b8f906">tkl_disp_alloc_framebuffer</a></div><div class="ttdeci">TKL_DISP_FRAMEBUFFER_S * tkl_disp_alloc_framebuffer(TKL_DISP_DEVICE_S *display_device)</div><div class="ttdoc">Alloc mapped framebuffer or layer</div></div>
+<div class="ttc" id="atkl__display_8h_html_a08e6ef2d0f8403eeede51a6af23c2a4d"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a08e6ef2d0f8403eeede51a6af23c2a4d">tkl_disp_fill</a></div><div class="ttdeci">OPERATE_RET tkl_disp_fill(TKL_DISP_DEVICE_S *display_device, TKL_DISP_RECT_S *rect, TKL_DISP_COLOR_U color)</div><div class="ttdoc">Fill destination area with color</div></div>
+<div class="ttc" id="atkl__display_8h_html_a1c0aab76151887d17566ff2c4d2ad4b5"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a1c0aab76151887d17566ff2c4d2ad4b5">tkl_disp_get_brightness</a></div><div class="ttdeci">OPERATE_RET tkl_disp_get_brightness(TKL_DISP_DEVICE_S *display_device, INT_T *brightness)</div><div class="ttdoc">Get display brightness(Backlight or HSB)</div></div>
+<div class="ttc" id="atkl__display_8h_html_a3151d4a39b8d8527fe2b8bb1fcda8696"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a3151d4a39b8d8527fe2b8bb1fcda8696">tkl_disp_set_info</a></div><div class="ttdeci">OPERATE_RET tkl_disp_set_info(TKL_DISP_DEVICE_S *display_device, TKL_DISP_INFO_S *info)</div><div class="ttdoc">Set display info</div></div>
+<div class="ttc" id="atkl__display_8h_html_a54d9a645ad489615b09c51e98d6f2aa6"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a54d9a645ad489615b09c51e98d6f2aa6">tkl_disp_init</a></div><div class="ttdeci">OPERATE_RET tkl_disp_init(TKL_DISP_DEVICE_S *display_device, TKL_DISP_EVENT_HANDLER_S *event_handler)</div><div class="ttdoc">Init and config display device</div></div>
+<div class="ttc" id="atkl__display_8h_html_a6087fa6c58643a528ed0cafad357a831"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831">tkl_disp_get_capabilities</a></div><div class="ttdeci">OPERATE_RET tkl_disp_get_capabilities(TKL_DISP_DEVICE_S *display_device, TKL_DISP_INFO_S **cfg)</div><div class="ttdoc">Get capabilities supported by display(For external display device. e.g. HDMI/VGA)</div></div>
+<div class="ttc" id="atkl__display_8h_html_a67dc354568301340071b5d514daf08a4"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a67dc354568301340071b5d514daf08a4">tkl_disp_set_power_mode</a></div><div class="ttdeci">OPERATE_RET tkl_disp_set_power_mode(TKL_DISP_DEVICE_S *display_device, TKL_DISP_POWER_MODE_E power_mode)</div><div class="ttdoc">Sets the display screen's power state</div></div>
+<div class="ttc" id="atkl__display_8h_html_a7112cdbc85097fe4397614fcc5f1093c"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a7112cdbc85097fe4397614fcc5f1093c">tkl_disp_free_capabilities</a></div><div class="ttdeci">OPERATE_RET tkl_disp_free_capabilities(TKL_DISP_DEVICE_S *display_device, TKL_DISP_INFO_S *cfg)</div><div class="ttdoc">Free capabilities get by tkl_disp_get_capabilities()</div></div>
+<div class="ttc" id="atkl__display_8h_html_a775b44a7ef6fb06539636758a1756158"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a775b44a7ef6fb06539636758a1756158">tkl_disp_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_disp_deinit(TKL_DISP_DEVICE_S *display_device)</div><div class="ttdoc">Release display device</div></div>
+<div class="ttc" id="atkl__display_8h_html_a792caef7c94d3f10a0c466747a3687bf"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a792caef7c94d3f10a0c466747a3687bf">tkl_disp_get_info</a></div><div class="ttdeci">OPERATE_RET tkl_disp_get_info(TKL_DISP_DEVICE_S *display_device, TKL_DISP_INFO_S *info)</div><div class="ttdoc">Get display info</div></div>
+<div class="ttc" id="atkl__display_8h_html_a8e12fc2a65238e65a13b22235d4f838c"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#a8e12fc2a65238e65a13b22235d4f838c">tkl_disp_free_framebuffer</a></div><div class="ttdeci">VOID_T tkl_disp_free_framebuffer(TKL_DISP_DEVICE_S *display_device, TKL_DISP_FRAMEBUFFER_S *buf)</div><div class="ttdoc">Free mapped framebuffer or layer</div></div>
+<div class="ttc" id="atkl__display_8h_html_ac34a9646489730e5f5e184715f1b1e80"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#ac34a9646489730e5f5e184715f1b1e80">tkl_disp_set_brightness</a></div><div class="ttdeci">OPERATE_RET tkl_disp_set_brightness(TKL_DISP_DEVICE_S *display_device, INT_T brightness)</div><div class="ttdoc">Set display brightness(Backlight or HSB)</div></div>
+<div class="ttc" id="atkl__display_8h_html_ad12f90e274972c638f43fb9c815beed5"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#ad12f90e274972c638f43fb9c815beed5">tkl_disp_blit</a></div><div class="ttdeci">OPERATE_RET tkl_disp_blit(TKL_DISP_DEVICE_S *display_device, TKL_DISP_FRAMEBUFFER_S *buf, TKL_DISP_RECT_S *rect)</div></div>
+<div class="ttc" id="atkl__display_8h_html_ad1c8eb5d2d47220dedf851736f934655"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#ad1c8eb5d2d47220dedf851736f934655">tkl_disp_flush</a></div><div class="ttdeci">OPERATE_RET tkl_disp_flush(TKL_DISP_DEVICE_S *display_device)</div><div class="ttdoc">Flush buffers to display device</div></div>
+<div class="ttc" id="atkl__display_8h_html_ae19340c452c43460e157359cc205016a"><div class="ttname"><a href="../../d4/d37/tkl__display_8h.html#ae19340c452c43460e157359cc205016a">tkl_disp_wait_vsync</a></div><div class="ttdeci">OPERATE_RET tkl_disp_wait_vsync(TKL_DISP_DEVICE_S *display_device)</div><div class="ttdoc">Wait for vsync signal</div></div>
+<div class="ttc" id="aunionTKL__DISP__COLOR__U_html"><div class="ttname"><a href="../../db/d09/unionTKL__DISP__COLOR__U.html">TKL_DISP_COLOR_U</a></div><div class="ttdef"><b>Definition:</b> tkl_display.h:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

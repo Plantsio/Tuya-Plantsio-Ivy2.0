@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: GPIO 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">GPIO 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md217"></a>
+简要说明</h1>
+<p >GPIO（General Purpose I/O Ports）是通用输入/输出端口，通俗地说，就是一些引脚，可以通过它们输出高低电平或者通过它们读入引脚的状态是高电平或是低电平。</p>
+<h2><a class="anchor" id="autotoc_md218"></a>
+GPIO 模式</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">模式   </th><th class="markdownTableHeadNone">枚举    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">上拉输入   </td><td class="markdownTableBodyNone">TUYA_GPIO_PULLUP    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">下拉输入   </td><td class="markdownTableBodyNone">TUYA_GPIO_PULLDOWN    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">高阻输入   </td><td class="markdownTableBodyNone">TUYA_GPIO_HIGH_IMPEDANCE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">浮空输入   </td><td class="markdownTableBodyNone">TUYA_GPIO_FLOATING    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">推完输出   </td><td class="markdownTableBodyNone">TUYA_GPIO_PUSH_PULL    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">开漏输出   </td><td class="markdownTableBodyNone">TUYA_GPIO_OPENDRAIN    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">开漏带上拉输出   </td><td class="markdownTableBodyNone">TUYA_GPIO_OPENDRAIN_PULLUP   </td></tr>
+</table>
+<p >以上模式需要关注芯片本身是否支持，这里只是模式的最大集合。</p>
+<h1><a class="anchor" id="autotoc_md219"></a>
+API 描述</h1>
+<h2><a class="anchor" id="autotoc_md220"></a>
+tkl_gpio_init</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#aeb6c893b0a2ca46ab061b3348ef2efb3">tkl_gpio_init</a>(TUYA_GPIO_NUM_E pin_id, CONST <a class="code hl_struct" href="../../dd/dbe/structTUYA__GPIO__BASE__CFG__T.html">TUYA_GPIO_BASE_CFG_T</a> *cfg);</div>
+<div class="ttc" id="astructTUYA__GPIO__BASE__CFG__T_html"><div class="ttname"><a href="../../dd/dbe/structTUYA__GPIO__BASE__CFG__T.html">TUYA_GPIO_BASE_CFG_T</a></div><div class="ttdoc">gpio config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:671</div></div>
+<div class="ttc" id="atkl__gpio_8h_html_aeb6c893b0a2ca46ab061b3348ef2efb3"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#aeb6c893b0a2ca46ab061b3348ef2efb3">tkl_gpio_init</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_init(TUYA_GPIO_NUM_E pin_id, CONST TUYA_GPIO_BASE_CFG_T *cfg)</div><div class="ttdoc">gpio init</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 初始化</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号，此编号区别于芯片原始引脚号，是由涂鸦根据芯片PA、PB ... PN 上的引脚个数顺序往下编号的：</li>
+</ul>
+</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_NUM_0   </td><td class="markdownTableBodyLeft">引脚 0   </td><td class="markdownTableBodyLeft">起始编号    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_NUM_1   </td><td class="markdownTableBodyLeft">引脚 1   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_NUM_3   </td><td class="markdownTableBodyLeft">引脚 2   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">...   </td><td class="markdownTableBodyLeft">引脚 n   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_NUM_60   </td><td class="markdownTableBodyLeft">引脚 60   </td><td class="markdownTableBodyLeft">最大编号   </td></tr>
+</table>
+<ul>
+<li><p class="startli"><code>cfg</code>：GPIO 基础配置，取值如下：</p>
+<p class="startli">```c typedef struct { TUYA_GPIO_MODE_E mode; // gpio 模式 TUYA_GPIO_DRCT_E direct; // gpio 输入输出方向 TUYA_GPIO_LEVEL_E level; // gpio 初始化电平 } <a class="el" href="../../dd/dbe/structTUYA__GPIO__BASE__CFG__T.html" title="gpio config">TUYA_GPIO_BASE_CFG_T</a>; ```</p>
+<p class="startli"><code>mode</code> 定义如下： </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_PULLUP   </td><td class="markdownTableBodyLeft">上拉输入   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_PULLDOWN   </td><td class="markdownTableBodyLeft">下拉输入   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_HIGH_IMPEDANCE   </td><td class="markdownTableBodyLeft">高阻输入   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_FLOATING   </td><td class="markdownTableBodyLeft">浮空输入   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_PUSH_PULL   </td><td class="markdownTableBodyLeft">推完输出   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_OPENDRAIN   </td><td class="markdownTableBodyLeft">开漏输出   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_OPENDRAIN_PULLUP   </td><td class="markdownTableBodyLeft">开漏带上拉输出   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<p class="startli"><code>direct</code> 定义如下： </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_INPUT   </td><td class="markdownTableBodyLeft">输入模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_OUTPUT   </td><td class="markdownTableBodyLeft">输出模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<p class="startli"><code>level</code> 定义如下：</p>
+</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_LEVEL_LOW   </td><td class="markdownTableBodyLeft">低电平   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_LEVEL_HIGH   </td><td class="markdownTableBodyLeft">高电平   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md221"></a>
+tkl_gpio_deinit</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a51e6479ee243769eaa7de74a11c7a87d">tkl_gpio_deinit</a>(TUYA_GPIO_NUM_E pin_id)</div>
+<div class="ttc" id="atkl__gpio_8h_html_a51e6479ee243769eaa7de74a11c7a87d"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#a51e6479ee243769eaa7de74a11c7a87d">tkl_gpio_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_deinit(TUYA_GPIO_NUM_E pin_id)</div><div class="ttdoc">gpio deinit</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 恢复初始状态</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md222"></a>
+tkl_gpio_write</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a7e6c86d9055ce8d6e2e5a9b3f28aaf89">tkl_gpio_write</a>(TUYA_GPIO_NUM_E pin_id, TUYA_GPIO_LEVEL_E level);</div>
+<div class="ttc" id="atkl__gpio_8h_html_a7e6c86d9055ce8d6e2e5a9b3f28aaf89"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#a7e6c86d9055ce8d6e2e5a9b3f28aaf89">tkl_gpio_write</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_write(TUYA_GPIO_NUM_E pin_id, TUYA_GPIO_LEVEL_E level)</div><div class="ttdoc">gpio write</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 输出电平</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号</li>
+<li><code>level</code>： GPIO 输出电平</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md223"></a>
+tkl_gpio_read</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#aace28d2bb373464ecca40f2c79425b64">tkl_gpio_read</a>(TUYA_GPIO_NUM_E pin_id, TUYA_GPIO_LEVEL_E *level);</div>
+<div class="ttc" id="atkl__gpio_8h_html_aace28d2bb373464ecca40f2c79425b64"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#aace28d2bb373464ecca40f2c79425b64">tkl_gpio_read</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_read(TUYA_GPIO_NUM_E pin_id, TUYA_GPIO_LEVEL_E *level)</div><div class="ttdoc">gpio read</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 读取电平</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号</li>
+<li><code>*level</code>：GPIO 读取电平返回值</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md224"></a>
+tkl_gpio_irq_init</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a510b7b044ddc8424167229011f150e2a">tkl_gpio_irq_init</a>(TUYA_GPIO_NUM_E pin_id, CONST <a class="code hl_struct" href="../../da/d4f/structTUYA__GPIO__IRQ__T.html">TUYA_GPIO_IRQ_T</a> *cfg);</div>
+<div class="ttc" id="astructTUYA__GPIO__IRQ__T_html"><div class="ttname"><a href="../../da/d4f/structTUYA__GPIO__IRQ__T.html">TUYA_GPIO_IRQ_T</a></div><div class="ttdoc">gpio interrupt config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:682</div></div>
+<div class="ttc" id="atkl__gpio_8h_html_a510b7b044ddc8424167229011f150e2a"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#a510b7b044ddc8424167229011f150e2a">tkl_gpio_irq_init</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_irq_init(TUYA_GPIO_NUM_E pin_id, CONST TUYA_GPIO_IRQ_T *cfg)</div><div class="ttdoc">gpio irq init NOTE: call this API will not enable interrupt</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 中断初始</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号</li>
+<li><code>*cfg</code>： GPIO 中断配置</li>
+</ul>
+</li>
+</ul>
+<p ><code>cfg</code>：GPIO 基础配置，取值如下：</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line">    TUYA_GPIO_IRQ_E      mode;  <span class="comment">// 中断模式</span></div>
+<div class="line">    TUYA_GPIO_IRQ_CB     cb;    <span class="comment">// 中断回调函数</span></div>
+<div class="line">    VOID_T              *arg;   <span class="comment">// 回调函数参数</span></div>
+<div class="line">} <a class="code hl_struct" href="../../da/d4f/structTUYA__GPIO__IRQ__T.html">TUYA_GPIO_IRQ_T</a>;</div>
+</div><!-- fragment --><p> <code>mode</code> 定义如下：</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_IRQ_RISE   </td><td class="markdownTableBodyLeft">上升沿模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_IRQ_FALL   </td><td class="markdownTableBodyLeft">下降沿模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_IRQ_RISE_FALL   </td><td class="markdownTableBodyLeft">双边沿模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_GPIO_IRQ_LOW   </td><td class="markdownTableBodyLeft">低电平模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_GPIO_IRQ_HIGH   </td><td class="markdownTableBodyLeft">搞电平模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<p ><code>cb</code> 定义如下： </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> VOID_T (*TUYA_GPIO_IRQ_CB)(VOID_T *args);</div>
+</div><!-- fragment --><ul>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md225"></a>
+tkl_gpio_irq_enable</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a54db47d4655d3f007fb1ac81819abb40">tkl_gpio_irq_enable</a>(TUYA_GPIO_NUM_E pin_id);</div>
+<div class="ttc" id="atkl__gpio_8h_html_a54db47d4655d3f007fb1ac81819abb40"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#a54db47d4655d3f007fb1ac81819abb40">tkl_gpio_irq_enable</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_irq_enable(TUYA_GPIO_NUM_E pin_id)</div><div class="ttdoc">gpio irq enable</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 中断使能函数</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md226"></a>
+tkl_gpio_irq_disable</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#aeaa058c205f273513e36baefa3475186">tkl_gpio_irq_disable</a>(TUYA_GPIO_NUM_E pin_id);</div>
+<div class="ttc" id="atkl__gpio_8h_html_aeaa058c205f273513e36baefa3475186"><div class="ttname"><a href="../../db/db8/tkl__gpio_8h.html#aeaa058c205f273513e36baefa3475186">tkl_gpio_irq_disable</a></div><div class="ttdeci">OPERATE_RET tkl_gpio_irq_disable(TUYA_GPIO_NUM_E pin_id)</div><div class="ttdoc">gpio irq disable</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>GPIO 中断失能函数</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>pin_id</code>：GPIO 引脚编号</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OPRT_OS_ADAPTER_GPIO_ERRCODE 定义部分</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md227"></a>
+示例</h1>
+<h2><a class="anchor" id="autotoc_md228"></a>
+示例 1</h2>
+<div class="fragment"><div class="line"><span class="comment">// gpio 初始化</span></div>
+<div class="line">VOID_T tuya_gpio_test(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../dd/dbe/structTUYA__GPIO__BASE__CFG__T.html">TUYA_GPIO_BASE_CFG_T</a> cfg = {</div>
+<div class="line">        .mode = TUYA_GPIO_PUSH_PULL,</div>
+<div class="line">        .direct = TUYA_GPIO_OUTPUT,</div>
+<div class="line">        .level = TUYA_GPIO_LEVEL_LOW,</div>
+<div class="line">    };</div>
+<div class="line">    <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#aeb6c893b0a2ca46ab061b3348ef2efb3">tkl_gpio_init</a>(GPIO_NUM_3, &amp;cfg);</div>
+<div class="line">    <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#aeb6c893b0a2ca46ab061b3348ef2efb3">tkl_gpio_init</a>(GPIO_NUM_4, &amp;cfg);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// gpio 输出</span></div>
+<div class="line">    <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a7e6c86d9055ce8d6e2e5a9b3f28aaf89">tkl_gpio_write</a>(GPIO_NUM_3, TUYA_GPIO_LEVEL_HIGH);</div>
+<div class="line">    <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a7e6c86d9055ce8d6e2e5a9b3f28aaf89">tkl_gpio_write</a>(GPIO_NUM_4, TUYA_GPIO_LEVEL_HIGH);</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md229"></a>
+示例 2</h2>
+<div class="fragment"><div class="line"><span class="comment">// 中断回调函数</span></div>
+<div class="line">STATIC VOID __gpio_irq_callback7(VOID *args)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//to do</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">STATIC VOID __gpio_irq_callback8(VOID *args)</div>
+<div class="line">{</div>
+<div class="line">     <span class="comment">//to do</span></div>
+<div class="line">}</div>
+<div class="line"><span class="comment">// gpio 中断初始</span></div>
+<div class="line">VOID_T tuya_gpio_irq_test(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../da/d4f/structTUYA__GPIO__IRQ__T.html">TUYA_GPIO_IRQ_T</a> irq_cfg_7 = {</div>
+<div class="line">        .mode = TUYA_GPIO_IRQ_RISE,</div>
+<div class="line">        .cb = __gpio_irq_callback7,</div>
+<div class="line">        .arg = NULL,</div>
+<div class="line">    };</div>
+<div class="line">    <a class="code hl_struct" href="../../da/d4f/structTUYA__GPIO__IRQ__T.html">TUYA_GPIO_IRQ_T</a> irq_cfg_8 = {</div>
+<div class="line">        .mode = TUYA_GPIO_IRQ_RISE,</div>
+<div class="line">        .cb = __gpio_irq_callback8,</div>
+<div class="line">        .arg = NULL,</div>
+<div class="line">    };</div>
+<div class="line">    <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a510b7b044ddc8424167229011f150e2a">tkl_gpio_irq_init</a>(GPIO_NUM_7, &amp;irq_cfg_7);</div>
+<div class="line">    <a class="code hl_function" href="../../db/db8/tkl__gpio_8h.html#a510b7b044ddc8424167229011f150e2a">tkl_gpio_irq_init</a>(GPIO_NUM_8, &amp;irq_cfg_8);</div>
+<div class="line">    tKl_gpio_irq_enable(GPIO_NUM_7);</div>
+<div class="line">    tKl_gpio_irq_enable(GPIO_NUM_8);</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

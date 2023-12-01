@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/timer/include/tkl_timer.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9db28580a61ef92a2d591164cbf67388.html">timer</a></li><li class="navelem"><a class="el" href="../../dir_0d3446f214a8f97fc2274de02e0f3692.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_timer.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the hardware timer api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_timer.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/ddb/tkl__timer_8h__incl.png" border="0" usemap="#ainclude_2adapter_2timer_2include_2tkl__timer_8h" alt=""/></div>
+<map name="ainclude_2adapter_2timer_2include_2tkl__timer_8h" id="ainclude_2adapter_2timer_2include_2tkl__timer_8h">
+<area shape="rect" title="Common process &#45; adapter the hardware timer api" alt="" coords="361,5,524,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d7/ddb/tkl__timer_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2d027bd0eafa0b369ac1fb68bbb54f62"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/tkl__timer_8h.html#a2d027bd0eafa0b369ac1fb68bbb54f62">tkl_timer_deinit</a> (TUYA_TIMER_NUM_E timer_id)</td></tr>
+<tr class="memdesc:a2d027bd0eafa0b369ac1fb68bbb54f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer deinit  <a href="../../d7/ddb/tkl__timer_8h.html#a2d027bd0eafa0b369ac1fb68bbb54f62">更多...</a><br /></td></tr>
+<tr class="separator:a2d027bd0eafa0b369ac1fb68bbb54f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d59d7358ba453f37ca1f5cba4cef06f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/tkl__timer_8h.html#a6d59d7358ba453f37ca1f5cba4cef06f">tkl_timer_get</a> (TUYA_TIMER_NUM_E timer_id, UINT_T *us)</td></tr>
+<tr class="memdesc:a6d59d7358ba453f37ca1f5cba4cef06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer get  <a href="../../d7/ddb/tkl__timer_8h.html#a6d59d7358ba453f37ca1f5cba4cef06f">更多...</a><br /></td></tr>
+<tr class="separator:a6d59d7358ba453f37ca1f5cba4cef06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc8788db1b5f0ca0ce56ddbe5334a1e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/tkl__timer_8h.html#abbc8788db1b5f0ca0ce56ddbe5334a1e">tkl_timer_get_current_value</a> (TUYA_TIMER_NUM_E timer_id, UINT_T *us)</td></tr>
+<tr class="memdesc:abbc8788db1b5f0ca0ce56ddbe5334a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">current timer get  <a href="../../d7/ddb/tkl__timer_8h.html#abbc8788db1b5f0ca0ce56ddbe5334a1e">更多...</a><br /></td></tr>
+<tr class="separator:abbc8788db1b5f0ca0ce56ddbe5334a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3271220a99be9fa0396f9a2113b1d6fa"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/tkl__timer_8h.html#a3271220a99be9fa0396f9a2113b1d6fa">tkl_timer_init</a> (TUYA_TIMER_NUM_E timer_id, <a class="el" href="../../de/dff/structTUYA__TIMER__BASE__CFG__T.html">TUYA_TIMER_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:a3271220a99be9fa0396f9a2113b1d6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer init  <a href="../../d7/ddb/tkl__timer_8h.html#a3271220a99be9fa0396f9a2113b1d6fa">更多...</a><br /></td></tr>
+<tr class="separator:a3271220a99be9fa0396f9a2113b1d6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0866b11b556a4cf0a10374aa865e6e0e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/tkl__timer_8h.html#a0866b11b556a4cf0a10374aa865e6e0e">tkl_timer_start</a> (TUYA_TIMER_NUM_E timer_id, UINT_T us)</td></tr>
+<tr class="memdesc:a0866b11b556a4cf0a10374aa865e6e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer start  <a href="../../d7/ddb/tkl__timer_8h.html#a0866b11b556a4cf0a10374aa865e6e0e">更多...</a><br /></td></tr>
+<tr class="separator:a0866b11b556a4cf0a10374aa865e6e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de29ab58e93b423d8df2cf24382f171"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddb/tkl__timer_8h.html#a3de29ab58e93b423d8df2cf24382f171">tkl_timer_stop</a> (TUYA_TIMER_NUM_E timer_id)</td></tr>
+<tr class="memdesc:a3de29ab58e93b423d8df2cf24382f171"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer stop  <a href="../../d7/ddb/tkl__timer_8h.html#a3de29ab58e93b423d8df2cf24382f171">更多...</a><br /></td></tr>
+<tr class="separator:a3de29ab58e93b423d8df2cf24382f171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the hardware timer api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2018-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a2d027bd0eafa0b369ac1fb68bbb54f62" name="a2d027bd0eafa0b369ac1fb68bbb54f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d027bd0eafa0b369ac1fb68bbb54f62">&#9670;&nbsp;</a></span>tkl_timer_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_timer_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_TIMER_NUM_E&#160;</td>
+          <td class="paramname"><em>timer_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>timer deinit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6d59d7358ba453f37ca1f5cba4cef06f" name="a6d59d7358ba453f37ca1f5cba4cef06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d59d7358ba453f37ca1f5cba4cef06f">&#9670;&nbsp;</a></span>tkl_timer_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_timer_get </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_TIMER_NUM_E&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>timer get </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">us</td><td>timer interval</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abbc8788db1b5f0ca0ce56ddbe5334a1e" name="abbc8788db1b5f0ca0ce56ddbe5334a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc8788db1b5f0ca0ce56ddbe5334a1e">&#9670;&nbsp;</a></span>tkl_timer_get_current_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_timer_get_current_value </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_TIMER_NUM_E&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>current timer get </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">us</td><td>timer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3271220a99be9fa0396f9a2113b1d6fa" name="a3271220a99be9fa0396f9a2113b1d6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3271220a99be9fa0396f9a2113b1d6fa">&#9670;&nbsp;</a></span>tkl_timer_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_timer_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_TIMER_NUM_E&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dff/structTUYA__TIMER__BASE__CFG__T.html">TUYA_TIMER_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>timer init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>timer configure</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0866b11b556a4cf0a10374aa865e6e0e" name="a0866b11b556a4cf0a10374aa865e6e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0866b11b556a4cf0a10374aa865e6e0e">&#9670;&nbsp;</a></span>tkl_timer_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_timer_start </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_TIMER_NUM_E&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>timer start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>when to start</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3de29ab58e93b423d8df2cf24382f171" name="a3de29ab58e93b423d8df2cf24382f171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de29ab58e93b423d8df2cf24382f171">&#9670;&nbsp;</a></span>tkl_timer_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_timer_stop </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_TIMER_NUM_E&#160;</td>
+          <td class="paramname"><em>timer_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>timer stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

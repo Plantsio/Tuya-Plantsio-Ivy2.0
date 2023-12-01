@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_devos/include/tuya_devos_health.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c5ad9f57be95c42b41325f1bc9ebae91.html">svc_devos</a></li><li class="navelem"><a class="el" href="../../dir_11ce8152c603a5102f0c89f0ddb7981a.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_devos_health.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Tuya Device OS设备健康监控  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_com_defs.h&quot;</code><br />
+<code>#include &quot;tal_thread.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd7/tal__mutex_8h_source.html">tal_mutex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d7f/tuya__list_8h_source.html">tuya_list.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_devos_health.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d50/tuya__devos__health_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__devos_2include_2tuya__devos__health_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__devos_2include_2tuya__devos__health_8h" id="ainclude_2components_2svc__devos_2include_2tuya__devos__health_8h">
+<area shape="rect" title="Tuya Device OS设备健康监控" alt="" coords="464,5,643,61"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="683,109,858,136"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="319,109,419,136"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="443,109,543,136"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="568,109,659,136"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="419,184,567,211"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="765,184,859,211"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="817,259,892,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,427,285"/>
+<area shape="rect" title=" " alt="" coords="452,259,535,285"/>
+<area shape="rect" title=" " alt="" coords="559,259,630,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="655,259,793,285"/>
+</map>
+</div>
+</div>
+<p><a href="../../dc/d9c/tuya__devos__health_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d65/structhealth__alert__evt__data.html">health_alert_evt_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a36bee36b18338251a8859b21a88325b9"><td class="memItemLeft" align="right" valign="top"><a id="a36bee36b18338251a8859b21a88325b9" name="a36bee36b18338251a8859b21a88325b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_FREE_MEM_THRESHOLD</b>&#160;&#160;&#160;(1024*8)</td></tr>
+<tr class="separator:a36bee36b18338251a8859b21a88325b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfaf85f751398aeaf369e55d6846076"><td class="memItemLeft" align="right" valign="top"><a id="a8bfaf85f751398aeaf369e55d6846076" name="a8bfaf85f751398aeaf369e55d6846076"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_HTTP_FAILED_THRESHOLD</b>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:a8bfaf85f751398aeaf369e55d6846076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05613b7437e37dbf7507ffd0726340ee"><td class="memItemLeft" align="right" valign="top"><a id="a05613b7437e37dbf7507ffd0726340ee" name="a05613b7437e37dbf7507ffd0726340ee"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_LARGEST_MEM_BLOK_THRESHOLD</b>&#160;&#160;&#160;(1024*5)</td></tr>
+<tr class="separator:a05613b7437e37dbf7507ffd0726340ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1320b6e6f247cb3c5a7944460095d0fc"><td class="memItemLeft" align="right" valign="top"><a id="a1320b6e6f247cb3c5a7944460095d0fc" name="a1320b6e6f247cb3c5a7944460095d0fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_MSGQ_THRESHOLD</b>&#160;&#160;&#160;(50)</td></tr>
+<tr class="separator:a1320b6e6f247cb3c5a7944460095d0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada39b15cb05f42c0444ef0f9ba0b2240"><td class="memItemLeft" align="right" valign="top"><a id="ada39b15cb05f42c0444ef0f9ba0b2240" name="ada39b15cb05f42c0444ef0f9ba0b2240"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_REPORT_INTERVAL</b>&#160;&#160;&#160;(60 * 60)</td></tr>
+<tr class="separator:ada39b15cb05f42c0444ef0f9ba0b2240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1e3dc1fe487fef3cec53317d0311bd"><td class="memItemLeft" align="right" valign="top"><a id="afc1e3dc1fe487fef3cec53317d0311bd" name="afc1e3dc1fe487fef3cec53317d0311bd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_ATOP_REFUSE</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:afc1e3dc1fe487fef3cec53317d0311bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbcf62ae84cc0cd8ff70baa27f616c1"><td class="memItemLeft" align="right" valign="top"><a id="a1dbcf62ae84cc0cd8ff70baa27f616c1" name="a1dbcf62ae84cc0cd8ff70baa27f616c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_ATOP_SIGN_FAILED</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a1dbcf62ae84cc0cd8ff70baa27f616c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4616661018a92bb091b59ec2363a168d"><td class="memItemLeft" align="right" valign="top"><a id="a4616661018a92bb091b59ec2363a168d" name="a4616661018a92bb091b59ec2363a168d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_FEED_WATCH_DOG</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a4616661018a92bb091b59ec2363a168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e9a2529a8739ac4534e5cd410b3545"><td class="memItemLeft" align="right" valign="top"><a id="af5e9a2529a8739ac4534e5cd410b3545" name="af5e9a2529a8739ac4534e5cd410b3545"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_FREE_MEM_SIZE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:af5e9a2529a8739ac4534e5cd410b3545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a28352f1e930a42cf90d88bbdbc51f6"><td class="memItemLeft" align="right" valign="top"><a id="a0a28352f1e930a42cf90d88bbdbc51f6" name="a0a28352f1e930a42cf90d88bbdbc51f6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_MAX_MEM_SIZE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0a28352f1e930a42cf90d88bbdbc51f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1533f8940c792bfa672ce842548de2"><td class="memItemLeft" align="right" valign="top"><a id="abd1533f8940c792bfa672ce842548de2" name="abd1533f8940c792bfa672ce842548de2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_MSGQ_NUM</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:abd1533f8940c792bfa672ce842548de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89288c8582fa0d1c35d1bbda7c06fb48"><td class="memItemLeft" align="right" valign="top"><a id="a89288c8582fa0d1c35d1bbda7c06fb48" name="a89288c8582fa0d1c35d1bbda7c06fb48"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_RUNTIME_REPT</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a89288c8582fa0d1c35d1bbda7c06fb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5111423ca5df9c082058022f30464ea7"><td class="memItemLeft" align="right" valign="top"><a id="a5111423ca5df9c082058022f30464ea7" name="a5111423ca5df9c082058022f30464ea7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_TIMER_NUM</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a5111423ca5df9c082058022f30464ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c6f38341da107773ae6c371de1d43b"><td class="memItemLeft" align="right" valign="top"><a id="a38c6f38341da107773ae6c371de1d43b" name="a38c6f38341da107773ae6c371de1d43b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_RULE_WORKQ_DEPTH</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a38c6f38341da107773ae6c371de1d43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48cd60a5e75e3e870cd861d5e441f06d"><td class="memItemLeft" align="right" valign="top"><a id="a48cd60a5e75e3e870cd861d5e441f06d" name="a48cd60a5e75e3e870cd861d5e441f06d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_SLEEP_INTERVAL</b>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:a48cd60a5e75e3e870cd861d5e441f06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763342d7effe62fe381745972b99fa79"><td class="memItemLeft" align="right" valign="top"><a id="a763342d7effe62fe381745972b99fa79" name="a763342d7effe62fe381745972b99fa79"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_TIMEQ_THRESHOLD</b>&#160;&#160;&#160;(100)</td></tr>
+<tr class="separator:a763342d7effe62fe381745972b99fa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309e35c983a6db6450c3edd1a65792c1"><td class="memItemLeft" align="right" valign="top"><a id="a309e35c983a6db6450c3edd1a65792c1" name="a309e35c983a6db6450c3edd1a65792c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_WORKQ_THRESHOLD</b>&#160;&#160;&#160;(50)</td></tr>
+<tr class="separator:a309e35c983a6db6450c3edd1a65792c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a9d431809ed97877504e77a2439268df3"><td class="memItemLeft" align="right" valign="top"><a id="a9d431809ed97877504e77a2439268df3" name="a9d431809ed97877504e77a2439268df3"></a>
+typedef INT_T&#160;</td><td class="memItemRight" valign="bottom"><b>HEALTH_MONITOR_RULE_E</b></td></tr>
+<tr class="separator:a9d431809ed97877504e77a2439268df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967ec5c784c90427ccbada2a4d81b389"><td class="memItemLeft" align="right" valign="top"><a id="a967ec5c784c90427ccbada2a4d81b389" name="a967ec5c784c90427ccbada2a4d81b389"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>health_notify_cb</b>) ()</td></tr>
+<tr class="separator:a967ec5c784c90427ccbada2a4d81b389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d88c9f02dad3d9ccb62846d723bf86a"><td class="memItemLeft" align="right" valign="top"><a id="a2d88c9f02dad3d9ccb62846d723bf86a" name="a2d88c9f02dad3d9ccb62846d723bf86a"></a>
+typedef BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>health_query_cb</b>) ()</td></tr>
+<tr class="separator:a2d88c9f02dad3d9ccb62846d723bf86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a99f062232d52f30e3296911d0240e38b"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9c/tuya__devos__health_8h.html#a99f062232d52f30e3296911d0240e38b">tuya_devos_add_health_item</a> (UINT_T threshold, UINT_T period, health_query_cb query, health_notify_cb notify)</td></tr>
+<tr class="memdesc:a99f062232d52f30e3296911d0240e38b"><td class="mdescLeft">&#160;</td><td class="mdescRight">add health item  <a href="../../dc/d9c/tuya__devos__health_8h.html#a99f062232d52f30e3296911d0240e38b">更多...</a><br /></td></tr>
+<tr class="separator:a99f062232d52f30e3296911d0240e38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8417993b4f03ed624a2aed2f9614449c"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9c/tuya__devos__health_8h.html#a8417993b4f03ed624a2aed2f9614449c">tuya_devos_delete_health_item</a> (INT_T type)</td></tr>
+<tr class="memdesc:a8417993b4f03ed624a2aed2f9614449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete health item  <a href="../../dc/d9c/tuya__devos__health_8h.html#a8417993b4f03ed624a2aed2f9614449c">更多...</a><br /></td></tr>
+<tr class="separator:a8417993b4f03ed624a2aed2f9614449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b69a7bcc02b187d8f342288fc80dd90"><td class="memItemLeft" align="right" valign="top"><a id="a6b69a7bcc02b187d8f342288fc80dd90" name="a6b69a7bcc02b187d8f342288fc80dd90"></a>
+VOID&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_devos_dump_health_item</b> (VOID)</td></tr>
+<tr class="memdesc:a6b69a7bcc02b187d8f342288fc80dd90"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump health item <br /></td></tr>
+<tr class="separator:a6b69a7bcc02b187d8f342288fc80dd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3792e32260a417e8f1a1c7c14b460640"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9c/tuya__devos__health_8h.html#a3792e32260a417e8f1a1c7c14b460640">tuya_devos_health_init_and_start</a> (CONST INT_T watch_dog_interval, CONST INT_T monitor_detect_interval)</td></tr>
+<tr class="memdesc:a3792e32260a417e8f1a1c7c14b460640"><td class="mdescLeft">&#160;</td><td class="mdescRight">devos health init function  <a href="../../dc/d9c/tuya__devos__health_8h.html#a3792e32260a417e8f1a1c7c14b460640">更多...</a><br /></td></tr>
+<tr class="separator:a3792e32260a417e8f1a1c7c14b460640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b0347fc4ac0f29d48ec1944ed13d21"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9c/tuya__devos__health_8h.html#a02b0347fc4ac0f29d48ec1944ed13d21">tuya_devos_update_health_item_period</a> (INT_T type, UINT_T period)</td></tr>
+<tr class="memdesc:a02b0347fc4ac0f29d48ec1944ed13d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">update health item period  <a href="../../dc/d9c/tuya__devos__health_8h.html#a02b0347fc4ac0f29d48ec1944ed13d21">更多...</a><br /></td></tr>
+<tr class="separator:a02b0347fc4ac0f29d48ec1944ed13d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9870f56537adad15ed7f892ab5a1ff01"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9c/tuya__devos__health_8h.html#a9870f56537adad15ed7f892ab5a1ff01">tuya_devos_update_health_item_threshold</a> (INT_T type, UINT_T threshold)</td></tr>
+<tr class="memdesc:a9870f56537adad15ed7f892ab5a1ff01"><td class="mdescLeft">&#160;</td><td class="mdescRight">update health item threshold  <a href="../../dc/d9c/tuya__devos__health_8h.html#a9870f56537adad15ed7f892ab5a1ff01">更多...</a><br /></td></tr>
+<tr class="separator:a9870f56537adad15ed7f892ab5a1ff01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Tuya Device OS设备健康监控 </p>
+<dl class="section author"><dt>作者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'fan'+'gw'+'eng'+'.h'+'u@t'+'uy'+'a.c'+'om'; return false;">fangw<span class="obfuscator">.nosp@m.</span>eng.<span class="obfuscator">.nosp@m.</span>hu@tu<span class="obfuscator">.nosp@m.</span>ya.c<span class="obfuscator">.nosp@m.</span>om</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-03-18</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2020 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a99f062232d52f30e3296911d0240e38b" name="a99f062232d52f30e3296911d0240e38b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99f062232d52f30e3296911d0240e38b">&#9670;&nbsp;</a></span>tuya_devos_add_health_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_devos_add_health_item </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">health_query_cb&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">health_notify_cb&#160;</td>
+          <td class="paramname"><em>notify</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add health item </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>threshold </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>period </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>query cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notify</td><td>notify cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>type id, success when large than 0,others failed </dd></dl>
+
+</div>
+</div>
+<a id="a8417993b4f03ed624a2aed2f9614449c" name="a8417993b4f03ed624a2aed2f9614449c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8417993b4f03ed624a2aed2f9614449c">&#9670;&nbsp;</a></span>tuya_devos_delete_health_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_devos_delete_health_item </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete health item </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3792e32260a417e8f1a1c7c14b460640" name="a3792e32260a417e8f1a1c7c14b460640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3792e32260a417e8f1a1c7c14b460640">&#9670;&nbsp;</a></span>tuya_devos_health_init_and_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_devos_health_init_and_start </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>watch_dog_interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>monitor_detect_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>devos health init function </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">watch_dog_interval</td><td>看门狗的默认时间，单位是秒，必须是20秒钟的倍数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">monitor_detect_interval</td><td>健康监控扫描间隔，单位是秒，必须是20秒钟的倍数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a02b0347fc4ac0f29d48ec1944ed13d21" name="a02b0347fc4ac0f29d48ec1944ed13d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b0347fc4ac0f29d48ec1944ed13d21">&#9670;&nbsp;</a></span>tuya_devos_update_health_item_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_devos_update_health_item_period </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>period</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update health item period </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>period </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9870f56537adad15ed7f892ab5a1ff01" name="a9870f56537adad15ed7f892ab5a1ff01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9870f56537adad15ed7f892ab5a1ff01">&#9670;&nbsp;</a></span>tuya_devos_update_health_item_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_devos_update_health_item_threshold </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update health item threshold </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>threshold </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

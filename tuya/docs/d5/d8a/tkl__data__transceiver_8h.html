@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_data_transceiver.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_data_transceiver.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - data transceiver  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h_source.html">tuya_zigbee_stack.h</a>&quot;</code><br />
+<code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_data_transceiver.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d7f/tkl__data__transceiver_8h__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tkl__data__transceiver_8h" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tkl__data__transceiver_8h" id="ainclude_2adapter_2zigbee_2include_2tkl__data__transceiver_8h">
+<area shape="rect" title="Common process &#45; data transceiver" alt="" coords="441,5,663,47"/>
+<area shape="rect" href="../../d8/dba/tuya__zigbee__stack_8h.html" title="Common process &#45; zigbee stack" alt="" coords="221,95,376,121"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="731,95,879,121"/>
+<area shape="rect" href="../../d0/d77/tuya__zigbee__attribute_8h.html" title="Common process &#45; zigbee attribute" alt="" coords="5,169,181,196"/>
+<area shape="rect" href="../../dd/d01/tuya__zigbee__command_8h.html" title="Common process &#45; zigbee command" alt="" coords="206,169,391,196"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="416,169,549,196"/>
+<area shape="rect" title=" " alt="" coords="573,169,648,196"/>
+<area shape="rect" title=" " alt="" coords="673,169,743,196"/>
+<area shape="rect" title=" " alt="" coords="768,169,843,196"/>
+<area shape="rect" title=" " alt="" coords="867,169,938,196"/>
+<area shape="rect" title=" " alt="" coords="963,169,1045,196"/>
+<area shape="rect" title=" " alt="" coords="1070,169,1141,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="1165,169,1304,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/d8a/tkl__data__transceiver_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5a/structTKL__ZG__RECV__CB.html">TKL_ZG_RECV_CB</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a14a44f1c6a0c29414b3a35b11486cb11"><td class="memItemLeft" align="right" valign="top"><a id="a14a44f1c6a0c29414b3a35b11486cb11" name="a14a44f1c6a0c29414b3a35b11486cb11"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_POST_SEND_CB</b>) (INT_T state, UINT8_T seq_num)</td></tr>
+<tr class="separator:a14a44f1c6a0c29414b3a35b11486cb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1043fd68664439b9141ce40baced1617"><td class="memItemLeft" align="right" valign="top"><a id="a1043fd68664439b9141ce40baced1617" name="a1043fd68664439b9141ce40baced1617"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_PRE_SEND_CB</b>) (UINT8_T seq_num)</td></tr>
+<tr class="separator:a1043fd68664439b9141ce40baced1617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63990dd3cffbd07f2f8a09afca61703"><td class="memItemLeft" align="right" valign="top"><a id="af63990dd3cffbd07f2f8a09afca61703" name="af63990dd3cffbd07f2f8a09afca61703"></a>
+typedef ZG_CMD_STATUS_E(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_WRITE_ATTR_CB</b>) (UINT8_T ep_id, UINT16_T cluster_id, <a class="el" href="../../d6/d43/structTKL__ATTR__REC__T.html">TKL_ATTR_REC_T</a> *attr_rec)</td></tr>
+<tr class="separator:af63990dd3cffbd07f2f8a09afca61703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469c3a1550f3f8a4891f758ce936382e"><td class="memItemLeft" align="right" valign="top"><a id="a469c3a1550f3f8a4891f758ce936382e" name="a469c3a1550f3f8a4891f758ce936382e"></a>
+typedef ZG_CMD_STATUS_E(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZCL_CMD_CB</b>) (<a class="el" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *auxiliary, <a class="el" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a> *frame, TKL_HANDLE_MODE_E *mode)</td></tr>
+<tr class="separator:a469c3a1550f3f8a4891f758ce936382e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451c39b4fa2c05b745e20d419eb00b8c"><td class="memItemLeft" align="right" valign="top"><a id="a451c39b4fa2c05b745e20d419eb00b8c" name="a451c39b4fa2c05b745e20d419eb00b8c"></a>
+typedef ZG_CMD_STATUS_E(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZDP_CMD_CB</b>) (<a class="el" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *auxiliary, <a class="el" href="../../db/dfa/structTKL__ZDP__FRAME__T.html">TKL_ZDP_FRAME_T</a> *frame, TKL_HANDLE_MODE_E *mode)</td></tr>
+<tr class="separator:a451c39b4fa2c05b745e20d419eb00b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:add94591d3c80677ae94508d56a76f5c5"><td class="memItemLeft" align="right" valign="top"><a id="add94591d3c80677ae94508d56a76f5c5" name="add94591d3c80677ae94508d56a76f5c5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_HANDLE_MODE_E</b> { <b>HANDLE_TUYA_SDK_MODE</b> = 0
+, <b>HANDLE_NATIVE_SDK_MODE</b> = 1
+ }</td></tr>
+<tr class="separator:add94591d3c80677ae94508d56a76f5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a639b0b95823172f5ec473ce49f00f66b"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8a/tkl__data__transceiver_8h.html#a639b0b95823172f5ec473ce49f00f66b">tkl_zcl_seq_num_get</a> (VOID_T)</td></tr>
+<tr class="memdesc:a639b0b95823172f5ec473ce49f00f66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get zcl transaction sequence number  <a href="../../d5/d8a/tkl__data__transceiver_8h.html#a639b0b95823172f5ec473ce49f00f66b">更多...</a><br /></td></tr>
+<tr class="separator:a639b0b95823172f5ec473ce49f00f66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3ad9d566d9d602e983a72323088466"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8a/tkl__data__transceiver_8h.html#a3b3ad9d566d9d602e983a72323088466">tkl_zg_aps_send</a> (<a class="el" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *auxiliary, <a class="el" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a> *zcl_data)</td></tr>
+<tr class="memdesc:a3b3ad9d566d9d602e983a72323088466"><td class="mdescLeft">&#160;</td><td class="mdescRight">sending data in APS layer  <a href="../../d5/d8a/tkl__data__transceiver_8h.html#a3b3ad9d566d9d602e983a72323088466">更多...</a><br /></td></tr>
+<tr class="separator:a3b3ad9d566d9d602e983a72323088466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa264a2e2d692259fa6e018c390575d95"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8a/tkl__data__transceiver_8h.html#aa264a2e2d692259fa6e018c390575d95">tkl_zg_register_recv_cb</a> (<a class="el" href="../../db/d5a/structTKL__ZG__RECV__CB.html">TKL_ZG_RECV_CB</a> *recv_cb)</td></tr>
+<tr class="memdesc:aa264a2e2d692259fa6e018c390575d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">register data receive callback  <a href="../../d5/d8a/tkl__data__transceiver_8h.html#aa264a2e2d692259fa6e018c390575d95">更多...</a><br /></td></tr>
+<tr class="separator:aa264a2e2d692259fa6e018c390575d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a0a0f12b4dfd63c7f40a613cdb460d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8a/tkl__data__transceiver_8h.html#a52a0a0f12b4dfd63c7f40a613cdb460d">tkl_zg_register_send_cb</a> (<a class="el" href="../../d4/dc0/structTKL__ZG__SEND__CB.html">TKL_ZG_SEND_CB</a> *send_cb)</td></tr>
+<tr class="memdesc:a52a0a0f12b4dfd63c7f40a613cdb460d"><td class="mdescLeft">&#160;</td><td class="mdescRight">register data send callback  <a href="../../d5/d8a/tkl__data__transceiver_8h.html#a52a0a0f12b4dfd63c7f40a613cdb460d">更多...</a><br /></td></tr>
+<tr class="separator:a52a0a0f12b4dfd63c7f40a613cdb460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - data transceiver </p>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-04-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a639b0b95823172f5ec473ce49f00f66b" name="a639b0b95823172f5ec473ce49f00f66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639b0b95823172f5ec473ce49f00f66b">&#9670;&nbsp;</a></span>tkl_zcl_seq_num_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T tkl_zcl_seq_num_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get zcl transaction sequence number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>zcl sequence number </dd></dl>
+
+</div>
+</div>
+<a id="a3b3ad9d566d9d602e983a72323088466" name="a3b3ad9d566d9d602e983a72323088466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3ad9d566d9d602e983a72323088466">&#9670;&nbsp;</a></span>tkl_zg_aps_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zg_aps_send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d83/structTKL__ZG__AUX__T.html">TKL_ZG_AUX_T</a> *&#160;</td>
+          <td class="paramname"><em>auxiliary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d74/structTKL__ZCL__FRAME__T.html">TKL_ZCL_FRAME_T</a> *&#160;</td>
+          <td class="paramname"><em>zcl_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sending data in APS layer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">auxiliary</td><td>auxiliary info for data transmission </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zcl_data</td><td>point to the ZCL data to be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa264a2e2d692259fa6e018c390575d95" name="aa264a2e2d692259fa6e018c390575d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa264a2e2d692259fa6e018c390575d95">&#9670;&nbsp;</a></span>tkl_zg_register_recv_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zg_register_recv_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5a/structTKL__ZG__RECV__CB.html">TKL_ZG_RECV_CB</a> *&#160;</td>
+          <td class="paramname"><em>recv_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>register data receive callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv_cb</td><td>receive callback function collection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a52a0a0f12b4dfd63c7f40a613cdb460d" name="a52a0a0f12b4dfd63c7f40a613cdb460d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a0a0f12b4dfd63c7f40a613cdb460d">&#9670;&nbsp;</a></span>tkl_zg_register_send_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zg_register_send_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dc0/structTKL__ZG__SEND__CB.html">TKL_ZG_SEND_CB</a> *&#160;</td>
+          <td class="paramname"><em>send_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>register data send callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">send_cb</td><td>send callback function collection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

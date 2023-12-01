@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/tls/tuya_tls_config_psk_only_nb.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_0a06ac576203a7d6123dada18f74d099.html">tls</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_tls_config_psk_only_nb.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *  Copyright (C) 2006-2018, ARM Limited, All Rights Reserved</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *  SPDX-License-Identifier: Apache-2.0</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *  not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *  You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *  http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *  Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *  distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *  See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *  limitations under the License.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *  This file is part of mbed TLS (https://tls.mbed.org)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#ifndef MBEDTLS_CONFIG_H_TY_PSK_ONLY_NB</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define MBEDTLS_CONFIG_H_TY_PSK_ONLY_NB</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//#define TUYA_TLS_DYNAMIC_MEMORY_ALLOCATION    1   //开启TLS动态内存</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//#define TLS_SESSION               1           //开启TLS_SESSION</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//#define TLS_MEM_DEBUG                 0           //开启TLS内存调试</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//#define TUYA_TLS_DEBUG_THRDSHOLD    5         //TLS 调试等级</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//#define TUYA_PSK_STRONG 1                     //PSK升级版本</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;tuya_iot_config.h&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(_CRT_SECURE_NO_DEPRECATE)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#define _CRT_SECURE_NO_DEPRECATE 1</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define MBEDTLS_HAVE_ASM</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//#define MBEDTLS_NO_UDBL_DIVISION</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">//#define MBEDTLS_NO_64BIT_MULTIPLICATION</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">//#define MBEDTLS_HAVE_SSE2</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">//#define MBEDTLS_HAVE_TIME</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">//#define MBEDTLS_HAVE_TIME_DATE</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#define MBEDTLS_PLATFORM_MEMORY</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//#define MBEDTLS_PLATFORM_NO_STD_FUNCTIONS</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">//#define MBEDTLS_PLATFORM_EXIT_ALT</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">//#define MBEDTLS_PLATFORM_TIME_ALT</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">//#define MBEDTLS_PLATFORM_FPRINTF_ALT</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">//#define MBEDTLS_PLATFORM_PRINTF_ALT</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">//#define MBEDTLS_PLATFORM_SNPRINTF_ALT</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#define MBEDTLS_PLATFORM_NV_SEED_ALT</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">//#define MBEDTLS_PLATFORM_SETUP_TEARDOWN_ALT</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">/* extra adapt for freertos revisions */</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#define MBEDTLS_TCPIP_LWIP</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#if defined(ENABLE_TOOLCHAIN_GCC_CLANG) &amp;&amp; (ENABLE_TOOLCHAIN_GCC_CLANG==1)</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#define MBEDTLS_DEPRECATED_WARNING</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">//#define MBEDTLS_DEPRECATED_REMOVED</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">//#define MBEDTLS_CHECK_PARAMS</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">/* \} name SECTION: System support */</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">//#define MBEDTLS_TIMING_ALT</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">// #define MBEDTLS_AES_ALT</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment">//#define MBEDTLS_ARC4_ALT</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment">//#define MBEDTLS_ARIA_ALT</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">//#define MBEDTLS_BLOWFISH_ALT</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment">//#define MBEDTLS_CAMELLIA_ALT</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment">//#define MBEDTLS_CCM_ALT</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment">//#define MBEDTLS_CHACHA20_ALT</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment">//#define MBEDTLS_CHACHAPOLY_ALT</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="comment">//#define MBEDTLS_CMAC_ALT</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="comment">//#define MBEDTLS_DES_ALT</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="comment">//#define MBEDTLS_DHM_ALT</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="comment">//#define MBEDTLS_ECJPAKE_ALT</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="comment">//#define MBEDTLS_GCM_ALT</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="comment">//#define MBEDTLS_NIST_KW_ALT</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="comment">//#define MBEDTLS_MD2_ALT</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="comment">//#define MBEDTLS_MD4_ALT</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="comment">//#define MBEDTLS_MD5_ALT</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="comment">//#define MBEDTLS_POLY1305_ALT</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment">//#define MBEDTLS_RIPEMD160_ALT</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="comment">//#define MBEDTLS_RSA_ALT</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="comment">//#define MBEDTLS_SHA1_ALT</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">//#define MBEDTLS_SHA256_ALT</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">//#define MBEDTLS_SHA512_ALT</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">//#define MBEDTLS_XTEA_ALT</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span><span class="comment"> * When replacing the elliptic curve module, pleace consider, that it is</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="comment"> * implemented with two .c files:</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="comment"> *      - ecp.c</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment"> *      - ecp_curves.c</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment"> * You can replace them very much like all the other MBEDTLS__MODULE_NAME__ALT</span></div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="comment"> * macros as described above. The only difference is that you have to make sure</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment"> * that you provide functionality for both .c files.</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment">//#define MBEDTLS_ECP_ALT</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="comment">//#define MBEDTLS_MD2_PROCESS_ALT</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="comment">//#define MBEDTLS_MD4_PROCESS_ALT</span></div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="comment">//#define MBEDTLS_MD5_PROCESS_ALT</span></div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="comment">//#define MBEDTLS_RIPEMD160_PROCESS_ALT</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><span class="comment">//#define MBEDTLS_SHA1_PROCESS_ALT</span></div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span><span class="comment">//#define MBEDTLS_SHA256_PROCESS_ALT</span></div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span><span class="comment">//#define MBEDTLS_SHA512_PROCESS_ALT</span></div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span><span class="comment">//#define MBEDTLS_DES_SETKEY_ALT</span></div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span><span class="comment">//#define MBEDTLS_DES_CRYPT_ECB_ALT</span></div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="comment">//#define MBEDTLS_DES3_CRYPT_ECB_ALT</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span><span class="comment">//#define MBEDTLS_AES_SETKEY_ENC_ALT</span></div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="comment">//#define MBEDTLS_AES_SETKEY_DEC_ALT</span></div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span><span class="comment">//#define MBEDTLS_AES_ENCRYPT_ALT</span></div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span><span class="comment">//#define MBEDTLS_AES_DECRYPT_ALT</span></div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="comment">//#define MBEDTLS_ECDH_GEN_PUBLIC_ALT</span></div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="comment">//#define MBEDTLS_ECDH_COMPUTE_SHARED_ALT</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="comment">//#define MBEDTLS_ECDSA_VERIFY_ALT</span></div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="comment">//#define MBEDTLS_ECDSA_SIGN_ALT</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="comment">//#define MBEDTLS_ECDSA_GENKEY_ALT</span></div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="comment">/* Required for all the functions in this section */</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="comment">//#define MBEDTLS_ECP_INTERNAL_ALT</span></div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="comment">/* Support for Weierstrass curves with Jacobi representation */</span></div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="comment">//#define MBEDTLS_ECP_RANDOMIZE_JAC_ALT</span></div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="comment">//#define MBEDTLS_ECP_ADD_MIXED_ALT</span></div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span><span class="comment">//#define MBEDTLS_ECP_DOUBLE_JAC_ALT</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="comment">//#define MBEDTLS_ECP_NORMALIZE_JAC_MANY_ALT</span></div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="comment">//#define MBEDTLS_ECP_NORMALIZE_JAC_ALT</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="comment">/* Support for curves with Montgomery arithmetic */</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="comment">//#define MBEDTLS_ECP_DOUBLE_ADD_MXZ_ALT</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="comment">//#define MBEDTLS_ECP_RANDOMIZE_MXZ_ALT</span></div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="comment">//#define MBEDTLS_ECP_NORMALIZE_MXZ_ALT</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="comment">//#define MBEDTLS_TEST_NULL_ENTROPY</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="comment">//#define MBEDTLS_ENTROPY_HARDWARE_ALT</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="comment">//#define MBEDTLS_AES_ROM_TABLES</span></div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="comment">//#define MBEDTLS_AES_FEWER_TABLES</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment">//#define MBEDTLS_CAMELLIA_SMALL_MEMORY</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="preprocessor">#define MBEDTLS_CIPHER_MODE_CBC</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">//#define MBEDTLS_CIPHER_MODE_CFB</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="preprocessor">#define MBEDTLS_CIPHER_MODE_CTR</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">//#define MBEDTLS_CIPHER_MODE_OFB</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="comment">//#define MBEDTLS_CIPHER_MODE_XTS</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="comment">//#define MBEDTLS_CIPHER_NULL_CIPHER</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span><span class="preprocessor">#define MBEDTLS_CIPHER_PADDING_PKCS7</span></div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="preprocessor">#define MBEDTLS_CIPHER_PADDING_ONE_AND_ZEROS</span></div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span><span class="preprocessor">#define MBEDTLS_CIPHER_PADDING_ZEROS_AND_LEN</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="preprocessor">#define MBEDTLS_CIPHER_PADDING_ZEROS</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="comment">//#define MBEDTLS_ENABLE_WEAK_CIPHERSUITES</span></div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="preprocessor">#define MBEDTLS_REMOVE_ARC4_CIPHERSUITES</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="comment">//#define MBEDTLS_REMOVE_3DES_CIPHERSUITES</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP192R1_ENABLED</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP224R1_ENABLED</span></div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP256R1_ENABLED</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP384R1_ENABLED</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP521R1_ENABLED</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP192K1_ENABLED</span></div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP224K1_ENABLED</span></div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span><span class="comment">//#define MBEDTLS_ECP_DP_SECP256K1_ENABLED</span></div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="comment">//#define MBEDTLS_ECP_DP_BP256R1_ENABLED</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="comment">//#define MBEDTLS_ECP_DP_BP384R1_ENABLED</span></div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="comment">//#define MBEDTLS_ECP_DP_BP512R1_ENABLED</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="comment">//#define MBEDTLS_ECP_DP_CURVE25519_ENABLED</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span><span class="comment">//#define MBEDTLS_ECP_DP_CURVE448_ENABLED</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span> </div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="comment">//#define MBEDTLS_ECP_NIST_OPTIM</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span> </div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="comment">//#define MBEDTLS_ECP_RESTARTABLE</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span> </div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="comment">//#define MBEDTLS_ECDSA_DETERMINISTIC</span></div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span><span class="preprocessor">#define MBEDTLS_KEY_EXCHANGE_PSK_ENABLED</span></div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span> </div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED</span></div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="preprocessor">#define MBEDTLS_KEY_EXCHANGE_RSA_ENABLED</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED</span></div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span> </div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED</span></div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED</span></div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA_ENABLED</span></div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span> </div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_ECDH_RSA_ENABLED</span></div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span><span class="comment">//#define MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED</span></div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span> </div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span><span class="comment">//#define MBEDTLS_PK_PARSE_EC_EXTENDED</span></div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span> </div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span><span class="comment">//#define MBEDTLS_ERROR_STRERROR_DUMMY</span></div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span> </div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span><span class="comment">//#define MBEDTLS_GENPRIME</span></div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span> </div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span><span class="comment">//#define MBEDTLS_FS_IO</span></div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span> </div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span><span class="comment">// #define MBEDTLS_NO_DEFAULT_ENTROPY_SOURCES</span></div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span> </div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span><span class="preprocessor">#define MBEDTLS_NO_PLATFORM_ENTROPY</span></div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span><span class="comment">//#define MBEDTLS_ENTROPY_FORCE_SHA256</span></div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span> </div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span><span class="preprocessor">#define MBEDTLS_ENTROPY_NV_SEED</span></div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span> </div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span><span class="comment">//#define MBEDTLS_MEMORY_DEBUG</span></div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span> </div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span><span class="comment">//#define MBEDTLS_MEMORY_BACKTRACE</span></div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span> </div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span><span class="comment">//#define MBEDTLS_PK_RSA_ALT_SUPPORT</span></div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span> </div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span><span class="preprocessor">#define MBEDTLS_PKCS1_V15</span></div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span> </div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span><span class="preprocessor">#define MBEDTLS_PKCS1_V21</span></div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span> </div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span><span class="comment">//#define MBEDTLS_RSA_NO_CRT</span></div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span> </div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span><span class="comment">//#define MBEDTLS_SELF_TEST</span></div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span> </div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span><span class="comment">//#define MBEDTLS_SHA256_SMALLER</span></div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span> </div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span><span class="preprocessor">#define MBEDTLS_SSL_ALL_ALERT_MESSAGES</span></div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span> </div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span><span class="comment">//#define MBEDTLS_SSL_ASYNC_PRIVATE</span></div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span> </div>
+<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span><span class="comment">//#define MBEDTLS_SSL_DEBUG_ALL</span></div>
+<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span> </div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span><span class="preprocessor">#define MBEDTLS_SSL_ENCRYPT_THEN_MAC</span></div>
+<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span> </div>
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span><span class="preprocessor">#define MBEDTLS_SSL_EXTENDED_MASTER_SECRET</span></div>
+<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span> </div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span><span class="comment">//#define MBEDTLS_SSL_FALLBACK_SCSV</span></div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span> </div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span><span class="comment">//#define MBEDTLS_SSL_HW_RECORD_ACCEL</span></div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span> </div>
+<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span><span class="comment">//#define MBEDTLS_SSL_CBC_RECORD_SPLITTING</span></div>
+<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span> </div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span><span class="comment">//#define MBEDTLS_SSL_RENEGOTIATION</span></div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span> </div>
+<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span><span class="comment">//#define MBEDTLS_SSL_SRV_SUPPORT_SSLV2_CLIENT_HELLO</span></div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span> </div>
+<div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span><span class="comment">//#define MBEDTLS_SSL_SRV_RESPECT_CLIENT_PREFERENCE</span></div>
+<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span> </div>
+<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span><span class="comment">//#define MBEDTLS_SSL_MAX_FRAGMENT_LENGTH</span></div>
+<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span> </div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span><span class="preprocessor">#define MBEDTLS_SSL_PROTO_SSL3</span></div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span> </div>
+<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"> 1461</span><span class="preprocessor">#define MBEDTLS_SSL_PROTO_TLS1</span></div>
+<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span> </div>
+<div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span><span class="preprocessor">#define MBEDTLS_SSL_PROTO_TLS1_1</span></div>
+<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span> </div>
+<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span><span class="preprocessor">#define MBEDTLS_SSL_PROTO_TLS1_2</span></div>
+<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span> </div>
+<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span><span class="preprocessor">#define MBEDTLS_SSL_PROTO_DTLS</span></div>
+<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span> </div>
+<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span><span class="preprocessor">#define MBEDTLS_SSL_ALPN</span></div>
+<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span> </div>
+<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span><span class="comment">//#define MBEDTLS_SSL_DTLS_ANTI_REPLAY</span></div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span> </div>
+<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span><span class="comment">//#define MBEDTLS_SSL_DTLS_HELLO_VERIFY</span></div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span> </div>
+<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span><span class="comment">//#define MBEDTLS_SSL_DTLS_CLIENT_PORT_REUSE</span></div>
+<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span> </div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span><span class="comment">//#define MBEDTLS_SSL_DTLS_BADMAC_LIMIT</span></div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span> </div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span><span class="preprocessor">#if defined(TLS_SESSION) &amp;&amp; (TLS_SESSION == 1)</span></div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span><span class="comment">//#define MBEDTLS_SSL_SESSION_TICKETS</span></div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span> </div>
+<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span><span class="comment">//#define MBEDTLS_SSL_EXPORT_KEYS</span></div>
+<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span> </div>
+<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span><span class="preprocessor">#define MBEDTLS_SSL_SERVER_NAME_INDICATION</span></div>
+<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span> </div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span><span class="comment">//#define MBEDTLS_SSL_TRUNCATED_HMAC</span></div>
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span> </div>
+<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span><span class="comment">//#define MBEDTLS_SSL_TRUNCATED_HMAC_COMPAT</span></div>
+<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span> </div>
+<div class="line"><a id="l01650" name="l01650"></a><span class="lineno"> 1650</span><span class="preprocessor">#define MBEDTLS_THREADING_ALT</span></div>
+<div class="line"><a id="l01651" name="l01651"></a><span class="lineno"> 1651</span> </div>
+<div class="line"><a id="l01661" name="l01661"></a><span class="lineno"> 1661</span><span class="comment">//#define MBEDTLS_THREADING_PTHREAD</span></div>
+<div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span> </div>
+<div class="line"><a id="l01674" name="l01674"></a><span class="lineno"> 1674</span><span class="comment">//#define MBEDTLS_VERSION_FEATURES</span></div>
+<div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span> </div>
+<div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span><span class="comment">//#define MBEDTLS_X509_ALLOW_EXTENSIONS_NON_V3</span></div>
+<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span> </div>
+<div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span><span class="comment">//#define MBEDTLS_X509_ALLOW_UNSUPPORTED_CRITICAL_EXTENSION</span></div>
+<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span> </div>
+<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span><span class="comment">//#define MBEDTLS_X509_CHECK_KEY_USAGE</span></div>
+<div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span> </div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span><span class="comment">//#define MBEDTLS_X509_CHECK_EXTENDED_KEY_USAGE</span></div>
+<div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span> </div>
+<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span><span class="comment">//#define MBEDTLS_X509_RSASSA_PSS_SUPPORT</span></div>
+<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span> </div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span><span class="comment">//#define MBEDTLS_ZLIB_SUPPORT</span></div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span><span class="comment">/* \} name SECTION: mbed TLS feature support */</span></div>
+<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span> </div>
+<div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span><span class="comment">//#define MBEDTLS_AESNI_C</span></div>
+<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span> </div>
+<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span><span class="preprocessor">#define MBEDTLS_AES_C</span></div>
+<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span> </div>
+<div class="line"><a id="l01883" name="l01883"></a><span class="lineno"> 1883</span><span class="preprocessor">#define MBEDTLS_ARC4_C</span></div>
+<div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span> </div>
+<div class="line"><a id="l01897" name="l01897"></a><span class="lineno"> 1897</span><span class="preprocessor">#define MBEDTLS_ASN1_PARSE_C</span></div>
+<div class="line"><a id="l01898" name="l01898"></a><span class="lineno"> 1898</span> </div>
+<div class="line"><a id="l01911" name="l01911"></a><span class="lineno"> 1911</span><span class="preprocessor">#define MBEDTLS_ASN1_WRITE_C</span></div>
+<div class="line"><a id="l01912" name="l01912"></a><span class="lineno"> 1912</span> </div>
+<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span><span class="preprocessor">#define MBEDTLS_BASE64_C</span></div>
+<div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span> </div>
+<div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span><span class="preprocessor">#define MBEDTLS_BIGNUM_C</span></div>
+<div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span> </div>
+<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span><span class="comment">//#define MBEDTLS_BLOWFISH_C</span></div>
+<div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span> </div>
+<div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span><span class="comment">//#define MBEDTLS_CAMELLIA_C</span></div>
+<div class="line"><a id="l02005" name="l02005"></a><span class="lineno"> 2005</span> </div>
+<div class="line"><a id="l02056" name="l02056"></a><span class="lineno"> 2056</span><span class="comment">//#define MBEDTLS_ARIA_C</span></div>
+<div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span> </div>
+<div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span><span class="comment">//#define MBEDTLS_CCM_C</span></div>
+<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span> </div>
+<div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span><span class="preprocessor">#define MBEDTLS_CERTS_C</span></div>
+<div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span> </div>
+<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span><span class="comment">//#define MBEDTLS_CHACHA20_C</span></div>
+<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span> </div>
+<div class="line"><a id="l02102" name="l02102"></a><span class="lineno"> 2102</span><span class="comment">//#define MBEDTLS_CHACHAPOLY_C</span></div>
+<div class="line"><a id="l02103" name="l02103"></a><span class="lineno"> 2103</span> </div>
+<div class="line"><a id="l02114" name="l02114"></a><span class="lineno"> 2114</span><span class="preprocessor">#define MBEDTLS_CIPHER_C</span></div>
+<div class="line"><a id="l02115" name="l02115"></a><span class="lineno"> 2115</span> </div>
+<div class="line"><a id="l02127" name="l02127"></a><span class="lineno"> 2127</span><span class="comment">//#define MBEDTLS_CMAC_C</span></div>
+<div class="line"><a id="l02128" name="l02128"></a><span class="lineno"> 2128</span> </div>
+<div class="line"><a id="l02144" name="l02144"></a><span class="lineno"> 2144</span><span class="preprocessor">#define MBEDTLS_CTR_DRBG_C</span></div>
+<div class="line"><a id="l02145" name="l02145"></a><span class="lineno"> 2145</span> </div>
+<div class="line"><a id="l02158" name="l02158"></a><span class="lineno"> 2158</span><span class="comment">//#define MBEDTLS_DEBUG_C</span></div>
+<div class="line"><a id="l02159" name="l02159"></a><span class="lineno"> 2159</span> </div>
+<div class="line"><a id="l02187" name="l02187"></a><span class="lineno"> 2187</span><span class="comment">//#define MBEDTLS_DES_C</span></div>
+<div class="line"><a id="l02188" name="l02188"></a><span class="lineno"> 2188</span> </div>
+<div class="line"><a id="l02208" name="l02208"></a><span class="lineno"> 2208</span><span class="comment">//#define MBEDTLS_DHM_C</span></div>
+<div class="line"><a id="l02209" name="l02209"></a><span class="lineno"> 2209</span> </div>
+<div class="line"><a id="l02225" name="l02225"></a><span class="lineno"> 2225</span><span class="comment">//#define MBEDTLS_ECDH_C</span></div>
+<div class="line"><a id="l02226" name="l02226"></a><span class="lineno"> 2226</span> </div>
+<div class="line"><a id="l02240" name="l02240"></a><span class="lineno"> 2240</span><span class="comment">//#define MBEDTLS_ECDSA_C</span></div>
+<div class="line"><a id="l02241" name="l02241"></a><span class="lineno"> 2241</span> </div>
+<div class="line"><a id="l02259" name="l02259"></a><span class="lineno"> 2259</span><span class="comment">//#define MBEDTLS_ECJPAKE_C</span></div>
+<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span> </div>
+<div class="line"><a id="l02273" name="l02273"></a><span class="lineno"> 2273</span><span class="comment">//#define MBEDTLS_ECP_C</span></div>
+<div class="line"><a id="l02274" name="l02274"></a><span class="lineno"> 2274</span> </div>
+<div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span><span class="preprocessor">#define MBEDTLS_ENTROPY_C</span></div>
+<div class="line"><a id="l02298" name="l02298"></a><span class="lineno"> 2298</span><span class="comment">//#define MBEDTLS_ERROR_C</span></div>
+<div class="line"><a id="l02299" name="l02299"></a><span class="lineno"> 2299</span> </div>
+<div class="line"><a id="l02312" name="l02312"></a><span class="lineno"> 2312</span><span class="comment">//#define MBEDTLS_GCM_C</span></div>
+<div class="line"><a id="l02313" name="l02313"></a><span class="lineno"> 2313</span> </div>
+<div class="line"><a id="l02335" name="l02335"></a><span class="lineno"> 2335</span><span class="comment">//#define MBEDTLS_HAVEGE_C</span></div>
+<div class="line"><a id="l02336" name="l02336"></a><span class="lineno"> 2336</span> </div>
+<div class="line"><a id="l02350" name="l02350"></a><span class="lineno"> 2350</span><span class="preprocessor">#define MBEDTLS_HKDF_C</span></div>
+<div class="line"><a id="l02351" name="l02351"></a><span class="lineno"> 2351</span> </div>
+<div class="line"><a id="l02364" name="l02364"></a><span class="lineno"> 2364</span><span class="comment">//#define MBEDTLS_HMAC_DRBG_C</span></div>
+<div class="line"><a id="l02365" name="l02365"></a><span class="lineno"> 2365</span> </div>
+<div class="line"><a id="l02377" name="l02377"></a><span class="lineno"> 2377</span><span class="comment">//#define MBEDTLS_NIST_KW_C</span></div>
+<div class="line"><a id="l02378" name="l02378"></a><span class="lineno"> 2378</span> </div>
+<div class="line"><a id="l02389" name="l02389"></a><span class="lineno"> 2389</span><span class="preprocessor">#define MBEDTLS_MD_C</span></div>
+<div class="line"><a id="l02390" name="l02390"></a><span class="lineno"> 2390</span> </div>
+<div class="line"><a id="l02406" name="l02406"></a><span class="lineno"> 2406</span><span class="comment">//#define MBEDTLS_MD2_C</span></div>
+<div class="line"><a id="l02407" name="l02407"></a><span class="lineno"> 2407</span> </div>
+<div class="line"><a id="l02423" name="l02423"></a><span class="lineno"> 2423</span><span class="comment">//#define MBEDTLS_MD4_C</span></div>
+<div class="line"><a id="l02424" name="l02424"></a><span class="lineno"> 2424</span> </div>
+<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span><span class="preprocessor">#define MBEDTLS_MD5_C</span></div>
+<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span> </div>
+<div class="line"><a id="l02461" name="l02461"></a><span class="lineno"> 2461</span><span class="comment">//#define MBEDTLS_MEMORY_BUFFER_ALLOC_C</span></div>
+<div class="line"><a id="l02462" name="l02462"></a><span class="lineno"> 2462</span> </div>
+<div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span><span class="preprocessor">#define MBEDTLS_NET_C</span></div>
+<div class="line"><a id="l02502" name="l02502"></a><span class="lineno"> 2502</span><span class="preprocessor">#define MBEDTLS_OID_C</span></div>
+<div class="line"><a id="l02503" name="l02503"></a><span class="lineno"> 2503</span> </div>
+<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span><span class="comment">//#define MBEDTLS_PADLOCK_C</span></div>
+<div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span> </div>
+<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span><span class="preprocessor">#define MBEDTLS_PEM_PARSE_C</span></div>
+<div class="line"><a id="l02535" name="l02535"></a><span class="lineno"> 2535</span> </div>
+<div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span><span class="comment">//#define MBEDTLS_PEM_WRITE_C</span></div>
+<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span> </div>
+<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span><span class="preprocessor">#define MBEDTLS_PK_C</span></div>
+<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span> </div>
+<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span><span class="preprocessor">#define MBEDTLS_PK_PARSE_C</span></div>
+<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span> </div>
+<div class="line"><a id="l02595" name="l02595"></a><span class="lineno"> 2595</span><span class="comment">//#define MBEDTLS_PK_WRITE_C</span></div>
+<div class="line"><a id="l02596" name="l02596"></a><span class="lineno"> 2596</span> </div>
+<div class="line"><a id="l02608" name="l02608"></a><span class="lineno"> 2608</span><span class="comment">//#define MBEDTLS_PKCS5_C</span></div>
+<div class="line"><a id="l02609" name="l02609"></a><span class="lineno"> 2609</span> </div>
+<div class="line"><a id="l02623" name="l02623"></a><span class="lineno"> 2623</span><span class="comment">//#define MBEDTLS_PKCS11_C</span></div>
+<div class="line"><a id="l02624" name="l02624"></a><span class="lineno"> 2624</span> </div>
+<div class="line"><a id="l02639" name="l02639"></a><span class="lineno"> 2639</span><span class="comment">//#define MBEDTLS_PKCS12_C</span></div>
+<div class="line"><a id="l02640" name="l02640"></a><span class="lineno"> 2640</span> </div>
+<div class="line"><a id="l02659" name="l02659"></a><span class="lineno"> 2659</span><span class="preprocessor">#define MBEDTLS_PLATFORM_C</span></div>
+<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span> </div>
+<div class="line"><a id="l02669" name="l02669"></a><span class="lineno"> 2669</span><span class="comment">//#define MBEDTLS_POLY1305_C</span></div>
+<div class="line"><a id="l02670" name="l02670"></a><span class="lineno"> 2670</span> </div>
+<div class="line"><a id="l02680" name="l02680"></a><span class="lineno"> 2680</span><span class="comment">//#define MBEDTLS_RIPEMD160_C</span></div>
+<div class="line"><a id="l02681" name="l02681"></a><span class="lineno"> 2681</span> </div>
+<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span><span class="preprocessor">#define MBEDTLS_RSA_C</span></div>
+<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span> </div>
+<div class="line"><a id="l02721" name="l02721"></a><span class="lineno"> 2721</span><span class="preprocessor">#define MBEDTLS_SHA1_C</span></div>
+<div class="line"><a id="l02722" name="l02722"></a><span class="lineno"> 2722</span> </div>
+<div class="line"><a id="l02738" name="l02738"></a><span class="lineno"> 2738</span><span class="preprocessor">#define MBEDTLS_SHA256_C</span></div>
+<div class="line"><a id="l02739" name="l02739"></a><span class="lineno"> 2739</span> </div>
+<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span><span class="comment">//#define MBEDTLS_SHA512_C</span></div>
+<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span> </div>
+<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span><span class="comment">//#define MBEDTLS_SSL_CACHE_C</span></div>
+<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span> </div>
+<div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span><span class="comment">//#define MBEDTLS_SSL_COOKIE_C</span></div>
+<div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span> </div>
+<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span><span class="comment">//#define MBEDTLS_SSL_TICKET_C</span></div>
+<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span> </div>
+<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span><span class="preprocessor">#define MBEDTLS_SSL_CLI_C</span></div>
+<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span> </div>
+<div class="line"><a id="l02815" name="l02815"></a><span class="lineno"> 2815</span><span class="comment">//#define MBEDTLS_SSL_SRV_C</span></div>
+<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span><span class="comment"></span><span class="preprocessor">#define MBEDTLS_SSL_TLS_C</span></div>
+<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span> </div>
+<div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span><span class="preprocessor">#define MBEDTLS_THREADING_C</span></div>
+<div class="line"><a id="l02853" name="l02853"></a><span class="lineno"> 2853</span> </div>
+<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span><span class="comment">//#define MBEDTLS_TIMING_C</span></div>
+<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span> </div>
+<div class="line"><a id="l02886" name="l02886"></a><span class="lineno"> 2886</span><span class="comment">//#define MBEDTLS_VERSION_C</span></div>
+<div class="line"><a id="l02887" name="l02887"></a><span class="lineno"> 2887</span> </div>
+<div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span><span class="preprocessor">#define MBEDTLS_X509_USE_C</span></div>
+<div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span> </div>
+<div class="line"><a id="l02919" name="l02919"></a><span class="lineno"> 2919</span><span class="preprocessor">#define MBEDTLS_X509_CRT_PARSE_C</span></div>
+<div class="line"><a id="l02920" name="l02920"></a><span class="lineno"> 2920</span> </div>
+<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span><span class="comment">//#define MBEDTLS_X509_CRL_PARSE_C</span></div>
+<div class="line"><a id="l02934" name="l02934"></a><span class="lineno"> 2934</span> </div>
+<div class="line"><a id="l02947" name="l02947"></a><span class="lineno"> 2947</span><span class="comment">//#define MBEDTLS_X509_CSR_PARSE_C</span></div>
+<div class="line"><a id="l02948" name="l02948"></a><span class="lineno"> 2948</span> </div>
+<div class="line"><a id="l02960" name="l02960"></a><span class="lineno"> 2960</span><span class="comment">//#define MBEDTLS_X509_CREATE_C</span></div>
+<div class="line"><a id="l02961" name="l02961"></a><span class="lineno"> 2961</span> </div>
+<div class="line"><a id="l02973" name="l02973"></a><span class="lineno"> 2973</span><span class="comment">//#define MBEDTLS_X509_CRT_WRITE_C</span></div>
+<div class="line"><a id="l02974" name="l02974"></a><span class="lineno"> 2974</span> </div>
+<div class="line"><a id="l02986" name="l02986"></a><span class="lineno"> 2986</span><span class="comment">//#define MBEDTLS_X509_CSR_WRITE_C</span></div>
+<div class="line"><a id="l02987" name="l02987"></a><span class="lineno"> 2987</span> </div>
+<div class="line"><a id="l02996" name="l02996"></a><span class="lineno"> 2996</span><span class="comment">//#define MBEDTLS_XTEA_C</span></div>
+<div class="line"><a id="l02997" name="l02997"></a><span class="lineno"> 2997</span> </div>
+<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span><span class="comment">/* \} name SECTION: mbed TLS modules */</span></div>
+<div class="line"><a id="l02999" name="l02999"></a><span class="lineno"> 2999</span> </div>
+<div class="line"><a id="l03015" name="l03015"></a><span class="lineno"> 3015</span><span class="comment">/* MPI / BIGNUM options */</span></div>
+<div class="line"><a id="l03016" name="l03016"></a><span class="lineno"> 3016</span><span class="comment">//#define MBEDTLS_MPI_WINDOW_SIZE            6 /**&lt; Maximum windows size used. */</span></div>
+<div class="line"><a id="l03017" name="l03017"></a><span class="lineno"> 3017</span><span class="comment">//#define MBEDTLS_MPI_MAX_SIZE            1024 /**&lt; Maximum number of bytes for usable MPIs. */</span></div>
+<div class="line"><a id="l03018" name="l03018"></a><span class="lineno"> 3018</span> </div>
+<div class="line"><a id="l03019" name="l03019"></a><span class="lineno"> 3019</span><span class="comment">/* CTR_DRBG options */</span></div>
+<div class="line"><a id="l03020" name="l03020"></a><span class="lineno"> 3020</span><span class="comment">//#define MBEDTLS_CTR_DRBG_ENTROPY_LEN               48 /**&lt; Amount of entropy used per seed by default (48 with SHA-512, 32 with SHA-256) */</span></div>
+<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span><span class="comment">//#define MBEDTLS_CTR_DRBG_RESEED_INTERVAL        10000 /**&lt; Interval before reseed is performed by default */</span></div>
+<div class="line"><a id="l03022" name="l03022"></a><span class="lineno"> 3022</span><span class="comment">//#define MBEDTLS_CTR_DRBG_MAX_INPUT                256 /**&lt; Maximum number of additional input bytes */</span></div>
+<div class="line"><a id="l03023" name="l03023"></a><span class="lineno"> 3023</span><span class="comment">//#define MBEDTLS_CTR_DRBG_MAX_REQUEST             1024 /**&lt; Maximum number of requested bytes per call */</span></div>
+<div class="line"><a id="l03024" name="l03024"></a><span class="lineno"> 3024</span><span class="comment">//#define MBEDTLS_CTR_DRBG_MAX_SEED_INPUT           384 /**&lt; Maximum size of (re)seed buffer */</span></div>
+<div class="line"><a id="l03025" name="l03025"></a><span class="lineno"> 3025</span><span class="comment">//#define MBEDTLS_CTR_DRBG_USE_128_BIT_KEY              /**&lt; Use 128-bit key for CTR_DRBG - may reduce security (see ctr_drbg.h) */</span></div>
+<div class="line"><a id="l03026" name="l03026"></a><span class="lineno"> 3026</span> </div>
+<div class="line"><a id="l03027" name="l03027"></a><span class="lineno"> 3027</span><span class="comment">/* HMAC_DRBG options */</span></div>
+<div class="line"><a id="l03028" name="l03028"></a><span class="lineno"> 3028</span><span class="comment">//#define MBEDTLS_HMAC_DRBG_RESEED_INTERVAL   10000 /**&lt; Interval before reseed is performed by default */</span></div>
+<div class="line"><a id="l03029" name="l03029"></a><span class="lineno"> 3029</span><span class="comment">//#define MBEDTLS_HMAC_DRBG_MAX_INPUT           256 /**&lt; Maximum number of additional input bytes */</span></div>
+<div class="line"><a id="l03030" name="l03030"></a><span class="lineno"> 3030</span><span class="comment">//#define MBEDTLS_HMAC_DRBG_MAX_REQUEST        1024 /**&lt; Maximum number of requested bytes per call */</span></div>
+<div class="line"><a id="l03031" name="l03031"></a><span class="lineno"> 3031</span><span class="comment">//#define MBEDTLS_HMAC_DRBG_MAX_SEED_INPUT      384 /**&lt; Maximum size of (re)seed buffer */</span></div>
+<div class="line"><a id="l03032" name="l03032"></a><span class="lineno"> 3032</span> </div>
+<div class="line"><a id="l03033" name="l03033"></a><span class="lineno"> 3033</span><span class="comment">/* ECP options */</span></div>
+<div class="line"><a id="l03034" name="l03034"></a><span class="lineno"> 3034</span><span class="comment">//#define MBEDTLS_ECP_MAX_BITS             521 /**&lt; Maximum bit size of groups */</span></div>
+<div class="line"><a id="l03035" name="l03035"></a><span class="lineno"> 3035</span><span class="comment">//#define MBEDTLS_ECP_WINDOW_SIZE            6 /**&lt; Maximum window size used */</span></div>
+<div class="line"><a id="l03036" name="l03036"></a><span class="lineno"> 3036</span><span class="comment">//#define MBEDTLS_ECP_FIXED_POINT_OPTIM      1 /**&lt; Enable fixed-point speed-up */</span></div>
+<div class="line"><a id="l03037" name="l03037"></a><span class="lineno"> 3037</span> </div>
+<div class="line"><a id="l03038" name="l03038"></a><span class="lineno"> 3038</span><span class="comment">/* Entropy options */</span></div>
+<div class="line"><a id="l03039" name="l03039"></a><span class="lineno"> 3039</span><span class="comment">//#define MBEDTLS_ENTROPY_MAX_SOURCES                20 /**&lt; Maximum number of sources supported */</span></div>
+<div class="line"><a id="l03040" name="l03040"></a><span class="lineno"> 3040</span><span class="comment">//#define MBEDTLS_ENTROPY_MAX_GATHER                128 /**&lt; Maximum amount requested from entropy sources */</span></div>
+<div class="line"><a id="l03041" name="l03041"></a><span class="lineno"> 3041</span><span class="comment">//#define MBEDTLS_ENTROPY_MIN_HARDWARE               32 /**&lt; Default minimum number of bytes required for the hardware entropy source mbedtls_hardware_poll() before entropy is released */</span></div>
+<div class="line"><a id="l03042" name="l03042"></a><span class="lineno"> 3042</span> </div>
+<div class="line"><a id="l03043" name="l03043"></a><span class="lineno"> 3043</span><span class="comment">/* Memory buffer allocator options */</span></div>
+<div class="line"><a id="l03044" name="l03044"></a><span class="lineno"> 3044</span><span class="comment">//#define MBEDTLS_MEMORY_ALIGN_MULTIPLE      4 /**&lt; Align on multiples of this value */</span></div>
+<div class="line"><a id="l03045" name="l03045"></a><span class="lineno"> 3045</span> </div>
+<div class="line"><a id="l03046" name="l03046"></a><span class="lineno"> 3046</span><span class="comment">/* Platform options */</span></div>
+<div class="line"><a id="l03047" name="l03047"></a><span class="lineno"> 3047</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_MEM_HDR   &lt;stdlib.h&gt; /**&lt; Header to include if MBEDTLS_PLATFORM_NO_STD_FUNCTIONS is defined. Don&#39;t define if no header is needed. */</span></div>
+<div class="line"><a id="l03048" name="l03048"></a><span class="lineno"> 3048</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_CALLOC        calloc /**&lt; Default allocator to use, can be undefined */</span></div>
+<div class="line"><a id="l03049" name="l03049"></a><span class="lineno"> 3049</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_FREE            free /**&lt; Default free to use, can be undefined */</span></div>
+<div class="line"><a id="l03050" name="l03050"></a><span class="lineno"> 3050</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_EXIT            exit /**&lt; Default exit to use, can be undefined */</span></div>
+<div class="line"><a id="l03051" name="l03051"></a><span class="lineno"> 3051</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_TIME            time /**&lt; Default time to use, can be undefined. MBEDTLS_HAVE_TIME must be enabled */</span></div>
+<div class="line"><a id="l03052" name="l03052"></a><span class="lineno"> 3052</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_FPRINTF      fprintf /**&lt; Default fprintf to use, can be undefined */</span></div>
+<div class="line"><a id="l03053" name="l03053"></a><span class="lineno"> 3053</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_PRINTF        printf /**&lt; Default printf to use, can be undefined */</span></div>
+<div class="line"><a id="l03054" name="l03054"></a><span class="lineno"> 3054</span><span class="comment">/* Note: your snprintf must correclty zero-terminate the buffer! */</span></div>
+<div class="line"><a id="l03055" name="l03055"></a><span class="lineno"> 3055</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_SNPRINTF    snprintf /**&lt; Default snprintf to use, can be undefined */</span></div>
+<div class="line"><a id="l03056" name="l03056"></a><span class="lineno"> 3056</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_EXIT_SUCCESS       0 /**&lt; Default exit value to use, can be undefined */</span></div>
+<div class="line"><a id="l03057" name="l03057"></a><span class="lineno"> 3057</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_EXIT_FAILURE       1 /**&lt; Default exit value to use, can be undefined */</span></div>
+<div class="line"><a id="l03058" name="l03058"></a><span class="lineno"> 3058</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_NV_SEED_READ   mbedtls_platform_std_nv_seed_read /**&lt; Default nv_seed_read function to use, can be undefined */</span></div>
+<div class="line"><a id="l03059" name="l03059"></a><span class="lineno"> 3059</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_NV_SEED_WRITE  mbedtls_platform_std_nv_seed_write /**&lt; Default nv_seed_write function to use, can be undefined */</span></div>
+<div class="line"><a id="l03060" name="l03060"></a><span class="lineno"> 3060</span><span class="comment">//#define MBEDTLS_PLATFORM_STD_NV_SEED_FILE  &quot;seedfile&quot; /**&lt; Seed file to read/write with default implementation */</span></div>
+<div class="line"><a id="l03061" name="l03061"></a><span class="lineno"> 3061</span> </div>
+<div class="line"><a id="l03062" name="l03062"></a><span class="lineno"> 3062</span><span class="comment">/* To Use Function Macros MBEDTLS_PLATFORM_C must be enabled */</span></div>
+<div class="line"><a id="l03063" name="l03063"></a><span class="lineno"> 3063</span><span class="comment">/* MBEDTLS_PLATFORM_XXX_MACRO and MBEDTLS_PLATFORM_XXX_ALT cannot both be defined */</span></div>
+<div class="line"><a id="l03064" name="l03064"></a><span class="lineno"> 3064</span><span class="comment">//#define MBEDTLS_PLATFORM_CALLOC_MACRO        calloc /**&lt; Default allocator macro to use, can be undefined */</span></div>
+<div class="line"><a id="l03065" name="l03065"></a><span class="lineno"> 3065</span><span class="comment">//#define MBEDTLS_PLATFORM_FREE_MACRO            free /**&lt; Default free macro to use, can be undefined */</span></div>
+<div class="line"><a id="l03066" name="l03066"></a><span class="lineno"> 3066</span><span class="comment">//#define MBEDTLS_PLATFORM_EXIT_MACRO            exit /**&lt; Default exit macro to use, can be undefined */</span></div>
+<div class="line"><a id="l03067" name="l03067"></a><span class="lineno"> 3067</span><span class="comment">//#define MBEDTLS_PLATFORM_TIME_MACRO            time /**&lt; Default time macro to use, can be undefined. MBEDTLS_HAVE_TIME must be enabled */</span></div>
+<div class="line"><a id="l03068" name="l03068"></a><span class="lineno"> 3068</span><span class="comment">//#define MBEDTLS_PLATFORM_TIME_TYPE_MACRO       time_t /**&lt; Default time macro to use, can be undefined. MBEDTLS_HAVE_TIME must be enabled */</span></div>
+<div class="line"><a id="l03069" name="l03069"></a><span class="lineno"> 3069</span><span class="comment">//#define MBEDTLS_PLATFORM_FPRINTF_MACRO      fprintf /**&lt; Default fprintf macro to use, can be undefined */</span></div>
+<div class="line"><a id="l03070" name="l03070"></a><span class="lineno"> 3070</span><span class="comment">//#define MBEDTLS_PLATFORM_PRINTF_MACRO        printf /**&lt; Default printf macro to use, can be undefined */</span></div>
+<div class="line"><a id="l03071" name="l03071"></a><span class="lineno"> 3071</span><span class="comment">/* Note: your snprintf must correclty zero-terminate the buffer! */</span></div>
+<div class="line"><a id="l03072" name="l03072"></a><span class="lineno"> 3072</span><span class="comment">//#define MBEDTLS_PLATFORM_SNPRINTF_MACRO    snprintf /**&lt; Default snprintf macro to use, can be undefined */</span></div>
+<div class="line"><a id="l03073" name="l03073"></a><span class="lineno"> 3073</span><span class="comment">//#define MBEDTLS_PLATFORM_NV_SEED_READ_MACRO   __tuya_tls_nv_seed_read /**&lt; Default nv_seed_read function to use, can be undefined */</span></div>
+<div class="line"><a id="l03074" name="l03074"></a><span class="lineno"> 3074</span><span class="comment">//#define MBEDTLS_PLATFORM_NV_SEED_WRITE_MACRO  __tuya_tls_nv_seed_write /**&lt; Default nv_seed_write function to use, can be undefined */</span></div>
+<div class="line"><a id="l03075" name="l03075"></a><span class="lineno"> 3075</span> </div>
+<div class="line"><a id="l03104" name="l03104"></a><span class="lineno"> 3104</span><span class="comment">//#define MBEDTLS_PARAM_FAILED( cond )               assert( cond )</span></div>
+<div class="line"><a id="l03105" name="l03105"></a><span class="lineno"> 3105</span> </div>
+<div class="line"><a id="l03106" name="l03106"></a><span class="lineno"> 3106</span><span class="comment">/* SSL Cache options */</span></div>
+<div class="line"><a id="l03107" name="l03107"></a><span class="lineno"> 3107</span><span class="comment">//#define MBEDTLS_SSL_CACHE_DEFAULT_TIMEOUT       86400 /**&lt; 1 day  */</span></div>
+<div class="line"><a id="l03108" name="l03108"></a><span class="lineno"> 3108</span><span class="comment">//#define MBEDTLS_SSL_CACHE_DEFAULT_MAX_ENTRIES      50 /**&lt; Maximum entries in cache */</span></div>
+<div class="line"><a id="l03109" name="l03109"></a><span class="lineno"> 3109</span> </div>
+<div class="line"><a id="l03110" name="l03110"></a><span class="lineno"> 3110</span><span class="comment">/* SSL options */</span></div>
+<div class="line"><a id="l03111" name="l03111"></a><span class="lineno"> 3111</span> </div>
+<div class="line"><a id="l03136" name="l03136"></a><span class="lineno"> 3136</span><span class="preprocessor">#if OPERATING_SYSTEM &lt;= SYSTEM_SMALL_MEMORY_END</span></div>
+<div class="line"><a id="l03137" name="l03137"></a><span class="lineno"> 3137</span><span class="preprocessor">#define MBEDTLS_SSL_MAX_CONTENT_LEN             (6*1024) </span></div>
+<div class="line"><a id="l03138" name="l03138"></a><span class="lineno"> 3138</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l03139" name="l03139"></a><span class="lineno"> 3139</span><span class="preprocessor">#define MBEDTLS_SSL_MAX_CONTENT_LEN             16384</span></div>
+<div class="line"><a id="l03140" name="l03140"></a><span class="lineno"> 3140</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l03164" name="l03164"></a><span class="lineno"> 3164</span><span class="comment">//#define MBEDTLS_SSL_IN_CONTENT_LEN              16384</span></div>
+<div class="line"><a id="l03165" name="l03165"></a><span class="lineno"> 3165</span><span class="preprocessor">#if defined(TUYA_TLS_DYNAMIC_MEMORY_ALLOCATION)</span></div>
+<div class="line"><a id="l03166" name="l03166"></a><span class="lineno"> 3166</span><span class="comment">//  #define MBEDTLS_SSL_IN_CONTENT_LEN (ssl-&gt;in_content_len)</span></div>
+<div class="line"><a id="l03167" name="l03167"></a><span class="lineno"> 3167</span><span class="comment">//  #define MBEDTLS_SSL_OUT_CONTENT_LEN (ssl-&gt;out_content_len)</span></div>
+<div class="line"><a id="l03168" name="l03168"></a><span class="lineno"> 3168</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l03169" name="l03169"></a><span class="lineno"> 3169</span> </div>
+<div class="line"><a id="l03192" name="l03192"></a><span class="lineno"> 3192</span><span class="comment">//#define MBEDTLS_SSL_OUT_CONTENT_LEN             16384</span></div>
+<div class="line"><a id="l03193" name="l03193"></a><span class="lineno"> 3193</span> </div>
+<div class="line"><a id="l03209" name="l03209"></a><span class="lineno"> 3209</span><span class="comment">//#define MBEDTLS_SSL_DTLS_MAX_BUFFERING             32768</span></div>
+<div class="line"><a id="l03210" name="l03210"></a><span class="lineno"> 3210</span> </div>
+<div class="line"><a id="l03211" name="l03211"></a><span class="lineno"> 3211</span><span class="comment">//#define MBEDTLS_SSL_DEFAULT_TICKET_LIFETIME     86400 /**&lt; Lifetime of session tickets (if enabled) */</span></div>
+<div class="line"><a id="l03212" name="l03212"></a><span class="lineno"> 3212</span><span class="comment">//#define MBEDTLS_PSK_MAX_LEN               32 /**&lt; Max size of TLS pre-shared keys, in bytes (default 256 bits) */</span></div>
+<div class="line"><a id="l03213" name="l03213"></a><span class="lineno"> 3213</span><span class="comment">//#define MBEDTLS_SSL_COOKIE_TIMEOUT        60 /**&lt; Default expiration delay of DTLS cookies, in seconds if HAVE_TIME, or in number of cookies issued */</span></div>
+<div class="line"><a id="l03214" name="l03214"></a><span class="lineno"> 3214</span> </div>
+<div class="line"><a id="l03227" name="l03227"></a><span class="lineno"> 3227</span><span class="comment">//#define MBEDTLS_SSL_CIPHERSUITES MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</span></div>
+<div class="line"><a id="l03228" name="l03228"></a><span class="lineno"> 3228</span> </div>
+<div class="line"><a id="l03229" name="l03229"></a><span class="lineno"> 3229</span><span class="comment">/* X509 options */</span></div>
+<div class="line"><a id="l03230" name="l03230"></a><span class="lineno"> 3230</span><span class="comment">//#define MBEDTLS_X509_MAX_INTERMEDIATE_CA   8   /**&lt; Maximum number of intermediate CAs in a verification chain. */</span></div>
+<div class="line"><a id="l03231" name="l03231"></a><span class="lineno"> 3231</span><span class="comment">//#define MBEDTLS_X509_MAX_FILE_PATH_LEN     512 /**&lt; Maximum length of a path/filename string in bytes including the null terminator character (&#39;\0&#39;). */</span></div>
+<div class="line"><a id="l03232" name="l03232"></a><span class="lineno"> 3232</span> </div>
+<div class="line"><a id="l03245" name="l03245"></a><span class="lineno"> 3245</span><span class="comment">// #define MBEDTLS_TLS_DEFAULT_ALLOW_SHA1_IN_CERTIFICATES</span></div>
+<div class="line"><a id="l03246" name="l03246"></a><span class="lineno"> 3246</span> </div>
+<div class="line"><a id="l03262" name="l03262"></a><span class="lineno"> 3262</span><span class="comment">//#define MBEDTLS_TLS_DEFAULT_ALLOW_SHA1_IN_KEY_EXCHANGE</span></div>
+<div class="line"><a id="l03263" name="l03263"></a><span class="lineno"> 3263</span> </div>
+<div class="line"><a id="l03282" name="l03282"></a><span class="lineno"> 3282</span><span class="comment">//#define MBEDTLS_PLATFORM_ZEROIZE_ALT</span></div>
+<div class="line"><a id="l03283" name="l03283"></a><span class="lineno"> 3283</span> </div>
+<div class="line"><a id="l03301" name="l03301"></a><span class="lineno"> 3301</span><span class="comment">//#define MBEDTLS_PLATFORM_GMTIME_R_ALT</span></div>
+<div class="line"><a id="l03302" name="l03302"></a><span class="lineno"> 3302</span> </div>
+<div class="line"><a id="l03303" name="l03303"></a><span class="lineno"> 3303</span><span class="comment">/* \} name SECTION: Customisation configuration options */</span></div>
+<div class="line"><a id="l03304" name="l03304"></a><span class="lineno"> 3304</span> </div>
+<div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span><span class="comment">/* Target and application specific configurations */</span></div>
+<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span><span class="comment">//#define YOTTA_CFG_MBEDTLS_TARGET_CONFIG_FILE &quot;mbedtls/target_config.h&quot;</span></div>
+<div class="line"><a id="l03307" name="l03307"></a><span class="lineno"> 3307</span> </div>
+<div class="line"><a id="l03308" name="l03308"></a><span class="lineno"> 3308</span><span class="preprocessor">#if defined(TARGET_LIKE_MBED) &amp;&amp; defined(YOTTA_CFG_MBEDTLS_TARGET_CONFIG_FILE)</span></div>
+<div class="line"><a id="l03309" name="l03309"></a><span class="lineno"> 3309</span><span class="preprocessor">#include YOTTA_CFG_MBEDTLS_TARGET_CONFIG_FILE</span></div>
+<div class="line"><a id="l03310" name="l03310"></a><span class="lineno"> 3310</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l03311" name="l03311"></a><span class="lineno"> 3311</span> </div>
+<div class="line"><a id="l03312" name="l03312"></a><span class="lineno"> 3312</span><span class="comment">/*</span></div>
+<div class="line"><a id="l03313" name="l03313"></a><span class="lineno"> 3313</span><span class="comment"> * Allow user to override any previous default.</span></div>
+<div class="line"><a id="l03314" name="l03314"></a><span class="lineno"> 3314</span><span class="comment"> *</span></div>
+<div class="line"><a id="l03315" name="l03315"></a><span class="lineno"> 3315</span><span class="comment"> * Use two macro names for that, as:</span></div>
+<div class="line"><a id="l03316" name="l03316"></a><span class="lineno"> 3316</span><span class="comment"> * - with yotta the prefix YOTTA_CFG_ is forced</span></div>
+<div class="line"><a id="l03317" name="l03317"></a><span class="lineno"> 3317</span><span class="comment"> * - without yotta is looks weird to have a YOTTA prefix.</span></div>
+<div class="line"><a id="l03318" name="l03318"></a><span class="lineno"> 3318</span><span class="comment"> */</span></div>
+<div class="line"><a id="l03319" name="l03319"></a><span class="lineno"> 3319</span><span class="preprocessor">#if defined(YOTTA_CFG_MBEDTLS_USER_CONFIG_FILE)</span></div>
+<div class="line"><a id="l03320" name="l03320"></a><span class="lineno"> 3320</span><span class="preprocessor">#include YOTTA_CFG_MBEDTLS_USER_CONFIG_FILE</span></div>
+<div class="line"><a id="l03321" name="l03321"></a><span class="lineno"> 3321</span><span class="preprocessor">#elif defined(MBEDTLS_USER_CONFIG_FILE)</span></div>
+<div class="line"><a id="l03322" name="l03322"></a><span class="lineno"> 3322</span><span class="preprocessor">#include MBEDTLS_USER_CONFIG_FILE</span></div>
+<div class="line"><a id="l03323" name="l03323"></a><span class="lineno"> 3323</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l03324" name="l03324"></a><span class="lineno"> 3324</span> </div>
+<div class="line"><a id="l03325" name="l03325"></a><span class="lineno"> 3325</span><span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_CONFIG_H_TY_PSK_ONLY_NB */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

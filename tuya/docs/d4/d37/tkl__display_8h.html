@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/display/include/tkl_display.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_bb576c34de85c123beeba8be951a0bd9.html">display</a></li><li class="navelem"><a class="el" href="../../dir_970f189050e9baad66b7b644419d2688.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_display.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - display  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_display.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/daa/tkl__display_8h__incl.png" border="0" usemap="#ainclude_2adapter_2display_2include_2tkl__display_8h" alt=""/></div>
+<map name="ainclude_2adapter_2display_2include_2tkl__display_8h" id="ainclude_2adapter_2display_2include_2tkl__display_8h">
+<area shape="rect" title="Common process &#45; display" alt="" coords="355,5,530,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d4/d37/tkl__display_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aaaa86d59af69414ad09e16ca946fb697"><td class="memItemLeft" align="right" valign="top"><a id="aaaa86d59af69414ad09e16ca946fb697" name="aaaa86d59af69414ad09e16ca946fb697"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_DISP_HOTPLUG_CB</b>) (TKL_DISP_PORT_E port, BOOL_T connected)</td></tr>
+<tr class="separator:aaaa86d59af69414ad09e16ca946fb697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4508814b7dea32d18957239cf0e953"><td class="memItemLeft" align="right" valign="top"><a id="aed4508814b7dea32d18957239cf0e953" name="aed4508814b7dea32d18957239cf0e953"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_DISP_VSYNC_CB</b>) (TKL_DISP_PORT_E port, INT64_T timestamp)</td></tr>
+<tr class="separator:aed4508814b7dea32d18957239cf0e953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a9850836232762c2befe9064b7aa1f3eb"><td class="memItemLeft" align="right" valign="top"><a id="a9850836232762c2befe9064b7aa1f3eb" name="a9850836232762c2befe9064b7aa1f3eb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_DISP_PIXEL_FMT_E</b> { <br />
+&#160;&#160;<b>TKL_DISP_PIXEL_FMT_ABGR</b> = 0
+, <b>TKL_DISP_PIXEL_FMT_RGBX</b>
+, <b>TKL_DISP_PIXEL_FMT_RGBA</b>
+, <b>TKL_DISP_PIXEL_FMT_ARGB</b>
+, <br />
+&#160;&#160;<b>TKL_DISP_PIXEL_FMT_RGB565</b>
+<br />
+ }</td></tr>
+<tr class="separator:a9850836232762c2befe9064b7aa1f3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdbc26a617eee195460466dabca77c0"><td class="memItemLeft" align="right" valign="top"><a id="a1bdbc26a617eee195460466dabca77c0" name="a1bdbc26a617eee195460466dabca77c0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_DISP_PORT_E</b> { <br />
+&#160;&#160;<b>TKL_DISP_LCD</b> = 0
+, <b>TKL_DISP_VGA</b>
+, <b>TKL_DISP_HDMI</b>
+, <b>TKL_DISP_DP</b>
+, <br />
+&#160;&#160;<b>TKL_DISP_NUM</b>
+<br />
+ }</td></tr>
+<tr class="separator:a1bdbc26a617eee195460466dabca77c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa1fa51db34a9a66c4b3fee2ccc84f5"><td class="memItemLeft" align="right" valign="top"><a id="a0fa1fa51db34a9a66c4b3fee2ccc84f5" name="a0fa1fa51db34a9a66c4b3fee2ccc84f5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_DISP_POWER_MODE_E</b> { <b>TKL_DISP_POWER_OFF</b> = 0
+, <b>TKL_DISP_POWER_ON</b>
+, <b>TKL_DISP_POWER_NUM</b>
+ }</td></tr>
+<tr class="separator:a0fa1fa51db34a9a66c4b3fee2ccc84f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453a8da94b894016f5caa3d84ca280a4"><td class="memItemLeft" align="right" valign="top"><a id="a453a8da94b894016f5caa3d84ca280a4" name="a453a8da94b894016f5caa3d84ca280a4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_DISP_ROTATION_E</b> { <b>TKL_DISP_ROTATION_0</b> = 0
+, <b>TKL_DISP_ROTATION_90</b>
+, <b>TKL_DISP_ROTATION_180</b>
+, <b>TKL_DISP_ROTATION_270</b>
+ }</td></tr>
+<tr class="separator:a453a8da94b894016f5caa3d84ca280a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a068d4c6df9117e45644a2de8a1b8f906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a068d4c6df9117e45644a2de8a1b8f906">tkl_disp_alloc_framebuffer</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device)</td></tr>
+<tr class="memdesc:a068d4c6df9117e45644a2de8a1b8f906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc mapped framebuffer or layer  <a href="../../d4/d37/tkl__display_8h.html#a068d4c6df9117e45644a2de8a1b8f906">更多...</a><br /></td></tr>
+<tr class="separator:a068d4c6df9117e45644a2de8a1b8f906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12f90e274972c638f43fb9c815beed5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#ad12f90e274972c638f43fb9c815beed5">tkl_disp_blit</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *buf, <a class="el" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> *rect)</td></tr>
+<tr class="separator:ad12f90e274972c638f43fb9c815beed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775b44a7ef6fb06539636758a1756158"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a775b44a7ef6fb06539636758a1756158">tkl_disp_deinit</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device)</td></tr>
+<tr class="memdesc:a775b44a7ef6fb06539636758a1756158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release display device  <a href="../../d4/d37/tkl__display_8h.html#a775b44a7ef6fb06539636758a1756158">更多...</a><br /></td></tr>
+<tr class="separator:a775b44a7ef6fb06539636758a1756158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e6ef2d0f8403eeede51a6af23c2a4d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a08e6ef2d0f8403eeede51a6af23c2a4d">tkl_disp_fill</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> *rect, <a class="el" href="../../db/d09/unionTKL__DISP__COLOR__U.html">TKL_DISP_COLOR_U</a> color)</td></tr>
+<tr class="memdesc:a08e6ef2d0f8403eeede51a6af23c2a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill destination area with color  <a href="../../d4/d37/tkl__display_8h.html#a08e6ef2d0f8403eeede51a6af23c2a4d">更多...</a><br /></td></tr>
+<tr class="separator:a08e6ef2d0f8403eeede51a6af23c2a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c8eb5d2d47220dedf851736f934655"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#ad1c8eb5d2d47220dedf851736f934655">tkl_disp_flush</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device)</td></tr>
+<tr class="memdesc:ad1c8eb5d2d47220dedf851736f934655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush buffers to display device  <a href="../../d4/d37/tkl__display_8h.html#ad1c8eb5d2d47220dedf851736f934655">更多...</a><br /></td></tr>
+<tr class="separator:ad1c8eb5d2d47220dedf851736f934655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7112cdbc85097fe4397614fcc5f1093c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a7112cdbc85097fe4397614fcc5f1093c">tkl_disp_free_capabilities</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *cfg)</td></tr>
+<tr class="memdesc:a7112cdbc85097fe4397614fcc5f1093c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free capabilities get by <a class="el" href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831" title="Get capabilities supported by display(For external display device. e.g. HDMI/VGA)">tkl_disp_get_capabilities()</a>  <a href="../../d4/d37/tkl__display_8h.html#a7112cdbc85097fe4397614fcc5f1093c">更多...</a><br /></td></tr>
+<tr class="separator:a7112cdbc85097fe4397614fcc5f1093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e12fc2a65238e65a13b22235d4f838c"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a8e12fc2a65238e65a13b22235d4f838c">tkl_disp_free_framebuffer</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *buf)</td></tr>
+<tr class="memdesc:a8e12fc2a65238e65a13b22235d4f838c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free mapped framebuffer or layer  <a href="../../d4/d37/tkl__display_8h.html#a8e12fc2a65238e65a13b22235d4f838c">更多...</a><br /></td></tr>
+<tr class="separator:a8e12fc2a65238e65a13b22235d4f838c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0aab76151887d17566ff2c4d2ad4b5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a1c0aab76151887d17566ff2c4d2ad4b5">tkl_disp_get_brightness</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, INT_T *brightness)</td></tr>
+<tr class="memdesc:a1c0aab76151887d17566ff2c4d2ad4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get display brightness(Backlight or HSB)  <a href="../../d4/d37/tkl__display_8h.html#a1c0aab76151887d17566ff2c4d2ad4b5">更多...</a><br /></td></tr>
+<tr class="separator:a1c0aab76151887d17566ff2c4d2ad4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6087fa6c58643a528ed0cafad357a831"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831">tkl_disp_get_capabilities</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> **cfg)</td></tr>
+<tr class="memdesc:a6087fa6c58643a528ed0cafad357a831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get capabilities supported by display(For external display device. e.g. HDMI/VGA)  <a href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831">更多...</a><br /></td></tr>
+<tr class="separator:a6087fa6c58643a528ed0cafad357a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792caef7c94d3f10a0c466747a3687bf"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a792caef7c94d3f10a0c466747a3687bf">tkl_disp_get_info</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *info)</td></tr>
+<tr class="memdesc:a792caef7c94d3f10a0c466747a3687bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get display info  <a href="../../d4/d37/tkl__display_8h.html#a792caef7c94d3f10a0c466747a3687bf">更多...</a><br /></td></tr>
+<tr class="separator:a792caef7c94d3f10a0c466747a3687bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0357643554a4d7ca0297cb7f77c9825f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a0357643554a4d7ca0297cb7f77c9825f">tkl_disp_get_power_mode</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, TKL_DISP_POWER_MODE_E *power_mode)</td></tr>
+<tr class="memdesc:a0357643554a4d7ca0297cb7f77c9825f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the display screen's power state  <a href="../../d4/d37/tkl__display_8h.html#a0357643554a4d7ca0297cb7f77c9825f">更多...</a><br /></td></tr>
+<tr class="separator:a0357643554a4d7ca0297cb7f77c9825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d9a645ad489615b09c51e98d6f2aa6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a54d9a645ad489615b09c51e98d6f2aa6">tkl_disp_init</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../db/d9a/structTKL__DISP__EVENT__HANDLER__S.html">TKL_DISP_EVENT_HANDLER_S</a> *event_handler)</td></tr>
+<tr class="memdesc:a54d9a645ad489615b09c51e98d6f2aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init and config display device  <a href="../../d4/d37/tkl__display_8h.html#a54d9a645ad489615b09c51e98d6f2aa6">更多...</a><br /></td></tr>
+<tr class="separator:a54d9a645ad489615b09c51e98d6f2aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34a9646489730e5f5e184715f1b1e80"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#ac34a9646489730e5f5e184715f1b1e80">tkl_disp_set_brightness</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, INT_T brightness)</td></tr>
+<tr class="memdesc:ac34a9646489730e5f5e184715f1b1e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display brightness(Backlight or HSB)  <a href="../../d4/d37/tkl__display_8h.html#ac34a9646489730e5f5e184715f1b1e80">更多...</a><br /></td></tr>
+<tr class="separator:ac34a9646489730e5f5e184715f1b1e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3151d4a39b8d8527fe2b8bb1fcda8696"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a3151d4a39b8d8527fe2b8bb1fcda8696">tkl_disp_set_info</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, <a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *info)</td></tr>
+<tr class="memdesc:a3151d4a39b8d8527fe2b8bb1fcda8696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display info  <a href="../../d4/d37/tkl__display_8h.html#a3151d4a39b8d8527fe2b8bb1fcda8696">更多...</a><br /></td></tr>
+<tr class="separator:a3151d4a39b8d8527fe2b8bb1fcda8696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67dc354568301340071b5d514daf08a4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#a67dc354568301340071b5d514daf08a4">tkl_disp_set_power_mode</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device, TKL_DISP_POWER_MODE_E power_mode)</td></tr>
+<tr class="memdesc:a67dc354568301340071b5d514daf08a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the display screen's power state  <a href="../../d4/d37/tkl__display_8h.html#a67dc354568301340071b5d514daf08a4">更多...</a><br /></td></tr>
+<tr class="separator:a67dc354568301340071b5d514daf08a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19340c452c43460e157359cc205016a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d37/tkl__display_8h.html#ae19340c452c43460e157359cc205016a">tkl_disp_wait_vsync</a> (<a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *display_device)</td></tr>
+<tr class="memdesc:ae19340c452c43460e157359cc205016a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vsync signal  <a href="../../d4/d37/tkl__display_8h.html#ae19340c452c43460e157359cc205016a">更多...</a><br /></td></tr>
+<tr class="separator:ae19340c452c43460e157359cc205016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - display </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-07-26</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2019-2021 Tuya Inc. All Rights Reserved.</dd></dl>
+<ol type="1">
+<li>支持图像的位块传输。</li>
+<li>支持色彩填充。</li>
+<li>需要支持HDMI/VGA/DP等外接设备的热插拔通知。</li>
+<li>需要支持HDMI/VGA/DP等外接设备格式/分辨率/刷新率的查询和设置</li>
+<li>需要支持帧同步接口，避免图像刷新的撕裂。</li>
+<li>需要支持多个图层。</li>
+<li>需要提供一个类似gralloc的内存管理接口，用于将内核framebuffer或dma-buf直接映射给应用使用，减少拷贝操作 </li>
+</ol>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a068d4c6df9117e45644a2de8a1b8f906" name="a068d4c6df9117e45644a2de8a1b8f906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068d4c6df9117e45644a2de8a1b8f906">&#9670;&nbsp;</a></span>tkl_disp_alloc_framebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> * tkl_disp_alloc_framebuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alloc mapped framebuffer or layer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID_T* Pointer to mapped memory </dd></dl>
+
+</div>
+</div>
+<a id="ad12f90e274972c638f43fb9c815beed5" name="ad12f90e274972c638f43fb9c815beed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12f90e274972c638f43fb9c815beed5">&#9670;&nbsp;</a></span>tkl_disp_blit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_blit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> *&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">buf</td><td>framebuffer </td></tr>
+    <tr><td class="paramname">rect</td><td>destination area </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a775b44a7ef6fb06539636758a1756158" name="a775b44a7ef6fb06539636758a1756158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775b44a7ef6fb06539636758a1756158">&#9670;&nbsp;</a></span>tkl_disp_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release display device </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a08e6ef2d0f8403eeede51a6af23c2a4d" name="a08e6ef2d0f8403eeede51a6af23c2a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e6ef2d0f8403eeede51a6af23c2a4d">&#9670;&nbsp;</a></span>tkl_disp_fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d82/structTKL__DISP__RECT__S.html">TKL_DISP_RECT_S</a> *&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d09/unionTKL__DISP__COLOR__U.html">TKL_DISP_COLOR_U</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill destination area with color </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">rect</td><td>destination area to fill </td></tr>
+    <tr><td class="paramname">color</td><td>color to fill </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="ad1c8eb5d2d47220dedf851736f934655" name="ad1c8eb5d2d47220dedf851736f934655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c8eb5d2d47220dedf851736f934655">&#9670;&nbsp;</a></span>tkl_disp_flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flush buffers to display device </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a7112cdbc85097fe4397614fcc5f1093c" name="a7112cdbc85097fe4397614fcc5f1093c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7112cdbc85097fe4397614fcc5f1093c">&#9670;&nbsp;</a></span>tkl_disp_free_capabilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_free_capabilities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free capabilities get by <a class="el" href="../../d4/d37/tkl__display_8h.html#a6087fa6c58643a528ed0cafad357a831" title="Get capabilities supported by display(For external display device. e.g. HDMI/VGA)">tkl_disp_get_capabilities()</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">cfg</td><td>configurations </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a8e12fc2a65238e65a13b22235d4f838c" name="a8e12fc2a65238e65a13b22235d4f838c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e12fc2a65238e65a13b22235d4f838c">&#9670;&nbsp;</a></span>tkl_disp_free_framebuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_disp_free_framebuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/ddf/structTKL__DISP__FRAMEBUFFER__S.html">TKL_DISP_FRAMEBUFFER_S</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free mapped framebuffer or layer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to mapped memory </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID_T </dd></dl>
+
+</div>
+</div>
+<a id="a1c0aab76151887d17566ff2c4d2ad4b5" name="a1c0aab76151887d17566ff2c4d2ad4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c0aab76151887d17566ff2c4d2ad4b5">&#9670;&nbsp;</a></span>tkl_disp_get_brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_get_brightness </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>brightness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get display brightness(Backlight or HSB) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">brightness</td><td>brightness </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a6087fa6c58643a528ed0cafad357a831" name="a6087fa6c58643a528ed0cafad357a831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6087fa6c58643a528ed0cafad357a831">&#9670;&nbsp;</a></span>tkl_disp_get_capabilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_get_capabilities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> **&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get capabilities supported by display(For external display device. e.g. HDMI/VGA) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">cfg</td><td>configurations </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a792caef7c94d3f10a0c466747a3687bf" name="a792caef7c94d3f10a0c466747a3687bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792caef7c94d3f10a0c466747a3687bf">&#9670;&nbsp;</a></span>tkl_disp_get_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_get_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get display info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">info</td><td>display device info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a0357643554a4d7ca0297cb7f77c9825f" name="a0357643554a4d7ca0297cb7f77c9825f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0357643554a4d7ca0297cb7f77c9825f">&#9670;&nbsp;</a></span>tkl_disp_get_power_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_get_power_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_DISP_POWER_MODE_E *&#160;</td>
+          <td class="paramname"><em>power_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the display screen's power state </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">power_mode</td><td>power state </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a54d9a645ad489615b09c51e98d6f2aa6" name="a54d9a645ad489615b09c51e98d6f2aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d9a645ad489615b09c51e98d6f2aa6">&#9670;&nbsp;</a></span>tkl_disp_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d9a/structTKL__DISP__EVENT__HANDLER__S.html">TKL_DISP_EVENT_HANDLER_S</a> *&#160;</td>
+          <td class="paramname"><em>event_handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init and config display device </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">cfg</td><td>display configuration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="ac34a9646489730e5f5e184715f1b1e80" name="ac34a9646489730e5f5e184715f1b1e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34a9646489730e5f5e184715f1b1e80">&#9670;&nbsp;</a></span>tkl_disp_set_brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_set_brightness </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>brightness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set display brightness(Backlight or HSB) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">brightness</td><td>brightness </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a3151d4a39b8d8527fe2b8bb1fcda8696" name="a3151d4a39b8d8527fe2b8bb1fcda8696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3151d4a39b8d8527fe2b8bb1fcda8696">&#9670;&nbsp;</a></span>tkl_disp_set_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_set_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dfa/structTKL__DISP__INFO__S.html">TKL_DISP_INFO_S</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set display info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">info</td><td>display device info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a67dc354568301340071b5d514daf08a4" name="a67dc354568301340071b5d514daf08a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67dc354568301340071b5d514daf08a4">&#9670;&nbsp;</a></span>tkl_disp_set_power_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_set_power_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_DISP_POWER_MODE_E&#160;</td>
+          <td class="paramname"><em>power_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the display screen's power state </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+    <tr><td class="paramname">power_mode</td><td>power state </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="ae19340c452c43460e157359cc205016a" name="ae19340c452c43460e157359cc205016a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19340c452c43460e157359cc205016a">&#9670;&nbsp;</a></span>tkl_disp_wait_vsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_disp_wait_vsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d08/structTKL__DISP__DEVICE__S.html">TKL_DISP_DEVICE_S</a> *&#160;</td>
+          <td class="paramname"><em>display_device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vsync signal </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">display_device</td><td>display device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

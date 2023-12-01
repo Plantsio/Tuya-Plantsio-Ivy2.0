@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/i2c/include/tkl_i2c.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_0da400262af529060373916170024e79.html">i2c</a></li><li class="navelem"><a class="el" href="../../dir_fa0621048fa89be8f50ee677df8f539c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_i2c.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the i2c api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db8/tkl__gpio_8h_source.html">tkl_gpio.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_i2c.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/da7/tkl__i2c_8h__incl.png" border="0" usemap="#ainclude_2adapter_2i2c_2include_2tkl__i2c_8h" alt=""/></div>
+<map name="ainclude_2adapter_2i2c_2include_2tkl__i2c_8h" id="ainclude_2adapter_2i2c_2include_2tkl__i2c_8h">
+<area shape="rect" title="Common process &#45; adapter the i2c api" alt="" coords="369,5,516,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,169,517,196"/>
+<area shape="rect" href="../../db/db8/tkl__gpio_8h.html" title="Common process &#45; adapter the gpio api" alt="" coords="441,95,527,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,244,139,271"/>
+<area shape="rect" title=" " alt="" coords="163,244,237,271"/>
+<area shape="rect" title=" " alt="" coords="262,244,333,271"/>
+<area shape="rect" title=" " alt="" coords="357,244,432,271"/>
+<area shape="rect" title=" " alt="" coords="457,244,527,271"/>
+<area shape="rect" title=" " alt="" coords="552,244,635,271"/>
+<area shape="rect" title=" " alt="" coords="659,244,730,271"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,244,893,271"/>
+</map>
+</div>
+</div>
+<p><a href="../../d8/dec/tkl__i2c_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d20/structREGADDR__WIDTH__T.html">REGADDR_WIDTH_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ioctl args define  <a href="../../d5/d20/structREGADDR__WIDTH__T.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a8caf6aa4fa735dee71fbadef59595ae6"><td class="memItemLeft" align="right" valign="top"><a id="a8caf6aa4fa735dee71fbadef59595ae6" name="a8caf6aa4fa735dee71fbadef59595ae6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>I2C_IOCTL_SET_REGADDR_WIDTH</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a8caf6aa4fa735dee71fbadef59595ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ioctl cmd define <br /></td></tr>
+<tr class="separator:a8caf6aa4fa735dee71fbadef59595ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0ef8472f252b6ca54d32edfa55151792"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a0ef8472f252b6ca54d32edfa55151792">tkl_i2c_deinit</a> (TUYA_I2C_NUM_E port)</td></tr>
+<tr class="memdesc:a0ef8472f252b6ca54d32edfa55151792"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c deinit  <a href="../../d8/dec/tkl__i2c_8h.html#a0ef8472f252b6ca54d32edfa55151792">更多...</a><br /></td></tr>
+<tr class="separator:a0ef8472f252b6ca54d32edfa55151792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32e78280c19fb8a736f67e6617cc579"><td class="memItemLeft" align="right" valign="top">INT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#af32e78280c19fb8a736f67e6617cc579">tkl_i2c_get_data_count</a> (TUYA_I2C_NUM_E port)</td></tr>
+<tr class="memdesc:af32e78280c19fb8a736f67e6617cc579"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c transferred data count.  <a href="../../d8/dec/tkl__i2c_8h.html#af32e78280c19fb8a736f67e6617cc579">更多...</a><br /></td></tr>
+<tr class="separator:af32e78280c19fb8a736f67e6617cc579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae489b4fb7f2d979645e9fd293fbc4341"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#ae489b4fb7f2d979645e9fd293fbc4341">tkl_i2c_get_status</a> (TUYA_I2C_NUM_E port, <a class="el" href="../../d1/de3/structTUYA__IIC__STATUS__T.html">TUYA_IIC_STATUS_T</a> *status)</td></tr>
+<tr class="memdesc:ae489b4fb7f2d979645e9fd293fbc4341"><td class="mdescLeft">&#160;</td><td class="mdescRight">IIC get status.  <a href="../../d8/dec/tkl__i2c_8h.html#ae489b4fb7f2d979645e9fd293fbc4341">更多...</a><br /></td></tr>
+<tr class="separator:ae489b4fb7f2d979645e9fd293fbc4341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d08b70edc3d58c608a91d938663890"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#ad4d08b70edc3d58c608a91d938663890">tkl_i2c_init</a> (TUYA_I2C_NUM_E port, CONST <a class="el" href="../../dc/df1/structTUYA__IIC__BASE__CFG__T.html">TUYA_IIC_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:ad4d08b70edc3d58c608a91d938663890"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c init  <a href="../../d8/dec/tkl__i2c_8h.html#ad4d08b70edc3d58c608a91d938663890">更多...</a><br /></td></tr>
+<tr class="separator:ad4d08b70edc3d58c608a91d938663890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2e72f21ce803b6779cb3a0bed97b47"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a8d2e72f21ce803b6779cb3a0bed97b47">tkl_i2c_ioctl</a> (TUYA_I2C_NUM_E port, UINT32_T cmd, VOID *args)</td></tr>
+<tr class="memdesc:a8d2e72f21ce803b6779cb3a0bed97b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c ioctl  <a href="../../d8/dec/tkl__i2c_8h.html#a8d2e72f21ce803b6779cb3a0bed97b47">更多...</a><br /></td></tr>
+<tr class="separator:a8d2e72f21ce803b6779cb3a0bed97b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526e25ef2ff1a3665aa2f704510da9e3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a526e25ef2ff1a3665aa2f704510da9e3">tkl_i2c_irq_disable</a> (TUYA_I2C_NUM_E port)</td></tr>
+<tr class="memdesc:a526e25ef2ff1a3665aa2f704510da9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c irq disable  <a href="../../d8/dec/tkl__i2c_8h.html#a526e25ef2ff1a3665aa2f704510da9e3">更多...</a><br /></td></tr>
+<tr class="separator:a526e25ef2ff1a3665aa2f704510da9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87851c583e3390abfa71bdb24b4cdb61"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a87851c583e3390abfa71bdb24b4cdb61">tkl_i2c_irq_enable</a> (TUYA_I2C_NUM_E port)</td></tr>
+<tr class="memdesc:a87851c583e3390abfa71bdb24b4cdb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c irq enable  <a href="../../d8/dec/tkl__i2c_8h.html#a87851c583e3390abfa71bdb24b4cdb61">更多...</a><br /></td></tr>
+<tr class="separator:a87851c583e3390abfa71bdb24b4cdb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bde017ee9b15a5dd2d67dec783f0316"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a5bde017ee9b15a5dd2d67dec783f0316">tkl_i2c_irq_init</a> (TUYA_I2C_NUM_E port, TUYA_I2C_IRQ_CB cb)</td></tr>
+<tr class="memdesc:a5bde017ee9b15a5dd2d67dec783f0316"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c irq init NOTE: call this API will not enable interrupt  <a href="../../d8/dec/tkl__i2c_8h.html#a5bde017ee9b15a5dd2d67dec783f0316">更多...</a><br /></td></tr>
+<tr class="separator:a5bde017ee9b15a5dd2d67dec783f0316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad360359cb66b272856c515bb98e9dfce"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#ad360359cb66b272856c515bb98e9dfce">tkl_i2c_master_receive</a> (TUYA_I2C_NUM_E port, UINT16_T dev_addr, VOID *data, UINT32_T size, BOOL_T xfer_pending)</td></tr>
+<tr class="memdesc:ad360359cb66b272856c515bb98e9dfce"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c master recv  <a href="../../d8/dec/tkl__i2c_8h.html#ad360359cb66b272856c515bb98e9dfce">更多...</a><br /></td></tr>
+<tr class="separator:ad360359cb66b272856c515bb98e9dfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243e33f9bfd52c9fb40ea67cdec08016"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a243e33f9bfd52c9fb40ea67cdec08016">tkl_i2c_master_send</a> (TUYA_I2C_NUM_E port, UINT16_T dev_addr, CONST VOID_T *data, UINT32_T size, BOOL_T xfer_pending)</td></tr>
+<tr class="memdesc:a243e33f9bfd52c9fb40ea67cdec08016"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c master send  <a href="../../d8/dec/tkl__i2c_8h.html#a243e33f9bfd52c9fb40ea67cdec08016">更多...</a><br /></td></tr>
+<tr class="separator:a243e33f9bfd52c9fb40ea67cdec08016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0af81e76dca1701d47b0772d7e179b7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#ab0af81e76dca1701d47b0772d7e179b7">tkl_i2c_reset</a> (TUYA_I2C_NUM_E port)</td></tr>
+<tr class="memdesc:ab0af81e76dca1701d47b0772d7e179b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c's reset  <a href="../../d8/dec/tkl__i2c_8h.html#ab0af81e76dca1701d47b0772d7e179b7">更多...</a><br /></td></tr>
+<tr class="separator:ab0af81e76dca1701d47b0772d7e179b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbae6c4da08ea901a3f0b079b75af36"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a6fbae6c4da08ea901a3f0b079b75af36">tkl_i2c_set_slave_addr</a> (TUYA_I2C_NUM_E port, UINT16_T dev_addr)</td></tr>
+<tr class="memdesc:a6fbae6c4da08ea901a3f0b079b75af36"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c slave  <a href="../../d8/dec/tkl__i2c_8h.html#a6fbae6c4da08ea901a3f0b079b75af36">更多...</a><br /></td></tr>
+<tr class="separator:a6fbae6c4da08ea901a3f0b079b75af36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d9239389fb57ba41c651c7460c42e5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#a89d9239389fb57ba41c651c7460c42e5">tkl_i2c_slave_receive</a> (TUYA_I2C_NUM_E port, VOID *data, UINT32_T size)</td></tr>
+<tr class="memdesc:a89d9239389fb57ba41c651c7460c42e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">IIC slave receive, Start receiving data as IIC Slave.  <a href="../../d8/dec/tkl__i2c_8h.html#a89d9239389fb57ba41c651c7460c42e5">更多...</a><br /></td></tr>
+<tr class="separator:a89d9239389fb57ba41c651c7460c42e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf09e0eb637f275267baad66385f935"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/tkl__i2c_8h.html#aabf09e0eb637f275267baad66385f935">tkl_i2c_slave_send</a> (TUYA_I2C_NUM_E port, CONST VOID *data, UINT32_T size)</td></tr>
+<tr class="memdesc:aabf09e0eb637f275267baad66385f935"><td class="mdescLeft">&#160;</td><td class="mdescRight">i2c slave send  <a href="../../d8/dec/tkl__i2c_8h.html#aabf09e0eb637f275267baad66385f935">更多...</a><br /></td></tr>
+<tr class="separator:aabf09e0eb637f275267baad66385f935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the i2c api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a0ef8472f252b6ca54d32edfa55151792" name="a0ef8472f252b6ca54d32edfa55151792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef8472f252b6ca54d32edfa55151792">&#9670;&nbsp;</a></span>tkl_i2c_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c deinit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af32e78280c19fb8a736f67e6617cc579" name="af32e78280c19fb8a736f67e6617cc579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32e78280c19fb8a736f67e6617cc579">&#9670;&nbsp;</a></span>tkl_i2c_get_data_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT32_T tkl_i2c_get_data_count </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c transferred data count. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&gt;=0,number of currently transferred data items. &lt;0,err. tkl_i2c_master_send:number of data bytes transmitted and acknowledged tkl_i2c_master_receive:number of data bytes received tkl_i2c_slave_send:number of data bytes transmitted tkl_i2c_slave_receive:number of data bytes received and acknowledged </dd></dl>
+
+</div>
+</div>
+<a id="ae489b4fb7f2d979645e9fd293fbc4341" name="ae489b4fb7f2d979645e9fd293fbc4341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae489b4fb7f2d979645e9fd293fbc4341">&#9670;&nbsp;</a></span>tkl_i2c_get_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_get_status </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de3/structTUYA__IIC__STATUS__T.html">TUYA_IIC_STATUS_T</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IIC get status. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="../../d1/de3/structTUYA__IIC__STATUS__T.html">TUYA_IIC_STATUS_T</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad4d08b70edc3d58c608a91d938663890" name="ad4d08b70edc3d58c608a91d938663890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d08b70edc3d58c608a91d938663890">&#9670;&nbsp;</a></span>tkl_i2c_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../dc/df1/structTUYA__IIC__BASE__CFG__T.html">TUYA_IIC_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>i2c config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8d2e72f21ce803b6779cb3a0bed97b47" name="a8d2e72f21ce803b6779cb3a0bed97b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2e72f21ce803b6779cb3a0bed97b47">&#9670;&nbsp;</a></span>tkl_i2c_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c ioctl </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>user def </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>args associated with the command </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a526e25ef2ff1a3665aa2f704510da9e3" name="a526e25ef2ff1a3665aa2f704510da9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526e25ef2ff1a3665aa2f704510da9e3">&#9670;&nbsp;</a></span>tkl_i2c_irq_disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_irq_disable </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c irq disable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87851c583e3390abfa71bdb24b4cdb61" name="a87851c583e3390abfa71bdb24b4cdb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87851c583e3390abfa71bdb24b4cdb61">&#9670;&nbsp;</a></span>tkl_i2c_irq_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_irq_enable </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c irq enable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5bde017ee9b15a5dd2d67dec783f0316" name="a5bde017ee9b15a5dd2d67dec783f0316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bde017ee9b15a5dd2d67dec783f0316">&#9670;&nbsp;</a></span>tkl_i2c_irq_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_irq_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_I2C_IRQ_CB&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c irq init NOTE: call this API will not enable interrupt </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>i2c irq cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad360359cb66b272856c515bb98e9dfce" name="ad360359cb66b272856c515bb98e9dfce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad360359cb66b272856c515bb98e9dfce">&#9670;&nbsp;</a></span>tkl_i2c_master_receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_master_receive </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>dev_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>xfer_pending</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c master recv </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_addr</td><td>iic addrress of slave device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>i2c buf to recv </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of data items to receive </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xfer_pending</td><td>TRUE : not send stop condition, FALSE : send stop condition. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a243e33f9bfd52c9fb40ea67cdec08016" name="a243e33f9bfd52c9fb40ea67cdec08016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243e33f9bfd52c9fb40ea67cdec08016">&#9670;&nbsp;</a></span>tkl_i2c_master_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_master_send </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>dev_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>xfer_pending</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c master send </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_addr</td><td>iic addrress of slave device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>i2c data to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of data items to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xfer_pending</td><td>xfer_pending: TRUE : not send stop condition, FALSE : send stop condition. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab0af81e76dca1701d47b0772d7e179b7" name="ab0af81e76dca1701d47b0772d7e179b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0af81e76dca1701d47b0772d7e179b7">&#9670;&nbsp;</a></span>tkl_i2c_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_reset </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c's reset </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6fbae6c4da08ea901a3f0b079b75af36" name="a6fbae6c4da08ea901a3f0b079b75af36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbae6c4da08ea901a3f0b079b75af36">&#9670;&nbsp;</a></span>tkl_i2c_set_slave_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_set_slave_addr </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>dev_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c slave </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_addr</td><td>slave device addr</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a89d9239389fb57ba41c651c7460c42e5" name="a89d9239389fb57ba41c651c7460c42e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d9239389fb57ba41c651c7460c42e5">&#9670;&nbsp;</a></span>tkl_i2c_slave_receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_slave_receive </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IIC slave receive, Start receiving data as IIC Slave. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to buffer for data to receive from IIC Master </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of data items to receive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aabf09e0eb637f275267baad66385f935" name="aabf09e0eb637f275267baad66385f935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf09e0eb637f275267baad66385f935">&#9670;&nbsp;</a></span>tkl_i2c_slave_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_i2c_slave_send </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_I2C_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST VOID *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>i2c slave send </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>i2c port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>i2c buf to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of data items to send </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

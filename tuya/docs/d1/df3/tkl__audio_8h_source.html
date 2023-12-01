@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/media/include/tkl_audio.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_f035e8dac116664123d3c2a73ed2f457.html">media</a></li><li class="navelem"><a class="el" href="../../dir_c3870483c35fa4c017a1fc661583a339.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_audio.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d1/df3/tkl__audio_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_AUDIO_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_AUDIO_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dd2/tkl__media_8h.html">tkl_media.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    TKL_AUDIO_DATABITS_8 = 8,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    TKL_AUDIO_DATABITS_16 = 16,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    TKL_AUDIO_DATABITS_MAX = 0xFF</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}TKL_AUDIO_DATABITS_E;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TKL_AUDIO_CHANNEL_MONO = 1,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TKL_AUDIO_CHANNEL_STEREO,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    TKL_AUDIO_CHANNEL_TDM3CHS,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    TKL_AUDIO_CHANNEL_TDM4CHS,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    TKL_AUDIO_CHANNEL_TDM5CHS,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    TKL_AUDIO_CHANNEL_TDM6CHS,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    TKL_AUDIO_CHANNEL_TDM7CHS,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TKL_AUDIO_CHANNEL_TDM8CHS</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}TKL_AUDIO_CHANNEL_E;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    TKL_AUDIO_SAMPLE_8K     = 8000,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    TKL_AUDIO_SAMPLE_11K    = 11000,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    TKL_AUDIO_SAMPLE_12K    = 12000,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    TKL_AUDIO_SAMPLE_16K    = 16000,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    TKL_AUDIO_SAMPLE_22K    = 22000,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    TKL_AUDIO_SAMPLE_24K    = 24000,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    TKL_AUDIO_SAMPLE_32K    = 32000,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    TKL_AUDIO_SAMPLE_44K    = 44000,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    TKL_AUDIO_SAMPLE_48K    = 48000,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    TKL_AUDIO_SAMPLE_MAX    = 0xFFFFFFFF</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}TKL_AUDIO_SAMPLE_E;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    TKL_AI_0     = 0,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    TKL_AI_1,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    TKL_AI_2,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    TKL_AI_3,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    TKL_AI_MAX,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}TKL_AI_CHN_E;                                          <span class="comment">// audio input channel</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    TKL_AO_0     = 0,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    TKL_AO_1,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    TKL_AO_2,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    TKL_AO_3,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    TKL_AO_MAX,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}TKL_AO_CHN_E;                                           <span class="comment">// audio output channel</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d1/d73/structTKL__AUDIO__HARDWARE__SOURCE.html">   72</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    BYTE_T platform_dai_type;                           <span class="comment">// 0--IIS类型的AUDIO 1--DAC类型的AUDIO</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    BYTE_T platform_dai_port;                           <span class="comment">// 选择哪个DAC ADC 或者 IIS</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    BYTE_T platform_dai_left_subport;                   <span class="comment">// platform_dai_type == 1时，选择哪个DAC,ADC Chanel 作为左声道 0xff无效</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    BYTE_T platform_dai_right_subport;                  <span class="comment">// platform_dai_type == 1时   选择哪个DAC,ADC Chanel 作为右声道          0xff无效</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    BYTE_T codec_i2c;                                   <span class="comment">// platform_dai_type == 0时 codec使用哪个I2C 0xff无效</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    BYTE_T codec_i2c_addr;                              <span class="comment">// platform_dai_type == 0时 codec的I2C地址       0xff无效</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}<a class="code hl_struct" href="../../d1/d73/structTKL__AUDIO__HARDWARE__SOURCE.html">TKL_AUDIO_HARDWARE_SOURCE</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d1/d1f/structTKL__AUDIO__CONFIG__T.html">   82</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    UINT_T                  enable;                      <span class="comment">// 1,enable,0,disable</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    UINT_T                  card;                        <span class="comment">// audio card num</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    TKL_AI_CHN_E            ai_chn;                      <span class="comment">// audio input channel</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    TKL_AUDIO_SAMPLE_E      sample;                      <span class="comment">// sample</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    TKL_AUDIO_DATABITS_E    datebits;                    <span class="comment">// datebit</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    TKL_AUDIO_CHANNEL_E     channel;                     <span class="comment">// channel num</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    TKL_MEDIA_CODEC_TYPE_E  codectype;                   <span class="comment">// codec type</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    INT32_T                 is_softcodec;                <span class="comment">// 1, soft encode，0, hardware encode</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    UINT_T                  fps;                         <span class="comment">// frame per second，suggest 25</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    INT32_T                 mic_volume;                  <span class="comment">// mic volume,[0,100]</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    INT32_T                 spk_volume;                  <span class="comment">// spk volume,[0,100]</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    INT32_T                 spk_volume_offset;           <span class="comment">// spk volume offset, for adapting different speakers,The default value is 0,[0,100]</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    INT32_T                 spk_gpio;                    <span class="comment">// spk amplifier pin number, &lt;0, no amplifier</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    INT32_T                 spk_gpio_polarity;           <span class="comment">// pin polarity, 0 high enable, 1 low enable</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">void</span> * padta;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}<a class="code hl_struct" href="../../d1/d1f/structTKL__AUDIO__CONFIG__T.html">TKL_AUDIO_CONFIG_T</a>;                                     <span class="comment">// audio config</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d0/d72/structTKL__AUDIO__FRAME__INFO__T.html">  101</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    TKL_MEDIA_FRAME_TYPE_E   type;                       <span class="comment">// frame type</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    CHAR_T                  *pbuf;                       <span class="comment">// buffer</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    UINT_T                   buf_size;                   <span class="comment">// buffer size</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    UINT_T                   used_size;                  <span class="comment">// used buffer</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    UINT64_T                 pts;                        <span class="comment">// sdk pts</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    UINT64_T                 timestamp;                  <span class="comment">// system utc time，unit: ms</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    TKL_MEDIA_CODEC_TYPE_E   codectype;                  <span class="comment">// codec type</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    TKL_AUDIO_SAMPLE_E       sample;                     <span class="comment">// sample</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    TKL_AUDIO_DATABITS_E     datebits;                   <span class="comment">// date bit</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    TKL_AUDIO_CHANNEL_E      channel;                    <span class="comment">// channel num</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    UINT_T                   seq;                        <span class="comment">// frame sequence number</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}<a class="code hl_struct" href="../../d0/d72/structTKL__AUDIO__FRAME__INFO__T.html">TKL_AUDIO_FRAME_INFO_T</a>;                                 <span class="comment">// audio frame</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d2/dbb/structTKL__AUDIO__DETECT__DB__RESULT__T.html">  116</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    INT32_T    pcm_db;                                   <span class="comment">// DB value</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>} <a class="code hl_struct" href="../../d2/dbb/structTKL__AUDIO__DETECT__DB__RESULT__T.html">TKL_AUDIO_DETECT_DB_RESULT_T</a>;                          <span class="comment">// DB result</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d8/d0a/structTKL__AUDIO__DETECT__RESULT__T.html">  121</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    INT32_T    val;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    CHAR_T     res[8];</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>} <a class="code hl_struct" href="../../d8/d0a/structTKL__AUDIO__DETECT__RESULT__T.html">TKL_AUDIO_DETECT_RESULT_T</a>;                             <span class="comment">// DETECT result</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a2b324ee96669b17739b9f1bfb661590f">  135</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a2b324ee96669b17739b9f1bfb661590f">tkl_ai_init</a>(<a class="code hl_struct" href="../../d1/d1f/structTKL__AUDIO__CONFIG__T.html">TKL_AUDIO_CONFIG_T</a> *pconfig, INT32_T count);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a7db46a6b2348728455ece7c3d27ffacb">  145</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a7db46a6b2348728455ece7c3d27ffacb">tkl_ai_start</a>(INT32_T card, TKL_AI_CHN_E chn);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a11dc75c3a5292cf80a99163488b84082">  156</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a11dc75c3a5292cf80a99163488b84082">tkl_ai_set_vol</a>(INT32_T card, TKL_AI_CHN_E chn, INT32_T vol);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a867a2359e187f1599ed91871d9f75c7c">  167</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a867a2359e187f1599ed91871d9f75c7c">tkl_ai_get_frame</a>(INT32_T card, TKL_AI_CHN_E chn, <a class="code hl_struct" href="../../d0/d72/structTKL__AUDIO__FRAME__INFO__T.html">TKL_AUDIO_FRAME_INFO_T</a> *pframe);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a180a8fc9dd6935a87687ae7ed92c3d36">  177</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a180a8fc9dd6935a87687ae7ed92c3d36">tkl_ai_stop</a>(INT32_T card, TKL_AI_CHN_E chn);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#ab444e12be4bcbb17da946d8920240eb9">  184</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#ab444e12be4bcbb17da946d8920240eb9">tkl_ai_uninit</a>(VOID);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a538c75c540cd51ceafdb6c57cc4122bd">  194</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a538c75c540cd51ceafdb6c57cc4122bd">tkl_ao_init</a>(<a class="code hl_struct" href="../../d1/d1f/structTKL__AUDIO__CONFIG__T.html">TKL_AUDIO_CONFIG_T</a> *pconfig, INT32_T count, VOID **handle);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#af2ab2819ea10c54764bd5c593fbb358a">  205</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#af2ab2819ea10c54764bd5c593fbb358a">tkl_ao_start</a>(INT32_T card, TKL_AO_CHN_E chn, VOID *handle);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a569346d4c90b34c65bcc9100db4c6266">  216</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a569346d4c90b34c65bcc9100db4c6266">tkl_ao_set_vol</a>(INT32_T card, TKL_AO_CHN_E chn, VOID *handle, INT32_T vol);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a5cee9d64106c1c8e07f3df9b12cddb90">  227</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a5cee9d64106c1c8e07f3df9b12cddb90">tkl_ao_get_vol</a>(INT32_T card, TKL_AO_CHN_E chn, VOID *handle, INT32_T *vol);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a3f65137c2e8285fc0a15c166b263ef99">  239</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a3f65137c2e8285fc0a15c166b263ef99">tkl_ao_put_frame</a>(INT32_T card, TKL_AO_CHN_E chn, VOID *handle, <a class="code hl_struct" href="../../d0/d72/structTKL__AUDIO__FRAME__INFO__T.html">TKL_AUDIO_FRAME_INFO_T</a> *pframe);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#ac0b2700c17c3ad8632bf2553f68f3608">  250</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#ac0b2700c17c3ad8632bf2553f68f3608">tkl_ao_stop</a>(INT32_T card, TKL_AO_CHN_E chn, VOID *handle);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#aee9fe821548064554af9d47b71f82b4c">  257</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#aee9fe821548064554af9d47b71f82b4c">tkl_ao_uninit</a>(VOID *handle);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a6cef957b1a6245fa0334a36788cd74fb">  267</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a6cef957b1a6245fa0334a36788cd74fb">tkl_ai_detect_start</a>(INT32_T card, TKL_MEDIA_DETECT_TYPE_E type);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#a0a17f80e6ebeb496a7a2191b378682ef">  277</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#a0a17f80e6ebeb496a7a2191b378682ef">tkl_ai_detect_stop</a>(INT32_T card, TKL_MEDIA_DETECT_TYPE_E type);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="../../d1/df3/tkl__audio_8h.html#ab5b8482b2431bb811bce434fd30794b7">  288</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/df3/tkl__audio_8h.html#ab5b8482b2431bb811bce434fd30794b7">tkl_ai_detect_get_result</a>(INT32_T card, TKL_MEDIA_DETECT_TYPE_E type, <a class="code hl_struct" href="../../d8/d0a/structTKL__AUDIO__DETECT__RESULT__T.html">TKL_AUDIO_DETECT_RESULT_T</a> *presult);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>}</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__AUDIO__CONFIG__T_html"><div class="ttname"><a href="../../d1/d1f/structTKL__AUDIO__CONFIG__T.html">TKL_AUDIO_CONFIG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_audio.h:83</div></div>
+<div class="ttc" id="astructTKL__AUDIO__DETECT__DB__RESULT__T_html"><div class="ttname"><a href="../../d2/dbb/structTKL__AUDIO__DETECT__DB__RESULT__T.html">TKL_AUDIO_DETECT_DB_RESULT_T</a></div><div class="ttdef"><b>Definition:</b> tkl_audio.h:117</div></div>
+<div class="ttc" id="astructTKL__AUDIO__DETECT__RESULT__T_html"><div class="ttname"><a href="../../d8/d0a/structTKL__AUDIO__DETECT__RESULT__T.html">TKL_AUDIO_DETECT_RESULT_T</a></div><div class="ttdef"><b>Definition:</b> tkl_audio.h:122</div></div>
+<div class="ttc" id="astructTKL__AUDIO__FRAME__INFO__T_html"><div class="ttname"><a href="../../d0/d72/structTKL__AUDIO__FRAME__INFO__T.html">TKL_AUDIO_FRAME_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_audio.h:102</div></div>
+<div class="ttc" id="astructTKL__AUDIO__HARDWARE__SOURCE_html"><div class="ttname"><a href="../../d1/d73/structTKL__AUDIO__HARDWARE__SOURCE.html">TKL_AUDIO_HARDWARE_SOURCE</a></div><div class="ttdef"><b>Definition:</b> tkl_audio.h:73</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a0a17f80e6ebeb496a7a2191b378682ef"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a0a17f80e6ebeb496a7a2191b378682ef">tkl_ai_detect_stop</a></div><div class="ttdeci">OPERATE_RET tkl_ai_detect_stop(INT32_T card, TKL_MEDIA_DETECT_TYPE_E type)</div><div class="ttdoc">audio input detect stop</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a11dc75c3a5292cf80a99163488b84082"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a11dc75c3a5292cf80a99163488b84082">tkl_ai_set_vol</a></div><div class="ttdeci">OPERATE_RET tkl_ai_set_vol(INT32_T card, TKL_AI_CHN_E chn, INT32_T vol)</div><div class="ttdoc">ai set mic volume</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a180a8fc9dd6935a87687ae7ed92c3d36"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a180a8fc9dd6935a87687ae7ed92c3d36">tkl_ai_stop</a></div><div class="ttdeci">OPERATE_RET tkl_ai_stop(INT32_T card, TKL_AI_CHN_E chn)</div><div class="ttdoc">ai stop</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a2b324ee96669b17739b9f1bfb661590f"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a2b324ee96669b17739b9f1bfb661590f">tkl_ai_init</a></div><div class="ttdeci">OPERATE_RET tkl_ai_init(TKL_AUDIO_CONFIG_T *pconfig, INT32_T count)</div><div class="ttdoc">ai init</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a3f65137c2e8285fc0a15c166b263ef99"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a3f65137c2e8285fc0a15c166b263ef99">tkl_ao_put_frame</a></div><div class="ttdeci">OPERATE_RET tkl_ao_put_frame(INT32_T card, TKL_AO_CHN_E chn, VOID *handle, TKL_AUDIO_FRAME_INFO_T *pframe)</div><div class="ttdoc">ao output frame</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a538c75c540cd51ceafdb6c57cc4122bd"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a538c75c540cd51ceafdb6c57cc4122bd">tkl_ao_init</a></div><div class="ttdeci">OPERATE_RET tkl_ao_init(TKL_AUDIO_CONFIG_T *pconfig, INT32_T count, VOID **handle)</div><div class="ttdoc">ao init</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a569346d4c90b34c65bcc9100db4c6266"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a569346d4c90b34c65bcc9100db4c6266">tkl_ao_set_vol</a></div><div class="ttdeci">OPERATE_RET tkl_ao_set_vol(INT32_T card, TKL_AO_CHN_E chn, VOID *handle, INT32_T vol)</div><div class="ttdoc">ao set volume</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a5cee9d64106c1c8e07f3df9b12cddb90"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a5cee9d64106c1c8e07f3df9b12cddb90">tkl_ao_get_vol</a></div><div class="ttdeci">OPERATE_RET tkl_ao_get_vol(INT32_T card, TKL_AO_CHN_E chn, VOID *handle, INT32_T *vol)</div><div class="ttdoc">ao get volume</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a6cef957b1a6245fa0334a36788cd74fb"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a6cef957b1a6245fa0334a36788cd74fb">tkl_ai_detect_start</a></div><div class="ttdeci">OPERATE_RET tkl_ai_detect_start(INT32_T card, TKL_MEDIA_DETECT_TYPE_E type)</div><div class="ttdoc">audio input detect start</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a7db46a6b2348728455ece7c3d27ffacb"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a7db46a6b2348728455ece7c3d27ffacb">tkl_ai_start</a></div><div class="ttdeci">OPERATE_RET tkl_ai_start(INT32_T card, TKL_AI_CHN_E chn)</div><div class="ttdoc">ai start</div></div>
+<div class="ttc" id="atkl__audio_8h_html_a867a2359e187f1599ed91871d9f75c7c"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#a867a2359e187f1599ed91871d9f75c7c">tkl_ai_get_frame</a></div><div class="ttdeci">OPERATE_RET tkl_ai_get_frame(INT32_T card, TKL_AI_CHN_E chn, TKL_AUDIO_FRAME_INFO_T *pframe)</div><div class="ttdoc">ai get frame</div></div>
+<div class="ttc" id="atkl__audio_8h_html_ab444e12be4bcbb17da946d8920240eb9"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#ab444e12be4bcbb17da946d8920240eb9">tkl_ai_uninit</a></div><div class="ttdeci">OPERATE_RET tkl_ai_uninit(VOID)</div><div class="ttdoc">ai uninit</div></div>
+<div class="ttc" id="atkl__audio_8h_html_ab5b8482b2431bb811bce434fd30794b7"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#ab5b8482b2431bb811bce434fd30794b7">tkl_ai_detect_get_result</a></div><div class="ttdeci">OPERATE_RET tkl_ai_detect_get_result(INT32_T card, TKL_MEDIA_DETECT_TYPE_E type, TKL_AUDIO_DETECT_RESULT_T *presult)</div><div class="ttdoc">audio detect get result</div></div>
+<div class="ttc" id="atkl__audio_8h_html_ac0b2700c17c3ad8632bf2553f68f3608"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#ac0b2700c17c3ad8632bf2553f68f3608">tkl_ao_stop</a></div><div class="ttdeci">OPERATE_RET tkl_ao_stop(INT32_T card, TKL_AO_CHN_E chn, VOID *handle)</div><div class="ttdoc">ao stop</div></div>
+<div class="ttc" id="atkl__audio_8h_html_aee9fe821548064554af9d47b71f82b4c"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#aee9fe821548064554af9d47b71f82b4c">tkl_ao_uninit</a></div><div class="ttdeci">OPERATE_RET tkl_ao_uninit(VOID *handle)</div><div class="ttdoc">ao uninit</div></div>
+<div class="ttc" id="atkl__audio_8h_html_af2ab2819ea10c54764bd5c593fbb358a"><div class="ttname"><a href="../../d1/df3/tkl__audio_8h.html#af2ab2819ea10c54764bd5c593fbb358a">tkl_ao_start</a></div><div class="ttdeci">OPERATE_RET tkl_ao_start(INT32_T card, TKL_AO_CHN_E chn, VOID *handle)</div><div class="ttdoc">ao start</div></div>
+<div class="ttc" id="atkl__media_8h_html"><div class="ttname"><a href="../../df/dd2/tkl__media_8h.html">tkl_media.h</a></div><div class="ttdoc">Audio and video generic type definition header file</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

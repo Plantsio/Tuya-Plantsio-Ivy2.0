@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/cellular_catx/include/tkl_cellular_sms.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_b8ba071ca5cc1b1b8caa71befc3b9668.html">cellular_catx</a></li><li class="navelem"><a class="el" href="../../dir_cd70872c9112a79b6f8c2f63fe603ee2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_cellular_sms.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组短信API实现接口。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_cellular_sms.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d7e/tkl__cellular__sms_8h__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__sms_8h" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__sms_8h" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__sms_8h">
+<area shape="rect" title="蜂窝模组短信API实现接口。" alt="" coords="101,5,332,47"/>
+<area shape="rect" title=" " alt="" coords="5,169,76,196"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="319,95,467,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="101,169,234,196"/>
+<area shape="rect" title=" " alt="" coords="258,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,428,196"/>
+<area shape="rect" title=" " alt="" coords="453,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="551,169,634,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,729,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="754,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dac/tkl__cellular__sms_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__sms_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__sms_8hdep" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__sms_8hdep">
+<area shape="rect" title="蜂窝模组短信API实现接口。" alt="" coords="5,5,236,47"/>
+<area shape="rect" href="../../df/d89/tkl__init__cellular_8h_source.html" title=" " alt="" coords="27,95,215,136"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/d8d/tkl__cellular__sms_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9a/structTUYA__CELLULAR__SMS__RECV__T.html">TUYA_CELLULAR_SMS_RECV_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收短信结构体定义  <a href="../../dc/d9a/structTUYA__CELLULAR__SMS__RECV__T.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aae82c8b610300e267a09338ee4e81de2"><td class="memItemLeft" align="right" valign="top"><a id="aae82c8b610300e267a09338ee4e81de2" name="aae82c8b610300e267a09338ee4e81de2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_SMS_MSG_LEN_MAX</b>&#160;&#160;&#160;160</td></tr>
+<tr class="memdesc:aae82c8b610300e267a09338ee4e81de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">短信内容最大长度 <br /></td></tr>
+<tr class="separator:aae82c8b610300e267a09338ee4e81de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f60e89dc2ddbff61824363274f0fd5e"><td class="memItemLeft" align="right" valign="top"><a id="a7f60e89dc2ddbff61824363274f0fd5e" name="a7f60e89dc2ddbff61824363274f0fd5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_SMS_PHONENUM_LEN_MAX</b>&#160;&#160;&#160;42</td></tr>
+<tr class="memdesc:a7f60e89dc2ddbff61824363274f0fd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">收发短信时，手机号码最大长度 <br /></td></tr>
+<tr class="separator:a7f60e89dc2ddbff61824363274f0fd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a0b1ae009d62c3301b8ba7a64c41b2149"><td class="memItemLeft" align="right" valign="top">typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#a0b1ae009d62c3301b8ba7a64c41b2149">TUYA_CELLULAR_SMS_CB</a>) (UINT8_T sim_id, <a class="el" href="../../dc/d9a/structTUYA__CELLULAR__SMS__RECV__T.html">TUYA_CELLULAR_SMS_RECV_T</a> *msg)</td></tr>
+<tr class="memdesc:a0b1ae009d62c3301b8ba7a64c41b2149"><td class="mdescLeft">&#160;</td><td class="mdescRight">短信接收回调函数接口原型  <a href="../../d5/d8d/tkl__cellular__sms_8h.html#a0b1ae009d62c3301b8ba7a64c41b2149">更多...</a><br /></td></tr>
+<tr class="separator:a0b1ae009d62c3301b8ba7a64c41b2149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aa39a8cf912f270ac4780dd1b0ecbbbe2"><td class="memItemLeft" align="right" valign="top"><a id="aa39a8cf912f270ac4780dd1b0ecbbbe2" name="aa39a8cf912f270ac4780dd1b0ecbbbe2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a> { <br />
+&#160;&#160;<b>TUYA_SMS_ISO8859_1</b>
+, <b>TUYA_SMS_UTF8</b>
+, <b>TUYA_SMS_UTF16BE</b>
+, <b>TUYA_SMS_UTF16LE</b>
+, <br />
+&#160;&#160;<b>TUYA_SMS_GSM</b>
+, <b>TUYA_SMS_CP936</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:aa39a8cf912f270ac4780dd1b0ecbbbe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">短信内容编码格式 <br /></td></tr>
+<tr class="separator:aa39a8cf912f270ac4780dd1b0ecbbbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5ad4fe84ce778c40a1ce238e291d939d"><td class="memItemLeft" align="right" valign="top">VOID *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#a5ad4fe84ce778c40a1ce238e291d939d">tkl_cellular_sms_convert_str</a> (CONST VOID *from, INT_T from_size, <a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a> from_chset, <a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a> to_chset, INT_T *to_size)</td></tr>
+<tr class="separator:a5ad4fe84ce778c40a1ce238e291d939d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c4a186be7173728a3b9c6103d02493"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#a34c4a186be7173728a3b9c6103d02493">tkl_cellular_sms_mute</a> (BOOL_T mute)</td></tr>
+<tr class="memdesc:a34c4a186be7173728a3b9c6103d02493"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置短信接收时静音  <a href="../../d5/d8d/tkl__cellular__sms_8h.html#a34c4a186be7173728a3b9c6103d02493">更多...</a><br /></td></tr>
+<tr class="separator:a34c4a186be7173728a3b9c6103d02493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a80b8dea87aba672a642cef0b9dfe1a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#a1a80b8dea87aba672a642cef0b9dfe1a">tkl_cellular_sms_recv_cb_register</a> (<a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#a0b1ae009d62c3301b8ba7a64c41b2149">TUYA_CELLULAR_SMS_CB</a> callback)</td></tr>
+<tr class="memdesc:a1a80b8dea87aba672a642cef0b9dfe1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册短信接收回调函数  <a href="../../d5/d8d/tkl__cellular__sms_8h.html#a1a80b8dea87aba672a642cef0b9dfe1a">更多...</a><br /></td></tr>
+<tr class="separator:a1a80b8dea87aba672a642cef0b9dfe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c5ae5f480a38430d15496daf3a7de9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#ab5c5ae5f480a38430d15496daf3a7de9">tkl_cellular_sms_send</a> (UINT8_T sim_id, <a class="el" href="../../d6/d8b/structTUYA__CELLULAR__SMS__SEND__T.html">TUYA_CELLULAR_SMS_SEND_T</a> *sms_msg)</td></tr>
+<tr class="memdesc:ab5c5ae5f480a38430d15496daf3a7de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送短信  <a href="../../d5/d8d/tkl__cellular__sms_8h.html#ab5c5ae5f480a38430d15496daf3a7de9">更多...</a><br /></td></tr>
+<tr class="separator:ab5c5ae5f480a38430d15496daf3a7de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组短信API实现接口。 </p>
+<dl class="section author"><dt>作者</dt><dd>www.tuya.com</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2021 </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a0b1ae009d62c3301b8ba7a64c41b2149" name="a0b1ae009d62c3301b8ba7a64c41b2149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1ae009d62c3301b8ba7a64c41b2149">&#9670;&nbsp;</a></span>TUYA_CELLULAR_SMS_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID_T(* TUYA_CELLULAR_SMS_CB) (UINT8_T sim_id, <a class="el" href="../../dc/d9a/structTUYA__CELLULAR__SMS__RECV__T.html">TUYA_CELLULAR_SMS_RECV_T</a> *msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>短信接收回调函数接口原型 </p>
+<dl class="section note"><dt>注解</dt><dd>回调函数中不要调用阻塞性函数，msg结构体内存由系统 负责分配和释放。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">msg</td><td>短信结构体 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a5ad4fe84ce778c40a1ce238e291d939d" name="a5ad4fe84ce778c40a1ce238e291d939d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad4fe84ce778c40a1ce238e291d939d">&#9670;&nbsp;</a></span>tkl_cellular_sms_convert_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID * tkl_cellular_sms_convert_str </td>
+          <td>(</td>
+          <td class="paramtype">CONST VOID *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>from_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a>&#160;</td>
+          <td class="paramname"><em>from_chset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a>&#160;</td>
+          <td class="paramname"><em>to_chset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>to_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >短信内容编码转换</p>
+<p >When <em>from_charset</em> or <em>to_charset</em> is unknown or unsupported, return NULL. The returned pointer is allocated inside, caller should free it.</p>
+<p >At most <em>from_size</em> byte count will be processed. When <em>from_size</em> is -1, process till null chracter.</p>
+<p >null character will always be inserted into the output string. Invalid characters are replaced silently.</p>
+<p ><em>to_size</em> can be NULL in case that the output byte count is not needed.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>input string </td></tr>
+    <tr><td class="paramname">from_size</td><td>input string byte count </td></tr>
+    <tr><td class="paramname">from_chset</td><td>input string charset </td></tr>
+    <tr><td class="paramname">to_chset</td><td>output string charset </td></tr>
+    <tr><td class="paramname">to_size</td><td>output string byte count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>NULL: invalid parameters</li>
+<li>output string </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a34c4a186be7173728a3b9c6103d02493" name="a34c4a186be7173728a3b9c6103d02493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c4a186be7173728a3b9c6103d02493">&#9670;&nbsp;</a></span>tkl_cellular_sms_mute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_sms_mute </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>mute</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置短信接收时静音 </p>
+<dl class="section note"><dt>注解</dt><dd>默认情况下，收到短信时，会通过扬声器播放提示音。通过该函数，可设置接收 短信时，不播放提示音。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mute</td><td>TRUE 静音 FALSE 短信接收时打开提示音</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 设置成功 其它 设置失败 </dd></dl>
+
+</div>
+</div>
+<a id="a1a80b8dea87aba672a642cef0b9dfe1a" name="a1a80b8dea87aba672a642cef0b9dfe1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a80b8dea87aba672a642cef0b9dfe1a">&#9670;&nbsp;</a></span>tkl_cellular_sms_recv_cb_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_sms_recv_cb_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d8d/tkl__cellular__sms_8h.html#a0b1ae009d62c3301b8ba7a64c41b2149">TUYA_CELLULAR_SMS_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册短信接收回调函数 </p>
+<dl class="section note"><dt>注解</dt><dd>该函数需在SIM卡激活前注册，否则可能引起异常或短信丢失。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>短信接收回调函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 注册成功 其它 注册失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab5c5ae5f480a38430d15496daf3a7de9" name="ab5c5ae5f480a38430d15496daf3a7de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c5ae5f480a38430d15496daf3a7de9">&#9670;&nbsp;</a></span>tkl_cellular_sms_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_sms_send </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d8b/structTUYA__CELLULAR__SMS__SEND__T.html">TUYA_CELLULAR_SMS_SEND_T</a> *&#160;</td>
+          <td class="paramname"><em>sms_msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送短信 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">smsMsg</td><td>发送的短信</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 发送成功 其它 发送失败 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

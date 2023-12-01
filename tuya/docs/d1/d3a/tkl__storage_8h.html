@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/storage/include/tkl_storage.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_e4e42cffc1a2f6f4801d9060a2c8d431.html">storage</a></li><li class="navelem"><a class="el" href="../../dir_078190073844690fc6969994e5d57bc3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_storage.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - storage: sdCard U-Disk HDD SSD etc.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_storage.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dbb/tkl__storage_8h__incl.png" border="0" usemap="#ainclude_2adapter_2storage_2include_2tkl__storage_8h" alt=""/></div>
+<map name="ainclude_2adapter_2storage_2include_2tkl__storage_8h" id="ainclude_2adapter_2storage_2include_2tkl__storage_8h">
+<area shape="rect" title="Common process &#45; storage: sdCard U&#45;Disk HDD SSD etc." alt="" coords="355,5,531,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d1/d3a/tkl__storage_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/daf/structTKL__STORAGE__EVENT__MSG.html">TKL_STORAGE_EVENT_MSG</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ae04c4ad9413289283c58e24d6d6a6efc"><td class="memItemLeft" align="right" valign="top"><a id="ae04c4ad9413289283c58e24d6d6a6efc" name="ae04c4ad9413289283c58e24d6d6a6efc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BUSTP_SATA</b>&#160;&#160;&#160;&quot;sata&quot;</td></tr>
+<tr class="separator:ae04c4ad9413289283c58e24d6d6a6efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2c1b5571383eeeef439549d9eff71f"><td class="memItemLeft" align="right" valign="top"><a id="a6f2c1b5571383eeeef439549d9eff71f" name="a6f2c1b5571383eeeef439549d9eff71f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BUSTP_SDIO</b>&#160;&#160;&#160;&quot;sdcard&quot;</td></tr>
+<tr class="separator:a6f2c1b5571383eeeef439549d9eff71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295a509ffaba1d41b3dd7ba0d37bba5c"><td class="memItemLeft" align="right" valign="top"><a id="a295a509ffaba1d41b3dd7ba0d37bba5c" name="a295a509ffaba1d41b3dd7ba0d37bba5c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BUSTP_USB</b>&#160;&#160;&#160;&quot;usb&quot;</td></tr>
+<tr class="separator:a295a509ffaba1d41b3dd7ba0d37bba5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95be237df91c0ad38e57dfed31afb7f5"><td class="memItemLeft" align="right" valign="top"><a id="a95be237df91c0ad38e57dfed31afb7f5" name="a95be237df91c0ad38e57dfed31afb7f5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEVICE_HOTPLUG_ADD</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a95be237df91c0ad38e57dfed31afb7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74aec0028bc703bab80fc9f171c959f"><td class="memItemLeft" align="right" valign="top"><a id="ab74aec0028bc703bab80fc9f171c959f" name="ab74aec0028bc703bab80fc9f171c959f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEVICE_HOTPLUG_DEL</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab74aec0028bc703bab80fc9f171c959f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fcbf5e95c90a4bb0a3a510b51e4c29"><td class="memItemLeft" align="right" valign="top"><a id="ae8fcbf5e95c90a4bb0a3a510b51e4c29" name="ae8fcbf5e95c90a4bb0a3a510b51e4c29"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FSTP_EXT34</b>&#160;&#160;&#160;&quot;ext4&quot;</td></tr>
+<tr class="separator:ae8fcbf5e95c90a4bb0a3a510b51e4c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3114eae990ad5025df15a7f301dbef25"><td class="memItemLeft" align="right" valign="top"><a id="a3114eae990ad5025df15a7f301dbef25" name="a3114eae990ad5025df15a7f301dbef25"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FSTP_FAT32</b>&#160;&#160;&#160;&quot;vfat&quot;</td></tr>
+<tr class="separator:a3114eae990ad5025df15a7f301dbef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40066c4ff4cba4bf931b6d7800360cf"><td class="memItemLeft" align="right" valign="top"><a id="af40066c4ff4cba4bf931b6d7800360cf" name="af40066c4ff4cba4bf931b6d7800360cf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FSTP_XFS</b>&#160;&#160;&#160;&quot;xfs&quot;</td></tr>
+<tr class="separator:af40066c4ff4cba4bf931b6d7800360cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eda7c87de4bac72ae0358a7c96062b"><td class="memItemLeft" align="right" valign="top"><a id="a79eda7c87de4bac72ae0358a7c96062b" name="a79eda7c87de4bac72ae0358a7c96062b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_DEVICE_NUM</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a79eda7c87de4bac72ae0358a7c96062b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1cc340e994105fa4d15fe1170d44aa"><td class="memItemLeft" align="right" valign="top"><a id="a0e1cc340e994105fa4d15fe1170d44aa" name="a0e1cc340e994105fa4d15fe1170d44aa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_FSTP_LEN</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a0e1cc340e994105fa4d15fe1170d44aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea23fad7aba6a9d4d6ef55a04ec47a4e"><td class="memItemLeft" align="right" valign="top"><a id="aea23fad7aba6a9d4d6ef55a04ec47a4e" name="aea23fad7aba6a9d4d6ef55a04ec47a4e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PART_NUM</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:aea23fad7aba6a9d4d6ef55a04ec47a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd33f362ae3bbdacb5de76473aa8a2f"><td class="memItemLeft" align="right" valign="top"><a id="abdd33f362ae3bbdacb5de76473aa8a2f" name="abdd33f362ae3bbdacb5de76473aa8a2f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PATH_LEN</b>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:abdd33f362ae3bbdacb5de76473aa8a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace93835dd833ba051f5a7e7f5857a9c6"><td class="memItemLeft" align="right" valign="top"><a id="ace93835dd833ba051f5a7e7f5857a9c6" name="ace93835dd833ba051f5a7e7f5857a9c6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PART_ADD</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ace93835dd833ba051f5a7e7f5857a9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741c7bf680672b44a7dba00f6b5fb122"><td class="memItemLeft" align="right" valign="top"><a id="a741c7bf680672b44a7dba00f6b5fb122" name="a741c7bf680672b44a7dba00f6b5fb122"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PART_DEL</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a741c7bf680672b44a7dba00f6b5fb122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a13e6b4d584b6bd0402a864661d512a9b"><td class="memItemLeft" align="right" valign="top"><a id="a13e6b4d584b6bd0402a864661d512a9b" name="a13e6b4d584b6bd0402a864661d512a9b"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_STORAGE_BADBLK_CB</b>) (ULONG_T blk_idx, VOID *user_ctx)</td></tr>
+<tr class="separator:a13e6b4d584b6bd0402a864661d512a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b706d457b00f86c005fd55924e78c26"><td class="memItemLeft" align="right" valign="top"><a id="a8b706d457b00f86c005fd55924e78c26" name="a8b706d457b00f86c005fd55924e78c26"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_STORAGE_EVENT_CB</b>) (<a class="el" href="../../df/daf/structTKL__STORAGE__EVENT__MSG.html">TKL_STORAGE_EVENT_MSG</a> *msg, VOID *user_ctx)</td></tr>
+<tr class="separator:a8b706d457b00f86c005fd55924e78c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cef29860037daf707eb4e06b562c78"><td class="memItemLeft" align="right" valign="top"><a id="a72cef29860037daf707eb4e06b562c78" name="a72cef29860037daf707eb4e06b562c78"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_STORAGE_PROGRESS_CB</b>) (INT_T progress, VOID *user_ctx)</td></tr>
+<tr class="separator:a72cef29860037daf707eb4e06b562c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a284bc7469027f5245b8e5b45652f730c"><td class="memItemLeft" align="right" valign="top"><a id="a284bc7469027f5245b8e5b45652f730c" name="a284bc7469027f5245b8e5b45652f730c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_STORAGE_EVT_MSGTP</b> { <b>EVT_HOTPLUG</b>
+, <b>EVT_FS_ERR</b>
+ }</td></tr>
+<tr class="separator:a284bc7469027f5245b8e5b45652f730c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab2a8373394338c647ea4d44b0a6ee498"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#ab2a8373394338c647ea4d44b0a6ee498">tkl_storage_check_badblocks</a> (CHAR_T *dev_name, TKL_STORAGE_BADBLK_CB cb, VOID *user_ctx)</td></tr>
+<tr class="memdesc:ab2a8373394338c647ea4d44b0a6ee498"><td class="mdescLeft">&#160;</td><td class="mdescRight">check bad blocks  <a href="../../d1/d3a/tkl__storage_8h.html#ab2a8373394338c647ea4d44b0a6ee498">更多...</a><br /></td></tr>
+<tr class="separator:ab2a8373394338c647ea4d44b0a6ee498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d74c13a408a0070a3f4ba329113d617"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a2d74c13a408a0070a3f4ba329113d617">tkl_storage_df</a> (CHAR_T *mount_point, <a class="el" href="../../d2/d6e/structTKL__STORAGE__DF__T.html">TKL_STORAGE_DF_T</a> *df)</td></tr>
+<tr class="memdesc:a2d74c13a408a0070a3f4ba329113d617"><td class="mdescLeft">&#160;</td><td class="mdescRight">report filesystem disk space usage  <a href="../../d1/d3a/tkl__storage_8h.html#a2d74c13a408a0070a3f4ba329113d617">更多...</a><br /></td></tr>
+<tr class="separator:a2d74c13a408a0070a3f4ba329113d617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2338f9b6d4bdab73c59de998f0971014"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a2338f9b6d4bdab73c59de998f0971014">tkl_storage_fsck</a> (CHAR_T *blk_dev, CHAR_T *fs_type, CHAR_T *parm, INT_T flags, TKL_STORAGE_PROGRESS_CB cb, VOID *user_ctx)</td></tr>
+<tr class="memdesc:a2338f9b6d4bdab73c59de998f0971014"><td class="mdescLeft">&#160;</td><td class="mdescRight">check and repair a filesystem  <a href="../../d1/d3a/tkl__storage_8h.html#a2338f9b6d4bdab73c59de998f0971014">更多...</a><br /></td></tr>
+<tr class="separator:a2338f9b6d4bdab73c59de998f0971014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24801765db4dd1f769478041a41f1ae9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a24801765db4dd1f769478041a41f1ae9">tkl_storage_get_device_info</a> (CHAR_T *dev_name, <a class="el" href="../../d4/ddd/structTKL__STORAGE__DEVICE__INFO__T.html">TKL_STORAGE_DEVICE_INFO_T</a> *list)</td></tr>
+<tr class="memdesc:a24801765db4dd1f769478041a41f1ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get one device info  <a href="../../d1/d3a/tkl__storage_8h.html#a24801765db4dd1f769478041a41f1ae9">更多...</a><br /></td></tr>
+<tr class="separator:a24801765db4dd1f769478041a41f1ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74eca14f82ffac0b222d907adc3eea2a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a74eca14f82ffac0b222d907adc3eea2a">tkl_storage_get_device_list</a> (<a class="el" href="../../d4/ddd/structTKL__STORAGE__DEVICE__INFO__T.html">TKL_STORAGE_DEVICE_INFO_T</a> *list, INT_T num)</td></tr>
+<tr class="memdesc:a74eca14f82ffac0b222d907adc3eea2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get block device list  <a href="../../d1/d3a/tkl__storage_8h.html#a74eca14f82ffac0b222d907adc3eea2a">更多...</a><br /></td></tr>
+<tr class="separator:a74eca14f82ffac0b222d907adc3eea2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a250a50e8b779bff28658882003d345"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a4a250a50e8b779bff28658882003d345">tkl_storage_get_internal_dir</a> (CHAR_T path[256])</td></tr>
+<tr class="memdesc:a4a250a50e8b779bff28658882003d345"><td class="mdescLeft">&#160;</td><td class="mdescRight">get internal r/w dir  <a href="../../d1/d3a/tkl__storage_8h.html#a4a250a50e8b779bff28658882003d345">更多...</a><br /></td></tr>
+<tr class="separator:a4a250a50e8b779bff28658882003d345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f7919a39c8f0e3a9d46f5ed69c5185"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a01f7919a39c8f0e3a9d46f5ed69c5185">tkl_storage_get_part_list</a> (CHAR_T *dev_name, <a class="el" href="../../d1/d20/structTKL__STORAGE__PART__INFO__T.html">TKL_STORAGE_PART_INFO_T</a> *list, INT_T num)</td></tr>
+<tr class="memdesc:a01f7919a39c8f0e3a9d46f5ed69c5185"><td class="mdescLeft">&#160;</td><td class="mdescRight">get partition info  <a href="../../d1/d3a/tkl__storage_8h.html#a01f7919a39c8f0e3a9d46f5ed69c5185">更多...</a><br /></td></tr>
+<tr class="separator:a01f7919a39c8f0e3a9d46f5ed69c5185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f050deb53c4cc2c70e0f5e4116a08d5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a6f050deb53c4cc2c70e0f5e4116a08d5">tkl_storage_ioctl</a> (CHAR_T *dev_name, ULONG_T request, VOID *args)</td></tr>
+<tr class="memdesc:a6f050deb53c4cc2c70e0f5e4116a08d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">scsi generic ioctl  <a href="../../d1/d3a/tkl__storage_8h.html#a6f050deb53c4cc2c70e0f5e4116a08d5">更多...</a><br /></td></tr>
+<tr class="separator:a6f050deb53c4cc2c70e0f5e4116a08d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35722fbdbcc6d8dc7a130d0eebf00458"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a35722fbdbcc6d8dc7a130d0eebf00458">tkl_storage_loop_event</a> (TKL_STORAGE_EVENT_CB event_cb, VOID *user_ctx)</td></tr>
+<tr class="memdesc:a35722fbdbcc6d8dc7a130d0eebf00458"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop storage event, eg. hotplug will not return except an error occured.  <a href="../../d1/d3a/tkl__storage_8h.html#a35722fbdbcc6d8dc7a130d0eebf00458">更多...</a><br /></td></tr>
+<tr class="separator:a35722fbdbcc6d8dc7a130d0eebf00458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8729495f19fe7350a957d6dcc1568565"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a8729495f19fe7350a957d6dcc1568565">tkl_storage_make_part</a> (CHAR_T *part_name, CHAR_T *part_type, CHAR_T *fs_type, BOOL_T isadd, UINT_T part_index, LONG_T start, LONG_T end)</td></tr>
+<tr class="memdesc:a8729495f19fe7350a957d6dcc1568565"><td class="mdescLeft">&#160;</td><td class="mdescRight">make partition. refer to parted/fdisk  <a href="../../d1/d3a/tkl__storage_8h.html#a8729495f19fe7350a957d6dcc1568565">更多...</a><br /></td></tr>
+<tr class="separator:a8729495f19fe7350a957d6dcc1568565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1560f84668c8452e9705e7a857b201ff"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a1560f84668c8452e9705e7a857b201ff">tkl_storage_mkfs</a> (CHAR_T *fs_type, CHAR_T *fs_dev, CHAR_T *parm, TKL_STORAGE_PROGRESS_CB cb, VOID *user_ctx)</td></tr>
+<tr class="memdesc:a1560f84668c8452e9705e7a857b201ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">partiton format, build filesystem  <a href="../../d1/d3a/tkl__storage_8h.html#a1560f84668c8452e9705e7a857b201ff">更多...</a><br /></td></tr>
+<tr class="separator:a1560f84668c8452e9705e7a857b201ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a7c6ddc2f624b753619d0ab30b9e1e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#ad7a7c6ddc2f624b753619d0ab30b9e1e">tkl_storage_mount</a> (CHAR_T *source, CHAR_T *target, CHAR_T *fs_type, ULONG_T flags, VOID *data)</td></tr>
+<tr class="memdesc:ad7a7c6ddc2f624b753619d0ab30b9e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">mount a filesystem partition. refer to mount system call  <a href="../../d1/d3a/tkl__storage_8h.html#ad7a7c6ddc2f624b753619d0ab30b9e1e">更多...</a><br /></td></tr>
+<tr class="separator:ad7a7c6ddc2f624b753619d0ab30b9e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85aad99711ca29d8302c35f05c7af194"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/tkl__storage_8h.html#a85aad99711ca29d8302c35f05c7af194">tkl_storage_umount</a> (CHAR_T *target, INT_T flags)</td></tr>
+<tr class="memdesc:a85aad99711ca29d8302c35f05c7af194"><td class="mdescLeft">&#160;</td><td class="mdescRight">umount a filesystem partition. refer to umount system call  <a href="../../d1/d3a/tkl__storage_8h.html#a85aad99711ca29d8302c35f05c7af194">更多...</a><br /></td></tr>
+<tr class="separator:a85aad99711ca29d8302c35f05c7af194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - storage: sdCard U-Disk HDD SSD etc. </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-31</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2019-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ab2a8373394338c647ea4d44b0a6ee498" name="ab2a8373394338c647ea4d44b0a6ee498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a8373394338c647ea4d44b0a6ee498">&#9670;&nbsp;</a></span>tkl_storage_check_badblocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_check_badblocks </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_STORAGE_BADBLK_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>user_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check bad blocks </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_name</td><td>device node name </td></tr>
+    <tr><td class="paramname">cb</td><td>callback to report bad blocks </td></tr>
+    <tr><td class="paramname">user_ctx</td><td>caller's private context, optional </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a2d74c13a408a0070a3f4ba329113d617" name="a2d74c13a408a0070a3f4ba329113d617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d74c13a408a0070a3f4ba329113d617">&#9670;&nbsp;</a></span>tkl_storage_df()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_df </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>mount_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d6e/structTKL__STORAGE__DF__T.html">TKL_STORAGE_DF_T</a> *&#160;</td>
+          <td class="paramname"><em>df</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>report filesystem disk space usage </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mount_path</td><td>mount point </td></tr>
+    <tr><td class="paramname">df</td><td>fs state loaded on success </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a2338f9b6d4bdab73c59de998f0971014" name="a2338f9b6d4bdab73c59de998f0971014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2338f9b6d4bdab73c59de998f0971014">&#9670;&nbsp;</a></span>tkl_storage_fsck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_fsck </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>blk_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>parm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_STORAGE_PROGRESS_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>user_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check and repair a filesystem </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blk_dev</td><td>device node </td></tr>
+    <tr><td class="paramname">fs_type</td><td>filesystem type </td></tr>
+    <tr><td class="paramname">parm</td><td>fsck parame, eg. fsck.vfat -f /dev/sda1 </td></tr>
+    <tr><td class="paramname">flags</td><td>reserved flags </td></tr>
+    <tr><td class="paramname">cb</td><td>progress callback, optional </td></tr>
+    <tr><td class="paramname">user_ctx</td><td>caller's private context, optional </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a24801765db4dd1f769478041a41f1ae9" name="a24801765db4dd1f769478041a41f1ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24801765db4dd1f769478041a41f1ae9">&#9670;&nbsp;</a></span>tkl_storage_get_device_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_get_device_info </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddd/structTKL__STORAGE__DEVICE__INFO__T.html">TKL_STORAGE_DEVICE_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get one device info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>device list loaded on success </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET return list number on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a74eca14f82ffac0b222d907adc3eea2a" name="a74eca14f82ffac0b222d907adc3eea2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74eca14f82ffac0b222d907adc3eea2a">&#9670;&nbsp;</a></span>tkl_storage_get_device_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_get_device_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/ddd/structTKL__STORAGE__DEVICE__INFO__T.html">TKL_STORAGE_DEVICE_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get block device list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>device list loaded on success </td></tr>
+    <tr><td class="paramname">num</td><td>list number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET return list number on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a4a250a50e8b779bff28658882003d345" name="a4a250a50e8b779bff28658882003d345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a250a50e8b779bff28658882003d345">&#9670;&nbsp;</a></span>tkl_storage_get_internal_dir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_get_internal_dir </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T&#160;</td>
+          <td class="paramname"><em>path</em>[256]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get internal r/w dir </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>absolute path returned on success </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a01f7919a39c8f0e3a9d46f5ed69c5185" name="a01f7919a39c8f0e3a9d46f5ed69c5185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f7919a39c8f0e3a9d46f5ed69c5185">&#9670;&nbsp;</a></span>tkl_storage_get_part_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_get_part_list </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d20/structTKL__STORAGE__PART__INFO__T.html">TKL_STORAGE_PART_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get partition info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_name</td><td>device node wanted to list </td></tr>
+    <tr><td class="paramname">list</td><td>partition list loaded on success </td></tr>
+    <tr><td class="paramname">num</td><td>list number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET return list number on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a6f050deb53c4cc2c70e0f5e4116a08d5" name="a6f050deb53c4cc2c70e0f5e4116a08d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f050deb53c4cc2c70e0f5e4116a08d5">&#9670;&nbsp;</a></span>tkl_storage_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG_T&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>scsi generic ioctl </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_name</td><td>device node name </td></tr>
+    <tr><td class="paramname">request</td><td>request. TODO: copy scsi header files for request </td></tr>
+    <tr><td class="paramname">args</td><td>args </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a35722fbdbcc6d8dc7a130d0eebf00458" name="a35722fbdbcc6d8dc7a130d0eebf00458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35722fbdbcc6d8dc7a130d0eebf00458">&#9670;&nbsp;</a></span>tkl_storage_loop_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_loop_event </td>
+          <td>(</td>
+          <td class="paramtype">TKL_STORAGE_EVENT_CB&#160;</td>
+          <td class="paramname"><em>event_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>user_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>loop storage event, eg. hotplug will not return except an error occured. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event_cb</td><td>callback handle storage event </td></tr>
+    <tr><td class="paramname">user_ctx</td><td>user private data, optional </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a8729495f19fe7350a957d6dcc1568565" name="a8729495f19fe7350a957d6dcc1568565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8729495f19fe7350a957d6dcc1568565">&#9670;&nbsp;</a></span>tkl_storage_make_part()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_make_part </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>part_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>part_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>isadd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>part_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LONG_T&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LONG_T&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make partition. refer to parted/fdisk </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_name</td><td>partition label, optional </td></tr>
+    <tr><td class="paramname">part_type</td><td>partition type, eg. primary logical extended </td></tr>
+    <tr><td class="paramname">fs_type</td><td>filesystem type, eg. ext4 xfs, optional </td></tr>
+    <tr><td class="paramname">isadd</td><td>part is add or delet, 1:add, 2:delete </td></tr>
+    <tr><td class="paramname">part_index</td><td>means part number, eg. primary[1-4] logical [5 or over] </td></tr>
+    <tr><td class="paramname">start</td><td>partition start position, KB </td></tr>
+    <tr><td class="paramname">end</td><td>partition end position, KB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a1560f84668c8452e9705e7a857b201ff" name="a1560f84668c8452e9705e7a857b201ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1560f84668c8452e9705e7a857b201ff">&#9670;&nbsp;</a></span>tkl_storage_mkfs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_mkfs </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>parm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_STORAGE_PROGRESS_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>user_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>partiton format, build filesystem </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs_type</td><td>filesystem type, eg. ext4 fat32 </td></tr>
+    <tr><td class="paramname">fs_dev</td><td>device node, eg. /dev/sda1 </td></tr>
+    <tr><td class="paramname">parm</td><td>mkfs parame, eg. mkfs.vfat -F 32 -n "name" /dev/sda1 <br  />
+ </td></tr>
+    <tr><td class="paramname">cb</td><td>progress callback, optional </td></tr>
+    <tr><td class="paramname">user_ctx</td><td>caller's private context, optional </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="ad7a7c6ddc2f624b753619d0ab30b9e1e" name="ad7a7c6ddc2f624b753619d0ab30b9e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a7c6ddc2f624b753619d0ab30b9e1e">&#9670;&nbsp;</a></span>tkl_storage_mount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_mount </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG_T&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mount a filesystem partition. refer to mount system call </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>device node </td></tr>
+    <tr><td class="paramname">target</td><td>dir wanted mount to </td></tr>
+    <tr><td class="paramname">fs_type</td><td>filesystem type </td></tr>
+    <tr><td class="paramname">flags</td><td>filesystem r/w/a flags, optional </td></tr>
+    <tr><td class="paramname">data</td><td>filesystem-specific params, optional </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+<a id="a85aad99711ca29d8302c35f05c7af194" name="a85aad99711ca29d8302c35f05c7af194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85aad99711ca29d8302c35f05c7af194">&#9670;&nbsp;</a></span>tkl_storage_umount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_storage_umount </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>umount a filesystem partition. refer to umount system call </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>dir fs mounted </td></tr>
+    <tr><td class="paramname">flags</td><td>reserved flags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET 0 on success. A negative error code on error. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

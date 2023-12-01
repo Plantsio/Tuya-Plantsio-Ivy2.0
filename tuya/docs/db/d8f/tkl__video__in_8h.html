@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/media/include/tkl_video_in.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_f035e8dac116664123d3c2a73ed2f457.html">media</a></li><li class="navelem"><a class="el" href="../../dir_c3870483c35fa4c017a1fc661583a339.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_video_in.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>video input  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd2/tkl__media_8h_source.html">tkl_media.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d61/tkl__isp_8h_source.html">tkl_isp.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_video_in.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d68/tkl__video__in_8h__incl.png" border="0" usemap="#ainclude_2adapter_2media_2include_2tkl__video__in_8h" alt=""/></div>
+<map name="ainclude_2adapter_2media_2include_2tkl__video__in_8h" id="ainclude_2adapter_2media_2include_2tkl__video__in_8h">
+<area shape="rect" title="video input" alt="" coords="340,5,508,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,244,517,271"/>
+<area shape="rect" href="../../df/dd2/tkl__media_8h.html" title="Audio and video generic type definition header file" alt="" coords="393,169,492,196"/>
+<area shape="rect" href="../../dd/d61/tkl__isp_8h.html" title="isp" alt="" coords="461,95,539,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,319,139,345"/>
+<area shape="rect" title=" " alt="" coords="163,319,237,345"/>
+<area shape="rect" title=" " alt="" coords="262,319,333,345"/>
+<area shape="rect" title=" " alt="" coords="357,319,432,345"/>
+<area shape="rect" title=" " alt="" coords="457,319,527,345"/>
+<area shape="rect" title=" " alt="" coords="552,319,635,345"/>
+<area shape="rect" title=" " alt="" coords="659,319,730,345"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,319,893,345"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d09/tkl__video__in_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2media_2include_2tkl__video__in_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2media_2include_2tkl__video__in_8hdep" id="ainclude_2adapter_2media_2include_2tkl__video__in_8hdep">
+<area shape="rect" title="video input" alt="" coords="11,5,179,47"/>
+<area shape="rect" href="../../d5/d4a/tkl__video__enc_8h.html" title="video encode" alt="" coords="5,95,184,136"/>
+</map>
+</div>
+</div>
+<p><a href="../../db/d8f/tkl__video__in_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">TKL_VI_DETECT_PARAM_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8ccf742263c86ff938c6f87fde7dbaa0"><td class="memItemLeft" align="right" valign="top"><a id="a8ccf742263c86ff938c6f87fde7dbaa0" name="a8ccf742263c86ff938c6f87fde7dbaa0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_VI_SENSOR_CBUS_TYPE_E</b> { <b>TKL_VI_SENSOR_TYPE_IIC</b>
+, <b>TKL_VI_SENSOR_TYPE_SPI</b>
+ }</td></tr>
+<tr class="separator:a8ccf742263c86ff938c6f87fde7dbaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aeb5d925966212cc02600d85d7b04666c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#aeb5d925966212cc02600d85d7b04666c">tkl_vi_detect_get_result</a> (TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type, <a class="el" href="../../da/dd5/structTKL__VI__DETECT__RESULT__T.html">TKL_VI_DETECT_RESULT_T</a> *presult)</td></tr>
+<tr class="memdesc:aeb5d925966212cc02600d85d7b04666c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get detection results  <a href="../../db/d8f/tkl__video__in_8h.html#aeb5d925966212cc02600d85d7b04666c">更多...</a><br /></td></tr>
+<tr class="separator:aeb5d925966212cc02600d85d7b04666c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698111374cf9fcea54d060304dd377fb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a698111374cf9fcea54d060304dd377fb">tkl_vi_detect_set</a> (TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type, <a class="el" href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">TKL_VI_DETECT_PARAM_T</a> *pparam)</td></tr>
+<tr class="memdesc:a698111374cf9fcea54d060304dd377fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">set detection param  <a href="../../db/d8f/tkl__video__in_8h.html#a698111374cf9fcea54d060304dd377fb">更多...</a><br /></td></tr>
+<tr class="separator:a698111374cf9fcea54d060304dd377fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f8cbbcb1ecdcbe8294e9767abcc7fa"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a78f8cbbcb1ecdcbe8294e9767abcc7fa">tkl_vi_detect_start</a> (TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type)</td></tr>
+<tr class="memdesc:a78f8cbbcb1ecdcbe8294e9767abcc7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">detect start  <a href="../../db/d8f/tkl__video__in_8h.html#a78f8cbbcb1ecdcbe8294e9767abcc7fa">更多...</a><br /></td></tr>
+<tr class="separator:a78f8cbbcb1ecdcbe8294e9767abcc7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5f705404083b4d80ddbd88d135b28e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a0e5f705404083b4d80ddbd88d135b28e">tkl_vi_detect_stop</a> (TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type)</td></tr>
+<tr class="memdesc:a0e5f705404083b4d80ddbd88d135b28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">detect stop  <a href="../../db/d8f/tkl__video__in_8h.html#a0e5f705404083b4d80ddbd88d135b28e">更多...</a><br /></td></tr>
+<tr class="separator:a0e5f705404083b4d80ddbd88d135b28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609963abbe5cd379ae06ef45a9b9fcf1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a609963abbe5cd379ae06ef45a9b9fcf1">tkl_vi_get_mirror_flip</a> (TKL_VI_CHN_E chn, TKL_VI_MIRROR_FLIP_E *flag)</td></tr>
+<tr class="memdesc:a609963abbe5cd379ae06ef45a9b9fcf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">vi get mirror and flip  <a href="../../db/d8f/tkl__video__in_8h.html#a609963abbe5cd379ae06ef45a9b9fcf1">更多...</a><br /></td></tr>
+<tr class="separator:a609963abbe5cd379ae06ef45a9b9fcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f181d1bd63fc2c55f144df2b658877"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a78f181d1bd63fc2c55f144df2b658877">tkl_vi_init</a> (<a class="el" href="../../d9/d80/structTKL__VI__CONFIG__T.html">TKL_VI_CONFIG_T</a> *pconfig, INT32_T count)</td></tr>
+<tr class="memdesc:a78f181d1bd63fc2c55f144df2b658877"><td class="mdescLeft">&#160;</td><td class="mdescRight">vi init  <a href="../../db/d8f/tkl__video__in_8h.html#a78f181d1bd63fc2c55f144df2b658877">更多...</a><br /></td></tr>
+<tr class="separator:a78f181d1bd63fc2c55f144df2b658877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8ce1d8edcabe9aafb0fc7143099d93"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a7b8ce1d8edcabe9aafb0fc7143099d93">tkl_vi_sensor_reg_get</a> (TKL_VI_CHN_E chn, <a class="el" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a> *parg)</td></tr>
+<tr class="memdesc:a7b8ce1d8edcabe9aafb0fc7143099d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">get sensor reg value  <a href="../../db/d8f/tkl__video__in_8h.html#a7b8ce1d8edcabe9aafb0fc7143099d93">更多...</a><br /></td></tr>
+<tr class="separator:a7b8ce1d8edcabe9aafb0fc7143099d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319b5ad2d8b394b37943b1b227e695d3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a319b5ad2d8b394b37943b1b227e695d3">tkl_vi_sensor_reg_set</a> (TKL_VI_CHN_E chn, <a class="el" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a> *parg)</td></tr>
+<tr class="memdesc:a319b5ad2d8b394b37943b1b227e695d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">set sensor reg value  <a href="../../db/d8f/tkl__video__in_8h.html#a319b5ad2d8b394b37943b1b227e695d3">更多...</a><br /></td></tr>
+<tr class="separator:a319b5ad2d8b394b37943b1b227e695d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd460ccd7f5695bbc80be77f22f13f1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#aefd460ccd7f5695bbc80be77f22f13f1">tkl_vi_set_mirror_flip</a> (TKL_VI_CHN_E chn, TKL_VI_MIRROR_FLIP_E flag)</td></tr>
+<tr class="memdesc:aefd460ccd7f5695bbc80be77f22f13f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">vi set mirror and flip  <a href="../../db/d8f/tkl__video__in_8h.html#aefd460ccd7f5695bbc80be77f22f13f1">更多...</a><br /></td></tr>
+<tr class="separator:aefd460ccd7f5695bbc80be77f22f13f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545a0ced7f6889ea39c111227c502814"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/tkl__video__in_8h.html#a545a0ced7f6889ea39c111227c502814">tkl_vi_uninit</a> (VOID)</td></tr>
+<tr class="memdesc:a545a0ced7f6889ea39c111227c502814"><td class="mdescLeft">&#160;</td><td class="mdescRight">vi uninit  <a href="../../db/d8f/tkl__video__in_8h.html#a545a0ced7f6889ea39c111227c502814">更多...</a><br /></td></tr>
+<tr class="separator:a545a0ced7f6889ea39c111227c502814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >video input </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-11-04</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2019-2021 Tuya Inc. All Rights Reserved.</dd></dl>
+<p>Video input configuration: for sensor, ISP or VI attribute configuration, such as image flip, anti flicker, compensation mode, profile, etc. </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aeb5d925966212cc02600d85d7b04666c" name="aeb5d925966212cc02600d85d7b04666c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5d925966212cc02600d85d7b04666c">&#9670;&nbsp;</a></span>tkl_vi_detect_get_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_detect_get_result </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_MEDIA_DETECT_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dd5/structTKL__VI__DETECT__RESULT__T.html">TKL_VI_DETECT_RESULT_T</a> *&#160;</td>
+          <td class="paramname"><em>presult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get detection results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>detect type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">presult</td><td>detection results</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a698111374cf9fcea54d060304dd377fb" name="a698111374cf9fcea54d060304dd377fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698111374cf9fcea54d060304dd377fb">&#9670;&nbsp;</a></span>tkl_vi_detect_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_detect_set </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_MEDIA_DETECT_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">TKL_VI_DETECT_PARAM_T</a> *&#160;</td>
+          <td class="paramname"><em>pparam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set detection param </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>detect type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pparam</td><td>detection param</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a78f8cbbcb1ecdcbe8294e9767abcc7fa" name="a78f8cbbcb1ecdcbe8294e9767abcc7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f8cbbcb1ecdcbe8294e9767abcc7fa">&#9670;&nbsp;</a></span>tkl_vi_detect_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_detect_start </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_MEDIA_DETECT_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>detect start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>detect type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a0e5f705404083b4d80ddbd88d135b28e" name="a0e5f705404083b4d80ddbd88d135b28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5f705404083b4d80ddbd88d135b28e">&#9670;&nbsp;</a></span>tkl_vi_detect_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_detect_stop </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_MEDIA_DETECT_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>detect stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>detect type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a609963abbe5cd379ae06ef45a9b9fcf1" name="a609963abbe5cd379ae06ef45a9b9fcf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609963abbe5cd379ae06ef45a9b9fcf1">&#9670;&nbsp;</a></span>tkl_vi_get_mirror_flip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_get_mirror_flip </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VI_MIRROR_FLIP_E *&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vi get mirror and flip </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">flag</td><td>mirror and flip value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a78f181d1bd63fc2c55f144df2b658877" name="a78f181d1bd63fc2c55f144df2b658877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f181d1bd63fc2c55f144df2b658877">&#9670;&nbsp;</a></span>tkl_vi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d80/structTKL__VI__CONFIG__T.html">TKL_VI_CONFIG_T</a> *&#160;</td>
+          <td class="paramname"><em>pconfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vi init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pconfig</td><td>vi config </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>count of pconfig</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a7b8ce1d8edcabe9aafb0fc7143099d93" name="a7b8ce1d8edcabe9aafb0fc7143099d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8ce1d8edcabe9aafb0fc7143099d93">&#9670;&nbsp;</a></span>tkl_vi_sensor_reg_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_sensor_reg_get </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a> *&#160;</td>
+          <td class="paramname"><em>parg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get sensor reg value </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pparam</td><td>reg info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a319b5ad2d8b394b37943b1b227e695d3" name="a319b5ad2d8b394b37943b1b227e695d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319b5ad2d8b394b37943b1b227e695d3">&#9670;&nbsp;</a></span>tkl_vi_sensor_reg_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_sensor_reg_set </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a> *&#160;</td>
+          <td class="paramname"><em>parg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set sensor reg value </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pparam</td><td>reg info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="aefd460ccd7f5695bbc80be77f22f13f1" name="aefd460ccd7f5695bbc80be77f22f13f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd460ccd7f5695bbc80be77f22f13f1">&#9670;&nbsp;</a></span>tkl_vi_set_mirror_flip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_set_mirror_flip </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VI_MIRROR_FLIP_E&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vi set mirror and flip </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chn</td><td>vi chn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>mirror and flip value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a545a0ced7f6889ea39c111227c502814" name="a545a0ced7f6889ea39c111227c502814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545a0ced7f6889ea39c111227c502814">&#9670;&nbsp;</a></span>tkl_vi_uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_vi_uninit </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vi uninit </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_BLE_UUID_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_BLE_UUID_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Bluetooth Low Energy UUID type, encapsulates both 16-bit and 128-bit UUIDs.  
+ <a href="../../d1/d7a/structTKL__BLE__UUID__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/d92/tkl__bluetooth__def_8h_source.html">tkl_bluetooth_def.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:aef4af3752c5ac23494bfd71601fd0fdd"><td class="memItemLeft" ><a id="aef4af3752c5ac23494bfd71601fd0fdd" name="aef4af3752c5ac23494bfd71601fd0fdd"></a>
+union {</td></tr>
+<tr class="memitem:a926845d7406764f9862c73fdb3707300"><td class="memItemLeft" >&#160;&#160;&#160;UCHAR_T&#160;&#160;&#160;<a class="el" href="../../d1/d7a/structTKL__BLE__UUID__T.html#aaabb9af51228c199e3ad148b1e9c38e9">uuid128</a> [16]</td></tr>
+<tr class="separator:a926845d7406764f9862c73fdb3707300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b74ffce0cec21c36e88e062271a8fb9"><td class="memItemLeft" >&#160;&#160;&#160;USHORT_T&#160;&#160;&#160;<a class="el" href="../../d1/d7a/structTKL__BLE__UUID__T.html#aeeedece37ddc28a2f92b6f0c100d6eb3">uuid16</a></td></tr>
+<tr class="separator:a5b74ffce0cec21c36e88e062271a8fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035f36f030e059478b959d8fda14acc0"><td class="memItemLeft" >&#160;&#160;&#160;UINT_T&#160;&#160;&#160;<a class="el" href="../../d1/d7a/structTKL__BLE__UUID__T.html#a185e9eda6915bcaba2414387d0ebb8d9">uuid32</a></td></tr>
+<tr class="separator:a035f36f030e059478b959d8fda14acc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4af3752c5ac23494bfd71601fd0fdd"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>uuid</b></td></tr>
+<tr class="separator:aef4af3752c5ac23494bfd71601fd0fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806e444dfc52c10a5e6f6934d6e96135"><td class="memItemLeft" align="right" valign="top">TKL_BLE_UUID_TYPE_E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7a/structTKL__BLE__UUID__T.html#a806e444dfc52c10a5e6f6934d6e96135">uuid_type</a></td></tr>
+<tr class="separator:a806e444dfc52c10a5e6f6934d6e96135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Bluetooth Low Energy UUID type, encapsulates both 16-bit and 128-bit UUIDs. </p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="aaabb9af51228c199e3ad148b1e9c38e9" name="aaabb9af51228c199e3ad148b1e9c38e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabb9af51228c199e3ad148b1e9c38e9">&#9670;&nbsp;</a></span>uuid128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UCHAR_T TKL_BLE_UUID_T::uuid128[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Little-Endian UUID bytes. 128bit uuid </p>
+
+</div>
+</div>
+<a id="aeeedece37ddc28a2f92b6f0c100d6eb3" name="aeeedece37ddc28a2f92b6f0c100d6eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeedece37ddc28a2f92b6f0c100d6eb3">&#9670;&nbsp;</a></span>uuid16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT_T TKL_BLE_UUID_T::uuid16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >16-bit UUID value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a185e9eda6915bcaba2414387d0ebb8d9" name="a185e9eda6915bcaba2414387d0ebb8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185e9eda6915bcaba2414387d0ebb8d9">&#9670;&nbsp;</a></span>uuid32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T TKL_BLE_UUID_T::uuid32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >32-bit UUID value </p>
+
+</div>
+</div>
+<a id="a806e444dfc52c10a5e6f6934d6e96135" name="a806e444dfc52c10a5e6f6934d6e96135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806e444dfc52c10a5e6f6934d6e96135">&#9670;&nbsp;</a></span>uuid_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TKL_BLE_UUID_TYPE_E TKL_BLE_UUID_T::uuid_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >UUID Type, Refer to @TKL_BLE_UUID_TYPE_E </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/bluetooth/include/<a class="el" href="../../db/d92/tkl__bluetooth__def_8h_source.html">tkl_bluetooth_def.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

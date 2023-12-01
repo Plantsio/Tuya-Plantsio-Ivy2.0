@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: I2S 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">I2S 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md254"></a>
+简要说明</h1>
+<p >I2S全称Inter-IC Sound, Integrated Interchip Sound，或简写IIS，是飞利浦在1986年定义（1996年修订）的数字音频传输标准，用于数字音频数据在系统内部器件之间传输，例如编解码器CODEC、DSP、数字输入/输出接口、ADC、DAC和数字滤波器等。</p>
+<p >I2S是比较简单的数字接口协议，没有地址或设备选择机制。在I2S总线上，只能同时存在一个主设备和发送设备。主设备可以是发送设备，也可以是接收设备，或是协调发送设备和接收设备的其它控制设备。在I2S系统中，提供时钟（SCK和WS）的设备为主设备，下面为常见的i2s系统框图。</p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/fa0ba41c-d0ba-4e01-976b-23e505f61b41.png" alt="image-20220411195655196" class="inline"/></p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/a7a1f523-49bc-43bd-86b3-c228101867ea.png" alt="image-20220411200756538" class="inline"/></p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/900ca665-a6bb-4cc5-9ce1-f07536e00596.png" alt="image-20220411200931639" class="inline"/></p>
+<p >其中：</p>
+<p ><code>SCK</code>:对应数字音频的每一位数据，SCK都有1个脉冲。SCK的频率=2×采样频率×采样位数。</p>
+<p ><code>WS</code>:用于切换左右声道的数据。WS的频率＝采样频率,WS为“1”表示正在传输的是左声道的数据。 WS为“0”表示正在传输的是右声道的数据。</p>
+<p ><code>SD</code>：串行数据，用二进制补码表示的音频数据。</p>
+<h1><a class="anchor" id="autotoc_md255"></a>
+Api说明</h1>
+<h2><a class="anchor" id="autotoc_md256"></a>
+&lt;strong&gt;tkl_i2s_init&lt;/strong&gt;</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2s_init(TUYA_I2S_NUM_E i2s_num, const TUYA_I2S_BASE_CFG_T *i2s_config);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>通过设备号和基础配置初始化对应的i2s实例，返回初始化结果。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>i2s_num</code>: 端口号。</li>
+<li><p class="startli"><code>i2s_config</code>: 基础配置</p>
+<p class="startli">``` typedef struct { TUYA_I2S_MODE_E mode; /*!&lt; I2S work mode */ UINT32_T sample_rate; /*!&lt; I2S sample rate */ UINT32_T mclk; /*!&lt; I2S mclk */ TUYA_I2S_BITS_PER_SAMP_E bits_per_sample; /*!&lt; I2S sample bits in one channel */ TUYA_I2S_CHANNEL_FMT_E channel_format; /*!&lt; I2S channel format.*/ TUYA_I2S_COMM_FORMAT_E communication_format; /*!&lt; I2S communication format */ UINT32_T i2s_dma_flags; /*!&lt; I2S dma format , 1 use dma */ <br  />
+ }<a class="el" href="../../d2/dce/structTUYA__I2S__BASE__CFG__T.html">TUYA_I2S_BASE_CFG_T</a>; ```</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md257"></a>
+TUYA_I2S_MODE_E：</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_MODE_MASTER   </td><td class="markdownTableBodyLeft">主机模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_I2S_MODE_SLAVE   </td><td class="markdownTableBodyLeft">从机模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_MODE_TX   </td><td class="markdownTableBodyLeft">发送模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_I2S_MODE_RX   </td><td class="markdownTableBodyLeft">接收模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<p >用户可使用四种模式组合，分别是TUYA_I2S_MODE_MASTER|TUYA_I2S_MODE_TX, TUYA_I2S_MODE_MASTER|TUYA_I2S_MODE_RX, TUYA_I2S_MODE_SLAVE|TUYA_I2S_MODE_TX,</p>
+<p >TUYA_I2S_MODE_SLAVE|TUYA_I2S_MODE_RX。</p>
+<p ><code>sample_rate</code>:采样频率。</p>
+<p ><code>mclk</code>:主时钟，一般是采样频率的256或者384倍。</p>
+<h4><a class="anchor" id="autotoc_md258"></a>
+TUYA_I2S_BITS_PER_SAMP_E：</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_BITS_PER_SAMPLE_8BIT   </td><td class="markdownTableBodyLeft">数据位宽8   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_I2S_BITS_PER_SAMPLE_16BIT   </td><td class="markdownTableBodyLeft">数据位宽16   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_BITS_PER_SAMPLE_24BIT   </td><td class="markdownTableBodyLeft">数据位宽24   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_I2S_BITS_PER_SAMPLE_32BIT   </td><td class="markdownTableBodyLeft">数据位宽32   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md259"></a>
+TUYA_I2S_CHANNEL_FMT_E：</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_CHANNEL_FMT_RIGHT_LEFT   </td><td class="markdownTableBodyLeft">左右通道分开   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_I2S_CHANNEL_FMT_ALL_RIGHT   </td><td class="markdownTableBodyLeft">加载右声道数据到两个通道   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_CHANNEL_FMT_ALL_LEFT   </td><td class="markdownTableBodyLeft">加载左声道数据到两个通道   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_I2S_CHANNEL_FMT_ONLY_RIGHT   </td><td class="markdownTableBodyLeft">仅加载右声道数据   </td><td class="markdownTableBodyLeft">单声道模式    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_I2S_CHANNEL_FMT_ONLY_LEFT   </td><td class="markdownTableBodyLeft">仅加载左声道数据   </td><td class="markdownTableBodyLeft">单声道模式   </td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md260"></a>
+TUYA_I2S_COMM_FORMAT_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">I2S_COMM_FORMAT_STAND_I2S   </td><td class="markdownTableBodyLeft">Philips标准，数据在第二个BCK传输   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">I2S_COMM_FORMAT_STAND_MSB   </td><td class="markdownTableBodyLeft">MSB(左对齐)标准，数据在第一个BCK传输   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">I2S_COMM_FORMAT_STAND_PCM_SHORT   </td><td class="markdownTableBodyLeft">PCM短标准，也称为DSP模式。 同步信号(WS)的周期为1个BCK周期 。   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">I2S_COMM_FORMAT_STAND_PCM_LONG   </td><td class="markdownTableBodyLeft">PCM长标准，同步信号(WS)的周期为channel_bit个BCK周期   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li>返回值:<ul>
+<li>NULL: 初始化失败。</li>
+<li>其它: 实例句柄。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md261"></a>
+tkl_i2s_send</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2s_send(TUYA_I2S_NUM_E i2s_num, VOID_T *buff, UINT32_T len);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2s传送数据到发送器。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>i2s_num</code>: 端口号。</li>
+<li><code>buff</code>: 指向将要发送的数据。</li>
+<li><code>len</code>: 发送数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2S定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md262"></a>
+tkl_i2s_send_stop</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2s_send_stop(TUYA_I2S_NUM_E i2s_num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2s停止传送数据到发送器。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>i2s_num</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2S定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md263"></a>
+tkl_i2s_recv</h3>
+<div class="fragment"><div class="line">INT_T tkl_i2s_recv(TUYA_I2S_NUM_E i2s_num, VOID_T *buff, UINT32_T len);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2s异步接收数据。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>i2s_num</code>: 端口号。</li>
+<li><code>buff</code>: 指向将要接收数据的缓存。</li>
+<li><code>len</code>: 接收数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2S定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md264"></a>
+tkl_i2s_recv_stop</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2s_recv_stop(TUYA_I2S_NUM_E i2s_num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2s停止数据的接收。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>i2s_num</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2S定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md265"></a>
+tkl_i2s_deinit</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2s_deinit(TUYA_I2S_NUM_E i2s_num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2s去初始化。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>i2s_num</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2S定义部分。 </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

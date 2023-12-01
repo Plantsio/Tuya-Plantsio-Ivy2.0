@@ -1,0 +1,1156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/lib_http/include/httpc.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8a7e0c2b53aaf1e6ed3ac5bc0b1202c0.html">lib_http</a></li><li class="navelem"><a class="el" href="../../dir_1e12de0a3a74b8281ee22ec6b9758111.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">httpc.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTTP Client Module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../da/df8/tal__time__service_8h_source.html">tal_time_service.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d87/tal__network_8h_source.html">tal_network.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d4f/tuya__tls_8h_source.html">tuya_tls.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+httpc.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/httpc_8h__incl.png" border="0" usemap="#ainclude_2components_2lib__http_2include_2httpc_8h" alt=""/></div>
+<map name="ainclude_2components_2lib__http_2include_2httpc_8h" id="ainclude_2components_2lib__http_2include_2httpc_8h">
+<area shape="rect" title="HTTP Client Module" alt="" coords="377,5,551,47"/>
+<area shape="rect" title=" " alt="" coords="244,95,308,121"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="333,95,475,121"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="475,169,586,196"/>
+<area shape="rect" href="../../d8/d4f/tuya__tls_8h.html" title="Common process &#45; tls include" alt="" coords="613,95,699,121"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="419,244,567,271"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="344,169,451,196"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,319,139,345"/>
+<area shape="rect" title=" " alt="" coords="163,319,237,345"/>
+<area shape="rect" title=" " alt="" coords="262,319,333,345"/>
+<area shape="rect" title=" " alt="" coords="817,319,892,345"/>
+<area shape="rect" title=" " alt="" coords="357,319,427,345"/>
+<area shape="rect" title=" " alt="" coords="452,319,535,345"/>
+<area shape="rect" title=" " alt="" coords="559,319,630,345"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="655,319,793,345"/>
+<area shape="rect" title=" " alt="" coords="662,169,714,196"/>
+<area shape="rect" href="../../d1/dde/tuya__cert__manager_8h.html" title="Tuya Cert Manager include" alt="" coords="738,169,897,196"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="789,244,883,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dce/httpc_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2lib__http_2include_2httpc_8hdep" alt=""/></div>
+<map name="ainclude_2components_2lib__http_2include_2httpc_8hdep" id="ainclude_2components_2lib__http_2include_2httpc_8hdep">
+<area shape="rect" title="HTTP Client Module" alt="" coords="112,5,287,47"/>
+<area shape="rect" href="../../dc/d26/http__inf_8h.html" title="Wrapper of HTTP request and response" alt="" coords="5,102,196,143"/>
+<area shape="rect" href="../../d9/d3a/http__manager_8h.html" title="wrapper for HTTP session manager" alt="" coords="220,95,376,151"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="12,199,189,255"/>
+</map>
+</div>
+</div>
+<p><a href="../../d3/d1b/httpc_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d50/structparsed__url__t.html">parsed_url_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad53204f337b45ad77e9a746e434d1817"><td class="memItemLeft" align="right" valign="top"><a id="ad53204f337b45ad77e9a746e434d1817" name="ad53204f337b45ad77e9a746e434d1817"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_ACCEPTED</b>&#160;&#160;&#160;202</td></tr>
+<tr class="separator:ad53204f337b45ad77e9a746e434d1817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1fdbbb10800664989907cbd3a5a023"><td class="memItemLeft" align="right" valign="top"><a id="a0c1fdbbb10800664989907cbd3a5a023" name="a0c1fdbbb10800664989907cbd3a5a023"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_BAD_REQUEST</b>&#160;&#160;&#160;400</td></tr>
+<tr class="separator:a0c1fdbbb10800664989907cbd3a5a023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19a79fb4cf575d20efd0633c1669ed9"><td class="memItemLeft" align="right" valign="top"><a id="ac19a79fb4cf575d20efd0633c1669ed9" name="ac19a79fb4cf575d20efd0633c1669ed9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_CREATED</b>&#160;&#160;&#160;201</td></tr>
+<tr class="separator:ac19a79fb4cf575d20efd0633c1669ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92646f876056a1e5013e0050496dc04d"><td class="memItemLeft" align="right" valign="top"><a id="a92646f876056a1e5013e0050496dc04d" name="a92646f876056a1e5013e0050496dc04d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_FORBIDDEN</b>&#160;&#160;&#160;403</td></tr>
+<tr class="separator:a92646f876056a1e5013e0050496dc04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e3d8d2ab408455c9c4a117968e7b7b"><td class="memItemLeft" align="right" valign="top"><a id="ad6e3d8d2ab408455c9c4a117968e7b7b" name="ad6e3d8d2ab408455c9c4a117968e7b7b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_FOUND</b>&#160;&#160;&#160;302</td></tr>
+<tr class="separator:ad6e3d8d2ab408455c9c4a117968e7b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb5c45a306f9026cc0f300ab9ff1ca4"><td class="memItemLeft" align="right" valign="top"><a id="abdb5c45a306f9026cc0f300ab9ff1ca4" name="abdb5c45a306f9026cc0f300ab9ff1ca4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_NOT_AUTH</b>&#160;&#160;&#160;401</td></tr>
+<tr class="separator:abdb5c45a306f9026cc0f300ab9ff1ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd505b5244bd18ae61c581484b4bc5a0"><td class="memItemLeft" align="right" valign="top"><a id="abd505b5244bd18ae61c581484b4bc5a0" name="abd505b5244bd18ae61c581484b4bc5a0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_NOT_FOUND</b>&#160;&#160;&#160;404</td></tr>
+<tr class="separator:abd505b5244bd18ae61c581484b4bc5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca0e7d2bc7164156ded3b31e7d51c77"><td class="memItemLeft" align="right" valign="top"><a id="a4ca0e7d2bc7164156ded3b31e7d51c77" name="a4ca0e7d2bc7164156ded3b31e7d51c77"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_NOT_MODIFIED</b>&#160;&#160;&#160;304</td></tr>
+<tr class="separator:a4ca0e7d2bc7164156ded3b31e7d51c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e6d59009dee759528ec81fc9a8eeff"><td class="memItemLeft" align="right" valign="top"><a id="a02e6d59009dee759528ec81fc9a8eeff" name="a02e6d59009dee759528ec81fc9a8eeff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_OK</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a02e6d59009dee759528ec81fc9a8eeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b804db7b09d1908134afaf9b88fb88"><td class="memItemLeft" align="right" valign="top"><a id="aa1b804db7b09d1908134afaf9b88fb88" name="aa1b804db7b09d1908134afaf9b88fb88"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_RESP_CLIENT_ERR</b>(x)&#160;&#160;&#160;(x &gt;= 400 &amp;&amp; x &lt; 500)</td></tr>
+<tr class="separator:aa1b804db7b09d1908134afaf9b88fb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f8c616161af9b03c01eedab2c1e935"><td class="memItemLeft" align="right" valign="top"><a id="a26f8c616161af9b03c01eedab2c1e935" name="a26f8c616161af9b03c01eedab2c1e935"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_RESP_INFORMATIONAL</b>(x)&#160;&#160;&#160;(x &gt;=100 &amp;&amp; &lt; 200)</td></tr>
+<tr class="separator:a26f8c616161af9b03c01eedab2c1e935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84150754cefe5a70872b90cccc397753"><td class="memItemLeft" align="right" valign="top"><a id="a84150754cefe5a70872b90cccc397753" name="a84150754cefe5a70872b90cccc397753"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_RESP_REDIR</b>(x)&#160;&#160;&#160;(x &gt;= 300 &amp;&amp; x &lt; 400)</td></tr>
+<tr class="separator:a84150754cefe5a70872b90cccc397753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e70cc0957fe42ff7a25936874577a40"><td class="memItemLeft" align="right" valign="top"><a id="a9e70cc0957fe42ff7a25936874577a40" name="a9e70cc0957fe42ff7a25936874577a40"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_RESP_SERVER_ERR</b>(x)&#160;&#160;&#160;(x &gt;= 500 &amp;&amp; x &lt; 600)</td></tr>
+<tr class="separator:a9e70cc0957fe42ff7a25936874577a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4936117e61aba039b0279590965e5678"><td class="memItemLeft" align="right" valign="top"><a id="a4936117e61aba039b0279590965e5678" name="a4936117e61aba039b0279590965e5678"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_RESP_SUCCESS</b>(x)&#160;&#160;&#160;(x &gt;= 200 &amp;&amp; x &lt; 300)</td></tr>
+<tr class="separator:a4936117e61aba039b0279590965e5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d4f0a462d214b3c1fb3c1dfd3974c1"><td class="memItemLeft" align="right" valign="top"><a id="a53d4f0a462d214b3c1fb3c1dfd3974c1" name="a53d4f0a462d214b3c1fb3c1dfd3974c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>REDIRECT_CNT_DEFAULT</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a53d4f0a462d214b3c1fb3c1dfd3974c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec17449e809407aa24c14827df5ddb1"><td class="memItemLeft" align="right" valign="top"><a id="acec17449e809407aa24c14827df5ddb1" name="acec17449e809407aa24c14827df5ddb1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>REDIRECT_CNT_DISABLED</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:acec17449e809407aa24c14827df5ddb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c4e45488fce764acd1ca3c4cd8838e"><td class="memItemLeft" align="right" valign="top"><a id="ad0c4e45488fce764acd1ca3c4cd8838e" name="ad0c4e45488fce764acd1ca3c4cd8838e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>REDIRECT_CNT_MAX</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ad0c4e45488fce764acd1ca3c4cd8838e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22777b35d0b6a935f303effde14ad69d"><td class="memItemLeft" align="right" valign="top"><a id="a22777b35d0b6a935f303effde14ad69d" name="a22777b35d0b6a935f303effde14ad69d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STANDARD_HDR_FLAGS</b>&#160;&#160;&#160;     (HDR_ADD_DEFAULT_USER_AGENT)</td></tr>
+<tr class="separator:a22777b35d0b6a935f303effde14ad69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a86db1e040af7c845c232c9a9ba7b9b13"><td class="memItemLeft" align="right" valign="top"><a id="a86db1e040af7c845c232c9a9ba7b9b13" name="a86db1e040af7c845c232c9a9ba7b9b13"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_CUSTOM_AFTER_READ_CONTENT_CB</b>) (VOID *pri_data)</td></tr>
+<tr class="separator:a86db1e040af7c845c232c9a9ba7b9b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661872de01710cd391e0b556cd006d70"><td class="memItemLeft" align="right" valign="top"><a id="a661872de01710cd391e0b556cd006d70" name="a661872de01710cd391e0b556cd006d70"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_CUSTOM_BEFORE_READ_CONTENT_CB</b>) (VOID *pri_data, unsigned int *p_malloc_buffer_size)</td></tr>
+<tr class="separator:a661872de01710cd391e0b556cd006d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ed268df49a3307c5078860d6b346c5"><td class="memItemLeft" align="right" valign="top"><a id="a09ed268df49a3307c5078860d6b346c5" name="a09ed268df49a3307c5078860d6b346c5"></a>
+typedef unsigned int(*&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_CUSTOM_GET_CONTENT_LEN_CB</b>) (VOID *pri_data)</td></tr>
+<tr class="separator:a09ed268df49a3307c5078860d6b346c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbab4a3bc7598405b160c2d244a1ec2c"><td class="memItemLeft" align="right" valign="top"><a id="abbab4a3bc7598405b160c2d244a1ec2c" name="abbab4a3bc7598405b160c2d244a1ec2c"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_CUSTOM_READ_CONTENT_CB</b>) (unsigned char *p_buffer, int buf_size, VOID *pri_data)</td></tr>
+<tr class="separator:abbab4a3bc7598405b160c2d244a1ec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1439897a9bcc64cd0ce8a39177f0f08"><td class="memItemLeft" align="right" valign="top"><a id="aa1439897a9bcc64cd0ce8a39177f0f08" name="aa1439897a9bcc64cd0ce8a39177f0f08"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>HTTP_HEAD_ADD_CB</b>) (http_session_t session, VOID *data)</td></tr>
+<tr class="separator:aa1439897a9bcc64cd0ce8a39177f0f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0babc7043d17d0e892a2efdc30fb98b"><td class="memItemLeft" align="right" valign="top"><a id="ac0babc7043d17d0e892a2efdc30fb98b" name="ac0babc7043d17d0e892a2efdc30fb98b"></a>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>http_session_t</b></td></tr>
+<tr class="separator:ac0babc7043d17d0e892a2efdc30fb98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8153610e2ebebb71749b21f153c8e95c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> { <br />
+&#160;&#160;<b>HDR_ADD_DEFAULT_USER_AGENT</b> = 0x0001
+, <b>HDR_ADD_CONN_KEEP_ALIVE</b> = 0x0002
+, <b>HDR_ADD_CONN_CLOSE</b> = 0x0004
+, <b>HDR_ADD_TYPE_CHUNKED</b> = 0x0008
+, <br />
+&#160;&#160;<b>HDR_ADD_CONTENT_TYPE_JSON</b> = 0x0010
+, <b>HDR_ADD_CONTENT_TYPE_FORM_URLENCODE</b> = 0x0020
+, <b>HRD_ADD_DOWNLOAD_RANGE</b> = 0x0040
+, <b>HRD_ADD_HTTP_RAW</b> = 0x0080
+<br />
+ }</td></tr>
+<tr class="separator:a8153610e2ebebb71749b21f153c8e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd930fba66817097e73ba9b75800eb2"><td class="memItemLeft" align="right" valign="top"><a id="a2fd930fba66817097e73ba9b75800eb2" name="a2fd930fba66817097e73ba9b75800eb2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>http_method_t</b> { <br />
+&#160;&#160;<b>HTTP_OPTIONS</b>
+, <b>HTTP_GET</b>
+, <b>HTTP_HEAD</b>
+, <b>HTTP_POST</b>
+, <br />
+&#160;&#160;<b>HTTP_PUT</b>
+, <b>HTTP_DELETE</b>
+, <b>HTTP_TRACE</b>
+, <b>HTTP_CONNECT</b>
+<br />
+ }</td></tr>
+<tr class="separator:a2fd930fba66817097e73ba9b75800eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9117bc4a9517680ea4866911596cb1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1">http_open_flags_t</a> { <a class="el" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027">TLS_ENABLE</a> = 0x01
+ }</td></tr>
+<tr class="separator:ada9117bc4a9517680ea4866911596cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f13db9fc99c24944ce65c76f833b949"><td class="memItemLeft" align="right" valign="top"><a id="a2f13db9fc99c24944ce65c76f833b949" name="a2f13db9fc99c24944ce65c76f833b949"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>http_ver_t</b> { <b>HTTP_VER_1_0</b>
+, <b>HTTP_VER_1_1</b>
+ }</td></tr>
+<tr class="separator:a2f13db9fc99c24944ce65c76f833b949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe701386a277063d054ea33fdc2f12f7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7">wm_httpc_errno</a> { <br />
+&#160;&#160;<b>WM_SUCCESS</b> = 0
+, <b>WM_E_INVAL</b>
+, <b>WM_FAIL</b>
+, <b>WM_E_IO</b>
+, <br />
+&#160;&#160;<b>WM_E_AGAIN</b>
+, <b>WM_E_BADF</b>
+, <b>WM_E_NOMEM</b>
+, <a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616">WM_E_HTTPC_TCP_CONNECT_FAIL</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9">WM_E_HTTPC_TCP_TLS_CONNECT_FAIL</a>
+, <a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e">WM_E_HTTPC_FILE_NOT_FOUND</a>
+, <a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af">WM_E_HTTPC_BAD_REQUEST</a>
+, <a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c">WM_E_HTTPC_TLS_NOT_ENABLED</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950">WM_E_HTTPC_SOCKET_ERROR</a>
+, <a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a">WM_E_HTTPC_SOCKET_SHUTDOWN</a>
+, <b>WM_E_HTTPC_SOCKET_TIMEOUT</b>
+, <b>WM_E_HTTPC_DNS_PARSE_FAILED</b>
+, <br />
+&#160;&#160;<b>WM_E_HTTPC_SOCKET_CREAT_FAILED</b>
+, <b>WM_E_HTTPC_URL_PARSE_FAILED</b>
+<br />
+ }</td></tr>
+<tr class="separator:abe701386a277063d054ea33fdc2f12f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac61c2cb8d8605a0dd8ee8707900c3b90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#ac61c2cb8d8605a0dd8ee8707900c3b90">http_add_header</a> (http_session_t handle, const <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req, const char *name, const char *value)</td></tr>
+<tr class="separator:ac61c2cb8d8605a0dd8ee8707900c3b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6359b2cf796ceb22d7c6b1fc2885a661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session</a> (http_session_t *handle)</td></tr>
+<tr class="separator:a6359b2cf796ceb22d7c6b1fc2885a661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc2ea3b5d16cde688f5aa44acdf90a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr</a> (http_session_t handle, <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> **resp)</td></tr>
+<tr class="separator:a4cc2ea3b5d16cde688f5aa44acdf90a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2078dc155c88b0e814263a7cb1057246"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a2078dc155c88b0e814263a7cb1057246">http_get_response_hdr_all</a> (http_session_t handle, <a class="el" href="../../db/d2d/structhttp__header__pair__t.html">http_header_pair_t</a> *arr, int *count)</td></tr>
+<tr class="separator:a2078dc155c88b0e814263a7cb1057246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb60807478dbca67a0db9fbd6fc4c977"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#acb60807478dbca67a0db9fbd6fc4c977">http_get_response_hdr_value</a> (http_session_t handle, const char *header_name, char **value)</td></tr>
+<tr class="separator:acb60807478dbca67a0db9fbd6fc4c977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5ba329f06ca9b28e6e34394942da26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#adf5ba329f06ca9b28e6e34394942da26">http_lowlevel_read</a> (http_session_t handle, void *buf, unsigned maxlen)</td></tr>
+<tr class="separator:adf5ba329f06ca9b28e6e34394942da26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2ccc02310a2ab8e39002cc08324066"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a6f2ccc02310a2ab8e39002cc08324066">http_lowlevel_write</a> (http_session_t handle, const void *buf, unsigned len)</td></tr>
+<tr class="separator:a6f2ccc02310a2ab8e39002cc08324066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab276eb911d671cc1b82b9b0a0b279a19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session</a> (http_session_t *handle, const char *hostname, int flags, int retry_cnt)</td></tr>
+<tr class="separator:ab276eb911d671cc1b82b9b0a0b279a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b5d088f34a31a4c86eee1fe8d91fd0"><td class="memItemLeft" align="right" valign="top"><a id="ad6b5d088f34a31a4c86eee1fe8d91fd0" name="ad6b5d088f34a31a4c86eee1fe8d91fd0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>http_open_session_with_config</b> (http_session_t *handle, const char *hostname, <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *tls_config, int flags, int retry_cnt)</td></tr>
+<tr class="separator:ad6b5d088f34a31a4c86eee1fe8d91fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc896602eaf4cbbb6c5cd5cca7d8876"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#addc896602eaf4cbbb6c5cd5cca7d8876">http_parse_URL</a> (const char *URL, char *tmp_buf, int tmp_buf_len, <a class="el" href="../../d4/d50/structparsed__url__t.html">parsed_url_t</a> *parsed_url)</td></tr>
+<tr class="separator:addc896602eaf4cbbb6c5cd5cca7d8876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e0087e1fcd7825133fda11ed33497e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req</a> (http_session_t handle, const <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req, <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags)</td></tr>
+<tr class="separator:af3e0087e1fcd7825133fda11ed33497e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309445bd93b795b99435bd97936b4498"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content</a> (http_session_t handle, void *buf, unsigned int max_len)</td></tr>
+<tr class="separator:a309445bd93b795b99435bd97936b4498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4416e6004f25800935704de512efbcb4"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a4416e6004f25800935704de512efbcb4">http_recv_timeout_get</a> (void)</td></tr>
+<tr class="memdesc:a4416e6004f25800935704de512efbcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET HTTP recv timeout  <a href="../../d3/d1b/httpc_8h.html#a4416e6004f25800935704de512efbcb4">更多...</a><br /></td></tr>
+<tr class="separator:a4416e6004f25800935704de512efbcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25287d09422c9f612a6597900bb660fa"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a25287d09422c9f612a6597900bb660fa">http_recv_timeout_set</a> (IN UINT8_T timeout_s)</td></tr>
+<tr class="memdesc:a25287d09422c9f612a6597900bb660fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to SET HTTP recv timeout  <a href="../../d3/d1b/httpc_8h.html#a25287d09422c9f612a6597900bb660fa">更多...</a><br /></td></tr>
+<tr class="separator:a25287d09422c9f612a6597900bb660fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71020704b48d282c92320df389c95029"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a71020704b48d282c92320df389c95029">http_redirect_limit_get</a> (void)</td></tr>
+<tr class="memdesc:a71020704b48d282c92320df389c95029"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET HTTP Redirect Limit Count  <a href="../../d3/d1b/httpc_8h.html#a71020704b48d282c92320df389c95029">更多...</a><br /></td></tr>
+<tr class="separator:a71020704b48d282c92320df389c95029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858b5946cbe20f28142e1a3532a326c9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a858b5946cbe20f28142e1a3532a326c9">http_redirect_limit_set</a> (IN UINT8_T cnt)</td></tr>
+<tr class="memdesc:a858b5946cbe20f28142e1a3532a326c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to SET HTTP Redirect Limit Count  <a href="../../d3/d1b/httpc_8h.html#a858b5946cbe20f28142e1a3532a326c9">更多...</a><br /></td></tr>
+<tr class="separator:a858b5946cbe20f28142e1a3532a326c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f890cad2ccf9798d3f4a146609974a"><td class="memItemLeft" align="right" valign="top"><a id="a09f890cad2ccf9798d3f4a146609974a" name="a09f890cad2ccf9798d3f4a146609974a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>http_reset_session_state</b> (http_session_t handle)</td></tr>
+<tr class="separator:a09f890cad2ccf9798d3f4a146609974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b5e977ee72662643b2c3eab5a1e044"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request</a> (http_session_t handle, const <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req, int send_content)</td></tr>
+<tr class="separator:a67b5e977ee72662643b2c3eab5a1e044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0325a8e2a7a217a02b8ecfcf2232fcf7"><td class="memItemLeft" align="right" valign="top"><a id="a0325a8e2a7a217a02b8ecfcf2232fcf7" name="a0325a8e2a7a217a02b8ecfcf2232fcf7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>http_write_standard</b> (http_session_t handle, const void *buf, unsigned len)</td></tr>
+<tr class="separator:a0325a8e2a7a217a02b8ecfcf2232fcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5326d84abc0bd0511cd73a4e0450c08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1b/httpc_8h.html#af5326d84abc0bd0511cd73a4e0450c08">httpc_write_chunked</a> (http_session_t handle, const char *data, int len)</td></tr>
+<tr class="separator:af5326d84abc0bd0511cd73a4e0450c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >HTTP Client Module </p>
+<p >The HTTP Client module is a software component layered atop basic BSD socket API and CyaSSL (a TLS library). The HTTP Client module (hereafter called <em>the</em> <em>module</em>) provides a set of API and data structures to provide an easy way of communication with any web server supporting the HTTP protocol.</p>
+<p >Some examples of the HTTP client users (hereafter called <em>the</em> <em>users</em>) of this module are: an email client, a websockets library, OTA firmware upgrade module, and all the myriad web services users.</p>
+<p >The module implements a session based API. The users <em>open</em> a <em>session</em> with the server which internally sets up a TCP stream with the server. The user gets a handle to this session. All the other operations viz. sending HTTP headers, sending HTTP content, reading HTTP content, etc. are then performed on the same session through the session handle. The server also supports multiple HTTP transactions on the same server (which uses the keep-alive mechanism through persistent connections). A <em>transaction</em> is defined as a request and a response activity. Interleaved transactions are also supported. The module also supports chunked encoding transparently to the user.</p>
+<p >An important feature supported by the module is HTTPS connections. This allows a user to perform his HTTP transactions securely. To help support this the module works with an external TLS library. During session open, the user <em>optionally</em> needs to supply a root certificate to verify the server certificate. The user can also provide the module with its own client certificate if the server is expected to do client verification. Apart from session the initialization API, the remaining API's handle secure and non-secure connections transparently to the user.</p>
+<p >Lastly, the module also provides some API's to deal with HTTP session directly. i.e. it provides users access to the socket directly.</p>
+<h1><a class="anchor" id="httpc_usage"></a>
+Usage</h1>
+<p >A typical HTTP Client usage scenario is as follows:</p>
+<ol type="1">
+<li>Initiate a connection with the remote Web Server using a call to <a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a>.</li>
+<li>Prepare the request with a call the API to <a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a>.</li>
+<li>Send one or more (for interleaved mode) HTTP requests to the server using the APIs <a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a> and <a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request()</a> pair together.</li>
+<li>An optional call the API to API <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> can be made if the application wishes to know certain fields of the HTTP response.</li>
+<li>Then multiple calls of API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> are made for reading the response from the remote Web Server.</li>
+<li>The connection with the remote server is terminated using the API <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a> </li>
+</ol>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a8153610e2ebebb71749b21f153c8e95c" name="a8153610e2ebebb71749b21f153c8e95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8153610e2ebebb71749b21f153c8e95c">&#9670;&nbsp;</a></span>http_hdr_field_sel_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >The OR of zero or more flags below is passed to the API <a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a>. If the a flag is passed the corresponding HTTP header field is added to the HTTP header. The values added will be default ones. </p>
+
+</div>
+</div>
+<a id="ada9117bc4a9517680ea4866911596cb1" name="ada9117bc4a9517680ea4866911596cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9117bc4a9517680ea4866911596cb1">&#9670;&nbsp;</a></span>http_open_flags_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1">http_open_flags_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >If the given URL has a scheme field, and it is https then the http client will auto-switch to SSL mode, irrespective of the TLS_ENABLE flag below. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027" name="ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027"></a>TLS_ENABLE&#160;</td><td class="fielddoc"><p >Pass this flag when you want the connection to be SSL based </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="abe701386a277063d054ea33fdc2f12f7" name="abe701386a277063d054ea33fdc2f12f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe701386a277063d054ea33fdc2f12f7">&#9670;&nbsp;</a></span>wm_httpc_errno</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7">wm_httpc_errno</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >HTTPC Error Codes </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616" name="abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616"></a>WM_E_HTTPC_TCP_CONNECT_FAIL&#160;</td><td class="fielddoc"><p >TCP connection failed (maybe due to unreachable server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9" name="abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9"></a>WM_E_HTTPC_TCP_TLS_CONNECT_FAIL&#160;</td><td class="fielddoc"><p >TCP tls connection failed (maybe due to unreachable server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e" name="abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e"></a>WM_E_HTTPC_FILE_NOT_FOUND&#160;</td><td class="fielddoc"><p >HTTP File not found </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af" name="abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af"></a>WM_E_HTTPC_BAD_REQUEST&#160;</td><td class="fielddoc"><p >HTTP Bad Request </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c" name="abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c"></a>WM_E_HTTPC_TLS_NOT_ENABLED&#160;</td><td class="fielddoc"><p >TLS not enabled </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950" name="abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950"></a>WM_E_HTTPC_SOCKET_ERROR&#160;</td><td class="fielddoc"><p >Socket error. Note to applications: Please check 'errno' for more information </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a" name="abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a"></a>WM_E_HTTPC_SOCKET_SHUTDOWN&#160;</td><td class="fielddoc"><p >Peer has performed orderly shutdown </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ac61c2cb8d8605a0dd8ee8707900c3b90" name="ac61c2cb8d8605a0dd8ee8707900c3b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61c2cb8d8605a0dd8ee8707900c3b90">&#9670;&nbsp;</a></span>http_add_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_add_header </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Add custom http headers to the partially generated header.</p>
+<p >This API allows the caller to add custom headers to the partial http header generated by earlier call to <a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a></p>
+<dl class="section note"><dt>注解</dt><dd>Calling this API is optional and needs to be called only if custom headers (or standard headers with non-default values) are to be added.</dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd><a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to <a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req</td><td>Structure of the type <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> passed earlier to <a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the field. e.g User-Agent or If-Modified-Since </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value associated with the name given above.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Standard wmsdk value. </dd></dl>
+
+</div>
+</div>
+<a id="a6359b2cf796ceb22d7c6b1fc2885a661" name="a6359b2cf796ceb22d7c6b1fc2885a661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6359b2cf796ceb22d7c6b1fc2885a661">&#9670;&nbsp;</a></span>http_close_session()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void http_close_session </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Close the session.</p>
+<p >This API will close the session represented by the given handle. The socket associated with this session will be closed and thus the TCP connection with the server will be terminated. No requests on this same session will succeed after this API is called.</p>
+<dl class="section note"><dt>注解</dt><dd><b>The response structure <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> returned earlier from <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> will be invalid after this call.</b></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the previous call to http_new_session(). The handle will be set to NULL by the callee thus effectively blocking futher requests on the same session handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4cc2ea3b5d16cde688f5aa44acdf90a8" name="a4cc2ea3b5d16cde688f5aa44acdf90a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc2ea3b5d16cde688f5aa44acdf90a8">&#9670;&nbsp;</a></span>http_get_response_hdr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_get_response_hdr </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> **&#160;</td>
+          <td class="paramname"><em>resp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Get the HTTP response header</p>
+<p >This API received the response header from the server and parses it. It then populates the <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> structure and returns the pointer to this structure. The structure <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> is allocated by the callee.</p>
+<dl class="section user"><dt></dt><dd>The caller is expected to analyse this information to find out the result of the earlier request sent through API <a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request()</a>. If the earlier request was HTTP_GET then the caller will need to call the API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> to read the data sent by the server.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Calling this API is <em>optional</em>. If the caller does not want to read/analyse the header and knows beforehand what to expect, it can directly call <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a>. The API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> will internally read the HTTP response header. However, the API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> will return an error if the HTTP status code returned is not 200. If you need to read content in cases where the return status code is other than 200 you need to call <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> first.</dd>
+<dd>
+After invoking this API, it is mandatory to read the entire content using the <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> API, especially in the case of repeat http transaction on the same session handle (interleaved mode). </dd>
+<dd>
+If this API fails and the caller decides to abandon this session altogether it needs to call <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a> explicitly. Failure to do this will cause undefined behaviour.</dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd><a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request()</a> is called before.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to http_new_session() </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">resp</td><td>Pointer to a pointer of type <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> .The structure will be allocated by the callee. Note that the caller does <b>not</b> need to free the structure allocated and returned from this API. The allocation and free is done by the callee automatically.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>WM_SUCCESS on success </dd>
+<dd>
+-WM_FAIL on error </dd></dl>
+
+</div>
+</div>
+<a id="a2078dc155c88b0e814263a7cb1057246" name="a2078dc155c88b0e814263a7cb1057246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2078dc155c88b0e814263a7cb1057246">&#9670;&nbsp;</a></span>http_get_response_hdr_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_get_response_hdr_all </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d2d/structhttp__header__pair__t.html">http_header_pair_t</a> *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Get requested number of HTTP response header name-value pairs.</p>
+<dl class="section user"><dt></dt><dd>This API parses the response header received from the server and returns requested number of HTTP response header name-value pairs.</dd></dl>
+<dl class="section user"><dt></dt><dd>The caller is not expected to call API <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> before this. However, calling <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr</a> is recommended so that the user gets to know the exact status of the HTTP operation before he tries to extract any field not present in structure <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Calling this API is <b>optional</b>. If the caller does not want to read/analyse the header and knows beforehand what to expect, s/he can directly call <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a>. The API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> will internally read the HTTP response header. However, the API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> will return an error if the HTTP status code returned is not 200. If you need to read content in cases where the return status code is other than 200 you need to call <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> or the current API first.</dd>
+<dd>
+If this API fails and the caller decides to abandon this session altogether it needs to call <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a> explicitly. Failure to do this will cause undefined behaviour.</dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd><a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request()</a> is called before this call. Calling <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> is <b>not</b> mandatory but recommended.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to http_new_session() </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arr</td><td>A pointer that points to an array of the structure to hold the response header name-value pairs. This array needs to be pre-allocated and its pointer is to be passed, this pointer shall point to the array of requested number of response header name-value pairs. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">count</td><td>An integer pointer that points to the number of response header name-value pairs that the user wants. This has to be passed by the user and it is later updated to the actual number of response header name-value pairs that were filled in the array mentioned above.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>WM_SUCCESS on success </dd>
+<dd>
+-WM_FAIL on error </dd></dl>
+
+</div>
+</div>
+<a id="acb60807478dbca67a0db9fbd6fc4c977" name="acb60807478dbca67a0db9fbd6fc4c977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb60807478dbca67a0db9fbd6fc4c977">&#9670;&nbsp;</a></span>http_get_response_hdr_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_get_response_hdr_value </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>header_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Get a particular HTTP response header value.</p>
+<p >This API parses the response header received from the server and returns the value corresponding to a given name. This can help the caller get value of a particular field not parsed automatically in <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a></p>
+<dl class="section user"><dt></dt><dd>The caller is not expected to call <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> before this. However, calling <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> is recommended so that the user gets to know the exact status of the HTTP operation before he tries to extract any field not present in structure <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Calling this API is <b>optional</b>. If the caller does not want to read/analyse the header and knows beforehand what to expect, it can directly call <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a>. The API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> will internally read the HTTP response header. However, the API <a class="el" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content()</a> will return an error if the HTTP status code returned is not 200. If you need to read content in cases where the return status code is other than 200 you need to call <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> or the current API first.</dd>
+<dd>
+If this API fails and the caller decides to abandon this session altogether it needs to call <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a> explicitly. Failure to do this will cause undefined behaviour.</dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd><em>http_send_request</em> is called before this call. Calling <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a> is <b>not</b> mandatory but recommended.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to <em>http_new_session</em> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">header_name</td><td>The name of the field whose value you wish to know </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">value</td><td>A pointer which will point to the value corresponding to the name passed as second parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>WM_SUCCESS on success </dd>
+<dd>
+-WM_FAIL on error </dd></dl>
+
+</div>
+</div>
+<a id="adf5ba329f06ca9b28e6e34394942da26" name="adf5ba329f06ca9b28e6e34394942da26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5ba329f06ca9b28e6e34394942da26">&#9670;&nbsp;</a></span>http_lowlevel_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_lowlevel_read </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>maxlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >HTTP lowlevel read</p>
+<p >This API is present to serve clients which want to handle the HTTP stream directly. This is useful for handling websockets for e.g.</p>
+<dl class="section warning"><dt>警告</dt><dd>This is not for general users of HTTP client API. Normal HTTP transactions do not need this API.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Once this API used no other API from the HTTP API set, except <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a>, can be used. This is because once this API is used the HTTP client loses track of the stream and only the caller using the API can know the state of the stream. The only advantage of using this API over normal socket read/write is that this API transparently takes care of TLS and non-TLS interface to read/write.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to http_new_session() </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>Pointer to an allocated buffer of size equal to or more than the value of the third parameter maxlen </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxlen</td><td>The maximum number of bytes to be read from the network. Note that the actual read bytes can be less than this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Number of bytes read. -WM_E_INVAL is returned in case of invalid parameters. Standard libc error codes are returned in case when there other problems. </dd></dl>
+
+</div>
+</div>
+<a id="a6f2ccc02310a2ab8e39002cc08324066" name="a6f2ccc02310a2ab8e39002cc08324066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f2ccc02310a2ab8e39002cc08324066">&#9670;&nbsp;</a></span>http_lowlevel_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_lowlevel_write </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >HTTP lowlevel write</p>
+<p >This API is present to serve clients which want to handle the HTTP stream directly. This is useful for handling websockets for e.g.</p>
+<dl class="section warning"><dt>警告</dt><dd>This is not for general users of HTTP client API. Normal HTTP transactions do not need this API.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Once this API used no other API from the HTTP API set, except <em>http_close_session</em>, can be used. This is because once this API is used the HTTP client loses track of the stream and only the caller using the API can know the state of the stream. The only advantage of using this API over normal socket read/write is that this API transparently takes care of TLS and non-TLS interface to read/write.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to http_new_session() </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>Pointer to a buffer which has the data to be written out. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The number of bytes to be written to the network.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Number of bytes written. -WM_E_INVAL is returned in case of invalid parameters. Standard libc error codes are returned in case when there other problems. </dd></dl>
+
+</div>
+</div>
+<a id="ab276eb911d671cc1b82b9b0a0b279a19" name="ab276eb911d671cc1b82b9b0a0b279a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab276eb911d671cc1b82b9b0a0b279a19">&#9670;&nbsp;</a></span>http_open_session()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_open_session </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>retry_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Start an HTTP session.</p>
+<dl class="section user"><dt></dt><dd>This API starts a new HTTP session. It will create a socket and then connect to the server given as a parameter.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">handle</td><td>Pointer to a handle for the session. Will be assigned by the callee. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hostname</td><td>Host name or IP address. The hostname should be in the format [<a href="http://">http://</a>]hostname[:portno][/path/to/resource]. The fields between the square brackets above are optional. The part specifying the path to resource will be ignored as it is of no use during session setup. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Pass OR of the flags mentioned in enum <a class="el" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1">http_open_flags_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>This is a pointer of the type <em>tls_init_config_t</em>. Please refer to file wm-tls.h for the structure internals. This pointer will be passed verbatim to the tls API tls_session_init(). <b>If</b> TLS (secure connection) is not needed please pass NULL value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">retry_cnt</td><td>There are limited sockets available due to memory constraints. A socket creation can fail if all sockets are currently used up. If the socket creation fails, <a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a> will wait for some time and try to create the socket again for retry_cnt number of times. 0 is default value which lets the SDK decide the count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>WM_SUCCESS on success </dd>
+<dd>
+-WM_E_INVAL if any of the arguments were invalid </dd>
+<dd>
+-WM_FAIL if the API was unable to initiate an HTTP session with the server. </dd></dl>
+
+</div>
+</div>
+<a id="addc896602eaf4cbbb6c5cd5cca7d8876" name="addc896602eaf4cbbb6c5cd5cca7d8876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc896602eaf4cbbb6c5cd5cca7d8876">&#9670;&nbsp;</a></span>http_parse_URL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_parse_URL </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>URL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tmp_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tmp_buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d50/structparsed__url__t.html">parsed_url_t</a> *&#160;</td>
+          <td class="paramname"><em>parsed_url</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Parse the given string into URL subcomponents.</p>
+<p >The hostname string syntax is: [scheme://]hostname[:port][/path_to_resource?query_string::fragment_id] The fields between the square brackets above are optional.</p>
+<dl class="section note"><dt>注解</dt><dd><b>Buffer management</b>: To free the caller of the task of allocating multiple buffers of arbitrary size to store each of the subcomponents we use the following strategy. This API takes a temporary buffer, allocated (static or dynamic) by the caller to store the subcomponents. The caller needs to allocate this buffer with size equal to (strlen(URL) + 10). When this API returns, the pointers in the parsed_url structure will point to appropriate address in this buffer. The caller may free this buffer after usage of the sub-components is complete. Freeing before that will cause undefined behavior.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">URL</td><td>Pointer to the string containing the URL. This API will not modify this argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmp_buf</td><td>A buffer where the strings will be stored after parsing. Needs to be allocated by the caller and should be of size atleast 10 greater than size of the URL string passed as first argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmp_buf_len</td><td>Size of the caller allocated, temporary buffer sent as second argument. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parsed_url</td><td>Pointer to an allocated structure. The member pointers will point to the appropriate address in the temporary buffer holding the NULL terminated string corresponding to the subcomponent.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Standard WMSDK return codes. </dd></dl>
+
+</div>
+</div>
+<a id="af3e0087e1fcd7825133fda11ed33497e" name="af3e0087e1fcd7825133fda11ed33497e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e0087e1fcd7825133fda11ed33497e">&#9670;&nbsp;</a></span>http_prepare_req()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_prepare_req </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a>&#160;</td>
+          <td class="paramname"><em>field_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Prepare the HTTP header for sending to the server.</p>
+<p >This API will prepare an HTTP request for sending it out through <a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request()</a>. Calling this API is mandatory before calling <a class="el" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request()</a>.</p>
+<dl class="section pre"><dt>前置条件</dt><dd><a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a></dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to <a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req</td><td>Allocated and initialized <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">field_flags</td><td>Bitwise OR of flags of enum <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> as required by the caller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>The request structure <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> needs to be filled before invoking this API. </dd>
+<dd>
+The field_flags parameter is a way to request the http client to use default field values for standard fields. If the corresponding bits are not set then the respective fields are not added. The user can add any custom fields including the standard ones using the API <a class="el" href="../../d3/d1b/httpc_8h.html#ac61c2cb8d8605a0dd8ee8707900c3b90">http_add_header()</a></dd></dl>
+<dl class="section return"><dt>返回</dt><dd>Standard wmsdk return codes. </dd></dl>
+
+</div>
+</div>
+<a id="a309445bd93b795b99435bd97936b4498" name="a309445bd93b795b99435bd97936b4498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a309445bd93b795b99435bd97936b4498">&#9670;&nbsp;</a></span>http_read_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_read_content </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Read data content from the stream.</p>
+<p >This API will read the data sent by the server and pass it back to the caller.</p>
+<dl class="section user"><dt></dt><dd>The data transfer from the server to the client may be chunked. This fact will be reported in the response structure <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> returned in a previous call to <a class="el" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr()</a>. Notwithstanding this information, chunked data handling is transparent to the caller. Thus, irrespective of the transfer type, this API should be called repeatedly till the return value of the API is zero.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Once you start reading the content, it is mandatory to read the entire content before you begin the next HTTP transaction.</dd>
+<dd>
+If this API fails and the caller decides to abandon this session altogether it needs to call <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a> explicitly. Failure to do this will cause undefined behaviour.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to http_new_session() </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>Caller allocated buffer of size max_len </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_len</td><td>Size of the buffer. The data read will be less than or equal to this size, depending on the size of the resource.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>On success, the number of bytes read is returned. Return value of zero is <em>not</em> an error case and should be treated as a signal that server is done with sending the data. </dd>
+<dd>
+-WM_FAIL if this API is called again after the previous call retuned 0 or for any other error. </dd></dl>
+
+</div>
+</div>
+<a id="a4416e6004f25800935704de512efbcb4" name="a4416e6004f25800935704de512efbcb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4416e6004f25800935704de512efbcb4">&#9670;&nbsp;</a></span>http_recv_timeout_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T http_recv_timeout_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET HTTP recv timeout </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>count of http redirect </dd></dl>
+
+</div>
+</div>
+<a id="a25287d09422c9f612a6597900bb660fa" name="a25287d09422c9f612a6597900bb660fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25287d09422c9f612a6597900bb660fa">&#9670;&nbsp;</a></span>http_recv_timeout_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_recv_timeout_set </td>
+          <td>(</td>
+          <td class="paramtype">IN UINT8_T&#160;</td>
+          <td class="paramname"><em>timeout_s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to SET HTTP recv timeout </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_s</td><td>timeout (unit:s)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a71020704b48d282c92320df389c95029" name="a71020704b48d282c92320df389c95029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71020704b48d282c92320df389c95029">&#9670;&nbsp;</a></span>http_redirect_limit_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T http_redirect_limit_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET HTTP Redirect Limit Count </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>count of http redirect </dd></dl>
+
+</div>
+</div>
+<a id="a858b5946cbe20f28142e1a3532a326c9" name="a858b5946cbe20f28142e1a3532a326c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858b5946cbe20f28142e1a3532a326c9">&#9670;&nbsp;</a></span>http_redirect_limit_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_redirect_limit_set </td>
+          <td>(</td>
+          <td class="paramtype">IN UINT8_T&#160;</td>
+          <td class="paramname"><em>cnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to SET HTTP Redirect Limit Count </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>The count of redirect, the max value should &lt;= REDIRECT_CNT_MAX Set as zero, means disable http redirect function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a67b5e977ee72662643b2c3eab5a1e044" name="a67b5e977ee72662643b2c3eab5a1e044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b5e977ee72662643b2c3eab5a1e044">&#9670;&nbsp;</a></span>http_send_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int http_send_request </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>send_content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Perform an HTTP request.</p>
+<p >This API sends the prepared request header and content if applicable.</p>
+<dl class="section note"><dt>注解</dt><dd>If this API fails and the caller decides to abandon this session altogether it needs to call the API <a class="el" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session()</a> explicitly. Failure to do this will cause undefined behaviour.</dd></dl>
+<dl class="section pre"><dt>前置条件</dt><dd><a class="el" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req()</a> is mandatory. <a class="el" href="../../d3/d1b/httpc_8h.html#ac61c2cb8d8605a0dd8ee8707900c3b90">http_add_header()</a> is optional.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned from the call to <a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req</td><td>The <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> structure filled up with appropriate parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>WM_SUCCESS on success </dd>
+<dd>
+-WM_E_IO if failed to send data to network </dd>
+<dd>
+-WM_E_INVAL for an invalid arguments. </dd></dl>
+
+</div>
+</div>
+<a id="af5326d84abc0bd0511cd73a4e0450c08" name="af5326d84abc0bd0511cd73a4e0450c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5326d84abc0bd0511cd73a4e0450c08">&#9670;&nbsp;</a></span>httpc_write_chunked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int httpc_write_chunked </td>
+          <td>(</td>
+          <td class="paramtype">http_session_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >HTTP write chunked</p>
+<p >This API is used for chunked transfer encoding</p>
+<dl class="section note"><dt>注解</dt><dd>To end the chunked data transfer, this API should be called with len=0, buf may be NULL</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle retrieved from the call to <a class="el" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to the buffer to be written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The number of bytes to be written.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>WM_SUCCESS is returned on success. </dd>
+<dd>
+-WM_E_INVAL is returned in case of invalid parameters. </dd>
+<dd>
+-WM_FAIL is returned if session is invalid. </dd>
+<dd>
+Standard libc error codes are returned when there are other problems. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

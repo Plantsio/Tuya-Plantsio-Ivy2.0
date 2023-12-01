@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/media/include/tkl_video_enc.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_f035e8dac116664123d3c2a73ed2f457.html">media</a></li><li class="navelem"><a class="el" href="../../dir_c3870483c35fa4c017a1fc661583a339.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_video_enc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d4a/tkl__video__enc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef __TKL_VIDEO_ENC_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define __TKL_VIDEO_ENC_H__</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d8f/tkl__video__in_8h.html">tkl_video_in.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    TKL_VENC_0 = 0,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    TKL_VENC_1,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    TKL_VENC_2,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    TKL_VENC_3,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    TKL_VENC_4,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TKL_VENC_5,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TKL_VENC_6,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TKL_VENC_7,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    TKL_VENC_MAX,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}TKL_VENC_CHN_E;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TKL_VENC_MAIN = 0,                                   <span class="comment">// main stream</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    TKL_VENC_SUB,                                        <span class="comment">// sub stream</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    TKL_VENC_3RD,                                        <span class="comment">// 3rd stream</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TKL_VENC_4TH,                                        <span class="comment">// 4th stream</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    TKL_VENC_SNAP,                                       <span class="comment">// snap</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    TKL_VENC_MD,                                         <span class="comment">// move detect</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    TKL_VENC_HD,                                         <span class="comment">// human detect</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    TKL_VENC_QR,                                         <span class="comment">// qrcode</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    TKL_VENC_TYPE_MAX,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}TKL_VENC_TYPE_E;                                        <span class="comment">// stream work type</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../de/da7/structTKL__VENC__FRAME__T.html">   48</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    TKL_MEDIA_FRAME_TYPE_E frametype;                    <span class="comment">// bitrate,kbps</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    TKL_MEDIA_CODEC_TYPE_E codectype;                    <span class="comment">// codec type</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    CHAR_T    *pbuf;                                     <span class="comment">// frame buffer</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    UINT_T     buf_size;                                 <span class="comment">// buffer size</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    UINT_T     used_size;                                <span class="comment">// used buffer size</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    UINT_T     width;                                    <span class="comment">// frame width</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    UINT_T     height;                                   <span class="comment">// frame height</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    UINT64_T   pts;                                      <span class="comment">// sdk pts</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    UINT64_T   timestamp;                                <span class="comment">// system utc time，unit: ms</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    UINT_T seq;                                          <span class="comment">// frame sequence number</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    UINT_T fragment;                                     <span class="comment">// frame sequence&#39;s fragment  第几个分包</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    BYTE_T seq_error;                                    <span class="comment">// frame sequence is error  这张图片是否错误</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    BYTE_T fragment_is_last;                             <span class="comment">// frame sequence&#39;s fragment is last fragment</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}<a class="code hl_struct" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a>;                                       <span class="comment">// video frame</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">typedef</span> INT_T (*TKL_VENC_PUT_CB)(<a class="code hl_struct" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *pframe);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    TKL_VENC_UPPER_REQUEST_FRAME = 0,                    <span class="comment">// app get frame by using get frame function</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    TKL_VENC_PUSH_FRAME_BY_CALLBACK,                     <span class="comment">// tkl push frame to app by callback when frame arrive</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}TKL_VENC_DATA_TRANS_MODE_E;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../d2/d42/structTKL__VENC__CONFIG__T.html">   73</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    UINT_T enable;                                       <span class="comment">// 1,enable,0,disable</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    TKL_VENC_CHN_E chn;                                  <span class="comment">// video encode channel</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    TKL_VENC_TYPE_E type;                                <span class="comment">// stream work type</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    TKL_MEDIA_CODEC_TYPE_E codectype;                    <span class="comment">// codec type</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    UINT_T fps;                                          <span class="comment">// fps</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    UINT_T gop;                                          <span class="comment">// I Frame interval</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    UINT_T bitrate;                                      <span class="comment">// bitrate,kbps</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    UINT_T width;                                  </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    UINT_T height;                                  </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    UINT_T min_qp;                                </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    UINT_T max_qp;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    TKL_VENC_DATA_TRANS_MODE_E trans_mode;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    TKL_VENC_PUT_CB put_cb;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}<a class="code hl_struct" href="../../d2/d42/structTKL__VENC__CONFIG__T.html">TKL_VENC_CONFIG_T</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d6/d00/structTKL__VENC__OSD__T.html">   90</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    INT32_T enable;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    INT32_T is_dls;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}<a class="code hl_struct" href="../../d6/d00/structTKL__VENC__OSD__T.html">TKL_VENC_OSD_T</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">   96</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    UINT32_T pool_buff_num;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    UINT32_T pool_buff_size;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}<a class="code hl_struct" href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">TKL_VENC_STREAM_BUFF_T</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#a2579a0dbf02bd3792a11ed459612975d">  111</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#a2579a0dbf02bd3792a11ed459612975d">tkl_venc_init</a>(INT32_T vi_chn, <a class="code hl_struct" href="../../d2/d42/structTKL__VENC__CONFIG__T.html">TKL_VENC_CONFIG_T</a> *pconfig, INT32_T count);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#ae2b9ee9c37b8768e7dc773fe48223bfc">  122</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#ae2b9ee9c37b8768e7dc773fe48223bfc">tkl_venc_get_frame</a>(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, <a class="code hl_struct" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *pframe);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#aa37c403261fe01ae114bda4cec5f7c22">  132</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#aa37c403261fe01ae114bda4cec5f7c22">tkl_venc_get_first_snap</a>(TKL_VI_CHN_E vi_chn, <a class="code hl_struct" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *pframe);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#a04d5155ca2df0ba5db321b203c211be8">  143</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#a04d5155ca2df0ba5db321b203c211be8">tkl_venc_set_osd</a>(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn,  <a class="code hl_struct" href="../../d6/d00/structTKL__VENC__OSD__T.html">TKL_VENC_OSD_T</a> *posd);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#a75d5c371bf78411c76547708d83d544b">  154</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#a75d5c371bf78411c76547708d83d544b">tkl_venc_set_video_stream_buffer</a>(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, <a class="code hl_struct" href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">TKL_VENC_STREAM_BUFF_T</a> *parg);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#a19fed721659cdee7d1059ec7b2edfbdf">  164</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#a19fed721659cdee7d1059ec7b2edfbdf">tkl_venc_start</a>(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#adb1e45485be4b3aaff6efa4f7e63c6e7">  174</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#adb1e45485be4b3aaff6efa4f7e63c6e7">tkl_venc_stop</a>( TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../d5/d4a/tkl__video__enc_8h.html#a933509bdba5081537847fd2fdab1dcf1">  183</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tkl__video__enc_8h.html#a933509bdba5081537847fd2fdab1dcf1">tkl_venc_uninit</a>(TKL_VI_CHN_E vi_chn);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__VENC__CONFIG__T_html"><div class="ttname"><a href="../../d2/d42/structTKL__VENC__CONFIG__T.html">TKL_VENC_CONFIG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_enc.h:74</div></div>
+<div class="ttc" id="astructTKL__VENC__FRAME__T_html"><div class="ttname"><a href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_enc.h:49</div></div>
+<div class="ttc" id="astructTKL__VENC__OSD__T_html"><div class="ttname"><a href="../../d6/d00/structTKL__VENC__OSD__T.html">TKL_VENC_OSD_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_enc.h:91</div></div>
+<div class="ttc" id="astructTKL__VENC__STREAM__BUFF__T_html"><div class="ttname"><a href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">TKL_VENC_STREAM_BUFF_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_enc.h:97</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_a04d5155ca2df0ba5db321b203c211be8"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#a04d5155ca2df0ba5db321b203c211be8">tkl_venc_set_osd</a></div><div class="ttdeci">OPERATE_RET tkl_venc_set_osd(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, TKL_VENC_OSD_T *posd)</div><div class="ttdoc">video encode set osd</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_a19fed721659cdee7d1059ec7b2edfbdf"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#a19fed721659cdee7d1059ec7b2edfbdf">tkl_venc_start</a></div><div class="ttdeci">OPERATE_RET tkl_venc_start(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn)</div><div class="ttdoc">video encode start</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_a2579a0dbf02bd3792a11ed459612975d"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#a2579a0dbf02bd3792a11ed459612975d">tkl_venc_init</a></div><div class="ttdeci">OPERATE_RET tkl_venc_init(INT32_T vi_chn, TKL_VENC_CONFIG_T *pconfig, INT32_T count)</div><div class="ttdoc">video encode init</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_a75d5c371bf78411c76547708d83d544b"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#a75d5c371bf78411c76547708d83d544b">tkl_venc_set_video_stream_buffer</a></div><div class="ttdeci">OPERATE_RET tkl_venc_set_video_stream_buffer(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, TKL_VENC_STREAM_BUFF_T *parg)</div><div class="ttdoc">video encode stream buff pool set</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_a933509bdba5081537847fd2fdab1dcf1"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#a933509bdba5081537847fd2fdab1dcf1">tkl_venc_uninit</a></div><div class="ttdeci">OPERATE_RET tkl_venc_uninit(TKL_VI_CHN_E vi_chn)</div><div class="ttdoc">video encode uninit</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_aa37c403261fe01ae114bda4cec5f7c22"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#aa37c403261fe01ae114bda4cec5f7c22">tkl_venc_get_first_snap</a></div><div class="ttdeci">OPERATE_RET tkl_venc_get_first_snap(TKL_VI_CHN_E vi_chn, TKL_VENC_FRAME_T *pframe)</div><div class="ttdoc">video first snap</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_adb1e45485be4b3aaff6efa4f7e63c6e7"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#adb1e45485be4b3aaff6efa4f7e63c6e7">tkl_venc_stop</a></div><div class="ttdeci">OPERATE_RET tkl_venc_stop(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn)</div><div class="ttdoc">video encode stop</div></div>
+<div class="ttc" id="atkl__video__enc_8h_html_ae2b9ee9c37b8768e7dc773fe48223bfc"><div class="ttname"><a href="../../d5/d4a/tkl__video__enc_8h.html#ae2b9ee9c37b8768e7dc773fe48223bfc">tkl_venc_get_frame</a></div><div class="ttdeci">OPERATE_RET tkl_venc_get_frame(TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, TKL_VENC_FRAME_T *pframe)</div><div class="ttdoc">video encode get frame</div></div>
+<div class="ttc" id="atkl__video__in_8h_html"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html">tkl_video_in.h</a></div><div class="ttdoc">video input</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

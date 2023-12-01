@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 定时任务</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">定时任务 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >涂鸦<code>TuyaOS</code>提供预约操作的能力，即定时任务能力。通过APP配置操作，并预约该操作的时间，操作的时间精度是分钟级别，可以选择当日，或者是每周、每天级别的循环。该预约操作，会作为一条定时任务，发送云端，并按照定时任务的类型决定是否会通知设备将定时任务信息下载到本地，作为本地定时任务，以确保设备在无网络的情况下都能够正常执行该预约任务。定时任务分为以下几种：</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">定时分类   </th><th class="markdownTableHeadNone">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">云端定时   </td><td class="markdownTableBodyNone">云端定时数据会存储在云端，不会被下载到设备本地。云端会维护定时器，并在定时器老化之后，通过DP控制命令的方式，下发给设备，执行预约的操作。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">本地定时   </td><td class="markdownTableBodyNone">云端通过MQTT的形式通知设备，或者设备每25分钟进行查询是否有定时更新，如果存在定时更新，会将这些定时数据下载到本地，通过本地定时器进行定时检测，并执行预约操作。<br  />
+在设备没有和云端、局域网、蓝牙进行时间同步之前，是不会执行本地定时任务的，因为时间可能不准确。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">日出日落定时   </td><td class="markdownTableBodyNone">日出日落定时是指通过当地的日出、日落的天文现象发生的时间，来预约一些操作行为。日出日落定时的逻辑和本地定时一样。   </td></tr>
+</table>
+<p >定时任务是不需要开发者进行编码的，涂鸦<code>TuyaOS</code>和涂鸦IoT平台协同完成了这些功能。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

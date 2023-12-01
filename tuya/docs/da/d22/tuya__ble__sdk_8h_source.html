@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_bt/include/tuya_ble_sdk.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_35f715468f31c6c7586f390b1ee97684.html">svc_bt</a></li><li class="navelem"><a class="el" href="../../dir_39f43fcfdf7e04947741557bfcacc95f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_ble_sdk.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d22/tuya__ble__sdk_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef TUYA_BLE_SDK_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define TUYA_BLE_SDK_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if defined(ENABLE_BT_SERVICE) &amp;&amp; (ENABLE_BT_SERVICE==1)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;tal_bluetooth_def.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define DEVICE_NAME_LEN         16</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    TY_BT_SCAN_BY_NAME = 0x01,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    TY_BT_SCAN_BY_MAC = 0x02,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    TY_BT_SCAN_BY_ADV = 0x03, <span class="comment">//接收蓝牙广播</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} ty_bt_scan_type_t;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} tuya_ble_data_buf_t;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">typedef</span> VOID (*TY_BT_MSG_CB)(INT_T id, TAL_BLE_EVT_TYPE_E e, tuya_ble_data_buf_t *buf);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">typedef</span> VOID (*TY_BT_SCAN_ADV_CB)(CHAR_T *data, UINT_T len, UCHAR_T* mac, UINT8_T type);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    CHAR_T scan_type; <span class="comment">/* ref ty_bt_scan_type_t. */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    CHAR_T name[DEVICE_NAME_LEN];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    CHAR_T bd_addr[6];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    SCHAR_T rssi;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    UCHAR_T channel;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    UCHAR_T timeout_s; <span class="comment">/* second. */</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    TY_BT_SCAN_ADV_CB scan_adv_cb;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} ty_bt_scan_info_t;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">typedef</span> VOID (*TUYA_BLE_RAW_SCAN_HANDLE)(<a class="code hl_struct" href="../../dd/d4c/structTAL__BLE__ADV__REPORT__T.html">TAL_BLE_ADV_REPORT_T</a> *scan_info);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>OPERATE_RET tuya_sdk_bt_port_init(TAL_BLE_ROLE_E mode, TY_BT_MSG_CB cb);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>OPERATE_RET tuya_sdk_bt_port_deinit(TAL_BLE_ROLE_E mode);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>OPERATE_RET tuya_sdk_bt_gap_disconnect(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>OPERATE_RET tuya_sdk_bt_send(BYTE_T *data, UINT8_T len);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>OPERATE_RET tuya_sdk_bt_reset_adv(tuya_ble_data_buf_t *adv, tuya_ble_data_buf_t *scan_resp);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>OPERATE_RET tuya_sdk_bt_get_rssi(SCHAR_T *rssi);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>OPERATE_RET tuya_sdk_bt_start_adv(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>OPERATE_RET tuya_sdk_bt_stop_adv(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>OPERATE_RET tuya_sdk_bt_assign_scan(INOUT ty_bt_scan_info_t *info);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>OPERATE_RET tuya_sdk_bt_get_ability(VOID_T);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>OPERATE_RET tuya_sdk_bt_scan_init(IN TY_BT_SCAN_ADV_CB scan_adv_cb);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>OPERATE_RET tuya_sdk_bt_start_scan(VOID_T);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>OPERATE_RET tuya_sdk_bt_stop_scan(VOID_T);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">// OPERATE_RET tuya_hal_bt_central_init(ty_ble_central_param_t *p);</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">// OPERATE_RET tuya_hal_bt_central_deinit(VOID_T);</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">// OPERATE_RET tuya_hal_bt_master_connect(UINT8_T mac[6], ty_ble_addr_type_t type, UINT_T timeout_ms, ty_ble_gap_conn_params_t *params);</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">// OPERATE_RET tuya_hal_bt_master_disconnect(UINT8_T mac[6], ty_ble_addr_type_t type);</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">// OPERATE_RET tuya_hal_bt_master_scan(BOOL_T enable);</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">// OPERATE_RET tuya_hal_bt_master_get_max_slave_num(UINT16_T *num);</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">// OPERATE_RET tuya_hal_bt_gattc_send_data(UINT8_T mac[6], UINT8_T *data, UINT_T length);</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// OPERATE_RET tuya_hal_bt_gattc_start_discovery(UINT8_T mac[6], ty_bt_uuid_t *uuid);</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">//VOID_T tuya_os_bt_intf_init(VOID_T);</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>OPERATE_RET tuya_sdk_bt_get_mac(<a class="code hl_struct" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>OPERATE_RET tuya_sdk_bt_set_mac(CONST <a class="code hl_struct" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="ttc" id="astructNW__MAC__S_html"><div class="ttname"><a href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:208</div></div>
+<div class="ttc" id="astructTAL__BLE__ADV__REPORT__T_html"><div class="ttname"><a href="../../dd/d4c/structTAL__BLE__ADV__REPORT__T.html">TAL_BLE_ADV_REPORT_T</a></div><div class="ttdef"><b>Definition:</b> tal_bluetooth_def.h:104</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

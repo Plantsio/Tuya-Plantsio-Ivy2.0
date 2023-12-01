@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/subg/include/tkl_subg_rf.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_3c8d610a30563ac5f4b2ff305d935c35.html">subg</a></li><li class="navelem"><a class="el" href="../../dir_c0f21f9c6ea689029e2cdd068433f229.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_subg_rf.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _TKL_SUBG_RF_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _TKL_SUBG_RF_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    SUBG_RF_STATE_IDLE = 0,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    SUBG_RF_STATE_TX,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    SUBG_RF_STATE_TX_ING,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    SUBG_RF_STATE_RX,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    SUBG_RF_STATE_RX_ING,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} SUBG_RF_STATE_E;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    SUBG_RF_PACK_DYNAMIC = 0,           <span class="comment">//Dynamic length type, mainly for TY_SMESH protocol</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    SUBG_RF_PACK_DYNAMIC_WAKEUP,        <span class="comment">//Dynamic length type with long preamble</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    SUBG_RF_PACK_FIXED,                 <span class="comment">//Fixed length type, mainly for RF remote control protocol</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    SUBG_RF_PACK_CARRIRE,               <span class="comment">//carrier mode</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} SUBG_RF_PACK_TYPE_E;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    SUBG_RF_CB_EVENT_TX_DONE = 0,       <span class="comment">//Packet sending complete interrupt event</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    SUBG_RF_CB_EVENT_ERROR,             <span class="comment">//RF Chip Abnormal Events</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} SUBG_RF_CALLBACK_EVENT_E;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    SUBG_RF_RX_FULL = 0,                <span class="comment">//RF full window receive mode</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    SUBG_RF_RX_DUTYCYCLE,               <span class="comment">//RF Low Power Duty Cycle Receive Mode</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    SUBG_RF_IDLE,                       <span class="comment">//RF idle state</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    SUBG_RF_SLEEP_UNIVERSAL,            <span class="comment">//RF Universal Sleep Mode</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    SUBG_RF_SLEEP_DETECT_RSSI,          <span class="comment">//Sleep Detection Over-the-Air RSSI Threshold Wake Mode for RF Low Power Modes</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} SUBG_RF_WORK_STATE_E;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">typedef</span> VOID_T (*SUBG_RF_REVIECE)(UINT8_T *rx_buf, UINT8_T buf_len,CHAR_T rx_rssi);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">typedef</span> VOID_T (*SUBG_RF_EVENT)(SUBG_RF_CALLBACK_EVENT_E cb_event);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>OPERATE_RET tkl_subg_rf_init(UINT32_T cfg_type);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>OPERATE_RET tkl_subg_rf_reinit( VOID_T );</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>SUBG_RF_STATE_E tkl_subg_rf_get_state( VOID_T );</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>OPERATE_RET tkl_subg_send(UINT8_T *tx_buf, UINT8_T buf_len,SUBG_RF_PACK_TYPE_E pack_type );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>OPERATE_RET tkl_subg_rf_goto_state(SUBG_RF_WORK_STATE_E state);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>SCHAR_T tkl_subg_rf_rssi_get( VOID_T );</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>OPERATE_RET tkl_subg_rf_set_radio_power(INT8_T radio_power_dbm);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>INT8_T tkl_subg_rf_get_radio_power( VOID_T );</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>VOID_T tkl_subg_rf_set_channel(UINT8_T channel);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>UINT8_T tkl_subg_rf_get_channel( VOID_T );</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>VOID_T tkl_subg_rf_rx_register(SUBG_RF_REVIECE fun_cb);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>VOID_T tkl_subg_rf_tx_register(SUBG_RF_EVENT fun_cb);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>VOID_T tkl_subg_rf_set_frequency_deviation(INT16_T temperature);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

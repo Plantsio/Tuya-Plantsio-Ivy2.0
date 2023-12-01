@@ -1,0 +1,802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system_service/include/tal_time_service.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c9db1059777c15dc8c8b94b955097dc4.html">tal_system_service</a></li><li class="navelem"><a class="el" href="../../dir_679a7e65efb1f08b4e45cdf759445817.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_time_service.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya time service, support UTC time, local time and summer time  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/dc2/tal__system_8h_source.html">tal_system.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_time_service.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d22/tal__time__service_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system__service_2include_2tal__time__service_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system__service_2include_2tal__time__service_8h" id="ainclude_2components_2tal__system__service_2include_2tal__time__service_8h">
+<area shape="rect" title="tuya time service, support UTC time, local time and summer time" alt="" coords="344,5,541,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,184,517,211"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="435,109,541,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,432,285"/>
+<area shape="rect" title=" " alt="" coords="457,259,527,285"/>
+<area shape="rect" title=" " alt="" coords="552,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,730,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,259,893,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dca/tal__time__service_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__system__service_2include_2tal__time__service_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__system__service_2include_2tal__time__service_8hdep" id="ainclude_2components_2tal__system__service_2include_2tal__time__service_8hdep">
+<area shape="rect" title="tuya time service, support UTC time, local time and summer time" alt="" coords="776,5,973,61"/>
+<area shape="rect" href="../../d3/d1b/httpc_8h.html" title="HTTP Client Module" alt="" coords="429,124,603,165"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="861,436,1040,492"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="795,109,954,180"/>
+<area shape="rect" href="../../dc/d26/http__inf_8h.html" title="Wrapper of HTTP request and response" alt="" coords="421,235,611,277"/>
+<area shape="rect" href="../../d9/d3a/http__manager_8h.html" title="wrapper for HTTP session manager" alt="" coords="63,228,219,284"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="421,332,598,388"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="869,540,1032,596"/>
+<area shape="rect" href="../../d6/da6/base__event_8h.html" title="tuya simple event module" alt="" coords="243,228,397,284"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="791,228,959,284"/>
+<area shape="rect" href="../../d2/dac/tuya__svc__upgrade__http_8h.html" title="TUYA OTA service" alt="" coords="983,228,1172,284"/>
+<area shape="rect" href="../../df/d34/tuya__svc__netmgr_8h.html" title="TUYA network manager service" alt="" coords="243,332,397,388"/>
+<area shape="rect" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html" title="TUYA mqtt direct service" alt="" coords="5,332,219,388"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="374,540,551,596"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="214,436,426,492"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="913,332,1069,388"/>
+<area shape="rect" href="../../da/d19/tuya__devos__utils_8h.html" title="Utilities of DevOS" alt="" coords="1093,332,1272,388"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="1297,332,1463,388"/>
+<area shape="rect" href="../../df/d69/smart__frame_8h.html" title="Common process &#45; Initialization" alt="" coords="622,332,786,388"/>
+</map>
+</div>
+</div>
+<p><a href="../../da/df8/tal__time__service_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d84/structSUM__ZONE__TBL__S.html">SUM_ZONE_TBL_S</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">sum zone info  <a href="../../d8/d84/structSUM__ZONE__TBL__S.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ae6bf5213360f4c96bdb34f81acac0e4a"><td class="memItemLeft" align="right" valign="top"><a id="ae6bf5213360f4c96bdb34f81acac0e4a" name="ae6bf5213360f4c96bdb34f81acac0e4a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUM_ZONE_TAB_LMT</b>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ae6bf5213360f4c96bdb34f81acac0e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of time zone table <br /></td></tr>
+<tr class="separator:ae6bf5213360f4c96bdb34f81acac0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2a8ed2b219febf3ea3e55a054a13fb9c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a2a8ed2b219febf3ea3e55a054a13fb9c">tal_time_check_time_sync</a> (VOID)</td></tr>
+<tr class="memdesc:a2a8ed2b219febf3ea3e55a054a13fb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">check IoTOS time synchronize status  <a href="../../da/df8/tal__time__service_8h.html#a2a8ed2b219febf3ea3e55a054a13fb9c">更多...</a><br /></td></tr>
+<tr class="separator:a2a8ed2b219febf3ea3e55a054a13fb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921fe6967d355889cf57392349ec8e20"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a921fe6967d355889cf57392349ec8e20">tal_time_check_time_zone_sync</a> (VOID)</td></tr>
+<tr class="memdesc:a921fe6967d355889cf57392349ec8e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">check IoTOS time zone synchronized status  <a href="../../da/df8/tal__time__service_8h.html#a921fe6967d355889cf57392349ec8e20">更多...</a><br /></td></tr>
+<tr class="separator:a921fe6967d355889cf57392349ec8e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b87a3f009f99234355b6df58fba35d9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a0b87a3f009f99234355b6df58fba35d9">tal_time_get</a> (OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm)</td></tr>
+<tr class="memdesc:a0b87a3f009f99234355b6df58fba35d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC time in posix time format  <a href="../../da/df8/tal__time__service_8h.html#a0b87a3f009f99234355b6df58fba35d9">更多...</a><br /></td></tr>
+<tr class="separator:a0b87a3f009f99234355b6df58fba35d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebda3f0eee6988df8cc3e193b528b218"><td class="memItemLeft" align="right" valign="top">TIME_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#aebda3f0eee6988df8cc3e193b528b218">tal_time_get_cur_posix</a> (VOID)</td></tr>
+<tr class="memdesc:aebda3f0eee6988df8cc3e193b528b218"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS last synchronized UTC time in TIME_T format  <a href="../../da/df8/tal__time__service_8h.html#aebda3f0eee6988df8cc3e193b528b218">更多...</a><br /></td></tr>
+<tr class="separator:aebda3f0eee6988df8cc3e193b528b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7400c84e0e0d28d754b98ebed2b8552"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#ae7400c84e0e0d28d754b98ebed2b8552">tal_time_get_local_time_custom</a> (IN TIME_T in_time, OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm)</td></tr>
+<tr class="memdesc:ae7400c84e0e0d28d754b98ebed2b8552"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS local time (local, contains the time zone and summer time zone)  <a href="../../da/df8/tal__time__service_8h.html#ae7400c84e0e0d28d754b98ebed2b8552">更多...</a><br /></td></tr>
+<tr class="separator:ae7400c84e0e0d28d754b98ebed2b8552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4730950c3f787cc9b093730d18e46ca7"><td class="memItemLeft" align="right" valign="top">TIME_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a4730950c3f787cc9b093730d18e46ca7">tal_time_get_posix</a> (VOID)</td></tr>
+<tr class="memdesc:a4730950c3f787cc9b093730d18e46ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC time in TIME_T format  <a href="../../da/df8/tal__time__service_8h.html#a4730950c3f787cc9b093730d18e46ca7">更多...</a><br /></td></tr>
+<tr class="separator:a4730950c3f787cc9b093730d18e46ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab00d1e35c7ea09e23d7f3cd55cf4d4"><td class="memItemLeft" align="right" valign="top">SYS_TICK_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#afab00d1e35c7ea09e23d7f3cd55cf4d4">tal_time_get_posix_ms</a> (VOID)</td></tr>
+<tr class="memdesc:afab00d1e35c7ea09e23d7f3cd55cf4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC time in SYS_TICK_T format  <a href="../../da/df8/tal__time__service_8h.html#afab00d1e35c7ea09e23d7f3cd55cf4d4">更多...</a><br /></td></tr>
+<tr class="separator:afab00d1e35c7ea09e23d7f3cd55cf4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486abbe78589263d2b12b2e7bc4def2c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a486abbe78589263d2b12b2e7bc4def2c">tal_time_get_sum_time</a> (OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm)</td></tr>
+<tr class="memdesc:a486abbe78589263d2b12b2e7bc4def2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC summer time in posix time format  <a href="../../da/df8/tal__time__service_8h.html#a486abbe78589263d2b12b2e7bc4def2c">更多...</a><br /></td></tr>
+<tr class="separator:a486abbe78589263d2b12b2e7bc4def2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc80a5c33c201eceb97bb8dfe1580e7f"><td class="memItemLeft" align="right" valign="top">TIME_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#acc80a5c33c201eceb97bb8dfe1580e7f">tal_time_get_sum_time_posix</a> (VOID)</td></tr>
+<tr class="memdesc:acc80a5c33c201eceb97bb8dfe1580e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC summer time int TIME_T format  <a href="../../da/df8/tal__time__service_8h.html#acc80a5c33c201eceb97bb8dfe1580e7f">更多...</a><br /></td></tr>
+<tr class="separator:acc80a5c33c201eceb97bb8dfe1580e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c44db8d054a0ad9439a1d3a76ebbf6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a99c44db8d054a0ad9439a1d3a76ebbf6">tal_time_get_sum_zone</a> (OUT <a class="el" href="../../d8/d84/structSUM__ZONE__TBL__S.html">SUM_ZONE_TBL_S</a> *sum_zone)</td></tr>
+<tr class="memdesc:a99c44db8d054a0ad9439a1d3a76ebbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get sum zone info  <a href="../../da/df8/tal__time__service_8h.html#a99c44db8d054a0ad9439a1d3a76ebbf6">更多...</a><br /></td></tr>
+<tr class="separator:a99c44db8d054a0ad9439a1d3a76ebbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51ddaa30ae4fd3be4ef340534c87edd"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#af51ddaa30ae4fd3be4ef340534c87edd">tal_time_get_system_time</a> (OUT TIME_S *pSecTime, OUT TIME_MS *pMsTime)</td></tr>
+<tr class="memdesc:af51ddaa30ae4fd3be4ef340534c87edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC time, both second and micro-second  <a href="../../da/df8/tal__time__service_8h.html#af51ddaa30ae4fd3be4ef340534c87edd">更多...</a><br /></td></tr>
+<tr class="separator:af51ddaa30ae4fd3be4ef340534c87edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf46038fdc5b91be54cf493cfdfa93c6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#aaf46038fdc5b91be54cf493cfdfa93c6">tal_time_get_time_zone_seconds</a> (OUT INT_T *time_zone)</td></tr>
+<tr class="memdesc:aaf46038fdc5b91be54cf493cfdfa93c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS time zone in second format  <a href="../../da/df8/tal__time__service_8h.html#aaf46038fdc5b91be54cf493cfdfa93c6">更多...</a><br /></td></tr>
+<tr class="separator:aaf46038fdc5b91be54cf493cfdfa93c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837b87b97ed4f54658b46b43992a6925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a837b87b97ed4f54658b46b43992a6925">tal_time_gmtime_r</a> (IN CONST TIME_T *tm, OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *result)</td></tr>
+<tr class="memdesc:a837b87b97ed4f54658b46b43992a6925"><td class="mdescLeft">&#160;</td><td class="mdescRight">change TIME_T to posix time, redefine the std C func gmtime_r  <a href="../../da/df8/tal__time__service_8h.html#a837b87b97ed4f54658b46b43992a6925">更多...</a><br /></td></tr>
+<tr class="separator:a837b87b97ed4f54658b46b43992a6925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac311c1eca1eb7e45cc47811dcb876c65"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#ac311c1eca1eb7e45cc47811dcb876c65">tal_time_is_in_sum_zone</a> (TIME_T time)</td></tr>
+<tr class="memdesc:ac311c1eca1eb7e45cc47811dcb876c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">get IoTOS UTC summer time int TIME_T format  <a href="../../da/df8/tal__time__service_8h.html#ac311c1eca1eb7e45cc47811dcb876c65">更多...</a><br /></td></tr>
+<tr class="separator:ac311c1eca1eb7e45cc47811dcb876c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab720978e64ceb6f8a3ea797c428c31"><td class="memItemLeft" align="right" valign="top">TIME_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a2ab720978e64ceb6f8a3ea797c428c31">tal_time_mktime</a> (IN CONST <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm)</td></tr>
+<tr class="memdesc:a2ab720978e64ceb6f8a3ea797c428c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">change posix time to TIME_T, redefine the std C func mktime  <a href="../../da/df8/tal__time__service_8h.html#a2ab720978e64ceb6f8a3ea797c428c31">更多...</a><br /></td></tr>
+<tr class="separator:a2ab720978e64ceb6f8a3ea797c428c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b8a9341f147dd48c5e8ccdfba0a6b2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#ad0b8a9341f147dd48c5e8ccdfba0a6b2">tal_time_service_init</a> (VOID)</td></tr>
+<tr class="memdesc:ad0b8a9341f147dd48c5e8ccdfba0a6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">time-management module initialization  <a href="../../da/df8/tal__time__service_8h.html#ad0b8a9341f147dd48c5e8ccdfba0a6b2">更多...</a><br /></td></tr>
+<tr class="separator:ad0b8a9341f147dd48c5e8ccdfba0a6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3ad44f7f56bb8eff5c225969e2e1a6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a7c3ad44f7f56bb8eff5c225969e2e1a6">tal_time_set</a> (IN CONST <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm)</td></tr>
+<tr class="memdesc:a7c3ad44f7f56bb8eff5c225969e2e1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">set IoTOS UTC time  <a href="../../da/df8/tal__time__service_8h.html#a7c3ad44f7f56bb8eff5c225969e2e1a6">更多...</a><br /></td></tr>
+<tr class="separator:a7c3ad44f7f56bb8eff5c225969e2e1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0802643c2946b85ddf6107e846ef541e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a0802643c2946b85ddf6107e846ef541e">tal_time_set_posix</a> (IN CONST TIME_T time, IN CONST INT_T update_source)</td></tr>
+<tr class="memdesc:a0802643c2946b85ddf6107e846ef541e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set IoTOS UTC time in time_t format  <a href="../../da/df8/tal__time__service_8h.html#a0802643c2946b85ddf6107e846ef541e">更多...</a><br /></td></tr>
+<tr class="separator:a0802643c2946b85ddf6107e846ef541e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162310b8bec179ed2a6cd97a7f9ce859"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#a162310b8bec179ed2a6cd97a7f9ce859">tal_time_set_sum_zone_tbl</a> (IN CONST <a class="el" href="../../db/dfa/structSUM__ZONE__S.html">SUM_ZONE_S</a> *zone, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:a162310b8bec179ed2a6cd97a7f9ce859"><td class="mdescLeft">&#160;</td><td class="mdescRight">set IoTOS summer time zone  <a href="../../da/df8/tal__time__service_8h.html#a162310b8bec179ed2a6cd97a7f9ce859">更多...</a><br /></td></tr>
+<tr class="separator:a162310b8bec179ed2a6cd97a7f9ce859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0deb98e1252a1307ff34b6376c3f844"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#aa0deb98e1252a1307ff34b6376c3f844">tal_time_set_time_zone</a> (IN CONST CHAR_T *time_zone)</td></tr>
+<tr class="memdesc:aa0deb98e1252a1307ff34b6376c3f844"><td class="mdescLeft">&#160;</td><td class="mdescRight">set IoTOS time zone in "+/-hh:mm" format  <a href="../../da/df8/tal__time__service_8h.html#aa0deb98e1252a1307ff34b6376c3f844">更多...</a><br /></td></tr>
+<tr class="separator:aa0deb98e1252a1307ff34b6376c3f844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85dce9951cedc68c17493f000e57eb7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df8/tal__time__service_8h.html#ae85dce9951cedc68c17493f000e57eb7">tal_time_set_time_zone_seconds</a> (IN INT_T time_zone_sec)</td></tr>
+<tr class="memdesc:ae85dce9951cedc68c17493f000e57eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set IoTOS time zone in second format  <a href="../../da/df8/tal__time__service_8h.html#ae85dce9951cedc68c17493f000e57eb7">更多...</a><br /></td></tr>
+<tr class="separator:ae85dce9951cedc68c17493f000e57eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya time service, support UTC time, local time and summer time </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2019 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a2a8ed2b219febf3ea3e55a054a13fb9c" name="a2a8ed2b219febf3ea3e55a054a13fb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8ed2b219febf3ea3e55a054a13fb9c">&#9670;&nbsp;</a></span>tal_time_check_time_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_check_time_sync </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check IoTOS time synchronize status </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on synchronized. Others on not </dd></dl>
+
+</div>
+</div>
+<a id="a921fe6967d355889cf57392349ec8e20" name="a921fe6967d355889cf57392349ec8e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921fe6967d355889cf57392349ec8e20">&#9670;&nbsp;</a></span>tal_time_check_time_zone_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_check_time_zone_sync </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check IoTOS time zone synchronized status </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on synchronized. Others on not </dd></dl>
+
+</div>
+</div>
+<a id="a0b87a3f009f99234355b6df58fba35d9" name="a0b87a3f009f99234355b6df58fba35d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b87a3f009f99234355b6df58fba35d9">&#9670;&nbsp;</a></span>tal_time_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_get </td>
+          <td>(</td>
+          <td class="paramtype">OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC time in posix time format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">tm</td><td>the IoTOS UTC time in posix time format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="aebda3f0eee6988df8cc3e193b528b218" name="aebda3f0eee6988df8cc3e193b528b218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebda3f0eee6988df8cc3e193b528b218">&#9670;&nbsp;</a></span>tal_time_get_cur_posix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_T tal_time_get_cur_posix </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS last synchronized UTC time in TIME_T format </p>
+<dl class="section return"><dt>返回</dt><dd>the time in TIME_T format </dd></dl>
+
+</div>
+</div>
+<a id="ae7400c84e0e0d28d754b98ebed2b8552" name="ae7400c84e0e0d28d754b98ebed2b8552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7400c84e0e0d28d754b98ebed2b8552">&#9670;&nbsp;</a></span>tal_time_get_local_time_custom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_get_local_time_custom </td>
+          <td>(</td>
+          <td class="paramtype">IN TIME_T&#160;</td>
+          <td class="paramname"><em>in_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS local time (local, contains the time zone and summer time zone) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_time</td><td>the time need translate </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tm</td><td>the local time in posix format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>if in_time is 0, return the IoTOS local time, otherwise, translate the in_time to local time </dd></dl>
+
+</div>
+</div>
+<a id="a4730950c3f787cc9b093730d18e46ca7" name="a4730950c3f787cc9b093730d18e46ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4730950c3f787cc9b093730d18e46ca7">&#9670;&nbsp;</a></span>tal_time_get_posix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_T tal_time_get_posix </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC time in TIME_T format </p>
+<dl class="section return"><dt>返回</dt><dd>the current second time in TIME_T format </dd></dl>
+
+</div>
+</div>
+<a id="afab00d1e35c7ea09e23d7f3cd55cf4d4" name="afab00d1e35c7ea09e23d7f3cd55cf4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab00d1e35c7ea09e23d7f3cd55cf4d4">&#9670;&nbsp;</a></span>tal_time_get_posix_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SYS_TICK_T tal_time_get_posix_ms </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC time in SYS_TICK_T format </p>
+<dl class="section return"><dt>返回</dt><dd>the current micro-second time in SYS_TICK_T format </dd></dl>
+
+</div>
+</div>
+<a id="a486abbe78589263d2b12b2e7bc4def2c" name="a486abbe78589263d2b12b2e7bc4def2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486abbe78589263d2b12b2e7bc4def2c">&#9670;&nbsp;</a></span>tal_time_get_sum_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_get_sum_time </td>
+          <td>(</td>
+          <td class="paramtype">OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC summer time in posix time format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">tm</td><td>the summer time in posix format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acc80a5c33c201eceb97bb8dfe1580e7f" name="acc80a5c33c201eceb97bb8dfe1580e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc80a5c33c201eceb97bb8dfe1580e7f">&#9670;&nbsp;</a></span>tal_time_get_sum_time_posix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_T tal_time_get_sum_time_posix </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC summer time int TIME_T format </p>
+<dl class="section return"><dt>返回</dt><dd>the summer time in TIME_T format </dd></dl>
+
+</div>
+</div>
+<a id="a99c44db8d054a0ad9439a1d3a76ebbf6" name="a99c44db8d054a0ad9439a1d3a76ebbf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c44db8d054a0ad9439a1d3a76ebbf6">&#9670;&nbsp;</a></span>tal_time_get_sum_zone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_get_sum_zone </td>
+          <td>(</td>
+          <td class="paramtype">OUT <a class="el" href="../../d8/d84/structSUM__ZONE__TBL__S.html">SUM_ZONE_TBL_S</a> *&#160;</td>
+          <td class="paramname"><em>sum_zone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get sum zone info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">sum</td><td>zone info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="af51ddaa30ae4fd3be4ef340534c87edd" name="af51ddaa30ae4fd3be4ef340534c87edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51ddaa30ae4fd3be4ef340534c87edd">&#9670;&nbsp;</a></span>tal_time_get_system_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tal_time_get_system_time </td>
+          <td>(</td>
+          <td class="paramtype">OUT TIME_S *&#160;</td>
+          <td class="paramname"><em>pSecTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT TIME_MS *&#160;</td>
+          <td class="paramname"><em>pMsTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC time, both second and micro-second </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pSecTime</td><td>the current time in second </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pMsTime</td><td>the current time in micro-second </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="aaf46038fdc5b91be54cf493cfdfa93c6" name="aaf46038fdc5b91be54cf493cfdfa93c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf46038fdc5b91be54cf493cfdfa93c6">&#9670;&nbsp;</a></span>tal_time_get_time_zone_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_get_time_zone_seconds </td>
+          <td>(</td>
+          <td class="paramtype">OUT INT_T *&#160;</td>
+          <td class="paramname"><em>time_zone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS time zone in second format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">time_zone</td><td>the current time zone in second format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a837b87b97ed4f54658b46b43992a6925" name="a837b87b97ed4f54658b46b43992a6925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837b87b97ed4f54658b46b43992a6925">&#9670;&nbsp;</a></span>tal_time_gmtime_r()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> * tal_time_gmtime_r </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST TIME_T *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>change TIME_T to posix time, redefine the std C func gmtime_r </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tm</td><td>the time in TIME_T format </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>the time in posix time format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the time in posix time format </dd></dl>
+
+</div>
+</div>
+<a id="ac311c1eca1eb7e45cc47811dcb876c65" name="ac311c1eca1eb7e45cc47811dcb876c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac311c1eca1eb7e45cc47811dcb876c65">&#9670;&nbsp;</a></span>tal_time_is_in_sum_zone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tal_time_is_in_sum_zone </td>
+          <td>(</td>
+          <td class="paramtype">TIME_T&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get IoTOS UTC summer time int TIME_T format </p>
+<dl class="section return"><dt>返回</dt><dd>the summer time in TIME_T format </dd></dl>
+
+</div>
+</div>
+<a id="a2ab720978e64ceb6f8a3ea797c428c31" name="a2ab720978e64ceb6f8a3ea797c428c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab720978e64ceb6f8a3ea797c428c31">&#9670;&nbsp;</a></span>tal_time_mktime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_T tal_time_mktime </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>change posix time to TIME_T, redefine the std C func mktime </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tm</td><td>the time in posix time format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the time in TIME_T format </dd></dl>
+
+</div>
+</div>
+<a id="ad0b8a9341f147dd48c5e8ccdfba0a6b2" name="ad0b8a9341f147dd48c5e8ccdfba0a6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b8a9341f147dd48c5e8ccdfba0a6b2">&#9670;&nbsp;</a></span>tal_time_service_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_service_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>time-management module initialization </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a7c3ad44f7f56bb8eff5c225969e2e1a6" name="a7c3ad44f7f56bb8eff5c225969e2e1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3ad44f7f56bb8eff5c225969e2e1a6">&#9670;&nbsp;</a></span>tal_time_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_set </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set IoTOS UTC time </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tm</td><td>the new time in posix time format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a0802643c2946b85ddf6107e846ef541e" name="a0802643c2946b85ddf6107e846ef541e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0802643c2946b85ddf6107e846ef541e">&#9670;&nbsp;</a></span>tal_time_set_posix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_set_posix </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST TIME_T&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>update_source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set IoTOS UTC time in time_t format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>the new time in time_t format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">update_source</td><td>the source of time (0:rtc 1:cloud 2:other) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a162310b8bec179ed2a6cd97a7f9ce859" name="a162310b8bec179ed2a6cd97a7f9ce859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162310b8bec179ed2a6cd97a7f9ce859">&#9670;&nbsp;</a></span>tal_time_set_sum_zone_tbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tal_time_set_sum_zone_tbl </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../db/dfa/structSUM__ZONE__S.html">SUM_ZONE_S</a> *&#160;</td>
+          <td class="paramname"><em>zone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set IoTOS summer time zone </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">zone</td><td>the summer time zone table </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>the summer time counts </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa0deb98e1252a1307ff34b6376c3f844" name="aa0deb98e1252a1307ff34b6376c3f844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0deb98e1252a1307ff34b6376c3f844">&#9670;&nbsp;</a></span>tal_time_set_time_zone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_set_time_zone </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>time_zone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set IoTOS time zone in "+/-hh:mm" format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_zone</td><td>the new time zone in "+/-hh:mm" format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="ae85dce9951cedc68c17493f000e57eb7" name="ae85dce9951cedc68c17493f000e57eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85dce9951cedc68c17493f000e57eb7">&#9670;&nbsp;</a></span>tal_time_set_time_zone_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_time_set_time_zone_seconds </td>
+          <td>(</td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>time_zone_sec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set IoTOS time zone in second format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_zone</td><td>the new time zone in second format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> <br  />
+ </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

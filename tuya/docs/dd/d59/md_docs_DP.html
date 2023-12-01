@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: DP 模型</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">DP 模型 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><code>DP</code> 点是涂鸦 <code>IoT</code> 平台对功能点的定义。开发者可以在涂鸦 <code>IoT</code> 平台创建产品，并根据开发者的需求，定义产品功能和功能点的特征，每一个功能点，就是一个 <code>DP</code> 点。产品的 <code>DP</code> 点的集合，是产品的业务模型，也被称为产品的 <code>Schema</code>。当设备在涂鸦 <code>IoT</code> 平台激活的时候，通过激活时候所携带的产品创建所得的 <code>PID</code> 信息，可以获得产品的 <code>Schema</code> 信息。TuyaOS 会根据 <code>Schema</code> 信息创建设备的能力列表，并在后续的日常运行过程中根据设备的能力，处理 <code>DP</code> 的上报和下发。</p>
+<p ><code>DP</code> 点支持布尔型(<code>bool</code>)、数值型(<code>value</code>)、字符串型(<code>string</code>)、枚举型(<code>enum</code>)、故障型(<code>bitmap</code>)，<code>RAW</code> 型数据，像定义 C 变量一样简单。其中布尔型(<code>bool</code>)、数值型(<code>value</code>)、字符串型(<code>string</code>)、枚举型(<code>enum</code>)、故障型(<code>bitmap</code>)又被称为 <code>obj</code> 型。使用 <code>DP</code> 点的时候应注意：</p>
+<ul>
+<li>目前建议每个产品最多创建 35 个 <code>dp</code>，复杂功能请用 <code>RAW</code> 型数据实现;</li>
+<li><code>obj</code> 型 <code>DP</code> 上报的时候，会对上报的数值进行过滤，相同则不予上报；</li>
+<li>如果想上报相同的 <code>obj</code> 型 <code>DP</code>，可以通过带 <code>force</code> 的接口上报，或者将 <code>DP</code> 点定义为统计类型(<code>stat</code>)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md74"></a>
+DP通道</h1>
+<p ><code>DP</code>下发和上报支持蓝牙、局域网和涂鸦<code>MQTT</code>三个通道，三个通道同时处理会造成<code>DP</code>处理逻辑复杂化，并造成流量、功耗的增加，因此<code>DP</code>处理的通道存在一定的逻辑策略。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">通道   </th><th class="markdownTableHeadNone">策略    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>MQTT</code>   </td><td class="markdownTableBodyNone">上报：当<code>MQTT</code>通道在线的时候，永远会通过<code>MQTT</code>上报<br  />
+下发：当<code>MQTT</code>通道在线，且<code>LAN</code>不在线，会通过<code>MQTT</code>通道下发；<code>LAN</code>在线，不会通过<code>MQTT</code>通道下发    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>LAN</code>   </td><td class="markdownTableBodyNone">上报：当<code>LAN</code>通道在线的时候，永远会通过<code>LAN</code>上报<br  />
+下发：当<code>LAN</code>通道在线，只会通过<code>LAN</code>通道下发    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>BLE</code>   </td><td class="markdownTableBodyNone">上报：仅当<code>MQTT</code>和<code>LAN</code>都不在线的情况，会通过<code>BLE</code>上报<br  />
+下发：仅当<code>MQTT</code>和<code>LAN</code>都不在线的情况，会通过<code>BLE</code>下发   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md75"></a>
+DP下发</h1>
+<h2><a class="anchor" id="autotoc_md76"></a>
+初始化DP回调</h2>
+<p ><code>TuyaOS</code> 在初始化的时候，会需要开发者提供 <code><a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html" title="Definition of gateway callback funtions">TY_IOT_CBS_S</a></code>，其中包括三个回调函数，用于处理 <code>TuyaOS</code> 里接受到的<code>DP</code>相关的命令，具体用途如下。开发者根据自己的实际功能需要，实现相应的回调，并在设备初始化的时候注册到 <code>TuyaOS</code> 。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">回调名称   </th><th class="markdownTableHeadNone">功能描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>dev_obj_dp_cb</code>   </td><td class="markdownTableBodyNone">结构化DP接受处理回调，结构化DP即DP有明确的类型定义    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>dev_raw_dp_cb</code>   </td><td class="markdownTableBodyNone">raw型DP接受处理回调，raw型DP即二进制数据流    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>dev_dp_query_cb</code>   </td><td class="markdownTableBodyNone">DP查询回调，用于查询设备实际的DP的值   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md77"></a>
+DP下发处理流程</h2>
+<p >通过向设备下发 <code>DP</code> 点可以对设备进行控制， <code>TuyaOS</code> 可以支持从蓝牙、局域网、涂鸦云 <code>MQTT</code> 三条通道来的 <code>DP</code> 信息，在 <code>TuyaOS</code> 里对收到的 <code>DP</code> 校验处理，然后调用相应的回调接口，告知应用层收到相应的DP命令，交于应用层对DP命令进行处理，处理流程如下图所示。</p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/f4875aab-753c-439e-b0d9-3f17e6f4dcde.png" alt="DP下发.png" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md78"></a>
+DP上报</h1>
+<p >设备产生的状态、数据，以及 <code>DP</code> 下发操作执行结果可以上报，通过 <code>TuyaOS</code> 提供的 <code>DP</code> 上报接口，并在 <code>TuyaOS</code> 内部对上报的 <code>DP</code> 进行校验和流控，然后通过对应通道进行上报。</p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/8053029b-08f8-4d6e-b080-6133ccbcbf60.png" alt="DP上报.png" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md79"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md80"></a>
+上报DP</h2>
+<p >上报 <code>DP</code> 点，针对不同类型的DP点，行为不同：</p>
+<ul>
+<li><code>T_OBJ_REPT</code>：该接口会对需要上报的 <code>DP</code> 进行重复性校验，即如果 <code>DP</code> 点的值和上次上报的值一样，不会进行上报。该接口会对上报的数据进行缓存。此接口上报是异步上报，即上报发起即返回，不关心上报的结果。</li>
+<li><code>T_RAW_REPT</code>：该接口不会对需要上报的 <code>DP</code> 进行重复性校验，即如果 <code>DP</code> 点的值和上次上报的值一样，也依然会进行上报。该接口不会对上报的数据进行缓存，因为数据量一般会比较大。此接口上报是同步上报，即上报成功或者超时时间到了之后才会进行返回。</li>
+<li><code>T_STAT_REPT</code>：该接口不会对需要上报的 <code>DP</code> 进行重复性校验，即如果 <code>DP</code> 点的值和上次上报的值一样，也依然会进行上报。该接口会对上报的数据进行缓存，但仅缓存最后一次上报的结果，因此在实现统计类型的<code>DP</code>上报的时候，需要考虑上报失败的时候缓存数据。此接口上报是同步上报，即上报成功或者超时时间到了之后才会进行返回。</li>
+</ul>
+<p >如果是查询上报，即通过<code>dev_dp_query_cb</code>产生的上报行为，需要将<code>is_query</code>设置为TRUE。 </p><div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(IN CONST DP_REPT_TYPE_E dp_rept_type, IN VOID_T* dp_rept, IN CONST BOOL_T is_query);</div>
+<div class="ttc" id="asmart__frame_8h_html_a165f543d19f7abd5231d3788d68c964f"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a></div><div class="ttdeci">OPERATE_RET ty_dp_report(IN CONST DP_REPT_TYPE_E dp_rept_type, IN VOID_T *dp_rept, IN CONST BYTE_T is_query)</div><div class="ttdoc">Report dp data</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md81"></a>
+使用示例</h1>
+<div class="fragment"><div class="line"><span class="comment">// 上报 OBJ 型 DP</span></div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">dev_report_dp_json_async</a>(IN CONST CHAR_T *dev_id, IN CONST <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">TY_OBJ_DP_REPT_S</a> obj_dp = {{(CHAR_T *)dev_id, (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)dp_data, cnt}, FALSE};</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(T_OBJ_REPT, (VOID_T*)&amp;obj_dp, FALSE);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 强制上报 OBJ 型 DP</span></div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#afb27e1f3a0abd4f7290c4139ea2799cf">dev_report_dp_json_async_force</a>(IN CONST CHAR_T *dev_id, IN CONST <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">TY_OBJ_DP_REPT_S</a> obj_dp = {{(CHAR_T *)dev_id, (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)dp_data, cnt}, TRUE};</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(T_OBJ_REPT, (VOID_T*)&amp;obj_dp, FALSE);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// OBJ 类型的 DP 上报</span></div>
+<div class="line">OPERATE_RET sample_objdp_test()</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">    INT_T dp_idx = 0;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_arr = (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)<a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a>(2*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line">    <span class="keywordflow">if</span>(NULL == dp_arr) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;malloc failed&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">return</span> OPRT_MALLOC_FAILED;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    memset(dp_arr, 0, dp_cnt*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line"> </div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">dpid</a> = 1;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">type</a> = PROP_BOOL;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">time_stamp</a> = 0;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">value</a>.dp_bool = TRUE;</div>
+<div class="line">    dp_idx ++;</div>
+<div class="line"> </div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">dpid</a> = get_channel_cddpid(ch_idx);</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">type</a> = PROP_VALUE;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">time_stamp</a> = 0;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">value</a>.dp_value = 0; </div>
+<div class="line">    dp_idx ++;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 一次上报两个DP</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">dev_report_dp_json_async</a>(<a class="code hl_function" href="../../d4/d62/gw__intf_8h.html#afef3a3e574106cb4820dabfc99d1ac5f">get_gw_cntl</a>()-&gt;gw_if.id, dp_arr, 2));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 再次上报（上报不成功，因为没有变化）</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">dev_report_dp_json_async</a>(<a class="code hl_function" href="../../d4/d62/gw__intf_8h.html#afef3a3e574106cb4820dabfc99d1ac5f">get_gw_cntl</a>()-&gt;gw_if.id, dp_arr, 2));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 强制上报（可以上报成功）</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#afb27e1f3a0abd4f7290c4139ea2799cf">dev_report_dp_json_async_force</a>(<a class="code hl_function" href="../../d4/d62/gw__intf_8h.html#afef3a3e574106cb4820dabfc99d1ac5f">get_gw_cntl</a>()-&gt;gw_if.id, dp_arr, 2));</div>
+<div class="line">    <a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">Free</a>(dp_arr);</div>
+<div class="line">    dp_arr = NULL;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span> rt;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 上报 RAW 型 DP</span></div>
+<div class="line">OPERATE_RET dev_report_dp_raw_sync(IN CONST CHAR_T *dev_id, IN CONST BYTE_T dpid, </div>
+<div class="line">                                          IN CONST BYTE_T *data, IN CONST UINT_T len, </div>
+<div class="line">                                          IN CONST UINT_T timeout)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../d6/d64/structTY__RAW__DP__REPT__S.html">TY_RAW_DP_REPT_S</a> obj_dp = {(CHAR_T *)dev_id, dpid, (BYTE_T *)data, len, NULL, timeout};</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(T_RAW_REPT, (VOID_T*)&amp;obj_dp, FALSE);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// RAW 类型的 DP 上报</span></div>
+<div class="line"><span class="keywordtype">void</span> sample_rawdp_test(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;    </div>
+<div class="line">    CHAR_T tmp_buf[1024] = {0x0};</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 上报成功</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(dev_report_dp_raw_sync(NULL, 1, tmp_buf, BUFFER_LEN, 3));    </div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 上报成功，不会检测重复，总是上报</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(dev_report_dp_raw_sync(NULL, 1, tmp_buf, BUFFER_LEN, 3));  </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> rt;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 上报 STAT 型 DP</span></div>
+<div class="line">OPERATE_RET dev_report_dp_stat_sync(IN CONST CHAR_T *dev_id, IN CONST <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt, IN CONST UINT_T timeout)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../df/db0/structTY__STAT__DP__REPT__S.html">TY_STAT_DP_REPT_S</a> obj_dp = {{(CHAR_T *)dev_id, (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)dp_data, cnt}, timeout};</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(T_STAT_REPT, (VOID_T*)&amp;obj_dp, FALSE);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// STAT 类型的 DP 上报</span></div>
+<div class="line"><span class="keywordtype">void</span> sample_statdp_test(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">    INT_T dp_idx = 0;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_arr = (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)<a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a>(2*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line">    <span class="keywordflow">if</span>(NULL == dp_arr) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;malloc failed&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">return</span> OPRT_MALLOC_FAILED;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    memset(dp_arr, 0, dp_cnt*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line"> </div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">dpid</a> = 1;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">type</a> = PROP_BOOL;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">time_stamp</a> = 0;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">value</a>.dp_bool = TRUE;</div>
+<div class="line">    dp_idx ++;</div>
+<div class="line"> </div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">dpid</a> = 2;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">type</a> = PROP_VALUE;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">time_stamp</a> = 0;</div>
+<div class="line">    dp_arr[dp_idx].<a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">value</a>.dp_value = 0; </div>
+<div class="line">    dp_idx ++;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 一次上报两个DP</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(dev_report_dp_stat_sync(<a class="code hl_function" href="../../d4/d62/gw__intf_8h.html#afef3a3e574106cb4820dabfc99d1ac5f">get_gw_cntl</a>()-&gt;gw_if.id, dp_arr, 2, 3, NULL));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 上报成功，不会检测重复，总是上报</span></div>
+<div class="line">    TUYA_CALL_ERR_LOG(dev_report_dp_stat_sync(<a class="code hl_function" href="../../d4/d62/gw__intf_8h.html#afef3a3e574106cb4820dabfc99d1ac5f">get_gw_cntl</a>()-&gt;gw_if.id, dp_arr, 2, 3, NULL));</div>
+<div class="line">    <span class="keywordflow">return</span> rt;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 接收 OBJ DP 处理回调 dev_obj_dp_cb</span></div>
+<div class="line">VOID test_DEV_OBJ_DP_CMD_CB(IN CONST <a class="code hl_struct" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> *dp)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;SOC Rev DP Obj Cmd t1:%d t2:%d CNT:%u&quot;</span>, dp-&gt;cmd_tp, dp-&gt;dtt_tp, dp-&gt;dps_cnt);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// TBD... </span></div>
+<div class="line">    <span class="comment">// 开发者可以在这里实现真实的 DP 对应功能的操作</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 默认实现是简单的把收到的DP上报上去，认为处理全部成功</span></div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">    TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">dev_report_dp_json_async</a>(dp-&gt;cid,dp-&gt;dps,dp-&gt;dps_cnt));</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 接收 RAW DP 处理回调 dev_raw_dp_cb</span></div>
+<div class="line">VOID test_DEV_RAW_DP_CMD_CB(IN CONST <a class="code hl_struct" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> *dp)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;SOC Rev DP Raw Cmd t1:%d t2:%d dpid:%d len:%u&quot;</span>, dp-&gt;cmd_tp, dp-&gt;dtt_tp, dp-&gt;dpid, dp-&gt;len);</div>
+<div class="line">    <span class="keywordflow">if</span>(dp-&gt;cid != NULL) PR_ERR(<span class="stringliteral">&quot;soc not have cid.%s&quot;</span>, dp-&gt;cid);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// TBD... </span></div>
+<div class="line">    <span class="comment">// 开发者可以在这里实现真实的 DP 对应功能的操作</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 默认实现是简单的把收到的DP上报上去，认为处理全部成功</span></div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">    TUYA_CALL_ERR_LOG(dev_report_dp_raw_sync(dp-&gt;cid,dp-&gt;dpid,dp-&gt;data,dp-&gt;len,0));</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// DP 查询上报，查询上报会附带一个&quot;query&quot;字段，云端会根据此字段进行过滤处理，避免影响真实上报逻辑</span></div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#ab3ed05864f54405b2819057449a707bf">dev_query_dp_json_async</a>(IN CONST CHAR_T *dev_id, IN CONST <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">TY_OBJ_DP_REPT_S</a> obj_dp = {{(CHAR_T *)dev_id, (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)dp_data, cnt}, FALSE};</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(T_OBJ_REPT, (VOID_T*)&amp;obj_dp, TRUE);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 接收 DP 查询回调 dev_dp_query_cb</span></div>
+<div class="line">VOID test_DEV_DP_QUERY_CMD_CB(IN CONST <a class="code hl_struct" href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a> *dp_qry)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;SOC Rev Query DP Cmd cnt:%d&quot;</span>, dp_qry-&gt;cnt);</div>
+<div class="line">    <span class="keywordflow">if</span>(dp-&gt;cid != NULL) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;soc not have cid.%s&quot;</span>, dp_qry-&gt;cid);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// TBD... </span></div>
+<div class="line">    <span class="comment">// 如果cnt==0, 查询所有DP，每个产品的DP数量不一样，按照实际实现</span></div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">    <span class="keywordflow">if</span>(dp_qry-&gt;cnt == 0) {</div>
+<div class="line">        PR_DEBUG(<span class="stringliteral">&quot;soc rev all dp query&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">        UINT32_T cnt = 0;</div>
+<div class="line">        <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_arr = (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)<a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a>(2*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line">        <span class="keywordflow">if</span>(NULL == dp_arr) {</div>
+<div class="line">            PR_ERR(<span class="stringliteral">&quot;malloc failed&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">return</span> OPRT_MALLOC_FAILED;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        memset(dp_arr, 0, dp_cnt*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// 获取所有的DP，组装DP数组</span></div>
+<div class="line">        <span class="comment">// TBD...</span></div>
+<div class="line"> </div>
+<div class="line">        TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#ab3ed05864f54405b2819057449a707bf">dev_query_dp_json_async</a>(dp_query-&gt;cid,dp_arr, cnt));</div>
+<div class="line"> </div>
+<div class="line">    }<span class="keywordflow">else</span> {</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// 否则查询dp_query-&gt;dpid列表里的dp</span></div>
+<div class="line">        <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_arr = (<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *)<a class="code hl_define" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a>(dp_qry-&gt;cnt*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>));</div>
+<div class="line">        <span class="keywordflow">if</span>(NULL == dp_arr) {</div>
+<div class="line">            PR_ERR(<span class="stringliteral">&quot;malloc failed&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">return</span> OPRT_MALLOC_FAILED;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        memset(dp_arr, 0, dp_cnt*SIZEOF(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>)); </div>
+<div class="line">        UINT_T index = 0;</div>
+<div class="line">        <span class="keywordflow">for</span>(index = 0; index &lt; dp_qry-&gt;cnt; index++) {</div>
+<div class="line">            PR_DEBUG(<span class="stringliteral">&quot;rev dp query:%d&quot;</span>, dp_qry-&gt;dpid[index]);            </div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">// 获取对应的DP，组装DP数组</span></div>
+<div class="line">            <span class="comment">// TBD...    </span></div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#ab3ed05864f54405b2819057449a707bf">dev_query_dp_json_async</a>(dp_query-&gt;cid,dp_arr, dp_qry-&gt;cnt));   </div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> rt;</div>
+<div class="line">}</div>
+<div class="ttc" id="agw__intf_8h_html_afef3a3e574106cb4820dabfc99d1ac5f"><div class="ttname"><a href="../../d4/d62/gw__intf_8h.html#afef3a3e574106cb4820dabfc99d1ac5f">get_gw_cntl</a></div><div class="ttdeci">GW_CNTL_S * get_gw_cntl(VOID)</div><div class="ttdoc">Get gateway cntl</div></div>
+<div class="ttc" id="astructTY__DP__QUERY__S_html"><div class="ttname"><a href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a></div><div class="ttdoc">Definition of DP query</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:500</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__REPT__S_html"><div class="ttname"><a href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">TY_OBJ_DP_REPT_S</a></div><div class="ttdoc">dp data report information for object type</div><div class="ttdef"><b>Definition:</b> smart_frame.h:249</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a></div><div class="ttdoc">Definition of structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:448</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_a3d774e21ed33a84fa187122debf8f3cc"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">TY_OBJ_DP_S::type</a></div><div class="ttdeci">DP_PROP_TP_E type</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:452</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_a4cd278dccd84caee84b78f27ee0646b3"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">TY_OBJ_DP_S::dpid</a></div><div class="ttdeci">BYTE_T dpid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:450</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_a4ec8b464efcb710194b7b92b5788b934"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">TY_OBJ_DP_S::time_stamp</a></div><div class="ttdeci">UINT_T time_stamp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:456</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_adfb2c2d251b177a6d0b572aca16ed2b2"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">TY_OBJ_DP_S::value</a></div><div class="ttdeci">TY_OBJ_DP_VALUE_U value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:454</div></div>
+<div class="ttc" id="astructTY__RAW__DP__REPT__S_html"><div class="ttname"><a href="../../d6/d64/structTY__RAW__DP__REPT__S.html">TY_RAW_DP_REPT_S</a></div><div class="ttdoc">dp data report information for raw type</div><div class="ttdef"><b>Definition:</b> smart_frame.h:266</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a></div><div class="ttdoc">Definition of recved structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:462</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a></div><div class="ttdoc">Definition of recved raw dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:480</div></div>
+<div class="ttc" id="astructTY__STAT__DP__REPT__S_html"><div class="ttname"><a href="../../df/db0/structTY__STAT__DP__REPT__S.html">TY_STAT_DP_REPT_S</a></div><div class="ttdoc">dp data report information for statistic type</div><div class="ttdef"><b>Definition:</b> smart_frame.h:257</div></div>
+<div class="ttc" id="atal__memory_8h_html_a0b8e3b7d52eecc10d64e8242fc30c816"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">Free</a></div><div class="ttdeci">#define Free(ptr)</div><div class="ttdoc">free memory</div><div class="ttdef"><b>Definition:</b> tal_memory.h:42</div></div>
+<div class="ttc" id="atal__memory_8h_html_a0d6680b29e31ae0ce8627f5a12b31e11"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a></div><div class="ttdeci">#define Malloc(req_size)</div><div class="ttdoc">malloc memory</div><div class="ttdef"><b>Definition:</b> tal_memory.h:25</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html_a1de968a6e5fd44e0e45d99a7980c8af1"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">dev_report_dp_json_async</a></div><div class="ttdeci">OPERATE_RET dev_report_dp_json_async(IN CONST CHAR_T *dev_id, IN CONST TY_OBJ_DP_S *dp_data, IN CONST UINT_T cnt)</div><div class="ttdoc">dev_report_dp_json_async @desc report dp info a-synced.</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html_ab3ed05864f54405b2819057449a707bf"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html#ab3ed05864f54405b2819057449a707bf">dev_query_dp_json_async</a></div><div class="ttdeci">OPERATE_RET dev_query_dp_json_async(IN CONST CHAR_T *dev_id, IN CONST TY_OBJ_DP_S *dp_data, IN CONST UINT_T cnt)</div><div class="ttdoc">dev_query_dp_json_async @desc report dp info a-synced.</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html_afb27e1f3a0abd4f7290c4139ea2799cf"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html#afb27e1f3a0abd4f7290c4139ea2799cf">dev_report_dp_json_async_force</a></div><div class="ttdeci">OPERATE_RET dev_report_dp_json_async_force(IN CONST CHAR_T *dev_id, IN CONST TY_OBJ_DP_S *dp_data, IN CONST UINT_T cnt)</div><div class="ttdoc">dev_report_dp_json_async_force @desc report dp info a-synced.</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

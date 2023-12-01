@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/lib_http/include/http_manager.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8a7e0c2b53aaf1e6ed3ac5bc0b1202c0.html">lib_http</a></li><li class="navelem"><a class="el" href="../../dir_1e12de0a3a74b8281ee22ec6b9758111.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">http_manager.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>wrapper for HTTP session manager  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d1b/httpc_8h_source.html">httpc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd7/tal__mutex_8h_source.html">tal_mutex.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+http_manager.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/da2/http__manager_8h__incl.png" border="0" usemap="#ainclude_2components_2lib__http_2include_2http__manager_8h" alt=""/></div>
+<map name="ainclude_2components_2lib__http_2include_2http__manager_8h" id="ainclude_2components_2lib__http_2include_2http__manager_8h">
+<area shape="rect" title="wrapper for HTTP session manager" alt="" coords="531,5,687,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="345,333,493,360"/>
+<area shape="rect" href="../../d3/d1b/httpc_8h.html" title="HTTP Client Module" alt="" coords="450,109,517,136"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="559,109,659,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="801,408,934,435"/>
+<area shape="rect" title=" " alt="" coords="146,408,221,435"/>
+<area shape="rect" title=" " alt="" coords="245,408,316,435"/>
+<area shape="rect" title=" " alt="" coords="47,408,122,435"/>
+<area shape="rect" title=" " alt="" coords="340,408,411,435"/>
+<area shape="rect" title=" " alt="" coords="435,408,518,435"/>
+<area shape="rect" title=" " alt="" coords="543,408,613,435"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="638,408,777,435"/>
+<area shape="rect" title=" " alt="" coords="451,184,515,211"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="284,184,427,211"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="497,259,608,285"/>
+<area shape="rect" href="../../d8/d4f/tuya__tls_8h.html" title="Common process &#45; tls include" alt="" coords="172,184,259,211"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="366,259,473,285"/>
+<area shape="rect" title=" " alt="" coords="188,259,240,285"/>
+<area shape="rect" href="../../d1/dde/tuya__cert__manager_8h.html" title="Tuya Cert Manager include" alt="" coords="5,259,164,285"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="38,333,131,360"/>
+</map>
+</div>
+</div>
+<p><a href="../../d9/d3a/http__manager_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structS__HTTP__MANAGER.html">S_HTTP_MANAGER</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP session manager structure.  <a href="../../d2/d8f/structS__HTTP__MANAGER.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a57dede59083ed77c14e0e166cff0c3c7"><td class="memItemLeft" align="right" valign="top"><a id="a57dede59083ed77c14e0e166cff0c3c7" name="a57dede59083ed77c14e0e166cff0c3c7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_HTTP_SESSION_ID</b>&#160;&#160;&#160;0xFFFFffff</td></tr>
+<tr class="separator:a57dede59083ed77c14e0e166cff0c3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6654a2fce9b98fe3dd1a1218b2fae01"><td class="memItemLeft" align="right" valign="top"><a id="af6654a2fce9b98fe3dd1a1218b2fae01" name="af6654a2fce9b98fe3dd1a1218b2fae01"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_HTTP_SESSION_NUM</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:af6654a2fce9b98fe3dd1a1218b2fae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b90bcc46e2461c3f5ebf69383c5458"><td class="memItemLeft" align="right" valign="top"><a id="aa0b90bcc46e2461c3f5ebf69383c5458" name="aa0b90bcc46e2461c3f5ebf69383c5458"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_HTTP_URL_LEN</b>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:aa0b90bcc46e2461c3f5ebf69383c5458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a3c0d784cfc6150cbb49c52fd97dc8d8d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#a3c0d784cfc6150cbb49c52fd97dc8d8d">FUNC_HTTP_SESSION_CREATE</a>) (IN CONST CHAR_T *url, BOOL_T is_persistent)</td></tr>
+<tr class="memdesc:a3c0d784cfc6150cbb49c52fd97dc8d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to create HTTP session  <a href="../../d9/d3a/http__manager_8h.html#a3c0d784cfc6150cbb49c52fd97dc8d8d">更多...</a><br /></td></tr>
+<tr class="separator:a3c0d784cfc6150cbb49c52fd97dc8d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e460a0a98cbd80d972bbd4abb20eb4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#a79e460a0a98cbd80d972bbd4abb20eb4">FUNC_HTTP_SESSION_CREATE_TLS</a>) (IN CONST CHAR_T *url, BOOL_T is_persistent, <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *config)</td></tr>
+<tr class="memdesc:a79e460a0a98cbd80d972bbd4abb20eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to create HTTP session  <a href="../../d9/d3a/http__manager_8h.html#a79e460a0a98cbd80d972bbd4abb20eb4">更多...</a><br /></td></tr>
+<tr class="separator:a79e460a0a98cbd80d972bbd4abb20eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1642a92c6c49450bc7ef3e12484d62f4"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#a1642a92c6c49450bc7ef3e12484d62f4">FUNC_HTTP_SESSION_DESTORY</a>) (<a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session)</td></tr>
+<tr class="memdesc:a1642a92c6c49450bc7ef3e12484d62f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to destroy HTTP session  <a href="../../d9/d3a/http__manager_8h.html#a1642a92c6c49450bc7ef3e12484d62f4">更多...</a><br /></td></tr>
+<tr class="separator:a1642a92c6c49450bc7ef3e12484d62f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1f3d051bb6d526ebd13d91bf9f4f73"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#aef1f3d051bb6d526ebd13d91bf9f4f73">FUNC_HTTP_SESSION_RECEIVE</a>) (<a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session, <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> **resp)</td></tr>
+<tr class="memdesc:aef1f3d051bb6d526ebd13d91bf9f4f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to recv response header from HTTP session  <a href="../../d9/d3a/http__manager_8h.html#aef1f3d051bb6d526ebd13d91bf9f4f73">更多...</a><br /></td></tr>
+<tr class="separator:aef1f3d051bb6d526ebd13d91bf9f4f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecabbf9e31300e6310b7090f6c23e7f"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#a9ecabbf9e31300e6310b7090f6c23e7f">FUNC_HTTP_SESSION_RECEIVE_DATA</a>) (<a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session, <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> *pResp, BYTE_T **pDataOut)</td></tr>
+<tr class="memdesc:a9ecabbf9e31300e6310b7090f6c23e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to recv response content from HTTP session.  <a href="../../d9/d3a/http__manager_8h.html#a9ecabbf9e31300e6310b7090f6c23e7f">更多...</a><br /></td></tr>
+<tr class="separator:a9ecabbf9e31300e6310b7090f6c23e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344946f032aa1abbc25bb6bbe8b1b8ef"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#a344946f032aa1abbc25bb6bbe8b1b8ef">FUNC_HTTP_SESSION_SEND</a>) (IN CONST <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session, IN CONST <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req, <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags)</td></tr>
+<tr class="memdesc:a344946f032aa1abbc25bb6bbe8b1b8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to send HTTP session request  <a href="../../d9/d3a/http__manager_8h.html#a344946f032aa1abbc25bb6bbe8b1b8ef">更多...</a><br /></td></tr>
+<tr class="separator:a344946f032aa1abbc25bb6bbe8b1b8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ca204eb32fce2c77d8f07231d10265"><td class="memItemLeft" align="right" valign="top"><a id="a50ca204eb32fce2c77d8f07231d10265" name="a50ca204eb32fce2c77d8f07231d10265"></a>
+typedef <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">S_HTTP_SESSION</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SESSION_ID</b></td></tr>
+<tr class="separator:a50ca204eb32fce2c77d8f07231d10265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a3a1be473b4a0187b30c25661cfdaf305"><td class="memItemLeft" align="right" valign="top"><a id="a3a1be473b4a0187b30c25661cfdaf305" name="a3a1be473b4a0187b30c25661cfdaf305"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#a3a1be473b4a0187b30c25661cfdaf305">E_HTTP_SESSION_STATE</a> { <br />
+&#160;&#160;<b>HTTP_FREE</b> = 0
+, <b>HTTP_DISCONNECT</b>
+, <b>HTTP_CONNECTING</b>
+, <b>HTTP_CONNECTED</b>
+, <br />
+&#160;&#160;<b>HTTP_UPLOADING</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a3a1be473b4a0187b30c25661cfdaf305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of HTTP session state <br /></td></tr>
+<tr class="separator:a3a1be473b4a0187b30c25661cfdaf305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aff1b9e82686484dfc54fb80103f841fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d8f/structS__HTTP__MANAGER.html">S_HTTP_MANAGER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3a/http__manager_8h.html#aff1b9e82686484dfc54fb80103f841fd">get_http_manager_instance</a> (VOID_T)</td></tr>
+<tr class="memdesc:aff1b9e82686484dfc54fb80103f841fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve instance of HTTP session manager  <a href="../../d9/d3a/http__manager_8h.html#aff1b9e82686484dfc54fb80103f841fd">更多...</a><br /></td></tr>
+<tr class="separator:aff1b9e82686484dfc54fb80103f841fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >wrapper for HTTP session manager </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2016-01-11</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2016-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a3c0d784cfc6150cbb49c52fd97dc8d8d" name="a3c0d784cfc6150cbb49c52fd97dc8d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0d784cfc6150cbb49c52fd97dc8d8d">&#9670;&nbsp;</a></span>FUNC_HTTP_SESSION_CREATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a>(* FUNC_HTTP_SESSION_CREATE) (IN CONST CHAR_T *url, BOOL_T is_persistent)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to create HTTP session </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP session, max len of URL is 256 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_persistent</td><td>Session is persistent or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SESSION_ID on success, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a79e460a0a98cbd80d972bbd4abb20eb4" name="a79e460a0a98cbd80d972bbd4abb20eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e460a0a98cbd80d972bbd4abb20eb4">&#9670;&nbsp;</a></span>FUNC_HTTP_SESSION_CREATE_TLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a>(* FUNC_HTTP_SESSION_CREATE_TLS) (IN CONST CHAR_T *url, BOOL_T is_persistent, <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *config)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to create HTTP session </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP session, max len of URL is 256 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_persistent</td><td>Session is persistent or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SESSION_ID on success, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a1642a92c6c49450bc7ef3e12484d62f4" name="a1642a92c6c49450bc7ef3e12484d62f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1642a92c6c49450bc7ef3e12484d62f4">&#9670;&nbsp;</a></span>FUNC_HTTP_SESSION_DESTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* FUNC_HTTP_SESSION_DESTORY) (<a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to destroy HTTP session </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Session returned from the call to FUNC_HTTP_SESSION_CREATE</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aef1f3d051bb6d526ebd13d91bf9f4f73" name="aef1f3d051bb6d526ebd13d91bf9f4f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1f3d051bb6d526ebd13d91bf9f4f73">&#9670;&nbsp;</a></span>FUNC_HTTP_SESSION_RECEIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* FUNC_HTTP_SESSION_RECEIVE) (<a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session, <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> **resp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to recv response header from HTTP session </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Session returned from the call to FUNC_HTTP_SESSION_CREATE </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">resp</td><td>Pointer to a pointer of type <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> .The structure will be allocated by the callee. Note that the caller does not need to free the structure allocated and returned from this API. The allocation and free is done by the callee automatically</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9ecabbf9e31300e6310b7090f6c23e7f" name="a9ecabbf9e31300e6310b7090f6c23e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ecabbf9e31300e6310b7090f6c23e7f">&#9670;&nbsp;</a></span>FUNC_HTTP_SESSION_RECEIVE_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* FUNC_HTTP_SESSION_RECEIVE_DATA) (<a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session, <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> *pResp, BYTE_T **pDataOut)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to recv response content from HTTP session. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Session returned from the call to FUNC_HTTP_SESSION_CREATE </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pResp</td><td>The <a class="el" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> structure returned from the call to FUNC_HTTP_SESSION_RECEIVE </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pDataOut</td><td>Caller allocated buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a344946f032aa1abbc25bb6bbe8b1b8ef" name="a344946f032aa1abbc25bb6bbe8b1b8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344946f032aa1abbc25bb6bbe8b1b8ef">&#9670;&nbsp;</a></span>FUNC_HTTP_SESSION_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* FUNC_HTTP_SESSION_SEND) (IN CONST <a class="el" href="../../df/db3/structS__HTTP__SESSION.html">SESSION_ID</a> session, IN CONST <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req, <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to send HTTP session request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Session returned from the call to FUNC_HTTP_SESSION_CREATE </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req</td><td>The <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> structure filled up with appropriate parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">field_flags</td><td>The http_hdr_field_sel_t, OR of zero or more flags</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aff1b9e82686484dfc54fb80103f841fd" name="aff1b9e82686484dfc54fb80103f841fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1b9e82686484dfc54fb80103f841fd">&#9670;&nbsp;</a></span>get_http_manager_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d8f/structS__HTTP__MANAGER.html">S_HTTP_MANAGER</a> * get_http_manager_instance </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve instance of HTTP session manager </p>
+<dl class="section note"><dt>注解</dt><dd>HTTP manager is singleton, multiple call to this API will return the same instance</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>NULL on error. Instance on success, please refer to <a class="el" href="../../d2/d8f/structS__HTTP__MANAGER.html" title="The HTTP session manager structure.">S_HTTP_MANAGER</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/media/include/tkl_video_enc.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_f035e8dac116664123d3c2a73ed2f457.html">media</a></li><li class="navelem"><a class="el" href="../../dir_c3870483c35fa4c017a1fc661583a339.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_video_enc.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>video encode  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d8f/tkl__video__in_8h_source.html">tkl_video_in.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_video_enc.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dae/tkl__video__enc_8h__incl.png" border="0" usemap="#ainclude_2adapter_2media_2include_2tkl__video__enc_8h" alt=""/></div>
+<map name="ainclude_2adapter_2media_2include_2tkl__video__enc_8h" id="ainclude_2adapter_2media_2include_2tkl__video__enc_8h">
+<area shape="rect" title="video encode" alt="" coords="307,5,485,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,319,517,345"/>
+<area shape="rect" href="../../db/d8f/tkl__video__in_8h.html" title="video input" alt="" coords="390,95,503,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,393,139,420"/>
+<area shape="rect" title=" " alt="" coords="163,393,237,420"/>
+<area shape="rect" title=" " alt="" coords="262,393,333,420"/>
+<area shape="rect" title=" " alt="" coords="357,393,432,420"/>
+<area shape="rect" title=" " alt="" coords="457,393,527,420"/>
+<area shape="rect" title=" " alt="" coords="552,393,635,420"/>
+<area shape="rect" title=" " alt="" coords="659,393,730,420"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,393,893,420"/>
+<area shape="rect" href="../../df/dd2/tkl__media_8h.html" title="Audio and video generic type definition header file" alt="" coords="437,244,536,271"/>
+<area shape="rect" href="../../dd/d61/tkl__isp_8h.html" title="isp" alt="" coords="488,169,565,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/d4a/tkl__video__enc_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">TKL_VENC_STREAM_BUFF_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a44c1fa27f249ec43b81e6e2d1bf9a6c3"><td class="memItemLeft" align="right" valign="top"><a id="a44c1fa27f249ec43b81e6e2d1bf9a6c3" name="a44c1fa27f249ec43b81e6e2d1bf9a6c3"></a>
+typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_VENC_PUT_CB</b>) (<a class="el" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *pframe)</td></tr>
+<tr class="separator:a44c1fa27f249ec43b81e6e2d1bf9a6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8a6cad2723201c1297af6eba779b14f2"><td class="memItemLeft" align="right" valign="top"><a id="a8a6cad2723201c1297af6eba779b14f2" name="a8a6cad2723201c1297af6eba779b14f2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_VENC_CHN_E</b> { <br />
+&#160;&#160;<b>TKL_VENC_0</b> = 0
+, <b>TKL_VENC_1</b>
+, <b>TKL_VENC_2</b>
+, <b>TKL_VENC_3</b>
+, <br />
+&#160;&#160;<b>TKL_VENC_4</b>
+, <b>TKL_VENC_5</b>
+, <b>TKL_VENC_6</b>
+, <b>TKL_VENC_7</b>
+, <br />
+&#160;&#160;<b>TKL_VENC_MAX</b>
+<br />
+ }</td></tr>
+<tr class="separator:a8a6cad2723201c1297af6eba779b14f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af565fddf32e8c0c20af7d993bc2c4fd9"><td class="memItemLeft" align="right" valign="top"><a id="af565fddf32e8c0c20af7d993bc2c4fd9" name="af565fddf32e8c0c20af7d993bc2c4fd9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_VENC_DATA_TRANS_MODE_E</b> { <b>TKL_VENC_UPPER_REQUEST_FRAME</b> = 0
+, <b>TKL_VENC_PUSH_FRAME_BY_CALLBACK</b>
+ }</td></tr>
+<tr class="separator:af565fddf32e8c0c20af7d993bc2c4fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355e49f72d94351a55246fa241f3f878"><td class="memItemLeft" align="right" valign="top"><a id="a355e49f72d94351a55246fa241f3f878" name="a355e49f72d94351a55246fa241f3f878"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_VENC_TYPE_E</b> { <br />
+&#160;&#160;<b>TKL_VENC_MAIN</b> = 0
+, <b>TKL_VENC_SUB</b>
+, <b>TKL_VENC_3RD</b>
+, <b>TKL_VENC_4TH</b>
+, <br />
+&#160;&#160;<b>TKL_VENC_SNAP</b>
+, <b>TKL_VENC_MD</b>
+, <b>TKL_VENC_HD</b>
+, <b>TKL_VENC_QR</b>
+, <br />
+&#160;&#160;<b>TKL_VENC_TYPE_MAX</b>
+<br />
+ }</td></tr>
+<tr class="separator:a355e49f72d94351a55246fa241f3f878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa37c403261fe01ae114bda4cec5f7c22"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#aa37c403261fe01ae114bda4cec5f7c22">tkl_venc_get_first_snap</a> (TKL_VI_CHN_E vi_chn, <a class="el" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *pframe)</td></tr>
+<tr class="memdesc:aa37c403261fe01ae114bda4cec5f7c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">video first snap  <a href="../../d5/d4a/tkl__video__enc_8h.html#aa37c403261fe01ae114bda4cec5f7c22">更多...</a><br /></td></tr>
+<tr class="separator:aa37c403261fe01ae114bda4cec5f7c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b9ee9c37b8768e7dc773fe48223bfc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#ae2b9ee9c37b8768e7dc773fe48223bfc">tkl_venc_get_frame</a> (TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, <a class="el" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *pframe)</td></tr>
+<tr class="memdesc:ae2b9ee9c37b8768e7dc773fe48223bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode get frame  <a href="../../d5/d4a/tkl__video__enc_8h.html#ae2b9ee9c37b8768e7dc773fe48223bfc">更多...</a><br /></td></tr>
+<tr class="separator:ae2b9ee9c37b8768e7dc773fe48223bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2579a0dbf02bd3792a11ed459612975d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#a2579a0dbf02bd3792a11ed459612975d">tkl_venc_init</a> (INT32_T vi_chn, <a class="el" href="../../d2/d42/structTKL__VENC__CONFIG__T.html">TKL_VENC_CONFIG_T</a> *pconfig, INT32_T count)</td></tr>
+<tr class="memdesc:a2579a0dbf02bd3792a11ed459612975d"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode init  <a href="../../d5/d4a/tkl__video__enc_8h.html#a2579a0dbf02bd3792a11ed459612975d">更多...</a><br /></td></tr>
+<tr class="separator:a2579a0dbf02bd3792a11ed459612975d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d5155ca2df0ba5db321b203c211be8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#a04d5155ca2df0ba5db321b203c211be8">tkl_venc_set_osd</a> (TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, <a class="el" href="../../d6/d00/structTKL__VENC__OSD__T.html">TKL_VENC_OSD_T</a> *posd)</td></tr>
+<tr class="memdesc:a04d5155ca2df0ba5db321b203c211be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode set osd  <a href="../../d5/d4a/tkl__video__enc_8h.html#a04d5155ca2df0ba5db321b203c211be8">更多...</a><br /></td></tr>
+<tr class="separator:a04d5155ca2df0ba5db321b203c211be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d5c371bf78411c76547708d83d544b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#a75d5c371bf78411c76547708d83d544b">tkl_venc_set_video_stream_buffer</a> (TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn, <a class="el" href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">TKL_VENC_STREAM_BUFF_T</a> *parg)</td></tr>
+<tr class="memdesc:a75d5c371bf78411c76547708d83d544b"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode stream buff pool set  <a href="../../d5/d4a/tkl__video__enc_8h.html#a75d5c371bf78411c76547708d83d544b">更多...</a><br /></td></tr>
+<tr class="separator:a75d5c371bf78411c76547708d83d544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fed721659cdee7d1059ec7b2edfbdf"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#a19fed721659cdee7d1059ec7b2edfbdf">tkl_venc_start</a> (TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn)</td></tr>
+<tr class="memdesc:a19fed721659cdee7d1059ec7b2edfbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode start  <a href="../../d5/d4a/tkl__video__enc_8h.html#a19fed721659cdee7d1059ec7b2edfbdf">更多...</a><br /></td></tr>
+<tr class="separator:a19fed721659cdee7d1059ec7b2edfbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1e45485be4b3aaff6efa4f7e63c6e7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#adb1e45485be4b3aaff6efa4f7e63c6e7">tkl_venc_stop</a> (TKL_VI_CHN_E vi_chn, TKL_VENC_CHN_E venc_chn)</td></tr>
+<tr class="memdesc:adb1e45485be4b3aaff6efa4f7e63c6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode stop  <a href="../../d5/d4a/tkl__video__enc_8h.html#adb1e45485be4b3aaff6efa4f7e63c6e7">更多...</a><br /></td></tr>
+<tr class="separator:adb1e45485be4b3aaff6efa4f7e63c6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933509bdba5081537847fd2fdab1dcf1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tkl__video__enc_8h.html#a933509bdba5081537847fd2fdab1dcf1">tkl_venc_uninit</a> (TKL_VI_CHN_E vi_chn)</td></tr>
+<tr class="memdesc:a933509bdba5081537847fd2fdab1dcf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">video encode uninit  <a href="../../d5/d4a/tkl__video__enc_8h.html#a933509bdba5081537847fd2fdab1dcf1">更多...</a><br /></td></tr>
+<tr class="separator:a933509bdba5081537847fd2fdab1dcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >video encode </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-11-04</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2019-2021 Tuya Inc. All Rights Reserved.</dd></dl>
+<p>Set video parameters and get video bitstream. </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aa37c403261fe01ae114bda4cec5f7c22" name="aa37c403261fe01ae114bda4cec5f7c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37c403261fe01ae114bda4cec5f7c22">&#9670;&nbsp;</a></span>tkl_venc_get_first_snap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_get_first_snap </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *&#160;</td>
+          <td class="paramname"><em>pframe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video first snap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pframe</td><td>output frame</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="ae2b9ee9c37b8768e7dc773fe48223bfc" name="ae2b9ee9c37b8768e7dc773fe48223bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b9ee9c37b8768e7dc773fe48223bfc">&#9670;&nbsp;</a></span>tkl_venc_get_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_get_frame </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VENC_CHN_E&#160;</td>
+          <td class="paramname"><em>venc_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/da7/structTKL__VENC__FRAME__T.html">TKL_VENC_FRAME_T</a> *&#160;</td>
+          <td class="paramname"><em>pframe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode get frame </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">venc_chn</td><td>venc channel number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pframe</td><td>output frame</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a2579a0dbf02bd3792a11ed459612975d" name="a2579a0dbf02bd3792a11ed459612975d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2579a0dbf02bd3792a11ed459612975d">&#9670;&nbsp;</a></span>tkl_venc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_init </td>
+          <td>(</td>
+          <td class="paramtype">INT32_T&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d42/structTKL__VENC__CONFIG__T.html">TKL_VENC_CONFIG_T</a> *&#160;</td>
+          <td class="paramname"><em>pconfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pconfig</td><td>venc config </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>count of pconfig</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a04d5155ca2df0ba5db321b203c211be8" name="a04d5155ca2df0ba5db321b203c211be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d5155ca2df0ba5db321b203c211be8">&#9670;&nbsp;</a></span>tkl_venc_set_osd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_set_osd </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VENC_CHN_E&#160;</td>
+          <td class="paramname"><em>venc_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d00/structTKL__VENC__OSD__T.html">TKL_VENC_OSD_T</a> *&#160;</td>
+          <td class="paramname"><em>posd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode set osd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">venc_chn</td><td>venc channel number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">posd</td><td>osd config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a75d5c371bf78411c76547708d83d544b" name="a75d5c371bf78411c76547708d83d544b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d5c371bf78411c76547708d83d544b">&#9670;&nbsp;</a></span>tkl_venc_set_video_stream_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_set_video_stream_buffer </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VENC_CHN_E&#160;</td>
+          <td class="paramname"><em>venc_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dcd/structTKL__VENC__STREAM__BUFF__T.html">TKL_VENC_STREAM_BUFF_T</a> *&#160;</td>
+          <td class="paramname"><em>parg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode stream buff pool set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">venc_chn</td><td>venc channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parg</td><td>buff pool config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a19fed721659cdee7d1059ec7b2edfbdf" name="a19fed721659cdee7d1059ec7b2edfbdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fed721659cdee7d1059ec7b2edfbdf">&#9670;&nbsp;</a></span>tkl_venc_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_start </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VENC_CHN_E&#160;</td>
+          <td class="paramname"><em>venc_chn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">venc_chn</td><td>venc channel number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="adb1e45485be4b3aaff6efa4f7e63c6e7" name="adb1e45485be4b3aaff6efa4f7e63c6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1e45485be4b3aaff6efa4f7e63c6e7">&#9670;&nbsp;</a></span>tkl_venc_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_stop </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TKL_VENC_CHN_E&#160;</td>
+          <td class="paramname"><em>venc_chn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">venc_chn</td><td>venc channel number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+<a id="a933509bdba5081537847fd2fdab1dcf1" name="a933509bdba5081537847fd2fdab1dcf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933509bdba5081537847fd2fdab1dcf1">&#9670;&nbsp;</a></span>tkl_venc_uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_venc_uninit </td>
+          <td>(</td>
+          <td class="paramtype">TKL_VI_CHN_E&#160;</td>
+          <td class="paramname"><em>vi_chn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>video encode uninit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vi_chn</td><td>vi channel number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to tkl_error_code.h </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

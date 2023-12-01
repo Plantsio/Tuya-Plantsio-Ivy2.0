@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_queue.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_queue.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d4a/tuya__queue_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _TUYA_QUEUE_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _TUYA_QUEUE_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">typedef</span> VOID_T* TUYA_QUEUE_HANDLE;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">typedef</span> BOOL_T (*TRAVERSE_CB)(VOID_T*item, VOID_T *ctx);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#a9bf3bd46445489cb31e4d8341ec92e1c">   33</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#a9bf3bd46445489cb31e4d8341ec92e1c">tuya_queue_create</a>(CONST UINT32_T queue_len, CONST UINT32_T item_size, TUYA_QUEUE_HANDLE *handle);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#ac5a90c5c2a6157015c7a9fd2ef1b8810">   43</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#ac5a90c5c2a6157015c7a9fd2ef1b8810">tuya_queue_input</a>(TUYA_QUEUE_HANDLE handle, CONST VOID_T *item);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#abfb6db5a375fdedc440f9b7f5572277a">   53</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#abfb6db5a375fdedc440f9b7f5572277a">tuya_queue_input_instant</a>(TUYA_QUEUE_HANDLE handle, CONST VOID_T *item);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#a242c4a771e351ca0554f9ce6e87e447f">   63</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#a242c4a771e351ca0554f9ce6e87e447f">tuya_queue_output</a>(TUYA_QUEUE_HANDLE handle, CONST VOID_T *item);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#a08150613b5ddebbbfb8cb9173764ebbb">   73</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#a08150613b5ddebbbfb8cb9173764ebbb">tuya_queue_peek</a>(TUYA_QUEUE_HANDLE handle, CONST VOID_T *item);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#af0a4ca99e4f9d715cf6495180af9e2f7">   84</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#af0a4ca99e4f9d715cf6495180af9e2f7">tuya_queue_traverse</a>(TUYA_QUEUE_HANDLE handle, TRAVERSE_CB cb, VOID_T *ctx);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#aa21fab8727b2321ee863c4e5d76de0dc">   93</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#aa21fab8727b2321ee863c4e5d76de0dc">tuya_queue_clear</a>(TUYA_QUEUE_HANDLE handle);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#ad44b1bbf20dad3a5af8e358e248070c2">  105</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#ad44b1bbf20dad3a5af8e358e248070c2">tuya_queue_get_batch</a>(TUYA_QUEUE_HANDLE handle, CONST UINT32_T start, VOID_T *items, CONST UINT32_T num);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#ad42995798393d0733d44269018066c98">  115</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#ad42995798393d0733d44269018066c98">tuya_queue_delete_batch</a>(TUYA_QUEUE_HANDLE handle, CONST UINT32_T num);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#a3b2d9243f22633feb3666392bcdc84c2">  124</a></span>UINT32_T <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#a3b2d9243f22633feb3666392bcdc84c2">tuya_queue_get_free_num</a>(TUYA_QUEUE_HANDLE handle);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#a7b36ae7c1282a16628f720f345ddd610">  133</a></span>UINT32_T <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#a7b36ae7c1282a16628f720f345ddd610">tuya_queue_get_used_num</a>(TUYA_QUEUE_HANDLE handle);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#a81858d01262e22b39f1bc801c4cdf60f">  142</a></span>UINT32_T <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#a81858d01262e22b39f1bc801c4cdf60f">tuya_queue_get_max_num</a>(TUYA_QUEUE_HANDLE handle);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d5/d4a/tuya__queue_8h.html#aa2c8ec95bfea21a76dab05b8f90acc44">  151</a></span>OPERATE_RET <a class="code hl_function" href="../../d5/d4a/tuya__queue_8h.html#aa2c8ec95bfea21a76dab05b8f90acc44">tuya_queue_release</a>(TUYA_QUEUE_HANDLE handle);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="ttc" id="atuya__queue_8h_html_a08150613b5ddebbbfb8cb9173764ebbb"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#a08150613b5ddebbbfb8cb9173764ebbb">tuya_queue_peek</a></div><div class="ttdeci">OPERATE_RET tuya_queue_peek(TUYA_QUEUE_HANDLE handle, const void *item)</div><div class="ttdoc">get the peek item(not dequeue)</div></div>
+<div class="ttc" id="atuya__queue_8h_html_a242c4a771e351ca0554f9ce6e87e447f"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#a242c4a771e351ca0554f9ce6e87e447f">tuya_queue_output</a></div><div class="ttdeci">OPERATE_RET tuya_queue_output(TUYA_QUEUE_HANDLE handle, const void *item)</div><div class="ttdoc">dequeue</div></div>
+<div class="ttc" id="atuya__queue_8h_html_a3b2d9243f22633feb3666392bcdc84c2"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#a3b2d9243f22633feb3666392bcdc84c2">tuya_queue_get_free_num</a></div><div class="ttdeci">UINT32_T tuya_queue_get_free_num(TUYA_QUEUE_HANDLE handle)</div><div class="ttdoc">get the free queue item number</div></div>
+<div class="ttc" id="atuya__queue_8h_html_a7b36ae7c1282a16628f720f345ddd610"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#a7b36ae7c1282a16628f720f345ddd610">tuya_queue_get_used_num</a></div><div class="ttdeci">UINT32_T tuya_queue_get_used_num(TUYA_QUEUE_HANDLE handle)</div><div class="ttdoc">get the queue item number</div></div>
+<div class="ttc" id="atuya__queue_8h_html_a81858d01262e22b39f1bc801c4cdf60f"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#a81858d01262e22b39f1bc801c4cdf60f">tuya_queue_get_max_num</a></div><div class="ttdeci">UINT32_T tuya_queue_get_max_num(TUYA_QUEUE_HANDLE handle)</div><div class="ttdoc">get the queue item number</div></div>
+<div class="ttc" id="atuya__queue_8h_html_a9bf3bd46445489cb31e4d8341ec92e1c"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#a9bf3bd46445489cb31e4d8341ec92e1c">tuya_queue_create</a></div><div class="ttdeci">OPERATE_RET tuya_queue_create(const UINT32_T queue_len, const UINT32_T item_size, TUYA_QUEUE_HANDLE *handle)</div><div class="ttdoc">create and initialize a queue (FIFO)</div></div>
+<div class="ttc" id="atuya__queue_8h_html_aa21fab8727b2321ee863c4e5d76de0dc"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#aa21fab8727b2321ee863c4e5d76de0dc">tuya_queue_clear</a></div><div class="ttdeci">OPERATE_RET tuya_queue_clear(TUYA_QUEUE_HANDLE handle)</div><div class="ttdoc">clear all items in the queue</div></div>
+<div class="ttc" id="atuya__queue_8h_html_aa2c8ec95bfea21a76dab05b8f90acc44"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#aa2c8ec95bfea21a76dab05b8f90acc44">tuya_queue_release</a></div><div class="ttdeci">OPERATE_RET tuya_queue_release(TUYA_QUEUE_HANDLE handle)</div><div class="ttdoc">release the queue</div></div>
+<div class="ttc" id="atuya__queue_8h_html_abfb6db5a375fdedc440f9b7f5572277a"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#abfb6db5a375fdedc440f9b7f5572277a">tuya_queue_input_instant</a></div><div class="ttdeci">OPERATE_RET tuya_queue_input_instant(TUYA_QUEUE_HANDLE handle, const void *item)</div><div class="ttdoc">enqueue, insert to the head</div></div>
+<div class="ttc" id="atuya__queue_8h_html_ac5a90c5c2a6157015c7a9fd2ef1b8810"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#ac5a90c5c2a6157015c7a9fd2ef1b8810">tuya_queue_input</a></div><div class="ttdeci">OPERATE_RET tuya_queue_input(TUYA_QUEUE_HANDLE handle, const void *item)</div><div class="ttdoc">enqueue, append to the tail</div></div>
+<div class="ttc" id="atuya__queue_8h_html_ad42995798393d0733d44269018066c98"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#ad42995798393d0733d44269018066c98">tuya_queue_delete_batch</a></div><div class="ttdeci">OPERATE_RET tuya_queue_delete_batch(TUYA_QUEUE_HANDLE handle, const UINT32_T num)</div><div class="ttdoc">delete the item from the queue position</div></div>
+<div class="ttc" id="atuya__queue_8h_html_ad44b1bbf20dad3a5af8e358e248070c2"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#ad44b1bbf20dad3a5af8e358e248070c2">tuya_queue_get_batch</a></div><div class="ttdeci">OPERATE_RET tuya_queue_get_batch(TUYA_QUEUE_HANDLE handle, const UINT32_T start, void *items, const UINT32_T num)</div><div class="ttdoc">get items from start postion, not dequeue</div></div>
+<div class="ttc" id="atuya__queue_8h_html_af0a4ca99e4f9d715cf6495180af9e2f7"><div class="ttname"><a href="../../d5/d4a/tuya__queue_8h.html#af0a4ca99e4f9d715cf6495180af9e2f7">tuya_queue_traverse</a></div><div class="ttdeci">OPERATE_RET tuya_queue_traverse(TUYA_QUEUE_HANDLE handle, TRAVERSE_CB cb, void *ctx)</div><div class="ttdoc">traverse the queue with specific callback</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

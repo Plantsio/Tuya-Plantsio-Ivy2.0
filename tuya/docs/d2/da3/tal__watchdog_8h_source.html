@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_driver/include/tal_watchdog.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_906c4c3ed099bad31e4bc78f92b52408.html">tal_driver</a></li><li class="navelem"><a class="el" href="../../dir_c31b571438c74844499576f27e4065d2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_watchdog.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/da3/tal__watchdog_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TAL_WATCHDOG_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TAL_WATCHDOG_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d2/da3/tal__watchdog_8h.html#ae1f56577a568b3211c31fbf294eacef7">   27</a></span>UINT32_T <a class="code hl_function" href="../../d2/da3/tal__watchdog_8h.html#ae1f56577a568b3211c31fbf294eacef7">tal_watchdog_start</a>(<a class="code hl_struct" href="../../de/d90/structTUYA__WDOG__BASE__CFG__T.html">TUYA_WDOG_BASE_CFG_T</a> *cfg);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d2/da3/tal__watchdog_8h.html#ad0aec3105803e03547b1e71ed0435d79">   37</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/da3/tal__watchdog_8h.html#ad0aec3105803e03547b1e71ed0435d79">tal_watchdog_stop</a>(VOID_T);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d2/da3/tal__watchdog_8h.html#ac4cc8a299c2a5f10bc3c94efdb3bff13">   47</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/da3/tal__watchdog_8h.html#ac4cc8a299c2a5f10bc3c94efdb3bff13">tal_watchdog_refresh</a>(VOID_T);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="ttc" id="astructTUYA__WDOG__BASE__CFG__T_html"><div class="ttname"><a href="../../de/d90/structTUYA__WDOG__BASE__CFG__T.html">TUYA_WDOG_BASE_CFG_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:1210</div></div>
+<div class="ttc" id="atal__watchdog_8h_html_ac4cc8a299c2a5f10bc3c94efdb3bff13"><div class="ttname"><a href="../../d2/da3/tal__watchdog_8h.html#ac4cc8a299c2a5f10bc3c94efdb3bff13">tal_watchdog_refresh</a></div><div class="ttdeci">OPERATE_RET tal_watchdog_refresh(VOID_T)</div><div class="ttdoc">refresh watch dog</div></div>
+<div class="ttc" id="atal__watchdog_8h_html_ad0aec3105803e03547b1e71ed0435d79"><div class="ttname"><a href="../../d2/da3/tal__watchdog_8h.html#ad0aec3105803e03547b1e71ed0435d79">tal_watchdog_stop</a></div><div class="ttdeci">OPERATE_RET tal_watchdog_stop(VOID_T)</div><div class="ttdoc">watchdog stop</div></div>
+<div class="ttc" id="atal__watchdog_8h_html_ae1f56577a568b3211c31fbf294eacef7"><div class="ttname"><a href="../../d2/da3/tal__watchdog_8h.html#ae1f56577a568b3211c31fbf294eacef7">tal_watchdog_start</a></div><div class="ttdeci">UINT32_T tal_watchdog_start(TUYA_WDOG_BASE_CFG_T *cfg)</div><div class="ttdoc">watchdog start</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

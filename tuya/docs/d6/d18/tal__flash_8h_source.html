@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_driver/include/tal_flash.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_906c4c3ed099bad31e4bc78f92b52408.html">tal_driver</a></li><li class="navelem"><a class="el" href="../../dir_c31b571438c74844499576f27e4065d2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_flash.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d18/tal__flash_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TAL_FLASH_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TAL_FLASH_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d6/d18/tal__flash_8h.html#a8da59ed9156cd0074879bfe4eecc423d">   31</a></span>OPERATE_RET <a class="code hl_function" href="../../d6/d18/tal__flash_8h.html#a8da59ed9156cd0074879bfe4eecc423d">tal_flash_read</a>(UINT32_T addr, UCHAR_T *dst, UINT32_T size);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d6/d18/tal__flash_8h.html#a31052a46a159391b808c00fb4f9c7c0e">   44</a></span>OPERATE_RET <a class="code hl_function" href="../../d6/d18/tal__flash_8h.html#a31052a46a159391b808c00fb4f9c7c0e">tal_flash_write</a>(UINT32_T addr, CONST UCHAR_T *src, UINT32_T size);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d6/d18/tal__flash_8h.html#a14e7cca01b084765cda0f257859137b9">   56</a></span>OPERATE_RET <a class="code hl_function" href="../../d6/d18/tal__flash_8h.html#a14e7cca01b084765cda0f257859137b9">tal_flash_erase</a>(UINT32_T addr, UINT32_T size);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d6/d18/tal__flash_8h.html#ad0d6304e568fa360ee0c4a1dd7d763d3">   68</a></span>OPERATE_RET <a class="code hl_function" href="../../d6/d18/tal__flash_8h.html#ad0d6304e568fa360ee0c4a1dd7d763d3">tal_flash_lock</a>(UINT32_T addr, UINT32_T size);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../d6/d18/tal__flash_8h.html#a1638f543179655b10c3d250a6d5511ec">   80</a></span>OPERATE_RET <a class="code hl_function" href="../../d6/d18/tal__flash_8h.html#a1638f543179655b10c3d250a6d5511ec">tal_flash_unlock</a>(UINT32_T addr, UINT32_T size);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d6/d18/tal__flash_8h.html#a0aa21f134c7591b7c2e4b930dc52a6d5">   92</a></span>OPERATE_RET <a class="code hl_function" href="../../d6/d18/tal__flash_8h.html#a0aa21f134c7591b7c2e4b930dc52a6d5">tal_flash_get_one_type_info</a>(TUYA_FLASH_TYPE_E type, <a class="code hl_struct" href="../../d4/da6/structTUYA__FLASH__BASE__INFO__T.html">TUYA_FLASH_BASE_INFO_T</a>* info);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="ttc" id="astructTUYA__FLASH__BASE__INFO__T_html"><div class="ttname"><a href="../../d4/da6/structTUYA__FLASH__BASE__INFO__T.html">TUYA_FLASH_BASE_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:393</div></div>
+<div class="ttc" id="atal__flash_8h_html_a0aa21f134c7591b7c2e4b930dc52a6d5"><div class="ttname"><a href="../../d6/d18/tal__flash_8h.html#a0aa21f134c7591b7c2e4b930dc52a6d5">tal_flash_get_one_type_info</a></div><div class="ttdeci">OPERATE_RET tal_flash_get_one_type_info(TUYA_FLASH_TYPE_E type, TUYA_FLASH_BASE_INFO_T *info)</div><div class="ttdoc">get one flash type info</div></div>
+<div class="ttc" id="atal__flash_8h_html_a14e7cca01b084765cda0f257859137b9"><div class="ttname"><a href="../../d6/d18/tal__flash_8h.html#a14e7cca01b084765cda0f257859137b9">tal_flash_erase</a></div><div class="ttdeci">OPERATE_RET tal_flash_erase(UINT32_T addr, UINT32_T size)</div><div class="ttdoc">erase flash</div></div>
+<div class="ttc" id="atal__flash_8h_html_a1638f543179655b10c3d250a6d5511ec"><div class="ttname"><a href="../../d6/d18/tal__flash_8h.html#a1638f543179655b10c3d250a6d5511ec">tal_flash_unlock</a></div><div class="ttdeci">OPERATE_RET tal_flash_unlock(UINT32_T addr, UINT32_T size)</div><div class="ttdoc">unlock flash</div></div>
+<div class="ttc" id="atal__flash_8h_html_a31052a46a159391b808c00fb4f9c7c0e"><div class="ttname"><a href="../../d6/d18/tal__flash_8h.html#a31052a46a159391b808c00fb4f9c7c0e">tal_flash_write</a></div><div class="ttdeci">OPERATE_RET tal_flash_write(UINT32_T addr, CONST UCHAR_T *src, UINT32_T size)</div><div class="ttdoc">write flash</div></div>
+<div class="ttc" id="atal__flash_8h_html_a8da59ed9156cd0074879bfe4eecc423d"><div class="ttname"><a href="../../d6/d18/tal__flash_8h.html#a8da59ed9156cd0074879bfe4eecc423d">tal_flash_read</a></div><div class="ttdeci">OPERATE_RET tal_flash_read(UINT32_T addr, UCHAR_T *dst, UINT32_T size)</div><div class="ttdoc">read flash</div></div>
+<div class="ttc" id="atal__flash_8h_html_ad0d6304e568fa360ee0c4a1dd7d763d3"><div class="ttname"><a href="../../d6/d18/tal__flash_8h.html#ad0d6304e568fa360ee0c4a1dd7d763d3">tal_flash_lock</a></div><div class="ttdeci">OPERATE_RET tal_flash_lock(UINT32_T addr, UINT32_T size)</div><div class="ttdoc">lock flash</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

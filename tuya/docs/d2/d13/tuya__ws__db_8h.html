@@ -1,0 +1,1059 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/base_db/include/tuya_ws_db.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8b596159f42cda0ae8ead7927697069e.html">base_db</a></li><li class="navelem"><a class="el" href="../../dir_367303f8501c4aa285e87eb0ca7ab261.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_ws_db.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya key-value database module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_ws_db.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d5b/tuya__ws__db_8h__incl.png" border="0" usemap="#ainclude_2components_2base__db_2include_2tuya__ws__db_8h" alt=""/></div>
+<map name="ainclude_2components_2base__db_2include_2tuya__ws__db_8h" id="ainclude_2components_2base__db_2include_2tuya__ws__db_8h">
+<area shape="rect" title="tuya key&#45;value database module" alt="" coords="361,5,525,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/db5/tuya__ws__db_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2base__db_2include_2tuya__ws__db_8hdep" alt=""/></div>
+<map name="ainclude_2components_2base__db_2include_2tuya__ws__db_8hdep" id="ainclude_2components_2base__db_2include_2tuya__ws__db_8hdep">
+<area shape="rect" title="tuya key&#45;value database module" alt="" coords="7,5,171,61"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="5,109,172,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d13/tuya__ws__db_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database property, used for serialize/deserialize data to json format  <a href="../../dc/d14/structTY__DB__RW__S.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad8d0431024a73180013356f9622e542e"><td class="memItemLeft" align="right" valign="top"><a id="ad8d0431024a73180013356f9622e542e" name="ad8d0431024a73180013356f9622e542e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_BOOL</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ad8d0431024a73180013356f9622e542e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f6de614ba9bf1b62ba6b45e5b57e8a"><td class="memItemLeft" align="right" valign="top"><a id="a13f6de614ba9bf1b62ba6b45e5b57e8a" name="a13f6de614ba9bf1b62ba6b45e5b57e8a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_BYTE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a13f6de614ba9bf1b62ba6b45e5b57e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca47ee1be828b0e663a33916f72c0fbf"><td class="memItemLeft" align="right" valign="top"><a id="aca47ee1be828b0e663a33916f72c0fbf" name="aca47ee1be828b0e663a33916f72c0fbf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_CHAR</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aca47ee1be828b0e663a33916f72c0fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c890dde60531cef7c0694c711ac2877"><td class="memItemLeft" align="right" valign="top"><a id="a7c890dde60531cef7c0694c711ac2877" name="a7c890dde60531cef7c0694c711ac2877"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_INT</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a7c890dde60531cef7c0694c711ac2877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a06c4e9ec5960d37166a755bc17576"><td class="memItemLeft" align="right" valign="top"><a id="af0a06c4e9ec5960d37166a755bc17576" name="af0a06c4e9ec5960d37166a755bc17576"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_RAW</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:af0a06c4e9ec5960d37166a755bc17576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfc3181e800c5fbec0cd20640a285da"><td class="memItemLeft" align="right" valign="top"><a id="aabfc3181e800c5fbec0cd20640a285da" name="aabfc3181e800c5fbec0cd20640a285da"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_SHORT</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aabfc3181e800c5fbec0cd20640a285da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ea2ab0565994bb85f330f8603bcd67"><td class="memItemLeft" align="right" valign="top"><a id="ab0ea2ab0565994bb85f330f8603bcd67" name="ab0ea2ab0565994bb85f330f8603bcd67"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_STRING</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ab0ea2ab0565994bb85f330f8603bcd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a3c92117b78d0807b6473b3f7bf521"><td class="memItemLeft" align="right" valign="top"><a id="a60a3c92117b78d0807b6473b3f7bf521" name="a60a3c92117b78d0807b6473b3f7bf521"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VT_USHORT</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a60a3c92117b78d0807b6473b3f7bf521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab1a4dc0d98ec648413ed417f928ceab9"><td class="memItemLeft" align="right" valign="top"><a id="ab1a4dc0d98ec648413ed417f928ceab9" name="ab1a4dc0d98ec648413ed417f928ceab9"></a>
+typedef BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><b>VAR_TP_T</b></td></tr>
+<tr class="memdesc:ab1a4dc0d98ec648413ed417f928ceab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database property define, used for serialize/deserialize data to json format <br /></td></tr>
+<tr class="separator:ab1a4dc0d98ec648413ed417f928ceab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a211e0fcc239b157a6805b0f2593b10a3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a211e0fcc239b157a6805b0f2593b10a3">wd_common_delete</a> (IN CONST CHAR_T *key)</td></tr>
+<tr class="memdesc:a211e0fcc239b157a6805b0f2593b10a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the entry from key-value database  <a href="../../d2/d13/tuya__ws__db_8h.html#a211e0fcc239b157a6805b0f2593b10a3">更多...</a><br /></td></tr>
+<tr class="separator:a211e0fcc239b157a6805b0f2593b10a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2738e9107062ba165d7e717dce1aae1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#af2738e9107062ba165d7e717dce1aae1">wd_common_exist</a> (IN CONST CHAR_T *key, OUT BOOL_T *exist)</td></tr>
+<tr class="memdesc:af2738e9107062ba165d7e717dce1aae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the entry from key-value database  <a href="../../d2/d13/tuya__ws__db_8h.html#af2738e9107062ba165d7e717dce1aae1">更多...</a><br /></td></tr>
+<tr class="separator:af2738e9107062ba165d7e717dce1aae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf74d898a9063854bda275df8691eeba"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#acf74d898a9063854bda275df8691eeba">wd_common_free_data</a> (IN BYTE_T *data)</td></tr>
+<tr class="memdesc:acf74d898a9063854bda275df8691eeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the buffer which allocated by wd_common_read or wd_common_fuzzy_read  <a href="../../d2/d13/tuya__ws__db_8h.html#acf74d898a9063854bda275df8691eeba">更多...</a><br /></td></tr>
+<tr class="separator:acf74d898a9063854bda275df8691eeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d780cf8b1364edb469700506b76f7c0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a0d780cf8b1364edb469700506b76f7c0">wd_common_fuzzy_delete</a> (IN CONST CHAR_T *key)</td></tr>
+<tr class="memdesc:a0d780cf8b1364edb469700506b76f7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">fuzzy delete the entry from key-value database  <a href="../../d2/d13/tuya__ws__db_8h.html#a0d780cf8b1364edb469700506b76f7c0">更多...</a><br /></td></tr>
+<tr class="separator:a0d780cf8b1364edb469700506b76f7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9aeb6e9428dbb825c53856a450f251a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#ac9aeb6e9428dbb825c53856a450f251a">wd_common_fuzzy_read</a> (IN CONST CHAR_T *fuzzy_name, INOUT UINT_T *index, OUT BYTE_T **data, OUT UINT_T *len)</td></tr>
+<tr class="memdesc:ac9aeb6e9428dbb825c53856a450f251a"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database fuzzy read entry  <a href="../../d2/d13/tuya__ws__db_8h.html#ac9aeb6e9428dbb825c53856a450f251a">更多...</a><br /></td></tr>
+<tr class="separator:ac9aeb6e9428dbb825c53856a450f251a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92309aef28c9d07694f368c2f5684958"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a92309aef28c9d07694f368c2f5684958">wd_common_read</a> (IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len)</td></tr>
+<tr class="memdesc:a92309aef28c9d07694f368c2f5684958"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database read entry  <a href="../../d2/d13/tuya__ws__db_8h.html#a92309aef28c9d07694f368c2f5684958">更多...</a><br /></td></tr>
+<tr class="separator:a92309aef28c9d07694f368c2f5684958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07c8df9f6221ba7ca202a35919cacc3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#ab07c8df9f6221ba7ca202a35919cacc3">wd_common_write</a> (IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:ab07c8df9f6221ba7ca202a35919cacc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database write entry  <a href="../../d2/d13/tuya__ws__db_8h.html#ab07c8df9f6221ba7ca202a35919cacc3">更多...</a><br /></td></tr>
+<tr class="separator:ab07c8df9f6221ba7ca202a35919cacc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478d5da3e545c3df54d88a0ccc4b8794"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a478d5da3e545c3df54d88a0ccc4b8794">wd_protected_delete</a> (IN CONST CHAR_T *key)</td></tr>
+<tr class="memdesc:a478d5da3e545c3df54d88a0ccc4b8794"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the entry from protected storage  <a href="../../d2/d13/tuya__ws__db_8h.html#a478d5da3e545c3df54d88a0ccc4b8794">更多...</a><br /></td></tr>
+<tr class="separator:a478d5da3e545c3df54d88a0ccc4b8794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd7fcbafe0360b9e0bde164108e664f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#aabd7fcbafe0360b9e0bde164108e664f">wd_protected_read</a> (IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len)</td></tr>
+<tr class="memdesc:aabd7fcbafe0360b9e0bde164108e664f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya protected storage read entry  <a href="../../d2/d13/tuya__ws__db_8h.html#aabd7fcbafe0360b9e0bde164108e664f">更多...</a><br /></td></tr>
+<tr class="separator:aabd7fcbafe0360b9e0bde164108e664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe240a8943ccbe90ac53f4dd59aa1577"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#abe240a8943ccbe90ac53f4dd59aa1577">wd_protected_write</a> (IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:abe240a8943ccbe90ac53f4dd59aa1577"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya protected storage write entry  <a href="../../d2/d13/tuya__ws__db_8h.html#abe240a8943ccbe90ac53f4dd59aa1577">更多...</a><br /></td></tr>
+<tr class="separator:abe240a8943ccbe90ac53f4dd59aa1577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11583ff5eee8276eaa9bb653a99bc30d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a11583ff5eee8276eaa9bb653a99bc30d">wd_user_param_read</a> (OUT BYTE_T **buf, OUT UINT_T *len)</td></tr>
+<tr class="memdesc:a11583ff5eee8276eaa9bb653a99bc30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the user parameter from tuya key-value database  <a href="../../d2/d13/tuya__ws__db_8h.html#a11583ff5eee8276eaa9bb653a99bc30d">更多...</a><br /></td></tr>
+<tr class="separator:a11583ff5eee8276eaa9bb653a99bc30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784ac3c50cf8c527dc33763ce962fa1c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a784ac3c50cf8c527dc33763ce962fa1c">wd_user_param_write</a> (IN CONST BYTE_T *data, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:a784ac3c50cf8c527dc33763ce962fa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the user parameter to tuya key-value database  <a href="../../d2/d13/tuya__ws__db_8h.html#a784ac3c50cf8c527dc33763ce962fa1c">更多...</a><br /></td></tr>
+<tr class="separator:a784ac3c50cf8c527dc33763ce962fa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539fff7e6e505c9194c21299422c1ae3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a539fff7e6e505c9194c21299422c1ae3">wd_utils_deserialize</a> (IN CONST CHAR_T *in, INOUT <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt)</td></tr>
+<tr class="memdesc:a539fff7e6e505c9194c21299422c1ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value deserialize, transfer the data from json format to property array  <a href="../../d2/d13/tuya__ws__db_8h.html#a539fff7e6e505c9194c21299422c1ae3">更多...</a><br /></td></tr>
+<tr class="separator:a539fff7e6e505c9194c21299422c1ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f60c83890de2cd8401e675c14393478"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a5f60c83890de2cd8401e675c14393478">wd_utils_free_outbuf</a> (IN CHAR_T *out_buf)</td></tr>
+<tr class="memdesc:a5f60c83890de2cd8401e675c14393478"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the buffer which allocated by wd_utils_serialize_restore  <a href="../../d2/d13/tuya__ws__db_8h.html#a5f60c83890de2cd8401e675c14393478">更多...</a><br /></td></tr>
+<tr class="separator:a5f60c83890de2cd8401e675c14393478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ce6f2075f21a9efdab9865ef23be81"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#ab7ce6f2075f21a9efdab9865ef23be81">wd_utils_serialize</a> (IN CONST <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt, OUT CHAR_T **out, OUT UINT_T *out_len)</td></tr>
+<tr class="memdesc:ab7ce6f2075f21a9efdab9865ef23be81"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value serialize, transfer the data from <a class="el" href="../../dc/d14/structTY__DB__RW__S.html" title="tuya key-value database property, used for serialize/deserialize data to json format">TY_DB_RW_S</a> array to json format  <a href="../../d2/d13/tuya__ws__db_8h.html#ab7ce6f2075f21a9efdab9865ef23be81">更多...</a><br /></td></tr>
+<tr class="separator:ab7ce6f2075f21a9efdab9865ef23be81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ef0b53a7cfa836d678450af4052464"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#af3ef0b53a7cfa836d678450af4052464">wd_utils_serialize_restore</a> (IN CONST CHAR_T *key, INOUT <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt)</td></tr>
+<tr class="memdesc:af3ef0b53a7cfa836d678450af4052464"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value serialize restore, will read the data from tuya key-value database and restore to database property entry  <a href="../../d2/d13/tuya__ws__db_8h.html#af3ef0b53a7cfa836d678450af4052464">更多...</a><br /></td></tr>
+<tr class="separator:af3ef0b53a7cfa836d678450af4052464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd191e8f62b53493191b016a588fb1c3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#abd191e8f62b53493191b016a588fb1c3">wd_utils_serialize_save</a> (IN CONST CHAR_T *key, IN CONST <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt)</td></tr>
+<tr class="memdesc:abd191e8f62b53493191b016a588fb1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value serialize and save in tuya key-value database  <a href="../../d2/d13/tuya__ws__db_8h.html#abd191e8f62b53493191b016a588fb1c3">更多...</a><br /></td></tr>
+<tr class="separator:abd191e8f62b53493191b016a588fb1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d41db87ec393cd3dba09325b4ba6bc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a92d41db87ec393cd3dba09325b4ba6bc">ws_db_format</a> (VOID)</td></tr>
+<tr class="memdesc:a92d41db87ec393cd3dba09325b4ba6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database format  <a href="../../d2/d13/tuya__ws__db_8h.html#a92d41db87ec393cd3dba09325b4ba6bc">更多...</a><br /></td></tr>
+<tr class="separator:a92d41db87ec393cd3dba09325b4ba6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bc7d20e6e3d0feebd5db5219f4a9a7"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a65bc7d20e6e3d0feebd5db5219f4a9a7">ws_db_get_storage_path</a> (VOID)</td></tr>
+<tr class="memdesc:a65bc7d20e6e3d0feebd5db5219f4a9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database get storage path  <a href="../../d2/d13/tuya__ws__db_8h.html#a65bc7d20e6e3d0feebd5db5219f4a9a7">更多...</a><br /></td></tr>
+<tr class="separator:a65bc7d20e6e3d0feebd5db5219f4a9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b9bb6d4774329da7aa4b6b2d5f0278"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a71b9bb6d4774329da7aa4b6b2d5f0278">ws_db_init</a> (IN CONST CHAR_T *fs_storge_path, IN CONST BYTE_T *p_key)</td></tr>
+<tr class="memdesc:a71b9bb6d4774329da7aa4b6b2d5f0278"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database initialization  <a href="../../d2/d13/tuya__ws__db_8h.html#a71b9bb6d4774329da7aa4b6b2d5f0278">更多...</a><br /></td></tr>
+<tr class="separator:a71b9bb6d4774329da7aa4b6b2d5f0278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6fd692590e0910a66eda4b65709e3c1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#ac6fd692590e0910a66eda4b65709e3c1">ws_db_init_mf</a> (VOID)</td></tr>
+<tr class="memdesc:ac6fd692590e0910a66eda4b65709e3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database initialization in mf  <a href="../../d2/d13/tuya__ws__db_8h.html#ac6fd692590e0910a66eda4b65709e3c1">更多...</a><br /></td></tr>
+<tr class="separator:ac6fd692590e0910a66eda4b65709e3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87df35aebe5644710060ae1052af2676"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a87df35aebe5644710060ae1052af2676">ws_db_rebuild</a> (VOID)</td></tr>
+<tr class="memdesc:a87df35aebe5644710060ae1052af2676"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database rebuild to recycle  <a href="../../d2/d13/tuya__ws__db_8h.html#a87df35aebe5644710060ae1052af2676">更多...</a><br /></td></tr>
+<tr class="separator:a87df35aebe5644710060ae1052af2676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385b9da6343a65dd2477188ad041b9dd"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/tuya__ws__db_8h.html#a385b9da6343a65dd2477188ad041b9dd">ws_db_uninit</a> (VOID)</td></tr>
+<tr class="memdesc:a385b9da6343a65dd2477188ad041b9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya key-value database de-initialization  <a href="../../d2/d13/tuya__ws__db_8h.html#a385b9da6343a65dd2477188ad041b9dd">更多...</a><br /></td></tr>
+<tr class="separator:a385b9da6343a65dd2477188ad041b9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya key-value database module </p>
+<dl class="section author"><dt>作者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'nie'+'zy'+'@tu'+'ya'+'.co'+'m'; return false;">niezy<span class="obfuscator">.nosp@m.</span>@tuy<span class="obfuscator">.nosp@m.</span>a.com</a></dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-01-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021 tuya inc </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a211e0fcc239b157a6805b0f2593b10a3" name="a211e0fcc239b157a6805b0f2593b10a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211e0fcc239b157a6805b0f2593b10a3">&#9670;&nbsp;</a></span>wd_common_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_delete </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete the entry from key-value database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af2738e9107062ba165d7e717dce1aae1" name="af2738e9107062ba165d7e717dce1aae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2738e9107062ba165d7e717dce1aae1">&#9670;&nbsp;</a></span>wd_common_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_exist </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BOOL_T *&#160;</td>
+          <td class="paramname"><em>exist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check the entry from key-value database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to check </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">[OUT]</td><td>exist TRUE on exist</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acf74d898a9063854bda275df8691eeba" name="acf74d898a9063854bda275df8691eeba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf74d898a9063854bda275df8691eeba">&#9670;&nbsp;</a></span>wd_common_free_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_free_data </td>
+          <td>(</td>
+          <td class="paramtype">IN BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the buffer which allocated by wd_common_read or wd_common_fuzzy_read </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the buffer got from wd_common_read or wd_common_fuzzy_read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0d780cf8b1364edb469700506b76f7c0" name="a0d780cf8b1364edb469700506b76f7c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d780cf8b1364edb469700506b76f7c0">&#9670;&nbsp;</a></span>wd_common_fuzzy_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_fuzzy_delete </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fuzzy delete the entry from key-value database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>delete all entries if the key match the prefix of entry key </dd></dl>
+
+</div>
+</div>
+<a id="ac9aeb6e9428dbb825c53856a450f251a" name="ac9aeb6e9428dbb825c53856a450f251a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9aeb6e9428dbb825c53856a450f251a">&#9670;&nbsp;</a></span>wd_common_fuzzy_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_fuzzy_read </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>fuzzy_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT UINT_T *&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database fuzzy read entry </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fuzzy_name</td><td>key of the entry you want to read </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index of the value sequnence </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>buffer of the value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_len</td><td>length of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>if we have three entry "x1","x2","x3" in database, and read use "x" as the key will got all these 3 entrys and will chose the return entry by index</dd>
+<dd>
+must free the value buffer with wd_common_free_data when you nolonger need the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a92309aef28c9d07694f368c2f5684958" name="a92309aef28c9d07694f368c2f5684958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92309aef28c9d07694f368c2f5684958">&#9670;&nbsp;</a></span>wd_common_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_read </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>p_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database read entry </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to read </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>buffer of the value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_len</td><td>length of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>must free the value buffer with wd_common_free_data when you nolonger need the buffer </dd></dl>
+
+</div>
+</div>
+<a id="ab07c8df9f6221ba7ca202a35919cacc3" name="ab07c8df9f6221ba7ca202a35919cacc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07c8df9f6221ba7ca202a35919cacc3">&#9670;&nbsp;</a></span>wd_common_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_common_write </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database write entry </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>value buffer you want to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the numbers of byte you want to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a478d5da3e545c3df54d88a0ccc4b8794" name="a478d5da3e545c3df54d88a0ccc4b8794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478d5da3e545c3df54d88a0ccc4b8794">&#9670;&nbsp;</a></span>wd_protected_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_protected_delete </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete the entry from protected storage </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aabd7fcbafe0360b9e0bde164108e664f" name="aabd7fcbafe0360b9e0bde164108e664f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd7fcbafe0360b9e0bde164108e664f">&#9670;&nbsp;</a></span>wd_protected_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_protected_read </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>p_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya protected storage read entry </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to read </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>buffer of the value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_len</td><td>length of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>must free the value buffer with wd_common_free_data when you nolonger need the buffer </dd></dl>
+
+</div>
+</div>
+<a id="abe240a8943ccbe90ac53f4dd59aa1577" name="abe240a8943ccbe90ac53f4dd59aa1577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe240a8943ccbe90ac53f4dd59aa1577">&#9670;&nbsp;</a></span>wd_protected_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_protected_write </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya protected storage write entry </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the entry you want to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>value buffer you want to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the numbers of byte you want to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a11583ff5eee8276eaa9bb653a99bc30d" name="a11583ff5eee8276eaa9bb653a99bc30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11583ff5eee8276eaa9bb653a99bc30d">&#9670;&nbsp;</a></span>wd_user_param_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_user_param_read </td>
+          <td>(</td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read the user parameter from tuya key-value database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>buffer of the data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">len</td><td>length of the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the key of user parameter entry is "user_param_key"，must free the value buffer with wd_common_free_data when you nolonger need the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a784ac3c50cf8c527dc33763ce962fa1c" name="a784ac3c50cf8c527dc33763ce962fa1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a784ac3c50cf8c527dc33763ce962fa1c">&#9670;&nbsp;</a></span>wd_user_param_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_user_param_write </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write the user parameter to tuya key-value database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>buffer of the data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the key of user parameter entry is "user_param_key" </dd></dl>
+
+</div>
+</div>
+<a id="a539fff7e6e505c9194c21299422c1ae3" name="a539fff7e6e505c9194c21299422c1ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539fff7e6e505c9194c21299422c1ae3">&#9670;&nbsp;</a></span>wd_utils_deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_utils_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *&#160;</td>
+          <td class="paramname"><em>rw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>rw_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value deserialize, transfer the data from json format to property array </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>the json format data </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rw</td><td>the database entry which contains a property array </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rw_cnt</td><td>the database entry property array count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>deserialize the json format data to database property entry according the rw and rw_cnt, so must fill the rw and rw_cnt in right format. </dd></dl>
+
+</div>
+</div>
+<a id="a5f60c83890de2cd8401e675c14393478" name="a5f60c83890de2cd8401e675c14393478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f60c83890de2cd8401e675c14393478">&#9670;&nbsp;</a></span>wd_utils_free_outbuf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_utils_free_outbuf </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>out_buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the buffer which allocated by wd_utils_serialize_restore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out_buf</td><td>the buffer got from wd_utils_serialize_restore </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab7ce6f2075f21a9efdab9865ef23be81" name="ab7ce6f2075f21a9efdab9865ef23be81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7ce6f2075f21a9efdab9865ef23be81">&#9670;&nbsp;</a></span>wd_utils_serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_utils_serialize </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *&#160;</td>
+          <td class="paramname"><em>rw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>rw_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT CHAR_T **&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>out_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value serialize, transfer the data from <a class="el" href="../../dc/d14/structTY__DB__RW__S.html" title="tuya key-value database property, used for serialize/deserialize data to json format">TY_DB_RW_S</a> array to json format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rw</td><td>the database entry which contains a property array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rw_cnt</td><td>the database entry property array count </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>the serialized json format buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_len</td><td>the serialized json format length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af3ef0b53a7cfa836d678450af4052464" name="af3ef0b53a7cfa836d678450af4052464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ef0b53a7cfa836d678450af4052464">&#9670;&nbsp;</a></span>wd_utils_serialize_restore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_utils_serialize_restore </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *&#160;</td>
+          <td class="paramname"><em>rw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>rw_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value serialize restore, will read the data from tuya key-value database and restore to database property entry </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the database entry </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rw</td><td>the database entry which contains a property array </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rw_cnt</td><td>the database entry property array count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>tuya key-value database saved the json format data and this api will read and deserialize it to property entry according the rw and rw_cnt, so must fill the rw and rw_cnt in right format. </dd></dl>
+
+</div>
+</div>
+<a id="abd191e8f62b53493191b016a588fb1c3" name="abd191e8f62b53493191b016a588fb1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd191e8f62b53493191b016a588fb1c3">&#9670;&nbsp;</a></span>wd_utils_serialize_save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wd_utils_serialize_save </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d14/structTY__DB__RW__S.html">TY_DB_RW_S</a> *&#160;</td>
+          <td class="paramname"><em>rw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>rw_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value serialize and save in tuya key-value database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key of the database entry </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rw</td><td>the database entry which contains a property array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rw_cnt</td><td>the database entry property array count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a92d41db87ec393cd3dba09325b4ba6bc" name="a92d41db87ec393cd3dba09325b4ba6bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d41db87ec393cd3dba09325b4ba6bc">&#9670;&nbsp;</a></span>ws_db_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ws_db_format </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database format </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a65bc7d20e6e3d0feebd5db5219f4a9a7" name="a65bc7d20e6e3d0feebd5db5219f4a9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65bc7d20e6e3d0feebd5db5219f4a9a7">&#9670;&nbsp;</a></span>ws_db_get_storage_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * ws_db_get_storage_path </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database get storage path </p>
+<dl class="section note"><dt>注解</dt><dd>Caller shall free the buffer returned</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>Buffer for storage path, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a71b9bb6d4774329da7aa4b6b2d5f0278" name="a71b9bb6d4774329da7aa4b6b2d5f0278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b9bb6d4774329da7aa4b6b2d5f0278">&#9670;&nbsp;</a></span>ws_db_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ws_db_init </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_storge_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>p_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database initialization </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fs_storge_path</td><td>the storage path of the key-value database, only used in linux system </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_key</td><td>the encypto key of the key-value database, if p_key==NULL, will generate a random one </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>user don't need to care about this function, it will be called when tuya IoTOS initialization. </dd></dl>
+
+</div>
+</div>
+<a id="ac6fd692590e0910a66eda4b65709e3c1" name="ac6fd692590e0910a66eda4b65709e3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fd692590e0910a66eda4b65709e3c1">&#9670;&nbsp;</a></span>ws_db_init_mf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ws_db_init_mf </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database initialization in mf </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>user don't need to care about this function, it will be called when tuya IoTOS initialization. </dd></dl>
+
+</div>
+</div>
+<a id="a87df35aebe5644710060ae1052af2676" name="a87df35aebe5644710060ae1052af2676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87df35aebe5644710060ae1052af2676">&#9670;&nbsp;</a></span>ws_db_rebuild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ws_db_rebuild </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database rebuild to recycle </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a385b9da6343a65dd2477188ad041b9dd" name="a385b9da6343a65dd2477188ad041b9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385b9da6343a65dd2477188ad041b9dd">&#9670;&nbsp;</a></span>ws_db_uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ws_db_uninit </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya key-value database de-initialization </p>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

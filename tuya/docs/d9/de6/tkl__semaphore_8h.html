@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/system/include/tkl_semaphore.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_a39e21aa9396c8c0621543b669869865.html">system</a></li><li class="navelem"><a class="el" href="../../dir_d0c8c0f816976a0124b7921a1be7b89f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_semaphore.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the semaphore api provide by OS  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_semaphore.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d20/tkl__semaphore_8h__incl.png" border="0" usemap="#ainclude_2adapter_2system_2include_2tkl__semaphore_8h" alt=""/></div>
+<map name="ainclude_2adapter_2system_2include_2tkl__semaphore_8h" id="ainclude_2adapter_2system_2include_2tkl__semaphore_8h">
+<area shape="rect" title="Common process &#45; adapter the semaphore api provide by OS" alt="" coords="349,5,536,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d0c/tkl__semaphore_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2system_2include_2tkl__semaphore_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2system_2include_2tkl__semaphore_8hdep" id="ainclude_2adapter_2system_2include_2tkl__semaphore_8hdep">
+<area shape="rect" title="Common process &#45; adapter the semaphore api provide by OS" alt="" coords="7,5,193,47"/>
+<area shape="rect" href="../../d5/da6/tkl__init__system_8h.html" title="Common process &#45; tkl init system object descption" alt="" coords="5,95,195,136"/>
+</map>
+</div>
+</div>
+<p><a href="../../d9/de6/tkl__semaphore_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac898e46325439b72f1bf87b57286e74a"><td class="memItemLeft" align="right" valign="top"><a id="ac898e46325439b72f1bf87b57286e74a" name="ac898e46325439b72f1bf87b57286e74a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_SEM_WAIT_FOREVER</b>&#160;&#160;&#160;0xFFFFffff</td></tr>
+<tr class="separator:ac898e46325439b72f1bf87b57286e74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a88b58eac905a7067b83c6a451685f214"><td class="memItemLeft" align="right" valign="top"><a id="a88b58eac905a7067b83c6a451685f214" name="a88b58eac905a7067b83c6a451685f214"></a>
+typedef VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_SEM_HANDLE</b></td></tr>
+<tr class="separator:a88b58eac905a7067b83c6a451685f214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa374c5daedc4d921715661b0ff99b418"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/tkl__semaphore_8h.html#aa374c5daedc4d921715661b0ff99b418">tkl_semaphore_create_init</a> (TKL_SEM_HANDLE *handle, UINT_T sem_cnt, UINT_T sem_max)</td></tr>
+<tr class="memdesc:aa374c5daedc4d921715661b0ff99b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create semaphore  <a href="../../d9/de6/tkl__semaphore_8h.html#aa374c5daedc4d921715661b0ff99b418">更多...</a><br /></td></tr>
+<tr class="separator:aa374c5daedc4d921715661b0ff99b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcf80894ef13966e3fa48cd61b312a9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/tkl__semaphore_8h.html#a6dcf80894ef13966e3fa48cd61b312a9">tkl_semaphore_post</a> (CONST TKL_SEM_HANDLE handle)</td></tr>
+<tr class="memdesc:a6dcf80894ef13966e3fa48cd61b312a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post semaphore  <a href="../../d9/de6/tkl__semaphore_8h.html#a6dcf80894ef13966e3fa48cd61b312a9">更多...</a><br /></td></tr>
+<tr class="separator:a6dcf80894ef13966e3fa48cd61b312a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b05c1fb15b3a52a0ca195b0149294a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/tkl__semaphore_8h.html#ae3b05c1fb15b3a52a0ca195b0149294a">tkl_semaphore_release</a> (CONST TKL_SEM_HANDLE handle)</td></tr>
+<tr class="memdesc:ae3b05c1fb15b3a52a0ca195b0149294a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release semaphore  <a href="../../d9/de6/tkl__semaphore_8h.html#ae3b05c1fb15b3a52a0ca195b0149294a">更多...</a><br /></td></tr>
+<tr class="separator:ae3b05c1fb15b3a52a0ca195b0149294a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8962384324fc9c18613354c6803b4d7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/tkl__semaphore_8h.html#ae8962384324fc9c18613354c6803b4d7">tkl_semaphore_wait</a> (CONST TKL_SEM_HANDLE handle, UINT_T timeout)</td></tr>
+<tr class="memdesc:ae8962384324fc9c18613354c6803b4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait semaphore  <a href="../../d9/de6/tkl__semaphore_8h.html#ae8962384324fc9c18613354c6803b4d7">更多...</a><br /></td></tr>
+<tr class="separator:ae8962384324fc9c18613354c6803b4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the semaphore api provide by OS </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2030 Tuya Inc. All Rights Reserved.</dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-24</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2031 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aa374c5daedc4d921715661b0ff99b418" name="aa374c5daedc4d921715661b0ff99b418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa374c5daedc4d921715661b0ff99b418">&#9670;&nbsp;</a></span>tkl_semaphore_create_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_semaphore_create_init </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SEM_HANDLE *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>sem_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>sem_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create semaphore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>semaphore handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sem_cnt</td><td>semaphore init count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sem_max</td><td>semaphore max count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for creating semaphore.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6dcf80894ef13966e3fa48cd61b312a9" name="a6dcf80894ef13966e3fa48cd61b312a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dcf80894ef13966e3fa48cd61b312a9">&#9670;&nbsp;</a></span>tkl_semaphore_post()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_semaphore_post </td>
+          <td>(</td>
+          <td class="paramtype">CONST TKL_SEM_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Post semaphore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>semaphore handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for posting semaphore.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae3b05c1fb15b3a52a0ca195b0149294a" name="ae3b05c1fb15b3a52a0ca195b0149294a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b05c1fb15b3a52a0ca195b0149294a">&#9670;&nbsp;</a></span>tkl_semaphore_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_semaphore_release </td>
+          <td>(</td>
+          <td class="paramtype">CONST TKL_SEM_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release semaphore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>semaphore handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for releasing semaphore.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae8962384324fc9c18613354c6803b4d7" name="ae8962384324fc9c18613354c6803b4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8962384324fc9c18613354c6803b4d7">&#9670;&nbsp;</a></span>tkl_semaphore_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_semaphore_wait </td>
+          <td>(</td>
+          <td class="paramtype">CONST TKL_SEM_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait semaphore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>semaphore handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>wait timeout, bet: ms. SEM_WAIT_FOREVER means wait until get semaphore</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for waiting semaphore.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success.OPRT_OS_ADAPTER_SEM_WAIT_TIMEOUT means timeout. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

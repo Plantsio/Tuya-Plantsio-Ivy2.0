@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/init/include/tkl_init_system.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_945761b91ca7d88d015bf5cfa152d494.html">init</a></li><li class="navelem"><a class="el" href="../../dir_4918dc50b8ab2b2df1b446be98ca6a02.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_init_system.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/da6/tkl__init__system_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_INIT_SYSTEM_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_INIT_SYSTEM_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d57/tkl__system_8h.html">tkl_system.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/d5a/tkl__memory_8h.html">tkl_memory.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d67/tkl__thread_8h.html">tkl_thread.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/dd9/tkl__mutex_8h.html">tkl_mutex.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/de6/tkl__semaphore_8h.html">tkl_semaphore.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/dab/tkl__output_8h.html">tkl_output.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/tkl__fs_8h.html">tkl_fs.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/d9c/tkl__queue_8h.html">tkl_queue.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d23/tkl__ota_8h.html">tkl_ota.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d74/tkl__sleep_8h.html">tkl_sleep.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#ae31031af59669ed34ee60a9c123b14bc">   39</a></span>    VOID_T              (*reset)                    (VOID_T);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    INT_T               (*get_free_heap_size)       (VOID_T);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    SYS_TICK_T          (*get_tick_count)           (VOID_T);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    SYS_TIME_T          (*get_millisecond)          (VOID_T);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    INT_T               (*get_random)               (UINT_T range);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    TUYA_RESET_REASON_E  (*get_reset_reason)         (CHAR_T** describe);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    VOID                (*sleep)                    (CONST UINT_T num_ms);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    OPERATE_RET         (*cpu_sleep_mode_set)       (BOOL_T enable, TUYA_CPU_SLEEP_MODE_E mode);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#a437b8d54e60634b3d740c422d13d9fec">   48</a></span>    VOID_T              (*log_output)               (CONST CHAR_T *log, ...);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    OPERATE_RET         (*log_close)                (VOID_T);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    OPERATE_RET         (*log_open)                 (VOID_T);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#aeaef7e6b80416a2fa9ce49391cfae774">   52</a></span>    OPERATE_RET         (*ota_get_ability)          (UINT_T *image_size, TUYA_OTA_TYPE_E *type);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    OPERATE_RET         (*ota_start)                (UINT_T image_size, TUYA_OTA_TYPE_E type, TUYA_OTA_PATH_E path);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    OPERATE_RET         (*ota_process)              (<a class="code hl_struct" href="../../d5/d86/structTUYA__OTA__DATA__T.html">TUYA_OTA_DATA_T</a> *pack, UINT_T* remain_len);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    OPERATE_RET         (*ota_end)                  (BOOL_T reset);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#abfc2536e6454a8f26be183c232f86d84">   57</a></span>    VOID_T*             (*malloc)                   (CONST <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    VOID_T              (*free)                     (VOID_T* ptr);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    VOID_T*             (*calloc)                   (<span class="keywordtype">size_t</span> nitems, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    VOID_T*             (*realloc)                  (VOID_T* ptr, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#a1282e9a98dbde0d5ff4706f4bab5c8b5">   62</a></span>    OPERATE_RET         (*thread_create)            (TKL_THREAD_HANDLE* thread, CONST CHAR_T* name, CONST UINT_T stack_size, CONST UINT_T priority, CONST THREAD_FUNC_T func, VOID_T* CONST arg);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    OPERATE_RET         (*thread_release)           (CONST TKL_THREAD_HANDLE thread);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    OPERATE_RET         (*thread_set_name)          (CONST CHAR_T* name);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    OPERATE_RET         (*thread_set_priority)      (TKL_THREAD_HANDLE thread, INT_T  priority);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    OPERATE_RET         (*thread_get_priority)      (TKL_THREAD_HANDLE thread, INT_T *priority);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    OPERATE_RET         (*thread_get_watermark)     (CONST TKL_THREAD_HANDLE thread, UINT_T* watermark);    </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    OPERATE_RET         (*thread_get_id)            (TKL_THREAD_HANDLE* thread);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    OPERATE_RET         (*thread_is_self)           (TKL_THREAD_HANDLE thread, BOOL_T* is_self);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    OPERATE_RET         (*thread_diagnose)          (TKL_THREAD_HANDLE thread);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    INT_T               (*getheapsize)              (VOID_T);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#a0d1a13b61eab2744c1f1a043a93339af">   73</a></span>    OPERATE_RET         (*mutex_init)               (TKL_MUTEX_HANDLE *handle);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    OPERATE_RET         (*mutex_lock)               (CONST TKL_MUTEX_HANDLE handle);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    OPERATE_RET         (*mutex_trylock)            (CONST TKL_MUTEX_HANDLE handle);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    OPERATE_RET         (*mutex_unlock)             (CONST TKL_MUTEX_HANDLE handle);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    OPERATE_RET         (*mutex_release)            (CONST TKL_MUTEX_HANDLE handle);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#a04c34aeafa1966e7bf47b591180b5481">   79</a></span>    OPERATE_RET         (*sem_init)                 (TKL_SEM_HANDLE *handle, CONST UINT_T sem_cnt, CONST UINT_T sem_max);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    OPERATE_RET         (*sem_wait)                 (CONST TKL_SEM_HANDLE handle, CONST UINT_T timeout);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    OPERATE_RET         (*sem_post)                 (CONST TKL_SEM_HANDLE handle);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    OPERATE_RET         (*sem_release)              (CONST TKL_SEM_HANDLE handle);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    OPERATE_RET         (*sem_wait_timeout)         (CONST TKL_SEM_HANDLE handle, CONST UINT_T timeout);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../da/df2/structTKL__OS__T.html#a89d2625e7b69a2f0116eb52d9838f57e">   85</a></span>    OPERATE_RET         (*queue_init)               (TKL_QUEUE_HANDLE *queue, CONST INT_T msgsize, CONST INT_T msgcount);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    VOID_T              (*queue_free)               (CONST TKL_QUEUE_HANDLE queue);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    OPERATE_RET         (*queue_post)               (CONST TKL_QUEUE_HANDLE queue, VOID_T *data, CONST UINT_T timeout);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    OPERATE_RET         (*queue_fetch)              (CONST TKL_QUEUE_HANDLE queue, VOID_T *msg, CONST UINT_T timeout);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>} <a class="code hl_struct" href="../../da/df2/structTKL__OS__T.html">TKL_OS_T</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d6/d0b/structTKL__FS__T.html">   96</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    OPERATE_RET         (*fs_mkdir)                 (CONST CHAR_T* path);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    OPERATE_RET         (*fs_remove)                (CONST CHAR_T* path);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    OPERATE_RET         (*fs_mode)                  (CONST CHAR_T* path, UINT_T* mode);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    OPERATE_RET         (*fs_is_exist)              (CONST CHAR_T* path, BOOL_T* is_exist);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    OPERATE_RET         (*fs_rename)                (CONST CHAR_T* path_old, CONST CHAR_T* path_new);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    OPERATE_RET         (*dir_open)                 (CONST CHAR_T* path, TUYA_DIR* dir);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    OPERATE_RET         (*dir_close)                (TUYA_DIR dir);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    OPERATE_RET         (*dir_read)                 (TUYA_DIR dir, TUYA_FILEINFO* info);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    OPERATE_RET         (*dir_name)                 (TUYA_FILEINFO info, CONST CHAR_T** name);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    OPERATE_RET         (*dir_is_dir)               (TUYA_FILEINFO info, BOOL_T* is_dir);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    OPERATE_RET         (*dir_is_regular)           (TUYA_FILEINFO info, BOOL_T* is_regular);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    TUYA_FILE            (*fopen)                    (CONST CHAR_T* path, CONST CHAR_T* mode);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    OPERATE_RET         (*fclose)                   (TUYA_FILE file);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    OPERATE_RET         (*fread)                    (VOID_T* buf, INT_T bytes, TUYA_FILE file);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    OPERATE_RET         (*fwrite)                   (VOID_T* buf, INT_T bytes, TUYA_FILE file);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    CHAR_T*             (*fgets)                    (CHAR_T* buf, INT_T len, TUYA_FILE file);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    OPERATE_RET         (*feof)                     (TUYA_FILE file);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    OPERATE_RET         (*fseek)                    (TUYA_FILE file, INT64_T offs, INT_T whence);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    INT64_T             (*ftell)                    (TUYA_FILE file);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    INT_T               (*fflush)                   (TUYA_FILE file);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    INT_T               (*fileno)                   (TUYA_FILE file);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    INT_T               (*fsync)                    (INT_T fd);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    INT_T               (*faccess)                  (CONST CHAR_T *filepath,IN INT_T mode);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    INT_T               (*fgetsize)                 (CONST CHAR_T *filepath);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    INT_T               (*fgetc)                    (TUYA_FILE file);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    INT_T               (*ftruncate)                (INT_T fd, UINT64_T length);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>} <a class="code hl_struct" href="../../d6/d0b/structTKL__FS__T.html">TKL_FS_T</a>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">extern</span> CONST <a class="code hl_struct" href="../../da/df2/structTKL__OS__T.html">TKL_OS_T</a> TKL_OS;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">extern</span> CONST <a class="code hl_struct" href="../../d6/d0b/structTKL__FS__T.html">TKL_FS_T</a> TKL_FS;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d5/da6/tkl__init__system_8h.html#a2d0271d086c33977ab6dc721fe117250">  133</a></span><a class="code hl_struct" href="../../da/df2/structTKL__OS__T.html">TKL_OS_T</a>* <a class="code hl_function" href="../../d5/da6/tkl__init__system_8h.html#a2d0271d086c33977ab6dc721fe117250">tkl_os_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="../../d5/da6/tkl__init__system_8h.html#a509da798a85b9ba38733528431d50166">  140</a></span><a class="code hl_struct" href="../../d6/d0b/structTKL__FS__T.html">TKL_FS_T</a>* <a class="code hl_function" href="../../d5/da6/tkl__init__system_8h.html#a509da798a85b9ba38733528431d50166">tkl_fs_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#endif </span><span class="comment">// __TKL_INIT_SYSTEM_H__</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="ttc" id="astructTKL__FS__T_html"><div class="ttname"><a href="../../d6/d0b/structTKL__FS__T.html">TKL_FS_T</a></div><div class="ttdoc">the description of tuya kernel adapter layer file system</div><div class="ttdef"><b>Definition:</b> tkl_init_system.h:96</div></div>
+<div class="ttc" id="astructTKL__OS__T_html"><div class="ttname"><a href="../../da/df2/structTKL__OS__T.html">TKL_OS_T</a></div><div class="ttdoc">the description of tuya kernel adapter layer system api</div><div class="ttdef"><b>Definition:</b> tkl_init_system.h:37</div></div>
+<div class="ttc" id="astructTUYA__OTA__DATA__T_html"><div class="ttname"><a href="../../d5/d86/structTUYA__OTA__DATA__T.html">TUYA_OTA_DATA_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:1100</div></div>
+<div class="ttc" id="atkl__fs_8h_html"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html">tkl_fs.h</a></div><div class="ttdoc">Common process - adapter the file operation api provide by OS</div></div>
+<div class="ttc" id="atkl__init__system_8h_html_a2d0271d086c33977ab6dc721fe117250"><div class="ttname"><a href="../../d5/da6/tkl__init__system_8h.html#a2d0271d086c33977ab6dc721fe117250">tkl_os_desc_get</a></div><div class="ttdeci">TKL_OS_T * tkl_os_desc_get(VOID_T)</div><div class="ttdoc">get system os description</div></div>
+<div class="ttc" id="atkl__init__system_8h_html_a509da798a85b9ba38733528431d50166"><div class="ttname"><a href="../../d5/da6/tkl__init__system_8h.html#a509da798a85b9ba38733528431d50166">tkl_fs_desc_get</a></div><div class="ttdeci">TKL_FS_T * tkl_fs_desc_get(VOID_T)</div><div class="ttdoc">get file system description</div></div>
+<div class="ttc" id="atkl__memory_8h_html"><div class="ttname"><a href="../../d1/d5a/tkl__memory_8h.html">tkl_memory.h</a></div><div class="ttdoc">Common process - adapter the semaphore api provide by OS</div></div>
+<div class="ttc" id="atkl__mutex_8h_html"><div class="ttname"><a href="../../da/dd9/tkl__mutex_8h.html">tkl_mutex.h</a></div><div class="ttdoc">Common process - adapter the mutex api provide by OS</div></div>
+<div class="ttc" id="atkl__ota_8h_html"><div class="ttname"><a href="../../df/d23/tkl__ota_8h.html">tkl_ota.h</a></div><div class="ttdoc">Common process - ota</div></div>
+<div class="ttc" id="atkl__output_8h_html"><div class="ttname"><a href="../../de/dab/tkl__output_8h.html">tkl_output.h</a></div><div class="ttdoc">Common process - - adapter the log output api</div></div>
+<div class="ttc" id="atkl__queue_8h_html"><div class="ttname"><a href="../../d8/d9c/tkl__queue_8h.html">tkl_queue.h</a></div><div class="ttdoc">Common process - Initialization</div></div>
+<div class="ttc" id="atkl__semaphore_8h_html"><div class="ttname"><a href="../../d9/de6/tkl__semaphore_8h.html">tkl_semaphore.h</a></div><div class="ttdoc">Common process - adapter the semaphore api provide by OS</div></div>
+<div class="ttc" id="atkl__sleep_8h_html"><div class="ttname"><a href="../../de/d74/tkl__sleep_8h.html">tkl_sleep.h</a></div><div class="ttdoc">Common process - adapter the sleep manage api</div></div>
+<div class="ttc" id="atkl__system_8h_html"><div class="ttname"><a href="../../de/d57/tkl__system_8h.html">tkl_system.h</a></div><div class="ttdoc">Common process - adpater some api which provide system</div></div>
+<div class="ttc" id="atkl__thread_8h_html"><div class="ttname"><a href="../../da/d67/tkl__thread_8h.html">tkl_thread.h</a></div><div class="ttdoc">Common process - adapter the thread api provide by OS</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system/include/tal_sw_timer.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_756eea2d6c45abe335e6af16c38cccfe.html">tal_system</a></li><li class="navelem"><a class="el" href="../../dir_a80ab866e44074dee44459bfafedc0dc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_sw_timer.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_sw_timer.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/db3/tal__sw__timer_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__sw__timer_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__sw__timer_8h" id="ainclude_2components_2tal__system_2include_2tal__sw__timer_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de2/tal__sw__timer_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__sw__timer_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__sw__timer_8hdep" id="ainclude_2components_2tal__system_2include_2tal__sw__timer_8hdep">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="219,5,373,61"/>
+<area shape="rect" href="../../d6/d1f/rpc__base_8h.html" title="Common process &#45; base rpc" alt="" coords="219,109,373,165"/>
+<area shape="rect" href="../../dd/d94/svc__rpc_8h.html" title="rcp relate" alt="" coords="201,213,391,255"/>
+<area shape="rect" href="../../d2/d9a/lan__rpc_8h.html" title="Common process &#45; json rpc" alt="" coords="5,310,195,351"/>
+<area shape="rect" href="../../d6/d85/rpc__node_8h_source.html" title=" " alt="" coords="219,303,373,359"/>
+<area shape="rect" href="../../db/d49/rpc__pipe_8h.html" title="rcp pipe" alt="" coords="277,407,430,463"/>
+</map>
+</div>
+</div>
+<p><a href="../../d6/d77/tal__sw__timer_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a210628855a1c86cad5f9a07706b27721"><td class="memItemLeft" align="right" valign="top"><a id="a210628855a1c86cad5f9a07706b27721" name="a210628855a1c86cad5f9a07706b27721"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TAL_TIMER_CB</b>) (TIMER_ID timer_id, VOID_T *arg)</td></tr>
+<tr class="separator:a210628855a1c86cad5f9a07706b27721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8df4da8118b27cdcac09dedc4bcba2"><td class="memItemLeft" align="right" valign="top"><a id="a1b8df4da8118b27cdcac09dedc4bcba2" name="a1b8df4da8118b27cdcac09dedc4bcba2"></a>
+typedef PVOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>TIMER_ID</b></td></tr>
+<tr class="separator:a1b8df4da8118b27cdcac09dedc4bcba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8edc1826f30d502d28df6098ee964b15"><td class="memItemLeft" align="right" valign="top"><a id="a8edc1826f30d502d28df6098ee964b15" name="a8edc1826f30d502d28df6098ee964b15"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a8edc1826f30d502d28df6098ee964b15">TIMER_TYPE</a> { <b>TAL_TIMER_ONCE</b> = 0
+, <b>TAL_TIMER_CYCLE</b>
+ }</td></tr>
+<tr class="memdesc:a8edc1826f30d502d28df6098ee964b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of timer <br /></td></tr>
+<tr class="separator:a8edc1826f30d502d28df6098ee964b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a54ca0877912921593ec81e2dcfbcabc6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a54ca0877912921593ec81e2dcfbcabc6">tal_sw_timer_create</a> (TAL_TIMER_CB func, VOID_T *arg, TIMER_ID *timer_id)</td></tr>
+<tr class="memdesc:a54ca0877912921593ec81e2dcfbcabc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#a54ca0877912921593ec81e2dcfbcabc6">更多...</a><br /></td></tr>
+<tr class="separator:a54ca0877912921593ec81e2dcfbcabc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3ea366db06a3f04bc8c3483c7d4e63"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#afd3ea366db06a3f04bc8c3483c7d4e63">tal_sw_timer_delete</a> (TIMER_ID timer_id)</td></tr>
+<tr class="memdesc:afd3ea366db06a3f04bc8c3483c7d4e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#afd3ea366db06a3f04bc8c3483c7d4e63">更多...</a><br /></td></tr>
+<tr class="separator:afd3ea366db06a3f04bc8c3483c7d4e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd82b6da07d249b6085dfb6d208d9aa"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a2dd82b6da07d249b6085dfb6d208d9aa">tal_sw_timer_get_num</a> (VOID_T)</td></tr>
+<tr class="memdesc:a2dd82b6da07d249b6085dfb6d208d9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get timer node currently  <a href="../../d6/d77/tal__sw__timer_8h.html#a2dd82b6da07d249b6085dfb6d208d9aa">更多...</a><br /></td></tr>
+<tr class="separator:a2dd82b6da07d249b6085dfb6d208d9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada74793799a92611aaa2883fadab3199"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#ada74793799a92611aaa2883fadab3199">tal_sw_timer_init</a> (VOID_T)</td></tr>
+<tr class="memdesc:ada74793799a92611aaa2883fadab3199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializing the software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#ada74793799a92611aaa2883fadab3199">更多...</a><br /></td></tr>
+<tr class="separator:ada74793799a92611aaa2883fadab3199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a01b89e4d0efe4553ccca155c418877"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a7a01b89e4d0efe4553ccca155c418877">tal_sw_timer_is_running</a> (TIMER_ID timer_id)</td></tr>
+<tr class="memdesc:a7a01b89e4d0efe4553ccca155c418877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify the software timer is running  <a href="../../d6/d77/tal__sw__timer_8h.html#a7a01b89e4d0efe4553ccca155c418877">更多...</a><br /></td></tr>
+<tr class="separator:a7a01b89e4d0efe4553ccca155c418877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9019f08c0ed3879d547a5954e26faf3f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a9019f08c0ed3879d547a5954e26faf3f">tal_sw_timer_release</a> (VOID_T)</td></tr>
+<tr class="memdesc:a9019f08c0ed3879d547a5954e26faf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resource of the software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#a9019f08c0ed3879d547a5954e26faf3f">更多...</a><br /></td></tr>
+<tr class="separator:a9019f08c0ed3879d547a5954e26faf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b1a18426e4b85a8450849feba38a22"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a83b1a18426e4b85a8450849feba38a22">tal_sw_timer_remain_time_get</a> (TIMER_ID timer_id, UINT_T *remain_time)</td></tr>
+<tr class="memdesc:a83b1a18426e4b85a8450849feba38a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify the software timer is running  <a href="../../d6/d77/tal__sw__timer_8h.html#a83b1a18426e4b85a8450849feba38a22">更多...</a><br /></td></tr>
+<tr class="separator:a83b1a18426e4b85a8450849feba38a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebe51bd1e7136d0a4f5ef453f1a68b6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a7ebe51bd1e7136d0a4f5ef453f1a68b6">tal_sw_timer_start</a> (TIMER_ID timer_id, TIME_MS time_ms, <a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a8edc1826f30d502d28df6098ee964b15">TIMER_TYPE</a> timer_type)</td></tr>
+<tr class="memdesc:a7ebe51bd1e7136d0a4f5ef453f1a68b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#a7ebe51bd1e7136d0a4f5ef453f1a68b6">更多...</a><br /></td></tr>
+<tr class="separator:a7ebe51bd1e7136d0a4f5ef453f1a68b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8951a4dcbf9cc6f68648d5679dd9611e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a8951a4dcbf9cc6f68648d5679dd9611e">tal_sw_timer_stop</a> (TIMER_ID timer_id)</td></tr>
+<tr class="memdesc:a8951a4dcbf9cc6f68648d5679dd9611e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#a8951a4dcbf9cc6f68648d5679dd9611e">更多...</a><br /></td></tr>
+<tr class="separator:a8951a4dcbf9cc6f68648d5679dd9611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab30e784e24e997fcdf3e7e0d50a82ad"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#aab30e784e24e997fcdf3e7e0d50a82ad">tal_sw_timer_trigger</a> (TIMER_ID timer_id)</td></tr>
+<tr class="memdesc:aab30e784e24e997fcdf3e7e0d50a82ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the software timer  <a href="../../d6/d77/tal__sw__timer_8h.html#aab30e784e24e997fcdf3e7e0d50a82ad">更多...</a><br /></td></tr>
+<tr class="separator:aab30e784e24e997fcdf3e7e0d50a82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-24</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2031 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a54ca0877912921593ec81e2dcfbcabc6" name="a54ca0877912921593ec81e2dcfbcabc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ca0877912921593ec81e2dcfbcabc6">&#9670;&nbsp;</a></span>tal_sw_timer_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_create </td>
+          <td>(</td>
+          <td class="paramtype">TAL_TIMER_CB&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TIMER_ID *&#160;</td>
+          <td class="paramname"><em>timer_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>the processing function of the timer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>the parameater of the timer function </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for create a software timer</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afd3ea366db06a3f04bc8c3483c7d4e63" name="afd3ea366db06a3f04bc8c3483c7d4e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3ea366db06a3f04bc8c3483c7d4e63">&#9670;&nbsp;</a></span>tal_sw_timer_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_delete </td>
+          <td>(</td>
+          <td class="paramtype">TIMER_ID&#160;</td>
+          <td class="paramname"><em>timer_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for deleting the software timer</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2dd82b6da07d249b6085dfb6d208d9aa" name="a2dd82b6da07d249b6085dfb6d208d9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd82b6da07d249b6085dfb6d208d9aa">&#9670;&nbsp;</a></span>tal_sw_timer_get_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_sw_timer_get_num </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get timer node currently </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting the timer node currently.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the timer node count. </dd></dl>
+
+</div>
+</div>
+<a id="ada74793799a92611aaa2883fadab3199" name="ada74793799a92611aaa2883fadab3199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada74793799a92611aaa2883fadab3199">&#9670;&nbsp;</a></span>tal_sw_timer_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializing the software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for initializing the software timer</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7a01b89e4d0efe4553ccca155c418877" name="a7a01b89e4d0efe4553ccca155c418877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a01b89e4d0efe4553ccca155c418877">&#9670;&nbsp;</a></span>tal_sw_timer_is_running()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tal_sw_timer_is_running </td>
+          <td>(</td>
+          <td class="paramtype">TIMER_ID&#160;</td>
+          <td class="paramname"><em>timer_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identify the software timer is running </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to identify wheather the software timer is running</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE or FALSE </dd></dl>
+
+</div>
+</div>
+<a id="a9019f08c0ed3879d547a5954e26faf3f" name="a9019f08c0ed3879d547a5954e26faf3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9019f08c0ed3879d547a5954e26faf3f">&#9670;&nbsp;</a></span>tal_sw_timer_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_release </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release all resource of the software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for releasing all resource of the software timer</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a83b1a18426e4b85a8450849feba38a22" name="a83b1a18426e4b85a8450849feba38a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b1a18426e4b85a8450849feba38a22">&#9670;&nbsp;</a></span>tal_sw_timer_remain_time_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_remain_time_get </td>
+          <td>(</td>
+          <td class="paramtype">TIMER_ID&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>remain_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identify the software timer is running </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remain_time</td><td>ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7ebe51bd1e7136d0a4f5ef453f1a68b6" name="a7ebe51bd1e7136d0a4f5ef453f1a68b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebe51bd1e7136d0a4f5ef453f1a68b6">&#9670;&nbsp;</a></span>tal_sw_timer_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_start </td>
+          <td>(</td>
+          <td class="paramtype">TIMER_ID&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TIME_MS&#160;</td>
+          <td class="paramname"><em>time_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d77/tal__sw__timer_8h.html#a8edc1826f30d502d28df6098ee964b15">TIMER_TYPE</a>&#160;</td>
+          <td class="paramname"><em>timer_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start the software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_ms</td><td>timer running cycle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_type</td><td>timer type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for starting the software timer</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8951a4dcbf9cc6f68648d5679dd9611e" name="a8951a4dcbf9cc6f68648d5679dd9611e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8951a4dcbf9cc6f68648d5679dd9611e">&#9670;&nbsp;</a></span>tal_sw_timer_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_stop </td>
+          <td>(</td>
+          <td class="paramtype">TIMER_ID&#160;</td>
+          <td class="paramname"><em>timer_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop the software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for stopping the software timer</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aab30e784e24e997fcdf3e7e0d50a82ad" name="aab30e784e24e997fcdf3e7e0d50a82ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab30e784e24e997fcdf3e7e0d50a82ad">&#9670;&nbsp;</a></span>tal_sw_timer_trigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_sw_timer_trigger </td>
+          <td>(</td>
+          <td class="paramtype">TIMER_ID&#160;</td>
+          <td class="paramname"><em>timer_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trigger the software timer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for triggering the software timer instantly.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

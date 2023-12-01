@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/init/include/tkl_init_cellular.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_945761b91ca7d88d015bf5cfa152d494.html">init</a></li><li class="navelem"><a class="el" href="../../dir_4918dc50b8ab2b2df1b446be98ca6a02.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_init_cellular.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_INIT_CELLULAR_BASE_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_INIT_CELLULAR_BASE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d40/tkl__cellular__base_8h.html">tkl_cellular_base.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d96/tkl__cellular__call_8h.html">tkl_cellular_call.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/d88/tkl__cellular__mds_8h.html">tkl_cellular_mds.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/d8d/tkl__cellular__sms_8h.html">tkl_cellular_sms.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../dc/d2e/tkl__cellular__vbat_8h.html">tkl_cellular_vbat.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/de0/tkl__cellular__player_8h.html">tkl_cellular_player.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d52/tkl__cellular__keypad_8h.html">tkl_cellular_keypad.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html">   30</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    OPERATE_RET (*base_init)(<a class="code hl_struct" href="../../df/d50/structTKL__CELL__INIT__PARAM__T.html">TKL_CELL_INIT_PARAM_T</a> *param);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a6162a9cd08b50119d836eb6de18f8de7">   39</a></span>    OPERATE_RET (*get_ability)(TKL_CELLULAR_ABILITY_E *ability);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#aaf1971bbe970cdf9cdf7b4402b780c3e">   45</a></span>    OPERATE_RET (*switch_sim)(UINT8_T sim_id);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a504a8ed9d2316a97b4628d9d5157b9f2">   51</a></span>    OPERATE_RET (*register_sim_state_notify) (UINT8_T sim_id,<a class="code hl_typedef" href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a> notify);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab2e65562e52cae347a39e72a9f6a26ab">   59</a></span>    OPERATE_RET (*sim_hotplug_enable) (UINT8_T sim_id, BOOL_T enable);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ad74633afb68a199e7948ccbd2ccf6794">   67</a></span>    OPERATE_RET (*sim_get_status) (UINT8_T sim_id, UCHAR_T *state);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ac7a2f6f108316368baada5e8a5be0422">   74</a></span>    OPERATE_RET (*get_cfun_mode) (UINT8_T sim_id,PINT_T cfun);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab7b9830aaab0e20b6b4dacead74a6f49">   83</a></span>    OPERATE_RET (*set_cfun_mode) (UINT8_T sim_id,INT_T cfun);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a435562ec4f1cbdc1bc6f7fc881a7bb6e">   91</a></span>    OPERATE_RET (*get_imsi) (UINT8_T sim_id,CHAR_T imsi[15 + 1]);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a345fcca4b62bcbcf3252625233bd0c5f">   99</a></span>    OPERATE_RET (*get_iccid) (UINT8_T sim_id,CHAR_T iccid[20 + 1]);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a5e2730788080149f0f842ca4a0f278f8">  106</a></span>    OPERATE_RET (*get_imei) (UINT8_T sim_id,CHAR_T imei[15 + 1]);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a6f64b38d26605c8ab2dd8db5bf5bb388">  113</a></span>    OPERATE_RET (*set_imei) (UINT8_T sim_id,CHAR_T imei[15 + 1]);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a240e4388184900c9d4eea9be2ffd54f9">  121</a></span>    OPERATE_RET (*get_rsrp)(UINT8_T sim_id,INT_T *rsrp);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a85966ee9d125829ed0953f7976347bbc">  129</a></span>    OPERATE_RET (*get_sinr)(UINT8_T sim_id,INT_T *sinr,INT_T *bit_error);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab680db3ebabf157b6271e2b154ff36c1">  139</a></span>    OPERATE_RET (*get_lbs)(UINT8_T simid,<a class="code hl_struct" href="../../d6/d85/structTKL__LBS__INFO__T.html">TKL_LBS_INFO_T</a> *lbs,BOOL_T neighbour,INT_T timeout);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a5f4d53e0b5fdf2e89cc6ad7476ffb319">  146</a></span>     BOOL_T      (*rf_calibrated)(VOID);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a8c2178fb82717b3b56d7b1af51058d7c">  153</a></span>     OPERATE_RET (*enable_sim_detect)(UINT8_T simid,BOOL_T enable);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a02d199995e38b56e3a7832fa0934b932">  159</a></span>    INT8_T      (*get_default_simid)(VOID);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a9ff9d7b11c622a40e7f19421e2cc171e">  169</a></span>    OPERATE_RET (*ioctl)(INT_T cmd,VOID* argv);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>} <a class="code hl_struct" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html">TKL_CELL_BASE_INTF_T</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><a class="code hl_struct" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html">TKL_CELL_BASE_INTF_T</a>* tkl_cellular_base_desc_get();</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html">  183</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a0134b9656f7b288264f9a316615c9166">  190</a></span>    BOOL_T (*call_service_available)(UINT8_T sim_id);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a26328759851eb38961eda7e2b552a873">  198</a></span>    OPERATE_RET (*call)(UINT8_T sim_id, CHAR_T call_number[<a class="code hl_define" href="../../d2/d96/tkl__cellular__call_8h.html#aa7cb8d469f48276c18861493e408865c">TKL_CELLULAR_CALLNUM_LEN_MAX</a>]);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#aa42682ad20aefc89788a76096df17f0f">  205</a></span>    OPERATE_RET (*answer)(UINT8_T sim_id);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a0317a39d0a6f36d3fe39cfcea40e4c6b">  212</a></span>    OPERATE_RET (*hungup)(UINT8_T sim_id);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a2d0a07307f8bbb551edb4c89343b2f14">  219</a></span>    OPERATE_RET (*cb_register)(<a class="code hl_typedef" href="../../d2/d96/tkl__cellular__call_8h.html#a4b3f435c5cb1f957f41bcdf78bab6267">TKL_CELLULAR_CALL_CB</a> callback);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a995cccb7e2f44295d5db03471442691f">  226</a></span>    OPERATE_RET (*set_callin_mute)(BOOL_T mute);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a44413bb17a879f179634f5bb353106d1">  234</a></span>    OPERATE_RET (*set_volte)(UINT8_T sim_id,BOOL_T enable);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#ada8408f40c8ebdc71daf963d45eb29be">  244</a></span>    OPERATE_RET (*set_voice_mute)(BOOL_T mute);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a1f5f30af5eab76e3db0a2fee94f2268e">  251</a></span>    OPERATE_RET (*get_voice_mute)(PBOOL_T mute);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a007382ee03a51b49ec95fd4611d0292f">  258</a></span>    OPERATE_RET (*set_voice_vol)(INT_T vol);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#abfe88fe056a7cf0075138eb49cb119da">  266</a></span>    OPERATE_RET (*get_voice_vol)(PINT_T vol);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a9a5237a3b2c1303303e55484c26effd6">  275</a></span>    OPERATE_RET (*play_tone)(<a class="code hl_enumeration" href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a> tone, INT_T duration);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#abccacc1bdffca8485b8f033facf0fcb3">  282</a></span>    OPERATE_RET (*stop_tone)(VOID);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a3326d2a00fcf89b55cc9700e4a1bc7d6">  298</a></span>    OPERATE_RET (*dtmf2voice)(<a class="code hl_enumeration" href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a> dtmfTone, UINT_T duration);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    OPERATE_RET (*reg_KTDetect)(<a class="code hl_typedef" href="../../d2/d96/tkl__cellular__call_8h.html#a3e3479a8b6ab73874fd902d520da87a5">TKL_CELLULAR_CALL_KTDETECH_CB</a> cb);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    OPERATE_RET (*ctrl_KTDetect)(BOOL_T enable);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>} <a class="code hl_struct" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html">TKL_CELL_CALL_INTF_T</a>;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><a class="code hl_struct" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html">TKL_CELL_CALL_INTF_T</a>* tkl_cellular_call_desc_get();</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html">  318</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a2ece9b4db8dd43cc80014c416cf0e989">  326</a></span>    OPERATE_RET (*mds_init) (UINT8_T sim_id);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#ab25fce93cbd98045ce833cbbdf827381">  333</a></span>    <a class="code hl_enumeration" href="../../d5/d88/tkl__cellular__mds_8h.html#abc6c7555b40d45faad0e173f9ad5ab71">TUYA_CELLULAR_MDS_STATUS_E</a> (*get_mds_status) (UINT8_T simId);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a514566e7021d2e82e5afbc7b1f5e15c6">  343</a></span>    OPERATE_RET (*pdp_active) (UINT8_T sim_id,PCHAR_T apn, PCHAR_T username, PCHAR_T password);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a29b914c03c7dfaebccbb11e7bc86e6ed">  356</a></span>    OPERATE_RET (*adv_pdp_active) (UINT8_T sim_id,UINT8_T cid,<a class="code hl_enumeration" href="../../d5/d88/tkl__cellular__mds_8h.html#ae7ca5c0594da1839d0a1d50f8a4f9c68">TUYA_MDS_PDP_TYPE_E</a> pdp_type,PCHAR_T apn, PCHAR_T username, PCHAR_T password);</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a181579e92231e2e7a0a9d10f7054f5cc">  362</a></span>    OPERATE_RET (*pdp_deactive) (UINT8_T sim_id);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#acc73b1bcf3340b7f25e5d7533972ef96">  370</a></span>    OPERATE_RET (*adv_pdp_deactive) (UINT8_T sim_id,UINT8_T cid);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a08c564a76bf5713cd743dd921a66768c">  380</a></span>    OPERATE_RET (*pdp_auto_reactive_enable) (UINT8_T sim_id,BOOL_T enable);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a92c52421dd5ad0041916d680337d6db5">  389</a></span>    OPERATE_RET (*registr_mds_net_notify) (UINT8_T sim_id,<a class="code hl_typedef" href="../../d5/d88/tkl__cellular__mds_8h.html#a6dc51cd5cd20b120bf1a40c8f696130a">TKL_MDS_NOTIFY</a> notify);</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#ae1498999a06abef787ea640bb6db36f3">  396</a></span>    OPERATE_RET (*get_ip)(UINT8_T sim_id,<a class="code hl_struct" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip);</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#afbe15f1a9594b9665d6da23ed1f23b07">  403</a></span>    OPERATE_RET (*adv_get_ip)(UINT8_T sim_id,UINT8_T cid,<a class="code hl_struct" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip);</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>}<a class="code hl_struct" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html">TKL_CELL_MDS_INTF_T</a>;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><a class="code hl_struct" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html">TKL_CELL_MDS_INTF_T</a>* tkl_cellular_mds_desc_get();</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html">  416</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>{</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html#a1023c3644323baaf5bc7d8799de5b9f3">  424</a></span>    OPERATE_RET (*send)(UINT8_T sim_id, <a class="code hl_struct" href="../../d6/d8b/structTUYA__CELLULAR__SMS__SEND__T.html">TUYA_CELLULAR_SMS_SEND_T</a>* msg);</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html#a6bcba874b3c1ed8738e429f2a15fd7e4">  431</a></span>    OPERATE_RET (*recv_cb_register)(<a class="code hl_typedef" href="../../d5/d8d/tkl__cellular__sms_8h.html#a0b1ae009d62c3301b8ba7a64c41b2149">TUYA_CELLULAR_SMS_CB</a> callback);</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html#a03aefb7974d59a6c48f05753a3e92c0a">  438</a></span>    OPERATE_RET (*sms_mute)(BOOL_T mute);</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    VOID*   (*convert_str)(CONST VOID *from, INT_T from_size,</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>                            <a class="code hl_enumeration" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a> from_chset,</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>                            <a class="code hl_enumeration" href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a> to_chset, INT_T *to_size);</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>}<a class="code hl_struct" href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html">TKL_CELL_SMS_INTF_T</a>;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><a class="code hl_struct" href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html">TKL_CELL_SMS_INTF_T</a>* tkl_cellular_sms_desc_get();</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html">  455</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>{</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html#a2a1c5890db7ef6be9387beb1eab53617">  462</a></span>    OPERATE_RET (*get_rsoc)(PUINT8_T rsoc);</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html#a6359b20b0d7fd9321f1f160ce1a4ba45">  471</a></span>    OPERATE_RET (*ntc_enable)(BOOL_T enable);</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html#a9ed078795725c4888a27c74108366649">  480</a></span>    OPERATE_RET (*set_charge_current)(UINT_T current);</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html#aaaa98003851d49d37e35e278a2f658ea">  487</a></span>    <a class="code hl_enumeration" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a676332eef29dcf8177f19836a6ccfa29">TKL_CELLULAR_VBAT_CHG_STATE_E</a> (*get_charger_state)(VOID);</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html#a388520a65a6e7dd75a31b793de8cb90b">  494</a></span>    OPERATE_RET (*charge_cb_register)(<a class="code hl_typedef" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a6437862b19e0e292e14933bedf93f140">TKL_CELLULAR_VBAT_CHARGE_CB</a> callback);</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno"><a class="line" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html#a82208311687405fc547b05b6f350c0bc">  502</a></span>    OPERATE_RET (*get_voltage)(UINT_T* voltage);</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    OPERATE_RET (*low_volt_poweroff_enable)(BOOL_T enable);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>} <a class="code hl_struct" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html">TKL_CELL_VBAT_INTF_T</a>;</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><a class="code hl_struct" href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html">TKL_CELL_VBAT_INTF_T</a>* tkl_cellular_vbat_desc_get();</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span> </div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno"><a class="line" href="../../dd/db9/structTKL__CELL__PLAYER__INTF__T.html">  519</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>{</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    OPERATE_RET (*audio_play) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a9957c1390602f106797526bc9ac152cd">TKL_AUDIO_PLAYER_TYPE_E</a> type, <a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a7238bc848b98371dc2b5fd753f364046">TKL_AUDIO_STREAM_FORMAT_E</a> format,</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                                PCHAR_T file_path,</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                                TKL_AUDIO_PLAYER_CB cb, PVOID_T cb_ctx);</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    OPERATE_RET (*audio_pause) (VOID);</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    OPERATE_RET (*audio_resume) (VOID);</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    OPERATE_RET (*audio_stop) (VOID);</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    OPERATE_RET (*audio_set_vol) (INT_T vol);</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    OPERATE_RET (*audio_get_vol) (PINT_T vol);</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    OPERATE_RET (*audio_set_mute) (BOOL_T mute);</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    OPERATE_RET (*audio_get_mute) (PBOOL_T mute);</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    OPERATE_RET (*audio_mem_play) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a9957c1390602f106797526bc9ac152cd">TKL_AUDIO_PLAYER_TYPE_E</a> type,</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>                                    <a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a7238bc848b98371dc2b5fd753f364046">TKL_AUDIO_STREAM_FORMAT_E</a> format, PBYTE_T buff,</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                                    UINT_T size,TKL_AUDIO_PLAYER_CB cb, PVOID_T cb_ctx);</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    OPERATE_RET (*audio_set_output) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a3f3050993a9b36f85094eb0d39d95019">TKL_AUDEV_OUTPUT_TYPE</a> chan);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    OPERATE_RET (*audio_get_output) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a3f3050993a9b36f85094eb0d39d95019">TKL_AUDEV_OUTPUT_TYPE</a> *chan);</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    OPERATE_RET (*audio_set_input) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a1776652e430399d2ec0276d627cc320c">TKL_AUDEV_INPUT_TYPE</a> chan);</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    OPERATE_RET (*audio_get_input) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a1776652e430399d2ec0276d627cc320c">TKL_AUDEV_INPUT_TYPE</a> *chan);</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    OPERATE_RET (*audio_get_status) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a6973a6fe19097342aaaf0f448d22ec37">TKL_AUDIO_PLAYER_STATUS_E</a> *status);</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    OPERATE_RET (*audio_play_stream) (<a class="code hl_enumeration" href="../../d8/de0/tkl__cellular__player_8h.html#a9957c1390602f106797526bc9ac152cd">TKL_AUDIO_PLAYER_TYPE_E</a> type, CONST <a class="code hl_struct" href="../../df/d4b/structTKL__AUDIO__PLAY__OPS__T.html">TKL_AUDIO_PLAY_OPS_T</a>* playOps,</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                                      PVOID_T playCtx, CONST <a class="code hl_struct" href="../../d4/d0f/structTKL__AUDIO__FRAME__T.html">TKL_AUDIO_FRAME_T</a>* frame);</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    OPERATE_RET (*audio_stop_stream) (VOID);</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>} <a class="code hl_struct" href="../../dd/db9/structTKL__CELL__PLAYER__INTF__T.html">TKL_CELL_PLAYER_INTF_T</a>;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><a class="code hl_struct" href="../../dd/db9/structTKL__CELL__PLAYER__INTF__T.html">TKL_CELL_PLAYER_INTF_T</a>* tkl_cellular_player_desc_get();</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span> </div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span> </div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno"><a class="line" href="../../dc/dd7/structTKL__CELL__KEYPAD__INTF__T.html">  556</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>{</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    OPERATE_RET (*init) (VOID *param);</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    <a class="code hl_typedef" href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a> (*key_listener_add) (<a class="code hl_enumeration" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a> keyId,</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                                     <a class="code hl_typedef" href="../../d6/d52/tkl__cellular__keypad_8h.html#a9ae513ab11e691bc7554cf8b3a43c83b">TUYA_CELLULAR_KEY_CB</a> cb,</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                                     <span class="keywordtype">void</span> *ctx);</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    OPERATE_RET (*key_listener_delete) (<a class="code hl_typedef" href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a> listener);</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    OPERATE_RET (*key_state_get) (<a class="code hl_enumeration" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a> keyId,<a class="code hl_enumeration" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a> *state);</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    OPERATE_RET (*key_ioctl)(INT_T cmd,VOID *argv);</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>} <a class="code hl_struct" href="../../dc/dd7/structTKL__CELL__KEYPAD__INTF__T.html">TKL_CELL_KEYPAD_INTF_T</a>;</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><a class="code hl_struct" href="../../dc/dd7/structTKL__CELL__KEYPAD__INTF__T.html">TKL_CELL_KEYPAD_INTF_T</a>* tkl_cellular_keypad_desc_get();</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span> </div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructNW__IP__S_html"><div class="ttname"><a href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:201</div></div>
+<div class="ttc" id="astructTKL__AUDIO__FRAME__T_html"><div class="ttname"><a href="../../d4/d0f/structTKL__AUDIO__FRAME__T.html">TKL_AUDIO_FRAME_T</a></div><div class="ttdoc">audio frame</div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:65</div></div>
+<div class="ttc" id="astructTKL__AUDIO__PLAY__OPS__T_html"><div class="ttname"><a href="../../df/d4b/structTKL__AUDIO__PLAY__OPS__T.html">TKL_AUDIO_PLAY_OPS_T</a></div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:103</div></div>
+<div class="ttc" id="astructTKL__CELL__BASE__INTF__T_html"><div class="ttname"><a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html">TKL_CELL_BASE_INTF_T</a></div><div class="ttdoc">蜂窝模组基础服务API接口定义 TAL在实现tkl_CellularSvcIntf_t接口后，需要调用tal_cellular_mds_register 把实现的对象注册到tkl中</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:31</div></div>
+<div class="ttc" id="astructTKL__CELL__CALL__INTF__T_html"><div class="ttname"><a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html">TKL_CELL_CALL_INTF_T</a></div><div class="ttdoc">蜂窝模组电话拨号API接口定义</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:184</div></div>
+<div class="ttc" id="astructTKL__CELL__INIT__PARAM__T_html"><div class="ttname"><a href="../../df/d50/structTKL__CELL__INIT__PARAM__T.html">TKL_CELL_INIT_PARAM_T</a></div><div class="ttdef"><b>Definition:</b> tkl_cellular_base.h:180</div></div>
+<div class="ttc" id="astructTKL__CELL__KEYPAD__INTF__T_html"><div class="ttname"><a href="../../dc/dd7/structTKL__CELL__KEYPAD__INTF__T.html">TKL_CELL_KEYPAD_INTF_T</a></div><div class="ttdoc">蜂窝模组音频接口</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:557</div></div>
+<div class="ttc" id="astructTKL__CELL__MDS__INTF__T_html"><div class="ttname"><a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html">TKL_CELL_MDS_INTF_T</a></div><div class="ttdoc">蜂窝模组数据服务API接口定义 TAL在实现tkl_cellular_mds_intf_t接口后，需要调用tal_cellular_mds_register 把实现的对象注册到tkl中</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:319</div></div>
+<div class="ttc" id="astructTKL__CELL__PLAYER__INTF__T_html"><div class="ttname"><a href="../../dd/db9/structTKL__CELL__PLAYER__INTF__T.html">TKL_CELL_PLAYER_INTF_T</a></div><div class="ttdoc">蜂窝模组音频接口</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:520</div></div>
+<div class="ttc" id="astructTKL__CELL__SMS__INTF__T_html"><div class="ttname"><a href="../../d0/dbd/structTKL__CELL__SMS__INTF__T.html">TKL_CELL_SMS_INTF_T</a></div><div class="ttdoc">蜂窝模组短信功能API接口定义</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:417</div></div>
+<div class="ttc" id="astructTKL__CELL__VBAT__INTF__T_html"><div class="ttname"><a href="../../da/d4e/structTKL__CELL__VBAT__INTF__T.html">TKL_CELL_VBAT_INTF_T</a></div><div class="ttdoc">蜂窝模组电池API接口定义</div><div class="ttdef"><b>Definition:</b> tkl_init_cellular.h:456</div></div>
+<div class="ttc" id="astructTKL__LBS__INFO__T_html"><div class="ttname"><a href="../../d6/d85/structTKL__LBS__INFO__T.html">TKL_LBS_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_cellular_base.h:173</div></div>
+<div class="ttc" id="astructTUYA__CELLULAR__SMS__SEND__T_html"><div class="ttname"><a href="../../d6/d8b/structTUYA__CELLULAR__SMS__SEND__T.html">TUYA_CELLULAR_SMS_SEND_T</a></div><div class="ttdoc">发送短信结构体定义</div><div class="ttdef"><b>Definition:</b> tkl_cellular_sms.h:47</div></div>
+<div class="ttc" id="atkl__cellular__base_8h_html"><div class="ttname"><a href="../../d2/d40/tkl__cellular__base_8h.html">tkl_cellular_base.h</a></div><div class="ttdoc">蜂窝模组基础功能API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__base_8h_html_a1473cdc3b446640e7d8528bf3f9cfdee"><div class="ttname"><a href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a></div><div class="ttdeci">VOID(* TKL_SIM_NOTIFY)(TKL_SIM_STATE_E status)</div><div class="ttdoc">sim卡状态变化通知函数原型</div><div class="ttdef"><b>Definition:</b> tkl_cellular_base.h:225</div></div>
+<div class="ttc" id="atkl__cellular__call_8h_html"><div class="ttname"><a href="../../d2/d96/tkl__cellular__call_8h.html">tkl_cellular_call.h</a></div><div class="ttdoc">蜂窝模组电话拨号API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__call_8h_html_a1a0409b28fa498a07b2bbf9ecc183452"><div class="ttname"><a href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a></div><div class="ttdeci">TUYA_TONE_TYPE_E</div><div class="ttdef"><b>Definition:</b> tkl_cellular_call.h:24</div></div>
+<div class="ttc" id="atkl__cellular__call_8h_html_a3e3479a8b6ab73874fd902d520da87a5"><div class="ttname"><a href="../../d2/d96/tkl__cellular__call_8h.html#a3e3479a8b6ab73874fd902d520da87a5">TKL_CELLULAR_CALL_KTDETECH_CB</a></div><div class="ttdeci">VOID_T(* TKL_CELLULAR_CALL_KTDETECH_CB)(TUYA_TONE_TYPE_E dtmf)</div><div class="ttdoc">通话过程中，对方的按键输入侦测回调函数定义，用于侦测对方的DTMF输入</div><div class="ttdef"><b>Definition:</b> tkl_cellular_call.h:82</div></div>
+<div class="ttc" id="atkl__cellular__call_8h_html_a4b3f435c5cb1f957f41bcdf78bab6267"><div class="ttname"><a href="../../d2/d96/tkl__cellular__call_8h.html#a4b3f435c5cb1f957f41bcdf78bab6267">TKL_CELLULAR_CALL_CB</a></div><div class="ttdeci">VOID_T(* TKL_CELLULAR_CALL_CB)(TUYA_CELLULAR_CALL_IND_STATE_E state, UINT8_T simId, CHAR_T callNum[42])</div><div class="ttdoc">呼叫回调处理函数原型</div><div class="ttdef"><b>Definition:</b> tkl_cellular_call.h:74</div></div>
+<div class="ttc" id="atkl__cellular__call_8h_html_aa7cb8d469f48276c18861493e408865c"><div class="ttname"><a href="../../d2/d96/tkl__cellular__call_8h.html#aa7cb8d469f48276c18861493e408865c">TKL_CELLULAR_CALLNUM_LEN_MAX</a></div><div class="ttdeci">#define TKL_CELLULAR_CALLNUM_LEN_MAX</div><div class="ttdoc">电话号码最大长度</div><div class="ttdef"><b>Definition:</b> tkl_cellular_call.h:48</div></div>
+<div class="ttc" id="atkl__cellular__keypad_8h_html"><div class="ttname"><a href="../../d6/d52/tkl__cellular__keypad_8h.html">tkl_cellular_keypad.h</a></div><div class="ttdoc">蜂窝模组键盘功能API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__keypad_8h_html_a693f16029e67de3ee68e09e0b3d25ffa"><div class="ttname"><a href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a></div><div class="ttdeci">void * TUYA_CELLULAR_KEY_LISTENER</div><div class="ttdoc">tuya cellular key listener definition</div><div class="ttdef"><b>Definition:</b> tkl_cellular_keypad.h:62</div></div>
+<div class="ttc" id="atkl__cellular__keypad_8h_html_a7fd3f0148e084dcfea263b2166924954"><div class="ttname"><a href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a></div><div class="ttdeci">TUYA_KEYMAP_E</div><div class="ttdoc">tuya cellular module keypad logic definition</div><div class="ttdef"><b>Definition:</b> tkl_cellular_keypad.h:24</div></div>
+<div class="ttc" id="atkl__cellular__keypad_8h_html_a9ae513ab11e691bc7554cf8b3a43c83b"><div class="ttname"><a href="../../d6/d52/tkl__cellular__keypad_8h.html#a9ae513ab11e691bc7554cf8b3a43c83b">TUYA_CELLULAR_KEY_CB</a></div><div class="ttdeci">void(* TUYA_CELLULAR_KEY_CB)(TUYA_KEYMAP_E keyId, TUYA_KEYSTATE_E state, void *ctx)</div><div class="ttdoc">tuya cat1 key event process callback defintion</div><div class="ttdef"><b>Definition:</b> tkl_cellular_keypad.h:66</div></div>
+<div class="ttc" id="atkl__cellular__keypad_8h_html_aab3872649f21f55f6c5359ee9f90b805"><div class="ttname"><a href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a></div><div class="ttdeci">TUYA_KEYSTATE_E</div><div class="ttdoc">tuya cellular module key state definition</div><div class="ttdef"><b>Definition:</b> tkl_cellular_keypad.h:54</div></div>
+<div class="ttc" id="atkl__cellular__mds_8h_html"><div class="ttname"><a href="../../d5/d88/tkl__cellular__mds_8h.html">tkl_cellular_mds.h</a></div><div class="ttdoc">蜂窝模组数据API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__mds_8h_html_a6dc51cd5cd20b120bf1a40c8f696130a"><div class="ttname"><a href="../../d5/d88/tkl__cellular__mds_8h.html#a6dc51cd5cd20b120bf1a40c8f696130a">TKL_MDS_NOTIFY</a></div><div class="ttdeci">void(* TKL_MDS_NOTIFY)(UINT8_T sim_id, TUYA_CELLULAR_MDS_NET_STATUS_E st)</div><div class="ttdoc">蜂窝网络状态变化通知函数原型，该接口是为了svc_netmgr适配</div><div class="ttdef"><b>Definition:</b> tkl_cellular_mds.h:62</div></div>
+<div class="ttc" id="atkl__cellular__mds_8h_html_abc6c7555b40d45faad0e173f9ad5ab71"><div class="ttname"><a href="../../d5/d88/tkl__cellular__mds_8h.html#abc6c7555b40d45faad0e173f9ad5ab71">TUYA_CELLULAR_MDS_STATUS_E</a></div><div class="ttdeci">TUYA_CELLULAR_MDS_STATUS_E</div><div class="ttdoc">蜂窝移动数据鉴权状态</div><div class="ttdef"><b>Definition:</b> tkl_cellular_mds.h:30</div></div>
+<div class="ttc" id="atkl__cellular__mds_8h_html_ae7ca5c0594da1839d0a1d50f8a4f9c68"><div class="ttname"><a href="../../d5/d88/tkl__cellular__mds_8h.html#ae7ca5c0594da1839d0a1d50f8a4f9c68">TUYA_MDS_PDP_TYPE_E</a></div><div class="ttdeci">TUYA_MDS_PDP_TYPE_E</div><div class="ttdoc">蜂窝网络IP类型</div><div class="ttdef"><b>Definition:</b> tkl_cellular_mds.h:50</div></div>
+<div class="ttc" id="atkl__cellular__player_8h_html"><div class="ttname"><a href="../../d8/de0/tkl__cellular__player_8h.html">tkl_cellular_player.h</a></div><div class="ttdoc">蜂窝模组基础功能API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__player_8h_html_a1776652e430399d2ec0276d627cc320c"><div class="ttname"><a href="../../d8/de0/tkl__cellular__player_8h.html#a1776652e430399d2ec0276d627cc320c">TKL_AUDEV_INPUT_TYPE</a></div><div class="ttdeci">TKL_AUDEV_INPUT_TYPE</div><div class="ttdoc">音频输入设备类型定义</div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:169</div></div>
+<div class="ttc" id="atkl__cellular__player_8h_html_a3f3050993a9b36f85094eb0d39d95019"><div class="ttname"><a href="../../d8/de0/tkl__cellular__player_8h.html#a3f3050993a9b36f85094eb0d39d95019">TKL_AUDEV_OUTPUT_TYPE</a></div><div class="ttdeci">TKL_AUDEV_OUTPUT_TYPE</div><div class="ttdoc">音频输出设备类型定义</div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:181</div></div>
+<div class="ttc" id="atkl__cellular__player_8h_html_a6973a6fe19097342aaaf0f448d22ec37"><div class="ttname"><a href="../../d8/de0/tkl__cellular__player_8h.html#a6973a6fe19097342aaaf0f448d22ec37">TKL_AUDIO_PLAYER_STATUS_E</a></div><div class="ttdeci">TKL_AUDIO_PLAYER_STATUS_E</div><div class="ttdoc">audio player status</div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:144</div></div>
+<div class="ttc" id="atkl__cellular__player_8h_html_a7238bc848b98371dc2b5fd753f364046"><div class="ttname"><a href="../../d8/de0/tkl__cellular__player_8h.html#a7238bc848b98371dc2b5fd753f364046">TKL_AUDIO_STREAM_FORMAT_E</a></div><div class="ttdeci">TKL_AUDIO_STREAM_FORMAT_E</div><div class="ttdoc">audio stream format</div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:155</div></div>
+<div class="ttc" id="atkl__cellular__player_8h_html_a9957c1390602f106797526bc9ac152cd"><div class="ttname"><a href="../../d8/de0/tkl__cellular__player_8h.html#a9957c1390602f106797526bc9ac152cd">TKL_AUDIO_PLAYER_TYPE_E</a></div><div class="ttdeci">TKL_AUDIO_PLAYER_TYPE_E</div><div class="ttdef"><b>Definition:</b> tkl_cellular_player.h:34</div></div>
+<div class="ttc" id="atkl__cellular__sms_8h_html"><div class="ttname"><a href="../../d5/d8d/tkl__cellular__sms_8h.html">tkl_cellular_sms.h</a></div><div class="ttdoc">蜂窝模组短信API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__sms_8h_html_a0b1ae009d62c3301b8ba7a64c41b2149"><div class="ttname"><a href="../../d5/d8d/tkl__cellular__sms_8h.html#a0b1ae009d62c3301b8ba7a64c41b2149">TUYA_CELLULAR_SMS_CB</a></div><div class="ttdeci">VOID_T(* TUYA_CELLULAR_SMS_CB)(UINT8_T sim_id, TUYA_CELLULAR_SMS_RECV_T *msg)</div><div class="ttdoc">短信接收回调函数接口原型</div><div class="ttdef"><b>Definition:</b> tkl_cellular_sms.h:89</div></div>
+<div class="ttc" id="atkl__cellular__sms_8h_html_aa39a8cf912f270ac4780dd1b0ecbbbe2"><div class="ttname"><a href="../../d5/d8d/tkl__cellular__sms_8h.html#aa39a8cf912f270ac4780dd1b0ecbbbe2">TUYA_CELLULAR_SMS_ENCODE_E</a></div><div class="ttdeci">TUYA_CELLULAR_SMS_ENCODE_E</div><div class="ttdoc">短信内容编码格式</div><div class="ttdef"><b>Definition:</b> tkl_cellular_sms.h:34</div></div>
+<div class="ttc" id="atkl__cellular__vbat_8h_html"><div class="ttname"><a href="../../dc/d2e/tkl__cellular__vbat_8h.html">tkl_cellular_vbat.h</a></div><div class="ttdoc">蜂窝模组电池功能API实现接口。</div></div>
+<div class="ttc" id="atkl__cellular__vbat_8h_html_a6437862b19e0e292e14933bedf93f140"><div class="ttname"><a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a6437862b19e0e292e14933bedf93f140">TKL_CELLULAR_VBAT_CHARGE_CB</a></div><div class="ttdeci">VOID(* TKL_CELLULAR_VBAT_CHARGE_CB)(TKL_CELLULAR_VBAT_CHG_MSG_T msg)</div><div class="ttdoc">电池及充电器消息回调函数原型定义</div><div class="ttdef"><b>Definition:</b> tkl_cellular_vbat.h:53</div></div>
+<div class="ttc" id="atkl__cellular__vbat_8h_html_a676332eef29dcf8177f19836a6ccfa29"><div class="ttname"><a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a676332eef29dcf8177f19836a6ccfa29">TKL_CELLULAR_VBAT_CHG_STATE_E</a></div><div class="ttdeci">TKL_CELLULAR_VBAT_CHG_STATE_E</div><div class="ttdoc">充电器状态定义</div><div class="ttdef"><b>Definition:</b> tkl_cellular_vbat.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

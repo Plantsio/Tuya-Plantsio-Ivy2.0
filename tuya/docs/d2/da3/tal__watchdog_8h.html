@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_driver/include/tal_watchdog.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_906c4c3ed099bad31e4bc78f92b52408.html">tal_driver</a></li><li class="navelem"><a class="el" href="../../dir_c31b571438c74844499576f27e4065d2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_watchdog.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the watchdog api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_watchdog.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d54/tal__watchdog_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__driver_2include_2tal__watchdog_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__driver_2include_2tal__watchdog_8h" id="ainclude_2components_2tal__driver_2include_2tal__watchdog_8h">
+<area shape="rect" title="Common process &#45; adapter the watchdog api" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/da3/tal__watchdog_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac4cc8a299c2a5f10bc3c94efdb3bff13"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/tal__watchdog_8h.html#ac4cc8a299c2a5f10bc3c94efdb3bff13">tal_watchdog_refresh</a> (VOID_T)</td></tr>
+<tr class="memdesc:ac4cc8a299c2a5f10bc3c94efdb3bff13"><td class="mdescLeft">&#160;</td><td class="mdescRight">refresh watch dog  <a href="../../d2/da3/tal__watchdog_8h.html#ac4cc8a299c2a5f10bc3c94efdb3bff13">更多...</a><br /></td></tr>
+<tr class="separator:ac4cc8a299c2a5f10bc3c94efdb3bff13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f56577a568b3211c31fbf294eacef7"><td class="memItemLeft" align="right" valign="top">UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/tal__watchdog_8h.html#ae1f56577a568b3211c31fbf294eacef7">tal_watchdog_start</a> (<a class="el" href="../../de/d90/structTUYA__WDOG__BASE__CFG__T.html">TUYA_WDOG_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:ae1f56577a568b3211c31fbf294eacef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">watchdog start  <a href="../../d2/da3/tal__watchdog_8h.html#ae1f56577a568b3211c31fbf294eacef7">更多...</a><br /></td></tr>
+<tr class="separator:ae1f56577a568b3211c31fbf294eacef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0aec3105803e03547b1e71ed0435d79"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/tal__watchdog_8h.html#ad0aec3105803e03547b1e71ed0435d79">tal_watchdog_stop</a> (VOID_T)</td></tr>
+<tr class="memdesc:ad0aec3105803e03547b1e71ed0435d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">watchdog stop  <a href="../../d2/da3/tal__watchdog_8h.html#ad0aec3105803e03547b1e71ed0435d79">更多...</a><br /></td></tr>
+<tr class="separator:ad0aec3105803e03547b1e71ed0435d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the watchdog api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-25</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ac4cc8a299c2a5f10bc3c94efdb3bff13" name="ac4cc8a299c2a5f10bc3c94efdb3bff13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cc8a299c2a5f10bc3c94efdb3bff13">&#9670;&nbsp;</a></span>tal_watchdog_refresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_watchdog_refresh </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>refresh watch dog </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae1f56577a568b3211c31fbf294eacef7" name="ae1f56577a568b3211c31fbf294eacef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f56577a568b3211c31fbf294eacef7">&#9670;&nbsp;</a></span>tal_watchdog_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32_T tal_watchdog_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d90/structTUYA__WDOG__BASE__CFG__T.html">TUYA_WDOG_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>watchdog start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>watchdog config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&gt;0 on success. Others on error </dd></dl>
+
+</div>
+</div>
+<a id="ad0aec3105803e03547b1e71ed0435d79" name="ad0aec3105803e03547b1e71ed0435d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0aec3105803e03547b1e71ed0435d79">&#9670;&nbsp;</a></span>tal_watchdog_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_watchdog_stop </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>watchdog stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

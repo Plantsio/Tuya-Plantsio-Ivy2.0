@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_wifi_ffc/include/ffc_app.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_ca052e23af2853aae381b8ded06cea25.html">svc_wifi_ffc</a></li><li class="navelem"><a class="el" href="../../dir_eebfcbb7b675e67fafb98b42332d00a4.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ffc_app.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d86/ffc__app_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TUYA_FFC_APP_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TUYA_FFC_APP_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define FFC_MASTER                    0x01</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define FFC_SLAVER                    0x02</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define FFC_LOWPOWER_EVENT            &quot;ffc.lowpower&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    FFC_INIT_STATE = 0,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    FFC_CONTROL_STATE,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    FFC_BINDING_BEGIN_STATE,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    FFC_BINDING_SUCCESS_STATE,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    FFC_BINDING_FINSH_STATE,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} ffc_cb_state_t;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">typedef</span> int (*ffc_status_cb)(ffc_cb_state_t state);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">typedef</span> int (*ffc_recv_cb)(uint8_t *data_cmd, uint16_t data_len);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d2/d86/ffc__app_8h.html#adfefaa49af42087a1c994f508dadf785">   37</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    FFC_MASTER_TYPE_LOCAL    = 0,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    FFC_MASTER_TYPE_FITTINGS = 1,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    FFC_MASTER_TYPE_DEVICE   = 2,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    FFC_MASTER_TYPE_ONLINE   = FFC_MASTER_TYPE_DEVICE,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    FFC_MASTER_TYPE_MAX,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_enumeration" href="../../d2/d86/ffc__app_8h.html#adfefaa49af42087a1c994f508dadf785">ffc_master_type_t</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    FFC_FITTINGS_SYNC_EVENT,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    FFC_FITTINGS_ACTIVE_EVENT,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} ffc_fittings_event_t;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d8/d9a/structffc__fittings__msg__t.html">   50</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    ffc_fittings_event_t    event;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_enumeration" href="../../d2/d86/ffc__app_8h.html#adfefaa49af42087a1c994f508dadf785">ffc_master_type_t</a>       type;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    uint8_t                 mac[6];</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    uint8_t                 key[16];</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    uint16_t                seq;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    uint8_t                 uuid[25 + 1];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    uint8_t                 pid[20 + 1];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <a class="code hl_struct" href="../../d8/d9a/structffc__fittings__msg__t.html">ffc_fittings_msg_t</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">typedef</span> int (*ffc_fittings_cb)(<a class="code hl_struct" href="../../d8/d9a/structffc__fittings__msg__t.html">ffc_fittings_msg_t</a> *msg);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    FFC_GROUP_0 = 0x00,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    FFC_GROUP_1,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    FFC_GROUP_2,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    FFC_GROUP_3,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    FFC_GROUP_MAX,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} ffc_group_t;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    FFC_CHANNEL_SCAN_FLAG   = 0x01,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    FFC_MASTER_GROUP_SET_FLAG,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    FFC_MASTER_TYPE_SET_FLAG,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>} ffc_flag_t;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html">   79</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#ae88a070581dced5db5bc505a40f3e4e6">   81</a></span>    uint8_t     uuid[25 + 1];</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#aa0f7a60c1b60b78ce6e94ebf71209c01">   83</a></span>    uint8_t     pid[20 + 1];</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#ac44d768d6676781df4ac4579baf07862">   85</a></span>    uint8_t     auzkey[32 + 1];</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#a395a9b078746fd516abae4845feb1836">   87</a></span>    uint8_t     mac[6];</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#aab436d6e568f4417c4a88575572ede79">   89</a></span>    uint8_t     channel[13];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#a4801e76960a11a65d385d40719623611">   91</a></span>    uint8_t     <a class="code hl_variable" href="../../d4/d8f/structffc__cfg__t.html#a4801e76960a11a65d385d40719623611">channel_count</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d4/d8f/structffc__cfg__t.html#afdb0577c57b26fc753a13c0e4fdc62b9">   93</a></span>    uint32_t    <a class="code hl_variable" href="../../d4/d8f/structffc__cfg__t.html#afdb0577c57b26fc753a13c0e4fdc62b9">flag</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>} <a class="code hl_struct" href="../../d4/d8f/structffc__cfg__t.html">ffc_cfg_t</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d3/d03/structffc__ops__t.html">   99</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d3/d03/structffc__ops__t.html#a1ad4a080b7a2f2c489eba6cefeafc266">  101</a></span>    int (*channel_set)(uint8_t new_channel);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d3/d03/structffc__ops__t.html#a4be7058cb968d8da4ff62051e372ccef">  103</a></span>    uint8_t (*channel_get)(void);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d3/d03/structffc__ops__t.html#aa0ba636317cbc38a8a8a982856a90472">  105</a></span>    int (*send_frame)(uint8_t *frame, uint16_t frame_len, uint8_t src_mac[6], uint8_t dst_mac[6]);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>} <a class="code hl_struct" href="../../d3/d03/structffc__ops__t.html">ffc_ops_t</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d8/d30/structffc__cb__t.html">  111</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d8/d30/structffc__cb__t.html#a61550a8f49eef5726e0539b2f93c7c40">  113</a></span>    ffc_status_cb   status_cb;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d8/d30/structffc__cb__t.html#a10933948ead4a4c4313ce96bff2e34e8">  115</a></span>    ffc_recv_cb     recv_cb;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d8/d30/structffc__cb__t.html#ac1c65b12f593b602d226df53cebcf671">  117</a></span>    ffc_fittings_cb  fittings_cb;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>} <a class="code hl_struct" href="../../d8/d30/structffc__cb__t.html">ffc_cb_t</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d2/d86/ffc__app_8h.html#a10fabe1367265257573d1ba2b14459fb">  131</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d86/ffc__app_8h.html#a10fabe1367265257573d1ba2b14459fb">tuya_iot_wifi_ffc_init</a>(uint8_t role, ffc_status_cb *status_cb, ffc_recv_cb *recv_cb);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../d2/d86/ffc__app_8h.html#acca6aabf14dbc0a0a7c4d26b2a68c562">  141</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d86/ffc__app_8h.html#acca6aabf14dbc0a0a7c4d26b2a68c562">tuya_iot_wifi_ffc_bind</a>(uint16_t timeout_s);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d2/d86/ffc__app_8h.html#ad03f71826d40fa32e4c9d666a01c3e85">  151</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d86/ffc__app_8h.html#ad03f71826d40fa32e4c9d666a01c3e85">tuya_iot_wifi_ffc_unbind</a>(uint16_t timeout_s);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d2/d86/ffc__app_8h.html#af5f8d01f74daae3d0681fcd3d2d8d0ee">  162</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d86/ffc__app_8h.html#af5f8d01f74daae3d0681fcd3d2d8d0ee">tuya_iot_wifi_ffc_send</a>(uint8_t *data, uint16_t len);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="../../d2/d86/ffc__app_8h.html#a2905304c1c35795eabb7bbdad453c8b3">  173</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d2/d86/ffc__app_8h.html#a2905304c1c35795eabb7bbdad453c8b3">tuya_iot_wifi_ffc_control</a>(<span class="keywordtype">int</span> flag, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">#define ffc_init        tuya_iot_wifi_ffc_init</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#define ffc_bind        tuya_iot_wifi_ffc_bind</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">#define ffc_unbind      tuya_iot_wifi_ffc_unbind</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">#define ffc_send        tuya_iot_wifi_ffc_send</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#define ffc_control     tuya_iot_wifi_ffc_control</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="ttc" id="affc__app_8h_html_a10fabe1367265257573d1ba2b14459fb"><div class="ttname"><a href="../../d2/d86/ffc__app_8h.html#a10fabe1367265257573d1ba2b14459fb">tuya_iot_wifi_ffc_init</a></div><div class="ttdeci">int tuya_iot_wifi_ffc_init(uint8_t role, ffc_status_cb *status_cb, ffc_recv_cb *recv_cb)</div><div class="ttdoc">ffc init function,must called first</div></div>
+<div class="ttc" id="affc__app_8h_html_a2905304c1c35795eabb7bbdad453c8b3"><div class="ttname"><a href="../../d2/d86/ffc__app_8h.html#a2905304c1c35795eabb7bbdad453c8b3">tuya_iot_wifi_ffc_control</a></div><div class="ttdeci">int tuya_iot_wifi_ffc_control(int flag, void *data)</div><div class="ttdoc">ffc control</div></div>
+<div class="ttc" id="affc__app_8h_html_acca6aabf14dbc0a0a7c4d26b2a68c562"><div class="ttname"><a href="../../d2/d86/ffc__app_8h.html#acca6aabf14dbc0a0a7c4d26b2a68c562">tuya_iot_wifi_ffc_bind</a></div><div class="ttdeci">int tuya_iot_wifi_ffc_bind(uint16_t timeout_s)</div><div class="ttdoc">ffc bind function</div></div>
+<div class="ttc" id="affc__app_8h_html_ad03f71826d40fa32e4c9d666a01c3e85"><div class="ttname"><a href="../../d2/d86/ffc__app_8h.html#ad03f71826d40fa32e4c9d666a01c3e85">tuya_iot_wifi_ffc_unbind</a></div><div class="ttdeci">int tuya_iot_wifi_ffc_unbind(uint16_t timeout_s)</div><div class="ttdoc">ffc unbind function</div></div>
+<div class="ttc" id="affc__app_8h_html_adfefaa49af42087a1c994f508dadf785"><div class="ttname"><a href="../../d2/d86/ffc__app_8h.html#adfefaa49af42087a1c994f508dadf785">ffc_master_type_t</a></div><div class="ttdeci">ffc_master_type_t</div><div class="ttdoc">FFC_MASTER_TYPE_LOCAL -&gt; FFC_MASTER_TYPE_FITTINGS</div><div class="ttdef"><b>Definition:</b> ffc_app.h:37</div></div>
+<div class="ttc" id="affc__app_8h_html_af5f8d01f74daae3d0681fcd3d2d8d0ee"><div class="ttname"><a href="../../d2/d86/ffc__app_8h.html#af5f8d01f74daae3d0681fcd3d2d8d0ee">tuya_iot_wifi_ffc_send</a></div><div class="ttdeci">int tuya_iot_wifi_ffc_send(uint8_t *data, uint16_t len)</div><div class="ttdoc">ffc send</div></div>
+<div class="ttc" id="astructffc__cb__t_html"><div class="ttname"><a href="../../d8/d30/structffc__cb__t.html">ffc_cb_t</a></div><div class="ttdoc">callback define when ffc init</div><div class="ttdef"><b>Definition:</b> ffc_app.h:111</div></div>
+<div class="ttc" id="astructffc__cfg__t_html"><div class="ttname"><a href="../../d4/d8f/structffc__cfg__t.html">ffc_cfg_t</a></div><div class="ttdoc">ffc configure struct</div><div class="ttdef"><b>Definition:</b> ffc_app.h:79</div></div>
+<div class="ttc" id="astructffc__cfg__t_html_a4801e76960a11a65d385d40719623611"><div class="ttname"><a href="../../d4/d8f/structffc__cfg__t.html#a4801e76960a11a65d385d40719623611">ffc_cfg_t::channel_count</a></div><div class="ttdeci">uint8_t channel_count</div><div class="ttdef"><b>Definition:</b> ffc_app.h:91</div></div>
+<div class="ttc" id="astructffc__cfg__t_html_afdb0577c57b26fc753a13c0e4fdc62b9"><div class="ttname"><a href="../../d4/d8f/structffc__cfg__t.html#afdb0577c57b26fc753a13c0e4fdc62b9">ffc_cfg_t::flag</a></div><div class="ttdeci">uint32_t flag</div><div class="ttdef"><b>Definition:</b> ffc_app.h:93</div></div>
+<div class="ttc" id="astructffc__fittings__msg__t_html"><div class="ttname"><a href="../../d8/d9a/structffc__fittings__msg__t.html">ffc_fittings_msg_t</a></div><div class="ttdef"><b>Definition:</b> ffc_app.h:50</div></div>
+<div class="ttc" id="astructffc__ops__t_html"><div class="ttname"><a href="../../d3/d03/structffc__ops__t.html">ffc_ops_t</a></div><div class="ttdoc">ffc operation struct</div><div class="ttdef"><b>Definition:</b> ffc_app.h:99</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

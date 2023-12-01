@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_tools.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_tools.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/db2/tuya__tools_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TUYA_TOOLS_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TUYA_TOOLS_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#aa065b35fc70772e6459566ea5099b64f">   28</a></span><span class="preprocessor">#define TUYA_PALIGN_DOWN(x, align)  (x &amp; ~(align-1))</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#afa4275387bf581fe6e71a1dc5026801c">   38</a></span><span class="preprocessor">#define TUYA_PALIGN_UP(x, align)    ((x + (align-1)) &amp; ~(align-1))</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#ace2cab6abdb14c238421da598a8287e5">   48</a></span>SIZE_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#ace2cab6abdb14c238421da598a8287e5">tuya_strlen</a>(<span class="keyword">const</span> CHAR_T *str);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a7143476846d7e5f5a3af7c15d5087183">   58</a></span>CHAR_T *<a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a7143476846d7e5f5a3af7c15d5087183">tuya_strcpy</a>(CHAR_T *dst, <span class="keyword">const</span> CHAR_T *src);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#afc2508f048da824eab679825783c300e">   68</a></span>CHAR_T *<a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#afc2508f048da824eab679825783c300e">tuya_strcat</a>(CHAR_T* dst, <span class="keyword">const</span> CHAR_T* src);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a28bd09e16bac0198c7c5a62492e035f3">   79</a></span>INT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a28bd09e16bac0198c7c5a62492e035f3">tuya_strncasecmp</a>(<span class="keyword">const</span> CHAR_T *s1, <span class="keyword">const</span> CHAR_T *s2, SIZE_T n);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#adbef781945c42f8364d3b36324ce306b">   89</a></span>INT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#adbef781945c42f8364d3b36324ce306b">tuya_strcmp</a>(<span class="keyword">const</span> CHAR_T *src, <span class="keyword">const</span> CHAR_T *dst);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#ae353c29c6794c737f9f4db2c79be26cf">   98</a></span>UCHAR_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#ae353c29c6794c737f9f4db2c79be26cf">tuya_asc2hex</a>(CHAR_T asccode);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a7a578657970eea807c779e9e594187bf">  109</a></span>VOID_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a7a578657970eea807c779e9e594187bf">tuya_ascs2hex</a>(UCHAR_T *hex, UCHAR_T *ascs, INT_T srclen);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a682820dfdfff8aff52acd2751f28dc5a">  121</a></span>VOID_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a682820dfdfff8aff52acd2751f28dc5a">tuya_hex2str</a>(UCHAR_T *str, UCHAR_T *hex, INT_T hexlen);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a77220a597f3e35f3286edcd8d1ad2b93">  133</a></span>BOOL_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a77220a597f3e35f3286edcd8d1ad2b93">tuya_str2num</a>(UINT_T *number, <span class="keyword">const</span> CHAR_T *str, UINT8_T strlen);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a878aed8614f9b4fa68b441d094eaa544">  144</a></span>UINT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a878aed8614f9b4fa68b441d094eaa544">tuya_int2intArray</a>(UINT_T num, UINT8_T *intArray, UINT8_T len);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a7850804bf07c31f67c8abd370b7408e1">  155</a></span>UINT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a7850804bf07c31f67c8abd370b7408e1">tuya_intArray2int</a>(UINT8_T *intArray, UINT_T index, UINT8_T len);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a41fb44d9a5372fe6dfb20b6fed0c1dc0">  164</a></span>VOID_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a41fb44d9a5372fe6dfb20b6fed0c1dc0">tuya_buff_reverse</a>(UINT8_T *buf, UINT16_T len);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#aa9d36207b85a9adb75801dfc9fd2539c">  174</a></span>VOID_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#aa9d36207b85a9adb75801dfc9fd2539c">tuya_data_reverse</a>(UINT8_T *dst, UINT8_T *src, UINT16_T srclen);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#af800f4fb5d8ad36aa44edca3ad2138b0">  185</a></span>VOID_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#af800f4fb5d8ad36aa44edca3ad2138b0">tuya_byte_sort</a>(UCHAR_T is_ascend, UCHAR_T *buf, INT_T len);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a4ff8d1473983702005786d5987895c40">  196</a></span>INT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a4ff8d1473983702005786d5987895c40">tuya_find_char_with_reverse_idx</a>(<span class="keyword">const</span> CHAR_T *str, <span class="keyword">const</span> INT_T index, <span class="keyword">const</span> CHAR_T ch);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a4743f9b756e0a3fca94ae5d74c1574fe">  205</a></span>UINT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a4743f9b756e0a3fca94ae5d74c1574fe">tuya_bit1_count</a>(UINT_T num);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a2d55aeb1df1e69241e0f5390438587b1">  214</a></span>UINT_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a2d55aeb1df1e69241e0f5390438587b1">tuya_leading_zeros_count</a>(UINT_T num);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a0a0ab066ca5423f506b6639610edcdf7">  224</a></span>UINT8_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a0a0ab066ca5423f506b6639610edcdf7">tuya_check_sum8</a>(UINT8_T *buf, UINT32_T len);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="../../d3/db2/tuya__tools_8h.html#a6ccf05bfcfc42731422161eed546a5b4">  234</a></span>UINT16_T <a class="code hl_function" href="../../d3/db2/tuya__tools_8h.html#a6ccf05bfcfc42731422161eed546a5b4">tuya_check_sum16</a>(UINT8_T *buf, UINT32_T len);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="ttc" id="atuya__tools_8h_html_a0a0ab066ca5423f506b6639610edcdf7"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a0a0ab066ca5423f506b6639610edcdf7">tuya_check_sum8</a></div><div class="ttdeci">UINT8_T tuya_check_sum8(UINT8_T *buf, UINT32_T len)</div><div class="ttdoc">8-bit cumulative checksum calculation</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a28bd09e16bac0198c7c5a62492e035f3"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a28bd09e16bac0198c7c5a62492e035f3">tuya_strncasecmp</a></div><div class="ttdeci">INT_T tuya_strncasecmp(const CHAR_T *s1, const CHAR_T *s2, SIZE_T n)</div><div class="ttdoc">compare the first n characters of two string</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a2d55aeb1df1e69241e0f5390438587b1"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a2d55aeb1df1e69241e0f5390438587b1">tuya_leading_zeros_count</a></div><div class="ttdeci">UINT_T tuya_leading_zeros_count(UINT_T num)</div><div class="ttdoc">the software calculates the number of leading zeros</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a41fb44d9a5372fe6dfb20b6fed0c1dc0"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a41fb44d9a5372fe6dfb20b6fed0c1dc0">tuya_buff_reverse</a></div><div class="ttdeci">void tuya_buff_reverse(UINT8_T *buf, UINT16_T len)</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a4743f9b756e0a3fca94ae5d74c1574fe"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a4743f9b756e0a3fca94ae5d74c1574fe">tuya_bit1_count</a></div><div class="ttdeci">UINT_T tuya_bit1_count(UINT_T num)</div><div class="ttdoc">calculate the number of bits 1 in a number</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a4ff8d1473983702005786d5987895c40"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a4ff8d1473983702005786d5987895c40">tuya_find_char_with_reverse_idx</a></div><div class="ttdeci">INT_T tuya_find_char_with_reverse_idx(const CHAR_T *str, const INT_T index, const CHAR_T ch)</div><div class="ttdoc">find &lt;ch&gt; in &lt;str&gt;, start find in index &lt;revr_index&gt;, find in reverse order.</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a682820dfdfff8aff52acd2751f28dc5a"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a682820dfdfff8aff52acd2751f28dc5a">tuya_hex2str</a></div><div class="ttdeci">void tuya_hex2str(UCHAR_T *str, UCHAR_T *hex, INT_T hexlen)</div><div class="ttdoc">convert the input hex array to string array</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a6ccf05bfcfc42731422161eed546a5b4"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a6ccf05bfcfc42731422161eed546a5b4">tuya_check_sum16</a></div><div class="ttdeci">UINT16_T tuya_check_sum16(UINT8_T *buf, UINT32_T len)</div><div class="ttdoc">16-bit cumulative checksum calculation</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a7143476846d7e5f5a3af7c15d5087183"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a7143476846d7e5f5a3af7c15d5087183">tuya_strcpy</a></div><div class="ttdeci">CHAR_T * tuya_strcpy(CHAR_T *dst, const CHAR_T *src)</div><div class="ttdoc">string copy</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a77220a597f3e35f3286edcd8d1ad2b93"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a77220a597f3e35f3286edcd8d1ad2b93">tuya_str2num</a></div><div class="ttdeci">BOOL_T tuya_str2num(UINT_T *number, const CHAR_T *str, UINT8_T strlen)</div><div class="ttdoc">convert the input string to number</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a7850804bf07c31f67c8abd370b7408e1"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a7850804bf07c31f67c8abd370b7408e1">tuya_intArray2int</a></div><div class="ttdeci">UINT_T tuya_intArray2int(UINT8_T *intArray, UINT_T index, UINT8_T len)</div><div class="ttdoc">int array convert to a int number</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a7a578657970eea807c779e9e594187bf"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a7a578657970eea807c779e9e594187bf">tuya_ascs2hex</a></div><div class="ttdeci">void tuya_ascs2hex(UCHAR_T *hex, UCHAR_T *ascs, INT_T srclen)</div><div class="ttdoc">convert the hex character array to hex array</div></div>
+<div class="ttc" id="atuya__tools_8h_html_a878aed8614f9b4fa68b441d094eaa544"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#a878aed8614f9b4fa68b441d094eaa544">tuya_int2intArray</a></div><div class="ttdeci">UINT_T tuya_int2intArray(UINT_T num, UINT8_T *intArray, UINT8_T len)</div><div class="ttdoc">int number convert to buff</div></div>
+<div class="ttc" id="atuya__tools_8h_html_aa9d36207b85a9adb75801dfc9fd2539c"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#aa9d36207b85a9adb75801dfc9fd2539c">tuya_data_reverse</a></div><div class="ttdeci">void tuya_data_reverse(UINT8_T *dst, UINT8_T *src, UINT16_T srclen)</div></div>
+<div class="ttc" id="atuya__tools_8h_html_ace2cab6abdb14c238421da598a8287e5"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#ace2cab6abdb14c238421da598a8287e5">tuya_strlen</a></div><div class="ttdeci">SIZE_T tuya_strlen(const CHAR_T *str)</div><div class="ttdoc">string len</div></div>
+<div class="ttc" id="atuya__tools_8h_html_adbef781945c42f8364d3b36324ce306b"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#adbef781945c42f8364d3b36324ce306b">tuya_strcmp</a></div><div class="ttdeci">INT_T tuya_strcmp(const CHAR_T *src, const CHAR_T *dst)</div><div class="ttdoc">compare characters of two string</div></div>
+<div class="ttc" id="atuya__tools_8h_html_ae353c29c6794c737f9f4db2c79be26cf"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#ae353c29c6794c737f9f4db2c79be26cf">tuya_asc2hex</a></div><div class="ttdeci">UCHAR_T tuya_asc2hex(CHAR_T asccode)</div><div class="ttdoc">convert character to hex, if '0'-'f'/'F' -&gt; 0-15, else 0</div></div>
+<div class="ttc" id="atuya__tools_8h_html_af800f4fb5d8ad36aa44edca3ad2138b0"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#af800f4fb5d8ad36aa44edca3ad2138b0">tuya_byte_sort</a></div><div class="ttdeci">void tuya_byte_sort(UCHAR_T is_ascend, UCHAR_T *buf, INT_T len)</div><div class="ttdoc">sort the CHAR_T in the buf according ascii value</div></div>
+<div class="ttc" id="atuya__tools_8h_html_afc2508f048da824eab679825783c300e"><div class="ttname"><a href="../../d3/db2/tuya__tools_8h.html#afc2508f048da824eab679825783c300e">tuya_strcat</a></div><div class="ttdeci">CHAR_T * tuya_strcat(CHAR_T *dst, const CHAR_T *src)</div><div class="ttdoc">string cat</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

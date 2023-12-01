@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_hashmap.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_hashmap.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/de7/tuya__hashmap_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TUYA_HASHMAP_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TUYA_HASHMAP_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#a1c145b99fddeb41f4d328bc972cc7285">   24</a></span><span class="preprocessor">#define MAP_MISSING -2  </span><span class="comment">/* No such element */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define MAP_OMEM -1     </span><span class="comment">/* Out of Memory */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define MAP_OK 0    </span><span class="comment">/* OK */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">   32</a></span><span class="keyword">typedef</span> VOID_T *<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">   39</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">   45</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> *<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">ANY_T_ITER</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#af204a4b755889d5e1a266ba5430bbdf5">   53</a></span><a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#af204a4b755889d5e1a266ba5430bbdf5">tuya_hashmap_new</a>(UINT_T table_size);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#a6a5d546bc51dea0e98cd402c550af915">   66</a></span>INT_T <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#a6a5d546bc51dea0e98cd402c550af915">tuya_hashmap_put</a>(<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, CONST CHAR_T* key ,CONST <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> data);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#afbcbff6b355275367455b0028b955c9e">   76</a></span>INT_T <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#afbcbff6b355275367455b0028b955c9e">tuya_hashmap_get</a>(<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, CONST CHAR_T* key, <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> *arg);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#ae6844fc281512ea4cf53047c12560d5e">   88</a></span>INT_T <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#ae6844fc281512ea4cf53047c12560d5e">tuya_hashmap_data_traversal</a>(<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, CONST CHAR_T* key, <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">ANY_T_ITER</a> *arg_iterator);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#a084e3085f0617a188a6a0a0acaa0e935">   94</a></span><span class="preprocessor">#define TUYA_HASHMAP_FOR_EACH_DATA(in, key, data_iter) \</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">    for(data_iter = NULL; tuya_hashmap_data_traversal(in, key, (ANY_T_ITER *)&amp;data_iter) == MAP_OK; </span><span class="comment">/*empty*/</span><span class="preprocessor">)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#ae0e5c9a1300896281541f08563c6d7d2">  108</a></span>INT_T <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#ae0e5c9a1300896281541f08563c6d7d2">tuya_hashmap_remove</a>(<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in, CHAR_T* key, <a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a> data);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#a48f8bc4a832cf48cb4d1a87d9a624658">  117</a></span>VOID_T <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#a48f8bc4a832cf48cb4d1a87d9a624658">tuya_hashmap_free</a>(<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../de/de7/tuya__hashmap_8h.html#ab94d05504fcc53ca2ba684c828760e0d">  125</a></span>INT_T <a class="code hl_function" href="../../de/de7/tuya__hashmap_8h.html#ab94d05504fcc53ca2ba684c828760e0d">tuya_hashmap_length</a>(<a class="code hl_typedef" href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a> in);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif </span><span class="comment">// __HASHMAP_H__</span></div>
+<div class="ttc" id="atuya__hashmap_8h_html_a48f8bc4a832cf48cb4d1a87d9a624658"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#a48f8bc4a832cf48cb4d1a87d9a624658">tuya_hashmap_free</a></div><div class="ttdeci">void tuya_hashmap_free(MAP_T in)</div><div class="ttdoc">free the hashmap</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_a63a42c2de7a032134a456b74484c480c"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#a63a42c2de7a032134a456b74484c480c">ANY_T</a></div><div class="ttdeci">void * ANY_T</div><div class="ttdoc">any_t is a pointer. This allows you to put arbitrary structures in the hashmap.</div><div class="ttdef"><b>Definition:</b> tuya_hashmap.h:32</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_a6a5d546bc51dea0e98cd402c550af915"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#a6a5d546bc51dea0e98cd402c550af915">tuya_hashmap_put</a></div><div class="ttdeci">INT_T tuya_hashmap_put(MAP_T in, const CHAR_T *key, const ANY_T data)</div><div class="ttdoc">Add an element to the hashmap</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_a94d5478f91cf4ed8b9b163ef53b52497"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#a94d5478f91cf4ed8b9b163ef53b52497">MAP_T</a></div><div class="ttdeci">ANY_T MAP_T</div><div class="ttdoc">map_t is a pointer to an internally maintained data structure. Clients of this package do not need to...</div><div class="ttdef"><b>Definition:</b> tuya_hashmap.h:39</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_aa68c545b97bbd1694aac93a6d3e756da"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#aa68c545b97bbd1694aac93a6d3e756da">ANY_T_ITER</a></div><div class="ttdeci">ANY_T * ANY_T_ITER</div><div class="ttdoc">any_t_iter is a iterator which used to traverse the hashmap</div><div class="ttdef"><b>Definition:</b> tuya_hashmap.h:45</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_ab94d05504fcc53ca2ba684c828760e0d"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#ab94d05504fcc53ca2ba684c828760e0d">tuya_hashmap_length</a></div><div class="ttdeci">INT_T tuya_hashmap_length(MAP_T in)</div><div class="ttdoc">get current size of the hashmap</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_ae0e5c9a1300896281541f08563c6d7d2"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#ae0e5c9a1300896281541f08563c6d7d2">tuya_hashmap_remove</a></div><div class="ttdeci">INT_T tuya_hashmap_remove(MAP_T in, CHAR_T *key, ANY_T data)</div><div class="ttdoc">remove an element from the hashmap</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_ae6844fc281512ea4cf53047c12560d5e"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#ae6844fc281512ea4cf53047c12560d5e">tuya_hashmap_data_traversal</a></div><div class="ttdeci">INT_T tuya_hashmap_data_traversal(MAP_T in, const CHAR_T *key, ANY_T_ITER *arg_iterator)</div><div class="ttdoc">traverse all data with same key</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_af204a4b755889d5e1a266ba5430bbdf5"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#af204a4b755889d5e1a266ba5430bbdf5">tuya_hashmap_new</a></div><div class="ttdeci">MAP_T tuya_hashmap_new(UINT_T table_size)</div><div class="ttdoc">create a new empty hashmap</div></div>
+<div class="ttc" id="atuya__hashmap_8h_html_afbcbff6b355275367455b0028b955c9e"><div class="ttname"><a href="../../de/de7/tuya__hashmap_8h.html#afbcbff6b355275367455b0028b955c9e">tuya_hashmap_get</a></div><div class="ttdeci">INT_T tuya_hashmap_get(MAP_T in, const CHAR_T *key, ANY_T *arg)</div><div class="ttdoc">get an element from the hashmap</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

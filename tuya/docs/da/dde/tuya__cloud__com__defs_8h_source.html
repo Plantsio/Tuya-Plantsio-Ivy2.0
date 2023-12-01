@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_devos/include/tuya_cloud_com_defs.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c5ad9f57be95c42b41325f1bc9ebae91.html">svc_devos</a></li><li class="navelem"><a class="el" href="../../dir_11ce8152c603a5102f0c89f0ddb7981a.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_cloud_com_defs.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef TUYA_CLOUD_COM_DEFS_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define TUYA_CLOUD_COM_DEFS_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;ty_cJSON.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// tuya sdk constants definitions</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define ENCRYPT_KEY_LEN         16      </span><span class="comment">// max string length of storage encrypt</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define GW_UUID_LEN             25      </span><span class="comment">// max string length of UUID</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define AUTH_KEY_LEN            32      </span><span class="comment">// max string length of AUTH_KEY</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define PSK_KEY_LEN             64      </span><span class="comment">// max string length of PSK_KEY</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define PRODUCT_KEY_LEN         16      </span><span class="comment">// max string length of PRODUCT_KEY</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define SW_VER_LEN              10      </span><span class="comment">// max string length of VERSION</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define SW_MD5_LEN              32      </span><span class="comment">// max string length of attatch MD5</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define BT_HID_LEN              19      </span><span class="comment">// max string length of HID</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define BT_MAC_LEN              12      </span><span class="comment">// max string length of MAC</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define TUYA_PSK_LEN            32      </span><span class="comment">// max string length of PSK</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define TUYA_PSK21_LEN          44      </span><span class="comment">// max string length of PSK21</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define TUYA_IMEI_LEN           18      </span><span class="comment">// max string length of IMEI</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define TUYA_SN_LEN             20      </span><span class="comment">// max string length of SN</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define SYS_ENV_LEN             20      </span><span class="comment">// max string length of ENV</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define LOG_SEQ_PATH_LEN        128     </span><span class="comment">// max string length of LOG SEQ PATH</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define GW_ID_LEN               25      </span><span class="comment">// max string length of GW_ID</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define DEV_UUID_LEN            25      </span><span class="comment">// max string length of DEV UUID</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define DEV_ID_LEN              25      </span><span class="comment">// max string length of DEV_ID</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define SCHEMA_ID_LEN           16      </span><span class="comment">// max string length of SCHEMA</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define SCHEMA_VER_LEN          16      </span><span class="comment">// max string length of SCHEMA VERSION</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#define BIND_TOKEN_LEN          16      </span><span class="comment">// max string length of BIND_TOKEN</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#define TOKEN_LEN               8       </span><span class="comment">// max string length of TOKEN</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define REGION_LEN              2       </span><span class="comment">// max string length of REGIN IN TOKEN</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define REGIST_KEY_LEN          4       </span><span class="comment">// max string length of REGIST_KEY IN TOKEN</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define HTTP_URL_LMT            128     </span><span class="comment">// max string length of URL</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define MQ_URL_LMT              128     </span><span class="comment">// max string length of MQTT_URL</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define TIME_ZONE_LEN           10      </span><span class="comment">// max string length of TIME_ZONE</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define SUMMER_TM_ZONE_LEN      256     </span><span class="comment">// max string length of SUMMER_TIME_ZONE</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#define COUNTRY_CODE_LEN        8       </span><span class="comment">// max string length of COUNTRY_CODE</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#define COUNTRY_CODE_LEN        8       </span><span class="comment">// max string length of COUNTRY_CODE</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#define IPV4_LEN                15      </span><span class="comment">// max string length of IPV4_LEN 255.255.255.255</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#define SEC_KEY_LEN             16      </span><span class="comment">// max string length of SECURITY_KEY</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#define LOCAL_KEY_LEN           16      </span><span class="comment">// max string length of LOCAL_KEY</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#define WXAPPID_LEN             32      </span><span class="comment">// max string length of wechat_appid</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#define WXUUID_LEN              32      </span><span class="comment">// max string length of wechat_uuid</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#define GRP_ID_LEN              5       </span><span class="comment">// max string length of group id range:1-65535</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#define SCENE_ID_LEN            3       </span><span class="comment">// max string length of scene id range:1-255</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#define NET_MODE_LEN            32      </span><span class="comment">// max string length of NET MODE</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define LC_GW_SLEEP_HB_LMT_S 12*3600 </span><span class="comment">// 12h</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//group and scene error code</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define M_SCE_SUCCESS 0        </span><span class="comment">// success</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define M_SCE_ERR_EXCEED 1     </span><span class="comment">// space not enough</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define M_SCE_ERR_TIMEOUT 2    </span><span class="comment">// timeout</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define M_SCE_ERR_PARAM 3      </span><span class="comment">// param not in range</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define M_SCE_WRITE_FILE 4     </span><span class="comment">// failed to write db</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define M_SCE_ERR_OTHER 5      </span><span class="comment">// other failure</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Product Function Specification</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">typedef</span> BYTE_T GW_ABI;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define GW_VIRTUAL 0x00 </span><span class="comment">// product doesn&#39;t have subdevices functions,it only has device function. For example: SOC or MCU</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define GW_ENTITY_ATTH_DEV 0x01 </span><span class="comment">// Product has subdevices functions and it also has device function.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#define GW_ENTITY 0x02 </span><span class="comment">// Product only has subdevices functions.</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// Product Network Connection</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">typedef</span> BYTE_T GW_NW_STAT_T;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define GNS_UNVALID 0    </span><span class="comment">// product is offline in LAN and WAN</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#define GNS_LAN_VALID 1  </span><span class="comment">// product is online in LAN but offline in WAN</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define GNS_WAN_VALID 2  </span><span class="comment">// product is online in LAN and WAN</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Product Extend State</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">typedef</span> BYTE_T GW_EXT_STAT_T;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#define EXT_UNAUTH 0            </span><span class="comment">// UNAUTH</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#define EXT_PROD_TEST 1         </span><span class="comment">// PROD_TEST</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define EXT_NORMAL_S 2          </span><span class="comment">// NORMAL_S</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#define EXT_GW_UPGRD 3          </span><span class="comment">// GW_UPGRD</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#define EXT_DEV_UPGRD 4         </span><span class="comment">// DEV_UPGRD</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#define EXT_DEV_ADD 5           </span><span class="comment">// DEV_ADD</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#define EXT_REG_FAIL 6          </span><span class="comment">// REG_FAIL</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#define EXT_NET_FAIL 7          </span><span class="comment">// NET_FAIL</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#define EXT_CONFIG_BACK_UP 8    </span><span class="comment">// CONFIG_BACK_UP</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define EXT_CONFIG_RESTORE 9    </span><span class="comment">// CONFIG_RESTORE</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">typedef</span> BYTE_T DEV_TYPE_T;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#define DEV_NM_ATH_SNGL     0   </span><span class="comment">// main netlink module</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#define DEV_BLE_SNGL        1   </span><span class="comment">// ble</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#define DEV_ZB_SNGL         3   </span><span class="comment">// ZigBee</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#define DEV_NM_NOT_ATH_SNGL 9   </span><span class="comment">// MCU</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#define DEV_ATTACH_MOD_1 10     </span><span class="comment">// attach 1</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#define DEV_ATTACH_MOD_2 11     </span><span class="comment">// attach 2</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#define DEV_ATTACH_MOD_3 12     </span><span class="comment">// attach 3</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#define DEV_ATTACH_MOD_4 13     </span><span class="comment">// attach 4</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#define DEV_ATTACH_MOD_5 14     </span><span class="comment">// attach 5</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#define DEV_ATTACH_MOD_6 15     </span><span class="comment">// attach 6</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#define DEV_ATTACH_MOD_7 16     </span><span class="comment">// attach 7</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#define DEV_ATTACH_MOD_8 17     </span><span class="comment">// attach 8</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#define DEV_ATTACH_MOD_9 18     </span><span class="comment">// attach 9</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#define DEV_ATTACH_MOD_10 19    </span><span class="comment">// attach 10</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// sub-device detail type</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">typedef</span> UINT_T USER_DEV_DTL_DEF_T; <span class="comment">// user detial type define</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">typedef</span> BYTE_T GW_PERMIT_DEV_TP_T;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#define GP_DEV_DEF 0xFF                 </span><span class="comment">// default device type</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#define GP_DEV_ZB DEV_ZB_SNGL           </span><span class="comment">// zigbee</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#define GP_DEV_BLE DEV_BLE_SNGL         </span><span class="comment">// ble</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#define GP_DEV_MCU  DEV_NM_NOT_ATH_SNGL </span><span class="comment">// mcu</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#define GP_DEV_ATH_1 DEV_ATTACH_MOD_1   </span><span class="comment">// attach 1</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">#define GP_DEV_ATH_2 DEV_ATTACH_MOD_2   </span><span class="comment">// attach 2</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#define GP_DEV_ATH_3 DEV_ATTACH_MOD_3   </span><span class="comment">// attach 3</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor">#define GP_DEV_ATH_4 DEV_ATTACH_MOD_4   </span><span class="comment">// attach 4</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">#define GP_DEV_ATH_5 DEV_ATTACH_MOD_5   </span><span class="comment">// attach 5</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">#define GP_DEV_ATH_6 DEV_ATTACH_MOD_6   </span><span class="comment">// attach 6</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">#define GP_DEV_ATH_7 DEV_ATTACH_MOD_7   </span><span class="comment">// attach 7</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#define GP_DEV_ATH_8 DEV_ATTACH_MOD_8   </span><span class="comment">// attach 8</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#define GP_DEV_ATH_9 DEV_ATTACH_MOD_9   </span><span class="comment">// attach 9</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#define GP_DEV_ATH_10 DEV_ATTACH_MOD_10 </span><span class="comment">// attach 10</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#define GP_DEV_SUPPORT_MAX GP_DEV_ATH_10 </span><span class="comment">// max attach id</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">typedef</span> BYTE_T TY_DP_REPT_CHAN_TP_T;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#define TY_DP_REPT_CHAN_LAN       0</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#define TY_DP_REPT_CHAN_MQTT      1</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#define TY_DP_REPT_CHAN_HTTP      2</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#define TY_DP_REPT_CHAN_BLE       3</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#define TY_DP_REPT_CHAN_SIGMESH   4</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">#define TY_DP_REPT_CHAN_TUYA_MESH 5</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#define TY_DP_REPT_CHAN_BEACON    6</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#define TY_DP_REPT_CHAN_MAX       7</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d0/d79/structTY__INIT__PARAMS__S.html">  163</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../d0/d79/structTY__INIT__PARAMS__S.html#a6d00fd1ae54eca64625c98a5b0d6966a">  165</a></span>    BOOL_T <a class="code hl_variable" href="../../d0/d79/structTY__INIT__PARAMS__S.html#a6d00fd1ae54eca64625c98a5b0d6966a">init_db</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d0/d79/structTY__INIT__PARAMS__S.html#a504ee917c180a139bb5c2c64032aab84">  167</a></span>    CHAR_T sys_env[SYS_ENV_LEN];</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../d0/d79/structTY__INIT__PARAMS__S.html#ab21c35e39a44f3c0e465813eb3232e84">  169</a></span>    CHAR_T log_seq_path[LOG_SEQ_PATH_LEN];</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>} <a class="code hl_struct" href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">  175</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="../../d9/d56/structGW__ATTACH__ATTR__T.html#a51d1793339da5806d6c25759fe36fd71">  177</a></span>    GW_PERMIT_DEV_TP_T <a class="code hl_variable" href="../../d9/d56/structGW__ATTACH__ATTR__T.html#a51d1793339da5806d6c25759fe36fd71">tp</a>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="../../d9/d56/structGW__ATTACH__ATTR__T.html#a99a012734c428a4e8c53bc2bcb0fe4f0">  179</a></span>    CHAR_T ver[SW_VER_LEN + 1];</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    CHAR_T md5[SW_MD5_LEN + 1];</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>} <a class="code hl_struct" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#define CH_NAME_LMT 15          </span><span class="comment">// max string length of operator name</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#define CH_CODE_LMT 20          </span><span class="comment">// max string length of operator code</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#define CH_SN_LMT 20            </span><span class="comment">// max string length of device sn</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#define CH_REPORT_CODE_LMT 20   </span><span class="comment">// max string length of report code</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#define CH_MANU_ID_LMT 10       </span><span class="comment">// max string length of manufacture id</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#define CH_VERSION_LMT 10       </span><span class="comment">// max string length of sw version</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#define CH_ENCRYPT_KEY_LMT 20   </span><span class="comment">// max string length of encrypt key</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html">  194</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#a6dd25ea1ddeeb28cf4c969d9d209c5cd">  196</a></span>    CHAR_T ch_name[CH_NAME_LMT + 1];</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#ab45eabd4481507f0b918e269fcc19fb8">  198</a></span>    CHAR_T ch_code[CH_CODE_LMT + 1];</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#a799e2473cc9435ccae545a96ddbcc1d1">  200</a></span>    CHAR_T ch_sn[CH_SN_LMT + 1];</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#af5adb6288e6216faf86b3b415ccdad20">  202</a></span>    CHAR_T ch_report_code[CH_REPORT_CODE_LMT + 1];</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#a37ba12af755a61ff77e6f7715b22a34f">  204</a></span>    CHAR_T ch_manu_id[CH_MANU_ID_LMT + 1];</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#ac97fa19dd22b9ac4d08acd887395c3c1">  206</a></span>    CHAR_T ch_version[CH_VERSION_LMT + 1];</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="../../d4/d03/structCH__CODE__ST.html#ac4248ba41ad6ca0b65e5b381192e7231">  208</a></span>    CHAR_T ch_encrype_key[CH_ENCRYPT_KEY_LMT + 1];</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>} <a class="code hl_struct" href="../../d4/d03/structCH__CODE__ST.html">CH_CODE_ST</a>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../df/d86/structDEV__QOS__ST.html">  214</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="../../df/d86/structDEV__QOS__ST.html#a2f914251045bb4a7fd3274cd6509f970">  216</a></span>    USHORT_T <a class="code hl_variable" href="../../df/d86/structDEV__QOS__ST.html#a2f914251045bb4a7fd3274cd6509f970">sNodeID</a>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="../../df/d86/structDEV__QOS__ST.html#ab8c84b6eef6afdfd8facd01d660b0502">  218</a></span>    USHORT_T <a class="code hl_variable" href="../../df/d86/structDEV__QOS__ST.html#ab8c84b6eef6afdfd8facd01d660b0502">fNodeID</a>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../df/d86/structDEV__QOS__ST.html#adcdef7beb3b3c1d0c0b44300ff8b2de0">  220</a></span>    CHAR_T   <a class="code hl_variable" href="../../df/d86/structDEV__QOS__ST.html#adcdef7beb3b3c1d0c0b44300ff8b2de0">rssi</a>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="../../df/d86/structDEV__QOS__ST.html#a7e1ad5aa4e47845375d7f84c6c8d271a">  222</a></span>    UCHAR_T  <a class="code hl_variable" href="../../df/d86/structDEV__QOS__ST.html#a7e1ad5aa4e47845375d7f84c6c8d271a">lqi</a>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="../../df/d86/structDEV__QOS__ST.html#a9827617f21033f58ee12f2daa63d1310">  224</a></span>    CHAR_T   fid[DEV_ID_LEN + 1];</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>} <a class="code hl_struct" href="../../df/d86/structDEV__QOS__ST.html">DEV_QOS_ST</a>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#define GW_ATTACH_ATTR_LMT 10</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">typedef</span> BYTE_T DP_REPT_TYPE_E;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">#define T_OBJ_REPT      0           </span><span class="comment">// dp is value,str,enum,bool,bitmap</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#define T_RAW_REPT      1           </span><span class="comment">// raw type</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#define T_STAT_REPT     2           </span><span class="comment">// stat type</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#define T_RE_TRANS_REPT 10          </span><span class="comment">// repeat report</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="keyword">typedef</span> BYTE_T DP_TYPE_E;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#define T_OBJ           0           </span><span class="comment">// dp is value,str,enum,bool,bitmap</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">#define T_RAW           1           </span><span class="comment">// raw type</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#define T_FILE          2           </span><span class="comment">// file type</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="keyword">typedef</span> BYTE_T DP_MODE_E;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#define M_RW            0          </span><span class="comment">// cloud/app can read and write</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">#define M_WR            1          </span><span class="comment">// cloud/app can only write to device</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#define M_RO            2          </span><span class="comment">// cloud/app can only read from device</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">typedef</span> BYTE_T DP_PROP_TP_E;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#define PROP_BOOL 0</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#define PROP_VALUE 1</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">#define PROP_STR 2</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#define PROP_ENUM 3</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#define PROP_BITMAP 4</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">typedef</span> BYTE_T UP_MAP_TYPE_E;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="preprocessor">#define UP_CLEANER_MAP   0</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">#define UP_CLEANER_PATH  1</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#define UP_CLEANER_MAP_PATH 2</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">typedef</span> BYTE_T UPGRADE_TYPE_T;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">#define UPGRADE_TYPE_NORMAL 0</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">#define UPGRADE_TYPE_SILENT 1</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">/*局域网升级，app发送升级包到wifi设备*/</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="preprocessor">#define UPGRADE_TYPE_LAN    2</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="../../d4/dd9/structDP__PROP__VAL__S.html">  284</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="../../d4/dd9/structDP__PROP__VAL__S.html#a1c35e90b207083fd0568353b51ef4514">  286</a></span>    INT_T <a class="code hl_variable" href="../../d4/dd9/structDP__PROP__VAL__S.html#a1c35e90b207083fd0568353b51ef4514">min</a>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="../../d4/dd9/structDP__PROP__VAL__S.html#a6b3bc81c32f72be51a8ee7fa01465b6a">  288</a></span>    INT_T <a class="code hl_variable" href="../../d4/dd9/structDP__PROP__VAL__S.html#a6b3bc81c32f72be51a8ee7fa01465b6a">max</a>;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="../../d4/dd9/structDP__PROP__VAL__S.html#a3f3e4189d7cd086bb8e0c56be9cf3fff">  290</a></span>    SHORT_T <a class="code hl_variable" href="../../d4/dd9/structDP__PROP__VAL__S.html#a3f3e4189d7cd086bb8e0c56be9cf3fff">step</a>;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="../../d4/dd9/structDP__PROP__VAL__S.html#abb2fe422fdc949d2e056f885563a56ed">  292</a></span>    USHORT_T <a class="code hl_variable" href="../../d4/dd9/structDP__PROP__VAL__S.html#abb2fe422fdc949d2e056f885563a56ed">scale</a>;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="../../d4/dd9/structDP__PROP__VAL__S.html#a8224614207f0ce85a1fe83e19691217e">  294</a></span>    INT_T <a class="code hl_variable" href="../../d4/dd9/structDP__PROP__VAL__S.html#a8224614207f0ce85a1fe83e19691217e">value</a>;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>} <a class="code hl_struct" href="../../d4/dd9/structDP__PROP__VAL__S.html">DP_PROP_VAL_S</a>;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="../../d5/d87/structDP__PROP__ENUM__S.html">  300</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="../../d5/d87/structDP__PROP__ENUM__S.html#a5107552752f3efd24ab6057990243f50">  302</a></span>    INT_T <a class="code hl_variable" href="../../d5/d87/structDP__PROP__ENUM__S.html#a5107552752f3efd24ab6057990243f50">cnt</a>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="../../d5/d87/structDP__PROP__ENUM__S.html#a6f355d9b89bee541d8bc1aaec671c515">  304</a></span>    CHAR_T **<a class="code hl_variable" href="../../d5/d87/structDP__PROP__ENUM__S.html#a6f355d9b89bee541d8bc1aaec671c515">pp_enum</a>;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="../../d5/d87/structDP__PROP__ENUM__S.html#acc411b9f9f6228bb34f1835eed0aa50e">  306</a></span>    INT_T <a class="code hl_variable" href="../../d5/d87/structDP__PROP__ENUM__S.html#acc411b9f9f6228bb34f1835eed0aa50e">value</a>;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>} <a class="code hl_struct" href="../../d5/d87/structDP__PROP__ENUM__S.html">DP_PROP_ENUM_S</a>;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="../../d8/d39/structDP__PROP__STR__S.html">  312</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="../../d8/d39/structDP__PROP__STR__S.html#aaba38a99474ab9d0fc6d98d743a256cc">  314</a></span>    INT_T <a class="code hl_variable" href="../../d8/d39/structDP__PROP__STR__S.html#aaba38a99474ab9d0fc6d98d743a256cc">max_len</a>;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="../../d8/d39/structDP__PROP__STR__S.html#ac21f7ab8f80879de47e34bb374e8e8ca">  316</a></span>    INT_T <a class="code hl_variable" href="../../d8/d39/structDP__PROP__STR__S.html#ac21f7ab8f80879de47e34bb374e8e8ca">cur_len</a>;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="../../d8/d39/structDP__PROP__STR__S.html#ae26632c34c64a0f8df1a4e9f098bc085">  318</a></span>    <span class="keywordtype">void</span>* <a class="code hl_variable" href="../../d8/d39/structDP__PROP__STR__S.html#ae26632c34c64a0f8df1a4e9f098bc085">dp_str_mutex</a>;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="../../d8/d39/structDP__PROP__STR__S.html#aa6df3440713f826fde9263a4233b677e">  320</a></span>    CHAR_T *<a class="code hl_variable" href="../../d8/d39/structDP__PROP__STR__S.html#aa6df3440713f826fde9263a4233b677e">value</a>;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>} <a class="code hl_struct" href="../../d8/d39/structDP__PROP__STR__S.html">DP_PROP_STR_S</a>;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="../../da/d9b/structDP__BOOL__S.html">  326</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="../../da/d9b/structDP__BOOL__S.html#ab465e20c70de61999ff3de79e8ee8164">  328</a></span>    BOOL_T <a class="code hl_variable" href="../../da/d9b/structDP__BOOL__S.html#ab465e20c70de61999ff3de79e8ee8164">value</a>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>} <a class="code hl_struct" href="../../da/d9b/structDP__BOOL__S.html">DP_BOOL_S</a>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="../../df/d69/structDP__PROP__BITMAP.html">  334</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="../../df/d69/structDP__PROP__BITMAP.html#a606745e01908e8b1356343c7750af7c1">  336</a></span>    UINT_T <a class="code hl_variable" href="../../df/d69/structDP__PROP__BITMAP.html#a606745e01908e8b1356343c7750af7c1">max_len</a>;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="../../df/d69/structDP__PROP__BITMAP.html#a51ed772b7569761208f718e914ee75ec">  338</a></span>    UINT_T <a class="code hl_variable" href="../../df/d69/structDP__PROP__BITMAP.html#a51ed772b7569761208f718e914ee75ec">value</a>;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>} <a class="code hl_struct" href="../../df/d69/structDP__PROP__BITMAP.html">DP_PROP_BITMAP</a>;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="../../d2/d4f/unionDP__PROP__VALUE__U.html">  344</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a4057c7c707cf3857a7ab44f2ae7cdfa7">  346</a></span>    <a class="code hl_struct" href="../../d4/dd9/structDP__PROP__VAL__S.html">DP_PROP_VAL_S</a> <a class="code hl_variable" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a4057c7c707cf3857a7ab44f2ae7cdfa7">prop_value</a>;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a6c7981ea3dd063831b185ddfb68c478c">  348</a></span>    <a class="code hl_struct" href="../../d5/d87/structDP__PROP__ENUM__S.html">DP_PROP_ENUM_S</a> <a class="code hl_variable" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a6c7981ea3dd063831b185ddfb68c478c">prop_enum</a>;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#ae555312085808095850d6c9cae7728a0">  350</a></span>    <a class="code hl_struct" href="../../d8/d39/structDP__PROP__STR__S.html">DP_PROP_STR_S</a> <a class="code hl_variable" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#ae555312085808095850d6c9cae7728a0">prop_str</a>;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a8a9ed3f09aeb0de2f6d4c807247974b3">  352</a></span>    <a class="code hl_struct" href="../../da/d9b/structDP__BOOL__S.html">DP_BOOL_S</a> <a class="code hl_variable" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a8a9ed3f09aeb0de2f6d4c807247974b3">prop_bool</a>;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a4747d5fc8f60aedd744ffe9447443337">  354</a></span>    <a class="code hl_struct" href="../../df/d69/structDP__PROP__BITMAP.html">DP_PROP_BITMAP</a> <a class="code hl_variable" href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a4747d5fc8f60aedd744ffe9447443337">prop_bitmap</a>;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>} <a class="code hl_union" href="../../d2/d4f/unionDP__PROP__VALUE__U.html">DP_PROP_VALUE_U</a>;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="keyword">typedef</span> BYTE_T DP_TRIG_T_E;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">#define TRIG_PULSE      0   </span><span class="comment">// upload when value changes</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="preprocessor">#define TRIG_DIRECT     1   </span><span class="comment">// upload without value change check</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="keyword">typedef</span> BYTE_T DP_PSV_E;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">#define PSV_FALSE 0    </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="preprocessor">#define PSV_TRUE 1     </span><span class="comment">/* app hasn&#39;t query yet */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="preprocessor">#define PSV_F_ONCE 2   </span><span class="comment">/* app has queryed, shoulb report */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="keyword">typedef</span> BYTE_T DP_STAT_TP_T;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="preprocessor">#define DST_NONE 0 </span><span class="comment">// no need statistics</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="preprocessor">#define DST_INC 1 </span><span class="comment">// dp statistics increase</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="preprocessor">#define DST_TOTAL 2 </span><span class="comment">// dp statistics total</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="comment">//</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="comment"></span><span class="keyword">typedef</span> BYTE_T DP_ROUTE_T_T;</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="preprocessor">#define ROUTE_DEFAULT     0</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="preprocessor">#define ROUTE_BLE_FIRST   1</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#define ROUTE_FORCE_BT    2 </span><span class="comment">//dp transport force by ble</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html">  392</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#aefa633f7b49d26539e337140df6bb9d5">  394</a></span>    BYTE_T <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#aefa633f7b49d26539e337140df6bb9d5">dp_id</a>;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#a4731ecb3dff3133e56db17337c9fcc22">  396</a></span>    DP_MODE_E <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#a4731ecb3dff3133e56db17337c9fcc22">mode</a>;</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#a98662c616d9d08a0be6cfffdc8e0df70">  398</a></span>    DP_PSV_E <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#a98662c616d9d08a0be6cfffdc8e0df70">passive</a>;</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#a14d307d500589700628aa1a0eee25dce">  400</a></span>    DP_TYPE_E <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#a14d307d500589700628aa1a0eee25dce">type</a>;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#a99a8624fd247b8e0d2c5a09d96a950e8">  402</a></span>    DP_PROP_TP_E <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#a99a8624fd247b8e0d2c5a09d96a950e8">prop_tp</a>;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#ad5f79c33fe3c1e7452106551c67e2093">  404</a></span>    DP_TRIG_T_E <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#ad5f79c33fe3c1e7452106551c67e2093">trig_t</a>;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#af4cb7c834f29d0878dbb01b5843568bf">  406</a></span>    DP_STAT_TP_T <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#af4cb7c834f29d0878dbb01b5843568bf">stat</a>;</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="../../d0/ddb/structDP__DESC__IF__S.html#a4a1e853eb25149cf6e56a0207225dcb6">  408</a></span>    DP_ROUTE_T_T <a class="code hl_variable" href="../../d0/ddb/structDP__DESC__IF__S.html#a4a1e853eb25149cf6e56a0207225dcb6">route_t</a>;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>} <a class="code hl_struct" href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a>;</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="keyword">typedef</span> BYTE_T DP_CMD_TYPE_E;</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="preprocessor">#define DP_CMD_LAN      0       </span><span class="comment">// cmd from LAN</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="preprocessor">#define DP_CMD_MQ       1       </span><span class="comment">// cmd from MQTT</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="preprocessor">#define DP_CMD_TIMER    2       </span><span class="comment">// cmd from Local Timer</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="preprocessor">#define DP_CMD_SCENE_LINKAGE 3  </span><span class="comment">// cmd from scene linkage</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="preprocessor">#define DP_CMD_RELIABLE_TRANSFER 4 </span><span class="comment">// cmd from reliable transfer</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="preprocessor">#define DP_CMD_BT       5      </span><span class="comment">// cmd from bt</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="preprocessor">#define DP_CMD_SCENE_LINKAGE_LAN 6  </span><span class="comment">// cmd from lan scene linkage</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="preprocessor">#define DP_CMD_FFC      7       </span><span class="comment">// cmd from ffc</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="preprocessor">#define DP_CMD_EXT_APP      100     </span><span class="comment">// 应用扩展预留范围[100,110],避免冲突</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="keyword">typedef</span> BYTE_T DP_TRANS_TYPE_T;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="preprocessor">#define DTT_SCT_UNC     0       </span><span class="comment">// unicast</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span><span class="preprocessor">#define DTT_SCT_BNC     1       </span><span class="comment">// boardcast</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="preprocessor">#define DTT_SCT_MNC     2       </span><span class="comment">// multicast</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="preprocessor">#define DTT_SCT_SCENE   3       </span><span class="comment">// scene</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="../../d0/d23/unionTY__OBJ__DP__VALUE__U.html">  437</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    INT_T dp_value;             <span class="comment">// valid when dp type is value</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    UINT_T dp_enum;             <span class="comment">// valid when dp type is enum</span></div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    CHAR_T *dp_str;             <span class="comment">// valid when dp type is str</span></div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    BOOL_T dp_bool;             <span class="comment">// valid when dp type is bool</span></div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    UINT_T dp_bitmap;           <span class="comment">// valid when dp type is bitmap</span></div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>} <a class="code hl_union" href="../../d0/d23/unionTY__OBJ__DP__VALUE__U.html">TY_OBJ_DP_VALUE_U</a>;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno"><a class="line" href="../../d8/d6d/structTY__OBJ__DP__S.html">  448</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno"><a class="line" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">  450</a></span>    BYTE_T <a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">dpid</a>;</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno"><a class="line" href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">  452</a></span>    DP_PROP_TP_E <a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">type</a>;</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno"><a class="line" href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">  454</a></span>    <a class="code hl_union" href="../../d0/d23/unionTY__OBJ__DP__VALUE__U.html">TY_OBJ_DP_VALUE_U</a> <a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">value</a>;</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno"><a class="line" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">  456</a></span>    UINT_T <a class="code hl_variable" href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">time_stamp</a>;</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>} <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>;</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">  462</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#ad29a78c57fd180a91aa7be174e8f311d">  464</a></span>    DP_CMD_TYPE_E <a class="code hl_variable" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#ad29a78c57fd180a91aa7be174e8f311d">cmd_tp</a>;</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#af8060008fcfdef595feca6018ce8d378">  466</a></span>    DP_TRANS_TYPE_T <a class="code hl_variable" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#af8060008fcfdef595feca6018ce8d378">dtt_tp</a>;</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#abcc07b45fc5da0e386c3db41ac9badd8">  468</a></span>    CHAR_T *<a class="code hl_variable" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#abcc07b45fc5da0e386c3db41ac9badd8">cid</a>;</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#ac72e67bf95cafbbf4684fc847afa5411">  470</a></span>    CHAR_T *<a class="code hl_variable" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#ac72e67bf95cafbbf4684fc847afa5411">mb_id</a>;</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#aac4288af805dbfcd2e12560fcae5c4e5">  472</a></span>    UINT_T <a class="code hl_variable" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#aac4288af805dbfcd2e12560fcae5c4e5">dps_cnt</a>;</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno"><a class="line" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#aa4f4f17406dc94d4a2d4972510b3563d">  474</a></span>    <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> dps[0];</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>} <a class="code hl_struct" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a>;</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">  480</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#afb71345db51a82848379fda80b6cd1ae">  482</a></span>    DP_CMD_TYPE_E <a class="code hl_variable" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#afb71345db51a82848379fda80b6cd1ae">cmd_tp</a>;</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a40b7c068f977329dd5235607e43150f8">  484</a></span>    DP_TRANS_TYPE_T <a class="code hl_variable" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a40b7c068f977329dd5235607e43150f8">dtt_tp</a>;</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a2b1289faf9c79841f33da618bdc70e79">  486</a></span>    CHAR_T *<a class="code hl_variable" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a2b1289faf9c79841f33da618bdc70e79">cid</a>;</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a22d03033c7eb2db619672f416f86a873">  488</a></span>    BYTE_T <a class="code hl_variable" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a22d03033c7eb2db619672f416f86a873">dpid</a>;</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a04e4b752a20c59ea509caf9cf3281506">  490</a></span>    CHAR_T *<a class="code hl_variable" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a04e4b752a20c59ea509caf9cf3281506">mb_id</a>;</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a693251673da5446c8cb226271dea8869">  492</a></span>    UINT_T <a class="code hl_variable" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a693251673da5446c8cb226271dea8869">len</a>;</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno"><a class="line" href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a12daa66e204b53816a1f2a86fd2584fd">  494</a></span>    BYTE_T data[0];</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>} <a class="code hl_struct" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a>;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno"><a class="line" href="../../d8/d73/structTY__DP__QUERY__S.html">  500</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno"><a class="line" href="../../d8/d73/structTY__DP__QUERY__S.html#a211356bedc3d0810ab9d8b0a28a6c5e3">  502</a></span>    UINT_T <a class="code hl_variable" href="../../d8/d73/structTY__DP__QUERY__S.html#a211356bedc3d0810ab9d8b0a28a6c5e3">cmd_tp</a>;</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno"><a class="line" href="../../d8/d73/structTY__DP__QUERY__S.html#a0e6eb22d173983460aaa20ad265bbce2">  504</a></span>    CHAR_T *<a class="code hl_variable" href="../../d8/d73/structTY__DP__QUERY__S.html#a0e6eb22d173983460aaa20ad265bbce2">cid</a>;</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno"><a class="line" href="../../d8/d73/structTY__DP__QUERY__S.html#a18f7a19cf39101ca14ae90947b047e8e">  506</a></span>    UINT_T <a class="code hl_variable" href="../../d8/d73/structTY__DP__QUERY__S.html#a18f7a19cf39101ca14ae90947b047e8e">cnt</a>;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno"><a class="line" href="../../d8/d73/structTY__DP__QUERY__S.html#a105934e569c74928ec42edb8767c98e9">  508</a></span>    BYTE_T dpid[0];</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>} <a class="code hl_struct" href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a>;</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">//add by sunkz</span></div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="preprocessor">#define DP_REPT_USER_REG_MAX_NUM  5</span></div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno"><a class="line" href="../../d0/dea/structDP__REPT__CB__DATA.html">  516</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="../../d0/dea/structDP__REPT__CB__DATA.html#a6247bfe12eb5e22aa191352fdd085dec">  518</a></span>    DP_REPT_TYPE_E  <a class="code hl_variable" href="../../d0/dea/structDP__REPT__CB__DATA.html#a6247bfe12eb5e22aa191352fdd085dec">dp_rept_type</a>;</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno"><a class="line" href="../../d0/dea/structDP__REPT__CB__DATA.html#a0e5bc6d727f7cc9cb6835c12b303855a">  520</a></span>    VOID_T*         <a class="code hl_variable" href="../../d0/dea/structDP__REPT__CB__DATA.html#a0e5bc6d727f7cc9cb6835c12b303855a">dp_data</a>;</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="../../d0/dea/structDP__REPT__CB__DATA.html#a02a22cf1298c9786785b1aa61df12965">  522</a></span>    CHAR_T*         <a class="code hl_variable" href="../../d0/dea/structDP__REPT__CB__DATA.html#a02a22cf1298c9786785b1aa61df12965">dp_data_json</a>;</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno"><a class="line" href="../../d0/dea/structDP__REPT__CB__DATA.html#a39982c0f1bda021041b57c53fb109df4">  524</a></span>    BYTE_T          <a class="code hl_variable" href="../../d0/dea/structDP__REPT__CB__DATA.html#a39982c0f1bda021041b57c53fb109df4">is_query</a>;</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>} <a class="code hl_struct" href="../../d0/dea/structDP__REPT__CB__DATA.html">DP_REPT_CB_DATA</a>;</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno"><a class="line" href="../../dc/d41/structDP__RECV__FILTER__PARA.html">  530</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a003cb44321452060d46b3bfa699725ca">  532</a></span>    UINT_T        <a class="code hl_variable" href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a003cb44321452060d46b3bfa699725ca">dp_id</a>;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno"><a class="line" href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a43b947f4ee947e43e46ad9b774493439">  534</a></span>    DP_CMD_TYPE_E <a class="code hl_variable" href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a43b947f4ee947e43e46ad9b774493439">cmd_from</a>;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno"><a class="line" href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a558bec367c2a917990a7065a9764d3e7">  536</a></span>    CHAR_T*       <a class="code hl_variable" href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a558bec367c2a917990a7065a9764d3e7">cid</a>;</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>} <a class="code hl_struct" href="../../dc/d41/structDP__RECV__FILTER__PARA.html">DP_RECV_FILTER_PARA</a>;</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="keyword">typedef</span> BOOL_T(*DP_RECV_FILTER_HANDLE)(IN CONST <a class="code hl_struct" href="../../dc/d41/structDP__RECV__FILTER__PARA.html">DP_RECV_FILTER_PARA</a>* dp_info);</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="keyword">typedef</span> OPERATE_RET(*DP_REPT_PRE_HANDLE)(IN CONST <a class="code hl_struct" href="../../d0/dea/structDP__REPT__CB__DATA.html">DP_REPT_CB_DATA</a>* dp_data);</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="keyword">typedef</span> OPERATE_RET(*DP_REPT_POST_HANDLE)(IN CONST OPERATE_RET dp_rslt, IN CONST <a class="code hl_struct" href="../../d0/dea/structDP__REPT__CB__DATA.html">DP_REPT_CB_DATA</a>* dp_data);</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno"><a class="line" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">  570</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno"><a class="line" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a1483c60bc0eff7c86934361abec0c9c5">  572</a></span>    DP_RECV_FILTER_HANDLE <a class="code hl_variable" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a1483c60bc0eff7c86934361abec0c9c5">dp_recv_filter_cb</a>;</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno"><a class="line" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a8dd2beb29eaf8ffb30a2330d09968ee9">  574</a></span>    DP_REPT_PRE_HANDLE  <a class="code hl_variable" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a8dd2beb29eaf8ffb30a2330d09968ee9">dp_rept_pre_cb</a>;</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno"><a class="line" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a1d11d8850d5430a0b62433cdcc5870fe">  576</a></span>    DP_REPT_POST_HANDLE <a class="code hl_variable" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a1d11d8850d5430a0b62433cdcc5870fe">dp_rept_post_cb</a>;</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno"><a class="line" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a0301b482505d77c41174417e88f75c01">  578</a></span>    BOOL_T <a class="code hl_variable" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a0301b482505d77c41174417e88f75c01">need_dp_force</a>;</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>} <a class="code hl_struct" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a>;</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="comment">//add by sunkz</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="preprocessor">#define FW_URL_LEN      255       </span><span class="comment">// max length of firmware download url</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="preprocessor">#define FW_MD5_LEN      32        </span><span class="comment">// max length of firmware md5</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="preprocessor">#define FW_HMAC_LEN     64        </span><span class="comment">// max length of firmware hmac</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html">  589</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#afad8400171428850114a45f5928c72ce">  591</a></span>    DEV_TYPE_T <a class="code hl_variable" href="../../d4/d3f/structFW__UG__S.html#afad8400171428850114a45f5928c72ce">tp</a>;</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#a9fd97384c4dc17f188f9ecac6585c6ca">  593</a></span>    UPGRADE_TYPE_T <a class="code hl_variable" href="../../d4/d3f/structFW__UG__S.html#a9fd97384c4dc17f188f9ecac6585c6ca">type</a>;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#a9066109380b27bc6062414d6a7a42227">  595</a></span>    CHAR_T fw_url[FW_URL_LEN + 1];</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#a97f7d155e5f7893faf7f87587cae84a3">  597</a></span>    CHAR_T sw_ver[SW_VER_LEN + 1];</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#a4a60f9fc319ca3771da2e757f0b65582">  599</a></span>    UINT_T <a class="code hl_variable" href="../../d4/d3f/structFW__UG__S.html#a4a60f9fc319ca3771da2e757f0b65582">file_size</a>;</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#a308593c1ca4f0e486e547f6191e393a7">  601</a></span>    CHAR_T fw_hmac[FW_HMAC_LEN + 1];</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#a66796904a7b9e5b13feb1413cbb2402f">  603</a></span>    CHAR_T fw_md5[FW_MD5_LEN + 1];</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno"><a class="line" href="../../d4/d3f/structFW__UG__S.html#ae0dc01881c3bca1894674072d0661359">  605</a></span>    BOOL_T <a class="code hl_variable" href="../../d4/d3f/structFW__UG__S.html#ae0dc01881c3bca1894674072d0661359">diff_ota</a>;</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>} <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a>;</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="keyword">typedef</span> BYTE_T GW_STATUS_E;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="preprocessor">#define GW_RESET            0 </span><span class="comment">// gw reset</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="preprocessor">#define GW_ACTIVED          1 </span><span class="comment">// gw actived</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="preprocessor">#define GW_FIRST_START      2 </span><span class="comment">// start tuya-sdk in the first time.</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="preprocessor">#define GW_NORMAL           3 </span><span class="comment">// tuya-sdk is actived and started</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="preprocessor">#define GW_BLE_ACTIVED          4 </span><span class="comment">// gw ble actived</span></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="comment"></span>typedef VOID (*GW_STATUS_CHANGED_CB)(IN CONST GW_STATUS_E status);</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="keyword">typedef</span> VOID (*DEV_OBJ_DP_CMD_CB)(IN CONST <a class="code hl_struct" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> *dp);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="keyword">typedef</span> VOID (*DEV_RAW_DP_CMD_CB)(IN CONST <a class="code hl_struct" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> *dp);</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="keyword">typedef</span> VOID (*DEV_DP_QUERY_CB)(IN CONST <a class="code hl_struct" href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a> *dp_qry);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="keyword">typedef</span> int (*GW_UG_INFORM_CB)(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw);</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="comment">/* tuya sdk gateway reset type */</span></div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    GW_LOCAL_RESET_FACTORY = 0,</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    GW_REMOTE_UNACTIVE,</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    GW_LOCAL_UNACTIVE,</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    GW_REMOTE_RESET_FACTORY,</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    GW_RESET_DATA_FACTORY, <span class="comment">//need clear local data when active</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>} GW_RESET_TYPE_E;</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="keyword">typedef</span> VOID (*GW_RESET_IFM_CB)(GW_RESET_TYPE_E type);</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="keyword">typedef</span> int (*DEV_UG_INFORM_CB)(IN CONST CHAR_T *dev_id, IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw);</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    DEV_REMOTE_RESET_FACTORY,</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    DEV_RESET_DATA_FACTORY, <span class="comment">//need clear local data when bind</span></div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>} DEV_RESET_TYPE_E;</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="keyword">typedef</span> VOID (*DEV_RESET_IFM_CB)(IN CONST CHAR_T *dev_id, IN DEV_RESET_TYPE_E type);</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span><span class="keyword">typedef</span> OPERATE_RET(*GET_FILE_DATA_CB)(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST UINT_T total_len, IN CONST UINT_T offset,</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>                                       IN CONST BYTE_T *data, IN CONST UINT_T len, OUT UINT_T *remain_len, IN PVOID_T pri_data);</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="keyword">typedef</span> VOID (*ACTIVE_SHORTURL_CB)(OUT CONST CHAR_T *shorturl);</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span><span class="keyword">typedef</span> OPERATE_RET(*UPGRADE_NOTIFY_CB)(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST INT_T download_result, IN PVOID_T pri_data);</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html">  731</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#acd8b6c871c9bb3a461e21f108c80e4fd">  733</a></span>    GW_STATUS_CHANGED_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#acd8b6c871c9bb3a461e21f108c80e4fd">gw_status_cb</a>;</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#ae74ccddc0a11bbabe6c980cfc92d2034">  735</a></span>    GW_UG_INFORM_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#ae74ccddc0a11bbabe6c980cfc92d2034">gw_ug_cb</a>;</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a476efdda2cf043200b930d7b269cc102">  737</a></span>    GW_RESET_IFM_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a476efdda2cf043200b930d7b269cc102">gw_reset_cb</a>;</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#ab337413f61769667188f22a7d9f040f0">  739</a></span>    DEV_OBJ_DP_CMD_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#ab337413f61769667188f22a7d9f040f0">dev_obj_dp_cb</a>;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a7fcc69eca7a5eb7642668f11a83d320a">  741</a></span>    DEV_RAW_DP_CMD_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a7fcc69eca7a5eb7642668f11a83d320a">dev_raw_dp_cb</a>;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a9375f7cfdd0f803e68ff4fb02e1e6f3a">  743</a></span>    DEV_DP_QUERY_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a9375f7cfdd0f803e68ff4fb02e1e6f3a">dev_dp_query_cb</a>;</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a0f17d75beabdf865fb3fd398a30e12b5">  745</a></span>    DEV_UG_INFORM_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a0f17d75beabdf865fb3fd398a30e12b5">dev_ug_cb</a>;</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a02dc18c837b54d3105db624a9c8995c6">  747</a></span>    DEV_RESET_IFM_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a02dc18c837b54d3105db624a9c8995c6">dev_reset_cb</a>;</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#ab63200c0344b437e23f2f9b04c4389a7">  749</a></span>    ACTIVE_SHORTURL_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#ab63200c0344b437e23f2f9b04c4389a7">active_shorturl</a>;</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a4e7b854220024379420e93a60d73dbb9">  751</a></span>    GW_UG_INFORM_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a4e7b854220024379420e93a60d73dbb9">pre_gw_ug_cb</a>;</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno"><a class="line" href="../../d4/da4/structTY__IOT__CBS__S.html#a4356edd9203c948edbe95c93b5cef382">  753</a></span>    DEV_UG_INFORM_CB <a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a4356edd9203c948edbe95c93b5cef382">pre_dev_ug_cb</a>;</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>} <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a>;</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="keyword">typedef</span> OPERATE_RET(*GW_CLOUD_STREAM_MQTT_CB)(IN <span class="keyword">struct </span><a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *root_json);</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="comment">/* tuya-sdk gateway subdevices management callback functions */</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span> </div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="comment">// mqtt media data interface</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="keyword">typedef</span> BYTE_T TRAN_STEP_T;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="preprocessor">#define TS_START 0</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="preprocessor">#define TS_TRANSFER 1</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">#define TS_END 2</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="keyword">typedef</span> BYTE_T CLEAR_TYPE_T;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="preprocessor">#define CLEAR_CONTINUE_ADD 0</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="preprocessor">#define CLEAR_REMOVE_MAP   1</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span> </div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="keyword">typedef</span> BYTE_T DATA_TYPE_T;</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="preprocessor">#define DATA_INCREMENT_MAP 0</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="preprocessor">#define DATA_COMPLETE_MAP  1</span></div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span> </div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="preprocessor">#pragma pack(1)</span></div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno"><a class="line" href="../../d7/db5/structFLOW__BODY__ST.html">  776</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    USHORT_T id;</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    UINT_T posix;</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    TRAN_STEP_T step;</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    UINT_T offset;</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    USHORT_T len;</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    BYTE_T data[0];</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>} <a class="code hl_struct" href="../../d7/db5/structFLOW__BODY__ST.html">FLOW_BODY_ST</a>;</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno"><a class="line" href="../../da/d6a/structFLOW__BODY__V2__ST.html">  785</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    USHORT_T id;</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    BYTE_T map_id;</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    BYTE_T clear_type;</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    BYTE_T data_type;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    UINT_T posix;</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    UINT_T offset;</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    USHORT_T len;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    BYTE_T data[0];</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>} <a class="code hl_struct" href="../../da/d6a/structFLOW__BODY__V2__ST.html">FLOW_BODY_V2_ST</a>;</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span><span class="preprocessor">#pragma pack()</span></div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno"><a class="line" href="../../de/de8/structTY__IOT__REGION__INFO__S.html">  802</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno"><a class="line" href="../../de/de8/structTY__IOT__REGION__INFO__S.html#a7d9f01f8bbc2205be316fd71a4bc3741">  804</a></span>    CHAR_T region[REGION_LEN + 1];</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno"><a class="line" href="../../de/de8/structTY__IOT__REGION__INFO__S.html#a28156a1e1f372ded84f41a46ee4586ef">  806</a></span>    CHAR_T time_zone[TIME_ZONE_LEN + 1];</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>} <a class="code hl_struct" href="../../de/de8/structTY__IOT__REGION__INFO__S.html">TY_IOT_REGION_INFO_S</a>;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    CFG_DEVICE = 1,</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    CFG_PRODUCT = 2,</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    CFG_INVALID,</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>} TY_CUSTOM_CFG_E;</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span> </div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno"><a class="line" href="../../d6/d8a/structTY__LOCATION__INFO__S.html">  824</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno"><a class="line" href="../../d6/d8a/structTY__LOCATION__INFO__S.html#a2f83b7b636a29ec8c3fd2aafdb331373">  826</a></span>    CHAR_T country_code[COUNTRY_CODE_LEN + 1];</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno"><a class="line" href="../../d6/d8a/structTY__LOCATION__INFO__S.html#a408b2cfb40af946d5d4f542d6a4c5f86">  828</a></span>    CHAR_T ip[IPV4_LEN + 1];</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>} <a class="code hl_struct" href="../../d6/d8a/structTY__LOCATION__INFO__S.html">TY_LOCATION_INFO_S</a>;</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="keyword">typedef</span> VOID (*GW_APP_LOG_PATH_CB)(OUT CHAR_T *path, IN CONST INT_T len);</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno"><a class="line" href="../../d0/db3/structTY__IOT__APP__CBS__S.html">  842</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno"><a class="line" href="../../d0/db3/structTY__IOT__APP__CBS__S.html#a7079d94c7d28d2baf4f8547b42776b03">  844</a></span>    GW_APP_LOG_PATH_CB <a class="code hl_variable" href="../../d0/db3/structTY__IOT__APP__CBS__S.html#a7079d94c7d28d2baf4f8547b42776b03">gw_app_log_path_cb</a>;</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>} <a class="code hl_struct" href="../../d0/db3/structTY__IOT__APP__CBS__S.html">TY_IOT_APP_CBS_S</a>;</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span> </div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="preprocessor">#if 1</span><span class="comment">//ext module</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="keyword">typedef</span> BYTE_T DEV_EXT_MODE_TYPE;</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span><span class="preprocessor">#define DEV_EXT_MODE_MAIN       0</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="preprocessor">#define DEV_EXT_MODE_NODEB      1</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="preprocessor">#define DEV_EXT_MODE_WIFI       2</span></div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="preprocessor">#define DEV_EXT_MODE_CAT1       3</span></div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span><span class="comment">/* Information of ext module */</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno"><a class="line" href="../../d3/d2e/structDEV__EXT__MODULE__INFO.html">  855</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>    DEV_EXT_MODE_TYPE emt;</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    CHAR_T uni_code[20];  <span class="comment">//uni code of ext module, wifi:mac(len:6), cat1:imei(len:18)</span></div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>} <a class="code hl_struct" href="../../d3/d2e/structDEV__EXT__MODULE__INFO.html">DEV_EXT_MODULE_INFO</a>;</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span> </div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> </div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span> </div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>}</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span> </div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructCH__CODE__ST_html"><div class="ttname"><a href="../../d4/d03/structCH__CODE__ST.html">CH_CODE_ST</a></div><div class="ttdoc">Definition of operator code info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:194</div></div>
+<div class="ttc" id="astructDEV__EXT__MODULE__INFO_html"><div class="ttname"><a href="../../d3/d2e/structDEV__EXT__MODULE__INFO.html">DEV_EXT_MODULE_INFO</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:855</div></div>
+<div class="ttc" id="astructDEV__QOS__ST_html"><div class="ttname"><a href="../../df/d86/structDEV__QOS__ST.html">DEV_QOS_ST</a></div><div class="ttdoc">Definition of device Quaility of Service</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:214</div></div>
+<div class="ttc" id="astructDEV__QOS__ST_html_a2f914251045bb4a7fd3274cd6509f970"><div class="ttname"><a href="../../df/d86/structDEV__QOS__ST.html#a2f914251045bb4a7fd3274cd6509f970">DEV_QOS_ST::sNodeID</a></div><div class="ttdeci">USHORT_T sNodeID</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:216</div></div>
+<div class="ttc" id="astructDEV__QOS__ST_html_a7e1ad5aa4e47845375d7f84c6c8d271a"><div class="ttname"><a href="../../df/d86/structDEV__QOS__ST.html#a7e1ad5aa4e47845375d7f84c6c8d271a">DEV_QOS_ST::lqi</a></div><div class="ttdeci">UCHAR_T lqi</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:222</div></div>
+<div class="ttc" id="astructDEV__QOS__ST_html_ab8c84b6eef6afdfd8facd01d660b0502"><div class="ttname"><a href="../../df/d86/structDEV__QOS__ST.html#ab8c84b6eef6afdfd8facd01d660b0502">DEV_QOS_ST::fNodeID</a></div><div class="ttdeci">USHORT_T fNodeID</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:218</div></div>
+<div class="ttc" id="astructDEV__QOS__ST_html_adcdef7beb3b3c1d0c0b44300ff8b2de0"><div class="ttname"><a href="../../df/d86/structDEV__QOS__ST.html#adcdef7beb3b3c1d0c0b44300ff8b2de0">DEV_QOS_ST::rssi</a></div><div class="ttdeci">CHAR_T rssi</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:220</div></div>
+<div class="ttc" id="astructDP__BOOL__S_html"><div class="ttname"><a href="../../da/d9b/structDP__BOOL__S.html">DP_BOOL_S</a></div><div class="ttdoc">Definition of dp prop</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:326</div></div>
+<div class="ttc" id="astructDP__BOOL__S_html_ab465e20c70de61999ff3de79e8ee8164"><div class="ttname"><a href="../../da/d9b/structDP__BOOL__S.html#ab465e20c70de61999ff3de79e8ee8164">DP_BOOL_S::value</a></div><div class="ttdeci">BOOL_T value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:328</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a></div><div class="ttdoc">Definition of dp description</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:392</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_a14d307d500589700628aa1a0eee25dce"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#a14d307d500589700628aa1a0eee25dce">DP_DESC_IF_S::type</a></div><div class="ttdeci">DP_TYPE_E type</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:400</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_a4731ecb3dff3133e56db17337c9fcc22"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#a4731ecb3dff3133e56db17337c9fcc22">DP_DESC_IF_S::mode</a></div><div class="ttdeci">DP_MODE_E mode</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:396</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_a4a1e853eb25149cf6e56a0207225dcb6"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#a4a1e853eb25149cf6e56a0207225dcb6">DP_DESC_IF_S::route_t</a></div><div class="ttdeci">DP_ROUTE_T_T route_t</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:408</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_a98662c616d9d08a0be6cfffdc8e0df70"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#a98662c616d9d08a0be6cfffdc8e0df70">DP_DESC_IF_S::passive</a></div><div class="ttdeci">DP_PSV_E passive</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:398</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_a99a8624fd247b8e0d2c5a09d96a950e8"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#a99a8624fd247b8e0d2c5a09d96a950e8">DP_DESC_IF_S::prop_tp</a></div><div class="ttdeci">DP_PROP_TP_E prop_tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:402</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_ad5f79c33fe3c1e7452106551c67e2093"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#ad5f79c33fe3c1e7452106551c67e2093">DP_DESC_IF_S::trig_t</a></div><div class="ttdeci">DP_TRIG_T_E trig_t</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:404</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_aefa633f7b49d26539e337140df6bb9d5"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#aefa633f7b49d26539e337140df6bb9d5">DP_DESC_IF_S::dp_id</a></div><div class="ttdeci">BYTE_T dp_id</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:394</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html_af4cb7c834f29d0878dbb01b5843568bf"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html#af4cb7c834f29d0878dbb01b5843568bf">DP_DESC_IF_S::stat</a></div><div class="ttdeci">DP_STAT_TP_T stat</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:406</div></div>
+<div class="ttc" id="astructDP__PROP__BITMAP_html"><div class="ttname"><a href="../../df/d69/structDP__PROP__BITMAP.html">DP_PROP_BITMAP</a></div><div class="ttdoc">Definition of dp prop</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:334</div></div>
+<div class="ttc" id="astructDP__PROP__BITMAP_html_a51ed772b7569761208f718e914ee75ec"><div class="ttname"><a href="../../df/d69/structDP__PROP__BITMAP.html#a51ed772b7569761208f718e914ee75ec">DP_PROP_BITMAP::value</a></div><div class="ttdeci">UINT_T value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:338</div></div>
+<div class="ttc" id="astructDP__PROP__BITMAP_html_a606745e01908e8b1356343c7750af7c1"><div class="ttname"><a href="../../df/d69/structDP__PROP__BITMAP.html#a606745e01908e8b1356343c7750af7c1">DP_PROP_BITMAP::max_len</a></div><div class="ttdeci">UINT_T max_len</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:336</div></div>
+<div class="ttc" id="astructDP__PROP__ENUM__S_html"><div class="ttname"><a href="../../d5/d87/structDP__PROP__ENUM__S.html">DP_PROP_ENUM_S</a></div><div class="ttdoc">Definition of dp prop</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:300</div></div>
+<div class="ttc" id="astructDP__PROP__ENUM__S_html_a5107552752f3efd24ab6057990243f50"><div class="ttname"><a href="../../d5/d87/structDP__PROP__ENUM__S.html#a5107552752f3efd24ab6057990243f50">DP_PROP_ENUM_S::cnt</a></div><div class="ttdeci">INT_T cnt</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:302</div></div>
+<div class="ttc" id="astructDP__PROP__ENUM__S_html_a6f355d9b89bee541d8bc1aaec671c515"><div class="ttname"><a href="../../d5/d87/structDP__PROP__ENUM__S.html#a6f355d9b89bee541d8bc1aaec671c515">DP_PROP_ENUM_S::pp_enum</a></div><div class="ttdeci">CHAR_T ** pp_enum</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:304</div></div>
+<div class="ttc" id="astructDP__PROP__ENUM__S_html_acc411b9f9f6228bb34f1835eed0aa50e"><div class="ttname"><a href="../../d5/d87/structDP__PROP__ENUM__S.html#acc411b9f9f6228bb34f1835eed0aa50e">DP_PROP_ENUM_S::value</a></div><div class="ttdeci">INT_T value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:306</div></div>
+<div class="ttc" id="astructDP__PROP__STR__S_html"><div class="ttname"><a href="../../d8/d39/structDP__PROP__STR__S.html">DP_PROP_STR_S</a></div><div class="ttdoc">Definition of dp prop</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:312</div></div>
+<div class="ttc" id="astructDP__PROP__STR__S_html_aa6df3440713f826fde9263a4233b677e"><div class="ttname"><a href="../../d8/d39/structDP__PROP__STR__S.html#aa6df3440713f826fde9263a4233b677e">DP_PROP_STR_S::value</a></div><div class="ttdeci">CHAR_T * value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:320</div></div>
+<div class="ttc" id="astructDP__PROP__STR__S_html_aaba38a99474ab9d0fc6d98d743a256cc"><div class="ttname"><a href="../../d8/d39/structDP__PROP__STR__S.html#aaba38a99474ab9d0fc6d98d743a256cc">DP_PROP_STR_S::max_len</a></div><div class="ttdeci">INT_T max_len</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:314</div></div>
+<div class="ttc" id="astructDP__PROP__STR__S_html_ac21f7ab8f80879de47e34bb374e8e8ca"><div class="ttname"><a href="../../d8/d39/structDP__PROP__STR__S.html#ac21f7ab8f80879de47e34bb374e8e8ca">DP_PROP_STR_S::cur_len</a></div><div class="ttdeci">INT_T cur_len</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:316</div></div>
+<div class="ttc" id="astructDP__PROP__STR__S_html_ae26632c34c64a0f8df1a4e9f098bc085"><div class="ttname"><a href="../../d8/d39/structDP__PROP__STR__S.html#ae26632c34c64a0f8df1a4e9f098bc085">DP_PROP_STR_S::dp_str_mutex</a></div><div class="ttdeci">void * dp_str_mutex</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:318</div></div>
+<div class="ttc" id="astructDP__PROP__VAL__S_html"><div class="ttname"><a href="../../d4/dd9/structDP__PROP__VAL__S.html">DP_PROP_VAL_S</a></div><div class="ttdoc">Definition of dp prop</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:284</div></div>
+<div class="ttc" id="astructDP__PROP__VAL__S_html_a1c35e90b207083fd0568353b51ef4514"><div class="ttname"><a href="../../d4/dd9/structDP__PROP__VAL__S.html#a1c35e90b207083fd0568353b51ef4514">DP_PROP_VAL_S::min</a></div><div class="ttdeci">INT_T min</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:286</div></div>
+<div class="ttc" id="astructDP__PROP__VAL__S_html_a3f3e4189d7cd086bb8e0c56be9cf3fff"><div class="ttname"><a href="../../d4/dd9/structDP__PROP__VAL__S.html#a3f3e4189d7cd086bb8e0c56be9cf3fff">DP_PROP_VAL_S::step</a></div><div class="ttdeci">SHORT_T step</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:290</div></div>
+<div class="ttc" id="astructDP__PROP__VAL__S_html_a6b3bc81c32f72be51a8ee7fa01465b6a"><div class="ttname"><a href="../../d4/dd9/structDP__PROP__VAL__S.html#a6b3bc81c32f72be51a8ee7fa01465b6a">DP_PROP_VAL_S::max</a></div><div class="ttdeci">INT_T max</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:288</div></div>
+<div class="ttc" id="astructDP__PROP__VAL__S_html_a8224614207f0ce85a1fe83e19691217e"><div class="ttname"><a href="../../d4/dd9/structDP__PROP__VAL__S.html#a8224614207f0ce85a1fe83e19691217e">DP_PROP_VAL_S::value</a></div><div class="ttdeci">INT_T value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:294</div></div>
+<div class="ttc" id="astructDP__PROP__VAL__S_html_abb2fe422fdc949d2e056f885563a56ed"><div class="ttname"><a href="../../d4/dd9/structDP__PROP__VAL__S.html#abb2fe422fdc949d2e056f885563a56ed">DP_PROP_VAL_S::scale</a></div><div class="ttdeci">USHORT_T scale</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:292</div></div>
+<div class="ttc" id="astructDP__RECV__FILTER__PARA_html"><div class="ttname"><a href="../../dc/d41/structDP__RECV__FILTER__PARA.html">DP_RECV_FILTER_PARA</a></div><div class="ttdoc">Definition of DP filerting param</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:530</div></div>
+<div class="ttc" id="astructDP__RECV__FILTER__PARA_html_a003cb44321452060d46b3bfa699725ca"><div class="ttname"><a href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a003cb44321452060d46b3bfa699725ca">DP_RECV_FILTER_PARA::dp_id</a></div><div class="ttdeci">UINT_T dp_id</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:532</div></div>
+<div class="ttc" id="astructDP__RECV__FILTER__PARA_html_a43b947f4ee947e43e46ad9b774493439"><div class="ttname"><a href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a43b947f4ee947e43e46ad9b774493439">DP_RECV_FILTER_PARA::cmd_from</a></div><div class="ttdeci">DP_CMD_TYPE_E cmd_from</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:534</div></div>
+<div class="ttc" id="astructDP__RECV__FILTER__PARA_html_a558bec367c2a917990a7065a9764d3e7"><div class="ttname"><a href="../../dc/d41/structDP__RECV__FILTER__PARA.html#a558bec367c2a917990a7065a9764d3e7">DP_RECV_FILTER_PARA::cid</a></div><div class="ttdeci">CHAR_T * cid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:536</div></div>
+<div class="ttc" id="astructDP__REPT__CB__DATA_html"><div class="ttname"><a href="../../d0/dea/structDP__REPT__CB__DATA.html">DP_REPT_CB_DATA</a></div><div class="ttdoc">Definition of DP report callbak</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:516</div></div>
+<div class="ttc" id="astructDP__REPT__CB__DATA_html_a02a22cf1298c9786785b1aa61df12965"><div class="ttname"><a href="../../d0/dea/structDP__REPT__CB__DATA.html#a02a22cf1298c9786785b1aa61df12965">DP_REPT_CB_DATA::dp_data_json</a></div><div class="ttdeci">CHAR_T * dp_data_json</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:522</div></div>
+<div class="ttc" id="astructDP__REPT__CB__DATA_html_a0e5bc6d727f7cc9cb6835c12b303855a"><div class="ttname"><a href="../../d0/dea/structDP__REPT__CB__DATA.html#a0e5bc6d727f7cc9cb6835c12b303855a">DP_REPT_CB_DATA::dp_data</a></div><div class="ttdeci">VOID_T * dp_data</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:520</div></div>
+<div class="ttc" id="astructDP__REPT__CB__DATA_html_a39982c0f1bda021041b57c53fb109df4"><div class="ttname"><a href="../../d0/dea/structDP__REPT__CB__DATA.html#a39982c0f1bda021041b57c53fb109df4">DP_REPT_CB_DATA::is_query</a></div><div class="ttdeci">BYTE_T is_query</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:524</div></div>
+<div class="ttc" id="astructDP__REPT__CB__DATA_html_a6247bfe12eb5e22aa191352fdd085dec"><div class="ttname"><a href="../../d0/dea/structDP__REPT__CB__DATA.html#a6247bfe12eb5e22aa191352fdd085dec">DP_REPT_CB_DATA::dp_rept_type</a></div><div class="ttdeci">DP_REPT_TYPE_E dp_rept_type</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:518</div></div>
+<div class="ttc" id="astructDP__REPT__HADLE__CB__S_html"><div class="ttname"><a href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a></div><div class="ttdoc">Definition of DP handlers</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:570</div></div>
+<div class="ttc" id="astructDP__REPT__HADLE__CB__S_html_a0301b482505d77c41174417e88f75c01"><div class="ttname"><a href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a0301b482505d77c41174417e88f75c01">DP_REPT_HADLE_CB_S::need_dp_force</a></div><div class="ttdeci">BOOL_T need_dp_force</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:578</div></div>
+<div class="ttc" id="astructDP__REPT__HADLE__CB__S_html_a1483c60bc0eff7c86934361abec0c9c5"><div class="ttname"><a href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a1483c60bc0eff7c86934361abec0c9c5">DP_REPT_HADLE_CB_S::dp_recv_filter_cb</a></div><div class="ttdeci">DP_RECV_FILTER_HANDLE dp_recv_filter_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:572</div></div>
+<div class="ttc" id="astructDP__REPT__HADLE__CB__S_html_a1d11d8850d5430a0b62433cdcc5870fe"><div class="ttname"><a href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a1d11d8850d5430a0b62433cdcc5870fe">DP_REPT_HADLE_CB_S::dp_rept_post_cb</a></div><div class="ttdeci">DP_REPT_POST_HANDLE dp_rept_post_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:576</div></div>
+<div class="ttc" id="astructDP__REPT__HADLE__CB__S_html_a8dd2beb29eaf8ffb30a2330d09968ee9"><div class="ttname"><a href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html#a8dd2beb29eaf8ffb30a2330d09968ee9">DP_REPT_HADLE_CB_S::dp_rept_pre_cb</a></div><div class="ttdeci">DP_REPT_PRE_HANDLE dp_rept_pre_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:574</div></div>
+<div class="ttc" id="astructFLOW__BODY__ST_html"><div class="ttname"><a href="../../d7/db5/structFLOW__BODY__ST.html">FLOW_BODY_ST</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:776</div></div>
+<div class="ttc" id="astructFLOW__BODY__V2__ST_html"><div class="ttname"><a href="../../da/d6a/structFLOW__BODY__V2__ST.html">FLOW_BODY_V2_ST</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:785</div></div>
+<div class="ttc" id="astructFW__UG__S_html"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a></div><div class="ttdoc">tuya sdk ota firmware info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:589</div></div>
+<div class="ttc" id="astructFW__UG__S_html_a4a60f9fc319ca3771da2e757f0b65582"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html#a4a60f9fc319ca3771da2e757f0b65582">FW_UG_S::file_size</a></div><div class="ttdeci">UINT_T file_size</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:599</div></div>
+<div class="ttc" id="astructFW__UG__S_html_a9fd97384c4dc17f188f9ecac6585c6ca"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html#a9fd97384c4dc17f188f9ecac6585c6ca">FW_UG_S::type</a></div><div class="ttdeci">UPGRADE_TYPE_T type</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:593</div></div>
+<div class="ttc" id="astructFW__UG__S_html_ae0dc01881c3bca1894674072d0661359"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html#ae0dc01881c3bca1894674072d0661359">FW_UG_S::diff_ota</a></div><div class="ttdeci">BOOL_T diff_ota</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:605</div></div>
+<div class="ttc" id="astructFW__UG__S_html_afad8400171428850114a45f5928c72ce"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html#afad8400171428850114a45f5928c72ce">FW_UG_S::tp</a></div><div class="ttdeci">DEV_TYPE_T tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:591</div></div>
+<div class="ttc" id="astructGW__ATTACH__ATTR__T_html"><div class="ttname"><a href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a></div><div class="ttdoc">Definition of attach moudule attribute</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:175</div></div>
+<div class="ttc" id="astructGW__ATTACH__ATTR__T_html_a51d1793339da5806d6c25759fe36fd71"><div class="ttname"><a href="../../d9/d56/structGW__ATTACH__ATTR__T.html#a51d1793339da5806d6c25759fe36fd71">GW_ATTACH_ATTR_T::tp</a></div><div class="ttdeci">GW_PERMIT_DEV_TP_T tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:177</div></div>
+<div class="ttc" id="astructTY__DP__QUERY__S_html"><div class="ttname"><a href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a></div><div class="ttdoc">Definition of DP query</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:500</div></div>
+<div class="ttc" id="astructTY__DP__QUERY__S_html_a0e6eb22d173983460aaa20ad265bbce2"><div class="ttname"><a href="../../d8/d73/structTY__DP__QUERY__S.html#a0e6eb22d173983460aaa20ad265bbce2">TY_DP_QUERY_S::cid</a></div><div class="ttdeci">CHAR_T * cid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:504</div></div>
+<div class="ttc" id="astructTY__DP__QUERY__S_html_a18f7a19cf39101ca14ae90947b047e8e"><div class="ttname"><a href="../../d8/d73/structTY__DP__QUERY__S.html#a18f7a19cf39101ca14ae90947b047e8e">TY_DP_QUERY_S::cnt</a></div><div class="ttdeci">UINT_T cnt</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:506</div></div>
+<div class="ttc" id="astructTY__DP__QUERY__S_html_a211356bedc3d0810ab9d8b0a28a6c5e3"><div class="ttname"><a href="../../d8/d73/structTY__DP__QUERY__S.html#a211356bedc3d0810ab9d8b0a28a6c5e3">TY_DP_QUERY_S::cmd_tp</a></div><div class="ttdeci">UINT_T cmd_tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:502</div></div>
+<div class="ttc" id="astructTY__INIT__PARAMS__S_html"><div class="ttname"><a href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a></div><div class="ttdoc">Definition of TUYA DevOS init param</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:163</div></div>
+<div class="ttc" id="astructTY__INIT__PARAMS__S_html_a6d00fd1ae54eca64625c98a5b0d6966a"><div class="ttname"><a href="../../d0/d79/structTY__INIT__PARAMS__S.html#a6d00fd1ae54eca64625c98a5b0d6966a">TY_INIT_PARAMS_S::init_db</a></div><div class="ttdeci">BOOL_T init_db</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:165</div></div>
+<div class="ttc" id="astructTY__IOT__APP__CBS__S_html"><div class="ttname"><a href="../../d0/db3/structTY__IOT__APP__CBS__S.html">TY_IOT_APP_CBS_S</a></div><div class="ttdoc">Definition of IoT callbacks used by APP</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:842</div></div>
+<div class="ttc" id="astructTY__IOT__APP__CBS__S_html_a7079d94c7d28d2baf4f8547b42776b03"><div class="ttname"><a href="../../d0/db3/structTY__IOT__APP__CBS__S.html#a7079d94c7d28d2baf4f8547b42776b03">TY_IOT_APP_CBS_S::gw_app_log_path_cb</a></div><div class="ttdeci">GW_APP_LOG_PATH_CB gw_app_log_path_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:844</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a></div><div class="ttdoc">Definition of gateway callback funtions</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:731</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a02dc18c837b54d3105db624a9c8995c6"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a02dc18c837b54d3105db624a9c8995c6">TY_IOT_CBS_S::dev_reset_cb</a></div><div class="ttdeci">DEV_RESET_IFM_CB dev_reset_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:747</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a0f17d75beabdf865fb3fd398a30e12b5"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a0f17d75beabdf865fb3fd398a30e12b5">TY_IOT_CBS_S::dev_ug_cb</a></div><div class="ttdeci">DEV_UG_INFORM_CB dev_ug_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:745</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a4356edd9203c948edbe95c93b5cef382"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a4356edd9203c948edbe95c93b5cef382">TY_IOT_CBS_S::pre_dev_ug_cb</a></div><div class="ttdeci">DEV_UG_INFORM_CB pre_dev_ug_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:753</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a476efdda2cf043200b930d7b269cc102"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a476efdda2cf043200b930d7b269cc102">TY_IOT_CBS_S::gw_reset_cb</a></div><div class="ttdeci">GW_RESET_IFM_CB gw_reset_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:737</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a4e7b854220024379420e93a60d73dbb9"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a4e7b854220024379420e93a60d73dbb9">TY_IOT_CBS_S::pre_gw_ug_cb</a></div><div class="ttdeci">GW_UG_INFORM_CB pre_gw_ug_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:751</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a7fcc69eca7a5eb7642668f11a83d320a"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a7fcc69eca7a5eb7642668f11a83d320a">TY_IOT_CBS_S::dev_raw_dp_cb</a></div><div class="ttdeci">DEV_RAW_DP_CMD_CB dev_raw_dp_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:741</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a9375f7cfdd0f803e68ff4fb02e1e6f3a"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a9375f7cfdd0f803e68ff4fb02e1e6f3a">TY_IOT_CBS_S::dev_dp_query_cb</a></div><div class="ttdeci">DEV_DP_QUERY_CB dev_dp_query_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:743</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_ab337413f61769667188f22a7d9f040f0"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#ab337413f61769667188f22a7d9f040f0">TY_IOT_CBS_S::dev_obj_dp_cb</a></div><div class="ttdeci">DEV_OBJ_DP_CMD_CB dev_obj_dp_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:739</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_ab63200c0344b437e23f2f9b04c4389a7"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#ab63200c0344b437e23f2f9b04c4389a7">TY_IOT_CBS_S::active_shorturl</a></div><div class="ttdeci">ACTIVE_SHORTURL_CB active_shorturl</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:749</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_acd8b6c871c9bb3a461e21f108c80e4fd"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#acd8b6c871c9bb3a461e21f108c80e4fd">TY_IOT_CBS_S::gw_status_cb</a></div><div class="ttdeci">GW_STATUS_CHANGED_CB gw_status_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:733</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_ae74ccddc0a11bbabe6c980cfc92d2034"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#ae74ccddc0a11bbabe6c980cfc92d2034">TY_IOT_CBS_S::gw_ug_cb</a></div><div class="ttdeci">GW_UG_INFORM_CB gw_ug_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:735</div></div>
+<div class="ttc" id="astructTY__IOT__REGION__INFO__S_html"><div class="ttname"><a href="../../de/de8/structTY__IOT__REGION__INFO__S.html">TY_IOT_REGION_INFO_S</a></div><div class="ttdoc">Definition of region info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:802</div></div>
+<div class="ttc" id="astructTY__LOCATION__INFO__S_html"><div class="ttname"><a href="../../d6/d8a/structTY__LOCATION__INFO__S.html">TY_LOCATION_INFO_S</a></div><div class="ttdoc">Definition of location info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:824</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a></div><div class="ttdoc">Definition of structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:448</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_a3d774e21ed33a84fa187122debf8f3cc"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#a3d774e21ed33a84fa187122debf8f3cc">TY_OBJ_DP_S::type</a></div><div class="ttdeci">DP_PROP_TP_E type</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:452</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_a4cd278dccd84caee84b78f27ee0646b3"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#a4cd278dccd84caee84b78f27ee0646b3">TY_OBJ_DP_S::dpid</a></div><div class="ttdeci">BYTE_T dpid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:450</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_a4ec8b464efcb710194b7b92b5788b934"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#a4ec8b464efcb710194b7b92b5788b934">TY_OBJ_DP_S::time_stamp</a></div><div class="ttdeci">UINT_T time_stamp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:456</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html_adfb2c2d251b177a6d0b572aca16ed2b2"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html#adfb2c2d251b177a6d0b572aca16ed2b2">TY_OBJ_DP_S::value</a></div><div class="ttdeci">TY_OBJ_DP_VALUE_U value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:454</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a></div><div class="ttdoc">Definition of recved structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:462</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html_aac4288af805dbfcd2e12560fcae5c4e5"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#aac4288af805dbfcd2e12560fcae5c4e5">TY_RECV_OBJ_DP_S::dps_cnt</a></div><div class="ttdeci">UINT_T dps_cnt</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:472</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html_abcc07b45fc5da0e386c3db41ac9badd8"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#abcc07b45fc5da0e386c3db41ac9badd8">TY_RECV_OBJ_DP_S::cid</a></div><div class="ttdeci">CHAR_T * cid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:468</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html_ac72e67bf95cafbbf4684fc847afa5411"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#ac72e67bf95cafbbf4684fc847afa5411">TY_RECV_OBJ_DP_S::mb_id</a></div><div class="ttdeci">CHAR_T * mb_id</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:470</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html_ad29a78c57fd180a91aa7be174e8f311d"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#ad29a78c57fd180a91aa7be174e8f311d">TY_RECV_OBJ_DP_S::cmd_tp</a></div><div class="ttdeci">DP_CMD_TYPE_E cmd_tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:464</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html_af8060008fcfdef595feca6018ce8d378"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html#af8060008fcfdef595feca6018ce8d378">TY_RECV_OBJ_DP_S::dtt_tp</a></div><div class="ttdeci">DP_TRANS_TYPE_T dtt_tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:466</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a></div><div class="ttdoc">Definition of recved raw dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:480</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html_a04e4b752a20c59ea509caf9cf3281506"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a04e4b752a20c59ea509caf9cf3281506">TY_RECV_RAW_DP_S::mb_id</a></div><div class="ttdeci">CHAR_T * mb_id</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:490</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html_a22d03033c7eb2db619672f416f86a873"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a22d03033c7eb2db619672f416f86a873">TY_RECV_RAW_DP_S::dpid</a></div><div class="ttdeci">BYTE_T dpid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:488</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html_a2b1289faf9c79841f33da618bdc70e79"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a2b1289faf9c79841f33da618bdc70e79">TY_RECV_RAW_DP_S::cid</a></div><div class="ttdeci">CHAR_T * cid</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:486</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html_a40b7c068f977329dd5235607e43150f8"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a40b7c068f977329dd5235607e43150f8">TY_RECV_RAW_DP_S::dtt_tp</a></div><div class="ttdeci">DP_TRANS_TYPE_T dtt_tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:484</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html_a693251673da5446c8cb226271dea8869"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html#a693251673da5446c8cb226271dea8869">TY_RECV_RAW_DP_S::len</a></div><div class="ttdeci">UINT_T len</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:492</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html_afb71345db51a82848379fda80b6cd1ae"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html#afb71345db51a82848379fda80b6cd1ae">TY_RECV_RAW_DP_S::cmd_tp</a></div><div class="ttdeci">DP_CMD_TYPE_E cmd_tp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:482</div></div>
+<div class="ttc" id="astructty__cJSON_html"><div class="ttname"><a href="../../d4/d53/structty__cJSON.html">ty_cJSON</a></div><div class="ttdef"><b>Definition:</b> ty_cJSON.h:104</div></div>
+<div class="ttc" id="aunionDP__PROP__VALUE__U_html"><div class="ttname"><a href="../../d2/d4f/unionDP__PROP__VALUE__U.html">DP_PROP_VALUE_U</a></div><div class="ttdoc">Definition of dp prop value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:344</div></div>
+<div class="ttc" id="aunionDP__PROP__VALUE__U_html_a4057c7c707cf3857a7ab44f2ae7cdfa7"><div class="ttname"><a href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a4057c7c707cf3857a7ab44f2ae7cdfa7">DP_PROP_VALUE_U::prop_value</a></div><div class="ttdeci">DP_PROP_VAL_S prop_value</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:346</div></div>
+<div class="ttc" id="aunionDP__PROP__VALUE__U_html_a4747d5fc8f60aedd744ffe9447443337"><div class="ttname"><a href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a4747d5fc8f60aedd744ffe9447443337">DP_PROP_VALUE_U::prop_bitmap</a></div><div class="ttdeci">DP_PROP_BITMAP prop_bitmap</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:354</div></div>
+<div class="ttc" id="aunionDP__PROP__VALUE__U_html_a6c7981ea3dd063831b185ddfb68c478c"><div class="ttname"><a href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a6c7981ea3dd063831b185ddfb68c478c">DP_PROP_VALUE_U::prop_enum</a></div><div class="ttdeci">DP_PROP_ENUM_S prop_enum</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:348</div></div>
+<div class="ttc" id="aunionDP__PROP__VALUE__U_html_a8a9ed3f09aeb0de2f6d4c807247974b3"><div class="ttname"><a href="../../d2/d4f/unionDP__PROP__VALUE__U.html#a8a9ed3f09aeb0de2f6d4c807247974b3">DP_PROP_VALUE_U::prop_bool</a></div><div class="ttdeci">DP_BOOL_S prop_bool</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:352</div></div>
+<div class="ttc" id="aunionDP__PROP__VALUE__U_html_ae555312085808095850d6c9cae7728a0"><div class="ttname"><a href="../../d2/d4f/unionDP__PROP__VALUE__U.html#ae555312085808095850d6c9cae7728a0">DP_PROP_VALUE_U::prop_str</a></div><div class="ttdeci">DP_PROP_STR_S prop_str</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:350</div></div>
+<div class="ttc" id="aunionTY__OBJ__DP__VALUE__U_html"><div class="ttname"><a href="../../d0/d23/unionTY__OBJ__DP__VALUE__U.html">TY_OBJ_DP_VALUE_U</a></div><div class="ttdoc">tuya sdk dp value union</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:437</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

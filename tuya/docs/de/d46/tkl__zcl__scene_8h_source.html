@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_zcl_scene.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_zcl_scene.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d46/tkl__zcl__scene_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_ZCL_SCENE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_ZCL_SCENE_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *  scenes max buffer size</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define SCENES_MAX_SCENE_DATA_LEN   64</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *  scene data type</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088">   30</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088a18edd36a83f9b66a124a2de16576b74d">   31</a></span>    <a class="code hl_enumvalue" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088a18edd36a83f9b66a124a2de16576b74d">TKL_SCENE_DATA_TYPE_EXT_SERVER</a> = 0, </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088ac67ec07c76d66765caeb70423530e3a8">   32</a></span>    <a class="code hl_enumvalue" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088ac67ec07c76d66765caeb70423530e3a8">TKL_SCENE_DATA_TYPE_YOURSELF</a> = 1,   </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088a81b363e1f987b96f1e5cb178d15df531">   33</a></span>    <a class="code hl_enumvalue" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088a81b363e1f987b96f1e5cb178d15df531">TKL_SCENE_DATA_TYPE_ZIGBEE</a> = 2,     </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <a class="code hl_enumeration" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088">TKL_SCENE_TYPE_T</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> *  zigbee scene structure</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a7ed9ee44bee927bee43fcb1406d87b80">   40</a></span>    UINT8_T           <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a7ed9ee44bee927bee43fcb1406d87b80">is_active</a>;    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a527d4ed9ca60ff5af97f3d648575ece7">   41</a></span>    <a class="code hl_enumeration" href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088">TKL_SCENE_TYPE_T</a>  <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a527d4ed9ca60ff5af97f3d648575ece7">type</a>;         </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a6c4c300124cc4edab82977b0c0ce4e0b">   42</a></span>    UINT8_T           <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a6c4c300124cc4edab82977b0c0ce4e0b">ep_id</a>;        </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a9a66cf379d7558b5c9b1fda1e833cd20">   43</a></span>    UINT8_T           <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a9a66cf379d7558b5c9b1fda1e833cd20">scene_id</a>;     </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#afb5565fc47f2b8c7213010550a9fa4d9">   44</a></span>    UINT16_T          <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#afb5565fc47f2b8c7213010550a9fa4d9">group_id</a>;     </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a1c299f447f458ba1e58119ccaced803f">   45</a></span>    UINT16_T    <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a1c299f447f458ba1e58119ccaced803f">trans_time</a>;         </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a7118fb9198d79f67280f1fc69f7f73ff">   46</a></span>    UINT8_T     <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a7118fb9198d79f67280f1fc69f7f73ff">trans_time100ms</a>;    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a5193f15d21f5169889f209f76780dcae">   47</a></span>    UINT8_T     <a class="code hl_variable" href="../../df/dbd/structTKL__SCENE__T.html#a5193f15d21f5169889f209f76780dcae">data_len</a>;           </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../df/dbd/structTKL__SCENE__T.html#a6b087c801567b37a8dfc3c96ce3f90b7">   48</a></span>    UINT8_T     data[SCENES_MAX_SCENE_DATA_LEN];    </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <a class="code hl_struct" href="../../df/dbd/structTKL__SCENE__T.html">TKL_SCENE_T</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> *  zigbee mini scene structure</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d8/d7f/structTKL__MINI__SCENE__T.html">   54</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#af15a66b93d9865e3b5a0f2d25e2d6abb">   55</a></span>    UINT8_T     <a class="code hl_variable" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#af15a66b93d9865e3b5a0f2d25e2d6abb">ep_id</a>;          </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a1a86db39bed3b94bf65c6ac2c2234626">   56</a></span>    UINT8_T     <a class="code hl_variable" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a1a86db39bed3b94bf65c6ac2c2234626">scene_id</a>;       </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a99bde73572c327f95a4fb359a254739f">   57</a></span>    UINT16_T    <a class="code hl_variable" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a99bde73572c327f95a4fb359a254739f">group_id</a>;       </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a429e69a0c69ddc9c7c2e60e2f5530cde">   58</a></span>    UINT16_T    <a class="code hl_variable" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a429e69a0c69ddc9c7c2e60e2f5530cde">trans_time</a>;     </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a2d7a5212e205845661b4536e6e216a16">   59</a></span>    UINT8_T     <a class="code hl_variable" href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a2d7a5212e205845661b4536e6e216a16">trans_time100ms</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <a class="code hl_struct" href="../../d8/d7f/structTKL__MINI__SCENE__T.html">TKL_MINI_SCENE_T</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_SAVE_SCENE_PRE_CB)(UINT8_T ep_id, UINT8_T scene_id, UINT16_T group_id);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_SAVE_SCENE_CB)(<a class="code hl_struct" href="../../df/dbd/structTKL__SCENE__T.html">TKL_SCENE_T</a> *entry);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_VIEW_SCENE_CB)(<a class="code hl_struct" href="../../df/dbd/structTKL__SCENE__T.html">TKL_SCENE_T</a> *entry);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_REMOVE_SCENE_CB)(UINT8_T ep_id, UINT8_T scene_id, UINT16_T group_id);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_REMOVE_ALL_SCENE_CB)(UINT8_T ep_id, UINT16_T group_id);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_RECALL_SCENE_CB)(UINT8_T ep_id, UINT8_T scene_id, UINT16_T group_id, UINT16_T time100ms);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> *  zigbee scene callback collection</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html">   73</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html#a825a6aee8a5c6adf3c8389b559f48b8e">   74</a></span>    TKL_SAVE_SCENE_PRE_CB   save_scene_pre_cb;      </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html#aae6727830e61fb8af9af165483c151f9">   75</a></span>    TKL_SAVE_SCENE_CB       save_scene_cb;          </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html#a1ebb68e9a205b8985eb06d89114a9544">   76</a></span>    TKL_VIEW_SCENE_CB       view_scene_cb;          </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html#aacdf8c353c9bb09e39e2a36ecbd48e78">   77</a></span>    TKL_RECALL_SCENE_CB     recall_scene_cb;        </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html#a9130af97b7a9a6feaa1595f443818743">   78</a></span>    TKL_REMOVE_SCENE_CB     remove_scene_cb;        </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d7/d48/structTKL__SCENE__CB__T.html#ad005b3fcc3e5dd2c4406c638a0fae791">   79</a></span>    TKL_REMOVE_ALL_SCENE_CB remove_all_scene_cb;    </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>} <a class="code hl_struct" href="../../d7/d48/structTKL__SCENE__CB__T.html">TKL_SCENE_CB_T</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a9b278c62c23425f006a2479d3ccfd65a">   89</a></span>UINT8_T <a class="code hl_function" href="../../de/d46/tkl__zcl__scene_8h.html#a9b278c62c23425f006a2479d3ccfd65a">tkl_zg_scene_size_get</a>(VOID_T);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#ae7c34bf24b13fca7f2de50af72771257">   99</a></span>BOOL_T <a class="code hl_function" href="../../de/d46/tkl__zcl__scene_8h.html#ae7c34bf24b13fca7f2de50af72771257">tkl_zg_find_scene</a>(UINT8_T ep_id, UINT8_T scene_id, UINT16_T group_id);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a00140f05c17d46e7ee4d2ef1d06e330e">  107</a></span>VOID_T <a class="code hl_function" href="../../de/d46/tkl__zcl__scene_8h.html#a00140f05c17d46e7ee4d2ef1d06e330e">tkl_zg_clear_all_scene</a>(VOID_T);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#ab883d1bdb16838305517ab5339ef2cd1">  116</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d46/tkl__zcl__scene_8h.html#ab883d1bdb16838305517ab5339ef2cd1">tkl_zg_scene_recovery</a>(<a class="code hl_struct" href="../../d8/d7f/structTKL__MINI__SCENE__T.html">TKL_MINI_SCENE_T</a> *scene_list, UINT8_T sums);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../de/d46/tkl__zcl__scene_8h.html#a6e8f19c159827e142c0714ccd4133a89">  124</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d46/tkl__zcl__scene_8h.html#a6e8f19c159827e142c0714ccd4133a89">tkl_zg_scene_cb_register</a>(<a class="code hl_struct" href="../../d7/d48/structTKL__SCENE__CB__T.html">TKL_SCENE_CB_T</a> *scene_cb);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__MINI__SCENE__T_html"><div class="ttname"><a href="../../d8/d7f/structTKL__MINI__SCENE__T.html">TKL_MINI_SCENE_T</a></div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:54</div></div>
+<div class="ttc" id="astructTKL__MINI__SCENE__T_html_a1a86db39bed3b94bf65c6ac2c2234626"><div class="ttname"><a href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a1a86db39bed3b94bf65c6ac2c2234626">TKL_MINI_SCENE_T::scene_id</a></div><div class="ttdeci">UINT8_T scene_id</div><div class="ttdoc">scene id</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:56</div></div>
+<div class="ttc" id="astructTKL__MINI__SCENE__T_html_a2d7a5212e205845661b4536e6e216a16"><div class="ttname"><a href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a2d7a5212e205845661b4536e6e216a16">TKL_MINI_SCENE_T::trans_time100ms</a></div><div class="ttdeci">UINT8_T trans_time100ms</div><div class="ttdoc">check if this causes any problems</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:59</div></div>
+<div class="ttc" id="astructTKL__MINI__SCENE__T_html_a429e69a0c69ddc9c7c2e60e2f5530cde"><div class="ttname"><a href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a429e69a0c69ddc9c7c2e60e2f5530cde">TKL_MINI_SCENE_T::trans_time</a></div><div class="ttdeci">UINT16_T trans_time</div><div class="ttdoc">seconds required for the device to change from its current state to the requested scene</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:58</div></div>
+<div class="ttc" id="astructTKL__MINI__SCENE__T_html_a99bde73572c327f95a4fb359a254739f"><div class="ttname"><a href="../../d8/d7f/structTKL__MINI__SCENE__T.html#a99bde73572c327f95a4fb359a254739f">TKL_MINI_SCENE_T::group_id</a></div><div class="ttdeci">UINT16_T group_id</div><div class="ttdoc">group id</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:57</div></div>
+<div class="ttc" id="astructTKL__MINI__SCENE__T_html_af15a66b93d9865e3b5a0f2d25e2d6abb"><div class="ttname"><a href="../../d8/d7f/structTKL__MINI__SCENE__T.html#af15a66b93d9865e3b5a0f2d25e2d6abb">TKL_MINI_SCENE_T::ep_id</a></div><div class="ttdeci">UINT8_T ep_id</div><div class="ttdoc">endpoint id of scene</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:55</div></div>
+<div class="ttc" id="astructTKL__SCENE__CB__T_html"><div class="ttname"><a href="../../d7/d48/structTKL__SCENE__CB__T.html">TKL_SCENE_CB_T</a></div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:73</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html">TKL_SCENE_T</a></div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:39</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a1c299f447f458ba1e58119ccaced803f"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a1c299f447f458ba1e58119ccaced803f">TKL_SCENE_T::trans_time</a></div><div class="ttdeci">UINT16_T trans_time</div><div class="ttdoc">seconds required for the device to change from its current state to the requested scene</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:45</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a5193f15d21f5169889f209f76780dcae"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a5193f15d21f5169889f209f76780dcae">TKL_SCENE_T::data_len</a></div><div class="ttdeci">UINT8_T data_len</div><div class="ttdoc">scene data len</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:47</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a527d4ed9ca60ff5af97f3d648575ece7"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a527d4ed9ca60ff5af97f3d648575ece7">TKL_SCENE_T::type</a></div><div class="ttdeci">TKL_SCENE_TYPE_T type</div><div class="ttdoc">scene type</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:41</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a6c4c300124cc4edab82977b0c0ce4e0b"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a6c4c300124cc4edab82977b0c0ce4e0b">TKL_SCENE_T::ep_id</a></div><div class="ttdeci">UINT8_T ep_id</div><div class="ttdoc">endpoint id of scene</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:42</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a7118fb9198d79f67280f1fc69f7f73ff"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a7118fb9198d79f67280f1fc69f7f73ff">TKL_SCENE_T::trans_time100ms</a></div><div class="ttdeci">UINT8_T trans_time100ms</div><div class="ttdoc">check if this causes any problems</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:46</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a7ed9ee44bee927bee43fcb1406d87b80"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a7ed9ee44bee927bee43fcb1406d87b80">TKL_SCENE_T::is_active</a></div><div class="ttdeci">UINT8_T is_active</div><div class="ttdoc">scene table entry is active</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:40</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_a9a66cf379d7558b5c9b1fda1e833cd20"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#a9a66cf379d7558b5c9b1fda1e833cd20">TKL_SCENE_T::scene_id</a></div><div class="ttdeci">UINT8_T scene_id</div><div class="ttdoc">scene id</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:43</div></div>
+<div class="ttc" id="astructTKL__SCENE__T_html_afb5565fc47f2b8c7213010550a9fa4d9"><div class="ttname"><a href="../../df/dbd/structTKL__SCENE__T.html#afb5565fc47f2b8c7213010550a9fa4d9">TKL_SCENE_T::group_id</a></div><div class="ttdeci">UINT16_T group_id</div><div class="ttdoc">group id</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:44</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a00140f05c17d46e7ee4d2ef1d06e330e"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a00140f05c17d46e7ee4d2ef1d06e330e">tkl_zg_clear_all_scene</a></div><div class="ttdeci">VOID_T tkl_zg_clear_all_scene(VOID_T)</div><div class="ttdoc">clear all scenes</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a6e8f19c159827e142c0714ccd4133a89"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a6e8f19c159827e142c0714ccd4133a89">tkl_zg_scene_cb_register</a></div><div class="ttdeci">OPERATE_RET tkl_zg_scene_cb_register(TKL_SCENE_CB_T *scene_cb)</div><div class="ttdoc">scenes callback register</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a88c36906a6635ea0e81070ffb1496088"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088">TKL_SCENE_TYPE_T</a></div><div class="ttdeci">TKL_SCENE_TYPE_T</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:30</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a88c36906a6635ea0e81070ffb1496088a18edd36a83f9b66a124a2de16576b74d"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088a18edd36a83f9b66a124a2de16576b74d">TKL_SCENE_DATA_TYPE_EXT_SERVER</a></div><div class="ttdeci">@ TKL_SCENE_DATA_TYPE_EXT_SERVER</div><div class="ttdoc">scene data with extension field, save scene data in sdk</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:31</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a88c36906a6635ea0e81070ffb1496088a81b363e1f987b96f1e5cb178d15df531"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088a81b363e1f987b96f1e5cb178d15df531">TKL_SCENE_DATA_TYPE_ZIGBEE</a></div><div class="ttdeci">@ TKL_SCENE_DATA_TYPE_ZIGBEE</div><div class="ttdoc">not used</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:33</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a88c36906a6635ea0e81070ffb1496088ac67ec07c76d66765caeb70423530e3a8"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a88c36906a6635ea0e81070ffb1496088ac67ec07c76d66765caeb70423530e3a8">TKL_SCENE_DATA_TYPE_YOURSELF</a></div><div class="ttdeci">@ TKL_SCENE_DATA_TYPE_YOURSELF</div><div class="ttdoc">scene data without extension field, save scene data not in sdk</div><div class="ttdef"><b>Definition:</b> tkl_zcl_scene.h:32</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_a9b278c62c23425f006a2479d3ccfd65a"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#a9b278c62c23425f006a2479d3ccfd65a">tkl_zg_scene_size_get</a></div><div class="ttdeci">UINT8_T tkl_zg_scene_size_get(VOID_T)</div><div class="ttdoc">get scenes table size</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_ab883d1bdb16838305517ab5339ef2cd1"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#ab883d1bdb16838305517ab5339ef2cd1">tkl_zg_scene_recovery</a></div><div class="ttdeci">OPERATE_RET tkl_zg_scene_recovery(TKL_MINI_SCENE_T *scene_list, UINT8_T sums)</div><div class="ttdoc">tuya scene table recovery to native SDK scene table</div></div>
+<div class="ttc" id="atkl__zcl__scene_8h_html_ae7c34bf24b13fca7f2de50af72771257"><div class="ttname"><a href="../../de/d46/tkl__zcl__scene_8h.html#ae7c34bf24b13fca7f2de50af72771257">tkl_zg_find_scene</a></div><div class="ttdeci">BOOL_T tkl_zg_find_scene(UINT8_T ep_id, UINT8_T scene_id, UINT16_T group_id)</div><div class="ttdoc">find scenes on endpoint</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

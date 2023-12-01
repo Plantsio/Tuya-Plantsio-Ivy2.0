@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_wifi/include/tuya_cloud_wifi_defs.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_ac23facb638b8c78e3ea6a0534f0da5c.html">svc_wifi</a></li><li class="navelem"><a class="el" href="../../dir_2a60f5b8a54aa317a95a983f0f73d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_cloud_wifi_defs.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef TUYA_CLOUD_WIFI_DEFS_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define TUYA_CLOUD_WIFI_DEFS_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/* tuya sdk definition of wifi work mode */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">typedef</span> BYTE_T GW_WF_CFG_MTHD_SEL;  <span class="comment">// wifi config method select</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define GWCM_OLD                0   </span><span class="comment">// do not have low power mode</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define GWCM_LOW_POWER          1   </span><span class="comment">// with low power mode</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define GWCM_SPCL_MODE          2   </span><span class="comment">// special with low power mode</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define GWCM_OLD_PROD           3   </span><span class="comment">// GWCM_OLD mode with product</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define GWCM_LOW_POWER_AUTOCFG  4   </span><span class="comment">// with low power mode &amp;&amp; auto cfg</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define GWCM_SPCL_AUTOCFG       5   </span><span class="comment">// special with low power mode &amp;&amp; auto cfg</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/* tuya sdk definition of wifi start mode */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">typedef</span> BYTE_T GW_WF_START_MODE;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define WF_START_AP_ONLY        0   </span><span class="comment">// only have ap-cfg mode</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define WF_START_SMART_ONLY     1   </span><span class="comment">// only have smart-cfg mode</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define WF_START_AP_FIRST       2   </span><span class="comment">// have both ap-cfg and smart-cfg. default is ap-cfg mode</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define WF_START_SMART_FIRST    3   </span><span class="comment">// have both ap-cfg and smart-cfg. default is smart-cfg mode</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define WF_START_SMART_AP_CONCURRENT    4   </span><span class="comment">//  ap-cfg and smart-cfg is concurrent</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/* tuya sdk definition of wifi-config status */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">typedef</span> BYTE_T GW_WF_NWC_STAT_T;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define GWNS_LOWPOWER           0   </span><span class="comment">// current in low power mode</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define GWNS_UNCFG_SMC          1   </span><span class="comment">// current in smart-cfg mode</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define GWNS_UNCFG_AP           2   </span><span class="comment">// current in ap-cfg mode</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define GWNS_TY_SMARTCFG        3   </span><span class="comment">// already get ssid &amp;&amp; passwd from smart-cfg mode</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define GWNS_TY_AP              4   </span><span class="comment">// already get ssid &amp;&amp; passwd from ap-cfg mode</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#define GWNS_WECHAT_AK          5   </span><span class="comment">// already get ssid &amp;&amp; passwd from wechat mode</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#define GWNS_OTHER_CFG          6   </span><span class="comment">// already get ssid &amp;&amp; passwd from other mode.for example:uart、bluetooth、qrcode and so on</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define GWNS_NO_NEED_CFG        7   </span><span class="comment">// no need config wifi</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define GWNS_TY_SMART_AP_CFG    9   </span><span class="comment">//already get ssid &amp;&amp; passwd from smart-cfg and ap-cfg concurrent mode</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define GWNS_UNCFG_SMC_AP       10  </span><span class="comment">//current in smart-cfg and ap-cfg concurrent mode</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define GWNS_PROXY_ACTIVED          11  </span><span class="comment">// bt actived</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define GWNS_PROXY_CONFIG_WF        12  </span><span class="comment">//in bt actived,has configed wifi</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/* tuya sdk definition of wifi-config fast status */</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">typedef</span> BYTE_T GW_WF_NWC_FAST_STAT_T;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#define GWNS_FAST_LOWPOWER           0   </span><span class="comment">// current in low power mode</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#define GWNS_FAST_UNCFG_SMC          1   </span><span class="comment">// current in smart-cfg mode</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#define GWNS_FAST_UNCFG_AP           2   </span><span class="comment">// current in ap-cfg mode</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#define GWNS_FAST_UNCFG_NORMAL       3   </span><span class="comment">// current in normal mode</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#define GWNS_FAST_UNCFG_SMC_AP       4   </span><span class="comment">// current in smart and ap concurrent mode</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">typedef</span> BYTE_T GW_WF_MD_T;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#define GWM_NORMAL              0   </span><span class="comment">// Normal</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#define GWM_SPECIAL_SMT_CFG     1   </span><span class="comment">// special smart cfg</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#define GWM_SPECIAL_AP_CFG      2   </span><span class="comment">// special ap cfg</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#define GWM_SPECIAL_SMT_AP_CFG  3   </span><span class="comment">// special smart and ap cfg</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/* tuya sdk definition of wifi-net status */</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">typedef</span> BYTE_T GW_WIFI_NW_STAT_E;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define STAT_LOW_POWER          0   </span><span class="comment">// idle status,use to external config network</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define STAT_UNPROVISION        1   </span><span class="comment">// smart config status</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define STAT_AP_STA_UNCFG       2   </span><span class="comment">// ap WIFI config status</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define STAT_AP_STA_DISC        3   </span><span class="comment">// ap WIFI already config,station disconnect</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define STAT_AP_STA_CONN        4   </span><span class="comment">// ap station mode,station connect</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define STAT_STA_DISC           5   </span><span class="comment">// only station mode,disconnect</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define STAT_STA_CONN           6   </span><span class="comment">// station mode connect</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define STAT_CLOUD_CONN         7   </span><span class="comment">// cloud connect</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define STAT_AP_CLOUD_CONN      8   </span><span class="comment">// cloud connect and ap start</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#define STAT_REG_FAIL           9   </span><span class="comment">// register fail</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define STAT_OFFLINE            10   </span><span class="comment">// offline</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define STAT_MQTT_ONLINE        11</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define STAT_MQTT_OFFLINE       12</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#define STAT_UNPROVISION_AP_STA_UNCFG       13 </span><span class="comment">//smart-cfg and ap-cfg concurrent config status</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define STAT_PROXY_ACTIVED         14</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">typedef</span> BYTE_T NW_CFG_ERR_CODE_E;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#define NW_CFG_INIT                 0   </span><span class="comment">// initial state</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define NW_CFG_ACTIVE_FAILED        1   </span><span class="comment">// active failed</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define NW_CFG_AP_NOT_FOUND         2   </span><span class="comment">// ap not found</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#define NW_CFG_ERR_PASSWD           3   </span><span class="comment">// password error</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#define NW_CFG_CANT_CONN_AP         4   </span><span class="comment">// can not connect to ap</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#define NW_CFG_DHCP_FAILED          5   </span><span class="comment">// dhcp failed</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#define NW_CFG_SUCC                 100 </span><span class="comment">// succeed</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">typedef</span> <span class="keywordtype">int</span> AP_CFG_ERR_CODE;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#define AP_CFG_SUCC  0</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#define AP_CFG_ERR_PCK  1</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#define AP_CFG_AP_NOT_FOUND 2</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#define AP_CFG_ERR_PASSWD 3</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#define AP_CFG_CANT_CONN_AP 4</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define AP_CFG_DHCP_FAILED 5</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#define AP_CFG_CONN_CLOUD_FAILED 6</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#define AP_CFG_GET_URL_FAILED 7</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#define AP_CFG_GW_ACTIVE_FAILED 8</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#define AP_CFG_GW_ACTIVE_SUCCESS 9</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">/* tuya sdk definition of wifi-reset type */</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">typedef</span> BYTE_T WF_RESET_TP_T;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#define WRT_SMT_CFG             0</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#define WRT_AP                  1</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#define WRT_AUTO                2</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#define WRT_SMT_AP_CFG          3</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d9/df8/structWF__GW__PROD__INFO__S.html">  116</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    CHAR_T *uuid;       <span class="comment">// strlen(uuid) &lt;= 16,must not be null</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    CHAR_T *auth_key;   <span class="comment">// strlen(auth_key) &lt;= 32,must not be null</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    CHAR_T *ap_ssid;    <span class="comment">// strlen(ap_ssid) &lt;= 16,if ap_ssid is null ,then the default ssid is Smartlife_xxxx</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    CHAR_T *ap_passwd;  <span class="comment">// strlen(ap_passwd) &lt;= 16,default null</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>} <a class="code hl_struct" href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../db/ddb/structDEBUG__GW__PROD__INFO__S.html">  126</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    BOOL_T has_auth;    <span class="comment">// authFlag</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    CHAR_T *ap_ssid;    <span class="comment">// strlen(ap_ssid) &lt;= 16,if ap_ssid is null ,then the default ssid is Smartlife_xxxx</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    CHAR_T *ap_passwd;  <span class="comment">// strlen(ap_passwd) &lt;= 16,default null</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>} <a class="code hl_struct" href="../../db/ddb/structDEBUG__GW__PROD__INFO__S.html">DEBUG_GW_PROD_INFO_S</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">  137</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a>)(IN CONST GW_WIFI_NW_STAT_E stat);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">  144</a></span><span class="keyword">typedef</span> VOID (*<a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">WF_NW_CFG_ERR_CODE_CB</a>)(IN CONST NW_CFG_ERR_CODE_E err_code);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#endif </span><span class="comment">// TUYA_CLOUD_WIFI_DEFS_H</span></div>
+<div class="ttc" id="astructDEBUG__GW__PROD__INFO__S_html"><div class="ttname"><a href="../../db/ddb/structDEBUG__GW__PROD__INFO__S.html">DEBUG_GW_PROD_INFO_S</a></div><div class="ttdoc">Definition of product info (for debug)</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:126</div></div>
+<div class="ttc" id="astructWF__GW__PROD__INFO__S_html"><div class="ttname"><a href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:116</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a06238119f7279eaaf7f2c0be948b3cd5"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">WF_NW_CFG_ERR_CODE_CB</a></div><div class="ttdeci">VOID(* WF_NW_CFG_ERR_CODE_CB)(IN CONST NW_CFG_ERR_CODE_E err_code)</div><div class="ttdoc">Handler when network configuration error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:144</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a2e8a6875b865838ae5efa2edebce6b71"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a></div><div class="ttdeci">VOID(* GET_WF_NW_STAT_CB)(IN CONST GW_WIFI_NW_STAT_E stat)</div><div class="ttdoc">Handler when network connection error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:137</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

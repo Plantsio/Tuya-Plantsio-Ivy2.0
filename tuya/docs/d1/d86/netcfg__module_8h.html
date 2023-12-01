@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_wifi/include/netcfg_module.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_ac23facb638b8c78e3ea6a0534f0da5c.html">svc_wifi</a></li><li class="navelem"><a class="el" href="../../dir_2a60f5b8a54aa317a95a983f0f73d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">netcfg_module.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya netcfg module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/ddc/tal__wifi_8h_source.html">tal_wifi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d7f/tuya__list_8h_source.html">tuya_list.h</a>&quot;</code><br />
+<code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &quot;stdbool.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+netcfg_module.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d7e/netcfg__module_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__wifi_2include_2netcfg__module_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__wifi_2include_2netcfg__module_8h" id="ainclude_2components_2svc__wifi_2include_2netcfg__module_8h">
+<area shape="rect" title="tuya netcfg module" alt="" coords="649,5,824,61"/>
+<area shape="rect" href="../../d8/ddc/tal__wifi_8h.html" title="Common process" alt="" coords="645,109,727,136"/>
+<area shape="rect" title=" " alt="" coords="715,408,785,435"/>
+<area shape="rect" title=" " alt="" coords="810,408,893,435"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="361,184,451,211"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="451,333,599,360"/>
+<area shape="rect" href="../../d6/ddb/tkl__wifi_8h.html" title="Common process &#45; adapter the wi&#45;fi api" alt="" coords="563,259,644,285"/>
+<area shape="rect" href="../../d3/df4/tal__wifi__mgnt_8h.html" title="wifi interface" alt="" coords="475,184,598,211"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="458,408,591,435"/>
+<area shape="rect" title=" " alt="" coords="615,408,690,435"/>
+<area shape="rect" title=" " alt="" coords="5,408,76,435"/>
+<area shape="rect" title=" " alt="" coords="101,408,175,435"/>
+<area shape="rect" title=" " alt="" coords="200,408,271,435"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="295,408,434,435"/>
+</map>
+</div>
+</div>
+<p><a href="../../d1/d86/netcfg__module_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd3/structNETCFG__HANDLER.html">NETCFG_HANDLER</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">netcfg handler  <a href="../../d4/dd3/structNETCFG__HANDLER.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:affb89f1c499087812d5e8fb5ee1b70fc"><td class="memItemLeft" align="right" valign="top"><a id="affb89f1c499087812d5e8fb5ee1b70fc" name="affb89f1c499087812d5e8fb5ee1b70fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>API_USER</b>&#160;&#160;&#160;(0x1 &lt;&lt; 8)</td></tr>
+<tr class="separator:affb89f1c499087812d5e8fb5ee1b70fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc23d6ceae3f47f1b255f9094bf450d"><td class="memItemLeft" align="right" valign="top"><a id="aebc23d6ceae3f47f1b255f9094bf450d" name="aebc23d6ceae3f47f1b255f9094bf450d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BLE</b>&#160;&#160;&#160;(0x1 &lt;&lt; 2)</td></tr>
+<tr class="separator:aebc23d6ceae3f47f1b255f9094bf450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5b35a8968c975df61b4c894e3c3bf9"><td class="memItemLeft" align="right" valign="top"><a id="a4a5b35a8968c975df61b4c894e3c3bf9" name="a4a5b35a8968c975df61b4c894e3c3bf9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CAMERA_QR</b>&#160;&#160;&#160;(0x1 &lt;&lt; 3)</td></tr>
+<tr class="separator:a4a5b35a8968c975df61b4c894e3c3bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03af9711c961799e0ff9bf6249be8d2"><td class="memItemLeft" align="right" valign="top"><a id="af03af9711c961799e0ff9bf6249be8d2" name="af03af9711c961799e0ff9bf6249be8d2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEF_AP_SSID_PF</b>&#160;&#160;&#160;&quot;SmartLife&quot;</td></tr>
+<tr class="separator:af03af9711c961799e0ff9bf6249be8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f78763e6be05b2f6e2f0bcb6ca3cd80"><td class="memItemLeft" align="right" valign="top"><a id="a4f78763e6be05b2f6e2f0bcb6ca3cd80" name="a4f78763e6be05b2f6e2f0bcb6ca3cd80"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_AMAZON_WIFI_FFS</b>&#160;&#160;&#160;((VENDOR_AMAZON &lt;&lt; 16) | (WIFI_FFS))</td></tr>
+<tr class="separator:a4f78763e6be05b2f6e2f0bcb6ca3cd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac566177aac18b50f5f1a0e9ef35a5924"><td class="memItemLeft" align="right" valign="top"><a id="ac566177aac18b50f5f1a0e9ef35a5924" name="ac566177aac18b50f5f1a0e9ef35a5924"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_JD_WIFI_SMART</b>&#160;&#160;&#160;((VENDOR_JD &lt;&lt; 16) | WIFI_SMARTCFG)</td></tr>
+<tr class="separator:ac566177aac18b50f5f1a0e9ef35a5924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62063383284fd6059371e43cc05c163"><td class="memItemLeft" align="right" valign="top"><a id="ac62063383284fd6059371e43cc05c163" name="ac62063383284fd6059371e43cc05c163"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_STOP_ALL_CFG_MODULE</b>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:ac62063383284fd6059371e43cc05c163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0f3b2320510be8ac0d4204f2f72ed1"><td class="memItemLeft" align="right" valign="top"><a id="a2c0f3b2320510be8ac0d4204f2f72ed1" name="a2c0f3b2320510be8ac0d4204f2f72ed1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_API_USER</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | API_USER)</td></tr>
+<tr class="separator:a2c0f3b2320510be8ac0d4204f2f72ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b452ecbbba1a7acae27522da9bc4a9d"><td class="memItemLeft" align="right" valign="top"><a id="a0b452ecbbba1a7acae27522da9bc4a9d" name="a0b452ecbbba1a7acae27522da9bc4a9d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_BLE</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | BLE)</td></tr>
+<tr class="separator:a0b452ecbbba1a7acae27522da9bc4a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882f229b267bf4021cc9bd5b6f67e0f1"><td class="memItemLeft" align="right" valign="top"><a id="a882f229b267bf4021cc9bd5b6f67e0f1" name="a882f229b267bf4021cc9bd5b6f67e0f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_CAMERA_QR</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | CAMERA_QR)</td></tr>
+<tr class="separator:a882f229b267bf4021cc9bd5b6f67e0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258c8d8789cf67dc9a30f2119926c814"><td class="memItemLeft" align="right" valign="top"><a id="a258c8d8789cf67dc9a30f2119926c814" name="a258c8d8789cf67dc9a30f2119926c814"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_WIFI_AP</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | WIFI_AP)</td></tr>
+<tr class="separator:a258c8d8789cf67dc9a30f2119926c814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1244bf973560a7d70f6a30ca560a5661"><td class="memItemLeft" align="right" valign="top"><a id="a1244bf973560a7d70f6a30ca560a5661" name="a1244bf973560a7d70f6a30ca560a5661"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_WIFI_AP_COEXIST</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | WIFI_AP_COEXIST)</td></tr>
+<tr class="separator:a1244bf973560a7d70f6a30ca560a5661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ed63e0817ac0534502a9d9499c0066"><td class="memItemLeft" align="right" valign="top"><a id="a57ed63e0817ac0534502a9d9499c0066" name="a57ed63e0817ac0534502a9d9499c0066"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_WIFI_PEGASUS</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | WIFI_PEGASUS)</td></tr>
+<tr class="separator:a57ed63e0817ac0534502a9d9499c0066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5310dead3828ede0c6b81e73e5226f"><td class="memItemLeft" align="right" valign="top"><a id="aad5310dead3828ede0c6b81e73e5226f" name="aad5310dead3828ede0c6b81e73e5226f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_WIFI_SMARTCFG</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | WIFI_SMARTCFG)</td></tr>
+<tr class="separator:aad5310dead3828ede0c6b81e73e5226f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f619a89c80f4555071220ca09532d5"><td class="memItemLeft" align="right" valign="top"><a id="a36f619a89c80f4555071220ca09532d5" name="a36f619a89c80f4555071220ca09532d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_TY_WIFI_SMARTCFG_COEXIST</b>&#160;&#160;&#160;((VENDOR_TUYA &lt;&lt; 16) | WIFI_SMARTCFG_COEXIST)</td></tr>
+<tr class="separator:a36f619a89c80f4555071220ca09532d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201a50695416e6b264adf38b9c78b630"><td class="memItemLeft" align="right" valign="top"><a id="a201a50695416e6b264adf38b9c78b630" name="a201a50695416e6b264adf38b9c78b630"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETCFG_WX_WIFI_AIRKISS</b>&#160;&#160;&#160;((VENDOR_WEIXIN &lt;&lt; 16) | WIFI_SMARTCFG)</td></tr>
+<tr class="separator:a201a50695416e6b264adf38b9c78b630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c42f5025277c21ac45c68588dcd914f"><td class="memItemLeft" align="right" valign="top"><a id="a6c42f5025277c21ac45c68588dcd914f" name="a6c42f5025277c21ac45c68588dcd914f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VENDOR_AMAZON</b>&#160;&#160;&#160;(0x1 &lt;&lt; 3)</td></tr>
+<tr class="separator:a6c42f5025277c21ac45c68588dcd914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a03e6c5cf0b4dc33383a5a92d5d9d4b"><td class="memItemLeft" align="right" valign="top"><a id="a2a03e6c5cf0b4dc33383a5a92d5d9d4b" name="a2a03e6c5cf0b4dc33383a5a92d5d9d4b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VENDOR_JD</b>&#160;&#160;&#160;(0x1 &lt;&lt; 1)</td></tr>
+<tr class="separator:a2a03e6c5cf0b4dc33383a5a92d5d9d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e3550b802e3ab3c80b07935a9687b3"><td class="memItemLeft" align="right" valign="top"><a id="a98e3550b802e3ab3c80b07935a9687b3" name="a98e3550b802e3ab3c80b07935a9687b3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VENDOR_TUYA</b>&#160;&#160;&#160;(0x1 &lt;&lt; 0)</td></tr>
+<tr class="separator:a98e3550b802e3ab3c80b07935a9687b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597dea4ff4cafc7bb78e06e10aa4651d"><td class="memItemLeft" align="right" valign="top"><a id="a597dea4ff4cafc7bb78e06e10aa4651d" name="a597dea4ff4cafc7bb78e06e10aa4651d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VENDOR_WEIXIN</b>&#160;&#160;&#160;(0x1 &lt;&lt; 2)</td></tr>
+<tr class="separator:a597dea4ff4cafc7bb78e06e10aa4651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14676891233e7b312cab742b4fc3c729"><td class="memItemLeft" align="right" valign="top"><a id="a14676891233e7b312cab742b4fc3c729" name="a14676891233e7b312cab742b4fc3c729"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_AP</b>&#160;&#160;&#160;(0x1 &lt;&lt; 1)</td></tr>
+<tr class="separator:a14676891233e7b312cab742b4fc3c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed50a1d9b8a85ed916dd73f5eb94f31c"><td class="memItemLeft" align="right" valign="top"><a id="aed50a1d9b8a85ed916dd73f5eb94f31c" name="aed50a1d9b8a85ed916dd73f5eb94f31c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_AP_COEXIST</b>&#160;&#160;&#160;(0x1 &lt;&lt; 5)</td></tr>
+<tr class="separator:aed50a1d9b8a85ed916dd73f5eb94f31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc7b0055e702aadce1515bb37677d68"><td class="memItemLeft" align="right" valign="top"><a id="a1dc7b0055e702aadce1515bb37677d68" name="a1dc7b0055e702aadce1515bb37677d68"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_FFS</b>&#160;&#160;&#160;(0x1 &lt;&lt; 6)</td></tr>
+<tr class="separator:a1dc7b0055e702aadce1515bb37677d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d814f14df30cd5c5fdd1fc5da4d609"><td class="memItemLeft" align="right" valign="top"><a id="af2d814f14df30cd5c5fdd1fc5da4d609" name="af2d814f14df30cd5c5fdd1fc5da4d609"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_PEGASUS</b>&#160;&#160;&#160;(0x1 &lt;&lt; 7)</td></tr>
+<tr class="separator:af2d814f14df30cd5c5fdd1fc5da4d609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80eeb75ea8e3fa9602c34ead42fb4ba"><td class="memItemLeft" align="right" valign="top"><a id="aa80eeb75ea8e3fa9602c34ead42fb4ba" name="aa80eeb75ea8e3fa9602c34ead42fb4ba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_SMARTCFG</b>&#160;&#160;&#160;(0x1 &lt;&lt; 0)</td></tr>
+<tr class="separator:aa80eeb75ea8e3fa9602c34ead42fb4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74753f6c31cc218b8be50178f818193"><td class="memItemLeft" align="right" valign="top"><a id="ae74753f6c31cc218b8be50178f818193" name="ae74753f6c31cc218b8be50178f818193"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_SMARTCFG_COEXIST</b>&#160;&#160;&#160;(0x1 &lt;&lt; 4)</td></tr>
+<tr class="separator:ae74753f6c31cc218b8be50178f818193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee60892f1d5d95b38926811663ff057"><td class="memItemLeft" align="right" valign="top"><a id="aeee60892f1d5d95b38926811663ff057" name="aeee60892f1d5d95b38926811663ff057"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WL_TOKEN_LEN</b>&#160;&#160;&#160;(16)</td></tr>
+<tr class="separator:aeee60892f1d5d95b38926811663ff057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:af38231379efbbc7994b8e6fe53376102"><td class="memItemLeft" align="right" valign="top"><a id="af38231379efbbc7994b8e6fe53376102" name="af38231379efbbc7994b8e6fe53376102"></a>
+typedef struct <a class="el" href="../../d5/d2b/structapSsidPasswd__s.html">apSsidPasswd_s</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApSsidPasswd_t</b></td></tr>
+<tr class="memdesc:af38231379efbbc7994b8e6fe53376102"><td class="mdescLeft">&#160;</td><td class="mdescRight">ssid and password info <br /></td></tr>
+<tr class="separator:af38231379efbbc7994b8e6fe53376102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb4d8f8275db70739d8df4ede71abd7"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aacb4d8f8275db70739d8df4ede71abd7">FN_NETCFG_CB</a>) (<a class="el" href="../../d7/ddb/structSSID__PASSWORD__TOKEN.html">PTR_SSID_PASSWORD_TOKEN</a> info, int type)</td></tr>
+<tr class="memdesc:aacb4d8f8275db70739d8df4ede71abd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">netcfg finished callback function.  <a href="../../d1/d86/netcfg__module_8h.html#aacb4d8f8275db70739d8df4ede71abd7">更多...</a><br /></td></tr>
+<tr class="separator:aacb4d8f8275db70739d8df4ede71abd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa410cfdb38d89780622cf4ac7788c66c"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aa410cfdb38d89780622cf4ac7788c66c">FN_NETCFG_START</a>) (<a class="el" href="../../d1/d86/netcfg__module_8h.html#aacb4d8f8275db70739d8df4ede71abd7">FN_NETCFG_CB</a> cb, void *args, int type)</td></tr>
+<tr class="memdesc:aa410cfdb38d89780622cf4ac7788c66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">netcfg start function.  <a href="../../d1/d86/netcfg__module_8h.html#aa410cfdb38d89780622cf4ac7788c66c">更多...</a><br /></td></tr>
+<tr class="separator:aa410cfdb38d89780622cf4ac7788c66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee32630a92721b1669e16d4f9205f4f1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aee32630a92721b1669e16d4f9205f4f1">FN_NETCFG_STOP</a>) (int type)</td></tr>
+<tr class="memdesc:aee32630a92721b1669e16d4f9205f4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">netcfg stop function.  <a href="../../d1/d86/netcfg__module_8h.html#aee32630a92721b1669e16d4f9205f4f1">更多...</a><br /></td></tr>
+<tr class="separator:aee32630a92721b1669e16d4f9205f4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fcbc06ea7c40559e26e1af06804a23"><td class="memItemLeft" align="right" valign="top"><a id="a04fcbc06ea7c40559e26e1af06804a23" name="a04fcbc06ea7c40559e26e1af06804a23"></a>
+typedef struct <a class="el" href="../../d1/d0e/structAP__NETCFG__ARGS.html">AP_NETCFG_ARGS</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>P_AP_NETCFG_ARGS</b></td></tr>
+<tr class="separator:a04fcbc06ea7c40559e26e1af06804a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31262f94c4635b7021e090764093053"><td class="memItemLeft" align="right" valign="top"><a id="aa31262f94c4635b7021e090764093053" name="aa31262f94c4635b7021e090764093053"></a>
+typedef struct <a class="el" href="../../d4/dd3/structNETCFG__HANDLER.html">NETCFG_HANDLER</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>PTR_NETCFG_HANDLER</b></td></tr>
+<tr class="separator:aa31262f94c4635b7021e090764093053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbc4642f2ab528683bdcc83b17c35de"><td class="memItemLeft" align="right" valign="top"><a id="a1dbc4642f2ab528683bdcc83b17c35de" name="a1dbc4642f2ab528683bdcc83b17c35de"></a>
+typedef struct <a class="el" href="../../d7/ddb/structSSID__PASSWORD__TOKEN.html">SSID_PASSWORD_TOKEN</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>PTR_SSID_PASSWORD_TOKEN</b></td></tr>
+<tr class="separator:a1dbc4642f2ab528683bdcc83b17c35de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2621c08ed57dd45ceb096bbf487a8d8"><td class="memItemLeft" align="right" valign="top"><a id="ab2621c08ed57dd45ceb096bbf487a8d8" name="ab2621c08ed57dd45ceb096bbf487a8d8"></a>
+typedef struct <a class="el" href="../../d5/d2b/structapSsidPasswd__s.html">apSsidPasswd_s</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ptrApSsidPasswd</b></td></tr>
+<tr class="separator:ab2621c08ed57dd45ceb096bbf487a8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af5912f2b25cf07d0a626ecba27dc57b9"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#af5912f2b25cf07d0a626ecba27dc57b9">is_netcfg_module_inited</a> (VOID_T)</td></tr>
+<tr class="memdesc:af5912f2b25cf07d0a626ecba27dc57b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether netcfg module is inited or not  <a href="../../d1/d86/netcfg__module_8h.html#af5912f2b25cf07d0a626ecba27dc57b9">更多...</a><br /></td></tr>
+<tr class="separator:af5912f2b25cf07d0a626ecba27dc57b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888e371ebb98e7c212d06d5dc777f842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a888e371ebb98e7c212d06d5dc777f842">netcfg_module_init</a> (VOID_T)</td></tr>
+<tr class="memdesc:a888e371ebb98e7c212d06d5dc777f842"><td class="mdescLeft">&#160;</td><td class="mdescRight">init netcfg module.  <a href="../../d1/d86/netcfg__module_8h.html#a888e371ebb98e7c212d06d5dc777f842">更多...</a><br /></td></tr>
+<tr class="separator:a888e371ebb98e7c212d06d5dc777f842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276a84b716dedc99e014a475f74db634"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a276a84b716dedc99e014a475f74db634">netcfg_module_register</a> (int type, <a class="el" href="../../d1/d86/netcfg__module_8h.html#aa410cfdb38d89780622cf4ac7788c66c">FN_NETCFG_START</a> start, <a class="el" href="../../d1/d86/netcfg__module_8h.html#aee32630a92721b1669e16d4f9205f4f1">FN_NETCFG_STOP</a> stop)</td></tr>
+<tr class="memdesc:a276a84b716dedc99e014a475f74db634"><td class="mdescLeft">&#160;</td><td class="mdescRight">register netcfg type  <a href="../../d1/d86/netcfg__module_8h.html#a276a84b716dedc99e014a475f74db634">更多...</a><br /></td></tr>
+<tr class="separator:a276a84b716dedc99e014a475f74db634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c10f6c399d21c8f5f89ffc4d52bd7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a65c10f6c399d21c8f5f89ffc4d52bd7a">netcfg_module_uninit</a> (VOID_T)</td></tr>
+<tr class="memdesc:a65c10f6c399d21c8f5f89ffc4d52bd7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">uninit netcfg module.  <a href="../../d1/d86/netcfg__module_8h.html#a65c10f6c399d21c8f5f89ffc4d52bd7a">更多...</a><br /></td></tr>
+<tr class="separator:a65c10f6c399d21c8f5f89ffc4d52bd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889d08e78a8208db6ae9e3921dbadd3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a889d08e78a8208db6ae9e3921dbadd3a">netcfg_module_unregister</a> (int type)</td></tr>
+<tr class="memdesc:a889d08e78a8208db6ae9e3921dbadd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">unregister netcfg type  <a href="../../d1/d86/netcfg__module_8h.html#a889d08e78a8208db6ae9e3921dbadd3a">更多...</a><br /></td></tr>
+<tr class="separator:a889d08e78a8208db6ae9e3921dbadd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada01f9683d35a704c5a090e7b4c38759"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#ada01f9683d35a704c5a090e7b4c38759">netcfg_set_transporter_switch_interval</a> (int ms_interval)</td></tr>
+<tr class="memdesc:ada01f9683d35a704c5a090e7b4c38759"><td class="mdescLeft">&#160;</td><td class="mdescRight">set channel switch interval(default:110ms)  <a href="../../d1/d86/netcfg__module_8h.html#ada01f9683d35a704c5a090e7b4c38759">更多...</a><br /></td></tr>
+<tr class="separator:ada01f9683d35a704c5a090e7b4c38759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a236c644296f5997d5fabfa84007a4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a4a236c644296f5997d5fabfa84007a4f">netcfg_start</a> (int type, <a class="el" href="../../d1/d86/netcfg__module_8h.html#aacb4d8f8275db70739d8df4ede71abd7">FN_NETCFG_CB</a> netcfg_finish_cb, void *args)</td></tr>
+<tr class="memdesc:a4a236c644296f5997d5fabfa84007a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">start netcfg type  <a href="../../d1/d86/netcfg__module_8h.html#a4a236c644296f5997d5fabfa84007a4f">更多...</a><br /></td></tr>
+<tr class="separator:a4a236c644296f5997d5fabfa84007a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a02ca33f5f4ae1b8396493e2514835"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a55a02ca33f5f4ae1b8396493e2514835">netcfg_start_other_all</a> (int type)</td></tr>
+<tr class="memdesc:a55a02ca33f5f4ae1b8396493e2514835"><td class="mdescLeft">&#160;</td><td class="mdescRight">start all netcfg type except the specified type  <a href="../../d1/d86/netcfg__module_8h.html#a55a02ca33f5f4ae1b8396493e2514835">更多...</a><br /></td></tr>
+<tr class="separator:a55a02ca33f5f4ae1b8396493e2514835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d06d7c1f95058050261edc03de8852"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aa6d06d7c1f95058050261edc03de8852">netcfg_stop</a> (int type)</td></tr>
+<tr class="memdesc:aa6d06d7c1f95058050261edc03de8852"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop netcfg type  <a href="../../d1/d86/netcfg__module_8h.html#aa6d06d7c1f95058050261edc03de8852">更多...</a><br /></td></tr>
+<tr class="separator:aa6d06d7c1f95058050261edc03de8852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4037c2b0439a352e039a665365f30f52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d86/netcfg__module_8h.html#a4037c2b0439a352e039a665365f30f52">netcfg_stop_other_all</a> (int type)</td></tr>
+<tr class="memdesc:a4037c2b0439a352e039a665365f30f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop all netcfg type except the specified type  <a href="../../d1/d86/netcfg__module_8h.html#a4037c2b0439a352e039a665365f30f52">更多...</a><br /></td></tr>
+<tr class="separator:a4037c2b0439a352e039a665365f30f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya netcfg module </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="aacb4d8f8275db70739d8df4ede71abd7" name="aacb4d8f8275db70739d8df4ede71abd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb4d8f8275db70739d8df4ede71abd7">&#9670;&nbsp;</a></span>FN_NETCFG_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FN_NETCFG_CB) (<a class="el" href="../../d7/ddb/structSSID__PASSWORD__TOKEN.html">PTR_SSID_PASSWORD_TOKEN</a> info, int type)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>netcfg finished callback function. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">PTR_SSID_PASSWORD_TOKEN</td><td>netcfg info: ssid,passwd,token </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>refer to netcfg type definitions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>netcfg finished callback function.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa410cfdb38d89780622cf4ac7788c66c" name="aa410cfdb38d89780622cf4ac7788c66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa410cfdb38d89780622cf4ac7788c66c">&#9670;&nbsp;</a></span>FN_NETCFG_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FN_NETCFG_START) (<a class="el" href="../../d1/d86/netcfg__module_8h.html#aacb4d8f8275db70739d8df4ede71abd7">FN_NETCFG_CB</a> cb, void *args, int type)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>netcfg start function. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>netcfg finished callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>args for start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>refer to netcfg type definitions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>netcfg start function.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aee32630a92721b1669e16d4f9205f4f1" name="aee32630a92721b1669e16d4f9205f4f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee32630a92721b1669e16d4f9205f4f1">&#9670;&nbsp;</a></span>FN_NETCFG_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FN_NETCFG_STOP) (int type)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>netcfg stop function. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>refer to netcfg type definitions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>netcfg stop function.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="af5912f2b25cf07d0a626ecba27dc57b9" name="af5912f2b25cf07d0a626ecba27dc57b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5912f2b25cf07d0a626ecba27dc57b9">&#9670;&nbsp;</a></span>is_netcfg_module_inited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T is_netcfg_module_inited </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>whether netcfg module is inited or not </p>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a888e371ebb98e7c212d06d5dc777f842" name="a888e371ebb98e7c212d06d5dc777f842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888e371ebb98e7c212d06d5dc777f842">&#9670;&nbsp;</a></span>netcfg_module_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_module_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init netcfg module. </p>
+<dl class="section note"><dt>注解</dt><dd>init netcfg module.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a276a84b716dedc99e014a475f74db634" name="a276a84b716dedc99e014a475f74db634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276a84b716dedc99e014a475f74db634">&#9670;&nbsp;</a></span>netcfg_module_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_module_register </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aa410cfdb38d89780622cf4ac7788c66c">FN_NETCFG_START</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aee32630a92721b1669e16d4f9205f4f1">FN_NETCFG_STOP</a>&#160;</td>
+          <td class="paramname"><em>stop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>register netcfg type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>netcfg type,refer to netcfg type definitions </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>callback function to start netcfg </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop</td><td>callback function to stop netcfg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>register netcfg module start and stop callback.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a65c10f6c399d21c8f5f89ffc4d52bd7a" name="a65c10f6c399d21c8f5f89ffc4d52bd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c10f6c399d21c8f5f89ffc4d52bd7a">&#9670;&nbsp;</a></span>netcfg_module_uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_module_uninit </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uninit netcfg module. </p>
+<dl class="section note"><dt>注解</dt><dd>release netcfg module resources.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a889d08e78a8208db6ae9e3921dbadd3a" name="a889d08e78a8208db6ae9e3921dbadd3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889d08e78a8208db6ae9e3921dbadd3a">&#9670;&nbsp;</a></span>netcfg_module_unregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_module_unregister </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unregister netcfg type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>netcfg type,refer to netcfg type definitions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>register netcfg module start and stop callback.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ada01f9683d35a704c5a090e7b4c38759" name="ada01f9683d35a704c5a090e7b4c38759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada01f9683d35a704c5a090e7b4c38759">&#9670;&nbsp;</a></span>netcfg_set_transporter_switch_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_set_transporter_switch_interval </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ms_interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set channel switch interval(default:110ms) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms_interval</td><td>unit:ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>set channel switch interval(default:110ms)</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4a236c644296f5997d5fabfa84007a4f" name="a4a236c644296f5997d5fabfa84007a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a236c644296f5997d5fabfa84007a4f">&#9670;&nbsp;</a></span>netcfg_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_start </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d86/netcfg__module_8h.html#aacb4d8f8275db70739d8df4ede71abd7">FN_NETCFG_CB</a>&#160;</td>
+          <td class="paramname"><em>netcfg_finish_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start netcfg type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>netcfg type,refer to netcfg type definitions </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">netcfg_finish_cb</td><td>callback function when netcfg finished </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>private data for netcfg_finish_cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>start netcfg type.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a55a02ca33f5f4ae1b8396493e2514835" name="a55a02ca33f5f4ae1b8396493e2514835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a02ca33f5f4ae1b8396493e2514835">&#9670;&nbsp;</a></span>netcfg_start_other_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_start_other_all </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start all netcfg type except the specified type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>netcfg type,refer to netcfg type definitions 0 : stop all netcfg type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>start all netcfg type except the specified type.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa6d06d7c1f95058050261edc03de8852" name="aa6d06d7c1f95058050261edc03de8852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d06d7c1f95058050261edc03de8852">&#9670;&nbsp;</a></span>netcfg_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_stop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop netcfg type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>netcfg type,refer to netcfg type definitions 0 : stop all netcfg type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>stop netcfg type.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4037c2b0439a352e039a665365f30f52" name="a4037c2b0439a352e039a665365f30f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4037c2b0439a352e039a665365f30f52">&#9670;&nbsp;</a></span>netcfg_stop_other_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcfg_stop_other_all </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop all netcfg type except the specified type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>netcfg type,refer to netcfg type definitions 0 : stop all netcfg type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>stop all netcfg type except the specified type.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

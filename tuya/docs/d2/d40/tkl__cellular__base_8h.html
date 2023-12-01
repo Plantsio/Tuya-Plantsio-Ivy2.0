@@ -1,0 +1,1120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/cellular_catx/include/tkl_cellular_base.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_b8ba071ca5cc1b1b8caa71befc3b9668.html">cellular_catx</a></li><li class="navelem"><a class="el" href="../../dir_cd70872c9112a79b6f8c2f63fe603ee2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_cellular_base.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组基础功能API实现接口。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d41/tkl__uart_8h_source.html">tkl_uart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d88/tkl__cellular__mds_8h_source.html">tkl_cellular_mds.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_cellular_base.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dcf/tkl__cellular__base_8h__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__base_8h" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__base_8h" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__base_8h">
+<area shape="rect" title="蜂窝模组基础功能API实现接口。" alt="" coords="126,5,361,47"/>
+<area shape="rect" title=" " alt="" coords="5,244,76,271"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="304,169,452,196"/>
+<area shape="rect" href="../../d9/d41/tkl__uart_8h.html" title="Common process &#45; adapter the uart api" alt="" coords="336,95,420,121"/>
+<area shape="rect" href="../../d5/d88/tkl__cellular__mds_8h.html" title="蜂窝模组数据API实现接口。" alt="" coords="119,95,261,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="101,244,234,271"/>
+<area shape="rect" title=" " alt="" coords="258,244,333,271"/>
+<area shape="rect" title=" " alt="" coords="357,244,428,271"/>
+<area shape="rect" title=" " alt="" coords="453,244,527,271"/>
+<area shape="rect" title=" " alt="" coords="551,244,634,271"/>
+<area shape="rect" title=" " alt="" coords="659,244,729,271"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="754,244,893,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d82/tkl__cellular__base_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__base_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__base_8hdep" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__base_8hdep">
+<area shape="rect" title="蜂窝模组基础功能API实现接口。" alt="" coords="5,5,240,47"/>
+<area shape="rect" href="../../df/d89/tkl__init__cellular_8h_source.html" title=" " alt="" coords="29,95,217,136"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d40/tkl__cellular__base_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dcf/structTKL__CELL__GENERAL__INFO__T.html">TKL_CELL_GENERAL_INFO_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a8c644369dd5e7a57e687f0ff27016856"><td class="memItemLeft" align="right" valign="top"><a id="a8c644369dd5e7a57e687f0ff27016856" name="a8c644369dd5e7a57e687f0ff27016856"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_GENERAL_MSGID_RSSI_UPDATE</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a8c644369dd5e7a57e687f0ff27016856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bae2019ec7e0bee3c1b5dc27ba34715"><td class="memItemLeft" align="right" valign="top"><a id="a4bae2019ec7e0bee3c1b5dc27ba34715" name="a4bae2019ec7e0bee3c1b5dc27ba34715"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_GENERAL_MSGID_RTC_SYNC</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4bae2019ec7e0bee3c1b5dc27ba34715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58ae799bb6fc8c72beb569a803652f1"><td class="memItemLeft" align="right" valign="top"><a id="aa58ae799bb6fc8c72beb569a803652f1" name="aa58ae799bb6fc8c72beb569a803652f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_CMD_GET_START</b>&#160;&#160;&#160;0x400</td></tr>
+<tr class="separator:aa58ae799bb6fc8c72beb569a803652f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b84e6c742961b0f73a9b49a8c1e13b"><td class="memItemLeft" align="right" valign="top"><a id="a89b84e6c742961b0f73a9b49a8c1e13b" name="a89b84e6c742961b0f73a9b49a8c1e13b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_CMD_SET_START</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a89b84e6c742961b0f73a9b49a8c1e13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae437d6f4887df331431bbf3d764ba28f"><td class="memItemLeft" align="right" valign="top"><a id="ae437d6f4887df331431bbf3d764ba28f" name="ae437d6f4887df331431bbf3d764ba28f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_CMD_USR_START</b>&#160;&#160;&#160;0x1000</td></tr>
+<tr class="separator:ae437d6f4887df331431bbf3d764ba28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3200fd79df492ee3d734dc2c5a8eaf"><td class="memItemLeft" align="right" valign="top"><a id="adb3200fd79df492ee3d734dc2c5a8eaf" name="adb3200fd79df492ee3d734dc2c5a8eaf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_DATA_STATICS</b>&#160;&#160;&#160;0x404</td></tr>
+<tr class="separator:adb3200fd79df492ee3d734dc2c5a8eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57eaa79d017a5ddeadff96c2b21e6ee"><td class="memItemLeft" align="right" valign="top"><a id="ab57eaa79d017a5ddeadff96c2b21e6ee" name="ab57eaa79d017a5ddeadff96c2b21e6ee"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_EPOCH_TIME</b>&#160;&#160;&#160;0x401</td></tr>
+<tr class="separator:ab57eaa79d017a5ddeadff96c2b21e6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3772abcacb0b020da75252550801930"><td class="memItemLeft" align="right" valign="top"><a id="ae3772abcacb0b020da75252550801930" name="ae3772abcacb0b020da75252550801930"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_LOCAL_TIME</b>&#160;&#160;&#160;0x407</td></tr>
+<tr class="separator:ae3772abcacb0b020da75252550801930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76dc67bfc0104764b97c89e3e739416e"><td class="memItemLeft" align="right" valign="top"><a id="a76dc67bfc0104764b97c89e3e739416e" name="a76dc67bfc0104764b97c89e3e739416e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_NET_TYPE</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a76dc67bfc0104764b97c89e3e739416e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229ac34300c27b700291679aaae6e379"><td class="memItemLeft" align="right" valign="top"><a id="a229ac34300c27b700291679aaae6e379" name="a229ac34300c27b700291679aaae6e379"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_RRC_RELEASE_TIME</b>&#160;&#160;&#160;0x413</td></tr>
+<tr class="separator:a229ac34300c27b700291679aaae6e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a44596472c1d0ea6b846e28beb59f1"><td class="memItemLeft" align="right" valign="top"><a id="a75a44596472c1d0ea6b846e28beb59f1" name="a75a44596472c1d0ea6b846e28beb59f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_RSSI</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a75a44596472c1d0ea6b846e28beb59f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69aff5e5b5e8a41f356d098782d24bfe"><td class="memItemLeft" align="right" valign="top"><a id="a69aff5e5b5e8a41f356d098782d24bfe" name="a69aff5e5b5e8a41f356d098782d24bfe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_RSSIDBM</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a69aff5e5b5e8a41f356d098782d24bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42b0cc6eb6ffaca729241c2500d0b1d"><td class="memItemLeft" align="right" valign="top"><a id="ae42b0cc6eb6ffaca729241c2500d0b1d" name="ae42b0cc6eb6ffaca729241c2500d0b1d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_SN</b>&#160;&#160;&#160;0x414</td></tr>
+<tr class="separator:ae42b0cc6eb6ffaca729241c2500d0b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa466c6a9d4afd23c325d2c749fc28eaf"><td class="memItemLeft" align="right" valign="top"><a id="aa466c6a9d4afd23c325d2c749fc28eaf" name="aa466c6a9d4afd23c325d2c749fc28eaf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_SYSFWKEY</b>&#160;&#160;&#160;0x416</td></tr>
+<tr class="separator:aa466c6a9d4afd23c325d2c749fc28eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea3b613d28456feebce7917c5bf6762"><td class="memItemLeft" align="right" valign="top"><a id="a1ea3b613d28456feebce7917c5bf6762" name="a1ea3b613d28456feebce7917c5bf6762"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_TIMEZONE</b>&#160;&#160;&#160;0x411</td></tr>
+<tr class="separator:a1ea3b613d28456feebce7917c5bf6762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd4fbe2107ff91141b6eeeecc6b33d5"><td class="memItemLeft" align="right" valign="top"><a id="a6fd4fbe2107ff91141b6eeeecc6b33d5" name="a6fd4fbe2107ff91141b6eeeecc6b33d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_UP_TIME</b>&#160;&#160;&#160;0x402</td></tr>
+<tr class="separator:a6fd4fbe2107ff91141b6eeeecc6b33d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595cf1a8e3b3e2e89618f9153528e8df"><td class="memItemLeft" align="right" valign="top"><a id="a595cf1a8e3b3e2e89618f9153528e8df" name="a595cf1a8e3b3e2e89618f9153528e8df"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_GET_UP_TIME_US</b>&#160;&#160;&#160;0x403</td></tr>
+<tr class="separator:a595cf1a8e3b3e2e89618f9153528e8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7b03420b469736da2c9cd6aa0c07dd"><td class="memItemLeft" align="right" valign="top"><a id="a5c7b03420b469736da2c9cd6aa0c07dd" name="a5c7b03420b469736da2c9cd6aa0c07dd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_INIT_VIRTUAL_AT</b>&#160;&#160;&#160;0X408</td></tr>
+<tr class="separator:a5c7b03420b469736da2c9cd6aa0c07dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad03f58642092b84d703654242bd42d"><td class="memItemLeft" align="right" valign="top"><a id="a7ad03f58642092b84d703654242bd42d" name="a7ad03f58642092b84d703654242bd42d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_MODULE_NAME</b>&#160;&#160;&#160;0x417</td></tr>
+<tr class="separator:a7ad03f58642092b84d703654242bd42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d40ffc612b8b48f33cfbf6d02b20214"><td class="memItemLeft" align="right" valign="top"><a id="a5d40ffc612b8b48f33cfbf6d02b20214" name="a5d40ffc612b8b48f33cfbf6d02b20214"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SEND_VIRTUAL_AT_CMD</b>&#160;&#160;&#160;0x409</td></tr>
+<tr class="separator:a5d40ffc612b8b48f33cfbf6d02b20214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5d4c5955fae7e216dfd62a88b21a6e"><td class="memItemLeft" align="right" valign="top"><a id="a7b5d4c5955fae7e216dfd62a88b21a6e" name="a7b5d4c5955fae7e216dfd62a88b21a6e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_ADC_SELFTEST</b>&#160;&#160;&#160;0x102</td></tr>
+<tr class="separator:a7b5d4c5955fae7e216dfd62a88b21a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ddb9d58ae82052aaae6cfb56c6674b"><td class="memItemLeft" align="right" valign="top"><a id="af6ddb9d58ae82052aaae6cfb56c6674b" name="af6ddb9d58ae82052aaae6cfb56c6674b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_ATUART_OFF</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:af6ddb9d58ae82052aaae6cfb56c6674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31305a0e60bc304aaeaa46b5adb04f8c"><td class="memItemLeft" align="right" valign="top"><a id="a31305a0e60bc304aaeaa46b5adb04f8c" name="a31305a0e60bc304aaeaa46b5adb04f8c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_ATUART_ON</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a31305a0e60bc304aaeaa46b5adb04f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61f3c1e5f101b3b7fb98adc3dc3c72e"><td class="memItemLeft" align="right" valign="top"><a id="ad61f3c1e5f101b3b7fb98adc3dc3c72e" name="ad61f3c1e5f101b3b7fb98adc3dc3c72e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_GENERAL_HOOK</b>&#160;&#160;&#160;0X410</td></tr>
+<tr class="separator:ad61f3c1e5f101b3b7fb98adc3dc3c72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c79c828f774f87ec4a9f166feb08fb"><td class="memItemLeft" align="right" valign="top"><a id="a95c79c828f774f87ec4a9f166feb08fb" name="a95c79c828f774f87ec4a9f166feb08fb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_MIC_SELFTEST</b>&#160;&#160;&#160;0x103</td></tr>
+<tr class="separator:a95c79c828f774f87ec4a9f166feb08fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76fa69d226aaff79e2bc6f334b7052a0"><td class="memItemLeft" align="right" valign="top"><a id="a76fa69d226aaff79e2bc6f334b7052a0" name="a76fa69d226aaff79e2bc6f334b7052a0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_PDP_TYPE</b>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:a76fa69d226aaff79e2bc6f334b7052a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376a73970902c2fd28b2f5a62eeb6799"><td class="memItemLeft" align="right" valign="top"><a id="a376a73970902c2fd28b2f5a62eeb6799" name="a376a73970902c2fd28b2f5a62eeb6799"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_POWEKEY_DISABLE_POWEROFF</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a376a73970902c2fd28b2f5a62eeb6799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565473893a36ff01d4e988cf026d3352"><td class="memItemLeft" align="right" valign="top"><a id="a565473893a36ff01d4e988cf026d3352" name="a565473893a36ff01d4e988cf026d3352"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_POWEKEY_ENABLE_POWEROFF</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a565473893a36ff01d4e988cf026d3352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf643802f2806938941f669f48f8fb8"><td class="memItemLeft" align="right" valign="top"><a id="abdf643802f2806938941f669f48f8fb8" name="abdf643802f2806938941f669f48f8fb8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_REGISTION_HOOK</b>&#160;&#160;&#160;0x406</td></tr>
+<tr class="separator:abdf643802f2806938941f669f48f8fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74dd1e6812660ffb54b0c94abe8eb665"><td class="memItemLeft" align="right" valign="top"><a id="a74dd1e6812660ffb54b0c94abe8eb665" name="a74dd1e6812660ffb54b0c94abe8eb665"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_RRC_RELEASE_TIME</b>&#160;&#160;&#160;0x412</td></tr>
+<tr class="separator:a74dd1e6812660ffb54b0c94abe8eb665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f481a3f64f3fe044fb040714d7f8fe5"><td class="memItemLeft" align="right" valign="top"><a id="a6f481a3f64f3fe044fb040714d7f8fe5" name="a6f481a3f64f3fe044fb040714d7f8fe5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_SMS_CHAR</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a6f481a3f64f3fe044fb040714d7f8fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f154043e6991f7f1098efaa8e29cc5"><td class="memItemLeft" align="right" valign="top"><a id="a72f154043e6991f7f1098efaa8e29cc5" name="a72f154043e6991f7f1098efaa8e29cc5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_SN</b>&#160;&#160;&#160;0x415</td></tr>
+<tr class="separator:a72f154043e6991f7f1098efaa8e29cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514c0083c5f91a6389208209a4227c33"><td class="memItemLeft" align="right" valign="top"><a id="a514c0083c5f91a6389208209a4227c33" name="a514c0083c5f91a6389208209a4227c33"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_TFCARD_SELFTEST</b>&#160;&#160;&#160;0x101</td></tr>
+<tr class="separator:a514c0083c5f91a6389208209a4227c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e095116b1a8af69f9ad6a84894c9609"><td class="memItemLeft" align="right" valign="top"><a id="a5e095116b1a8af69f9ad6a84894c9609" name="a5e095116b1a8af69f9ad6a84894c9609"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_TRACE_OFF</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a5e095116b1a8af69f9ad6a84894c9609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a21b8190918c4cd7c73b33b4a7157a3"><td class="memItemLeft" align="right" valign="top"><a id="a8a21b8190918c4cd7c73b33b4a7157a3" name="a8a21b8190918c4cd7c73b33b4a7157a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_TRACE_ON</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a8a21b8190918c4cd7c73b33b4a7157a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a65feb20d111633695dcf2ea5df7f0"><td class="memItemLeft" align="right" valign="top"><a id="a24a65feb20d111633695dcf2ea5df7f0" name="a24a65feb20d111633695dcf2ea5df7f0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_SET_UART_SELFTEST</b>&#160;&#160;&#160;0x100</td></tr>
+<tr class="separator:a24a65feb20d111633695dcf2ea5df7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431ae2f0d963a260b2adefe4263cbc50"><td class="memItemLeft" align="right" valign="top"><a id="a431ae2f0d963a260b2adefe4263cbc50" name="a431ae2f0d963a260b2adefe4263cbc50"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTL_USB_CTRL</b>&#160;&#160;&#160;0x405</td></tr>
+<tr class="separator:a431ae2f0d963a260b2adefe4263cbc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560b8b7ce732b2603cd131298d6efc20"><td class="memItemLeft" align="right" valign="top"><a id="a560b8b7ce732b2603cd131298d6efc20" name="a560b8b7ce732b2603cd131298d6efc20"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEIGHBOUR_NUM</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a560b8b7ce732b2603cd131298d6efc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e7de59cfb87ecbf9514a9cdd8d56a1"><td class="memItemLeft" align="right" valign="top"><a id="a16e7de59cfb87ecbf9514a9cdd8d56a1" name="a16e7de59cfb87ecbf9514a9cdd8d56a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELL_USB_DEV_MODE_E</b>&#160;&#160;&#160;INT_T</td></tr>
+<tr class="separator:a16e7de59cfb87ecbf9514a9cdd8d56a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a37b42329a3aa49fbe763676be1967d81"><td class="memItemLeft" align="right" valign="top"><a id="a37b42329a3aa49fbe763676be1967d81" name="a37b42329a3aa49fbe763676be1967d81"></a>
+typedef INT_T&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_GENERAL_MSGID</b></td></tr>
+<tr class="separator:a37b42329a3aa49fbe763676be1967d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a06bde03e797a6ddada7b56ca0877fb"><td class="memItemLeft" align="right" valign="top"><a id="a7a06bde03e797a6ddada7b56ca0877fb" name="a7a06bde03e797a6ddada7b56ca0877fb"></a>
+typedef INT_T&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_IOCTRL_CMD</b></td></tr>
+<tr class="separator:a7a06bde03e797a6ddada7b56ca0877fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33a489cbdb4d846cde361c7ef8720b6"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#ad33a489cbdb4d846cde361c7ef8720b6">TKL_GENERAL_CALLBACK</a>) (<a class="el" href="../../da/dcf/structTKL__CELL__GENERAL__INFO__T.html">TKL_CELL_GENERAL_INFO_T</a> *param)</td></tr>
+<tr class="memdesc:ad33a489cbdb4d846cde361c7ef8720b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义通用蜂窝回调通用  <a href="../../d2/d40/tkl__cellular__base_8h.html#ad33a489cbdb4d846cde361c7ef8720b6">更多...</a><br /></td></tr>
+<tr class="separator:ad33a489cbdb4d846cde361c7ef8720b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46509d0157df58a0c1b894b4734b5603"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a46509d0157df58a0c1b894b4734b5603">TKL_REGISTION_NOTIFY</a>) (UINT8_T sim_id, <a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#abc6c7555b40d45faad0e173f9ad5ab71">TUYA_CELLULAR_MDS_STATUS_E</a> st)</td></tr>
+<tr class="memdesc:a46509d0157df58a0c1b894b4734b5603"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂窝网络注册状态变化通知函数原型，该接口是为了svc_netmgr适配  <a href="../../d2/d40/tkl__cellular__base_8h.html#a46509d0157df58a0c1b894b4734b5603">更多...</a><br /></td></tr>
+<tr class="separator:a46509d0157df58a0c1b894b4734b5603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1473cdc3b446640e7d8528bf3f9cfdee"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a>) (<a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a4657486b535810e373d90295b0652b8b">TKL_SIM_STATE_E</a> status)</td></tr>
+<tr class="memdesc:a1473cdc3b446640e7d8528bf3f9cfdee"><td class="mdescLeft">&#160;</td><td class="mdescRight">sim卡状态变化通知函数原型  <a href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">更多...</a><br /></td></tr>
+<tr class="separator:a1473cdc3b446640e7d8528bf3f9cfdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8c7f18d8cb67c305627385d912c286"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a0c8c7f18d8cb67c305627385d912c286">TKL_VIRTAT_RESP</a>) (CHAR_T *resp, INT_T len)</td></tr>
+<tr class="memdesc:a0c8c7f18d8cb67c305627385d912c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚拟AT接收应答回调函数  <a href="../../d2/d40/tkl__cellular__base_8h.html#a0c8c7f18d8cb67c305627385d912c286">更多...</a><br /></td></tr>
+<tr class="separator:a0c8c7f18d8cb67c305627385d912c286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a61dadd085c1777f559549e05962b2c9e"><td class="memItemLeft" align="right" valign="top"><a id="a61dadd085c1777f559549e05962b2c9e" name="a61dadd085c1777f559549e05962b2c9e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>USB_DEV_MODE_CHARGE_ONLY</b> = 0
+, <b>USB_DEV_MODE_ROM_SERIAL</b> = 1
+, <b>USB_DEV_MODE_8SERIALS</b> =2
+, <b>USB_DEV_MODE_RNDIS</b> = 3
+, <br />
+&#160;&#160;<b>USB_DEV_MODE_ECM</b> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a61dadd085c1777f559549e05962b2c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab777834adb63f731c4b083e3ba03449e"><td class="memItemLeft" align="right" valign="top"><a id="ab777834adb63f731c4b083e3ba03449e" name="ab777834adb63f731c4b083e3ba03449e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TKL_CELLULAR_ABILITY_E</b> { <b>DOUBLE_SIM_DOUBLE_CHANNEL</b> = 1
+, <b>DOUBLE_SIM_SINGLE_CHANNEL</b> = 2
+, <b>SINGLE_SIM_SINGLE_CHANNEL</b> = 4
+ }</td></tr>
+<tr class="separator:ab777834adb63f731c4b083e3ba03449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4657486b535810e373d90295b0652b8b"><td class="memItemLeft" align="right" valign="top"><a id="a4657486b535810e373d90295b0652b8b" name="a4657486b535810e373d90295b0652b8b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a4657486b535810e373d90295b0652b8b">TKL_SIM_STATE_E</a> { <br />
+&#160;&#160;<b>TKL_NO_SIM</b>
+, <b>TKL_SIM_READY</b>
+, <b>TKL_SIM_INIT</b>
+, <b>TKL_SIM_WAIT_PIN</b>
+, <br />
+&#160;&#160;<b>TKL_SIM_WAIT_PUK</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a4657486b535810e373d90295b0652b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sim卡状态定义 <br /></td></tr>
+<tr class="separator:a4657486b535810e373d90295b0652b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06d02d7dbf8a54ece6f4698959229f9"><td class="memItemLeft" align="right" valign="top"><a id="ae06d02d7dbf8a54ece6f4698959229f9" name="ae06d02d7dbf8a54ece6f4698959229f9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELLULAR_RAT_E</b> { <br />
+&#160;&#160;<b>TUYA_CELL_NET_TYPE_UNKNOWN</b> = -1
+, <b>TUYA_CELL_NET_TYPE_GSM</b> = 1
+, <b>TUYA_CELL_NET_TYPE_LTE</b>
+, <b>TUYA_CELL_NET_TYPE_3G</b>
+, <br />
+&#160;&#160;<b>TUYA_CELL_NET_TYPE_CATM</b>
+, <b>TUYA_CELL_NET_TYPE_NB</b>
+<br />
+ }</td></tr>
+<tr class="separator:ae06d02d7dbf8a54ece6f4698959229f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0988d0e7d6ba18bbe1ecba93342689"><td class="memItemLeft" align="right" valign="top"><a id="aae0988d0e7d6ba18bbe1ecba93342689" name="aae0988d0e7d6ba18bbe1ecba93342689"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_SIM_TYPE_E</b> { <b>TUYA_TSIM_TYPE</b>
+, <b>TUYA_VSIM_TYPE</b>
+ }</td></tr>
+<tr class="separator:aae0988d0e7d6ba18bbe1ecba93342689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7dc4164081c790d2d5be15e844a8b5be"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a7dc4164081c790d2d5be15e844a8b5be">tkl_cellular_base_enable_sim_detect</a> (UINT8_T simid, BOOL_T enable)</td></tr>
+<tr class="memdesc:a7dc4164081c790d2d5be15e844a8b5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能或禁止sim卡gpio检测  <a href="../../d2/d40/tkl__cellular__base_8h.html#a7dc4164081c790d2d5be15e844a8b5be">更多...</a><br /></td></tr>
+<tr class="separator:a7dc4164081c790d2d5be15e844a8b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a639b6725f5b46bd20a1cd0aa9e2c0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a18a639b6725f5b46bd20a1cd0aa9e2c0">tkl_cellular_base_enable_sim_hotplug</a> (UINT8_T sim_id, BOOL_T enable)</td></tr>
+<tr class="memdesc:a18a639b6725f5b46bd20a1cd0aa9e2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能或禁止sim卡热拔插  <a href="../../d2/d40/tkl__cellular__base_8h.html#a18a639b6725f5b46bd20a1cd0aa9e2c0">更多...</a><br /></td></tr>
+<tr class="separator:a18a639b6725f5b46bd20a1cd0aa9e2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751aab97733eb503a191aa222fd6b9be"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a751aab97733eb503a191aa222fd6b9be">tkl_cellular_base_get_ability</a> (TKL_CELLULAR_ABILITY_E *ability)</td></tr>
+<tr class="memdesc:a751aab97733eb503a191aa222fd6b9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备的通讯能力  <a href="../../d2/d40/tkl__cellular__base_8h.html#a751aab97733eb503a191aa222fd6b9be">更多...</a><br /></td></tr>
+<tr class="separator:a751aab97733eb503a191aa222fd6b9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a91c18bd90aa71f330c36bd66ef264"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#ab5a91c18bd90aa71f330c36bd66ef264">tkl_cellular_base_get_cfun_mode</a> (UINT8_T simd_id, PINT_T cfun)</td></tr>
+<tr class="memdesc:ab5a91c18bd90aa71f330c36bd66ef264"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取蜂窝设备当前的通信功能设置  <a href="../../d2/d40/tkl__cellular__base_8h.html#ab5a91c18bd90aa71f330c36bd66ef264">更多...</a><br /></td></tr>
+<tr class="separator:ab5a91c18bd90aa71f330c36bd66ef264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb16127f98887c8c3ec8e742b6d70ea1"><td class="memItemLeft" align="right" valign="top">INT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#acb16127f98887c8c3ec8e742b6d70ea1">tkl_cellular_base_get_default_simid</a> (VOID)</td></tr>
+<tr class="memdesc:acb16127f98887c8c3ec8e742b6d70ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的SIM ID  <a href="../../d2/d40/tkl__cellular__base_8h.html#acb16127f98887c8c3ec8e742b6d70ea1">更多...</a><br /></td></tr>
+<tr class="separator:acb16127f98887c8c3ec8e742b6d70ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacfca2031f5a3a349d3bcb2e2cef7a1d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#aacfca2031f5a3a349d3bcb2e2cef7a1d">tkl_cellular_base_get_iccid</a> (UINT8_T sim_id, CHAR_T iccid[20+1])</td></tr>
+<tr class="memdesc:aacfca2031f5a3a349d3bcb2e2cef7a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡的ICCID  <a href="../../d2/d40/tkl__cellular__base_8h.html#aacfca2031f5a3a349d3bcb2e2cef7a1d">更多...</a><br /></td></tr>
+<tr class="separator:aacfca2031f5a3a349d3bcb2e2cef7a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36427cabda5dce44a559150696e5674"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#ad36427cabda5dce44a559150696e5674">tkl_cellular_base_get_imei</a> (UINT8_T sim_id, CHAR_T imei[15+1])</td></tr>
+<tr class="memdesc:ad36427cabda5dce44a559150696e5674"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡所在通道设备的IMEI号  <a href="../../d2/d40/tkl__cellular__base_8h.html#ad36427cabda5dce44a559150696e5674">更多...</a><br /></td></tr>
+<tr class="separator:ad36427cabda5dce44a559150696e5674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb051f7b0820adea3fa37150c375624"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#aceb051f7b0820adea3fa37150c375624">tkl_cellular_base_get_imsi</a> (UINT8_T sim_id, CHAR_T imsi[15+1])</td></tr>
+<tr class="memdesc:aceb051f7b0820adea3fa37150c375624"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡中的国际移动用户识别码  <a href="../../d2/d40/tkl__cellular__base_8h.html#aceb051f7b0820adea3fa37150c375624">更多...</a><br /></td></tr>
+<tr class="separator:aceb051f7b0820adea3fa37150c375624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411c932c0f3c639e07b0ae5a55a39d36"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a411c932c0f3c639e07b0ae5a55a39d36">tkl_cellular_base_get_lbs</a> (UINT8_T sim_id, <a class="el" href="../../d6/d85/structTKL__LBS__INFO__T.html">TKL_LBS_INFO_T</a> *lbs, BOOL_T neighbour, INT_T timeout)</td></tr>
+<tr class="memdesc:a411c932c0f3c639e07b0ae5a55a39d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIM卡所在通道LBS的基站信息)  <a href="../../d2/d40/tkl__cellular__base_8h.html#a411c932c0f3c639e07b0ae5a55a39d36">更多...</a><br /></td></tr>
+<tr class="separator:a411c932c0f3c639e07b0ae5a55a39d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b641ad166e3a6c9fe35e5869b693ca"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a16b641ad166e3a6c9fe35e5869b693ca">tkl_cellular_base_get_rsrp</a> (UINT8_T sim_id, INT_T *rsrp)</td></tr>
+<tr class="memdesc:a16b641ad166e3a6c9fe35e5869b693ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡所在通道蜂窝设备的信号接收功率——单位dbm  <a href="../../d2/d40/tkl__cellular__base_8h.html#a16b641ad166e3a6c9fe35e5869b693ca">更多...</a><br /></td></tr>
+<tr class="separator:a16b641ad166e3a6c9fe35e5869b693ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06bbce00286951a9360ca6f2355128ff"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a06bbce00286951a9360ca6f2355128ff">tkl_cellular_base_get_sinr</a> (UINT8_T sim_id, INT_T *sinr, INT_T *bit_error)</td></tr>
+<tr class="memdesc:a06bbce00286951a9360ca6f2355128ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取蜂窝设备SIM卡所在通道的信号噪声比及误码率  <a href="../../d2/d40/tkl__cellular__base_8h.html#a06bbce00286951a9360ca6f2355128ff">更多...</a><br /></td></tr>
+<tr class="separator:a06bbce00286951a9360ca6f2355128ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85235d861771c9ab72afce12fbcc1a91"><td class="memItemLeft" align="right" valign="top"><a id="a85235d861771c9ab72afce12fbcc1a91" name="a85235d861771c9ab72afce12fbcc1a91"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_cellular_base_init</b> (<a class="el" href="../../df/d50/structTKL__CELL__INIT__PARAM__T.html">TKL_CELL_INIT_PARAM_T</a> *param)</td></tr>
+<tr class="separator:a85235d861771c9ab72afce12fbcc1a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca632e6801d0b80375f2df9ee8841a7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#adca632e6801d0b80375f2df9ee8841a7">tkl_cellular_base_ioctl</a> (INT_T cmd, VOID *argv)</td></tr>
+<tr class="memdesc:adca632e6801d0b80375f2df9ee8841a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂窝基础的通用控制功能，一般作为平台提供一些特殊的能力接口  <a href="../../d2/d40/tkl__cellular__base_8h.html#adca632e6801d0b80375f2df9ee8841a7">更多...</a><br /></td></tr>
+<tr class="separator:adca632e6801d0b80375f2df9ee8841a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98d97cc780895e7b96b9a855189922d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#ab98d97cc780895e7b96b9a855189922d">tkl_cellular_base_register_sim_state_notify</a> (UINT8_T simd_id, <a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a> fun)</td></tr>
+<tr class="memdesc:ab98d97cc780895e7b96b9a855189922d"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册SIM状态变化通知函数  <a href="../../d2/d40/tkl__cellular__base_8h.html#ab98d97cc780895e7b96b9a855189922d">更多...</a><br /></td></tr>
+<tr class="separator:ab98d97cc780895e7b96b9a855189922d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2903fb7eb2a96ebfb5bbe33a1eb3c76f"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a2903fb7eb2a96ebfb5bbe33a1eb3c76f">tkl_cellular_base_rf_calibrated</a> (VOID_T)</td></tr>
+<tr class="memdesc:a2903fb7eb2a96ebfb5bbe33a1eb3c76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备的射频校准状态  <a href="../../d2/d40/tkl__cellular__base_8h.html#a2903fb7eb2a96ebfb5bbe33a1eb3c76f">更多...</a><br /></td></tr>
+<tr class="separator:a2903fb7eb2a96ebfb5bbe33a1eb3c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980c50fce7a44822d48f94d738f443eb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a980c50fce7a44822d48f94d738f443eb">tkl_cellular_base_set_cfun_mode</a> (UINT8_T simd_id, INT_T cfun)</td></tr>
+<tr class="memdesc:a980c50fce7a44822d48f94d738f443eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置蜂窝设备的通信功能模式  <a href="../../d2/d40/tkl__cellular__base_8h.html#a980c50fce7a44822d48f94d738f443eb">更多...</a><br /></td></tr>
+<tr class="separator:a980c50fce7a44822d48f94d738f443eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd73458a3b2085bf5240ec4946537f0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#abcd73458a3b2085bf5240ec4946537f0">tkl_cellular_base_set_imei</a> (UINT8_T sim_id, CHAR_T imei[15+1])</td></tr>
+<tr class="memdesc:abcd73458a3b2085bf5240ec4946537f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备的IMEI号  <a href="../../d2/d40/tkl__cellular__base_8h.html#abcd73458a3b2085bf5240ec4946537f0">更多...</a><br /></td></tr>
+<tr class="separator:abcd73458a3b2085bf5240ec4946537f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1dec1e35df8e874ae5bea64488e879"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a1e1dec1e35df8e874ae5bea64488e879">tkl_cellular_base_sim_get_status</a> (UINT8_T sim_id, UCHAR_T *state)</td></tr>
+<tr class="memdesc:a1e1dec1e35df8e874ae5bea64488e879"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡的状态  <a href="../../d2/d40/tkl__cellular__base_8h.html#a1e1dec1e35df8e874ae5bea64488e879">更多...</a><br /></td></tr>
+<tr class="separator:a1e1dec1e35df8e874ae5bea64488e879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360fce1c1ad65c46e348e918f5ed9de7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a360fce1c1ad65c46e348e918f5ed9de7">tkl_cellular_base_switch_sim</a> (UINT8_T sim_id)</td></tr>
+<tr class="memdesc:a360fce1c1ad65c46e348e918f5ed9de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换当前使能的SIM卡。  <a href="../../d2/d40/tkl__cellular__base_8h.html#a360fce1c1ad65c46e348e918f5ed9de7">更多...</a><br /></td></tr>
+<tr class="separator:a360fce1c1ad65c46e348e918f5ed9de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组基础功能API实现接口。 </p>
+<dl class="section author"><dt>作者</dt><dd>www.tuya.com</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2021 </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="ad33a489cbdb4d846cde361c7ef8720b6" name="ad33a489cbdb4d846cde361c7ef8720b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33a489cbdb4d846cde361c7ef8720b6">&#9670;&nbsp;</a></span>TKL_GENERAL_CALLBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TKL_GENERAL_CALLBACK) (<a class="el" href="../../da/dcf/structTKL__CELL__GENERAL__INFO__T.html">TKL_CELL_GENERAL_INFO_T</a> *param)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义通用蜂窝回调通用 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46509d0157df58a0c1b894b4734b5603" name="a46509d0157df58a0c1b894b4734b5603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46509d0157df58a0c1b894b4734b5603">&#9670;&nbsp;</a></span>TKL_REGISTION_NOTIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TKL_REGISTION_NOTIFY) (UINT8_T sim_id, <a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#abc6c7555b40d45faad0e173f9ad5ab71">TUYA_CELLULAR_MDS_STATUS_E</a> st)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂窝网络注册状态变化通知函数原型，该接口是为了svc_netmgr适配 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">state</td><td>蜂窝网络状态，查看 @TUYA_CELLULAR_MDS_STATUS_E 定义 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1473cdc3b446640e7d8528bf3f9cfdee" name="a1473cdc3b446640e7d8528bf3f9cfdee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1473cdc3b446640e7d8528bf3f9cfdee">&#9670;&nbsp;</a></span>TKL_SIM_NOTIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TKL_SIM_NOTIFY) (<a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a4657486b535810e373d90295b0652b8b">TKL_SIM_STATE_E</a> status)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sim卡状态变化通知函数原型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>sim卡状态，查看 @TAL_SIM_STATE_E 定义 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c8c7f18d8cb67c305627385d912c286" name="a0c8c7f18d8cb67c305627385d912c286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8c7f18d8cb67c305627385d912c286">&#9670;&nbsp;</a></span>TKL_VIRTAT_RESP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TKL_VIRTAT_RESP) (CHAR_T *resp, INT_T len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>虚拟AT接收应答回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resp</td><td>返回的AT应答 </td></tr>
+    <tr><td class="paramname">len</td><td>返回的AT应答数据长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a7dc4164081c790d2d5be15e844a8b5be" name="a7dc4164081c790d2d5be15e844a8b5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc4164081c790d2d5be15e844a8b5be">&#9670;&nbsp;</a></span>tkl_cellular_base_enable_sim_detect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_enable_sim_detect </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>simid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使能或禁止sim卡gpio检测 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">enable</td><td>TRUE 使能 FALSE 禁止</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a18a639b6725f5b46bd20a1cd0aa9e2c0" name="a18a639b6725f5b46bd20a1cd0aa9e2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a639b6725f5b46bd20a1cd0aa9e2c0">&#9670;&nbsp;</a></span>tkl_cellular_base_enable_sim_hotplug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_enable_sim_hotplug </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使能或禁止sim卡热拔插 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">enable</td><td>TRUE 使能 FALSE 禁止</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a751aab97733eb503a191aa222fd6b9be" name="a751aab97733eb503a191aa222fd6b9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751aab97733eb503a191aa222fd6b9be">&#9670;&nbsp;</a></span>tkl_cellular_base_get_ability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_ability </td>
+          <td>(</td>
+          <td class="paramtype">TKL_CELLULAR_ABILITY_E *&#160;</td>
+          <td class="paramname"><em>ability</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备的通讯能力 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ability</td><td>@TKL_CELLULAR_ABILITY_E 类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab5a91c18bd90aa71f330c36bd66ef264" name="ab5a91c18bd90aa71f330c36bd66ef264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a91c18bd90aa71f330c36bd66ef264">&#9670;&nbsp;</a></span>tkl_cellular_base_get_cfun_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_cfun_mode </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>simd_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PINT_T&#160;</td>
+          <td class="paramname"><em>cfun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取蜂窝设备当前的通信功能设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfun</td><td>获取的通信功能</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="acb16127f98887c8c3ec8e742b6d70ea1" name="acb16127f98887c8c3ec8e742b6d70ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb16127f98887c8c3ec8e742b6d70ea1">&#9670;&nbsp;</a></span>tkl_cellular_base_get_default_simid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT8_T tkl_cellular_base_get_default_simid </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取默认的SIM ID </p>
+<dl class="section return"><dt>返回</dt><dd>小于0失败，其他SIM ID </dd></dl>
+
+</div>
+</div>
+<a id="aacfca2031f5a3a349d3bcb2e2cef7a1d" name="aacfca2031f5a3a349d3bcb2e2cef7a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacfca2031f5a3a349d3bcb2e2cef7a1d">&#9670;&nbsp;</a></span>tkl_cellular_base_get_iccid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_iccid </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T&#160;</td>
+          <td class="paramname"><em>iccid</em>[20+1]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡的ICCID </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">ICCID识别码，为20字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ad36427cabda5dce44a559150696e5674" name="ad36427cabda5dce44a559150696e5674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36427cabda5dce44a559150696e5674">&#9670;&nbsp;</a></span>tkl_cellular_base_get_imei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_imei </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T&#160;</td>
+          <td class="paramname"><em>imei</em>[15+1]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡所在通道设备的IMEI号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">IMEI识别码，为15字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="aceb051f7b0820adea3fa37150c375624" name="aceb051f7b0820adea3fa37150c375624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb051f7b0820adea3fa37150c375624">&#9670;&nbsp;</a></span>tkl_cellular_base_get_imsi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_imsi </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T&#160;</td>
+          <td class="paramname"><em>imsi</em>[15+1]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡中的国际移动用户识别码 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid,SIM卡id号(0,1,2...)</td><td></td></tr>
+    <tr><td class="paramname">imsi识别码，为16字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a411c932c0f3c639e07b0ae5a55a39d36" name="a411c932c0f3c639e07b0ae5a55a39d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411c932c0f3c639e07b0ae5a55a39d36">&#9670;&nbsp;</a></span>tkl_cellular_base_get_lbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_lbs </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d85/structTKL__LBS__INFO__T.html">TKL_LBS_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>lbs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>neighbour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIM卡所在通道LBS的基站信息) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">lbs</td><td>返回基站信息 </td></tr>
+    <tr><td class="paramname">neighbour</td><td>是否搜索临近基站信息 </td></tr>
+    <tr><td class="paramname">timeout</td><td>搜索临近基站信息超时时间(一般需要4秒左右) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a16b641ad166e3a6c9fe35e5869b693ca" name="a16b641ad166e3a6c9fe35e5869b693ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b641ad166e3a6c9fe35e5869b693ca">&#9670;&nbsp;</a></span>tkl_cellular_base_get_rsrp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_rsrp </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>rsrp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡所在通道蜂窝设备的信号接收功率——单位dbm </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">rsrp</td><td>返回实际的信号强度(dbm) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a06bbce00286951a9360ca6f2355128ff" name="a06bbce00286951a9360ca6f2355128ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06bbce00286951a9360ca6f2355128ff">&#9670;&nbsp;</a></span>tkl_cellular_base_get_sinr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_get_sinr </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>sinr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>bit_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取蜂窝设备SIM卡所在通道的信号噪声比及误码率 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">sinr</td><td>(0~31) </td></tr>
+    <tr><td class="paramname">bit_error</td><td>(0~7,99) 99无网络 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="adca632e6801d0b80375f2df9ee8841a7" name="adca632e6801d0b80375f2df9ee8841a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca632e6801d0b80375f2df9ee8841a7">&#9670;&nbsp;</a></span>tkl_cellular_base_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂窝基础的通用控制功能，一般作为平台提供一些特殊的能力接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>参考CELL_IOCTRL_CMD </td></tr>
+    <tr><td class="paramname">argv</td><td>平台自定义</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab98d97cc780895e7b96b9a855189922d" name="ab98d97cc780895e7b96b9a855189922d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98d97cc780895e7b96b9a855189922d">&#9670;&nbsp;</a></span>tkl_cellular_base_register_sim_state_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_register_sim_state_notify </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>simd_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a>&#160;</td>
+          <td class="paramname"><em>fun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册SIM状态变化通知函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fun</td><td>状态变化通知函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a2903fb7eb2a96ebfb5bbe33a1eb3c76f" name="a2903fb7eb2a96ebfb5bbe33a1eb3c76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2903fb7eb2a96ebfb5bbe33a1eb3c76f">&#9670;&nbsp;</a></span>tkl_cellular_base_rf_calibrated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_cellular_base_rf_calibrated </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备的射频校准状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return TRUE正常，FALSE异常 </p>
+
+</div>
+</div>
+<a id="a980c50fce7a44822d48f94d738f443eb" name="a980c50fce7a44822d48f94d738f443eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980c50fce7a44822d48f94d738f443eb">&#9670;&nbsp;</a></span>tkl_cellular_base_set_cfun_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_set_cfun_mode </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>simd_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>cfun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置蜂窝设备的通信功能模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfun</td><td>通信功能，取值含义如下： 1：全功能模式 4：飞行模式</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="abcd73458a3b2085bf5240ec4946537f0" name="abcd73458a3b2085bf5240ec4946537f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd73458a3b2085bf5240ec4946537f0">&#9670;&nbsp;</a></span>tkl_cellular_base_set_imei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_set_imei </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CHAR_T&#160;</td>
+          <td class="paramname"><em>imei</em>[15+1]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备的IMEI号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">IMEI识别码，为15字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a1e1dec1e35df8e874ae5bea64488e879" name="a1e1dec1e35df8e874ae5bea64488e879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1dec1e35df8e874ae5bea64488e879">&#9670;&nbsp;</a></span>tkl_cellular_base_sim_get_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_sim_get_status </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡的状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">state</td><td>1：正常，0：异常，2：初始化中 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a360fce1c1ad65c46e348e918f5ed9de7" name="a360fce1c1ad65c46e348e918f5ed9de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360fce1c1ad65c46e348e918f5ed9de7">&#9670;&nbsp;</a></span>tkl_cellular_base_switch_sim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_base_switch_sim </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sim_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>切换当前使能的SIM卡。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td>SIM卡ID.(0~1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

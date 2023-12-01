@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_rpc/include/lan_rpc.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e4ad71b8cc97fe2e4a95227cc389988e.html">svc_rpc</a></li><li class="navelem"><a class="el" href="../../dir_48bf1703043dd255f84e45145260ba0d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">lan_rpc.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - json rpc  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_com_defs.h&quot;</code><br />
+<code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d87/tal__network_8h_source.html">tal_network.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d94/svc__rpc_8h_source.html">svc_rpc.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+lan_rpc.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de7/lan__rpc_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__rpc_2include_2lan__rpc_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__rpc_2include_2lan__rpc_8h" id="ainclude_2components_2svc__rpc_2include_2lan__rpc_8h">
+<area shape="rect" title="Common process &#45; json rpc" alt="" coords="453,5,643,47"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="851,169,1026,196"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="363,468,511,495"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="289,95,399,121"/>
+<area shape="rect" href="../../dd/d94/svc__rpc_8h.html" title="rcp relate" alt="" coords="609,95,692,121"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="908,468,1001,495"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="371,543,504,569"/>
+<area shape="rect" title=" " alt="" coords="528,543,603,569"/>
+<area shape="rect" title=" " alt="" coords="627,543,698,569"/>
+<area shape="rect" title=" " alt="" coords="833,543,908,569"/>
+<area shape="rect" title=" " alt="" coords="722,543,793,569"/>
+<area shape="rect" title=" " alt="" coords="5,543,88,569"/>
+<area shape="rect" title=" " alt="" coords="113,543,183,569"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="208,543,347,569"/>
+<area shape="rect" href="../../d6/d14/tuya__slist_8h.html" title="tuya sigle direciton list module" alt="" coords="238,244,335,271"/>
+<area shape="rect" href="../../d6/d1f/rpc__base_8h.html" title="Common process &#45; base rpc" alt="" coords="378,169,470,196"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="518,393,618,420"/>
+<area shape="rect" href="../../db/d53/json__rpc_8h_source.html" title=" " alt="" coords="688,319,776,345"/>
+<area shape="rect" href="../../dd/d56/tal__workq__service_8h.html" title=" " alt="" coords="461,244,613,271"/>
+<area shape="rect" href="../../d6/d77/tal__sw__timer_8h.html" title="Common process &#45; Initialization" alt="" coords="341,319,459,345"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="291,393,391,420"/>
+<area shape="rect" href="../../df/d01/tal__workqueue_8h.html" title="tuya workqueue module" alt="" coords="483,319,613,345"/>
+<area shape="rect" href="../../d1/d82/cJSON_8h_source.html" title=" " alt="" coords="851,393,925,420"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d9a/lan__rpc_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab7f3f86f10e4768cf343d1ae7e475c46"><td class="memItemLeft" align="right" valign="top"><a id="ab7f3f86f10e4768cf343d1ae7e475c46" name="ab7f3f86f10e4768cf343d1ae7e475c46"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_ID_LEN</b>&#160;&#160;&#160;(GW_ID_LEN)</td></tr>
+<tr class="separator:ab7f3f86f10e4768cf343d1ae7e475c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4813563547f7facbbf33b62fb9d8ff0c"><td class="memItemLeft" align="right" valign="top"><a id="a4813563547f7facbbf33b62fb9d8ff0c" name="a4813563547f7facbbf33b62fb9d8ff0c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_KEY_LEN</b>&#160;&#160;&#160;(LOCAL_KEY_LEN)</td></tr>
+<tr class="separator:a4813563547f7facbbf33b62fb9d8ff0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b91383c86d781b5192be010bcc34ec"><td class="memItemLeft" align="right" valign="top"><a id="a54b91383c86d781b5192be010bcc34ec" name="a54b91383c86d781b5192be010bcc34ec"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_NODE_ADD</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a54b91383c86d781b5192be010bcc34ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471d6aefc94dfc080f21d02214ea6a66"><td class="memItemLeft" align="right" valign="top"><a id="a471d6aefc94dfc080f21d02214ea6a66" name="a471d6aefc94dfc080f21d02214ea6a66"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_NODE_DEL</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a471d6aefc94dfc080f21d02214ea6a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65faf6b174168da78d87474a3ab08e87"><td class="memItemLeft" align="right" valign="top"><a id="a65faf6b174168da78d87474a3ab08e87" name="a65faf6b174168da78d87474a3ab08e87"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_NODE_REJOIN</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a65faf6b174168da78d87474a3ab08e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157e4281fb9d11a04dceb7ef91ace746"><td class="memItemLeft" align="right" valign="top"><a id="a157e4281fb9d11a04dceb7ef91ace746" name="a157e4281fb9d11a04dceb7ef91ace746"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_NODE_TIMEOUT</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a157e4281fb9d11a04dceb7ef91ace746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a95ff1ce32b4a04a6ac5bebfde6f3f273"><td class="memItemLeft" align="right" valign="top"><a id="a95ff1ce32b4a04a6ac5bebfde6f3f273" name="a95ff1ce32b4a04a6ac5bebfde6f3f273"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_MASTER_GET_CB</b>) (<a class="el" href="../../d6/dd7/structLAN__RPC__MASTER__S.html">LAN_RPC_MASTER_S</a> *master)</td></tr>
+<tr class="separator:a95ff1ce32b4a04a6ac5bebfde6f3f273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656493b02603aa3c3fc47d51a90eb9e0"><td class="memItemLeft" align="right" valign="top"><a id="a656493b02603aa3c3fc47d51a90eb9e0" name="a656493b02603aa3c3fc47d51a90eb9e0"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_NODE_OUTPUT_CB</b>) (<a class="el" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node, UINT16_T num, VOID *arg)</td></tr>
+<tr class="separator:a656493b02603aa3c3fc47d51a90eb9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7322058a74d9206dfd3bf5a7ce4d15"><td class="memItemLeft" align="right" valign="top"><a id="a6a7322058a74d9206dfd3bf5a7ce4d15" name="a6a7322058a74d9206dfd3bf5a7ce4d15"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_NODE_STAT_CB</b>) (UINT8_T stat, <a class="el" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node)</td></tr>
+<tr class="separator:a6a7322058a74d9206dfd3bf5a7ce4d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbf3f6751314087171991ab678de206"><td class="memItemLeft" align="right" valign="top"><a id="aecbf3f6751314087171991ab678de206" name="aecbf3f6751314087171991ab678de206"></a>
+typedef <a class="el" href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">rpc_method_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RPC_METHOD_CB</b></td></tr>
+<tr class="separator:aecbf3f6751314087171991ab678de206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa632d1f2b3ba78740e574b9b487fee6d"><td class="memItemLeft" align="right" valign="top"><a id="aa632d1f2b3ba78740e574b9b487fee6d" name="aa632d1f2b3ba78740e574b9b487fee6d"></a>
+typedef <a class="el" href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">rpc_async_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RPC_RET_CB</b></td></tr>
+<tr class="separator:aa632d1f2b3ba78740e574b9b487fee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a209a781e6bec7368bc49893d380a2f7d"><td class="memItemLeft" align="right" valign="top"><a id="a209a781e6bec7368bc49893d380a2f7d" name="a209a781e6bec7368bc49893d380a2f7d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>LAN_RPC_TYPE</b> { <b>LAN_RPC_SLAVER</b>
+, <b>LAN_RPC_MASTER</b>
+ }</td></tr>
+<tr class="separator:a209a781e6bec7368bc49893d380a2f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2b8904124ca8784538b87b59e7ab55e4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a2b8904124ca8784538b87b59e7ab55e4">lan_rpc_call_async</a> (UINT8_T *id, <a class="el" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *requset, RPC_RET_CB cb, VOID *cb_param, UINT_T timeout)</td></tr>
+<tr class="memdesc:a2b8904124ca8784538b87b59e7ab55e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc sync  <a href="../../d2/d9a/lan__rpc_8h.html#a2b8904124ca8784538b87b59e7ab55e4">更多...</a><br /></td></tr>
+<tr class="separator:a2b8904124ca8784538b87b59e7ab55e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14335d094b632ca816a2fe0bbe85ec8d"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a14335d094b632ca816a2fe0bbe85ec8d">lan_rpc_fd_get</a> (VOID)</td></tr>
+<tr class="memdesc:a14335d094b632ca816a2fe0bbe85ec8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get fd  <a href="../../d2/d9a/lan__rpc_8h.html#a14335d094b632ca816a2fe0bbe85ec8d">更多...</a><br /></td></tr>
+<tr class="separator:a14335d094b632ca816a2fe0bbe85ec8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159f2888ee9fe8e9d01abf7196e556ef"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a159f2888ee9fe8e9d01abf7196e556ef">lan_rpc_get_peer_ip</a> (OUT TUYA_IP_ADDR_T *peer_ip)</td></tr>
+<tr class="memdesc:a159f2888ee9fe8e9d01abf7196e556ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">lan rpc get peer ip  <a href="../../d2/d9a/lan__rpc_8h.html#a159f2888ee9fe8e9d01abf7196e556ef">更多...</a><br /></td></tr>
+<tr class="separator:a159f2888ee9fe8e9d01abf7196e556ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08053f3c53fbc672468cd824b23c8865"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a08053f3c53fbc672468cd824b23c8865">lan_rpc_init</a> (<a class="el" href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a> *cfg)</td></tr>
+<tr class="memdesc:a08053f3c53fbc672468cd824b23c8865"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc init  <a href="../../d2/d9a/lan__rpc_8h.html#a08053f3c53fbc672468cd824b23c8865">更多...</a><br /></td></tr>
+<tr class="separator:a08053f3c53fbc672468cd824b23c8865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7766773d10f17f645875b5efe9af9ab4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a7766773d10f17f645875b5efe9af9ab4">lan_rpc_method_register</a> (CHAR_T *name, RPC_METHOD_CB cb, VOID *arg)</td></tr>
+<tr class="memdesc:a7766773d10f17f645875b5efe9af9ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">lan rpc method register  <a href="../../d2/d9a/lan__rpc_8h.html#a7766773d10f17f645875b5efe9af9ab4">更多...</a><br /></td></tr>
+<tr class="separator:a7766773d10f17f645875b5efe9af9ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3936c030ff88cb994dc7895b5633063d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a3936c030ff88cb994dc7895b5633063d">lan_rpc_node_add</a> (<a class="el" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node)</td></tr>
+<tr class="memdesc:a3936c030ff88cb994dc7895b5633063d"><td class="mdescLeft">&#160;</td><td class="mdescRight">node add  <a href="../../d2/d9a/lan__rpc_8h.html#a3936c030ff88cb994dc7895b5633063d">更多...</a><br /></td></tr>
+<tr class="separator:a3936c030ff88cb994dc7895b5633063d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7276ca0a21fa5ad0cd6ab80c21abebb5"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a7276ca0a21fa5ad0cd6ab80c21abebb5">lan_rpc_node_find_by_ip</a> (UINT_T ip, <a class="el" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node)</td></tr>
+<tr class="memdesc:a7276ca0a21fa5ad0cd6ab80c21abebb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">found node by ip  <a href="../../d2/d9a/lan__rpc_8h.html#a7276ca0a21fa5ad0cd6ab80c21abebb5">更多...</a><br /></td></tr>
+<tr class="separator:a7276ca0a21fa5ad0cd6ab80c21abebb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341d43743eef4167aa25f79c64690171"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a341d43743eef4167aa25f79c64690171">lan_rpc_node_find_ip_by_id</a> (UINT8_T *id, UINT_T *ip)</td></tr>
+<tr class="memdesc:a341d43743eef4167aa25f79c64690171"><td class="mdescLeft">&#160;</td><td class="mdescRight">found ip by id  <a href="../../d2/d9a/lan__rpc_8h.html#a341d43743eef4167aa25f79c64690171">更多...</a><br /></td></tr>
+<tr class="separator:a341d43743eef4167aa25f79c64690171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae859e95b31e9253e47627ddf15844c5f"><td class="memItemLeft" align="right" valign="top"><a id="ae859e95b31e9253e47627ddf15844c5f" name="ae859e95b31e9253e47627ddf15844c5f"></a>
+VOID&#160;</td><td class="memItemRight" valign="bottom"><b>lan_rpc_node_fresh</b> (CHAR_T *dev_id)</td></tr>
+<tr class="separator:ae859e95b31e9253e47627ddf15844c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9f101dff6d20a9430e8ba2a911e760"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a5d9f101dff6d20a9430e8ba2a911e760">lan_rpc_node_key_set</a> (UINT8_T *id, UINT8_T *key)</td></tr>
+<tr class="memdesc:a5d9f101dff6d20a9430e8ba2a911e760"><td class="mdescLeft">&#160;</td><td class="mdescRight">node key set  <a href="../../d2/d9a/lan__rpc_8h.html#a5d9f101dff6d20a9430e8ba2a911e760">更多...</a><br /></td></tr>
+<tr class="separator:a5d9f101dff6d20a9430e8ba2a911e760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ba4bc642e47e65c76499d0032f66b6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#aa2ba4bc642e47e65c76499d0032f66b6">lan_rpc_node_output</a> (LAN_RPC_NODE_OUTPUT_CB node_output_cb, VOID *arg)</td></tr>
+<tr class="memdesc:aa2ba4bc642e47e65c76499d0032f66b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">node output  <a href="../../d2/d9a/lan__rpc_8h.html#aa2ba4bc642e47e65c76499d0032f66b6">更多...</a><br /></td></tr>
+<tr class="separator:aa2ba4bc642e47e65c76499d0032f66b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b14928aff151fb6a82950c913f3ace9"><td class="memItemLeft" align="right" valign="top"><a id="a7b14928aff151fb6a82950c913f3ace9" name="a7b14928aff151fb6a82950c913f3ace9"></a>
+VOID&#160;</td><td class="memItemRight" valign="bottom"><b>lan_rpc_node_timeout_check</b> (VOID)</td></tr>
+<tr class="memdesc:a7b14928aff151fb6a82950c913f3ace9"><td class="mdescLeft">&#160;</td><td class="mdescRight">check timeout <br /></td></tr>
+<tr class="separator:a7b14928aff151fb6a82950c913f3ace9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c45c44d561a4306bbe01dd6ab29850"><td class="memItemLeft" align="right" valign="top"><a id="a26c45c44d561a4306bbe01dd6ab29850" name="a26c45c44d561a4306bbe01dd6ab29850"></a>
+VOID&#160;</td><td class="memItemRight" valign="bottom"><b>lan_rpc_node_timeout_set</b> (UINT_T timeout_s)</td></tr>
+<tr class="separator:a26c45c44d561a4306bbe01dd6ab29850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b8354c700aa539536e8fc7f7a66103"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a66b8354c700aa539536e8fc7f7a66103">lan_rpc_recv</a> (VOID)</td></tr>
+<tr class="memdesc:a66b8354c700aa539536e8fc7f7a66103"><td class="mdescLeft">&#160;</td><td class="mdescRight">rpc receive  <a href="../../d2/d9a/lan__rpc_8h.html#a66b8354c700aa539536e8fc7f7a66103">更多...</a><br /></td></tr>
+<tr class="separator:a66b8354c700aa539536e8fc7f7a66103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115b9c675474b070a44e5933128ff1f7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a115b9c675474b070a44e5933128ff1f7">lan_rpc_session_key_set</a> (UINT8_T *session_key)</td></tr>
+<tr class="memdesc:a115b9c675474b070a44e5933128ff1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set session key  <a href="../../d2/d9a/lan__rpc_8h.html#a115b9c675474b070a44e5933128ff1f7">更多...</a><br /></td></tr>
+<tr class="separator:a115b9c675474b070a44e5933128ff1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b43a6a2253e9ad6695cdb04f5ae68f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9a/lan__rpc_8h.html#a06b43a6a2253e9ad6695cdb04f5ae68f">lan_rpc_slave_call_sync</a> (<a class="el" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *requset, <a class="el" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *result, UINT_T timeout)</td></tr>
+<tr class="memdesc:a06b43a6a2253e9ad6695cdb04f5ae68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">slave rpc sync  <a href="../../d2/d9a/lan__rpc_8h.html#a06b43a6a2253e9ad6695cdb04f5ae68f">更多...</a><br /></td></tr>
+<tr class="separator:a06b43a6a2253e9ad6695cdb04f5ae68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - json rpc </p>
+<p >Common process - lan rpc</p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-03-16</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a2b8904124ca8784538b87b59e7ab55e4" name="a2b8904124ca8784538b87b59e7ab55e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8904124ca8784538b87b59e7ab55e4">&#9670;&nbsp;</a></span>lan_rpc_call_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_call_async </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *&#160;</td>
+          <td class="paramname"><em>requset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RPC_RET_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>cb_param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc sync </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>node id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">requset</td><td>refer to JRPC_MSG_S </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb_param</td><td>callback argument </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a14335d094b632ca816a2fe0bbe85ec8d" name="a14335d094b632ca816a2fe0bbe85ec8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14335d094b632ca816a2fe0bbe85ec8d">&#9670;&nbsp;</a></span>lan_rpc_fd_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T lan_rpc_fd_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get fd </p>
+<dl class="section return"><dt>返回</dt><dd>fd value </dd></dl>
+
+</div>
+</div>
+<a id="a159f2888ee9fe8e9d01abf7196e556ef" name="a159f2888ee9fe8e9d01abf7196e556ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159f2888ee9fe8e9d01abf7196e556ef">&#9670;&nbsp;</a></span>lan_rpc_get_peer_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_get_peer_ip </td>
+          <td>(</td>
+          <td class="paramtype">OUT TUYA_IP_ADDR_T *&#160;</td>
+          <td class="paramname"><em>peer_ip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>lan rpc get peer ip </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">peer_ip</td><td>get last recv ip</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a08053f3c53fbc672468cd824b23c8865" name="a08053f3c53fbc672468cd824b23c8865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08053f3c53fbc672468cd824b23c8865">&#9670;&nbsp;</a></span>lan_rpc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>refer to <a class="el" href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7766773d10f17f645875b5efe9af9ab4" name="a7766773d10f17f645875b5efe9af9ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7766773d10f17f645875b5efe9af9ab4">&#9670;&nbsp;</a></span>lan_rpc_method_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_method_register </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RPC_METHOD_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>lan rpc method register </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>key name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>callback argument</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3936c030ff88cb994dc7895b5633063d" name="a3936c030ff88cb994dc7895b5633063d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3936c030ff88cb994dc7895b5633063d">&#9670;&nbsp;</a></span>lan_rpc_node_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_node_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>node add </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>node value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7276ca0a21fa5ad0cd6ab80c21abebb5" name="a7276ca0a21fa5ad0cd6ab80c21abebb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7276ca0a21fa5ad0cd6ab80c21abebb5">&#9670;&nbsp;</a></span>lan_rpc_node_find_by_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T lan_rpc_node_find_by_ip </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>found node by ip </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip</td><td>key ip </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">node</td><td>result node</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>found TRUE,else false </dd></dl>
+
+</div>
+</div>
+<a id="a341d43743eef4167aa25f79c64690171" name="a341d43743eef4167aa25f79c64690171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341d43743eef4167aa25f79c64690171">&#9670;&nbsp;</a></span>lan_rpc_node_find_ip_by_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T lan_rpc_node_find_ip_by_id </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>found ip by id </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>node id </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ip</td><td>result ip</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>found TRUE,else false </dd></dl>
+
+</div>
+</div>
+<a id="a5d9f101dff6d20a9430e8ba2a911e760" name="a5d9f101dff6d20a9430e8ba2a911e760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9f101dff6d20a9430e8ba2a911e760">&#9670;&nbsp;</a></span>lan_rpc_node_key_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_node_key_set </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>node key set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>node id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa2ba4bc642e47e65c76499d0032f66b6" name="aa2ba4bc642e47e65c76499d0032f66b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ba4bc642e47e65c76499d0032f66b6">&#9670;&nbsp;</a></span>lan_rpc_node_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_node_output </td>
+          <td>(</td>
+          <td class="paramtype">LAN_RPC_NODE_OUTPUT_CB&#160;</td>
+          <td class="paramname"><em>node_output_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>node output </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">node_output_cb</td><td>refer to LAN_RPC_NODE_OUTPUT_CB </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>argument</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a66b8354c700aa539536e8fc7f7a66103" name="a66b8354c700aa539536e8fc7f7a66103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b8354c700aa539536e8fc7f7a66103">&#9670;&nbsp;</a></span>lan_rpc_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_recv </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rpc receive </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a115b9c675474b070a44e5933128ff1f7" name="a115b9c675474b070a44e5933128ff1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115b9c675474b070a44e5933128ff1f7">&#9670;&nbsp;</a></span>lan_rpc_session_key_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_session_key_set </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>session_key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set session key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session_key</td><td>key value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a06b43a6a2253e9ad6695cdb04f5ae68f" name="a06b43a6a2253e9ad6695cdb04f5ae68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b43a6a2253e9ad6695cdb04f5ae68f">&#9670;&nbsp;</a></span>lan_rpc_slave_call_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET lan_rpc_slave_call_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *&#160;</td>
+          <td class="paramname"><em>requset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>slave rpc sync </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">requset</td><td>refer to JRPC_MSG_S </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>refer to JRPC_MSG_S </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

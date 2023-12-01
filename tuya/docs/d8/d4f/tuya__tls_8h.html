@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/tls/tuya_tls.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_0a06ac576203a7d6123dada18f74d099.html">tls</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_tls.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - tls include  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;ssl.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dde/tuya__cert__manager_8h_source.html">tuya_cert_manager.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_tls.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/da9/tuya__tls_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2tls_2tuya__tls_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2tls_2tuya__tls_8h" id="ainclude_2components_2svc__tuya__cloud_2include_2tls_2tuya__tls_8h">
+<area shape="rect" title="Common process &#45; tls include" alt="" coords="469,5,646,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="419,184,567,211"/>
+<area shape="rect" title=" " alt="" coords="531,109,583,136"/>
+<area shape="rect" href="../../d1/dde/tuya__cert__manager_8h.html" title="Tuya Cert Manager include" alt="" coords="607,109,766,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="817,259,892,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,427,285"/>
+<area shape="rect" title=" " alt="" coords="452,259,535,285"/>
+<area shape="rect" title=" " alt="" coords="559,259,630,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="655,259,793,285"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="724,184,817,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dac/tuya__tls_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2tls_2tuya__tls_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2tls_2tuya__tls_8hdep" id="ainclude_2components_2svc__tuya__cloud_2include_2tls_2tuya__tls_8hdep">
+<area shape="rect" title="Common process &#45; tls include" alt="" coords="308,5,485,61"/>
+<area shape="rect" href="../../d3/d1b/httpc_8h.html" title="HTTP Client Module" alt="" coords="112,117,287,158"/>
+<area shape="rect" href="../../dd/d1b/websocket__client_8h_source.html" title=" " alt="" coords="311,109,482,165"/>
+<area shape="rect" href="../../df/d64/tal__asymmetrical_8h.html" title="Common process &#45; adapter the asymmetrical api provide by OS" alt="" coords="507,109,660,165"/>
+<area shape="rect" href="../../dc/d26/http__inf_8h.html" title="Wrapper of HTTP request and response" alt="" coords="5,221,196,262"/>
+<area shape="rect" href="../../d9/d3a/http__manager_8h.html" title="wrapper for HTTP session manager" alt="" coords="220,213,376,269"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="12,317,189,373"/>
+<area shape="rect" href="../../d9/df0/tal__security_8h.html" title="tal_security file include" alt="" coords="507,213,660,269"/>
+</map>
+</div>
+</div>
+<p><a href="../../d8/d4f/tuya__tls_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a90014542b41dbfb4c55bbe99f3063513"><td class="memItemLeft" align="right" valign="top"><a id="a90014542b41dbfb4c55bbe99f3063513" name="a90014542b41dbfb4c55bbe99f3063513"></a>
+typedef PVOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_tls_hander</b></td></tr>
+<tr class="separator:a90014542b41dbfb4c55bbe99f3063513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ac97517225acac2d398a3284b6fd4b"><td class="memItemLeft" align="right" valign="top"><a id="af4ac97517225acac2d398a3284b6fd4b" name="af4ac97517225acac2d398a3284b6fd4b"></a>
+typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_tls_recv_cb</b>) (VOID *p_custom_net_ctx, BYTE_T *buf, SIZE_T len)</td></tr>
+<tr class="separator:af4ac97517225acac2d398a3284b6fd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33586cb148aa51a83b9f7c69f5c1f7ab"><td class="memItemLeft" align="right" valign="top"><a id="a33586cb148aa51a83b9f7c69f5c1f7ab" name="a33586cb148aa51a83b9f7c69f5c1f7ab"></a>
+typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_tls_send_cb</b>) (VOID *p_custom_net_ctx, CONST BYTE_T *buf, SIZE_T len)</td></tr>
+<tr class="separator:a33586cb148aa51a83b9f7c69f5c1f7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:abe1e7897cd81505d443b9ad96ba72aeb"><td class="memItemLeft" align="right" valign="top"><a id="abe1e7897cd81505d443b9ad96ba72aeb" name="abe1e7897cd81505d443b9ad96ba72aeb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TLS_TCP_STAT_E</b> { <br />
+&#160;&#160;<b>TSS_INIT</b> = 0
+, <b>TSS_START</b>
+, <b>TSS_ACCEPT</b>
+, <b>TSS_TLS_HAND</b>
+, <br />
+&#160;&#160;<b>TSS_TLS_APP</b>
+<br />
+ }</td></tr>
+<tr class="separator:abe1e7897cd81505d443b9ad96ba72aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab265f70fc87acf24e64d3525761fb74d"><td class="memItemLeft" align="right" valign="top"><a id="ab265f70fc87acf24e64d3525761fb74d" name="ab265f70fc87acf24e64d3525761fb74d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>tuya_tls_mode_t</b> { <br />
+&#160;&#160;<b>TUYA_TLS_PSK_MODE</b>
+, <b>TUYA_TLS_SERVER_CERT_MODE</b>
+, <b>TUYA_TLS_MUTUAL_CERT_MODE</b>
+, <b>TUYA_TLS_HARDWARE_CERT_MODE</b>
+, <br />
+&#160;&#160;<b>TUYA_TLS_AWS_FFS_CERT_MODE</b>
+<br />
+ }</td></tr>
+<tr class="separator:ab265f70fc87acf24e64d3525761fb74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:abdd88f7c6fa149b21c6f4f1c7cb804d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#abdd88f7c6fa149b21c6f4f1c7cb804d5">__tuya_tls_random</a> (void *p_rng, unsigned char *output, size_t output_len)</td></tr>
+<tr class="memdesc:abdd88f7c6fa149b21c6f4f1c7cb804d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">generated random  <a href="../../d8/d4f/tuya__tls_8h.html#abdd88f7c6fa149b21c6f4f1c7cb804d5">更多...</a><br /></td></tr>
+<tr class="separator:abdd88f7c6fa149b21c6f4f1c7cb804d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f0d293c060cbdfad4c27b7bb2122cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#ae7f0d293c060cbdfad4c27b7bb2122cf">tuya_tls_config_get</a> (tuya_tls_hander p_tls_handler)</td></tr>
+<tr class="separator:ae7f0d293c060cbdfad4c27b7bb2122cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268fe2bb2f4d3585eb5fd7b418b596f5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a268fe2bb2f4d3585eb5fd7b418b596f5">tuya_tls_config_set</a> (tuya_tls_hander p_tls_handler, <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *config)</td></tr>
+<tr class="separator:a268fe2bb2f4d3585eb5fd7b418b596f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cac87e543b8a9642f7356b6cc29fa27"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a7cac87e543b8a9642f7356b6cc29fa27">tuya_tls_connect</a> (tuya_tls_hander p_tls_handler, IN CHAR_T *hostname, IN INT_T port_num, IN INT_T socket_fd, IN INT_T overtime_s)</td></tr>
+<tr class="memdesc:a7cac87e543b8a9642f7356b6cc29fa27"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls connect  <a href="../../d8/d4f/tuya__tls_8h.html#a7cac87e543b8a9642f7356b6cc29fa27">更多...</a><br /></td></tr>
+<tr class="separator:a7cac87e543b8a9642f7356b6cc29fa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2c3e8ebd1aaea85b126d57510f26b6"><td class="memItemLeft" align="right" valign="top">tuya_tls_hander *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a6b2c3e8ebd1aaea85b126d57510f26b6">tuya_tls_connect_create</a> (void)</td></tr>
+<tr class="memdesc:a6b2c3e8ebd1aaea85b126d57510f26b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls hander create  <a href="../../d8/d4f/tuya__tls_8h.html#a6b2c3e8ebd1aaea85b126d57510f26b6">更多...</a><br /></td></tr>
+<tr class="separator:a6b2c3e8ebd1aaea85b126d57510f26b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8334ff76eaa04465f4c93c0a8b82f8a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a8334ff76eaa04465f4c93c0a8b82f8a6">tuya_tls_connect_destroy</a> (tuya_tls_hander p_tls_hander)</td></tr>
+<tr class="separator:a8334ff76eaa04465f4c93c0a8b82f8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60d982fdb664f108499741a9186d9b4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#af60d982fdb664f108499741a9186d9b4">tuya_tls_disconnect</a> (IN tuya_tls_hander tls_handler)</td></tr>
+<tr class="memdesc:af60d982fdb664f108499741a9186d9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">generated random  <a href="../../d8/d4f/tuya__tls_8h.html#af60d982fdb664f108499741a9186d9b4">更多...</a><br /></td></tr>
+<tr class="separator:af60d982fdb664f108499741a9186d9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139dfb065e354c15094f5e6ee20212f4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a139dfb065e354c15094f5e6ee20212f4">tuya_tls_init</a> ()</td></tr>
+<tr class="memdesc:a139dfb065e354c15094f5e6ee20212f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls init  <a href="../../d8/d4f/tuya__tls_8h.html#a139dfb065e354c15094f5e6ee20212f4">更多...</a><br /></td></tr>
+<tr class="separator:a139dfb065e354c15094f5e6ee20212f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e3d6d276e66ac59fbed3a262adc158"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a61e3d6d276e66ac59fbed3a262adc158">tuya_tls_psk_mode_config_get</a> (void)</td></tr>
+<tr class="separator:a61e3d6d276e66ac59fbed3a262adc158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c57115f8b838c4e165d779ea02208f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a15c57115f8b838c4e165d779ea02208f">tuya_tls_random</a> (unsigned char *output, size_t output_len)</td></tr>
+<tr class="memdesc:a15c57115f8b838c4e165d779ea02208f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mbedtls random data in the specified length  <a href="../../d8/d4f/tuya__tls_8h.html#a15c57115f8b838c4e165d779ea02208f">更多...</a><br /></td></tr>
+<tr class="separator:a15c57115f8b838c4e165d779ea02208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac570d38f48cb62d55962b5df19baf841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#ac570d38f48cb62d55962b5df19baf841">tuya_tls_random_deinit</a> (void)</td></tr>
+<tr class="memdesc:ac570d38f48cb62d55962b5df19baf841"><td class="mdescLeft">&#160;</td><td class="mdescRight">mbedtls random de-init, and free mbedtls random ctx  <a href="../../d8/d4f/tuya__tls_8h.html#ac570d38f48cb62d55962b5df19baf841">更多...</a><br /></td></tr>
+<tr class="separator:ac570d38f48cb62d55962b5df19baf841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d9d58b3d298eae46d51b655cd21e83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a65d9d58b3d298eae46d51b655cd21e83">tuya_tls_random_init</a> (void)</td></tr>
+<tr class="memdesc:a65d9d58b3d298eae46d51b655cd21e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">mbedtls random initialization  <a href="../../d8/d4f/tuya__tls_8h.html#a65d9d58b3d298eae46d51b655cd21e83">更多...</a><br /></td></tr>
+<tr class="separator:a65d9d58b3d298eae46d51b655cd21e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3bf55aa1940315a5190ce1c112f2e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#acf3bf55aa1940315a5190ce1c112f2e6">tuya_tls_random_reinit</a> (void)</td></tr>
+<tr class="memdesc:acf3bf55aa1940315a5190ce1c112f2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">mbedtls random re-initialization  <a href="../../d8/d4f/tuya__tls_8h.html#acf3bf55aa1940315a5190ce1c112f2e6">更多...</a><br /></td></tr>
+<tr class="separator:acf3bf55aa1940315a5190ce1c112f2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c133c1c206678d4f5ed6c505cb3159"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#ab7c133c1c206678d4f5ed6c505cb3159">tuya_tls_read</a> (IN tuya_tls_hander tls_handler, BYTE_T *buf, UINT_T len)</td></tr>
+<tr class="memdesc:ab7c133c1c206678d4f5ed6c505cb3159"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls read  <a href="../../d8/d4f/tuya__tls_8h.html#ab7c133c1c206678d4f5ed6c505cb3159">更多...</a><br /></td></tr>
+<tr class="separator:ab7c133c1c206678d4f5ed6c505cb3159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc646d35ec2d0d1c796e820977d3ff6"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a4fc646d35ec2d0d1c796e820977d3ff6">tuya_tls_register_constant</a> (IN CHAR_T *p_uuid, IN CHAR_T *p_authkey, IN CHAR_T *p_psk_key)</td></tr>
+<tr class="memdesc:a4fc646d35ec2d0d1c796e820977d3ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls register  <a href="../../d8/d4f/tuya__tls_8h.html#a4fc646d35ec2d0d1c796e820977d3ff6">更多...</a><br /></td></tr>
+<tr class="separator:a4fc646d35ec2d0d1c796e820977d3ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d1076f7ac539549132acbbe8a3e2d8"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#ad9d1076f7ac539549132acbbe8a3e2d8">tuya_tls_register_x509_crt_der</a> (VOID *p_ctx, UCHAR_T *p_der, UINT_T der_len)</td></tr>
+<tr class="memdesc:ad9d1076f7ac539549132acbbe8a3e2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls register x509 ca  <a href="../../d8/d4f/tuya__tls_8h.html#ad9d1076f7ac539549132acbbe8a3e2d8">更多...</a><br /></td></tr>
+<tr class="separator:ad9d1076f7ac539549132acbbe8a3e2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b63ee4791d70d09b6b0fb5b6ff6e3e"><td class="memItemLeft" align="right" valign="top"><a id="a66b63ee4791d70d09b6b0fb5b6ff6e3e" name="a66b63ee4791d70d09b6b0fb5b6ff6e3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_tls_set_calloc_and_free</b> (void)</td></tr>
+<tr class="memdesc:a66b63ee4791d70d09b6b0fb5b6ff6e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set tls calloc and free function <br /></td></tr>
+<tr class="separator:a66b63ee4791d70d09b6b0fb5b6ff6e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5d93755b58d2ad9931457ca15a0b50"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4f/tuya__tls_8h.html#a8d5d93755b58d2ad9931457ca15a0b50">tuya_tls_write</a> (IN tuya_tls_hander tls_handler, BYTE_T *buf, UINT_T len)</td></tr>
+<tr class="memdesc:a8d5d93755b58d2ad9931457ca15a0b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls write  <a href="../../d8/d4f/tuya__tls_8h.html#a8d5d93755b58d2ad9931457ca15a0b50">更多...</a><br /></td></tr>
+<tr class="separator:a8d5d93755b58d2ad9931457ca15a0b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - tls include </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-08-20</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2019-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="abdd88f7c6fa149b21c6f4f1c7cb804d5" name="abdd88f7c6fa149b21c6f4f1c7cb804d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd88f7c6fa149b21c6f4f1c7cb804d5">&#9670;&nbsp;</a></span>__tuya_tls_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __tuya_tls_random </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_rng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>output_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generated random </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_rng</td><td>no use </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>random data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output_len</td><td>length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae7f0d293c060cbdfad4c27b7bb2122cf" name="ae7f0d293c060cbdfad4c27b7bb2122cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f0d293c060cbdfad4c27b7bb2122cf">&#9670;&nbsp;</a></span>tuya_tls_config_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> * tuya_tls_config_get </td>
+          <td>(</td>
+          <td class="paramtype">tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>p_tls_handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>p_tls_handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>tuya_tls_config_t* </dd></dl>
+
+</div>
+</div>
+<a id="a268fe2bb2f4d3585eb5fd7b418b596f5" name="a268fe2bb2f4d3585eb5fd7b418b596f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268fe2bb2f4d3585eb5fd7b418b596f5">&#9670;&nbsp;</a></span>tuya_tls_config_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_tls_config_set </td>
+          <td>(</td>
+          <td class="paramtype">tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>p_tls_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>p_tls_handler </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>config </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a7cac87e543b8a9642f7356b6cc29fa27" name="a7cac87e543b8a9642f7356b6cc29fa27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cac87e543b8a9642f7356b6cc29fa27">&#9670;&nbsp;</a></span>tuya_tls_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_tls_connect </td>
+          <td>(</td>
+          <td class="paramtype">tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>p_tls_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>port_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>socket_fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>overtime_s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls connect </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_tls_handler</td><td>refer to tuya_tls_hander </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hostname</td><td>url </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">socket_fd</td><td>fd </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">overtime_s</td><td>connect timeout</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6b2c3e8ebd1aaea85b126d57510f26b6" name="a6b2c3e8ebd1aaea85b126d57510f26b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2c3e8ebd1aaea85b126d57510f26b6">&#9670;&nbsp;</a></span>tuya_tls_connect_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuya_tls_hander * tuya_tls_connect_create </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls hander create </p>
+<dl class="section return"><dt>返回</dt><dd>tuya_tls_hander* </dd></dl>
+
+</div>
+</div>
+<a id="a8334ff76eaa04465f4c93c0a8b82f8a6" name="a8334ff76eaa04465f4c93c0a8b82f8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8334ff76eaa04465f4c93c0a8b82f8a6">&#9670;&nbsp;</a></span>tuya_tls_connect_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_tls_connect_destroy </td>
+          <td>(</td>
+          <td class="paramtype">tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>p_tls_hander</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>p_tls_hander </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af60d982fdb664f108499741a9186d9b4" name="af60d982fdb664f108499741a9186d9b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60d982fdb664f108499741a9186d9b4">&#9670;&nbsp;</a></span>tuya_tls_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_tls_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">IN tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>tls_handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generated random </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tls_handler</td><td>refer to tuya_tls_hander</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a139dfb065e354c15094f5e6ee20212f4" name="a139dfb065e354c15094f5e6ee20212f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139dfb065e354c15094f5e6ee20212f4">&#9670;&nbsp;</a></span>tuya_tls_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_tls_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls init </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a61e3d6d276e66ac59fbed3a262adc158" name="a61e3d6d276e66ac59fbed3a262adc158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e3d6d276e66ac59fbed3a262adc158">&#9670;&nbsp;</a></span>tuya_tls_psk_mode_config_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> * tuya_tls_psk_mode_config_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>const tuya_tls_config_t* </dd></dl>
+
+</div>
+</div>
+<a id="a15c57115f8b838c4e165d779ea02208f" name="a15c57115f8b838c4e165d779ea02208f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c57115f8b838c4e165d779ea02208f">&#9670;&nbsp;</a></span>tuya_tls_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tuya_tls_random </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>output_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get mbedtls random data in the specified length </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td></td></tr>
+    <tr><td class="paramname">output_len</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac570d38f48cb62d55962b5df19baf841" name="ac570d38f48cb62d55962b5df19baf841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac570d38f48cb62d55962b5df19baf841">&#9670;&nbsp;</a></span>tuya_tls_random_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tuya_tls_random_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mbedtls random de-init, and free mbedtls random ctx </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a65d9d58b3d298eae46d51b655cd21e83" name="a65d9d58b3d298eae46d51b655cd21e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d9d58b3d298eae46d51b655cd21e83">&#9670;&nbsp;</a></span>tuya_tls_random_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tuya_tls_random_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mbedtls random initialization </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acf3bf55aa1940315a5190ce1c112f2e6" name="acf3bf55aa1940315a5190ce1c112f2e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3bf55aa1940315a5190ce1c112f2e6">&#9670;&nbsp;</a></span>tuya_tls_random_reinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tuya_tls_random_reinit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mbedtls random re-initialization </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab7c133c1c206678d4f5ed6c505cb3159" name="ab7c133c1c206678d4f5ed6c505cb3159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c133c1c206678d4f5ed6c505cb3159">&#9670;&nbsp;</a></span>tuya_tls_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_tls_read </td>
+          <td>(</td>
+          <td class="paramtype">IN tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>tls_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls read </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tls_handler</td><td>refer to tuya_tls_hander </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>read data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>read length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4fc646d35ec2d0d1c796e820977d3ff6" name="a4fc646d35ec2d0d1c796e820977d3ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc646d35ec2d0d1c796e820977d3ff6">&#9670;&nbsp;</a></span>tuya_tls_register_constant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_tls_register_constant </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_authkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_psk_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls register </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_uuid</td><td>uudi </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_authkey</td><td>auth key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_psk_key</td><td>psk key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9d1076f7ac539549132acbbe8a3e2d8" name="ad9d1076f7ac539549132acbbe8a3e2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d1076f7ac539549132acbbe8a3e2d8">&#9670;&nbsp;</a></span>tuya_tls_register_x509_crt_der()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_tls_register_x509_crt_der </td>
+          <td>(</td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>p_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>p_der</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>der_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls register x509 ca </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_ctx</td><td>ca content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_der</td><td>ca </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">der_len</td><td>ca len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8d5d93755b58d2ad9931457ca15a0b50" name="a8d5d93755b58d2ad9931457ca15a0b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d5d93755b58d2ad9931457ca15a0b50">&#9670;&nbsp;</a></span>tuya_tls_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_tls_write </td>
+          <td>(</td>
+          <td class="paramtype">IN tuya_tls_hander&#160;</td>
+          <td class="paramname"><em>tls_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls write </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tls_handler</td><td>refer to tuya_tls_hander </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>write data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>write length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_FS_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_FS_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>the description of tuya kernel adapter layer file system  
+ <a href="../../d6/d0b/structTKL__FS__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d5/da6/tkl__init__system_8h_source.html">tkl_init_system.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a02ebfe7df52c079458ee7c3703bf1981"><td class="memItemLeft" align="right" valign="top"><a id="a02ebfe7df52c079458ee7c3703bf1981" name="a02ebfe7df52c079458ee7c3703bf1981"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>dir_close</b> )(TUYA_DIR dir)</td></tr>
+<tr class="separator:a02ebfe7df52c079458ee7c3703bf1981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4251838e3da0d508748a224c38c486e5"><td class="memItemLeft" align="right" valign="top"><a id="a4251838e3da0d508748a224c38c486e5" name="a4251838e3da0d508748a224c38c486e5"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>dir_is_dir</b> )(TUYA_FILEINFO info, BOOL_T *is_dir)</td></tr>
+<tr class="separator:a4251838e3da0d508748a224c38c486e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383b87f07a112576a404b7ac40466916"><td class="memItemLeft" align="right" valign="top"><a id="a383b87f07a112576a404b7ac40466916" name="a383b87f07a112576a404b7ac40466916"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>dir_is_regular</b> )(TUYA_FILEINFO info, BOOL_T *is_regular)</td></tr>
+<tr class="separator:a383b87f07a112576a404b7ac40466916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86a27facfb876e6b33f4168762e8fc4"><td class="memItemLeft" align="right" valign="top"><a id="aa86a27facfb876e6b33f4168762e8fc4" name="aa86a27facfb876e6b33f4168762e8fc4"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>dir_name</b> )(TUYA_FILEINFO info, CONST CHAR_T **name)</td></tr>
+<tr class="separator:aa86a27facfb876e6b33f4168762e8fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d7b9f57fc76a75630dd1aa7ff92308"><td class="memItemLeft" align="right" valign="top"><a id="a42d7b9f57fc76a75630dd1aa7ff92308" name="a42d7b9f57fc76a75630dd1aa7ff92308"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>dir_open</b> )(CONST CHAR_T *path, TUYA_DIR *dir)</td></tr>
+<tr class="separator:a42d7b9f57fc76a75630dd1aa7ff92308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f58d58076c42b7d9f9ba6d150673e0"><td class="memItemLeft" align="right" valign="top"><a id="a53f58d58076c42b7d9f9ba6d150673e0" name="a53f58d58076c42b7d9f9ba6d150673e0"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>dir_read</b> )(TUYA_DIR dir, TUYA_FILEINFO *info)</td></tr>
+<tr class="separator:a53f58d58076c42b7d9f9ba6d150673e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4475f9834036a8932bd1d40b336eec9"><td class="memItemLeft" align="right" valign="top"><a id="ae4475f9834036a8932bd1d40b336eec9" name="ae4475f9834036a8932bd1d40b336eec9"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>faccess</b> )(CONST CHAR_T *filepath, IN INT_T mode)</td></tr>
+<tr class="separator:ae4475f9834036a8932bd1d40b336eec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14bdc287128f6b93a16a9aec62e8c5f"><td class="memItemLeft" align="right" valign="top"><a id="ad14bdc287128f6b93a16a9aec62e8c5f" name="ad14bdc287128f6b93a16a9aec62e8c5f"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fclose</b> )(TUYA_FILE file)</td></tr>
+<tr class="separator:ad14bdc287128f6b93a16a9aec62e8c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077ff640b59633808f3e554eeeebb7c5"><td class="memItemLeft" align="right" valign="top"><a id="a077ff640b59633808f3e554eeeebb7c5" name="a077ff640b59633808f3e554eeeebb7c5"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>feof</b> )(TUYA_FILE file)</td></tr>
+<tr class="separator:a077ff640b59633808f3e554eeeebb7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fbd8c96846b7addde2b583672ec0805"><td class="memItemLeft" align="right" valign="top"><a id="a3fbd8c96846b7addde2b583672ec0805" name="a3fbd8c96846b7addde2b583672ec0805"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>fflush</b> )(TUYA_FILE file)</td></tr>
+<tr class="separator:a3fbd8c96846b7addde2b583672ec0805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a4088b1e2d8093f06123f17bb4f64e"><td class="memItemLeft" align="right" valign="top"><a id="aa9a4088b1e2d8093f06123f17bb4f64e" name="aa9a4088b1e2d8093f06123f17bb4f64e"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>fgetc</b> )(TUYA_FILE file)</td></tr>
+<tr class="separator:aa9a4088b1e2d8093f06123f17bb4f64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0a6a577a7b074f1d17d4fd06cfc3f5"><td class="memItemLeft" align="right" valign="top"><a id="a1b0a6a577a7b074f1d17d4fd06cfc3f5" name="a1b0a6a577a7b074f1d17d4fd06cfc3f5"></a>
+CHAR_T *(*&#160;</td><td class="memItemRight" valign="bottom"><b>fgets</b> )(CHAR_T *buf, INT_T len, TUYA_FILE file)</td></tr>
+<tr class="separator:a1b0a6a577a7b074f1d17d4fd06cfc3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757d6723ef8201b3c5996b7b0fa89ece"><td class="memItemLeft" align="right" valign="top"><a id="a757d6723ef8201b3c5996b7b0fa89ece" name="a757d6723ef8201b3c5996b7b0fa89ece"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>fgetsize</b> )(CONST CHAR_T *filepath)</td></tr>
+<tr class="separator:a757d6723ef8201b3c5996b7b0fa89ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0266da3813f04e55eb969c28168e38c9"><td class="memItemLeft" align="right" valign="top"><a id="a0266da3813f04e55eb969c28168e38c9" name="a0266da3813f04e55eb969c28168e38c9"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>fileno</b> )(TUYA_FILE file)</td></tr>
+<tr class="separator:a0266da3813f04e55eb969c28168e38c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0730a4e7fe0d27f9c78a9471759ded"><td class="memItemLeft" align="right" valign="top"><a id="acc0730a4e7fe0d27f9c78a9471759ded" name="acc0730a4e7fe0d27f9c78a9471759ded"></a>
+TUYA_FILE(*&#160;</td><td class="memItemRight" valign="bottom"><b>fopen</b> )(CONST CHAR_T *path, CONST CHAR_T *mode)</td></tr>
+<tr class="separator:acc0730a4e7fe0d27f9c78a9471759ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f09816cf104a87ca68912ef8cfe8742"><td class="memItemLeft" align="right" valign="top"><a id="a7f09816cf104a87ca68912ef8cfe8742" name="a7f09816cf104a87ca68912ef8cfe8742"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fread</b> )(VOID_T *buf, INT_T bytes, TUYA_FILE file)</td></tr>
+<tr class="separator:a7f09816cf104a87ca68912ef8cfe8742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc05b3e437dbafb3912b77c51a07fbd1"><td class="memItemLeft" align="right" valign="top"><a id="abc05b3e437dbafb3912b77c51a07fbd1" name="abc05b3e437dbafb3912b77c51a07fbd1"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_is_exist</b> )(CONST CHAR_T *path, BOOL_T *is_exist)</td></tr>
+<tr class="separator:abc05b3e437dbafb3912b77c51a07fbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63620f783fa952e7b353fa2759562bb"><td class="memItemLeft" align="right" valign="top"><a id="ac63620f783fa952e7b353fa2759562bb" name="ac63620f783fa952e7b353fa2759562bb"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_mkdir</b> )(CONST CHAR_T *path)</td></tr>
+<tr class="separator:ac63620f783fa952e7b353fa2759562bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6965a5790805b366f01f69b9a17b17"><td class="memItemLeft" align="right" valign="top"><a id="a3b6965a5790805b366f01f69b9a17b17" name="a3b6965a5790805b366f01f69b9a17b17"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_mode</b> )(CONST CHAR_T *path, UINT_T *mode)</td></tr>
+<tr class="separator:a3b6965a5790805b366f01f69b9a17b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27bc969c6cf9592491d376a52787236c"><td class="memItemLeft" align="right" valign="top"><a id="a27bc969c6cf9592491d376a52787236c" name="a27bc969c6cf9592491d376a52787236c"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_remove</b> )(CONST CHAR_T *path)</td></tr>
+<tr class="separator:a27bc969c6cf9592491d376a52787236c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88867976cf473eb499f27abbdf8d1f0d"><td class="memItemLeft" align="right" valign="top"><a id="a88867976cf473eb499f27abbdf8d1f0d" name="a88867976cf473eb499f27abbdf8d1f0d"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_rename</b> )(CONST CHAR_T *path_old, CONST CHAR_T *path_new)</td></tr>
+<tr class="separator:a88867976cf473eb499f27abbdf8d1f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3433166960a5654e553f9e488b009eee"><td class="memItemLeft" align="right" valign="top"><a id="a3433166960a5654e553f9e488b009eee" name="a3433166960a5654e553f9e488b009eee"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fseek</b> )(TUYA_FILE file, INT64_T offs, INT_T whence)</td></tr>
+<tr class="separator:a3433166960a5654e553f9e488b009eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b761522fc3d48d13c8127f83ea83bc"><td class="memItemLeft" align="right" valign="top"><a id="a64b761522fc3d48d13c8127f83ea83bc" name="a64b761522fc3d48d13c8127f83ea83bc"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>fsync</b> )(INT_T fd)</td></tr>
+<tr class="separator:a64b761522fc3d48d13c8127f83ea83bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664bd5d115b77d32de665efe2da3549e"><td class="memItemLeft" align="right" valign="top"><a id="a664bd5d115b77d32de665efe2da3549e" name="a664bd5d115b77d32de665efe2da3549e"></a>
+INT64_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>ftell</b> )(TUYA_FILE file)</td></tr>
+<tr class="separator:a664bd5d115b77d32de665efe2da3549e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dba980e073eeb37a6f4bbd257311bd"><td class="memItemLeft" align="right" valign="top"><a id="ab9dba980e073eeb37a6f4bbd257311bd" name="ab9dba980e073eeb37a6f4bbd257311bd"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>ftruncate</b> )(INT_T fd, UINT64_T length)</td></tr>
+<tr class="separator:ab9dba980e073eeb37a6f4bbd257311bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0b614e4be42f6714b0d77976f1cf07"><td class="memItemLeft" align="right" valign="top"><a id="a8e0b614e4be42f6714b0d77976f1cf07" name="a8e0b614e4be42f6714b0d77976f1cf07"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>fwrite</b> )(VOID_T *buf, INT_T bytes, TUYA_FILE file)</td></tr>
+<tr class="separator:a8e0b614e4be42f6714b0d77976f1cf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >the description of tuya kernel adapter layer file system </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/init/include/<a class="el" href="../../d5/da6/tkl__init__system_8h_source.html">tkl_init_system.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

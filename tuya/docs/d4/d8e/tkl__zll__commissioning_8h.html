@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_zll_commissioning.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_zll_commissioning.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - zll commissioning network  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h_source.html">tuya_zigbee_stack.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_zll_commissioning.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d76/tkl__zll__commissioning_8h__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tkl__zll__commissioning_8h" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tkl__zll__commissioning_8h" id="ainclude_2adapter_2zigbee_2include_2tkl__zll__commissioning_8h">
+<area shape="rect" title="Common process &#45; zll commissioning network" alt="" coords="631,5,865,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="418,95,566,121"/>
+<area shape="rect" href="../../d8/dba/tuya__zigbee__stack_8h.html" title="Common process &#45; zigbee stack" alt="" coords="928,95,1083,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+<area shape="rect" href="../../d0/d77/tuya__zigbee__attribute_8h.html" title="Common process &#45; zigbee attribute" alt="" coords="917,169,1093,196"/>
+<area shape="rect" href="../../dd/d01/tuya__zigbee__command_8h.html" title="Common process &#45; zigbee command" alt="" coords="1118,169,1303,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d4/d8e/tkl__zll__commissioning_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3c/structZLL__EXT__CB__T.html">ZLL_EXT_CB_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a15aec8820c362152a949d972a9e50c0f"><td class="memItemLeft" align="right" valign="top"><a id="a15aec8820c362152a949d972a9e50c0f" name="a15aec8820c362152a949d972a9e50c0f"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZLL_IDENTIFY_REQ_CB</b>) (UINT16_T durationS)</td></tr>
+<tr class="separator:a15aec8820c362152a949d972a9e50c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30666dce50c50654a4d26ee4a27bc558"><td class="memItemLeft" align="right" valign="top"><a id="a30666dce50c50654a4d26ee4a27bc558" name="a30666dce50c50654a4d26ee4a27bc558"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZLL_INITIATOR_CMP_CB</b>) (<a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">TKL_ZLL_SCAN_RESULT_E</a>, <a class="el" href="../../d2/d1c/structTKL__ZLL__DEV__LIST__T.html">TKL_ZLL_DEV_LIST_T</a> *)</td></tr>
+<tr class="separator:a30666dce50c50654a4d26ee4a27bc558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278c08cec3dad395c06493ea0facf34b"><td class="memItemLeft" align="right" valign="top"><a id="a278c08cec3dad395c06493ea0facf34b" name="a278c08cec3dad395c06493ea0facf34b"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZLL_POWER_STRATETGY_CB</b>) (BOOL_T)</td></tr>
+<tr class="separator:a278c08cec3dad395c06493ea0facf34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5076bf7dd3b37b7de92b86dd2699f425"><td class="memItemLeft" align="right" valign="top"><a id="a5076bf7dd3b37b7de92b86dd2699f425" name="a5076bf7dd3b37b7de92b86dd2699f425"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZLL_RESET_TO_FN_CB</b>) (VOID_T)</td></tr>
+<tr class="separator:a5076bf7dd3b37b7de92b86dd2699f425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ebbecbf590aa1ca841cfe0b7083a7c"><td class="memItemLeft" align="right" valign="top"><a id="a81ebbecbf590aa1ca841cfe0b7083a7c" name="a81ebbecbf590aa1ca841cfe0b7083a7c"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZLL_TARGET_CMP_CB</b>) (<a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">TKL_ZLL_TARGET_STATUS_E</a>)</td></tr>
+<tr class="separator:a81ebbecbf590aa1ca841cfe0b7083a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a16bd835c67c5425a5a938f8a07722b47"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">TKL_ZLL_SCAN_RESULT_E</a> { <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f">TKL_ZLL_SCAN_RESULT_SUCESS</a> = 0
+, <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d">TKL_ZLL_SCAN_RESULT_NO_FOUND</a> = 1
+ }</td></tr>
+<tr class="separator:a16bd835c67c5425a5a938f8a07722b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69c756fb888cfc18c2a45c14f8b1cb7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a> { <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5">TKL_ZLL_SCAN_OK</a> = 0
+, <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8">TKL_ZLL_SCAN_BUSY</a> = 1
+ }</td></tr>
+<tr class="separator:ac69c756fb888cfc18c2a45c14f8b1cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897c908710696ef0d123ccd040df2e3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a> { <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e">TKL_ZLL_SCANE_FOR_JOIN</a> = 0
+, <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f">TKL_ZLL_SCAN_FOR_LEAVE</a> = 1
+, <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1">TKL_ZLL_SCAN_FOR_INDENTIFY</a> = 2
+ }</td></tr>
+<tr class="separator:a897c908710696ef0d123ccd040df2e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f5375947226d6e62924b551a47f1e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">TKL_ZLL_TARGET_STATUS_E</a> { <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265">TKL_ZLL_TARGET_IDLE</a> = 0
+, <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458">TKL_ZLL_TARGET_LEAVE</a>
+, <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba">TKL_ZLL_TARGET_JOINED</a>
+ }</td></tr>
+<tr class="separator:ac6f5375947226d6e62924b551a47f1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a25fcdf52a2672b2a6f1bc0d7d581f34a"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a25fcdf52a2672b2a6f1bc0d7d581f34a">tkl_zll_commissioning_3_0_test_enable</a> (VOID_T)</td></tr>
+<tr class="memdesc:a25fcdf52a2672b2a6f1bc0d7d581f34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll commissioning 3.0 test enable  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a25fcdf52a2672b2a6f1bc0d7d581f34a">更多...</a><br /></td></tr>
+<tr class="separator:a25fcdf52a2672b2a6f1bc0d7d581f34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa095cb23546d3ed8a166e88b4c8f9b0e"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa095cb23546d3ed8a166e88b4c8f9b0e">tkl_zll_commissioning_in_process</a> (VOID_T)</td></tr>
+<tr class="memdesc:aa095cb23546d3ed8a166e88b4c8f9b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">check zll commissioning is in progress to avoid some process conflicts  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa095cb23546d3ed8a166e88b4c8f9b0e">更多...</a><br /></td></tr>
+<tr class="separator:aa095cb23546d3ed8a166e88b4c8f9b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add65b6c4121ee9fb2a279d20b23a65a1"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#add65b6c4121ee9fb2a279d20b23a65a1">tkl_zll_commissioning_rx_on_set</a> (UINT32_T time_ms)</td></tr>
+<tr class="memdesc:add65b6c4121ee9fb2a279d20b23a65a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">time when zll commissioning rx is on in idle state  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#add65b6c4121ee9fb2a279d20b23a65a1">更多...</a><br /></td></tr>
+<tr class="separator:add65b6c4121ee9fb2a279d20b23a65a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7960f35ee9ea8742c4a349aee0784fd5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7960f35ee9ea8742c4a349aee0784fd5">tkl_zll_initiator_register_complete_cb</a> (TKL_ZLL_INITIATOR_CMP_CB cb)</td></tr>
+<tr class="memdesc:a7960f35ee9ea8742c4a349aee0784fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll initiator register complete callback  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7960f35ee9ea8742c4a349aee0784fd5">更多...</a><br /></td></tr>
+<tr class="separator:a7960f35ee9ea8742c4a349aee0784fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a05a72c5aea704cb435fbe5d4659ce8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a6a05a72c5aea704cb435fbe5d4659ce8">tkl_zll_initiator_scan_start</a> (<a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a> type)</td></tr>
+<tr class="memdesc:a6a05a72c5aea704cb435fbe5d4659ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll initiator scan start  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a6a05a72c5aea704cb435fbe5d4659ce8">更多...</a><br /></td></tr>
+<tr class="separator:a6a05a72c5aea704cb435fbe5d4659ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd384ffab4c5bb4af407b065452b4ec"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#adbd384ffab4c5bb4af407b065452b4ec">tkl_zll_initiator_scan_stop</a> (VOID_T)</td></tr>
+<tr class="memdesc:adbd384ffab4c5bb4af407b065452b4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll initiator scan stop  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#adbd384ffab4c5bb4af407b065452b4ec">更多...</a><br /></td></tr>
+<tr class="separator:adbd384ffab4c5bb4af407b065452b4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6fdca374e79e4635e302e10cdf975a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afe6fdca374e79e4635e302e10cdf975a">tkl_zll_initiator_touchlink_init</a> (VOID_T)</td></tr>
+<tr class="memdesc:afe6fdca374e79e4635e302e10cdf975a"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll initiator touchlink init  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#afe6fdca374e79e4635e302e10cdf975a">更多...</a><br /></td></tr>
+<tr class="separator:afe6fdca374e79e4635e302e10cdf975a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b54e52d96d72bca4ebd1868adafcb9"><td class="memItemLeft" align="right" valign="top">INT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a97b54e52d96d72bca4ebd1868adafcb9">tkl_zll_initiator_tx_power_get</a> (VOID_T)</td></tr>
+<tr class="memdesc:a97b54e52d96d72bca4ebd1868adafcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll initiator get tx power  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a97b54e52d96d72bca4ebd1868adafcb9">更多...</a><br /></td></tr>
+<tr class="separator:a97b54e52d96d72bca4ebd1868adafcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b233d7ab4465a5a997a01f0d5849dee"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a5b233d7ab4465a5a997a01f0d5849dee">tkl_zll_initiator_tx_power_set</a> (INT8_T tx_db)</td></tr>
+<tr class="memdesc:a5b233d7ab4465a5a997a01f0d5849dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll initiator set tx power  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a5b233d7ab4465a5a997a01f0d5849dee">更多...</a><br /></td></tr>
+<tr class="separator:a5b233d7ab4465a5a997a01f0d5849dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc67ac3e866e62f270d4d4b371e59ef1"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afc67ac3e866e62f270d4d4b371e59ef1">tkl_zll_target_no_reset_for_non_factory_new</a> (VOID_T)</td></tr>
+<tr class="memdesc:afc67ac3e866e62f270d4d4b371e59ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target no touchlink for non-factory new device this function will cause an nfn device to refuse network start/join/update requests and thus to forbid commissioning by touchlinking. this can be useful to restrict touchlink stealing.  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#afc67ac3e866e62f270d4d4b371e59ef1">更多...</a><br /></td></tr>
+<tr class="separator:afc67ac3e866e62f270d4d4b371e59ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa1f394e7ab2c7d97593f94de506c48"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7fa1f394e7ab2c7d97593f94de506c48">tkl_zll_target_no_touchlink_for_non_factory_new</a> (VOID_T)</td></tr>
+<tr class="memdesc:a7fa1f394e7ab2c7d97593f94de506c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">no reset for non-factory new device this function will cause an NFN device on a centralized security network to a touchlink reset-to-factory-new request from a remote device.  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7fa1f394e7ab2c7d97593f94de506c48">更多...</a><br /></td></tr>
+<tr class="separator:a7fa1f394e7ab2c7d97593f94de506c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8b55d94f2e1f8af93be1d96cdbea60"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aea8b55d94f2e1f8af93be1d96cdbea60">tkl_zll_target_register_complete_cb</a> (TKL_ZLL_TARGET_CMP_CB cb)</td></tr>
+<tr class="memdesc:aea8b55d94f2e1f8af93be1d96cdbea60"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target register complete callback  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#aea8b55d94f2e1f8af93be1d96cdbea60">更多...</a><br /></td></tr>
+<tr class="separator:aea8b55d94f2e1f8af93be1d96cdbea60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7608a490a4a54c7938fcaf4759b45eff"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7608a490a4a54c7938fcaf4759b45eff">tkl_zll_target_register_identify_req_cb</a> (TKL_ZLL_IDENTIFY_REQ_CB cb)</td></tr>
+<tr class="separator:a7608a490a4a54c7938fcaf4759b45eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03b6f33564787df83153ac347280641"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#af03b6f33564787df83153ac347280641">tkl_zll_target_register_reset_to_fn_cb</a> (TKL_ZLL_RESET_TO_FN_CB cb)</td></tr>
+<tr class="separator:af03b6f33564787df83153ac347280641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20893789c5a98ea59db6f8c55cde54b"><td class="memItemLeft" align="right" valign="top">INT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa20893789c5a98ea59db6f8c55cde54b">tkl_zll_target_rssi_threshold_get</a> (VOID_T)</td></tr>
+<tr class="memdesc:aa20893789c5a98ea59db6f8c55cde54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target get rssi threshold  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa20893789c5a98ea59db6f8c55cde54b">更多...</a><br /></td></tr>
+<tr class="separator:aa20893789c5a98ea59db6f8c55cde54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef52c3bd150bbd3a65c7f8d60954c88"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a3ef52c3bd150bbd3a65c7f8d60954c88">tkl_zll_target_rssi_threshold_set</a> (INT8_T rx_rssi)</td></tr>
+<tr class="memdesc:a3ef52c3bd150bbd3a65c7f8d60954c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target set rssi threshold  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a3ef52c3bd150bbd3a65c7f8d60954c88">更多...</a><br /></td></tr>
+<tr class="separator:a3ef52c3bd150bbd3a65c7f8d60954c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa75bdfbaf43bd81c7d57cb945329506"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afa75bdfbaf43bd81c7d57cb945329506">tkl_zll_target_touchlink_enable</a> (BOOL_T en)</td></tr>
+<tr class="memdesc:afa75bdfbaf43bd81c7d57cb945329506"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target touchlink enable  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#afa75bdfbaf43bd81c7d57cb945329506">更多...</a><br /></td></tr>
+<tr class="separator:afa75bdfbaf43bd81c7d57cb945329506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5b65e86f716566b671b9088826e667"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a2d5b65e86f716566b671b9088826e667">tkl_zll_target_touchlink_init</a> (VOID_T)</td></tr>
+<tr class="memdesc:a2d5b65e86f716566b671b9088826e667"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target touchlink init  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a2d5b65e86f716566b671b9088826e667">更多...</a><br /></td></tr>
+<tr class="separator:a2d5b65e86f716566b671b9088826e667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06016b31b459025ec715e41d0cd3e5cf"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a06016b31b459025ec715e41d0cd3e5cf">tkl_zll_target_touchlink_is_enable</a> (VOID_T)</td></tr>
+<tr class="memdesc:a06016b31b459025ec715e41d0cd3e5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">zll target touchlink disable  <a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a06016b31b459025ec715e41d0cd3e5cf">更多...</a><br /></td></tr>
+<tr class="separator:a06016b31b459025ec715e41d0cd3e5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - zll commissioning network </p>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-11-16</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a16bd835c67c5425a5a938f8a07722b47" name="a16bd835c67c5425a5a938f8a07722b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bd835c67c5425a5a938f8a07722b47">&#9670;&nbsp;</a></span>TKL_ZLL_SCAN_RESULT_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">TKL_ZLL_SCAN_RESULT_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f" name="a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f"></a>TKL_ZLL_SCAN_RESULT_SUCESS&#160;</td><td class="fielddoc"><p >zll scan OK, found device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d" name="a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d"></a>TKL_ZLL_SCAN_RESULT_NO_FOUND&#160;</td><td class="fielddoc"><p >zll scan OK, no found device </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac69c756fb888cfc18c2a45c14f8b1cb7" name="ac69c756fb888cfc18c2a45c14f8b1cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69c756fb888cfc18c2a45c14f8b1cb7">&#9670;&nbsp;</a></span>TKL_ZLL_SCAN_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5" name="ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5"></a>TKL_ZLL_SCAN_OK&#160;</td><td class="fielddoc"><p >zll scan start OK. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8" name="ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8"></a>TKL_ZLL_SCAN_BUSY&#160;</td><td class="fielddoc"><p >zll scan start failed because of busy-bdb. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a897c908710696ef0d123ccd040df2e3c" name="a897c908710696ef0d123ccd040df2e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897c908710696ef0d123ccd040df2e3c">&#9670;&nbsp;</a></span>TKL_ZLL_SCAN_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e" name="a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e"></a>TKL_ZLL_SCANE_FOR_JOIN&#160;</td><td class="fielddoc"><p >zll scan because of touchlink. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f" name="a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f"></a>TKL_ZLL_SCAN_FOR_LEAVE&#160;</td><td class="fielddoc"><p >zll scan because of "reset to factory new". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1" name="a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1"></a>TKL_ZLL_SCAN_FOR_INDENTIFY&#160;</td><td class="fielddoc"><p >zll scan because of identify. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac6f5375947226d6e62924b551a47f1e7" name="ac6f5375947226d6e62924b551a47f1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f5375947226d6e62924b551a47f1e7">&#9670;&nbsp;</a></span>TKL_ZLL_TARGET_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">TKL_ZLL_TARGET_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265" name="ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265"></a>TKL_ZLL_TARGET_IDLE&#160;</td><td class="fielddoc"><p >zll target idle </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458" name="ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458"></a>TKL_ZLL_TARGET_LEAVE&#160;</td><td class="fielddoc"><p >zll target leave by initiator </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba" name="ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba"></a>TKL_ZLL_TARGET_JOINED&#160;</td><td class="fielddoc"><p >zll target joined to a zll network </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a25fcdf52a2672b2a6f1bc0d7d581f34a" name="a25fcdf52a2672b2a6f1bc0d7d581f34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25fcdf52a2672b2a6f1bc0d7d581f34a">&#9670;&nbsp;</a></span>tkl_zll_commissioning_3_0_test_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_zll_commissioning_3_0_test_enable </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll commissioning 3.0 test enable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="aa095cb23546d3ed8a166e88b4c8f9b0e" name="aa095cb23546d3ed8a166e88b4c8f9b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa095cb23546d3ed8a166e88b4c8f9b0e">&#9670;&nbsp;</a></span>tkl_zll_commissioning_in_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zll_commissioning_in_process </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check zll commissioning is in progress to avoid some process conflicts </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE:in process </dd></dl>
+
+</div>
+</div>
+<a id="add65b6c4121ee9fb2a279d20b23a65a1" name="add65b6c4121ee9fb2a279d20b23a65a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add65b6c4121ee9fb2a279d20b23a65a1">&#9670;&nbsp;</a></span>tkl_zll_commissioning_rx_on_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zll_commissioning_rx_on_set </td>
+          <td>(</td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>time_ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>time when zll commissioning rx is on in idle state </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_ms</td><td>rx on time, 0: rx off when idle; 0xFFFFFFFF: rx on forever </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>rx on success or not </dd></dl>
+
+</div>
+</div>
+<a id="a7960f35ee9ea8742c4a349aee0784fd5" name="a7960f35ee9ea8742c4a349aee0784fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7960f35ee9ea8742c4a349aee0784fd5">&#9670;&nbsp;</a></span>tkl_zll_initiator_register_complete_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zll_initiator_register_complete_cb </td>
+          <td>(</td>
+          <td class="paramtype">TKL_ZLL_INITIATOR_CMP_CB&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll initiator register complete callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>pointe to callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6a05a72c5aea704cb435fbe5d4659ce8" name="a6a05a72c5aea704cb435fbe5d4659ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a05a72c5aea704cb435fbe5d4659ce8">&#9670;&nbsp;</a></span>tkl_zll_initiator_scan_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a> tkl_zll_initiator_scan_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll initiator scan start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>scan type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>scan status </dd></dl>
+
+</div>
+</div>
+<a id="adbd384ffab4c5bb4af407b065452b4ec" name="adbd384ffab4c5bb4af407b065452b4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd384ffab4c5bb4af407b065452b4ec">&#9670;&nbsp;</a></span>tkl_zll_initiator_scan_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_zll_initiator_scan_stop </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll initiator scan stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="afe6fdca374e79e4635e302e10cdf975a" name="afe6fdca374e79e4635e302e10cdf975a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6fdca374e79e4635e302e10cdf975a">&#9670;&nbsp;</a></span>tkl_zll_initiator_touchlink_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zll_initiator_touchlink_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll initiator touchlink init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a97b54e52d96d72bca4ebd1868adafcb9" name="a97b54e52d96d72bca4ebd1868adafcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b54e52d96d72bca4ebd1868adafcb9">&#9670;&nbsp;</a></span>tkl_zll_initiator_tx_power_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT8_T tkl_zll_initiator_tx_power_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll initiator get tx power </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_db</td><td>radio tx power </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a5b233d7ab4465a5a997a01f0d5849dee" name="a5b233d7ab4465a5a997a01f0d5849dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b233d7ab4465a5a997a01f0d5849dee">&#9670;&nbsp;</a></span>tkl_zll_initiator_tx_power_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_zll_initiator_tx_power_set </td>
+          <td>(</td>
+          <td class="paramtype">INT8_T&#160;</td>
+          <td class="paramname"><em>tx_db</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll initiator set tx power </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_db</td><td>radio tx power </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="afc67ac3e866e62f270d4d4b371e59ef1" name="afc67ac3e866e62f270d4d4b371e59ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc67ac3e866e62f270d4d4b371e59ef1">&#9670;&nbsp;</a></span>tkl_zll_target_no_reset_for_non_factory_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zll_target_no_reset_for_non_factory_new </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target no touchlink for non-factory new device this function will cause an nfn device to refuse network start/join/update requests and thus to forbid commissioning by touchlinking. this can be useful to restrict touchlink stealing. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a7fa1f394e7ab2c7d97593f94de506c48" name="a7fa1f394e7ab2c7d97593f94de506c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa1f394e7ab2c7d97593f94de506c48">&#9670;&nbsp;</a></span>tkl_zll_target_no_touchlink_for_non_factory_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zll_target_no_touchlink_for_non_factory_new </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>no reset for non-factory new device this function will cause an NFN device on a centralized security network to a touchlink reset-to-factory-new request from a remote device. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="aea8b55d94f2e1f8af93be1d96cdbea60" name="aea8b55d94f2e1f8af93be1d96cdbea60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8b55d94f2e1f8af93be1d96cdbea60">&#9670;&nbsp;</a></span>tkl_zll_target_register_complete_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zll_target_register_complete_cb </td>
+          <td>(</td>
+          <td class="paramtype">TKL_ZLL_TARGET_CMP_CB&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target register complete callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>pointe to callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7608a490a4a54c7938fcaf4759b45eff" name="a7608a490a4a54c7938fcaf4759b45eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7608a490a4a54c7938fcaf4759b45eff">&#9670;&nbsp;</a></span>tkl_zll_target_register_identify_req_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zll_target_register_identify_req_cb </td>
+          <td>(</td>
+          <td class="paramtype">TKL_ZLL_IDENTIFY_REQ_CB&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="af03b6f33564787df83153ac347280641" name="af03b6f33564787df83153ac347280641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03b6f33564787df83153ac347280641">&#9670;&nbsp;</a></span>tkl_zll_target_register_reset_to_fn_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zll_target_register_reset_to_fn_cb </td>
+          <td>(</td>
+          <td class="paramtype">TKL_ZLL_RESET_TO_FN_CB&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="aa20893789c5a98ea59db6f8c55cde54b" name="aa20893789c5a98ea59db6f8c55cde54b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa20893789c5a98ea59db6f8c55cde54b">&#9670;&nbsp;</a></span>tkl_zll_target_rssi_threshold_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT8_T tkl_zll_target_rssi_threshold_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target get rssi threshold </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>rssi value </dd></dl>
+
+</div>
+</div>
+<a id="a3ef52c3bd150bbd3a65c7f8d60954c88" name="a3ef52c3bd150bbd3a65c7f8d60954c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef52c3bd150bbd3a65c7f8d60954c88">&#9670;&nbsp;</a></span>tkl_zll_target_rssi_threshold_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_zll_target_rssi_threshold_set </td>
+          <td>(</td>
+          <td class="paramtype">INT8_T&#160;</td>
+          <td class="paramname"><em>rx_rssi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target set rssi threshold </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_rssi</td><td>rssi value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="afa75bdfbaf43bd81c7d57cb945329506" name="afa75bdfbaf43bd81c7d57cb945329506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa75bdfbaf43bd81c7d57cb945329506">&#9670;&nbsp;</a></span>tkl_zll_target_touchlink_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zll_target_touchlink_enable </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>en</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target touchlink enable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">en</td><td>TRUE: enable, FALSE: disable </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: enabel success </dd></dl>
+
+</div>
+</div>
+<a id="a2d5b65e86f716566b671b9088826e667" name="a2d5b65e86f716566b671b9088826e667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5b65e86f716566b671b9088826e667">&#9670;&nbsp;</a></span>tkl_zll_target_touchlink_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zll_target_touchlink_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target touchlink init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a06016b31b459025ec715e41d0cd3e5cf" name="a06016b31b459025ec715e41d0cd3e5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06016b31b459025ec715e41d0cd3e5cf">&#9670;&nbsp;</a></span>tkl_zll_target_touchlink_is_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zll_target_touchlink_is_enable </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zll target touchlink disable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: enabel success </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

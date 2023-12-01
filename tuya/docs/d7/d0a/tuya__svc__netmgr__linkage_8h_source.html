@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_netmgr/include/tuya_svc_netmgr_linkage.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_81666d4b4ea8e73053dc1b44528428b3.html">svc_netmgr</a></li><li class="navelem"><a class="el" href="../../dir_b78478f552edd682c4491dd3f56c5dd6.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_svc_netmgr_linkage.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TUYA_SVC_NETMGR_LINKAGE_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TUYA_SVC_NETMGR_LINKAGE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define DEFAULT_ACTIVATE_RETRY_CNT  (10)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> UINT_T LINKAGE_CAP_E;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define LINKAGE_CAP_LINK_EVENT      BIT(0)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define LINKAGE_CAP_ACTIVATE_TOKEN  BIT(1)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define LINKAGE_CAP_ACTIVATE_META   BIT(2)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define LINKAGE_CAP_ACTIVATE    (LINKAGE_CAP_ACTIVATE_TOKEN | LINKAGE_CAP_ACTIVATE_META)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    LINKAGE_TYPE_DEFAULT,   <span class="comment">// keep it first(current active linkage)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    LINKAGE_TYPE_WIRED,     <span class="comment">// Wired</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    LINKAGE_TYPE_WIFI,      <span class="comment">// Wi-Fi</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    LINKAGE_TYPE_BT,        <span class="comment">// BLE</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    LINKAGE_TYPE_CAT1,      <span class="comment">// CN/4G</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    LINKAGE_TYPE_NB,        <span class="comment">// NB-IoT</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    LINKAGE_TYPE_EXT_MODULE,<span class="comment">// 插件</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    LINKAGE_TYPE_EXT2,      <span class="comment">// reserved</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    LINKAGE_TYPE_EXT3,      <span class="comment">// reserved</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    LINKAGE_TYPE_VIRTUAL,   <span class="comment">// keep it last</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    LINKAGE_TYPE_MAX</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} LINKAGE_TYPE_E;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    LINKAGE_CFG_LOWPOWER,   <span class="comment">// BOOL_T</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    LINKAGE_CFG_IP,         <span class="comment">// NW_IP_S</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    LINKAGE_CFG_MAC,        <span class="comment">// NW_MAC_S</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    LINKAGE_CFG_RSSI,       <span class="comment">// SCHAR_T</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    LINKAGE_CFG_STATUS,     <span class="comment">// BYTE_T (linkage customized status)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    LINKAGE_CFG_MAX</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} LINKAGE_CFG_E;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d6/d56/structnetmgr__linkage__t.html">   53</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    LINKAGE_TYPE_E type;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    LINKAGE_CAP_E capability;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    OPERATE_RET(*open)(LINKAGE_CAP_E cap);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    OPERATE_RET(*close)(VOID);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    OPERATE_RET(*reset)(IN GW_RESET_TYPE_E reset_type);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    OPERATE_RET(*set)(IN LINKAGE_CFG_E cfg, IN VOID* data);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    OPERATE_RET(*get)(IN LINKAGE_CFG_E cfg, OUT VOID* data);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <a class="code hl_struct" href="../../d6/d56/structnetmgr__linkage__t.html">netmgr_linkage_t</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a549fa439d946f612009cadacfca46e3f">   66</a></span><span class="keyword">typedef</span> BYTE_T <a class="code hl_typedef" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a549fa439d946f612009cadacfca46e3f">ACTIVATE_STAGE_E</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#define ACTIVATE_STAGE_START        0  </span><span class="comment">// new activate</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define ACTIVATE_STAGE_SUCCESS      1  </span><span class="comment">// activate success</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define ACTIVATE_STAGE_FAIL_URL     2  </span><span class="comment">// activate fail(get url from iot dns)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define ACTIVATE_STAGE_FAIL_ACTIVE  3  </span><span class="comment">// activate fail(active error)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define ACTIVATE_STAGE_FAIL_RESULT  4  </span><span class="comment">// activate fail(meta invalid)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define ACTIVATE_STAGE_FAIL_UNKNOWN 5  </span><span class="comment">// activate fail(unknown reason)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define ACTIVATE_STAGE_STOP      0xFF  </span><span class="comment">// stop current activate</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ae068445b4d4e7f4da6de45fb0b5a79b8">   79</a></span><span class="keyword">typedef</span> BYTE_T <a class="code hl_typedef" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ae068445b4d4e7f4da6de45fb0b5a79b8">ACTIVATE_TYPE_E</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define ACTIVATE_TYPE_TOKEN         0   </span><span class="comment">// activate via token</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#define ACTIVATE_TYPE_META          1   </span><span class="comment">// activate via meta data</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define ACTIVATE_TYPE_EXT_MODULE    2   </span><span class="comment">// activate via ext module</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define ACTIVATE_TYPE_3RD           255 </span><span class="comment">// 3rd party cloud</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html">   88</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html#aa83fddb89f5e3e532dcf1f27a19b444f">   92</a></span>    <a class="code hl_typedef" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a549fa439d946f612009cadacfca46e3f">ACTIVATE_STAGE_E</a> <a class="code hl_variable" href="../../d3/d0d/structactivate__info__t.html#aa83fddb89f5e3e532dcf1f27a19b444f">stage</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//the following items are valid only when stage == ACTIVATE_STAGE_START</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html#a48eb6ee2ed4e697edcaab2f88def9200">   99</a></span>    <a class="code hl_typedef" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ae068445b4d4e7f4da6de45fb0b5a79b8">ACTIVATE_TYPE_E</a> <a class="code hl_variable" href="../../d3/d0d/structactivate__info__t.html#a48eb6ee2ed4e697edcaab2f88def9200">type</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html#a782d4693763d792b6b9a338545dae3eb">  103</a></span>    VOID *<a class="code hl_variable" href="../../d3/d0d/structactivate__info__t.html#a782d4693763d792b6b9a338545dae3eb">data</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html#a4d12f991d256f4b08b0942ef4aa09ecc">  107</a></span>    UINT_T <a class="code hl_variable" href="../../d3/d0d/structactivate__info__t.html#a4d12f991d256f4b08b0942ef4aa09ecc">len</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html#a92700c7dd0762993d56068a44af634e5">  111</a></span>    LINKAGE_TYPE_E <a class="code hl_variable" href="../../d3/d0d/structactivate__info__t.html#a92700c7dd0762993d56068a44af634e5">linkage</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d3/d0d/structactivate__info__t.html#a39cc138b44aa3c1cd9441814e8cd8e26">  115</a></span>    UINT_T <a class="code hl_variable" href="../../d3/d0d/structactivate__info__t.html#a39cc138b44aa3c1cd9441814e8cd8e26">retry_cnt</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>} <a class="code hl_struct" href="../../d3/d0d/structactivate__info__t.html">activate_info_t</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a037c861d46434a2e94ffb6a0a1949427">  125</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a037c861d46434a2e94ffb6a0a1949427">tuya_svc_netmgr_linkage_register</a>(IN <a class="code hl_struct" href="../../d6/d56/structnetmgr__linkage__t.html">netmgr_linkage_t</a> *linkage);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ace7770eeb37317b7ec8b611a307121f7">  134</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ace7770eeb37317b7ec8b611a307121f7">tuya_svc_netmgr_linkage_event</a>(IN CONST <a class="code hl_struct" href="../../d6/d56/structnetmgr__linkage__t.html">netmgr_linkage_t</a> *linkage, IN BOOL_T is_link_up);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ade87c8cea21808621f8277488ce40839">  144</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ade87c8cea21808621f8277488ce40839">tuya_svc_netmgr_linkage_activate</a>(IN CONST <a class="code hl_struct" href="../../d6/d56/structnetmgr__linkage__t.html">netmgr_linkage_t</a> *linkage, IN <a class="code hl_struct" href="../../d3/d0d/structactivate__info__t.html">activate_info_t</a> *info);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a051721fe5117da293e812c2dffdd4098">  153</a></span><a class="code hl_struct" href="../../d6/d56/structnetmgr__linkage__t.html">netmgr_linkage_t</a> * <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a051721fe5117da293e812c2dffdd4098">tuya_svc_netmgr_linkage_get</a>(IN LINKAGE_TYPE_E type);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a227d30d7c61a4850cc83eec8bdb6cf2d">  162</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a227d30d7c61a4850cc83eec8bdb6cf2d">tuya_svc_netmgr_linkage_set_default</a>(IN LINKAGE_TYPE_E type);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#aa635aee53ea2516b19a429af346d50c6">  171</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#aa635aee53ea2516b19a429af346d50c6">tuya_svc_netmgr_linkage_switch</a>(VOID);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a0d16a0160219c8f282690fc14d47bc41">  181</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a0d16a0160219c8f282690fc14d47bc41">tuya_svc_netmgr_linkage_set_priority</a>(IN LINKAGE_TYPE_E *types, IN UINT_T count);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a3b11afc949baf68f888a5ee46e7051ed">  190</a></span>BOOL_T <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a3b11afc949baf68f888a5ee46e7051ed">tuya_svc_netmgr_linkage_is_up</a>(IN LINKAGE_TYPE_E type);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a0c8527fe280c45f8c6a9cbcf2db5f5fc">  199</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a0c8527fe280c45f8c6a9cbcf2db5f5fc">tuya_svc_netmgr_linkage_set_retry_cnt</a>(IN UINT_T count);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif </span><span class="comment">// __TUYA_SVC_NETMGR_LINKAGE_H__</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="ttc" id="astructactivate__info__t_html"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html">activate_info_t</a></div><div class="ttdoc">Definition of activate data</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:88</div></div>
+<div class="ttc" id="astructactivate__info__t_html_a39cc138b44aa3c1cd9441814e8cd8e26"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html#a39cc138b44aa3c1cd9441814e8cd8e26">activate_info_t::retry_cnt</a></div><div class="ttdeci">UINT_T retry_cnt</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:115</div></div>
+<div class="ttc" id="astructactivate__info__t_html_a48eb6ee2ed4e697edcaab2f88def9200"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html#a48eb6ee2ed4e697edcaab2f88def9200">activate_info_t::type</a></div><div class="ttdeci">ACTIVATE_TYPE_E type</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:99</div></div>
+<div class="ttc" id="astructactivate__info__t_html_a4d12f991d256f4b08b0942ef4aa09ecc"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html#a4d12f991d256f4b08b0942ef4aa09ecc">activate_info_t::len</a></div><div class="ttdeci">UINT_T len</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:107</div></div>
+<div class="ttc" id="astructactivate__info__t_html_a782d4693763d792b6b9a338545dae3eb"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html#a782d4693763d792b6b9a338545dae3eb">activate_info_t::data</a></div><div class="ttdeci">VOID * data</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:103</div></div>
+<div class="ttc" id="astructactivate__info__t_html_a92700c7dd0762993d56068a44af634e5"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html#a92700c7dd0762993d56068a44af634e5">activate_info_t::linkage</a></div><div class="ttdeci">LINKAGE_TYPE_E linkage</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:111</div></div>
+<div class="ttc" id="astructactivate__info__t_html_aa83fddb89f5e3e532dcf1f27a19b444f"><div class="ttname"><a href="../../d3/d0d/structactivate__info__t.html#aa83fddb89f5e3e532dcf1f27a19b444f">activate_info_t::stage</a></div><div class="ttdeci">ACTIVATE_STAGE_E stage</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:92</div></div>
+<div class="ttc" id="astructnetmgr__linkage__t_html"><div class="ttname"><a href="../../d6/d56/structnetmgr__linkage__t.html">netmgr_linkage_t</a></div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:53</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a037c861d46434a2e94ffb6a0a1949427"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a037c861d46434a2e94ffb6a0a1949427">tuya_svc_netmgr_linkage_register</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_register(IN netmgr_linkage_t *linkage)</div><div class="ttdoc">Register a linkage to network manager</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a051721fe5117da293e812c2dffdd4098"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a051721fe5117da293e812c2dffdd4098">tuya_svc_netmgr_linkage_get</a></div><div class="ttdeci">netmgr_linkage_t * tuya_svc_netmgr_linkage_get(IN LINKAGE_TYPE_E type)</div><div class="ttdoc">Get a linkage with specific type</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a0c8527fe280c45f8c6a9cbcf2db5f5fc"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a0c8527fe280c45f8c6a9cbcf2db5f5fc">tuya_svc_netmgr_linkage_set_retry_cnt</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_set_retry_cnt(IN UINT_T count)</div><div class="ttdoc">Set retry count for activation</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a0d16a0160219c8f282690fc14d47bc41"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a0d16a0160219c8f282690fc14d47bc41">tuya_svc_netmgr_linkage_set_priority</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_set_priority(IN LINKAGE_TYPE_E *types, IN UINT_T count)</div><div class="ttdoc">Set priority for all linkages</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a227d30d7c61a4850cc83eec8bdb6cf2d"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a227d30d7c61a4850cc83eec8bdb6cf2d">tuya_svc_netmgr_linkage_set_default</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_set_default(IN LINKAGE_TYPE_E type)</div><div class="ttdoc">Set and keep the default linkage</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a3b11afc949baf68f888a5ee46e7051ed"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a3b11afc949baf68f888a5ee46e7051ed">tuya_svc_netmgr_linkage_is_up</a></div><div class="ttdeci">BOOL_T tuya_svc_netmgr_linkage_is_up(IN LINKAGE_TYPE_E type)</div><div class="ttdoc">Is the linkage link-up or down</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_a549fa439d946f612009cadacfca46e3f"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#a549fa439d946f612009cadacfca46e3f">ACTIVATE_STAGE_E</a></div><div class="ttdeci">BYTE_T ACTIVATE_STAGE_E</div><div class="ttdoc">Definition of linkage activate stage</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:66</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_aa635aee53ea2516b19a429af346d50c6"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#aa635aee53ea2516b19a429af346d50c6">tuya_svc_netmgr_linkage_switch</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_switch(VOID)</div><div class="ttdoc">Switch to next linkage</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_ace7770eeb37317b7ec8b611a307121f7"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ace7770eeb37317b7ec8b611a307121f7">tuya_svc_netmgr_linkage_event</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_event(IN CONST netmgr_linkage_t *linkage, IN BOOL_T is_link_up)</div><div class="ttdoc">Send linkage status to network manager</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_ade87c8cea21808621f8277488ce40839"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ade87c8cea21808621f8277488ce40839">tuya_svc_netmgr_linkage_activate</a></div><div class="ttdeci">OPERATE_RET tuya_svc_netmgr_linkage_activate(IN CONST netmgr_linkage_t *linkage, IN activate_info_t *info)</div><div class="ttdoc">Send linkage activation to network manager</div></div>
+<div class="ttc" id="atuya__svc__netmgr__linkage_8h_html_ae068445b4d4e7f4da6de45fb0b5a79b8"><div class="ttname"><a href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html#ae068445b4d4e7f4da6de45fb0b5a79b8">ACTIVATE_TYPE_E</a></div><div class="ttdeci">BYTE_T ACTIVATE_TYPE_E</div><div class="ttdoc">Definition of activate type</div><div class="ttdef"><b>Definition:</b> tuya_svc_netmgr_linkage.h:79</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 网络</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">网络 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md100"></a>
+NETWORK SERVER</h1>
+<p >这个项目将会介绍如何使用 <code>tuyaos 3 network server</code> 相关接口，创建一个服务端，等待客户端连接之后关闭服务器。</p>
+<p >Socket 的其他相关知识在 <code>network_client</code> 的例程下已有介绍。</p>
+<ul>
+<li><code>Socket</code> 服务器特有函数</li>
+</ul>
+<p >接下来会介绍作为服务器特有的3个重要函数。</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1655798571e2dfff47b21.png" alt="server bind listen accept 12138 .png" class="inline"/></p>
+<ul>
+<li>socket 通信流程</li>
+</ul>
+<p >假设建立一个 TCP 连接，客户端和服务器的通信流程如下图所示：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1655799922a9c0c801cc3.png" alt="service and cilent process .png" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md101"></a>
+流程介绍</h2>
+<p >相关函数目录： <code>software/TuyaOS/include/components/tal_network/include/tal_network.h</code></p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1655800225b04514f051e.png" alt="server process .png" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md102"></a>
+NETWORK CLIENT</h1>
+<p >这个项目将会介绍如何使用 <code>tuyaos 3 network client</code> 相关接口，创建客户端与服务器的 <code>Socket</code> 连接。</p>
+<ul>
+<li><code>Socket</code> 简介</li>
+</ul>
+<p ><code>Socket</code> 也叫<code>套接字</code>是应用层与 <code>TCP/IP</code> 协议族通信的中间软件抽象层，更直白的话， <code>Socket</code> 就是一组接口。我们可以直接调用这些接口，实现设备之间的网络通信，无需关心数据的组织、如何发送接收等底层原理。</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1655777228a883c8890b3.png" alt="tcpip socket.png" class="inline"/></p>
+<ul>
+<li><code>Socket</code> 的文件描述符</li>
+</ul>
+<p >起初 <code>Socket</code> 在 <code>Linux</code> 上跑的时候， <code>Socket</code> 的文件描述符就是通讯双方各自建立的对象。因为 <code>Linux</code> 系统上一切皆文件， <code>Socket</code> 也不例外，它就是可读/可写/可控制/可关闭的文件描述符。现在 <code>Socket</code> 网络编程已经可以在 <code>RTOS</code> 下使用了，只要你有硬件支持，网络编程的大概用法也传承了下来。所以不管是 <code>RTOS</code> 还是 <code>Linux</code> <code>，Socket</code> 的文件描述符的作用就是内核为了高效管理所创建的索引，即每创建一个 <code>Socket</code> 就对应一个文件描述符。文件描述符通常是一个大于0的整数。</p>
+<ul>
+<li>客户端和服务器</li>
+</ul>
+<p >客户端（ <code>Client</code> ）是发送请求（ <code>request</code> ），服务器端（ <code>Service</code> ）是响应请求（ <code>response</code> ）。例如有一款涂鸦的设备，要接入涂鸦 <code>IOT</code> 平台。那么涂鸦设备就是一个客户端，要发送接入 <code>IOT</code> 平台的请求；<code>IOT</code> 平台就是一个服务器，相响应涂鸦设备的接入请求。</p>
+<ul>
+<li><code>TCP</code> 和 <code>UDP</code></li>
+</ul>
+<p ><code>TCP</code> 和 <code>UDP</code> 两个协议都在运输层，它们都是用于数据传输的。但是两者有很大的区别。</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1655789761a1208d8ba6c.png" alt="tcp and udp 12138.png" class="inline"/></p>
+<ul>
+<li>字符串 <code>IP</code> 和整数 <code>IP</code></li>
+</ul>
+<p >我们一般情况下讲的 <code>IP</code> 地址是字符串的<code>点分十进制形式</code>，例如<code>“192.168.31.102”</code>。但是在 <code>Socket</code> 网络编程中的讲的地址通常都是整数形式的 <code>IP</code> 地址，所以需要进行地址转换，可以直接调用接口函数 <code>tal_net_str2addr</code> 进行转换。字符串 <code>IP</code> 地址 <code>“192.168.31.102”</code> 对应的整数地址为1713350848。</p>
+<ul>
+<li>端口</li>
+</ul>
+<p >网络层为主机之间提供逻辑通讯，而 <code>Socket</code> 创建的 <code>TCP/UDP</code> 连接是运输层提供的<code>端到端</code>的逻辑通讯。在一个系统中，会有很多进程，端口号的作用就是把接收到的网络数据转交给某个进程，每个进程都有自己的端口号。</p>
+<p >如下图所示，假设我需要建立一个 <code>TCP</code> 连接，左边设备的某个进程要发送数据给右边设备的进程1，他的端口号是7777，所以我建立的 <code>TCP</code> 连接的时候，不仅需要右边设备的 <code>IP</code> 地址<code>“192.168.56.3”</code>，还要建立连接进程的端口号7777。</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/165579436062ce9b580d3.png" alt="PORttttt  12138.png" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md103"></a>
+流程介绍</h2>
+<p >相关函数目录： <code>software/TuyaOS/include/components/tal_network/include/tal_network.h</code></p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/16557958665091e4b489c.png" alt="cilent process 12138.png" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

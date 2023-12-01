@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/online_log/tuya_svc_online_log.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_543ce09316ad031b5a8c49c2167def4c.html">online_log</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_svc_online_log.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d43/tuya__svc__online__log_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef __TUYA_SVC_ONLINE_LOG_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define __TUYA_SVC_ONLINE_LOG_H__</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d0/d43/tuya__svc__online__log_8h.html#a83a90870afa746e7cc7e9f95660489dd">   27</a></span>OPERATE_RET <a class="code hl_function" href="../../d0/d43/tuya__svc__online__log_8h.html#a83a90870afa746e7cc7e9f95660489dd">tuya_svc_online_log_init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *p_env);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d0/d43/tuya__svc__online__log_8h.html#afcb985ce8e526fb3e205b91ec2cb27d8">   34</a></span>OPERATE_RET <a class="code hl_function" href="../../d0/d43/tuya__svc__online__log_8h.html#afcb985ce8e526fb3e205b91ec2cb27d8">tuya_svc_online_log_active</a>(VOID);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d0/d43/tuya__svc__online__log_8h.html#a4e0fbc87d2d6e54b4bf59609bbeda73b">   42</a></span>OPERATE_RET <a class="code hl_function" href="../../d0/d43/tuya__svc__online__log_8h.html#a4e0fbc87d2d6e54b4bf59609bbeda73b">tuya_svc_online_log_upload_runstat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *p_log);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d0/d43/tuya__svc__online__log_8h.html#a6924de59398eb9ff0dda811327ac79d7">   50</a></span>OPERATE_RET <a class="code hl_function" href="../../d0/d43/tuya__svc__online__log_8h.html#a6924de59398eb9ff0dda811327ac79d7">tuya_svc_online_log_upload_realtime</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *p_log);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d0/d43/tuya__svc__online__log_8h.html#a142c817d4ad41228c2037bf7912cde3d">   59</a></span>OPERATE_RET <a class="code hl_function" href="../../d0/d43/tuya__svc__online__log_8h.html#a142c817d4ad41228c2037bf7912cde3d">tuya_svc_online_log_upload_custom_seq_log</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *p_log);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="ttc" id="atuya__svc__online__log_8h_html_a142c817d4ad41228c2037bf7912cde3d"><div class="ttname"><a href="../../d0/d43/tuya__svc__online__log_8h.html#a142c817d4ad41228c2037bf7912cde3d">tuya_svc_online_log_upload_custom_seq_log</a></div><div class="ttdeci">OPERATE_RET tuya_svc_online_log_upload_custom_seq_log(const char *p_log)</div><div class="ttdoc">upload user sequnence log</div></div>
+<div class="ttc" id="atuya__svc__online__log_8h_html_a4e0fbc87d2d6e54b4bf59609bbeda73b"><div class="ttname"><a href="../../d0/d43/tuya__svc__online__log_8h.html#a4e0fbc87d2d6e54b4bf59609bbeda73b">tuya_svc_online_log_upload_runstat</a></div><div class="ttdeci">OPERATE_RET tuya_svc_online_log_upload_runstat(const char *p_log)</div><div class="ttdoc">upload user runtime status log</div></div>
+<div class="ttc" id="atuya__svc__online__log_8h_html_a6924de59398eb9ff0dda811327ac79d7"><div class="ttname"><a href="../../d0/d43/tuya__svc__online__log_8h.html#a6924de59398eb9ff0dda811327ac79d7">tuya_svc_online_log_upload_realtime</a></div><div class="ttdeci">OPERATE_RET tuya_svc_online_log_upload_realtime(const char *p_log)</div><div class="ttdoc">upload user realtime log</div></div>
+<div class="ttc" id="atuya__svc__online__log_8h_html_a83a90870afa746e7cc7e9f95660489dd"><div class="ttname"><a href="../../d0/d43/tuya__svc__online__log_8h.html#a83a90870afa746e7cc7e9f95660489dd">tuya_svc_online_log_init</a></div><div class="ttdeci">OPERATE_RET tuya_svc_online_log_init(const char *p_env)</div><div class="ttdoc">online log module initialization</div></div>
+<div class="ttc" id="atuya__svc__online__log_8h_html_afcb985ce8e526fb3e205b91ec2cb27d8"><div class="ttname"><a href="../../d0/d43/tuya__svc__online__log_8h.html#afcb985ce8e526fb3e205b91ec2cb27d8">tuya_svc_online_log_active</a></div><div class="ttdeci">OPERATE_RET tuya_svc_online_log_active(VOID)</div><div class="ttdoc">online log module activate</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

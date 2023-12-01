@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/cellular_catx/include/tkl_cellular_gnss.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_b8ba071ca5cc1b1b8caa71befc3b9668.html">cellular_catx</a></li><li class="navelem"><a class="el" href="../../dir_cd70872c9112a79b6f8c2f63fe603ee2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_cellular_gnss.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_cellular_gnss.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d60/tkl__cellular__gnss_8h__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__gnss_8h" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__gnss_8h" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__gnss_8h">
+<area shape="rect" title=" " alt="" coords="326,5,559,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../de/d79/tkl__cellular__gnss_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d87/structTUYA__CELLULAR__GNSS__MODE__INFO__T.html">TUYA_CELLULAR_GNSS_MODE_INFO_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a9ebe825ac9bac4046f7ef2dd7ce63a10"><td class="memItemLeft" align="right" valign="top"><a id="a9ebe825ac9bac4046f7ef2dd7ce63a10" name="a9ebe825ac9bac4046f7ef2dd7ce63a10"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELLULAR_GNSS_MAX_SEVER_ADDR_LENGTH</b>&#160;&#160;&#160;255 /**  Maximum generic server address length for the host name. */</td></tr>
+<tr class="separator:a9ebe825ac9bac4046f7ef2dd7ce63a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965ba41bca92d506345a84641ba5bcf8"><td class="memItemLeft" align="right" valign="top"><a id="a965ba41bca92d506345a84641ba5bcf8" name="a965ba41bca92d506345a84641ba5bcf8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_GNSS_NMEA_MAX_LENGTH</b>&#160;&#160;&#160;1823                 /**  NMEA string maximum length. 1023 -&gt;1823*/</td></tr>
+<tr class="separator:a965ba41bca92d506345a84641ba5bcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbe35acd5fecd3519b850fd3b3078e3"><td class="memItemLeft" align="right" valign="top"><a id="a8fbe35acd5fecd3519b850fd3b3078e3" name="a8fbe35acd5fecd3519b850fd3b3078e3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_GPS_SUPPORT_SVS_MAX</b>&#160;&#160;&#160;80  /**  Maximum number of satellites in view. */</td></tr>
+<tr class="separator:a8fbe35acd5fecd3519b850fd3b3078e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd6d7e8136ea8a52125e0054140228b"><td class="memItemLeft" align="right" valign="top"><a id="a5cd6d7e8136ea8a52125e0054140228b" name="a5cd6d7e8136ea8a52125e0054140228b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_CELL_GNSS_GPS_SSID_BUF_SIZE</b>&#160;&#160;&#160;32          /**  Maximum SSID (Service Set Identifier) buffer size. */</td></tr>
+<tr class="separator:a5cd6d7e8136ea8a52125e0054140228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe673fa5cbcba7155adabd05e7901bc"><td class="memItemLeft" align="right" valign="top"><a id="a0fe673fa5cbcba7155adabd05e7901bc" name="a0fe673fa5cbcba7155adabd05e7901bc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_CELL_GNSS_IPV6_ADDR_LEN</b>&#160;&#160;&#160;16          /**  IPv6 address length. */</td></tr>
+<tr class="separator:a0fe673fa5cbcba7155adabd05e7901bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab46c102c6ef6e71bee98535e4e158b5b"><td class="memItemLeft" align="right" valign="top"><a id="ab46c102c6ef6e71bee98535e4e158b5b" name="ab46c102c6ef6e71bee98535e4e158b5b"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_GNSS_REGISTION_NOTIFY</b>) (<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0d">TUYA_CELLULAR_GNSS_NOTIFY_MSG_ID_E</a> msg, VOID *data, INT_T len)</td></tr>
+<tr class="separator:ab46c102c6ef6e71bee98535e4e158b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43e6f5e007f9ba0ff7570edb1bf361c"><td class="memItemLeft" align="right" valign="top"><a id="ae43e6f5e007f9ba0ff7570edb1bf361c" name="ae43e6f5e007f9ba0ff7570edb1bf361c"></a>
+typedef UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELLULAR_GNSS_DEV_HANDLE</b></td></tr>
+<tr class="separator:ae43e6f5e007f9ba0ff7570edb1bf361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ad6004d6564e0d6f2fea0d76e73dc1486"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486">TUYA_CELLULAR_GNSS_CAPABILITY_T</a> { <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486a658c0f610c9db2b6f71d5aec726eaef1">TY_CELL_GNSS_CAPABILITY_SCHEDULING</a> = 0x01
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486a079fbeb456db507a46c15d624f54f19e">TY_CELL_GNSS_CAPABILITY_MSB</a> = 0x02
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486a8a14f7d6060e40702d65c45b7560ffa1">TY_CELL_GNSS_CAPABILITY_MSA</a> = 0x04
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486a3acebd0d36a1ab15501f18bde70dbe8c">TY_CELL_GNSS_CAPABILITY_SINGLE_SHOT</a> = 0x08
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486a08c1b77f1b132dd494946b58a2edf994">TY_CELL_GNSS_CAPABILITY_ON_DEMAND_TIME</a> = 0x10
+<br />
+ }</td></tr>
+<tr class="separator:ad6004d6564e0d6f2fea0d76e73dc1486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfd26588ca58e159b26f8b3c131fb0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0d">TUYA_CELLULAR_GNSS_NOTIFY_MSG_ID_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0da8e9672cac359b6ebbe6258ac7d1e9c08">TY_CELL_GNSS_NFY_MSG_ID_STATUS_INFO</a> = 0
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0da5c8cd349a1aaeffdc8c7dc90bc23b084">TY_CELL_GNSS_NFY_MSG_ID_LOCATION_INFO</a>
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0dad5d41d7e309d9b63c051a2cc942052e3">TY_CELL_GNSS_NFY_MSG_ID_SV_INFO</a>
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0da0110e9753b4a8a12da6c1848c772b04f">TY_CELL_GNSS_NFY_MSG_ID_NMEA_INFO</a>
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0da7fc260b0ec06517bcfdf5f164c97363e">TY_CELL_GNSS_NFY_MSG_ID_CAPABILITIES_INFO</a>
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0dad4cee67d90e2f5331b56c37bf1535200">TY_CELL_GNSS_NFY_MSG_ID_AGPS_STATUS</a>
+, <b>TY_CELL_GNSS_NFY_MSG_ID_NI_NOTIFICATION</b>
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0da876723613f9c83e7837fc30549a0f937">TY_CELL_GNSS_NFY_MSG_ID_XTRA_REPORT_SERVER</a>
+<br />
+ }</td></tr>
+<tr class="separator:a4cfd26588ca58e159b26f8b3c131fb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a230487c0d7189cb6d23e899ce804a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a47a230487c0d7189cb6d23e899ce804a">TUYA_CELLULAR_GNSS_POS_MODE_E</a> { <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a47a230487c0d7189cb6d23e899ce804aa494d72f2b2ae72875084ed1b233b96a6">TY_CELL_GNSS_POS_MODE_STANDALONE</a> = 0
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a47a230487c0d7189cb6d23e899ce804aa282eff48d5c71f7f4616dd95d0d6aa37">TY_CELL_GNSS_POS_MODE_MS_BASED</a> = 1
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a47a230487c0d7189cb6d23e899ce804aacccf2a898ba2e0292c7346be848cc74e">TY_CELL_GNSS_POS_MODE_MS_ASSISTED</a> = 2
+ }</td></tr>
+<tr class="separator:a47a230487c0d7189cb6d23e899ce804a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc953393e586a9d18eba8336dc44999"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a1bc953393e586a9d18eba8336dc44999">TUYA_CELLULAR_GNSS_POS_RECURRENCE_T</a> { <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a1bc953393e586a9d18eba8336dc44999a20d9a98eb2235bc8dd791d609a1edc31">TY_CELL_GNSS_POS_RECURRENCE_PERIODIC</a> = 0
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a1bc953393e586a9d18eba8336dc44999a819a4777b4d440bcc6d46c9b235d0872">TY_CELL_GNSS_POS_RECURRENCE_SINGLE</a> = 1
+ }</td></tr>
+<tr class="separator:a1bc953393e586a9d18eba8336dc44999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0cf526f9636b9880bb9f79df055999a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999a">TUYA_CELLULAR_GNSS_STATUS_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999aaa1913a46bbc78d205580472442fd6bc4">TY_CELL_GNSS_STATUS_NONE</a> = 0
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999aa445ab8e966bf211ad831b7744f0ff1e1">TY_CELL_GNSS_STATUS_SESSION_BEGIN</a> = 1
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999aac472460ec10b943031ba81d1ef5a7e89">TY_CELL_GNSS_STATUS_SESSION_END</a> = 2
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999aa603c7d0f5764ff4e9ef77ed69110d8b0">TY_CELL_GNSS_STATUS_ENGINE_ON</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999aa0616cf63cb817ea0f53d608ed8a157b5">TY_CELL_GNSS_STATUS_ENGINE_OFF</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:ad0cf526f9636b9880bb9f79df055999a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072dcb0064c866b48a396d0c155ca43a"><td class="memItemLeft" align="right" valign="top"><a id="a072dcb0064c866b48a396d0c155ca43a" name="a072dcb0064c866b48a396d0c155ca43a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELLULAR_GNSS_SYS_MODE_E</b> { <br />
+&#160;&#160;<b>TY_CELL_GNSS_GPS_BDS</b> = 0x00
+, <b>TY_CELL_GNSS_GPS_GLONASS</b> = 0x01
+, <b>TY_CELL_GNSS_GPS</b> = 0x02
+, <b>TY_CELL_GNSS_BDS</b> = 0x03
+, <br />
+&#160;&#160;<b>TY_CELL_GNSS_GLONASS</b> = 0x04
+, <b>TY_CELL_GNSS_GALILEO</b> = 0x05
+<br />
+ }</td></tr>
+<tr class="separator:a072dcb0064c866b48a396d0c155ca43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98de48a54ab01e62671063a275b58e56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56">TY_CELL_GNSS_AGPS_STATUS_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56a5f0816b7c11d2c0fa57ffbb20e04811a">TY_CELL_GNSS_REQUEST_AGPS_DATA_CONN</a> = 1
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56a2a3b92f2b3a12dacb7011fb94b4d9a38">TY_CELL_GNSS_RELEASE_AGPS_DATA_CONN</a> = 2
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56a048499d8879180ae21540df52070c823">TY_CELL_GNSS_AGPS_DATA_CONNECTED</a> = 3
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56af5f52c1056fb717a78b1d90da59eda12">TY_CELL_GNSS_AGPS_DATA_CONN_DONE</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56a386dd9c9cb837e0a5242417d18186f6a">TY_CELL_GNSS_AGPS_DATA_CONN_FAILED</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a98de48a54ab01e62671063a275b58e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1697af9c87b448eb1ff7292c0dffc63"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63">TY_CELL_GNSS_AGPS_TYPE_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63af306fe59a01a421b5e9a91f4cfdf4bc6">TY_CELL_GNSS_AGPS_TYPE_INVALID</a> = -1
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63acae216faa6c24a0061a18fc35240a361">TY_CELL_GNSS_AGPS_TYPE_ANY</a> = 0
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63a0086e3479687db5e4f212a3a54931352">TY_CELL_GNSS_AGPS_TYPE_SUPL</a> = 1
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63aedb338cc8e8ef53b760f2a3e5d8b40ec">TY_CELL_GNSS_AGPS_TYPE_C2K</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63a414a0fc25e6ea426475edd15c3758fbb">TY_CELL_GNSS_AGPS_TYPE_WWAN_ANY</a> = 3
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63a2884672a34db79d8c7a846de4008ba90">TY_CELL_GNSS_AGPS_TYPE_WIFI</a> = 4
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63ad19626bf695a6c0b5ba9d7ee0c015df7">TY_CELL_GNSS_AGPS_TYPE_SUPL_ES</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:ac1697af9c87b448eb1ff7292c0dffc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2c64cbc6f524dc686fe84964b64357"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357">TY_CELL_GNSS_LOACTION_VAILD_FLAG_E</a> { <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a6093a380f93b81880380c3c3e7dd41e5">TY_CELL_GNSS_LOCATION_LAT_LONG_VALID</a> = 0x0001
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a06caf28dfe5cc98d4b35aac7afe848ec">TY_CELL_GNSS_LOCATION_ALTITUDE_VALID</a> = 0x0002
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a083dca17469710e122660264bd4654bc">TY_CELL_GNSS_LOCATION_SPEED_VALID</a> = 0x0004
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357acd0a9282c3ffa6c51f7fe6b1faf6d161">TY_CELL_GNSS_LOCATION_BEARING_VALID</a> = 0x0008
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a4a3f782c2b179212cceff795c8bda3d2">TY_CELL_GNSS_LOCATION_ACCURACY_VALID</a> = 0x0010
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357afc1791a3ab1032339078735a3321ba8e">TY_CELL_GNSS_LOCATION_SOURCE_INFO_VALID</a> = 0x0020
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a7ed49e61b9d8b6a5fb2a32c323c68eb4">TY_CELL_GNSS_LOCATION_IS_INDOOR_VALID</a> = 0x0040
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a8965e184be7b3ac31aab2e0c5b390220">TY_CELL_GNSS_LOCATION_FLOOR_NUMBE_VALID</a> = 0x0080
+, <br />
+&#160;&#160;<a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a9d63994aa8746a2000669f8e14ddf0aa">TY_CELL_GNSS_LOCATION_MAP_URL_VALID</a> = 0x0100
+, <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357a5b50a567cf19eb36dd985350683641e3">TY_CELL_GNSS_LOCATION_MAP_INDEX_VALID</a> = 0x0200
+<br />
+ }</td></tr>
+<tr class="separator:afa2c64cbc6f524dc686fe84964b64357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5c43c4491e5f08502dc5b5d32e84a349"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a5c43c4491e5f08502dc5b5d32e84a349">tkl_cellular_gnss_deinit</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle)</td></tr>
+<tr class="memdesc:a5c43c4491e5f08502dc5b5d32e84a349"><td class="mdescLeft">&#160;</td><td class="mdescRight">去初始化蜂窝GNSS服务  <a href="../../de/d79/tkl__cellular__gnss_8h.html#a5c43c4491e5f08502dc5b5d32e84a349">更多...</a><br /></td></tr>
+<tr class="separator:a5c43c4491e5f08502dc5b5d32e84a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2037657540fbf06c72dbea7b181bfd1d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a2037657540fbf06c72dbea7b181bfd1d">tkl_cellular_gnss_get_location</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle, <a class="el" href="../../d0/d40/structTUYA__CELLULAR__GNSS__LOCATION__INFO__T.html">TUYA_CELLULAR_GNSS_LOCATION_INFO_T</a> *location, INT_T timeout_sec)</td></tr>
+<tr class="memdesc:a2037657540fbf06c72dbea7b181bfd1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前的位置信息  <a href="../../de/d79/tkl__cellular__gnss_8h.html#a2037657540fbf06c72dbea7b181bfd1d">更多...</a><br /></td></tr>
+<tr class="separator:a2037657540fbf06c72dbea7b181bfd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec784d2d0e7c03437e24921ab36e47f0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#aec784d2d0e7c03437e24921ab36e47f0">tkl_cellular_gnss_init</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE *handle)</td></tr>
+<tr class="memdesc:aec784d2d0e7c03437e24921ab36e47f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化蜂窝GNSS服务  <a href="../../de/d79/tkl__cellular__gnss_8h.html#aec784d2d0e7c03437e24921ab36e47f0">更多...</a><br /></td></tr>
+<tr class="separator:aec784d2d0e7c03437e24921ab36e47f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7ef0a716c7a53bd18a5363710e0192"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#aea7ef0a716c7a53bd18a5363710e0192">tkl_cellular_gnss_injectlocation</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle, <a class="el" href="../../db/de3/structTUYA__CELLULAR__GNSS__INJECT__LOCATION__INFO__T.html">TUYA_CELLULAR_GNSS_INJECT_LOCATION_INFO_T</a> *pt_info)</td></tr>
+<tr class="memdesc:aea7ef0a716c7a53bd18a5363710e0192"><td class="mdescLeft">&#160;</td><td class="mdescRight">直接注入位置信息  <a href="../../de/d79/tkl__cellular__gnss_8h.html#aea7ef0a716c7a53bd18a5363710e0192">更多...</a><br /></td></tr>
+<tr class="separator:aea7ef0a716c7a53bd18a5363710e0192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd83c5c7428debf01e04a5827bc31d8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a2fd83c5c7428debf01e04a5827bc31d8">tkl_cellular_gnss_injecttime</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle, <a class="el" href="../../d3/dd4/structTUYA__CELLULAR__GNSS__INJECT__TIME__INFO__T.html">TUYA_CELLULAR_GNSS_INJECT_TIME_INFO_T</a> *pt_info)</td></tr>
+<tr class="memdesc:a2fd83c5c7428debf01e04a5827bc31d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">直接注入时间数据  <a href="../../de/d79/tkl__cellular__gnss_8h.html#a2fd83c5c7428debf01e04a5827bc31d8">更多...</a><br /></td></tr>
+<tr class="separator:a2fd83c5c7428debf01e04a5827bc31d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a89df5efc0e90a9b62acb32cc15ed4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a20a89df5efc0e90a9b62acb32cc15ed4">tkl_cellular_gnss_ioctl</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle, INT_T cmd, VOID *pdata, INT_T datalen)</td></tr>
+<tr class="memdesc:a20a89df5efc0e90a9b62acb32cc15ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">GNSS服务的自定义接口  <a href="../../de/d79/tkl__cellular__gnss_8h.html#a20a89df5efc0e90a9b62acb32cc15ed4">更多...</a><br /></td></tr>
+<tr class="separator:a20a89df5efc0e90a9b62acb32cc15ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389ec9a821a825defc2c42d54d5b7506"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a389ec9a821a825defc2c42d54d5b7506">tkl_cellular_gnss_register_notify</a> (TKL_GNSS_REGISTION_NOTIFY notify)</td></tr>
+<tr class="memdesc:a389ec9a821a825defc2c42d54d5b7506"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册蜂窝GNSS服务消息回调函数  <a href="../../de/d79/tkl__cellular__gnss_8h.html#a389ec9a821a825defc2c42d54d5b7506">更多...</a><br /></td></tr>
+<tr class="separator:a389ec9a821a825defc2c42d54d5b7506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cbdb77e629d2139fb83eea68309e09"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad5cbdb77e629d2139fb83eea68309e09">tkl_cellular_gnss_set_position_mode</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE nohandletify, <a class="el" href="../../d4/d87/structTUYA__CELLULAR__GNSS__MODE__INFO__T.html">TUYA_CELLULAR_GNSS_MODE_INFO_T</a> pt_mode)</td></tr>
+<tr class="memdesc:ad5cbdb77e629d2139fb83eea68309e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置蜂窝GNSS定位模式  <a href="../../de/d79/tkl__cellular__gnss_8h.html#ad5cbdb77e629d2139fb83eea68309e09">更多...</a><br /></td></tr>
+<tr class="separator:ad5cbdb77e629d2139fb83eea68309e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8967f5bdd1f199f8b9ee41f4bef7cdd"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac8967f5bdd1f199f8b9ee41f4bef7cdd">tkl_cellular_gnss_set_system_mode</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE nohandletify, TUYA_CELLULAR_GNSS_SYS_MODE_E pt_mode)</td></tr>
+<tr class="memdesc:ac8967f5bdd1f199f8b9ee41f4bef7cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置蜂窝GNSS定位系统模式  <a href="../../de/d79/tkl__cellular__gnss_8h.html#ac8967f5bdd1f199f8b9ee41f4bef7cdd">更多...</a><br /></td></tr>
+<tr class="separator:ac8967f5bdd1f199f8b9ee41f4bef7cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab418a291439cacca415a4ed278d54a2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#aab418a291439cacca415a4ed278d54a2">tkl_cellular_gnss_start_navigation</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle)</td></tr>
+<tr class="memdesc:aab418a291439cacca415a4ed278d54a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动导航  <a href="../../de/d79/tkl__cellular__gnss_8h.html#aab418a291439cacca415a4ed278d54a2">更多...</a><br /></td></tr>
+<tr class="separator:aab418a291439cacca415a4ed278d54a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f30ca6582e095c0c0e08eb31077bed"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac6f30ca6582e095c0c0e08eb31077bed">tkl_cellular_gnss_stop_navigation</a> (TUYA_CELLULAR_GNSS_DEV_HANDLE handle)</td></tr>
+<tr class="memdesc:ac6f30ca6582e095c0c0e08eb31077bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止导航  <a href="../../de/d79/tkl__cellular__gnss_8h.html#ac6f30ca6582e095c0c0e08eb31077bed">更多...</a><br /></td></tr>
+<tr class="separator:ac6f30ca6582e095c0c0e08eb31077bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-09-15</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2021-2022 Tuya Inc. All Rights Reserved.</dd></dl>
+<p>Permission is hereby granted, to any person obtaining a copy of this software and associated documentation files (the "Software"), Under the premise of complying with the license of the third-party open source software contained in the software, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="ad6004d6564e0d6f2fea0d76e73dc1486" name="ad6004d6564e0d6f2fea0d76e73dc1486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6004d6564e0d6f2fea0d76e73dc1486">&#9670;&nbsp;</a></span>TUYA_CELLULAR_GNSS_CAPABILITY_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad6004d6564e0d6f2fea0d76e73dc1486">TUYA_CELLULAR_GNSS_CAPABILITY_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad6004d6564e0d6f2fea0d76e73dc1486a658c0f610c9db2b6f71d5aec726eaef1" name="ad6004d6564e0d6f2fea0d76e73dc1486a658c0f610c9db2b6f71d5aec726eaef1"></a>TY_CELL_GNSS_CAPABILITY_SCHEDULING&#160;</td><td class="fielddoc"><p >GPS HAL schedules fixes for GPS_POSITION_RECURRENCE_PERIODIC mode. If this is not set, the framework uses <br  />
+ 1000 ms for min_interval and will call start() and stop() to schedule the GPS. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad6004d6564e0d6f2fea0d76e73dc1486a079fbeb456db507a46c15d624f54f19e" name="ad6004d6564e0d6f2fea0d76e73dc1486a079fbeb456db507a46c15d624f54f19e"></a>TY_CELL_GNSS_CAPABILITY_MSB&#160;</td><td class="fielddoc"><p >GPS supports MS-Based AGPS mode. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad6004d6564e0d6f2fea0d76e73dc1486a8a14f7d6060e40702d65c45b7560ffa1" name="ad6004d6564e0d6f2fea0d76e73dc1486a8a14f7d6060e40702d65c45b7560ffa1"></a>TY_CELL_GNSS_CAPABILITY_MSA&#160;</td><td class="fielddoc"><p >GPS supports MS-Assisted AGPS mode. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad6004d6564e0d6f2fea0d76e73dc1486a3acebd0d36a1ab15501f18bde70dbe8c" name="ad6004d6564e0d6f2fea0d76e73dc1486a3acebd0d36a1ab15501f18bde70dbe8c"></a>TY_CELL_GNSS_CAPABILITY_SINGLE_SHOT&#160;</td><td class="fielddoc"><p >GPS supports single-shot fixes. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad6004d6564e0d6f2fea0d76e73dc1486a08c1b77f1b132dd494946b58a2edf994" name="ad6004d6564e0d6f2fea0d76e73dc1486a08c1b77f1b132dd494946b58a2edf994"></a>TY_CELL_GNSS_CAPABILITY_ON_DEMAND_TIME&#160;</td><td class="fielddoc"><p >GPS supports on-demand time injection. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4cfd26588ca58e159b26f8b3c131fb0d" name="a4cfd26588ca58e159b26f8b3c131fb0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfd26588ca58e159b26f8b3c131fb0d">&#9670;&nbsp;</a></span>TUYA_CELLULAR_GNSS_NOTIFY_MSG_ID_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a4cfd26588ca58e159b26f8b3c131fb0d">TUYA_CELLULAR_GNSS_NOTIFY_MSG_ID_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0da8e9672cac359b6ebbe6258ac7d1e9c08" name="a4cfd26588ca58e159b26f8b3c131fb0da8e9672cac359b6ebbe6258ac7d1e9c08"></a>TY_CELL_GNSS_NFY_MSG_ID_STATUS_INFO&#160;</td><td class="fielddoc"><p >pv_data = &amp;TUYA_CELLULAR_GNSS_STATUS_E <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0da5c8cd349a1aaeffdc8c7dc90bc23b084" name="a4cfd26588ca58e159b26f8b3c131fb0da5c8cd349a1aaeffdc8c7dc90bc23b084"></a>TY_CELL_GNSS_NFY_MSG_ID_LOCATION_INFO&#160;</td><td class="fielddoc"><p >pv_data = &amp;<a class="el" href="../../d0/d40/structTUYA__CELLULAR__GNSS__LOCATION__INFO__T.html">TUYA_CELLULAR_GNSS_LOCATION_INFO_T</a> <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0dad5d41d7e309d9b63c051a2cc942052e3" name="a4cfd26588ca58e159b26f8b3c131fb0dad5d41d7e309d9b63c051a2cc942052e3"></a>TY_CELL_GNSS_NFY_MSG_ID_SV_INFO&#160;</td><td class="fielddoc"><p >pv_data = &amp;<a class="el" href="../../d0/d93/structTUYA__CELLULAR__GNSS__SV__STATUS__T.html">TUYA_CELLULAR_GNSS_SV_STATUS_T</a> <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0da0110e9753b4a8a12da6c1848c772b04f" name="a4cfd26588ca58e159b26f8b3c131fb0da0110e9753b4a8a12da6c1848c772b04f"></a>TY_CELL_GNSS_NFY_MSG_ID_NMEA_INFO&#160;</td><td class="fielddoc"><p >pv_data = &amp;<a class="el" href="../../d7/d17/structTUYA__CELLULAR__GNSS__NMEA__T.html">TUYA_CELLULAR_GNSS_NMEA_T</a> <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0da7fc260b0ec06517bcfdf5f164c97363e" name="a4cfd26588ca58e159b26f8b3c131fb0da7fc260b0ec06517bcfdf5f164c97363e"></a>TY_CELL_GNSS_NFY_MSG_ID_CAPABILITIES_INFO&#160;</td><td class="fielddoc"><p >pv_data = &amp;TUYA_CELLULAR_GNSS_CAPABILITY_T <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0dad4cee67d90e2f5331b56c37bf1535200" name="a4cfd26588ca58e159b26f8b3c131fb0dad4cee67d90e2f5331b56c37bf1535200"></a>TY_CELL_GNSS_NFY_MSG_ID_AGPS_STATUS&#160;</td><td class="fielddoc"><p >pv_data = &amp;<a class="el" href="../../dc/da1/structTUYA__CELLULAR__GNSS__AGPS__STATUS__T.html">TUYA_CELLULAR_GNSS_AGPS_STATUS_T</a> <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4cfd26588ca58e159b26f8b3c131fb0da876723613f9c83e7837fc30549a0f937" name="a4cfd26588ca58e159b26f8b3c131fb0da876723613f9c83e7837fc30549a0f937"></a>TY_CELL_GNSS_NFY_MSG_ID_XTRA_REPORT_SERVER&#160;</td><td class="fielddoc"><p >pv_data = &amp;UYA_CELLULAR_GNSS_XRTA_REPT_SERVER_INFO_T <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a47a230487c0d7189cb6d23e899ce804a" name="a47a230487c0d7189cb6d23e899ce804a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a230487c0d7189cb6d23e899ce804a">&#9670;&nbsp;</a></span>TUYA_CELLULAR_GNSS_POS_MODE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a47a230487c0d7189cb6d23e899ce804a">TUYA_CELLULAR_GNSS_POS_MODE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a47a230487c0d7189cb6d23e899ce804aa494d72f2b2ae72875084ed1b233b96a6" name="a47a230487c0d7189cb6d23e899ce804aa494d72f2b2ae72875084ed1b233b96a6"></a>TY_CELL_GNSS_POS_MODE_STANDALONE&#160;</td><td class="fielddoc"><p >Mode for running GPS standalone (no assistance). <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47a230487c0d7189cb6d23e899ce804aa282eff48d5c71f7f4616dd95d0d6aa37" name="a47a230487c0d7189cb6d23e899ce804aa282eff48d5c71f7f4616dd95d0d6aa37"></a>TY_CELL_GNSS_POS_MODE_MS_BASED&#160;</td><td class="fielddoc"><p >AGPS MS-Based mode. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47a230487c0d7189cb6d23e899ce804aacccf2a898ba2e0292c7346be848cc74e" name="a47a230487c0d7189cb6d23e899ce804aacccf2a898ba2e0292c7346be848cc74e"></a>TY_CELL_GNSS_POS_MODE_MS_ASSISTED&#160;</td><td class="fielddoc"><p >AGPS MS-Assisted mode. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1bc953393e586a9d18eba8336dc44999" name="a1bc953393e586a9d18eba8336dc44999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bc953393e586a9d18eba8336dc44999">&#9670;&nbsp;</a></span>TUYA_CELLULAR_GNSS_POS_RECURRENCE_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a1bc953393e586a9d18eba8336dc44999">TUYA_CELLULAR_GNSS_POS_RECURRENCE_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1bc953393e586a9d18eba8336dc44999a20d9a98eb2235bc8dd791d609a1edc31" name="a1bc953393e586a9d18eba8336dc44999a20d9a98eb2235bc8dd791d609a1edc31"></a>TY_CELL_GNSS_POS_RECURRENCE_PERIODIC&#160;</td><td class="fielddoc"><p >Receive GPS fixes on a recurring basis at a specified period. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1bc953393e586a9d18eba8336dc44999a819a4777b4d440bcc6d46c9b235d0872" name="a1bc953393e586a9d18eba8336dc44999a819a4777b4d440bcc6d46c9b235d0872"></a>TY_CELL_GNSS_POS_RECURRENCE_SINGLE&#160;</td><td class="fielddoc"><p >Request a single-shot GPS fix. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad0cf526f9636b9880bb9f79df055999a" name="ad0cf526f9636b9880bb9f79df055999a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0cf526f9636b9880bb9f79df055999a">&#9670;&nbsp;</a></span>TUYA_CELLULAR_GNSS_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ad0cf526f9636b9880bb9f79df055999a">TUYA_CELLULAR_GNSS_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad0cf526f9636b9880bb9f79df055999aaa1913a46bbc78d205580472442fd6bc4" name="ad0cf526f9636b9880bb9f79df055999aaa1913a46bbc78d205580472442fd6bc4"></a>TY_CELL_GNSS_STATUS_NONE&#160;</td><td class="fielddoc"><p >GPS status unknown. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0cf526f9636b9880bb9f79df055999aa445ab8e966bf211ad831b7744f0ff1e1" name="ad0cf526f9636b9880bb9f79df055999aa445ab8e966bf211ad831b7744f0ff1e1"></a>TY_CELL_GNSS_STATUS_SESSION_BEGIN&#160;</td><td class="fielddoc"><p >GPS has begun navigating. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0cf526f9636b9880bb9f79df055999aac472460ec10b943031ba81d1ef5a7e89" name="ad0cf526f9636b9880bb9f79df055999aac472460ec10b943031ba81d1ef5a7e89"></a>TY_CELL_GNSS_STATUS_SESSION_END&#160;</td><td class="fielddoc"><p >GPS has stopped navigating. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0cf526f9636b9880bb9f79df055999aa603c7d0f5764ff4e9ef77ed69110d8b0" name="ad0cf526f9636b9880bb9f79df055999aa603c7d0f5764ff4e9ef77ed69110d8b0"></a>TY_CELL_GNSS_STATUS_ENGINE_ON&#160;</td><td class="fielddoc"><p >GPS has powered on but is not navigating. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0cf526f9636b9880bb9f79df055999aa0616cf63cb817ea0f53d608ed8a157b5" name="ad0cf526f9636b9880bb9f79df055999aa0616cf63cb817ea0f53d608ed8a157b5"></a>TY_CELL_GNSS_STATUS_ENGINE_OFF&#160;</td><td class="fielddoc"><p >GPS is powered off. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a98de48a54ab01e62671063a275b58e56" name="a98de48a54ab01e62671063a275b58e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98de48a54ab01e62671063a275b58e56">&#9670;&nbsp;</a></span>TY_CELL_GNSS_AGPS_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#a98de48a54ab01e62671063a275b58e56">TY_CELL_GNSS_AGPS_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a98de48a54ab01e62671063a275b58e56a5f0816b7c11d2c0fa57ffbb20e04811a" name="a98de48a54ab01e62671063a275b58e56a5f0816b7c11d2c0fa57ffbb20e04811a"></a>TY_CELL_GNSS_REQUEST_AGPS_DATA_CONN&#160;</td><td class="fielddoc"><p >GPS requests a data connection for AGPS. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a98de48a54ab01e62671063a275b58e56a2a3b92f2b3a12dacb7011fb94b4d9a38" name="a98de48a54ab01e62671063a275b58e56a2a3b92f2b3a12dacb7011fb94b4d9a38"></a>TY_CELL_GNSS_RELEASE_AGPS_DATA_CONN&#160;</td><td class="fielddoc"><p >GPS releases the AGPS data connection. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a98de48a54ab01e62671063a275b58e56a048499d8879180ae21540df52070c823" name="a98de48a54ab01e62671063a275b58e56a048499d8879180ae21540df52070c823"></a>TY_CELL_GNSS_AGPS_DATA_CONNECTED&#160;</td><td class="fielddoc"><p >AGPS data connection is initiated <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a98de48a54ab01e62671063a275b58e56af5f52c1056fb717a78b1d90da59eda12" name="a98de48a54ab01e62671063a275b58e56af5f52c1056fb717a78b1d90da59eda12"></a>TY_CELL_GNSS_AGPS_DATA_CONN_DONE&#160;</td><td class="fielddoc"><p >AGPS data connection is completed. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a98de48a54ab01e62671063a275b58e56a386dd9c9cb837e0a5242417d18186f6a" name="a98de48a54ab01e62671063a275b58e56a386dd9c9cb837e0a5242417d18186f6a"></a>TY_CELL_GNSS_AGPS_DATA_CONN_FAILED&#160;</td><td class="fielddoc"><p >AGPS data connection failed. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac1697af9c87b448eb1ff7292c0dffc63" name="ac1697af9c87b448eb1ff7292c0dffc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1697af9c87b448eb1ff7292c0dffc63">&#9670;&nbsp;</a></span>TY_CELL_GNSS_AGPS_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#ac1697af9c87b448eb1ff7292c0dffc63">TY_CELL_GNSS_AGPS_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63af306fe59a01a421b5e9a91f4cfdf4bc6" name="ac1697af9c87b448eb1ff7292c0dffc63af306fe59a01a421b5e9a91f4cfdf4bc6"></a>TY_CELL_GNSS_AGPS_TYPE_INVALID&#160;</td><td class="fielddoc"><p >Invalid. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63acae216faa6c24a0061a18fc35240a361" name="ac1697af9c87b448eb1ff7292c0dffc63acae216faa6c24a0061a18fc35240a361"></a>TY_CELL_GNSS_AGPS_TYPE_ANY&#160;</td><td class="fielddoc"><p >Any. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63a0086e3479687db5e4f212a3a54931352" name="ac1697af9c87b448eb1ff7292c0dffc63a0086e3479687db5e4f212a3a54931352"></a>TY_CELL_GNSS_AGPS_TYPE_SUPL&#160;</td><td class="fielddoc"><p >SUPL. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63aedb338cc8e8ef53b760f2a3e5d8b40ec" name="ac1697af9c87b448eb1ff7292c0dffc63aedb338cc8e8ef53b760f2a3e5d8b40ec"></a>TY_CELL_GNSS_AGPS_TYPE_C2K&#160;</td><td class="fielddoc"><p >C2K. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63a414a0fc25e6ea426475edd15c3758fbb" name="ac1697af9c87b448eb1ff7292c0dffc63a414a0fc25e6ea426475edd15c3758fbb"></a>TY_CELL_GNSS_AGPS_TYPE_WWAN_ANY&#160;</td><td class="fielddoc"><p >WWAN any. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63a2884672a34db79d8c7a846de4008ba90" name="ac1697af9c87b448eb1ff7292c0dffc63a2884672a34db79d8c7a846de4008ba90"></a>TY_CELL_GNSS_AGPS_TYPE_WIFI&#160;</td><td class="fielddoc"><p >Wi-Fi. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac1697af9c87b448eb1ff7292c0dffc63ad19626bf695a6c0b5ba9d7ee0c015df7" name="ac1697af9c87b448eb1ff7292c0dffc63ad19626bf695a6c0b5ba9d7ee0c015df7"></a>TY_CELL_GNSS_AGPS_TYPE_SUPL_ES&#160;</td><td class="fielddoc"><p >SUPL_ES. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="afa2c64cbc6f524dc686fe84964b64357" name="afa2c64cbc6f524dc686fe84964b64357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2c64cbc6f524dc686fe84964b64357">&#9670;&nbsp;</a></span>TY_CELL_GNSS_LOACTION_VAILD_FLAG_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../de/d79/tkl__cellular__gnss_8h.html#afa2c64cbc6f524dc686fe84964b64357">TY_CELL_GNSS_LOACTION_VAILD_FLAG_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a6093a380f93b81880380c3c3e7dd41e5" name="afa2c64cbc6f524dc686fe84964b64357a6093a380f93b81880380c3c3e7dd41e5"></a>TY_CELL_GNSS_LOCATION_LAT_LONG_VALID&#160;</td><td class="fielddoc"><p >GPS location has valid latitude and longitude. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a06caf28dfe5cc98d4b35aac7afe848ec" name="afa2c64cbc6f524dc686fe84964b64357a06caf28dfe5cc98d4b35aac7afe848ec"></a>TY_CELL_GNSS_LOCATION_ALTITUDE_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid altitude. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a083dca17469710e122660264bd4654bc" name="afa2c64cbc6f524dc686fe84964b64357a083dca17469710e122660264bd4654bc"></a>TY_CELL_GNSS_LOCATION_SPEED_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid speed. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357acd0a9282c3ffa6c51f7fe6b1faf6d161" name="afa2c64cbc6f524dc686fe84964b64357acd0a9282c3ffa6c51f7fe6b1faf6d161"></a>TY_CELL_GNSS_LOCATION_BEARING_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid bearing. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a4a3f782c2b179212cceff795c8bda3d2" name="afa2c64cbc6f524dc686fe84964b64357a4a3f782c2b179212cceff795c8bda3d2"></a>TY_CELL_GNSS_LOCATION_ACCURACY_VALID&#160;</td><td class="fielddoc"><p >GPS location has valid accuracy. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357afc1791a3ab1032339078735a3321ba8e" name="afa2c64cbc6f524dc686fe84964b64357afc1791a3ab1032339078735a3321ba8e"></a>TY_CELL_GNSS_LOCATION_SOURCE_INFO_VALID&#160;</td><td class="fielddoc"><p >GPS location has valid source information. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a7ed49e61b9d8b6a5fb2a32c323c68eb4" name="afa2c64cbc6f524dc686fe84964b64357a7ed49e61b9d8b6a5fb2a32c323c68eb4"></a>TY_CELL_GNSS_LOCATION_IS_INDOOR_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid "is indoor?" flag. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a8965e184be7b3ac31aab2e0c5b390220" name="afa2c64cbc6f524dc686fe84964b64357a8965e184be7b3ac31aab2e0c5b390220"></a>TY_CELL_GNSS_LOCATION_FLOOR_NUMBE_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid floor number. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a9d63994aa8746a2000669f8e14ddf0aa" name="afa2c64cbc6f524dc686fe84964b64357a9d63994aa8746a2000669f8e14ddf0aa"></a>TY_CELL_GNSS_LOCATION_MAP_URL_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid map URL. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa2c64cbc6f524dc686fe84964b64357a5b50a567cf19eb36dd985350683641e3" name="afa2c64cbc6f524dc686fe84964b64357a5b50a567cf19eb36dd985350683641e3"></a>TY_CELL_GNSS_LOCATION_MAP_INDEX_VALID&#160;</td><td class="fielddoc"><p >GPS location has a valid map index. <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a5c43c4491e5f08502dc5b5d32e84a349" name="a5c43c4491e5f08502dc5b5d32e84a349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c43c4491e5f08502dc5b5d32e84a349">&#9670;&nbsp;</a></span>tkl_cellular_gnss_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>去初始化蜂窝GNSS服务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a2037657540fbf06c72dbea7b181bfd1d" name="a2037657540fbf06c72dbea7b181bfd1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2037657540fbf06c72dbea7b181bfd1d">&#9670;&nbsp;</a></span>tkl_cellular_gnss_get_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_get_location </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d40/structTUYA__CELLULAR__GNSS__LOCATION__INFO__T.html">TUYA_CELLULAR_GNSS_LOCATION_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>timeout_sec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前的位置信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+    <tr><td class="paramname">location</td><td>位置信息 </td></tr>
+    <tr><td class="paramname">timeout_sec</td><td>获取位置信息的超时时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="aec784d2d0e7c03437e24921ab36e47f0" name="aec784d2d0e7c03437e24921ab36e47f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec784d2d0e7c03437e24921ab36e47f0">&#9670;&nbsp;</a></span>tkl_cellular_gnss_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化蜂窝GNSS服务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>返回蜂窝GNSS设备服务句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="aea7ef0a716c7a53bd18a5363710e0192" name="aea7ef0a716c7a53bd18a5363710e0192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7ef0a716c7a53bd18a5363710e0192">&#9670;&nbsp;</a></span>tkl_cellular_gnss_injectlocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_injectlocation </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/de3/structTUYA__CELLULAR__GNSS__INJECT__LOCATION__INFO__T.html">TUYA_CELLULAR_GNSS_INJECT_LOCATION_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>pt_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>直接注入位置信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+    <tr><td class="paramname">pt_info</td><td>位置数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a2fd83c5c7428debf01e04a5827bc31d8" name="a2fd83c5c7428debf01e04a5827bc31d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd83c5c7428debf01e04a5827bc31d8">&#9670;&nbsp;</a></span>tkl_cellular_gnss_injecttime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_injecttime </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dd4/structTUYA__CELLULAR__GNSS__INJECT__TIME__INFO__T.html">TUYA_CELLULAR_GNSS_INJECT_TIME_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>pt_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>直接注入时间数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+    <tr><td class="paramname">pt_info</td><td>时间数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a20a89df5efc0e90a9b62acb32cc15ed4" name="a20a89df5efc0e90a9b62acb32cc15ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a89df5efc0e90a9b62acb32cc15ed4">&#9670;&nbsp;</a></span>tkl_cellular_gnss_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>pdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>datalen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GNSS服务的自定义接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+    <tr><td class="paramname">cmd</td><td>GNSS命令 </td></tr>
+    <tr><td class="paramname">pdata</td><td>数据指针 </td></tr>
+    <tr><td class="paramname">datalen</td><td>pdata size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a389ec9a821a825defc2c42d54d5b7506" name="a389ec9a821a825defc2c42d54d5b7506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389ec9a821a825defc2c42d54d5b7506">&#9670;&nbsp;</a></span>tkl_cellular_gnss_register_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_register_notify </td>
+          <td>(</td>
+          <td class="paramtype">TKL_GNSS_REGISTION_NOTIFY&#160;</td>
+          <td class="paramname"><em>notify</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册蜂窝GNSS服务消息回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">notify</td><td>TKL_GNSS_REGISTION_NOTIFY 回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ad5cbdb77e629d2139fb83eea68309e09" name="ad5cbdb77e629d2139fb83eea68309e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5cbdb77e629d2139fb83eea68309e09">&#9670;&nbsp;</a></span>tkl_cellular_gnss_set_position_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_set_position_mode </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>nohandletify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d87/structTUYA__CELLULAR__GNSS__MODE__INFO__T.html">TUYA_CELLULAR_GNSS_MODE_INFO_T</a>&#160;</td>
+          <td class="paramname"><em>pt_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置蜂窝GNSS定位模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+    <tr><td class="paramname">pt_mode</td><td>定位模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ac8967f5bdd1f199f8b9ee41f4bef7cdd" name="ac8967f5bdd1f199f8b9ee41f4bef7cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8967f5bdd1f199f8b9ee41f4bef7cdd">&#9670;&nbsp;</a></span>tkl_cellular_gnss_set_system_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_set_system_mode </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>nohandletify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_SYS_MODE_E&#160;</td>
+          <td class="paramname"><em>pt_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置蜂窝GNSS定位系统模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+    <tr><td class="paramname">pt_mode</td><td>定位模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="aab418a291439cacca415a4ed278d54a2" name="aab418a291439cacca415a4ed278d54a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab418a291439cacca415a4ed278d54a2">&#9670;&nbsp;</a></span>tkl_cellular_gnss_start_navigation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_start_navigation </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启动导航 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ac6f30ca6582e095c0c0e08eb31077bed" name="ac6f30ca6582e095c0c0e08eb31077bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f30ca6582e095c0c0e08eb31077bed">&#9670;&nbsp;</a></span>tkl_cellular_gnss_stop_navigation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_gnss_stop_navigation </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_CELLULAR_GNSS_DEV_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止导航 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>蜂窝GNSS设备服务句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

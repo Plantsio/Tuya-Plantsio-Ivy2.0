@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: PINMUX 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">PINMUX 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md267"></a>
+简要说明</h1>
+<p >pinmux用于外设管脚的映射及复用。</p>
+<h1><a class="anchor" id="autotoc_md268"></a>
+Api描述</h1>
+<h2><a class="anchor" id="autotoc_md269"></a>
+tkl_io_pinmux_config</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_io_pinmux_config(TUYA_PIN_NAME_E pin, TUYA_PIN_FUNC_E pin_func);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>配置IO管脚功能。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>pin</code>: 管脚号。</li>
+<li><code>pin_func</code>:管脚功能 。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md270"></a>
+tkl_multi_io_pinmux_config</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_multi_io_pinmux_config(TUYA_MUL_PIN_CFG_T *cfg, UINT16_T num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>pinmux多路配置IO管脚功能。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><p class="startli"><code>cfg</code>:配置结构体指针 。</p>
+<p class="startli"><b><a class="el" href="../../d2/d56/structTUYA__MUL__PIN__CFG__T.html">TUYA_MUL_PIN_CFG_T</a></b></p>
+<div class="fragment"><div class="line">typedef  struct {</div>
+<div class="line">    TUYA_PIN_NAME_E pin;            //管脚号</div>
+<div class="line">    TUYA_PIN_FUNC_E pin_func;       //管脚功能</div>
+<div class="line">}TUYA_MUL_PIN_CFG_T;</div>
+</div><!-- fragment --></li>
+<li><code>num</code>:配置数量。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md271"></a>
+tkl_io_pin_to_func</h2>
+<div class="fragment"><div class="line">INT32_T tkl_io_pin_to_func(UINT32_T pin, TUYA_PIN_TYPE_E pin_type);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>从IO管脚到功port和channel号的查询。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>pin</code>: 管脚号。</li>
+<li><code>pin_func</code>:查询类型。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>管脚对应port和channel号。</li>
+<li>其中bit0-bit7位对应channel(通道)，bit8-bit15对应port(端口)。</li>
+<li>&lt;0，未查询到。</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md272"></a>
+示例</h1>
+<div class="fragment"><div class="line">tkl_io_pinmux_config(TUYA_IO_PIN_0, TUYA_IIC0_SCL);</div>
+<div class="line">tkl_io_pinmux_config(TUYA_IO_PIN_1, TUYA_IIC0_SDA);</div>
+</div><!-- fragment --><div class="fragment"><div class="line">TUYA_MUL_PIN_CFG_T cfg[2];</div>
+<div class="line">cfg[0].pin = TUYA_IO_PIN_0;</div>
+<div class="line">cfg[0].pin_func = TUYA_IIC0_SCL;</div>
+<div class="line"> </div>
+<div class="line">cfg[1].pin = TUYA_IO_PIN_1;</div>
+<div class="line">cfg[1].pin_func = TUYA_IIC0_SDA;</div>
+<div class="line"> </div>
+<div class="line">tkl_multi_io_pinmux_config(cfg,2);</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

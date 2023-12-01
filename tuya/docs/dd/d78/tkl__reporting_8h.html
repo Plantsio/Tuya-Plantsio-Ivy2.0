@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_reporting.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_reporting.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - reporting  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h_source.html">tuya_zigbee_stack.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_reporting.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d1b/tkl__reporting_8h__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tkl__reporting_8h" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tkl__reporting_8h" id="ainclude_2adapter_2zigbee_2include_2tkl__reporting_8h">
+<area shape="rect" title="Common process &#45; reporting" alt="" coords="662,5,834,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="418,95,566,121"/>
+<area shape="rect" href="../../d8/dba/tuya__zigbee__stack_8h.html" title="Common process &#45; zigbee stack" alt="" coords="928,95,1083,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+<area shape="rect" href="../../d0/d77/tuya__zigbee__attribute_8h.html" title="Common process &#45; zigbee attribute" alt="" coords="917,169,1093,196"/>
+<area shape="rect" href="../../dd/d01/tuya__zigbee__command_8h.html" title="Common process &#45; zigbee command" alt="" coords="1118,169,1303,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../dd/d78/tkl__reporting_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a2c46beeb1c672545ffd94f5de4a95423"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/tkl__reporting_8h.html#a2c46beeb1c672545ffd94f5de4a95423">TKL_REPORT_DIREC_E</a> { <a class="el" href="../../dd/d78/tkl__reporting_8h.html#a2c46beeb1c672545ffd94f5de4a95423ac2f5d2ae6a823b3fb2ae4715ffbcced2">TKL_REPORT_DIRECTION_REPORTED</a> = 0x00
+, <a class="el" href="../../dd/d78/tkl__reporting_8h.html#a2c46beeb1c672545ffd94f5de4a95423af9f47761fb6f0bd91fe37de1ac8d5fe4">TKL_REPORT_DIRECTION_RECEIVED</a> = 0x01
+ }</td></tr>
+<tr class="separator:a2c46beeb1c672545ffd94f5de4a95423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2662cd07f3e98e477f7932d2c12bdd4c"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/tkl__reporting_8h.html#a2662cd07f3e98e477f7932d2c12bdd4c">tkl_zg_add_reporting_entry</a> (<a class="el" href="../../dd/de1/structTKL__REPORT__TABLE__T.html">TKL_REPORT_TABLE_T</a> *entery)</td></tr>
+<tr class="memdesc:a2662cd07f3e98e477f7932d2c12bdd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">add reporting entry to report table  <a href="../../dd/d78/tkl__reporting_8h.html#a2662cd07f3e98e477f7932d2c12bdd4c">更多...</a><br /></td></tr>
+<tr class="separator:a2662cd07f3e98e477f7932d2c12bdd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f500e63fc7c3fe30f5dd37fed283b0"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/tkl__reporting_8h.html#ab6f500e63fc7c3fe30f5dd37fed283b0">tkl_zg_clear_reporting_table</a> (VOID_T)</td></tr>
+<tr class="memdesc:ab6f500e63fc7c3fe30f5dd37fed283b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear reporting table  <a href="../../dd/d78/tkl__reporting_8h.html#ab6f500e63fc7c3fe30f5dd37fed283b0">更多...</a><br /></td></tr>
+<tr class="separator:ab6f500e63fc7c3fe30f5dd37fed283b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ed0d49dadcda52baa401ff57f5150c"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/tkl__reporting_8h.html#af8ed0d49dadcda52baa401ff57f5150c">tkl_zg_load_default_reporting_table</a> (VOID_T)</td></tr>
+<tr class="memdesc:af8ed0d49dadcda52baa401ff57f5150c"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the default binding table registered during initialization  <a href="../../dd/d78/tkl__reporting_8h.html#af8ed0d49dadcda52baa401ff57f5150c">更多...</a><br /></td></tr>
+<tr class="separator:af8ed0d49dadcda52baa401ff57f5150c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3e68f652fe2faa65496a0971b46c28"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/tkl__reporting_8h.html#a6a3e68f652fe2faa65496a0971b46c28">tkl_zg_reporting_init</a> (<a class="el" href="../../dd/de1/structTKL__REPORT__TABLE__T.html">TKL_REPORT_TABLE_T</a> *entery, UINT8_T sums)</td></tr>
+<tr class="memdesc:a6a3e68f652fe2faa65496a0971b46c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">zigbee reporting init and register reporting table  <a href="../../dd/d78/tkl__reporting_8h.html#a6a3e68f652fe2faa65496a0971b46c28">更多...</a><br /></td></tr>
+<tr class="separator:a6a3e68f652fe2faa65496a0971b46c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - reporting </p>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a2c46beeb1c672545ffd94f5de4a95423" name="a2c46beeb1c672545ffd94f5de4a95423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c46beeb1c672545ffd94f5de4a95423">&#9670;&nbsp;</a></span>TKL_REPORT_DIREC_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dd/d78/tkl__reporting_8h.html#a2c46beeb1c672545ffd94f5de4a95423">TKL_REPORT_DIREC_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2c46beeb1c672545ffd94f5de4a95423ac2f5d2ae6a823b3fb2ae4715ffbcced2" name="a2c46beeb1c672545ffd94f5de4a95423ac2f5d2ae6a823b3fb2ae4715ffbcced2"></a>TKL_REPORT_DIRECTION_REPORTED&#160;</td><td class="fielddoc"><p >The direction of active reporting </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2c46beeb1c672545ffd94f5de4a95423af9f47761fb6f0bd91fe37de1ac8d5fe4" name="a2c46beeb1c672545ffd94f5de4a95423af9f47761fb6f0bd91fe37de1ac8d5fe4"></a>TKL_REPORT_DIRECTION_RECEIVED&#160;</td><td class="fielddoc"><p >The direction of receiving data </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a2662cd07f3e98e477f7932d2c12bdd4c" name="a2662cd07f3e98e477f7932d2c12bdd4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2662cd07f3e98e477f7932d2c12bdd4c">&#9670;&nbsp;</a></span>tkl_zg_add_reporting_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_zg_add_reporting_entry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/de1/structTKL__REPORT__TABLE__T.html">TKL_REPORT_TABLE_T</a> *&#160;</td>
+          <td class="paramname"><em>entery</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add reporting entry to report table </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">entery</td><td>reporting table entery </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE on success. FALSE on error </dd></dl>
+
+</div>
+</div>
+<a id="ab6f500e63fc7c3fe30f5dd37fed283b0" name="ab6f500e63fc7c3fe30f5dd37fed283b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f500e63fc7c3fe30f5dd37fed283b0">&#9670;&nbsp;</a></span>tkl_zg_clear_reporting_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_zg_clear_reporting_table </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clear reporting table </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="af8ed0d49dadcda52baa401ff57f5150c" name="af8ed0d49dadcda52baa401ff57f5150c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ed0d49dadcda52baa401ff57f5150c">&#9670;&nbsp;</a></span>tkl_zg_load_default_reporting_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_zg_load_default_reporting_table </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>load the default binding table registered during initialization </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a6a3e68f652fe2faa65496a0971b46c28" name="a6a3e68f652fe2faa65496a0971b46c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3e68f652fe2faa65496a0971b46c28">&#9670;&nbsp;</a></span>tkl_zg_reporting_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zg_reporting_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/de1/structTKL__REPORT__TABLE__T.html">TKL_REPORT_TABLE_T</a> *&#160;</td>
+          <td class="paramname"><em>entery</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>sums</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zigbee reporting init and register reporting table </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">entery</td><td>reporting table list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sums</td><td>reporting table number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_zll_commissioning.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_zll_commissioning.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d8e/tkl__zll__commissioning_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_ZLL_COMMISSIONING_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_ZLL_COMMISSIONING_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *  zll target status</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">   25</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265">   26</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265">TKL_ZLL_TARGET_IDLE</a> = 0,    </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458">   27</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458">TKL_ZLL_TARGET_LEAVE</a>,       </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba">   28</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba">TKL_ZLL_TARGET_JOINED</a>,      </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">TKL_ZLL_TARGET_STATUS_E</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *  zll initiator scan type</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">   34</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e">   35</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e">TKL_ZLL_SCANE_FOR_JOIN</a>          = 0, </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f">   36</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f">TKL_ZLL_SCAN_FOR_LEAVE</a>          = 1, </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1">   37</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1">TKL_ZLL_SCAN_FOR_INDENTIFY</a>      = 2, </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>} <a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> *  zll initiator scan status</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">   43</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5">   44</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5">TKL_ZLL_SCAN_OK</a>                 = 0, </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8">   45</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8">TKL_ZLL_SCAN_BUSY</a>               = 1, </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> *  zll initiator scan result</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">   51</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f">   52</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f">TKL_ZLL_SCAN_RESULT_SUCESS</a>      = 0, </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d">   53</a></span>    <a class="code hl_enumvalue" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d">TKL_ZLL_SCAN_RESULT_NO_FOUND</a>    = 1, </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">TKL_ZLL_SCAN_RESULT_E</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> *  zll initiator scan device information</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html">   59</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#ad83a656bb79ba14db8ad36ef8134323e">   60</a></span>    UINT8_T long_addr[8];               </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#ad7ed2fda58f49db6744e23c0c2ff86d4">   61</a></span>    UINT8_T ep_list[8];                 </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#aeb28a7092e3373398d323b5831fa8d4e">   62</a></span>    <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a> <a class="code hl_variable" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#aeb28a7092e3373398d323b5831fa8d4e">type</a>;                </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#a9775e09ee156eec9731cc3e9782169c0">   63</a></span>    UINT8_T <a class="code hl_variable" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#a9775e09ee156eec9731cc3e9782169c0">short_addr</a>;                 </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#ac3760bf4d68f97fad53b1d486137468d">   64</a></span>    UINT8_T <a class="code hl_variable" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#ac3760bf4d68f97fad53b1d486137468d">ep_num</a>;                     </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#a70fd4fc5eb2aad094abe13162c4195ad">   65</a></span>    UINT8_T <a class="code hl_variable" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#a70fd4fc5eb2aad094abe13162c4195ad">channel</a>;                    </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>} <a class="code hl_struct" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html">TKL_ZLL_DEV_INFO_T</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> *  zll initiator scan device information list</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../d2/d1c/structTKL__ZLL__DEV__LIST__T.html">   71</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    UINT8_T dev_sums;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html">TKL_ZLL_DEV_INFO_T</a> *list;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>} <a class="code hl_struct" href="../../d2/d1c/structTKL__ZLL__DEV__LIST__T.html">TKL_ZLL_DEV_LIST_T</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">typedef</span> VOID_T (*TKL_ZLL_TARGET_CMP_CB)(<a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">TKL_ZLL_TARGET_STATUS_E</a>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">typedef</span> VOID_T (*TKL_ZLL_INITIATOR_CMP_CB)(<a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">TKL_ZLL_SCAN_RESULT_E</a>, <a class="code hl_struct" href="../../d2/d1c/structTKL__ZLL__DEV__LIST__T.html">TKL_ZLL_DEV_LIST_T</a>*);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">typedef</span> VOID_T (*TKL_ZLL_IDENTIFY_REQ_CB)(UINT16_T durationS);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">typedef</span> VOID_T (*TKL_ZLL_RESET_TO_FN_CB)(VOID_T);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">typedef</span> OPERATE_RET (*TKL_ZLL_POWER_STRATETGY_CB)(BOOL_T);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../d1/d3c/structZLL__EXT__CB__T.html">   82</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    TKL_ZLL_IDENTIFY_REQ_CB identify_request_cb;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    TKL_ZLL_RESET_TO_FN_CB reset_to_fn_cb;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>} <a class="code hl_struct" href="../../d1/d3c/structZLL__EXT__CB__T.html">ZLL_EXT_CB_T</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#add65b6c4121ee9fb2a279d20b23a65a1">   93</a></span>BOOL_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#add65b6c4121ee9fb2a279d20b23a65a1">tkl_zll_commissioning_rx_on_set</a>(UINT32_T time_ms);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa095cb23546d3ed8a166e88b4c8f9b0e">  101</a></span>BOOL_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa095cb23546d3ed8a166e88b4c8f9b0e">tkl_zll_commissioning_in_process</a>(VOID_T);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a25fcdf52a2672b2a6f1bc0d7d581f34a">  109</a></span>VOID_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a25fcdf52a2672b2a6f1bc0d7d581f34a">tkl_zll_commissioning_3_0_test_enable</a>(VOID_T);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a2d5b65e86f716566b671b9088826e667">  117</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a2d5b65e86f716566b671b9088826e667">tkl_zll_target_touchlink_init</a>(VOID_T);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// for server</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afa75bdfbaf43bd81c7d57cb945329506">  126</a></span><span class="comment"></span>BOOL_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afa75bdfbaf43bd81c7d57cb945329506">tkl_zll_target_touchlink_enable</a>(BOOL_T en);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a06016b31b459025ec715e41d0cd3e5cf">  134</a></span>BOOL_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a06016b31b459025ec715e41d0cd3e5cf">tkl_zll_target_touchlink_is_enable</a>(VOID_T);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa20893789c5a98ea59db6f8c55cde54b">  142</a></span>INT8_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa20893789c5a98ea59db6f8c55cde54b">tkl_zll_target_rssi_threshold_get</a>(VOID_T);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a3ef52c3bd150bbd3a65c7f8d60954c88">  150</a></span>VOID_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a3ef52c3bd150bbd3a65c7f8d60954c88">tkl_zll_target_rssi_threshold_set</a>(INT8_T rx_rssi);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afc67ac3e866e62f270d4d4b371e59ef1">  161</a></span>BOOL_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afc67ac3e866e62f270d4d4b371e59ef1">tkl_zll_target_no_reset_for_non_factory_new</a>(VOID_T);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7fa1f394e7ab2c7d97593f94de506c48">  171</a></span>BOOL_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7fa1f394e7ab2c7d97593f94de506c48">tkl_zll_target_no_touchlink_for_non_factory_new</a>(VOID_T);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aea8b55d94f2e1f8af93be1d96cdbea60">  179</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#aea8b55d94f2e1f8af93be1d96cdbea60">tkl_zll_target_register_complete_cb</a>(TKL_ZLL_TARGET_CMP_CB cb);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7608a490a4a54c7938fcaf4759b45eff">  187</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7608a490a4a54c7938fcaf4759b45eff">tkl_zll_target_register_identify_req_cb</a>(TKL_ZLL_IDENTIFY_REQ_CB cb);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#af03b6f33564787df83153ac347280641">  195</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#af03b6f33564787df83153ac347280641">tkl_zll_target_register_reset_to_fn_cb</a>(TKL_ZLL_RESET_TO_FN_CB cb);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">//for client</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afe6fdca374e79e4635e302e10cdf975a">  204</a></span><span class="comment"></span>OPERATE_RET <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#afe6fdca374e79e4635e302e10cdf975a">tkl_zll_initiator_touchlink_init</a>(VOID_T);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a97b54e52d96d72bca4ebd1868adafcb9">  212</a></span>INT8_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a97b54e52d96d72bca4ebd1868adafcb9">tkl_zll_initiator_tx_power_get</a>(VOID_T);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a5b233d7ab4465a5a997a01f0d5849dee">  220</a></span>VOID_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a5b233d7ab4465a5a997a01f0d5849dee">tkl_zll_initiator_tx_power_set</a>(INT8_T tx_db);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#adbd384ffab4c5bb4af407b065452b4ec">  228</a></span>VOID_T <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#adbd384ffab4c5bb4af407b065452b4ec">tkl_zll_initiator_scan_stop</a>(VOID_T);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a6a05a72c5aea704cb435fbe5d4659ce8">  236</a></span><a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a> <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a6a05a72c5aea704cb435fbe5d4659ce8">tkl_zll_initiator_scan_start</a>(<a class="code hl_enumeration" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a> type);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7960f35ee9ea8742c4a349aee0784fd5">  244</a></span>OPERATE_RET <a class="code hl_function" href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7960f35ee9ea8742c4a349aee0784fd5">tkl_zll_initiator_register_complete_cb</a>(TKL_ZLL_INITIATOR_CMP_CB cb);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__ZLL__DEV__INFO__T_html"><div class="ttname"><a href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html">TKL_ZLL_DEV_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:59</div></div>
+<div class="ttc" id="astructTKL__ZLL__DEV__INFO__T_html_a70fd4fc5eb2aad094abe13162c4195ad"><div class="ttname"><a href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#a70fd4fc5eb2aad094abe13162c4195ad">TKL_ZLL_DEV_INFO_T::channel</a></div><div class="ttdeci">UINT8_T channel</div><div class="ttdoc">zll device channel</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:65</div></div>
+<div class="ttc" id="astructTKL__ZLL__DEV__INFO__T_html_a9775e09ee156eec9731cc3e9782169c0"><div class="ttname"><a href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#a9775e09ee156eec9731cc3e9782169c0">TKL_ZLL_DEV_INFO_T::short_addr</a></div><div class="ttdeci">UINT8_T short_addr</div><div class="ttdoc">zll device short address</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:63</div></div>
+<div class="ttc" id="astructTKL__ZLL__DEV__INFO__T_html_ac3760bf4d68f97fad53b1d486137468d"><div class="ttname"><a href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#ac3760bf4d68f97fad53b1d486137468d">TKL_ZLL_DEV_INFO_T::ep_num</a></div><div class="ttdeci">UINT8_T ep_num</div><div class="ttdoc">zll endpoint numbers</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:64</div></div>
+<div class="ttc" id="astructTKL__ZLL__DEV__INFO__T_html_aeb28a7092e3373398d323b5831fa8d4e"><div class="ttname"><a href="../../d5/db3/structTKL__ZLL__DEV__INFO__T.html#aeb28a7092e3373398d323b5831fa8d4e">TKL_ZLL_DEV_INFO_T::type</a></div><div class="ttdeci">ZG_NODE_TYPE_E type</div><div class="ttdoc">zll device node type</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:62</div></div>
+<div class="ttc" id="astructTKL__ZLL__DEV__LIST__T_html"><div class="ttname"><a href="../../d2/d1c/structTKL__ZLL__DEV__LIST__T.html">TKL_ZLL_DEV_LIST_T</a></div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:71</div></div>
+<div class="ttc" id="astructZLL__EXT__CB__T_html"><div class="ttname"><a href="../../d1/d3c/structZLL__EXT__CB__T.html">ZLL_EXT_CB_T</a></div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:82</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a06016b31b459025ec715e41d0cd3e5cf"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a06016b31b459025ec715e41d0cd3e5cf">tkl_zll_target_touchlink_is_enable</a></div><div class="ttdeci">BOOL_T tkl_zll_target_touchlink_is_enable(VOID_T)</div><div class="ttdoc">zll target touchlink disable</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a16bd835c67c5425a5a938f8a07722b47"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47">TKL_ZLL_SCAN_RESULT_E</a></div><div class="ttdeci">TKL_ZLL_SCAN_RESULT_E</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:51</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47aa3329e88624619f6680411be37165e6d">TKL_ZLL_SCAN_RESULT_NO_FOUND</a></div><div class="ttdeci">@ TKL_ZLL_SCAN_RESULT_NO_FOUND</div><div class="ttdoc">zll scan OK, no found device</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:53</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a16bd835c67c5425a5a938f8a07722b47af1986f83eb084f5f6ec24003f508bc2f">TKL_ZLL_SCAN_RESULT_SUCESS</a></div><div class="ttdeci">@ TKL_ZLL_SCAN_RESULT_SUCESS</div><div class="ttdoc">zll scan OK, found device</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:52</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a25fcdf52a2672b2a6f1bc0d7d581f34a"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a25fcdf52a2672b2a6f1bc0d7d581f34a">tkl_zll_commissioning_3_0_test_enable</a></div><div class="ttdeci">VOID_T tkl_zll_commissioning_3_0_test_enable(VOID_T)</div><div class="ttdoc">zll commissioning 3.0 test enable</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a2d5b65e86f716566b671b9088826e667"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a2d5b65e86f716566b671b9088826e667">tkl_zll_target_touchlink_init</a></div><div class="ttdeci">OPERATE_RET tkl_zll_target_touchlink_init(VOID_T)</div><div class="ttdoc">zll target touchlink init</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a3ef52c3bd150bbd3a65c7f8d60954c88"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a3ef52c3bd150bbd3a65c7f8d60954c88">tkl_zll_target_rssi_threshold_set</a></div><div class="ttdeci">VOID_T tkl_zll_target_rssi_threshold_set(INT8_T rx_rssi)</div><div class="ttdoc">zll target set rssi threshold</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a5b233d7ab4465a5a997a01f0d5849dee"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a5b233d7ab4465a5a997a01f0d5849dee">tkl_zll_initiator_tx_power_set</a></div><div class="ttdeci">VOID_T tkl_zll_initiator_tx_power_set(INT8_T tx_db)</div><div class="ttdoc">zll initiator set tx power</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a6a05a72c5aea704cb435fbe5d4659ce8"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a6a05a72c5aea704cb435fbe5d4659ce8">tkl_zll_initiator_scan_start</a></div><div class="ttdeci">TKL_ZLL_SCAN_STATUS_E tkl_zll_initiator_scan_start(TKL_ZLL_SCAN_TYPE_E type)</div><div class="ttdoc">zll initiator scan start</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a7608a490a4a54c7938fcaf4759b45eff"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7608a490a4a54c7938fcaf4759b45eff">tkl_zll_target_register_identify_req_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zll_target_register_identify_req_cb(TKL_ZLL_IDENTIFY_REQ_CB cb)</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a7960f35ee9ea8742c4a349aee0784fd5"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7960f35ee9ea8742c4a349aee0784fd5">tkl_zll_initiator_register_complete_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zll_initiator_register_complete_cb(TKL_ZLL_INITIATOR_CMP_CB cb)</div><div class="ttdoc">zll initiator register complete callback</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a7fa1f394e7ab2c7d97593f94de506c48"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a7fa1f394e7ab2c7d97593f94de506c48">tkl_zll_target_no_touchlink_for_non_factory_new</a></div><div class="ttdeci">BOOL_T tkl_zll_target_no_touchlink_for_non_factory_new(VOID_T)</div><div class="ttdoc">no reset for non-factory new device this function will cause an NFN device on a centralized security ...</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a897c908710696ef0d123ccd040df2e3c"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3c">TKL_ZLL_SCAN_TYPE_E</a></div><div class="ttdeci">TKL_ZLL_SCAN_TYPE_E</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:34</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca45686181e42c0268805d61181813690e">TKL_ZLL_SCANE_FOR_JOIN</a></div><div class="ttdeci">@ TKL_ZLL_SCANE_FOR_JOIN</div><div class="ttdoc">zll scan because of touchlink.</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:35</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3ca6869b3d2b318e1bf4c22b78a344592b1">TKL_ZLL_SCAN_FOR_INDENTIFY</a></div><div class="ttdeci">@ TKL_ZLL_SCAN_FOR_INDENTIFY</div><div class="ttdoc">zll scan because of identify.</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:37</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a897c908710696ef0d123ccd040df2e3cad36aeb5295b1224fd7fb1101a731438f">TKL_ZLL_SCAN_FOR_LEAVE</a></div><div class="ttdeci">@ TKL_ZLL_SCAN_FOR_LEAVE</div><div class="ttdoc">zll scan because of &quot;reset to factory new&quot;.</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:36</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_a97b54e52d96d72bca4ebd1868adafcb9"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#a97b54e52d96d72bca4ebd1868adafcb9">tkl_zll_initiator_tx_power_get</a></div><div class="ttdeci">INT8_T tkl_zll_initiator_tx_power_get(VOID_T)</div><div class="ttdoc">zll initiator get tx power</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_aa095cb23546d3ed8a166e88b4c8f9b0e"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa095cb23546d3ed8a166e88b4c8f9b0e">tkl_zll_commissioning_in_process</a></div><div class="ttdeci">BOOL_T tkl_zll_commissioning_in_process(VOID_T)</div><div class="ttdoc">check zll commissioning is in progress to avoid some process conflicts</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_aa20893789c5a98ea59db6f8c55cde54b"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#aa20893789c5a98ea59db6f8c55cde54b">tkl_zll_target_rssi_threshold_get</a></div><div class="ttdeci">INT8_T tkl_zll_target_rssi_threshold_get(VOID_T)</div><div class="ttdoc">zll target get rssi threshold</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac69c756fb888cfc18c2a45c14f8b1cb7"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7">TKL_ZLL_SCAN_STATUS_E</a></div><div class="ttdeci">TKL_ZLL_SCAN_STATUS_E</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:43</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a4120433a7235fd8d90babe3b897bdef8">TKL_ZLL_SCAN_BUSY</a></div><div class="ttdeci">@ TKL_ZLL_SCAN_BUSY</div><div class="ttdoc">zll scan start failed because of busy-bdb.</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:45</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac69c756fb888cfc18c2a45c14f8b1cb7a6a21b2bb1fb4237dc50b1a882d24b7d5">TKL_ZLL_SCAN_OK</a></div><div class="ttdeci">@ TKL_ZLL_SCAN_OK</div><div class="ttdoc">zll scan start OK.</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:44</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac6f5375947226d6e62924b551a47f1e7"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7">TKL_ZLL_TARGET_STATUS_E</a></div><div class="ttdeci">TKL_ZLL_TARGET_STATUS_E</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:25</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a2a15160198111aa0678b0348c094a265">TKL_ZLL_TARGET_IDLE</a></div><div class="ttdeci">@ TKL_ZLL_TARGET_IDLE</div><div class="ttdoc">zll target idle</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:26</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7a9536b2116ae5b987faf6f8c41bb37458">TKL_ZLL_TARGET_LEAVE</a></div><div class="ttdeci">@ TKL_ZLL_TARGET_LEAVE</div><div class="ttdoc">zll target leave by initiator</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:27</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#ac6f5375947226d6e62924b551a47f1e7aae43e1a6ab9831b8f9457d96ef959dba">TKL_ZLL_TARGET_JOINED</a></div><div class="ttdeci">@ TKL_ZLL_TARGET_JOINED</div><div class="ttdoc">zll target joined to a zll network</div><div class="ttdef"><b>Definition:</b> tkl_zll_commissioning.h:28</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_adbd384ffab4c5bb4af407b065452b4ec"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#adbd384ffab4c5bb4af407b065452b4ec">tkl_zll_initiator_scan_stop</a></div><div class="ttdeci">VOID_T tkl_zll_initiator_scan_stop(VOID_T)</div><div class="ttdoc">zll initiator scan stop</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_add65b6c4121ee9fb2a279d20b23a65a1"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#add65b6c4121ee9fb2a279d20b23a65a1">tkl_zll_commissioning_rx_on_set</a></div><div class="ttdeci">BOOL_T tkl_zll_commissioning_rx_on_set(UINT32_T time_ms)</div><div class="ttdoc">time when zll commissioning rx is on in idle state</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_aea8b55d94f2e1f8af93be1d96cdbea60"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#aea8b55d94f2e1f8af93be1d96cdbea60">tkl_zll_target_register_complete_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zll_target_register_complete_cb(TKL_ZLL_TARGET_CMP_CB cb)</div><div class="ttdoc">zll target register complete callback</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_af03b6f33564787df83153ac347280641"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#af03b6f33564787df83153ac347280641">tkl_zll_target_register_reset_to_fn_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zll_target_register_reset_to_fn_cb(TKL_ZLL_RESET_TO_FN_CB cb)</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_afa75bdfbaf43bd81c7d57cb945329506"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#afa75bdfbaf43bd81c7d57cb945329506">tkl_zll_target_touchlink_enable</a></div><div class="ttdeci">BOOL_T tkl_zll_target_touchlink_enable(BOOL_T en)</div><div class="ttdoc">zll target touchlink enable</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_afc67ac3e866e62f270d4d4b371e59ef1"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#afc67ac3e866e62f270d4d4b371e59ef1">tkl_zll_target_no_reset_for_non_factory_new</a></div><div class="ttdeci">BOOL_T tkl_zll_target_no_reset_for_non_factory_new(VOID_T)</div><div class="ttdoc">zll target no touchlink for non-factory new device this function will cause an nfn device to refuse n...</div></div>
+<div class="ttc" id="atkl__zll__commissioning_8h_html_afe6fdca374e79e4635e302e10cdf975a"><div class="ttname"><a href="../../d4/d8e/tkl__zll__commissioning_8h.html#afe6fdca374e79e4635e302e10cdf975a">tkl_zll_initiator_touchlink_init</a></div><div class="ttdeci">OPERATE_RET tkl_zll_initiator_touchlink_init(VOID_T)</div><div class="ttdoc">zll initiator touchlink init</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a></div><div class="ttdoc">Common process - zigbee stack</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a></div><div class="ttdeci">ZG_NODE_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:67</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

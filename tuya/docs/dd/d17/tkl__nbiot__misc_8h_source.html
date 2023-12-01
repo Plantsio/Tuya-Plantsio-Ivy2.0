@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/nb/include/tkl_nbiot_misc.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_5f0cc14919f4ea638bae0e0d6e877847.html">nb</a></li><li class="navelem"><a class="el" href="../../dir_8cbb9b6f25454b81c061e4a45ef8276f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_nbiot_misc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d17/tkl__nbiot__misc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef __TKL_NBIOT_MISC_H__</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define __TKL_NBIOT_MISC_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d5b/tkl__nbiot__comm_8h.html">tkl_nbiot_comm.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    TKL_CHIP_MTK2625    = 0,        <span class="comment">//适配所有涂鸦自己的差分升级流程！！！</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    TKL_CHIP_EC616      = 1,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    TKL_CHIP_XY1100     = 2,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    TKL_CHIP_MAX        = 3,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} TKL_MISC_CHIP_TYPE_E;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#ad3eaa0b5175f9119cbb636d3ba69e56d">   32</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#ad3eaa0b5175f9119cbb636d3ba69e56d">tkl_nbiot_chip_type</a>(TKL_MISC_CHIP_TYPE_E *out_type);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#af2312232b09abe054f4d08f0c152e42c">   41</a></span>BOOL_T <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#af2312232b09abe054f4d08f0c152e42c">tkl_nbiot_is_atcmd_serial_port_on</a>(VOID);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#a749e42a2b410e46bcfb375a048a8547b">   50</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#a749e42a2b410e46bcfb375a048a8547b">tkl_nbiot_atcmd_serial_port_off</a>(VOID);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#af2de5de166bf65aa2e7ecf237d36ac71">   59</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#af2de5de166bf65aa2e7ecf237d36ac71">tkl_nbiot_atcmd_serial_port_on</a>(VOID);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#a037afc7dbd0642fe022c2522270ae047">   68</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#a037afc7dbd0642fe022c2522270ae047">tkl_nbiot_get_app_offset</a>(UINT_T *out_addr);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#aabeff916b7040ff1c461aabca388d675">   77</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#aabeff916b7040ff1c461aabca388d675">tkl_nbiot_get_app_len</a>(UINT_T *out_len);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#a94abb09d584aeb1df3062c994e3600f3">   86</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#a94abb09d584aeb1df3062c994e3600f3">tkl_nbiot_fota_update_start</a>(VOID);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#a9016eecbf3d435be2f56b5a0b58d3f11">   95</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#a9016eecbf3d435be2f56b5a0b58d3f11">tkl_nbiot_fota_update_end</a>(VOID);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#a3f2867a9bbe8e9ad0d8bbb4dad845539">  104</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#a3f2867a9bbe8e9ad0d8bbb4dad845539">tkl_nbiot_fota_status_acquire</a>(VOID);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#ae2b05dd133e8d435a66529e8fb04e114">  114</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#ae2b05dd133e8d435a66529e8fb04e114">tkl_nbiot_get_fota_offset</a>(UINT_T *out_addr, UCHAR_T *_1st_data, UINT32_T _1st_data_size);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#ade691c2800055672d702a588cd4271a5">  123</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#ade691c2800055672d702a588cd4271a5">tkl_nbiot_get_fota_len</a>(UINT_T *out_len);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#ac3e8812f739564aa8c97f3faf3c2c9f6">  132</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#ac3e8812f739564aa8c97f3faf3c2c9f6">tkl_nbiot_get_fota_update_info_offset</a>(UINT_T *out_addr);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../dd/d17/tkl__nbiot__misc_8h.html#a614ee246f1063164f27a67c4f1304dc4">  141</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d17/tkl__nbiot__misc_8h.html#a614ee246f1063164f27a67c4f1304dc4">tkl_nbiot_get_fota_trigger_flag_offset</a>(UINT_T *out_addr);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="ttc" id="atkl__nbiot__comm_8h_html"><div class="ttname"><a href="../../de/d5b/tkl__nbiot__comm_8h.html">tkl_nbiot_comm.h</a></div><div class="ttdoc">Common process - common defination</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_a037afc7dbd0642fe022c2522270ae047"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#a037afc7dbd0642fe022c2522270ae047">tkl_nbiot_get_app_offset</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_get_app_offset(UINT_T *out_addr)</div><div class="ttdoc">get the offset address of app firmware</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_a3f2867a9bbe8e9ad0d8bbb4dad845539"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#a3f2867a9bbe8e9ad0d8bbb4dad845539">tkl_nbiot_fota_status_acquire</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_fota_status_acquire(VOID)</div><div class="ttdoc">some upgrade status needs to be obtained from the platform,such as NX1, others return directly</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_a614ee246f1063164f27a67c4f1304dc4"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#a614ee246f1063164f27a67c4f1304dc4">tkl_nbiot_get_fota_trigger_flag_offset</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_get_fota_trigger_flag_offset(UINT_T *out_addr)</div><div class="ttdoc">get the offset address to save trigger fota indicator</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_a749e42a2b410e46bcfb375a048a8547b"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#a749e42a2b410e46bcfb375a048a8547b">tkl_nbiot_atcmd_serial_port_off</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_atcmd_serial_port_off(VOID)</div><div class="ttdoc">set AT serial port off</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_a9016eecbf3d435be2f56b5a0b58d3f11"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#a9016eecbf3d435be2f56b5a0b58d3f11">tkl_nbiot_fota_update_end</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_fota_update_end(VOID)</div><div class="ttdoc">notify fota update end, some platform need acquire this info to clear update status,...</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_a94abb09d584aeb1df3062c994e3600f3"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#a94abb09d584aeb1df3062c994e3600f3">tkl_nbiot_fota_update_start</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_fota_update_start(VOID)</div><div class="ttdoc">notify fota update start, some platform need acquire this info then restart system,...</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_aabeff916b7040ff1c461aabca388d675"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#aabeff916b7040ff1c461aabca388d675">tkl_nbiot_get_app_len</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_get_app_len(UINT_T *out_len)</div><div class="ttdoc">get the app firmware space length</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_ac3e8812f739564aa8c97f3faf3c2c9f6"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#ac3e8812f739564aa8c97f3faf3c2c9f6">tkl_nbiot_get_fota_update_info_offset</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_get_fota_update_info_offset(UINT_T *out_addr)</div><div class="ttdoc">get the offset address to save update info</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_ad3eaa0b5175f9119cbb636d3ba69e56d"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#ad3eaa0b5175f9119cbb636d3ba69e56d">tkl_nbiot_chip_type</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_chip_type(TKL_MISC_CHIP_TYPE_E *out_type)</div><div class="ttdoc">get the chip type</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_ade691c2800055672d702a588cd4271a5"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#ade691c2800055672d702a588cd4271a5">tkl_nbiot_get_fota_len</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_get_fota_len(UINT_T *out_len)</div><div class="ttdoc">get the space legth to save firmware</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_ae2b05dd133e8d435a66529e8fb04e114"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#ae2b05dd133e8d435a66529e8fb04e114">tkl_nbiot_get_fota_offset</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_get_fota_offset(UINT_T *out_addr, UCHAR_T *_1st_data, UINT32_T _1st_data_size)</div><div class="ttdoc">get the offset address to save firmware</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_af2312232b09abe054f4d08f0c152e42c"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#af2312232b09abe054f4d08f0c152e42c">tkl_nbiot_is_atcmd_serial_port_on</a></div><div class="ttdeci">BOOL_T tkl_nbiot_is_atcmd_serial_port_on(VOID)</div><div class="ttdoc">if AT serial port is on or off</div></div>
+<div class="ttc" id="atkl__nbiot__misc_8h_html_af2de5de166bf65aa2e7ecf237d36ac71"><div class="ttname"><a href="../../dd/d17/tkl__nbiot__misc_8h.html#af2de5de166bf65aa2e7ecf237d36ac71">tkl_nbiot_atcmd_serial_port_on</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_atcmd_serial_port_on(VOID)</div><div class="ttdoc">set AT serial port on</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

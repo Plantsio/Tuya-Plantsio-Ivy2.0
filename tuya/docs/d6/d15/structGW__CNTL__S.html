@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: GW_CNTL_S结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">GW_CNTL_S结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definition of core device management  
+ <a href="../../d6/d15/structGW__CNTL__S.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d62/gw__intf_8h_source.html">gw_intf.h</a>&gt;</code></p>
+<div class="dynheader">
+GW_CNTL_S 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/db4/structGW__CNTL__S__coll__graph.png" border="0" usemap="#aGW__CNTL__S_coll__map" alt="Collaboration graph"/></div>
+<map name="aGW__CNTL__S_coll__map" id="aGW__CNTL__S_coll__map">
+<area shape="rect" title="Definition of core device management" alt="" coords="1332,129,1433,156"/>
+<area shape="rect" href="../../dd/d6b/structGW__BASE__IF__S.html" title="Definition gw BASE information" alt="" coords="1004,5,1123,32"/>
+<area shape="rect" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html" title="Definition of device work state" alt="" coords="972,56,1155,83"/>
+<area shape="rect" href="../../d6/d8e/structGW__DESC__IF__S.html" title="Definition of device description info" alt="" coords="1003,107,1123,133"/>
+<area shape="rect" href="../../d9/d56/structGW__ATTACH__ATTR__T.html" title="Definition of attach moudule attribute" alt="" coords="648,107,807,133"/>
+<area shape="rect" href="../../db/d8e/structGW__ACTV__IF__S.html" title="Definition of active info" alt="" coords="1003,157,1123,184"/>
+<area shape="rect" href="../../d3/d9f/structdev__cntl__n__s.html" title="Definition of device control info" alt="" coords="1010,209,1117,236"/>
+<area shape="rect" href="../../dd/d32/structDEV__ACTV__ATTR__S.html" title="Definition of device actv attribute" alt="" coords="654,159,801,185"/>
+<area shape="rect" href="../../d2/da3/structDP__CNTL__S.html" title="Definition of dp control" alt="" coords="679,209,775,236"/>
+<area shape="rect" href="../../d0/ddb/structDP__DESC__IF__S.html" title="Definition of dp description" alt="" coords="367,155,482,181"/>
+<area shape="rect" href="../../d2/d4f/unionDP__PROP__VALUE__U.html" title="Definition of dp prop value" alt="" coords="351,205,498,232"/>
+<area shape="rect" href="../../d4/dd9/structDP__PROP__VAL__S.html" title="Definition of dp prop" alt="" coords="43,53,171,80"/>
+<area shape="rect" href="../../d5/d87/structDP__PROP__ENUM__S.html" title="Definition of dp prop" alt="" coords="35,104,178,131"/>
+<area shape="rect" href="../../d8/d39/structDP__PROP__STR__S.html" title="Definition of dp prop" alt="" coords="42,155,171,181"/>
+<area shape="rect" href="../../da/d9b/structDP__BOOL__S.html" title="Definition of dp prop" alt="" coords="57,205,156,232"/>
+<area shape="rect" href="../../df/d69/structDP__PROP__BITMAP.html" title="Definition of dp prop" alt="" coords="37,256,176,283"/>
+<area shape="rect" href="../../d7/d2b/structDP__REPT__FLOW__CTRL.html" title="Definition of dp report flow control" alt="" coords="343,283,507,309"/>
+<area shape="rect" href="../../d7/dbb/structDP__REPT__FLOW__CTRL__UNIT.html" title="Definition of dp report flow control unit" alt="" coords="5,311,208,337"/>
+<area shape="rect" href="../../d4/da4/structTY__IOT__CBS__S.html" title="Definition of gateway callback funtions" alt="" coords="1006,351,1121,377"/>
+<area shape="rect" href="../../d4/d3f/structFW__UG__S.html" title="tuya sdk ota firmware info" alt="" coords="685,300,769,327"/>
+<area shape="rect" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html" title="Definition of recved structured dp" alt="" coords="652,351,803,377"/>
+<area shape="rect" href="../../d8/d6d/structTY__OBJ__DP__S.html" title="Definition of structured dp" alt="" coords="371,360,479,387"/>
+<area shape="rect" href="../../d0/d23/unionTY__OBJ__DP__VALUE__U.html" title="tuya sdk dp value union" alt="" coords="27,361,186,388"/>
+<area shape="rect" href="../../da/d9a/structTY__RECV__RAW__DP__S.html" title="Definition of recved raw dp" alt="" coords="649,401,805,428"/>
+<area shape="rect" href="../../d8/d73/structTY__DP__QUERY__S.html" title="Definition of DP query" alt="" coords="663,452,792,479"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a5c37cdc1cda7da5604bb877617b37d93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a5c37cdc1cda7da5604bb877617b37d93">cbs</a></td></tr>
+<tr class="separator:a5c37cdc1cda7da5604bb877617b37d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aecf1c42002b711c2d3ac02fe5e1a05"><td class="memItemLeft" align="right" valign="top">TIME_MS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a4aecf1c42002b711c2d3ac02fe5e1a05">data_update_time</a></td></tr>
+<tr class="separator:a4aecf1c42002b711c2d3ac02fe5e1a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519757dfa9ba4c2e04b1ea0988e516f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d62/gw__intf_8h.html#af467dac8fdbe9e1144bd1ccebf9ede3a">DEV_CNTL_N_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a519757dfa9ba4c2e04b1ea0988e516f9">dev_cntl</a></td></tr>
+<tr class="separator:a519757dfa9ba4c2e04b1ea0988e516f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bf83850983208a7382cac3ffcb2cb6"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a09bf83850983208a7382cac3ffcb2cb6">ext_attribute</a></td></tr>
+<tr class="separator:a09bf83850983208a7382cac3ffcb2cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fba8c413b5add49db6b3203df60f8a0"><td class="memItemLeft" align="right" valign="top">GW_EXT_STAT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a4fba8c413b5add49db6b3203df60f8a0">ext_stat</a></td></tr>
+<tr class="separator:a4fba8c413b5add49db6b3203df60f8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ccf365ace8005c214677b98a2128d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d8e/structGW__ACTV__IF__S.html">GW_ACTV_IF_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a82ccf365ace8005c214677b98a2128d9">gw_actv</a></td></tr>
+<tr class="separator:a82ccf365ace8005c214677b98a2128d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb1088ce185f572f1b7955dba8a7a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d6b/structGW__BASE__IF__S.html">GW_BASE_IF_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a0cb1088ce185f572f1b7955dba8a7a7e">gw_base</a></td></tr>
+<tr class="separator:a0cb1088ce185f572f1b7955dba8a7a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c53657daeefa0f03b8a049ac1bff52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d8e/structGW__DESC__IF__S.html">GW_DESC_IF_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a49c53657daeefa0f03b8a049ac1bff52">gw_if</a></td></tr>
+<tr class="separator:a49c53657daeefa0f03b8a049ac1bff52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cc1a4c678dc41100e8dd316654c856"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a64cc1a4c678dc41100e8dd316654c856">gw_wsm</a></td></tr>
+<tr class="separator:a64cc1a4c678dc41100e8dd316654c856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06eaeeb718e0520d2f1ed3eea97d65bb"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a06eaeeb718e0520d2f1ed3eea97d65bb">is_init</a></td></tr>
+<tr class="separator:a06eaeeb718e0520d2f1ed3eea97d65bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d9f5876b6e815e71f24ba50c93bab8"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a86d9f5876b6e815e71f24ba50c93bab8">is_need_recovery</a></td></tr>
+<tr class="separator:a86d9f5876b6e815e71f24ba50c93bab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffe64c5dd3b9e44d6757e853551621e"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a0ffe64c5dd3b9e44d6757e853551621e">is_oem</a></td></tr>
+<tr class="separator:a0ffe64c5dd3b9e44d6757e853551621e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac240b8137b20d42ec944c18725ae2a94"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#ac240b8137b20d42ec944c18725ae2a94">is_stride</a></td></tr>
+<tr class="separator:ac240b8137b20d42ec944c18725ae2a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc7dd46ea051484950a43b992e67ceb"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a2dc7dd46ea051484950a43b992e67ceb">serial_no</a></td></tr>
+<tr class="separator:a2dc7dd46ea051484950a43b992e67ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f66a13041740137cc7bff8998e89127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d62/gw__intf_8h.html#a89400cfee9ef18a007dc739aa96abcf7">subdev_dev_cntl_get_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d15/structGW__CNTL__S.html#a3f66a13041740137cc7bff8998e89127">subdev_dev_get_cb</a></td></tr>
+<tr class="separator:a3f66a13041740137cc7bff8998e89127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Definition of core device management </p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a5c37cdc1cda7da5604bb877617b37d93" name="a5c37cdc1cda7da5604bb877617b37d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c37cdc1cda7da5604bb877617b37d93">&#9670;&nbsp;</a></span>cbs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> GW_CNTL_S::cbs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >nofity callback </p>
+
+</div>
+</div>
+<a id="a4aecf1c42002b711c2d3ac02fe5e1a05" name="a4aecf1c42002b711c2d3ac02fe5e1a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aecf1c42002b711c2d3ac02fe5e1a05">&#9670;&nbsp;</a></span>data_update_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_MS GW_CNTL_S::data_update_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >global data update time </p>
+
+</div>
+</div>
+<a id="a519757dfa9ba4c2e04b1ea0988e516f9" name="a519757dfa9ba4c2e04b1ea0988e516f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519757dfa9ba4c2e04b1ea0988e516f9">&#9670;&nbsp;</a></span>dev_cntl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d62/gw__intf_8h.html#af467dac8fdbe9e1144bd1ccebf9ede3a">DEV_CNTL_N_S</a>* GW_CNTL_S::dev_cntl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >device manage </p>
+
+</div>
+</div>
+<a id="a09bf83850983208a7382cac3ffcb2cb6" name="a09bf83850983208a7382cac3ffcb2cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bf83850983208a7382cac3ffcb2cb6">&#9670;&nbsp;</a></span>ext_attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T GW_CNTL_S::ext_attribute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >see DEV_ATTRIBUTE </p>
+
+</div>
+</div>
+<a id="a4fba8c413b5add49db6b3203df60f8a0" name="a4fba8c413b5add49db6b3203df60f8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fba8c413b5add49db6b3203df60f8a0">&#9670;&nbsp;</a></span>ext_stat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GW_EXT_STAT_T GW_CNTL_S::ext_stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Extension state, see GW_EXT_STAT_T </p>
+
+</div>
+</div>
+<a id="a82ccf365ace8005c214677b98a2128d9" name="a82ccf365ace8005c214677b98a2128d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ccf365ace8005c214677b98a2128d9">&#9670;&nbsp;</a></span>gw_actv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d8e/structGW__ACTV__IF__S.html">GW_ACTV_IF_S</a> GW_CNTL_S::gw_actv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >device active info, see <a class="el" href="../../db/d8e/structGW__ACTV__IF__S.html" title="Definition of active info">GW_ACTV_IF_S</a> </p>
+
+</div>
+</div>
+<a id="a0cb1088ce185f572f1b7955dba8a7a7e" name="a0cb1088ce185f572f1b7955dba8a7a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb1088ce185f572f1b7955dba8a7a7e">&#9670;&nbsp;</a></span>gw_base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d6b/structGW__BASE__IF__S.html">GW_BASE_IF_S</a> GW_CNTL_S::gw_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >device base info, see <a class="el" href="../../dd/d6b/structGW__BASE__IF__S.html" title="Definition gw BASE information">GW_BASE_IF_S</a> </p>
+
+</div>
+</div>
+<a id="a49c53657daeefa0f03b8a049ac1bff52" name="a49c53657daeefa0f03b8a049ac1bff52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c53657daeefa0f03b8a049ac1bff52">&#9670;&nbsp;</a></span>gw_if</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d8e/structGW__DESC__IF__S.html">GW_DESC_IF_S</a> GW_CNTL_S::gw_if</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >device description info, see <a class="el" href="../../d6/d8e/structGW__DESC__IF__S.html" title="Definition of device description info">GW_DESC_IF_S</a> </p>
+
+</div>
+</div>
+<a id="a64cc1a4c678dc41100e8dd316654c856" name="a64cc1a4c678dc41100e8dd316654c856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64cc1a4c678dc41100e8dd316654c856">&#9670;&nbsp;</a></span>gw_wsm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a> GW_CNTL_S::gw_wsm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >device work state management, see <a class="el" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html" title="Definition of device work state">GW_WORK_STAT_MAG_S</a> </p>
+
+</div>
+</div>
+<a id="a06eaeeb718e0520d2f1ed3eea97d65bb" name="a06eaeeb718e0520d2f1ed3eea97d65bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06eaeeb718e0520d2f1ed3eea97d65bb">&#9670;&nbsp;</a></span>is_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T GW_CNTL_S::is_init</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Inited or not </p>
+
+</div>
+</div>
+<a id="a86d9f5876b6e815e71f24ba50c93bab8" name="a86d9f5876b6e815e71f24ba50c93bab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d9f5876b6e815e71f24ba50c93bab8">&#9670;&nbsp;</a></span>is_need_recovery</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T GW_CNTL_S::is_need_recovery</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Is need recovery or not </p>
+
+</div>
+</div>
+<a id="a0ffe64c5dd3b9e44d6757e853551621e" name="a0ffe64c5dd3b9e44d6757e853551621e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ffe64c5dd3b9e44d6757e853551621e">&#9670;&nbsp;</a></span>is_oem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T GW_CNTL_S::is_oem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Is oem device or not </p>
+
+</div>
+</div>
+<a id="ac240b8137b20d42ec944c18725ae2a94" name="ac240b8137b20d42ec944c18725ae2a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac240b8137b20d42ec944c18725ae2a94">&#9670;&nbsp;</a></span>is_stride</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T GW_CNTL_S::is_stride</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Is stride(pid/key) or not </p>
+
+</div>
+</div>
+<a id="a2dc7dd46ea051484950a43b992e67ceb" name="a2dc7dd46ea051484950a43b992e67ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc7dd46ea051484950a43b992e67ceb">&#9670;&nbsp;</a></span>serial_no</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T* GW_CNTL_S::serial_no</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >serial num </p>
+
+</div>
+</div>
+<a id="a3f66a13041740137cc7bff8998e89127" name="a3f66a13041740137cc7bff8998e89127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f66a13041740137cc7bff8998e89127">&#9670;&nbsp;</a></span>subdev_dev_get_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d62/gw__intf_8h.html#a89400cfee9ef18a007dc739aa96abcf7">subdev_dev_cntl_get_cb</a> GW_CNTL_S::subdev_dev_get_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sub-device related info </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/components/svc_devos/include/<a class="el" href="../../d4/d62/gw__intf_8h_source.html">gw_intf.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

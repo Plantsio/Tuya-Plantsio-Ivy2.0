@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_security/include/tal_symmetry.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_152ff88ceaf92386bbbcab641a4b8ccf.html">tal_security</a></li><li class="navelem"><a class="el" href="../../dir_a488653c6eb5f2ff1d231bae86c2d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_symmetry.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the symmetry api provide by OS  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dec/tkl__symmetry_8h_source.html">tkl_symmetry.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_symmetry.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dbd/tal__symmetry_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__security_2include_2tal__symmetry_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__security_2include_2tal__symmetry_8h" id="ainclude_2components_2tal__security_2include_2tal__symmetry_8h">
+<area shape="rect" title="Common process &#45; adapter the symmetry api provide by OS" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,184,517,211"/>
+<area shape="rect" href="../../d1/dec/tkl__symmetry_8h.html" title="Common process &#45; adapter the symmetry api provide by OS" alt="" coords="431,109,553,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,432,285"/>
+<area shape="rect" title=" " alt="" coords="457,259,527,285"/>
+<area shape="rect" title=" " alt="" coords="552,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,730,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,259,893,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d97/tal__symmetry_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__security_2include_2tal__symmetry_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__security_2include_2tal__symmetry_8hdep" id="ainclude_2components_2tal__security_2include_2tal__symmetry_8hdep">
+<area shape="rect" title="Common process &#45; adapter the symmetry api provide by OS" alt="" coords="5,5,159,61"/>
+<area shape="rect" href="../../d9/df0/tal__security_8h.html" title="tal_security file include" alt="" coords="5,109,159,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../d4/d7c/tal__symmetry_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aebd9fe6d84f96de9046f28da0179a6ef"><td class="memItemLeft" align="right" valign="top"><a id="aebd9fe6d84f96de9046f28da0179a6ef" name="aebd9fe6d84f96de9046f28da0179a6ef"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TAL_SYMMETRY_CRYPT_MODE</b> { <b>SYMMETRY_DECRYPT</b> = 0
+, <b>SYMMETRY_ENCRYPT</b> = 1
+ }</td></tr>
+<tr class="separator:aebd9fe6d84f96de9046f28da0179a6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a75db623ffd22a0188a8a0a1a441d34c9"><td class="memItemLeft" align="right" valign="top"><a id="a75db623ffd22a0188a8a0a1a441d34c9" name="a75db623ffd22a0188a8a0a1a441d34c9"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_cbc_decode</b> (IN UINT8_T *data, IN UINT32_T len, IN UINT8_T *key, IN UINT8_T *iv, OUT UINT8_T **dec_data, OUT UINT32_T *dec_len)</td></tr>
+<tr class="separator:a75db623ffd22a0188a8a0a1a441d34c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa688de602f8a5c07e31710696482625e"><td class="memItemLeft" align="right" valign="top"><a id="aa688de602f8a5c07e31710696482625e" name="aa688de602f8a5c07e31710696482625e"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_cbc_decode_raw</b> (UINT8_T *data, size_t len, UINT8_T *key, UINT8_T *iv, UINT8_T *dec_data)</td></tr>
+<tr class="separator:aa688de602f8a5c07e31710696482625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009312282bf9c98118908e57d6b04f5e"><td class="memItemLeft" align="right" valign="top"><a id="a009312282bf9c98118908e57d6b04f5e" name="a009312282bf9c98118908e57d6b04f5e"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_cbc_encode</b> (IN UINT8_T *data, IN UINT32_T len, IN UINT8_T *key, IN UINT8_T *iv, OUT UINT8_T **ec_data, OUT UINT32_T *ec_len)</td></tr>
+<tr class="separator:a009312282bf9c98118908e57d6b04f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bc4290c4f0b05ace27ae5cd5e5b05c"><td class="memItemLeft" align="right" valign="top"><a id="a94bc4290c4f0b05ace27ae5cd5e5b05c" name="a94bc4290c4f0b05ace27ae5cd5e5b05c"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_cbc_encode_raw</b> (UINT8_T *data, size_t len, UINT8_T *key, UINT8_T *iv, UINT8_T *ec_data)</td></tr>
+<tr class="separator:a94bc4290c4f0b05ace27ae5cd5e5b05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e77436739df86af15247b4f9239ae4"><td class="memItemLeft" align="right" valign="top"><a id="af2e77436739df86af15247b4f9239ae4" name="af2e77436739df86af15247b4f9239ae4"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_ecb_decode</b> (IN UINT8_T *data, IN UINT32_T len, OUT UINT8_T **dec_data, OUT UINT32_T *dec_len, IN UINT8_T *key)</td></tr>
+<tr class="separator:af2e77436739df86af15247b4f9239ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7fa1d47ecd91cc29f003758be035cd"><td class="memItemLeft" align="right" valign="top"><a id="a9b7fa1d47ecd91cc29f003758be035cd" name="a9b7fa1d47ecd91cc29f003758be035cd"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_ecb_decode_raw</b> (UINT8_T *data, size_t len, UINT8_T *dec_data, UINT8_T *key)</td></tr>
+<tr class="separator:a9b7fa1d47ecd91cc29f003758be035cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd2f4361bf0303e8698bcd8feccf293"><td class="memItemLeft" align="right" valign="top"><a id="aafd2f4361bf0303e8698bcd8feccf293" name="aafd2f4361bf0303e8698bcd8feccf293"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_ecb_encode</b> (IN UINT8_T *data, IN UINT32_T len, OUT UINT8_T **ec_data, OUT UINT32_T *ec_len, IN UINT8_T *key)</td></tr>
+<tr class="separator:aafd2f4361bf0303e8698bcd8feccf293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e04e7cc769d9f6d765abf5dafeb971a"><td class="memItemLeft" align="right" valign="top"><a id="a4e04e7cc769d9f6d765abf5dafeb971a" name="a4e04e7cc769d9f6d765abf5dafeb971a"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes128_ecb_encode_raw</b> (UINT8_T *data, size_t len, UINT8_T *ec_data, UINT8_T *key)</td></tr>
+<tr class="separator:a4e04e7cc769d9f6d765abf5dafeb971a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8de50a4b84924de18c8e3ca5d48daf2"><td class="memItemLeft" align="right" valign="top"><a id="aa8de50a4b84924de18c8e3ca5d48daf2" name="aa8de50a4b84924de18c8e3ca5d48daf2"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes256_cbc_decode_raw</b> (UINT8_T *data, size_t len, UINT8_T *key, UINT8_T *iv, UINT8_T *dec_data)</td></tr>
+<tr class="separator:aa8de50a4b84924de18c8e3ca5d48daf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8312fdfe62ab208efb10979be19867"><td class="memItemLeft" align="right" valign="top"><a id="a1d8312fdfe62ab208efb10979be19867" name="a1d8312fdfe62ab208efb10979be19867"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes256_cbc_encode_raw</b> (UINT8_T *data, size_t len, UINT8_T *key, UINT8_T *iv, UINT8_T *ec_data)</td></tr>
+<tr class="separator:a1d8312fdfe62ab208efb10979be19867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8449ed39685adb18b0cf2d35ccd3da"><td class="memItemLeft" align="right" valign="top"><a id="adc8449ed39685adb18b0cf2d35ccd3da" name="adc8449ed39685adb18b0cf2d35ccd3da"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes256_ctr_raw</b> (UINT8_T *input, size_t len, UINT8_T *key, size_t *nc_off, UINT8_T nonce_counter[16], UINT8_T stream_block[16], UINT8_T *output)</td></tr>
+<tr class="separator:adc8449ed39685adb18b0cf2d35ccd3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d22718d065313c2f4901ef7c6500597"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/tal__symmetry_8h.html#a4d22718d065313c2f4901ef7c6500597">tal_aes_create_init</a> (TKL_SYMMETRY_HANDLE *ctx)</td></tr>
+<tr class="memdesc:a4d22718d065313c2f4901ef7c6500597"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Create&amp;initializes a aes context.  <a href="../../d4/d7c/tal__symmetry_8h.html#a4d22718d065313c2f4901ef7c6500597">更多...</a><br /></td></tr>
+<tr class="separator:a4d22718d065313c2f4901ef7c6500597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca6f07952cc30d72b3da2ceac222f37"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/tal__symmetry_8h.html#a3ca6f07952cc30d72b3da2ceac222f37">tal_aes_crypt_cbc</a> (TKL_SYMMETRY_HANDLE ctx, INT32_T mode, size_t length, UINT8_T iv[16], UINT8_T *input, UINT8_T *output)</td></tr>
+<tr class="memdesc:a3ca6f07952cc30d72b3da2ceac222f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs an AES-CBC encryption or decryption operation on full blocks.  <a href="../../d4/d7c/tal__symmetry_8h.html#a3ca6f07952cc30d72b3da2ceac222f37">更多...</a><br /></td></tr>
+<tr class="separator:a3ca6f07952cc30d72b3da2ceac222f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bba48baf9ede0cb0a76bd4fa5efa8ab"><td class="memItemLeft" align="right" valign="top"><a id="a3bba48baf9ede0cb0a76bd4fa5efa8ab" name="a3bba48baf9ede0cb0a76bd4fa5efa8ab"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes_crypt_ctr</b> (TKL_SYMMETRY_HANDLE ctx, size_t length, size_t *nc_off, UINT8_T nonce_counter[16], UINT8_T stream_block[16], UINT8_T *input, UINT8_T *output)</td></tr>
+<tr class="separator:a3bba48baf9ede0cb0a76bd4fa5efa8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47898522bdf96d5977707e7f737ce0e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/tal__symmetry_8h.html#ae47898522bdf96d5977707e7f737ce0e">tal_aes_crypt_ecb</a> (TKL_SYMMETRY_HANDLE ctx, INT32_T mode, size_t length, UINT8_T *input, UINT8_T *output)</td></tr>
+<tr class="memdesc:ae47898522bdf96d5977707e7f737ce0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs an AES encryption or decryption operation.  <a href="../../d4/d7c/tal__symmetry_8h.html#ae47898522bdf96d5977707e7f737ce0e">更多...</a><br /></td></tr>
+<tr class="separator:ae47898522bdf96d5977707e7f737ce0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0caed1a0b8fcfc17766f11f3db842ee"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/tal__symmetry_8h.html#aa0caed1a0b8fcfc17766f11f3db842ee">tal_aes_free</a> (TKL_SYMMETRY_HANDLE ctx)</td></tr>
+<tr class="memdesc:aa0caed1a0b8fcfc17766f11f3db842ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function releases and clears the specified AES context.  <a href="../../d4/d7c/tal__symmetry_8h.html#aa0caed1a0b8fcfc17766f11f3db842ee">更多...</a><br /></td></tr>
+<tr class="separator:aa0caed1a0b8fcfc17766f11f3db842ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dd29a851882a5a56d540aa7568ef2b"><td class="memItemLeft" align="right" valign="top"><a id="a00dd29a851882a5a56d540aa7568ef2b" name="a00dd29a851882a5a56d540aa7568ef2b"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes_free_data</b> (IN UINT8_T *data)</td></tr>
+<tr class="separator:a00dd29a851882a5a56d540aa7568ef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f99c6fbdad8ae0f2e70223bf409b1f"><td class="memItemLeft" align="right" valign="top"><a id="a20f99c6fbdad8ae0f2e70223bf409b1f" name="a20f99c6fbdad8ae0f2e70223bf409b1f"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tal_aes_self_test</b> (INT32_T verbose)</td></tr>
+<tr class="separator:a20f99c6fbdad8ae0f2e70223bf409b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1de2c4e5cdb5901998679155e5f364"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/tal__symmetry_8h.html#acd1de2c4e5cdb5901998679155e5f364">tal_aes_setkey_dec</a> (TKL_SYMMETRY_HANDLE ctx, UINT8_T *key, UINT32_T keybits)</td></tr>
+<tr class="memdesc:acd1de2c4e5cdb5901998679155e5f364"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the decryption key.  <a href="../../d4/d7c/tal__symmetry_8h.html#acd1de2c4e5cdb5901998679155e5f364">更多...</a><br /></td></tr>
+<tr class="separator:acd1de2c4e5cdb5901998679155e5f364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc64210f385f5095e1a3883c80c0b25"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25">tal_aes_setkey_enc</a> (TKL_SYMMETRY_HANDLE ctx, UINT8_T *key, UINT32_T keybits)</td></tr>
+<tr class="memdesc:afdc64210f385f5095e1a3883c80c0b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the encryption key.  <a href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25">更多...</a><br /></td></tr>
+<tr class="separator:afdc64210f385f5095e1a3883c80c0b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54484059eca3b91adb0ef1736876cf3"><td class="memItemLeft" align="right" valign="top"><a id="ac54484059eca3b91adb0ef1736876cf3" name="ac54484059eca3b91adb0ef1736876cf3"></a>
+INT32_T&#160;</td><td class="memItemRight" valign="bottom"><b>tal_get_actual_length</b> (IN UINT8_T *dec_data, IN UINT32_T dec_data_len)</td></tr>
+<tr class="separator:ac54484059eca3b91adb0ef1736876cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d895fc9e224e0265d0db33a8c38743"><td class="memItemLeft" align="right" valign="top"><a id="ad5d895fc9e224e0265d0db33a8c38743" name="ad5d895fc9e224e0265d0db33a8c38743"></a>
+UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><b>tal_pkcs7padding_buffer</b> (UINT8_T *p_buffer, UINT32_T length)</td></tr>
+<tr class="separator:ad5d895fc9e224e0265d0db33a8c38743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the symmetry api provide by OS </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-04-22</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a4d22718d065313c2f4901ef7c6500597" name="a4d22718d065313c2f4901ef7c6500597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d22718d065313c2f4901ef7c6500597">&#9670;&nbsp;</a></span>tal_aes_create_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_aes_create_init </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SYMMETRY_HANDLE *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Create&amp;initializes a aes context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctx</td><td>aes handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to create and init aes.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3ca6f07952cc30d72b3da2ceac222f37" name="a3ca6f07952cc30d72b3da2ceac222f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca6f07952cc30d72b3da2ceac222f37">&#9670;&nbsp;</a></span>tal_aes_crypt_cbc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_aes_crypt_cbc </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SYMMETRY_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>iv</em>[16], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function performs an AES-CBC encryption or decryption operation on full blocks. </p>
+<p >It performs the operation defined in the <code>mode</code> parameter (encrypt/decrypt), on the input data buffer defined in the <code>input</code> parameter.</p>
+<p >It can be called as many times as needed, until all the input data is processed. tal_aes_init(), and either <a class="el" href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25" title="This function sets the encryption key.">tal_aes_setkey_enc()</a> or <a class="el" href="../../d4/d7c/tal__symmetry_8h.html#acd1de2c4e5cdb5901998679155e5f364" title="This function sets the decryption key.">tal_aes_setkey_dec()</a> must be called before the first call to this API with the same context.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The AES context to use for encryption or decryption. It must be initialized and bound to a key. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>The AES operation: </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The length of the input data in Bytes. This must be a multiple of the block size (<code>16</code> Bytes). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td>Initialization vector (updated after use). It must be a readable and writeable buffer of <code>16</code> Bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>The buffer holding the input data. It must be readable and of size <code>length</code> Bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output</td><td>The buffer where the output data will be written. It must be writeable and of size <code>length</code> Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This function operates on full blocks, that is, the input size must be a multiple of the AES block size of <code>16</code> Bytes. </dd>
+<dd>
+Upon exit, the content of the IV is updated so that you can call the same function again on the next block(s) of data and get the same result as if it was encrypted in one call. This allows a "streaming" usage. If you need to retain the contents of the IV, you should either save it manually or use the cipher module instead. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae47898522bdf96d5977707e7f737ce0e" name="ae47898522bdf96d5977707e7f737ce0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47898522bdf96d5977707e7f737ce0e">&#9670;&nbsp;</a></span>tal_aes_crypt_ecb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_aes_crypt_ecb </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SYMMETRY_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function performs an AES encryption or decryption operation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The AES context to use for encryption or decryption. It must be initialized and bound to a key. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>The AES operation: </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The length of the input data in Bytes. This must be a multiple of the block size (<code>16</code> Bytes). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>The buffer holding the input data. It must be readable and of size <code>length</code> Bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output</td><td>The buffer where the output data will be written. It must be writeable and of size <code>length</code> Bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This function operates on full blocks, that is, the input size must be a multiple of the AES block size of <code>16</code> Bytes.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa0caed1a0b8fcfc17766f11f3db842ee" name="aa0caed1a0b8fcfc17766f11f3db842ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0caed1a0b8fcfc17766f11f3db842ee">&#9670;&nbsp;</a></span>tal_aes_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_aes_free </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SYMMETRY_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function releases and clears the specified AES context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The AES context to clear.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to release aes.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acd1de2c4e5cdb5901998679155e5f364" name="acd1de2c4e5cdb5901998679155e5f364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1de2c4e5cdb5901998679155e5f364">&#9670;&nbsp;</a></span>tal_aes_setkey_dec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_aes_setkey_dec </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SYMMETRY_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>keybits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the decryption key. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The AES context to which the key should be bound. It must be initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The decryption key.. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keybits</td><td>The size of data passed in bits. Valid options are: <ul>
+<li>
+128 bits </li>
+<li>
+192 bits </li>
+<li>
+256 bits</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to set aes key.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afdc64210f385f5095e1a3883c80c0b25" name="afdc64210f385f5095e1a3883c80c0b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc64210f385f5095e1a3883c80c0b25">&#9670;&nbsp;</a></span>tal_aes_setkey_enc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_aes_setkey_enc </td>
+          <td>(</td>
+          <td class="paramtype">TKL_SYMMETRY_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>keybits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the encryption key. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The AES context to which the key should be bound. It must be initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The encryption key.. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keybits</td><td>The size of data passed in bits. Valid options are: <ul>
+<li>
+128 bits </li>
+<li>
+192 bits </li>
+<li>
+256 bits</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to set aes key.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

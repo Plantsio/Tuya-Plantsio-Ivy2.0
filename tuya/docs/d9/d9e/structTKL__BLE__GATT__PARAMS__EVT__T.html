@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_BLE_GATT_PARAMS_EVT_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_BLE_GATT_PARAMS_EVT_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+TKL_BLE_GATT_PARAMS_EVT_T 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/dd5/structTKL__BLE__GATT__PARAMS__EVT__T__coll__graph.png" border="0" usemap="#aTKL__BLE__GATT__PARAMS__EVT__T_coll__map" alt="Collaboration graph"/></div>
+<map name="aTKL__BLE__GATT__PARAMS__EVT__T_coll__map" id="aTKL__BLE__GATT__PARAMS__EVT__T_coll__map">
+<area shape="rect" title=" " alt="" coords="952,188,1129,229"/>
+<area shape="rect" href="../../db/d3f/structTKL__BLE__GATT__SVC__DISC__TYPE__T.html" title=" " alt="" coords="617,5,807,47"/>
+<area shape="rect" href="../../d6/d4f/structTKL__BLE__GATT__SVC__HANDLE__T.html" title=" " alt="" coords="226,15,453,42"/>
+<area shape="rect" href="../../d1/d7a/structTKL__BLE__UUID__T.html" title="Bluetooth Low Energy UUID type, encapsulates both 16&#45;bit and 128&#45;bit UUIDs." alt="" coords="5,45,139,71"/>
+<area shape="rect" href="../../d0/d40/structTKL__BLE__GATT__CHAR__HANDLE__T.html" title=" " alt="" coords="220,73,459,99"/>
+<area shape="rect" href="../../da/d09/structTKL__BLE__GATT__CHAR__DISC__TYPE__T.html" title=" " alt="" coords="612,71,812,112"/>
+<area shape="rect" href="../../de/d1b/structTKL__BLE__GATT__DESC__DISC__TYPE__T.html" title=" " alt="" coords="613,136,811,177"/>
+<area shape="rect" href="../../df/da3/structTKL__BLE__NOTIFY__RESULT__EVT__T.html" title=" " alt="" coords="619,201,805,243"/>
+<area shape="rect" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html" title=" " alt="" coords="617,267,807,294"/>
+<area shape="rect" href="../../d8/d61/structTKL__BLE__DATA__T.html" title=" " alt="" coords="273,267,406,294"/>
+<area shape="rect" href="../../d1/d29/structTKL__BLE__SUBSCRBE__EVT__T.html" title=" " alt="" coords="611,318,813,345"/>
+<area shape="rect" href="../../d2/dc6/structTKL__BLE__READ__CHAR__EVT__T.html" title=" " alt="" coords="607,369,817,395"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a39b2991cf7f26776be66e28120de6563"><td class="memItemLeft" align="right" valign="top">USHORT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a39b2991cf7f26776be66e28120de6563">conn_handle</a></td></tr>
+<tr class="separator:a39b2991cf7f26776be66e28120de6563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbcba957e8a9fb3a11753a84e4f57cf"><td class="memItemLeft" ><a id="a9fbcba957e8a9fb3a11753a84e4f57cf" name="a9fbcba957e8a9fb3a11753a84e4f57cf"></a>
+union {</td></tr>
+<tr class="memitem:a0ab8982b630de2fa263715751bdf61a2"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../da/d09/structTKL__BLE__GATT__CHAR__DISC__TYPE__T.html">TKL_BLE_GATT_CHAR_DISC_TYPE_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#ac7066d4112456a911bc40a747350dfd0">char_disc</a></td></tr>
+<tr class="separator:a0ab8982b630de2fa263715751bdf61a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8181260f8172825ea273c3d94d6483"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../d2/dc6/structTKL__BLE__READ__CHAR__EVT__T.html">TKL_BLE_READ_CHAR_EVT_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#ad7d6bbcb14421cdffa8c60cd6d5b338a">char_read</a></td></tr>
+<tr class="separator:acd8181260f8172825ea273c3d94d6483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654bac6e60c17ea6db4fb4d3d5cc906e"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html">TKL_BLE_DATA_REPORT_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#afd8c23a78497f003ce32a7328c318c37">data_read</a></td></tr>
+<tr class="separator:a654bac6e60c17ea6db4fb4d3d5cc906e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3ef37f45815c706df78e21b71d12da"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html">TKL_BLE_DATA_REPORT_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a2c0cc0c8eda9fe7d6fc7d6d1b7ec1128">data_report</a></td></tr>
+<tr class="separator:a3d3ef37f45815c706df78e21b71d12da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e1ffda38ce7a118b2d2d5f2e10fd5d"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../de/d1b/structTKL__BLE__GATT__DESC__DISC__TYPE__T.html">TKL_BLE_GATT_DESC_DISC_TYPE_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#aacdf09fde99d6925b63d80c748f4a708">desc_disc</a></td></tr>
+<tr class="separator:a78e1ffda38ce7a118b2d2d5f2e10fd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126d7542c75387b39623f1a2150ac729"><td class="memItemLeft" >&#160;&#160;&#160;USHORT_T&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#aaaa140a91ed68da284c3c1af5f0cc774">exchange_mtu</a></td></tr>
+<tr class="separator:a126d7542c75387b39623f1a2150ac729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c10bb61ec91002bcc9fa5094c3c4a7"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../df/da3/structTKL__BLE__NOTIFY__RESULT__EVT__T.html">TKL_BLE_NOTIFY_RESULT_EVT_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a9d1b42a4b7e6a9e6432d3d3ce381ce24">notify_result</a></td></tr>
+<tr class="separator:ae8c10bb61ec91002bcc9fa5094c3c4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f77e5933ae9bdc2508e94f29e111d0"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../d1/d29/structTKL__BLE__SUBSCRBE__EVT__T.html">TKL_BLE_SUBSCRBE_EVT_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a16dc0ca061beee1cfaa9f9cd2e62456f">subscribe</a></td></tr>
+<tr class="separator:a49f77e5933ae9bdc2508e94f29e111d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4c0fb8ae54846b25ccc7a13da60504"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../db/d3f/structTKL__BLE__GATT__SVC__DISC__TYPE__T.html">TKL_BLE_GATT_SVC_DISC_TYPE_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#ac57c43525d9f0f4df78d4d15c0d47489">svc_disc</a></td></tr>
+<tr class="separator:a6b4c0fb8ae54846b25ccc7a13da60504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa018a772811d77ca0b09162cb1522299"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html">TKL_BLE_DATA_REPORT_T</a>&#160;&#160;&#160;<a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a7ceeb1046d66721fb9b9a88c95dcb4ce">write_report</a></td></tr>
+<tr class="separator:aa018a772811d77ca0b09162cb1522299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbcba957e8a9fb3a11753a84e4f57cf"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>gatt_event</b></td></tr>
+<tr class="separator:a9fbcba957e8a9fb3a11753a84e4f57cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505a91fef15fbc5f257235467a3bf828"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a505a91fef15fbc5f257235467a3bf828">result</a></td></tr>
+<tr class="separator:a505a91fef15fbc5f257235467a3bf828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e99153d03350424fa8e071b46bf5e73"><td class="memItemLeft" align="right" valign="top">TKL_BLE_GATT_EVT_TYPE_E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9e/structTKL__BLE__GATT__PARAMS__EVT__T.html#a4e99153d03350424fa8e071b46bf5e73">type</a></td></tr>
+<tr class="separator:a4e99153d03350424fa8e071b46bf5e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="ac7066d4112456a911bc40a747350dfd0" name="ac7066d4112456a911bc40a747350dfd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7066d4112456a911bc40a747350dfd0">&#9670;&nbsp;</a></span>char_disc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d09/structTKL__BLE__GATT__CHAR__DISC__TYPE__T.html">TKL_BLE_GATT_CHAR_DISC_TYPE_T</a> TKL_BLE_GATT_PARAMS_EVT_T::char_disc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Discovery Specific Characteristic </p>
+
+</div>
+</div>
+<a id="ad7d6bbcb14421cdffa8c60cd6d5b338a" name="ad7d6bbcb14421cdffa8c60cd6d5b338a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d6bbcb14421cdffa8c60cd6d5b338a">&#9670;&nbsp;</a></span>char_read</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc6/structTKL__BLE__READ__CHAR__EVT__T.html">TKL_BLE_READ_CHAR_EVT_T</a> TKL_BLE_GATT_PARAMS_EVT_T::char_read</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >read char event, used with TKL_BLE_GATT_EVT_READ_CHAR_VALUE </p>
+
+</div>
+</div>
+<a id="a39b2991cf7f26776be66e28120de6563" name="a39b2991cf7f26776be66e28120de6563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b2991cf7f26776be66e28120de6563">&#9670;&nbsp;</a></span>conn_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT_T TKL_BLE_GATT_PARAMS_EVT_T::conn_handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Connection Handle </p>
+
+</div>
+</div>
+<a id="afd8c23a78497f003ce32a7328c318c37" name="afd8c23a78497f003ce32a7328c318c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8c23a78497f003ce32a7328c318c37">&#9670;&nbsp;</a></span>data_read</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html">TKL_BLE_DATA_REPORT_T</a> TKL_BLE_GATT_PARAMS_EVT_T::data_read</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >After we do read attr in central mode, we will get the callback </p>
+
+</div>
+</div>
+<a id="a2c0cc0c8eda9fe7d6fc7d6d1b7ec1128" name="a2c0cc0c8eda9fe7d6fc7d6d1b7ec1128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0cc0c8eda9fe7d6fc7d6d1b7ec1128">&#9670;&nbsp;</a></span>data_report</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html">TKL_BLE_DATA_REPORT_T</a> TKL_BLE_GATT_PARAMS_EVT_T::data_report</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This value can be used with TKL_BLE_GATT_EVT_NOTIFY_INDICATE_RX </p>
+
+</div>
+</div>
+<a id="aacdf09fde99d6925b63d80c748f4a708" name="aacdf09fde99d6925b63d80c748f4a708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacdf09fde99d6925b63d80c748f4a708">&#9670;&nbsp;</a></span>desc_disc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d1b/structTKL__BLE__GATT__DESC__DISC__TYPE__T.html">TKL_BLE_GATT_DESC_DISC_TYPE_T</a> TKL_BLE_GATT_PARAMS_EVT_T::desc_disc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Discovery Specific Descriptors </p>
+
+</div>
+</div>
+<a id="aaaa140a91ed68da284c3c1af5f0cc774" name="aaaa140a91ed68da284c3c1af5f0cc774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa140a91ed68da284c3c1af5f0cc774">&#9670;&nbsp;</a></span>exchange_mtu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT_T TKL_BLE_GATT_PARAMS_EVT_T::exchange_mtu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This value can be used with TKL_BLE_GATT_EVT_MTU_REQUEST and TKL_BLE_GATT_EVT_MTU_RSP </p>
+
+</div>
+</div>
+<a id="a9d1b42a4b7e6a9e6432d3d3ce381ce24" name="a9d1b42a4b7e6a9e6432d3d3ce381ce24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1b42a4b7e6a9e6432d3d3ce381ce24">&#9670;&nbsp;</a></span>notify_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/da3/structTKL__BLE__NOTIFY__RESULT__EVT__T.html">TKL_BLE_NOTIFY_RESULT_EVT_T</a> TKL_BLE_GATT_PARAMS_EVT_T::notify_result</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This value can be used with TKL_BLE_GATT_EVT_NOTIFY_TX </p>
+
+</div>
+</div>
+<a id="a505a91fef15fbc5f257235467a3bf828" name="a505a91fef15fbc5f257235467a3bf828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505a91fef15fbc5f257235467a3bf828">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T TKL_BLE_GATT_PARAMS_EVT_T::result</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Will Refer to HOST STACK Error Code </p>
+
+</div>
+</div>
+<a id="a16dc0ca061beee1cfaa9f9cd2e62456f" name="a16dc0ca061beee1cfaa9f9cd2e62456f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dc0ca061beee1cfaa9f9cd2e62456f">&#9670;&nbsp;</a></span>subscribe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d29/structTKL__BLE__SUBSCRBE__EVT__T.html">TKL_BLE_SUBSCRBE_EVT_T</a> TKL_BLE_GATT_PARAMS_EVT_T::subscribe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >ccc callback event, used with TKL_BLE_GATT_EVT_SUBSCRIBE </p>
+
+</div>
+</div>
+<a id="ac57c43525d9f0f4df78d4d15c0d47489" name="ac57c43525d9f0f4df78d4d15c0d47489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57c43525d9f0f4df78d4d15c0d47489">&#9670;&nbsp;</a></span>svc_disc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d3f/structTKL__BLE__GATT__SVC__DISC__TYPE__T.html">TKL_BLE_GATT_SVC_DISC_TYPE_T</a> TKL_BLE_GATT_PARAMS_EVT_T::svc_disc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Discovery All Service </p>
+
+</div>
+</div>
+<a id="a4e99153d03350424fa8e071b46bf5e73" name="a4e99153d03350424fa8e071b46bf5e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e99153d03350424fa8e071b46bf5e73">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TKL_BLE_GATT_EVT_TYPE_E TKL_BLE_GATT_PARAMS_EVT_T::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Gatt Event </p>
+
+</div>
+</div>
+<a id="a7ceeb1046d66721fb9b9a88c95dcb4ce" name="a7ceeb1046d66721fb9b9a88c95dcb4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ceeb1046d66721fb9b9a88c95dcb4ce">&#9670;&nbsp;</a></span>write_report</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d84/structTKL__BLE__DATA__REPORT__T.html">TKL_BLE_DATA_REPORT_T</a> TKL_BLE_GATT_PARAMS_EVT_T::write_report</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This value can be used with TKL_BLE_GATT_EVT_WRITE_REQ </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/bluetooth/include/<a class="el" href="../../db/d92/tkl__bluetooth__def_8h_source.html">tkl_bluetooth_def.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

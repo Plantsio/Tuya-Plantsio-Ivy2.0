@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/adc/include/tkl_adc.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_4fb777f89346ee2e187041000181b51d.html">adc</a></li><li class="navelem"><a class="el" href="../../dir_52bea633e390ebd6da25a2c349f66abc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_adc.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the adc api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_adc.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d93/tkl__adc_8h__incl.png" border="0" usemap="#ainclude_2adapter_2adc_2include_2tkl__adc_8h" alt=""/></div>
+<map name="ainclude_2adapter_2adc_2include_2tkl__adc_8h" id="ainclude_2adapter_2adc_2include_2tkl__adc_8h">
+<area shape="rect" title="Common process &#45; adapter the adc api" alt="" coords="367,5,518,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d7a/tkl__adc_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa728ffcad85ef396b799f8eb8e31726e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#aa728ffcad85ef396b799f8eb8e31726e">tkl_adc_deinit</a> (TUYA_ADC_NUM_E port_num)</td></tr>
+<tr class="memdesc:aa728ffcad85ef396b799f8eb8e31726e"><td class="mdescLeft">&#160;</td><td class="mdescRight">adc deinit  <a href="../../d2/d7a/tkl__adc_8h.html#aa728ffcad85ef396b799f8eb8e31726e">更多...</a><br /></td></tr>
+<tr class="separator:aa728ffcad85ef396b799f8eb8e31726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf73c7dcd6dc0b1bfb553de6719c510"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#a3bf73c7dcd6dc0b1bfb553de6719c510">tkl_adc_init</a> (TUYA_ADC_NUM_E port_num, <a class="el" href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html">TUYA_ADC_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:a3bf73c7dcd6dc0b1bfb553de6719c510"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya kernel adc init  <a href="../../d2/d7a/tkl__adc_8h.html#a3bf73c7dcd6dc0b1bfb553de6719c510">更多...</a><br /></td></tr>
+<tr class="separator:a3bf73c7dcd6dc0b1bfb553de6719c510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff1fcc1164104fe8dc43a348a40f860"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#a7ff1fcc1164104fe8dc43a348a40f860">tkl_adc_read_data</a> (TUYA_ADC_NUM_E port_num, INT32_T *buff, UINT16_T len)</td></tr>
+<tr class="memdesc:a7ff1fcc1164104fe8dc43a348a40f860"><td class="mdescLeft">&#160;</td><td class="mdescRight">adc read  <a href="../../d2/d7a/tkl__adc_8h.html#a7ff1fcc1164104fe8dc43a348a40f860">更多...</a><br /></td></tr>
+<tr class="separator:a7ff1fcc1164104fe8dc43a348a40f860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d12e0f8967044af5d220c0aa18fa3c7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#a6d12e0f8967044af5d220c0aa18fa3c7">tkl_adc_read_single_channel</a> (TUYA_ADC_NUM_E port_num, UINT8_T ch_id, INT32_T *data)</td></tr>
+<tr class="memdesc:a6d12e0f8967044af5d220c0aa18fa3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">read single channel  <a href="../../d2/d7a/tkl__adc_8h.html#a6d12e0f8967044af5d220c0aa18fa3c7">更多...</a><br /></td></tr>
+<tr class="separator:a6d12e0f8967044af5d220c0aa18fa3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffea5e178123d436828c96a82a1fe36"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#a3ffea5e178123d436828c96a82a1fe36">tkl_adc_read_voltage</a> (TUYA_ADC_NUM_E port_num, INT32_T *buff, UINT16_T len)</td></tr>
+<tr class="memdesc:a3ffea5e178123d436828c96a82a1fe36"><td class="mdescLeft">&#160;</td><td class="mdescRight">read voltage  <a href="../../d2/d7a/tkl__adc_8h.html#a3ffea5e178123d436828c96a82a1fe36">更多...</a><br /></td></tr>
+<tr class="separator:a3ffea5e178123d436828c96a82a1fe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d045eb4ad74ef0c3e152df6d9b4dca6"><td class="memItemLeft" align="right" valign="top">UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#a8d045eb4ad74ef0c3e152df6d9b4dca6">tkl_adc_ref_voltage_get</a> (TUYA_ADC_NUM_E port_num)</td></tr>
+<tr class="memdesc:a8d045eb4ad74ef0c3e152df6d9b4dca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get adc reference voltage  <a href="../../d2/d7a/tkl__adc_8h.html#a8d045eb4ad74ef0c3e152df6d9b4dca6">更多...</a><br /></td></tr>
+<tr class="separator:a8d045eb4ad74ef0c3e152df6d9b4dca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d4f2ea6d941ee0dd2f6e15d5ad86f5"><td class="memItemLeft" align="right" valign="top">INT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#ad7d4f2ea6d941ee0dd2f6e15d5ad86f5">tkl_adc_temperature_get</a> (VOID_T)</td></tr>
+<tr class="memdesc:ad7d4f2ea6d941ee0dd2f6e15d5ad86f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">adc get temperature  <a href="../../d2/d7a/tkl__adc_8h.html#ad7d4f2ea6d941ee0dd2f6e15d5ad86f5">更多...</a><br /></td></tr>
+<tr class="separator:ad7d4f2ea6d941ee0dd2f6e15d5ad86f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa168065018f09ff3c77ed3762ecf2d76"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7a/tkl__adc_8h.html#aa168065018f09ff3c77ed3762ecf2d76">tkl_adc_width_get</a> (TUYA_ADC_NUM_E port_num)</td></tr>
+<tr class="memdesc:aa168065018f09ff3c77ed3762ecf2d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">get adc width  <a href="../../d2/d7a/tkl__adc_8h.html#aa168065018f09ff3c77ed3762ecf2d76">更多...</a><br /></td></tr>
+<tr class="separator:aa168065018f09ff3c77ed3762ecf2d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the adc api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved.</dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-03-24</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aa728ffcad85ef396b799f8eb8e31726e" name="aa728ffcad85ef396b799f8eb8e31726e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa728ffcad85ef396b799f8eb8e31726e">&#9670;&nbsp;</a></span>tkl_adc_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_adc_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adc deinit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>adc port number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3bf73c7dcd6dc0b1bfb553de6719c510" name="a3bf73c7dcd6dc0b1bfb553de6719c510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf73c7dcd6dc0b1bfb553de6719c510">&#9670;&nbsp;</a></span>tkl_adc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_adc_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html">TUYA_ADC_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya kernel adc init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>adc port number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>adc config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7ff1fcc1164104fe8dc43a348a40f860" name="a7ff1fcc1164104fe8dc43a348a40f860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff1fcc1164104fe8dc43a348a40f860">&#9670;&nbsp;</a></span>tkl_adc_read_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_adc_read_data </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adc read </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>adc port number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buff</td><td>points to the list of data read from the ADC register </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buff len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6d12e0f8967044af5d220c0aa18fa3c7" name="a6d12e0f8967044af5d220c0aa18fa3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d12e0f8967044af5d220c0aa18fa3c7">&#9670;&nbsp;</a></span>tkl_adc_read_single_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_adc_read_single_channel </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read single channel </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>adc port number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>channel id in one adc unit </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buff</td><td>convert result buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3ffea5e178123d436828c96a82a1fe36" name="a3ffea5e178123d436828c96a82a1fe36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffea5e178123d436828c96a82a1fe36">&#9670;&nbsp;</a></span>tkl_adc_read_voltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_adc_read_voltage </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read voltage </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>adc port number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buff</td><td>points to the list of calculate voltage,bat : mv </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buff len </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8d045eb4ad74ef0c3e152df6d9b4dca6" name="a8d045eb4ad74ef0c3e152df6d9b4dca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d045eb4ad74ef0c3e152df6d9b4dca6">&#9670;&nbsp;</a></span>tkl_adc_ref_voltage_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32_T tkl_adc_ref_voltage_get </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get adc reference voltage </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>adc reference voltage(bat: mv) </dd></dl>
+
+</div>
+</div>
+<a id="ad7d4f2ea6d941ee0dd2f6e15d5ad86f5" name="ad7d4f2ea6d941ee0dd2f6e15d5ad86f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d4f2ea6d941ee0dd2f6e15d5ad86f5">&#9670;&nbsp;</a></span>tkl_adc_temperature_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT32_T tkl_adc_temperature_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adc get temperature </p>
+<dl class="section return"><dt>返回</dt><dd>temperature(bat: 'C) </dd></dl>
+
+</div>
+</div>
+<a id="aa168065018f09ff3c77ed3762ecf2d76" name="aa168065018f09ff3c77ed3762ecf2d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa168065018f09ff3c77ed3762ecf2d76">&#9670;&nbsp;</a></span>tkl_adc_width_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T tkl_adc_width_get </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_ADC_NUM_E&#160;</td>
+          <td class="paramname"><em>port_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get adc width </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_num</td><td>adc port number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>adc width </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

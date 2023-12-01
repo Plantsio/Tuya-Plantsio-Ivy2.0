@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: OTA</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">OTA </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >涂鸦 <code>TuyaOS</code> 支持对 <code>Powered by Tuya</code> 设备的固件进行升级。在涂鸦IoT平台上创建的产品，可以上传固件、绑定升级通道 <code>OTA channel</code> ，每一个通道对应着设备上的一个可以进行版本升级的固件或者是文件、配置，开发者通过对该固件、文件或配置进行配置升级，然后推送到设备上。设备在接收到升级通知的时候，会去涂鸦IoT平台上获取对应通道所绑定的升级版本固件、文件或者配置，在本地进行校验、写入更新，然后上报新的版本号，完成升级过程。</p>
+<p >涂鸦 <code>TuyaOS</code> 的升级操作主要分为以下几种类型：</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">升级类型   </th><th class="markdownTableHeadNone">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">静默升级   </td><td class="markdownTableBodyNone">设备在启动之时以及每运行6小时，都会自动向IoT平台请求检测是否有静默升级任务。<br  />
+如果存在静默升级任务，则进入升级流程进行升级；<br  />
+如果不存在静默升级任务，则再等待6个小时重新检测。<br  />
+静默升级中打开设备面板，会有进度框显示，并且无法操作设备。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">提醒升级   </td><td class="markdownTableBodyNone">用户手机APP首次打开设备面板时，会收到升级提醒弹框，可以选择升级或者不升级。<br  />
+如果用户选择升级，则会推送升级任务到设备，设备并获取升级任务，进入升级流程，并上报升级进度。设备面板显示升级进度，并且无法操作设备。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">检测升级   </td><td class="markdownTableBodyNone">用户手机APP打开设备面板，点击点击右上角进入设备信息界面，检测设备固件版本，主动更新。<br  />
+如果检测到有新的固件版本，则会推送升级任务到设备，设备并获取升级任务，进入升级流程，并上报升级进度。设备面板显示升级进度，并且无法操作设备。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">强制升级   </td><td class="markdownTableBodyNone">用户手机APP首次打开设备面板时，会收到升级提醒弹框，只有确定可以选择，无法取消。<br  />
+用户选择升级，则会推送升级任务到设备，设备并获取升级任务，进入升级流程，并上报升级进度。设备面板显示升级进度，并且无法操作设备。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md83"></a>
+OTA Channel</h1>
+<p ><code>OTA Channel</code> 是涂鸦 <code>TuyaOS</code> 对设备内部可以进行升级的固件、文件或者配置进行升级通道绑定的一种机制，主要分为两种，分别为系统 <code>OTA channel</code> 和扩展 <code>OTA Channel</code>。</p>
+<ul>
+<li>系统 <code>OTA channel</code>：涂鸦 <code>TuyaOS</code> 使用的，固化的一些通道，用于指定类型的固件升级使用， <code>DEV_NM_ATH_SNGL</code>是主联网固件，即当前模组的固件；<code>DEV_NM_NOT_ATH_SNGL</code>是<code>MCU</code>固件。</li>
+<li>扩展 <code>OTA Channel</code>：涂鸦 <code>TuyaOS</code> 定义的，开发者可以根据自己的实际需求进行规划使用，在使用的时候，需要在初始化上报<code><a class="el" href="../../d9/d56/structGW__ATTACH__ATTR__T.html" title="Definition of attach moudule attribute">GW_ATTACH_ATTR_T</a></code>，升级的时候在平台上配置对应<code>OTA Channel</code>的升级固件。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">名称   </th><th class="markdownTableHeadNone">通道号   </th><th class="markdownTableHeadNone">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>DEV_NM_ATH_SNGL</code>   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">系统 <code>OTA Channel</code>，主联网固件升级通道    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>DEV_BLE_SNGL</code>   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">系统 <code>OTA Channel</code>，蓝牙固件升级通道    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>DEV_ZB_SNGL</code>   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">系统 <code>OTA Channel</code>，ZigBee固件升级通道    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>DEV_NM_NOT_ATH_SNGL</code>   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">系统 <code>OTA Channel</code>，MCU固件升级通道    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>DEV_ATTACH_MOD_x</code>   </td><td class="markdownTableBodyNone">&gt;=10   </td><td class="markdownTableBodyNone">扩展 <code>OTA Channel</code>，开发者自定义的升级通道   </td></tr>
+</table>
+<p >在升级过程中，涂鸦 <code>TuyaOS</code> 在获取到升级信息之后，会对升级通道进行一个检查。如果升级通道是主联网固件升级通道，即 <code>DEV_NM_ATH_SNGL</code>，涂鸦 <code>TuyaOS</code> 会自行处理；如果升级通道是其他的系统 <code>OTA Channel</code> 或者是扩展的 <code>OTA Channel</code>，则会调用开发者在初始化时候提供的 <code><a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html" title="Definition of gateway callback funtions">TY_IOT_CBS_S</a></code> 里的回调函数 <code>gw_ug_cb</code>。在这个回调函数里，开发者可以根据里面的 <code>tp</code> 来判断是什么样的 <code>OTA Channel</code>，然后进行区分处理。</p>
+<p >一些客户对主联网固件的升级也有特殊的定制需求，可以通过一个接口 <code>tuya_svc_upgrade_register_pre_cb</code> 进行定制，只要注册一个 <code>NULL</code> 指针即可。</p>
+<p >除了回调函数之外，OTA的其他功能不需要用于进行编码开发，涂鸦 <code>TuyaOS</code> 直接提供相关的能力。</p>
+<h1><a class="anchor" id="autotoc_md84"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md85"></a>
+升级前置通知</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">typedef</span> INT_T(*<a class="code hl_typedef" href="../../de/d6b/tuya__svc__upgrade_8h.html#aae747ca2168748edc175782d2ffdab72">DEV_UPGRADE_INFORM_CB</a>)(CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw);</div>
+<div class="ttc" id="astructFW__UG__S_html"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a></div><div class="ttdoc">tuya sdk ota firmware info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:589</div></div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_aae747ca2168748edc175782d2ffdab72"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#aae747ca2168748edc175782d2ffdab72">DEV_UPGRADE_INFORM_CB</a></div><div class="ttdeci">INT_T(* DEV_UPGRADE_INFORM_CB)(CONST FW_UG_S *fw)</div><div class="ttdoc">Handler of GW upgrade inform</div><div class="ttdef"><b>Definition:</b> tuya_svc_upgrade.h:76</div></div>
+</div><!-- fragment --><p> 在接受到升级推送消息之后，需要确认当前设备是否满足升级条件，如果不满足条件，如处于特别的繁忙、低电量等状态，可以不进行升级操作。此接口是在设备初始化提供的一组回调中，如果不提供则认为不需要做通知，默认可以进行升级。</p>
+<h2><a class="anchor" id="autotoc_md86"></a>
+升级通知</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">typedef</span> INT_T(*<a class="code hl_typedef" href="../../de/d6b/tuya__svc__upgrade_8h.html#a91f0c4279d79514c73de71a7f772f276">SUBDEV_UPGRADE_INFORM_CB</a>)(CONST CHAR_T *dev_id, CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw);</div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_a91f0c4279d79514c73de71a7f772f276"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#a91f0c4279d79514c73de71a7f772f276">SUBDEV_UPGRADE_INFORM_CB</a></div><div class="ttdeci">INT_T(* SUBDEV_UPGRADE_INFORM_CB)(CONST CHAR_T *dev_id, CONST FW_UG_S *fw)</div><div class="ttdoc">Handler of sub-device upgrade inform</div><div class="ttdef"><b>Definition:</b> tuya_svc_upgrade.h:88</div></div>
+</div><!-- fragment --><p> 在确认可以进入升级之后，会从云端获取对应的升级信息，如果升级的内容是主联网固件<code>DEV_NM_ATH_SNGL</code>，会自行处理，如果是其他的，如<code>DEV_NM_NOT_ATH_SNGL</code>，则通过此回调来通知应用层，进行相应的准备之后，在此接口内启动升级。此接口是在设备初始化提供的一组回调中，如果不提供则认为不需支持模组固件之外的对象<code>OTA</code>。</p>
+<h2><a class="anchor" id="autotoc_md87"></a>
+启动升级</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../de/d6b/tuya__svc__upgrade_8h.html#a8b7c1e393e0f8f2f1bbefe0cd29f2231">tuya_svc_upgrade_start</a>(CONST CHAR_T *dev_id,</div>
+<div class="line">                                   CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw,</div>
+<div class="line">                                   CONST GET_FILE_DATA_CB get_file_cb,</div>
+<div class="line">                                   VOID *pri_data,</div>
+<div class="line">                                   CONST UPGRADE_NOTIFY_CB upgrd_nofity_cb,</div>
+<div class="line">                                   CONST BOOL_T upload_upgrade_percent,</div>
+<div class="line">                                   CONST UINT_T download_buf_size);</div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_a8b7c1e393e0f8f2f1bbefe0cd29f2231"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#a8b7c1e393e0f8f2f1bbefe0cd29f2231">tuya_svc_upgrade_start</a></div><div class="ttdeci">OPERATE_RET tuya_svc_upgrade_start(CONST CHAR_T *dev_id, CONST FW_UG_S *fw, CONST GET_FILE_DATA_CB get_file_cb, VOID *pri_data, CONST UPGRADE_NOTIFY_CB upgrd_nofity_cb, CONST BOOL_T upload_upgrade_percent, CONST UINT_T download_buf_size)</div><div class="ttdoc">Start to download the specific firmware</div></div>
+</div><!-- fragment --><p >此接口用于在开发者提供的 <code>gw_ug_cb</code> 里启动OTA流程。接口里需要提供 <code>get_file_cb</code>，用于获取文件内容写入flash，<code>upgrd_notify_cb</code> 用于通知升级结束或者失败。</p>
+<h2><a class="anchor" id="autotoc_md88"></a>
+注册升级回调pre_cb</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">VOID <a class="code hl_function" href="../../de/d6b/tuya__svc__upgrade_8h.html#a10658287fa62d991e032df4a5d6f0236">tuya_svc_upgrade_register_pre_cb</a>(<a class="code hl_typedef" href="../../de/d6b/tuya__svc__upgrade_8h.html#a0b5d43efcd10ee5127f4f0ef01bdc23f">DEV_UPGRADE_PRE_INFORM_CB</a> pre_ug_cb);</div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_a0b5d43efcd10ee5127f4f0ef01bdc23f"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#a0b5d43efcd10ee5127f4f0ef01bdc23f">DEV_UPGRADE_PRE_INFORM_CB</a></div><div class="ttdeci">VOID(* DEV_UPGRADE_PRE_INFORM_CB)(BOOL_T *handled, CONST FW_UG_S *fw)</div><div class="ttdoc">Handler of pre-process inform</div><div class="ttdef"><b>Definition:</b> tuya_svc_upgrade.h:81</div></div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_a10658287fa62d991e032df4a5d6f0236"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#a10658287fa62d991e032df4a5d6f0236">tuya_svc_upgrade_register_pre_cb</a></div><div class="ttdeci">VOID tuya_svc_upgrade_register_pre_cb(DEV_UPGRADE_PRE_INFORM_CB pre_ug_cb)</div><div class="ttdoc">Register pre-precess handler to replace the default one</div></div>
+</div><!-- fragment --><p >此接口用于注册升级回调之前的特殊操作，涂鸦 <code>TuyaOS</code> 内部默认有一个 <code>pre_cb</code>，在内部的 <code>pre_cb</code> 里，涂鸦 <code>TuyaOS</code> 处理了主联网固件（模组自身固件）的升级逻辑。如果需要关闭此逻辑，把主联网固件（模组自身固件）的升级也放到开发者在初始化时候提供的回调函数 <code>gw_ug_cb</code> 里处理，可以通过 <code>tuya_svc_upgrade_register_pre_cb(NULL)</code> 来替换涂鸦 <code>TuyaOS</code> 内部的默认 <code>pre_cb</code>；如果希望使用一个新的<code>handler</code>来处理主联网固件（模组自身固件）可以通过 <code>tuya_svc_upgrade_register_pre_cb(new_pre_ug_cb)</code> 来替换涂鸦 <code>TuyaOS</code> 内部的默认 <code>pre_cb</code>。</p>
+<h2><a class="anchor" id="autotoc_md89"></a>
+非主联网固件升级结果上报</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../de/d6b/tuya__svc__upgrade_8h.html#a1e9d10125a4d20b1400c5588144b1847">tuya_svc_upgrade_result_report</a>(CONST CHAR_T *dev_id, CONST DEV_TYPE_T type, CONST <span class="keywordtype">int</span> result);</div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_a1e9d10125a4d20b1400c5588144b1847"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#a1e9d10125a4d20b1400c5588144b1847">tuya_svc_upgrade_result_report</a></div><div class="ttdeci">OPERATE_RET tuya_svc_upgrade_result_report(CONST CHAR_T *dev_id, CONST DEV_TYPE_T type, CONST int result)</div><div class="ttdoc">Sync dowload result to cloud</div></div>
+</div><!-- fragment --><p >此接口用于固件升级结果上报，用于处理非主联网固件升级结果，如果不调用此接口，云端和<code>APP</code>通过超时时间也可以得到升级的结果，但需要较长时间的等待。</p>
+<h2><a class="anchor" id="autotoc_md90"></a>
+非主联网固件拒绝升级</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../de/d6b/tuya__svc__upgrade_8h.html#aab1e0e1dc68f78ffe9818464574e8252">tuya_svc_upgrade_refuse</a>(CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, CONST CHAR_T *dev_id);</div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html_aab1e0e1dc68f78ffe9818464574e8252"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html#aab1e0e1dc68f78ffe9818464574e8252">tuya_svc_upgrade_refuse</a></div><div class="ttdeci">OPERATE_RET tuya_svc_upgrade_refuse(CONST FW_UG_S *fw, CONST CHAR_T *dev_id)</div><div class="ttdoc">Refuse to download the specific firmware</div></div>
+</div><!-- fragment --><p >此接口用于固件升级过程中强制停止，告知云端和<code>APP</code>升级失败，并将设备状态重置为<code>EXT_NORMAL_S</code>状态。在强制停止升级的时候，也需要在应用侧停止升级下载逻辑，以避免影响其他功能。主联网固件升级结果，不需要应用层处理。</p>
+<h1><a class="anchor" id="autotoc_md91"></a>
+使用示例</h1>
+<p >此示例实现了<code>MCU</code>固件的<code>OTA</code>处理逻辑，忽略了其他<code><a class="el" href="../../d4/da4/structTY__IOT__CBS__S.html" title="Definition of gateway callback funtions">TY_IOT_CBS_S</a></code>回调函数的实现。 </p><div class="fragment"><div class="line">STATIC <a class="code hl_struct" href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html">TUYA_UART_BASE_CFG_T</a> sg_uart_cfg = {</div>
+<div class="line">    .baudrate = 115200,</div>
+<div class="line">    .databits = TUYA_UART_DATA_LEN_8BIT,</div>
+<div class="line">    .flowctrl = TUYA_UART_FLOWCTRL_NONE,</div>
+<div class="line">    .parity = TUYA_UART_PARITY_TYPE_NONE,</div>
+<div class="line">    .stopbits = TUYA_UART_STOP_LEN_1BIT</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">STATIC <a class="code hl_struct" href="../../d0/d90/structTHREAD__CFG__T.html">THREAD_CFG_T</a> sg_task = {</div>
+<div class="line">    .priority = TASK_OTA_PRIORITY,</div>
+<div class="line">    .stackDepth = TASK_OTA_SIZE,</div>
+<div class="line">    .thrdname = <span class="stringliteral">&quot;ota&quot;</span></div>
+<div class="line">};</div>
+<div class="line">STATIC THREAD_HANDLE sg_ota_handle;</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define tuya_iot_upgrade_gw(fw, get_file_cb, upgrd_nofity_cb, pri_data) \</span></div>
+<div class="line"><span class="preprocessor">    tuya_iot_upgrade_gw_notify(fw, get_file_cb, upgrd_nofity_cb, pri_data, TRUE, 0)</span></div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET get_file_data_cb(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST UINT_T total_len, IN CONST UINT_T offset,</div>
+<div class="line">                                IN CONST BYTE_T *data, IN CONST UINT_T len, OUT UINT_T *remain_len, IN PVOID_T pri_data)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;--------------Rev File Data-----------&quot;</span>);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;Total len:%u&quot;</span>, total_len);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;Offset:%u , len:%u&quot;</span>, offset, len);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/* send data to mcu*/</span></div>
+<div class="line">    <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">tkl_uart_write</a>(UART_NUM_0, data, len);</div>
+<div class="line">    *remain_len = 0;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> OPRT_OK;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">VOID upgrade_notify_cb(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST INT_T download_result, IN PVOID_T pri_data)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;------------------upgrade notify callback-------------------&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">if</span> (download_result != 0) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;file download fail!&quot;</span>);</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        PR_DEBUG(<span class="stringliteral">&quot;file download success!&quot;</span>);</div>
+<div class="line">        <span class="comment">/*report result*/</span></div>
+<div class="line">        <a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a62a31e021716e3f1f27eb0e11ee3d586">tuya_iot_dev_upgd_result_report</a>(NULL, DEV_NM_NOT_ATH_SNGL, TUS_UPGRADE_SUCCESS);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">STATIC INT_T __soc_dev_rev_upgrade_info_cb(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET op_ret = OPRT_OK;</div>
+<div class="line">    UCHAR_T * fd_version = NULL;</div>
+<div class="line">    UCHAR_T * fd_upgrade = NULL;</div>
+<div class="line"> </div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;MCU Rev Upgrade Info&quot;</span>);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;fw-&gt;tp:%d&quot;</span>, fw-&gt;tp);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;fw-&gt;fw_url:%s&quot;</span>, fw-&gt;fw_url);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;fw-&gt;fw_hmac:%s&quot;</span>, fw-&gt;fw_hmac);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;fw-&gt;sw_ver:%s&quot;</span>, fw-&gt;sw_ver);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;fw-&gt;file_size:%u&quot;</span>, fw-&gt;file_size);</div>
+<div class="line">    <span class="keywordflow">if</span>(DEV_NM_NOT_ATH_SNGL != fw-&gt;tp) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;not mcu OTA!&quot;</span>);</div>
+<div class="line">        </div>
+<div class="line">        <span class="keywordflow">return</span> OPRT_COM_ERROR;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code hl_function" href="../../d3/dc2/tal__system_8h.html#a139399ed1dc3d576d751d5ed3d8561fc">tal_system_sleep</a>(10);</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>  tuya_iot_upgrade_gw(fw, get_file_data_cb, upgrade_notify_cb, NULL);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET __soc_device_init(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET op_ret = OPRT_OK;</div>
+<div class="line">    <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> iot_cbs = {0};</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Initialize TuyaOS product information</span></div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a4e7b854220024379420e93a60d73dbb9">pre_gw_ug_cb</a> = __soc_dev_rev_upgrade_info_cb;</div>
+<div class="line">    op_ret = tuya_iot_wf_soc_dev_init(GWCM_OLD, WF_START_AP_FIRST, &amp;iot_cbs, PID, USER_SW_VER);</div>
+<div class="line">    <span class="keywordflow">if</span> (OPRT_OK != op_ret) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;tuya_iot_wf_soc_dev_init err:%d&quot;</span>, op_ret);</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line">    op_ret = <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">tkl_uart_init</a>(UART_NUM_0, &amp;sg_uart_cfg);</div>
+<div class="line">    <span class="keywordflow">if</span>(OPRT_OK != op_ret) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;err&lt;%d&gt;,Uart init fail!&quot;</span>, op_ret);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">STATIC VOID_T user_main(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">    <a class="code hl_struct" href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a> init_param = {0};</div>
+<div class="line"> </div>
+<div class="line">    init_param.<a class="code hl_variable" href="../../d0/d79/structTY__INIT__PARAMS__S.html#a6d00fd1ae54eca64625c98a5b0d6966a">init_db</a> = TRUE;</div>
+<div class="line">    strcpy(init_param.<a class="code hl_variable" href="../../d0/d79/structTY__INIT__PARAMS__S.html#a504ee917c180a139bb5c2c64032aab84">sys_env</a>, TARGET_PLATFORM);</div>
+<div class="line">    TUYA_CALL_ERR_LOG(<a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">tuya_iot_init_params</a>(NULL, &amp;init_param));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Initialization LWIP</span></div>
+<div class="line">    TUYA_LwIP_Init();</div>
+<div class="line">    __soc_device_init();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">VOID __ota_task(VOID* param)</div>
+<div class="line">{</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"> </div>
+<div class="line">        PR_DEBUG(USER_SW_VER);</div>
+<div class="line">        <a class="code hl_function" href="../../d3/dc2/tal__system_8h.html#a139399ed1dc3d576d751d5ed3d8561fc">tal_system_sleep</a>(2000);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">VOID_T tuya_app_main(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET op_ret = OPRT_OK;</div>
+<div class="line"> </div>
+<div class="line">    user_main();</div>
+<div class="line">    op_ret = tal_thread_create_and_start(&amp;sg_ota_handle, NULL, NULL, __ota_task, NULL, &amp;sg_task);</div>
+<div class="line">    <span class="keywordflow">if</span>(OPRT_OK != op_ret) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;err&lt;%d&gt;,ota task create fail&quot;</span>, op_ret);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+<div class="ttc" id="astructTHREAD__CFG__T_html"><div class="ttname"><a href="../../d0/d90/structTHREAD__CFG__T.html">THREAD_CFG_T</a></div><div class="ttdoc">thread parameters</div><div class="ttdef"><b>Definition:</b> tal_thread.h:73</div></div>
+<div class="ttc" id="astructTUYA__UART__BASE__CFG__T_html"><div class="ttname"><a href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html">TUYA_UART_BASE_CFG_T</a></div><div class="ttdoc">uart config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:1175</div></div>
+<div class="ttc" id="astructTY__INIT__PARAMS__S_html"><div class="ttname"><a href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a></div><div class="ttdoc">Definition of TUYA DevOS init param</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:163</div></div>
+<div class="ttc" id="astructTY__INIT__PARAMS__S_html_a504ee917c180a139bb5c2c64032aab84"><div class="ttname"><a href="../../d0/d79/structTY__INIT__PARAMS__S.html#a504ee917c180a139bb5c2c64032aab84">TY_INIT_PARAMS_S::sys_env</a></div><div class="ttdeci">CHAR_T sys_env[20]</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:167</div></div>
+<div class="ttc" id="astructTY__INIT__PARAMS__S_html_a6d00fd1ae54eca64625c98a5b0d6966a"><div class="ttname"><a href="../../d0/d79/structTY__INIT__PARAMS__S.html#a6d00fd1ae54eca64625c98a5b0d6966a">TY_INIT_PARAMS_S::init_db</a></div><div class="ttdeci">BOOL_T init_db</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:165</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a></div><div class="ttdoc">Definition of gateway callback funtions</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:731</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a4e7b854220024379420e93a60d73dbb9"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a4e7b854220024379420e93a60d73dbb9">TY_IOT_CBS_S::pre_gw_ug_cb</a></div><div class="ttdeci">GW_UG_INFORM_CB pre_gw_ug_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:751</div></div>
+<div class="ttc" id="atal__system_8h_html_a139399ed1dc3d576d751d5ed3d8561fc"><div class="ttname"><a href="../../d3/dc2/tal__system_8h.html#a139399ed1dc3d576d751d5ed3d8561fc">tal_system_sleep</a></div><div class="ttdeci">VOID_T tal_system_sleep(UINT_T time_ms)</div><div class="ttdoc">System sleep</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a7225a561d40ddb8a84014d51998c0e90"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">tkl_uart_write</a></div><div class="ttdeci">INT_T tkl_uart_write(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len)</div><div class="ttdoc">uart write data</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a73299fbc8e7e2d8627c3dd85d5db0c64"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">tkl_uart_init</a></div><div class="ttdeci">OPERATE_RET tkl_uart_init(TUYA_UART_NUM_E port_id, TUYA_UART_BASE_CFG_T *cfg)</div><div class="ttdoc">uart init</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html_a48b0e6c593dc2261515ddbbf8c330421"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">tuya_iot_init_params</a></div><div class="ttdeci">OPERATE_RET tuya_iot_init_params(IN CONST CHAR_T *fs_storge_path, IN CONST TY_INIT_PARAMS_S *p_param)</div><div class="ttdoc">TuyaOS system service init</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html_a62a31e021716e3f1f27eb0e11ee3d586"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html#a62a31e021716e3f1f27eb0e11ee3d586">tuya_iot_dev_upgd_result_report</a></div><div class="ttdeci">OPERATE_RET tuya_iot_dev_upgd_result_report(IN CONST CHAR_T *dev_id, IN CONST DEV_TYPE_T type, IN CONST INT_T result)</div><div class="ttdoc">tuya_iot_dev_upgd_result_report</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

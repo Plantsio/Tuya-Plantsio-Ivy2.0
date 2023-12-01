@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tuya_zigbee_stack.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">tuya_zigbee_stack.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - zigbee stack  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/d77/tuya__zigbee__attribute_8h_source.html">tuya_zigbee_attribute.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d01/tuya__zigbee__command_8h_source.html">tuya_zigbee_command.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_zigbee_stack.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d0a/tuya__zigbee__stack_8h__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tuya__zigbee__stack_8h" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tuya__zigbee__stack_8h" id="ainclude_2adapter_2zigbee_2include_2tuya__zigbee__stack_8h">
+<area shape="rect" title="Common process &#45; zigbee stack" alt="" coords="91,5,301,47"/>
+<area shape="rect" href="../../d0/d77/tuya__zigbee__attribute_8h.html" title="Common process &#45; zigbee attribute" alt="" coords="5,95,181,121"/>
+<area shape="rect" href="../../dd/d01/tuya__zigbee__command_8h.html" title="Common process &#45; zigbee command" alt="" coords="206,95,391,121"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d6f/tuya__zigbee__stack_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tuya__zigbee__stack_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tuya__zigbee__stack_8hdep" id="ainclude_2adapter_2zigbee_2include_2tuya__zigbee__stack_8hdep">
+<area shape="rect" title="Common process &#45; zigbee stack" alt="" coords="366,5,577,47"/>
+<area shape="rect" href="../../d9/d74/tkl__attribute__rw_8h.html" title="Common process &#45; attribute read/write" alt="" coords="80,199,271,240"/>
+<area shape="rect" href="../../d5/d8a/tkl__data__transceiver_8h.html" title="Common process &#45; data transceiver" alt="" coords="29,102,250,143"/>
+<area shape="rect" href="../../de/d32/tkl__endpoint__register_8h.html" title="Common process &#45; endpoint register" alt="" coords="274,95,445,151"/>
+<area shape="rect" href="../../d8/d4b/tkl__network__manager_8h.html" title="Common process &#45; network manager" alt="" coords="469,102,700,143"/>
+<area shape="rect" href="../../dd/d78/tkl__reporting_8h.html" title="Common process &#45; reporting" alt="" coords="724,102,896,143"/>
+<area shape="rect" href="../../d4/d8e/tkl__zll__commissioning_8h.html" title="Common process &#45; zll commissioning network" alt="" coords="921,102,1155,143"/>
+</map>
+</div>
+</div>
+<p><a href="../../d8/dba/tuya__zigbee__stack_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a831ec97a45fcac11b413d013261ca0a2"><td class="memItemLeft" align="right" valign="top"><a id="a831ec97a45fcac11b413d013261ca0a2" name="a831ec97a45fcac11b413d013261ca0a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_BROADCAST_ENDPOINT</b>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:a831ec97a45fcac11b413d013261ca0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc40fa9e344244af7c7d97b2dc6bd8fc"><td class="memItemLeft" align="right" valign="top"><a id="adc40fa9e344244af7c7d97b2dc6bd8fc" name="adc40fa9e344244af7c7d97b2dc6bd8fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_GATEWAY_ADDRESS</b>&#160;&#160;&#160;0x0000</td></tr>
+<tr class="separator:adc40fa9e344244af7c7d97b2dc6bd8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbc392605c730bc30fa8bcea00839e9"><td class="memItemLeft" align="right" valign="top"><a id="a2bbc392605c730bc30fa8bcea00839e9" name="a2bbc392605c730bc30fa8bcea00839e9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_PRIMARY_ENDPOINT</b>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a2bbc392605c730bc30fa8bcea00839e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af491b3faaa07ed8a3d361718b56eff5b"><td class="memItemLeft" align="right" valign="top"><a id="af491b3faaa07ed8a3d361718b56eff5b" name="af491b3faaa07ed8a3d361718b56eff5b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_ZDO_ENDPOINT</b>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:af491b3faaa07ed8a3d361718b56eff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a4cdb32475d665321837ead02e4bc4eb2"><td class="memItemLeft" align="right" valign="top"><a id="a4cdb32475d665321837ead02e4bc4eb2" name="a4cdb32475d665321837ead02e4bc4eb2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ZG_CLUSTER_ID_E</b> { <br />
+&#160;&#160;<b>CLUSTER_BASIC_CLUSTER_ID</b> = 0x0000
+, <b>CLUSTER_POWER_CONFIG_CLUSTER_ID</b> = 0x0001
+, <b>CLUSTER_DEVICE_TEMP_CLUSTER_ID</b> = 0x0002
+, <b>CLUSTER_IDENTIFY_CLUSTER_ID</b> = 0x0003
+, <br />
+&#160;&#160;<b>CLUSTER_GROUPS_CLUSTER_ID</b> = 0x0004
+, <b>CLUSTER_SCENES_CLUSTER_ID</b> = 0x0005
+, <b>CLUSTER_ON_OFF_CLUSTER_ID</b> = 0x0006
+, <b>CLUSTER_ON_OFF_SWITCH_CONFIG_CLUSTER_ID</b> = 0x0007
+, <br />
+&#160;&#160;<b>CLUSTER_LEVEL_CONTROL_CLUSTER_ID</b> = 0x0008
+, <b>CLUSTER_ALARM_CLUSTER_ID</b> = 0x0009
+, <b>CLUSTER_TIME_CLUSTER_ID</b> = 0x000A
+, <b>CLUSTER_RSSI_LOCATION_CLUSTER_ID</b> = 0x000B
+, <br />
+&#160;&#160;<b>CLUSTER_BINARY_INPUT_BASIC_CLUSTER_ID</b> = 0x000F
+, <b>CLUSTER_COMMISSIONING_CLUSTER_ID</b> = 0x0015
+, <b>CLUSTER_PARTITION_CLUSTER_ID</b> = 0x0016
+, <b>CLUSTER_OTA_BOOTLOAD_CLUSTER_ID</b> = 0x0019
+, <br />
+&#160;&#160;<b>CLUSTER_POWER_PROFILE_CLUSTER_ID</b> = 0x001A
+, <b>CLUSTER_APPLIANCE_CONTROL_CLUSTER_ID</b> = 0x001B
+, <b>CLUSTER_POLL_CONTROL_CLUSTER_ID</b> = 0x0020
+, <b>CLUSTER_GREEN_POWER_CLUSTER_ID</b> = 0x0021
+, <br />
+&#160;&#160;<b>CLUSTER_KEEPALIVE_CLUSTER_ID</b> = 0x0025
+, <b>CLUSTER_SHADE_CONFIG_CLUSTER_ID</b> = 0x0100
+, <b>CLUSTER_DOOR_LOCK_CLUSTER_ID</b> = 0x0101
+, <b>CLUSTER_WINDOW_COVERING_CLUSTER_ID</b> = 0x0102
+, <br />
+&#160;&#160;<b>CLUSTER_BARRIER_CONTROL_CLUSTER_ID</b> = 0x0103
+, <b>CLUSTER_PUMP_CONFIG_CONTROL_CLUSTER_ID</b> = 0x0200
+, <b>CLUSTER_THERMOSTAT_CLUSTER_ID</b> = 0x0201
+, <b>CLUSTER_FAN_CONTROL_CLUSTER_ID</b> = 0x0202
+, <br />
+&#160;&#160;<b>CLUSTER_DEHUMID_CONTROL_CLUSTER_ID</b> = 0x0203
+, <b>CLUSTER_THERMOSTAT_UI_CONFIG_CLUSTER_ID</b> = 0x0204
+, <b>CLUSTER_COLOR_CONTROL_CLUSTER_ID</b> = 0x0300
+, <b>CLUSTER_BALLAST_CONFIGURATION_CLUSTER_ID</b> = 0x0301
+, <br />
+&#160;&#160;<b>CLUSTER_ILLUM_MEASUREMENT_CLUSTER_ID</b> = 0x0400
+, <b>CLUSTER_ILLUM_LEVEL_SENSING_CLUSTER_ID</b> = 0x0401
+, <b>CLUSTER_TEMP_MEASUREMENT_CLUSTER_ID</b> = 0x0402
+, <b>CLUSTER_PRESSURE_MEASUREMENT_CLUSTER_ID</b> = 0x0403
+, <br />
+&#160;&#160;<b>CLUSTER_FLOW_MEASUREMENT_CLUSTER_ID</b> = 0x0404
+, <b>CLUSTER_RELATIVE_HUMIDITY_MEASUREMENT_CLUSTER_ID</b> = 0x0405
+, <b>CLUSTER_OCCUPANCY_SENSING_CLUSTER_ID</b> = 0x0406
+, <b>CLUSTER_CARBON_MONOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x040C
+, <br />
+&#160;&#160;<b>CLUSTER_CARBON_DIOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x040D
+, <b>CLUSTER_ETHYLENE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x040E
+, <b>CLUSTER_ETHYLENE_OXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x040F
+, <b>CLUSTER_HYDROGEN_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0410
+, <br />
+&#160;&#160;<b>CLUSTER_HYDROGEN_SULPHIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0411
+, <b>CLUSTER_NITRIC_OXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0412
+, <b>CLUSTER_NITROGEN_DIOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0413
+, <b>CLUSTER_OXYGEN_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0414
+, <br />
+&#160;&#160;<b>CLUSTER_OZONE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0415
+, <b>CLUSTER_SULFUR_DIOXIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0416
+, <b>CLUSTER_DISSOLVED_OXYGEN_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0417
+, <b>CLUSTER_BROMATE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0418
+, <br />
+&#160;&#160;<b>CLUSTER_CHLORAMINES_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0419
+, <b>CLUSTER_CHLORINE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x041A
+, <b>CLUSTER_FECAL_COLIFORM_AND_E_COLI_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x041B
+, <b>CLUSTER_FLUORIDE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x041C
+, <br />
+&#160;&#160;<b>CLUSTER_HALOACETIC_ACIDS_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x041D
+, <b>CLUSTER_TOTAL_TRIHALOMETHANES_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x041E
+, <b>CLUSTER_TOTAL_COLIFORM_BACTERIA_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x041F
+, <b>CLUSTER_TURBIDITY_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0420
+, <br />
+&#160;&#160;<b>CLUSTER_COPPER_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0421
+, <b>CLUSTER_LEAD_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0422
+, <b>CLUSTER_MANGANESE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0423
+, <b>CLUSTER_SULFATE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0424
+, <br />
+&#160;&#160;<b>CLUSTER_BROMODICHLOROMETHANE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0425
+, <b>CLUSTER_BROMOFORM_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0426
+, <b>CLUSTER_CHLORODIBROMOMETHANE_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0427
+, <b>CLUSTER_CHLOROFORM_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0428
+, <br />
+&#160;&#160;<b>CLUSTER_SODIUM_CONCENTRATION_MEASUREMENT_CLUSTER_ID</b> = 0x0429
+, <b>CLUSTER_IAS_ZONE_CLUSTER_ID</b> = 0x0500
+, <b>CLUSTER_IAS_ACE_CLUSTER_ID</b> = 0x0501
+, <b>CLUSTER_IAS_WD_CLUSTER_ID</b> = 0x0502
+, <br />
+&#160;&#160;<b>CLUSTER_GENERIC_TUNNEL_CLUSTER_ID</b> = 0x0600
+, <b>CLUSTER_BACNET_PROTOCOL_TUNNEL_CLUSTER_ID</b> = 0x0601
+, <b>CLUSTER_11073_PROTOCOL_TUNNEL_CLUSTER_ID</b> = 0x0614
+, <b>CLUSTER_ISO7816_PROTOCOL_TUNNEL_CLUSTER_ID</b> = 0x0615
+, <br />
+&#160;&#160;<b>CLUSTER_PRICE_CLUSTER_ID</b> = 0x0700
+, <b>CLUSTER_DEMAND_RESPONSE_LOAD_CONTROL_CLUSTER_ID</b> = 0x0701
+, <b>CLUSTER_SIMPLE_METERING_CLUSTER_ID</b> = 0x0702
+, <b>CLUSTER_MESSAGING_CLUSTER_ID</b> = 0x0703
+, <br />
+&#160;&#160;<b>CLUSTER_TUNNELING_CLUSTER_ID</b> = 0x0704
+, <b>CLUSTER_PREPAYMENT_CLUSTER_ID</b> = 0x0705
+, <b>CLUSTER_ENERGY_MANAGEMENT_CLUSTER_ID</b> = 0x0706
+, <b>CLUSTER_CALENDAR_CLUSTER_ID</b> = 0x0707
+, <br />
+&#160;&#160;<b>CLUSTER_DEVICE_MANAGEMENT_CLUSTER_ID</b> = 0x0708
+, <b>CLUSTER_EVENTS_CLUSTER_ID</b> = 0x0709
+, <b>CLUSTER_MDU_PAIRING_CLUSTER_ID</b> = 0x070A
+, <b>CLUSTER_SUB_GHZ_CLUSTER_ID</b> = 0x070B
+, <br />
+&#160;&#160;<b>CLUSTER_KEY_ESTABLISHMENT_CLUSTER_ID</b> = 0x0800
+, <b>CLUSTER_INFORMATION_CLUSTER_ID</b> = 0x0900
+, <b>CLUSTER_DATA_SHARING_CLUSTER_ID</b> = 0x0901
+, <b>CLUSTER_GAMING_CLUSTER_ID</b> = 0x0902
+, <br />
+&#160;&#160;<b>CLUSTER_DATA_RATE_CONTROL_CLUSTER_ID</b> = 0x0903
+, <b>CLUSTER_VOICE_OVER_ZIGBEE_CLUSTER_ID</b> = 0x0904
+, <b>CLUSTER_CHATTING_CLUSTER_ID</b> = 0x0905
+, <b>CLUSTER_PAYMENT_CLUSTER_ID</b> = 0x0A01
+, <br />
+&#160;&#160;<b>CLUSTER_BILLING_CLUSTER_ID</b> = 0x0A02
+, <b>CLUSTER_APPLIANCE_IDENTIFICATION_CLUSTER_ID</b> = 0x0B00
+, <b>CLUSTER_METER_IDENTIFICATION_CLUSTER_ID</b> = 0x0B01
+, <b>CLUSTER_APPLIANCE_EVENTS_AND_ALERT_CLUSTER_ID</b> = 0x0B02
+, <br />
+&#160;&#160;<b>CLUSTER_APPLIANCE_STATISTICS_CLUSTER_ID</b> = 0x0B03
+, <b>CLUSTER_ELECTRICAL_MEASUREMENT_CLUSTER_ID</b> = 0x0B04
+, <b>CLUSTER_DIAGNOSTICS_CLUSTER_ID</b> = 0x0B05
+, <b>CLUSTER_ZLL_COMMISSIONING_CLUSTER_ID</b> = 0x1000
+, <br />
+&#160;&#160;<b>CLUSTER_SAMPLE_MFG_SPECIFIC_CLUSTER_ID</b> = 0xFC00
+, <b>CLUSTER_OTA_CONFIGURATION_CLUSTER_ID</b> = 0xFC01
+, <b>CLUSTER_MFGLIB_CLUSTER_ID</b> = 0xFC02
+, <b>CLUSTER_SL_WWAH_CLUSTER_ID</b> = 0xFC57
+, <br />
+&#160;&#160;<b>CLUSTER_TUYA_COMMON_CLUSTER_ID</b> = 0xE000
+, <b>CLUSTER_TUYA_ELECTRICIAN_CLUSTER_ID</b> = 0xE001
+, <b>CLUSTER_TUYA_SENSOR_CLUSTER_ID</b> = 0xE002
+, <b>CLUSTER_TUYA_LIGHT_CLUSTER_ID</b> = 0xE003
+, <br />
+&#160;&#160;<b>CLUSTER_TUYA_MANAGER_CLUSTER_ID</b> = 0xEE00
+, <b>CLUSTER_PRIVATE_TUYA_CLUSTER_ID</b> = 0xEF00
+, <b>CLUSTER_TUYA_MF_TEST_CLUSTER_ID</b> = 0xEEFF
+<br />
+ }</td></tr>
+<tr class="separator:a4cdb32475d665321837ead02e4bc4eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ed012f746ebc0b2941942136f894aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aa">ZG_CLUSTER_MASK_E</a> { <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01">ZG_CLUSTER_MASK_SERVER</a> = 0x40
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195">ZG_CLUSTER_MASK_CLIENT</a> = 0x80
+ }</td></tr>
+<tr class="separator:ab1ed012f746ebc0b2941942136f894aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f70d2247eeded554d8ba5e2e734c49"><td class="memItemLeft" align="right" valign="top"><a id="ad8f70d2247eeded554d8ba5e2e734c49" name="ad8f70d2247eeded554d8ba5e2e734c49"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ZG_CMD_STATUS_E</b> { <br />
+&#160;&#160;<b>TUYA_ZCL_STA_SUCCESS</b> = 0x00
+, <b>TUYA_ZCL_STA_FAILURE</b> = 0x01
+, <b>TUYA_ZCL_STA_NOT_AUTHORIZED</b> = 0x7E
+, <b>TUYA_ZCL_STA_MALFORMED_COMMAND</b> = 0x80
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_UNSUP_COMMAND</b> = 0x81
+, <b>TUYA_ZCL_STA_UNSUP_GENERAL_COMMAND</b> = 0x82
+, <b>TUYA_ZCL_STA_UNSUP_MANUF_CLUSTER_COMMAND</b> = 0x83
+, <b>TUYA_ZCL_STA_UNSUP_MANUF_GENERAL_COMMAND</b> = 0x84
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_INVALID_FIELD</b> = 0x85
+, <b>TUYA_ZCL_STA_UNSUPPORTED_ATTRIBUTE</b> = 0x86
+, <b>TUYA_ZCL_STA_INVALID_VALUE</b> = 0x87
+, <b>TUYA_ZCL_STA_READ_ONLY</b> = 0x88
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_INSUFFICIENT_SPACE</b> = 0x89
+, <b>TUYA_ZCL_STA_DUPLICATE_EXISTS</b> = 0x8A
+, <b>TUYA_ZCL_STA_NOT_FOUND</b> = 0x8B
+, <b>TUYA_ZCL_STA_UNREPORTABLE_ATTRIBUTE</b> = 0x8C
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_INVALID_DATA_TYPE</b> = 0x8D
+, <b>TUYA_ZCL_STA_INVALID_SELECTOR</b> = 0x8E
+, <b>TUYA_ZCL_STA_WRITE_ONLY</b> = 0x8F
+, <b>TUYA_ZCL_STA_INCONSISTENT_STARTUP_STATE</b> = 0x90
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_DEFINED_OUT_OF_BAND</b> = 0x91
+, <b>TUYA_ZCL_STA_ACTION_DENIED</b> = 0x93
+, <b>TUYA_ZCL_STA_TIMEOUT</b> = 0x94
+, <b>TUYA_ZCL_STA_ABORT</b> = 0x95
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_INVALID_IMAGE</b> = 0x96
+, <b>TUYA_ZCL_STA_WAIT_FOR_DATA</b> = 0x97
+, <b>TUYA_ZCL_STA_NO_IMAGE_AVAILABLE</b> = 0x98
+, <b>TUYA_ZCL_STA_REQUIRE_MORE_IMAGE</b> = 0x99
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_NOTIFICATION_PENDING</b> = 0x9A
+, <b>TUYA_ZCL_STA_HARDWARE_FAILURE</b> = 0xC0
+, <b>TUYA_ZCL_STA_SOFTWARE_FAILURE</b> = 0xC1
+, <b>TUYA_ZCL_STA_UNSUPPORTED_CLUSTER</b> = 0xC3
+, <br />
+&#160;&#160;<b>TUYA_ZCL_STA_LIMIT_REACHED</b> = 0xC4
+<br />
+ }</td></tr>
+<tr class="separator:ad8f70d2247eeded554d8ba5e2e734c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbec499a2dec2915cc0a82d214f0232"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">ZG_DELIVERY_MODE_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae">ZG_ADDR_UNKNOWN</a> = 0x00
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531">ZG_UNICAST_MODE</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb">ZG_MULTICAST_MODE</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a">ZG_BROADCAST_MODE</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e">ZG_BINDING_MODE</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5">ZG_MULTI_BINDING_MODE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8fbec499a2dec2915cc0a82d214f0232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4541f92716367c87203a7d2508f78b"><td class="memItemLeft" align="right" valign="top"><a id="a3b4541f92716367c87203a7d2508f78b" name="a3b4541f92716367c87203a7d2508f78b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ZG_DEV_ID_E</b> { <br />
+&#160;&#160;<b>ZG_DEVICE_ID_ON_OFF_SWITCH</b> = 0x0000
+, <b>ZG_DEVICE_ID_LEVEL_CONTROL_SWITCH</b> = 0x0001
+, <b>ZG_DEVICE_ID_ON_OFF_OUTPUT</b> = 0x0002
+, <b>ZG_DEVICE_ID_LEVEL_CONTROL_OUTPUT</b> = 0x0003
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_SCENE_SELECTOR</b> = 0x0004
+, <b>ZG_DEVICE_ID_CONFIG_TOOL</b> = 0x0005
+, <b>ZG_DEVICE_ID_REMOTE_CONTROL</b> = 0x0006
+, <b>ZG_DEVICE_ID_COMBINED_INTERFACE</b> = 0x0007
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_RANGE_EXTENDER</b> = 0x0008
+, <b>ZG_DEVICE_ID_MAINS_POWER_OUTLET</b> = 0x0009
+, <b>ZG_DEVICE_ID_DOOR_LOCK</b> = 0x000a
+, <b>ZG_DEVICE_ID_DOOR_LOCK_CONTROLLER</b> = 0x000b
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_SIMPLE_SENSOR</b> = 0x000c
+, <b>ZG_DEVICE_ID_CONSUMPTION_AWARENESS_DEVICE</b> = 0x000d
+, <b>ZG_DEVICE_ID_HOME_GATEWAY</b> = 0x0050
+, <b>ZG_DEVICE_ID_SMART_PLUG</b> = 0x0051
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_WHITE_GOODS</b> = 0x0052
+, <b>ZG_DEVICE_ID_METER_INTERFACE</b> = 0x0053
+, <b>ZG_DEVICE_ID_ON_OFF_LIGHT</b> = 0x0100
+, <b>ZG_DEVICE_ID_DIMMABLE_LIGHT</b> = 0x0101
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_COLOR_DIMMABLE_LIGHT</b> = 0x0102
+, <b>ZG_DEVICE_ID_ON_OFF_LIGHT_SWITCH</b> = 0x0103
+, <b>ZG_DEVICE_ID_DIMMER_SWITCH</b> = 0x0104
+, <b>ZG_DEVICE_ID_COLOR_DIMMER_SWITCH</b> = 0x0105
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_LIGHT_SENSOR</b> = 0x0106
+, <b>ZG_DEVICE_ID_OCCUPANCY_SENSOR</b> = 0x0107
+, <b>ZG_DEVICE_ID_SHADE</b> = 0x0200
+, <b>ZG_DEVICE_ID_SHADE_CONTROLLER</b> = 0x0201
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_WINDOW_COVERING_DEVICE</b> = 0x0202
+, <b>ZG_DEVICE_ID_WINDOW_COVERING_CONTROLLER</b> = 0x0203
+, <b>ZG_DEVICE_ID_HEATING_COOLING_UNIT</b> = 0x0300
+, <b>ZG_DEVICE_ID_THERMOSTAT</b> = 0x0301
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_TEMPERATURE_SENSOR</b> = 0x0302
+, <b>ZG_DEVICE_ID_PUMP</b> = 0x0303
+, <b>ZG_DEVICE_ID_PUMP_CONTROLLER</b> = 0x0304
+, <b>ZG_DEVICE_ID_PRESSURE_SENSOR</b> = 0x0305
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_FLOW_SENSOR</b> = 0x0306
+, <b>ZG_DEVICE_ID_MINI_SPLIT_AC</b> = 0x0307
+, <b>ZG_DEVICE_ID_IAS_CIE</b> = 0x0400
+, <b>ZG_DEVICE_ID_IAS_ANCILLARY_CONTROL</b> = 0x0401
+, <br />
+&#160;&#160;<b>ZG_DEVICE_ID_IAS_ZONE</b> = 0x0402
+, <b>ZG_DEVICE_ID_IAS_WARNING</b> = 0x0403
+<br />
+ }</td></tr>
+<tr class="separator:a3b4541f92716367c87203a7d2508f78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bf7f86bb8604c0a92bd6de70a6e447"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a> { <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c">ZG_ROUTER</a> = 0
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14">ZG_END_DEVICE</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89">ZG_SLEEPY_END_DEVICE</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456">ZG_UNKNOWN_DEVICE</a> = 0xFF
+ }</td></tr>
+<tr class="separator:a40bf7f86bb8604c0a92bd6de70a6e447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adac7d0c69ec2af755dfd20c79c5acd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a> { <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285">ZG_DISTRIBUTE_NWK</a> = 0
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f">ZG_CENTRALIZED_NWK</a>
+ }</td></tr>
+<tr class="separator:a6adac7d0c69ec2af755dfd20c79c5acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf87a306d67662eb50722ec6cd59230"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">ZG_PROFILE_ID_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b">ZHA_PROFILE_ID</a> = 0x0104
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4">ZGP_PROFILE_ID</a> = 0xA1E0
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f">ZHC_PROFILE_ID</a> = 0x0108
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce">ZSE_PROFILE_ID</a> = 0x0109
+, <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f">ZCBA_PROFILE_ID</a> = 0x0105
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378">ZIPM_PROFILE_ID</a> = 0x0101
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e">ZTA_PROFILE_ID</a> = 0x0107
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd">ZAMI_PROFILE_ID</a> = 0x0109
+, <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001">ZLL_PROFILE_ID</a> = 0xC05E
+<br />
+ }</td></tr>
+<tr class="separator:a0cf87a306d67662eb50722ec6cd59230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b3edacfebd4831f3ba37dfa2ff93bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">ZG_SCAN_DURATION_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25">ZG_SCAN_DURATION_0</a> = 0
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f">ZG_SCAN_DURATION_1</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603">ZG_SCAN_DURATION_2</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7">ZG_SCAN_DURATION_3</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c">ZG_SCAN_DURATION_4</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf">ZG_SCAN_DURATION_5</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72">ZG_SCAN_DURATION_6</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee">ZG_SCAN_DURATION_7</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788">ZG_SCAN_DURATION_8</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169">ZG_SCAN_DURATION_9</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be">ZG_SCAN_DURATION_10</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0">ZG_SCAN_DURATION_11</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916">ZG_SCAN_DURATION_12</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea">ZG_SCAN_DURATION_13</a>
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e">ZG_SCAN_DURATION_14</a>
+<br />
+ }</td></tr>
+<tr class="separator:a13b3edacfebd4831f3ba37dfa2ff93bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6c451808453fab6a5404d5b53287e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5">ZG_ZCL_DATA_DIRECTION_E</a> { <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1">ZG_ZCL_DATA_CLIENT_TO_SERVER</a> = 0
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba">ZG_ZCL_DATA_SERVER_TO_CLIENT</a>
+ }</td></tr>
+<tr class="separator:a2e6c451808453fab6a5404d5b53287e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc630e720e78c13f1de31f840688d34c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34c">ZG_ZCL_FRAME_TYPE_E</a> { <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed">ZG_ZCL_FRAME_TYPE_GLOBAL</a> = 0
+, <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974">ZG_ZCL_FRAME_TYPE_SPEC_TO_CLUSTER</a>
+ }</td></tr>
+<tr class="separator:acc630e720e78c13f1de31f840688d34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - zigbee stack </p>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-05-07</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="ab1ed012f746ebc0b2941942136f894aa" name="ab1ed012f746ebc0b2941942136f894aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ed012f746ebc0b2941942136f894aa">&#9670;&nbsp;</a></span>ZG_CLUSTER_MASK_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aa">ZG_CLUSTER_MASK_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01" name="ab1ed012f746ebc0b2941942136f894aaa240591f34c100418ae3ef4eddc7d0b01"></a>ZG_CLUSTER_MASK_SERVER&#160;</td><td class="fielddoc"><p >A server cluster </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195" name="ab1ed012f746ebc0b2941942136f894aaafb332998646e729b0479d78b0130e195"></a>ZG_CLUSTER_MASK_CLIENT&#160;</td><td class="fielddoc"><p >A client cluster </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8fbec499a2dec2915cc0a82d214f0232" name="a8fbec499a2dec2915cc0a82d214f0232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbec499a2dec2915cc0a82d214f0232">&#9670;&nbsp;</a></span>ZG_DELIVERY_MODE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a8fbec499a2dec2915cc0a82d214f0232">ZG_DELIVERY_MODE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae" name="a8fbec499a2dec2915cc0a82d214f0232a9d0053abcc059cf25e852238de67edae"></a>ZG_ADDR_UNKNOWN&#160;</td><td class="fielddoc"><p >addr mode unknown when not joined network </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531" name="a8fbec499a2dec2915cc0a82d214f0232a2bd1590558798f0f0a95da2477f92531"></a>ZG_UNICAST_MODE&#160;</td><td class="fielddoc"><p >unicast addr mode for sending and receiving </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb" name="a8fbec499a2dec2915cc0a82d214f0232a3e1f5f358cbf8aec17b654991e1491fb"></a>ZG_MULTICAST_MODE&#160;</td><td class="fielddoc"><p >multicast_ addr mode for sending and receiving </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a" name="a8fbec499a2dec2915cc0a82d214f0232a29518713b77d70c63f9f12ea5b1b905a"></a>ZG_BROADCAST_MODE&#160;</td><td class="fielddoc"><p >broadcast addr mode for sending and receiving </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e" name="a8fbec499a2dec2915cc0a82d214f0232a3d9bad1067dc29a5bb3dfa5cab602e7e"></a>ZG_BINDING_MODE&#160;</td><td class="fielddoc"><p >binding mode for sending </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5" name="a8fbec499a2dec2915cc0a82d214f0232a0af7c9b5ca4700a931b116b79fd4b6d5"></a>ZG_MULTI_BINDING_MODE&#160;</td><td class="fielddoc"><p >multi binding mode for sending </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a40bf7f86bb8604c0a92bd6de70a6e447" name="a40bf7f86bb8604c0a92bd6de70a6e447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bf7f86bb8604c0a92bd6de70a6e447">&#9670;&nbsp;</a></span>ZG_NODE_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c" name="a40bf7f86bb8604c0a92bd6de70a6e447aeb49d5505ed8390499c559a4896ba06c"></a>ZG_ROUTER&#160;</td><td class="fielddoc"><p >the device type is router </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14" name="a40bf7f86bb8604c0a92bd6de70a6e447a9bfc2754b9543f30a8029feddc9c6e14"></a>ZG_END_DEVICE&#160;</td><td class="fielddoc"><p >the device type is end-device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89" name="a40bf7f86bb8604c0a92bd6de70a6e447af57e727eb1390b4819e8b77ee26d1e89"></a>ZG_SLEEPY_END_DEVICE&#160;</td><td class="fielddoc"><p >the device type is end-device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456" name="a40bf7f86bb8604c0a92bd6de70a6e447af5d9911fecc1abca2c7f30b60044b456"></a>ZG_UNKNOWN_DEVICE&#160;</td><td class="fielddoc"><p >the device type unknown </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6adac7d0c69ec2af755dfd20c79c5acd" name="a6adac7d0c69ec2af755dfd20c79c5acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adac7d0c69ec2af755dfd20c79c5acd">&#9670;&nbsp;</a></span>ZG_NWK_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285" name="a6adac7d0c69ec2af755dfd20c79c5acda3295ca68cf722851e7a364a7371a1285"></a>ZG_DISTRIBUTE_NWK&#160;</td><td class="fielddoc"><p >the zigbee network type is distribute network </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f" name="a6adac7d0c69ec2af755dfd20c79c5acda9080d039c0d8f923cf469f503287cb2f"></a>ZG_CENTRALIZED_NWK&#160;</td><td class="fielddoc"><p >the zigbee network type is centralized network </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0cf87a306d67662eb50722ec6cd59230" name="a0cf87a306d67662eb50722ec6cd59230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf87a306d67662eb50722ec6cd59230">&#9670;&nbsp;</a></span>ZG_PROFILE_ID_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a0cf87a306d67662eb50722ec6cd59230">ZG_PROFILE_ID_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b" name="a0cf87a306d67662eb50722ec6cd59230aecb4863b581244e5b3bb38ed05ed182b"></a>ZHA_PROFILE_ID&#160;</td><td class="fielddoc"><p >home automation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4" name="a0cf87a306d67662eb50722ec6cd59230a2d655dbaddb1f836f46cca5e58f213c4"></a>ZGP_PROFILE_ID&#160;</td><td class="fielddoc"><p >green power </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f" name="a0cf87a306d67662eb50722ec6cd59230a9b154e1050fcdd8426c16c5492b5ac9f"></a>ZHC_PROFILE_ID&#160;</td><td class="fielddoc"><p >personal,home and hospital care </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce" name="a0cf87a306d67662eb50722ec6cd59230aa0304c3a009908d8f28e0da5b0a1a6ce"></a>ZSE_PROFILE_ID&#160;</td><td class="fielddoc"><p >Smart energy </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f" name="a0cf87a306d67662eb50722ec6cd59230ab75f9128066fe98292af7fb497cc3f3f"></a>ZCBA_PROFILE_ID&#160;</td><td class="fielddoc"><p >Commerical building automation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378" name="a0cf87a306d67662eb50722ec6cd59230ade3cb77f4abb891887b13048bb93e378"></a>ZIPM_PROFILE_ID&#160;</td><td class="fielddoc"><p >Industial plant monitoring </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e" name="a0cf87a306d67662eb50722ec6cd59230a6d430d4fa6d15e0189f5a630afe2374e"></a>ZTA_PROFILE_ID&#160;</td><td class="fielddoc"><p >Telecom application </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd" name="a0cf87a306d67662eb50722ec6cd59230a3d7f9413db398c9490b1c2155f8b14fd"></a>ZAMI_PROFILE_ID&#160;</td><td class="fielddoc"><p >Advanced metering initiative </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001" name="a0cf87a306d67662eb50722ec6cd59230abc80b77fb2690436394fd3db81483001"></a>ZLL_PROFILE_ID&#160;</td><td class="fielddoc"><p >ZLL profile </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a13b3edacfebd4831f3ba37dfa2ff93bd" name="a13b3edacfebd4831f3ba37dfa2ff93bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b3edacfebd4831f3ba37dfa2ff93bd">&#9670;&nbsp;</a></span>ZG_SCAN_DURATION_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">ZG_SCAN_DURATION_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >the duration of scan period(the duration of channel reception), as an exponent. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25" name="a13b3edacfebd4831f3ba37dfa2ff93bdafc24c52fb91ba13c913b3cb6204f1f25"></a>ZG_SCAN_DURATION_0&#160;</td><td class="fielddoc"><p >19.2 ms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f" name="a13b3edacfebd4831f3ba37dfa2ff93bda670c91345b97160e6ef5f053fb2c510f"></a>ZG_SCAN_DURATION_1&#160;</td><td class="fielddoc"><p >38.4 ms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603" name="a13b3edacfebd4831f3ba37dfa2ff93bda6c9ac3f311a0ea41a3301be9d59be603"></a>ZG_SCAN_DURATION_2&#160;</td><td class="fielddoc"><p >76.8 ms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7" name="a13b3edacfebd4831f3ba37dfa2ff93bda7521f0ec61a3d5b8c8c759e368c88fe7"></a>ZG_SCAN_DURATION_3&#160;</td><td class="fielddoc"><p >153.6 ms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c" name="a13b3edacfebd4831f3ba37dfa2ff93bda455b6a78df1ba90f8452e656a8dbcb1c"></a>ZG_SCAN_DURATION_4&#160;</td><td class="fielddoc"><p >307.2 ms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf" name="a13b3edacfebd4831f3ba37dfa2ff93bdac1bfc7e0c16d6f3788e714f56bddfccf"></a>ZG_SCAN_DURATION_5&#160;</td><td class="fielddoc"><p >614.4 ms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72" name="a13b3edacfebd4831f3ba37dfa2ff93bda8a03fd55acdcd6152c988fd7da620b72"></a>ZG_SCAN_DURATION_6&#160;</td><td class="fielddoc"><p >1.23 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee" name="a13b3edacfebd4831f3ba37dfa2ff93bdab4268b0a74deb2c7bba6470dca4bd3ee"></a>ZG_SCAN_DURATION_7&#160;</td><td class="fielddoc"><p >2.46 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788" name="a13b3edacfebd4831f3ba37dfa2ff93bdaec0f5683282d0b1dec9f85d68c0f8788"></a>ZG_SCAN_DURATION_8&#160;</td><td class="fielddoc"><p >4.92 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169" name="a13b3edacfebd4831f3ba37dfa2ff93bdae4c64dfaf1634eeace11d488fe11a169"></a>ZG_SCAN_DURATION_9&#160;</td><td class="fielddoc"><p >9.83 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be" name="a13b3edacfebd4831f3ba37dfa2ff93bda5675d308a4ca0f791831f9cf0b6e11be"></a>ZG_SCAN_DURATION_10&#160;</td><td class="fielddoc"><p >19.66 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0" name="a13b3edacfebd4831f3ba37dfa2ff93bda48c9e4df235152ca7b66b1d9523daeb0"></a>ZG_SCAN_DURATION_11&#160;</td><td class="fielddoc"><p >39.32 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916" name="a13b3edacfebd4831f3ba37dfa2ff93bdafce5585998388962c8de18d6c9b01916"></a>ZG_SCAN_DURATION_12&#160;</td><td class="fielddoc"><p >78.64 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea" name="a13b3edacfebd4831f3ba37dfa2ff93bda1a259751f9087d50eb93fe43351ee6ea"></a>ZG_SCAN_DURATION_13&#160;</td><td class="fielddoc"><p >157.28 sec </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e" name="a13b3edacfebd4831f3ba37dfa2ff93bda107f48b434cf09742c5e96e93acf313e"></a>ZG_SCAN_DURATION_14&#160;</td><td class="fielddoc"><p >314.57 sec </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2e6c451808453fab6a5404d5b53287e5" name="a2e6c451808453fab6a5404d5b53287e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6c451808453fab6a5404d5b53287e5">&#9670;&nbsp;</a></span>ZG_ZCL_DATA_DIRECTION_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#a2e6c451808453fab6a5404d5b53287e5">ZG_ZCL_DATA_DIRECTION_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1" name="a2e6c451808453fab6a5404d5b53287e5a2805af4c84fe961d9eaf4e121675c2a1"></a>ZG_ZCL_DATA_CLIENT_TO_SERVER&#160;</td><td class="fielddoc"><p >server to client </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba" name="a2e6c451808453fab6a5404d5b53287e5ab4572c76cbb6e8f035c48d9e3dc5ecba"></a>ZG_ZCL_DATA_SERVER_TO_CLIENT&#160;</td><td class="fielddoc"><p >client to server </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="acc630e720e78c13f1de31f840688d34c" name="acc630e720e78c13f1de31f840688d34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc630e720e78c13f1de31f840688d34c">&#9670;&nbsp;</a></span>ZG_ZCL_FRAME_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#acc630e720e78c13f1de31f840688d34c">ZG_ZCL_FRAME_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed" name="acc630e720e78c13f1de31f840688d34cac4409fd6525ec4cf6e0055b5f5232bed"></a>ZG_ZCL_FRAME_TYPE_GLOBAL&#160;</td><td class="fielddoc"><p >command acts across the entire profile </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974" name="acc630e720e78c13f1de31f840688d34ca030005c1c092a4fd89216834a793a974"></a>ZG_ZCL_FRAME_TYPE_SPEC_TO_CLUSTER&#160;</td><td class="fielddoc"><p >command is specific to a cluster </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_bluetooth/include/tal_bluetooth_mesh_device.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_4f0803de06b0692b6aebcf989617354b.html">tal_bluetooth</a></li><li class="navelem"><a class="el" href="../../dir_973640f5508d8f94686b8b83201afca5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_bluetooth_mesh_device.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TAL_BLUETOOTH_MESH_DEVICE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TAL_BLUETOOTH_MESH_DEVICE_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d80/tal__bluetooth__mesh__def_8h.html">tal_bluetooth_mesh_def.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a1061743dd2c6fb13fa6a80b84da9277d">   22</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a1061743dd2c6fb13fa6a80b84da9277d">tal_mesh_msg_recv_cb_init</a>(<a class="code hl_typedef" href="../../db/d80/tal__bluetooth__mesh__def_8h.html#a4d87ac8a39592f50433dbba9e107032e">tal_mesh_msg_recv_cb</a> access_data_cb);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6eb7fce8d35f8c7928bd0ce7f9e35afc">   30</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6eb7fce8d35f8c7928bd0ce7f9e35afc">tal_mesh_ble_recv_cb_init</a>(TAL_BLE_EVT_FUNC_CB ble_event);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a9f0974ba131d42277b59956b6fb41da9">   42</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a9f0974ba131d42277b59956b6fb41da9">tal_mesh_data_send</a>(USHORT_T src_addr, USHORT_T dst_addr, UINT_T opcode, UCHAR_T *data, USHORT_T data_len);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a823c3856e368ae33529d0dd1a4aed181">   51</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a823c3856e368ae33529d0dd1a4aed181">tal_group_addr_sub_set</a>(UINT_T opcode, USHORT_T ele_index, USHORT_T group_addr);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a09e2997212e46f8609b85b4f315a55dd">   59</a></span>USHORT_T* <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a09e2997212e46f8609b85b4f315a55dd">tal_group_addr_sub_list_get</a>(USHORT_T ele_idx, USHORT_T model_id);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a821b7fbc921b5f9ee240cde7aa673fca">   67</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a821b7fbc921b5f9ee240cde7aa673fca">tal_element_register</a>(USHORT_T element_index);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6b9f1a049972ebafa0549c624c374c44">   76</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6b9f1a049972ebafa0549c624c374c44">tal_model_register</a>(USHORT_T element_index, UINT_T model_id);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a9755960f5673b3260b2faf0a3c43390e">   86</a></span>VOID <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a9755960f5673b3260b2faf0a3c43390e">tal_mesh_node_provision_enable</a>(<a class="code hl_enumeration" href="../../db/d80/tal__bluetooth__mesh__def_8h.html#a820aa460e2cc1ed15b30066170be255f">MESH_PROVISION_TYPE_T</a> enable);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6aa999b545cf93a9058c3593d539dbf3">   93</a></span>VOID <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6aa999b545cf93a9058c3593d539dbf3">tal_mesh_uuid_set</a>(UCHAR_T* uuid);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa9d7a9b11b561aa94fe5a9ab0c3908bd">   99</a></span>UCHAR_T <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa9d7a9b11b561aa94fe5a9ab0c3908bd">tal_get_if_prov_success</a>(VOID);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a316731a381feb4ca47da7ffb861e1997">  105</a></span>USHORT_T <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a316731a381feb4ca47da7ffb861e1997">tal_primary_ele_addr_get</a>(VOID);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#ae0de4537282a89fc29184e467bd21f0e">  113</a></span>VOID <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#ae0de4537282a89fc29184e467bd21f0e">tal_primary_ele_addr_set</a>(USHORT_T addr, <span class="keywordtype">int</span> flash_save_en);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa331147191304f344e9c7859f1db1a69">  121</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa331147191304f344e9c7859f1db1a69">tal_mesh_network_state_set</a>(<a class="code hl_enumeration" href="../../db/d80/tal__bluetooth__mesh__def_8h.html#a0f3a68d597d820763f8602158c253e2f">MESH_NETWORK_STATE_SET_T</a> net_state);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a04455759b1ead78f0b9526914ccbe165">  129</a></span>TUYA_WEAK_ATTRIBUTE VOID <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a04455759b1ead78f0b9526914ccbe165">tal_mesh_state_callback</a>(TAL_MESH_NET_STATE_T state);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa2b43c9c7a4809b5ad22fb38ce992238">  141</a></span>VOID <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa2b43c9c7a4809b5ad22fb38ce992238">tal_firmware_infor_set</a>(UCHAR_T is_key, UCHAR_T *product_id, UCHAR_T *product_key, UINT_T version, UINT_T mesh_category, UCHAR_T need_publish_addr);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#af2220b836a581cffad677c3aed3c0876">  149</a></span>VOID <a class="code hl_function" href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#af2220b836a581cffad677c3aed3c0876">tal_mesh_fast_prov_enable</a>(UCHAR_T enable);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="atal__bluetooth__mesh__def_8h_html"><div class="ttname"><a href="../../db/d80/tal__bluetooth__mesh__def_8h.html">tal_bluetooth_mesh_def.h</a></div><div class="ttdoc">This is tuya mesh file</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__def_8h_html_a0f3a68d597d820763f8602158c253e2f"><div class="ttname"><a href="../../db/d80/tal__bluetooth__mesh__def_8h.html#a0f3a68d597d820763f8602158c253e2f">MESH_NETWORK_STATE_SET_T</a></div><div class="ttdeci">MESH_NETWORK_STATE_SET_T</div><div class="ttdef"><b>Definition:</b> tal_bluetooth_mesh_def.h:414</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__def_8h_html_a4d87ac8a39592f50433dbba9e107032e"><div class="ttname"><a href="../../db/d80/tal__bluetooth__mesh__def_8h.html#a4d87ac8a39592f50433dbba9e107032e">tal_mesh_msg_recv_cb</a></div><div class="ttdeci">OPERATE_RET(* tal_mesh_msg_recv_cb)(TAL_MESH_ACCESS_MSG_T *msg_raw, TAL_MESH_NET_PARAM_T *net_param)</div><div class="ttdef"><b>Definition:</b> tal_bluetooth_mesh_def.h:421</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__def_8h_html_a820aa460e2cc1ed15b30066170be255f"><div class="ttname"><a href="../../db/d80/tal__bluetooth__mesh__def_8h.html#a820aa460e2cc1ed15b30066170be255f">MESH_PROVISION_TYPE_T</a></div><div class="ttdeci">MESH_PROVISION_TYPE_T</div><div class="ttdef"><b>Definition:</b> tal_bluetooth_mesh_def.h:407</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a04455759b1ead78f0b9526914ccbe165"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a04455759b1ead78f0b9526914ccbe165">tal_mesh_state_callback</a></div><div class="ttdeci">TUYA_WEAK_ATTRIBUTE VOID tal_mesh_state_callback(TAL_MESH_NET_STATE_T state)</div><div class="ttdoc">The callback to recieve the network state.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a09e2997212e46f8609b85b4f315a55dd"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a09e2997212e46f8609b85b4f315a55dd">tal_group_addr_sub_list_get</a></div><div class="ttdeci">USHORT_T * tal_group_addr_sub_list_get(USHORT_T ele_idx, USHORT_T model_id)</div><div class="ttdoc">Function to get the subscribe addr list of a model of the element.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a1061743dd2c6fb13fa6a80b84da9277d"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a1061743dd2c6fb13fa6a80b84da9277d">tal_mesh_msg_recv_cb_init</a></div><div class="ttdeci">OPERATE_RET tal_mesh_msg_recv_cb_init(tal_mesh_msg_recv_cb access_data_cb)</div><div class="ttdoc">Register the mesh access app data callback .</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a316731a381feb4ca47da7ffb861e1997"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a316731a381feb4ca47da7ffb861e1997">tal_primary_ele_addr_get</a></div><div class="ttdeci">USHORT_T tal_primary_ele_addr_get(VOID)</div><div class="ttdoc">Get the mesh node primary element address.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a6aa999b545cf93a9058c3593d539dbf3"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6aa999b545cf93a9058c3593d539dbf3">tal_mesh_uuid_set</a></div><div class="ttdeci">VOID tal_mesh_uuid_set(UCHAR_T *uuid)</div><div class="ttdoc">Init the mesh node uuid.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a6b9f1a049972ebafa0549c624c374c44"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6b9f1a049972ebafa0549c624c374c44">tal_model_register</a></div><div class="ttdeci">OPERATE_RET tal_model_register(USHORT_T element_index, UINT_T model_id)</div><div class="ttdoc">Function to register a model into the element.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a6eb7fce8d35f8c7928bd0ce7f9e35afc"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a6eb7fce8d35f8c7928bd0ce7f9e35afc">tal_mesh_ble_recv_cb_init</a></div><div class="ttdeci">OPERATE_RET tal_mesh_ble_recv_cb_init(TAL_BLE_EVT_FUNC_CB ble_event)</div><div class="ttdoc">Register the ble gap &amp; gatt data callback .</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a821b7fbc921b5f9ee240cde7aa673fca"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a821b7fbc921b5f9ee240cde7aa673fca">tal_element_register</a></div><div class="ttdeci">OPERATE_RET tal_element_register(USHORT_T element_index)</div><div class="ttdoc">Function to register a elemennt.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a823c3856e368ae33529d0dd1a4aed181"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a823c3856e368ae33529d0dd1a4aed181">tal_group_addr_sub_set</a></div><div class="ttdeci">OPERATE_RET tal_group_addr_sub_set(UINT_T opcode, USHORT_T ele_index, USHORT_T group_addr)</div><div class="ttdoc">Function to subscribe a group address for a model of the element.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a9755960f5673b3260b2faf0a3c43390e"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a9755960f5673b3260b2faf0a3c43390e">tal_mesh_node_provision_enable</a></div><div class="ttdeci">VOID tal_mesh_node_provision_enable(MESH_PROVISION_TYPE_T enable)</div><div class="ttdoc">Function to enable/disable the provision. If node is unprovision state,using disable param will close...</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_a9f0974ba131d42277b59956b6fb41da9"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#a9f0974ba131d42277b59956b6fb41da9">tal_mesh_data_send</a></div><div class="ttdeci">OPERATE_RET tal_mesh_data_send(USHORT_T src_addr, USHORT_T dst_addr, UINT_T opcode, UCHAR_T *data, USHORT_T data_len)</div><div class="ttdoc">Function to send mesh data to unicast/group addr</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_aa2b43c9c7a4809b5ad22fb38ce992238"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa2b43c9c7a4809b5ad22fb38ce992238">tal_firmware_infor_set</a></div><div class="ttdeci">VOID tal_firmware_infor_set(UCHAR_T is_key, UCHAR_T *product_id, UCHAR_T *product_key, UINT_T version, UINT_T mesh_category, UCHAR_T need_publish_addr)</div><div class="ttdoc">Set the firmware information which mesh provision use.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_aa331147191304f344e9c7859f1db1a69"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa331147191304f344e9c7859f1db1a69">tal_mesh_network_state_set</a></div><div class="ttdeci">OPERATE_RET tal_mesh_network_state_set(MESH_NETWORK_STATE_SET_T net_state)</div><div class="ttdoc">Set the mesh node network state.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_aa9d7a9b11b561aa94fe5a9ab0c3908bd"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#aa9d7a9b11b561aa94fe5a9ab0c3908bd">tal_get_if_prov_success</a></div><div class="ttdeci">UCHAR_T tal_get_if_prov_success(VOID)</div><div class="ttdoc">Get the mesh node provision state.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_ae0de4537282a89fc29184e467bd21f0e"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#ae0de4537282a89fc29184e467bd21f0e">tal_primary_ele_addr_set</a></div><div class="ttdeci">VOID tal_primary_ele_addr_set(USHORT_T addr, int flash_save_en)</div><div class="ttdoc">Set the mesh node primary element address.</div></div>
+<div class="ttc" id="atal__bluetooth__mesh__device_8h_html_af2220b836a581cffad677c3aed3c0876"><div class="ttname"><a href="../../d2/dfa/tal__bluetooth__mesh__device_8h.html#af2220b836a581cffad677c3aed3c0876">tal_mesh_fast_prov_enable</a></div><div class="ttdeci">VOID tal_mesh_fast_prov_enable(UCHAR_T enable)</div><div class="ttdoc">Enable/Disable mesh fast provision.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

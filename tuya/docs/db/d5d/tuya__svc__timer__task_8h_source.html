@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/timer_task/tuya_svc_timer_task.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_8586a3670b0460b706cf58270ff5f328.html">timer_task</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_svc_timer_task.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d5d/tuya__svc__timer__task_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TUYA_SVC_TIME_TASK_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TUYA_SVC_TIME_TASK_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * 隔天循环有定时开始时间：具体开始时间（具体到某一天）</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * 周循环和奇偶日、隔小时 只有开始时间点，不用确认开始日期</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">typedef</span> BYTE_T LOOP_TYPE_T;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define LOOP_TYPE_WEEKLY   (0) </span><span class="comment">// 每周循环</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define LOOP_TYPE_DAILY    (1) </span><span class="comment">// 隔天循环, 1~31天</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define LOOP_TYPE_HOURLY   (2) </span><span class="comment">// 小时间隔, 1-6小时</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define LOOP_TYPE_EVEN_ODD (3) </span><span class="comment">// 奇偶循环, 单双号</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define LOOP_TYPE_INVALID (0xFE) </span><span class="comment">// 无效循环类型</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#pragma pack(1)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../dd/d75/structTIMER__DATE__S.html">   34</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    USHORT_T year;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    UCHAR_T  mon;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    UCHAR_T  day;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>} <a class="code hl_struct" href="../../dd/d75/structTIMER__DATE__S.html">TIMER_DATE_S</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">bit6 bit5 bit4 bit3 bit2 bit1 bit0</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">周日  周一 周二  周三  周四 周五  周六</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">64   32   16    8    4    2    1</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d1/d1e/structTIMER__WEEK__S.html">   46</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    UINT_T weekday;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <a class="code hl_struct" href="../../d1/d1e/structTIMER__WEEK__S.html">TIMER_WEEK_S</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d8/d75/structALARM__TIMER__S.html">   51</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    TIME_T last_time; <span class="comment">/* 记录定时器上次执行时间，防止重复执行 */</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    UCHAR_T valid; <span class="comment">/* 0:无效，1: 有效 */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    UCHAR_T hour;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    UCHAR_T min;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    UCHAR_T loop;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    CHAR_T *timer_id;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_struct" href="../../dd/d75/structTIMER__DATE__S.html">TIMER_DATE_S</a> date;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_struct" href="../../d1/d1e/structTIMER__WEEK__S.html">TIMER_WEEK_S</a> weekday;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    } day;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    CHAR_T *dps_info;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#if defined(ENABLE_CALENDAR_TIMER) &amp;&amp; (ENABLE_CALENDAR_TIMER==1)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">//日历定时</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    LOOP_TYPE_T loop_type; <span class="comment">// 0:周循环 1:日间隔，2:小时间隔 3:奇偶循环</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    UCHAR_T loop_interval; <span class="comment">// 隔天（不超过31天）、隔小时（1-6小时可选）</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    UCHAR_T end_hour;      <span class="comment">// 结束时间</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    UCHAR_T end_min;       <span class="comment">// 结束时间</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_struct" href="../../dd/d75/structTIMER__DATE__S.html">TIMER_DATE_S</a> end_date; <span class="comment">// 结束日期</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <a class="code hl_struct" href="../../d8/d75/structALARM__TIMER__S.html">ALARM_TIMER_S</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#pragma pack()</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#ae7665bffb5cd7fb7aa27562d081edeeb">   85</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#ae7665bffb5cd7fb7aa27562d081edeeb">tuya_svc_timer_task_init</a>(UINT_T increase_unit);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#a1ab91372bf2b1301577b73554771c0d1">   95</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#a1ab91372bf2b1301577b73554771c0d1">tuya_svc_timer_task_reset</a>(VOID_T);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#a8cb5ade3c423c7456c83d3bcfb12ec9a">  105</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#a8cb5ade3c423c7456c83d3bcfb12ec9a">tuya_svc_timer_task_clear_db</a>(VOID_T);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#a586c49e5aa013601ac3455f5c113176f">  115</a></span>UINT_T <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#a586c49e5aa013601ac3455f5c113176f">tuya_svc_timer_get_task_count</a>(VOID_T);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#ad8145d11197c32234575ac91b834088a">  125</a></span>UINT_T <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#ad8145d11197c32234575ac91b834088a">tuya_svc_timer_get_num</a>(VOID_T);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#a5df575d635f3dc77dc798daa002661eb">  135</a></span>UINT_T <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#a5df575d635f3dc77dc798daa002661eb">tuya_svc_timer_get_capacity</a>(VOID_T);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#ab27a2b7656c54e69fb10c949fed5491a">  146</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#ab27a2b7656c54e69fb10c949fed5491a">tuya_svc_timer_delete</a>(CHAR_T* timer_id, BOOL_T update_flash);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#addacc10694431cec39e835a829c1aa57">  156</a></span>VOID_T <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#addacc10694431cec39e835a829c1aa57">tuya_svc_timer_get_data</a>(uint8_t *timer_data);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../db/d5d/tuya__svc__timer__task_8h.html#a867107655c30915e47998dff8ba4335e">  167</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d5d/tuya__svc__timer__task_8h.html#a867107655c30915e47998dff8ba4335e">tuya_svc_timer_add</a>(<a class="code hl_struct" href="../../d8/d75/structALARM__TIMER__S.html">ALARM_TIMER_S</a> *pTimer, BOOL_T update_flash);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#endif  </span><span class="comment">/*__TUYA_SVC_TIME_TASK_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="ttc" id="astructALARM__TIMER__S_html"><div class="ttname"><a href="../../d8/d75/structALARM__TIMER__S.html">ALARM_TIMER_S</a></div><div class="ttdef"><b>Definition:</b> tuya_svc_timer_task.h:51</div></div>
+<div class="ttc" id="astructTIMER__DATE__S_html"><div class="ttname"><a href="../../dd/d75/structTIMER__DATE__S.html">TIMER_DATE_S</a></div><div class="ttdef"><b>Definition:</b> tuya_svc_timer_task.h:34</div></div>
+<div class="ttc" id="astructTIMER__WEEK__S_html"><div class="ttname"><a href="../../d1/d1e/structTIMER__WEEK__S.html">TIMER_WEEK_S</a></div><div class="ttdef"><b>Definition:</b> tuya_svc_timer_task.h:46</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_a1ab91372bf2b1301577b73554771c0d1"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#a1ab91372bf2b1301577b73554771c0d1">tuya_svc_timer_task_reset</a></div><div class="ttdeci">OPERATE_RET tuya_svc_timer_task_reset(VOID_T)</div><div class="ttdoc">Reset the timer task.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_a586c49e5aa013601ac3455f5c113176f"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#a586c49e5aa013601ac3455f5c113176f">tuya_svc_timer_get_task_count</a></div><div class="ttdeci">UINT_T tuya_svc_timer_get_task_count(VOID_T)</div><div class="ttdoc">Get the count of timer task.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_a5df575d635f3dc77dc798daa002661eb"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#a5df575d635f3dc77dc798daa002661eb">tuya_svc_timer_get_capacity</a></div><div class="ttdeci">UINT_T tuya_svc_timer_get_capacity(VOID_T)</div><div class="ttdoc">Get the capacity of timer task.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_a867107655c30915e47998dff8ba4335e"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#a867107655c30915e47998dff8ba4335e">tuya_svc_timer_add</a></div><div class="ttdeci">OPERATE_RET tuya_svc_timer_add(ALARM_TIMER_S *pTimer, BOOL_T update_flash)</div><div class="ttdoc">add timer task.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_a8cb5ade3c423c7456c83d3bcfb12ec9a"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#a8cb5ade3c423c7456c83d3bcfb12ec9a">tuya_svc_timer_task_clear_db</a></div><div class="ttdeci">OPERATE_RET tuya_svc_timer_task_clear_db(VOID_T)</div><div class="ttdoc">Clear up the timer task data in flash.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_ab27a2b7656c54e69fb10c949fed5491a"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#ab27a2b7656c54e69fb10c949fed5491a">tuya_svc_timer_delete</a></div><div class="ttdeci">OPERATE_RET tuya_svc_timer_delete(CHAR_T *timer_id, BOOL_T update_flash)</div><div class="ttdoc">delete timer task.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_ad8145d11197c32234575ac91b834088a"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#ad8145d11197c32234575ac91b834088a">tuya_svc_timer_get_num</a></div><div class="ttdeci">UINT_T tuya_svc_timer_get_num(VOID_T)</div><div class="ttdoc">Get the num of timer task.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_addacc10694431cec39e835a829c1aa57"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#addacc10694431cec39e835a829c1aa57">tuya_svc_timer_get_data</a></div><div class="ttdeci">VOID_T tuya_svc_timer_get_data(uint8_t *timer_data)</div><div class="ttdoc">get timer task data.</div></div>
+<div class="ttc" id="atuya__svc__timer__task_8h_html_ae7665bffb5cd7fb7aa27562d081edeeb"><div class="ttname"><a href="../../db/d5d/tuya__svc__timer__task_8h.html#ae7665bffb5cd7fb7aa27562d081edeeb">tuya_svc_timer_task_init</a></div><div class="ttdeci">OPERATE_RET tuya_svc_timer_task_init(UINT_T increase_unit)</div><div class="ttdoc">Init a timer task.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

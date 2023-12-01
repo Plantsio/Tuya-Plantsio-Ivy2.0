@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_rpc/include/lan_rpc.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e4ad71b8cc97fe2e4a95227cc389988e.html">svc_rpc</a></li><li class="navelem"><a class="el" href="../../dir_48bf1703043dd255f84e45145260ba0d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">lan_rpc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d9a/lan__rpc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __LAN_RPC_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __LAN_RPC_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/d87/tal__network_8h.html">tal_network.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d94/svc__rpc_8h.html">svc_rpc.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define LAN_RPC_ID_LEN                  (GW_ID_LEN)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define LAN_RPC_KEY_LEN                 (LOCAL_KEY_LEN)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define LAN_RPC_NODE_TIMEOUT            20</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define LAN_RPC_NODE_ADD                 0</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define LAN_RPC_NODE_DEL                 1</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define LAN_RPC_NODE_REJOIN              2</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    LAN_RPC_SLAVER,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    LAN_RPC_MASTER,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} LAN_RPC_TYPE;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d1/d85/structLAN__RPC__NODE__S.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    UINT_T              ip;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    INT_T               seqno;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    USHORT_T            cap;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    UINT8_T             <span class="keywordtype">id</span>[LAN_RPC_ID_LEN   + 1];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    UINT8_T             key[LAN_RPC_KEY_LEN + 1]; <span class="comment">//key是非字符串的</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <a class="code hl_struct" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d6/dd7/structLAN__RPC__MASTER__S.html">   47</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    UINT8_T             owner;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    UINT8_T             stat;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_struct" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a>      node;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <a class="code hl_struct" href="../../d6/dd7/structLAN__RPC__MASTER__S.html">LAN_RPC_MASTER_S</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">typedef</span> OPERATE_RET(*LAN_RPC_MASTER_GET_CB)(<a class="code hl_struct" href="../../d6/dd7/structLAN__RPC__MASTER__S.html">LAN_RPC_MASTER_S</a> *master);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">typedef</span> OPERATE_RET(*LAN_RPC_NODE_STAT_CB)(UINT8_T stat, <a class="code hl_struct" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">typedef</span> VOID (*LAN_RPC_NODE_OUTPUT_CB)(<a class="code hl_struct" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node, UINT16_T num, VOID *arg);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">typedef</span> <a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">rpc_async_cb</a> RPC_RET_CB;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">typedef</span> <a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">rpc_method_cb</a> RPC_METHOD_CB;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d3/d9b/structLAN__RPC__CFG__S.html">   59</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    UINT8_T                 type;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    LAN_RPC_NODE_STAT_CB    node_stat_cb;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    LAN_RPC_MASTER_GET_CB   master_get_cb;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <a class="code hl_struct" href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a14335d094b632ca816a2fe0bbe85ec8d">   70</a></span>INT_T <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a14335d094b632ca816a2fe0bbe85ec8d">lan_rpc_fd_get</a>(VOID);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a7b14928aff151fb6a82950c913f3ace9">   76</a></span>VOID <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a7b14928aff151fb6a82950c913f3ace9">lan_rpc_node_timeout_check</a>(VOID);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a3936c030ff88cb994dc7895b5633063d">   85</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a3936c030ff88cb994dc7895b5633063d">lan_rpc_node_add</a>(<a class="code hl_struct" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>VOID lan_rpc_node_fresh(CHAR_T *dev_id);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>VOID lan_rpc_node_timeout_set(UINT_T timeout_s);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a7276ca0a21fa5ad0cd6ab80c21abebb5">   99</a></span>BOOL_T <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a7276ca0a21fa5ad0cd6ab80c21abebb5">lan_rpc_node_find_by_ip</a>(UINT_T ip, <a class="code hl_struct" href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a> *node);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a341d43743eef4167aa25f79c64690171">  109</a></span>BOOL_T <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a341d43743eef4167aa25f79c64690171">lan_rpc_node_find_ip_by_id</a>(UINT8_T *<span class="keywordtype">id</span>, UINT_T *ip);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a5d9f101dff6d20a9430e8ba2a911e760">  119</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a5d9f101dff6d20a9430e8ba2a911e760">lan_rpc_node_key_set</a>(UINT8_T *<span class="keywordtype">id</span>, UINT8_T *key);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#aa2ba4bc642e47e65c76499d0032f66b6">  129</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#aa2ba4bc642e47e65c76499d0032f66b6">lan_rpc_node_output</a>(LAN_RPC_NODE_OUTPUT_CB node_output_cb, VOID *arg);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a115b9c675474b070a44e5933128ff1f7">  138</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a115b9c675474b070a44e5933128ff1f7">lan_rpc_session_key_set</a>(UINT8_T *session_key);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a08053f3c53fbc672468cd824b23c8865">  147</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a08053f3c53fbc672468cd824b23c8865">lan_rpc_init</a>(<a class="code hl_struct" href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a> *cfg);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a06b43a6a2253e9ad6695cdb04f5ae68f">  158</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a06b43a6a2253e9ad6695cdb04f5ae68f">lan_rpc_slave_call_sync</a>(<a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *requset, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *result, UINT_T timeout);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a2b8904124ca8784538b87b59e7ab55e4">  170</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a2b8904124ca8784538b87b59e7ab55e4">lan_rpc_call_async</a>(UINT8_T *<span class="keywordtype">id</span>, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">JRPC_MSG_S</a> *requset, RPC_RET_CB cb, VOID *cb_param, UINT_T timeout);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a66b8354c700aa539536e8fc7f7a66103">  177</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a66b8354c700aa539536e8fc7f7a66103">lan_rpc_recv</a>(VOID);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a7766773d10f17f645875b5efe9af9ab4">  188</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a7766773d10f17f645875b5efe9af9ab4">lan_rpc_method_register</a>(CHAR_T *name, RPC_METHOD_CB cb, VOID *arg);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="../../d2/d9a/lan__rpc_8h.html#a159f2888ee9fe8e9d01abf7196e556ef">  197</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/d9a/lan__rpc_8h.html#a159f2888ee9fe8e9d01abf7196e556ef">lan_rpc_get_peer_ip</a>(OUT TUYA_IP_ADDR_T *peer_ip);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="alan__rpc_8h_html_a06b43a6a2253e9ad6695cdb04f5ae68f"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a06b43a6a2253e9ad6695cdb04f5ae68f">lan_rpc_slave_call_sync</a></div><div class="ttdeci">OPERATE_RET lan_rpc_slave_call_sync(JRPC_MSG_S *requset, JRPC_MSG_S *result, UINT_T timeout)</div><div class="ttdoc">slave rpc sync</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a08053f3c53fbc672468cd824b23c8865"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a08053f3c53fbc672468cd824b23c8865">lan_rpc_init</a></div><div class="ttdeci">OPERATE_RET lan_rpc_init(LAN_RPC_CFG_S *cfg)</div><div class="ttdoc">rpc init</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a115b9c675474b070a44e5933128ff1f7"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a115b9c675474b070a44e5933128ff1f7">lan_rpc_session_key_set</a></div><div class="ttdeci">OPERATE_RET lan_rpc_session_key_set(UINT8_T *session_key)</div><div class="ttdoc">set session key</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a14335d094b632ca816a2fe0bbe85ec8d"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a14335d094b632ca816a2fe0bbe85ec8d">lan_rpc_fd_get</a></div><div class="ttdeci">INT_T lan_rpc_fd_get(VOID)</div><div class="ttdoc">get fd</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a159f2888ee9fe8e9d01abf7196e556ef"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a159f2888ee9fe8e9d01abf7196e556ef">lan_rpc_get_peer_ip</a></div><div class="ttdeci">OPERATE_RET lan_rpc_get_peer_ip(OUT TUYA_IP_ADDR_T *peer_ip)</div><div class="ttdoc">lan rpc get peer ip</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a2b8904124ca8784538b87b59e7ab55e4"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a2b8904124ca8784538b87b59e7ab55e4">lan_rpc_call_async</a></div><div class="ttdeci">OPERATE_RET lan_rpc_call_async(UINT8_T *id, JRPC_MSG_S *requset, RPC_RET_CB cb, VOID *cb_param, UINT_T timeout)</div><div class="ttdoc">rpc sync</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a341d43743eef4167aa25f79c64690171"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a341d43743eef4167aa25f79c64690171">lan_rpc_node_find_ip_by_id</a></div><div class="ttdeci">BOOL_T lan_rpc_node_find_ip_by_id(UINT8_T *id, UINT_T *ip)</div><div class="ttdoc">found ip by id</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a3936c030ff88cb994dc7895b5633063d"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a3936c030ff88cb994dc7895b5633063d">lan_rpc_node_add</a></div><div class="ttdeci">OPERATE_RET lan_rpc_node_add(LAN_RPC_NODE_S *node)</div><div class="ttdoc">node add</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a5d9f101dff6d20a9430e8ba2a911e760"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a5d9f101dff6d20a9430e8ba2a911e760">lan_rpc_node_key_set</a></div><div class="ttdeci">OPERATE_RET lan_rpc_node_key_set(UINT8_T *id, UINT8_T *key)</div><div class="ttdoc">node key set</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a66b8354c700aa539536e8fc7f7a66103"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a66b8354c700aa539536e8fc7f7a66103">lan_rpc_recv</a></div><div class="ttdeci">OPERATE_RET lan_rpc_recv(VOID)</div><div class="ttdoc">rpc receive</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a7276ca0a21fa5ad0cd6ab80c21abebb5"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a7276ca0a21fa5ad0cd6ab80c21abebb5">lan_rpc_node_find_by_ip</a></div><div class="ttdeci">BOOL_T lan_rpc_node_find_by_ip(UINT_T ip, LAN_RPC_NODE_S *node)</div><div class="ttdoc">found node by ip</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a7766773d10f17f645875b5efe9af9ab4"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a7766773d10f17f645875b5efe9af9ab4">lan_rpc_method_register</a></div><div class="ttdeci">OPERATE_RET lan_rpc_method_register(CHAR_T *name, RPC_METHOD_CB cb, VOID *arg)</div><div class="ttdoc">lan rpc method register</div></div>
+<div class="ttc" id="alan__rpc_8h_html_a7b14928aff151fb6a82950c913f3ace9"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#a7b14928aff151fb6a82950c913f3ace9">lan_rpc_node_timeout_check</a></div><div class="ttdeci">VOID lan_rpc_node_timeout_check(VOID)</div><div class="ttdoc">check timeout</div></div>
+<div class="ttc" id="alan__rpc_8h_html_aa2ba4bc642e47e65c76499d0032f66b6"><div class="ttname"><a href="../../d2/d9a/lan__rpc_8h.html#aa2ba4bc642e47e65c76499d0032f66b6">lan_rpc_node_output</a></div><div class="ttdeci">OPERATE_RET lan_rpc_node_output(LAN_RPC_NODE_OUTPUT_CB node_output_cb, VOID *arg)</div><div class="ttdoc">node output</div></div>
+<div class="ttc" id="astructLAN__RPC__CFG__S_html"><div class="ttname"><a href="../../d3/d9b/structLAN__RPC__CFG__S.html">LAN_RPC_CFG_S</a></div><div class="ttdef"><b>Definition:</b> lan_rpc.h:59</div></div>
+<div class="ttc" id="astructLAN__RPC__MASTER__S_html"><div class="ttname"><a href="../../d6/dd7/structLAN__RPC__MASTER__S.html">LAN_RPC_MASTER_S</a></div><div class="ttdef"><b>Definition:</b> lan_rpc.h:47</div></div>
+<div class="ttc" id="astructLAN__RPC__NODE__S_html"><div class="ttname"><a href="../../d1/d85/structLAN__RPC__NODE__S.html">LAN_RPC_NODE_S</a></div><div class="ttdef"><b>Definition:</b> lan_rpc.h:39</div></div>
+<div class="ttc" id="astructjrpc__msg__t_html"><div class="ttname"><a href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a></div><div class="ttdef"><b>Definition:</b> json_rpc.h:42</div></div>
+<div class="ttc" id="asvc__rpc_8h_html"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html">svc_rpc.h</a></div><div class="ttdoc">rcp relate</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a27262c947c776cf98421b132ec5bb8b6"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">rpc_method_cb</a></div><div class="ttdeci">void(* rpc_method_cb)(jrpc_msg_t *request, void *arg, jrpc_msg_t *reply)</div><div class="ttdoc">rpc method callback</div><div class="ttdef"><b>Definition:</b> svc_rpc.h:73</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a27dda3c52dc98766350f1eb634feeed3"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">rpc_async_cb</a></div><div class="ttdeci">void(* rpc_async_cb)(jrpc_msg_t *result, void *arg)</div><div class="ttdoc">rpc async callback</div><div class="ttdef"><b>Definition:</b> svc_rpc.h:91</div></div>
+<div class="ttc" id="atal__network_8h_html"><div class="ttname"><a href="../../d5/d87/tal__network_8h.html">tal_network.h</a></div><div class="ttdoc">Common process - Initialization</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

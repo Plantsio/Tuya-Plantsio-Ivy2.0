@@ -1,0 +1,1033 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/nb/include/tkl_nbiot_ril.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_5f0cc14919f4ea638bae0e0d6e877847.html">nb</a></li><li class="navelem"><a class="el" href="../../dir_8cbb9b6f25454b81c061e4a45ef8276f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_nbiot_ril.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the nbiot ril api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_nbiot_ril.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/df8/tkl__nbiot__ril_8h__incl.png" border="0" usemap="#ainclude_2adapter_2nb_2include_2tkl__nbiot__ril_8h" alt=""/></div>
+<map name="ainclude_2adapter_2nb_2include_2tkl__nbiot__ril_8h" id="ainclude_2adapter_2nb_2include_2tkl__nbiot__ril_8h">
+<area shape="rect" title="Common process &#45; adapter the nbiot ril api" alt="" coords="359,5,526,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d22/tkl__nbiot__ril_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2nb_2include_2tkl__nbiot__ril_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2nb_2include_2tkl__nbiot__ril_8hdep" id="ainclude_2adapter_2nb_2include_2tkl__nbiot__ril_8hdep">
+<area shape="rect" title="Common process &#45; adapter the nbiot ril api" alt="" coords="9,5,176,47"/>
+<area shape="rect" href="../../d6/d92/tkl__init__nbiot_8h.html" title="Common process &#45; tkl init nbiot description" alt="" coords="5,95,180,136"/>
+</map>
+</div>
+</div>
+<p><a href="../../d8/d75/tkl__nbiot__ril_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">TKL_RIL_ATTACH_INFO_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a30f0b51d9f5d587b79b5c43809524c5a"><td class="memItemLeft" align="right" valign="top"><a id="a30f0b51d9f5d587b79b5c43809524c5a" name="a30f0b51d9f5d587b79b5c43809524c5a"></a>
+typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_RIL_EVENT_SEND_T</b>) (INT_T event_id, PVOID_T param)</td></tr>
+<tr class="separator:a30f0b51d9f5d587b79b5c43809524c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a48a0f4848b87bcf22179c0a826819787"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a48a0f4848b87bcf22179c0a826819787">tkl_nbiot_ril_attach_event_inquire</a> (VOID)</td></tr>
+<tr class="memdesc:a48a0f4848b87bcf22179c0a826819787"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询ril层网络附着状态（建议异步处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a48a0f4848b87bcf22179c0a826819787">更多...</a><br /></td></tr>
+<tr class="separator:a48a0f4848b87bcf22179c0a826819787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa68fd5e90754770cb3e9ab1b93fbf16"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#aaa68fd5e90754770cb3e9ab1b93fbf16">tkl_nbiot_ril_edrx_mode_enable</a> (UCHAR_T enable)</td></tr>
+<tr class="memdesc:aaa68fd5e90754770cb3e9ab1b93fbf16"><td class="mdescLeft">&#160;</td><td class="mdescRight">EDRX使能/失能， 效果参考AT+CEDRXS（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#aaa68fd5e90754770cb3e9ab1b93fbf16">更多...</a><br /></td></tr>
+<tr class="separator:aaa68fd5e90754770cb3e9ab1b93fbf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace2683c3aaf031dc4c7418df22ae2ea"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#aace2683c3aaf031dc4c7418df22ae2ea">tkl_nbiot_ril_get_apn</a> (PCHAR_T apn)</td></tr>
+<tr class="memdesc:aace2683c3aaf031dc4c7418df22ae2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前的网络接入APN名称（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#aace2683c3aaf031dc4c7418df22ae2ea">更多...</a><br /></td></tr>
+<tr class="separator:aace2683c3aaf031dc4c7418df22ae2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1995031dacbdc92db9e01de45b650c13"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a1995031dacbdc92db9e01de45b650c13">tkl_nbiot_ril_get_band</a> (PCHAR_T pbuf, UCHAR_T len)</td></tr>
+<tr class="memdesc:a1995031dacbdc92db9e01de45b650c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备当前的频点（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a1995031dacbdc92db9e01de45b650c13">更多...</a><br /></td></tr>
+<tr class="separator:a1995031dacbdc92db9e01de45b650c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f5d1d3762f55300e6c076db1c4c351"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a05f5d1d3762f55300e6c076db1c4c351">tkl_nbiot_ril_get_cesq</a> (<a class="el" href="../../d7/d89/structTKL__RIL__CESQ__T.html">TKL_RIL_CESQ_T</a> *info)</td></tr>
+<tr class="memdesc:a05f5d1d3762f55300e6c076db1c4c351"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备cesq相关参数（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a05f5d1d3762f55300e6c076db1c4c351">更多...</a><br /></td></tr>
+<tr class="separator:a05f5d1d3762f55300e6c076db1c4c351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b91aa1e186f3f6b3e06f796e91ed8f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a11b91aa1e186f3f6b3e06f796e91ed8f">tkl_nbiot_ril_get_cfun</a> (INT_T *val)</td></tr>
+<tr class="memdesc:a11b91aa1e186f3f6b3e06f796e91ed8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前AT CFUN参数（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a11b91aa1e186f3f6b3e06f796e91ed8f">更多...</a><br /></td></tr>
+<tr class="separator:a11b91aa1e186f3f6b3e06f796e91ed8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ca31c95f89833515cfb1c5c47bfd20"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#af9ca31c95f89833515cfb1c5c47bfd20">tkl_nbiot_ril_get_iccid</a> (PCHAR_T iccid)</td></tr>
+<tr class="memdesc:af9ca31c95f89833515cfb1c5c47bfd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备的iccid（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#af9ca31c95f89833515cfb1c5c47bfd20">更多...</a><br /></td></tr>
+<tr class="separator:af9ca31c95f89833515cfb1c5c47bfd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae370b6a628ad43aa3badba9c2d383da1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#ae370b6a628ad43aa3badba9c2d383da1">tkl_nbiot_ril_get_imei</a> (PCHAR_T buf, UCHAR_T len)</td></tr>
+<tr class="memdesc:ae370b6a628ad43aa3badba9c2d383da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">从原厂NV获取实际的IMEI  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#ae370b6a628ad43aa3badba9c2d383da1">更多...</a><br /></td></tr>
+<tr class="separator:ae370b6a628ad43aa3badba9c2d383da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48c02f79054814a90205f7feedc7d04"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#aa48c02f79054814a90205f7feedc7d04">tkl_nbiot_ril_get_imsi</a> (PCHAR_T imsi)</td></tr>
+<tr class="memdesc:aa48c02f79054814a90205f7feedc7d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备的IMSI（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#aa48c02f79054814a90205f7feedc7d04">更多...</a><br /></td></tr>
+<tr class="separator:aa48c02f79054814a90205f7feedc7d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f4cd40e5697e706e1c46cb30a1702f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#aa2f4cd40e5697e706e1c46cb30a1702f">tkl_nbiot_ril_get_neightbor_cellid</a> (<a class="el" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html">TKL_RIL_NEIGHBOR_CELL_INFO_T</a> **pbuf, INT_T *out_num)</td></tr>
+<tr class="memdesc:aa2f4cd40e5697e706e1c46cb30a1702f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备附近基站信息（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#aa2f4cd40e5697e706e1c46cb30a1702f">更多...</a><br /></td></tr>
+<tr class="separator:aa2f4cd40e5697e706e1c46cb30a1702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7aecfa9942a1aacbc2d40bf92c6f195"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad7aecfa9942a1aacbc2d40bf92c6f195">tkl_nbiot_ril_get_plmn_info</a> (<a class="el" href="../../d4/d48/structTKL__RIL__PLMN__T.html">TKL_RIL_PLMN_T</a> *plmn_info)</td></tr>
+<tr class="memdesc:ad7aecfa9942a1aacbc2d40bf92c6f195"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取相关的国家码及运营商信息（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad7aecfa9942a1aacbc2d40bf92c6f195">更多...</a><br /></td></tr>
+<tr class="separator:ad7aecfa9942a1aacbc2d40bf92c6f195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f2bafd4149eb184689e19956d62ef2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a28f2bafd4149eb184689e19956d62ef2">tkl_nbiot_ril_get_rf_flag</a> (INT_T *flag)</td></tr>
+<tr class="memdesc:a28f2bafd4149eb184689e19956d62ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前rf是否校准（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a28f2bafd4149eb184689e19956d62ef2">更多...</a><br /></td></tr>
+<tr class="separator:a28f2bafd4149eb184689e19956d62ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eaf5ab69704a3eafc099280bb9645df"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a8eaf5ab69704a3eafc099280bb9645df">tkl_nbiot_ril_get_rssi</a> (INT_T *out_rssi)</td></tr>
+<tr class="memdesc:a8eaf5ab69704a3eafc099280bb9645df"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备接收信号强度值rssi（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a8eaf5ab69704a3eafc099280bb9645df">更多...</a><br /></td></tr>
+<tr class="separator:a8eaf5ab69704a3eafc099280bb9645df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae424b04db4dfdc6fb011f76d68fcc2b9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#ae424b04db4dfdc6fb011f76d68fcc2b9">tkl_nbiot_ril_get_serving_cellid</a> (PCHAR_T pbuf, UCHAR_T len)</td></tr>
+<tr class="memdesc:ae424b04db4dfdc6fb011f76d68fcc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前基站的id（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#ae424b04db4dfdc6fb011f76d68fcc2b9">更多...</a><br /></td></tr>
+<tr class="separator:ae424b04db4dfdc6fb011f76d68fcc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bc0d975610b886e80a8617f5a97415"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a47bc0d975610b886e80a8617f5a97415">tkl_nbiot_ril_get_t3324</a> (UINT_T *t3324)</td></tr>
+<tr class="memdesc:a47bc0d975610b886e80a8617f5a97415"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备的T3324时间（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a47bc0d975610b886e80a8617f5a97415">更多...</a><br /></td></tr>
+<tr class="separator:a47bc0d975610b886e80a8617f5a97415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6808cb74298e21001e0719370a55be"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a9f6808cb74298e21001e0719370a55be">tkl_nbiot_ril_get_t3412</a> (UINT_T *t3412)</td></tr>
+<tr class="memdesc:a9f6808cb74298e21001e0719370a55be"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取设备的T3412时间（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a9f6808cb74298e21001e0719370a55be">更多...</a><br /></td></tr>
+<tr class="separator:a9f6808cb74298e21001e0719370a55be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c077c900a2273dbfce8bd5d0706fee"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a04c077c900a2273dbfce8bd5d0706fee">tkl_nbiot_ril_init</a> (VOID)</td></tr>
+<tr class="memdesc:a04c077c900a2273dbfce8bd5d0706fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">ril驱动初始化  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a04c077c900a2273dbfce8bd5d0706fee">更多...</a><br /></td></tr>
+<tr class="separator:a04c077c900a2273dbfce8bd5d0706fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f34f1c996845f12a2835a4c441a8c98"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a8f34f1c996845f12a2835a4c441a8c98">tkl_nbiot_ril_is_sim_ready</a> (VOID)</td></tr>
+<tr class="memdesc:a8f34f1c996845f12a2835a4c441a8c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备是否识别到sim卡  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a8f34f1c996845f12a2835a4c441a8c98">更多...</a><br /></td></tr>
+<tr class="separator:a8f34f1c996845f12a2835a4c441a8c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333cf291258f45e80dbe46ac10fb5d9e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a333cf291258f45e80dbe46ac10fb5d9e">tkl_nbiot_ril_psm_mode_enable</a> (UCHAR_T enable)</td></tr>
+<tr class="memdesc:a333cf291258f45e80dbe46ac10fb5d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">PSM模式配置，效果参考at+cpsms中psm开关（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a333cf291258f45e80dbe46ac10fb5d9e">更多...</a><br /></td></tr>
+<tr class="separator:a333cf291258f45e80dbe46ac10fb5d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad126a255d5baaf03f4eaa337c0e1dc38"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad126a255d5baaf03f4eaa337c0e1dc38">tkl_nbiot_ril_register_event_callback</a> (TKL_RIL_EVENT_SEND_T evt_cb, <a class="el" href="../../d2/d29/structTKL__RIL__EVENT__ID__T.html">TKL_RIL_EVENT_ID_T</a> *evt_id)</td></tr>
+<tr class="memdesc:ad126a255d5baaf03f4eaa337c0e1dc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册事件回调  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad126a255d5baaf03f4eaa337c0e1dc38">更多...</a><br /></td></tr>
+<tr class="separator:ad126a255d5baaf03f4eaa337c0e1dc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd68486c886f2a7922df1ec3eff6674"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a0fd68486c886f2a7922df1ec3eff6674">tkl_nbiot_ril_release_rrc</a> (VOID)</td></tr>
+<tr class="memdesc:a0fd68486c886f2a7922df1ec3eff6674"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据3GPP标准释放RRC，提前退出网络连接态  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a0fd68486c886f2a7922df1ec3eff6674">更多...</a><br /></td></tr>
+<tr class="separator:a0fd68486c886f2a7922df1ec3eff6674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3d6216025f519c1526497f60892c14"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a1f3d6216025f519c1526497f60892c14">tkl_nbiot_ril_set_apn</a> (PCHAR_T apn_name, PCHAR_T pdp_type)</td></tr>
+<tr class="memdesc:a1f3d6216025f519c1526497f60892c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前的网络接入APN名称（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a1f3d6216025f519c1526497f60892c14">更多...</a><br /></td></tr>
+<tr class="separator:a1f3d6216025f519c1526497f60892c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b9a9a0e6a788b038cff0e4dafc1902"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad0b9a9a0e6a788b038cff0e4dafc1902">tkl_nbiot_ril_set_area_attach_info</a> (<a class="el" href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">TKL_RIL_ATTACH_INFO_T</a> *operator)</td></tr>
+<tr class="memdesc:ad0b9a9a0e6a788b038cff0e4dafc1902"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定地区网络附着的相关信息  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad0b9a9a0e6a788b038cff0e4dafc1902">更多...</a><br /></td></tr>
+<tr class="separator:ad0b9a9a0e6a788b038cff0e4dafc1902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50faa3ccef3d9035918b17ab47c033aa"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a50faa3ccef3d9035918b17ab47c033aa">tkl_nbiot_ril_set_band</a> (PCHAR_T band_array_str)</td></tr>
+<tr class="memdesc:a50faa3ccef3d9035918b17ab47c033aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置频点（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a50faa3ccef3d9035918b17ab47c033aa">更多...</a><br /></td></tr>
+<tr class="separator:a50faa3ccef3d9035918b17ab47c033aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78871c89b71d470395fb983f511c230"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad78871c89b71d470395fb983f511c230">tkl_nbiot_ril_set_cfun</a> (UCHAR_T val)</td></tr>
+<tr class="memdesc:ad78871c89b71d470395fb983f511c230"><td class="mdescLeft">&#160;</td><td class="mdescRight">AT CFUN设置（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad78871c89b71d470395fb983f511c230">更多...</a><br /></td></tr>
+<tr class="separator:ad78871c89b71d470395fb983f511c230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8b20a921800d7d5fadc9a4ac13a04f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#adb8b20a921800d7d5fadc9a4ac13a04f">tkl_nbiot_ril_set_imei</a> (PCHAR_T imei)</td></tr>
+<tr class="memdesc:adb8b20a921800d7d5fadc9a4ac13a04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将IMEI写入原厂NV  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#adb8b20a921800d7d5fadc9a4ac13a04f">更多...</a><br /></td></tr>
+<tr class="separator:adb8b20a921800d7d5fadc9a4ac13a04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a6edd9268e3946e9b31a2a9045e493"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a11a6edd9268e3946e9b31a2a9045e493">tkl_nbiot_ril_set_t3324</a> (UINT_T req_time)</td></tr>
+<tr class="memdesc:a11a6edd9268e3946e9b31a2a9045e493"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备的T3324时间（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a11a6edd9268e3946e9b31a2a9045e493">更多...</a><br /></td></tr>
+<tr class="separator:a11a6edd9268e3946e9b31a2a9045e493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9802c869b66d7a76f50542c688c59667"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/tkl__nbiot__ril_8h.html#a9802c869b66d7a76f50542c688c59667">tkl_nbiot_ril_set_t3412</a> (UINT_T req_time)</td></tr>
+<tr class="memdesc:a9802c869b66d7a76f50542c688c59667"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设备的T3412时间（建议阻塞处理）  <a href="../../d8/d75/tkl__nbiot__ril_8h.html#a9802c869b66d7a76f50542c688c59667">更多...</a><br /></td></tr>
+<tr class="separator:a9802c869b66d7a76f50542c688c59667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the nbiot ril api </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2018-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a48a0f4848b87bcf22179c0a826819787" name="a48a0f4848b87bcf22179c0a826819787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a0f4848b87bcf22179c0a826819787">&#9670;&nbsp;</a></span>tkl_nbiot_ril_attach_event_inquire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_attach_event_inquire </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询ril层网络附着状态（建议异步处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaa68fd5e90754770cb3e9ab1b93fbf16" name="aaa68fd5e90754770cb3e9ab1b93fbf16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa68fd5e90754770cb3e9ab1b93fbf16">&#9670;&nbsp;</a></span>tkl_nbiot_ril_edrx_mode_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_edrx_mode_enable </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EDRX使能/失能， 效果参考AT+CEDRXS（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>: 1，使能；0，失能</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aace2683c3aaf031dc4c7418df22ae2ea" name="aace2683c3aaf031dc4c7418df22ae2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace2683c3aaf031dc4c7418df22ae2ea">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_apn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_apn </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>apn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前的网络接入APN名称（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">apn</td><td>返回获取的当前的网络接入APN名称</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1995031dacbdc92db9e01de45b650c13" name="a1995031dacbdc92db9e01de45b650c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1995031dacbdc92db9e01de45b650c13">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_band()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_band </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>pbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取设备当前的频点（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pbuf</td><td>: string buffer，输出格式举例:'3,5,8' </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: buffer length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a05f5d1d3762f55300e6c076db1c4c351" name="a05f5d1d3762f55300e6c076db1c4c351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f5d1d3762f55300e6c076db1c4c351">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_cesq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_cesq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d89/structTKL__RIL__CESQ__T.html">TKL_RIL_CESQ_T</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备cesq相关参数（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">info</td><td>：获取当前设备cesq相关参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a11b91aa1e186f3f6b3e06f796e91ed8f" name="a11b91aa1e186f3f6b3e06f796e91ed8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b91aa1e186f3f6b3e06f796e91ed8f">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_cfun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_cfun </td>
+          <td>(</td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前AT CFUN参数（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">val:返回的当前CFUN参数</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af9ca31c95f89833515cfb1c5c47bfd20" name="af9ca31c95f89833515cfb1c5c47bfd20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ca31c95f89833515cfb1c5c47bfd20">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_iccid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_iccid </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>iccid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备的iccid（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">iccid</td><td>获取当前设备的iccid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae370b6a628ad43aa3badba9c2d383da1" name="ae370b6a628ad43aa3badba9c2d383da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae370b6a628ad43aa3badba9c2d383da1">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_imei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_imei </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从原厂NV获取实际的IMEI </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>: imei string buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: buffer length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa48c02f79054814a90205f7feedc7d04" name="aa48c02f79054814a90205f7feedc7d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48c02f79054814a90205f7feedc7d04">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_imsi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_imsi </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>imsi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备的IMSI（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">imsi</td><td>获取当前设备的IMSI</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa2f4cd40e5697e706e1c46cb30a1702f" name="aa2f4cd40e5697e706e1c46cb30a1702f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f4cd40e5697e706e1c46cb30a1702f">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_neightbor_cellid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_neightbor_cellid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html">TKL_RIL_NEIGHBOR_CELL_INFO_T</a> **&#160;</td>
+          <td class="paramname"><em>pbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>out_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取设备附近基站信息（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pbuf</td><td>: 返回附近基站信息 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out_num</td><td>: 附近基站总数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad7aecfa9942a1aacbc2d40bf92c6f195" name="ad7aecfa9942a1aacbc2d40bf92c6f195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7aecfa9942a1aacbc2d40bf92c6f195">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_plmn_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_plmn_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d48/structTKL__RIL__PLMN__T.html">TKL_RIL_PLMN_T</a> *&#160;</td>
+          <td class="paramname"><em>plmn_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取相关的国家码及运营商信息（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plmn_info</td><td>获取到的plmn信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a28f2bafd4149eb184689e19956d62ef2" name="a28f2bafd4149eb184689e19956d62ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f2bafd4149eb184689e19956d62ef2">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_rf_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_rf_flag </td>
+          <td>(</td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前rf是否校准（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">flag:返回的flag,1</td><td>已校准，否则未校准</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8eaf5ab69704a3eafc099280bb9645df" name="a8eaf5ab69704a3eafc099280bb9645df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eaf5ab69704a3eafc099280bb9645df">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_rssi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_rssi </td>
+          <td>(</td>
+          <td class="paramtype">INT_T *&#160;</td>
+          <td class="paramname"><em>out_rssi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取设备接收信号强度值rssi（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out_rssi</td><td>返回的信号强度（为带符号的整型，理论上0为最强,一般为负值）</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae424b04db4dfdc6fb011f76d68fcc2b9" name="ae424b04db4dfdc6fb011f76d68fcc2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae424b04db4dfdc6fb011f76d68fcc2b9">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_serving_cellid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_serving_cellid </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>pbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前基站的id（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pbuf</td><td>: 返回当前连接基站id 字符缓存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>: buffer length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a47bc0d975610b886e80a8617f5a97415" name="a47bc0d975610b886e80a8617f5a97415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bc0d975610b886e80a8617f5a97415">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_t3324()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_t3324 </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>t3324</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取设备的T3324时间（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t3324：返回获取的设备的T3324值，单位：s</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9f6808cb74298e21001e0719370a55be" name="a9f6808cb74298e21001e0719370a55be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6808cb74298e21001e0719370a55be">&#9670;&nbsp;</a></span>tkl_nbiot_ril_get_t3412()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_get_t3412 </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>t3412</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取设备的T3412时间（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t3412：返回获取的设备的T3412值，单位：s</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a04c077c900a2273dbfce8bd5d0706fee" name="a04c077c900a2273dbfce8bd5d0706fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c077c900a2273dbfce8bd5d0706fee">&#9670;&nbsp;</a></span>tkl_nbiot_ril_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ril驱动初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8f34f1c996845f12a2835a4c441a8c98" name="a8f34f1c996845f12a2835a4c441a8c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f34f1c996845f12a2835a4c441a8c98">&#9670;&nbsp;</a></span>tkl_nbiot_ril_is_sim_ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_nbiot_ril_is_sim_ready </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备是否识别到sim卡 </p>
+<dl class="section return"><dt>返回</dt><dd>BOOL_T true: 识别到卡 false: 未识别到卡 </dd></dl>
+
+</div>
+</div>
+<a id="a333cf291258f45e80dbe46ac10fb5d9e" name="a333cf291258f45e80dbe46ac10fb5d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333cf291258f45e80dbe46ac10fb5d9e">&#9670;&nbsp;</a></span>tkl_nbiot_ril_psm_mode_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_psm_mode_enable </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PSM模式配置，效果参考at+cpsms中psm开关（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>: 1，使能；0，失能</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad126a255d5baaf03f4eaa337c0e1dc38" name="ad126a255d5baaf03f4eaa337c0e1dc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad126a255d5baaf03f4eaa337c0e1dc38">&#9670;&nbsp;</a></span>tkl_nbiot_ril_register_event_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_register_event_callback </td>
+          <td>(</td>
+          <td class="paramtype">TKL_RIL_EVENT_SEND_T&#160;</td>
+          <td class="paramname"><em>evt_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d29/structTKL__RIL__EVENT__ID__T.html">TKL_RIL_EVENT_ID_T</a> *&#160;</td>
+          <td class="paramname"><em>evt_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册事件回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt_cb</td><td>：注册的相关事件回调函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evt_id</td><td>：事件定义</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0fd68486c886f2a7922df1ec3eff6674" name="a0fd68486c886f2a7922df1ec3eff6674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd68486c886f2a7922df1ec3eff6674">&#9670;&nbsp;</a></span>tkl_nbiot_ril_release_rrc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_release_rrc </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据3GPP标准释放RRC，提前退出网络连接态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1f3d6216025f519c1526497f60892c14" name="a1f3d6216025f519c1526497f60892c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3d6216025f519c1526497f60892c14">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_apn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_apn </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>apn_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>pdp_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置当前的网络接入APN名称（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">apn_name</td><td>：设置当前的网络接入APN名称. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pdp_type</td><td>: 分组数据协议的类型,"IP",IPV6","IPV4V6","Non-IP"</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad0b9a9a0e6a788b038cff0e4dafc1902" name="ad0b9a9a0e6a788b038cff0e4dafc1902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b9a9a0e6a788b038cff0e4dafc1902">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_area_attach_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_area_attach_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">TKL_RIL_ATTACH_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>operator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置指定地区网络附着的相关信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">operator</td><td>：地区网络附着相关信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a50faa3ccef3d9035918b17ab47c033aa" name="a50faa3ccef3d9035918b17ab47c033aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50faa3ccef3d9035918b17ab47c033aa">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_band()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_band </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>band_array_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置频点（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">band_array_str</td><td>：待设置的频带，格式举例:'3,5,8'</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad78871c89b71d470395fb983f511c230" name="ad78871c89b71d470395fb983f511c230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78871c89b71d470395fb983f511c230">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_cfun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_cfun </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AT CFUN设置（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>：待设置的CFUN的参数，参考AT CFUN</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="adb8b20a921800d7d5fadc9a4ac13a04f" name="adb8b20a921800d7d5fadc9a4ac13a04f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8b20a921800d7d5fadc9a4ac13a04f">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_imei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_imei </td>
+          <td>(</td>
+          <td class="paramtype">PCHAR_T&#160;</td>
+          <td class="paramname"><em>imei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将IMEI写入原厂NV </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imei</td><td>：将设置的IMEI字符串指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a11a6edd9268e3946e9b31a2a9045e493" name="a11a6edd9268e3946e9b31a2a9045e493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a6edd9268e3946e9b31a2a9045e493">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_t3324()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_t3324 </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>req_time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备的T3324时间（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">req_time</td><td>：待设置设备的T3324时间，单位：s</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9802c869b66d7a76f50542c688c59667" name="a9802c869b66d7a76f50542c688c59667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9802c869b66d7a76f50542c688c59667">&#9670;&nbsp;</a></span>tkl_nbiot_ril_set_t3412()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_nbiot_ril_set_t3412 </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>req_time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置设备的T3412时间（建议阻塞处理） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">req_time</td><td>：待设置设备的T3412时间，单位：s</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

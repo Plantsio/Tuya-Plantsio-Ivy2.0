@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system_service/include/tal_workq_service.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c9db1059777c15dc8c8b94b955097dc4.html">tal_system_service</a></li><li class="navelem"><a class="el" href="../../dir_679a7e65efb1f08b4e45cdf759445817.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_workq_service.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d56/tal__workq__service_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TAL_WORKQ_SERVICE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TAL_WORKQ_SERVICE_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d01/tal__workqueue_8h.html">tal_workqueue.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">   19</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">   23</a></span>    <a class="code hl_enumvalue" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">WORKQ_SYSTEM</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf">WORKQ_HIGHTPRI</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf">   28</a></span>}<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a43840dd59e3326698d6057aaa5cc072f">   35</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a43840dd59e3326698d6057aaa5cc072f">tal_workq_init</a>(VOID_T);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a65e4a467b631bd48b94ac083d4c23659">   44</a></span>WORKQUEUE_HANDLE <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a65e4a467b631bd48b94ac083d4c23659">tal_workq_get_handle</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#aee7cba2daf4df874edc16e362bab19fe">   55</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#aee7cba2daf4df874edc16e362bab19fe">tal_workq_schedule</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a77789fbeb37773652230eca4ac450dc1">   66</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a77789fbeb37773652230eca4ac450dc1">tal_workq_schedule_instant</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a0e603fb7c6f1d1bf3feb2409980240f5">   77</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a0e603fb7c6f1d1bf3feb2409980240f5">tal_workq_cancel</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a5bda74aae07e1a12cab8b57dc35312f4">   88</a></span>UINT16_T <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a5bda74aae07e1a12cab8b57dc35312f4">tal_workq_get_num</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a9c506e6ddda98a91e408113d3065ba0f">   95</a></span>VOID_T <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a9c506e6ddda98a91e408113d3065ba0f">tal_workq_dump</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../de/dba/structDELAYED__WORK__ENTRY__S.html">  100</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    DELAYED_WORK_HANDLE *delayed_work; <span class="comment">// delayed work handle</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    WORKQUEUE_CB delayed_work_cb;      <span class="comment">// delayed work callback</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}<a class="code hl_struct" href="../../de/dba/structDELAYED__WORK__ENTRY__S.html">DELAYED_WORK_ENTRY_S</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#abf4cd675388ade244480a76db47260df">  115</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#abf4cd675388ade244480a76db47260df">tal_workq_init_delayed</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    DELAYED_WORK_HANDLE *delayed_work);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#abcdc2fad3be27fdf9af928f13533c508">  127</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#abcdc2fad3be27fdf9af928f13533c508">tal_workq_start_delayed</a>(DELAYED_WORK_HANDLE delayed_work,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    TIME_MS interval, LOOP_TYPE type);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a8cb719879d9d1efb9a4e6947affc64ec">  137</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a8cb719879d9d1efb9a4e6947affc64ec">tal_workq_stop_delayed</a>(DELAYED_WORK_HANDLE delayed_work);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../dd/d56/tal__workq__service_8h.html#a725ee1e984d0bd2f7d03e9c22f2383a4">  146</a></span>OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a725ee1e984d0bd2f7d03e9c22f2383a4">tal_workq_cancel_delayed</a>(DELAYED_WORK_HANDLE delayed_work);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#endif </span><span class="comment">//__TAL_WORKQ_SERVICE_H__</span></div>
+<div class="ttc" id="astructDELAYED__WORK__ENTRY__S_html"><div class="ttname"><a href="../../de/dba/structDELAYED__WORK__ENTRY__S.html">DELAYED_WORK_ENTRY_S</a></div><div class="ttdoc">delayed work entry definition</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:100</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a0e603fb7c6f1d1bf3feb2409980240f5"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a0e603fb7c6f1d1bf3feb2409980240f5">tal_workq_cancel</a></div><div class="ttdeci">OPERATE_RET tal_workq_cancel(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data)</div><div class="ttdoc">cancel work task in workqueue</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a43840dd59e3326698d6057aaa5cc072f"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a43840dd59e3326698d6057aaa5cc072f">tal_workq_init</a></div><div class="ttdeci">OPERATE_RET tal_workq_init(VOID_T)</div><div class="ttdoc">init ty work queue service</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a5bda74aae07e1a12cab8b57dc35312f4"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a5bda74aae07e1a12cab8b57dc35312f4">tal_workq_get_num</a></div><div class="ttdeci">UINT16_T tal_workq_get_num(WORKQ_SERVICE_E service)</div><div class="ttdoc">get current work number in work queue.</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a65e4a467b631bd48b94ac083d4c23659"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a65e4a467b631bd48b94ac083d4c23659">tal_workq_get_handle</a></div><div class="ttdeci">WORKQUEUE_HANDLE tal_workq_get_handle(WORKQ_SERVICE_E service)</div><div class="ttdoc">get handle of workqueue service</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a725ee1e984d0bd2f7d03e9c22f2383a4"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a725ee1e984d0bd2f7d03e9c22f2383a4">tal_workq_cancel_delayed</a></div><div class="ttdeci">OPERATE_RET tal_workq_cancel_delayed(DELAYED_WORK_HANDLE delayed_work)</div><div class="ttdoc">cancel delay work</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a77789fbeb37773652230eca4ac450dc1"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a77789fbeb37773652230eca4ac450dc1">tal_workq_schedule_instant</a></div><div class="ttdeci">OPERATE_RET tal_workq_schedule_instant(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data)</div><div class="ttdoc">put work task in workqueue, instant will be dequeued first</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a820afe6285b996db650db54e19c2cfdf"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a></div><div class="ttdeci">WORKQ_SERVICE_E</div><div class="ttdoc">TuyaOS provides developers with two workqueue service for convenience.</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:19</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">WORKQ_SYSTEM</a></div><div class="ttdeci">@ WORKQ_SYSTEM</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:23</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf">WORKQ_HIGHTPRI</a></div><div class="ttdeci">@ WORKQ_HIGHTPRI</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:27</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a8cb719879d9d1efb9a4e6947affc64ec"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a8cb719879d9d1efb9a4e6947affc64ec">tal_workq_stop_delayed</a></div><div class="ttdeci">OPERATE_RET tal_workq_stop_delayed(DELAYED_WORK_HANDLE delayed_work)</div><div class="ttdoc">stop delayed work</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a9c506e6ddda98a91e408113d3065ba0f"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a9c506e6ddda98a91e408113d3065ba0f">tal_workq_dump</a></div><div class="ttdeci">VOID_T tal_workq_dump(WORKQ_SERVICE_E service)</div><div class="ttdoc">dump all work in work queue.</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_abcdc2fad3be27fdf9af928f13533c508"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#abcdc2fad3be27fdf9af928f13533c508">tal_workq_start_delayed</a></div><div class="ttdeci">OPERATE_RET tal_workq_start_delayed(DELAYED_WORK_HANDLE delayed_work, TIME_MS interval, LOOP_TYPE type)</div><div class="ttdoc">put work task in workqueue after delay</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_abf4cd675388ade244480a76db47260df"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#abf4cd675388ade244480a76db47260df">tal_workq_init_delayed</a></div><div class="ttdeci">OPERATE_RET tal_workq_init_delayed(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data, DELAYED_WORK_HANDLE *delayed_work)</div><div class="ttdoc">init delayed work task</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_aee7cba2daf4df874edc16e362bab19fe"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#aee7cba2daf4df874edc16e362bab19fe">tal_workq_schedule</a></div><div class="ttdeci">OPERATE_RET tal_workq_schedule(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data)</div><div class="ttdoc">add work to work queue</div></div>
+<div class="ttc" id="atal__workqueue_8h_html"><div class="ttname"><a href="../../df/d01/tal__workqueue_8h.html">tal_workqueue.h</a></div><div class="ttdoc">tuya workqueue module</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

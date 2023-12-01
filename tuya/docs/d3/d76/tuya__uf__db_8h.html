@@ -1,0 +1,1039 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/base_uf/include/tuya_uf_db.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_a9c04470734d48d9a4389e419542ace8.html">base_uf</a></li><li class="navelem"><a class="el" href="../../dir_5ba4bed164d824fbb46dd010f92c9396.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_uf_db.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya unique file database module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_uf_db.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/def/tuya__uf__db_8h__incl.png" border="0" usemap="#ainclude_2components_2base__uf_2include_2tuya__uf__db_8h" alt=""/></div>
+<map name="ainclude_2components_2base__uf_2include_2tuya__uf__db_8h" id="ainclude_2components_2base__uf_2include_2tuya__uf__db_8h">
+<area shape="rect" title="tuya unique file database module" alt="" coords="362,5,523,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../d3/d76/tuya__uf__db_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aa82308b379d5534680b68cb212e4d0a8"><td class="memItemLeft" align="right" valign="top"><a id="aa82308b379d5534680b68cb212e4d0a8" name="aa82308b379d5534680b68cb212e4d0a8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>UF_SEEK_CUR</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa82308b379d5534680b68cb212e4d0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab518735d919cc655f012b031d436a657"><td class="memItemLeft" align="right" valign="top"><a id="ab518735d919cc655f012b031d436a657" name="ab518735d919cc655f012b031d436a657"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>UF_SEEK_END</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ab518735d919cc655f012b031d436a657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072c13b4e42e3ec27bf8bc6628a09050"><td class="memItemLeft" align="right" valign="top"><a id="a072c13b4e42e3ec27bf8bc6628a09050" name="a072c13b4e42e3ec27bf8bc6628a09050"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>UF_SEEK_SET</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a072c13b4e42e3ec27bf8bc6628a09050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a25420c33900c400dd875fb78ea629a6b"><td class="memItemLeft" align="right" valign="top"><a id="a25420c33900c400dd875fb78ea629a6b" name="a25420c33900c400dd875fb78ea629a6b"></a>
+typedef VOID&#160;</td><td class="memItemRight" valign="bottom"><b>uFILE</b></td></tr>
+<tr class="memdesc:a25420c33900c400dd875fb78ea629a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique file handle <br /></td></tr>
+<tr class="separator:a25420c33900c400dd875fb78ea629a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467636e27b454054b3846c79671f7a76"><td class="memItemLeft" align="right" valign="top"><a id="a467636e27b454054b3846c79671f7a76" name="a467636e27b454054b3846c79671f7a76"></a>
+typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>ufmode_t</b></td></tr>
+<tr class="memdesc:a467636e27b454054b3846c79671f7a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique file mode <br /></td></tr>
+<tr class="separator:a467636e27b454054b3846c79671f7a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a84d17bbe8f3f0c7221e6bb5b3b04faf8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a84d17bbe8f3f0c7221e6bb5b3b04faf8">uf_db_init</a> (VOID)</td></tr>
+<tr class="memdesc:a84d17bbe8f3f0c7221e6bb5b3b04faf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya unique file database system initialization  <a href="../../d3/d76/tuya__uf__db_8h.html#a84d17bbe8f3f0c7221e6bb5b3b04faf8">更多...</a><br /></td></tr>
+<tr class="separator:a84d17bbe8f3f0c7221e6bb5b3b04faf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879b00e8c15fbf7518e145bb0b62281a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a879b00e8c15fbf7518e145bb0b62281a">uf_db_user_param_read</a> (OUT BYTE_T **buf, OUT UINT_T *len)</td></tr>
+<tr class="memdesc:a879b00e8c15fbf7518e145bb0b62281a"><td class="mdescLeft">&#160;</td><td class="mdescRight">read user parameter from unique file database  <a href="../../d3/d76/tuya__uf__db_8h.html#a879b00e8c15fbf7518e145bb0b62281a">更多...</a><br /></td></tr>
+<tr class="separator:a879b00e8c15fbf7518e145bb0b62281a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1f8055efa6d73b7553f84b260ee615"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#aea1f8055efa6d73b7553f84b260ee615">uf_db_user_param_write</a> (IN BYTE_T *data, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:aea1f8055efa6d73b7553f84b260ee615"><td class="mdescLeft">&#160;</td><td class="mdescRight">write user parameter to unique file database  <a href="../../d3/d76/tuya__uf__db_8h.html#aea1f8055efa6d73b7553f84b260ee615">更多...</a><br /></td></tr>
+<tr class="separator:aea1f8055efa6d73b7553f84b260ee615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be797a8ed0e8c64c04f6a94eba1ee7c"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a0be797a8ed0e8c64c04f6a94eba1ee7c">ufaccess</a> (IN CHAR_T *filepath, IN INT_T mode)</td></tr>
+<tr class="memdesc:a0be797a8ed0e8c64c04f6a94eba1ee7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">test the permission of the unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a0be797a8ed0e8c64c04f6a94eba1ee7c">更多...</a><br /></td></tr>
+<tr class="separator:a0be797a8ed0e8c64c04f6a94eba1ee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f00d43fb0201c0bd692040d9e534859"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd)</td></tr>
+<tr class="memdesc:a5f00d43fb0201c0bd692040d9e534859"><td class="mdescLeft">&#160;</td><td class="mdescRight">close a unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">更多...</a><br /></td></tr>
+<tr class="separator:a5f00d43fb0201c0bd692040d9e534859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147b22c554979eeca1e275c9b42c136f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">ufdelete</a> (IN CHAR_T *filepath)</td></tr>
+<tr class="memdesc:a147b22c554979eeca1e275c9b42c136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">更多...</a><br /></td></tr>
+<tr class="separator:a147b22c554979eeca1e275c9b42c136f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a59cefa7bc7685c6b9d8d684996365"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a10a59cefa7bc7685c6b9d8d684996365">ufeof</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd)</td></tr>
+<tr class="memdesc:a10a59cefa7bc7685c6b9d8d684996365"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the current offset reach the end of the file  <a href="../../d3/d76/tuya__uf__db_8h.html#a10a59cefa7bc7685c6b9d8d684996365">更多...</a><br /></td></tr>
+<tr class="separator:a10a59cefa7bc7685c6b9d8d684996365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d78a76f5e3756a5b8688b725df765a5"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a3d78a76f5e3756a5b8688b725df765a5">ufexist</a> (IN CHAR_T *filepath)</td></tr>
+<tr class="memdesc:a3d78a76f5e3756a5b8688b725df765a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if unique file is exist  <a href="../../d3/d76/tuya__uf__db_8h.html#a3d78a76f5e3756a5b8688b725df765a5">更多...</a><br /></td></tr>
+<tr class="separator:a3d78a76f5e3756a5b8688b725df765a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bddbaf774c1298983c482966c33af9"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a16bddbaf774c1298983c482966c33af9">ufflush</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream)</td></tr>
+<tr class="memdesc:a16bddbaf774c1298983c482966c33af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">flush the unique file, write the cache to physical disk  <a href="../../d3/d76/tuya__uf__db_8h.html#a16bddbaf774c1298983c482966c33af9">更多...</a><br /></td></tr>
+<tr class="separator:a16bddbaf774c1298983c482966c33af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ef94662de3b0f5191d31a44ce31967"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a64ef94662de3b0f5191d31a44ce31967">ufformat</a> (VOID)</td></tr>
+<tr class="memdesc:a64ef94662de3b0f5191d31a44ce31967"><td class="mdescLeft">&#160;</td><td class="mdescRight">format uf flash  <a href="../../d3/d76/tuya__uf__db_8h.html#a64ef94662de3b0f5191d31a44ce31967">更多...</a><br /></td></tr>
+<tr class="separator:a64ef94662de3b0f5191d31a44ce31967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a0ff5e415a99f8d682f732a0540e91"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#ad8a0ff5e415a99f8d682f732a0540e91">ufgetc</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream)</td></tr>
+<tr class="memdesc:ad8a0ff5e415a99f8d682f732a0540e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">read a character from unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#ad8a0ff5e415a99f8d682f732a0540e91">更多...</a><br /></td></tr>
+<tr class="separator:ad8a0ff5e415a99f8d682f732a0540e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a5c65f28a969cd074c7001f78fdad74"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a3a5c65f28a969cd074c7001f78fdad74">ufgets</a> (IN CHAR_T *s, IN INT_T n, IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream)</td></tr>
+<tr class="memdesc:a3a5c65f28a969cd074c7001f78fdad74"><td class="mdescLeft">&#160;</td><td class="mdescRight">read a line from unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a3a5c65f28a969cd074c7001f78fdad74">更多...</a><br /></td></tr>
+<tr class="separator:a3a5c65f28a969cd074c7001f78fdad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584f65db86a653e01a06efded5775ee7"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a584f65db86a653e01a06efded5775ee7">ufgetsize</a> (IN CHAR_T *filepath)</td></tr>
+<tr class="memdesc:a584f65db86a653e01a06efded5775ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the size of the unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a584f65db86a653e01a06efded5775ee7">更多...</a><br /></td></tr>
+<tr class="separator:a584f65db86a653e01a06efded5775ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d758d848fe9b2e341dfa68b9d63741"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a74d758d848fe9b2e341dfa68b9d63741">ufileno</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream)</td></tr>
+<tr class="memdesc:a74d758d848fe9b2e341dfa68b9d63741"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the file description  <a href="../../d3/d76/tuya__uf__db_8h.html#a74d758d848fe9b2e341dfa68b9d63741">更多...</a><br /></td></tr>
+<tr class="separator:a74d758d848fe9b2e341dfa68b9d63741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674e684d91cbbe9db66277d97df89aee"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a674e684d91cbbe9db66277d97df89aee">ufinit</a> (VOID)</td></tr>
+<tr class="memdesc:a674e684d91cbbe9db66277d97df89aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique file system initialization  <a href="../../d3/d76/tuya__uf__db_8h.html#a674e684d91cbbe9db66277d97df89aee">更多...</a><br /></td></tr>
+<tr class="separator:a674e684d91cbbe9db66277d97df89aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0465ba7327d4da574ed5e5efbe6e4376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a> (IN CHAR_T *filepath, IN CHAR_T *mode)</td></tr>
+<tr class="memdesc:a0465ba7327d4da574ed5e5efbe6e4376"><td class="mdescLeft">&#160;</td><td class="mdescRight">open a unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">更多...</a><br /></td></tr>
+<tr class="separator:a0465ba7327d4da574ed5e5efbe6e4376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab110bc62da08a573890f7740a9422216"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#ab110bc62da08a573890f7740a9422216">ufprintf</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream, IN const char *pFmt,...)</td></tr>
+<tr class="memdesc:ab110bc62da08a573890f7740a9422216"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a specail format to unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#ab110bc62da08a573890f7740a9422216">更多...</a><br /></td></tr>
+<tr class="separator:ab110bc62da08a573890f7740a9422216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184dfd8e1512dba4615dbe9d8c0efe32"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">ufread</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:a184dfd8e1512dba4615dbe9d8c0efe32"><td class="mdescLeft">&#160;</td><td class="mdescRight">read from unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">更多...</a><br /></td></tr>
+<tr class="separator:a184dfd8e1512dba4615dbe9d8c0efe32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8bd7311bcc0c14d3da3a4b1d6f23ed1"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#af8bd7311bcc0c14d3da3a4b1d6f23ed1">ufscanf</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *stream, IN INT_T count, IN PCHAR_T pFmt,...)</td></tr>
+<tr class="memdesc:af8bd7311bcc0c14d3da3a4b1d6f23ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">read a special format from unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#af8bd7311bcc0c14d3da3a4b1d6f23ed1">更多...</a><br /></td></tr>
+<tr class="separator:af8bd7311bcc0c14d3da3a4b1d6f23ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d37bfdb6f1213ed4586133a2cf97e5"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a29d37bfdb6f1213ed4586133a2cf97e5">ufseek</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UINT_T offset, IN CONST <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a467636e27b454054b3846c79671f7a76">ufmode_t</a> uf_mode)</td></tr>
+<tr class="memdesc:a29d37bfdb6f1213ed4586133a2cf97e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">seek to the offset of the unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a29d37bfdb6f1213ed4586133a2cf97e5">更多...</a><br /></td></tr>
+<tr class="separator:a29d37bfdb6f1213ed4586133a2cf97e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe9fbd7d72362c78491eef9f2b35984"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a2fe9fbd7d72362c78491eef9f2b35984">ufsync</a> (IN INT_T fd)</td></tr>
+<tr class="memdesc:a2fe9fbd7d72362c78491eef9f2b35984"><td class="mdescLeft">&#160;</td><td class="mdescRight">sync the unique file, write the file info to pysical disk  <a href="../../d3/d76/tuya__uf__db_8h.html#a2fe9fbd7d72362c78491eef9f2b35984">更多...</a><br /></td></tr>
+<tr class="separator:a2fe9fbd7d72362c78491eef9f2b35984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0faf51de4e035582bee5e21d893df5"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a9f0faf51de4e035582bee5e21d893df5">uftell</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd)</td></tr>
+<tr class="memdesc:a9f0faf51de4e035582bee5e21d893df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current offset of the unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#a9f0faf51de4e035582bee5e21d893df5">更多...</a><br /></td></tr>
+<tr class="separator:a9f0faf51de4e035582bee5e21d893df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97a9279316ced48c68512871b5f2839"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:af97a9279316ced48c68512871b5f2839"><td class="mdescLeft">&#160;</td><td class="mdescRight">write to unique file  <a href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">更多...</a><br /></td></tr>
+<tr class="separator:af97a9279316ced48c68512871b5f2839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757d1775b1402a3ad834aca0c51aec51"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51">ufwrite_raw_end</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd)</td></tr>
+<tr class="memdesc:a757d1775b1402a3ad834aca0c51aec51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit ufwrite raw mode  <a href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51">更多...</a><br /></td></tr>
+<tr class="separator:a757d1775b1402a3ad834aca0c51aec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51279a9747e262ab6c86e587a553457f"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a51279a9747e262ab6c86e587a553457f">ufwrite_raw_start</a> (IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd)</td></tr>
+<tr class="memdesc:a51279a9747e262ab6c86e587a553457f"><td class="mdescLeft">&#160;</td><td class="mdescRight">enter ufwrite raw mode  <a href="../../d3/d76/tuya__uf__db_8h.html#a51279a9747e262ab6c86e587a553457f">更多...</a><br /></td></tr>
+<tr class="separator:a51279a9747e262ab6c86e587a553457f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya unique file database module </p>
+<dl class="section date"><dt>日期</dt><dd>2019-04-25</dd></dl>
+<p>copyright Copyright (c) {2018-2020} 涂鸦科技 www.tuya.com </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a84d17bbe8f3f0c7221e6bb5b3b04faf8" name="a84d17bbe8f3f0c7221e6bb5b3b04faf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d17bbe8f3f0c7221e6bb5b3b04faf8">&#9670;&nbsp;</a></span>uf_db_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET uf_db_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya unique file database system initialization </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a879b00e8c15fbf7518e145bb0b62281a" name="a879b00e8c15fbf7518e145bb0b62281a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879b00e8c15fbf7518e145bb0b62281a">&#9670;&nbsp;</a></span>uf_db_user_param_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET uf_db_user_param_read </td>
+          <td>(</td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read user parameter from unique file database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>buffer of the data read from user parameter file database </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">len</td><td>length of the data read from user parameter file database </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the user parameter database is a file named "user_param_key", and max size is 4096 byte </dd></dl>
+
+</div>
+</div>
+<a id="aea1f8055efa6d73b7553f84b260ee615" name="aea1f8055efa6d73b7553f84b260ee615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1f8055efa6d73b7553f84b260ee615">&#9670;&nbsp;</a></span>uf_db_user_param_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET uf_db_user_param_write </td>
+          <td>(</td>
+          <td class="paramtype">IN BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write user parameter to unique file database </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>data write to user parameter database </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length write to user parameter database </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the user parameter database is a file named "user_param_key", and max size is 4096 byte </dd></dl>
+
+</div>
+</div>
+<a id="a0be797a8ed0e8c64c04f6a94eba1ee7c" name="a0be797a8ed0e8c64c04f6a94eba1ee7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be797a8ed0e8c64c04f6a94eba1ee7c">&#9670;&nbsp;</a></span>ufaccess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufaccess </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>test the permission of the unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>the full file path </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>check the access mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>INT_T</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the access mode contains "R_OK": read permission,"W_OK": write permission,"X_OK":excute permission,"F_OK": existed, in flash unique file system, only support "F_OK" mode. </dd></dl>
+
+</div>
+</div>
+<a id="a5f00d43fb0201c0bd692040d9e534859" name="a5f00d43fb0201c0bd692040d9e534859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f00d43fb0201c0bd692040d9e534859">&#9670;&nbsp;</a></span>ufclose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ufclose </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>close a unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a147b22c554979eeca1e275c9b42c136f" name="a147b22c554979eeca1e275c9b42c136f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147b22c554979eeca1e275c9b42c136f">&#9670;&nbsp;</a></span>ufdelete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ufdelete </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete the unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>the full file path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a10a59cefa7bc7685c6b9d8d684996365" name="a10a59cefa7bc7685c6b9d8d684996365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a59cefa7bc7685c6b9d8d684996365">&#9670;&nbsp;</a></span>ufeof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T ufeof </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if the current offset reach the end of the file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE on reach the EOF, FLASE on not reach the EOF. </dd></dl>
+
+</div>
+</div>
+<a id="a3d78a76f5e3756a5b8688b725df765a5" name="a3d78a76f5e3756a5b8688b725df765a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d78a76f5e3756a5b8688b725df765a5">&#9670;&nbsp;</a></span>ufexist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T ufexist </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if unique file is exist </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>the full file path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE on existed, FLASE on not existed. </dd></dl>
+
+</div>
+</div>
+<a id="a16bddbaf774c1298983c482966c33af9" name="a16bddbaf774c1298983c482966c33af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bddbaf774c1298983c482966c33af9">&#9670;&nbsp;</a></span>ufflush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufflush </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>flush the unique file, write the cache to physical disk </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success, others on failed</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>in flash unique file system, always return success because the data was write to flash directly. </dd></dl>
+
+</div>
+</div>
+<a id="a64ef94662de3b0f5191d31a44ce31967" name="a64ef94662de3b0f5191d31a44ce31967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ef94662de3b0f5191d31a44ce31967">&#9670;&nbsp;</a></span>ufformat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ufformat </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>format uf flash </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad8a0ff5e415a99f8d682f732a0540e91" name="ad8a0ff5e415a99f8d682f732a0540e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a0ff5e415a99f8d682f732a0540e91">&#9670;&nbsp;</a></span>ufgetc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufgetc </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read a character from unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-1 on failed, others means success </dd></dl>
+
+</div>
+</div>
+<a id="a3a5c65f28a969cd074c7001f78fdad74" name="a3a5c65f28a969cd074c7001f78fdad74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5c65f28a969cd074c7001f78fdad74">&#9670;&nbsp;</a></span>ufgets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * ufgets </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read a line from unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>the buffer used to save the string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the numbers want to get from the file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL on failed, others on success</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>stop and return if reach the n or find "\n" character </dd></dl>
+
+</div>
+</div>
+<a id="a584f65db86a653e01a06efded5775ee7" name="a584f65db86a653e01a06efded5775ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a584f65db86a653e01a06efded5775ee7">&#9670;&nbsp;</a></span>ufgetsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufgetsize </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the size of the unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>the full file path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the size of the file </dd></dl>
+
+</div>
+</div>
+<a id="a74d758d848fe9b2e341dfa68b9d63741" name="a74d758d848fe9b2e341dfa68b9d63741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d758d848fe9b2e341dfa68b9d63741">&#9670;&nbsp;</a></span>ufileno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufileno </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the file description </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the file description</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>in flash unique file system, always return 0, it not support file description </dd></dl>
+
+</div>
+</div>
+<a id="a674e684d91cbbe9db66277d97df89aee" name="a674e684d91cbbe9db66277d97df89aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a674e684d91cbbe9db66277d97df89aee">&#9670;&nbsp;</a></span>ufinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ufinit </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unique file system initialization </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>it will call by uf_db_init </dd></dl>
+
+</div>
+</div>
+<a id="a0465ba7327d4da574ed5e5efbe6e4376" name="a0465ba7327d4da574ed5e5efbe6e4376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0465ba7327d4da574ed5e5efbe6e4376">&#9670;&nbsp;</a></span>ufopen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * ufopen </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>open a unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>the full file path </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>the open mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the handle of the file</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the mode is same as file system open mode, contains "r","r+","a","a+","w","w+", and also support binary mode. </dd></dl>
+
+</div>
+</div>
+<a id="ab110bc62da08a573890f7740a9422216" name="ab110bc62da08a573890f7740a9422216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab110bc62da08a573890f7740a9422216">&#9670;&nbsp;</a></span>ufprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufprintf </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN const char *&#160;</td>
+          <td class="paramname"><em>pFmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write a specail format to unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>the file handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pFmt</td><td>the variable parameters format </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">...</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the counts of written characters </dd></dl>
+
+</div>
+</div>
+<a id="a184dfd8e1512dba4615dbe9d8c0efe32" name="a184dfd8e1512dba4615dbe9d8c0efe32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184dfd8e1512dba4615dbe9d8c0efe32">&#9670;&nbsp;</a></span>ufread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T ufread </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN UCHAR_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read from unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buffer used to save the data read from the unique file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the length want to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the number of byte actually read from the unique file </dd></dl>
+
+</div>
+</div>
+<a id="af8bd7311bcc0c14d3da3a4b1d6f23ed1" name="af8bd7311bcc0c14d3da3a4b1d6f23ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8bd7311bcc0c14d3da3a4b1d6f23ed1">&#9670;&nbsp;</a></span>ufscanf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufscanf </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN PCHAR_T&#160;</td>
+          <td class="paramname"><em>pFmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read a special format from unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>the file handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>the counts read from file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pFmt</td><td>the variable parameters format </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">...</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the items in the paramter list </dd></dl>
+
+</div>
+</div>
+<a id="a29d37bfdb6f1213ed4586133a2cf97e5" name="a29d37bfdb6f1213ed4586133a2cf97e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d37bfdb6f1213ed4586133a2cf97e5">&#9670;&nbsp;</a></span>ufseek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufseek </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN UINT_T&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a467636e27b454054b3846c79671f7a76">ufmode_t</a>&#160;</td>
+          <td class="paramname"><em>uf_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>seek to the offset of the unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>the offset want to seek </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uf_mode</td><td>the seek mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current offset after seek </dd></dl>
+
+</div>
+</div>
+<a id="a2fe9fbd7d72362c78491eef9f2b35984" name="a2fe9fbd7d72362c78491eef9f2b35984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe9fbd7d72362c78491eef9f2b35984">&#9670;&nbsp;</a></span>ufsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T ufsync </td>
+          <td>(</td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sync the unique file, write the file info to pysical disk </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on success, others on failed</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>in flash unique file system, always return success because the data was write to flash directly. </dd></dl>
+
+</div>
+</div>
+<a id="a9f0faf51de4e035582bee5e21d893df5" name="a9f0faf51de4e035582bee5e21d893df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f0faf51de4e035582bee5e21d893df5">&#9670;&nbsp;</a></span>uftell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T uftell </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get current offset of the unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current offset of the file </dd></dl>
+
+</div>
+</div>
+<a id="af97a9279316ced48c68512871b5f2839" name="af97a9279316ced48c68512871b5f2839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97a9279316ced48c68512871b5f2839">&#9670;&nbsp;</a></span>ufwrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T ufwrite </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN UCHAR_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write to unique file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buffer write to the unique file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the length write to the unique file, in byte </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>characters written to the unique file </dd></dl>
+
+</div>
+</div>
+<a id="a757d1775b1402a3ad834aca0c51aec51" name="a757d1775b1402a3ad834aca0c51aec51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757d1775b1402a3ad834aca0c51aec51">&#9670;&nbsp;</a></span>ufwrite_raw_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T ufwrite_raw_end </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exit ufwrite raw mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>all ufwrite operation chould cause data loss before <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51" title="Exit ufwrite raw mode">ufwrite_raw_end()</a> invoked </dd></dl>
+
+</div>
+</div>
+<a id="a51279a9747e262ab6c86e587a553457f" name="a51279a9747e262ab6c86e587a553457f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51279a9747e262ab6c86e587a553457f">&#9670;&nbsp;</a></span>ufwrite_raw_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T ufwrite_raw_start </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enter ufwrite raw mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>the file handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>all ufwrite operation chould cause data loss before <a class="el" href="../../d3/d76/tuya__uf__db_8h.html#a757d1775b1402a3ad834aca0c51aec51" title="Exit ufwrite raw mode">ufwrite_raw_end()</a> invoked </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

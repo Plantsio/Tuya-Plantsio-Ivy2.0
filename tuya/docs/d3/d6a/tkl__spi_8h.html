@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/spi/include/tkl_spi.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_568cb56e63e7112d73119b4c514b3558.html">spi</a></li><li class="navelem"><a class="el" href="../../dir_0b911a60a4f56ed12ddbfb5e28fb9c44.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_spi.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the spi api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db8/tkl__gpio_8h_source.html">tkl_gpio.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_spi.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d3b/tkl__spi_8h__incl.png" border="0" usemap="#ainclude_2adapter_2spi_2include_2tkl__spi_8h" alt=""/></div>
+<map name="ainclude_2adapter_2spi_2include_2tkl__spi_8h" id="ainclude_2adapter_2spi_2include_2tkl__spi_8h">
+<area shape="rect" title="Common process &#45; adapter the spi api" alt="" coords="369,5,516,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,169,517,196"/>
+<area shape="rect" href="../../db/db8/tkl__gpio_8h.html" title="Common process &#45; adapter the gpio api" alt="" coords="441,95,527,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,244,139,271"/>
+<area shape="rect" title=" " alt="" coords="163,244,237,271"/>
+<area shape="rect" title=" " alt="" coords="262,244,333,271"/>
+<area shape="rect" title=" " alt="" coords="357,244,432,271"/>
+<area shape="rect" title=" " alt="" coords="457,244,527,271"/>
+<area shape="rect" title=" " alt="" coords="552,244,635,271"/>
+<area shape="rect" title=" " alt="" coords="659,244,730,271"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,244,893,271"/>
+</map>
+</div>
+</div>
+<p><a href="../../d3/d6a/tkl__spi_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1449a13a1c73be514bcf4a4bfc140207"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a1449a13a1c73be514bcf4a4bfc140207">tkl_spi_abort_transfer</a> (TUYA_SPI_NUM_E port)</td></tr>
+<tr class="memdesc:a1449a13a1c73be514bcf4a4bfc140207"><td class="mdescLeft">&#160;</td><td class="mdescRight">adort spi transfer,or spi send, or spi recv  <a href="../../d3/d6a/tkl__spi_8h.html#a1449a13a1c73be514bcf4a4bfc140207">更多...</a><br /></td></tr>
+<tr class="separator:a1449a13a1c73be514bcf4a4bfc140207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c4227fd00c06c40c3fd6939d5dcca6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a64c4227fd00c06c40c3fd6939d5dcca6">tkl_spi_deinit</a> (TUYA_SPI_NUM_E port)</td></tr>
+<tr class="memdesc:a64c4227fd00c06c40c3fd6939d5dcca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi deinit  <a href="../../d3/d6a/tkl__spi_8h.html#a64c4227fd00c06c40c3fd6939d5dcca6">更多...</a><br /></td></tr>
+<tr class="separator:a64c4227fd00c06c40c3fd6939d5dcca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac282509c148311f58cd57cd2f17027"><td class="memItemLeft" align="right" valign="top">INT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a5ac282509c148311f58cd57cd2f17027">tkl_spi_get_data_count</a> (TUYA_SPI_NUM_E port)</td></tr>
+<tr class="memdesc:a5ac282509c148311f58cd57cd2f17027"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi transferred data count.  <a href="../../d3/d6a/tkl__spi_8h.html#a5ac282509c148311f58cd57cd2f17027">更多...</a><br /></td></tr>
+<tr class="separator:a5ac282509c148311f58cd57cd2f17027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f517bc568dc9d8afd0b49d6c0ddec5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">tkl_spi_get_status</a> (TUYA_SPI_NUM_E port, <a class="el" href="../../d4/d2c/structTUYA__SPI__STATUS__T.html">TUYA_SPI_STATUS_T</a> *status)</td></tr>
+<tr class="memdesc:a00f517bc568dc9d8afd0b49d6c0ddec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get spi status.  <a href="../../d3/d6a/tkl__spi_8h.html#a00f517bc568dc9d8afd0b49d6c0ddec5">更多...</a><br /></td></tr>
+<tr class="separator:a00f517bc568dc9d8afd0b49d6c0ddec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f913fc08fc2d0005a6737268ee6d803"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a7f913fc08fc2d0005a6737268ee6d803">tkl_spi_init</a> (TUYA_SPI_NUM_E port, CONST <a class="el" href="../../d8/d4a/structTUYA__SPI__BASE__CFG__T.html">TUYA_SPI_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:a7f913fc08fc2d0005a6737268ee6d803"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi init  <a href="../../d3/d6a/tkl__spi_8h.html#a7f913fc08fc2d0005a6737268ee6d803">更多...</a><br /></td></tr>
+<tr class="separator:a7f913fc08fc2d0005a6737268ee6d803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb928d80c0c3b9d8766564f235abca94"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#abb928d80c0c3b9d8766564f235abca94">tkl_spi_ioctl</a> (TUYA_SPI_NUM_E port, UINT32_T cmd, VOID *args)</td></tr>
+<tr class="memdesc:abb928d80c0c3b9d8766564f235abca94"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi ioctl  <a href="../../d3/d6a/tkl__spi_8h.html#abb928d80c0c3b9d8766564f235abca94">更多...</a><br /></td></tr>
+<tr class="separator:abb928d80c0c3b9d8766564f235abca94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e22c334d819b8b80182b83d31349d93"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a2e22c334d819b8b80182b83d31349d93">tkl_spi_irq_disable</a> (TUYA_SPI_NUM_E port)</td></tr>
+<tr class="memdesc:a2e22c334d819b8b80182b83d31349d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi irq disable  <a href="../../d3/d6a/tkl__spi_8h.html#a2e22c334d819b8b80182b83d31349d93">更多...</a><br /></td></tr>
+<tr class="separator:a2e22c334d819b8b80182b83d31349d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628bb58030c86aca63cec8cbfb497c7f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a628bb58030c86aca63cec8cbfb497c7f">tkl_spi_irq_enable</a> (TUYA_SPI_NUM_E port)</td></tr>
+<tr class="memdesc:a628bb58030c86aca63cec8cbfb497c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi irq enable  <a href="../../d3/d6a/tkl__spi_8h.html#a628bb58030c86aca63cec8cbfb497c7f">更多...</a><br /></td></tr>
+<tr class="separator:a628bb58030c86aca63cec8cbfb497c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ca2f989a7b0cedcfde17ec911b52fb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a66ca2f989a7b0cedcfde17ec911b52fb">tkl_spi_irq_init</a> (TUYA_SPI_NUM_E port, TUYA_SPI_IRQ_CB cb)</td></tr>
+<tr class="memdesc:a66ca2f989a7b0cedcfde17ec911b52fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi irq init NOTE: call this API will not enable interrupt  <a href="../../d3/d6a/tkl__spi_8h.html#a66ca2f989a7b0cedcfde17ec911b52fb">更多...</a><br /></td></tr>
+<tr class="separator:a66ca2f989a7b0cedcfde17ec911b52fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4aa0ff75995f3463687c039fb2cc665"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#ab4aa0ff75995f3463687c039fb2cc665">tkl_spi_recv</a> (TUYA_SPI_NUM_E port, VOID_T *data, UINT16_T size)</td></tr>
+<tr class="separator:ab4aa0ff75995f3463687c039fb2cc665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e98695cdbd10802e47d9d9ccf436bb7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a2e98695cdbd10802e47d9d9ccf436bb7">tkl_spi_send</a> (TUYA_SPI_NUM_E port, VOID_T *data, UINT16_T size)</td></tr>
+<tr class="separator:a2e98695cdbd10802e47d9d9ccf436bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac27a8f422c1b9921d1b2817588f473"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6a/tkl__spi_8h.html#a7ac27a8f422c1b9921d1b2817588f473">tkl_spi_transfer</a> (TUYA_SPI_NUM_E port, VOID_T *send_buf, VOID_T *receive_buf, UINT32_T length)</td></tr>
+<tr class="memdesc:a7ac27a8f422c1b9921d1b2817588f473"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi transfer  <a href="../../d3/d6a/tkl__spi_8h.html#a7ac27a8f422c1b9921d1b2817588f473">更多...</a><br /></td></tr>
+<tr class="separator:a7ac27a8f422c1b9921d1b2817588f473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the spi api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2030 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a1449a13a1c73be514bcf4a4bfc140207" name="a1449a13a1c73be514bcf4a4bfc140207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1449a13a1c73be514bcf4a4bfc140207">&#9670;&nbsp;</a></span>tkl_spi_abort_transfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_abort_transfer </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adort spi transfer,or spi send, or spi recv </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a64c4227fd00c06c40c3fd6939d5dcca6" name="a64c4227fd00c06c40c3fd6939d5dcca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c4227fd00c06c40c3fd6939d5dcca6">&#9670;&nbsp;</a></span>tkl_spi_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi deinit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5ac282509c148311f58cd57cd2f17027" name="a5ac282509c148311f58cd57cd2f17027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac282509c148311f58cd57cd2f17027">&#9670;&nbsp;</a></span>tkl_spi_get_data_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT32_T tkl_spi_get_data_count </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi transferred data count. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&gt;=0,number of currently transferred data items. &lt;0,err. during tkl_spi_send, tkl_spi_recv and tkl_spi_transfer operation. </dd></dl>
+
+</div>
+</div>
+<a id="a00f517bc568dc9d8afd0b49d6c0ddec5" name="a00f517bc568dc9d8afd0b49d6c0ddec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f517bc568dc9d8afd0b49d6c0ddec5">&#9670;&nbsp;</a></span>tkl_spi_get_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_get_status </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d2c/structTUYA__SPI__STATUS__T.html">TUYA_SPI_STATUS_T</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get spi status. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="../../d4/d2c/structTUYA__SPI__STATUS__T.html" title="SPI Status">TUYA_SPI_STATUS_T</a>,please</td><td>refer to <a class="el" href="../../df/d90/tuya__cloud__types_8h_source.html">tuya_cloud_types.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7f913fc08fc2d0005a6737268ee6d803" name="a7f913fc08fc2d0005a6737268ee6d803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f913fc08fc2d0005a6737268ee6d803">&#9670;&nbsp;</a></span>tkl_spi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d8/d4a/structTUYA__SPI__BASE__CFG__T.html">TUYA_SPI_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abb928d80c0c3b9d8766564f235abca94" name="abb928d80c0c3b9d8766564f235abca94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb928d80c0c3b9d8766564f235abca94">&#9670;&nbsp;</a></span>tkl_spi_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi ioctl </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>user def </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>args associated with the command </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2e22c334d819b8b80182b83d31349d93" name="a2e22c334d819b8b80182b83d31349d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e22c334d819b8b80182b83d31349d93">&#9670;&nbsp;</a></span>tkl_spi_irq_disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_irq_disable </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi irq disable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a628bb58030c86aca63cec8cbfb497c7f" name="a628bb58030c86aca63cec8cbfb497c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628bb58030c86aca63cec8cbfb497c7f">&#9670;&nbsp;</a></span>tkl_spi_irq_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_irq_enable </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi irq enable </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a66ca2f989a7b0cedcfde17ec911b52fb" name="a66ca2f989a7b0cedcfde17ec911b52fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ca2f989a7b0cedcfde17ec911b52fb">&#9670;&nbsp;</a></span>tkl_spi_irq_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_irq_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_SPI_IRQ_CB&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi irq init NOTE: call this API will not enable interrupt </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>spi irq cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab4aa0ff75995f3463687c039fb2cc665" name="ab4aa0ff75995f3463687c039fb2cc665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4aa0ff75995f3463687c039fb2cc665">&#9670;&nbsp;</a></span>tkl_spi_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_recv </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >spi_recv</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>the spi device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>spi recv data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>spi recv data size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2e98695cdbd10802e47d9d9ccf436bb7" name="a2e98695cdbd10802e47d9d9ccf436bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e98695cdbd10802e47d9d9ccf436bb7">&#9670;&nbsp;</a></span>tkl_spi_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_send </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Spi send</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>the spi device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>spi send data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>spi send data size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7ac27a8f422c1b9921d1b2817588f473" name="a7ac27a8f422c1b9921d1b2817588f473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac27a8f422c1b9921d1b2817588f473">&#9670;&nbsp;</a></span>tkl_spi_transfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_spi_transfer </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_SPI_NUM_E&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>send_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>receive_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spi transfer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>spi port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">send_buf</td><td>spi send buf </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">send_buf:spi</td><td>recv buf </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>spi msg length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

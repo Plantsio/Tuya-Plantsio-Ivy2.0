@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: HTTP 文件下载</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">HTTP 文件下载 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >这个项目将会介绍使用 <code>http</code> 文件下载接口进行文件下载。</p>
+<ul>
+<li><code>http_gw_download_file</code> 简介</li>
+</ul>
+<p ><code>OTA</code> 升级中调用的就是这个接口，现在 <code>tuyaos</code> 把这个接口公开了出来。</p>
+<p >可使用此函数进行文件下载。但是此函数的两个参数 <code>total_len</code>（文件大小） 和 <code>file_hmac</code>（密钥散列消息认证码）需要云端下发到设备，可以使用 <code>DP</code> 点下发这两个数据，也可以使用 <code>tuya_iot_wf_soc_dev_init</code> 函数注册 <code>pre_gw_ug_cb</code> 成员的回调函数，并在此回调函数中打印形参参数。在设备进行 <code>OTA</code> 更新时，就可以在这个回调函数中获取到这些信息了，可参考 <code>OTA example</code>。</p>
+<p >密钥的获取，可使用 <code>http_pskkey_get</code> 函数获取。</p>
+<p >函数参数介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657017269d1da020117c.png" alt="知识点学习-http_gw_download_file  参数介绍 12138 .png" class="inline"/></p>
+<ul>
+<li>文件下载回调函数介绍</li>
+</ul>
+<p >在数据处理完成之后要将 <code>remain_len</code> 赋0，同时返回0。否则 <code>SDK</code> 内部不知道你这数据处理完成了。这个函数跟 <code>ota</code> 升级注册的数据下载回调函数的使用方法几乎一样。</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657070246ce9c902b25a.png" alt="知识点学习-文件下载回调函数介绍 12138.png" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md105"></a>
+流程介绍</h1>
+<p >相关函数目录： <code>software/TuyaOS/include/components/svc_tuya_cloud/include/http/iot_httpc.h</code></p>
+<p ><code>software/TuyaOS/include/components/svc_api_iot/include/tuya_iot_internal_api.h</code></p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657069916f6f3a11d6c8.png" alt="知识点学习-文件下载函数流程 .png" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

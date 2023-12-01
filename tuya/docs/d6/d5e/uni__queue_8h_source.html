@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system_service/include/utilities/uni_queue.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c9db1059777c15dc8c8b94b955097dc4.html">tal_system_service</a></li><li class="navelem"><a class="el" href="../../dir_679a7e65efb1f08b4e45cdf759445817.html">include</a></li><li class="navelem"><a class="el" href="../../dir_5ce89a17ae4f9dc97b44e6db9d34e655.html">utilities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">uni_queue.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d5e/uni__queue_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _UNI_QUEUE_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _UNI_QUEUE_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dd7/tal__mutex_8h.html">tal_mutex.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../df/ddd/structQUEUE__CLASS.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    queUnitSize;   <span class="comment">// queue unit size</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    queTolNum;     <span class="comment">// queue total unit number</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    queCurNum;     <span class="comment">// queue current unit number</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *queData;     <span class="comment">// queue buffer</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *queIn;       <span class="comment">// in queue position</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *queOut;      <span class="comment">// out queue position</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    MUTEX_HANDLE    mutex;         <span class="comment">// safity access prevent reentry</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">QUEUE_CLASS</a>,*<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#afd8025959f489a3a557453079e326da1">   41</a></span><a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#afd8025959f489a3a557453079e326da1">CreateQueueObj</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queTolNum, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queUnitSize);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a602e6d6fca1d053cb514eb7e20002c46">   54</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a602e6d6fca1d053cb514eb7e20002c46">RegisterQueueObj</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pQueData, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queTolNum, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queUnitSize);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a5f36242b0aff1776c31502564c817493">   64</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a5f36242b0aff1776c31502564c817493">InQueue</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pQueUnit, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queNum);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a9079f488ba1b43490b3a6be7981913cf">   74</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a9079f488ba1b43490b3a6be7981913cf">OutQueue</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pQueUnit, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queNum);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#adbe57137dab7bb39c6f963a7cbde11dd">   85</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#adbe57137dab7bb39c6f963a7cbde11dd">GetQueueMember</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> start, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pQueUnit, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queNum);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a3cc2d29fcfa172548bcbbf29b849c57c">   93</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a3cc2d29fcfa172548bcbbf29b849c57c">ClearQueue</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a965dbd97d123316813418c6fb763fab5">  102</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a965dbd97d123316813418c6fb763fab5">DelQueueMember</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj,<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> queNum);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a582622ca86f2d4237e880be03639dccc">  110</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a582622ca86f2d4237e880be03639dccc">GetCurFreeQueNum</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a8c58a66496d8d1cd63cef4233bd55901">  118</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a8c58a66496d8d1cd63cef4233bd55901">GetCurQueNum</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d6/d5e/uni__queue_8h.html#a31e7ca9b705ff745944eed5f6dbf9977">  125</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d5e/uni__queue_8h.html#a31e7ca9b705ff745944eed5f6dbf9977">ReleaseQueueObj</a>(<a class="code hl_struct" href="../../df/ddd/structQUEUE__CLASS.html">P_QUEUE_CLASS</a> pQueObj);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="ttc" id="astructQUEUE__CLASS_html"><div class="ttname"><a href="../../df/ddd/structQUEUE__CLASS.html">QUEUE_CLASS</a></div><div class="ttdoc">queue data structure define</div><div class="ttdef"><b>Definition:</b> uni_queue.h:24</div></div>
+<div class="ttc" id="atal__mutex_8h_html"><div class="ttname"><a href="../../df/dd7/tal__mutex_8h.html">tal_mutex.h</a></div><div class="ttdoc">Common process - adapter the mutex api provide by OS</div></div>
+<div class="ttc" id="auni__queue_8h_html_a31e7ca9b705ff745944eed5f6dbf9977"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a31e7ca9b705ff745944eed5f6dbf9977">ReleaseQueueObj</a></div><div class="ttdeci">void ReleaseQueueObj(P_QUEUE_CLASS pQueObj)</div><div class="ttdoc">release the queue</div></div>
+<div class="ttc" id="auni__queue_8h_html_a3cc2d29fcfa172548bcbbf29b849c57c"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a3cc2d29fcfa172548bcbbf29b849c57c">ClearQueue</a></div><div class="ttdeci">unsigned char ClearQueue(P_QUEUE_CLASS pQueObj)</div><div class="ttdoc">clear all unit of the queue</div></div>
+<div class="ttc" id="auni__queue_8h_html_a582622ca86f2d4237e880be03639dccc"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a582622ca86f2d4237e880be03639dccc">GetCurFreeQueNum</a></div><div class="ttdeci">unsigned int GetCurFreeQueNum(P_QUEUE_CLASS pQueObj)</div><div class="ttdoc">get the free queue unit number</div></div>
+<div class="ttc" id="auni__queue_8h_html_a5f36242b0aff1776c31502564c817493"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a5f36242b0aff1776c31502564c817493">InQueue</a></div><div class="ttdeci">unsigned char InQueue(P_QUEUE_CLASS pQueObj, const unsigned char *pQueUnit, const unsigned int queNum)</div><div class="ttdoc">unit inqueue</div></div>
+<div class="ttc" id="auni__queue_8h_html_a602e6d6fca1d053cb514eb7e20002c46"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a602e6d6fca1d053cb514eb7e20002c46">RegisterQueueObj</a></div><div class="ttdeci">unsigned char RegisterQueueObj(P_QUEUE_CLASS pQueObj, const unsigned char *pQueData, const unsigned int queTolNum, const unsigned int queUnitSize)</div><div class="ttdoc">register a queue, the queue handle and queue buffer malloc from other place</div></div>
+<div class="ttc" id="auni__queue_8h_html_a8c58a66496d8d1cd63cef4233bd55901"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a8c58a66496d8d1cd63cef4233bd55901">GetCurQueNum</a></div><div class="ttdeci">unsigned int GetCurQueNum(P_QUEUE_CLASS pQueObj)</div><div class="ttdoc">get the queue unit number</div></div>
+<div class="ttc" id="auni__queue_8h_html_a9079f488ba1b43490b3a6be7981913cf"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a9079f488ba1b43490b3a6be7981913cf">OutQueue</a></div><div class="ttdeci">unsigned char OutQueue(P_QUEUE_CLASS pQueObj, unsigned char *pQueUnit, const unsigned int queNum)</div><div class="ttdoc">unit outqueue</div></div>
+<div class="ttc" id="auni__queue_8h_html_a965dbd97d123316813418c6fb763fab5"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#a965dbd97d123316813418c6fb763fab5">DelQueueMember</a></div><div class="ttdeci">unsigned char DelQueueMember(P_QUEUE_CLASS pQueObj, const unsigned int queNum)</div><div class="ttdoc">delete the unit from the queue out position</div></div>
+<div class="ttc" id="auni__queue_8h_html_adbe57137dab7bb39c6f963a7cbde11dd"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#adbe57137dab7bb39c6f963a7cbde11dd">GetQueueMember</a></div><div class="ttdeci">unsigned char GetQueueMember(P_QUEUE_CLASS pQueObj, const unsigned int start, unsigned char *pQueUnit, const unsigned int queNum)</div><div class="ttdoc">get the unit from start postion, not outqueue</div></div>
+<div class="ttc" id="auni__queue_8h_html_afd8025959f489a3a557453079e326da1"><div class="ttname"><a href="../../d6/d5e/uni__queue_8h.html#afd8025959f489a3a557453079e326da1">CreateQueueObj</a></div><div class="ttdeci">P_QUEUE_CLASS CreateQueueObj(const unsigned int queTolNum, const unsigned int queUnitSize)</div><div class="ttdoc">create and initialize a queue</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_driver/include/tal_flash.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_906c4c3ed099bad31e4bc78f92b52408.html">tal_driver</a></li><li class="navelem"><a class="el" href="../../dir_c31b571438c74844499576f27e4065d2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_flash.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the flash api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_flash.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d9c/tal__flash_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__driver_2include_2tal__flash_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__driver_2include_2tal__flash_8h" id="ainclude_2components_2tal__driver_2include_2tal__flash_8h">
+<area shape="rect" title="Common process &#45; adapter the flash api" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../d6/d18/tal__flash_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a14e7cca01b084765cda0f257859137b9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d18/tal__flash_8h.html#a14e7cca01b084765cda0f257859137b9">tal_flash_erase</a> (UINT32_T addr, UINT32_T size)</td></tr>
+<tr class="memdesc:a14e7cca01b084765cda0f257859137b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">erase flash  <a href="../../d6/d18/tal__flash_8h.html#a14e7cca01b084765cda0f257859137b9">更多...</a><br /></td></tr>
+<tr class="separator:a14e7cca01b084765cda0f257859137b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa21f134c7591b7c2e4b930dc52a6d5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d18/tal__flash_8h.html#a0aa21f134c7591b7c2e4b930dc52a6d5">tal_flash_get_one_type_info</a> (TUYA_FLASH_TYPE_E type, <a class="el" href="../../d4/da6/structTUYA__FLASH__BASE__INFO__T.html">TUYA_FLASH_BASE_INFO_T</a> *info)</td></tr>
+<tr class="memdesc:a0aa21f134c7591b7c2e4b930dc52a6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get one flash type info  <a href="../../d6/d18/tal__flash_8h.html#a0aa21f134c7591b7c2e4b930dc52a6d5">更多...</a><br /></td></tr>
+<tr class="separator:a0aa21f134c7591b7c2e4b930dc52a6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d6304e568fa360ee0c4a1dd7d763d3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d18/tal__flash_8h.html#ad0d6304e568fa360ee0c4a1dd7d763d3">tal_flash_lock</a> (UINT32_T addr, UINT32_T size)</td></tr>
+<tr class="memdesc:ad0d6304e568fa360ee0c4a1dd7d763d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">lock flash  <a href="../../d6/d18/tal__flash_8h.html#ad0d6304e568fa360ee0c4a1dd7d763d3">更多...</a><br /></td></tr>
+<tr class="separator:ad0d6304e568fa360ee0c4a1dd7d763d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da59ed9156cd0074879bfe4eecc423d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d18/tal__flash_8h.html#a8da59ed9156cd0074879bfe4eecc423d">tal_flash_read</a> (UINT32_T addr, UCHAR_T *dst, UINT32_T size)</td></tr>
+<tr class="memdesc:a8da59ed9156cd0074879bfe4eecc423d"><td class="mdescLeft">&#160;</td><td class="mdescRight">read flash  <a href="../../d6/d18/tal__flash_8h.html#a8da59ed9156cd0074879bfe4eecc423d">更多...</a><br /></td></tr>
+<tr class="separator:a8da59ed9156cd0074879bfe4eecc423d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1638f543179655b10c3d250a6d5511ec"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d18/tal__flash_8h.html#a1638f543179655b10c3d250a6d5511ec">tal_flash_unlock</a> (UINT32_T addr, UINT32_T size)</td></tr>
+<tr class="memdesc:a1638f543179655b10c3d250a6d5511ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">unlock flash  <a href="../../d6/d18/tal__flash_8h.html#a1638f543179655b10c3d250a6d5511ec">更多...</a><br /></td></tr>
+<tr class="separator:a1638f543179655b10c3d250a6d5511ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31052a46a159391b808c00fb4f9c7c0e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d18/tal__flash_8h.html#a31052a46a159391b808c00fb4f9c7c0e">tal_flash_write</a> (UINT32_T addr, CONST UCHAR_T *src, UINT32_T size)</td></tr>
+<tr class="memdesc:a31052a46a159391b808c00fb4f9c7c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">write flash  <a href="../../d6/d18/tal__flash_8h.html#a31052a46a159391b808c00fb4f9c7c0e">更多...</a><br /></td></tr>
+<tr class="separator:a31052a46a159391b808c00fb4f9c7c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the flash api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2030 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a14e7cca01b084765cda0f257859137b9" name="a14e7cca01b084765cda0f257859137b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e7cca01b084765cda0f257859137b9">&#9670;&nbsp;</a></span>tal_flash_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_flash_erase </td>
+          <td>(</td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>erase flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>flash address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>size of flash block</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for erasing flash.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0aa21f134c7591b7c2e4b930dc52a6d5" name="a0aa21f134c7591b7c2e4b930dc52a6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa21f134c7591b7c2e4b930dc52a6d5">&#9670;&nbsp;</a></span>tal_flash_get_one_type_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_flash_get_one_type_info </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FLASH_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/da6/structTUYA__FLASH__BASE__INFO__T.html">TUYA_FLASH_BASE_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get one flash type info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>flash type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>flash info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for unlock flash.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad0d6304e568fa360ee0c4a1dd7d763d3" name="ad0d6304e568fa360ee0c4a1dd7d763d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d6304e568fa360ee0c4a1dd7d763d3">&#9670;&nbsp;</a></span>tal_flash_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_flash_lock </td>
+          <td>(</td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>lock flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>lock begin addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>lock area size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for lock flash.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8da59ed9156cd0074879bfe4eecc423d" name="a8da59ed9156cd0074879bfe4eecc423d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da59ed9156cd0074879bfe4eecc423d">&#9670;&nbsp;</a></span>tal_flash_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_flash_read </td>
+          <td>(</td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>flash address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>pointer of buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>size of buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for reading flash.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1638f543179655b10c3d250a6d5511ec" name="a1638f543179655b10c3d250a6d5511ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1638f543179655b10c3d250a6d5511ec">&#9670;&nbsp;</a></span>tal_flash_unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_flash_unlock </td>
+          <td>(</td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unlock flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>unlock begin addr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>unlock area size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for unlock flash.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a31052a46a159391b808c00fb4f9c7c0e" name="a31052a46a159391b808c00fb4f9c7c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31052a46a159391b808c00fb4f9c7c0e">&#9670;&nbsp;</a></span>tal_flash_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_flash_write </td>
+          <td>(</td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>flash address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>pointer of buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>size of buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for writing flash.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

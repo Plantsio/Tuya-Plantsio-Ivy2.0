@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_queue.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_queue.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya common queue module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_queue.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/tuya__queue_8h__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__queue_8h" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__queue_8h" id="ainclude_2adapter_2utilities_2include_2tuya__queue_8h">
+<area shape="rect" title="tuya common queue module" alt="" coords="355,5,531,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/d4a/tuya__queue_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a5f125165d98bb5ff1ece8c45114409e7"><td class="memItemLeft" align="right" valign="top"><a id="a5f125165d98bb5ff1ece8c45114409e7" name="a5f125165d98bb5ff1ece8c45114409e7"></a>
+typedef BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TRAVERSE_CB</b>) (void *item, void *ctx)</td></tr>
+<tr class="separator:a5f125165d98bb5ff1ece8c45114409e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7d2ba18820d60b08f78eb2f91121e5"><td class="memItemLeft" align="right" valign="top"><a id="a2d7d2ba18820d60b08f78eb2f91121e5" name="a2d7d2ba18820d60b08f78eb2f91121e5"></a>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_QUEUE_HANDLE</b></td></tr>
+<tr class="separator:a2d7d2ba18820d60b08f78eb2f91121e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa21fab8727b2321ee863c4e5d76de0dc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#aa21fab8727b2321ee863c4e5d76de0dc">tuya_queue_clear</a> (TUYA_QUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:aa21fab8727b2321ee863c4e5d76de0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear all items in the queue  <a href="../../d5/d4a/tuya__queue_8h.html#aa21fab8727b2321ee863c4e5d76de0dc">更多...</a><br /></td></tr>
+<tr class="separator:aa21fab8727b2321ee863c4e5d76de0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf3bd46445489cb31e4d8341ec92e1c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#a9bf3bd46445489cb31e4d8341ec92e1c">tuya_queue_create</a> (const UINT32_T queue_len, const UINT32_T item_size, TUYA_QUEUE_HANDLE *handle)</td></tr>
+<tr class="memdesc:a9bf3bd46445489cb31e4d8341ec92e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create and initialize a queue (FIFO)  <a href="../../d5/d4a/tuya__queue_8h.html#a9bf3bd46445489cb31e4d8341ec92e1c">更多...</a><br /></td></tr>
+<tr class="separator:a9bf3bd46445489cb31e4d8341ec92e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42995798393d0733d44269018066c98"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#ad42995798393d0733d44269018066c98">tuya_queue_delete_batch</a> (TUYA_QUEUE_HANDLE handle, const UINT32_T num)</td></tr>
+<tr class="memdesc:ad42995798393d0733d44269018066c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the item from the queue position  <a href="../../d5/d4a/tuya__queue_8h.html#ad42995798393d0733d44269018066c98">更多...</a><br /></td></tr>
+<tr class="separator:ad42995798393d0733d44269018066c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44b1bbf20dad3a5af8e358e248070c2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#ad44b1bbf20dad3a5af8e358e248070c2">tuya_queue_get_batch</a> (TUYA_QUEUE_HANDLE handle, const UINT32_T start, void *items, const UINT32_T num)</td></tr>
+<tr class="memdesc:ad44b1bbf20dad3a5af8e358e248070c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get items from start postion, not dequeue  <a href="../../d5/d4a/tuya__queue_8h.html#ad44b1bbf20dad3a5af8e358e248070c2">更多...</a><br /></td></tr>
+<tr class="separator:ad44b1bbf20dad3a5af8e358e248070c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2d9243f22633feb3666392bcdc84c2"><td class="memItemLeft" align="right" valign="top">UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#a3b2d9243f22633feb3666392bcdc84c2">tuya_queue_get_free_num</a> (TUYA_QUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:a3b2d9243f22633feb3666392bcdc84c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the free queue item number  <a href="../../d5/d4a/tuya__queue_8h.html#a3b2d9243f22633feb3666392bcdc84c2">更多...</a><br /></td></tr>
+<tr class="separator:a3b2d9243f22633feb3666392bcdc84c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81858d01262e22b39f1bc801c4cdf60f"><td class="memItemLeft" align="right" valign="top">UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#a81858d01262e22b39f1bc801c4cdf60f">tuya_queue_get_max_num</a> (TUYA_QUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:a81858d01262e22b39f1bc801c4cdf60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the queue item number  <a href="../../d5/d4a/tuya__queue_8h.html#a81858d01262e22b39f1bc801c4cdf60f">更多...</a><br /></td></tr>
+<tr class="separator:a81858d01262e22b39f1bc801c4cdf60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b36ae7c1282a16628f720f345ddd610"><td class="memItemLeft" align="right" valign="top">UINT32_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#a7b36ae7c1282a16628f720f345ddd610">tuya_queue_get_used_num</a> (TUYA_QUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:a7b36ae7c1282a16628f720f345ddd610"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the queue item number  <a href="../../d5/d4a/tuya__queue_8h.html#a7b36ae7c1282a16628f720f345ddd610">更多...</a><br /></td></tr>
+<tr class="separator:a7b36ae7c1282a16628f720f345ddd610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a90c5c2a6157015c7a9fd2ef1b8810"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#ac5a90c5c2a6157015c7a9fd2ef1b8810">tuya_queue_input</a> (TUYA_QUEUE_HANDLE handle, const void *item)</td></tr>
+<tr class="memdesc:ac5a90c5c2a6157015c7a9fd2ef1b8810"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueue, append to the tail  <a href="../../d5/d4a/tuya__queue_8h.html#ac5a90c5c2a6157015c7a9fd2ef1b8810">更多...</a><br /></td></tr>
+<tr class="separator:ac5a90c5c2a6157015c7a9fd2ef1b8810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb6db5a375fdedc440f9b7f5572277a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#abfb6db5a375fdedc440f9b7f5572277a">tuya_queue_input_instant</a> (TUYA_QUEUE_HANDLE handle, const void *item)</td></tr>
+<tr class="memdesc:abfb6db5a375fdedc440f9b7f5572277a"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueue, insert to the head  <a href="../../d5/d4a/tuya__queue_8h.html#abfb6db5a375fdedc440f9b7f5572277a">更多...</a><br /></td></tr>
+<tr class="separator:abfb6db5a375fdedc440f9b7f5572277a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242c4a771e351ca0554f9ce6e87e447f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#a242c4a771e351ca0554f9ce6e87e447f">tuya_queue_output</a> (TUYA_QUEUE_HANDLE handle, const void *item)</td></tr>
+<tr class="memdesc:a242c4a771e351ca0554f9ce6e87e447f"><td class="mdescLeft">&#160;</td><td class="mdescRight">dequeue  <a href="../../d5/d4a/tuya__queue_8h.html#a242c4a771e351ca0554f9ce6e87e447f">更多...</a><br /></td></tr>
+<tr class="separator:a242c4a771e351ca0554f9ce6e87e447f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08150613b5ddebbbfb8cb9173764ebbb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#a08150613b5ddebbbfb8cb9173764ebbb">tuya_queue_peek</a> (TUYA_QUEUE_HANDLE handle, const void *item)</td></tr>
+<tr class="memdesc:a08150613b5ddebbbfb8cb9173764ebbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the peek item(not dequeue)  <a href="../../d5/d4a/tuya__queue_8h.html#a08150613b5ddebbbfb8cb9173764ebbb">更多...</a><br /></td></tr>
+<tr class="separator:a08150613b5ddebbbfb8cb9173764ebbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c8ec95bfea21a76dab05b8f90acc44"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#aa2c8ec95bfea21a76dab05b8f90acc44">tuya_queue_release</a> (TUYA_QUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:aa2c8ec95bfea21a76dab05b8f90acc44"><td class="mdescLeft">&#160;</td><td class="mdescRight">release the queue  <a href="../../d5/d4a/tuya__queue_8h.html#aa2c8ec95bfea21a76dab05b8f90acc44">更多...</a><br /></td></tr>
+<tr class="separator:aa2c8ec95bfea21a76dab05b8f90acc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a4ca99e4f9d715cf6495180af9e2f7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4a/tuya__queue_8h.html#af0a4ca99e4f9d715cf6495180af9e2f7">tuya_queue_traverse</a> (TUYA_QUEUE_HANDLE handle, TRAVERSE_CB cb, void *ctx)</td></tr>
+<tr class="memdesc:af0a4ca99e4f9d715cf6495180af9e2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the queue with specific callback  <a href="../../d5/d4a/tuya__queue_8h.html#af0a4ca99e4f9d715cf6495180af9e2f7">更多...</a><br /></td></tr>
+<tr class="separator:af0a4ca99e4f9d715cf6495180af9e2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya common queue module </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aa21fab8727b2321ee863c4e5d76de0dc" name="aa21fab8727b2321ee863c4e5d76de0dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21fab8727b2321ee863c4e5d76de0dc">&#9670;&nbsp;</a></span>tuya_queue_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_clear </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clear all items in the queue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9bf3bd46445489cb31e4d8341ec92e1c" name="a9bf3bd46445489cb31e4d8341ec92e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf3bd46445489cb31e4d8341ec92e1c">&#9670;&nbsp;</a></span>tuya_queue_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_create </td>
+          <td>(</td>
+          <td class="paramtype">const UINT32_T&#160;</td>
+          <td class="paramname"><em>queue_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT32_T&#160;</td>
+          <td class="paramname"><em>item_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE *&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create and initialize a queue (FIFO) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_len</td><td>the maximum number of items that the queue can contain. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">item_size</td><td>the number of bytes each item in the queue will require. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>the queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>items are queued by copy, not by reference. Each item on the queue must be the same size.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad42995798393d0733d44269018066c98" name="ad42995798393d0733d44269018066c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42995798393d0733d44269018066c98">&#9670;&nbsp;</a></span>tuya_queue_delete_batch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_delete_batch </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT32_T&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete the item from the queue position </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>the item count to be deleted from the queue</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad44b1bbf20dad3a5af8e358e248070c2" name="ad44b1bbf20dad3a5af8e358e248070c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44b1bbf20dad3a5af8e358e248070c2">&#9670;&nbsp;</a></span>tuya_queue_get_batch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_get_batch </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT32_T&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT32_T&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get items from start postion, not dequeue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>the start postion </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">items</td><td>the item buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>the item counts</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3b2d9243f22633feb3666392bcdc84c2" name="a3b2d9243f22633feb3666392bcdc84c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2d9243f22633feb3666392bcdc84c2">&#9670;&nbsp;</a></span>tuya_queue_get_free_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32_T tuya_queue_get_free_num </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the free queue item number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current free item counts </dd></dl>
+
+</div>
+</div>
+<a id="a81858d01262e22b39f1bc801c4cdf60f" name="a81858d01262e22b39f1bc801c4cdf60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81858d01262e22b39f1bc801c4cdf60f">&#9670;&nbsp;</a></span>tuya_queue_get_max_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32_T tuya_queue_get_max_num </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the queue item number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current item counts </dd></dl>
+
+</div>
+</div>
+<a id="a7b36ae7c1282a16628f720f345ddd610" name="a7b36ae7c1282a16628f720f345ddd610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b36ae7c1282a16628f720f345ddd610">&#9670;&nbsp;</a></span>tuya_queue_get_used_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT32_T tuya_queue_get_used_num </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the queue item number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current item counts </dd></dl>
+
+</div>
+</div>
+<a id="ac5a90c5c2a6157015c7a9fd2ef1b8810" name="ac5a90c5c2a6157015c7a9fd2ef1b8810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a90c5c2a6157015c7a9fd2ef1b8810">&#9670;&nbsp;</a></span>tuya_queue_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_input </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enqueue, append to the tail </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>pointer to the item that is to be placed on the queue.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abfb6db5a375fdedc440f9b7f5572277a" name="abfb6db5a375fdedc440f9b7f5572277a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb6db5a375fdedc440f9b7f5572277a">&#9670;&nbsp;</a></span>tuya_queue_input_instant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_input_instant </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enqueue, insert to the head </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>pointer to the item that is to be placed on the queue.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a242c4a771e351ca0554f9ce6e87e447f" name="a242c4a771e351ca0554f9ce6e87e447f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242c4a771e351ca0554f9ce6e87e447f">&#9670;&nbsp;</a></span>tuya_queue_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_output </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dequeue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>the dequeue item buffer, NULL indicates discard the item</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success, others on failed, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a08150613b5ddebbbfb8cb9173764ebbb" name="a08150613b5ddebbbfb8cb9173764ebbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08150613b5ddebbbfb8cb9173764ebbb">&#9670;&nbsp;</a></span>tuya_queue_peek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_peek </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the peek item(not dequeue) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">item</td><td>pointer to the buffer into which the received item will be copied.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa2c8ec95bfea21a76dab05b8f90acc44" name="aa2c8ec95bfea21a76dab05b8f90acc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c8ec95bfea21a76dab05b8f90acc44">&#9670;&nbsp;</a></span>tuya_queue_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_release </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>release the queue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af0a4ca99e4f9d715cf6495180af9e2f7" name="af0a4ca99e4f9d715cf6495180af9e2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a4ca99e4f9d715cf6495180af9e2f7">&#9670;&nbsp;</a></span>tuya_queue_traverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_queue_traverse </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TRAVERSE_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>traverse the queue with specific callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the queue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>the callback context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

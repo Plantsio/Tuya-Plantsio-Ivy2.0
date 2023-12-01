@@ -1,0 +1,1029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_dp/include/smart_frame.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_46bae2021096f4d663d9b075cda6debc.html">svc_dp</a></li><li class="navelem"><a class="el" href="../../dir_2a425bbde037564e27c200010d27d4d4.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">smart_frame.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d62/gw__intf_8h_source.html">gw_intf.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+smart_frame.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dda/smart__frame_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__dp_2include_2smart__frame_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__dp_2include_2smart__frame_8h" id="ainclude_2components_2svc__dp_2include_2smart__frame_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="642,5,806,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="678,408,826,435"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="1431,109,1513,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="293,483,427,509"/>
+<area shape="rect" title=" " alt="" coords="812,483,887,509"/>
+<area shape="rect" title=" " alt="" coords="911,483,982,509"/>
+<area shape="rect" title=" " alt="" coords="1560,483,1635,509"/>
+<area shape="rect" title=" " alt="" coords="514,483,585,509"/>
+<area shape="rect" title=" " alt="" coords="609,483,692,509"/>
+<area shape="rect" title=" " alt="" coords="717,483,787,509"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="5,483,144,509"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="1761,259,1935,285"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="809,184,967,211"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="1346,333,1446,360"/>
+<area shape="rect" href="../../d7/d3e/tuya__iot__internal__api_8h.html" title=" " alt="" coords="1520,184,1691,211"/>
+<area shape="rect" href="../../da/d19/tuya__devos__utils_8h.html" title="Utilities of DevOS" alt="" coords="1773,184,1917,211"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="1657,333,1751,360"/>
+<area shape="rect" href="../../d1/db6/tal__memory_8h.html" title="Common process &#45; adapter the memory api provide by OS" alt="" coords="443,333,554,360"/>
+<area shape="rect" href="../../d1/d82/cJSON_8h_source.html" title=" " alt="" coords="1561,259,1634,285"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="579,333,669,360"/>
+<area shape="rect" href="../../d0/d7d/tuya__smartpointer_8h.html" title="tuya reference data module" alt="" coords="897,259,1050,285"/>
+<area shape="rect" href="../../d6/d5e/uni__queue_8h.html" title="tuya common queue module" alt="" coords="1257,259,1359,285"/>
+<area shape="rect" href="../../d6/d14/tuya__slist_8h.html" title="tuya sigle direciton list module" alt="" coords="1050,333,1147,360"/>
+<area shape="rect" href="../../d0/da4/tuya__hlist_8h.html" title="tuya hash list module" alt="" coords="1172,333,1271,360"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="730,259,873,285"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="69,259,169,285"/>
+<area shape="rect" href="../../d2/d5e/uni__network_8h.html" title="Tuya iotdns module is the DNS service module provided by Tuya, which ensures that developers can prov..." alt="" coords="193,259,308,285"/>
+<area shape="rect" href="../../de/d25/mix__method_8h.html" title="tuya common api module" alt="" coords="333,259,449,285"/>
+<area shape="rect" href="../../de/de7/tuya__hashmap_8h.html" title="tuya hasmap module" alt="" coords="473,259,604,285"/>
+<area shape="rect" href="../../da/dd9/tkl__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="926,333,1026,360"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="744,333,851,360"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="155,333,266,360"/>
+</map>
+</div>
+</div>
+<p><a href="../../df/d69/smart__frame_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d64/structTY__RAW__DP__REPT__S.html">TY_RAW_DP_REPT_S</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dp data report information for raw type  <a href="../../d6/d64/structTY__RAW__DP__REPT__S.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a575fa0d1800cca8fdbcc439cae8521b2"><td class="memItemLeft" align="right" valign="top"><a id="a575fa0d1800cca8fdbcc439cae8521b2" name="a575fa0d1800cca8fdbcc439cae8521b2"></a>
+typedef struct <a class="el" href="../../dc/d03/structmsg__data__s.html">msg_data_s</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MSG_DATA_S</b></td></tr>
+<tr class="memdesc:a575fa0d1800cca8fdbcc439cae8521b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">info of dp message data <br /></td></tr>
+<tr class="separator:a575fa0d1800cca8fdbcc439cae8521b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966348c6666a2d1a68b7310c9e82c439"><td class="memItemLeft" align="right" valign="top"><a id="a966348c6666a2d1a68b7310c9e82c439" name="a966348c6666a2d1a68b7310c9e82c439"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>sf_special_dp_cb</b>) (IN CONST UINT16_T dpid, IN CONST <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *dp_obj)</td></tr>
+<tr class="separator:a966348c6666a2d1a68b7310c9e82c439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0fd50bad2246860710b745692c2f36"><td class="memItemLeft" align="right" valign="top"><a id="afa0fd50bad2246860710b745692c2f36" name="afa0fd50bad2246860710b745692c2f36"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>sf_subdev_dev_cntl_traversal_cb</b>) (subdev_dev_cntl_cb, VOID *param)</td></tr>
+<tr class="separator:afa0fd50bad2246860710b745692c2f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4597d3a8430b9ae98885a9123241dc55"><td class="memItemLeft" align="right" valign="top"><a id="a4597d3a8430b9ae98885a9123241dc55" name="a4597d3a8430b9ae98885a9123241dc55"></a>
+typedef BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>sf_subdev_reliable_transfer_check_cb</b>) (IN CHAR_T *id)</td></tr>
+<tr class="separator:a4597d3a8430b9ae98885a9123241dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3ae45b33ea5de4b206e6bff1071688"><td class="memItemLeft" align="right" valign="top"><a id="abc3ae45b33ea5de4b206e6bff1071688" name="abc3ae45b33ea5de4b206e6bff1071688"></a>
+typedef UINT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>sf_subdev_reliable_transfer_time_get_cb</b>) (IN CHAR_T *id)</td></tr>
+<tr class="separator:abc3ae45b33ea5de4b206e6bff1071688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba06b0000fa970001fcd9540bd0e353"><td class="memItemLeft" align="right" valign="top"><a id="a0ba06b0000fa970001fcd9540bd0e353" name="a0ba06b0000fa970001fcd9540bd0e353"></a>
+typedef BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>sf_subdev_report_check_cb</b>) (IN CHAR_T *id)</td></tr>
+<tr class="separator:a0ba06b0000fa970001fcd9540bd0e353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a487652da960dd208fdc377492ae0aa53"><td class="memItemLeft" align="right" valign="top"><a id="a487652da960dd208fdc377492ae0aa53" name="a487652da960dd208fdc377492ae0aa53"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>sf_trans_type_cb</b>) (IN CONST UINT16_T dpid, IN CONST <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *data_js)</td></tr>
+<tr class="separator:a487652da960dd208fdc377492ae0aa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4008e025d67e7bf3b6b3fac5f90aa7b3"><td class="memItemLeft" align="right" valign="top"><a id="a4008e025d67e7bf3b6b3fac5f90aa7b3" name="a4008e025d67e7bf3b6b3fac5f90aa7b3"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>subdev_dev_cntl_cb</b>) (IN <a class="el" href="../../d4/d62/gw__intf_8h.html#af467dac8fdbe9e1144bd1ccebf9ede3a">DEV_CNTL_N_S</a> *subdev_cntl, VOID *param)</td></tr>
+<tr class="separator:a4008e025d67e7bf3b6b3fac5f90aa7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6e2f2258e8e19cec12c2383c3950ddee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/da3/structDP__CNTL__S.html">DP_CNTL_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a6e2f2258e8e19cec12c2383c3950ddee">sf_dp_data_get</a> (IN CHAR_T *id, IN CONST uint8_t dp_id)</td></tr>
+<tr class="memdesc:a6e2f2258e8e19cec12c2383c3950ddee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dp control information  <a href="../../df/d69/smart__frame_8h.html#a6e2f2258e8e19cec12c2383c3950ddee">更多...</a><br /></td></tr>
+<tr class="separator:a6e2f2258e8e19cec12c2383c3950ddee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b35da377b0d95cf7595b9b8a178c42"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#ab8b35da377b0d95cf7595b9b8a178c42">sf_dp_data_is_equl</a> (IN <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *dp_cmd)</td></tr>
+<tr class="memdesc:ab8b35da377b0d95cf7595b9b8a178c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the dp data is same  <a href="../../df/d69/smart__frame_8h.html#ab8b35da377b0d95cf7595b9b8a178c42">更多...</a><br /></td></tr>
+<tr class="separator:ab8b35da377b0d95cf7595b9b8a178c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7d24076d9c2de2766db71c5fcb78d7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a5b7d24076d9c2de2766db71c5fcb78d7">sf_dp_low_power_query</a> (IN CONST UCHAR_T *dps, IN CONST UINT_T cnt, OUT <a class="el" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> **obj_dps, OUT <a class="el" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> **raw_dps)</td></tr>
+<tr class="memdesc:a5b7d24076d9c2de2766db71c5fcb78d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query dp for low power  <a href="../../df/d69/smart__frame_8h.html#a5b7d24076d9c2de2766db71c5fcb78d7">更多...</a><br /></td></tr>
+<tr class="separator:a5b7d24076d9c2de2766db71c5fcb78d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ea5818b8332b00434351ec794c858d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a28ea5818b8332b00434351ec794c858d">sf_dp_set_delete_null_dp</a> (BOOL_T enable)</td></tr>
+<tr class="memdesc:a28ea5818b8332b00434351ec794c858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set enable switch for deleting null dp  <a href="../../df/d69/smart__frame_8h.html#a28ea5818b8332b00434351ec794c858d">更多...</a><br /></td></tr>
+<tr class="separator:a28ea5818b8332b00434351ec794c858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33612725b32ac0139db91fed59a4d588"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a33612725b32ac0139db91fed59a4d588">sf_dp_set_report_timeout</a> (UINT_T timeout_s)</td></tr>
+<tr class="memdesc:a33612725b32ac0139db91fed59a4d588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default dp report timeout  <a href="../../df/d69/smart__frame_8h.html#a33612725b32ac0139db91fed59a4d588">更多...</a><br /></td></tr>
+<tr class="separator:a33612725b32ac0139db91fed59a4d588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2011c8395bece92ad30545150b399edd"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a2011c8395bece92ad30545150b399edd">sf_get_serial_no</a> (VOID)</td></tr>
+<tr class="memdesc:a2011c8395bece92ad30545150b399edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get serial number for dp report  <a href="../../df/d69/smart__frame_8h.html#a2011c8395bece92ad30545150b399edd">更多...</a><br /></td></tr>
+<tr class="separator:a2011c8395bece92ad30545150b399edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05688b4c0da8c87a0522651c6f8e1b7"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#ae05688b4c0da8c87a0522651c6f8e1b7">sf_pack_local_obj_dp_data</a> (IN <a class="el" href="../../d4/d62/gw__intf_8h.html#af467dac8fdbe9e1144bd1ccebf9ede3a">DEV_CNTL_N_S</a> *dev_cntl, IN CONST UINT_T max_len, IN CONST BOOL_T addDevId, OUT BOOL_T *p_all_data_packed, BOOL_T reset_flow_ctl, IN CONST BOOL_T is_lan)</td></tr>
+<tr class="memdesc:ae05688b4c0da8c87a0522651c6f8e1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packed the local dp data as string in json format  <a href="../../df/d69/smart__frame_8h.html#ae05688b4c0da8c87a0522651c6f8e1b7">更多...</a><br /></td></tr>
+<tr class="separator:ae05688b4c0da8c87a0522651c6f8e1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a57cc275514c75eae3236a363dd0416"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a5a57cc275514c75eae3236a363dd0416">sf_regist_dp_rept_cb</a> (IN <a class="el" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a> *dp_rept_cbs)</td></tr>
+<tr class="memdesc:a5a57cc275514c75eae3236a363dd0416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function for dp report  <a href="../../df/d69/smart__frame_8h.html#a5a57cc275514c75eae3236a363dd0416">更多...</a><br /></td></tr>
+<tr class="separator:a5a57cc275514c75eae3236a363dd0416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60799615e3fb214057e71e3f5e3a02e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#ad60799615e3fb214057e71e3f5e3a02e">sf_respone_obj_dp_query</a> (IN UINT_T cmd_tp, IN CONST <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *pCidArr, IN CONST <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *pDpIdArr)</td></tr>
+<tr class="memdesc:ad60799615e3fb214057e71e3f5e3a02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response for dp query  <a href="../../df/d69/smart__frame_8h.html#ad60799615e3fb214057e71e3f5e3a02e">更多...</a><br /></td></tr>
+<tr class="separator:ad60799615e3fb214057e71e3f5e3a02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46fba6af197be257f4b2478cf7f9587"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#aa46fba6af197be257f4b2478cf7f9587">sf_send_gw_dev_cmd</a> (IN <a class="el" href="../../d4/dd3/structSF__GW__DEV__CMD__S.html">SF_GW_DEV_CMD_S</a> *gd_cmd)</td></tr>
+<tr class="memdesc:aa46fba6af197be257f4b2478cf7f9587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send dp command  <a href="../../df/d69/smart__frame_8h.html#aa46fba6af197be257f4b2478cf7f9587">更多...</a><br /></td></tr>
+<tr class="separator:aa46fba6af197be257f4b2478cf7f9587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60706d9c8686ccd41cfd532163f8b93f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a60706d9c8686ccd41cfd532163f8b93f">sf_special_dp_register_cb</a> (IN sf_special_dp_cb handler)</td></tr>
+<tr class="memdesc:a60706d9c8686ccd41cfd532163f8b93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register special dp callback function  <a href="../../df/d69/smart__frame_8h.html#a60706d9c8686ccd41cfd532163f8b93f">更多...</a><br /></td></tr>
+<tr class="separator:a60706d9c8686ccd41cfd532163f8b93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931f1148c366b0de9df711611f19f995"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a931f1148c366b0de9df711611f19f995">sf_start_sync_obj_dp</a> (VOID)</td></tr>
+<tr class="memdesc:a931f1148c366b0de9df711611f19f995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to synchronize dp data  <a href="../../df/d69/smart__frame_8h.html#a931f1148c366b0de9df711611f19f995">更多...</a><br /></td></tr>
+<tr class="separator:a931f1148c366b0de9df711611f19f995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52c9243017ea056ac0f90ae114a8eb1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#ac52c9243017ea056ac0f90ae114a8eb1">sf_subdev_register_cb</a> (IN <a class="el" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html">SF_SUBDEV_HANDLE_CB_S</a> *cbs)</td></tr>
+<tr class="memdesc:ac52c9243017ea056ac0f90ae114a8eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function for subdevice  <a href="../../df/d69/smart__frame_8h.html#ac52c9243017ea056ac0f90ae114a8eb1">更多...</a><br /></td></tr>
+<tr class="separator:ac52c9243017ea056ac0f90ae114a8eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be0cb29515b28c43bcb106e899a715f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a2be0cb29515b28c43bcb106e899a715f">sf_trans_type_register_cb</a> (IN CONST DP_TRANS_TYPE_T trans, IN sf_trans_type_cb handler)</td></tr>
+<tr class="memdesc:a2be0cb29515b28c43bcb106e899a715f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function for different kind of transport type  <a href="../../df/d69/smart__frame_8h.html#a2be0cb29515b28c43bcb106e899a715f">更多...</a><br /></td></tr>
+<tr class="separator:a2be0cb29515b28c43bcb106e899a715f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b46a87e00e87e28e4283836480d077"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a68b46a87e00e87e28e4283836480d077">smart_frame_init</a> (VOID)</td></tr>
+<tr class="memdesc:a68b46a87e00e87e28e4283836480d077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart frame init  <a href="../../df/d69/smart__frame_8h.html#a68b46a87e00e87e28e4283836480d077">更多...</a><br /></td></tr>
+<tr class="separator:a68b46a87e00e87e28e4283836480d077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f66a87b132c7d3a26be6382b0e8aee"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#ab2f66a87b132c7d3a26be6382b0e8aee">ty_check_dpid_need_rept</a> (CHAR_T *dev_id, BYTE_T dpid, DP_CMD_TYPE_E type, <a class="el" href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a> *dp_desc)</td></tr>
+<tr class="memdesc:ab2f66a87b132c7d3a26be6382b0e8aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">check dp id need report  <a href="../../df/d69/smart__frame_8h.html#ab2f66a87b132c7d3a26be6382b0e8aee">更多...</a><br /></td></tr>
+<tr class="separator:ab2f66a87b132c7d3a26be6382b0e8aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165f543d19f7abd5231d3788d68c964f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a> (IN CONST DP_REPT_TYPE_E dp_rept_type, IN VOID_T *dp_rept, IN CONST BYTE_T is_query)</td></tr>
+<tr class="memdesc:a165f543d19f7abd5231d3788d68c964f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report dp data  <a href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">更多...</a><br /></td></tr>
+<tr class="separator:a165f543d19f7abd5231d3788d68c964f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6e896f0ac00bc7786755227a86c480"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a5d6e896f0ac00bc7786755227a86c480">ty_free_obj_dp_data</a> (<a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, UINT_T cnt)</td></tr>
+<tr class="memdesc:a5d6e896f0ac00bc7786755227a86c480"><td class="mdescLeft">&#160;</td><td class="mdescRight">ty_free_obj_dp_data @desc free memory of object dp  <a href="../../df/d69/smart__frame_8h.html#a5d6e896f0ac00bc7786755227a86c480">更多...</a><br /></td></tr>
+<tr class="separator:a5d6e896f0ac00bc7786755227a86c480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7d780604c1ecb759d1a6eec714bfbc"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a1c7d780604c1ecb759d1a6eec714bfbc">ty_get_dpid_rept_rule</a> (VOID_T)</td></tr>
+<tr class="memdesc:a1c7d780604c1ecb759d1a6eec714bfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">get dp id report rule  <a href="../../df/d69/smart__frame_8h.html#a1c7d780604c1ecb759d1a6eec714bfbc">更多...</a><br /></td></tr>
+<tr class="separator:a1c7d780604c1ecb759d1a6eec714bfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8269588bda581684c41c530b43935e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a0a8269588bda581684c41c530b43935e">ty_get_obj_dp_from_json</a> (IN CHAR_T *dev_id, IN CONST CHAR_T *json_str, OUT <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> **dp_data, OUT UINT_T *cnt)</td></tr>
+<tr class="memdesc:a0a8269588bda581684c41c530b43935e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ty_dp_json_to_obj @desc transfer json format dp to object  <a href="../../df/d69/smart__frame_8h.html#a0a8269588bda581684c41c530b43935e">更多...</a><br /></td></tr>
+<tr class="separator:a0a8269588bda581684c41c530b43935e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8388fa12c953071fe8d10b63a8537e"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#afc8388fa12c953071fe8d10b63a8537e">ty_print_dp_time</a> (VOID_T)</td></tr>
+<tr class="memdesc:afc8388fa12c953071fe8d10b63a8537e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the key time for dp report  <a href="../../df/d69/smart__frame_8h.html#afc8388fa12c953071fe8d10b63a8537e">更多...</a><br /></td></tr>
+<tr class="separator:afc8388fa12c953071fe8d10b63a8537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa173ef29b367253b2f7c0bba83e019"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d69/smart__frame_8h.html#a2fa173ef29b367253b2f7c0bba83e019">ty_set_dpid_rept_rule</a> (UINT8_T rept_rule)</td></tr>
+<tr class="memdesc:a2fa173ef29b367253b2f7c0bba83e019"><td class="mdescLeft">&#160;</td><td class="mdescRight">set dp id report rule  <a href="../../df/d69/smart__frame_8h.html#a2fa173ef29b367253b2f7c0bba83e019">更多...</a><br /></td></tr>
+<tr class="separator:a2fa173ef29b367253b2f7c0bba83e019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section author"><dt>作者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'nzy'+'@t'+'uya'+'.c'+'om'; return false;">nzy@t<span class="obfuscator">.nosp@m.</span>uya.<span class="obfuscator">.nosp@m.</span>com</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a6e2f2258e8e19cec12c2383c3950ddee" name="a6e2f2258e8e19cec12c2383c3950ddee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2f2258e8e19cec12c2383c3950ddee">&#9670;&nbsp;</a></span>sf_dp_data_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/da3/structDP__CNTL__S.html">DP_CNTL_S</a> * sf_dp_data_get </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST uint8_t&#160;</td>
+          <td class="paramname"><em>dp_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get dp control information </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>device id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_id</td><td>dp id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting dp control information by device id and dp id.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the dp control information </dd></dl>
+
+</div>
+</div>
+<a id="ab8b35da377b0d95cf7595b9b8a178c42" name="ab8b35da377b0d95cf7595b9b8a178c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b35da377b0d95cf7595b9b8a178c42">&#9670;&nbsp;</a></span>sf_dp_data_is_equl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T sf_dp_data_is_equl </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *&#160;</td>
+          <td class="paramname"><em>dp_cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the dp data is same </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_cmd</td><td>dp information in josn format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for checking the dp data is same.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the result whether the dp data is same. </dd></dl>
+
+</div>
+</div>
+<a id="a5b7d24076d9c2de2766db71c5fcb78d7" name="a5b7d24076d9c2de2766db71c5fcb78d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7d24076d9c2de2766db71c5fcb78d7">&#9670;&nbsp;</a></span>sf_dp_low_power_query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_dp_low_power_query </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>dps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> **&#160;</td>
+          <td class="paramname"><em>obj_dps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> **&#160;</td>
+          <td class="paramname"><em>raw_dps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query dp for low power </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dps</td><td>dp string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp count </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">obj_dps</td><td>dp in object format </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">raw_dps</td><td>dp in raw format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for quering dp for low power</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a28ea5818b8332b00434351ec794c858d" name="a28ea5818b8332b00434351ec794c858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ea5818b8332b00434351ec794c858d">&#9670;&nbsp;</a></span>sf_dp_set_delete_null_dp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_dp_set_delete_null_dp </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set enable switch for deleting null dp </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>enable switch</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for setting enable switch for deleting null dp.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a33612725b32ac0139db91fed59a4d588" name="a33612725b32ac0139db91fed59a4d588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33612725b32ac0139db91fed59a4d588">&#9670;&nbsp;</a></span>sf_dp_set_report_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_dp_set_report_timeout </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>timeout_s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set default dp report timeout </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_s</td><td>in second</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2011c8395bece92ad30545150b399edd" name="a2011c8395bece92ad30545150b399edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2011c8395bece92ad30545150b399edd">&#9670;&nbsp;</a></span>sf_get_serial_no()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T sf_get_serial_no </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get serial number for dp report </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting serial number for dp report</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the serial number </dd></dl>
+
+</div>
+</div>
+<a id="ae05688b4c0da8c87a0522651c6f8e1b7" name="ae05688b4c0da8c87a0522651c6f8e1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05688b4c0da8c87a0522651c6f8e1b7">&#9670;&nbsp;</a></span>sf_pack_local_obj_dp_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * sf_pack_local_obj_dp_data </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d4/d62/gw__intf_8h.html#af467dac8fdbe9e1144bd1ccebf9ede3a">DEV_CNTL_N_S</a> *&#160;</td>
+          <td class="paramname"><em>dev_cntl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>max_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>addDevId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BOOL_T *&#160;</td>
+          <td class="paramname"><em>p_all_data_packed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>reset_flow_ctl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>is_lan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Packed the local dp data as string in json format </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_cntl</td><td>device control handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_len</td><td>max lenth of the dp string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addDevId</td><td>if add devid or not </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p_all_data_packed</td><td>if all dp is packed or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reset_flow_ctl</td><td>if need reset flow control or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_lan</td><td>if be lan or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for packing the local dp data as string in json format</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the dp string in json format </dd></dl>
+
+</div>
+</div>
+<a id="a5a57cc275514c75eae3236a363dd0416" name="a5a57cc275514c75eae3236a363dd0416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a57cc275514c75eae3236a363dd0416">&#9670;&nbsp;</a></span>sf_regist_dp_rept_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_regist_dp_rept_cb </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_rept_cbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback function for dp report </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_rept_cbs</td><td>callback functions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for registering callback function for dp report.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad60799615e3fb214057e71e3f5e3a02e" name="ad60799615e3fb214057e71e3f5e3a02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60799615e3fb214057e71e3f5e3a02e">&#9670;&nbsp;</a></span>sf_respone_obj_dp_query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_respone_obj_dp_query </td>
+          <td>(</td>
+          <td class="paramtype">IN UINT_T&#160;</td>
+          <td class="paramname"><em>cmd_tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *&#160;</td>
+          <td class="paramname"><em>pCidArr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *&#160;</td>
+          <td class="paramname"><em>pDpIdArr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Response for dp query </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pCidArr</td><td>cid in json format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDpIdArr</td><td>dp id in json format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for response for dp query</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa46fba6af197be257f4b2478cf7f9587" name="aa46fba6af197be257f4b2478cf7f9587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46fba6af197be257f4b2478cf7f9587">&#9670;&nbsp;</a></span>sf_send_gw_dev_cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_send_gw_dev_cmd </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d4/dd3/structSF__GW__DEV__CMD__S.html">SF_GW_DEV_CMD_S</a> *&#160;</td>
+          <td class="paramname"><em>gd_cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send dp command </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gd_cmd</td><td>dp command information</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for sending dp command from mqtt/lan/bt</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a60706d9c8686ccd41cfd532163f8b93f" name="a60706d9c8686ccd41cfd532163f8b93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60706d9c8686ccd41cfd532163f8b93f">&#9670;&nbsp;</a></span>sf_special_dp_register_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_special_dp_register_cb </td>
+          <td>(</td>
+          <td class="paramtype">IN sf_special_dp_cb&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register special dp callback function </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>special dp callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to register special dp callback function.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a931f1148c366b0de9df711611f19f995" name="a931f1148c366b0de9df711611f19f995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931f1148c366b0de9df711611f19f995">&#9670;&nbsp;</a></span>sf_start_sync_obj_dp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID sf_start_sync_obj_dp </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start to synchronize dp data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to start a timer task to synchronize dp data to the cloud/app</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="ac52c9243017ea056ac0f90ae114a8eb1" name="ac52c9243017ea056ac0f90ae114a8eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52c9243017ea056ac0f90ae114a8eb1">&#9670;&nbsp;</a></span>sf_subdev_register_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_subdev_register_cb </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html">SF_SUBDEV_HANDLE_CB_S</a> *&#160;</td>
+          <td class="paramname"><em>cbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback function for subdevice </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbs</td><td>callback functions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for registering callback function for subdevice</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2be0cb29515b28c43bcb106e899a715f" name="a2be0cb29515b28c43bcb106e899a715f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be0cb29515b28c43bcb106e899a715f">&#9670;&nbsp;</a></span>sf_trans_type_register_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET sf_trans_type_register_cb </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST DP_TRANS_TYPE_T&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN sf_trans_type_cb&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback function for different kind of transport type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trans</td><td>transport type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for registering callback function for different kind of transport type</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a68b46a87e00e87e28e4283836480d077" name="a68b46a87e00e87e28e4283836480d077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b46a87e00e87e28e4283836480d077">&#9670;&nbsp;</a></span>smart_frame_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET smart_frame_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Smart frame init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for initializing the resource of smart frame</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab2f66a87b132c7d3a26be6382b0e8aee" name="ab2f66a87b132c7d3a26be6382b0e8aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f66a87b132c7d3a26be6382b0e8aee">&#9670;&nbsp;</a></span>ty_check_dpid_need_rept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T ty_check_dpid_need_rept </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T&#160;</td>
+          <td class="paramname"><em>dpid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DP_CMD_TYPE_E&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_desc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check dp id need report </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>dev id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dpid</td><td>dp id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>ref type DP_CMD_TYPE_E </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="../../d0/ddb/structDP__DESC__IF__S.html" title="Definition of dp description">DP_DESC_IF_S</a></td><td>dp desc info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check if dp id need rept</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>true:need rept,false:no need rept </dd></dl>
+
+</div>
+</div>
+<a id="a165f543d19f7abd5231d3788d68c964f" name="a165f543d19f7abd5231d3788d68c964f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a165f543d19f7abd5231d3788d68c964f">&#9670;&nbsp;</a></span>ty_dp_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_dp_report </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST DP_REPT_TYPE_E&#160;</td>
+          <td class="paramname"><em>dp_rept_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID_T *&#160;</td>
+          <td class="paramname"><em>dp_rept</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>is_query</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report dp data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_rept_type</td><td>dp report type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_rept</td><td>dp report data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_query</td><td>if query interface or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for reporting dp data.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5d6e896f0ac00bc7786755227a86c480" name="a5d6e896f0ac00bc7786755227a86c480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6e896f0ac00bc7786755227a86c480">&#9670;&nbsp;</a></span>ty_free_obj_dp_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T ty_free_obj_dp_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ty_free_obj_dp_data @desc free memory of object dp </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to free memory of object dp.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a1c7d780604c1ecb759d1a6eec714bfbc" name="a1c7d780604c1ecb759d1a6eec714bfbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7d780604c1ecb759d1a6eec714bfbc">&#9670;&nbsp;</a></span>ty_get_dpid_rept_rule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T ty_get_dpid_rept_rule </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get dp id report rule </p>
+<dl class="section return"><dt>返回</dt><dd>dp id rept vaule </dd></dl>
+
+</div>
+</div>
+<a id="a0a8269588bda581684c41c530b43935e" name="a0a8269588bda581684c41c530b43935e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8269588bda581684c41c530b43935e">&#9670;&nbsp;</a></span>ty_get_obj_dp_from_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_get_obj_dp_from_json </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>json_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> **&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ty_dp_json_to_obj @desc transfer json format dp to object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">json_str</td><td>string in json format </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">[OUT]</td><td>dp_data: dp array header </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">[OUT]</td><td>cnt: dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to transfer json format dp to object. Memory of dp_data need to be freed.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="afc8388fa12c953071fe8d10b63a8537e" name="afc8388fa12c953071fe8d10b63a8537e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8388fa12c953071fe8d10b63a8537e">&#9670;&nbsp;</a></span>ty_print_dp_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T ty_print_dp_time </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the key time for dp report </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to print the key time for dp report</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a2fa173ef29b367253b2f7c0bba83e019" name="a2fa173ef29b367253b2f7c0bba83e019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa173ef29b367253b2f7c0bba83e019">&#9670;&nbsp;</a></span>ty_set_dpid_rept_rule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ty_set_dpid_rept_rule </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>rept_rule</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set dp id report rule </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rept_rule</td><td>ref to DP_ID_REPT_TYPE_E</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to set dp id report rule</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

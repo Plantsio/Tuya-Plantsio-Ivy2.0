@@ -1,0 +1,1121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system/include/tal_fs.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_756eea2d6c45abe335e6af16c38cccfe.html">tal_system</a></li><li class="navelem"><a class="el" href="../../dir_a80ab866e44074dee44459bfafedc0dc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_fs.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_fs.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/de5/tal__fs_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__fs_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__fs_8h" id="ainclude_2components_2tal__system_2include_2tal__fs_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d7b/tal__fs_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__fs_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__fs_8hdep" id="ainclude_2components_2tal__system_2include_2tal__fs_8hdep">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="19,5,173,61"/>
+<area shape="rect" href="../../d6/d09/uni__fs_8h.html" title="tuya file system module" alt="" coords="5,109,187,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../de/d86/tal__fs_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac2c765bee5bbde143027d1f09c8a90c9"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#ac2c765bee5bbde143027d1f09c8a90c9">tal_dir_close</a> (TUYA_DIR dir)</td></tr>
+<tr class="memdesc:ac2c765bee5bbde143027d1f09c8a90c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close directory  <a href="../../de/d86/tal__fs_8h.html#ac2c765bee5bbde143027d1f09c8a90c9">更多...</a><br /></td></tr>
+<tr class="separator:ac2c765bee5bbde143027d1f09c8a90c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadeba957c39d357190911dc2da4e3d0"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#adadeba957c39d357190911dc2da4e3d0">tal_dir_is_directory</a> (TUYA_FILEINFO info, BOOL_T *is_dir)</td></tr>
+<tr class="memdesc:adadeba957c39d357190911dc2da4e3d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the node is a directory  <a href="../../de/d86/tal__fs_8h.html#adadeba957c39d357190911dc2da4e3d0">更多...</a><br /></td></tr>
+<tr class="separator:adadeba957c39d357190911dc2da4e3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b05a581c02ab72d39a2bbf716892fe6"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a1b05a581c02ab72d39a2bbf716892fe6">tal_dir_is_regular</a> (TUYA_FILEINFO info, BOOL_T *is_regular)</td></tr>
+<tr class="memdesc:a1b05a581c02ab72d39a2bbf716892fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the node is a normal file  <a href="../../de/d86/tal__fs_8h.html#a1b05a581c02ab72d39a2bbf716892fe6">更多...</a><br /></td></tr>
+<tr class="separator:a1b05a581c02ab72d39a2bbf716892fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880973c4d03b364a006bac93b9081578"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a880973c4d03b364a006bac93b9081578">tal_dir_name</a> (TUYA_FILEINFO info, CONST CHAR_T **name)</td></tr>
+<tr class="memdesc:a880973c4d03b364a006bac93b9081578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the file node  <a href="../../de/d86/tal__fs_8h.html#a880973c4d03b364a006bac93b9081578">更多...</a><br /></td></tr>
+<tr class="separator:a880973c4d03b364a006bac93b9081578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dd141107813ce3387e0d0398023d4a"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#ae4dd141107813ce3387e0d0398023d4a">tal_dir_open</a> (CONST CHAR_T *path, TUYA_DIR *dir)</td></tr>
+<tr class="memdesc:ae4dd141107813ce3387e0d0398023d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open directory  <a href="../../de/d86/tal__fs_8h.html#ae4dd141107813ce3387e0d0398023d4a">更多...</a><br /></td></tr>
+<tr class="separator:ae4dd141107813ce3387e0d0398023d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08972c3197306feefe008c07860ef21"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#af08972c3197306feefe008c07860ef21">tal_dir_read</a> (TUYA_DIR dir, TUYA_FILEINFO *info)</td></tr>
+<tr class="memdesc:af08972c3197306feefe008c07860ef21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read directory  <a href="../../de/d86/tal__fs_8h.html#af08972c3197306feefe008c07860ef21">更多...</a><br /></td></tr>
+<tr class="separator:af08972c3197306feefe008c07860ef21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0046ce7fcfe9cec6449e8461e1db6ac1"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a0046ce7fcfe9cec6449e8461e1db6ac1">tal_faccess</a> (IN CONST CHAR_T *filepath, IN INT_T mode)</td></tr>
+<tr class="memdesc:a0046ce7fcfe9cec6449e8461e1db6ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Judge if the file can be access  <a href="../../de/d86/tal__fs_8h.html#a0046ce7fcfe9cec6449e8461e1db6ac1">更多...</a><br /></td></tr>
+<tr class="separator:a0046ce7fcfe9cec6449e8461e1db6ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f249255e1fc2ef79c6e0a0e69e99033"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a8f249255e1fc2ef79c6e0a0e69e99033">tal_fclose</a> (TUYA_FILE file)</td></tr>
+<tr class="memdesc:a8f249255e1fc2ef79c6e0a0e69e99033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close file  <a href="../../de/d86/tal__fs_8h.html#a8f249255e1fc2ef79c6e0a0e69e99033">更多...</a><br /></td></tr>
+<tr class="separator:a8f249255e1fc2ef79c6e0a0e69e99033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12e6a1a3041295b6fa2f846871a8a10"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#ac12e6a1a3041295b6fa2f846871a8a10">tal_feof</a> (TUYA_FILE file)</td></tr>
+<tr class="memdesc:ac12e6a1a3041295b6fa2f846871a8a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check wheather to reach the end fo the file  <a href="../../de/d86/tal__fs_8h.html#ac12e6a1a3041295b6fa2f846871a8a10">更多...</a><br /></td></tr>
+<tr class="separator:ac12e6a1a3041295b6fa2f846871a8a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88bd9c052fdf6873e51010ed3d8bb23"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#ab88bd9c052fdf6873e51010ed3d8bb23">tal_fflush</a> (IN TUYA_FILE file)</td></tr>
+<tr class="memdesc:ab88bd9c052fdf6873e51010ed3d8bb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">flush the IO read/write stream  <a href="../../de/d86/tal__fs_8h.html#ab88bd9c052fdf6873e51010ed3d8bb23">更多...</a><br /></td></tr>
+<tr class="separator:ab88bd9c052fdf6873e51010ed3d8bb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e3b8ea4479c22f11e6d78f109ae72c"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a92e3b8ea4479c22f11e6d78f109ae72c">tal_fgetc</a> (IN TUYA_FILE file)</td></tr>
+<tr class="memdesc:a92e3b8ea4479c22f11e6d78f109ae72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the next character from stream  <a href="../../de/d86/tal__fs_8h.html#a92e3b8ea4479c22f11e6d78f109ae72c">更多...</a><br /></td></tr>
+<tr class="separator:a92e3b8ea4479c22f11e6d78f109ae72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a828265efbb79aaec3c776759a3b66b"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a9a828265efbb79aaec3c776759a3b66b">tal_fgets</a> (CHAR_T *buf, INT_T len, TUYA_FILE file)</td></tr>
+<tr class="memdesc:a9a828265efbb79aaec3c776759a3b66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read string from file  <a href="../../de/d86/tal__fs_8h.html#a9a828265efbb79aaec3c776759a3b66b">更多...</a><br /></td></tr>
+<tr class="separator:a9a828265efbb79aaec3c776759a3b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5983fb2cf00936ef74375bb2e34ea01"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#aa5983fb2cf00936ef74375bb2e34ea01">tal_fgetsize</a> (IN CONST CHAR_T *filepath)</td></tr>
+<tr class="memdesc:aa5983fb2cf00936ef74375bb2e34ea01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file size  <a href="../../de/d86/tal__fs_8h.html#aa5983fb2cf00936ef74375bb2e34ea01">更多...</a><br /></td></tr>
+<tr class="separator:aa5983fb2cf00936ef74375bb2e34ea01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa9738146bbd0329b4eb27cbeb7c4b2"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#adaa9738146bbd0329b4eb27cbeb7c4b2">tal_fileno</a> (IN TUYA_FILE file)</td></tr>
+<tr class="memdesc:adaa9738146bbd0329b4eb27cbeb7c4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the file fd  <a href="../../de/d86/tal__fs_8h.html#adaa9738146bbd0329b4eb27cbeb7c4b2">更多...</a><br /></td></tr>
+<tr class="separator:adaa9738146bbd0329b4eb27cbeb7c4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62752822ea6632d5774317332cff643f"><td class="memItemLeft" align="right" valign="top">TUYA_FILE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a62752822ea6632d5774317332cff643f">tal_fopen</a> (CONST CHAR_T *path, CONST CHAR_T *mode)</td></tr>
+<tr class="memdesc:a62752822ea6632d5774317332cff643f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open file  <a href="../../de/d86/tal__fs_8h.html#a62752822ea6632d5774317332cff643f">更多...</a><br /></td></tr>
+<tr class="separator:a62752822ea6632d5774317332cff643f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdbae78ffce27b6201f3c9d47e76252"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#afbdbae78ffce27b6201f3c9d47e76252">tal_fread</a> (VOID_T *buf, INT_T bytes, TUYA_FILE file)</td></tr>
+<tr class="memdesc:afbdbae78ffce27b6201f3c9d47e76252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read file  <a href="../../de/d86/tal__fs_8h.html#afbdbae78ffce27b6201f3c9d47e76252">更多...</a><br /></td></tr>
+<tr class="separator:afbdbae78ffce27b6201f3c9d47e76252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b44d128325c48d837835fd83b8625c"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a62b44d128325c48d837835fd83b8625c">tal_fs_is_exist</a> (CONST CHAR_T *path, BOOL_T *is_exist)</td></tr>
+<tr class="memdesc:a62b44d128325c48d837835fd83b8625c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the file or directory exists  <a href="../../de/d86/tal__fs_8h.html#a62b44d128325c48d837835fd83b8625c">更多...</a><br /></td></tr>
+<tr class="separator:a62b44d128325c48d837835fd83b8625c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76eb095ac211071e0483479704715bb3"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a76eb095ac211071e0483479704715bb3">tal_fs_mkdir</a> (CONST CHAR_T *path)</td></tr>
+<tr class="memdesc:a76eb095ac211071e0483479704715bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make directory  <a href="../../de/d86/tal__fs_8h.html#a76eb095ac211071e0483479704715bb3">更多...</a><br /></td></tr>
+<tr class="separator:a76eb095ac211071e0483479704715bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa1c8746eb5ad4079275851b03d7498"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a7fa1c8746eb5ad4079275851b03d7498">tal_fs_mode</a> (CONST CHAR_T *path, UINT_T *mode)</td></tr>
+<tr class="memdesc:a7fa1c8746eb5ad4079275851b03d7498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file mode  <a href="../../de/d86/tal__fs_8h.html#a7fa1c8746eb5ad4079275851b03d7498">更多...</a><br /></td></tr>
+<tr class="separator:a7fa1c8746eb5ad4079275851b03d7498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c4299179a3532a58498f265e835f97"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a18c4299179a3532a58498f265e835f97">tal_fs_remove</a> (CONST CHAR_T *path)</td></tr>
+<tr class="memdesc:a18c4299179a3532a58498f265e835f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove directory  <a href="../../de/d86/tal__fs_8h.html#a18c4299179a3532a58498f265e835f97">更多...</a><br /></td></tr>
+<tr class="separator:a18c4299179a3532a58498f265e835f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeab9ee565340ec10484ef2fc6b73b94"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#aeeab9ee565340ec10484ef2fc6b73b94">tal_fs_rename</a> (CONST CHAR_T *path_old, CONST CHAR_T *path_new)</td></tr>
+<tr class="memdesc:aeeab9ee565340ec10484ef2fc6b73b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">File rename  <a href="../../de/d86/tal__fs_8h.html#aeeab9ee565340ec10484ef2fc6b73b94">更多...</a><br /></td></tr>
+<tr class="separator:aeeab9ee565340ec10484ef2fc6b73b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437752a94eeacdaa69c0903654013a25"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a437752a94eeacdaa69c0903654013a25">tal_fseek</a> (TUYA_FILE file, INT64_T offs, INT_T whence)</td></tr>
+<tr class="memdesc:a437752a94eeacdaa69c0903654013a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek to the offset position of the file  <a href="../../de/d86/tal__fs_8h.html#a437752a94eeacdaa69c0903654013a25">更多...</a><br /></td></tr>
+<tr class="separator:a437752a94eeacdaa69c0903654013a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5eccc91a6d8080789a4738c59925ed9"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#af5eccc91a6d8080789a4738c59925ed9">tal_fsync</a> (INT_T fd)</td></tr>
+<tr class="memdesc:af5eccc91a6d8080789a4738c59925ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">write buffer to flash  <a href="../../de/d86/tal__fs_8h.html#af5eccc91a6d8080789a4738c59925ed9">更多...</a><br /></td></tr>
+<tr class="separator:af5eccc91a6d8080789a4738c59925ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8943869096eb4ec2bb238482ee68bd48"><td class="memItemLeft" align="right" valign="top">INT64_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a8943869096eb4ec2bb238482ee68bd48">tal_ftell</a> (TUYA_FILE file)</td></tr>
+<tr class="memdesc:a8943869096eb4ec2bb238482ee68bd48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current position of file  <a href="../../de/d86/tal__fs_8h.html#a8943869096eb4ec2bb238482ee68bd48">更多...</a><br /></td></tr>
+<tr class="separator:a8943869096eb4ec2bb238482ee68bd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a4296335e37ba1a3fa92a44082c0f5"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#aa3a4296335e37ba1a3fa92a44082c0f5">tal_ftruncate</a> (INT_T fd, UINT64_T length)</td></tr>
+<tr class="memdesc:aa3a4296335e37ba1a3fa92a44082c0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">truncate one file according to the length  <a href="../../de/d86/tal__fs_8h.html#aa3a4296335e37ba1a3fa92a44082c0f5">更多...</a><br /></td></tr>
+<tr class="separator:aa3a4296335e37ba1a3fa92a44082c0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3937087e78504c5678d18789a0afea"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/tal__fs_8h.html#a1b3937087e78504c5678d18789a0afea">tal_fwrite</a> (VOID_T *buf, INT_T bytes, TUYA_FILE file)</td></tr>
+<tr class="memdesc:a1b3937087e78504c5678d18789a0afea"><td class="mdescLeft">&#160;</td><td class="mdescRight">write file  <a href="../../de/d86/tal__fs_8h.html#a1b3937087e78504c5678d18789a0afea">更多...</a><br /></td></tr>
+<tr class="separator:a1b3937087e78504c5678d18789a0afea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-09-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ac2c765bee5bbde143027d1f09c8a90c9" name="ac2c765bee5bbde143027d1f09c8a90c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c765bee5bbde143027d1f09c8a90c9">&#9670;&nbsp;</a></span>tal_dir_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_dir_close </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_DIR&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>handle of directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to close a directory</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="adadeba957c39d357190911dc2da4e3d0" name="adadeba957c39d357190911dc2da4e3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adadeba957c39d357190911dc2da4e3d0">&#9670;&nbsp;</a></span>tal_dir_is_directory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_dir_is_directory </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILEINFO&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T *&#160;</td>
+          <td class="paramname"><em>is_dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the node is a directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>file information </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_dir</td><td>is directory or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check whether the node is a directory.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1b05a581c02ab72d39a2bbf716892fe6" name="a1b05a581c02ab72d39a2bbf716892fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b05a581c02ab72d39a2bbf716892fe6">&#9670;&nbsp;</a></span>tal_dir_is_regular()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_dir_is_regular </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILEINFO&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T *&#160;</td>
+          <td class="paramname"><em>is_regular</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the node is a normal file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>file information </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_regular</td><td>is normal file or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check whether the node is a normal file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a880973c4d03b364a006bac93b9081578" name="a880973c4d03b364a006bac93b9081578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880973c4d03b364a006bac93b9081578">&#9670;&nbsp;</a></span>tal_dir_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_dir_name </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILEINFO&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T **&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of the file node </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>file information </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>file name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get the name of the file node.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae4dd141107813ce3387e0d0398023d4a" name="ae4dd141107813ce3387e0d0398023d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4dd141107813ce3387e0d0398023d4a">&#9670;&nbsp;</a></span>tal_dir_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_dir_open </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_DIR *&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path of directory </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dir</td><td>handle of directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to open a directory</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af08972c3197306feefe008c07860ef21" name="af08972c3197306feefe008c07860ef21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08972c3197306feefe008c07860ef21">&#9670;&nbsp;</a></span>tal_dir_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_dir_read </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_DIR&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_FILEINFO *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>handle of directory </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>file information</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to read a directory. Read the file information of the current node, and the internal pointer points to the next node.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0046ce7fcfe9cec6449e8461e1db6ac1" name="a0046ce7fcfe9cec6449e8461e1db6ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0046ce7fcfe9cec6449e8461e1db6ac1">&#9670;&nbsp;</a></span>tal_faccess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_faccess </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Judge if the file can be access </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>file path + file name</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>access mode</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to access one file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 success,-1 failed </dd></dl>
+
+</div>
+</div>
+<a id="a8f249255e1fc2ef79c6e0a0e69e99033" name="a8f249255e1fc2ef79c6e0a0e69e99033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f249255e1fc2ef79c6e0a0e69e99033">&#9670;&nbsp;</a></span>tal_fclose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fclose </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to close a file</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac12e6a1a3041295b6fa2f846871a8a10" name="ac12e6a1a3041295b6fa2f846871a8a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12e6a1a3041295b6fa2f846871a8a10">&#9670;&nbsp;</a></span>tal_feof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_feof </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check wheather to reach the end fo the file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check wheather to reach the end fo the file</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab88bd9c052fdf6873e51010ed3d8bb23" name="ab88bd9c052fdf6873e51010ed3d8bb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88bd9c052fdf6873e51010ed3d8bb23">&#9670;&nbsp;</a></span>tal_fflush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fflush </td>
+          <td>(</td>
+          <td class="paramtype">IN TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>flush the IO read/write stream </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>char stream</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to flush the IO read/write stream.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 success,-1 failed </dd></dl>
+
+</div>
+</div>
+<a id="a92e3b8ea4479c22f11e6d78f109ae72c" name="a92e3b8ea4479c22f11e6d78f109ae72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e3b8ea4479c22f11e6d78f109ae72c">&#9670;&nbsp;</a></span>tal_fgetc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fgetc </td>
+          <td>(</td>
+          <td class="paramtype">IN TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read the next character from stream </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>char stream</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get one char from stream.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>as an unsigned char cast to a int ,or EOF on end of file or error </dd></dl>
+
+</div>
+</div>
+<a id="a9a828265efbb79aaec3c776759a3b66b" name="a9a828265efbb79aaec3c776759a3b66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a828265efbb79aaec3c776759a3b66b">&#9670;&nbsp;</a></span>tal_fgets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tal_fgets </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read string from file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>buffer for reading file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to read string from file</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa5983fb2cf00936ef74375bb2e34ea01" name="aa5983fb2cf00936ef74375bb2e34ea01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5983fb2cf00936ef74375bb2e34ea01">&#9670;&nbsp;</a></span>tal_fgetsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fgetsize </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get file size </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filepath</td><td>file path + file name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get the size of file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the sizeof of file </dd></dl>
+
+</div>
+</div>
+<a id="adaa9738146bbd0329b4eb27cbeb7c4b2" name="adaa9738146bbd0329b4eb27cbeb7c4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa9738146bbd0329b4eb27cbeb7c4b2">&#9670;&nbsp;</a></span>tal_fileno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fileno </td>
+          <td>(</td>
+          <td class="paramtype">IN TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the file fd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>char stream</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get the file fd.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the file fd </dd></dl>
+
+</div>
+</div>
+<a id="a62752822ea6632d5774317332cff643f" name="a62752822ea6632d5774317332cff643f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62752822ea6632d5774317332cff643f">&#9670;&nbsp;</a></span>tal_fopen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TUYA_FILE tal_fopen </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path of file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>file open mode: "r","w"...</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to open a file</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afbdbae78ffce27b6201f3c9d47e76252" name="afbdbae78ffce27b6201f3c9d47e76252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdbae78ffce27b6201f3c9d47e76252">&#9670;&nbsp;</a></span>tal_fread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fread </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>buffer for reading file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes</td><td>buffer size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to read a file</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a62b44d128325c48d837835fd83b8625c" name="a62b44d128325c48d837835fd83b8625c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b44d128325c48d837835fd83b8625c">&#9670;&nbsp;</a></span>tal_fs_is_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fs_is_exist </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T *&#160;</td>
+          <td class="paramname"><em>is_exist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the file or directory exists </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path of directory </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_exist</td><td>the file or directory exists or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to check whether the file or directory exists.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a76eb095ac211071e0483479704715bb3" name="a76eb095ac211071e0483479704715bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76eb095ac211071e0483479704715bb3">&#9670;&nbsp;</a></span>tal_fs_mkdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fs_mkdir </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path of directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for making a directory</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7fa1c8746eb5ad4079275851b03d7498" name="a7fa1c8746eb5ad4079275851b03d7498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa1c8746eb5ad4079275851b03d7498">&#9670;&nbsp;</a></span>tal_fs_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fs_mode </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get file mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path of directory </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mode</td><td>bit attibute of directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting file mode.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a18c4299179a3532a58498f265e835f97" name="a18c4299179a3532a58498f265e835f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c4299179a3532a58498f265e835f97">&#9670;&nbsp;</a></span>tal_fs_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fs_remove </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove directory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path of directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for removing a directory</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aeeab9ee565340ec10484ef2fc6b73b94" name="aeeab9ee565340ec10484ef2fc6b73b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeab9ee565340ec10484ef2fc6b73b94">&#9670;&nbsp;</a></span>tal_fs_rename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fs_rename </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>path_new</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File rename </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path_old</td><td>old path of directory </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path_new</td><td>new path of directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to rename the file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a437752a94eeacdaa69c0903654013a25" name="a437752a94eeacdaa69c0903654013a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437752a94eeacdaa69c0903654013a25">&#9670;&nbsp;</a></span>tal_fseek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fseek </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT64_T&#160;</td>
+          <td class="paramname"><em>offs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>whence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seek to the offset position of the file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offs</td><td>offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">whence</td><td>seek start point mode</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to seek to the offset position of the file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af5eccc91a6d8080789a4738c59925ed9" name="af5eccc91a6d8080789a4738c59925ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5eccc91a6d8080789a4738c59925ed9">&#9670;&nbsp;</a></span>tal_fsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fsync </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write buffer to flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file fd</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to write buffer to flash</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8943869096eb4ec2bb238482ee68bd48" name="a8943869096eb4ec2bb238482ee68bd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8943869096eb4ec2bb238482ee68bd48">&#9670;&nbsp;</a></span>tal_ftell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT64_T tal_ftell </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current position of file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to get current position of file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa3a4296335e37ba1a3fa92a44082c0f5" name="aa3a4296335e37ba1a3fa92a44082c0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a4296335e37ba1a3fa92a44082c0f5">&#9670;&nbsp;</a></span>tal_ftruncate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_ftruncate </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT64_T&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>truncate one file according to the length </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>file description</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>the length want to truncate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to truncate one file.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>0 success,-1 failed </dd></dl>
+
+</div>
+</div>
+<a id="a1b3937087e78504c5678d18789a0afea" name="a1b3937087e78504c5678d18789a0afea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3937087e78504c5678d18789a0afea">&#9670;&nbsp;</a></span>tal_fwrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tal_fwrite </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_FILE&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>buffer for writing file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes</td><td>buffer size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>file handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to write a file</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

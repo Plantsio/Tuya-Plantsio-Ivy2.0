@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/online_log/tuya_svc_online_log.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_543ce09316ad031b5a8c49c2167def4c.html">online_log</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_svc_online_log.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>log服务应用接口描述文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_svc_online_log.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dfd/tuya__svc__online__log_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2online__log_2tuya__svc__online__log_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2online__log_2tuya__svc__online__log_8h" id="ainclude_2components_2svc__tuya__cloud_2include_2online__log_2tuya__svc__online__log_8h">
+<area shape="rect" title="log服务应用接口描述文件" alt="" coords="322,5,563,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../d0/d43/tuya__svc__online__log_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afcb985ce8e526fb3e205b91ec2cb27d8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d43/tuya__svc__online__log_8h.html#afcb985ce8e526fb3e205b91ec2cb27d8">tuya_svc_online_log_active</a> (VOID)</td></tr>
+<tr class="memdesc:afcb985ce8e526fb3e205b91ec2cb27d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">online log module activate  <a href="../../d0/d43/tuya__svc__online__log_8h.html#afcb985ce8e526fb3e205b91ec2cb27d8">更多...</a><br /></td></tr>
+<tr class="separator:afcb985ce8e526fb3e205b91ec2cb27d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a90870afa746e7cc7e9f95660489dd"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d43/tuya__svc__online__log_8h.html#a83a90870afa746e7cc7e9f95660489dd">tuya_svc_online_log_init</a> (const char *p_env)</td></tr>
+<tr class="memdesc:a83a90870afa746e7cc7e9f95660489dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">online log module initialization  <a href="../../d0/d43/tuya__svc__online__log_8h.html#a83a90870afa746e7cc7e9f95660489dd">更多...</a><br /></td></tr>
+<tr class="separator:a83a90870afa746e7cc7e9f95660489dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142c817d4ad41228c2037bf7912cde3d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d43/tuya__svc__online__log_8h.html#a142c817d4ad41228c2037bf7912cde3d">tuya_svc_online_log_upload_custom_seq_log</a> (const char *p_log)</td></tr>
+<tr class="memdesc:a142c817d4ad41228c2037bf7912cde3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">upload user sequnence log  <a href="../../d0/d43/tuya__svc__online__log_8h.html#a142c817d4ad41228c2037bf7912cde3d">更多...</a><br /></td></tr>
+<tr class="separator:a142c817d4ad41228c2037bf7912cde3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6924de59398eb9ff0dda811327ac79d7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d43/tuya__svc__online__log_8h.html#a6924de59398eb9ff0dda811327ac79d7">tuya_svc_online_log_upload_realtime</a> (const char *p_log)</td></tr>
+<tr class="memdesc:a6924de59398eb9ff0dda811327ac79d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">upload user realtime log  <a href="../../d0/d43/tuya__svc__online__log_8h.html#a6924de59398eb9ff0dda811327ac79d7">更多...</a><br /></td></tr>
+<tr class="separator:a6924de59398eb9ff0dda811327ac79d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0fbc87d2d6e54b4bf59609bbeda73b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d43/tuya__svc__online__log_8h.html#a4e0fbc87d2d6e54b4bf59609bbeda73b">tuya_svc_online_log_upload_runstat</a> (const char *p_log)</td></tr>
+<tr class="memdesc:a4e0fbc87d2d6e54b4bf59609bbeda73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">upload user runtime status log  <a href="../../d0/d43/tuya__svc__online__log_8h.html#a4e0fbc87d2d6e54b4bf59609bbeda73b">更多...</a><br /></td></tr>
+<tr class="separator:a4e0fbc87d2d6e54b4bf59609bbeda73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >log服务应用接口描述文件 </p>
+<dl class="section author"><dt>作者</dt><dd>愚者(<a href="#" onclick="location.href='mai'+'lto:'+'mah'+'t@'+'tuy'+'a.'+'com'; return false;">maht@<span class="obfuscator">.nosp@m.</span>tuya<span class="obfuscator">.nosp@m.</span>.com</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-08-29</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2019 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="afcb985ce8e526fb3e205b91ec2cb27d8" name="afcb985ce8e526fb3e205b91ec2cb27d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb985ce8e526fb3e205b91ec2cb27d8">&#9670;&nbsp;</a></span>tuya_svc_online_log_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_online_log_active </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>online log module activate </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success, others on failed, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a83a90870afa746e7cc7e9f95660489dd" name="a83a90870afa746e7cc7e9f95660489dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a90870afa746e7cc7e9f95660489dd">&#9670;&nbsp;</a></span>tuya_svc_online_log_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_online_log_init </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_env</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>online log module initialization </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_env</td><td>the online log enviroment, used to report to cloud </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success, others on failed, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a142c817d4ad41228c2037bf7912cde3d" name="a142c817d4ad41228c2037bf7912cde3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142c817d4ad41228c2037bf7912cde3d">&#9670;&nbsp;</a></span>tuya_svc_online_log_upload_custom_seq_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_online_log_upload_custom_seq_log </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_log</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>upload user sequnence log </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_log</td><td>custom sequnence log string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success, others on failed, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6924de59398eb9ff0dda811327ac79d7" name="a6924de59398eb9ff0dda811327ac79d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6924de59398eb9ff0dda811327ac79d7">&#9670;&nbsp;</a></span>tuya_svc_online_log_upload_realtime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_online_log_upload_realtime </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_log</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>upload user realtime log </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_log</td><td>the log string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success, others on failed, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4e0fbc87d2d6e54b4bf59609bbeda73b" name="a4e0fbc87d2d6e54b4bf59609bbeda73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0fbc87d2d6e54b4bf59609bbeda73b">&#9670;&nbsp;</a></span>tuya_svc_online_log_upload_runstat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_online_log_upload_runstat </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_log</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>upload user runtime status log </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_log</td><td>the log string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success, others on failed, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_CELL_MDS_INTF_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_CELL_MDS_INTF_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组数据服务API接口定义 TAL在实现tkl_cellular_mds_intf_t接口后，需要调用tal_cellular_mds_register 把实现的对象注册到tkl中  
+ <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d89/tkl__init__cellular_8h_source.html">tkl_init_cellular.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:afbe15f1a9594b9665d6da23ed1f23b07"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#afbe15f1a9594b9665d6da23ed1f23b07">adv_get_ip</a> )(UINT8_T sim_id, UINT8_T cid, <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip)</td></tr>
+<tr class="memdesc:afbe15f1a9594b9665d6da23ed1f23b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device ip address.  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#afbe15f1a9594b9665d6da23ed1f23b07">更多...</a><br /></td></tr>
+<tr class="separator:afbe15f1a9594b9665d6da23ed1f23b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b914c03c7dfaebccbb11e7bc86e6ed"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a29b914c03c7dfaebccbb11e7bc86e6ed">adv_pdp_active</a> )(UINT8_T sim_id, UINT8_T cid, <a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#ae7ca5c0594da1839d0a1d50f8a4f9c68">TUYA_MDS_PDP_TYPE_E</a> pdp_type, PCHAR_T apn, PCHAR_T username, PCHAR_T password)</td></tr>
+<tr class="memdesc:a29b914c03c7dfaebccbb11e7bc86e6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂窝移动数据指定CID PDP激活  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a29b914c03c7dfaebccbb11e7bc86e6ed">更多...</a><br /></td></tr>
+<tr class="separator:a29b914c03c7dfaebccbb11e7bc86e6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc73b1bcf3340b7f25e5d7533972ef96"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#acc73b1bcf3340b7f25e5d7533972ef96">adv_pdp_deactive</a> )(UINT8_T sim_id, UINT8_T cid)</td></tr>
+<tr class="memdesc:acc73b1bcf3340b7f25e5d7533972ef96"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂窝移动数据指定CID PDP去激活  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#acc73b1bcf3340b7f25e5d7533972ef96">更多...</a><br /></td></tr>
+<tr class="separator:acc73b1bcf3340b7f25e5d7533972ef96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1498999a06abef787ea640bb6db36f3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#ae1498999a06abef787ea640bb6db36f3">get_ip</a> )(UINT8_T sim_id, <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip)</td></tr>
+<tr class="memdesc:ae1498999a06abef787ea640bb6db36f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device ip address.  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#ae1498999a06abef787ea640bb6db36f3">更多...</a><br /></td></tr>
+<tr class="separator:ae1498999a06abef787ea640bb6db36f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25fce93cbd98045ce833cbbdf827381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#abc6c7555b40d45faad0e173f9ad5ab71">TUYA_CELLULAR_MDS_STATUS_E</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#ab25fce93cbd98045ce833cbbdf827381">get_mds_status</a> )(UINT8_T simId)</td></tr>
+<tr class="memdesc:ab25fce93cbd98045ce833cbbdf827381"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取蜂窝移动数据服务的鉴权状态  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#ab25fce93cbd98045ce833cbbdf827381">更多...</a><br /></td></tr>
+<tr class="separator:ab25fce93cbd98045ce833cbbdf827381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ece9b4db8dd43cc80014c416cf0e989"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a2ece9b4db8dd43cc80014c416cf0e989">mds_init</a> )(UINT8_T sim_id)</td></tr>
+<tr class="memdesc:a2ece9b4db8dd43cc80014c416cf0e989"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化蜂窝移动数据服务  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a2ece9b4db8dd43cc80014c416cf0e989">更多...</a><br /></td></tr>
+<tr class="separator:a2ece9b4db8dd43cc80014c416cf0e989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514566e7021d2e82e5afbc7b1f5e15c6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a514566e7021d2e82e5afbc7b1f5e15c6">pdp_active</a> )(UINT8_T sim_id, PCHAR_T apn, PCHAR_T username, PCHAR_T password)</td></tr>
+<tr class="memdesc:a514566e7021d2e82e5afbc7b1f5e15c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂窝移动数据PDP激活  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a514566e7021d2e82e5afbc7b1f5e15c6">更多...</a><br /></td></tr>
+<tr class="separator:a514566e7021d2e82e5afbc7b1f5e15c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c564a76bf5713cd743dd921a66768c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a08c564a76bf5713cd743dd921a66768c">pdp_auto_reactive_enable</a> )(UINT8_T sim_id, BOOL_T enable)</td></tr>
+<tr class="memdesc:a08c564a76bf5713cd743dd921a66768c"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启PDP自动激活  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a08c564a76bf5713cd743dd921a66768c">更多...</a><br /></td></tr>
+<tr class="separator:a08c564a76bf5713cd743dd921a66768c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181579e92231e2e7a0a9d10f7054f5cc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a181579e92231e2e7a0a9d10f7054f5cc">pdp_deactive</a> )(UINT8_T sim_id)</td></tr>
+<tr class="memdesc:a181579e92231e2e7a0a9d10f7054f5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂窝移动数据PDP去激活  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a181579e92231e2e7a0a9d10f7054f5cc">更多...</a><br /></td></tr>
+<tr class="separator:a181579e92231e2e7a0a9d10f7054f5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c52421dd5ad0041916d680337d6db5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a92c52421dd5ad0041916d680337d6db5">registr_mds_net_notify</a> )(UINT8_T sim_id, <a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#a6dc51cd5cd20b120bf1a40c8f696130a">TKL_MDS_NOTIFY</a> notify)</td></tr>
+<tr class="memdesc:a92c52421dd5ad0041916d680337d6db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置蜂窝网络当前的连接状态的回调函数  <a href="../../db/d94/structTKL__CELL__MDS__INTF__T.html#a92c52421dd5ad0041916d680337d6db5">更多...</a><br /></td></tr>
+<tr class="separator:a92c52421dd5ad0041916d680337d6db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组数据服务API接口定义 TAL在实现tkl_cellular_mds_intf_t接口后，需要调用tal_cellular_mds_register 把实现的对象注册到tkl中 </p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="afbe15f1a9594b9665d6da23ed1f23b07" name="afbe15f1a9594b9665d6da23ed1f23b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe15f1a9594b9665d6da23ed1f23b07">&#9670;&nbsp;</a></span>adv_get_ip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::adv_get_ip) (UINT8_T sim_id, UINT8_T cid, <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device ip address. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>The type of <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a29b914c03c7dfaebccbb11e7bc86e6ed" name="a29b914c03c7dfaebccbb11e7bc86e6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b914c03c7dfaebccbb11e7bc86e6ed">&#9670;&nbsp;</a></span>adv_pdp_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::adv_pdp_active) (UINT8_T sim_id, UINT8_T cid, <a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#ae7ca5c0594da1839d0a1d50f8a4f9c68">TUYA_MDS_PDP_TYPE_E</a> pdp_type, PCHAR_T apn, PCHAR_T username, PCHAR_T password)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂窝移动数据指定CID PDP激活 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">cid</td><td>Specify the PDP Context Identifier </td></tr>
+    <tr><td class="paramname">apn</td><td>运营商APN设置 </td></tr>
+    <tr><td class="paramname">username</td><td>用户名 </td></tr>
+    <tr><td class="paramname">password</td><td>密码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="acc73b1bcf3340b7f25e5d7533972ef96" name="acc73b1bcf3340b7f25e5d7533972ef96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc73b1bcf3340b7f25e5d7533972ef96">&#9670;&nbsp;</a></span>adv_pdp_deactive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::adv_pdp_deactive) (UINT8_T sim_id, UINT8_T cid)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂窝移动数据指定CID PDP去激活 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+    <tr><td class="paramname">cid</td><td>Specify the PDP Context Identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ae1498999a06abef787ea640bb6db36f3" name="ae1498999a06abef787ea640bb6db36f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1498999a06abef787ea640bb6db36f3">&#9670;&nbsp;</a></span>get_ip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::get_ip) (UINT8_T sim_id, <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device ip address. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>The type of <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ab25fce93cbd98045ce833cbbdf827381" name="ab25fce93cbd98045ce833cbbdf827381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25fce93cbd98045ce833cbbdf827381">&#9670;&nbsp;</a></span>get_mds_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#abc6c7555b40d45faad0e173f9ad5ab71">TUYA_CELLULAR_MDS_STATUS_E</a>(* TKL_CELL_MDS_INTF_T::get_mds_status) (UINT8_T simId)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取蜂窝移动数据服务的鉴权状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>蜂窝移动数据鉴权状态，查看 @TUYA_CELLULAR_MDS_STATUS_E 定义 </dd></dl>
+
+</div>
+</div>
+<a id="a2ece9b4db8dd43cc80014c416cf0e989" name="a2ece9b4db8dd43cc80014c416cf0e989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ece9b4db8dd43cc80014c416cf0e989">&#9670;&nbsp;</a></span>mds_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::mds_init) (UINT8_T sim_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化蜂窝移动数据服务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 </dd></dl>
+
+</div>
+</div>
+<a id="a514566e7021d2e82e5afbc7b1f5e15c6" name="a514566e7021d2e82e5afbc7b1f5e15c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514566e7021d2e82e5afbc7b1f5e15c6">&#9670;&nbsp;</a></span>pdp_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::pdp_active) (UINT8_T sim_id, PCHAR_T apn, PCHAR_T username, PCHAR_T password)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂窝移动数据PDP激活 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+    <tr><td class="paramname">apn</td><td>运营商APN设置 </td></tr>
+    <tr><td class="paramname">username</td><td>用户名 </td></tr>
+    <tr><td class="paramname">password</td><td>密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a08c564a76bf5713cd743dd921a66768c" name="a08c564a76bf5713cd743dd921a66768c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c564a76bf5713cd743dd921a66768c">&#9670;&nbsp;</a></span>pdp_auto_reactive_enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::pdp_auto_reactive_enable) (UINT8_T sim_id, BOOL_T enable)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否开启PDP自动激活 </p>
+<dl class="section note"><dt>注解</dt><dd>开启该功能后，PDP激活失败时，系统会自动尝试重新激活PDP，该项 功能默认开启。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+    <tr><td class="paramname">enable</td><td>TRUE 开启 FALSE 关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a181579e92231e2e7a0a9d10f7054f5cc" name="a181579e92231e2e7a0a9d10f7054f5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181579e92231e2e7a0a9d10f7054f5cc">&#9670;&nbsp;</a></span>pdp_deactive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::pdp_deactive) (UINT8_T sim_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂窝移动数据PDP去激活 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a92c52421dd5ad0041916d680337d6db5" name="a92c52421dd5ad0041916d680337d6db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c52421dd5ad0041916d680337d6db5">&#9670;&nbsp;</a></span>registr_mds_net_notify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_MDS_INTF_T::registr_mds_net_notify) (UINT8_T sim_id, <a class="el" href="../../d5/d88/tkl__cellular__mds_8h.html#a6dc51cd5cd20b120bf1a40c8f696130a">TKL_MDS_NOTIFY</a> notify)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置蜂窝网络当前的连接状态的回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+    <tr><td class="paramname">st</td><td>tuya_mds_notfiy定义的回调函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/init/include/<a class="el" href="../../df/d89/tkl__init__cellular_8h_source.html">tkl_init_cellular.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

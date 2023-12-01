@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 配网</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">配网 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >配网是 <code>Wi-Fi</code> 产品特有的一个能力，他的主要目的，是通过具有配网能力的设备，对未配网的 <code>Wi-Fi</code> 设备进行网络连接配置。在配网过程中，具有配网能力的设备，会通过交互，把指定的Wi-Fi路由器的 <code>SSID</code>、<code>Password</code> 以及在涂鸦 <code>IoT</code> 平台上申请创建出来的 <code>Token</code> 信息，发送给未配网设备；未配网设备拿到这些信息之后，连接Wi-Fi路由器，并通过涂鸦 <code>IoT</code> 平台提供的 <code>IoT-DNS</code> 服务获取对应区域的服务器地址，然后通过 <code>Atop</code> 服务进行激活，并连接到涂鸦 <code>IoT</code> 平台进行正常的业务交互。</p>
+<p >目前按照交互方式，涂鸦 <code>TuyaOS</code> 主要支持以下配网能力。</p>
+<ul>
+<li><p class="startli"><code>smartcfg</code> 配网</p>
+<p class="startli">根据涂鸦 <code>smartcfg</code> 规则，将 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 进行编码到 <code>udp</code> 广播、组播报文中，并在Wi-Fi路由器局域网内部发送，未配网设备在接收到报文，识别特征之后，进行解码，提取出 <code>SSID</code>、<code>Password</code> 和 <code>Token</code>，并进行后续的连接 <code>Wi-Fi</code> 路由器，并连接涂鸦 <code>IoT</code> 平台，进行激活绑定。</p>
+<p class="startli"><code>smartcfg</code>配网模式在<code>TuyaOS</code> 3.4.0版本之后因为安全性和兼容性问题，已经移除，不再支持，为了保持对老产品的兼容支持，配网模式依然保留，只是不再起作用。双模设备我们推荐使用蓝牙配网，单<code>Wi-Fi</code>设备推荐使用<code>AP</code>配网。</p>
+</li>
+<li><p class="startli"><code>AP</code> 配网</p>
+<p class="startli">未配网设备根据用户配置或者是默认的涂鸦 <code>AP</code> 配网规则，创建一个 <code>Wi-Fi AP</code> 热点，并启动涂鸦 <code>AP</code> 配网协议服务。具备配网能力的设备会连接到这个热点，并连接到该服务端口，根据涂鸦 <code>AP</code> 配网协议进行交互，将 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 发送给待配网设备。待配网设备拿到 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 之后，连接 <code>Wi-Fi</code> 路由器，并连接涂鸦 <code>IoT</code> 平台，进行激活绑定。</p>
+</li>
+<li><p class="startli">蓝牙配网</p>
+<p class="startli">未配网设备发送蓝牙广播，具备配网能力的设备在接收到蓝牙广播数据之后，会对未配网设备发起配对，配对完成之后，根据涂鸦蓝牙配网协议进行交互，将 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 发送给待配网设备。待配网设备拿到 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 之后，连接 <code>Wi-Fi</code> 路由器，并连接涂鸦 <code>IoT</code> 平台，进行激活绑定。</p>
+</li>
+<li><p class="startli">闪电配网</p>
+<p class="startli">闪电配网是一种伙伴免密配网技术，即一台支持闪电配网的已联网设备，对支持闪电配网的的设备进行配网。支持闪电配网的已联网设备通过Wi-Fi管理帧，按照涂鸦闪电配网协议的定义，发现在设备周边新出现的支持闪电配网的未配网设备，并跟涂鸦 <code>APP</code> 进行交互，当客户进入涂鸦 <code>APP</code> 主界面的时候，进行弹窗显示，只需要用户在APP上进行简单的发现、添加操作，即可将设备配网，减少了人为的输入密码操作，优化了配网体验，使得新设备可以做到上电添加之后即可使用。</p>
+</li>
+<li><p class="startli"><code>FFS</code> 配网</p>
+<p class="startli">FFS配网是 Alexa Frustration-Free Setup的缩写，也是一种伙伴免密配网技术，在amazon Alexa智能音箱的支持下，按照amazon定义的 Frustration-Free Setup流程，对支持FFS配网的设备进行配网，过程不需要人工介入，设备只要插电即可配网，优化了配网的流程和客户的使用体验。</p>
+</li>
+<li><p class="startli">用户配网</p>
+<p class="startli">为了支持其他类型的配网，如屏幕输入、声波、扫二维码、局域网等任意开发者自行开发出来的获取 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 的方式，通过这些机制拿到了 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 并调用API设置到涂鸦 <code>TuyaOS</code>，待配网设备拿到 <code>SSID</code>、<code>Password</code> 和 <code>Token</code> 之后，连接 <code>Wi-Fi</code> 路由器，并连接涂鸦 <code>IoT</code> 平台，进行激活绑定。</p>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md29"></a>
+配网模式</h1>
+<p >配网模式是指涂鸦 <code>TuyaOS</code> 根据客户需求，抽象出来的配网方案，满足不同产品、不同场景的需求。配网模式子在设备初始化的时候，调用<code>tuya_iot_wf_mcu_dev_init</code> 或者 <code>tuya_iot_wf_soc_dev_init</code>的时候提供，包括以下几种。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">配网模式   </th><th class="markdownTableHeadNone">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>WF_START_AP_ONLY</code>   </td><td class="markdownTableBodyNone">仅支持 <code>AP</code> 配网模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>WF_START_SMART_ONLY</code>   </td><td class="markdownTableBodyNone">仅支持<code>smartcfg</code>配网模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>WF_START_AP_FIRST</code>   </td><td class="markdownTableBodyNone">支持<code>AP</code>配网或者<code>smartcfg</code>配网模式，默认<code>AP</code>配网模式，但是经过重置，可以切换成<code>smartcfg</code>配网模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>WF_START_SMART_FIRST</code>   </td><td class="markdownTableBodyNone">支持<code>AP</code>配网或者<code>smartcfg</code>配网模式，默认<code>smartcfg</code>配网模式，但是经过重置，可以切换成<code>AP</code>配网模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>WF_START_SMART_AP_CONCURRENT</code>   </td><td class="markdownTableBodyNone">涂鸦万能配网模式，支持<code>AP</code>、<code>smartcfg</code>配网共存，同时根据产品的形态和客户的需求，自定义支持蓝牙配网、闪电配网和<code>FFS</code>配网。   </td></tr>
+</table>
+<p >注意，在以上几个配网模式下，用户配网方式是默认支持的，即在任意模式之下，都是可以通过接口直接设置<code>SSID</code>、<code>Password</code>和<code>Token</code>进行配网操作的。</p>
+<p >注意，在以上几个配网模式下，蓝牙配网在开启蓝牙功能的时候，是默认支持的，即在任意模式下，只要有蓝牙能力，都是可以直接使用蓝牙进行配网。</p>
+<h1><a class="anchor" id="autotoc_md30"></a>
+Wi-Fi工作模式</h1>
+<p ><code>Wi-Fi</code>工作模式是<code>Wi-Fi</code>产品特有的模式，在设备初始化的时候，调用<code>tuya_iot_wf_mcu_dev_init</code> 或者 <code>tuya_iot_wf_soc_dev_init</code>的时候提供，其目的是为了规范设备工作时候的具体行为，提高使用体验。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><code>Wi-Fi</code>工作模式   </th><th class="markdownTableHeadNone">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>GWCM_OLD</code>   </td><td class="markdownTableBodyNone">主要使用在通用对接类固件上。<br  />
+设备只有在<code>mcu</code>发起产测的时候，才会扫描产测路由器，任意时刻都可以进入产测。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>GWCM_LOW_POWER</code>   </td><td class="markdownTableBodyNone">主要使用在<code>soc</code>插座上。<br  />
+配网前上电低功耗常亮，需要手工切换才能进入配网状态；<br  />
+配网状态下，10秒内没配网成功，手工重启保持上次配网状态，10s后未配网，手工重启进入低功耗常亮状态；15分钟未配网，自动进入低功耗常亮状态，其中15分钟可以设置；<br  />
+配网成功后，app移除设备自动重启，进入配网状态，默认<code>smartcfg</code>配网模式，擦除保存的<code>ssid</code>和<code>password</code>；手工移除，设备自动进入配网状态，擦除保存的<code>ssid</code>和<code>password</code>；<br  />
+设备只有在低功耗状态下，重启设备才会扫描产测路由，进入产测模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>GWCM_SPCL_MODE</code>   </td><td class="markdownTableBodyNone">主要使用在<code>soc</code>照明上。<br  />
+配网前上电低功耗常亮，需要手工切换才能进入配网状态；<br  />
+配网状态下，10秒内没配网成功，手工重启保持上次配网状态，10s后未配网，手工重启进入低功耗常亮状态，15分钟未配网，自动进入低功耗常亮状态，其中15分钟可以设置；<br  />
+配网成功后，app移除设备自动重启，进入配网状态，默认<code>smartcfg</code>配网模式，擦除保存的<code>ssid</code>和<code>password</code>；手工移除，设备自动进入配网状态，进入防误触模式，不擦除保存的<code>ssid</code>和<code>password</code>；<br  />
+设备只有在低功耗状态下，重启设备才会扫描产测路由，进入产测模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>GWCM_OLD_PROD</code>   </td><td class="markdownTableBodyNone">主要使用在<code>soc</code>照明上。<br  />
+上电即可进入配网状态，并且一直处于配网状态；<br  />
+设备在配网状态下，重启设备都会主动扫描产测路由，进入产测模式。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>GWCM_LOW_POWER_AUTOCFG</code>   </td><td class="markdownTableBodyNone">配网前上电进入<code>smartcfg</code>配网模式，<code>smartcfg</code>和<code>ap</code>模式来回切换；<br  />
+配网状态下，15分钟内重启，保持，保持上次配网状态，15分钟未配网自动进入低功耗常亮状态，其中15分钟可以设置；<br  />
+配网成功后，app移除设备自动重启，进入配网状态，默认<code>smartcfg</code>配网模式；手工移除，设备自动进入配网状态，默认<code>smartcfg</code>配网模式；<br  />
+设备在配网状态下，重启设备都会主动扫描产测路由，进入产测模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>GWCM_SPCL_AUTOCFG</code>   </td><td class="markdownTableBodyNone">配网前上电进入<code>smartcfg</code>配网模式，<code>smartcfg</code>和<code>ap</code>模式来回切换；<br  />
+配网状态下，15分钟内重启，保持上次配网状态，15分钟未配网自动进入低功耗常亮状态，其中15分钟可以设置；<br  />
+配网成功后，app移除设备自动重启，进入配网状态，默认<code>smartcfg</code>配网模式，擦除保存的<code>ssid</code>和<code>password</code>,15分钟内重启，保持上次配网状态，15分钟未配网自动进入低功耗常亮状态，其中15分钟可以设置；手工移除，设备自动进入配网状态，进入防误触模式，不擦除保存的<code>ssid</code>和<code>password</code>，10秒内重启，保持上次配网状态，10秒后重启，立即连接已经配网路由器，15分钟内重启，保持，保持上次配网状态，15分钟未配网自动进入低功耗常亮状态，其中15分钟可以设置；；<br  />
+设备在配网状态下，重启设备都会主动扫描产测路由，进入产测模式。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md31"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md32"></a>
+Wi-Fi 设置用户自定义AP</h2>
+<div class="fragment"><div class="line">/**</div>
+<div class="line"> * @brief tuya_iot_set_user_def_ap_if</div>
+<div class="line"> *</div>
+<div class="line"> * @param[in] ssid: user defined ssid</div>
+<div class="line"> * @param[in] passwd: user defined passwd</div>
+<div class="line"> *</div>
+<div class="line"> * @return OPERATE_RET</div>
+<div class="line"> *</div>
+<div class="line"> * @note need call before tuya_iot_wf_xxx_init</div>
+<div class="line"> */</div>
+<div class="line">OPERATE_RET tuya_iot_set_user_def_ap_if(IN CONST CHAR_T *ssid, IN CONST CHAR_T *passwd);</div>
+</div><!-- fragment --><p >此接口用于设置用户自定义的AP配网的<code>SSID</code>和<code>Password</code>。如果用户设置自定义的AP的<code>SSID</code>和<code>Password</code>之后，<code>AP</code>配网将显示该<code>SSID</code>，并在连接的时候使用该<code>Password</code>进行验证。因此，此接口必须在调用<code>tuya_iot_wf_mcu_dev_init</code> 或者 <code>tuya_iot_wf_soc_dev_init</code>之前调用。</p>
+<h2><a class="anchor" id="autotoc_md33"></a>
+Wi-Fi 获取用户自定义AP</h2>
+<div class="fragment"><div class="line">/**</div>
+<div class="line"> * @brief tuya_iot_get_dev_ap_if</div>
+<div class="line"> *</div>
+<div class="line"> * @param[in] ssid: the ssid of ap</div>
+<div class="line"> * @param[in] passwd: the passwd of ap</div>
+<div class="line"> *</div>
+<div class="line"> * @return OPERATE_RET</div>
+<div class="line"> *</div>
+<div class="line"> */</div>
+<div class="line">OPERATE_RET tuya_iot_get_dev_ap_if(OUT CHAR_T *ssid, OUT CHAR_T *passwd);</div>
+</div><!-- fragment --><p >此接口用于查询用户设置的AP配网的<code>SSID</code>和<code>Password</code>。如果用户没有设置返回设备烧录授权时写入的默认的<code>SSID</code>和<code>Password</code>。</p>
+<h2><a class="anchor" id="autotoc_md34"></a>
+Wi-Fi 用户配网</h2>
+<div class="fragment"><div class="line">/**</div>
+<div class="line"> * @brief tuya_iot_gw_wf_user_cfg</div>
+<div class="line"> *</div>
+<div class="line"> * @param[in] ssid: user config router ap ssid</div>
+<div class="line"> * @param[in] passwd: user config router ap passwd</div>
+<div class="line"> * @param[in] token: the token of tuya cloud</div>
+<div class="line"> *</div>
+<div class="line"> * @return OPERATE_RET</div>
+<div class="line"> *</div>
+<div class="line"> * @note device will scan and connect to the router ap, and try to active on tuya cloud use the token</div>
+<div class="line"> */</div>
+<div class="line">OPERATE_RET tuya_iot_gw_wf_user_cfg(IN CONST CHAR_T *ssid, IN CONST CHAR_T *passwd, IN CONST CHAR_T *token);</div>
+</div><!-- fragment --><p >此接口用于配置设备<code>Wi-Fi</code>网络配置，除了通过涂鸦提供的配网能力去获取<code>Wi-Fi</code>网络配置之外，还可以通过用户自己的方式去获取<code>SSID</code>、<code>Password</code>和<code>Token</code>，然后通过此接口设置，进行连接路由器、绑定激活等工作。</p>
+<h2><a class="anchor" id="autotoc_md35"></a>
+Wi-Fi 配网超时时间设置</h2>
+<div class="fragment"><div class="line">/**</div>
+<div class="line"> * @brief tuya_iot_wf_timeout_set</div>
+<div class="line"> * @desc set wifi timeout</div>
+<div class="line"> *</div>
+<div class="line"> * @param[in] timeout: time in sec</div>
+<div class="line"> *</div>
+<div class="line"> * @return none</div>
+<div class="line"> *</div>
+<div class="line"> * @note must call befor tuya_iot_wf_xxx_init</div>
+<div class="line"> */</div>
+<div class="line">VOID tuya_iot_wf_timeout_set(IN CONST UINT_T timeout);</div>
+</div><!-- fragment --><p ><code>Wi-Fi</code>配网超时是指设备进入配网状态之后，一段时间没有完成配网，则退出配网模式的行为。设备配网的过程是一个设备和涂鸦智能APP、路由器频繁交互的一个阶段，功耗很高，长时间处于配网状态会造成设备消耗较多的电力，提高设备的使用成本，也可能会导致设备不稳定。因此涂鸦TuyaOS默认进入配网状态15分钟之后，配网超时退出配网，这个时间是可设置的，通过<code>tuya_iot_wf_timeout_set</code>可以修改超时时间。</p>
+<h1><a class="anchor" id="autotoc_md36"></a>
+示例代码</h1>
+<p >Wi-Fi配网主要是在初始化的时候指定了配网模式，其主要的工作是初始化的时候进行的，以下是一端示例代码，在初始化的时候设置了<code>ap_ssid</code>和<code>ap_passwd</code>，并以<code>GWCM_SPCL_AUTOCFG</code>工作模式和<code>WF_START_AP_FIRST</code>配网模式启动设备。</p>
+<div class="fragment"><div class="line">#define UUID                &quot;f2*******b0&quot;</div>
+<div class="line">#define AUTHKEY             &quot;6P***************MX&quot;</div>
+<div class="line">#define PRODUCT_KEY         &quot;U0********Zy&quot;  //DP控制开关</div>
+<div class="line">#define USER_SW_VER         &quot;1.0.0&quot;</div>
+<div class="line">#define AP_SSID             &quot;SmartLife&quot;</div>
+<div class="line">#define AP_PASSWD           &quot;tuya_wf_sample&quot;</div>
+<div class="line">#define CFG_STORAGE_PATH    &quot;./tuya_db_files/&quot;</div>
+<div class="line">#define WIFI_NETCFG_TIMEOUT     3</div>
+<div class="line"> </div>
+<div class="line">STATIC VOID __soc_dev_rev_upgrade_info_cb(IN CONST FW_UG_S *fw);// SOC设备升级入口</div>
+<div class="line">STATIC VOID __soc_dev_status_changed_cb(IN CONST GW_STATUS_E status);// SOC设备云端状态变更回调</div>
+<div class="line">STATIC VOID __soc_dev_dp_query_cb(IN CONST TY_DP_QUERY_S *dp_qry);// SOC设备特定数据查询入口</div>
+<div class="line">STATIC VOID __soc_dev_obj_dp_cmd_cb(IN CONST TY_RECV_OBJ_DP_S *dp);// SOC设备格式化指令数据下发入口</div>
+<div class="line">STATIC VOID __soc_dev_raw_dp_cmd_cb(IN CONST TY_RECV_RAW_DP_S *dp);// SOC设备透传指令数据下发入口</div>
+<div class="line">STATIC VOID __soc_dev_restart_req_cb(GW_RESET_TYPE_E type);// SOC设备进程重启请求入口</div>
+<div class="line">STATIC VOID __soc_dev_net_status_cb(IN CONST GW_BASE_NW_STAT_T stat);// SOC外网状态变动回调</div>
+<div class="line">STATIC VOID __soc_dev_reset_cb(event_raw_data_t *data);</div>
+<div class="line"> </div>
+<div class="line">int main(int argc, char *argv[])</div>
+<div class="line">{</div>
+<div class="line">    int rt = OPRT_OK;</div>
+<div class="line"> </div>
+<div class="line">    // 此处为涂鸦TuyaOS初始化之前的一些特殊工作，代码每一个应用场景可能不同，按需实现</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_wf_timeout_set(WIFI_NETCFG_TIMEOUT));</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_set_user_def_ap_if(&quot;test_ap&quot;, &quot;test_passwd&quot;));</div>
+<div class="line">    </div>
+<div class="line">    // 此处为涂鸦TuyaOS基础功能初始化，为TuyaOS分配资源，并启动一些最基础的能力</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_init_param(CFG_STORAGE_PATH, NULL));</div>
+<div class="line"> </div>
+<div class="line">    // 此处为涂鸦TuyaOS授权信息写入，仅在Linux Demo代码使用，因为正式产品是在生产测试的时候写入授权信息</div>
+<div class="line">    WF_GW_PROD_INFO_S prod_info = {UUID, AUTHKEY, AP_SSID, AP_PASSWD};</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_set_wf_gw_prod_info(&amp;prod_info));</div>
+<div class="line"> </div>
+<div class="line">    // 此处为设备初始化，实现了一些基础的回调功能，满足一个设备的基本能力需求，并注册获取连接状态回调函数</div>
+<div class="line">    TY_IOT_CBS_S iot_cbs = {0};</div>
+<div class="line">    iot_cbs.gw_status_cb = __soc_dev_status_changed_cb;</div>
+<div class="line">    iot_cbs.gw_ug_cb = __soc_dev_rev_upgrade_info_cb;</div>
+<div class="line">    iot_cbs.gw_reset_cb = __soc_dev_restart_req_cb;</div>
+<div class="line">    iot_cbs.dev_obj_dp_cb = __soc_dev_obj_dp_cmd_cb;</div>
+<div class="line">    iot_cbs.dev_raw_dp_cb = __soc_dev_raw_dp_cmd_cb;</div>
+<div class="line">    iot_cbs.dev_dp_query_cb = __soc_dev_dp_query_cb;   TUYA_CALL_ERR_RETURN(tuya_iot_wf_soc_dev_init_param(GWCM_SPCL_AUTOCFG,WF_START_AP_FIRST,&amp;iot_cbs,NULL,PRODUCT_KEY,DEV_SW_VERSION));</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_reg_get_nw_stat_cb_params(__soc_dev_net_status_cb, 1));</div>
+<div class="line">     </div>
+<div class="line">    // 此处为设备初始化后的一些设备应用功能初始化，，代码每一个应用场景可能不同，按需实现</div>
+<div class="line">    // TBD</div>
+<div class="line">    </div>
+<div class="line">    // demo状态监控</div>
+<div class="line">    while (1)</div>
+<div class="line">    {</div>
+<div class="line">        sleep(10);        </div>
+<div class="line">        // 监控设备状态，打印状态提示</div>
+<div class="line">        ty_devos_monitor();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    return 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

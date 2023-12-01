@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/lib_http/include/httpc.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8a7e0c2b53aaf1e6ed3ac5bc0b1202c0.html">lib_http</a></li><li class="navelem"><a class="el" href="../../dir_1e12de0a3a74b8281ee22ec6b9758111.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">httpc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d1b/httpc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> *  Copyright 2008-2013, Marvell International Ltd.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> *  All Rights Reserved.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#ifndef _HTTPC_H_</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#define _HTTPC_H_</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/df8/tal__time__service_8h.html">tal_time_service.h</a>&quot;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#include &quot;<a class="code" href="../../d5/d87/tal__network_8h.html">tal_network.h</a>&quot;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/d4f/tuya__tls_8h.html">tuya_tls.h</a>&quot;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">typedef</span> <span class="keywordtype">void</span> * http_session_t;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/* Request methods */</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    HTTP_OPTIONS,       <span class="comment">/* request to server for communication  options */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    HTTP_GET,       <span class="comment">/* retrieve information */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    HTTP_HEAD,      <span class="comment">/* get meta-info */</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    HTTP_POST,      <span class="comment">/* request to accept new sub-ordinate of resource */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    HTTP_PUT,       <span class="comment">/* modify or create new resource referred to by URI */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    HTTP_DELETE,        <span class="comment">/* delete the resource */</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    HTTP_TRACE,     <span class="comment">/* echo */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    HTTP_CONNECT,       <span class="comment">/* do we need this  ? */</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} http_method_t;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    HTTP_VER_1_0,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    HTTP_VER_1_1,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>} http_ver_t;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">   95</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span>  {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    HDR_ADD_DEFAULT_USER_AGENT  = 0x0001,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">/* Note: This flag is not necessary to set up persistent</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">     * connections in HTTP 1.1. However, if you want the server to</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">     * respond with persistent connection timeout values you may need</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">     * to add this flag. These timeout values are used to find out how</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">     * long a persistent connection will be kept alive by the</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">     * server. */</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    HDR_ADD_CONN_KEEP_ALIVE     = 0x0002,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    HDR_ADD_CONN_CLOSE      = 0x0004,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    HDR_ADD_TYPE_CHUNKED            = 0x0008,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// add content type</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    HDR_ADD_CONTENT_TYPE_JSON       = 0x0010,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    HDR_ADD_CONTENT_TYPE_FORM_URLENCODE = 0x0020, <span class="comment">// add by nzy 20150608</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    HRD_ADD_DOWNLOAD_RANGE = 0x0040, <span class="comment">/* add downlaod offset */</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    HRD_ADD_HTTP_RAW = 0x0080, <span class="comment">/* add downlaod offset */</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>} <a class="code hl_enumeration" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#define STANDARD_HDR_FLAGS          \</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">     (HDR_ADD_DEFAULT_USER_AGENT)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// user http head add callback</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">typedef</span> void (*HTTP_HEAD_ADD_CB)(http_session_t session, VOID* data);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> int (*HTTP_CUSTOM_GET_CONTENT_LEN_CB)(VOID *pri_data);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">typedef</span> int (*HTTP_CUSTOM_BEFORE_READ_CONTENT_CB)(VOID *pri_data, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *p_malloc_buffer_size);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">typedef</span> int (*HTTP_CUSTOM_READ_CONTENT_CB)(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *p_buffer, <span class="keywordtype">int</span> buf_size, VOID *pri_data);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">typedef</span> int (*HTTP_CUSTOM_AFTER_READ_CONTENT_CB)(VOID *pri_data);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d2/d52/structhttp__custom__content__ctx__s.html">  128</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    HTTP_CUSTOM_GET_CONTENT_LEN_CB get_content_len_cb;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    HTTP_CUSTOM_BEFORE_READ_CONTENT_CB before_read_cb;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    HTTP_CUSTOM_READ_CONTENT_CB read_content_cb;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    HTTP_CUSTOM_AFTER_READ_CONTENT_CB after_read_cb;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    VOID *pri_data;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>} <a class="code hl_struct" href="../../d2/d52/structhttp__custom__content__ctx__s.html">http_custom_content_ctx_s</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keywordtype">void</span> http_reset_session_state(http_session_t handle);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * Note 1: A resource is a part of the string immediately after the</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * hostname[:portno] part of the URL. In the URL,</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * [http://]hostname[:portno][/path/to/resource],</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * &quot;/path/to/resource&quot; part is called as a resource. It starts with the</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * character &#39;/&#39;.</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html">  155</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html#afeceb2de7be1800f4ec0fb5564b6a29f">  157</a></span>    http_method_t <a class="code hl_variable" href="../../d8/d1b/structhttp__req__t.html#afeceb2de7be1800f4ec0fb5564b6a29f">type</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html#a8c68630030b62da875305f9b8f03f346">  161</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d1b/structhttp__req__t.html#a8c68630030b62da875305f9b8f03f346">resource</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html#aa54f06ca3e4a3a2a95167fcf652666db">  163</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="../../d8/d1b/structhttp__req__t.html#aa54f06ca3e4a3a2a95167fcf652666db">redirect_cnt</a>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html#a2b4fc582dbb7b50b69436ae1a44c2152">  165</a></span>    http_ver_t <a class="code hl_variable" href="../../d8/d1b/structhttp__req__t.html#a2b4fc582dbb7b50b69436ae1a44c2152">version</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html#a73f40466f259c2009aa8942b34cfd752">  167</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d1b/structhttp__req__t.html#a73f40466f259c2009aa8942b34cfd752">content</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="../../d8/d1b/structhttp__req__t.html#a6440c7b2223a160e8d8ad17f330ef05e">  171</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d1b/structhttp__req__t.html#a6440c7b2223a160e8d8ad17f330ef05e">content_len</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    HTTP_HEAD_ADD_CB add_head_cb;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    VOID *add_head_data;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> download_offset;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> download_size;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_struct" href="../../d2/d52/structhttp__custom__content__ctx__s.html">http_custom_content_ctx_s</a> *p_custom_content_ctx;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>} <a class="code hl_struct" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html">  183</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a90ad0d639cdadfb00354ec144f45683f">  186</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a90ad0d639cdadfb00354ec144f45683f">protocol</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a33876d3a10c770f313fb157a68cbc671">  188</a></span>    http_ver_t <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a33876d3a10c770f313fb157a68cbc671">version</a>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a6e3cb3b7358c9c1ee0dc2e699ffceba4">  192</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a6e3cb3b7358c9c1ee0dc2e699ffceba4">status_code</a>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a3a3fa6dfd805b16392257453faf1c635">  197</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a3a3fa6dfd805b16392257453faf1c635">reason_phrase</a>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a2c2fada467b988cf958666d8b8be3d8f">  199</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a2c2fada467b988cf958666d8b8be3d8f">location</a>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a00d939e5ece5e746f941210f3276a158">  201</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a00d939e5ece5e746f941210f3276a158">server</a>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#ad3c52ae13b9b21ec31189e13801f9e51">  203</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#ad3c52ae13b9b21ec31189e13801f9e51">p_accept_ranges</a>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#aee4a79688cb082e4834b3733f28bb49d">  205</a></span>    time_t <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#aee4a79688cb082e4834b3733f28bb49d">modify_time</a>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a334505461cce76de44c4745e67c3cbeb">  207</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a334505461cce76de44c4745e67c3cbeb">content_type</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#ac2b57af54040ffceec06ea32c404e2fc">  209</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#ac2b57af54040ffceec06ea32c404e2fc">content_encoding</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a96d1786670c3f7d0b77dabb852d1aa30">  214</a></span>    bool_t <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a96d1786670c3f7d0b77dabb852d1aa30">keep_alive_ack</a>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#a15aebee455aeb3ea1befdd24e117738f">  220</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#a15aebee455aeb3ea1befdd24e117738f">keep_alive_timeout</a>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#adbcdbca08f732e53cd07fcd2afbf3615">  227</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#adbcdbca08f732e53cd07fcd2afbf3615">keep_alive_max</a>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#ade65db670742419ebf914f9675bc8e61">  232</a></span>    bool_t <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#ade65db670742419ebf914f9675bc8e61">chunked</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="../../d8/d29/structhttp__resp__t.html#acf6e7b62f748081d5c426899d05745cf">  236</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d29/structhttp__resp__t.html#acf6e7b62f748081d5c426899d05745cf">content_length</a>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>} <a class="code hl_struct" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="../../db/d2d/structhttp__header__pair__t.html">  239</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordtype">char</span> *name;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordtype">char</span> *value;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>} <a class="code hl_struct" href="../../db/d2d/structhttp__header__pair__t.html">http_header_pair_t</a>;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../d4/d50/structparsed__url__t.html">  244</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordtype">char</span> *scheme;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordtype">char</span> *hostname;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordtype">unsigned</span> portno;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">char</span> *resource;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>} <a class="code hl_struct" href="../../d4/d50/structparsed__url__t.html">parsed_url_t</a>;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7">  253</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7">wm_httpc_errno</a> {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    WM_SUCCESS = 0,</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    WM_E_INVAL,</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    WM_FAIL,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    WM_E_IO,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    WM_E_AGAIN,</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    WM_E_BADF,</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    WM_E_NOMEM, <span class="comment">// 6</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616">  262</a></span><span class="comment"></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616">WM_E_HTTPC_TCP_CONNECT_FAIL</a>,</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9">  264</a></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9">WM_E_HTTPC_TCP_TLS_CONNECT_FAIL</a>,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e">  266</a></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e">WM_E_HTTPC_FILE_NOT_FOUND</a>,</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af">  268</a></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af">WM_E_HTTPC_BAD_REQUEST</a>,<span class="comment">//10</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c">  270</a></span><span class="comment"></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c">WM_E_HTTPC_TLS_NOT_ENABLED</a>,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950">  273</a></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950">WM_E_HTTPC_SOCKET_ERROR</a>,</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a">  275</a></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a">WM_E_HTTPC_SOCKET_SHUTDOWN</a>,</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">/* add by nzy 20150803 timeout */</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    WM_E_HTTPC_SOCKET_TIMEOUT,<span class="comment">//14</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="comment">/* dns parse failed */</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    WM_E_HTTPC_DNS_PARSE_FAILED,</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="comment">/* socket creat failed */</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    WM_E_HTTPC_SOCKET_CREAT_FAILED,</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="comment">/* parse url failed*/</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    WM_E_HTTPC_URL_PARSE_FAILED,<span class="comment">//17</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>};</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">/* Status codes */</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#define HTTP_RESP_INFORMATIONAL(x) (x &gt;=100 &amp;&amp; &lt; 200)</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">#define HTTP_RESP_SUCCESS(x) (x &gt;= 200 &amp;&amp; x &lt; 300)</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#define HTTP_RESP_REDIR(x) (x &gt;= 300 &amp;&amp; x &lt; 400)</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#define HTTP_RESP_CLIENT_ERR(x) (x &gt;= 400 &amp;&amp; x &lt; 500)</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#define HTTP_RESP_SERVER_ERR(x) (x &gt;= 500 &amp;&amp; x &lt; 600)</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment"> * These macros are not of any use to the HTTP client itself. They are used</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"> * by the users of the HTTP client. This list may be extended if required</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">#define HTTP_OK 200</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="preprocessor">#define HTTP_CREATED 201</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">#define HTTP_ACCEPTED  202</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#define HTTP_FOUND 302</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="preprocessor">#define HTTP_NOT_MODIFIED 304</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="preprocessor">#define HTTP_BAD_REQUEST 400</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#define HTTP_NOT_AUTH 401</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">#define HTTP_FORBIDDEN 403</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="preprocessor">#define HTTP_NOT_FOUND 404</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">/* max redirect count */</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#define REDIRECT_CNT_MAX      5</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">/* default redirect count */</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="preprocessor">#define REDIRECT_CNT_DEFAULT  3</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">/* zero means disable http redirect */</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="preprocessor">#define REDIRECT_CNT_DISABLED 0</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1">  323</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027">  325</a></span>    <a class="code hl_enumvalue" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027">TLS_ENABLE</a> = 0x01,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>} <a class="code hl_enumeration" href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1">http_open_flags_t</a>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">  360</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session</a>(http_session_t *handle, <span class="keyword">const</span> <span class="keywordtype">char</span> *hostname, \</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                      <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> retry_cnt);</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="keywordtype">int</span> http_open_session_with_config(http_session_t *handle, <span class="keyword">const</span> <span class="keywordtype">char</span> *hostname, \</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                  <a class="code hl_struct" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a>* tls_config, <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> retry_cnt);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">  390</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req</a>(http_session_t handle, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req,</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                     <a class="code hl_enumeration" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags);</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#ac61c2cb8d8605a0dd8ee8707900c3b90">  414</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#ac61c2cb8d8605a0dd8ee8707900c3b90">http_add_header</a>(http_session_t handle, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req,</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *value);</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">  437</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request</a>(http_session_t handle, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> * req, <span class="keywordtype">int</span> send_content);</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">  480</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr</a>(http_session_t handle, <a class="code hl_struct" href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a> ** resp);</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#acb60807478dbca67a0db9fbd6fc4c977">  522</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#acb60807478dbca67a0db9fbd6fc4c977">http_get_response_hdr_value</a>(http_session_t handle,</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                                <span class="keyword">const</span> <span class="keywordtype">char</span> *header_name, <span class="keywordtype">char</span> **value);</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a2078dc155c88b0e814263a7cb1057246">  569</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a2078dc155c88b0e814263a7cb1057246">http_get_response_hdr_all</a>(http_session_t handle, <a class="code hl_struct" href="../../db/d2d/structhttp__header__pair__t.html">http_header_pair_t</a> *arr,</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                              <span class="keywordtype">int</span> *count);</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">  606</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content</a>(http_session_t handle, <span class="keywordtype">void</span> *buf, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_len);</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#addc896602eaf4cbbb6c5cd5cca7d8876">  640</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#addc896602eaf4cbbb6c5cd5cca7d8876">http_parse_URL</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *URL, <span class="keywordtype">char</span> *tmp_buf, <span class="keywordtype">int</span> tmp_buf_len,</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>                   <a class="code hl_struct" href="../../d4/d50/structparsed__url__t.html">parsed_url_t</a> *parsed_url);</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#adf5ba329f06ca9b28e6e34394942da26">  669</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#adf5ba329f06ca9b28e6e34394942da26">http_lowlevel_read</a>(http_session_t handle, <span class="keywordtype">void</span> *buf, <span class="keywordtype">unsigned</span> maxlen);</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a6f2ccc02310a2ab8e39002cc08324066">  698</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a6f2ccc02310a2ab8e39002cc08324066">http_lowlevel_write</a>(http_session_t handle, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">unsigned</span> len);</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="keywordtype">int</span> http_write_standard(http_session_t handle, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">unsigned</span> len);</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#af5326d84abc0bd0511cd73a4e0450c08">  720</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#af5326d84abc0bd0511cd73a4e0450c08">httpc_write_chunked</a>(http_session_t handle, <span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">  738</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session</a>(http_session_t *handle);</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a858b5946cbe20f28142e1a3532a326c9">  748</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a858b5946cbe20f28142e1a3532a326c9">http_redirect_limit_set</a>(IN UINT8_T cnt);</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a71020704b48d282c92320df389c95029">  757</a></span>UINT8_T <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a71020704b48d282c92320df389c95029">http_redirect_limit_get</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a25287d09422c9f612a6597900bb660fa">  765</a></span>OPERATE_RET <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a25287d09422c9f612a6597900bb660fa">http_recv_timeout_set</a>(IN UINT8_T timeout_s);</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno"><a class="line" href="../../d3/d1b/httpc_8h.html#a4416e6004f25800935704de512efbcb4">  774</a></span>UINT8_T <a class="code hl_function" href="../../d3/d1b/httpc_8h.html#a4416e6004f25800935704de512efbcb4">http_recv_timeout_get</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="preprocessor">#endif </span><span class="comment">/* _HTTPC_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="ahttpc_8h_html_a2078dc155c88b0e814263a7cb1057246"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a2078dc155c88b0e814263a7cb1057246">http_get_response_hdr_all</a></div><div class="ttdeci">int http_get_response_hdr_all(http_session_t handle, http_header_pair_t *arr, int *count)</div></div>
+<div class="ttc" id="ahttpc_8h_html_a25287d09422c9f612a6597900bb660fa"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a25287d09422c9f612a6597900bb660fa">http_recv_timeout_set</a></div><div class="ttdeci">OPERATE_RET http_recv_timeout_set(IN UINT8_T timeout_s)</div><div class="ttdoc">This API is used to SET HTTP recv timeout</div></div>
+<div class="ttc" id="ahttpc_8h_html_a309445bd93b795b99435bd97936b4498"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a309445bd93b795b99435bd97936b4498">http_read_content</a></div><div class="ttdeci">int http_read_content(http_session_t handle, void *buf, unsigned int max_len)</div></div>
+<div class="ttc" id="ahttpc_8h_html_a4416e6004f25800935704de512efbcb4"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a4416e6004f25800935704de512efbcb4">http_recv_timeout_get</a></div><div class="ttdeci">UINT8_T http_recv_timeout_get(void)</div><div class="ttdoc">This API is used to GET HTTP recv timeout</div></div>
+<div class="ttc" id="ahttpc_8h_html_a4cc2ea3b5d16cde688f5aa44acdf90a8"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a4cc2ea3b5d16cde688f5aa44acdf90a8">http_get_response_hdr</a></div><div class="ttdeci">int http_get_response_hdr(http_session_t handle, http_resp_t **resp)</div></div>
+<div class="ttc" id="ahttpc_8h_html_a6359b2cf796ceb22d7c6b1fc2885a661"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a6359b2cf796ceb22d7c6b1fc2885a661">http_close_session</a></div><div class="ttdeci">void http_close_session(http_session_t *handle)</div></div>
+<div class="ttc" id="ahttpc_8h_html_a67b5e977ee72662643b2c3eab5a1e044"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a67b5e977ee72662643b2c3eab5a1e044">http_send_request</a></div><div class="ttdeci">int http_send_request(http_session_t handle, const http_req_t *req, int send_content)</div></div>
+<div class="ttc" id="ahttpc_8h_html_a6f2ccc02310a2ab8e39002cc08324066"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a6f2ccc02310a2ab8e39002cc08324066">http_lowlevel_write</a></div><div class="ttdeci">int http_lowlevel_write(http_session_t handle, const void *buf, unsigned len)</div></div>
+<div class="ttc" id="ahttpc_8h_html_a71020704b48d282c92320df389c95029"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a71020704b48d282c92320df389c95029">http_redirect_limit_get</a></div><div class="ttdeci">UINT8_T http_redirect_limit_get(void)</div><div class="ttdoc">This API is used to GET HTTP Redirect Limit Count</div></div>
+<div class="ttc" id="ahttpc_8h_html_a8153610e2ebebb71749b21f153c8e95c"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a></div><div class="ttdeci">http_hdr_field_sel_t</div><div class="ttdef"><b>Definition:</b> httpc.h:95</div></div>
+<div class="ttc" id="ahttpc_8h_html_a858b5946cbe20f28142e1a3532a326c9"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#a858b5946cbe20f28142e1a3532a326c9">http_redirect_limit_set</a></div><div class="ttdeci">OPERATE_RET http_redirect_limit_set(IN UINT8_T cnt)</div><div class="ttdoc">This API is used to SET HTTP Redirect Limit Count</div></div>
+<div class="ttc" id="ahttpc_8h_html_ab276eb911d671cc1b82b9b0a0b279a19"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#ab276eb911d671cc1b82b9b0a0b279a19">http_open_session</a></div><div class="ttdeci">int http_open_session(http_session_t *handle, const char *hostname, int flags, int retry_cnt)</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7">wm_httpc_errno</a></div><div class="ttdeci">wm_httpc_errno</div><div class="ttdef"><b>Definition:</b> httpc.h:253</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a1184b46ef14c789e32406999a3cf5616">WM_E_HTTPC_TCP_CONNECT_FAIL</a></div><div class="ttdeci">@ WM_E_HTTPC_TCP_CONNECT_FAIL</div><div class="ttdef"><b>Definition:</b> httpc.h:262</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a184220c0677f8224e9b1fb7b570080e9">WM_E_HTTPC_TCP_TLS_CONNECT_FAIL</a></div><div class="ttdeci">@ WM_E_HTTPC_TCP_TLS_CONNECT_FAIL</div><div class="ttdef"><b>Definition:</b> httpc.h:264</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a32fe8d93daff3372da8565c9c2111950">WM_E_HTTPC_SOCKET_ERROR</a></div><div class="ttdeci">@ WM_E_HTTPC_SOCKET_ERROR</div><div class="ttdef"><b>Definition:</b> httpc.h:273</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a41966aa9dddb2ce4bb3bbb092ab08e3e">WM_E_HTTPC_FILE_NOT_FOUND</a></div><div class="ttdeci">@ WM_E_HTTPC_FILE_NOT_FOUND</div><div class="ttdef"><b>Definition:</b> httpc.h:266</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a6f0aa95627fe7bc9410ceaed11e1723a">WM_E_HTTPC_SOCKET_SHUTDOWN</a></div><div class="ttdeci">@ WM_E_HTTPC_SOCKET_SHUTDOWN</div><div class="ttdef"><b>Definition:</b> httpc.h:275</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7a7582cf2dbf48975796d5280de880115c">WM_E_HTTPC_TLS_NOT_ENABLED</a></div><div class="ttdeci">@ WM_E_HTTPC_TLS_NOT_ENABLED</div><div class="ttdef"><b>Definition:</b> httpc.h:270</div></div>
+<div class="ttc" id="ahttpc_8h_html_abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#abe701386a277063d054ea33fdc2f12f7ae0f1ff270f01254be93ad36e5b9210af">WM_E_HTTPC_BAD_REQUEST</a></div><div class="ttdeci">@ WM_E_HTTPC_BAD_REQUEST</div><div class="ttdef"><b>Definition:</b> httpc.h:268</div></div>
+<div class="ttc" id="ahttpc_8h_html_ac61c2cb8d8605a0dd8ee8707900c3b90"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#ac61c2cb8d8605a0dd8ee8707900c3b90">http_add_header</a></div><div class="ttdeci">int http_add_header(http_session_t handle, const http_req_t *req, const char *name, const char *value)</div></div>
+<div class="ttc" id="ahttpc_8h_html_acb60807478dbca67a0db9fbd6fc4c977"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#acb60807478dbca67a0db9fbd6fc4c977">http_get_response_hdr_value</a></div><div class="ttdeci">int http_get_response_hdr_value(http_session_t handle, const char *header_name, char **value)</div></div>
+<div class="ttc" id="ahttpc_8h_html_ada9117bc4a9517680ea4866911596cb1"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1">http_open_flags_t</a></div><div class="ttdeci">http_open_flags_t</div><div class="ttdef"><b>Definition:</b> httpc.h:323</div></div>
+<div class="ttc" id="ahttpc_8h_html_ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#ada9117bc4a9517680ea4866911596cb1a8e03fb80d62590037bdc31949bbf2027">TLS_ENABLE</a></div><div class="ttdeci">@ TLS_ENABLE</div><div class="ttdef"><b>Definition:</b> httpc.h:325</div></div>
+<div class="ttc" id="ahttpc_8h_html_addc896602eaf4cbbb6c5cd5cca7d8876"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#addc896602eaf4cbbb6c5cd5cca7d8876">http_parse_URL</a></div><div class="ttdeci">int http_parse_URL(const char *URL, char *tmp_buf, int tmp_buf_len, parsed_url_t *parsed_url)</div></div>
+<div class="ttc" id="ahttpc_8h_html_adf5ba329f06ca9b28e6e34394942da26"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#adf5ba329f06ca9b28e6e34394942da26">http_lowlevel_read</a></div><div class="ttdeci">int http_lowlevel_read(http_session_t handle, void *buf, unsigned maxlen)</div></div>
+<div class="ttc" id="ahttpc_8h_html_af3e0087e1fcd7825133fda11ed33497e"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#af3e0087e1fcd7825133fda11ed33497e">http_prepare_req</a></div><div class="ttdeci">int http_prepare_req(http_session_t handle, const http_req_t *req, http_hdr_field_sel_t field_flags)</div></div>
+<div class="ttc" id="ahttpc_8h_html_af5326d84abc0bd0511cd73a4e0450c08"><div class="ttname"><a href="../../d3/d1b/httpc_8h.html#af5326d84abc0bd0511cd73a4e0450c08">httpc_write_chunked</a></div><div class="ttdeci">int httpc_write_chunked(http_session_t handle, const char *data, int len)</div></div>
+<div class="ttc" id="astructhttp__custom__content__ctx__s_html"><div class="ttname"><a href="../../d2/d52/structhttp__custom__content__ctx__s.html">http_custom_content_ctx_s</a></div><div class="ttdef"><b>Definition:</b> httpc.h:128</div></div>
+<div class="ttc" id="astructhttp__header__pair__t_html"><div class="ttname"><a href="../../db/d2d/structhttp__header__pair__t.html">http_header_pair_t</a></div><div class="ttdef"><b>Definition:</b> httpc.h:239</div></div>
+<div class="ttc" id="astructhttp__req__t_html"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html">http_req_t</a></div><div class="ttdef"><b>Definition:</b> httpc.h:155</div></div>
+<div class="ttc" id="astructhttp__req__t_html_a2b4fc582dbb7b50b69436ae1a44c2152"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html#a2b4fc582dbb7b50b69436ae1a44c2152">http_req_t::version</a></div><div class="ttdeci">http_ver_t version</div><div class="ttdef"><b>Definition:</b> httpc.h:165</div></div>
+<div class="ttc" id="astructhttp__req__t_html_a6440c7b2223a160e8d8ad17f330ef05e"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html#a6440c7b2223a160e8d8ad17f330ef05e">http_req_t::content_len</a></div><div class="ttdeci">int content_len</div><div class="ttdef"><b>Definition:</b> httpc.h:171</div></div>
+<div class="ttc" id="astructhttp__req__t_html_a73f40466f259c2009aa8942b34cfd752"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html#a73f40466f259c2009aa8942b34cfd752">http_req_t::content</a></div><div class="ttdeci">const char * content</div><div class="ttdef"><b>Definition:</b> httpc.h:167</div></div>
+<div class="ttc" id="astructhttp__req__t_html_a8c68630030b62da875305f9b8f03f346"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html#a8c68630030b62da875305f9b8f03f346">http_req_t::resource</a></div><div class="ttdeci">const char * resource</div><div class="ttdef"><b>Definition:</b> httpc.h:161</div></div>
+<div class="ttc" id="astructhttp__req__t_html_aa54f06ca3e4a3a2a95167fcf652666db"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html#aa54f06ca3e4a3a2a95167fcf652666db">http_req_t::redirect_cnt</a></div><div class="ttdeci">unsigned char redirect_cnt</div><div class="ttdef"><b>Definition:</b> httpc.h:163</div></div>
+<div class="ttc" id="astructhttp__req__t_html_afeceb2de7be1800f4ec0fb5564b6a29f"><div class="ttname"><a href="../../d8/d1b/structhttp__req__t.html#afeceb2de7be1800f4ec0fb5564b6a29f">http_req_t::type</a></div><div class="ttdeci">http_method_t type</div><div class="ttdef"><b>Definition:</b> httpc.h:157</div></div>
+<div class="ttc" id="astructhttp__resp__t_html"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html">http_resp_t</a></div><div class="ttdef"><b>Definition:</b> httpc.h:183</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a00d939e5ece5e746f941210f3276a158"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a00d939e5ece5e746f941210f3276a158">http_resp_t::server</a></div><div class="ttdeci">const char * server</div><div class="ttdef"><b>Definition:</b> httpc.h:201</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a15aebee455aeb3ea1befdd24e117738f"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a15aebee455aeb3ea1befdd24e117738f">http_resp_t::keep_alive_timeout</a></div><div class="ttdeci">int keep_alive_timeout</div><div class="ttdef"><b>Definition:</b> httpc.h:220</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a2c2fada467b988cf958666d8b8be3d8f"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a2c2fada467b988cf958666d8b8be3d8f">http_resp_t::location</a></div><div class="ttdeci">const char * location</div><div class="ttdef"><b>Definition:</b> httpc.h:199</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a334505461cce76de44c4745e67c3cbeb"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a334505461cce76de44c4745e67c3cbeb">http_resp_t::content_type</a></div><div class="ttdeci">const char * content_type</div><div class="ttdef"><b>Definition:</b> httpc.h:207</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a33876d3a10c770f313fb157a68cbc671"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a33876d3a10c770f313fb157a68cbc671">http_resp_t::version</a></div><div class="ttdeci">http_ver_t version</div><div class="ttdef"><b>Definition:</b> httpc.h:188</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a3a3fa6dfd805b16392257453faf1c635"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a3a3fa6dfd805b16392257453faf1c635">http_resp_t::reason_phrase</a></div><div class="ttdeci">const char * reason_phrase</div><div class="ttdef"><b>Definition:</b> httpc.h:197</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a6e3cb3b7358c9c1ee0dc2e699ffceba4"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a6e3cb3b7358c9c1ee0dc2e699ffceba4">http_resp_t::status_code</a></div><div class="ttdeci">int status_code</div><div class="ttdef"><b>Definition:</b> httpc.h:192</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a90ad0d639cdadfb00354ec144f45683f"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a90ad0d639cdadfb00354ec144f45683f">http_resp_t::protocol</a></div><div class="ttdeci">const char * protocol</div><div class="ttdef"><b>Definition:</b> httpc.h:186</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_a96d1786670c3f7d0b77dabb852d1aa30"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#a96d1786670c3f7d0b77dabb852d1aa30">http_resp_t::keep_alive_ack</a></div><div class="ttdeci">bool_t keep_alive_ack</div><div class="ttdef"><b>Definition:</b> httpc.h:214</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_ac2b57af54040ffceec06ea32c404e2fc"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#ac2b57af54040ffceec06ea32c404e2fc">http_resp_t::content_encoding</a></div><div class="ttdeci">const char * content_encoding</div><div class="ttdef"><b>Definition:</b> httpc.h:209</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_acf6e7b62f748081d5c426899d05745cf"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#acf6e7b62f748081d5c426899d05745cf">http_resp_t::content_length</a></div><div class="ttdeci">unsigned int content_length</div><div class="ttdef"><b>Definition:</b> httpc.h:236</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_ad3c52ae13b9b21ec31189e13801f9e51"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#ad3c52ae13b9b21ec31189e13801f9e51">http_resp_t::p_accept_ranges</a></div><div class="ttdeci">const char * p_accept_ranges</div><div class="ttdef"><b>Definition:</b> httpc.h:203</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_adbcdbca08f732e53cd07fcd2afbf3615"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#adbcdbca08f732e53cd07fcd2afbf3615">http_resp_t::keep_alive_max</a></div><div class="ttdeci">int keep_alive_max</div><div class="ttdef"><b>Definition:</b> httpc.h:227</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_ade65db670742419ebf914f9675bc8e61"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#ade65db670742419ebf914f9675bc8e61">http_resp_t::chunked</a></div><div class="ttdeci">bool_t chunked</div><div class="ttdef"><b>Definition:</b> httpc.h:232</div></div>
+<div class="ttc" id="astructhttp__resp__t_html_aee4a79688cb082e4834b3733f28bb49d"><div class="ttname"><a href="../../d8/d29/structhttp__resp__t.html#aee4a79688cb082e4834b3733f28bb49d">http_resp_t::modify_time</a></div><div class="ttdeci">time_t modify_time</div><div class="ttdef"><b>Definition:</b> httpc.h:205</div></div>
+<div class="ttc" id="astructparsed__url__t_html"><div class="ttname"><a href="../../d4/d50/structparsed__url__t.html">parsed_url_t</a></div><div class="ttdef"><b>Definition:</b> httpc.h:244</div></div>
+<div class="ttc" id="astructtuya__tls__config__t_html"><div class="ttname"><a href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a></div><div class="ttdef"><b>Definition:</b> tuya_tls.h:44</div></div>
+<div class="ttc" id="atal__network_8h_html"><div class="ttname"><a href="../../d5/d87/tal__network_8h.html">tal_network.h</a></div><div class="ttdoc">Common process - Initialization</div></div>
+<div class="ttc" id="atal__time__service_8h_html"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html">tal_time_service.h</a></div><div class="ttdoc">tuya time service, support UTC time, local time and summer time</div></div>
+<div class="ttc" id="atuya__tls_8h_html"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html">tuya_tls.h</a></div><div class="ttdoc">Common process - tls include</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

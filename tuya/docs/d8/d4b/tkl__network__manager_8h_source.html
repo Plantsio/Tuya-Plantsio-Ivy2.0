@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_network_manager.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_network_manager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d4b/tkl__network__manager_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_NETWORK_MANAGER_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_NETWORK_MANAGER_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * zigbee secret key type</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define CENTRALIZED_GLOBAL_TC_LINK_KEY              0x00</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define DISTRIBUTED_SECURITY_GLOBAL_LINK_KEY        0x01</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define CENTRALIZED_INSTALL_CODE_DERIVED_LINK_KEY   0x02</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define DISTRIBUTED_TOUCHLINK_PRECFG_LINK_KEY       0x03</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * zigbee network rejoin type</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// rejoin on current channel</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    TKL_REJOIN_ON_CURRENT_CH = 0,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// rejoin on all 802.25.4 channel(11~26)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TKL_REJOIN_ON_ALL_ZG_CH,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>} TKL_REJOIN_TYPE_E;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * zigbee secret key information structure</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d6/d3f/structTKL__SECRET__KEY__T.html">   43</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d6/d3f/structTKL__SECRET__KEY__T.html#a7fc8e31badc166141dfaa785ba44bfa2">   44</a></span>    UINT8_T nwk_key[16];         </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d6/d3f/structTKL__SECRET__KEY__T.html#a262992e86990cd750f96429413cbf51a">   45</a></span>    UINT8_T sec_tc_link_key[16]; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <a class="code hl_struct" href="../../d6/d3f/structTKL__SECRET__KEY__T.html">TKL_SECRET_KEY_T</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * zigbee install code structure</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d63/structTKL__INSTALL__CODE__T.html">   51</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d9/d63/structTKL__INSTALL__CODE__T.html#a4a61bbe9c0a083168a2c7e0727ce74ab">   52</a></span>    UINT8_T code[16];           </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <a class="code hl_struct" href="../../d9/d63/structTKL__INSTALL__CODE__T.html">TKL_INSTALL_CODE_T</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * zigbee key status</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83">   58</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83aa668562a7a784a09f24cb5818f7b851d">   59</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83aa668562a7a784a09f24cb5818f7b851d">TKL_KEY_STATUS_NONE</a>                 = 0x00,  </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a25e8e8b78136e3a7dc65aed4b7361ad9">   60</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a25e8e8b78136e3a7dc65aed4b7361ad9">TKL_TCLINK_KEY_ESTABLISHED</a>          = 0x02,  </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a4df19bc392021df0c3adb78237a7cd28">   61</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a4df19bc392021df0c3adb78237a7cd28">TKL_TCLINK_KEY_ESTABLISHED_FAILED</a>   = 0x03,  </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83ab35f900b4315b19b3f044c12dc60754b">   62</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83ab35f900b4315b19b3f044c12dc60754b">TKL_TCLINK_KEY_VERIFY_SUCCESS</a>       = 0x04,  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a01baced0dd6553cb082d61223db3a936">   63</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a01baced0dd6553cb082d61223db3a936">TKL_TCLINK_KEY_VERIFY_FAILED</a>        = 0x05,  </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83">TKL_KEY_STATUS_E</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">typedef</span> VOID_T (*TKL_TCLINK_KEY_CB)(<a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83">TKL_KEY_STATUS_E</a> status);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * zigbee network basic state</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// the node is not associated with a network in any way</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    TKL_NODE_NO_NETWORK = 0,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// the node is currently attempting to join a network</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    TKL_NODE_JOINING_NETWORK,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// the node is joined to a network</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    TKL_NODE_JOINED_NETWORK,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// the node is an end device joined to a network but its parent is not responding</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    TKL_NODE_NO_PARENT,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// the node is in the process of leaving its current network</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    TKL_NODE_LEAVING_NETWORK</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>} TKL_NWK_BASIC_STATE_E;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">typedef</span> VOID_T (*TKL_ZGAL_NWK_CHANGE_CB)(TKL_NWK_BASIC_STATE_E state);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * zigbee scan type</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">   89</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706addeb8d2c865ebbc81902e663bdaf1f4f">   90</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706addeb8d2c865ebbc81902e663bdaf1f4f">TKL_SCAN_FOR_JOIN</a> = 0, </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706ab88747ccf04003713de5cefd8b605296">TKL_SCAN_FOR_REJOIN</a>    </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706ab88747ccf04003713de5cefd8b605296">   92</a></span>} <a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">TKL_SCAN_TYPE_E</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * zigbee scan result</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865f">   97</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa0d070a2f3d510aaa856843941c3a396a">   98</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa0d070a2f3d510aaa856843941c3a396a">TKL_SCAN_SUCESS</a> = 0,    </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa8d124757ac95c7acd51ea1745d82c2be">   99</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa8d124757ac95c7acd51ea1745d82c2be">TKL_SCAN_NO_BEACONS</a>,    </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa6e2b8705cb11dcd8a5f6e9c66e36e9ad">  100</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa6e2b8705cb11dcd8a5f6e9c66e36e9ad">TKL_SCAN_NO_LINK_KEY</a>,   </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865facead1665d4541d277b0731385b1a2857">  101</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865facead1665d4541d277b0731385b1a2857">TKL_SCAN_DECRYPT_FAIL</a>,  </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa98a8d0d4c71525d52c36366e1f9953f1">  102</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa98a8d0d4c71525d52c36366e1f9953f1">TKL_SCAN_NOT_PERMITTED</a>, </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa104eb0f65005c06dfe6a17f3f04c782f">  103</a></span>    <a class="code hl_enumvalue" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa104eb0f65005c06dfe6a17f3f04c782f">TKL_SCAN_UNKNOWN_FAIL</a>,  </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>} <a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865f">TKL_SCAN_STATUS_E</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * zigbee basic information structure</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html">  109</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a25aef0854032b2df8fea7f8cfad3c277">  110</a></span>    INT8_T   <a class="code hl_variable" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a25aef0854032b2df8fea7f8cfad3c277">radio_power</a>;   </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#ab850c7f7b058192be50191f41ec663f3">  111</a></span>    UINT8_T  <a class="code hl_variable" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#ab850c7f7b058192be50191f41ec663f3">radio_channel</a>; </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a7c797fe443281f392fd5de47bc50b5bb">  112</a></span>    UINT16_T <a class="code hl_variable" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a7c797fe443281f392fd5de47bc50b5bb">nwk_addr</a>;      </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a5b324ff95a13bea9545963ba56c2d4fc">  113</a></span>    UINT16_T <a class="code hl_variable" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a5b324ff95a13bea9545963ba56c2d4fc">panid</a>;         </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a490372a605558fa6f6cb4214fa4aefe1">  114</a></span>    UINT8_T  mac_addr[8];   </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a3d55fe410c3634f31d7e2baae5125d37">  115</a></span>    UINT8_T  ext_panid[8];  </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>} <a class="code hl_struct" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html">TKL_NWK_BASIC_INFO_T</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * zigbee scan result structure</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d1/d52/structTKL__SCAN__RESULT__T.html">  121</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a9b01885727cbcedd6a2d37e2db510617">  122</a></span>    UINT8_T <a class="code hl_variable" href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a9b01885727cbcedd6a2d37e2db510617">channel</a>;            </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a4a3d39bdb48d779032b44d6c77b567ac">  123</a></span>    <a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">TKL_SCAN_TYPE_E</a> <a class="code hl_variable" href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a4a3d39bdb48d779032b44d6c77b567ac">type</a>;       </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a95bd274d6caca61331168f426bfdb6c9">  124</a></span>    <a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865f">TKL_SCAN_STATUS_E</a> <a class="code hl_variable" href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a95bd274d6caca61331168f426bfdb6c9">result</a>;   </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>} <a class="code hl_struct" href="../../d1/d52/structTKL__SCAN__RESULT__T.html">TKL_SCAN_RESULT_T</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * zigbee join and rejoin complete callback</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keyword">typedef</span> VOID_T (*TKL_NWK_SCAN_CB)(<a class="code hl_struct" href="../../d1/d52/structTKL__SCAN__RESULT__T.html">TKL_SCAN_RESULT_T</a> *result);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> * zigbee scan policy structure</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../dd/d32/structTKL__REJOIN__CFG__T.html">  135</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="../../dd/d32/structTKL__REJOIN__CFG__T.html#a08cf5681f287a93a963be9dd86fd415f">  136</a></span>    TKL_REJOIN_TYPE_E <a class="code hl_variable" href="../../dd/d32/structTKL__REJOIN__CFG__T.html#a08cf5681f287a93a963be9dd86fd415f">type</a>;             </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../dd/d32/structTKL__REJOIN__CFG__T.html#a466878fc2bf24fb6cb3ef80847615e34">  137</a></span>    TKL_NWK_SCAN_CB  scan_complete_cb;  </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>} <a class="code hl_struct" href="../../dd/d32/structTKL__REJOIN__CFG__T.html">TKL_REJOIN_CFG_T</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * zigbee scan policy structure</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../da/df5/structTKL__JOIN__CFG__T.html">  143</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../da/df5/structTKL__JOIN__CFG__T.html#ab5026877f3737e5dfd68280b67ebf5cf">  144</a></span>    <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">ZG_SCAN_DURATION_E</a>  <a class="code hl_variable" href="../../da/df5/structTKL__JOIN__CFG__T.html#ab5026877f3737e5dfd68280b67ebf5cf">duration</a>;           </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../da/df5/structTKL__JOIN__CFG__T.html#aa5487f1e5b2f753d6b347b092e2c9e40">  145</a></span>    UINT8_T             <a class="code hl_variable" href="../../da/df5/structTKL__JOIN__CFG__T.html#aa5487f1e5b2f753d6b347b092e2c9e40">link_key_mask</a>;      </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../da/df5/structTKL__JOIN__CFG__T.html#ab1e5a358efa2943e0d05c0c8f3ada36f">  146</a></span>    UINT32_T            <a class="code hl_variable" href="../../da/df5/structTKL__JOIN__CFG__T.html#ab1e5a358efa2943e0d05c0c8f3ada36f">channel_mask</a>;       </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="../../da/df5/structTKL__JOIN__CFG__T.html#af2b331a0f45574a2db57a68c87dfe5b4">  147</a></span>    TKL_NWK_SCAN_CB     scan_complete_cb;   </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>} <a class="code hl_struct" href="../../da/df5/structTKL__JOIN__CFG__T.html">TKL_JOIN_CFG_T</a>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * zigbee scan policy structure</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="../../d7/d64/structTKL__SCAN__POLICY__T.html">  153</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <a class="code hl_struct" href="../../da/df5/structTKL__JOIN__CFG__T.html">TKL_JOIN_CFG_T</a>   join;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <a class="code hl_struct" href="../../dd/d32/structTKL__REJOIN__CFG__T.html">TKL_REJOIN_CFG_T</a> rejoin;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    } scan;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>} <a class="code hl_struct" href="../../d7/d64/structTKL__SCAN__POLICY__T.html">TKL_SCAN_POLICY_T</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment"> * zigbee extern zigbee information</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../df/d68/structTKL__EXT__ZG__INFO__T.html">  163</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    UINT16_T profile_id;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    UINT16_T zg_device_id;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    UINT8_T  endpoint;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    UINT8_T  version;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}<a class="code hl_struct" href="../../df/d68/structTKL__EXT__ZG__INFO__T.html">TKL_EXT_ZG_INFO_T</a>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#acec6a221c4e0047def1a3389ad790e09">  176</a></span>TKL_NWK_BASIC_STATE_E <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#acec6a221c4e0047def1a3389ad790e09">tkl_zg_nwk_base_status_get</a>(VOID_T);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a50d9bc94c4aede6e4109ae9dd2852201">  184</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a50d9bc94c4aede6e4109ae9dd2852201">tkl_zg_nwk_state_change_register</a>(TKL_ZGAL_NWK_CHANGE_CB nwk_change_cb);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a80baa7eb517719f5044f2a93c509f6a5">  193</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a80baa7eb517719f5044f2a93c509f6a5">tkl_zg_scan_policy_set</a>(<a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">TKL_SCAN_TYPE_E</a> type, <a class="code hl_struct" href="../../d7/d64/structTKL__SCAN__POLICY__T.html">TKL_SCAN_POLICY_T</a> *policy);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#abe7348ef98beaab2432045d09944b63a">  201</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#abe7348ef98beaab2432045d09944b63a">tkl_zg_start_scan</a>(<a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">TKL_SCAN_TYPE_E</a> type);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aa7f45a17d79248c3397b2fd2ad6a6722">  209</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#aa7f45a17d79248c3397b2fd2ad6a6722">tkl_zg_stop_scan</a>(<a class="code hl_enumeration" href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">TKL_SCAN_TYPE_E</a> type);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a044967cb5417137589cfe0d513340078">  217</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a044967cb5417137589cfe0d513340078">tkl_zg_start_leave</a>(VOID_T);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#acb7d448c17b3211b2f369ab7ce5398be">  225</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#acb7d448c17b3211b2f369ab7ce5398be">tkl_zg_install_code_set</a>(<a class="code hl_struct" href="../../d9/d63/structTKL__INSTALL__CODE__T.html">TKL_INSTALL_CODE_T</a> *insall_code);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab170160f949b448473c09d787274cf61">  233</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#ab170160f949b448473c09d787274cf61">tkl_zg_install_code_get</a>(<a class="code hl_struct" href="../../d9/d63/structTKL__INSTALL__CODE__T.html">TKL_INSTALL_CODE_T</a> *insall_code);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab87e0a2ffb87f95cd61d6ae2d20bcc0a">  241</a></span>BOOL_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#ab87e0a2ffb87f95cd61d6ae2d20bcc0a">tkl_zg_nwk_secret_key_info_get</a>(<a class="code hl_struct" href="../../d6/d3f/structTKL__SECRET__KEY__T.html">TKL_SECRET_KEY_T</a> *key_info);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a46516266e659e1080110fc4ade82fd19">  249</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a46516266e659e1080110fc4ade82fd19">tkl_zg_register_key_establish_cb</a>(TKL_TCLINK_KEY_CB key_cb);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aba40b90a5a0378076922dd25219be45d">  258</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#aba40b90a5a0378076922dd25219be45d">tkl_zg_enable_permit_join_after_joined</a>(BOOL_T enable);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a82af0606ed812daf20061335510d2668">  266</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a82af0606ed812daf20061335510d2668">tkl_zg_nwk_base_info_get</a>(<a class="code hl_struct" href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html">TKL_NWK_BASIC_INFO_T</a> *nwk_info);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a7c883a1823887cf0c6981d2a5f6e0ea0">  274</a></span>UINT8_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a7c883a1823887cf0c6981d2a5f6e0ea0">tkl_zg_radio_channel_get</a>(VOID_T);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aae7bf886b4e9cce5e6a0d9846b436eec">  282</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#aae7bf886b4e9cce5e6a0d9846b436eec">tkl_zg_radio_channel_set</a>(UINT8_T channel);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ab351b88344cd6ac710e94072fb4a85a4">  290</a></span>INT8_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#ab351b88344cd6ac710e94072fb4a85a4">tkl_zg_radio_power_get</a>(VOID_T);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ae3e34d8beb98d7cda17ba9f8c3db93aa">  298</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#ae3e34d8beb98d7cda17ba9f8c3db93aa">tkl_zg_radio_power_set</a>(INT8_T tx_power);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ac27966429e23f99ec3b04ce37ce691da">  306</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#ac27966429e23f99ec3b04ce37ce691da">tkl_zg_mac_address_get</a>(UINT8_T *mac);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a90b9667aca9465eeff13c837a7c7e53d">  314</a></span>UINT16_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a90b9667aca9465eeff13c837a7c7e53d">tkl_zg_nwk_address_get</a>(VOID_T);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a53f24c1bc49d776c1fe4e5ba1a8e9fb9">  322</a></span>UINT16_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a53f24c1bc49d776c1fe4e5ba1a8e9fb9">tkl_zg_nwk_panid_get</a>(VOID_T);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#af3706ce72023023bc3efa0de086a151e">  330</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#af3706ce72023023bc3efa0de086a151e">tkl_zg_nwk_extend_panid_get</a>(UINT8_T *extpanid);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#aeef0762426a20fc3bea0dfefb0122c75">  338</a></span><a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a> <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#aeef0762426a20fc3bea0dfefb0122c75">tkl_zg_nwk_type_get</a>(VOID_T);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a71fa5efa3ac04daca9eee51437e24bdc">  346</a></span><a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a> <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a71fa5efa3ac04daca9eee51437e24bdc">tkl_zg_node_type_get</a>(VOID_T);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a035d9b64981bc40c734935092aebf2eb">  354</a></span>VOID_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a035d9b64981bc40c734935092aebf2eb">tkl_zg_node_type_set</a>(<a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a> type);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#a3dd8c8aecc0480cbdbaf92c157d289ab">  363</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#a3dd8c8aecc0480cbdbaf92c157d289ab">tkl_zg_ch26_power_max_db_set</a>(INT8_T db);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="../../d8/d4b/tkl__network__manager_8h.html#ad6c656384137b80f257293b2978c44dd">  372</a></span>BOOL_T <a class="code hl_function" href="../../d8/d4b/tkl__network__manager_8h.html#ad6c656384137b80f257293b2978c44dd">tkl_zg_set_ext_zg_info</a>(<a class="code hl_struct" href="../../df/d68/structTKL__EXT__ZG__INFO__T.html">TKL_EXT_ZG_INFO_T</a> *p_zg_info, UINT8_T sums);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="ttc" id="astructTKL__EXT__ZG__INFO__T_html"><div class="ttname"><a href="../../df/d68/structTKL__EXT__ZG__INFO__T.html">TKL_EXT_ZG_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:163</div></div>
+<div class="ttc" id="astructTKL__INSTALL__CODE__T_html"><div class="ttname"><a href="../../d9/d63/structTKL__INSTALL__CODE__T.html">TKL_INSTALL_CODE_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:51</div></div>
+<div class="ttc" id="astructTKL__JOIN__CFG__T_html"><div class="ttname"><a href="../../da/df5/structTKL__JOIN__CFG__T.html">TKL_JOIN_CFG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:143</div></div>
+<div class="ttc" id="astructTKL__JOIN__CFG__T_html_aa5487f1e5b2f753d6b347b092e2c9e40"><div class="ttname"><a href="../../da/df5/structTKL__JOIN__CFG__T.html#aa5487f1e5b2f753d6b347b092e2c9e40">TKL_JOIN_CFG_T::link_key_mask</a></div><div class="ttdeci">UINT8_T link_key_mask</div><div class="ttdoc">the key used for data decryption during scanning</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:145</div></div>
+<div class="ttc" id="astructTKL__JOIN__CFG__T_html_ab1e5a358efa2943e0d05c0c8f3ada36f"><div class="ttname"><a href="../../da/df5/structTKL__JOIN__CFG__T.html#ab1e5a358efa2943e0d05c0c8f3ada36f">TKL_JOIN_CFG_T::channel_mask</a></div><div class="ttdeci">UINT32_T channel_mask</div><div class="ttdoc">channel mask during scanning, specify one channel at a time</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:146</div></div>
+<div class="ttc" id="astructTKL__JOIN__CFG__T_html_ab5026877f3737e5dfd68280b67ebf5cf"><div class="ttname"><a href="../../da/df5/structTKL__JOIN__CFG__T.html#ab5026877f3737e5dfd68280b67ebf5cf">TKL_JOIN_CFG_T::duration</a></div><div class="ttdeci">ZG_SCAN_DURATION_E duration</div><div class="ttdoc">scan duration for bdb</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:144</div></div>
+<div class="ttc" id="astructTKL__NWK__BASIC__INFO__T_html"><div class="ttname"><a href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html">TKL_NWK_BASIC_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:109</div></div>
+<div class="ttc" id="astructTKL__NWK__BASIC__INFO__T_html_a25aef0854032b2df8fea7f8cfad3c277"><div class="ttname"><a href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a25aef0854032b2df8fea7f8cfad3c277">TKL_NWK_BASIC_INFO_T::radio_power</a></div><div class="ttdeci">INT8_T radio_power</div><div class="ttdoc">radio power</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:110</div></div>
+<div class="ttc" id="astructTKL__NWK__BASIC__INFO__T_html_a5b324ff95a13bea9545963ba56c2d4fc"><div class="ttname"><a href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a5b324ff95a13bea9545963ba56c2d4fc">TKL_NWK_BASIC_INFO_T::panid</a></div><div class="ttdeci">UINT16_T panid</div><div class="ttdoc">network panid,if not in network will be 0xFFFF</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:113</div></div>
+<div class="ttc" id="astructTKL__NWK__BASIC__INFO__T_html_a7c797fe443281f392fd5de47bc50b5bb"><div class="ttname"><a href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#a7c797fe443281f392fd5de47bc50b5bb">TKL_NWK_BASIC_INFO_T::nwk_addr</a></div><div class="ttdeci">UINT16_T nwk_addr</div><div class="ttdoc">network address,if not in network will be 0xFFFF</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:112</div></div>
+<div class="ttc" id="astructTKL__NWK__BASIC__INFO__T_html_ab850c7f7b058192be50191f41ec663f3"><div class="ttname"><a href="../../d6/d8b/structTKL__NWK__BASIC__INFO__T.html#ab850c7f7b058192be50191f41ec663f3">TKL_NWK_BASIC_INFO_T::radio_channel</a></div><div class="ttdeci">UINT8_T radio_channel</div><div class="ttdoc">radio channel</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:111</div></div>
+<div class="ttc" id="astructTKL__REJOIN__CFG__T_html"><div class="ttname"><a href="../../dd/d32/structTKL__REJOIN__CFG__T.html">TKL_REJOIN_CFG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:135</div></div>
+<div class="ttc" id="astructTKL__REJOIN__CFG__T_html_a08cf5681f287a93a963be9dd86fd415f"><div class="ttname"><a href="../../dd/d32/structTKL__REJOIN__CFG__T.html#a08cf5681f287a93a963be9dd86fd415f">TKL_REJOIN_CFG_T::type</a></div><div class="ttdeci">TKL_REJOIN_TYPE_E type</div><div class="ttdoc">channel mask during scanning, specify one channel at a time</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:136</div></div>
+<div class="ttc" id="astructTKL__SCAN__POLICY__T_html"><div class="ttname"><a href="../../d7/d64/structTKL__SCAN__POLICY__T.html">TKL_SCAN_POLICY_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:153</div></div>
+<div class="ttc" id="astructTKL__SCAN__RESULT__T_html"><div class="ttname"><a href="../../d1/d52/structTKL__SCAN__RESULT__T.html">TKL_SCAN_RESULT_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:121</div></div>
+<div class="ttc" id="astructTKL__SCAN__RESULT__T_html_a4a3d39bdb48d779032b44d6c77b567ac"><div class="ttname"><a href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a4a3d39bdb48d779032b44d6c77b567ac">TKL_SCAN_RESULT_T::type</a></div><div class="ttdeci">TKL_SCAN_TYPE_E type</div><div class="ttdoc">scan type</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:123</div></div>
+<div class="ttc" id="astructTKL__SCAN__RESULT__T_html_a95bd274d6caca61331168f426bfdb6c9"><div class="ttname"><a href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a95bd274d6caca61331168f426bfdb6c9">TKL_SCAN_RESULT_T::result</a></div><div class="ttdeci">TKL_SCAN_STATUS_E result</div><div class="ttdoc">scan result</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:124</div></div>
+<div class="ttc" id="astructTKL__SCAN__RESULT__T_html_a9b01885727cbcedd6a2d37e2db510617"><div class="ttname"><a href="../../d1/d52/structTKL__SCAN__RESULT__T.html#a9b01885727cbcedd6a2d37e2db510617">TKL_SCAN_RESULT_T::channel</a></div><div class="ttdeci">UINT8_T channel</div><div class="ttdoc">scan channel</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:122</div></div>
+<div class="ttc" id="astructTKL__SECRET__KEY__T_html"><div class="ttname"><a href="../../d6/d3f/structTKL__SECRET__KEY__T.html">TKL_SECRET_KEY_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:43</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a035d9b64981bc40c734935092aebf2eb"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a035d9b64981bc40c734935092aebf2eb">tkl_zg_node_type_set</a></div><div class="ttdeci">VOID_T tkl_zg_node_type_set(ZG_NODE_TYPE_E type)</div><div class="ttdoc">zigbee node type set</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a044967cb5417137589cfe0d513340078"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a044967cb5417137589cfe0d513340078">tkl_zg_start_leave</a></div><div class="ttdeci">OPERATE_RET tkl_zg_start_leave(VOID_T)</div><div class="ttdoc">zigbee start leave</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a3dd8c8aecc0480cbdbaf92c157d289ab"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a3dd8c8aecc0480cbdbaf92c157d289ab">tkl_zg_ch26_power_max_db_set</a></div><div class="ttdeci">OPERATE_RET tkl_zg_ch26_power_max_db_set(INT8_T db)</div><div class="ttdoc">custom specific max radio power in ch26</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a46516266e659e1080110fc4ade82fd19"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a46516266e659e1080110fc4ade82fd19">tkl_zg_register_key_establish_cb</a></div><div class="ttdeci">OPERATE_RET tkl_zg_register_key_establish_cb(TKL_TCLINK_KEY_CB key_cb)</div><div class="ttdoc">register key status callback</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a50d9bc94c4aede6e4109ae9dd2852201"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a50d9bc94c4aede6e4109ae9dd2852201">tkl_zg_nwk_state_change_register</a></div><div class="ttdeci">OPERATE_RET tkl_zg_nwk_state_change_register(TKL_ZGAL_NWK_CHANGE_CB nwk_change_cb)</div><div class="ttdoc">register network state change callback</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a53f24c1bc49d776c1fe4e5ba1a8e9fb9"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a53f24c1bc49d776c1fe4e5ba1a8e9fb9">tkl_zg_nwk_panid_get</a></div><div class="ttdeci">UINT16_T tkl_zg_nwk_panid_get(VOID_T)</div><div class="ttdoc">get zigbee network panid</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a71fa5efa3ac04daca9eee51437e24bdc"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a71fa5efa3ac04daca9eee51437e24bdc">tkl_zg_node_type_get</a></div><div class="ttdeci">ZG_NODE_TYPE_E tkl_zg_node_type_get(VOID_T)</div><div class="ttdoc">zigbee node type get</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a7c883a1823887cf0c6981d2a5f6e0ea0"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a7c883a1823887cf0c6981d2a5f6e0ea0">tkl_zg_radio_channel_get</a></div><div class="ttdeci">UINT8_T tkl_zg_radio_channel_get(VOID_T)</div><div class="ttdoc">get zigbee radio channel</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a80baa7eb517719f5044f2a93c509f6a5"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a80baa7eb517719f5044f2a93c509f6a5">tkl_zg_scan_policy_set</a></div><div class="ttdeci">VOID_T tkl_zg_scan_policy_set(TKL_SCAN_TYPE_E type, TKL_SCAN_POLICY_T *policy)</div><div class="ttdoc">set zigbee scan policy</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a82af0606ed812daf20061335510d2668"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a82af0606ed812daf20061335510d2668">tkl_zg_nwk_base_info_get</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_base_info_get(TKL_NWK_BASIC_INFO_T *nwk_info)</div><div class="ttdoc">get zigbee network basic information</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a83d33ac12bec88c2432987a91d4f4706"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706">TKL_SCAN_TYPE_E</a></div><div class="ttdeci">TKL_SCAN_TYPE_E</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:89</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a83d33ac12bec88c2432987a91d4f4706ab88747ccf04003713de5cefd8b605296"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706ab88747ccf04003713de5cefd8b605296">TKL_SCAN_FOR_REJOIN</a></div><div class="ttdeci">@ TKL_SCAN_FOR_REJOIN</div><div class="ttdoc">scan for re-joining a network</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:91</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a83d33ac12bec88c2432987a91d4f4706addeb8d2c865ebbc81902e663bdaf1f4f"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a83d33ac12bec88c2432987a91d4f4706addeb8d2c865ebbc81902e663bdaf1f4f">TKL_SCAN_FOR_JOIN</a></div><div class="ttdeci">@ TKL_SCAN_FOR_JOIN</div><div class="ttdoc">scan for joining a network</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:90</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_a90b9667aca9465eeff13c837a7c7e53d"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#a90b9667aca9465eeff13c837a7c7e53d">tkl_zg_nwk_address_get</a></div><div class="ttdeci">UINT16_T tkl_zg_nwk_address_get(VOID_T)</div><div class="ttdoc">get zigbee network short address</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865f"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865f">TKL_SCAN_STATUS_E</a></div><div class="ttdeci">TKL_SCAN_STATUS_E</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:97</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865fa0d070a2f3d510aaa856843941c3a396a"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa0d070a2f3d510aaa856843941c3a396a">TKL_SCAN_SUCESS</a></div><div class="ttdeci">@ TKL_SCAN_SUCESS</div><div class="ttdoc">scan success</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:98</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865fa104eb0f65005c06dfe6a17f3f04c782f"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa104eb0f65005c06dfe6a17f3f04c782f">TKL_SCAN_UNKNOWN_FAIL</a></div><div class="ttdeci">@ TKL_SCAN_UNKNOWN_FAIL</div><div class="ttdoc">scan failed because other reasons</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:103</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865fa6e2b8705cb11dcd8a5f6e9c66e36e9ad"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa6e2b8705cb11dcd8a5f6e9c66e36e9ad">TKL_SCAN_NO_LINK_KEY</a></div><div class="ttdeci">@ TKL_SCAN_NO_LINK_KEY</div><div class="ttdoc">scan failed because no link key</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:100</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865fa8d124757ac95c7acd51ea1745d82c2be"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa8d124757ac95c7acd51ea1745d82c2be">TKL_SCAN_NO_BEACONS</a></div><div class="ttdeci">@ TKL_SCAN_NO_BEACONS</div><div class="ttdoc">scan failed because no beacon received</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:99</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865fa98a8d0d4c71525d52c36366e1f9953f1"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865fa98a8d0d4c71525d52c36366e1f9953f1">TKL_SCAN_NOT_PERMITTED</a></div><div class="ttdeci">@ TKL_SCAN_NOT_PERMITTED</div><div class="ttdoc">scan failed because remote not permitted</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:102</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa35d27721016686af173616a6d23865facead1665d4541d277b0731385b1a2857"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa35d27721016686af173616a6d23865facead1665d4541d277b0731385b1a2857">TKL_SCAN_DECRYPT_FAIL</a></div><div class="ttdeci">@ TKL_SCAN_DECRYPT_FAIL</div><div class="ttdoc">scan failed because decrypt fail</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:101</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aa7f45a17d79248c3397b2fd2ad6a6722"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aa7f45a17d79248c3397b2fd2ad6a6722">tkl_zg_stop_scan</a></div><div class="ttdeci">OPERATE_RET tkl_zg_stop_scan(TKL_SCAN_TYPE_E type)</div><div class="ttdoc">zigbee stop scan</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aae7bf886b4e9cce5e6a0d9846b436eec"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aae7bf886b4e9cce5e6a0d9846b436eec">tkl_zg_radio_channel_set</a></div><div class="ttdeci">VOID_T tkl_zg_radio_channel_set(UINT8_T channel)</div><div class="ttdoc">set zigbee radio channel</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab170160f949b448473c09d787274cf61"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab170160f949b448473c09d787274cf61">tkl_zg_install_code_get</a></div><div class="ttdeci">VOID_T tkl_zg_install_code_get(TKL_INSTALL_CODE_T *insall_code)</div><div class="ttdoc">get zigbee install code</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab351b88344cd6ac710e94072fb4a85a4"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab351b88344cd6ac710e94072fb4a85a4">tkl_zg_radio_power_get</a></div><div class="ttdeci">INT8_T tkl_zg_radio_power_get(VOID_T)</div><div class="ttdoc">get zigbee radio power</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab64ec4451dcd71e8836438e34977dc83"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83">TKL_KEY_STATUS_E</a></div><div class="ttdeci">TKL_KEY_STATUS_E</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:58</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab64ec4451dcd71e8836438e34977dc83a01baced0dd6553cb082d61223db3a936"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a01baced0dd6553cb082d61223db3a936">TKL_TCLINK_KEY_VERIFY_FAILED</a></div><div class="ttdeci">@ TKL_TCLINK_KEY_VERIFY_FAILED</div><div class="ttdoc">verify TcLink key failed</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:63</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab64ec4451dcd71e8836438e34977dc83a25e8e8b78136e3a7dc65aed4b7361ad9"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a25e8e8b78136e3a7dc65aed4b7361ad9">TKL_TCLINK_KEY_ESTABLISHED</a></div><div class="ttdeci">@ TKL_TCLINK_KEY_ESTABLISHED</div><div class="ttdoc">receive TcLink key</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:60</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab64ec4451dcd71e8836438e34977dc83a4df19bc392021df0c3adb78237a7cd28"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83a4df19bc392021df0c3adb78237a7cd28">TKL_TCLINK_KEY_ESTABLISHED_FAILED</a></div><div class="ttdeci">@ TKL_TCLINK_KEY_ESTABLISHED_FAILED</div><div class="ttdoc">receive TcLink failed</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:61</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab64ec4451dcd71e8836438e34977dc83aa668562a7a784a09f24cb5818f7b851d"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83aa668562a7a784a09f24cb5818f7b851d">TKL_KEY_STATUS_NONE</a></div><div class="ttdeci">@ TKL_KEY_STATUS_NONE</div><div class="ttdoc">status none</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:59</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab64ec4451dcd71e8836438e34977dc83ab35f900b4315b19b3f044c12dc60754b"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab64ec4451dcd71e8836438e34977dc83ab35f900b4315b19b3f044c12dc60754b">TKL_TCLINK_KEY_VERIFY_SUCCESS</a></div><div class="ttdeci">@ TKL_TCLINK_KEY_VERIFY_SUCCESS</div><div class="ttdoc">verify TcLink key success</div><div class="ttdef"><b>Definition:</b> tkl_network_manager.h:62</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ab87e0a2ffb87f95cd61d6ae2d20bcc0a"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ab87e0a2ffb87f95cd61d6ae2d20bcc0a">tkl_zg_nwk_secret_key_info_get</a></div><div class="ttdeci">BOOL_T tkl_zg_nwk_secret_key_info_get(TKL_SECRET_KEY_T *key_info)</div><div class="ttdoc">get zigbee network secret key struct</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aba40b90a5a0378076922dd25219be45d"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aba40b90a5a0378076922dd25219be45d">tkl_zg_enable_permit_join_after_joined</a></div><div class="ttdeci">VOID_T tkl_zg_enable_permit_join_after_joined(BOOL_T enable)</div><div class="ttdoc">enable broadcast permit join after joined network(default is disable) NOTE: this interface needs to b...</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_abe7348ef98beaab2432045d09944b63a"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#abe7348ef98beaab2432045d09944b63a">tkl_zg_start_scan</a></div><div class="ttdeci">OPERATE_RET tkl_zg_start_scan(TKL_SCAN_TYPE_E type)</div><div class="ttdoc">zigbee start scan</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ac27966429e23f99ec3b04ce37ce691da"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ac27966429e23f99ec3b04ce37ce691da">tkl_zg_mac_address_get</a></div><div class="ttdeci">VOID_T tkl_zg_mac_address_get(UINT8_T *mac)</div><div class="ttdoc">get zigbee mac address</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_acb7d448c17b3211b2f369ab7ce5398be"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#acb7d448c17b3211b2f369ab7ce5398be">tkl_zg_install_code_set</a></div><div class="ttdeci">VOID_T tkl_zg_install_code_set(TKL_INSTALL_CODE_T *insall_code)</div><div class="ttdoc">set zigbee install code</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_acec6a221c4e0047def1a3389ad790e09"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#acec6a221c4e0047def1a3389ad790e09">tkl_zg_nwk_base_status_get</a></div><div class="ttdeci">TKL_NWK_BASIC_STATE_E tkl_zg_nwk_base_status_get(VOID_T)</div><div class="ttdoc">get zigbee basic network information</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ad6c656384137b80f257293b2978c44dd"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ad6c656384137b80f257293b2978c44dd">tkl_zg_set_ext_zg_info</a></div><div class="ttdeci">BOOL_T tkl_zg_set_ext_zg_info(TKL_EXT_ZG_INFO_T *p_zg_info, UINT8_T sums)</div><div class="ttdoc">set zigbee device extension information for special usage</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_ae3e34d8beb98d7cda17ba9f8c3db93aa"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#ae3e34d8beb98d7cda17ba9f8c3db93aa">tkl_zg_radio_power_set</a></div><div class="ttdeci">VOID_T tkl_zg_radio_power_set(INT8_T tx_power)</div><div class="ttdoc">set zigbee radio power</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_aeef0762426a20fc3bea0dfefb0122c75"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#aeef0762426a20fc3bea0dfefb0122c75">tkl_zg_nwk_type_get</a></div><div class="ttdeci">ZG_NWK_TYPE_E tkl_zg_nwk_type_get(VOID_T)</div><div class="ttdoc">zigbee network type get</div></div>
+<div class="ttc" id="atkl__network__manager_8h_html_af3706ce72023023bc3efa0de086a151e"><div class="ttname"><a href="../../d8/d4b/tkl__network__manager_8h.html#af3706ce72023023bc3efa0de086a151e">tkl_zg_nwk_extend_panid_get</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_extend_panid_get(UINT8_T *extpanid)</div><div class="ttdoc">get zigbee network extend panid</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html">tuya_zigbee_stack.h</a></div><div class="ttdoc">Common process - zigbee stack</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a13b3edacfebd4831f3ba37dfa2ff93bd"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a13b3edacfebd4831f3ba37dfa2ff93bd">ZG_SCAN_DURATION_E</a></div><div class="ttdeci">ZG_SCAN_DURATION_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:29</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a></div><div class="ttdeci">ZG_NODE_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:67</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a6adac7d0c69ec2af755dfd20c79c5acd"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a></div><div class="ttdeci">ZG_NWK_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:77</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

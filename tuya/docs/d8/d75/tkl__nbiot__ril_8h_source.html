@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/nb/include/tkl_nbiot_ril.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_5f0cc14919f4ea638bae0e0d6e877847.html">nb</a></li><li class="navelem"><a class="el" href="../../dir_8cbb9b6f25454b81c061e4a45ef8276f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_nbiot_ril.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d75/tkl__nbiot__ril_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef __TKL_NBIOT_RIL_H__</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define __TKL_NBIOT_RIL_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d2/d29/structTKL__RIL__EVENT__ID__T.html">   18</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    INT_T sim_identified;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    INT_T sim_no_identified;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    INT_T net_attached;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    INT_T net_detached;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    INT_T net_denied;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <a class="code hl_struct" href="../../d2/d29/structTKL__RIL__EVENT__ID__T.html">TKL_RIL_EVENT_ID_T</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d48/structTKL__RIL__PLMN__T.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d48/structTKL__RIL__PLMN__T.html#af5138bd5b2fa0b2471dd6a319254bd27">   27</a></span>    INT_T <a class="code hl_variable" href="../../d4/d48/structTKL__RIL__PLMN__T.html#af5138bd5b2fa0b2471dd6a319254bd27">mcc</a>;    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d4/d48/structTKL__RIL__PLMN__T.html#a2b90df25500e842deedf8e37166be8c1">   28</a></span>    INT_T <a class="code hl_variable" href="../../d4/d48/structTKL__RIL__PLMN__T.html#a2b90df25500e842deedf8e37166be8c1">mnc</a>;    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <a class="code hl_struct" href="../../d4/d48/structTKL__RIL__PLMN__T.html">TKL_RIL_PLMN_T</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">typedef</span> INT_T  (*TKL_RIL_EVENT_SEND_T)(INT_T event_id, PVOID_T param);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html">   33</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html#a81f2d202fa882e487ac32523492cd397">   34</a></span>    INT_T <a class="code hl_variable" href="../../d7/d89/structTKL__RIL__CESQ__T.html#a81f2d202fa882e487ac32523492cd397">rxlev</a>;  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html#ac25b157ffd592ac636a3677b463aa42f">   35</a></span>    INT_T <a class="code hl_variable" href="../../d7/d89/structTKL__RIL__CESQ__T.html#ac25b157ffd592ac636a3677b463aa42f">ber</a>;   </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html#ac9fab3daa7767f467e68333dcd86fe35">   36</a></span>    INT_T <a class="code hl_variable" href="../../d7/d89/structTKL__RIL__CESQ__T.html#ac9fab3daa7767f467e68333dcd86fe35">rscp</a>;  </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html#a9b468bca7fcc8eacb5f18a6191b08397">   37</a></span>    INT_T <a class="code hl_variable" href="../../d7/d89/structTKL__RIL__CESQ__T.html#a9b468bca7fcc8eacb5f18a6191b08397">ecno</a>;  </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html#aadcca1cf3373b0b8ab407ebdadc64566">   38</a></span>    INT_T <a class="code hl_variable" href="../../d7/d89/structTKL__RIL__CESQ__T.html#aadcca1cf3373b0b8ab407ebdadc64566">rsrq</a>;  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d7/d89/structTKL__RIL__CESQ__T.html#a505f4dbae8ed56dae38d9e99597ab2a6">   39</a></span>    INT_T <a class="code hl_variable" href="../../d7/d89/structTKL__RIL__CESQ__T.html#a505f4dbae8ed56dae38d9e99597ab2a6">rsrp</a>;  </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} <a class="code hl_struct" href="../../d7/d89/structTKL__RIL__CESQ__T.html">TKL_RIL_CESQ_T</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html">   42</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#a7b8cd2a18dcf2c6f8e2d3bac01573124">   43</a></span>      INT_T <a class="code hl_variable" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#a7b8cd2a18dcf2c6f8e2d3bac01573124">nc_earfcn</a>;    </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#ace97f682d7f6e1430ae96ae0a05e2ec0">   44</a></span>      INT_T <a class="code hl_variable" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#ace97f682d7f6e1430ae96ae0a05e2ec0">nc_earfcn_offset</a>;    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#a0e381001d32fbe7a7d14ae90af1e7e5b">   45</a></span>      INT_T <a class="code hl_variable" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#a0e381001d32fbe7a7d14ae90af1e7e5b">nc_pci</a>;    </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#af3cd974df6743b03a23e17b4aa9566d3">   46</a></span>      INT_T <a class="code hl_variable" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#af3cd974df6743b03a23e17b4aa9566d3">nc_rsrp</a>;    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  } <a class="code hl_struct" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html">TKL_RIL_NEIGHBOR_CELL_INFO_T</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">   49</a></span>  <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      INT_T max_num;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      INT_T num;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      CHAR_T apn[64];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      CHAR_T plmn[8];</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      CHAR_T band[64];</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }<a class="code hl_struct" href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">TKL_RIL_ATTACH_INFO_T</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a04c077c900a2273dbfce8bd5d0706fee">   64</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a04c077c900a2273dbfce8bd5d0706fee">tkl_nbiot_ril_init</a>(VOID);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad126a255d5baaf03f4eaa337c0e1dc38">   74</a></span> OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad126a255d5baaf03f4eaa337c0e1dc38">tkl_nbiot_ril_register_event_callback</a>(TKL_RIL_EVENT_SEND_T evt_cb, <a class="code hl_struct" href="../../d2/d29/structTKL__RIL__EVENT__ID__T.html">TKL_RIL_EVENT_ID_T</a> *evt_id);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a48a0f4848b87bcf22179c0a826819787">   83</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a48a0f4848b87bcf22179c0a826819787">tkl_nbiot_ril_attach_event_inquire</a>(VOID);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a8f34f1c996845f12a2835a4c441a8c98">   90</a></span> BOOL_T <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a8f34f1c996845f12a2835a4c441a8c98">tkl_nbiot_ril_is_sim_ready</a>(VOID);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a05f5d1d3762f55300e6c076db1c4c351">   99</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a05f5d1d3762f55300e6c076db1c4c351">tkl_nbiot_ril_get_cesq</a>(<a class="code hl_struct" href="../../d7/d89/structTKL__RIL__CESQ__T.html">TKL_RIL_CESQ_T</a> *info);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a47bc0d975610b886e80a8617f5a97415">  108</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a47bc0d975610b886e80a8617f5a97415">tkl_nbiot_ril_get_t3324</a>(UINT_T *t3324);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a9f6808cb74298e21001e0719370a55be">  117</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a9f6808cb74298e21001e0719370a55be">tkl_nbiot_ril_get_t3412</a>(UINT_T *t3412);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a9802c869b66d7a76f50542c688c59667">  126</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a9802c869b66d7a76f50542c688c59667">tkl_nbiot_ril_set_t3412</a>(UINT_T req_time);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a11a6edd9268e3946e9b31a2a9045e493">  135</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a11a6edd9268e3946e9b31a2a9045e493">tkl_nbiot_ril_set_t3324</a>(UINT_T req_time);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a1f3d6216025f519c1526497f60892c14">  145</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a1f3d6216025f519c1526497f60892c14">tkl_nbiot_ril_set_apn</a>(PCHAR_T apn_name, PCHAR_T pdp_type);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#aace2683c3aaf031dc4c7418df22ae2ea">  154</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#aace2683c3aaf031dc4c7418df22ae2ea">tkl_nbiot_ril_get_apn</a>(PCHAR_T apn);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a8eaf5ab69704a3eafc099280bb9645df">  163</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a8eaf5ab69704a3eafc099280bb9645df">tkl_nbiot_ril_get_rssi</a>(INT_T *out_rssi);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#aa48c02f79054814a90205f7feedc7d04">  172</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#aa48c02f79054814a90205f7feedc7d04">tkl_nbiot_ril_get_imsi</a>(PCHAR_T imsi);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#af9ca31c95f89833515cfb1c5c47bfd20">  181</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#af9ca31c95f89833515cfb1c5c47bfd20">tkl_nbiot_ril_get_iccid</a>(PCHAR_T iccid);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad7aecfa9942a1aacbc2d40bf92c6f195">  190</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad7aecfa9942a1aacbc2d40bf92c6f195">tkl_nbiot_ril_get_plmn_info</a>(<a class="code hl_struct" href="../../d4/d48/structTKL__RIL__PLMN__T.html">TKL_RIL_PLMN_T</a> *plmn_info);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad78871c89b71d470395fb983f511c230">  199</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad78871c89b71d470395fb983f511c230">tkl_nbiot_ril_set_cfun</a>(UCHAR_T val);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a11b91aa1e186f3f6b3e06f796e91ed8f">  208</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a11b91aa1e186f3f6b3e06f796e91ed8f">tkl_nbiot_ril_get_cfun</a>(INT_T *val);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a28f2bafd4149eb184689e19956d62ef2">  217</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a28f2bafd4149eb184689e19956d62ef2">tkl_nbiot_ril_get_rf_flag</a>(INT_T *flag);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#adb8b20a921800d7d5fadc9a4ac13a04f">  226</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#adb8b20a921800d7d5fadc9a4ac13a04f">tkl_nbiot_ril_set_imei</a>(PCHAR_T imei);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#ae370b6a628ad43aa3badba9c2d383da1">  236</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#ae370b6a628ad43aa3badba9c2d383da1">tkl_nbiot_ril_get_imei</a>(PCHAR_T buf, UCHAR_T len);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a0fd68486c886f2a7922df1ec3eff6674">  245</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a0fd68486c886f2a7922df1ec3eff6674">tkl_nbiot_ril_release_rrc</a>(VOID);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a50faa3ccef3d9035918b17ab47c033aa">  254</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a50faa3ccef3d9035918b17ab47c033aa">tkl_nbiot_ril_set_band</a>(PCHAR_T band_array_str);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a1995031dacbdc92db9e01de45b650c13">  264</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a1995031dacbdc92db9e01de45b650c13">tkl_nbiot_ril_get_band</a>(PCHAR_T pbuf,  UCHAR_T len);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#a333cf291258f45e80dbe46ac10fb5d9e">  273</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#a333cf291258f45e80dbe46ac10fb5d9e">tkl_nbiot_ril_psm_mode_enable</a>(UCHAR_T enable);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad0b9a9a0e6a788b038cff0e4dafc1902">  282</a></span> OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#ad0b9a9a0e6a788b038cff0e4dafc1902">tkl_nbiot_ril_set_area_attach_info</a>(<a class="code hl_struct" href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">TKL_RIL_ATTACH_INFO_T</a> *<span class="keyword">operator</span>);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#aaa68fd5e90754770cb3e9ab1b93fbf16">  291</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#aaa68fd5e90754770cb3e9ab1b93fbf16">tkl_nbiot_ril_edrx_mode_enable</a>(UCHAR_T enable);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#ae424b04db4dfdc6fb011f76d68fcc2b9">  301</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#ae424b04db4dfdc6fb011f76d68fcc2b9">tkl_nbiot_ril_get_serving_cellid</a>(PCHAR_T pbuf,  UCHAR_T len);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="../../d8/d75/tkl__nbiot__ril_8h.html#aa2f4cd40e5697e706e1c46cb30a1702f">  311</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d75/tkl__nbiot__ril_8h.html#aa2f4cd40e5697e706e1c46cb30a1702f">tkl_nbiot_ril_get_neightbor_cellid</a>(<a class="code hl_struct" href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html">TKL_RIL_NEIGHBOR_CELL_INFO_T</a> **pbuf,  INT_T *out_num);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>}</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="ttc" id="astructTKL__RIL__ATTACH__INFO__T_html"><div class="ttname"><a href="../../d2/df6/structTKL__RIL__ATTACH__INFO__T.html">TKL_RIL_ATTACH_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:49</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html">TKL_RIL_CESQ_T</a></div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:33</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html_a505f4dbae8ed56dae38d9e99597ab2a6"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html#a505f4dbae8ed56dae38d9e99597ab2a6">TKL_RIL_CESQ_T::rsrp</a></div><div class="ttdeci">INT_T rsrp</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:39</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html_a81f2d202fa882e487ac32523492cd397"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html#a81f2d202fa882e487ac32523492cd397">TKL_RIL_CESQ_T::rxlev</a></div><div class="ttdeci">INT_T rxlev</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:34</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html_a9b468bca7fcc8eacb5f18a6191b08397"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html#a9b468bca7fcc8eacb5f18a6191b08397">TKL_RIL_CESQ_T::ecno</a></div><div class="ttdeci">INT_T ecno</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:37</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html_aadcca1cf3373b0b8ab407ebdadc64566"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html#aadcca1cf3373b0b8ab407ebdadc64566">TKL_RIL_CESQ_T::rsrq</a></div><div class="ttdeci">INT_T rsrq</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:38</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html_ac25b157ffd592ac636a3677b463aa42f"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html#ac25b157ffd592ac636a3677b463aa42f">TKL_RIL_CESQ_T::ber</a></div><div class="ttdeci">INT_T ber</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:35</div></div>
+<div class="ttc" id="astructTKL__RIL__CESQ__T_html_ac9fab3daa7767f467e68333dcd86fe35"><div class="ttname"><a href="../../d7/d89/structTKL__RIL__CESQ__T.html#ac9fab3daa7767f467e68333dcd86fe35">TKL_RIL_CESQ_T::rscp</a></div><div class="ttdeci">INT_T rscp</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:36</div></div>
+<div class="ttc" id="astructTKL__RIL__EVENT__ID__T_html"><div class="ttname"><a href="../../d2/d29/structTKL__RIL__EVENT__ID__T.html">TKL_RIL_EVENT_ID_T</a></div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:18</div></div>
+<div class="ttc" id="astructTKL__RIL__NEIGHBOR__CELL__INFO__T_html"><div class="ttname"><a href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html">TKL_RIL_NEIGHBOR_CELL_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:42</div></div>
+<div class="ttc" id="astructTKL__RIL__NEIGHBOR__CELL__INFO__T_html_a0e381001d32fbe7a7d14ae90af1e7e5b"><div class="ttname"><a href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#a0e381001d32fbe7a7d14ae90af1e7e5b">TKL_RIL_NEIGHBOR_CELL_INFO_T::nc_pci</a></div><div class="ttdeci">INT_T nc_pci</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:45</div></div>
+<div class="ttc" id="astructTKL__RIL__NEIGHBOR__CELL__INFO__T_html_a7b8cd2a18dcf2c6f8e2d3bac01573124"><div class="ttname"><a href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#a7b8cd2a18dcf2c6f8e2d3bac01573124">TKL_RIL_NEIGHBOR_CELL_INFO_T::nc_earfcn</a></div><div class="ttdeci">INT_T nc_earfcn</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:43</div></div>
+<div class="ttc" id="astructTKL__RIL__NEIGHBOR__CELL__INFO__T_html_ace97f682d7f6e1430ae96ae0a05e2ec0"><div class="ttname"><a href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#ace97f682d7f6e1430ae96ae0a05e2ec0">TKL_RIL_NEIGHBOR_CELL_INFO_T::nc_earfcn_offset</a></div><div class="ttdeci">INT_T nc_earfcn_offset</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:44</div></div>
+<div class="ttc" id="astructTKL__RIL__NEIGHBOR__CELL__INFO__T_html_af3cd974df6743b03a23e17b4aa9566d3"><div class="ttname"><a href="../../df/d30/structTKL__RIL__NEIGHBOR__CELL__INFO__T.html#af3cd974df6743b03a23e17b4aa9566d3">TKL_RIL_NEIGHBOR_CELL_INFO_T::nc_rsrp</a></div><div class="ttdeci">INT_T nc_rsrp</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:46</div></div>
+<div class="ttc" id="astructTKL__RIL__PLMN__T_html"><div class="ttname"><a href="../../d4/d48/structTKL__RIL__PLMN__T.html">TKL_RIL_PLMN_T</a></div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:26</div></div>
+<div class="ttc" id="astructTKL__RIL__PLMN__T_html_a2b90df25500e842deedf8e37166be8c1"><div class="ttname"><a href="../../d4/d48/structTKL__RIL__PLMN__T.html#a2b90df25500e842deedf8e37166be8c1">TKL_RIL_PLMN_T::mnc</a></div><div class="ttdeci">INT_T mnc</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:28</div></div>
+<div class="ttc" id="astructTKL__RIL__PLMN__T_html_af5138bd5b2fa0b2471dd6a319254bd27"><div class="ttname"><a href="../../d4/d48/structTKL__RIL__PLMN__T.html#af5138bd5b2fa0b2471dd6a319254bd27">TKL_RIL_PLMN_T::mcc</a></div><div class="ttdeci">INT_T mcc</div><div class="ttdef"><b>Definition:</b> tkl_nbiot_ril.h:27</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a04c077c900a2273dbfce8bd5d0706fee"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a04c077c900a2273dbfce8bd5d0706fee">tkl_nbiot_ril_init</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_init(VOID)</div><div class="ttdoc">ril驱动初始化</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a05f5d1d3762f55300e6c076db1c4c351"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a05f5d1d3762f55300e6c076db1c4c351">tkl_nbiot_ril_get_cesq</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_cesq(TKL_RIL_CESQ_T *info)</div><div class="ttdoc">获取当前设备cesq相关参数（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a0fd68486c886f2a7922df1ec3eff6674"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a0fd68486c886f2a7922df1ec3eff6674">tkl_nbiot_ril_release_rrc</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_release_rrc(VOID)</div><div class="ttdoc">根据3GPP标准释放RRC，提前退出网络连接态</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a11a6edd9268e3946e9b31a2a9045e493"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a11a6edd9268e3946e9b31a2a9045e493">tkl_nbiot_ril_set_t3324</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_t3324(UINT_T req_time)</div><div class="ttdoc">设置设备的T3324时间（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a11b91aa1e186f3f6b3e06f796e91ed8f"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a11b91aa1e186f3f6b3e06f796e91ed8f">tkl_nbiot_ril_get_cfun</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_cfun(INT_T *val)</div><div class="ttdoc">获取当前AT CFUN参数（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a1995031dacbdc92db9e01de45b650c13"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a1995031dacbdc92db9e01de45b650c13">tkl_nbiot_ril_get_band</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_band(PCHAR_T pbuf, UCHAR_T len)</div><div class="ttdoc">获取设备当前的频点（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a1f3d6216025f519c1526497f60892c14"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a1f3d6216025f519c1526497f60892c14">tkl_nbiot_ril_set_apn</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_apn(PCHAR_T apn_name, PCHAR_T pdp_type)</div><div class="ttdoc">设置当前的网络接入APN名称（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a28f2bafd4149eb184689e19956d62ef2"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a28f2bafd4149eb184689e19956d62ef2">tkl_nbiot_ril_get_rf_flag</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_rf_flag(INT_T *flag)</div><div class="ttdoc">获取当前rf是否校准（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a333cf291258f45e80dbe46ac10fb5d9e"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a333cf291258f45e80dbe46ac10fb5d9e">tkl_nbiot_ril_psm_mode_enable</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_psm_mode_enable(UCHAR_T enable)</div><div class="ttdoc">PSM模式配置，效果参考at+cpsms中psm开关（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a47bc0d975610b886e80a8617f5a97415"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a47bc0d975610b886e80a8617f5a97415">tkl_nbiot_ril_get_t3324</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_t3324(UINT_T *t3324)</div><div class="ttdoc">获取设备的T3324时间（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a48a0f4848b87bcf22179c0a826819787"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a48a0f4848b87bcf22179c0a826819787">tkl_nbiot_ril_attach_event_inquire</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_attach_event_inquire(VOID)</div><div class="ttdoc">查询ril层网络附着状态（建议异步处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a50faa3ccef3d9035918b17ab47c033aa"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a50faa3ccef3d9035918b17ab47c033aa">tkl_nbiot_ril_set_band</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_band(PCHAR_T band_array_str)</div><div class="ttdoc">设置频点（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a8eaf5ab69704a3eafc099280bb9645df"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a8eaf5ab69704a3eafc099280bb9645df">tkl_nbiot_ril_get_rssi</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_rssi(INT_T *out_rssi)</div><div class="ttdoc">获取设备接收信号强度值rssi（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a8f34f1c996845f12a2835a4c441a8c98"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a8f34f1c996845f12a2835a4c441a8c98">tkl_nbiot_ril_is_sim_ready</a></div><div class="ttdeci">BOOL_T tkl_nbiot_ril_is_sim_ready(VOID)</div><div class="ttdoc">获取当前设备是否识别到sim卡</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a9802c869b66d7a76f50542c688c59667"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a9802c869b66d7a76f50542c688c59667">tkl_nbiot_ril_set_t3412</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_t3412(UINT_T req_time)</div><div class="ttdoc">设置设备的T3412时间（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_a9f6808cb74298e21001e0719370a55be"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#a9f6808cb74298e21001e0719370a55be">tkl_nbiot_ril_get_t3412</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_t3412(UINT_T *t3412)</div><div class="ttdoc">获取设备的T3412时间（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_aa2f4cd40e5697e706e1c46cb30a1702f"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#aa2f4cd40e5697e706e1c46cb30a1702f">tkl_nbiot_ril_get_neightbor_cellid</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_neightbor_cellid(TKL_RIL_NEIGHBOR_CELL_INFO_T **pbuf, INT_T *out_num)</div><div class="ttdoc">获取设备附近基站信息（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_aa48c02f79054814a90205f7feedc7d04"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#aa48c02f79054814a90205f7feedc7d04">tkl_nbiot_ril_get_imsi</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_imsi(PCHAR_T imsi)</div><div class="ttdoc">获取当前设备的IMSI（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_aaa68fd5e90754770cb3e9ab1b93fbf16"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#aaa68fd5e90754770cb3e9ab1b93fbf16">tkl_nbiot_ril_edrx_mode_enable</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_edrx_mode_enable(UCHAR_T enable)</div><div class="ttdoc">EDRX使能/失能， 效果参考AT+CEDRXS（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_aace2683c3aaf031dc4c7418df22ae2ea"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#aace2683c3aaf031dc4c7418df22ae2ea">tkl_nbiot_ril_get_apn</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_apn(PCHAR_T apn)</div><div class="ttdoc">获取当前的网络接入APN名称（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_ad0b9a9a0e6a788b038cff0e4dafc1902"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad0b9a9a0e6a788b038cff0e4dafc1902">tkl_nbiot_ril_set_area_attach_info</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_area_attach_info(TKL_RIL_ATTACH_INFO_T *operator)</div><div class="ttdoc">设置指定地区网络附着的相关信息</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_ad126a255d5baaf03f4eaa337c0e1dc38"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad126a255d5baaf03f4eaa337c0e1dc38">tkl_nbiot_ril_register_event_callback</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_register_event_callback(TKL_RIL_EVENT_SEND_T evt_cb, TKL_RIL_EVENT_ID_T *evt_id)</div><div class="ttdoc">注册事件回调</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_ad78871c89b71d470395fb983f511c230"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad78871c89b71d470395fb983f511c230">tkl_nbiot_ril_set_cfun</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_cfun(UCHAR_T val)</div><div class="ttdoc">AT CFUN设置（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_ad7aecfa9942a1aacbc2d40bf92c6f195"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#ad7aecfa9942a1aacbc2d40bf92c6f195">tkl_nbiot_ril_get_plmn_info</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_plmn_info(TKL_RIL_PLMN_T *plmn_info)</div><div class="ttdoc">获取相关的国家码及运营商信息（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_adb8b20a921800d7d5fadc9a4ac13a04f"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#adb8b20a921800d7d5fadc9a4ac13a04f">tkl_nbiot_ril_set_imei</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_set_imei(PCHAR_T imei)</div><div class="ttdoc">将IMEI写入原厂NV</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_ae370b6a628ad43aa3badba9c2d383da1"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#ae370b6a628ad43aa3badba9c2d383da1">tkl_nbiot_ril_get_imei</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_imei(PCHAR_T buf, UCHAR_T len)</div><div class="ttdoc">从原厂NV获取实际的IMEI</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_ae424b04db4dfdc6fb011f76d68fcc2b9"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#ae424b04db4dfdc6fb011f76d68fcc2b9">tkl_nbiot_ril_get_serving_cellid</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_serving_cellid(PCHAR_T pbuf, UCHAR_T len)</div><div class="ttdoc">获取当前基站的id（建议阻塞处理）</div></div>
+<div class="ttc" id="atkl__nbiot__ril_8h_html_af9ca31c95f89833515cfb1c5c47bfd20"><div class="ttname"><a href="../../d8/d75/tkl__nbiot__ril_8h.html#af9ca31c95f89833515cfb1c5c47bfd20">tkl_nbiot_ril_get_iccid</a></div><div class="ttdeci">OPERATE_RET tkl_nbiot_ril_get_iccid(PCHAR_T iccid)</div><div class="ttdoc">获取当前设备的iccid（建议阻塞处理）</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/init/include/tkl_init_wifi.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_945761b91ca7d88d015bf5cfa152d494.html">init</a></li><li class="navelem"><a class="el" href="../../dir_4918dc50b8ab2b2df1b446be98ca6a02.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_init_wifi.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d16/tkl__init__wifi_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_INIT_WIFI_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_INIT_WIFI_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/ddb/tkl__wifi_8h.html">tkl_wifi.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef ENABLE_HOSTAPD</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;tkl_wifi_hostap.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../de/dae/structTKL__WIFI__DESC__T.html">   28</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    OPERATE_RET (*init)                         (<a class="code hl_typedef" href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">WIFI_EVENT_CB</a> cb);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    OPERATE_RET (*scan_ap)                      (CONST SCHAR_T *ssid, <a class="code hl_struct" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> **ap_ary, UINT_T *num);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    OPERATE_RET (*release_ap)                   (<a class="code hl_struct" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> *ap);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    OPERATE_RET (*start_ap)                     (CONST <a class="code hl_struct" href="../../d5/de4/structWF__AP__CFG__IF__S.html">WF_AP_CFG_IF_S</a> *cfg);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    OPERATE_RET (*stop_ap)                      (VOID_T);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    OPERATE_RET (*set_cur_channel)              (CONST UCHAR_T chan);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    OPERATE_RET (*get_cur_channel)              (UCHAR_T *chan);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    OPERATE_RET (*set_sniffer)                  (CONST BOOL_T en, CONST <a class="code hl_typedef" href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">SNIFFER_CALLBACK</a> cb);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    OPERATE_RET (*get_ip)                       (CONST <a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, <a class="code hl_struct" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    OPERATE_RET (*set_mac)                      (CONST <a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, CONST <a class="code hl_struct" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    OPERATE_RET (*get_mac)                      (CONST <a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, <a class="code hl_struct" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    OPERATE_RET (*set_work_mode)                (CONST <a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> mode);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    OPERATE_RET (*get_work_mode)                (<a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> *mode);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    OPERATE_RET (*get_connected_ap_info)        (<a class="code hl_struct" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> **fast_ap_info);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    OPERATE_RET (*get_bssid)                    (UCHAR_T *mac);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    OPERATE_RET (*set_country_code)             (CONST COUNTRY_CODE_E ccode);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    OPERATE_RET (*set_lp_mode)                  (CONST BOOL_T en, CONST UCHAR_T dtim);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    BOOL_T      (*set_rf_calibrated)            (VOID_T);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    OPERATE_RET (*station_fast_connect)         (CONST <a class="code hl_struct" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> *fast_ap_info);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    OPERATE_RET (*station_connect)              (CONST SCHAR_T *ssid, CONST SCHAR_T *passwd);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    OPERATE_RET (*station_disconnect)           (VOID_T);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    OPERATE_RET (*station_get_conn_ap_rssi)     (SCHAR_T *rssi);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    OPERATE_RET (*station_get_status)           (<a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a> *stat);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    OPERATE_RET (*send_mgnt)                    (CONST UCHAR_T *buf, CONST UINT_T len);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    OPERATE_RET (*register_recv_mgnt_callback)  (CONST BOOL_T enable, CONST <a class="code hl_typedef" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a> recv_cb);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    OPERATE_RET (*ioctl)                        (<a class="code hl_enumeration" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a> cmd,  VOID *args);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <a class="code hl_struct" href="../../de/dae/structTKL__WIFI__DESC__T.html">TKL_WIFI_DESC_T</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../da/d16/tkl__init__wifi_8h.html#a4684702f8e3b1d94df4ebfb58f1ce558">   62</a></span><a class="code hl_struct" href="../../de/dae/structTKL__WIFI__DESC__T.html">TKL_WIFI_DESC_T</a>* <a class="code hl_function" href="../../da/d16/tkl__init__wifi_8h.html#a4684702f8e3b1d94df4ebfb58f1ce558">tkl_wifi_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d3/db5/structTKL__WIFI__HOSTAP__DESC__T.html">   69</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        OPERATE_RET (*ioctl)                    (INT_T dev, INT_T vif_index, UINT_T cmd, ULONG_T arg);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <a class="code hl_struct" href="../../d3/db5/structTKL__WIFI__HOSTAP__DESC__T.html">TKL_WIFI_HOSTAP_DESC_T</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../da/d16/tkl__init__wifi_8h.html#acaabb830a3a56f840e852b52cc21081d">   78</a></span><a class="code hl_struct" href="../../d3/db5/structTKL__WIFI__HOSTAP__DESC__T.html">TKL_WIFI_HOSTAP_DESC_T</a>* <a class="code hl_function" href="../../da/d16/tkl__init__wifi_8h.html#acaabb830a3a56f840e852b52cc21081d">tkl_wifi_hostap_desc_get</a>(VOID_T);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">// __TKL_INIT_WIFI_H__</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="ttc" id="astructAP__IF__S_html"><div class="ttname"><a href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a></div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:24</div></div>
+<div class="ttc" id="astructFAST__WF__CONNECTED__AP__INFO__T_html"><div class="ttname"><a href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a></div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:101</div></div>
+<div class="ttc" id="astructNW__IP__S_html"><div class="ttname"><a href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:201</div></div>
+<div class="ttc" id="astructNW__MAC__S_html"><div class="ttname"><a href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:208</div></div>
+<div class="ttc" id="astructTKL__WIFI__DESC__T_html"><div class="ttname"><a href="../../de/dae/structTKL__WIFI__DESC__T.html">TKL_WIFI_DESC_T</a></div><div class="ttdoc">the description of tuya kernel adapter layer wifi api</div><div class="ttdef"><b>Definition:</b> tkl_init_wifi.h:28</div></div>
+<div class="ttc" id="astructTKL__WIFI__HOSTAP__DESC__T_html"><div class="ttname"><a href="../../d3/db5/structTKL__WIFI__HOSTAP__DESC__T.html">TKL_WIFI_HOSTAP_DESC_T</a></div><div class="ttdoc">the description of tuya kernel adapter layer wifi hostap api</div><div class="ttdef"><b>Definition:</b> tkl_init_wifi.h:69</div></div>
+<div class="ttc" id="astructWF__AP__CFG__IF__S_html"><div class="ttname"><a href="../../d5/de4/structWF__AP__CFG__IF__S.html">WF_AP_CFG_IF_S</a></div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:75</div></div>
+<div class="ttc" id="atkl__init__wifi_8h_html_a4684702f8e3b1d94df4ebfb58f1ce558"><div class="ttname"><a href="../../da/d16/tkl__init__wifi_8h.html#a4684702f8e3b1d94df4ebfb58f1ce558">tkl_wifi_desc_get</a></div><div class="ttdeci">TKL_WIFI_DESC_T * tkl_wifi_desc_get(VOID_T)</div><div class="ttdoc">register wifi description to tuya object manage</div></div>
+<div class="ttc" id="atkl__init__wifi_8h_html_acaabb830a3a56f840e852b52cc21081d"><div class="ttname"><a href="../../da/d16/tkl__init__wifi_8h.html#acaabb830a3a56f840e852b52cc21081d">tkl_wifi_hostap_desc_get</a></div><div class="ttdeci">TKL_WIFI_HOSTAP_DESC_T * tkl_wifi_hostap_desc_get(VOID_T)</div><div class="ttdoc">register wifi hostap description to tuya object manage</div></div>
+<div class="ttc" id="atkl__wifi_8h_html"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html">tkl_wifi.h</a></div><div class="ttdoc">Common process - adapter the wi-fi api</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_a18a34a7f37758e0e4f4b12ac99fb1e82"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a></div><div class="ttdeci">VOID_T(* WIFI_REV_MGNT_CB)(UCHAR_T *buf, UINT_T len)</div><div class="ttdoc">callback function: WIFI_REV_MGNT_CB when receive wifi management frame, notify tuyaos with this callb...</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:171</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_a224f2c57b0d7572ead60da6d5c918aba"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">WIFI_EVENT_CB</a></div><div class="ttdeci">VOID_T(* WIFI_EVENT_CB)(WF_EVENT_E event, VOID_T *arg)</div><div class="ttdoc">callback function: WIFI_STATUS_CHANGE_CB when wifi connect status changed, notify tuyaos with this ca...</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:179</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_a234d52fe87590dc48d5087ce92d75153"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a></div><div class="ttdeci">WF_IOCTL_CMD_E</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:142</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_a530e4e49af06998dc886844293cab8cc"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a></div><div class="ttdeci">WF_IF_E</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:45</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_a92db2c303158e06a11b06e1a27d14a02"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">SNIFFER_CALLBACK</a></div><div class="ttdeci">VOID_T(* SNIFFER_CALLBACK)(CONST UINT8_T *buf, CONST UINT16_T len, CONST INT8_T rssi)</div><div class="ttdoc">callback function: SNIFFER_CALLBACK when wifi sniffers package from air, notify tuyaos with this call...</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:162</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_ac7d2f1fa0399f809de7b01af96c64d0d"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a></div><div class="ttdeci">WF_WK_MD_E</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:65</div></div>
+<div class="ttc" id="atkl__wifi_8h_html_af62114fe9fa3487aadaa136276ce601d"><div class="ttname"><a href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a></div><div class="ttdeci">WF_STATION_STAT_E</div><div class="ttdef"><b>Definition:</b> tkl_wifi.h:89</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

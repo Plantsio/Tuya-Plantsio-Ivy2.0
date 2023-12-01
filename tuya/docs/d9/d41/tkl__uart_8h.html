@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/uart/include/tkl_uart.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_5fcd823f98e1b836416a29616160bb9e.html">uart</a></li><li class="navelem"><a class="el" href="../../dir_ff1dff8aa02e3e8a13f7420743cac414.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_uart.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the uart api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_uart.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d21/tkl__uart_8h__incl.png" border="0" usemap="#ainclude_2adapter_2uart_2include_2tkl__uart_8h" alt=""/></div>
+<map name="ainclude_2adapter_2uart_2include_2tkl__uart_8h" id="ainclude_2adapter_2uart_2include_2tkl__uart_8h">
+<area shape="rect" title="Common process &#45; adapter the uart api" alt="" coords="366,5,519,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dc3/tkl__uart_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2uart_2include_2tkl__uart_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2uart_2include_2tkl__uart_8hdep" id="ainclude_2adapter_2uart_2include_2tkl__uart_8hdep">
+<area shape="rect" title="Common process &#45; adapter the uart api" alt="" coords="46,5,199,47"/>
+<area shape="rect" href="../../d2/d40/tkl__cellular__base_8h.html" title="蜂窝模组基础功能API实现接口。" alt="" coords="5,95,240,136"/>
+<area shape="rect" href="../../df/d89/tkl__init__cellular_8h_source.html" title=" " alt="" coords="29,184,217,225"/>
+</map>
+</div>
+</div>
+<p><a href="../../d9/d41/tkl__uart_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3bd298db65cd99b7ec29c35123c62271"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a3bd298db65cd99b7ec29c35123c62271">tkl_uart_deinit</a> (TUYA_UART_NUM_E port_id)</td></tr>
+<tr class="memdesc:a3bd298db65cd99b7ec29c35123c62271"><td class="mdescLeft">&#160;</td><td class="mdescRight">uart deinit  <a href="../../d9/d41/tkl__uart_8h.html#a3bd298db65cd99b7ec29c35123c62271">更多...</a><br /></td></tr>
+<tr class="separator:a3bd298db65cd99b7ec29c35123c62271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73299fbc8e7e2d8627c3dd85d5db0c64"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">tkl_uart_init</a> (TUYA_UART_NUM_E port_id, <a class="el" href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html">TUYA_UART_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:a73299fbc8e7e2d8627c3dd85d5db0c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">uart init  <a href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">更多...</a><br /></td></tr>
+<tr class="separator:a73299fbc8e7e2d8627c3dd85d5db0c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2f6c7678f155b57fc63331d325fd96"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a9c2f6c7678f155b57fc63331d325fd96">tkl_uart_ioctl</a> (TUYA_UART_NUM_E port_id, UINT32_T cmd, VOID *arg)</td></tr>
+<tr class="memdesc:a9c2f6c7678f155b57fc63331d325fd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">uart control  <a href="../../d9/d41/tkl__uart_8h.html#a9c2f6c7678f155b57fc63331d325fd96">更多...</a><br /></td></tr>
+<tr class="separator:a9c2f6c7678f155b57fc63331d325fd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73452797d312a8366df4e9f2cbe0a089"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a73452797d312a8366df4e9f2cbe0a089">tkl_uart_read</a> (TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len)</td></tr>
+<tr class="memdesc:a73452797d312a8366df4e9f2cbe0a089"><td class="mdescLeft">&#160;</td><td class="mdescRight">uart read data  <a href="../../d9/d41/tkl__uart_8h.html#a73452797d312a8366df4e9f2cbe0a089">更多...</a><br /></td></tr>
+<tr class="separator:a73452797d312a8366df4e9f2cbe0a089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab526b1aee021064b510691bd95d06a14"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#ab526b1aee021064b510691bd95d06a14">tkl_uart_rx_irq_cb_reg</a> (TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB rx_cb)</td></tr>
+<tr class="memdesc:ab526b1aee021064b510691bd95d06a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable uart rx interrupt and regist interrupt callback  <a href="../../d9/d41/tkl__uart_8h.html#ab526b1aee021064b510691bd95d06a14">更多...</a><br /></td></tr>
+<tr class="separator:ab526b1aee021064b510691bd95d06a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee640bd28425fd058deba160ce48247"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#afee640bd28425fd058deba160ce48247">tkl_uart_set_rx_flowctrl</a> (TUYA_UART_NUM_E port_id, BOOL_T enable)</td></tr>
+<tr class="memdesc:afee640bd28425fd058deba160ce48247"><td class="mdescLeft">&#160;</td><td class="mdescRight">set uart receive flowcontrol  <a href="../../d9/d41/tkl__uart_8h.html#afee640bd28425fd058deba160ce48247">更多...</a><br /></td></tr>
+<tr class="separator:afee640bd28425fd058deba160ce48247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336c9ae88bc837a567826e0f25af0669"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a336c9ae88bc837a567826e0f25af0669">tkl_uart_set_tx_int</a> (TUYA_UART_NUM_E port_id, BOOL_T enable)</td></tr>
+<tr class="memdesc:a336c9ae88bc837a567826e0f25af0669"><td class="mdescLeft">&#160;</td><td class="mdescRight">set uart transmit interrupt status  <a href="../../d9/d41/tkl__uart_8h.html#a336c9ae88bc837a567826e0f25af0669">更多...</a><br /></td></tr>
+<tr class="separator:a336c9ae88bc837a567826e0f25af0669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab763a313b5dd290b986fcade69775561"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#ab763a313b5dd290b986fcade69775561">tkl_uart_tx_irq_cb_reg</a> (TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB tx_cb)</td></tr>
+<tr class="memdesc:ab763a313b5dd290b986fcade69775561"><td class="mdescLeft">&#160;</td><td class="mdescRight">regist uart tx interrupt callback If this function is called, it indicates that the data is sent asynchronously through interrupt, and then write is invoked to initiate asynchronous transmission.  <a href="../../d9/d41/tkl__uart_8h.html#ab763a313b5dd290b986fcade69775561">更多...</a><br /></td></tr>
+<tr class="separator:ab763a313b5dd290b986fcade69775561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d2a653102cfafd78ff113ed34a8012"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a61d2a653102cfafd78ff113ed34a8012">tkl_uart_wait_for_data</a> (TUYA_UART_NUM_E port_id, INT_T timeout_ms)</td></tr>
+<tr class="memdesc:a61d2a653102cfafd78ff113ed34a8012"><td class="mdescLeft">&#160;</td><td class="mdescRight">wait for uart data  <a href="../../d9/d41/tkl__uart_8h.html#a61d2a653102cfafd78ff113ed34a8012">更多...</a><br /></td></tr>
+<tr class="separator:a61d2a653102cfafd78ff113ed34a8012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7225a561d40ddb8a84014d51998c0e90"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">tkl_uart_write</a> (TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len)</td></tr>
+<tr class="memdesc:a7225a561d40ddb8a84014d51998c0e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">uart write data  <a href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">更多...</a><br /></td></tr>
+<tr class="separator:a7225a561d40ddb8a84014d51998c0e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the uart api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a3bd298db65cd99b7ec29c35123c62271" name="a3bd298db65cd99b7ec29c35123c62271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd298db65cd99b7ec29c35123c62271">&#9670;&nbsp;</a></span>tkl_uart_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_uart_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uart deinit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a73299fbc8e7e2d8627c3dd85d5db0c64" name="a73299fbc8e7e2d8627c3dd85d5db0c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73299fbc8e7e2d8627c3dd85d5db0c64">&#9670;&nbsp;</a></span>tkl_uart_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_uart_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html">TUYA_UART_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uart init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>uart config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9c2f6c7678f155b57fc63331d325fd96" name="a9c2f6c7678f155b57fc63331d325fd96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c2f6c7678f155b57fc63331d325fd96">&#9670;&nbsp;</a></span>tkl_uart_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_uart_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uart control </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uart</td><td>refer to tuya_uart_t </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>control command </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>command argument</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a73452797d312a8366df4e9f2cbe0a089" name="a73452797d312a8366df4e9f2cbe0a089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73452797d312a8366df4e9f2cbe0a089">&#9670;&nbsp;</a></span>tkl_uart_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tkl_uart_read </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uart read data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>read data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buff len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>return &gt;= 0: number of data read; return &lt; 0: read errror </dd></dl>
+
+</div>
+</div>
+<a id="ab526b1aee021064b510691bd95d06a14" name="ab526b1aee021064b510691bd95d06a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab526b1aee021064b510691bd95d06a14">&#9670;&nbsp;</a></span>tkl_uart_rx_irq_cb_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_uart_rx_irq_cb_reg </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_UART_IRQ_CB&#160;</td>
+          <td class="paramname"><em>rx_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable uart rx interrupt and regist interrupt callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_cb</td><td>receive callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="afee640bd28425fd058deba160ce48247" name="afee640bd28425fd058deba160ce48247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee640bd28425fd058deba160ce48247">&#9670;&nbsp;</a></span>tkl_uart_set_rx_flowctrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_uart_set_rx_flowctrl </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set uart receive flowcontrol </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>TRUE-enalbe rx flowcontrol, FALSE-disable rx flowcontrol</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a336c9ae88bc837a567826e0f25af0669" name="a336c9ae88bc837a567826e0f25af0669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336c9ae88bc837a567826e0f25af0669">&#9670;&nbsp;</a></span>tkl_uart_set_tx_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_uart_set_tx_int </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set uart transmit interrupt status </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>TRUE-enalbe tx int, FALSE-disable tx int</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab763a313b5dd290b986fcade69775561" name="ab763a313b5dd290b986fcade69775561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab763a313b5dd290b986fcade69775561">&#9670;&nbsp;</a></span>tkl_uart_tx_irq_cb_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tkl_uart_tx_irq_cb_reg </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_UART_IRQ_CB&#160;</td>
+          <td class="paramname"><em>tx_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>regist uart tx interrupt callback If this function is called, it indicates that the data is sent asynchronously through interrupt, and then write is invoked to initiate asynchronous transmission. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_cb</td><td>receive callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a61d2a653102cfafd78ff113ed34a8012" name="a61d2a653102cfafd78ff113ed34a8012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d2a653102cfafd78ff113ed34a8012">&#9670;&nbsp;</a></span>tkl_uart_wait_for_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_uart_wait_for_data </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wait for uart data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>the max wait time, unit is millisecond -1 : block indefinitely 0 : non-block &gt;0 : timeout in milliseconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7225a561d40ddb8a84014d51998c0e90" name="a7225a561d40ddb8a84014d51998c0e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7225a561d40ddb8a84014d51998c0e90">&#9670;&nbsp;</a></span>tkl_uart_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tkl_uart_write </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_UART_NUM_E&#160;</td>
+          <td class="paramname"><em>port_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uart write data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_id</td><td>uart port id, id index starts at 0 in linux platform, high 16 bits aslo means uart type, it's value must be one of the TUYA_UART_TYPE_E type the low 16bit - means uart port id you can input like this TUYA_UART_PORT_ID(TUYA_UART_SYS, 2) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>write buff </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buff len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>return &gt; 0: number of data written; return &lt;= 0: write errror </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

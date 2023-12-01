@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system_service/include/utilities/uni_log.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c9db1059777c15dc8c8b94b955097dc4.html">tal_system_service</a></li><li class="navelem"><a class="el" href="../../dir_679a7e65efb1f08b4e45cdf759445817.html">include</a></li><li class="navelem"><a class="el" href="../../dir_5ce89a17ae4f9dc97b44e6db9d34e655.html">utilities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">uni_log.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>provide log management api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tal_log.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+uni_log.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/de3/uni__log_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system__service_2include_2utilities_2uni__log_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system__service_2include_2utilities_2uni__log_8h" id="ainclude_2components_2tal__system__service_2include_2utilities_2uni__log_8h">
+<area shape="rect" title="provide log management api" alt="" coords="348,5,537,61"/>
+<area shape="rect" href="../../d6/de3/tal__log_8h_source.html" title=" " alt="" coords="403,109,482,136"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,184,517,211"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,432,285"/>
+<area shape="rect" title=" " alt="" coords="457,259,527,285"/>
+<area shape="rect" title=" " alt="" coords="552,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,730,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,259,893,285"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/de7/uni__log_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a948705a51da9c1bd22dcd79242784e19"><td class="memItemLeft" align="right" valign="top"><a id="a948705a51da9c1bd22dcd79242784e19" name="a948705a51da9c1bd22dcd79242784e19"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AddOutputTerm</b>&#160;&#160;&#160;tal_log_add_output_term</td></tr>
+<tr class="separator:a948705a51da9c1bd22dcd79242784e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fe3fee9e1bd2d59d53aa7f2c5378e3"><td class="memItemLeft" align="right" valign="top"><a id="ad7fe3fee9e1bd2d59d53aa7f2c5378e3" name="ad7fe3fee9e1bd2d59d53aa7f2c5378e3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLogManageAndInit</b>(level,  buf_len,  output)&#160;&#160;&#160;     tal_log_create_manage_and_init(level, buf_len, (TAL_LOG_OUTPUT_CB)output)</td></tr>
+<tr class="separator:ad7fe3fee9e1bd2d59d53aa7f2c5378e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa219373345036916b59481cd90866a5e"><td class="memItemLeft" align="right" valign="top"><a id="aa219373345036916b59481cd90866a5e" name="aa219373345036916b59481cd90866a5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DelOutputTerm</b>&#160;&#160;&#160;tal_log_del_output_term</td></tr>
+<tr class="separator:aa219373345036916b59481cd90866a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e732f1007dec774d4cfcb096d6e6904"><td class="memItemLeft" align="right" valign="top"><a id="a6e732f1007dec774d4cfcb096d6e6904" name="a6e732f1007dec774d4cfcb096d6e6904"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GetLogManageAttr</b>&#160;&#160;&#160;tal_log_get_log_manage_attr</td></tr>
+<tr class="separator:a6e732f1007dec774d4cfcb096d6e6904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb96400661d193eb3402795b8de8e334"><td class="memItemLeft" align="right" valign="top"><a id="aeb96400661d193eb3402795b8de8e334" name="aeb96400661d193eb3402795b8de8e334"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPR_DEBUG</b>(module,  fmt, ...)&#160;&#160;&#160;SAK_PRINT_LOG(module,TY_LOG_LEVEL_DEBUG, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:aeb96400661d193eb3402795b8de8e334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0831d0efed0766fdb733538cbd7c32"><td class="memItemLeft" align="right" valign="top"><a id="a2c0831d0efed0766fdb733538cbd7c32" name="a2c0831d0efed0766fdb733538cbd7c32"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPR_ERR</b>(module,  fmt, ...)&#160;&#160;&#160;SAK_PRINT_LOG(module,TY_LOG_LEVEL_ERR, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a2c0831d0efed0766fdb733538cbd7c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09ac852450ed88ad7952a5aaaabeb5e"><td class="memItemLeft" align="right" valign="top"><a id="ae09ac852450ed88ad7952a5aaaabeb5e" name="ae09ac852450ed88ad7952a5aaaabeb5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPR_INFO</b>(module,  fmt, ...)&#160;&#160;&#160;SAK_PRINT_LOG(module,TY_LOG_LEVEL_INFO, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:ae09ac852450ed88ad7952a5aaaabeb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e8c2fdf9049a956280e577317e72ce"><td class="memItemLeft" align="right" valign="top"><a id="ac9e8c2fdf9049a956280e577317e72ce" name="ac9e8c2fdf9049a956280e577317e72ce"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPR_NOTICE</b>(module,  fmt, ...)&#160;&#160;&#160;SAK_PRINT_LOG(module,TY_LOG_LEVEL_NOTICE, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:ac9e8c2fdf9049a956280e577317e72ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b50b47bdce980e5bd54c6d4e3d3f4f2"><td class="memItemLeft" align="right" valign="top"><a id="a3b50b47bdce980e5bd54c6d4e3d3f4f2" name="a3b50b47bdce980e5bd54c6d4e3d3f4f2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPR_TRACE</b>(module,  fmt, ...)&#160;&#160;&#160;SAK_PRINT_LOG(module,TY_LOG_LEVEL_TRACE, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a3b50b47bdce980e5bd54c6d4e3d3f4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217288d3733937e10f34bbe5dff11a34"><td class="memItemLeft" align="right" valign="top"><a id="a217288d3733937e10f34bbe5dff11a34" name="a217288d3733937e10f34bbe5dff11a34"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPR_WARN</b>(module,  fmt, ...)&#160;&#160;&#160;SAK_PRINT_LOG(module,TY_LOG_LEVEL_WARN, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a217288d3733937e10f34bbe5dff11a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9479f68e943be1a156534e1ca5d440"><td class="memItemLeft" align="right" valign="top"><a id="a1f9479f68e943be1a156534e1ca5d440" name="a1f9479f68e943be1a156534e1ca5d440"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_AUTOTEST</b>&#160;&#160;&#160;PR_NOTICE</td></tr>
+<tr class="separator:a1f9479f68e943be1a156534e1ca5d440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16908b165202bb9dd46aa1bc9a424d8"><td class="memItemLeft" align="right" valign="top"><a id="af16908b165202bb9dd46aa1bc9a424d8" name="af16908b165202bb9dd46aa1bc9a424d8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_DEBUG</b>(fmt, ...)&#160;&#160;&#160;SAK_PRINT_DEBUG_LOG(fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:af16908b165202bb9dd46aa1bc9a424d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e153e2e9f8a271df7df7db4fc1b831"><td class="memItemLeft" align="right" valign="top"><a id="af1e153e2e9f8a271df7df7db4fc1b831" name="af1e153e2e9f8a271df7df7db4fc1b831"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_DEBUG_RAW</b>(fmt, ...)</td></tr>
+<tr class="separator:af1e153e2e9f8a271df7df7db4fc1b831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ac72d83e4129455a2747a341e7c756"><td class="memItemLeft" align="right" valign="top"><a id="a58ac72d83e4129455a2747a341e7c756" name="a58ac72d83e4129455a2747a341e7c756"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_ERR</b>(fmt, ...)&#160;&#160;&#160;SAK_PRINT_ERR_LOG(fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a58ac72d83e4129455a2747a341e7c756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aa7acee1f81226abafd1450e59a6b0"><td class="memItemLeft" align="right" valign="top"><a id="a52aa7acee1f81226abafd1450e59a6b0" name="a52aa7acee1f81226abafd1450e59a6b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_INFO</b>(fmt, ...)&#160;&#160;&#160;SAK_PRINT_INFO_LOG(fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a52aa7acee1f81226abafd1450e59a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cac3c6108a1bd03d9fd065bdae6d4a"><td class="memItemLeft" align="right" valign="top"><a id="a81cac3c6108a1bd03d9fd065bdae6d4a" name="a81cac3c6108a1bd03d9fd065bdae6d4a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_NOTICE</b>(fmt, ...)&#160;&#160;&#160;SAK_PRINT_NOTICE_LOG(fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a81cac3c6108a1bd03d9fd065bdae6d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcb7ace6fd0391a05d4e72cc2a24369"><td class="memItemLeft" align="right" valign="top"><a id="aafcb7ace6fd0391a05d4e72cc2a24369" name="aafcb7ace6fd0391a05d4e72cc2a24369"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_TRACE</b>(fmt, ...)&#160;&#160;&#160;SAK_PRINT_TRACE_LOG(fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:aafcb7ace6fd0391a05d4e72cc2a24369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f39c712b6e275396573947893cfe17a"><td class="memItemLeft" align="right" valign="top"><a id="a2f39c712b6e275396573947893cfe17a" name="a2f39c712b6e275396573947893cfe17a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_TRACE_ENTER</b>()&#160;&#160;&#160;PR_TRACE(&quot;enter [%s]&quot;, (const char*)__func__)</td></tr>
+<tr class="separator:a2f39c712b6e275396573947893cfe17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd6364338d0b238c1dc563a42f82c1e"><td class="memItemLeft" align="right" valign="top"><a id="a5dd6364338d0b238c1dc563a42f82c1e" name="a5dd6364338d0b238c1dc563a42f82c1e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_TRACE_LEAVE</b>()&#160;&#160;&#160;PR_TRACE(&quot;leave [%s]&quot;, (const char*)__func__)</td></tr>
+<tr class="separator:a5dd6364338d0b238c1dc563a42f82c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24658bb1dc7e8e66017ddc5730562851"><td class="memItemLeft" align="right" valign="top"><a id="a24658bb1dc7e8e66017ddc5730562851" name="a24658bb1dc7e8e66017ddc5730562851"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PR_WARN</b>(fmt, ...)&#160;&#160;&#160;SAK_PRINT_WARN_LOG(fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a24658bb1dc7e8e66017ddc5730562851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73bb5b46bf32d77d150ca27497b93adf"><td class="memItemLeft" align="right" valign="top"><a id="a73bb5b46bf32d77d150ca27497b93adf" name="a73bb5b46bf32d77d150ca27497b93adf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PrintLogRaw</b>&#160;&#160;&#160;tal_log_print_raw</td></tr>
+<tr class="separator:a73bb5b46bf32d77d150ca27497b93adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d6227ad71ce87e05d285830b659b4a"><td class="memItemLeft" align="right" valign="top"><a id="ac5d6227ad71ce87e05d285830b659b4a" name="ac5d6227ad71ce87e05d285830b659b4a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_DEBUG_LOG</b>(fmt, ...)&#160;&#160;&#160;PrintDebugLog(_THIS_FILE_NAME_, __LINE__,fmt,##__VA_ARGS__)</td></tr>
+<tr class="separator:ac5d6227ad71ce87e05d285830b659b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975db4108021a1799994123595d206c4"><td class="memItemLeft" align="right" valign="top"><a id="a975db4108021a1799994123595d206c4" name="a975db4108021a1799994123595d206c4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_ERR_LOG</b>(fmt, ...)&#160;&#160;&#160;PrintErrLog(_THIS_FILE_NAME_, __LINE__, fmt,##__VA_ARGS__)</td></tr>
+<tr class="separator:a975db4108021a1799994123595d206c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb19f508eccb03f1f5ed7342d94dd73"><td class="memItemLeft" align="right" valign="top"><a id="a1fb19f508eccb03f1f5ed7342d94dd73" name="a1fb19f508eccb03f1f5ed7342d94dd73"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_INFO_LOG</b>(fmt, ...)&#160;&#160;&#160;PrintInfoLog(_THIS_FILE_NAME_, __LINE__,fmt,##__VA_ARGS__)</td></tr>
+<tr class="separator:a1fb19f508eccb03f1f5ed7342d94dd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d69624a3ed005a0f51af8a0c260a930"><td class="memItemLeft" align="right" valign="top"><a id="a1d69624a3ed005a0f51af8a0c260a930" name="a1d69624a3ed005a0f51af8a0c260a930"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_LOG</b>(module,  level,  fmt, ...)&#160;&#160;&#160;     tal_log_module_print(module, level, _THIS_FILE_NAME_ , __LINE__, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:a1d69624a3ed005a0f51af8a0c260a930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46201244f47bc779d465f60c7422f33"><td class="memItemLeft" align="right" valign="top"><a id="ad46201244f47bc779d465f60c7422f33" name="ad46201244f47bc779d465f60c7422f33"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_NOTICE_LOG</b>(fmt, ...)&#160;&#160;&#160;PrintNoticeLog(_THIS_FILE_NAME_, __LINE__,fmt,##__VA_ARGS__)</td></tr>
+<tr class="separator:ad46201244f47bc779d465f60c7422f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f57aada9c51be989f1aaa5cb9fa35b"><td class="memItemLeft" align="right" valign="top"><a id="a80f57aada9c51be989f1aaa5cb9fa35b" name="a80f57aada9c51be989f1aaa5cb9fa35b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_TRACE_LOG</b>(fmt, ...)&#160;&#160;&#160;PrintTraceLog(_THIS_FILE_NAME_, __LINE__,fmt,##__VA_ARGS__)</td></tr>
+<tr class="separator:a80f57aada9c51be989f1aaa5cb9fa35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413a4a9ddb2f8aee3bcd1e85b658bc79"><td class="memItemLeft" align="right" valign="top"><a id="a413a4a9ddb2f8aee3bcd1e85b658bc79" name="a413a4a9ddb2f8aee3bcd1e85b658bc79"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAK_PRINT_WARN_LOG</b>(fmt, ...)&#160;&#160;&#160;PrintWarnLog(_THIS_FILE_NAME_, __LINE__,fmt,##__VA_ARGS__)</td></tr>
+<tr class="separator:a413a4a9ddb2f8aee3bcd1e85b658bc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada96b9d6bc0bed6879d45db3baab005b"><td class="memItemLeft" align="right" valign="top"><a id="ada96b9d6bc0bed6879d45db3baab005b" name="ada96b9d6bc0bed6879d45db3baab005b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SET_PR_DEBUG_LEVEL</b>(level)&#160;&#160;&#160;SetLogManageAttr(level)</td></tr>
+<tr class="separator:ada96b9d6bc0bed6879d45db3baab005b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa029f0d9d6a658e94831ab7ea612bdfd"><td class="memItemLeft" align="right" valign="top"><a id="aa029f0d9d6a658e94831ab7ea612bdfd" name="aa029f0d9d6a658e94831ab7ea612bdfd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogManageAttr</b>&#160;&#160;&#160;tal_log_set_manage_attr</td></tr>
+<tr class="separator:aa029f0d9d6a658e94831ab7ea612bdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7f44f18bf2d4bbceb4ce843331ba1d"><td class="memItemLeft" align="right" valign="top"><a id="a5f7f44f18bf2d4bbceb4ce843331ba1d" name="a5f7f44f18bf2d4bbceb4ce843331ba1d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogManagemtime</b>&#160;&#160;&#160;tal_log_set_manage_ms_info</td></tr>
+<tr class="separator:a5f7f44f18bf2d4bbceb4ce843331ba1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006aed628bdbb18785dce9b25103d1b4"><td class="memItemLeft" align="right" valign="top"><a id="a006aed628bdbb18785dce9b25103d1b4" name="a006aed628bdbb18785dce9b25103d1b4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_debug_hex_dump</b>(title,  width,  buf,  size)&#160;&#160;&#160;     tal_log_hex_dump(TAL_LOG_LEVEL_DEBUG, _THIS_FILE_NAME_, __LINE__, title, width, buf, size)</td></tr>
+<tr class="separator:a006aed628bdbb18785dce9b25103d1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b296ece3148d6d8678911130a0f8e6"><td class="memItemLeft" align="right" valign="top"><a id="a19b296ece3148d6d8678911130a0f8e6" name="a19b296ece3148d6d8678911130a0f8e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_REDUCE_BIN_LEVEL1</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a19b296ece3148d6d8678911130a0f8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6117e122f23938709755fb89cf1412"><td class="memItemLeft" align="right" valign="top"><a id="a6e6117e122f23938709755fb89cf1412" name="a6e6117e122f23938709755fb89cf1412"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_REDUCE_BIN_LEVEL2</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a6e6117e122f23938709755fb89cf1412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9d7ee9ec18982c537e379633b36067"><td class="memItemLeft" align="right" valign="top"><a id="aca9d7ee9ec18982c537e379633b36067" name="aca9d7ee9ec18982c537e379633b36067"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_REDUCE_BIN_LEVEL3</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:aca9d7ee9ec18982c537e379633b36067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8654d2b82d002352d6ef68830c0a35"><td class="memItemLeft" align="right" valign="top"><a id="a1f8654d2b82d002352d6ef68830c0a35" name="a1f8654d2b82d002352d6ef68830c0a35"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_DEAULT_LOG_LEVEL</b>&#160;&#160;&#160;TY_LOG_LEVEL_INFO</td></tr>
+<tr class="separator:a1f8654d2b82d002352d6ef68830c0a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085918ab9b88561b9c8dfa5534c8e525"><td class="memItemLeft" align="right" valign="top"><a id="a085918ab9b88561b9c8dfa5534c8e525" name="a085918ab9b88561b9c8dfa5534c8e525"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_LOG_LEVEL_DEBUG</b>&#160;&#160;&#160;TAL_LOG_LEVEL_DEBUG</td></tr>
+<tr class="separator:a085918ab9b88561b9c8dfa5534c8e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd9c6a1c9adc1cdf70695cf94c4e0bb"><td class="memItemLeft" align="right" valign="top"><a id="a8cd9c6a1c9adc1cdf70695cf94c4e0bb" name="a8cd9c6a1c9adc1cdf70695cf94c4e0bb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_LOG_LEVEL_ERR</b>&#160;&#160;&#160;TAL_LOG_LEVEL_ERR</td></tr>
+<tr class="separator:a8cd9c6a1c9adc1cdf70695cf94c4e0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9928e62591a12bc9e1b97a7b2f4cc284"><td class="memItemLeft" align="right" valign="top"><a id="a9928e62591a12bc9e1b97a7b2f4cc284" name="a9928e62591a12bc9e1b97a7b2f4cc284"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_LOG_LEVEL_INFO</b>&#160;&#160;&#160;TAL_LOG_LEVEL_INFO</td></tr>
+<tr class="separator:a9928e62591a12bc9e1b97a7b2f4cc284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5155cc994849b18616c1be2e0844539a"><td class="memItemLeft" align="right" valign="top"><a id="a5155cc994849b18616c1be2e0844539a" name="a5155cc994849b18616c1be2e0844539a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_LOG_LEVEL_NOTICE</b>&#160;&#160;&#160;TAL_LOG_LEVEL_NOTICE</td></tr>
+<tr class="separator:a5155cc994849b18616c1be2e0844539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabda045a94a7fe5f84c4a663d3e389fc"><td class="memItemLeft" align="right" valign="top"><a id="aabda045a94a7fe5f84c4a663d3e389fc" name="aabda045a94a7fe5f84c4a663d3e389fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_LOG_LEVEL_TRACE</b>&#160;&#160;&#160;TAL_LOG_LEVEL_TRACE</td></tr>
+<tr class="separator:aabda045a94a7fe5f84c4a663d3e389fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebe3ec79f4325d68aa515fbced1acd8"><td class="memItemLeft" align="right" valign="top"><a id="a5ebe3ec79f4325d68aa515fbced1acd8" name="a5ebe3ec79f4325d68aa515fbced1acd8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TY_LOG_LEVEL_WARN</b>&#160;&#160;&#160;TAL_LOG_LEVEL_WARN</td></tr>
+<tr class="separator:a5ebe3ec79f4325d68aa515fbced1acd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa35f012089bffe6560d6e415483ad07f"><td class="memItemLeft" align="right" valign="top"><a id="aa35f012089bffe6560d6e415483ad07f" name="aa35f012089bffe6560d6e415483ad07f"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>PrintDebugLog</b> (CHAR_T *pFile, UINT_T line, CHAR_T *pFmt,...)</td></tr>
+<tr class="separator:aa35f012089bffe6560d6e415483ad07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5102d566f34179f32a604be94cfc10"><td class="memItemLeft" align="right" valign="top"><a id="a2f5102d566f34179f32a604be94cfc10" name="a2f5102d566f34179f32a604be94cfc10"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>PrintErrLog</b> (CHAR_T *pFile, UINT_T line, CHAR_T *pFmt,...)</td></tr>
+<tr class="separator:a2f5102d566f34179f32a604be94cfc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2504ea8bd90780ada025ebe5a20f2b4"><td class="memItemLeft" align="right" valign="top"><a id="ad2504ea8bd90780ada025ebe5a20f2b4" name="ad2504ea8bd90780ada025ebe5a20f2b4"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>PrintInfoLog</b> (CHAR_T *pFile, UINT_T line, CHAR_T *pFmt,...)</td></tr>
+<tr class="separator:ad2504ea8bd90780ada025ebe5a20f2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef9b46dbe6764afb6dad13022906639"><td class="memItemLeft" align="right" valign="top"><a id="acef9b46dbe6764afb6dad13022906639" name="acef9b46dbe6764afb6dad13022906639"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>PrintNoticeLog</b> (CHAR_T *pFile, UINT_T line, CHAR_T *pFmt,...)</td></tr>
+<tr class="separator:acef9b46dbe6764afb6dad13022906639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f5d70654620f4484593c43cbc3c03e"><td class="memItemLeft" align="right" valign="top"><a id="a81f5d70654620f4484593c43cbc3c03e" name="a81f5d70654620f4484593c43cbc3c03e"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>PrintTraceLog</b> (CHAR_T *pFile, UINT_T line, CHAR_T *pFmt,...)</td></tr>
+<tr class="separator:a81f5d70654620f4484593c43cbc3c03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50caec470f11abcd39367315978771e3"><td class="memItemLeft" align="right" valign="top"><a id="a50caec470f11abcd39367315978771e3" name="a50caec470f11abcd39367315978771e3"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>PrintWarnLog</b> (CHAR_T *pFile, UINT_T line, CHAR_T *pFmt,...)</td></tr>
+<tr class="separator:a50caec470f11abcd39367315978771e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >provide log management api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2018-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2018-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

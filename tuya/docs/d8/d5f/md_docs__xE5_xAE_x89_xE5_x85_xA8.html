@@ -1,0 +1,1136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 安全</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">安全 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >安全组件中主要包含以下三个文件</p><ul>
+<li>非对称加密功能 <code><a class="el" href="../../df/d64/tal__asymmetrical_8h.html" title="Common process - adapter the asymmetrical api provide by OS">tal_asymmetrical.h</a></code> <br  />
+</li>
+<li>哈希功能 <code><a class="el" href="../../db/d54/tal__hash_8h.html" title="Common process - adapter the hash api provide by OS">tal_hash.h</a></code></li>
+<li>对称加密功能 <code><a class="el" href="../../d4/d7c/tal__symmetry_8h.html" title="Common process - adapter the symmetry api provide by OS">tal_symmetry.h</a></code></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md109"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md110"></a>
+哈希功能</h2>
+<h3><a class="anchor" id="autotoc_md111"></a>
+tal_sha256_create_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_sha256_create_init( TKL_HASH_HANDLE *ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>创建和初始化sha256上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: sha256上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md112"></a>
+tal_sha256_free</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_sha256_free( TKL_HASH_HANDLE ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>清除并释放sha256上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: sha256上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md113"></a>
+tal_sha256_starts_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_sha256_starts_ret( TKL_HASH_HANDLE ctx, INT32_T is224 );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>启动 sha224 或 sha256 校验和计算。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: sha256哈希上下文。</li>
+<li><code>is224</code>: 需计算sha256时为0，需计算sha224时为1。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md114"></a>
+tal_sha256_update_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_sha256_update_ret( TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>将输入缓冲区提供给正在进行的 sha256 校验和计算。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 使用的上下文。</li>
+<li><code>input</code>: 长度为 ilen 字节的可读缓冲区。</li>
+<li><code>ilen</code>: 接收数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md115"></a>
+tal_sha256_finish_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_sha256_finish_ret( TKL_HASH_HANDLE ctx, UINT8_T output[32] );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>完成sha256操作，并将结果写入输出缓冲区。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 使用的上下文。</li>
+<li><code>output</code>: 长度为 32 字节的可写缓冲区。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md116"></a>
+tal_md5_create_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_md5_create_init( TKL_HASH_HANDLE *ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>创建和初始化MD5上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: MD5上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md117"></a>
+tal_md5_free</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_md5_free( TKL_HASH_HANDLE ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>清除并释放MD5上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: MD5上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md118"></a>
+tal_md5_starts_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_md5_starts_ret( TKL_HASH_HANDLE ctx);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>启动 MD5 校验和计算。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: MD5上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md119"></a>
+tal_md5_update_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_md5_update_ret( TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>将输入缓冲区提供给正在进行的 MD5 校验和计算。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 使用的上下文。</li>
+<li><code>input</code>: 长度为 ilen 字节的可读缓冲区。</li>
+<li><code>ilen</code>: 接收数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md120"></a>
+tal_md5_finish_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_md5_finish_ret( TKL_HASH_HANDLE ctx, UINT8_T output[16] );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>完成MD5操作，并将结果写入输出缓冲区。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 使用的上下文。</li>
+<li><code>output</code>: 长度为 16 字节的可写缓冲区。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md121"></a>
+tal_sha1_create_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_sha1_create_init( TKL_HASH_HANDLE *ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>创建和初始化sha1上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: sha1上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md122"></a>
+tal_sha1_free</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_sha1_free( TKL_HASH_HANDLE ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>清除并释放sha1上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: sha1上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md123"></a>
+tal_sha1_starts_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET tal_sha1_starts_ret( TKL_HASH_HANDLE ctx);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>启动 sha1 校验和计算。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: sha1上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md124"></a>
+tal_sha1_update_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_sha1_update_ret( TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>将输入缓冲区提供给正在进行的 sha1 校验和计算。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 使用的上下文。</li>
+<li><code>input</code>: 长度为 ilen 字节的可读缓冲区。</li>
+<li><code>ilen</code>: 接收数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md125"></a>
+tal_sha1_finish_ret</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_sha1_finish_ret( TKL_HASH_HANDLE ctx, UINT8_T output[20] );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>完成sha1操作，并将结果写入输出缓冲区。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 使用的上下文。</li>
+<li><code>output</code>: 长度为 20 字节的可写缓冲区。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md126"></a>
+对称加密功能</h2>
+<h3><a class="anchor" id="autotoc_md127"></a>
+tal_aes_create_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_aes_create_init( TKL_SYMMETRY_HANDLE *ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>创建和初始化aes上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: aes上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md128"></a>
+tal_aes_free</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_aes_free( TKL_SYMMETRY_HANDLE ctx );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>清除并释放aes上下文。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: aes上下文。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md129"></a>
+tal_aes_setkey_enc</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_aes_setkey_enc( TKL_SYMMETRY_HANDLE ctx, const UINT8_T *key, UINT32_T keybits );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>设置aes加密密钥。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 加密密钥上下文。</li>
+<li><code>key</code>: 加密密钥。</li>
+<li><code>keybits</code>: 以位为单位传递的数据大小。128bits/192bits/256bits是合法值。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md130"></a>
+tal_aes_setkey_dec</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_aes_setkey_dec( TKL_SYMMETRY_HANDLE ctx, const UINT8_T *key, UINT32_T keybits );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>设置aes解密密钥。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 解密密钥上下文。</li>
+<li><code>key</code>: 解密密钥。</li>
+<li><code>keybits</code>: 以位为单位传递的数据大小。128bits/192bits/256bits是合法值。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md131"></a>
+tal_aes_crypt_ecb</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_aes_crypt_ecb( TKL_SYMMETRY_HANDLE ctx,</div>
+<div class="line">                                INT32_T mode,</div>
+<div class="line">                                size_t length,</div>
+<div class="line">                                const UINT8_T *input,</div>
+<div class="line">                                UINT8_T *output );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>执行 AES 加密或解密操作。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 已初始化的用于加密或解密的 AES 上下文。</li>
+<li><code>mode</code>: AES操作。解密为0，加密为1.</li>
+<li><code>length</code>: 输入数据的长度（以字节为单位）。 这必须是块大小的倍数。</li>
+<li><code>input</code>: 长度为 length 字节的可读缓冲区。</li>
+<li><code>output</code>: 长度为 length 字节的可写缓冲区。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md132"></a>
+tal_aes_crypt_cbc</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tal_aes_crypt_cbc( TKL_SYMMETRY_HANDLE ctx,</div>
+<div class="line">                                INT32_T mode,</div>
+<div class="line">                                size_t length,</div>
+<div class="line">                                UINT8_T iv[16],</div>
+<div class="line">                                const UINT8_T *input,</div>
+<div class="line">                                UINT8_T *output );</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>此函数对完整块执行 AES-CBC 加密或解密操作。 <br  />
+ 它对 input 中定义的输入数据缓冲区执行 mode （加密/解密）中定义的操作。 <br  />
+ 它可以根据需要多次调用，直到处理完所有输入数据。 <br  />
+ tkl_aes_init() 和 <a class="el" href="../../d1/dec/tkl__symmetry_8h.html#a6bad85cc051555bc900d1f733af87c3e" title="This function sets the encryption key.">tkl_aes_setkey_enc()</a> 或 <a class="el" href="../../d1/dec/tkl__symmetry_8h.html#a2254589a9e30ecce65b2b25da12d74a7" title="This function sets the decryption key.">tkl_aes_setkey_dec()</a> 必须在第一次调用具有相同上下文的此 API 之前调用。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>ctx</code>: 已初始化的用于加密或解密的 AES 上下文。</li>
+<li><code>mode</code>: AES操作。解密为0，加密为1.</li>
+<li><code>length</code>: 输入数据的长度（以字节为单位）。 这必须是块大小的倍数。</li>
+<li><code>iv</code>: 初始化向量（使用后更新）。必须是 16 Bytes的可读写缓冲区。</li>
+<li><code>input</code>: 长度为 length 字节的可读缓冲区。</li>
+<li><code>output</code>: 长度为 length 字节的可写缓冲区。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md133"></a>
+示例</h1>
+<h2><a class="anchor" id="autotoc_md134"></a>
+aes示例</h2>
+<div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * AES test vectors from:</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> * http://csrc.nist.gov/archive/aes/rijndael/rijndael-vals.zip</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_ecb_dec[3][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0x44, 0x41, 0x6A, 0xC2, 0xD1, 0xF5, 0x3C, 0x58,</div>
+<div class="line">      0x33, 0x03, 0x91, 0x7E, 0x6B, 0xE9, 0xEB, 0xE0 },</div>
+<div class="line">    { 0x48, 0xE3, 0x1E, 0x9E, 0x25, 0x67, 0x18, 0xF2,</div>
+<div class="line">      0x92, 0x29, 0x31, 0x9C, 0x19, 0xF1, 0x5B, 0xA4 },</div>
+<div class="line">    { 0x05, 0x8C, 0xCF, 0xFD, 0xBB, 0xCB, 0x38, 0x2D,</div>
+<div class="line">      0x1F, 0x6F, 0x56, 0x58, 0x5D, 0x8A, 0x4A, 0xDE }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_ecb_enc[3][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0xC3, 0x4C, 0x05, 0x2C, 0xC0, 0xDA, 0x8D, 0x73,</div>
+<div class="line">      0x45, 0x1A, 0xFE, 0x5F, 0x03, 0xBE, 0x29, 0x7F },</div>
+<div class="line">    { 0xF3, 0xF6, 0x75, 0x2A, 0xE8, 0xD7, 0x83, 0x11,</div>
+<div class="line">      0x38, 0xF0, 0x41, 0x56, 0x06, 0x31, 0xB1, 0x14 },</div>
+<div class="line">    { 0x8B, 0x79, 0xEE, 0xCC, 0x93, 0xA0, 0xEE, 0x5D,</div>
+<div class="line">      0xFF, 0x30, 0xB4, 0xEA, 0x21, 0x63, 0x6D, 0xA4 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_cbc_dec[3][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0xFA, 0xCA, 0x37, 0xE0, 0xB0, 0xC8, 0x53, 0x73,</div>
+<div class="line">      0xDF, 0x70, 0x6E, 0x73, 0xF7, 0xC9, 0xAF, 0x86 },</div>
+<div class="line">    { 0x5D, 0xF6, 0x78, 0xDD, 0x17, 0xBA, 0x4E, 0x75,</div>
+<div class="line">      0xB6, 0x17, 0x68, 0xC6, 0xAD, 0xEF, 0x7C, 0x7B },</div>
+<div class="line">    { 0x48, 0x04, 0xE1, 0x81, 0x8F, 0xE6, 0x29, 0x75,</div>
+<div class="line">      0x19, 0xA3, 0xE8, 0x8C, 0x57, 0x31, 0x04, 0x13 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_cbc_enc[3][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0x8A, 0x05, 0xFC, 0x5E, 0x09, 0x5A, 0xF4, 0x84,</div>
+<div class="line">      0x8A, 0x08, 0xD3, 0x28, 0xD3, 0x68, 0x8E, 0x3D },</div>
+<div class="line">    { 0x7B, 0xD9, 0x66, 0xD5, 0x3A, 0xD8, 0xC1, 0xBB,</div>
+<div class="line">      0x85, 0xD2, 0xAD, 0xFA, 0xE8, 0x7B, 0xB1, 0x04 },</div>
+<div class="line">    { 0xFE, 0x3C, 0x53, 0x65, 0x3E, 0x2F, 0x45, 0xB5,</div>
+<div class="line">      0x6F, 0xCD, 0x88, 0xB2, 0xCC, 0x89, 0x8F, 0xF0 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * AES-CTR test vectors from:</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> * http://www.faqs.org/rfcs/rfc3686.html</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_ctr_key[3][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0xAE, 0x68, 0x52, 0xF8, 0x12, 0x10, 0x67, 0xCC,</div>
+<div class="line">      0x4B, 0xF7, 0xA5, 0x76, 0x55, 0x77, 0xF3, 0x9E },</div>
+<div class="line">    { 0x7E, 0x24, 0x06, 0x78, 0x17, 0xFA, 0xE0, 0xD7,</div>
+<div class="line">      0x43, 0xD6, 0xCE, 0x1F, 0x32, 0x53, 0x91, 0x63 },</div>
+<div class="line">    { 0x76, 0x91, 0xBE, 0x03, 0x5E, 0x50, 0x20, 0xA8,</div>
+<div class="line">      0xAC, 0x6E, 0x61, 0x85, 0x29, 0xF9, 0xA0, 0xDC }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_ctr_nonce_counter[3][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 },</div>
+<div class="line">    { 0x00, 0x6C, 0xB6, 0xDB, 0xC0, 0x54, 0x3B, 0x59,</div>
+<div class="line">      0xDA, 0x48, 0xD9, 0x0B, 0x00, 0x00, 0x00, 0x01 },</div>
+<div class="line">    { 0x00, 0xE0, 0x01, 0x7B, 0x27, 0x77, 0x7F, 0x3F,</div>
+<div class="line">      0x4A, 0x17, 0x86, 0xF0, 0x00, 0x00, 0x00, 0x01 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_ctr_pt[3][48] =</div>
+<div class="line">{</div>
+<div class="line">    { 0x53, 0x69, 0x6E, 0x67, 0x6C, 0x65, 0x20, 0x62,</div>
+<div class="line">      0x6C, 0x6F, 0x63, 0x6B, 0x20, 0x6D, 0x73, 0x67 },</div>
+<div class="line"> </div>
+<div class="line">    { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,</div>
+<div class="line">      0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,</div>
+<div class="line">      0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,</div>
+<div class="line">      0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F },</div>
+<div class="line"> </div>
+<div class="line">    { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,</div>
+<div class="line">      0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,</div>
+<div class="line">      0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,</div>
+<div class="line">      0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F,</div>
+<div class="line">      0x20, 0x21, 0x22, 0x23 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T aes_test_ctr_ct[3][48] =</div>
+<div class="line">{</div>
+<div class="line">    { 0xE4, 0x09, 0x5D, 0x4F, 0xB7, 0xA7, 0xB3, 0x79,</div>
+<div class="line">      0x2D, 0x61, 0x75, 0xA3, 0x26, 0x13, 0x11, 0xB8 },</div>
+<div class="line">    { 0x51, 0x04, 0xA1, 0x06, 0x16, 0x8A, 0x72, 0xD9,</div>
+<div class="line">      0x79, 0x0D, 0x41, 0xEE, 0x8E, 0xDA, 0xD3, 0x88,</div>
+<div class="line">      0xEB, 0x2E, 0x1E, 0xFC, 0x46, 0xDA, 0x57, 0xC8,</div>
+<div class="line">      0xFC, 0xE6, 0x30, 0xDF, 0x91, 0x41, 0xBE, 0x28 },</div>
+<div class="line">    { 0xC1, 0xCF, 0x48, 0xA8, 0x9F, 0x2F, 0xFD, 0xD9,</div>
+<div class="line">      0xCF, 0x46, 0x52, 0xE9, 0xEF, 0xDB, 0x72, 0xD7,</div>
+<div class="line">      0x45, 0x40, 0xA4, 0x2B, 0xDE, 0x6D, 0x78, 0x36,</div>
+<div class="line">      0xD5, 0x9A, 0x5C, 0xEA, 0xAE, 0xF3, 0x10, 0x53,</div>
+<div class="line">      0x25, 0xB2, 0x07, 0x2F }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> aes_test_ctr_len[3] =</div>
+<div class="line">    { 16, 32, 36 };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * Checkup routine</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line">OPERATE_RET tal_aes_self_test( INT32_T verbose )</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    INT32_T i, j, u, mode;</div>
+<div class="line">    UINT32_T keybits;</div>
+<div class="line">    UINT8_T key[32];</div>
+<div class="line">    UINT8_T buf[64];</div>
+<div class="line">    <span class="keyword">const</span> UINT8_T *aes_tests;</div>
+<div class="line">    UINT8_T iv[16];</div>
+<div class="line">    UINT8_T prv[16];</div>
+<div class="line">    TKL_SYMMETRY_HANDLE ctx;</div>
+<div class="line">    <span class="keywordtype">size_t</span> offset;</div>
+<div class="line">    INT32_T len;</div>
+<div class="line">    UINT8_T nonce_counter[16];</div>
+<div class="line">    UINT8_T stream_block[16];    </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    memset( key, 0, 32 );</div>
+<div class="line">    <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#a4d22718d065313c2f4901ef7c6500597">tal_aes_create_init</a>( &amp;ctx );</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">     * ECB mode</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordflow">for</span>( i = 0; i &lt; 6; i++ )</div>
+<div class="line">    {</div>
+<div class="line">        u = i &gt;&gt; 1;</div>
+<div class="line">        keybits = 128 + u * 64;</div>
+<div class="line">        mode = i &amp; 1;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;  AES-ECB-%3d (%s): &quot;</span>, keybits,</div>
+<div class="line">                    ( mode == SYMMETRY_DECRYPT ) ? <span class="stringliteral">&quot;dec&quot;</span> : <span class="stringliteral">&quot;enc&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">        memset( buf, 0, 16 );</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( mode == SYMMETRY_DECRYPT )</div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#acd1de2c4e5cdb5901998679155e5f364">tal_aes_setkey_dec</a>( ctx, key, keybits );</div>
+<div class="line">            aes_tests = aes_test_ecb_dec[u];</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25">tal_aes_setkey_enc</a>( ctx, key, keybits );</div>
+<div class="line">            aes_tests = aes_test_ecb_enc[u];</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/*</span></div>
+<div class="line"><span class="comment">         * AES-192 is an optional feature that may be unavailable when</span></div>
+<div class="line"><span class="comment">         * there is an alternative underlying implementation i.e. when</span></div>
+<div class="line"><span class="comment">         * MBEDTLS_AES_ALT is defined.</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        <span class="keywordflow">if</span>( keybits == 192 )</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// skipped</span></div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">for</span>( j = 0; j &lt; 10000; j++ )</div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#ae47898522bdf96d5977707e7f737ce0e">tal_aes_crypt_ecb</a>( ctx, mode,16, buf, buf );</div>
+<div class="line">            <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">                <span class="keywordflow">goto</span> exit;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( memcmp( buf, aes_tests, 16 ) != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            ret = 1;</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            <span class="comment">// passed</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">     * CBC mode</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordflow">for</span>( i = 0; i &lt; 6; i++ )</div>
+<div class="line">    {</div>
+<div class="line">        u = i &gt;&gt; 1;</div>
+<div class="line">        keybits = 128 + u * 64;</div>
+<div class="line">        mode = i &amp; 1;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;  AES-CBC-%3d (%s): &quot;</span>, keybits,</div>
+<div class="line">                    ( mode == SYMMETRY_DECRYPT ) ? <span class="stringliteral">&quot;dec&quot;</span> : <span class="stringliteral">&quot;enc&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">        memset( iv , 0, 16 );</div>
+<div class="line">        memset( prv, 0, 16 );</div>
+<div class="line">        memset( buf, 0, 16 );</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( mode == SYMMETRY_DECRYPT )</div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#acd1de2c4e5cdb5901998679155e5f364">tal_aes_setkey_dec</a>( ctx, key, keybits );</div>
+<div class="line">            aes_tests = aes_test_cbc_dec[u];</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25">tal_aes_setkey_enc</a>( ctx, key, keybits );</div>
+<div class="line">            aes_tests = aes_test_cbc_enc[u];</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/*</span></div>
+<div class="line"><span class="comment">         * AES-192 is an optional feature that may be unavailable when</span></div>
+<div class="line"><span class="comment">         * there is an alternative underlying implementation i.e. when</span></div>
+<div class="line"><span class="comment">         * MBEDTLS_AES_ALT is defined.</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        <span class="keywordflow">if</span>( keybits == 192 )</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// skipped</span></div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">for</span>( j = 0; j &lt; 10000; j++ )</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span>( mode == SYMMETRY_ENCRYPT )</div>
+<div class="line">            {</div>
+<div class="line">                UINT8_T tmp[16];</div>
+<div class="line"> </div>
+<div class="line">                memcpy( tmp, prv, 16 );</div>
+<div class="line">                memcpy( prv, buf, 16 );</div>
+<div class="line">                memcpy( buf, tmp, 16 );</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#a3ca6f07952cc30d72b3da2ceac222f37">tal_aes_crypt_cbc</a>( ctx, mode, 16, iv, buf, buf );</div>
+<div class="line">            <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">                <span class="keywordflow">goto</span> exit;</div>
+<div class="line"> </div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( memcmp( buf, aes_tests, 16 ) != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            ret = 1;</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            <span class="comment">// passed</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">     * CTR mode</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordflow">for</span>( i = 0; i &lt; 6; i++ )</div>
+<div class="line">    {</div>
+<div class="line">        u = i &gt;&gt; 1;</div>
+<div class="line">        mode = i &amp; 1;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;  AES-CTR-128 (%s): &quot;</span>,</div>
+<div class="line">                    ( mode == SYMMETRY_DECRYPT ) ? <span class="stringliteral">&quot;dec&quot;</span> : <span class="stringliteral">&quot;enc&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">        memcpy( nonce_counter, aes_test_ctr_nonce_counter[u], 16 );</div>
+<div class="line">        memcpy( key, aes_test_ctr_key[u], 16 );</div>
+<div class="line"> </div>
+<div class="line">        offset = 0;</div>
+<div class="line">        <span class="keywordflow">if</span>( ( ret = <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25">tal_aes_setkey_enc</a>( ctx, key, 128 ) ) != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line"> </div>
+<div class="line">        len = aes_test_ctr_len[u];</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( mode == SYMMETRY_DECRYPT )</div>
+<div class="line">        {</div>
+<div class="line">            memcpy( buf, aes_test_ctr_ct[u], len );</div>
+<div class="line">            aes_tests = aes_test_ctr_pt[u];</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            memcpy( buf, aes_test_ctr_pt[u], len );</div>
+<div class="line">            aes_tests = aes_test_ctr_ct[u];</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        ret = tal_aes_crypt_ctr( ctx, len, &amp;offset, nonce_counter,</div>
+<div class="line">                                     stream_block, buf, buf );</div>
+<div class="line">        <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( memcmp( buf, aes_tests, len ) != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            ret = 1;</div>
+<div class="line">            <span class="keywordflow">goto</span> exit;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            <span class="comment">// passed</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    ret = 0;</div>
+<div class="line"> </div>
+<div class="line">exit:</div>
+<div class="line">    <span class="keywordflow">if</span>( ret != 0 &amp;&amp; verbose != 0 )</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="../../d4/d7c/tal__symmetry_8h.html#aa0caed1a0b8fcfc17766f11f3db842ee">tal_aes_free</a>( ctx );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>( ret );</div>
+<div class="line">}</div>
+<div class="ttc" id="atal__symmetry_8h_html_a3ca6f07952cc30d72b3da2ceac222f37"><div class="ttname"><a href="../../d4/d7c/tal__symmetry_8h.html#a3ca6f07952cc30d72b3da2ceac222f37">tal_aes_crypt_cbc</a></div><div class="ttdeci">OPERATE_RET tal_aes_crypt_cbc(TKL_SYMMETRY_HANDLE ctx, INT32_T mode, size_t length, UINT8_T iv[16], UINT8_T *input, UINT8_T *output)</div><div class="ttdoc">This function performs an AES-CBC encryption or decryption operation on full blocks.</div></div>
+<div class="ttc" id="atal__symmetry_8h_html_a4d22718d065313c2f4901ef7c6500597"><div class="ttname"><a href="../../d4/d7c/tal__symmetry_8h.html#a4d22718d065313c2f4901ef7c6500597">tal_aes_create_init</a></div><div class="ttdeci">OPERATE_RET tal_aes_create_init(TKL_SYMMETRY_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a aes context.</div></div>
+<div class="ttc" id="atal__symmetry_8h_html_aa0caed1a0b8fcfc17766f11f3db842ee"><div class="ttname"><a href="../../d4/d7c/tal__symmetry_8h.html#aa0caed1a0b8fcfc17766f11f3db842ee">tal_aes_free</a></div><div class="ttdeci">OPERATE_RET tal_aes_free(TKL_SYMMETRY_HANDLE ctx)</div><div class="ttdoc">This function releases and clears the specified AES context.</div></div>
+<div class="ttc" id="atal__symmetry_8h_html_acd1de2c4e5cdb5901998679155e5f364"><div class="ttname"><a href="../../d4/d7c/tal__symmetry_8h.html#acd1de2c4e5cdb5901998679155e5f364">tal_aes_setkey_dec</a></div><div class="ttdeci">OPERATE_RET tal_aes_setkey_dec(TKL_SYMMETRY_HANDLE ctx, UINT8_T *key, UINT32_T keybits)</div><div class="ttdoc">This function sets the decryption key.</div></div>
+<div class="ttc" id="atal__symmetry_8h_html_ae47898522bdf96d5977707e7f737ce0e"><div class="ttname"><a href="../../d4/d7c/tal__symmetry_8h.html#ae47898522bdf96d5977707e7f737ce0e">tal_aes_crypt_ecb</a></div><div class="ttdeci">OPERATE_RET tal_aes_crypt_ecb(TKL_SYMMETRY_HANDLE ctx, INT32_T mode, size_t length, UINT8_T *input, UINT8_T *output)</div><div class="ttdoc">This function performs an AES encryption or decryption operation.</div></div>
+<div class="ttc" id="atal__symmetry_8h_html_afdc64210f385f5095e1a3883c80c0b25"><div class="ttname"><a href="../../d4/d7c/tal__symmetry_8h.html#afdc64210f385f5095e1a3883c80c0b25">tal_aes_setkey_enc</a></div><div class="ttdeci">OPERATE_RET tal_aes_setkey_enc(TKL_SYMMETRY_HANDLE ctx, UINT8_T *key, UINT32_T keybits)</div><div class="ttdoc">This function sets the encryption key.</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md135"></a>
+hash示例</h2>
+<div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * FIPS-180-2 test vectors</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T sha256_test_buf[3][57] =</div>
+<div class="line">{</div>
+<div class="line">    { <span class="stringliteral">&quot;abc&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;&quot;</span> }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> sha256_test_buflen[3] =</div>
+<div class="line">{</div>
+<div class="line">    3, 56, 1000</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T sha256_test_sum[6][32] =</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">     * SHA-224 test vectors</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    { 0x23, 0x09, 0x7D, 0x22, 0x34, 0x05, 0xD8, 0x22,</div>
+<div class="line">      0x86, 0x42, 0xA4, 0x77, 0xBD, 0xA2, 0x55, 0xB3,</div>
+<div class="line">      0x2A, 0xAD, 0xBC, 0xE4, 0xBD, 0xA0, 0xB3, 0xF7,</div>
+<div class="line">      0xE3, 0x6C, 0x9D, 0xA7 },</div>
+<div class="line">    { 0x75, 0x38, 0x8B, 0x16, 0x51, 0x27, 0x76, 0xCC,</div>
+<div class="line">      0x5D, 0xBA, 0x5D, 0xA1, 0xFD, 0x89, 0x01, 0x50,</div>
+<div class="line">      0xB0, 0xC6, 0x45, 0x5C, 0xB4, 0xF5, 0x8B, 0x19,</div>
+<div class="line">      0x52, 0x52, 0x25, 0x25 },</div>
+<div class="line">    { 0x20, 0x79, 0x46, 0x55, 0x98, 0x0C, 0x91, 0xD8,</div>
+<div class="line">      0xBB, 0xB4, 0xC1, 0xEA, 0x97, 0x61, 0x8A, 0x4B,</div>
+<div class="line">      0xF0, 0x3F, 0x42, 0x58, 0x19, 0x48, 0xB2, 0xEE,</div>
+<div class="line">      0x4E, 0xE7, 0xAD, 0x67 },</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">     * SHA-256 test vectors</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    { 0xBA, 0x78, 0x16, 0xBF, 0x8F, 0x01, 0xCF, 0xEA,</div>
+<div class="line">      0x41, 0x41, 0x40, 0xDE, 0x5D, 0xAE, 0x22, 0x23,</div>
+<div class="line">      0xB0, 0x03, 0x61, 0xA3, 0x96, 0x17, 0x7A, 0x9C,</div>
+<div class="line">      0xB4, 0x10, 0xFF, 0x61, 0xF2, 0x00, 0x15, 0xAD },</div>
+<div class="line">    { 0x24, 0x8D, 0x6A, 0x61, 0xD2, 0x06, 0x38, 0xB8,</div>
+<div class="line">      0xE5, 0xC0, 0x26, 0x93, 0x0C, 0x3E, 0x60, 0x39,</div>
+<div class="line">      0xA3, 0x3C, 0xE4, 0x59, 0x64, 0xFF, 0x21, 0x67,</div>
+<div class="line">      0xF6, 0xEC, 0xED, 0xD4, 0x19, 0xDB, 0x06, 0xC1 },</div>
+<div class="line">    { 0xCD, 0xC7, 0x6E, 0x5C, 0x99, 0x14, 0xFB, 0x92,</div>
+<div class="line">      0x81, 0xA1, 0xC7, 0xE2, 0x84, 0xD7, 0x3E, 0x67,</div>
+<div class="line">      0xF1, 0x80, 0x9A, 0x48, 0xA4, 0x97, 0x20, 0x0E,</div>
+<div class="line">      0x04, 0x6D, 0x39, 0xCC, 0xC7, 0x11, 0x2C, 0xD0 }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * Checkup routine</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line">OPERATE_RET tal_sha256_self_test( INT32_T verbose )</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret = OPRT_OK;</div>
+<div class="line">    INT32_T i, j, k, buflen;    </div>
+<div class="line">    UINT8_T *buf;</div>
+<div class="line">    UINT8_T sha256sum[32];</div>
+<div class="line">    TKL_HASH_HANDLE ctx;</div>
+<div class="line"> </div>
+<div class="line">    buf = <a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a>( 1024 );</div>
+<div class="line">    <span class="keywordflow">if</span>( NULL == buf )</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;Buffer allocation failed\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span>( 1 );</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a532f88c5fe80d39cce52973e01c7ccf5">tal_sha256_create_init</a>( &amp;ctx );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span>( i = 0; i &lt; 6; i++ )</div>
+<div class="line">    {</div>
+<div class="line">        j = i % 3;</div>
+<div class="line">        k = i &lt; 3;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;  SHA-%d test #%d: &quot;</span>, 256 - k * 32, j + 1 );</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( ( ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a7bc8d5cf94999e70f39dd6ada3653ece">tal_sha256_starts_ret</a>( ctx, k ) ) != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( j == 2 )</div>
+<div class="line">        {</div>
+<div class="line">            memset( buf, <span class="charliteral">&#39;a&#39;</span>, buflen = 1000 );</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span>( j = 0; j &lt; 1000; j++ )</div>
+<div class="line">            {</div>
+<div class="line">                ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a9eb8503c9caa9d4a872b76ab0d1325e8">tal_sha256_update_ret</a>( ctx, buf, buflen );</div>
+<div class="line">                <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">                    <span class="keywordflow">goto</span> fail;</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a9eb8503c9caa9d4a872b76ab0d1325e8">tal_sha256_update_ret</a>( ctx, sha256_test_buf[j],</div>
+<div class="line">                                             sha256_test_buflen[j] );</div>
+<div class="line">            <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">                 <span class="keywordflow">goto</span> fail;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( ( ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a0080493bc98e2cda860ebcf51f58fe3e">tal_sha256_finish_ret</a>( ctx, sha256sum ) ) != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( memcmp( sha256sum, sha256_test_sum[i], 32 - k * 4 ) != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            ret = 1;</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;passed\n&quot;</span> );</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">goto</span> exit;</div>
+<div class="line"> </div>
+<div class="line">fail:</div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;failed\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">exit:</div>
+<div class="line">    <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#abb53962fae57d90f3601d9cb83b3866a">tal_sha256_free</a>( ctx );</div>
+<div class="line">    <a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a>( buf );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>( ret );</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * RFC 1321 test vectors</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T md5_test_buf[7][81] =</div>
+<div class="line">{</div>
+<div class="line">    { <span class="stringliteral">&quot;&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;a&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;abc&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;message digest&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;12345678901234567890123456789012345678901234567890123456789012345678901234567890&quot;</span> }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> md5_test_buflen[7] =</div>
+<div class="line">{</div>
+<div class="line">    0, 1, 3, 14, 26, 62, 80</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T md5_test_sum[7][16] =</div>
+<div class="line">{</div>
+<div class="line">    { 0xD4, 0x1D, 0x8C, 0xD9, 0x8F, 0x00, 0xB2, 0x04,</div>
+<div class="line">      0xE9, 0x80, 0x09, 0x98, 0xEC, 0xF8, 0x42, 0x7E },</div>
+<div class="line">    { 0x0C, 0xC1, 0x75, 0xB9, 0xC0, 0xF1, 0xB6, 0xA8,</div>
+<div class="line">      0x31, 0xC3, 0x99, 0xE2, 0x69, 0x77, 0x26, 0x61 },</div>
+<div class="line">    { 0x90, 0x01, 0x50, 0x98, 0x3C, 0xD2, 0x4F, 0xB0,</div>
+<div class="line">      0xD6, 0x96, 0x3F, 0x7D, 0x28, 0xE1, 0x7F, 0x72 },</div>
+<div class="line">    { 0xF9, 0x6B, 0x69, 0x7D, 0x7C, 0xB7, 0x93, 0x8D,</div>
+<div class="line">      0x52, 0x5A, 0x2F, 0x31, 0xAA, 0xF1, 0x61, 0xD0 },</div>
+<div class="line">    { 0xC3, 0xFC, 0xD3, 0xD7, 0x61, 0x92, 0xE4, 0x00,</div>
+<div class="line">      0x7D, 0xFB, 0x49, 0x6C, 0xCA, 0x67, 0xE1, 0x3B },</div>
+<div class="line">    { 0xD1, 0x74, 0xAB, 0x98, 0xD2, 0x77, 0xD9, 0xF5,</div>
+<div class="line">      0xA5, 0x61, 0x1C, 0x2C, 0x9F, 0x41, 0x9D, 0x9F },</div>
+<div class="line">    { 0x57, 0xED, 0xF4, 0xA2, 0x2B, 0xE3, 0xC9, 0x55,</div>
+<div class="line">      0xAC, 0x49, 0xDA, 0x2E, 0x21, 0x07, 0xB6, 0x7A }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * Checkup routine</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line">OPERATE_RET tal_md5_self_test( INT32_T verbose )</div>
+<div class="line">{</div>
+<div class="line">    INT32_T i;</div>
+<div class="line">    OPERATE_RET ret = OPRT_OK;</div>
+<div class="line">    UINT8_T md5sum[16];</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span>( i = 0; i &lt; 7; i++ )</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;  MD5 test #%d: &quot;</span>, i + 1 );</div>
+<div class="line"> </div>
+<div class="line">        ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#acf48edac9ab5f73cc1947fa78e5e9bd3">tal_md5_ret</a>( md5_test_buf[i], md5_test_buflen[i], md5sum );</div>
+<div class="line">        <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( memcmp( md5sum, md5_test_sum[i], 16 ) != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            ret = 1;</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;passed\n&quot;</span> );</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">goto</span> exit;</div>
+<div class="line"> </div>
+<div class="line">fail:</div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;failed\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">exit:</div>
+<div class="line">    <span class="keywordflow">return</span>( ret );</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * FIPS-180-1 test vectors</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T sha1_test_buf[3][57] =</div>
+<div class="line">{</div>
+<div class="line">    { <span class="stringliteral">&quot;abc&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;&quot;</span> }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> sha1_test_buflen[3] =</div>
+<div class="line">{</div>
+<div class="line">    3, 56, 1000</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> UINT8_T sha1_test_sum[3][20] =</div>
+<div class="line">{</div>
+<div class="line">    { 0xA9, 0x99, 0x3E, 0x36, 0x47, 0x06, 0x81, 0x6A, 0xBA, 0x3E,</div>
+<div class="line">      0x25, 0x71, 0x78, 0x50, 0xC2, 0x6C, 0x9C, 0xD0, 0xD8, 0x9D },</div>
+<div class="line">    { 0x84, 0x98, 0x3E, 0x44, 0x1C, 0x3B, 0xD2, 0x6E, 0xBA, 0xAE,</div>
+<div class="line">      0x4A, 0xA1, 0xF9, 0x51, 0x29, 0xE5, 0xE5, 0x46, 0x70, 0xF1 },</div>
+<div class="line">    { 0x34, 0xAA, 0x97, 0x3C, 0xD4, 0xC4, 0xDA, 0xA4, 0xF6, 0x1E,</div>
+<div class="line">      0xEB, 0x2B, 0xDB, 0xAD, 0x27, 0x31, 0x65, 0x34, 0x01, 0x6F }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * Checkup routine</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line">OPERATE_RET tal_sha1_self_test( <span class="keywordtype">int</span> verbose )</div>
+<div class="line">{</div>
+<div class="line">    INT32_T i, j, buflen, ret = 0;</div>
+<div class="line">    UINT8_T buf[1024];</div>
+<div class="line">    UINT8_T sha1sum[20];</div>
+<div class="line">    TKL_HASH_HANDLE ctx;</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a1525a0f96addd78da30f679f6f45ee53">tal_sha1_create_init</a>( &amp;ctx );</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">     * SHA-1</span></div>
+<div class="line"><span class="comment">     */</span></div>
+<div class="line">    <span class="keywordflow">for</span>( i = 0; i &lt; 3; i++ )</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;  SHA-1 test #%d: &quot;</span>, i + 1 );</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( ( ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#ad37b57da4de22012ddf8716e8c518767">tal_sha1_starts_ret</a>( ctx ) ) != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( i == 2 )</div>
+<div class="line">        {</div>
+<div class="line">            memset( buf, <span class="charliteral">&#39;a&#39;</span>, buflen = 1000 );</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span>( j = 0; j &lt; 1000; j++ )</div>
+<div class="line">            {</div>
+<div class="line">                ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#aa82005686448371a8c29307f9f697a27">tal_sha1_update_ret</a>( ctx, buf, buflen );</div>
+<div class="line">                <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">                    <span class="keywordflow">goto</span> fail;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#aa82005686448371a8c29307f9f697a27">tal_sha1_update_ret</a>( ctx, sha1_test_buf[i],</div>
+<div class="line">                                           sha1_test_buflen[i] );</div>
+<div class="line">            <span class="keywordflow">if</span>( ret != 0 )</div>
+<div class="line">                <span class="keywordflow">goto</span> fail;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( ( ret = <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#ab199b45489ab8b0247ce24b56a830589">tal_sha1_finish_ret</a>( ctx, sha1sum ) ) != 0 )</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( memcmp( sha1sum, sha1_test_sum[i], 20 ) != 0 )</div>
+<div class="line">        {</div>
+<div class="line">            ret = 1;</div>
+<div class="line">            <span class="keywordflow">goto</span> fail;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">            printf( <span class="stringliteral">&quot;passed\n&quot;</span> );</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">goto</span> exit;</div>
+<div class="line"> </div>
+<div class="line">fail:</div>
+<div class="line">    <span class="keywordflow">if</span>( verbose != 0 )</div>
+<div class="line">        printf( <span class="stringliteral">&quot;failed\n&quot;</span> );</div>
+<div class="line"> </div>
+<div class="line">exit:</div>
+<div class="line">    <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a64d87e70fb7c9ce78721f115da177cef">tal_sha1_free</a>( ctx );</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span>( ret );</div>
+<div class="line">}</div>
+<div class="ttc" id="atal__hash_8h_html_a0080493bc98e2cda860ebcf51f58fe3e"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a0080493bc98e2cda860ebcf51f58fe3e">tal_sha256_finish_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[32])</div><div class="ttdoc">This function finishes the sha256 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a1525a0f96addd78da30f679f6f45ee53"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a1525a0f96addd78da30f679f6f45ee53">tal_sha1_create_init</a></div><div class="ttdeci">OPERATE_RET tal_sha1_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a sha1 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a532f88c5fe80d39cce52973e01c7ccf5"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a532f88c5fe80d39cce52973e01c7ccf5">tal_sha256_create_init</a></div><div class="ttdeci">OPERATE_RET tal_sha256_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a sha256 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a64d87e70fb7c9ce78721f115da177cef"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a64d87e70fb7c9ce78721f115da177cef">tal_sha1_free</a></div><div class="ttdeci">OPERATE_RET tal_sha1_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a sha1 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a7bc8d5cf94999e70f39dd6ada3653ece"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a7bc8d5cf94999e70f39dd6ada3653ece">tal_sha256_starts_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_starts_ret(TKL_HASH_HANDLE ctx, INT32_T is224)</div><div class="ttdoc">This function starts a sha224 or sha256 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a9eb8503c9caa9d4a872b76ab0d1325e8"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a9eb8503c9caa9d4a872b76ab0d1325e8">tal_sha256_update_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha256 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_aa82005686448371a8c29307f9f697a27"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#aa82005686448371a8c29307f9f697a27">tal_sha1_update_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha1 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_ab199b45489ab8b0247ce24b56a830589"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#ab199b45489ab8b0247ce24b56a830589">tal_sha1_finish_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[16])</div><div class="ttdoc">This function finishes the sha1 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_abb53962fae57d90f3601d9cb83b3866a"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#abb53962fae57d90f3601d9cb83b3866a">tal_sha256_free</a></div><div class="ttdeci">OPERATE_RET tal_sha256_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a sha256 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_acf48edac9ab5f73cc1947fa78e5e9bd3"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#acf48edac9ab5f73cc1947fa78e5e9bd3">tal_md5_ret</a></div><div class="ttdeci">OPERATE_RET tal_md5_ret(const UINT8_T *input, size_t ilen, UINT8_T output[16])</div><div class="ttdoc">Output = MD5( input buffer )</div></div>
+<div class="ttc" id="atal__hash_8h_html_ad37b57da4de22012ddf8716e8c518767"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#ad37b57da4de22012ddf8716e8c518767">tal_sha1_starts_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_starts_ret(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function starts a sha1 checksum calculation.</div></div>
+<div class="ttc" id="atal__memory_8h_html_a46e0bcc120599603d9dae091abc5a36d"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a></div><div class="ttdeci">VOID_T * tal_malloc(SIZE_T size)</div><div class="ttdoc">Alloc memory of system</div></div>
+<div class="ttc" id="atal__memory_8h_html_a5e0e4741554159aa4c9e1fc68e09bb23"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a></div><div class="ttdeci">VOID_T tal_free(VOID_T *ptr)</div><div class="ttdoc">Free memory of system</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

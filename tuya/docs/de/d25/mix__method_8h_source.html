@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system_service/include/utilities/mix_method.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c9db1059777c15dc8c8b94b955097dc4.html">tal_system_service</a></li><li class="navelem"><a class="el" href="../../dir_679a7e65efb1f08b4e45cdf759445817.html">include</a></li><li class="navelem"><a class="el" href="../../dir_5ce89a17ae4f9dc97b44e6db9d34e655.html">utilities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mix_method.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d25/mix__method_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _MIX_METHOD_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _MIX_METHOD_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define BITMASK(bit)    (1 &lt;&lt; (bit))</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// 获取某bit位数据</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define GETBIT(val,bit)  (((val) &amp; BITMASK(bit)) &gt; 0)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// 设置某bit位数据为1</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define SETBIT(val,bit)  ((val) |= BITMASK(bit))</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// 设置某bit位数据为0</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define RESETBIT(val,bit) ((val) &amp;= ~BITMASK(bit))</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#a78d3c6fca680143d0bdd44f4e366f34d">   36</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#a78d3c6fca680143d0bdd44f4e366f34d">tuya_strncasecmp</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s1, <span class="keyword">const</span> <span class="keywordtype">char</span> *s2, <span class="keywordtype">size_t</span> n);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#ac9cd6ce0cbddb63d90a310fad92927ff">   44</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#ac9cd6ce0cbddb63d90a310fad92927ff">asc2hex</a>(<span class="keywordtype">char</span> asccode);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#ab5abcd49b3c6c90e1eed3a4d7a4170e5">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#ab5abcd49b3c6c90e1eed3a4d7a4170e5">ascs2hex</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *hex,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ascs,<span class="keywordtype">int</span> srclen);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#a6731a68686b7e4b47e8ebb9c274431bc">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#a6731a68686b7e4b47e8ebb9c274431bc">hex2str</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbDest, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbSrc, <span class="keywordtype">int</span> nLen);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> byte2str(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbDest, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbSrc, <span class="keywordtype">int</span> nLen, bool_t upper);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#a9fb824b55acadcec3fb9e4df796cc5c4">   75</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#a9fb824b55acadcec3fb9e4df796cc5c4">str_revr_find_ch</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str,<span class="keyword">const</span> <span class="keywordtype">int</span> revr_index,<span class="keyword">const</span> <span class="keywordtype">char</span> ch);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#af5623874fe5ff63dbc29debd1c2aa9e8">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#af5623874fe5ff63dbc29debd1c2aa9e8">byte_sort</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> is_ascend, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buf, <span class="keywordtype">int</span> buf_cnt);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#a9d84f130aa9bedaa41f4c453be291156">   92</a></span><span class="keywordtype">char</span> *<a class="code hl_function" href="../../de/d25/mix__method_8h.html#a9d84f130aa9bedaa41f4c453be291156">mm_strdup</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#adec18c8596b2db9a8209a4c32972d5ab">  100</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#adec18c8596b2db9a8209a4c32972d5ab">is_valid_version</a>(<span class="keywordtype">char</span> *ver);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#a3198ac64acf828e59a3c4439ac6f473f">  111</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#a3198ac64acf828e59a3c4439ac6f473f">string2mac</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str, <span class="keywordtype">char</span> mac[6]);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../de/d25/mix__method_8h.html#aa625b028083a7d74eba9ee7c25a6e427">  122</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../de/d25/mix__method_8h.html#aa625b028083a7d74eba9ee7c25a6e427">versionString2int</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* versionString);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keywordtype">int</span> tuya_isalpha(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keywordtype">int</span> tuya_tolower(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keywordtype">int</span> tuya_toupper(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="ttc" id="amix__method_8h_html_a3198ac64acf828e59a3c4439ac6f473f"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#a3198ac64acf828e59a3c4439ac6f473f">string2mac</a></div><div class="ttdeci">int string2mac(const char *str, char mac[6])</div><div class="ttdoc">convert mac address string to mac address array</div></div>
+<div class="ttc" id="amix__method_8h_html_a6731a68686b7e4b47e8ebb9c274431bc"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#a6731a68686b7e4b47e8ebb9c274431bc">hex2str</a></div><div class="ttdeci">void hex2str(unsigned char *pbDest, unsigned char *pbSrc, int nLen)</div><div class="ttdoc">convert the input hex array to string array</div></div>
+<div class="ttc" id="amix__method_8h_html_a78d3c6fca680143d0bdd44f4e366f34d"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#a78d3c6fca680143d0bdd44f4e366f34d">tuya_strncasecmp</a></div><div class="ttdeci">int tuya_strncasecmp(const char *s1, const char *s2, size_t n)</div><div class="ttdoc">compare the first n characters of two string</div></div>
+<div class="ttc" id="amix__method_8h_html_a9d84f130aa9bedaa41f4c453be291156"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#a9d84f130aa9bedaa41f4c453be291156">mm_strdup</a></div><div class="ttdeci">char * mm_strdup(const char *str)</div><div class="ttdoc">duplicate input string, will malloc a new block of memory</div></div>
+<div class="ttc" id="amix__method_8h_html_a9fb824b55acadcec3fb9e4df796cc5c4"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#a9fb824b55acadcec3fb9e4df796cc5c4">str_revr_find_ch</a></div><div class="ttdeci">int str_revr_find_ch(const char *str, const int revr_index, const char ch)</div><div class="ttdoc">find &lt;ch&gt; in &lt;str&gt;, start find in index &lt;revr_index&gt;, find in reverse order.</div></div>
+<div class="ttc" id="amix__method_8h_html_aa625b028083a7d74eba9ee7c25a6e427"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#aa625b028083a7d74eba9ee7c25a6e427">versionString2int</a></div><div class="ttdeci">int versionString2int(const char *versionString)</div><div class="ttdoc">convert version string to integer</div></div>
+<div class="ttc" id="amix__method_8h_html_ab5abcd49b3c6c90e1eed3a4d7a4170e5"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#ab5abcd49b3c6c90e1eed3a4d7a4170e5">ascs2hex</a></div><div class="ttdeci">void ascs2hex(unsigned char *hex, unsigned char *ascs, int srclen)</div><div class="ttdoc">convert the character array to hex array</div></div>
+<div class="ttc" id="amix__method_8h_html_ac9cd6ce0cbddb63d90a310fad92927ff"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#ac9cd6ce0cbddb63d90a310fad92927ff">asc2hex</a></div><div class="ttdeci">unsigned char asc2hex(char asccode)</div><div class="ttdoc">convert character to hex, if '0'-'f'/'F' -&gt; 0-15, else 0</div></div>
+<div class="ttc" id="amix__method_8h_html_adec18c8596b2db9a8209a4c32972d5ab"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#adec18c8596b2db9a8209a4c32972d5ab">is_valid_version</a></div><div class="ttdeci">int is_valid_version(char *ver)</div><div class="ttdoc">check the version input is valid</div></div>
+<div class="ttc" id="amix__method_8h_html_af5623874fe5ff63dbc29debd1c2aa9e8"><div class="ttname"><a href="../../de/d25/mix__method_8h.html#af5623874fe5ff63dbc29debd1c2aa9e8">byte_sort</a></div><div class="ttdeci">void byte_sort(unsigned char is_ascend, unsigned char *buf, int buf_cnt)</div><div class="ttdoc">sort the char in the buf according ascii value</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

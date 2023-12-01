@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_wifi/include/tal_wifi_mgnt.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8c289f77f5cf5814d50eadd4881ff2e6.html">tal_wifi</a></li><li class="navelem"><a class="el" href="../../dir_d3d367bc7519c03d5da3d77470f5d29c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_wifi_mgnt.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>wifi interface  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/ddb/tkl__wifi_8h_source.html">tkl_wifi.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_wifi_mgnt.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d41/tal__wifi__mgnt_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__wifi_2include_2tal__wifi__mgnt_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__wifi_2include_2tal__wifi__mgnt_8h" id="ainclude_2components_2tal__wifi_2include_2tal__wifi__mgnt_8h">
+<area shape="rect" title="wifi interface" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,184,517,211"/>
+<area shape="rect" href="../../d6/ddb/tkl__wifi_8h.html" title="Common process &#45; adapter the wi&#45;fi api" alt="" coords="442,109,523,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,432,285"/>
+<area shape="rect" title=" " alt="" coords="457,259,527,285"/>
+<area shape="rect" title=" " alt="" coords="552,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,730,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,259,893,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d02/tal__wifi__mgnt_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__wifi_2include_2tal__wifi__mgnt_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__wifi_2include_2tal__wifi__mgnt_8hdep" id="ainclude_2components_2tal__wifi_2include_2tal__wifi__mgnt_8hdep">
+<area shape="rect" title="wifi interface" alt="" coords="123,5,276,61"/>
+<area shape="rect" href="../../d8/ddc/tal__wifi_8h.html" title="Common process" alt="" coords="123,109,276,165"/>
+<area shape="rect" href="../../d1/d86/netcfg__module_8h.html" title="tuya netcfg module" alt="" coords="5,213,180,269"/>
+<area shape="rect" href="../../da/dec/wifi__netcfg__frame__transporter_8h_source.html" title=" " alt="" coords="204,213,411,269"/>
+</map>
+</div>
+</div>
+<p><a href="../../d3/df4/tal__wifi__mgnt_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab273f2075b4126049714941f7423a4f1"><td class="memItemLeft" align="right" valign="top"><a id="ab273f2075b4126049714941f7423a4f1" name="ab273f2075b4126049714941f7423a4f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PROBE_SSID</b>&#160;&#160;&#160;&quot;tuya_smart&quot;</td></tr>
+<tr class="separator:ab273f2075b4126049714941f7423a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a4044242e498de645c9834e6d954a16f5"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a4044242e498de645c9834e6d954a16f5">TUYA_DUMP_RECV_MNG_FRAME</a>) (UCHAR_T *buf, UINT_T len)</td></tr>
+<tr class="memdesc:a4044242e498de645c9834e6d954a16f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">recv mng frame dump cb  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#a4044242e498de645c9834e6d954a16f5">更多...</a><br /></td></tr>
+<tr class="separator:a4044242e498de645c9834e6d954a16f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ee2a79cb8214fa7e9d482e6c43a57f"><td class="memItemLeft" align="right" valign="top">typedef BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a84ee2a79cb8214fa7e9d482e6c43a57f">WIFI_REV_MGNT_FILTER</a>) (UCHAR_T *buf, UINT_T len)</td></tr>
+<tr class="memdesc:a84ee2a79cb8214fa7e9d482e6c43a57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter wifi recv mng frame cb  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#a84ee2a79cb8214fa7e9d482e6c43a57f">更多...</a><br /></td></tr>
+<tr class="separator:a84ee2a79cb8214fa7e9d482e6c43a57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a29cb8911de320af91ca9543d48bde9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a29cb8911de320af91ca9543d48bde9bc">tal_wifi_recv_mng_dump_reg</a> (<a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a4044242e498de645c9834e6d954a16f5">TUYA_DUMP_RECV_MNG_FRAME</a> cb)</td></tr>
+<tr class="memdesc:a29cb8911de320af91ca9543d48bde9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">recv mng frame dump reg  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#a29cb8911de320af91ca9543d48bde9bc">更多...</a><br /></td></tr>
+<tr class="separator:a29cb8911de320af91ca9543d48bde9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443d621b297d490417beca45c040094d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a443d621b297d490417beca45c040094d">tal_wifi_recv_mng_frame_reg</a> (<a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a84ee2a79cb8214fa7e9d482e6c43a57f">WIFI_REV_MGNT_FILTER</a> filter_cb, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a> cb)</td></tr>
+<tr class="memdesc:a443d621b297d490417beca45c040094d"><td class="mdescLeft">&#160;</td><td class="mdescRight">register wifi recv mng frame cb  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#a443d621b297d490417beca45c040094d">更多...</a><br /></td></tr>
+<tr class="separator:a443d621b297d490417beca45c040094d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29d881a04e936051a1aa32e1a59262b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#ae29d881a04e936051a1aa32e1a59262b">tal_wifi_recv_mng_frame_unreg</a> (<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a> cb)</td></tr>
+<tr class="memdesc:ae29d881a04e936051a1aa32e1a59262b"><td class="mdescLeft">&#160;</td><td class="mdescRight">unregister wifi recv mng frame cb  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#ae29d881a04e936051a1aa32e1a59262b">更多...</a><br /></td></tr>
+<tr class="separator:ae29d881a04e936051a1aa32e1a59262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51e83d6405da94259764317f0238a5c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#ad51e83d6405da94259764317f0238a5c">tal_wifi_send_beacon</a> (UCHAR_T *ssid, UCHAR_T chan, BYTE_T *src_mac, BYTE_T *vsie_data, UINT_T vsie_data_len)</td></tr>
+<tr class="memdesc:ad51e83d6405da94259764317f0238a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">send wifi beacon packets.  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#ad51e83d6405da94259764317f0238a5c">更多...</a><br /></td></tr>
+<tr class="separator:ad51e83d6405da94259764317f0238a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b495ccba6834d212bfbe16c631a3b7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#ad4b495ccba6834d212bfbe16c631a3b7">tal_wifi_send_probe_request_mgnt</a> (CONST UCHAR_T *in_buf, CONST UINT_T in_len, UCHAR_T *ssid, <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *srcmac, <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *dstmac)</td></tr>
+<tr class="memdesc:ad4b495ccba6834d212bfbe16c631a3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">send wifi management packets probe request.  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#ad4b495ccba6834d212bfbe16c631a3b7">更多...</a><br /></td></tr>
+<tr class="separator:ad4b495ccba6834d212bfbe16c631a3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c9ebe24d8e4d35d89aa5a4693ad16b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a87c9ebe24d8e4d35d89aa5a4693ad16b">tal_wifi_send_probe_response_mgnt</a> (CONST UCHAR_T *in_buf, CONST UINT_T in_len, UCHAR_T *ssid, <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *srcmac, <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *dstmac)</td></tr>
+<tr class="memdesc:a87c9ebe24d8e4d35d89aa5a4693ad16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">send wifi management packets probe response.  <a href="../../d3/df4/tal__wifi__mgnt_8h.html#a87c9ebe24d8e4d35d89aa5a4693ad16b">更多...</a><br /></td></tr>
+<tr class="separator:a87c9ebe24d8e4d35d89aa5a4693ad16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >wifi interface </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-01-28</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a4044242e498de645c9834e6d954a16f5" name="a4044242e498de645c9834e6d954a16f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4044242e498de645c9834e6d954a16f5">&#9670;&nbsp;</a></span>TUYA_DUMP_RECV_MNG_FRAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TUYA_DUMP_RECV_MNG_FRAME) (UCHAR_T *buf, UINT_T len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recv mng frame dump cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>mng buf </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>mng len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a84ee2a79cb8214fa7e9d482e6c43a57f" name="a84ee2a79cb8214fa7e9d482e6c43a57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ee2a79cb8214fa7e9d482e6c43a57f">&#9670;&nbsp;</a></span>WIFI_REV_MGNT_FILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BOOL_T(* WIFI_REV_MGNT_FILTER) (UCHAR_T *buf, UINT_T len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>filter wifi recv mng frame cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>frame buf </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>frame len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>called to filter mng recv.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE for needed, FLASE for not needed </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a29cb8911de320af91ca9543d48bde9bc" name="a29cb8911de320af91ca9543d48bde9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cb8911de320af91ca9543d48bde9bc">&#9670;&nbsp;</a></span>tal_wifi_recv_mng_dump_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tal_wifi_recv_mng_dump_reg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a4044242e498de645c9834e6d954a16f5">TUYA_DUMP_RECV_MNG_FRAME</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recv mng frame dump reg </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a443d621b297d490417beca45c040094d" name="a443d621b297d490417beca45c040094d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a443d621b297d490417beca45c040094d">&#9670;&nbsp;</a></span>tal_wifi_recv_mng_frame_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_wifi_recv_mng_frame_reg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/df4/tal__wifi__mgnt_8h.html#a84ee2a79cb8214fa7e9d482e6c43a57f">WIFI_REV_MGNT_FILTER</a>&#160;</td>
+          <td class="paramname"><em>filter_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>register wifi recv mng frame cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mng_tp</td><td>mng type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>called to register mng recv.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae29d881a04e936051a1aa32e1a59262b" name="ae29d881a04e936051a1aa32e1a59262b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29d881a04e936051a1aa32e1a59262b">&#9670;&nbsp;</a></span>tal_wifi_recv_mng_frame_unreg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_wifi_recv_mng_frame_unreg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unregister wifi recv mng frame cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>callback</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>called to unregister mng recv.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad51e83d6405da94259764317f0238a5c" name="ad51e83d6405da94259764317f0238a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51e83d6405da94259764317f0238a5c">&#9670;&nbsp;</a></span>tal_wifi_send_beacon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_wifi_send_beacon </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>src_mac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>vsie_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>vsie_data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send wifi beacon packets. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>the beacon ssid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chan</td><td>the beacon's wifi channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src_mac</td><td>the beacon's bssid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vsie_data</td><td>tuya vsie data to be inserted into beacon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vsie_data_len</td><td>length of vsie data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>called to send beacon frame.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad4b495ccba6834d212bfbe16c631a3b7" name="ad4b495ccba6834d212bfbe16c631a3b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b495ccba6834d212bfbe16c631a3b7">&#9670;&nbsp;</a></span>tal_wifi_send_probe_request_mgnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_wifi_send_probe_request_mgnt </td>
+          <td>(</td>
+          <td class="paramtype">CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>in_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>in_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>srcmac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>dstmac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send wifi management packets probe request. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_buf</td><td>data to be sent in tuya vsie </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td>data length to be sent </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>the ssid of the probe request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>mac address of probe request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">destination</td><td>mac address of probe request</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>send probe request packets.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87c9ebe24d8e4d35d89aa5a4693ad16b" name="a87c9ebe24d8e4d35d89aa5a4693ad16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c9ebe24d8e4d35d89aa5a4693ad16b">&#9670;&nbsp;</a></span>tal_wifi_send_probe_response_mgnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_wifi_send_probe_response_mgnt </td>
+          <td>(</td>
+          <td class="paramtype">CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>in_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>in_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>srcmac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>dstmac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send wifi management packets probe response. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_buf</td><td>data to be sent in tuya vsie </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td>data length to be sent </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>the ssid of the probe request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>mac address of probe request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">destination</td><td>mac address of probe request</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>send probe request packets.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

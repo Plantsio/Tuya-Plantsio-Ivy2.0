@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/tls/tuya_tls.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_0a06ac576203a7d6123dada18f74d099.html">tls</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_tls.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d4f/tuya__tls_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef TUYA_TLS_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define TUYA_TLS_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//mbedtls only used to encryption the seesion,not used to create the seesion</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;ssl.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/dde/tuya__cert__manager_8h.html">tuya_cert_manager.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">typedef</span> PVOID_T tuya_tls_hander;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    TSS_INIT = 0,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    TSS_START,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    TSS_ACCEPT,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TSS_TLS_HAND,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    TSS_TLS_APP,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} TLS_TCP_STAT_E;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">typedef</span> INT_T(*tuya_tls_send_cb)(VOID *p_custom_net_ctx, CONST BYTE_T *buf, SIZE_T len);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">typedef</span> INT_T(*tuya_tls_recv_cb)(VOID *p_custom_net_ctx, BYTE_T *buf, SIZE_T len);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TUYA_TLS_PSK_MODE,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    TUYA_TLS_SERVER_CERT_MODE,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    TUYA_TLS_MUTUAL_CERT_MODE,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TUYA_TLS_HARDWARE_CERT_MODE,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    TUYA_TLS_AWS_FFS_CERT_MODE,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} tuya_tls_mode_t;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d7/d3c/structtuya__tls__config__t.html">   44</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    tuya_tls_mode_t mode;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    CHAR_T* hostname;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    UINT_T  port;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    INT_T   timeout;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    CHAR_T *psk_key;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    INT_T psk_key_size;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    CHAR_T *psk_id;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    INT_T psk_id_size;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    BOOL_T verify;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    CHAR_T *ca_cert;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    INT_T ca_cert_size;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    CHAR_T *client_cert;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    INT_T client_cert_size;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    CHAR_T *client_pkey;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    INT_T client_pkey_size;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">size_t</span> in_content_len;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">size_t</span> out_content_len;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    tuya_tls_send_cb f_send;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    tuya_tls_recv_cb f_recv;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_typedef" href="../../d1/dde/tuya__cert__manager_8h.html#a1c35663ebed1762451791f0e50183e89">tuya_tls_event_cb</a> exception_cb;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span>* user_data;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <a class="code hl_struct" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a65d9d58b3d298eae46d51b655cd21e83">   78</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a65d9d58b3d298eae46d51b655cd21e83">tuya_tls_random_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a15c57115f8b838c4e165d779ea02208f">   87</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a15c57115f8b838c4e165d779ea02208f">tuya_tls_random</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *output, <span class="keywordtype">size_t</span> output_len);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#ac570d38f48cb62d55962b5df19baf841">   94</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#ac570d38f48cb62d55962b5df19baf841">tuya_tls_random_deinit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#acf3bf55aa1940315a5190ce1c112f2e6">  101</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#acf3bf55aa1940315a5190ce1c112f2e6">tuya_tls_random_reinit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a4fc646d35ec2d0d1c796e820977d3ff6">  111</a></span>VOID <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a4fc646d35ec2d0d1c796e820977d3ff6">tuya_tls_register_constant</a>(IN CHAR_T *p_uuid,  IN CHAR_T *p_authkey, IN CHAR_T *p_psk_key);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#ad9d1076f7ac539549132acbbe8a3e2d8">  122</a></span>INT_T <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#ad9d1076f7ac539549132acbbe8a3e2d8">tuya_tls_register_x509_crt_der</a>(VOID *p_ctx, UCHAR_T *p_der, UINT_T der_len);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a139dfb065e354c15094f5e6ee20212f4">  129</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a139dfb065e354c15094f5e6ee20212f4">tuya_tls_init</a>();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a6b2c3e8ebd1aaea85b126d57510f26b6">  136</a></span>tuya_tls_hander* <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a6b2c3e8ebd1aaea85b126d57510f26b6">tuya_tls_connect_create</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a8334ff76eaa04465f4c93c0a8b82f8a6">  143</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a8334ff76eaa04465f4c93c0a8b82f8a6">tuya_tls_connect_destroy</a>(tuya_tls_hander p_tls_hander);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a268fe2bb2f4d3585eb5fd7b418b596f5">  152</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a268fe2bb2f4d3585eb5fd7b418b596f5">tuya_tls_config_set</a>(tuya_tls_hander p_tls_handler, <a class="code hl_struct" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a>* config);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#ae7f0d293c060cbdfad4c27b7bb2122cf">  160</a></span><a class="code hl_struct" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a>* <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#ae7f0d293c060cbdfad4c27b7bb2122cf">tuya_tls_config_get</a>(tuya_tls_hander p_tls_handler);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a7cac87e543b8a9642f7356b6cc29fa27">  173</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a7cac87e543b8a9642f7356b6cc29fa27">tuya_tls_connect</a>(tuya_tls_hander p_tls_handler, IN CHAR_T *hostname, IN INT_T port_num,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                             IN INT_T socket_fd, IN INT_T overtime_s);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a8d5d93755b58d2ad9931457ca15a0b50">  185</a></span>INT_T <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a8d5d93755b58d2ad9931457ca15a0b50">tuya_tls_write</a>(IN tuya_tls_hander tls_handler, BYTE_T *buf, UINT_T len);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#ab7c133c1c206678d4f5ed6c505cb3159">  196</a></span>INT_T <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#ab7c133c1c206678d4f5ed6c505cb3159">tuya_tls_read</a>(IN tuya_tls_hander tls_handler, BYTE_T *buf, UINT_T len);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#af60d982fdb664f108499741a9186d9b4">  205</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#af60d982fdb664f108499741a9186d9b4">tuya_tls_disconnect</a>(IN tuya_tls_hander tls_handler);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#abdd88f7c6fa149b21c6f4f1c7cb804d5">  216</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#abdd88f7c6fa149b21c6f4f1c7cb804d5">__tuya_tls_random</a>(<span class="keywordtype">void</span> *p_rng, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *output, <span class="keywordtype">size_t</span> output_len);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a66b63ee4791d70d09b6b0fb5b6ff6e3e">  222</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a66b63ee4791d70d09b6b0fb5b6ff6e3e">tuya_tls_set_calloc_and_free</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="../../d8/d4f/tuya__tls_8h.html#a61e3d6d276e66ac59fbed3a262adc158">  229</a></span><span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a>* <a class="code hl_function" href="../../d8/d4f/tuya__tls_8h.html#a61e3d6d276e66ac59fbed3a262adc158">tuya_tls_psk_mode_config_get</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="ttc" id="astructtuya__tls__config__t_html"><div class="ttname"><a href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a></div><div class="ttdef"><b>Definition:</b> tuya_tls.h:44</div></div>
+<div class="ttc" id="atuya__cert__manager_8h_html"><div class="ttname"><a href="../../d1/dde/tuya__cert__manager_8h.html">tuya_cert_manager.h</a></div><div class="ttdoc">Tuya Cert Manager include</div></div>
+<div class="ttc" id="atuya__cert__manager_8h_html_a1c35663ebed1762451791f0e50183e89"><div class="ttname"><a href="../../d1/dde/tuya__cert__manager_8h.html#a1c35663ebed1762451791f0e50183e89">tuya_tls_event_cb</a></div><div class="ttdeci">VOID(* tuya_tls_event_cb)(TY_TLS_EVENT_E event, VOID *p_args)</div><div class="ttdoc">tls event cb</div><div class="ttdef"><b>Definition:</b> tuya_cert_manager.h:146</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a139dfb065e354c15094f5e6ee20212f4"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a139dfb065e354c15094f5e6ee20212f4">tuya_tls_init</a></div><div class="ttdeci">OPERATE_RET tuya_tls_init()</div><div class="ttdoc">tls init</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a15c57115f8b838c4e165d779ea02208f"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a15c57115f8b838c4e165d779ea02208f">tuya_tls_random</a></div><div class="ttdeci">int tuya_tls_random(unsigned char *output, size_t output_len)</div><div class="ttdoc">Get mbedtls random data in the specified length</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a268fe2bb2f4d3585eb5fd7b418b596f5"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a268fe2bb2f4d3585eb5fd7b418b596f5">tuya_tls_config_set</a></div><div class="ttdeci">OPERATE_RET tuya_tls_config_set(tuya_tls_hander p_tls_handler, tuya_tls_config_t *config)</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a4fc646d35ec2d0d1c796e820977d3ff6"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a4fc646d35ec2d0d1c796e820977d3ff6">tuya_tls_register_constant</a></div><div class="ttdeci">VOID tuya_tls_register_constant(IN CHAR_T *p_uuid, IN CHAR_T *p_authkey, IN CHAR_T *p_psk_key)</div><div class="ttdoc">tls register</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a61e3d6d276e66ac59fbed3a262adc158"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a61e3d6d276e66ac59fbed3a262adc158">tuya_tls_psk_mode_config_get</a></div><div class="ttdeci">const tuya_tls_config_t * tuya_tls_psk_mode_config_get(void)</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a65d9d58b3d298eae46d51b655cd21e83"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a65d9d58b3d298eae46d51b655cd21e83">tuya_tls_random_init</a></div><div class="ttdeci">int tuya_tls_random_init(void)</div><div class="ttdoc">mbedtls random initialization</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a66b63ee4791d70d09b6b0fb5b6ff6e3e"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a66b63ee4791d70d09b6b0fb5b6ff6e3e">tuya_tls_set_calloc_and_free</a></div><div class="ttdeci">void tuya_tls_set_calloc_and_free(void)</div><div class="ttdoc">set tls calloc and free function</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a6b2c3e8ebd1aaea85b126d57510f26b6"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a6b2c3e8ebd1aaea85b126d57510f26b6">tuya_tls_connect_create</a></div><div class="ttdeci">tuya_tls_hander * tuya_tls_connect_create(void)</div><div class="ttdoc">tls hander create</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a7cac87e543b8a9642f7356b6cc29fa27"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a7cac87e543b8a9642f7356b6cc29fa27">tuya_tls_connect</a></div><div class="ttdeci">OPERATE_RET tuya_tls_connect(tuya_tls_hander p_tls_handler, IN CHAR_T *hostname, IN INT_T port_num, IN INT_T socket_fd, IN INT_T overtime_s)</div><div class="ttdoc">tls connect</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a8334ff76eaa04465f4c93c0a8b82f8a6"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a8334ff76eaa04465f4c93c0a8b82f8a6">tuya_tls_connect_destroy</a></div><div class="ttdeci">void tuya_tls_connect_destroy(tuya_tls_hander p_tls_hander)</div></div>
+<div class="ttc" id="atuya__tls_8h_html_a8d5d93755b58d2ad9931457ca15a0b50"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#a8d5d93755b58d2ad9931457ca15a0b50">tuya_tls_write</a></div><div class="ttdeci">INT_T tuya_tls_write(IN tuya_tls_hander tls_handler, BYTE_T *buf, UINT_T len)</div><div class="ttdoc">tls write</div></div>
+<div class="ttc" id="atuya__tls_8h_html_ab7c133c1c206678d4f5ed6c505cb3159"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#ab7c133c1c206678d4f5ed6c505cb3159">tuya_tls_read</a></div><div class="ttdeci">INT_T tuya_tls_read(IN tuya_tls_hander tls_handler, BYTE_T *buf, UINT_T len)</div><div class="ttdoc">tls read</div></div>
+<div class="ttc" id="atuya__tls_8h_html_abdd88f7c6fa149b21c6f4f1c7cb804d5"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#abdd88f7c6fa149b21c6f4f1c7cb804d5">__tuya_tls_random</a></div><div class="ttdeci">int __tuya_tls_random(void *p_rng, unsigned char *output, size_t output_len)</div><div class="ttdoc">generated random</div></div>
+<div class="ttc" id="atuya__tls_8h_html_ac570d38f48cb62d55962b5df19baf841"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#ac570d38f48cb62d55962b5df19baf841">tuya_tls_random_deinit</a></div><div class="ttdeci">int tuya_tls_random_deinit(void)</div><div class="ttdoc">mbedtls random de-init, and free mbedtls random ctx</div></div>
+<div class="ttc" id="atuya__tls_8h_html_acf3bf55aa1940315a5190ce1c112f2e6"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#acf3bf55aa1940315a5190ce1c112f2e6">tuya_tls_random_reinit</a></div><div class="ttdeci">int tuya_tls_random_reinit(void)</div><div class="ttdoc">mbedtls random re-initialization</div></div>
+<div class="ttc" id="atuya__tls_8h_html_ad9d1076f7ac539549132acbbe8a3e2d8"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#ad9d1076f7ac539549132acbbe8a3e2d8">tuya_tls_register_x509_crt_der</a></div><div class="ttdeci">INT_T tuya_tls_register_x509_crt_der(VOID *p_ctx, UCHAR_T *p_der, UINT_T der_len)</div><div class="ttdoc">tls register x509 ca</div></div>
+<div class="ttc" id="atuya__tls_8h_html_ae7f0d293c060cbdfad4c27b7bb2122cf"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#ae7f0d293c060cbdfad4c27b7bb2122cf">tuya_tls_config_get</a></div><div class="ttdeci">tuya_tls_config_t * tuya_tls_config_get(tuya_tls_hander p_tls_handler)</div></div>
+<div class="ttc" id="atuya__tls_8h_html_af60d982fdb664f108499741a9186d9b4"><div class="ttname"><a href="../../d8/d4f/tuya__tls_8h.html#af60d982fdb664f108499741a9186d9b4">tuya_tls_disconnect</a></div><div class="ttdeci">OPERATE_RET tuya_tls_disconnect(IN tuya_tls_hander tls_handler)</div><div class="ttdoc">generated random</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

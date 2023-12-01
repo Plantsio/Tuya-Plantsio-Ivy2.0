@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_CELL_BASE_INTF_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_CELL_BASE_INTF_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组基础服务API接口定义 TAL在实现tkl_CellularSvcIntf_t接口后，需要调用tal_cellular_mds_register 把实现的对象注册到tkl中  
+ <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d89/tkl__init__cellular_8h_source.html">tkl_init_cellular.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a06b2b63746f5fd608c948e3bb93b7d99"><td class="memItemLeft" align="right" valign="top"><a id="a06b2b63746f5fd608c948e3bb93b7d99" name="a06b2b63746f5fd608c948e3bb93b7d99"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>base_init</b> )(<a class="el" href="../../df/d50/structTKL__CELL__INIT__PARAM__T.html">TKL_CELL_INIT_PARAM_T</a> *param)</td></tr>
+<tr class="separator:a06b2b63746f5fd608c948e3bb93b7d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2178fb82717b3b56d7b1af51058d7c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a8c2178fb82717b3b56d7b1af51058d7c">enable_sim_detect</a> )(UINT8_T simid, BOOL_T enable)</td></tr>
+<tr class="memdesc:a8c2178fb82717b3b56d7b1af51058d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否使能SIM检测功能  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a8c2178fb82717b3b56d7b1af51058d7c">更多...</a><br /></td></tr>
+<tr class="separator:a8c2178fb82717b3b56d7b1af51058d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6162a9cd08b50119d836eb6de18f8de7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a6162a9cd08b50119d836eb6de18f8de7">get_ability</a> )(TKL_CELLULAR_ABILITY_E *ability)</td></tr>
+<tr class="memdesc:a6162a9cd08b50119d836eb6de18f8de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备的通讯能力  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a6162a9cd08b50119d836eb6de18f8de7">更多...</a><br /></td></tr>
+<tr class="separator:a6162a9cd08b50119d836eb6de18f8de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a2f6f108316368baada5e8a5be0422"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ac7a2f6f108316368baada5e8a5be0422">get_cfun_mode</a> )(UINT8_T sim_id, PINT_T cfun)</td></tr>
+<tr class="memdesc:ac7a2f6f108316368baada5e8a5be0422"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取蜂窝设备当前的通信功能设置  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ac7a2f6f108316368baada5e8a5be0422">更多...</a><br /></td></tr>
+<tr class="separator:ac7a2f6f108316368baada5e8a5be0422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d199995e38b56e3a7832fa0934b932"><td class="memItemLeft" align="right" valign="top">INT8_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a02d199995e38b56e3a7832fa0934b932">get_default_simid</a> )(VOID)</td></tr>
+<tr class="memdesc:a02d199995e38b56e3a7832fa0934b932"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的SIM ID  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a02d199995e38b56e3a7832fa0934b932">更多...</a><br /></td></tr>
+<tr class="separator:a02d199995e38b56e3a7832fa0934b932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345fcca4b62bcbcf3252625233bd0c5f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a345fcca4b62bcbcf3252625233bd0c5f">get_iccid</a> )(UINT8_T sim_id, CHAR_T iccid[20+1])</td></tr>
+<tr class="memdesc:a345fcca4b62bcbcf3252625233bd0c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡的ICCID  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a345fcca4b62bcbcf3252625233bd0c5f">更多...</a><br /></td></tr>
+<tr class="separator:a345fcca4b62bcbcf3252625233bd0c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2730788080149f0f842ca4a0f278f8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a5e2730788080149f0f842ca4a0f278f8">get_imei</a> )(UINT8_T sim_id, CHAR_T imei[15+1])</td></tr>
+<tr class="memdesc:a5e2730788080149f0f842ca4a0f278f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡所在通道设备的IMEI号  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a5e2730788080149f0f842ca4a0f278f8">更多...</a><br /></td></tr>
+<tr class="separator:a5e2730788080149f0f842ca4a0f278f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435562ec4f1cbdc1bc6f7fc881a7bb6e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a435562ec4f1cbdc1bc6f7fc881a7bb6e">get_imsi</a> )(UINT8_T sim_id, CHAR_T imsi[15+1])</td></tr>
+<tr class="memdesc:a435562ec4f1cbdc1bc6f7fc881a7bb6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡中的国际移动用户识别码  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a435562ec4f1cbdc1bc6f7fc881a7bb6e">更多...</a><br /></td></tr>
+<tr class="separator:a435562ec4f1cbdc1bc6f7fc881a7bb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab680db3ebabf157b6271e2b154ff36c1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab680db3ebabf157b6271e2b154ff36c1">get_lbs</a> )(UINT8_T simid, <a class="el" href="../../d6/d85/structTKL__LBS__INFO__T.html">TKL_LBS_INFO_T</a> *lbs, BOOL_T neighbour, INT_T timeout)</td></tr>
+<tr class="memdesc:ab680db3ebabf157b6271e2b154ff36c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前LBS的基站信息(只支持LTE)  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab680db3ebabf157b6271e2b154ff36c1">更多...</a><br /></td></tr>
+<tr class="separator:ab680db3ebabf157b6271e2b154ff36c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240e4388184900c9d4eea9be2ffd54f9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a240e4388184900c9d4eea9be2ffd54f9">get_rsrp</a> )(UINT8_T sim_id, INT_T *rsrp)</td></tr>
+<tr class="memdesc:a240e4388184900c9d4eea9be2ffd54f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前蜂窝设备的信号接收功率——单位dbm  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a240e4388184900c9d4eea9be2ffd54f9">更多...</a><br /></td></tr>
+<tr class="separator:a240e4388184900c9d4eea9be2ffd54f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85966ee9d125829ed0953f7976347bbc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a85966ee9d125829ed0953f7976347bbc">get_sinr</a> )(UINT8_T sim_id, INT_T *sinr, INT_T *bit_error)</td></tr>
+<tr class="memdesc:a85966ee9d125829ed0953f7976347bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前蜂窝设备的信号噪声比  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a85966ee9d125829ed0953f7976347bbc">更多...</a><br /></td></tr>
+<tr class="separator:a85966ee9d125829ed0953f7976347bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff9d7b11c622a40e7f19421e2cc171e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a9ff9d7b11c622a40e7f19421e2cc171e">ioctl</a> )(INT_T cmd, VOID *argv)</td></tr>
+<tr class="memdesc:a9ff9d7b11c622a40e7f19421e2cc171e"><td class="mdescLeft">&#160;</td><td class="mdescRight">平台提供一些特殊的能力接口  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a9ff9d7b11c622a40e7f19421e2cc171e">更多...</a><br /></td></tr>
+<tr class="separator:a9ff9d7b11c622a40e7f19421e2cc171e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504a8ed9d2316a97b4628d9d5157b9f2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a504a8ed9d2316a97b4628d9d5157b9f2">register_sim_state_notify</a> )(UINT8_T sim_id, <a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a> notify)</td></tr>
+<tr class="memdesc:a504a8ed9d2316a97b4628d9d5157b9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册SIM状态变化通知函数  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a504a8ed9d2316a97b4628d9d5157b9f2">更多...</a><br /></td></tr>
+<tr class="separator:a504a8ed9d2316a97b4628d9d5157b9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4d53e0b5fdf2e89cc6ad7476ffb319"><td class="memItemLeft" align="right" valign="top">BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a5f4d53e0b5fdf2e89cc6ad7476ffb319">rf_calibrated</a> )(VOID)</td></tr>
+<tr class="memdesc:a5f4d53e0b5fdf2e89cc6ad7476ffb319"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前设备的射频校准状态  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a5f4d53e0b5fdf2e89cc6ad7476ffb319">更多...</a><br /></td></tr>
+<tr class="separator:a5f4d53e0b5fdf2e89cc6ad7476ffb319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b9830aaab0e20b6b4dacead74a6f49"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab7b9830aaab0e20b6b4dacead74a6f49">set_cfun_mode</a> )(UINT8_T sim_id, INT_T cfun)</td></tr>
+<tr class="memdesc:ab7b9830aaab0e20b6b4dacead74a6f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置蜂窝设备的通信功能模式  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab7b9830aaab0e20b6b4dacead74a6f49">更多...</a><br /></td></tr>
+<tr class="separator:ab7b9830aaab0e20b6b4dacead74a6f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f64b38d26605c8ab2dd8db5bf5bb388"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a6f64b38d26605c8ab2dd8db5bf5bb388">set_imei</a> )(UINT8_T sim_id, CHAR_T imei[15+1])</td></tr>
+<tr class="memdesc:a6f64b38d26605c8ab2dd8db5bf5bb388"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置SIM卡所在通道设备的IMEI号  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#a6f64b38d26605c8ab2dd8db5bf5bb388">更多...</a><br /></td></tr>
+<tr class="separator:a6f64b38d26605c8ab2dd8db5bf5bb388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74633afb68a199e7948ccbd2ccf6794"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ad74633afb68a199e7948ccbd2ccf6794">sim_get_status</a> )(UINT8_T sim_id, UCHAR_T *state)</td></tr>
+<tr class="memdesc:ad74633afb68a199e7948ccbd2ccf6794"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIM卡的状态  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ad74633afb68a199e7948ccbd2ccf6794">更多...</a><br /></td></tr>
+<tr class="separator:ad74633afb68a199e7948ccbd2ccf6794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e65562e52cae347a39e72a9f6a26ab"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab2e65562e52cae347a39e72a9f6a26ab">sim_hotplug_enable</a> )(UINT8_T sim_id, BOOL_T enable)</td></tr>
+<tr class="memdesc:ab2e65562e52cae347a39e72a9f6a26ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能或禁止sim卡热拔插  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#ab2e65562e52cae347a39e72a9f6a26ab">更多...</a><br /></td></tr>
+<tr class="separator:ab2e65562e52cae347a39e72a9f6a26ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1971bbe970cdf9cdf7b4402b780c3e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#aaf1971bbe970cdf9cdf7b4402b780c3e">switch_sim</a> )(UINT8_T sim_id)</td></tr>
+<tr class="memdesc:aaf1971bbe970cdf9cdf7b4402b780c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换当前使能的SIM卡。如果是双卡双待，或者单卡则不需要实现该接口  <a href="../../d0/d5e/structTKL__CELL__BASE__INTF__T.html#aaf1971bbe970cdf9cdf7b4402b780c3e">更多...</a><br /></td></tr>
+<tr class="separator:aaf1971bbe970cdf9cdf7b4402b780c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组基础服务API接口定义 TAL在实现tkl_CellularSvcIntf_t接口后，需要调用tal_cellular_mds_register 把实现的对象注册到tkl中 </p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a8c2178fb82717b3b56d7b1af51058d7c" name="a8c2178fb82717b3b56d7b1af51058d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2178fb82717b3b56d7b1af51058d7c">&#9670;&nbsp;</a></span>enable_sim_detect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::enable_sim_detect) (UINT8_T simid, BOOL_T enable)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否使能SIM检测功能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>TRUE 使能，FALSE 禁止 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a6162a9cd08b50119d836eb6de18f8de7" name="a6162a9cd08b50119d836eb6de18f8de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6162a9cd08b50119d836eb6de18f8de7">&#9670;&nbsp;</a></span>get_ability</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_ability) (TKL_CELLULAR_ABILITY_E *ability)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备的通讯能力 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ability</td><td>@TKL_CELLULAR_ABILITY_E 类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ac7a2f6f108316368baada5e8a5be0422" name="ac7a2f6f108316368baada5e8a5be0422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a2f6f108316368baada5e8a5be0422">&#9670;&nbsp;</a></span>get_cfun_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_cfun_mode) (UINT8_T sim_id, PINT_T cfun)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取蜂窝设备当前的通信功能设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfun</td><td>获取的通信功能 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a02d199995e38b56e3a7832fa0934b932" name="a02d199995e38b56e3a7832fa0934b932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d199995e38b56e3a7832fa0934b932">&#9670;&nbsp;</a></span>get_default_simid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT8_T(* TKL_CELL_BASE_INTF_T::get_default_simid) (VOID)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取默认的SIM ID </p>
+<dl class="section return"><dt>返回</dt><dd>小于0失败，其他SIM ID </dd></dl>
+
+</div>
+</div>
+<a id="a345fcca4b62bcbcf3252625233bd0c5f" name="a345fcca4b62bcbcf3252625233bd0c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345fcca4b62bcbcf3252625233bd0c5f">&#9670;&nbsp;</a></span>get_iccid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_iccid) (UINT8_T sim_id, CHAR_T iccid[20+1])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡的ICCID </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">ICCID识别码，为20字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a5e2730788080149f0f842ca4a0f278f8" name="a5e2730788080149f0f842ca4a0f278f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2730788080149f0f842ca4a0f278f8">&#9670;&nbsp;</a></span>get_imei</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_imei) (UINT8_T sim_id, CHAR_T imei[15+1])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡所在通道设备的IMEI号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">IMEI识别码，为15字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a435562ec4f1cbdc1bc6f7fc881a7bb6e" name="a435562ec4f1cbdc1bc6f7fc881a7bb6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435562ec4f1cbdc1bc6f7fc881a7bb6e">&#9670;&nbsp;</a></span>get_imsi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_imsi) (UINT8_T sim_id, CHAR_T imsi[15+1])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡中的国际移动用户识别码 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">imsi识别码，为15字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab680db3ebabf157b6271e2b154ff36c1" name="ab680db3ebabf157b6271e2b154ff36c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab680db3ebabf157b6271e2b154ff36c1">&#9670;&nbsp;</a></span>get_lbs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_lbs) (UINT8_T simid, <a class="el" href="../../d6/d85/structTKL__LBS__INFO__T.html">TKL_LBS_INFO_T</a> *lbs, BOOL_T neighbour, INT_T timeout)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前LBS的基站信息(只支持LTE) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">lbs</td><td>返回基站信息 </td></tr>
+    <tr><td class="paramname">neighbour</td><td>是否搜索临近基站信息 </td></tr>
+    <tr><td class="paramname">timeout</td><td>搜索临近基站信息超时时间(一般需要4秒左右) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a240e4388184900c9d4eea9be2ffd54f9" name="a240e4388184900c9d4eea9be2ffd54f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240e4388184900c9d4eea9be2ffd54f9">&#9670;&nbsp;</a></span>get_rsrp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_rsrp) (UINT8_T sim_id, INT_T *rsrp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前蜂窝设备的信号接收功率——单位dbm </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">rsrp</td><td>返回实际的信号强度(dbm) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a85966ee9d125829ed0953f7976347bbc" name="a85966ee9d125829ed0953f7976347bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85966ee9d125829ed0953f7976347bbc">&#9670;&nbsp;</a></span>get_sinr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::get_sinr) (UINT8_T sim_id, INT_T *sinr, INT_T *bit_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前蜂窝设备的信号噪声比 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td></td></tr>
+    <tr><td class="paramname">sinr</td><td>(0~31) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a9ff9d7b11c622a40e7f19421e2cc171e" name="a9ff9d7b11c622a40e7f19421e2cc171e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff9d7b11c622a40e7f19421e2cc171e">&#9670;&nbsp;</a></span>ioctl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::ioctl) (INT_T cmd, VOID *argv)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>平台提供一些特殊的能力接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>参考CELL_IOCTRL_CMD </td></tr>
+    <tr><td class="paramname">argv</td><td>平台自定义</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a504a8ed9d2316a97b4628d9d5157b9f2" name="a504a8ed9d2316a97b4628d9d5157b9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a504a8ed9d2316a97b4628d9d5157b9f2">&#9670;&nbsp;</a></span>register_sim_state_notify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::register_sim_state_notify) (UINT8_T sim_id, <a class="el" href="../../d2/d40/tkl__cellular__base_8h.html#a1473cdc3b446640e7d8528bf3f9cfdee">TKL_SIM_NOTIFY</a> notify)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册SIM状态变化通知函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fun</td><td>状态变化通知函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a5f4d53e0b5fdf2e89cc6ad7476ffb319" name="a5f4d53e0b5fdf2e89cc6ad7476ffb319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4d53e0b5fdf2e89cc6ad7476ffb319">&#9670;&nbsp;</a></span>rf_calibrated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T(* TKL_CELL_BASE_INTF_T::rf_calibrated) (VOID)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前设备的射频校准状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return TRUE正常，FALSE异常 </p>
+
+</div>
+</div>
+<a id="ab7b9830aaab0e20b6b4dacead74a6f49" name="ab7b9830aaab0e20b6b4dacead74a6f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b9830aaab0e20b6b4dacead74a6f49">&#9670;&nbsp;</a></span>set_cfun_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::set_cfun_mode) (UINT8_T sim_id, INT_T cfun)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置蜂窝设备的通信功能模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfun</td><td>通信功能，取值含义如下： 1：全功能模式 4：飞行模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a6f64b38d26605c8ab2dd8db5bf5bb388" name="a6f64b38d26605c8ab2dd8db5bf5bb388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f64b38d26605c8ab2dd8db5bf5bb388">&#9670;&nbsp;</a></span>set_imei</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::set_imei) (UINT8_T sim_id, CHAR_T imei[15+1])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置SIM卡所在通道设备的IMEI号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">IMEI识别码，为15字节的字符串</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ad74633afb68a199e7948ccbd2ccf6794" name="ad74633afb68a199e7948ccbd2ccf6794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74633afb68a199e7948ccbd2ccf6794">&#9670;&nbsp;</a></span>sim_get_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::sim_get_status) (UINT8_T sim_id, UCHAR_T *state)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取SIM卡的状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">state</td><td>1：正常，0：异常 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab2e65562e52cae347a39e72a9f6a26ab" name="ab2e65562e52cae347a39e72a9f6a26ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e65562e52cae347a39e72a9f6a26ab">&#9670;&nbsp;</a></span>sim_hotplug_enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::sim_hotplug_enable) (UINT8_T sim_id, BOOL_T enable)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使能或禁止sim卡热拔插 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID </td></tr>
+    <tr><td class="paramname">enable</td><td>TRUE 使能 FALSE 禁止 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="aaf1971bbe970cdf9cdf7b4402b780c3e" name="aaf1971bbe970cdf9cdf7b4402b780c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1971bbe970cdf9cdf7b4402b780c3e">&#9670;&nbsp;</a></span>switch_sim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_BASE_INTF_T::switch_sim) (UINT8_T sim_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>切换当前使能的SIM卡。如果是双卡双待，或者单卡则不需要实现该接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simid</td><td>SIM卡ID.(0~1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/init/include/<a class="el" href="../../df/d89/tkl__init__cellular_8h_source.html">tkl_init_cellular.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

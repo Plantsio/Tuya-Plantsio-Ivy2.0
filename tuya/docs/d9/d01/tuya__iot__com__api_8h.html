@@ -1,0 +1,2485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_api_iot/include/tuya_iot_com_api.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_2f614bbe3ba3eda0deb0b4a36c9010ca.html">svc_api_iot</a></li><li class="navelem"><a class="el" href="../../dir_f2d8947984ed2c6831912f56fdf2350d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_iot_com_api.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tuya_cloud_com_defs.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_iot_com_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da4/tuya__iot__com__api_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__api__iot_2include_2tuya__iot__com__api_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__api__iot_2include_2tuya__iot__com__api_8h" id="ainclude_2components_2svc__api__iot_2include_2tuya__iot__com__api_8h">
+<area shape="rect" title=" " alt="" coords="479,5,633,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="419,184,567,211"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="531,109,706,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="817,259,892,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,427,285"/>
+<area shape="rect" title=" " alt="" coords="452,259,535,285"/>
+<area shape="rect" title=" " alt="" coords="559,259,630,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="655,259,793,285"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="700,184,793,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d97/tuya__iot__com__api_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__api__iot_2include_2tuya__iot__com__api_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__api__iot_2include_2tuya__iot__com__api_8hdep" id="ainclude_2components_2svc__api__iot_2include_2tuya__iot__com__api_8hdep">
+<area shape="rect" title=" " alt="" coords="7,5,160,61"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="5,109,161,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../d9/d01/tuya__iot__com__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:abd6314028161deac826f83eecbae15d1"><td class="memItemLeft" align="right" valign="top"><a id="abd6314028161deac826f83eecbae15d1" name="abd6314028161deac826f83eecbae15d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>dev_report_dp_raw_sync</b>(dev_id,  dpid,  data,  len,  timeout)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a0303b9005e46361c05d3bf15ce492ab8">dev_report_dp_raw_sync_extend</a>(dev_id, dpid, data, len, timeout, TRUE)</td></tr>
+<tr class="separator:abd6314028161deac826f83eecbae15d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2107710ae4f997d4c154b237f0ede5d9"><td class="memItemLeft" align="right" valign="top"><a id="a2107710ae4f997d4c154b237f0ede5d9" name="a2107710ae4f997d4c154b237f0ede5d9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>dev_report_dp_raw_sync_with_time</b>(dev_id,  dpid,  data,  len,  timeout,  time_str)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a599158f36c42e0b518529911b24aeabf">dev_report_dp_raw_sync_extend_with_time</a>(dev_id, dpid, data, len, timeout, TRUE, time_str)</td></tr>
+<tr class="separator:a2107710ae4f997d4c154b237f0ede5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2ae11755e4ebf13393ddf1ba713748"><td class="memItemLeft" align="right" valign="top"><a id="a4a2ae11755e4ebf13393ddf1ba713748" name="a4a2ae11755e4ebf13393ddf1ba713748"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>dev_report_dp_stat_sync</b>(dev_id,  dp_data,  cnt,  timeout)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a5355a37344a3f1f861678f0f26d57a75">dev_report_dp_stat_sync_extend</a>(dev_id, dp_data, cnt, timeout, TRUE)</td></tr>
+<tr class="separator:a4a2ae11755e4ebf13393ddf1ba713748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8163923270536deffe71e45bfb4538"><td class="memItemLeft" align="right" valign="top"><a id="a3b8163923270536deffe71e45bfb4538" name="a3b8163923270536deffe71e45bfb4538"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_dev_upgd_progress_rept</b>(percent,  devid,  tp)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a6c530323fbbae439e07f7a38e065f746">tuya_iot_dev_upgd_progress_with_remain_time</a>(percent, devid, tp, 0)</td></tr>
+<tr class="separator:a3b8163923270536deffe71e45bfb4538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd24825da133cc1d0d9a9b737916798"><td class="memItemLeft" align="right" valign="top"><a id="a8cd24825da133cc1d0d9a9b737916798" name="a8cd24825da133cc1d0d9a9b737916798"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_init</b>(fs_storge_path)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">tuya_iot_init_params</a>(fs_storge_path, NULL)</td></tr>
+<tr class="separator:a8cd24825da133cc1d0d9a9b737916798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999e4a9e2c41bc0f76ff120f44aa2457"><td class="memItemLeft" align="right" valign="top"><a id="a999e4a9e2c41bc0f76ff120f44aa2457" name="a999e4a9e2c41bc0f76ff120f44aa2457"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_kv_flash_init</b>&#160;&#160;&#160;<a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#acefd92941cfdc537481a3655ff69ee36">tuya_iot_kv_flash_init_param</a></td></tr>
+<tr class="separator:a999e4a9e2c41bc0f76ff120f44aa2457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed237826cd76e7d184d7f2e0870d7d6b"><td class="memItemLeft" align="right" valign="top"><a id="aed237826cd76e7d184d7f2e0870d7d6b" name="aed237826cd76e7d184d7f2e0870d7d6b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_upgrade_dev</b>(devid,  fw,  get_file_cb,  upgrd_nofity_cb,  pri_data)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a8a0a03a718e67afb8c2ec3c3be651af7">tuya_iot_upgrade_dev_notify</a>(devid, fw, get_file_cb, upgrd_nofity_cb, pri_data, TRUE, 0)</td></tr>
+<tr class="separator:aed237826cd76e7d184d7f2e0870d7d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8881b63abdef006d58c35d011e427016"><td class="memItemLeft" align="right" valign="top"><a id="a8881b63abdef006d58c35d011e427016" name="a8881b63abdef006d58c35d011e427016"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_upgrade_gw</b>(fw,  get_file_cb,  upgrd_nofity_cb,  pri_data)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ad8549e398d209317a9a670dac3ee153f">tuya_iot_upgrade_gw_notify</a>(fw, get_file_cb, upgrd_nofity_cb, pri_data, TRUE, 0)</td></tr>
+<tr class="separator:a8881b63abdef006d58c35d011e427016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb78161b232f0a4e9dfdc48c9e0a2829"><td class="memItemLeft" align="right" valign="top"><a id="aeb78161b232f0a4e9dfdc48c9e0a2829" name="aeb78161b232f0a4e9dfdc48c9e0a2829"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_upload_layout_buffer</b>(map_id,  buffer,  len)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a7b535154c0b7bef955286f8605676954">tuya_iot_map_cleaner_upload_buffer</a>(map_id, buffer, len, &quot;layout/lay.bin&quot;, UP_CLEANER_MAP)</td></tr>
+<tr class="separator:aeb78161b232f0a4e9dfdc48c9e0a2829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e39dccab3a3a2a3b26bfe365782a71"><td class="memItemLeft" align="right" valign="top"><a id="a75e39dccab3a3a2a3b26bfe365782a71" name="a75e39dccab3a3a2a3b26bfe365782a71"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_upload_layout_file</b>(map_id,  local_file_name)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#af4788f4fe0069111461c3d2464183c97">tuya_iot_map_cleaner_upload_file</a>(map_id, local_file_name, &quot;layout/lay.bin&quot;, UP_CLEANER_MAP)</td></tr>
+<tr class="separator:a75e39dccab3a3a2a3b26bfe365782a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317e8d94a3fd522f8e259930fc114b96"><td class="memItemLeft" align="right" valign="top"><a id="a317e8d94a3fd522f8e259930fc114b96" name="a317e8d94a3fd522f8e259930fc114b96"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_upload_route_buffer</b>(map_id,  buffer,  len)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a7b535154c0b7bef955286f8605676954">tuya_iot_map_cleaner_upload_buffer</a>(map_id, buffer, len, &quot;route/rou.bin&quot;, UP_CLEANER_PATH)</td></tr>
+<tr class="separator:a317e8d94a3fd522f8e259930fc114b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fbafd93d84ec8fdf4703b8084264a1"><td class="memItemLeft" align="right" valign="top"><a id="ad9fbafd93d84ec8fdf4703b8084264a1" name="ad9fbafd93d84ec8fdf4703b8084264a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_upload_route_file</b>(map_id,  local_file_name)&#160;&#160;&#160;    <a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#af4788f4fe0069111461c3d2464183c97">tuya_iot_map_cleaner_upload_file</a>(map_id, local_file_name, &quot;route/rou.bin&quot;, UP_CLEANER_PATH)</td></tr>
+<tr class="separator:ad9fbafd93d84ec8fdf4703b8084264a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab3ed05864f54405b2819057449a707bf"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ab3ed05864f54405b2819057449a707bf">dev_query_dp_json_async</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:ab3ed05864f54405b2819057449a707bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_query_dp_json_async @desc report dp info a-synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ab3ed05864f54405b2819057449a707bf">更多...</a><br /></td></tr>
+<tr class="separator:ab3ed05864f54405b2819057449a707bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fdd39815fe0fb3faabda80928aba34f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a6fdd39815fe0fb3faabda80928aba34f">dev_query_dp_json_async_force</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:a6fdd39815fe0fb3faabda80928aba34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_query_dp_json_async_force @desc report dp info a-synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a6fdd39815fe0fb3faabda80928aba34f">更多...</a><br /></td></tr>
+<tr class="separator:a6fdd39815fe0fb3faabda80928aba34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de968a6e5fd44e0e45d99a7980c8af1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">dev_report_dp_json_async</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:a1de968a6e5fd44e0e45d99a7980c8af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_report_dp_json_async @desc report dp info a-synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a1de968a6e5fd44e0e45d99a7980c8af1">更多...</a><br /></td></tr>
+<tr class="separator:a1de968a6e5fd44e0e45d99a7980c8af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb27e1f3a0abd4f7290c4139ea2799cf"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#afb27e1f3a0abd4f7290c4139ea2799cf">dev_report_dp_json_async_force</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:afb27e1f3a0abd4f7290c4139ea2799cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_report_dp_json_async_force @desc report dp info a-synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#afb27e1f3a0abd4f7290c4139ea2799cf">更多...</a><br /></td></tr>
+<tr class="separator:afb27e1f3a0abd4f7290c4139ea2799cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0303b9005e46361c05d3bf15ce492ab8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a0303b9005e46361c05d3bf15ce492ab8">dev_report_dp_raw_sync_extend</a> (IN CONST CHAR_T *dev_id, IN CONST BYTE_T dpid, IN CONST BYTE_T *data, IN CONST UINT_T len, IN CONST UINT_T timeout, IN CONST BOOL_T enable_auto_retrans)</td></tr>
+<tr class="memdesc:a0303b9005e46361c05d3bf15ce492ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_report_dp_raw_sync_extend @desc report dp raw info synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a0303b9005e46361c05d3bf15ce492ab8">更多...</a><br /></td></tr>
+<tr class="separator:a0303b9005e46361c05d3bf15ce492ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599158f36c42e0b518529911b24aeabf"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a599158f36c42e0b518529911b24aeabf">dev_report_dp_raw_sync_extend_with_time</a> (IN CONST CHAR_T *dev_id, IN CONST BYTE_T dpid, IN CONST BYTE_T *data, IN CONST UINT_T len, IN CONST UINT_T timeout, IN CONST BOOL_T enable_auto_retrans, IN CONST CHAR_T *time_str)</td></tr>
+<tr class="memdesc:a599158f36c42e0b518529911b24aeabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_report_dp_raw_sync_extend_with_time @desc report dp raw info synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a599158f36c42e0b518529911b24aeabf">更多...</a><br /></td></tr>
+<tr class="separator:a599158f36c42e0b518529911b24aeabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5355a37344a3f1f861678f0f26d57a75"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a5355a37344a3f1f861678f0f26d57a75">dev_report_dp_stat_sync_extend</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt, IN CONST UINT_T timeout, IN CONST BOOL_T enable_auto_retrans)</td></tr>
+<tr class="memdesc:a5355a37344a3f1f861678f0f26d57a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_report_dp_stat_sync_extend @desc: report dp status info synced. if time_stamp==0, time_stamp = time of msg arrival of the server  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a5355a37344a3f1f861678f0f26d57a75">更多...</a><br /></td></tr>
+<tr class="separator:a5355a37344a3f1f861678f0f26d57a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae5ea88b0258c9b6295b2a2bd6888f9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a2ae5ea88b0258c9b6295b2a2bd6888f9">dev_sync_dp_json_async</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:a2ae5ea88b0258c9b6295b2a2bd6888f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_sync_dp_json_async @desc report dp info a-synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a2ae5ea88b0258c9b6295b2a2bd6888f9">更多...</a><br /></td></tr>
+<tr class="separator:a2ae5ea88b0258c9b6295b2a2bd6888f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf65d820bf001c416784ab6ead3a325"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#aedf65d820bf001c416784ab6ead3a325">dev_sync_dp_json_async_force</a> (IN CONST CHAR_T *dev_id, IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *dp_data, IN CONST UINT_T cnt)</td></tr>
+<tr class="memdesc:aedf65d820bf001c416784ab6ead3a325"><td class="mdescLeft">&#160;</td><td class="mdescRight">dev_sync_dp_json_async_force @desc report dp info a-synced.  <a href="../../d9/d01/tuya__iot__com__api_8h.html#aedf65d820bf001c416784ab6ead3a325">更多...</a><br /></td></tr>
+<tr class="separator:aedf65d820bf001c416784ab6ead3a325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60641d2cad266d3ac1de132f978cc92"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ac60641d2cad266d3ac1de132f978cc92">tuya_iot_app_cbs_init</a> (IN CONST <a class="el" href="../../d0/db3/structTY__IOT__APP__CBS__S.html">TY_IOT_APP_CBS_S</a> *app_cbs)</td></tr>
+<tr class="memdesc:ac60641d2cad266d3ac1de132f978cc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_app_cbs_init  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ac60641d2cad266d3ac1de132f978cc92">更多...</a><br /></td></tr>
+<tr class="separator:ac60641d2cad266d3ac1de132f978cc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5867d69d0aa3b0a740ff89046094ebd5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a5867d69d0aa3b0a740ff89046094ebd5">tuya_iot_book_additional_topic</a> (IN CHAR_T *topic)</td></tr>
+<tr class="memdesc:a5867d69d0aa3b0a740ff89046094ebd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_book_additional_topic @desc subscribe additional topic  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a5867d69d0aa3b0a740ff89046094ebd5">更多...</a><br /></td></tr>
+<tr class="separator:a5867d69d0aa3b0a740ff89046094ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab022c35c742f4b9f4b0ac2226b24d76f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ab022c35c742f4b9f4b0ac2226b24d76f">tuya_iot_book_wakeup_topic</a> (VOID)</td></tr>
+<tr class="memdesc:ab022c35c742f4b9f4b0ac2226b24d76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_book_wakeup_topic @desc unscribe mqtt msg topic and subscribe wakeup topic  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ab022c35c742f4b9f4b0ac2226b24d76f">更多...</a><br /></td></tr>
+<tr class="separator:ab022c35c742f4b9f4b0ac2226b24d76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099ca504f2baa9937bd9e44a00f04946"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a099ca504f2baa9937bd9e44a00f04946">tuya_iot_custom_data_report_async</a> (IN CONST BYTE_T *data, IN CONST INT_T len, IN CONST CHAR_T *topic, IN CONST BYTE_T qos, IN CONST UINT_T timeout)</td></tr>
+<tr class="memdesc:a099ca504f2baa9937bd9e44a00f04946"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_custom_data_report_async  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a099ca504f2baa9937bd9e44a00f04946">更多...</a><br /></td></tr>
+<tr class="separator:a099ca504f2baa9937bd9e44a00f04946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac898cdaef753ebc80599eefec6359afe"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ac898cdaef753ebc80599eefec6359afe">tuya_iot_custom_data_report_sync</a> (IN CONST BYTE_T *data, IN CONST INT_T len, IN CONST CHAR_T *topic, IN CONST BYTE_T qos, IN CONST UINT_T timeout)</td></tr>
+<tr class="memdesc:ac898cdaef753ebc80599eefec6359afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_custom_data_report_sync  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ac898cdaef753ebc80599eefec6359afe">更多...</a><br /></td></tr>
+<tr class="separator:ac898cdaef753ebc80599eefec6359afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c530323fbbae439e07f7a38e065f746"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a6c530323fbbae439e07f7a38e065f746">tuya_iot_dev_upgd_progress_with_remain_time</a> (IN CONST UINT_T percent, IN CONST CHAR_T *devid, IN CONST DEV_TYPE_T tp, IN CONST UINT_T remain_time)</td></tr>
+<tr class="memdesc:a6c530323fbbae439e07f7a38e065f746"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_dev_upgd_progress_with_remain_time  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a6c530323fbbae439e07f7a38e065f746">更多...</a><br /></td></tr>
+<tr class="separator:a6c530323fbbae439e07f7a38e065f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a31e021716e3f1f27eb0e11ee3d586"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a62a31e021716e3f1f27eb0e11ee3d586">tuya_iot_dev_upgd_result_report</a> (IN CONST CHAR_T *dev_id, IN CONST DEV_TYPE_T type, IN CONST INT_T result)</td></tr>
+<tr class="memdesc:a62a31e021716e3f1f27eb0e11ee3d586"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_dev_upgd_result_report  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a62a31e021716e3f1f27eb0e11ee3d586">更多...</a><br /></td></tr>
+<tr class="separator:a62a31e021716e3f1f27eb0e11ee3d586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0753f4b091c4f100b0408f3800aef544"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a0753f4b091c4f100b0408f3800aef544">tuya_iot_dp_low_power_query</a> (IN CONST UCHAR_T *dps, IN CONST UINT_T cnt, OUT <a class="el" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> **obj_dps, OUT <a class="el" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> **raw_dps)</td></tr>
+<tr class="memdesc:a0753f4b091c4f100b0408f3800aef544"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_dp_low_power_query  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a0753f4b091c4f100b0408f3800aef544">更多...</a><br /></td></tr>
+<tr class="separator:a0753f4b091c4f100b0408f3800aef544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf886274ba11f3a44c65375ccf96968"><td class="memItemLeft" align="right" valign="top">BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#acbf886274ba11f3a44c65375ccf96968">tuya_iot_get_active_stat</a> (VOID)</td></tr>
+<tr class="memdesc:acbf886274ba11f3a44c65375ccf96968"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_active_stat  <a href="../../d9/d01/tuya__iot__com__api_8h.html#acbf886274ba11f3a44c65375ccf96968">更多...</a><br /></td></tr>
+<tr class="separator:acbf886274ba11f3a44c65375ccf96968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63009161df86e96170c6a32552b6bc6c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a63009161df86e96170c6a32552b6bc6c">tuya_iot_get_custom_cfg</a> (IN CONST TY_CUSTOM_CFG_E type, OUT CHAR_T **pp_cfg_str)</td></tr>
+<tr class="memdesc:a63009161df86e96170c6a32552b6bc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_custom_cfg  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a63009161df86e96170c6a32552b6bc6c">更多...</a><br /></td></tr>
+<tr class="separator:a63009161df86e96170c6a32552b6bc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa6f21eb544410798f951586bd83240"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#aafa6f21eb544410798f951586bd83240">tuya_iot_get_dp_desc</a> (IN CONST CHAR_T *dev_id, IN CONST BYTE_T dpid)</td></tr>
+<tr class="memdesc:aafa6f21eb544410798f951586bd83240"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_dp_desc @desc get dp info of a sub-device and a dp id  <a href="../../d9/d01/tuya__iot__com__api_8h.html#aafa6f21eb544410798f951586bd83240">更多...</a><br /></td></tr>
+<tr class="separator:aafa6f21eb544410798f951586bd83240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a195fe8683335453dbf596a561c7e36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4f/unionDP__PROP__VALUE__U.html">DP_PROP_VALUE_U</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a6a195fe8683335453dbf596a561c7e36">tuya_iot_get_dp_prop_value</a> (IN CONST CHAR_T *dev_id, IN CONST BYTE_T dpid)</td></tr>
+<tr class="memdesc:a6a195fe8683335453dbf596a561c7e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_dp_prop_value @desc get dp value of a sub-device and a dp id  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a6a195fe8683335453dbf596a561c7e36">更多...</a><br /></td></tr>
+<tr class="separator:a6a195fe8683335453dbf596a561c7e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95b599485133c4709f79d010c10fa10"><td class="memItemLeft" align="right" valign="top"><a id="ad95b599485133c4709f79d010c10fa10" name="ad95b599485133c4709f79d010c10fa10"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_get_ext_module_info</b> (<a class="el" href="../../d3/d2e/structDEV__EXT__MODULE__INFO.html">DEV_EXT_MODULE_INFO</a> *ext_module_info)</td></tr>
+<tr class="separator:ad95b599485133c4709f79d010c10fa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c45e379af3ad04282edb5532e5cfc16"><td class="memItemLeft" align="right" valign="top"><a id="a9c45e379af3ad04282edb5532e5cfc16" name="a9c45e379af3ad04282edb5532e5cfc16"></a>
+DEV_EXT_MODE_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_get_ext_module_type</b> (VOID)</td></tr>
+<tr class="separator:a9c45e379af3ad04282edb5532e5cfc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae72719eb0d2b811c0ba407748c04bf4"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#aae72719eb0d2b811c0ba407748c04bf4">tuya_iot_get_gw_id</a> (VOID)</td></tr>
+<tr class="memdesc:aae72719eb0d2b811c0ba407748c04bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_gw_id  <a href="../../d9/d01/tuya__iot__com__api_8h.html#aae72719eb0d2b811c0ba407748c04bf4">更多...</a><br /></td></tr>
+<tr class="separator:aae72719eb0d2b811c0ba407748c04bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69eede60e9ac8b0efabe1bd47c2addd"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ad69eede60e9ac8b0efabe1bd47c2addd">tuya_iot_get_heartbeat_data</a> (INOUT BYTE_T *heartbeat_data_arr, INOUT UINT_T *p_len)</td></tr>
+<tr class="memdesc:ad69eede60e9ac8b0efabe1bd47c2addd"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_heartbeat_data @desc get mqtt heartbeat string pattern  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ad69eede60e9ac8b0efabe1bd47c2addd">更多...</a><br /></td></tr>
+<tr class="separator:ad69eede60e9ac8b0efabe1bd47c2addd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc9a93eef8226d03920721e5dc6007c"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a0cc9a93eef8226d03920721e5dc6007c">tuya_iot_get_heartbeat_interval</a> (VOID)</td></tr>
+<tr class="memdesc:a0cc9a93eef8226d03920721e5dc6007c"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_heartbeat_interval @desc get mqtt heartbeat interval  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a0cc9a93eef8226d03920721e5dc6007c">更多...</a><br /></td></tr>
+<tr class="separator:a0cc9a93eef8226d03920721e5dc6007c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316e09184f657d0e52575c229460c9a8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a316e09184f657d0e52575c229460c9a8">tuya_iot_get_location_info</a> (INOUT <a class="el" href="../../d6/d8a/structTY__LOCATION__INFO__S.html">TY_LOCATION_INFO_S</a> *p_location)</td></tr>
+<tr class="memdesc:a316e09184f657d0e52575c229460c9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_location_info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a316e09184f657d0e52575c229460c9a8">更多...</a><br /></td></tr>
+<tr class="separator:a316e09184f657d0e52575c229460c9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808183a991f0d0ae3e5092be331c8137"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a808183a991f0d0ae3e5092be331c8137">tuya_iot_get_mqtt_socket_fd</a> (VOID)</td></tr>
+<tr class="memdesc:a808183a991f0d0ae3e5092be331c8137"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_mqtt_socket_fd @desc get curr mqtt socket fd  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a808183a991f0d0ae3e5092be331c8137">更多...</a><br /></td></tr>
+<tr class="separator:a808183a991f0d0ae3e5092be331c8137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c7def7fa4b7e32720dbdcb29b9fefa"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a13c7def7fa4b7e32720dbdcb29b9fefa">tuya_iot_get_os_adapt_info</a> (VOID_T)</td></tr>
+<tr class="memdesc:a13c7def7fa4b7e32720dbdcb29b9fefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_os_adapt_info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a13c7def7fa4b7e32720dbdcb29b9fefa">更多...</a><br /></td></tr>
+<tr class="separator:a13c7def7fa4b7e32720dbdcb29b9fefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6592774da2fba847b76a90bab86c3e6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ad6592774da2fba847b76a90bab86c3e6">tuya_iot_get_region_info</a> (INOUT <a class="el" href="../../de/de8/structTY__IOT__REGION__INFO__S.html">TY_IOT_REGION_INFO_S</a> *p_region_info)</td></tr>
+<tr class="memdesc:ad6592774da2fba847b76a90bab86c3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_region_info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ad6592774da2fba847b76a90bab86c3e6">更多...</a><br /></td></tr>
+<tr class="separator:ad6592774da2fba847b76a90bab86c3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb09c7808b12f1c215d22939f95e7af"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a4bb09c7808b12f1c215d22939f95e7af">tuya_iot_get_sdk_info</a> (VOID)</td></tr>
+<tr class="memdesc:a4bb09c7808b12f1c215d22939f95e7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_sdk_info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a4bb09c7808b12f1c215d22939f95e7af">更多...</a><br /></td></tr>
+<tr class="separator:a4bb09c7808b12f1c215d22939f95e7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e35025397931b3f5bf22ffeb6d9ec3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a22e35025397931b3f5bf22ffeb6d9ec3">tuya_iot_get_wakeup_data</a> (INOUT BYTE_T *wakeup_data_arr, INOUT UINT_T *p_len)</td></tr>
+<tr class="memdesc:a22e35025397931b3f5bf22ffeb6d9ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_get_wakeup_data @desc get mqtt wakeup string pattern  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a22e35025397931b3f5bf22ffeb6d9ec3">更多...</a><br /></td></tr>
+<tr class="separator:a22e35025397931b3f5bf22ffeb6d9ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c21ac02d6b1e9de7f70fca1ec136b1"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ab3c21ac02d6b1e9de7f70fca1ec136b1">tuya_iot_ignore_upgrade_set</a> (IN CONST BOOL_T ignore)</td></tr>
+<tr class="memdesc:ab3c21ac02d6b1e9de7f70fca1ec136b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_ignore_upgrade_set @desc set rst log upload mode  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ab3c21ac02d6b1e9de7f70fca1ec136b1">更多...</a><br /></td></tr>
+<tr class="separator:ab3c21ac02d6b1e9de7f70fca1ec136b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b0e6c593dc2261515ddbbf8c330421"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">tuya_iot_init_params</a> (IN CONST CHAR_T *fs_storge_path, IN CONST <a class="el" href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a> *p_param)</td></tr>
+<tr class="memdesc:a48b0e6c593dc2261515ddbbf8c330421"><td class="mdescLeft">&#160;</td><td class="mdescRight">TuyaOS system service init  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">更多...</a><br /></td></tr>
+<tr class="separator:a48b0e6c593dc2261515ddbbf8c330421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefd92941cfdc537481a3655ff69ee36"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#acefd92941cfdc537481a3655ff69ee36">tuya_iot_kv_flash_init_param</a> (IN CONST CHAR_T *fs_storge_path)</td></tr>
+<tr class="memdesc:acefd92941cfdc537481a3655ff69ee36"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_kv_flash_init_param @desc init kv flash  <a href="../../d9/d01/tuya__iot__com__api_8h.html#acefd92941cfdc537481a3655ff69ee36">更多...</a><br /></td></tr>
+<tr class="separator:acefd92941cfdc537481a3655ff69ee36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b535154c0b7bef955286f8605676954"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a7b535154c0b7bef955286f8605676954">tuya_iot_map_cleaner_upload_buffer</a> (IN CONST INT_T map_id, IN CONST BYTE_T *buffer, IN CONST UINT_T len, IN CONST CHAR_T *cloud_file_name, IN CONST UP_MAP_TYPE_E map_type)</td></tr>
+<tr class="memdesc:a7b535154c0b7bef955286f8605676954"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_map_cleaner_upload_buffer @desc sweeper function. upload cleaner map info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a7b535154c0b7bef955286f8605676954">更多...</a><br /></td></tr>
+<tr class="separator:a7b535154c0b7bef955286f8605676954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4788f4fe0069111461c3d2464183c97"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#af4788f4fe0069111461c3d2464183c97">tuya_iot_map_cleaner_upload_file</a> (IN CONST INT_T map_id, IN CONST CHAR_T *local_file_name, IN CONST CHAR_T *cloud_file_name, IN CONST UP_MAP_TYPE_E map_type)</td></tr>
+<tr class="memdesc:af4788f4fe0069111461c3d2464183c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_map_cleaner_upload_file @desc sweeper function. upload cleaner map info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#af4788f4fe0069111461c3d2464183c97">更多...</a><br /></td></tr>
+<tr class="separator:af4788f4fe0069111461c3d2464183c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5335f602c5c742a84a3854455625ee94"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a5335f602c5c742a84a3854455625ee94">tuya_iot_map_record_upload_buffer</a> (IN CONST INT_T map_id, IN CONST BYTE_T *buffer, IN CONST UINT_T len, IN CONST CHAR_T *descript)</td></tr>
+<tr class="memdesc:a5335f602c5c742a84a3854455625ee94"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_map_record_upload_buffer @desc sweeper function. upload record map info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a5335f602c5c742a84a3854455625ee94">更多...</a><br /></td></tr>
+<tr class="separator:a5335f602c5c742a84a3854455625ee94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadcf554cd7dcc194260b349ba0bfb98"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#acadcf554cd7dcc194260b349ba0bfb98">tuya_iot_map_record_upload_buffer_with_filename</a> (IN CONST INT_T map_id, IN CONST BYTE_T *buffer, IN CONST UINT_T len, IN CONST CHAR_T *cloud_file_name, IN CONST CHAR_T *descript)</td></tr>
+<tr class="memdesc:acadcf554cd7dcc194260b349ba0bfb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_map_record_upload_buffer_with_filename @desc sweeper function. upload record map info  <a href="../../d9/d01/tuya__iot__com__api_8h.html#acadcf554cd7dcc194260b349ba0bfb98">更多...</a><br /></td></tr>
+<tr class="separator:acadcf554cd7dcc194260b349ba0bfb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eff5eb058ed3bae0da8ab6658b76153"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a9eff5eb058ed3bae0da8ab6658b76153">tuya_iot_media_data_report</a> (IN CONST <a class="el" href="../../d7/db5/structFLOW__BODY__ST.html">FLOW_BODY_ST</a> *dt_body, IN CONST UINT_T timeout)</td></tr>
+<tr class="memdesc:a9eff5eb058ed3bae0da8ab6658b76153"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_media_data_report  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a9eff5eb058ed3bae0da8ab6658b76153">更多...</a><br /></td></tr>
+<tr class="separator:a9eff5eb058ed3bae0da8ab6658b76153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334730512a795c1ada588d44141a507a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a334730512a795c1ada588d44141a507a">tuya_iot_media_data_report_v2</a> (IN CONST <a class="el" href="../../da/d6a/structFLOW__BODY__V2__ST.html">FLOW_BODY_V2_ST</a> *dt_body, IN CONST UINT_T timeout)</td></tr>
+<tr class="memdesc:a334730512a795c1ada588d44141a507a"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_media_data_report_v2  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a334730512a795c1ada588d44141a507a">更多...</a><br /></td></tr>
+<tr class="separator:a334730512a795c1ada588d44141a507a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2984d6807e89929eb8fe37ba4cb65733"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a2984d6807e89929eb8fe37ba4cb65733">tuya_iot_mqtt_disconnect</a> (VOID)</td></tr>
+<tr class="memdesc:a2984d6807e89929eb8fe37ba4cb65733"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_mqtt_disconnect @desc force disconnect MQTT  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a2984d6807e89929eb8fe37ba4cb65733">更多...</a><br /></td></tr>
+<tr class="separator:a2984d6807e89929eb8fe37ba4cb65733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f25ca712fcd86e175766fb602bebb0"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ae2f25ca712fcd86e175766fb602bebb0">tuya_iot_mqtt_restart</a> (VOID)</td></tr>
+<tr class="memdesc:ae2f25ca712fcd86e175766fb602bebb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_mqtt_restart @desc restart MQTT  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ae2f25ca712fcd86e175766fb602bebb0">更多...</a><br /></td></tr>
+<tr class="separator:ae2f25ca712fcd86e175766fb602bebb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9211db6ac6e2a3981707f718ec99a0"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a9e9211db6ac6e2a3981707f718ec99a0">tuya_iot_oem_set</a> (IN CONST BOOL_T oem)</td></tr>
+<tr class="memdesc:a9e9211db6ac6e2a3981707f718ec99a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_oem_set @desc set oem mode  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a9e9211db6ac6e2a3981707f718ec99a0">更多...</a><br /></td></tr>
+<tr class="separator:a9e9211db6ac6e2a3981707f718ec99a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cd3f271de36d6431f9a85b257ff0f5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ab0cd3f271de36d6431f9a85b257ff0f5">tuya_iot_refuse_upgrade</a> (IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST CHAR_T *dev_id)</td></tr>
+<tr class="memdesc:ab0cd3f271de36d6431f9a85b257ff0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_refuse_upgrade  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ab0cd3f271de36d6431f9a85b257ff0f5">更多...</a><br /></td></tr>
+<tr class="separator:ab0cd3f271de36d6431f9a85b257ff0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac384dc8671642c6276e952ea13fa175"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#aac384dc8671642c6276e952ea13fa175">tuya_iot_regist_dp_rept_cb</a> (IN <a class="el" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a> *dp_rept_cbs)</td></tr>
+<tr class="memdesc:aac384dc8671642c6276e952ea13fa175"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_regist_dp_rept_cb  <a href="../../d9/d01/tuya__iot__com__api_8h.html#aac384dc8671642c6276e952ea13fa175">更多...</a><br /></td></tr>
+<tr class="separator:aac384dc8671642c6276e952ea13fa175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa695c3aa96213837cb0a0cb8db31be84"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#aa695c3aa96213837cb0a0cb8db31be84">tuya_iot_release_custom_cfg</a> (IN CHAR_T *p_cfg_str)</td></tr>
+<tr class="memdesc:aa695c3aa96213837cb0a0cb8db31be84"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_release_custom_cfg  <a href="../../d9/d01/tuya__iot__com__api_8h.html#aa695c3aa96213837cb0a0cb8db31be84">更多...</a><br /></td></tr>
+<tr class="separator:aa695c3aa96213837cb0a0cb8db31be84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cd58bac51a8cd178efed2008a39e70"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a38cd58bac51a8cd178efed2008a39e70">tuya_iot_reset_upgrade_detect_timer</a> (IN CONST INT_T time_ms)</td></tr>
+<tr class="memdesc:a38cd58bac51a8cd178efed2008a39e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_reset_upgrade_detect_timer @desc reset the upgrade detect time  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a38cd58bac51a8cd178efed2008a39e70">更多...</a><br /></td></tr>
+<tr class="separator:a38cd58bac51a8cd178efed2008a39e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08fd51347a543e9a9fd509558369768"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ab08fd51347a543e9a9fd509558369768">tuya_iot_send_custom_mqtt_msg</a> (IN CONST UINT_T protocol, IN CONST BYTE_T *p_data)</td></tr>
+<tr class="memdesc:ab08fd51347a543e9a9fd509558369768"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_send_custom_mqtt_msg @desc send a custom protocol mqtt msg  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ab08fd51347a543e9a9fd509558369768">更多...</a><br /></td></tr>
+<tr class="separator:ab08fd51347a543e9a9fd509558369768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd1e2bb4da25a6f4a8797d0168771c6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#abcd1e2bb4da25a6f4a8797d0168771c6">tuya_iot_send_mqtt_msg_with_topic</a> (IN CONST CHAR_T *topic, IN CONST UINT_T protocol, IN CONST BYTE_T *p_data)</td></tr>
+<tr class="memdesc:abcd1e2bb4da25a6f4a8797d0168771c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_send_mqtt_msg_with_topic @desc send a custom protocol mqtt msg to topic  <a href="../../d9/d01/tuya__iot__com__api_8h.html#abcd1e2bb4da25a6f4a8797d0168771c6">更多...</a><br /></td></tr>
+<tr class="separator:abcd1e2bb4da25a6f4a8797d0168771c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1095348d83ceb16ea97a25b9aa264b"><td class="memItemLeft" align="right" valign="top"><a id="aac1095348d83ceb16ea97a25b9aa264b" name="aac1095348d83ceb16ea97a25b9aa264b"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_set_ext_active_info</b> (const char *active_info)</td></tr>
+<tr class="separator:aac1095348d83ceb16ea97a25b9aa264b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc8b49e71f95acc4892eb49aaacf858"><td class="memItemLeft" align="right" valign="top"><a id="a1fc8b49e71f95acc4892eb49aaacf858" name="a1fc8b49e71f95acc4892eb49aaacf858"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_set_ext_auth_info</b> (const CHAR_T *auth_info)</td></tr>
+<tr class="separator:a1fc8b49e71f95acc4892eb49aaacf858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6914e0421ccd859ae318f5a0f3f1db4"><td class="memItemLeft" align="right" valign="top"><a id="aa6914e0421ccd859ae318f5a0f3f1db4" name="aa6914e0421ccd859ae318f5a0f3f1db4"></a>
+VOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_iot_set_ext_module_type</b> (DEV_EXT_MODE_TYPE emt)</td></tr>
+<tr class="separator:aa6914e0421ccd859ae318f5a0f3f1db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ed352b3a0096d25aa7c48cc574e961"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a48ed352b3a0096d25aa7c48cc574e961">tuya_iot_set_log_attr</a> (IN CONST INT_T log_level)</td></tr>
+<tr class="memdesc:a48ed352b3a0096d25aa7c48cc574e961"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_set_log_attr  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a48ed352b3a0096d25aa7c48cc574e961">更多...</a><br /></td></tr>
+<tr class="separator:a48ed352b3a0096d25aa7c48cc574e961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae373d80854b2129e9cc50286795bf9a8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ae373d80854b2129e9cc50286795bf9a8">tuya_iot_set_log_bool_time</a> (BOOL_T if_ms_level)</td></tr>
+<tr class="memdesc:ae373d80854b2129e9cc50286795bf9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_set_log_bool_time  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ae373d80854b2129e9cc50286795bf9a8">更多...</a><br /></td></tr>
+<tr class="separator:ae373d80854b2129e9cc50286795bf9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d20249d21e44c679bc42f7474f481e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a95d20249d21e44c679bc42f7474f481e">tuya_iot_set_udf_parameter</a> (IN CONST CHAR_T *udf)</td></tr>
+<tr class="memdesc:a95d20249d21e44c679bc42f7474f481e"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_set_udf_parameter @desc set user defined funtions  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a95d20249d21e44c679bc42f7474f481e">更多...</a><br /></td></tr>
+<tr class="separator:a95d20249d21e44c679bc42f7474f481e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0a03a718e67afb8c2ec3c3be651af7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#a8a0a03a718e67afb8c2ec3c3be651af7">tuya_iot_upgrade_dev_notify</a> (IN CONST CHAR_T *devid, IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST GET_FILE_DATA_CB get_file_cb, IN CONST UPGRADE_NOTIFY_CB upgrd_nofity_cb, IN CONST PVOID_T pri_data, BOOL_T notify, UINT_T download_buf_size)</td></tr>
+<tr class="memdesc:a8a0a03a718e67afb8c2ec3c3be651af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_upgrade_dev_notify @desc upgrage sub-device/soc/mcu firmware  <a href="../../d9/d01/tuya__iot__com__api_8h.html#a8a0a03a718e67afb8c2ec3c3be651af7">更多...</a><br /></td></tr>
+<tr class="separator:a8a0a03a718e67afb8c2ec3c3be651af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8549e398d209317a9a670dac3ee153f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ad8549e398d209317a9a670dac3ee153f">tuya_iot_upgrade_gw_notify</a> (IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST GET_FILE_DATA_CB get_file_cb, IN CONST UPGRADE_NOTIFY_CB upgrd_nofity_cb, IN CONST PVOID_T pri_data, BOOL_T notify, UINT_T download_buf_size)</td></tr>
+<tr class="memdesc:ad8549e398d209317a9a670dac3ee153f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_upgrade_gw_notify @desc upgrage gateway firmware  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ad8549e398d209317a9a670dac3ee153f">更多...</a><br /></td></tr>
+<tr class="separator:ad8549e398d209317a9a670dac3ee153f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b8f5a7fafda6e4febf38c480fec1db"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#ae7b8f5a7fafda6e4febf38c480fec1db">tuya_iot_upload_incre_data</a> (IN CONST USHORT_T map_id, IN CONST UINT_T offset, IN CONST BYTE_T *pbuffer, IN CONST USHORT_T buf_len)</td></tr>
+<tr class="memdesc:ae7b8f5a7fafda6e4febf38c480fec1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">&zwj;***********************************************************  <a href="../../d9/d01/tuya__iot__com__api_8h.html#ae7b8f5a7fafda6e4febf38c480fec1db">更多...</a><br /></td></tr>
+<tr class="separator:ae7b8f5a7fafda6e4febf38c480fec1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90f9e345061c1498625dd11c18508d7"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/tuya__iot__com__api_8h.html#aa90f9e345061c1498625dd11c18508d7">tuya_iot_upload_rst_log_set</a> (IN CONST BOOL_T upload)</td></tr>
+<tr class="memdesc:aa90f9e345061c1498625dd11c18508d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya_iot_upload_rst_log_set @desc set rst log upload mode  <a href="../../d9/d01/tuya__iot__com__api_8h.html#aa90f9e345061c1498625dd11c18508d7">更多...</a><br /></td></tr>
+<tr class="separator:aa90f9e345061c1498625dd11c18508d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><dl class="section author"><dt>作者</dt><dd>tuya </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-01-11 </dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright(C),2018-2020, 涂鸦科技 www.tuya.comm </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="ab3ed05864f54405b2819057449a707bf" name="ab3ed05864f54405b2819057449a707bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ed05864f54405b2819057449a707bf">&#9670;&nbsp;</a></span>dev_query_dp_json_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_query_dp_json_async </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_query_dp_json_async @desc report dp info a-synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a6fdd39815fe0fb3faabda80928aba34f" name="a6fdd39815fe0fb3faabda80928aba34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fdd39815fe0fb3faabda80928aba34f">&#9670;&nbsp;</a></span>dev_query_dp_json_async_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_query_dp_json_async_force </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_query_dp_json_async_force @desc report dp info a-synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a1de968a6e5fd44e0e45d99a7980c8af1" name="a1de968a6e5fd44e0e45d99a7980c8af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de968a6e5fd44e0e45d99a7980c8af1">&#9670;&nbsp;</a></span>dev_report_dp_json_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_report_dp_json_async </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_report_dp_json_async @desc report dp info a-synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="afb27e1f3a0abd4f7290c4139ea2799cf" name="afb27e1f3a0abd4f7290c4139ea2799cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb27e1f3a0abd4f7290c4139ea2799cf">&#9670;&nbsp;</a></span>dev_report_dp_json_async_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_report_dp_json_async_force </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_report_dp_json_async_force @desc report dp info a-synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a0303b9005e46361c05d3bf15ce492ab8" name="a0303b9005e46361c05d3bf15ce492ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0303b9005e46361c05d3bf15ce492ab8">&#9670;&nbsp;</a></span>dev_report_dp_raw_sync_extend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_report_dp_raw_sync_extend </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>dpid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>enable_auto_retrans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_report_dp_raw_sync_extend @desc report dp raw info synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dpid</td><td>raw dp id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>len of raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>function blocks until timeout seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable_auto_retrans</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a599158f36c42e0b518529911b24aeabf" name="a599158f36c42e0b518529911b24aeabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599158f36c42e0b518529911b24aeabf">&#9670;&nbsp;</a></span>dev_report_dp_raw_sync_extend_with_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_report_dp_raw_sync_extend_with_time </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>dpid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>enable_auto_retrans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>time_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_report_dp_raw_sync_extend_with_time @desc report dp raw info synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dpid</td><td>raw dp id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>len of raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>function blocks until timeout seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable_auto_retrans</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a5355a37344a3f1f861678f0f26d57a75" name="a5355a37344a3f1f861678f0f26d57a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5355a37344a3f1f861678f0f26d57a75">&#9670;&nbsp;</a></span>dev_report_dp_stat_sync_extend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_report_dp_stat_sync_extend </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>enable_auto_retrans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_report_dp_stat_sync_extend @desc: report dp status info synced. if time_stamp==0, time_stamp = time of msg arrival of the server </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp status array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp status array count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>function blocks until timeout seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable_auto_retrans</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a2ae5ea88b0258c9b6295b2a2bd6888f9" name="a2ae5ea88b0258c9b6295b2a2bd6888f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae5ea88b0258c9b6295b2a2bd6888f9">&#9670;&nbsp;</a></span>dev_sync_dp_json_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_sync_dp_json_async </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_sync_dp_json_async @desc report dp info a-synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="aedf65d820bf001c416784ab6ead3a325" name="aedf65d820bf001c416784ab6ead3a325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf65d820bf001c416784ab6ead3a325">&#9670;&nbsp;</a></span>dev_sync_dp_json_async_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET dev_sync_dp_json_async_force </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dev_sync_dp_json_async_force @desc report dp info a-synced. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>if sub-device, then devid = sub-device_id if gateway/soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_data</td><td>dp array header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>dp array count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ac60641d2cad266d3ac1de132f978cc92" name="ac60641d2cad266d3ac1de132f978cc92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60641d2cad266d3ac1de132f978cc92">&#9670;&nbsp;</a></span>tuya_iot_app_cbs_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_app_cbs_init </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d0/db3/structTY__IOT__APP__CBS__S.html">TY_IOT_APP_CBS_S</a> *&#160;</td>
+          <td class="paramname"><em>app_cbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_app_cbs_init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">app_cbs</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a5867d69d0aa3b0a740ff89046094ebd5" name="a5867d69d0aa3b0a740ff89046094ebd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5867d69d0aa3b0a740ff89046094ebd5">&#9670;&nbsp;</a></span>tuya_iot_book_additional_topic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_book_additional_topic </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>topic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_book_additional_topic @desc subscribe additional topic </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ab022c35c742f4b9f4b0ac2226b24d76f" name="ab022c35c742f4b9f4b0ac2226b24d76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab022c35c742f4b9f4b0ac2226b24d76f">&#9670;&nbsp;</a></span>tuya_iot_book_wakeup_topic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_book_wakeup_topic </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_book_wakeup_topic @desc unscribe mqtt msg topic and subscribe wakeup topic </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a099ca504f2baa9937bd9e44a00f04946" name="a099ca504f2baa9937bd9e44a00f04946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099ca504f2baa9937bd9e44a00f04946">&#9670;&nbsp;</a></span>tuya_iot_custom_data_report_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_custom_data_report_async </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>qos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_custom_data_report_async </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="ac898cdaef753ebc80599eefec6359afe" name="ac898cdaef753ebc80599eefec6359afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac898cdaef753ebc80599eefec6359afe">&#9670;&nbsp;</a></span>tuya_iot_custom_data_report_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_custom_data_report_sync </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>qos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_custom_data_report_sync </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a6c530323fbbae439e07f7a38e065f746" name="a6c530323fbbae439e07f7a38e065f746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c530323fbbae439e07f7a38e065f746">&#9670;&nbsp;</a></span>tuya_iot_dev_upgd_progress_with_remain_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_dev_upgd_progress_with_remain_time </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>percent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>devid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST DEV_TYPE_T&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>remain_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_dev_upgd_progress_with_remain_time </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">percent</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">devid</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tp</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remain_time</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a62a31e021716e3f1f27eb0e11ee3d586" name="a62a31e021716e3f1f27eb0e11ee3d586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a31e021716e3f1f27eb0e11ee3d586">&#9670;&nbsp;</a></span>tuya_iot_dev_upgd_result_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_dev_upgd_result_report </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST DEV_TYPE_T&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_dev_upgd_result_report </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a0753f4b091c4f100b0408f3800aef544" name="a0753f4b091c4f100b0408f3800aef544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0753f4b091c4f100b0408f3800aef544">&#9670;&nbsp;</a></span>tuya_iot_dp_low_power_query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_dp_low_power_query </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>dps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> **&#160;</td>
+          <td class="paramname"><em>obj_dps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT <a class="el" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> **&#160;</td>
+          <td class="paramname"><em>raw_dps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_dp_low_power_query </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dps</td><td>data of DP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>count of DP </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">obj_dps</td><td>get object type DP </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">raw_dps</td><td>get raw type DP</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="acbf886274ba11f3a44c65375ccf96968" name="acbf886274ba11f3a44c65375ccf96968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf886274ba11f3a44c65375ccf96968">&#9670;&nbsp;</a></span>tuya_iot_get_active_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BYTE_T tuya_iot_get_active_stat </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_active_stat </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a63009161df86e96170c6a32552b6bc6c" name="a63009161df86e96170c6a32552b6bc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63009161df86e96170c6a32552b6bc6c">&#9670;&nbsp;</a></span>tuya_iot_get_custom_cfg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_get_custom_cfg </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST TY_CUSTOM_CFG_E&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT CHAR_T **&#160;</td>
+          <td class="paramname"><em>pp_cfg_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_custom_cfg </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pp_cfg_str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="aafa6f21eb544410798f951586bd83240" name="aafa6f21eb544410798f951586bd83240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa6f21eb544410798f951586bd83240">&#9670;&nbsp;</a></span>tuya_iot_get_dp_desc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a> * tuya_iot_get_dp_desc </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>dpid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_dp_desc @desc get dp info of a sub-device and a dp id </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>sub-device id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dpid</td><td>dp id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>(<a class="el" href="../../d0/ddb/structDP__DESC__IF__S.html" title="Definition of dp description">DP_DESC_IF_S</a> *): success NULL: fail </dd></dl>
+
+</div>
+</div>
+<a id="a6a195fe8683335453dbf596a561c7e36" name="a6a195fe8683335453dbf596a561c7e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a195fe8683335453dbf596a561c7e36">&#9670;&nbsp;</a></span>tuya_iot_get_dp_prop_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4f/unionDP__PROP__VALUE__U.html">DP_PROP_VALUE_U</a> * tuya_iot_get_dp_prop_value </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T&#160;</td>
+          <td class="paramname"><em>dpid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_dp_prop_value @desc get dp value of a sub-device and a dp id </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>sub-device id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dpid</td><td>dp id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>(<a class="el" href="../../d2/d4f/unionDP__PROP__VALUE__U.html" title="Definition of dp prop value">DP_PROP_VALUE_U</a> *): success NULL: fail </dd></dl>
+
+</div>
+</div>
+<a id="aae72719eb0d2b811c0ba407748c04bf4" name="aae72719eb0d2b811c0ba407748c04bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae72719eb0d2b811c0ba407748c04bf4">&#9670;&nbsp;</a></span>tuya_iot_get_gw_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tuya_iot_get_gw_id </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_gw_id </p>
+<dl class="section return"><dt>返回</dt><dd>device id </dd></dl>
+
+</div>
+</div>
+<a id="ad69eede60e9ac8b0efabe1bd47c2addd" name="ad69eede60e9ac8b0efabe1bd47c2addd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69eede60e9ac8b0efabe1bd47c2addd">&#9670;&nbsp;</a></span>tuya_iot_get_heartbeat_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_get_heartbeat_data </td>
+          <td>(</td>
+          <td class="paramtype">INOUT BYTE_T *&#160;</td>
+          <td class="paramname"><em>heartbeat_data_arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT UINT_T *&#160;</td>
+          <td class="paramname"><em>p_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_heartbeat_data @desc get mqtt heartbeat string pattern </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>heartbeat_data_arr: heartbeat string arr </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>p_len: heartbeat string len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a0cc9a93eef8226d03920721e5dc6007c" name="a0cc9a93eef8226d03920721e5dc6007c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc9a93eef8226d03920721e5dc6007c">&#9670;&nbsp;</a></span>tuya_iot_get_heartbeat_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_iot_get_heartbeat_interval </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_heartbeat_interval @desc get mqtt heartbeat interval </p>
+<dl class="section return"><dt>返回</dt><dd>interval value </dd></dl>
+
+</div>
+</div>
+<a id="a316e09184f657d0e52575c229460c9a8" name="a316e09184f657d0e52575c229460c9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316e09184f657d0e52575c229460c9a8">&#9670;&nbsp;</a></span>tuya_iot_get_location_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_get_location_info </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../d6/d8a/structTY__LOCATION__INFO__S.html">TY_LOCATION_INFO_S</a> *&#160;</td>
+          <td class="paramname"><em>p_location</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_location_info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_location</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a808183a991f0d0ae3e5092be331c8137" name="a808183a991f0d0ae3e5092be331c8137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808183a991f0d0ae3e5092be331c8137">&#9670;&nbsp;</a></span>tuya_iot_get_mqtt_socket_fd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_iot_get_mqtt_socket_fd </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_mqtt_socket_fd @desc get curr mqtt socket fd </p>
+<dl class="section return"><dt>返回</dt><dd>mqtt socket fd </dd></dl>
+
+</div>
+</div>
+<a id="a13c7def7fa4b7e32720dbdcb29b9fefa" name="a13c7def7fa4b7e32720dbdcb29b9fefa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c7def7fa4b7e32720dbdcb29b9fefa">&#9670;&nbsp;</a></span>tuya_iot_get_os_adapt_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tuya_iot_get_os_adapt_info </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_os_adapt_info </p>
+<dl class="section return"><dt>返回</dt><dd>os adapter information </dd></dl>
+
+</div>
+</div>
+<a id="ad6592774da2fba847b76a90bab86c3e6" name="ad6592774da2fba847b76a90bab86c3e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6592774da2fba847b76a90bab86c3e6">&#9670;&nbsp;</a></span>tuya_iot_get_region_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_get_region_info </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../de/de8/structTY__IOT__REGION__INFO__S.html">TY_IOT_REGION_INFO_S</a> *&#160;</td>
+          <td class="paramname"><em>p_region_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_region_info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>p_region_info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a4bb09c7808b12f1c215d22939f95e7af" name="a4bb09c7808b12f1c215d22939f95e7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb09c7808b12f1c215d22939f95e7af">&#9670;&nbsp;</a></span>tuya_iot_get_sdk_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tuya_iot_get_sdk_info </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_sdk_info </p>
+<dl class="section return"><dt>返回</dt><dd>sdk information </dd></dl>
+
+</div>
+</div>
+<a id="a22e35025397931b3f5bf22ffeb6d9ec3" name="a22e35025397931b3f5bf22ffeb6d9ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e35025397931b3f5bf22ffeb6d9ec3">&#9670;&nbsp;</a></span>tuya_iot_get_wakeup_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_get_wakeup_data </td>
+          <td>(</td>
+          <td class="paramtype">INOUT BYTE_T *&#160;</td>
+          <td class="paramname"><em>wakeup_data_arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT UINT_T *&#160;</td>
+          <td class="paramname"><em>p_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_get_wakeup_data @desc get mqtt wakeup string pattern </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>wakeup_data_arr: wakeup string arr </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>p_len: wakeup string len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ab3c21ac02d6b1e9de7f70fca1ec136b1" name="ab3c21ac02d6b1e9de7f70fca1ec136b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c21ac02d6b1e9de7f70fca1ec136b1">&#9670;&nbsp;</a></span>tuya_iot_ignore_upgrade_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_ignore_upgrade_set </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>ignore</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_ignore_upgrade_set @desc set rst log upload mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ignore</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>must call first </dd></dl>
+
+</div>
+</div>
+<a id="a48b0e6c593dc2261515ddbbf8c330421" name="a48b0e6c593dc2261515ddbbf8c330421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b0e6c593dc2261515ddbbf8c330421">&#9670;&nbsp;</a></span>tuya_iot_init_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_init_params </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_storge_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a> *&#160;</td>
+          <td class="paramname"><em>p_param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TuyaOS system service init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fs_storge_path</td><td>Storge path of KV database(Linux only) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_param</td><td>Extra init params, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="../../d0/d79/structTY__INIT__PARAMS__S.html" title="Definition of TUYA DevOS init param">TY_INIT_PARAMS_S</a></dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acefd92941cfdc537481a3655ff69ee36" name="acefd92941cfdc537481a3655ff69ee36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefd92941cfdc537481a3655ff69ee36">&#9670;&nbsp;</a></span>tuya_iot_kv_flash_init_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_kv_flash_init_param </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>fs_storge_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_kv_flash_init_param @desc init kv flash </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fs_storge_path</td><td>filesystem read write storge path (if os have no fs,then fs_storge_path is invalid)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a7b535154c0b7bef955286f8605676954" name="a7b535154c0b7bef955286f8605676954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b535154c0b7bef955286f8605676954">&#9670;&nbsp;</a></span>tuya_iot_map_cleaner_upload_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_map_cleaner_upload_buffer </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>map_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>cloud_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UP_MAP_TYPE_E&#160;</td>
+          <td class="paramname"><em>map_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_map_cleaner_upload_buffer @desc sweeper function. upload cleaner map info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_id</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cloud_file_name</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="af4788f4fe0069111461c3d2464183c97" name="af4788f4fe0069111461c3d2464183c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4788f4fe0069111461c3d2464183c97">&#9670;&nbsp;</a></span>tuya_iot_map_cleaner_upload_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_map_cleaner_upload_file </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>map_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>local_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>cloud_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UP_MAP_TYPE_E&#160;</td>
+          <td class="paramname"><em>map_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_map_cleaner_upload_file @desc sweeper function. upload cleaner map info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_id</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_file_name</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cloud_file_name</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a5335f602c5c742a84a3854455625ee94" name="a5335f602c5c742a84a3854455625ee94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5335f602c5c742a84a3854455625ee94">&#9670;&nbsp;</a></span>tuya_iot_map_record_upload_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_map_record_upload_buffer </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>map_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>descript</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_map_record_upload_buffer @desc sweeper function. upload record map info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_id</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">descript</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="acadcf554cd7dcc194260b349ba0bfb98" name="acadcf554cd7dcc194260b349ba0bfb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadcf554cd7dcc194260b349ba0bfb98">&#9670;&nbsp;</a></span>tuya_iot_map_record_upload_buffer_with_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_map_record_upload_buffer_with_filename </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>map_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>cloud_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>descript</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_map_record_upload_buffer_with_filename @desc sweeper function. upload record map info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_id</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cloud_file_name</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">descript</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a9eff5eb058ed3bae0da8ab6658b76153" name="a9eff5eb058ed3bae0da8ab6658b76153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eff5eb058ed3bae0da8ab6658b76153">&#9670;&nbsp;</a></span>tuya_iot_media_data_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_media_data_report </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d7/db5/structFLOW__BODY__ST.html">FLOW_BODY_ST</a> *&#160;</td>
+          <td class="paramname"><em>dt_body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_media_data_report </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt_body</td><td>media data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>need report time</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET</dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>please dont use tuya_iot_media_data_report and tuya_iot_media_data_report_v2 in one application </dd></dl>
+
+</div>
+</div>
+<a id="a334730512a795c1ada588d44141a507a" name="a334730512a795c1ada588d44141a507a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334730512a795c1ada588d44141a507a">&#9670;&nbsp;</a></span>tuya_iot_media_data_report_v2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_media_data_report_v2 </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../da/d6a/structFLOW__BODY__V2__ST.html">FLOW_BODY_V2_ST</a> *&#160;</td>
+          <td class="paramname"><em>dt_body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_media_data_report_v2 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt_body</td><td>media data version 2 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>need report time</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET</dd></dl>
+<p>@waring please dont use tuya_iot_media_data_report and tuya_iot_media_data_report_v2 in one application </p>
+
+</div>
+</div>
+<a id="a2984d6807e89929eb8fe37ba4cb65733" name="a2984d6807e89929eb8fe37ba4cb65733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2984d6807e89929eb8fe37ba4cb65733">&#9670;&nbsp;</a></span>tuya_iot_mqtt_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_mqtt_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_mqtt_disconnect @desc force disconnect MQTT </p>
+<dl class="section return"><dt>返回</dt><dd>none</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>must call first </dd></dl>
+
+</div>
+</div>
+<a id="ae2f25ca712fcd86e175766fb602bebb0" name="ae2f25ca712fcd86e175766fb602bebb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f25ca712fcd86e175766fb602bebb0">&#9670;&nbsp;</a></span>tuya_iot_mqtt_restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_mqtt_restart </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_mqtt_restart @desc restart MQTT </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>must call first </dd></dl>
+
+</div>
+</div>
+<a id="a9e9211db6ac6e2a3981707f718ec99a0" name="a9e9211db6ac6e2a3981707f718ec99a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9211db6ac6e2a3981707f718ec99a0">&#9670;&nbsp;</a></span>tuya_iot_oem_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_oem_set </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>oem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_oem_set @desc set oem mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oem</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="ab0cd3f271de36d6431f9a85b257ff0f5" name="ab0cd3f271de36d6431f9a85b257ff0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cd3f271de36d6431f9a85b257ff0f5">&#9670;&nbsp;</a></span>tuya_iot_refuse_upgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_refuse_upgrade </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *&#160;</td>
+          <td class="paramname"><em>fw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_refuse_upgrade </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="aac384dc8671642c6276e952ea13fa175" name="aac384dc8671642c6276e952ea13fa175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac384dc8671642c6276e952ea13fa175">&#9670;&nbsp;</a></span>tuya_iot_regist_dp_rept_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_regist_dp_rept_cb </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a> *&#160;</td>
+          <td class="paramname"><em>dp_rept_cbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_regist_dp_rept_cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dp_rept_cbs</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="aa695c3aa96213837cb0a0cb8db31be84" name="aa695c3aa96213837cb0a0cb8db31be84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa695c3aa96213837cb0a0cb8db31be84">&#9670;&nbsp;</a></span>tuya_iot_release_custom_cfg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_release_custom_cfg </td>
+          <td>(</td>
+          <td class="paramtype">IN CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_cfg_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_release_custom_cfg </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_cfg_str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a38cd58bac51a8cd178efed2008a39e70" name="a38cd58bac51a8cd178efed2008a39e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cd58bac51a8cd178efed2008a39e70">&#9670;&nbsp;</a></span>tuya_iot_reset_upgrade_detect_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_reset_upgrade_detect_timer </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>time_ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_reset_upgrade_detect_timer @desc reset the upgrade detect time </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_ms</td><td>the time you want start the detect</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ab08fd51347a543e9a9fd509558369768" name="ab08fd51347a543e9a9fd509558369768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08fd51347a543e9a9fd509558369768">&#9670;&nbsp;</a></span>tuya_iot_send_custom_mqtt_msg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_send_custom_mqtt_msg </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_send_custom_mqtt_msg @desc send a custom protocol mqtt msg </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocol</td><td>mqtt protocol </td></tr>
+    <tr><td class="paramname">p_data</td><td>mqtt msg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="abcd1e2bb4da25a6f4a8797d0168771c6" name="abcd1e2bb4da25a6f4a8797d0168771c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd1e2bb4da25a6f4a8797d0168771c6">&#9670;&nbsp;</a></span>tuya_iot_send_mqtt_msg_with_topic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_send_mqtt_msg_with_topic </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_send_mqtt_msg_with_topic @desc send a custom protocol mqtt msg to topic </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td>mqtt topic </td></tr>
+    <tr><td class="paramname">protocol</td><td>mqtt protocol </td></tr>
+    <tr><td class="paramname">p_data</td><td>mqtt msg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a48ed352b3a0096d25aa7c48cc574e961" name="a48ed352b3a0096d25aa7c48cc574e961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ed352b3a0096d25aa7c48cc574e961">&#9670;&nbsp;</a></span>tuya_iot_set_log_attr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_set_log_attr </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST INT_T&#160;</td>
+          <td class="paramname"><em>log_level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_set_log_attr </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">log_level</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="ae373d80854b2129e9cc50286795bf9a8" name="ae373d80854b2129e9cc50286795bf9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae373d80854b2129e9cc50286795bf9a8">&#9670;&nbsp;</a></span>tuya_iot_set_log_bool_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_set_log_bool_time </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>if_ms_level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_set_log_bool_time </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">if_ms_level</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a95d20249d21e44c679bc42f7474f481e" name="a95d20249d21e44c679bc42f7474f481e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d20249d21e44c679bc42f7474f481e">&#9670;&nbsp;</a></span>tuya_iot_set_udf_parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_set_udf_parameter </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>udf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_set_udf_parameter @desc set user defined funtions </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">udf</td><td>user defined funtions(json), max length: 255</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>call before init </dd></dl>
+
+</div>
+</div>
+<a id="a8a0a03a718e67afb8c2ec3c3be651af7" name="a8a0a03a718e67afb8c2ec3c3be651af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0a03a718e67afb8c2ec3c3be651af7">&#9670;&nbsp;</a></span>tuya_iot_upgrade_dev_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_upgrade_dev_notify </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>devid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *&#160;</td>
+          <td class="paramname"><em>fw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST GET_FILE_DATA_CB&#160;</td>
+          <td class="paramname"><em>get_file_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UPGRADE_NOTIFY_CB&#160;</td>
+          <td class="paramname"><em>upgrd_nofity_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST PVOID_T&#160;</td>
+          <td class="paramname"><em>pri_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>notify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>download_buf_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_upgrade_dev_notify @desc upgrage sub-device/soc/mcu firmware </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">devid</td><td>if upgrade sub-device, then devid = sub-device_id if upgrade soc/mcu, then devid = NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw</td><td>firmware info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">get_file_cb</td><td>download content storage callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upgrd_nofity_cb</td><td>firmware download finish callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>private param of get_file_cb &amp;&amp; upgrd_nofity_cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notify</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">download_buf_size</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ad8549e398d209317a9a670dac3ee153f" name="ad8549e398d209317a9a670dac3ee153f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8549e398d209317a9a670dac3ee153f">&#9670;&nbsp;</a></span>tuya_iot_upgrade_gw_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_upgrade_gw_notify </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *&#160;</td>
+          <td class="paramname"><em>fw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST GET_FILE_DATA_CB&#160;</td>
+          <td class="paramname"><em>get_file_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UPGRADE_NOTIFY_CB&#160;</td>
+          <td class="paramname"><em>upgrd_nofity_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST PVOID_T&#160;</td>
+          <td class="paramname"><em>pri_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>notify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>download_buf_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_upgrade_gw_notify @desc upgrage gateway firmware </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw</td><td>firmware info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">get_file_cb</td><td>download content storage callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upgrd_nofity_cb</td><td>firmware download finish callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>private param of get_file_cb &amp;&amp; upgrd_nofity_cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notify</td><td>notify app the upgrade status </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">download_buf_size</td><td>max download buffer size when downloading</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="ae7b8f5a7fafda6e4febf38c480fec1db" name="ae7b8f5a7fafda6e4febf38c480fec1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b8f5a7fafda6e4febf38c480fec1db">&#9670;&nbsp;</a></span>tuya_iot_upload_incre_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_iot_upload_incre_data </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST USHORT_T&#160;</td>
+          <td class="paramname"><em>map_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>pbuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST USHORT_T&#160;</td>
+          <td class="paramname"><em>buf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&zwj;*********************************************************** </p>
+<p >tuya_iot_upload_incre_data</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_id</td><td>Each map has an Id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Map data offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pbuffer</td><td>Map data cache pointer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>Map data cache length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="aa90f9e345061c1498625dd11c18508d7" name="aa90f9e345061c1498625dd11c18508d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90f9e345061c1498625dd11c18508d7">&#9670;&nbsp;</a></span>tuya_iot_upload_rst_log_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_upload_rst_log_set </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>upload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya_iot_upload_rst_log_set @desc set rst log upload mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">upload</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>must call first </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

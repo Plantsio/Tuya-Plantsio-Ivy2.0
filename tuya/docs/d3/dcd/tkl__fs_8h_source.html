@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/system/include/tkl_fs.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_a39e21aa9396c8c0621543b669869865.html">system</a></li><li class="navelem"><a class="el" href="../../dir_d0c8c0f816976a0124b7921a1be7b89f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_fs.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/dcd/tkl__fs_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_FS_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_FS_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/********************************************************************************</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *********************************tuya_os_fs_intf********************************</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> ********************************************************************************/</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a21774d973209bd5ace40256eeaeeb392">   33</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a21774d973209bd5ace40256eeaeeb392">tkl_fs_mkdir</a>(CONST CHAR_T* path);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a8a57f257a4bbc5c2783b6c7c4cc251d0">   44</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a8a57f257a4bbc5c2783b6c7c4cc251d0">tkl_fs_remove</a>(CONST CHAR_T* path);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a34f284cc541e93b4a4a436a1a512479e">   57</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a34f284cc541e93b4a4a436a1a512479e">tkl_fs_mode</a>(CONST CHAR_T* path, UINT_T* mode);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#ae766c293f8033a36f52718a2ec41581e">   69</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#ae766c293f8033a36f52718a2ec41581e">tkl_fs_is_exist</a>(CONST CHAR_T* path, BOOL_T* is_exist);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#ad4fc1c4b8927eca5eec91a801ced8abf">   81</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#ad4fc1c4b8927eca5eec91a801ced8abf">tkl_fs_rename</a>(CONST CHAR_T* path_old, CONST CHAR_T* path_new);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a5435dd7524664ab0a8b233ba3c2d623a">   93</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a5435dd7524664ab0a8b233ba3c2d623a">tkl_dir_open</a>(CONST CHAR_T* path, TUYA_DIR* dir);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a2b45393920af9ea02a50fcaaf9bf03bd">  104</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a2b45393920af9ea02a50fcaaf9bf03bd">tkl_dir_close</a>(TUYA_DIR dir);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a7eba58df8d69e1d79383216b2281306d">  118</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a7eba58df8d69e1d79383216b2281306d">tkl_dir_read</a>(TUYA_DIR dir, TUYA_FILEINFO* info);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a74944c9a4b24cec95920e28ab06e0b5b">  130</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a74944c9a4b24cec95920e28ab06e0b5b">tkl_dir_name</a>(TUYA_FILEINFO info, CONST CHAR_T** name);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#aa9a24ab20ead9a3caaef6b6f4194953a">  142</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#aa9a24ab20ead9a3caaef6b6f4194953a">tkl_dir_is_directory</a>(TUYA_FILEINFO info, BOOL_T* is_dir);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a2ec9a0ab2a65f694195510593571153f">  154</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a2ec9a0ab2a65f694195510593571153f">tkl_dir_is_regular</a>(TUYA_FILEINFO info, BOOL_T* is_regular);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a5e88c4352cfb9fffe7e41c4a1985813a">  166</a></span>TUYA_FILE <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a5e88c4352cfb9fffe7e41c4a1985813a">tkl_fopen</a>(CONST CHAR_T* path, CONST CHAR_T* mode);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a42239156dd4b5862450ecc249f6611b9">  177</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a42239156dd4b5862450ecc249f6611b9">tkl_fclose</a>(TUYA_FILE file);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#aad79575cd2eb2ffd1b3f9fcbc5c2c220">  190</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#aad79575cd2eb2ffd1b3f9fcbc5c2c220">tkl_fread</a>(VOID_T* buf, INT_T bytes, TUYA_FILE file);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#af14256609531f306f022bfe28700d660">  203</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#af14256609531f306f022bfe28700d660">tkl_fwrite</a>(VOID_T* buf, INT_T bytes, TUYA_FILE file);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a5d2bc3db35d88f89b915457df4b769ce">  214</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a5d2bc3db35d88f89b915457df4b769ce">tkl_fsync</a>(INT_T fd);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a8e2b5cad075b20ac57630a09f4f961f7">  227</a></span>CHAR_T* <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a8e2b5cad075b20ac57630a09f4f961f7">tkl_fgets</a>(CHAR_T* buf, INT_T len, TUYA_FILE file);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#aa203891b702e7da9c351f6896357f531">  238</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#aa203891b702e7da9c351f6896357f531">tkl_feof</a>(TUYA_FILE file);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a3ea7f46407e9081d3a4d5f329b4a8d9a">  251</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a3ea7f46407e9081d3a4d5f329b4a8d9a">tkl_fseek</a>(TUYA_FILE file, INT64_T offs, INT_T whence);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a3e7cebdaeac3546662dd45f356d0a065">  262</a></span>INT64_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a3e7cebdaeac3546662dd45f356d0a065">tkl_ftell</a>(TUYA_FILE file);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#ae35e75b85cb9d66ab15461157254e89d">  273</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#ae35e75b85cb9d66ab15461157254e89d">tkl_fgetsize</a>(CONST CHAR_T *filepath);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a84a2fb2ed08182545ca493302be79144">  286</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a84a2fb2ed08182545ca493302be79144">tkl_faccess</a>(CONST CHAR_T *filepath, INT_T mode);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a2d02bf12e88b5f143add3fcdb419e3a6">  297</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a2d02bf12e88b5f143add3fcdb419e3a6">tkl_fgetc</a>(TUYA_FILE file);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#aaccb7f598913401e378be1248448f5e9">  308</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#aaccb7f598913401e378be1248448f5e9">tkl_fflush</a>(TUYA_FILE file);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a290fb9fb1acbc87a370a9874358da7fd">  319</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a290fb9fb1acbc87a370a9874358da7fd">tkl_fileno</a>(TUYA_FILE file);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="../../d3/dcd/tkl__fs_8h.html#a56e1b9530f8be39e64d226b3e22c0da0">  333</a></span>INT_T <a class="code hl_function" href="../../d3/dcd/tkl__fs_8h.html#a56e1b9530f8be39e64d226b3e22c0da0">tkl_ftruncate</a>(INT_T fd, UINT64_T length);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="preprocessor">#endif </span><span class="comment">// </span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="ttc" id="atkl__fs_8h_html_a21774d973209bd5ace40256eeaeeb392"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a21774d973209bd5ace40256eeaeeb392">tkl_fs_mkdir</a></div><div class="ttdeci">INT_T tkl_fs_mkdir(CONST CHAR_T *path)</div><div class="ttdoc">Make directory</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a290fb9fb1acbc87a370a9874358da7fd"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a290fb9fb1acbc87a370a9874358da7fd">tkl_fileno</a></div><div class="ttdeci">INT_T tkl_fileno(TUYA_FILE file)</div><div class="ttdoc">get the file fd</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a2b45393920af9ea02a50fcaaf9bf03bd"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a2b45393920af9ea02a50fcaaf9bf03bd">tkl_dir_close</a></div><div class="ttdeci">INT_T tkl_dir_close(TUYA_DIR dir)</div><div class="ttdoc">Close directory</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a2d02bf12e88b5f143add3fcdb419e3a6"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a2d02bf12e88b5f143add3fcdb419e3a6">tkl_fgetc</a></div><div class="ttdeci">INT_T tkl_fgetc(TUYA_FILE file)</div><div class="ttdoc">read the next character from stream</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a2ec9a0ab2a65f694195510593571153f"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a2ec9a0ab2a65f694195510593571153f">tkl_dir_is_regular</a></div><div class="ttdeci">INT_T tkl_dir_is_regular(TUYA_FILEINFO info, BOOL_T *is_regular)</div><div class="ttdoc">Check whether the node is a normal file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a34f284cc541e93b4a4a436a1a512479e"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a34f284cc541e93b4a4a436a1a512479e">tkl_fs_mode</a></div><div class="ttdeci">INT_T tkl_fs_mode(CONST CHAR_T *path, UINT_T *mode)</div><div class="ttdoc">Get file mode</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a3e7cebdaeac3546662dd45f356d0a065"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a3e7cebdaeac3546662dd45f356d0a065">tkl_ftell</a></div><div class="ttdeci">INT64_T tkl_ftell(TUYA_FILE file)</div><div class="ttdoc">Get current position of file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a3ea7f46407e9081d3a4d5f329b4a8d9a"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a3ea7f46407e9081d3a4d5f329b4a8d9a">tkl_fseek</a></div><div class="ttdeci">INT_T tkl_fseek(TUYA_FILE file, INT64_T offs, INT_T whence)</div><div class="ttdoc">Seek to the offset position of the file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a42239156dd4b5862450ecc249f6611b9"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a42239156dd4b5862450ecc249f6611b9">tkl_fclose</a></div><div class="ttdeci">INT_T tkl_fclose(TUYA_FILE file)</div><div class="ttdoc">Close file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a5435dd7524664ab0a8b233ba3c2d623a"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a5435dd7524664ab0a8b233ba3c2d623a">tkl_dir_open</a></div><div class="ttdeci">INT_T tkl_dir_open(CONST CHAR_T *path, TUYA_DIR *dir)</div><div class="ttdoc">Open directory</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a56e1b9530f8be39e64d226b3e22c0da0"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a56e1b9530f8be39e64d226b3e22c0da0">tkl_ftruncate</a></div><div class="ttdeci">INT_T tkl_ftruncate(INT_T fd, UINT64_T length)</div><div class="ttdoc">truncate one file according to the length</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a5d2bc3db35d88f89b915457df4b769ce"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a5d2bc3db35d88f89b915457df4b769ce">tkl_fsync</a></div><div class="ttdeci">INT_T tkl_fsync(INT_T fd)</div><div class="ttdoc">write buffer to flash</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a5e88c4352cfb9fffe7e41c4a1985813a"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a5e88c4352cfb9fffe7e41c4a1985813a">tkl_fopen</a></div><div class="ttdeci">TUYA_FILE tkl_fopen(CONST CHAR_T *path, CONST CHAR_T *mode)</div><div class="ttdoc">Open file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a74944c9a4b24cec95920e28ab06e0b5b"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a74944c9a4b24cec95920e28ab06e0b5b">tkl_dir_name</a></div><div class="ttdeci">INT_T tkl_dir_name(TUYA_FILEINFO info, CONST CHAR_T **name)</div><div class="ttdoc">Get the name of the file node</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a7eba58df8d69e1d79383216b2281306d"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a7eba58df8d69e1d79383216b2281306d">tkl_dir_read</a></div><div class="ttdeci">INT_T tkl_dir_read(TUYA_DIR dir, TUYA_FILEINFO *info)</div><div class="ttdoc">Read directory</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a84a2fb2ed08182545ca493302be79144"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a84a2fb2ed08182545ca493302be79144">tkl_faccess</a></div><div class="ttdeci">INT_T tkl_faccess(CONST CHAR_T *filepath, INT_T mode)</div><div class="ttdoc">Judge if the file can be access</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a8a57f257a4bbc5c2783b6c7c4cc251d0"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a8a57f257a4bbc5c2783b6c7c4cc251d0">tkl_fs_remove</a></div><div class="ttdeci">INT_T tkl_fs_remove(CONST CHAR_T *path)</div><div class="ttdoc">Remove directory</div></div>
+<div class="ttc" id="atkl__fs_8h_html_a8e2b5cad075b20ac57630a09f4f961f7"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#a8e2b5cad075b20ac57630a09f4f961f7">tkl_fgets</a></div><div class="ttdeci">CHAR_T * tkl_fgets(CHAR_T *buf, INT_T len, TUYA_FILE file)</div><div class="ttdoc">Read string from file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_aa203891b702e7da9c351f6896357f531"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#aa203891b702e7da9c351f6896357f531">tkl_feof</a></div><div class="ttdeci">INT_T tkl_feof(TUYA_FILE file)</div><div class="ttdoc">Check wheather to reach the end fo the file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_aa9a24ab20ead9a3caaef6b6f4194953a"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#aa9a24ab20ead9a3caaef6b6f4194953a">tkl_dir_is_directory</a></div><div class="ttdeci">INT_T tkl_dir_is_directory(TUYA_FILEINFO info, BOOL_T *is_dir)</div><div class="ttdoc">Check whether the node is a directory</div></div>
+<div class="ttc" id="atkl__fs_8h_html_aaccb7f598913401e378be1248448f5e9"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#aaccb7f598913401e378be1248448f5e9">tkl_fflush</a></div><div class="ttdeci">INT_T tkl_fflush(TUYA_FILE file)</div><div class="ttdoc">flush the IO read/write stream</div></div>
+<div class="ttc" id="atkl__fs_8h_html_aad79575cd2eb2ffd1b3f9fcbc5c2c220"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#aad79575cd2eb2ffd1b3f9fcbc5c2c220">tkl_fread</a></div><div class="ttdeci">INT_T tkl_fread(VOID_T *buf, INT_T bytes, TUYA_FILE file)</div><div class="ttdoc">Read file</div></div>
+<div class="ttc" id="atkl__fs_8h_html_ad4fc1c4b8927eca5eec91a801ced8abf"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#ad4fc1c4b8927eca5eec91a801ced8abf">tkl_fs_rename</a></div><div class="ttdeci">INT_T tkl_fs_rename(CONST CHAR_T *path_old, CONST CHAR_T *path_new)</div><div class="ttdoc">File rename</div></div>
+<div class="ttc" id="atkl__fs_8h_html_ae35e75b85cb9d66ab15461157254e89d"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#ae35e75b85cb9d66ab15461157254e89d">tkl_fgetsize</a></div><div class="ttdeci">INT_T tkl_fgetsize(CONST CHAR_T *filepath)</div><div class="ttdoc">Get file size</div></div>
+<div class="ttc" id="atkl__fs_8h_html_ae766c293f8033a36f52718a2ec41581e"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#ae766c293f8033a36f52718a2ec41581e">tkl_fs_is_exist</a></div><div class="ttdeci">INT_T tkl_fs_is_exist(CONST CHAR_T *path, BOOL_T *is_exist)</div><div class="ttdoc">Check whether the file or directory exists</div></div>
+<div class="ttc" id="atkl__fs_8h_html_af14256609531f306f022bfe28700d660"><div class="ttname"><a href="../../d3/dcd/tkl__fs_8h.html#af14256609531f306f022bfe28700d660">tkl_fwrite</a></div><div class="ttdeci">INT_T tkl_fwrite(VOID_T *buf, INT_T bytes, TUYA_FILE file)</div><div class="ttdoc">write file</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

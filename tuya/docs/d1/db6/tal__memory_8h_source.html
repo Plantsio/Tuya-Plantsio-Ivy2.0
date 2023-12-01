@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system/include/tal_memory.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_756eea2d6c45abe335e6af16c38cccfe.html">tal_system</a></li><li class="navelem"><a class="el" href="../../dir_a80ab866e44074dee44459bfafedc0dc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_memory.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d1/db6/tal__memory_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TAL_MEMORY_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TAL_MEMORY_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">   25</a></span><span class="preprocessor">#define Malloc(req_size) tal_malloc(req_size)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#afb717f8524f659b3e136d3a54a2ffe70">   34</a></span><span class="preprocessor">#define Calloc(req_count, req_size) tal_calloc(req_count, req_size)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">   42</a></span><span class="preprocessor">#define Free(ptr) tal_free(ptr)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">   53</a></span>VOID_T *<a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a>(SIZE_T size);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">   64</a></span>VOID_T <a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a>(VOID_T* ptr);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">   74</a></span>VOID_T *<a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">tal_calloc</a>(SIZE_T nitems, SIZE_T size);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d1/db6/tal__memory_8h.html#a42bbc7daca42a2bec7bd72c9305a470e">   84</a></span>VOID_T *<a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a42bbc7daca42a2bec7bd72c9305a470e">tal_realloc</a>(VOID_T* ptr, SIZE_T size);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif </span><span class="comment">// __COMPONENT_HELLO_H__</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="ttc" id="atal__memory_8h_html_a42bbc7daca42a2bec7bd72c9305a470e"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a42bbc7daca42a2bec7bd72c9305a470e">tal_realloc</a></div><div class="ttdeci">VOID_T * tal_realloc(VOID_T *ptr, SIZE_T size)</div><div class="ttdoc">Re-allocate the memory</div></div>
+<div class="ttc" id="atal__memory_8h_html_a46e0bcc120599603d9dae091abc5a36d"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a></div><div class="ttdeci">VOID_T * tal_malloc(SIZE_T size)</div><div class="ttdoc">Alloc memory of system</div></div>
+<div class="ttc" id="atal__memory_8h_html_a5e0e4741554159aa4c9e1fc68e09bb23"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a></div><div class="ttdeci">VOID_T tal_free(VOID_T *ptr)</div><div class="ttdoc">Free memory of system</div></div>
+<div class="ttc" id="atal__memory_8h_html_aaa7401c13ac3664410e190ecafb37f23"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">tal_calloc</a></div><div class="ttdeci">VOID_T * tal_calloc(SIZE_T nitems, SIZE_T size)</div><div class="ttdoc">Allocate and clear the memory</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

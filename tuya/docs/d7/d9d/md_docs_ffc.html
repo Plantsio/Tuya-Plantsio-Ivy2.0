@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: FFC</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">FFC </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><code>FFC</code> 是 <code>WIFI</code> 遥控器通信技术的简称。<code>FFC</code> 的产品需求最早来自于终端部分用户习惯于传统遥控器，来控制智能家居。</p>
+<p ><code>WIFI</code> 遥控器经过不断发展，主要发展为本地遥控器（离线遥控器）和在线遥控器，两者的最大差别就是是否有涂鸦云端的参与。</p>
+<ul>
+<li><code>WIFI</code> 遥控器通讯协议及实现原理介绍</li>
+</ul>
+<p ><code>FFC</code> 是一种无需通过路由器连接即可实现 <code>WIFI</code> 设备之间通信的技术，主要是对无线管理帧（802.11）中的 <code>Probe request</code> 帧进行了扩展。利用了<code>Probe request</code> 帧 <code>Frame body</code> 中的 <code>Vendor Specific</code>（221 厂商自定义元素字段）可以自由编辑且不定长度的特性，自定义了一层通信协议，<code>Probe request</code> 帧可以简单的理解为探测请求，扫描区域内有哪些802.11网络。通信协议如下图所示：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657184597c35e6ebe40e.png" alt="FFC-ffc通讯协议.png" class="inline"/></p>
+<p >下图为一帧 <code>Probe reques</code> 数据</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657181638299b39cd1e7.png" alt="FFC- 具体数据分析  12138  123.png" class="inline"/></p>
+<p >正常情况下的配对流程如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657180435b86eae4ee83.png" alt="FFC-配网具体实现 12138 123.png" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md93"></a>
+master</h1>
+<p ><code>master</code> 可以理解为信息发送端，就比如 <code>WIFI</code> 遥控器；<code>slaver</code> 可以理解为信息接收端，就比如被控设备。</p>
+<ul>
+<li><code>WIFI</code> 遥控器 <code>master</code> 相关函数介绍：</li>
+</ul>
+<p >此例程只介绍如何配置模组的 <code>master</code> 模式。</p>
+<p >配置 <code>master</code> 模式，要首先调用 <code>tuya_iot_wifi_ffc_init</code> 函数初始化 <code>master</code> 模式。随后需要调用 <code>tuya_iot_wifi_ffc_control</code> 函数，设置 <code>master</code> 的类型。 最后再次调用 <code>tuya_iot_wifi_ffc_control</code> 函数配置使其工作在信道扫描状态下。</p>
+<p ><code>tuya_iot_wifi_ffc_control</code> 参数介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657244778074b8b83e03.png" alt="FFC-master.png" class="inline"/></p>
+<p ><code>tuya_iot_wifi_ffc_bind</code> 函数作用是开始绑定流程。一般的 <code>master</code> 设备会长按某个键进入配网流程时才会调用这个函数。而 一般的 <code>slaver</code> 设备是重新上电后就会进入配网流程。</p>
+<p ><code>tuya_iot_wifi_ffc_send</code> 调用这个函数发送数据。<code>tuyaos</code> 内部会对这部分数据进行封装，我们只需要关心应用部分的协议内容，如应用层的控制协议。 <code>Slaver</code> 收到后通知数据接收回调函数。</p>
+<h2><a class="anchor" id="autotoc_md94"></a>
+流程介绍</h2>
+<p >相关函数目录： <code>software/TuyaOS/include/components/svc_wifi_ffc/include/ffc_app.h</code></p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/16572469436e90a37fd39.png" alt="FFC-master 流程.png" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md95"></a>
+slaver</h1>
+<ul>
+<li><code>WIFI</code> 遥控器 <code>slaver</code> 相关函数介绍：</li>
+</ul>
+<p >此例程只介绍如何配置模组的 <code>slave</code> 模式。</p>
+<p ><code>tuyaos</code> 内部帮我们配置好了，在应用层我们先需要调用<code>tuya_iot_wifi_ffc_init</code> 函数初始化遥控器相关配置，随后调用 <code>tuya_iot_wifi_ffc_control</code> 使其工作在扫描信道模式下。最后调用<code>tuya_iot_wifi_ffc_bind</code> 函数开始绑定流程即可。</p>
+<p ><code>tuya_iot_wifi_ffc_init</code> 的形参介绍如下：</p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1657182377632954a6d88.png" alt="FFC-tuya_iot_wifi_ffc_init 参数介绍 12138  .png" class="inline"/></p>
+<p ><code>tuya_iot_wifi_ffc_unbind</code> 为遥控器接绑函数，在线遥控器无需关心。</p>
+<p ><code>tuya_iot_wifi_ffc_send</code> 在模组为 <code>master</code> 的情况下才会用到，这里不过多介绍。</p>
+<h1><a class="anchor" id="autotoc_md96"></a>
+流程介绍</h1>
+<p >相关函数目录： <code>software/TuyaOS/include/components/svc_wifi_ffc/include/ffc_app.h</code></p>
+<p ><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/165718318865628822965.png" alt="ffc 流程介绍  12138   .png" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

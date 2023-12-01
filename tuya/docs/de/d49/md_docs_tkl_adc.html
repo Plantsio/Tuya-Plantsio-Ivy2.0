@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: ADC 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">ADC 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md190"></a>
+说明</h1>
+<h2><a class="anchor" id="autotoc_md191"></a>
+简介</h2>
+<p >ADC，Analog to Digital Converter，模拟/数字转换器，通常是指一个将时间连续、幅值也连续的模拟信号转变为时间离散、幅值也离散的数字信号的电子元件。</p>
+<p >A/D转换一般要经过取样、保持、量化及编码4个过程。在实际电路中，这些过程有的是合并进行的，例如，取样和保持，量化和编码往往都是在转换过程中同时实现的。</p>
+<h2><a class="anchor" id="autotoc_md192"></a>
+分类</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">直接 ADC   </th><th class="markdownTableHeadNone">并联比较型 ADC    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">逐次逼近型 ADC    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">闪存型 ADC    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">间接 ADC   </td><td class="markdownTableBodyNone">双积分型 ADC   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md193"></a>
+技术指标</h2>
+<p >分辨率：理论上 ADC 对输入信号的分辨能力，一般有8位、10位、12位、16位等</p>
+<p >精度：实际模拟电压与采样电压之间的差值，差值的最大值为绝对精度，差值的最大值与满刻度模拟电压得百分比称为相对误差</p>
+<p >转换时间：每次采样所需的时间，表征 ADC 的转换速度，与 ADC 的时钟频率、采样周期、转换周期有关</p>
+<p >数据输出方式：并口输出、串口输出</p>
+<p >工作电压：需要注意 ADC 的工作电压范围、能否直接测量负电压等；</p>
+<h1><a class="anchor" id="autotoc_md194"></a>
+API 描述</h1>
+<h2><a class="anchor" id="autotoc_md195"></a>
+tkl_adc_init</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a3bf73c7dcd6dc0b1bfb553de6719c510">tkl_adc_init</a>(TUYA_ADC_NUM_E port_num, <a class="code hl_struct" href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html">TUYA_ADC_BASE_CFG_T</a> *cfg);</div>
+<div class="ttc" id="astructTUYA__ADC__BASE__CFG__T_html"><div class="ttname"><a href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html">TUYA_ADC_BASE_CFG_T</a></div><div class="ttdoc">adc config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:302</div></div>
+<div class="ttc" id="atkl__adc_8h_html_a3bf73c7dcd6dc0b1bfb553de6719c510"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#a3bf73c7dcd6dc0b1bfb553de6719c510">tkl_adc_init</a></div><div class="ttdeci">OPERATE_RET tkl_adc_init(TUYA_ADC_NUM_E port_num, TUYA_ADC_BASE_CFG_T *cfg)</div><div class="ttdoc">tuya kernel adc init</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 初始化</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号，一个端口对应一个 ADC 实体器件（一般有多个通道），取值如下：</li>
+</ul>
+</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_ADC_NUM_0   </td><td class="markdownTableBodyLeft">ADC 端口 0   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_ADC_NUM_1   </td><td class="markdownTableBodyLeft">ADC 端口 1   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_ADC_NUM_2   </td><td class="markdownTableBodyLeft">ADC 端口 2   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_ADC_NUM_3   </td><td class="markdownTableBodyLeft">ADC 端口 3   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_ADC_NUM_4   </td><td class="markdownTableBodyLeft">ADC 端口 4   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_ADC_NUM_5   </td><td class="markdownTableBodyLeft">ADC 端口 5   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li><p class="startli"><code>cfg</code>：ADC 基础配置，取值如下：</p>
+<p class="startli">```c typedef struct { <a class="el" href="../../d2/dcb/unionTUYA__AD__DA__CH__LIST__U.html">TUYA_AD_DA_CH_LIST_U</a> ch_list; // ADC 通道列表 UINT8_T ch_nums; // 需要采集的ADC 通道个数 UINT8_T width; // 分辨率（位宽） UINT32_T freq; // 采样频率 TUYA_ADC_TYPE_E type; // ADC 采样类型 TUYA_ADC_MODE_E mode; // ADC 采样模式 UINT16_T conv_cnt; // ADC 采样次数 UINT32_T ref_vol; // ADC 参考电压（单位：mv） } <a class="el" href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html" title="adc config">TUYA_ADC_BASE_CFG_T</a>; ```</p>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md196"></a>
+TUYA_AD_DA_CH_LIST_U：</h3>
+<p >``` typedef union { <a class="el" href="../../d7/d49/structTUYA__AD__DA__CH__LIST__BIT__T.html">TUYA_AD_DA_CH_LIST_BIT_T</a> bits; UINT32_T data; }<a class="el" href="../../d2/dcb/unionTUYA__AD__DA__CH__LIST__U.html">TUYA_AD_DA_CH_LIST_U</a>; ```</p>
+<p >``` typedef struct { UINT32_T ch_0 : 1; UINT32_T ch_1 : 1; UINT32_T ch_2 : 1; UINT32_T ch_3 : 1; UINT32_T ch_4 : 1; UINT32_T ch_5 : 1; UINT32_T ch_6 : 1; UINT32_T ch_7 : 1; UINT32_T ch_8 : 1; UINT32_T ch_9 : 1; UINT32_T ch_10 : 1; UINT32_T ch_11 : 1; UINT32_T ch_12 : 1; UINT32_T ch_13 : 1; UINT32_T ch_14 : 1; UINT32_T ch_15 : 1; UINT32_T rsv :16; }<a class="el" href="../../d7/d49/structTUYA__AD__DA__CH__LIST__BIT__T.html">TUYA_AD_DA_CH_LIST_BIT_T</a>; ```</p>
+<p >采集通道列表可以使用bit位操作，也可以通过data操作，两者效果相同。</p>
+<p ><code>ch_nums</code>采集的通道数量。</p>
+<h3><a class="anchor" id="autotoc_md197"></a>
+TUYA_ADC_TYPE_E：</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_ADC_INNER_SAMPLE_VOL   </td><td class="markdownTableBodyLeft">ADC 采样内部电压（例如电源电压）   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_ADC_EXTERNAL_SAMPLE_VOL   </td><td class="markdownTableBodyLeft">ADC 采样外部电压（例如外部引脚电压）   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md198"></a>
+TUYA_ADC_MODE_E：</h3>
+<p >``` typedef enum { TUYA_ADC_SINGLE = 0, ///&lt; Single conversion mode TUYA_ADC_CONTINUOUS, ///&lt; Continuous conversion mode TUYA_ADC_SCAN, ///&lt; Scan mode } TUYA_ADC_MODE_E; ```</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_ADC_SINGLE   </td><td class="markdownTableBodyLeft">单通道采集   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_ADC_CONTINUOUS   </td><td class="markdownTableBodyLeft">单通道多次采集   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_ADC_SCAN   </td><td class="markdownTableBodyLeft">扫描模式采集   </td><td class="markdownTableBodyLeft">可多通道采集   </td></tr>
+</table>
+<p ><code>conv_cnt</code>指定采集模式下的采集次数。</p>
+<ul>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md199"></a>
+tkl_adc_deinit</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#aa728ffcad85ef396b799f8eb8e31726e">tkl_adc_deinit</a>(TUYA_ADC_NUM_E port_num);</div>
+<div class="ttc" id="atkl__adc_8h_html_aa728ffcad85ef396b799f8eb8e31726e"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#aa728ffcad85ef396b799f8eb8e31726e">tkl_adc_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_adc_deinit(TUYA_ADC_NUM_E port_num)</div><div class="ttdoc">adc deinit</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 去初始化状态</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md200"></a>
+tkl_adc_width_get</h2>
+<div class="fragment"><div class="line">UINT8_T <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#aa168065018f09ff3c77ed3762ecf2d76">tkl_adc_width_get</a>(TUYA_ADC_NUM_E port_num);</div>
+<div class="ttc" id="atkl__adc_8h_html_aa168065018f09ff3c77ed3762ecf2d76"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#aa168065018f09ff3c77ed3762ecf2d76">tkl_adc_width_get</a></div><div class="ttdeci">UINT8_T tkl_adc_width_get(TUYA_ADC_NUM_E port_num)</div><div class="ttdoc">get adc width</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 查询分辨率（位宽）</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md201"></a>
+tkl_adc_ref_voltage_get</h2>
+<div class="fragment"><div class="line">UINT32_T <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a8d045eb4ad74ef0c3e152df6d9b4dca6">tkl_adc_ref_voltage_get</a>(TUYA_ADC_NUM_E port_num);</div>
+<div class="ttc" id="atkl__adc_8h_html_a8d045eb4ad74ef0c3e152df6d9b4dca6"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#a8d045eb4ad74ef0c3e152df6d9b4dca6">tkl_adc_ref_voltage_get</a></div><div class="ttdeci">UINT32_T tkl_adc_ref_voltage_get(TUYA_ADC_NUM_E port_num)</div><div class="ttdoc">get adc reference voltage</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 查询参考电压</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md202"></a>
+tkl_adc_temperature_get</h2>
+<div class="fragment"><div class="line">INT32_T <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#ad7d4f2ea6d941ee0dd2f6e15d5ad86f5">tkl_adc_temperature_get</a>(VOID_T);</div>
+<div class="ttc" id="atkl__adc_8h_html_ad7d4f2ea6d941ee0dd2f6e15d5ad86f5"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#ad7d4f2ea6d941ee0dd2f6e15d5ad86f5">tkl_adc_temperature_get</a></div><div class="ttdeci">INT32_T tkl_adc_temperature_get(VOID_T)</div><div class="ttdoc">adc get temperature</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 查询温度（此处指查询芯片温度）</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md203"></a>
+tkl_adc_read_data</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a7ff1fcc1164104fe8dc43a348a40f860">tkl_adc_read_data</a>(TUYA_ADC_NUM_E port_num, INT32_T *buff, UINT16_T len);</div>
+<div class="ttc" id="atkl__adc_8h_html_a7ff1fcc1164104fe8dc43a348a40f860"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#a7ff1fcc1164104fe8dc43a348a40f860">tkl_adc_read_data</a></div><div class="ttdeci">OPERATE_RET tkl_adc_read_data(TUYA_ADC_NUM_E port_num, INT32_T *buff, UINT16_T len)</div><div class="ttdoc">adc read</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 读取数据</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号</li>
+<li><code>buff</code>：ADC 数据缓冲区</li>
+<li><code>len</code>：ADC 数据缓冲区的长度</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md204"></a>
+tkl_adc_read_single_channel</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a6d12e0f8967044af5d220c0aa18fa3c7">tkl_adc_read_single_channel</a>(TUYA_ADC_NUM_E port_num, UINT8_T ch_id, INT32_T *data);</div>
+<div class="ttc" id="atkl__adc_8h_html_a6d12e0f8967044af5d220c0aa18fa3c7"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#a6d12e0f8967044af5d220c0aa18fa3c7">tkl_adc_read_single_channel</a></div><div class="ttdeci">OPERATE_RET tkl_adc_read_single_channel(TUYA_ADC_NUM_E port_num, UINT8_T ch_id, INT32_T *data)</div><div class="ttdoc">read single channel</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 读取数据（单通道）</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号</li>
+<li><code>ch_id</code>：ADC 通道号</li>
+<li><code>data</code>：ADC 数据缓冲区</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md205"></a>
+tkl_adc_read_voltage</h2>
+<div class="fragment"><div class="line">OPERATE_RET <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a3ffea5e178123d436828c96a82a1fe36">tkl_adc_read_voltage</a>(TUYA_ADC_NUM_E port_num, INT32_T *buff, UINT16_T len);</div>
+<div class="ttc" id="atkl__adc_8h_html_a3ffea5e178123d436828c96a82a1fe36"><div class="ttname"><a href="../../d2/d7a/tkl__adc_8h.html#a3ffea5e178123d436828c96a82a1fe36">tkl_adc_read_voltage</a></div><div class="ttdeci">OPERATE_RET tkl_adc_read_voltage(TUYA_ADC_NUM_E port_num, INT32_T *buff, UINT16_T len)</div><div class="ttdoc">read voltage</div></div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>ADC 读取电压</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><code>port_num</code>：ADC 端口号</li>
+<li><code>buf</code>：ADC 电压缓冲区</li>
+<li><code>len</code>：ADC 电压缓冲区长度</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK - 成功</li>
+<li>其他请参考文件 tuya_error_code.h，OS_ADAPTER_ADC 定义部分</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md206"></a>
+示例</h1>
+<h2><a class="anchor" id="autotoc_md207"></a>
+示例 1</h2>
+<div class="fragment"><div class="line">VOID_T tuya_adc_single_channel_test(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    <a class="code hl_struct" href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html">TUYA_ADC_BASE_CFG_T</a> adc_cfg;</div>
+<div class="line">    UINT32_T adc_value = 0;</div>
+<div class="line">    UINT16_T channel = 0;</div>
+<div class="line">    </div>
+<div class="line">    adc_cfg.ch_list.data = 1; <span class="comment">// or adc_cfg.ch_list.bits.ch_0 = 1;</span></div>
+<div class="line">    adc_cfg.ch_nums = 1;</div>
+<div class="line">    adc_cfg.type = TUYA_ADC_INNER_SAMPLE_VOL;</div>
+<div class="line">    adc_cfg.mode = TUYA_ADC_SINGLE;</div>
+<div class="line">    adc_cfg.width = 10;</div>
+<div class="line">    adc_cfg.conv_cnt = 1;</div>
+<div class="line">   </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a3bf73c7dcd6dc0b1bfb553de6719c510">tkl_adc_init</a>(ADC_NUM_0, &amp;adc_cfg);</div>
+<div class="line">    <span class="keywordflow">if</span>(ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a6d12e0f8967044af5d220c0aa18fa3c7">tkl_adc_read_single_channel</a>(ADC_NUM_0, channel, &amp;adc_value);</div>
+<div class="line">    <span class="keywordflow">if</span>(ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 输出 adc_value 的值</span></div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#aa728ffcad85ef396b799f8eb8e31726e">tkl_adc_deinit</a>(ADC_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span>(ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md208"></a>
+示例 2</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#define ADC_CHANNEL_NUM 3</span></div>
+<div class="line"> </div>
+<div class="line">VOID_T tuya_adc_multi_channel_test(VOID_T)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    <a class="code hl_struct" href="../../dc/d14/structTUYA__ADC__BASE__CFG__T.html">TUYA_ADC_BASE_CFG_T</a> adc_cfg;</div>
+<div class="line">    UINT32_T adc_value[ADC_CHANNEL_NUM] = {0};</div>
+<div class="line">    </div>
+<div class="line">    adc_cfg.ch_list.bits.ch_0 = 1;</div>
+<div class="line">    adc_cfg.ch_list.bits.ch_1 = 1;</div>
+<div class="line">    adc_cfg.ch_list.bits.ch_2 = 1;</div>
+<div class="line">    adc_cfg.ch_nums = ADC_CHANNEL_NUM;</div>
+<div class="line">    adc_cfg.type = TUYA_ADC_INNER_SAMPLE_VOL;</div>
+<div class="line">    adc_cfg.mode = TUYA_ADC_SCAN;</div>
+<div class="line">    adc_cfg.width = 10;</div>
+<div class="line">    adc_cfg.conv_cnt = 1;</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a3bf73c7dcd6dc0b1bfb553de6719c510">tkl_adc_init</a>(ADC_NUM_0, &amp;adc_cfg);</div>
+<div class="line">    <span class="keywordflow">if</span>(ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#a7ff1fcc1164104fe8dc43a348a40f860">tkl_adc_read_data</a>(ADC_NUM_0, adc_value, ADC_CHANNEL_NUM);</div>
+<div class="line">    <span class="keywordflow">if</span>(ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 输出 adc_value[ADC_CHANNEL_NUM] 的值</span></div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d2/d7a/tkl__adc_8h.html#aa728ffcad85ef396b799f8eb8e31726e">tkl_adc_deinit</a>(ADC_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span>(ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">// failed</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

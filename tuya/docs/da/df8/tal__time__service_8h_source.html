@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system_service/include/tal_time_service.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c9db1059777c15dc8c8b94b955097dc4.html">tal_system_service</a></li><li class="navelem"><a class="el" href="../../dir_679a7e65efb1f08b4e45cdf759445817.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_time_service.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/df8/tal__time__service_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TAL_TIME_SERVICE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TAL_TIME_SERVICE_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dc2/tal__system_8h.html">tal_system.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../db/d52/structPOSIX__TM__S.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    INT_T tm_sec;     <span class="comment">/* seconds [0-59] */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    INT_T tm_min;     <span class="comment">/* minutes [0-59] */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    INT_T tm_hour;    <span class="comment">/* hours [0-23] */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    INT_T tm_mday;    <span class="comment">/* day of the month [1-31] */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    INT_T tm_mon;     <span class="comment">/* month [0-11] */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    INT_T tm_year;    <span class="comment">/* year. The number of years since 1900 */</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    INT_T tm_wday;    <span class="comment">/* day of the week [0-6] 0-Sunday...6-Saturday */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}<a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../db/dfa/structSUM__ZONE__S.html">   40</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    TIME_T posix_min;   <span class="comment">// summer time start</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    TIME_T posix_max;   <span class="comment">// summer time end</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}<a class="code hl_struct" href="../../db/dfa/structSUM__ZONE__S.html">SUM_ZONE_S</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#ae6bf5213360f4c96bdb34f81acac0e4a">   49</a></span><span class="preprocessor">#define SUM_ZONE_TAB_LMT 6</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d8/d84/structSUM__ZONE__TBL__S.html">   55</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    UINT_T cnt; <span class="comment">//sum zone count</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_struct" href="../../db/dfa/structSUM__ZONE__S.html">SUM_ZONE_S</a> zone[<a class="code hl_define" href="../../da/df8/tal__time__service_8h.html#ae6bf5213360f4c96bdb34f81acac0e4a">SUM_ZONE_TAB_LMT</a>];<span class="comment">//zone info</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}<a class="code hl_struct" href="../../d8/d84/structSUM__ZONE__TBL__S.html">SUM_ZONE_TBL_S</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#ad0b8a9341f147dd48c5e8ccdfba0a6b2">   65</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#ad0b8a9341f147dd48c5e8ccdfba0a6b2">tal_time_service_init</a>(VOID);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a2ab720978e64ceb6f8a3ea797c428c31">   73</a></span>TIME_T <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a2ab720978e64ceb6f8a3ea797c428c31">tal_time_mktime</a>(IN CONST <a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a837b87b97ed4f54658b46b43992a6925">   82</a></span><a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *<a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a837b87b97ed4f54658b46b43992a6925">tal_time_gmtime_r</a>(IN CONST TIME_T *tm, OUT <a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *result);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a2a8ed2b219febf3ea3e55a054a13fb9c">   89</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a2a8ed2b219febf3ea3e55a054a13fb9c">tal_time_check_time_sync</a>(VOID);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a921fe6967d355889cf57392349ec8e20">   96</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a921fe6967d355889cf57392349ec8e20">tal_time_check_time_zone_sync</a>(VOID);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a7c3ad44f7f56bb8eff5c225969e2e1a6">  104</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a7c3ad44f7f56bb8eff5c225969e2e1a6">tal_time_set</a>(IN CONST <a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a0802643c2946b85ddf6107e846ef541e">  113</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a0802643c2946b85ddf6107e846ef541e">tal_time_set_posix</a>(IN CONST TIME_T time, IN CONST INT_T update_source);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a0b87a3f009f99234355b6df58fba35d9">  121</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a0b87a3f009f99234355b6df58fba35d9">tal_time_get</a>(OUT <a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a4730950c3f787cc9b093730d18e46ca7">  128</a></span>TIME_T <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a4730950c3f787cc9b093730d18e46ca7">tal_time_get_posix</a>(VOID);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#afab00d1e35c7ea09e23d7f3cd55cf4d4">  135</a></span>SYS_TICK_T <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#afab00d1e35c7ea09e23d7f3cd55cf4d4">tal_time_get_posix_ms</a>(VOID);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#aebda3f0eee6988df8cc3e193b528b218">  142</a></span>TIME_T <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#aebda3f0eee6988df8cc3e193b528b218">tal_time_get_cur_posix</a>(VOID);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#af51ddaa30ae4fd3be4ef340534c87edd">  151</a></span>VOID <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#af51ddaa30ae4fd3be4ef340534c87edd">tal_time_get_system_time</a>(OUT TIME_S *pSecTime,OUT TIME_MS *pMsTime);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#aa0deb98e1252a1307ff34b6376c3f844">  159</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#aa0deb98e1252a1307ff34b6376c3f844">tal_time_set_time_zone</a>(IN CONST CHAR_T *time_zone);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#ae85dce9951cedc68c17493f000e57eb7">  167</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#ae85dce9951cedc68c17493f000e57eb7">tal_time_set_time_zone_seconds</a>(IN INT_T time_zone_sec);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#aaf46038fdc5b91be54cf493cfdfa93c6">  175</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#aaf46038fdc5b91be54cf493cfdfa93c6">tal_time_get_time_zone_seconds</a>(OUT INT_T *time_zone);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a162310b8bec179ed2a6cd97a7f9ce859">  184</a></span>VOID <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a162310b8bec179ed2a6cd97a7f9ce859">tal_time_set_sum_zone_tbl</a>(IN CONST <a class="code hl_struct" href="../../db/dfa/structSUM__ZONE__S.html">SUM_ZONE_S</a> *zone,IN CONST UINT_T cnt);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a486abbe78589263d2b12b2e7bc4def2c">  192</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a486abbe78589263d2b12b2e7bc4def2c">tal_time_get_sum_time</a>(OUT <a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#acc80a5c33c201eceb97bb8dfe1580e7f">  199</a></span>TIME_T <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#acc80a5c33c201eceb97bb8dfe1580e7f">tal_time_get_sum_time_posix</a>(VOID);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#ac311c1eca1eb7e45cc47811dcb876c65">  206</a></span>BOOL_T <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#ac311c1eca1eb7e45cc47811dcb876c65">tal_time_is_in_sum_zone</a>(TIME_T time);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#ae7400c84e0e0d28d754b98ebed2b8552">  219</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#ae7400c84e0e0d28d754b98ebed2b8552">tal_time_get_local_time_custom</a>(IN TIME_T in_time, OUT <a class="code hl_struct" href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a> *tm);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../da/df8/tal__time__service_8h.html#a99c44db8d054a0ad9439a1d3a76ebbf6">  227</a></span>OPERATE_RET <a class="code hl_function" href="../../da/df8/tal__time__service_8h.html#a99c44db8d054a0ad9439a1d3a76ebbf6">tal_time_get_sum_zone</a>(OUT <a class="code hl_struct" href="../../d8/d84/structSUM__ZONE__TBL__S.html">SUM_ZONE_TBL_S</a> *sum_zone);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">#endif </span><span class="comment">/* __TAL_TIME_SERVICE_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="ttc" id="astructPOSIX__TM__S_html"><div class="ttname"><a href="../../db/d52/structPOSIX__TM__S.html">POSIX_TM_S</a></div><div class="ttdoc">posix time</div><div class="ttdef"><b>Definition:</b> tal_time_service.h:26</div></div>
+<div class="ttc" id="astructSUM__ZONE__S_html"><div class="ttname"><a href="../../db/dfa/structSUM__ZONE__S.html">SUM_ZONE_S</a></div><div class="ttdoc">summer time zone</div><div class="ttdef"><b>Definition:</b> tal_time_service.h:40</div></div>
+<div class="ttc" id="astructSUM__ZONE__TBL__S_html"><div class="ttname"><a href="../../d8/d84/structSUM__ZONE__TBL__S.html">SUM_ZONE_TBL_S</a></div><div class="ttdoc">sum zone info</div><div class="ttdef"><b>Definition:</b> tal_time_service.h:55</div></div>
+<div class="ttc" id="atal__system_8h_html"><div class="ttname"><a href="../../d3/dc2/tal__system_8h.html">tal_system.h</a></div><div class="ttdoc">Common process - adpater some api which provide by OS</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a0802643c2946b85ddf6107e846ef541e"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a0802643c2946b85ddf6107e846ef541e">tal_time_set_posix</a></div><div class="ttdeci">OPERATE_RET tal_time_set_posix(IN CONST TIME_T time, IN CONST INT_T update_source)</div><div class="ttdoc">set IoTOS UTC time in time_t format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a0b87a3f009f99234355b6df58fba35d9"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a0b87a3f009f99234355b6df58fba35d9">tal_time_get</a></div><div class="ttdeci">OPERATE_RET tal_time_get(OUT POSIX_TM_S *tm)</div><div class="ttdoc">get IoTOS UTC time in posix time format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a162310b8bec179ed2a6cd97a7f9ce859"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a162310b8bec179ed2a6cd97a7f9ce859">tal_time_set_sum_zone_tbl</a></div><div class="ttdeci">VOID tal_time_set_sum_zone_tbl(IN CONST SUM_ZONE_S *zone, IN CONST UINT_T cnt)</div><div class="ttdoc">set IoTOS summer time zone</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a2a8ed2b219febf3ea3e55a054a13fb9c"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a2a8ed2b219febf3ea3e55a054a13fb9c">tal_time_check_time_sync</a></div><div class="ttdeci">OPERATE_RET tal_time_check_time_sync(VOID)</div><div class="ttdoc">check IoTOS time synchronize status</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a2ab720978e64ceb6f8a3ea797c428c31"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a2ab720978e64ceb6f8a3ea797c428c31">tal_time_mktime</a></div><div class="ttdeci">TIME_T tal_time_mktime(IN CONST POSIX_TM_S *tm)</div><div class="ttdoc">change posix time to TIME_T, redefine the std C func mktime</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a4730950c3f787cc9b093730d18e46ca7"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a4730950c3f787cc9b093730d18e46ca7">tal_time_get_posix</a></div><div class="ttdeci">TIME_T tal_time_get_posix(VOID)</div><div class="ttdoc">get IoTOS UTC time in TIME_T format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a486abbe78589263d2b12b2e7bc4def2c"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a486abbe78589263d2b12b2e7bc4def2c">tal_time_get_sum_time</a></div><div class="ttdeci">OPERATE_RET tal_time_get_sum_time(OUT POSIX_TM_S *tm)</div><div class="ttdoc">get IoTOS UTC summer time in posix time format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a7c3ad44f7f56bb8eff5c225969e2e1a6"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a7c3ad44f7f56bb8eff5c225969e2e1a6">tal_time_set</a></div><div class="ttdeci">OPERATE_RET tal_time_set(IN CONST POSIX_TM_S *tm)</div><div class="ttdoc">set IoTOS UTC time</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a837b87b97ed4f54658b46b43992a6925"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a837b87b97ed4f54658b46b43992a6925">tal_time_gmtime_r</a></div><div class="ttdeci">POSIX_TM_S * tal_time_gmtime_r(IN CONST TIME_T *tm, OUT POSIX_TM_S *result)</div><div class="ttdoc">change TIME_T to posix time, redefine the std C func gmtime_r</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a921fe6967d355889cf57392349ec8e20"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a921fe6967d355889cf57392349ec8e20">tal_time_check_time_zone_sync</a></div><div class="ttdeci">OPERATE_RET tal_time_check_time_zone_sync(VOID)</div><div class="ttdoc">check IoTOS time zone synchronized status</div></div>
+<div class="ttc" id="atal__time__service_8h_html_a99c44db8d054a0ad9439a1d3a76ebbf6"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#a99c44db8d054a0ad9439a1d3a76ebbf6">tal_time_get_sum_zone</a></div><div class="ttdeci">OPERATE_RET tal_time_get_sum_zone(OUT SUM_ZONE_TBL_S *sum_zone)</div><div class="ttdoc">get sum zone info</div></div>
+<div class="ttc" id="atal__time__service_8h_html_aa0deb98e1252a1307ff34b6376c3f844"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#aa0deb98e1252a1307ff34b6376c3f844">tal_time_set_time_zone</a></div><div class="ttdeci">OPERATE_RET tal_time_set_time_zone(IN CONST CHAR_T *time_zone)</div><div class="ttdoc">set IoTOS time zone in &quot;+/-hh:mm&quot; format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_aaf46038fdc5b91be54cf493cfdfa93c6"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#aaf46038fdc5b91be54cf493cfdfa93c6">tal_time_get_time_zone_seconds</a></div><div class="ttdeci">OPERATE_RET tal_time_get_time_zone_seconds(OUT INT_T *time_zone)</div><div class="ttdoc">get IoTOS time zone in second format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_ac311c1eca1eb7e45cc47811dcb876c65"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#ac311c1eca1eb7e45cc47811dcb876c65">tal_time_is_in_sum_zone</a></div><div class="ttdeci">BOOL_T tal_time_is_in_sum_zone(TIME_T time)</div><div class="ttdoc">get IoTOS UTC summer time int TIME_T format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_acc80a5c33c201eceb97bb8dfe1580e7f"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#acc80a5c33c201eceb97bb8dfe1580e7f">tal_time_get_sum_time_posix</a></div><div class="ttdeci">TIME_T tal_time_get_sum_time_posix(VOID)</div><div class="ttdoc">get IoTOS UTC summer time int TIME_T format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_ad0b8a9341f147dd48c5e8ccdfba0a6b2"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#ad0b8a9341f147dd48c5e8ccdfba0a6b2">tal_time_service_init</a></div><div class="ttdeci">OPERATE_RET tal_time_service_init(VOID)</div><div class="ttdoc">time-management module initialization</div></div>
+<div class="ttc" id="atal__time__service_8h_html_ae6bf5213360f4c96bdb34f81acac0e4a"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#ae6bf5213360f4c96bdb34f81acac0e4a">SUM_ZONE_TAB_LMT</a></div><div class="ttdeci">#define SUM_ZONE_TAB_LMT</div><div class="ttdoc">number of time zone table</div><div class="ttdef"><b>Definition:</b> tal_time_service.h:49</div></div>
+<div class="ttc" id="atal__time__service_8h_html_ae7400c84e0e0d28d754b98ebed2b8552"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#ae7400c84e0e0d28d754b98ebed2b8552">tal_time_get_local_time_custom</a></div><div class="ttdeci">OPERATE_RET tal_time_get_local_time_custom(IN TIME_T in_time, OUT POSIX_TM_S *tm)</div><div class="ttdoc">get IoTOS local time (local, contains the time zone and summer time zone)</div></div>
+<div class="ttc" id="atal__time__service_8h_html_ae85dce9951cedc68c17493f000e57eb7"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#ae85dce9951cedc68c17493f000e57eb7">tal_time_set_time_zone_seconds</a></div><div class="ttdeci">OPERATE_RET tal_time_set_time_zone_seconds(IN INT_T time_zone_sec)</div><div class="ttdoc">set IoTOS time zone in second format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_aebda3f0eee6988df8cc3e193b528b218"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#aebda3f0eee6988df8cc3e193b528b218">tal_time_get_cur_posix</a></div><div class="ttdeci">TIME_T tal_time_get_cur_posix(VOID)</div><div class="ttdoc">get IoTOS last synchronized UTC time in TIME_T format</div></div>
+<div class="ttc" id="atal__time__service_8h_html_af51ddaa30ae4fd3be4ef340534c87edd"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#af51ddaa30ae4fd3be4ef340534c87edd">tal_time_get_system_time</a></div><div class="ttdeci">VOID tal_time_get_system_time(OUT TIME_S *pSecTime, OUT TIME_MS *pMsTime)</div><div class="ttdoc">get IoTOS UTC time, both second and micro-second</div></div>
+<div class="ttc" id="atal__time__service_8h_html_afab00d1e35c7ea09e23d7f3cd55cf4d4"><div class="ttname"><a href="../../da/df8/tal__time__service_8h.html#afab00d1e35c7ea09e23d7f3cd55cf4d4">tal_time_get_posix_ms</a></div><div class="ttdeci">SYS_TICK_T tal_time_get_posix_ms(VOID)</div><div class="ttdoc">get IoTOS UTC time in SYS_TICK_T format</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

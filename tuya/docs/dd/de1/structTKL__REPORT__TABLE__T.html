@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_REPORT_TABLE_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_REPORT_TABLE_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ae42f79795eb98a22cbea63ec99082ee2"><td class="memItemLeft" align="right" valign="top"><a id="ae42f79795eb98a22cbea63ec99082ee2" name="ae42f79795eb98a22cbea63ec99082ee2"></a>
+UINT16_T&#160;</td><td class="memItemRight" valign="bottom"><b>attr_id</b></td></tr>
+<tr class="memdesc:ae42f79795eb98a22cbea63ec99082ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">attribute id <br /></td></tr>
+<tr class="separator:ae42f79795eb98a22cbea63ec99082ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ee94b0f9e9bea4d0ced3190814ea90"><td class="memItemLeft" align="right" valign="top"><a id="ab4ee94b0f9e9bea4d0ced3190814ea90" name="ab4ee94b0f9e9bea4d0ced3190814ea90"></a>
+UINT16_T&#160;</td><td class="memItemRight" valign="bottom"><b>cluster_id</b></td></tr>
+<tr class="memdesc:ab4ee94b0f9e9bea4d0ced3190814ea90"><td class="mdescLeft">&#160;</td><td class="mdescRight">cluster id, see ZG_CLUSTER_ID_E <br /></td></tr>
+<tr class="separator:ab4ee94b0f9e9bea4d0ced3190814ea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc85fa33df71f4ba6328b004bf17b46d"><td class="memItemLeft" ><a id="adc85fa33df71f4ba6328b004bf17b46d" name="adc85fa33df71f4ba6328b004bf17b46d"></a>
+union {</td></tr>
+<tr class="memitem:a48adad254775ce6df57a862325a7a5af"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a820205d96e82bb87b435ebbd6feca602"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UINT8_T&#160;&#160;&#160;<b>endpoint</b></td></tr>
+<tr class="memdesc:a820205d96e82bb87b435ebbd6feca602"><td class="mdescLeft">&#160;</td><td class="mdescRight">remote endpoint from which the attribute is reported <br /></td></tr>
+<tr class="separator:a820205d96e82bb87b435ebbd6feca602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32060f290720cc4dcca2a98d52ab44e"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UINT16_T&#160;&#160;&#160;<b>source_addr</b></td></tr>
+<tr class="memdesc:ae32060f290720cc4dcca2a98d52ab44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">node id of the source of the received reports <br /></td></tr>
+<tr class="separator:ae32060f290720cc4dcca2a98d52ab44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcde70098ed99546c2b5a70a3bb2ef0"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UINT16_T&#160;&#160;&#160;<b>timeout</b></td></tr>
+<tr class="memdesc:a0dcde70098ed99546c2b5a70a3bb2ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">max expected time between reports, measured in seconds <br /></td></tr>
+<tr class="separator:a0dcde70098ed99546c2b5a70a3bb2ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48adad254775ce6df57a862325a7a5af"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>received</b></td></tr>
+<tr class="separator:a48adad254775ce6df57a862325a7a5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2d258f2e97154eb8aba156f373a304"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a4d51203d6c563beb788d6854417d14a6"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UINT16_T&#160;&#160;&#160;<b>max_interval</b></td></tr>
+<tr class="memdesc:a4d51203d6c563beb788d6854417d14a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">max reporting interval, measured in seconds <br /></td></tr>
+<tr class="separator:a4d51203d6c563beb788d6854417d14a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3dc9027821eeed9eae42898bce5ef1"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UINT16_T&#160;&#160;&#160;<b>min_interval</b></td></tr>
+<tr class="memdesc:a3b3dc9027821eeed9eae42898bce5ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">mini reporting interval, measured in seconds <br /></td></tr>
+<tr class="separator:a3b3dc9027821eeed9eae42898bce5ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffe5f9f7a71c424f6c46941b9a9bdd6"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;UINT32_T&#160;&#160;&#160;<b>report_change</b></td></tr>
+<tr class="memdesc:a0ffe5f9f7a71c424f6c46941b9a9bdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">mini change to the attribute that will result in a report being sent <br /></td></tr>
+<tr class="separator:a0ffe5f9f7a71c424f6c46941b9a9bdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2d258f2e97154eb8aba156f373a304"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reported</b></td></tr>
+<tr class="separator:a6c2d258f2e97154eb8aba156f373a304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc85fa33df71f4ba6328b004bf17b46d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:adc85fa33df71f4ba6328b004bf17b46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2cbb0c98d98c729c5982b735a9f52a"><td class="memItemLeft" align="right" valign="top"><a id="a2d2cbb0c98d98c729c5982b735a9f52a" name="a2d2cbb0c98d98c729c5982b735a9f52a"></a>
+<a class="el" href="../../dd/d78/tkl__reporting_8h.html#a2c46beeb1c672545ffd94f5de4a95423">TKL_REPORT_DIREC_E</a>&#160;</td><td class="memItemRight" valign="bottom"><b>direction</b></td></tr>
+<tr class="memdesc:a2d2cbb0c98d98c729c5982b735a9f52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">reporting direction <br /></td></tr>
+<tr class="separator:a2d2cbb0c98d98c729c5982b735a9f52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d0ee914c1f7d62c9a31fb25646b600"><td class="memItemLeft" align="right" valign="top"><a id="a69d0ee914c1f7d62c9a31fb25646b600" name="a69d0ee914c1f7d62c9a31fb25646b600"></a>
+UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><b>ep_id</b></td></tr>
+<tr class="memdesc:a69d0ee914c1f7d62c9a31fb25646b600"><td class="mdescLeft">&#160;</td><td class="mdescRight">endpoint id <br /></td></tr>
+<tr class="separator:a69d0ee914c1f7d62c9a31fb25646b600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e475715b14fc51839092e935d847123"><td class="memItemLeft" align="right" valign="top"><a id="a3e475715b14fc51839092e935d847123" name="a3e475715b14fc51839092e935d847123"></a>
+UINT16_T&#160;</td><td class="memItemRight" valign="bottom"><b>manuf_code</b></td></tr>
+<tr class="memdesc:a3e475715b14fc51839092e935d847123"><td class="mdescLeft">&#160;</td><td class="mdescRight">manufacture code default 0 <br /></td></tr>
+<tr class="separator:a3e475715b14fc51839092e935d847123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b22ba9b2b261119dc3374157a027f6"><td class="memItemLeft" align="right" valign="top"><a id="a42b22ba9b2b261119dc3374157a027f6" name="a42b22ba9b2b261119dc3374157a027f6"></a>
+<a class="el" href="../../d8/dba/tuya__zigbee__stack_8h.html#ab1ed012f746ebc0b2941942136f894aa">ZG_CLUSTER_MASK_E</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mask</b></td></tr>
+<tr class="memdesc:a42b22ba9b2b261119dc3374157a027f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">reporting cluster mask <br /></td></tr>
+<tr class="separator:a42b22ba9b2b261119dc3374157a027f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/zigbee/include/<a class="el" href="../../dd/d78/tkl__reporting_8h_source.html">tkl_reporting.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

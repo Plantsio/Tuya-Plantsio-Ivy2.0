@@ -1,0 +1,996 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_tools.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_tools.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya common api module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_tools.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d3d/tuya__tools_8h__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__tools_8h" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__tools_8h" id="ainclude_2adapter_2utilities_2include_2tuya__tools_8h">
+<area shape="rect" title="tuya common api module" alt="" coords="355,5,531,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d3/db2/tuya__tools_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aa065b35fc70772e6459566ea5099b64f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#aa065b35fc70772e6459566ea5099b64f">TUYA_PALIGN_DOWN</a>(x,  align)&#160;&#160;&#160;(x &amp; ~(align-1))</td></tr>
+<tr class="memdesc:aa065b35fc70772e6459566ea5099b64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">align and round down  <a href="../../d3/db2/tuya__tools_8h.html#aa065b35fc70772e6459566ea5099b64f">更多...</a><br /></td></tr>
+<tr class="separator:aa065b35fc70772e6459566ea5099b64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4275387bf581fe6e71a1dc5026801c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#afa4275387bf581fe6e71a1dc5026801c">TUYA_PALIGN_UP</a>(x,  align)&#160;&#160;&#160;((x + (align-1)) &amp; ~(align-1))</td></tr>
+<tr class="memdesc:afa4275387bf581fe6e71a1dc5026801c"><td class="mdescLeft">&#160;</td><td class="mdescRight">align and round up  <a href="../../d3/db2/tuya__tools_8h.html#afa4275387bf581fe6e71a1dc5026801c">更多...</a><br /></td></tr>
+<tr class="separator:afa4275387bf581fe6e71a1dc5026801c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae353c29c6794c737f9f4db2c79be26cf"><td class="memItemLeft" align="right" valign="top">UCHAR_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#ae353c29c6794c737f9f4db2c79be26cf">tuya_asc2hex</a> (CHAR_T asccode)</td></tr>
+<tr class="memdesc:ae353c29c6794c737f9f4db2c79be26cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert character to hex, if '0'-'f'/'F' -&gt; 0-15, else 0  <a href="../../d3/db2/tuya__tools_8h.html#ae353c29c6794c737f9f4db2c79be26cf">更多...</a><br /></td></tr>
+<tr class="separator:ae353c29c6794c737f9f4db2c79be26cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a578657970eea807c779e9e594187bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a7a578657970eea807c779e9e594187bf">tuya_ascs2hex</a> (UCHAR_T *hex, UCHAR_T *ascs, INT_T srclen)</td></tr>
+<tr class="memdesc:a7a578657970eea807c779e9e594187bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the hex character array to hex array  <a href="../../d3/db2/tuya__tools_8h.html#a7a578657970eea807c779e9e594187bf">更多...</a><br /></td></tr>
+<tr class="separator:a7a578657970eea807c779e9e594187bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4743f9b756e0a3fca94ae5d74c1574fe"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a4743f9b756e0a3fca94ae5d74c1574fe">tuya_bit1_count</a> (UINT_T num)</td></tr>
+<tr class="memdesc:a4743f9b756e0a3fca94ae5d74c1574fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the number of bits 1 in a number  <a href="../../d3/db2/tuya__tools_8h.html#a4743f9b756e0a3fca94ae5d74c1574fe">更多...</a><br /></td></tr>
+<tr class="separator:a4743f9b756e0a3fca94ae5d74c1574fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fb44d9a5372fe6dfb20b6fed0c1dc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a41fb44d9a5372fe6dfb20b6fed0c1dc0">tuya_buff_reverse</a> (UINT8_T *buf, UINT16_T len)</td></tr>
+<tr class="separator:a41fb44d9a5372fe6dfb20b6fed0c1dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af800f4fb5d8ad36aa44edca3ad2138b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#af800f4fb5d8ad36aa44edca3ad2138b0">tuya_byte_sort</a> (UCHAR_T is_ascend, UCHAR_T *buf, INT_T len)</td></tr>
+<tr class="memdesc:af800f4fb5d8ad36aa44edca3ad2138b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort the CHAR_T in the buf according ascii value  <a href="../../d3/db2/tuya__tools_8h.html#af800f4fb5d8ad36aa44edca3ad2138b0">更多...</a><br /></td></tr>
+<tr class="separator:af800f4fb5d8ad36aa44edca3ad2138b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccf05bfcfc42731422161eed546a5b4"><td class="memItemLeft" align="right" valign="top">UINT16_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a6ccf05bfcfc42731422161eed546a5b4">tuya_check_sum16</a> (UINT8_T *buf, UINT32_T len)</td></tr>
+<tr class="memdesc:a6ccf05bfcfc42731422161eed546a5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">16-bit cumulative checksum calculation  <a href="../../d3/db2/tuya__tools_8h.html#a6ccf05bfcfc42731422161eed546a5b4">更多...</a><br /></td></tr>
+<tr class="separator:a6ccf05bfcfc42731422161eed546a5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0ab066ca5423f506b6639610edcdf7"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a0a0ab066ca5423f506b6639610edcdf7">tuya_check_sum8</a> (UINT8_T *buf, UINT32_T len)</td></tr>
+<tr class="memdesc:a0a0ab066ca5423f506b6639610edcdf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">8-bit cumulative checksum calculation  <a href="../../d3/db2/tuya__tools_8h.html#a0a0ab066ca5423f506b6639610edcdf7">更多...</a><br /></td></tr>
+<tr class="separator:a0a0ab066ca5423f506b6639610edcdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d36207b85a9adb75801dfc9fd2539c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#aa9d36207b85a9adb75801dfc9fd2539c">tuya_data_reverse</a> (UINT8_T *dst, UINT8_T *src, UINT16_T srclen)</td></tr>
+<tr class="separator:aa9d36207b85a9adb75801dfc9fd2539c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff8d1473983702005786d5987895c40"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a4ff8d1473983702005786d5987895c40">tuya_find_char_with_reverse_idx</a> (const CHAR_T *str, const INT_T index, const CHAR_T ch)</td></tr>
+<tr class="memdesc:a4ff8d1473983702005786d5987895c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">find &lt;ch&gt; in &lt;str&gt;, start find in index &lt;revr_index&gt;, find in reverse order.  <a href="../../d3/db2/tuya__tools_8h.html#a4ff8d1473983702005786d5987895c40">更多...</a><br /></td></tr>
+<tr class="separator:a4ff8d1473983702005786d5987895c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682820dfdfff8aff52acd2751f28dc5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a682820dfdfff8aff52acd2751f28dc5a">tuya_hex2str</a> (UCHAR_T *str, UCHAR_T *hex, INT_T hexlen)</td></tr>
+<tr class="memdesc:a682820dfdfff8aff52acd2751f28dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the input hex array to string array  <a href="../../d3/db2/tuya__tools_8h.html#a682820dfdfff8aff52acd2751f28dc5a">更多...</a><br /></td></tr>
+<tr class="separator:a682820dfdfff8aff52acd2751f28dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878aed8614f9b4fa68b441d094eaa544"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a878aed8614f9b4fa68b441d094eaa544">tuya_int2intArray</a> (UINT_T num, UINT8_T *intArray, UINT8_T len)</td></tr>
+<tr class="memdesc:a878aed8614f9b4fa68b441d094eaa544"><td class="mdescLeft">&#160;</td><td class="mdescRight">int number convert to buff  <a href="../../d3/db2/tuya__tools_8h.html#a878aed8614f9b4fa68b441d094eaa544">更多...</a><br /></td></tr>
+<tr class="separator:a878aed8614f9b4fa68b441d094eaa544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7850804bf07c31f67c8abd370b7408e1"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a7850804bf07c31f67c8abd370b7408e1">tuya_intArray2int</a> (UINT8_T *intArray, UINT_T index, UINT8_T len)</td></tr>
+<tr class="memdesc:a7850804bf07c31f67c8abd370b7408e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">int array convert to a int number  <a href="../../d3/db2/tuya__tools_8h.html#a7850804bf07c31f67c8abd370b7408e1">更多...</a><br /></td></tr>
+<tr class="separator:a7850804bf07c31f67c8abd370b7408e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d55aeb1df1e69241e0f5390438587b1"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a2d55aeb1df1e69241e0f5390438587b1">tuya_leading_zeros_count</a> (UINT_T num)</td></tr>
+<tr class="memdesc:a2d55aeb1df1e69241e0f5390438587b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the software calculates the number of leading zeros  <a href="../../d3/db2/tuya__tools_8h.html#a2d55aeb1df1e69241e0f5390438587b1">更多...</a><br /></td></tr>
+<tr class="separator:a2d55aeb1df1e69241e0f5390438587b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77220a597f3e35f3286edcd8d1ad2b93"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a77220a597f3e35f3286edcd8d1ad2b93">tuya_str2num</a> (UINT_T *number, const CHAR_T *str, UINT8_T strlen)</td></tr>
+<tr class="memdesc:a77220a597f3e35f3286edcd8d1ad2b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the input string to number  <a href="../../d3/db2/tuya__tools_8h.html#a77220a597f3e35f3286edcd8d1ad2b93">更多...</a><br /></td></tr>
+<tr class="separator:a77220a597f3e35f3286edcd8d1ad2b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2508f048da824eab679825783c300e"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#afc2508f048da824eab679825783c300e">tuya_strcat</a> (CHAR_T *dst, const CHAR_T *src)</td></tr>
+<tr class="memdesc:afc2508f048da824eab679825783c300e"><td class="mdescLeft">&#160;</td><td class="mdescRight">string cat  <a href="../../d3/db2/tuya__tools_8h.html#afc2508f048da824eab679825783c300e">更多...</a><br /></td></tr>
+<tr class="separator:afc2508f048da824eab679825783c300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbef781945c42f8364d3b36324ce306b"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#adbef781945c42f8364d3b36324ce306b">tuya_strcmp</a> (const CHAR_T *src, const CHAR_T *dst)</td></tr>
+<tr class="memdesc:adbef781945c42f8364d3b36324ce306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">compare characters of two string  <a href="../../d3/db2/tuya__tools_8h.html#adbef781945c42f8364d3b36324ce306b">更多...</a><br /></td></tr>
+<tr class="separator:adbef781945c42f8364d3b36324ce306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7143476846d7e5f5a3af7c15d5087183"><td class="memItemLeft" align="right" valign="top">CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a7143476846d7e5f5a3af7c15d5087183">tuya_strcpy</a> (CHAR_T *dst, const CHAR_T *src)</td></tr>
+<tr class="memdesc:a7143476846d7e5f5a3af7c15d5087183"><td class="mdescLeft">&#160;</td><td class="mdescRight">string copy  <a href="../../d3/db2/tuya__tools_8h.html#a7143476846d7e5f5a3af7c15d5087183">更多...</a><br /></td></tr>
+<tr class="separator:a7143476846d7e5f5a3af7c15d5087183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2cab6abdb14c238421da598a8287e5"><td class="memItemLeft" align="right" valign="top">SIZE_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#ace2cab6abdb14c238421da598a8287e5">tuya_strlen</a> (const CHAR_T *str)</td></tr>
+<tr class="memdesc:ace2cab6abdb14c238421da598a8287e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">string len  <a href="../../d3/db2/tuya__tools_8h.html#ace2cab6abdb14c238421da598a8287e5">更多...</a><br /></td></tr>
+<tr class="separator:ace2cab6abdb14c238421da598a8287e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bd09e16bac0198c7c5a62492e035f3"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db2/tuya__tools_8h.html#a28bd09e16bac0198c7c5a62492e035f3">tuya_strncasecmp</a> (const CHAR_T *s1, const CHAR_T *s2, SIZE_T n)</td></tr>
+<tr class="memdesc:a28bd09e16bac0198c7c5a62492e035f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">compare the first n characters of two string  <a href="../../d3/db2/tuya__tools_8h.html#a28bd09e16bac0198c7c5a62492e035f3">更多...</a><br /></td></tr>
+<tr class="separator:a28bd09e16bac0198c7c5a62492e035f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya common api module </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-13</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aa065b35fc70772e6459566ea5099b64f" name="aa065b35fc70772e6459566ea5099b64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa065b35fc70772e6459566ea5099b64f">&#9670;&nbsp;</a></span>TUYA_PALIGN_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TUYA_PALIGN_DOWN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">align&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(x &amp; ~(align-1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>align and round down </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>number to be aligned </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">align</td><td>align size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="afa4275387bf581fe6e71a1dc5026801c" name="afa4275387bf581fe6e71a1dc5026801c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4275387bf581fe6e71a1dc5026801c">&#9670;&nbsp;</a></span>TUYA_PALIGN_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TUYA_PALIGN_UP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">align&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x + (align-1)) &amp; ~(align-1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>align and round up </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>number to be aligned </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">align</td><td>align size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ae353c29c6794c737f9f4db2c79be26cf" name="ae353c29c6794c737f9f4db2c79be26cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae353c29c6794c737f9f4db2c79be26cf">&#9670;&nbsp;</a></span>tuya_asc2hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UCHAR_T tuya_asc2hex </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T&#160;</td>
+          <td class="paramname"><em>asccode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert character to hex, if '0'-'f'/'F' -&gt; 0-15, else 0 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">asccode</td><td>the input character</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the hex value </dd></dl>
+
+</div>
+</div>
+<a id="a7a578657970eea807c779e9e594187bf" name="a7a578657970eea807c779e9e594187bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a578657970eea807c779e9e594187bf">&#9670;&nbsp;</a></span>tuya_ascs2hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_ascs2hex </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>hex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>ascs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>srclen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert the hex character array to hex array </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hex</td><td>the out hex array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ascs</td><td>the input hex character array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srclen</td><td>the length of input character array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a4743f9b756e0a3fca94ae5d74c1574fe" name="a4743f9b756e0a3fca94ae5d74c1574fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4743f9b756e0a3fca94ae5d74c1574fe">&#9670;&nbsp;</a></span>tuya_bit1_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_bit1_count </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate the number of bits 1 in a number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>number of bits 1 </dd></dl>
+
+</div>
+</div>
+<a id="a41fb44d9a5372fe6dfb20b6fed0c1dc0" name="a41fb44d9a5372fe6dfb20b6fed0c1dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41fb44d9a5372fe6dfb20b6fed0c1dc0">&#9670;&nbsp;</a></span>tuya_buff_reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_buff_reverse </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>注解</dt><dd>buff reversal function </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">[in/out]</td><td>buf: the buff need to be reverse </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the length of buff</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="af800f4fb5d8ad36aa44edca3ad2138b0" name="af800f4fb5d8ad36aa44edca3ad2138b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af800f4fb5d8ad36aa44edca3ad2138b0">&#9670;&nbsp;</a></span>tuya_byte_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_byte_sort </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T&#160;</td>
+          <td class="paramname"><em>is_ascend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sort the CHAR_T in the buf according ascii value </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_ascend</td><td>sorting mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buffer need to sort </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the length of character in buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a6ccf05bfcfc42731422161eed546a5b4" name="a6ccf05bfcfc42731422161eed546a5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ccf05bfcfc42731422161eed546a5b4">&#9670;&nbsp;</a></span>tuya_check_sum16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT16_T tuya_check_sum16 </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>16-bit cumulative checksum calculation </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buffer to calculate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>16-bit cumulative checksum </dd></dl>
+
+</div>
+</div>
+<a id="a0a0ab066ca5423f506b6639610edcdf7" name="a0a0ab066ca5423f506b6639610edcdf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0ab066ca5423f506b6639610edcdf7">&#9670;&nbsp;</a></span>tuya_check_sum8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T tuya_check_sum8 </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>8-bit cumulative checksum calculation </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buffer to calculate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>8-bit cumulative checksum </dd></dl>
+
+</div>
+</div>
+<a id="aa9d36207b85a9adb75801dfc9fd2539c" name="aa9d36207b85a9adb75801dfc9fd2539c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d36207b85a9adb75801dfc9fd2539c">&#9670;&nbsp;</a></span>tuya_data_reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_data_reverse </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT16_T&#160;</td>
+          <td class="paramname"><em>srclen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>注解</dt><dd>data reversal function </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>reversal dest data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>reversal source data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srclen</td><td>reversal data buffer length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="a4ff8d1473983702005786d5987895c40" name="a4ff8d1473983702005786d5987895c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff8d1473983702005786d5987895c40">&#9670;&nbsp;</a></span>tuya_find_char_with_reverse_idx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_find_char_with_reverse_idx </td>
+          <td>(</td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const INT_T&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T&#160;</td>
+          <td class="paramname"><em>ch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find &lt;ch&gt; in &lt;str&gt;, start find in index &lt;revr_index&gt;, find in reverse order. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>the string for find </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>the reverse index start to find </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>the character to find</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-2 on not found, -1 on invalid parameter, &gt;=0 on the position of the character to find </dd></dl>
+
+</div>
+</div>
+<a id="a682820dfdfff8aff52acd2751f28dc5a" name="a682820dfdfff8aff52acd2751f28dc5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682820dfdfff8aff52acd2751f28dc5a">&#9670;&nbsp;</a></span>tuya_hex2str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_hex2str </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>hex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>hexlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert the input hex array to string array </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>the out string array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex</td><td>the input hex array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hexlen</td><td>the length of input hex array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the size of &lt;str&gt; must &gt;= hexlen * 2, convert example 00-ff -&gt; "00"-"FF" </dd></dl>
+
+</div>
+</div>
+<a id="a878aed8614f9b4fa68b441d094eaa544" name="a878aed8614f9b4fa68b441d094eaa544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878aed8614f9b4fa68b441d094eaa544">&#9670;&nbsp;</a></span>tuya_int2intArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_int2intArray </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>intArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>int number convert to buff </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>the number need to convert </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intArray</td><td>point to array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the length of array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the arry length of converted </dd></dl>
+
+</div>
+</div>
+<a id="a7850804bf07c31f67c8abd370b7408e1" name="a7850804bf07c31f67c8abd370b7408e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7850804bf07c31f67c8abd370b7408e1">&#9670;&nbsp;</a></span>tuya_intArray2int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_intArray2int </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>intArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>int array convert to a int number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intArray</td><td>the array need to convert </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>arry start index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the length of array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the number of converted </dd></dl>
+
+</div>
+</div>
+<a id="a2d55aeb1df1e69241e0f5390438587b1" name="a2d55aeb1df1e69241e0f5390438587b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d55aeb1df1e69241e0f5390438587b1">&#9670;&nbsp;</a></span>tuya_leading_zeros_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_leading_zeros_count </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the software calculates the number of leading zeros </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>number of leading zeros </dd></dl>
+
+</div>
+</div>
+<a id="a77220a597f3e35f3286edcd8d1ad2b93" name="a77220a597f3e35f3286edcd8d1ad2b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77220a597f3e35f3286edcd8d1ad2b93">&#9670;&nbsp;</a></span>tuya_str2num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tuya_str2num </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>strlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert the input string to number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">number</td><td>the out number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>the input string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strlen</td><td>the length of input hex array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>none </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>the size of &lt;pbDest&gt; must &gt;= nLen * 2, convert example 00-ff -&gt; "00"-"FF" </dd></dl>
+
+</div>
+</div>
+<a id="afc2508f048da824eab679825783c300e" name="afc2508f048da824eab679825783c300e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2508f048da824eab679825783c300e">&#9670;&nbsp;</a></span>tuya_strcat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tuya_strcat </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>string cat </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>point to target string array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>point to the string to append</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to the final destination string dest </dd></dl>
+
+</div>
+</div>
+<a id="adbef781945c42f8364d3b36324ce306b" name="adbef781945c42f8364d3b36324ce306b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbef781945c42f8364d3b36324ce306b">&#9670;&nbsp;</a></span>tuya_strcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_strcmp </td>
+          <td>(</td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compare characters of two string </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>the source string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>the dest string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 one equal, 1 on s1 longer than s2, -1 on s2 longer than s1 </dd></dl>
+
+</div>
+</div>
+<a id="a7143476846d7e5f5a3af7c15d5087183" name="a7143476846d7e5f5a3af7c15d5087183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7143476846d7e5f5a3af7c15d5087183">&#9670;&nbsp;</a></span>tuya_strcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR_T * tuya_strcpy </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>string copy </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst</td><td>target array used to store the copied content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>string to copy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>pointer to the final destination string dest </dd></dl>
+
+</div>
+</div>
+<a id="ace2cab6abdb14c238421da598a8287e5" name="ace2cab6abdb14c238421da598a8287e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2cab6abdb14c238421da598a8287e5">&#9670;&nbsp;</a></span>tuya_strlen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIZE_T tuya_strlen </td>
+          <td>(</td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>string len </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>string to calculate length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>length of string </dd></dl>
+
+</div>
+</div>
+<a id="a28bd09e16bac0198c7c5a62492e035f3" name="a28bd09e16bac0198c7c5a62492e035f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bd09e16bac0198c7c5a62492e035f3">&#9670;&nbsp;</a></span>tuya_strncasecmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_strncasecmp </td>
+          <td>(</td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR_T *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compare the first n characters of two string </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s1</td><td>the string 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s2</td><td>the string 2 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the first n characters</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 one equal, 1 on s1 longer than s2, -1 on s2 longer than s1 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

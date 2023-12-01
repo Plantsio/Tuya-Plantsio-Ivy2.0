@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_CELL_CALL_INTF_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_CELL_CALL_INTF_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组电话拨号API接口定义  
+ <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d89/tkl__init__cellular_8h_source.html">tkl_init_cellular.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:aa42682ad20aefc89788a76096df17f0f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#aa42682ad20aefc89788a76096df17f0f">answer</a> )(UINT8_T sim_id)</td></tr>
+<tr class="memdesc:aa42682ad20aefc89788a76096df17f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">外部呼叫到来时，应答接听接口函数  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#aa42682ad20aefc89788a76096df17f0f">更多...</a><br /></td></tr>
+<tr class="separator:aa42682ad20aefc89788a76096df17f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26328759851eb38961eda7e2b552a873"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a26328759851eb38961eda7e2b552a873">call</a> )(UINT8_T sim_id, CHAR_T call_number[<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#aa7cb8d469f48276c18861493e408865c">TKL_CELLULAR_CALLNUM_LEN_MAX</a>])</td></tr>
+<tr class="memdesc:a26328759851eb38961eda7e2b552a873"><td class="mdescLeft">&#160;</td><td class="mdescRight">呼出拨号接口函数  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a26328759851eb38961eda7e2b552a873">更多...</a><br /></td></tr>
+<tr class="separator:a26328759851eb38961eda7e2b552a873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0134b9656f7b288264f9a316615c9166"><td class="memItemLeft" align="right" valign="top">BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a0134b9656f7b288264f9a316615c9166">call_service_available</a> )(UINT8_T sim_id)</td></tr>
+<tr class="memdesc:a0134b9656f7b288264f9a316615c9166"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询呼叫服务是否可用  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a0134b9656f7b288264f9a316615c9166">更多...</a><br /></td></tr>
+<tr class="separator:a0134b9656f7b288264f9a316615c9166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0a07307f8bbb551edb4c89343b2f14"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a2d0a07307f8bbb551edb4c89343b2f14">cb_register</a> )(<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a4b3f435c5cb1f957f41bcdf78bab6267">TKL_CELLULAR_CALL_CB</a> callback)</td></tr>
+<tr class="memdesc:a2d0a07307f8bbb551edb4c89343b2f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册呼叫回调处理接口函数  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a2d0a07307f8bbb551edb4c89343b2f14">更多...</a><br /></td></tr>
+<tr class="separator:a2d0a07307f8bbb551edb4c89343b2f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c807b80ca74ba158d7af9854fa350c"><td class="memItemLeft" align="right" valign="top"><a id="a14c807b80ca74ba158d7af9854fa350c" name="a14c807b80ca74ba158d7af9854fa350c"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrl_KTDetect</b> )(BOOL_T enable)</td></tr>
+<tr class="separator:a14c807b80ca74ba158d7af9854fa350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3326d2a00fcf89b55cc9700e4a1bc7d6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a3326d2a00fcf89b55cc9700e4a1bc7d6">dtmf2voice</a> )(<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a> dtmfTone, UINT_T duration)</td></tr>
+<tr class="memdesc:a3326d2a00fcf89b55cc9700e4a1bc7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将DTMF数字按键音频发送到语音通道  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a3326d2a00fcf89b55cc9700e4a1bc7d6">更多...</a><br /></td></tr>
+<tr class="separator:a3326d2a00fcf89b55cc9700e4a1bc7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5f30af5eab76e3db0a2fee94f2268e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a1f5f30af5eab76e3db0a2fee94f2268e">get_voice_mute</a> )(PBOOL_T mute)</td></tr>
+<tr class="memdesc:a1f5f30af5eab76e3db0a2fee94f2268e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取通话过程中的上行声音的静音状态。  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a1f5f30af5eab76e3db0a2fee94f2268e">更多...</a><br /></td></tr>
+<tr class="separator:a1f5f30af5eab76e3db0a2fee94f2268e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe88fe056a7cf0075138eb49cb119da"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#abfe88fe056a7cf0075138eb49cb119da">get_voice_vol</a> )(PINT_T vol)</td></tr>
+<tr class="memdesc:abfe88fe056a7cf0075138eb49cb119da"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取语音通话音频的音量  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#abfe88fe056a7cf0075138eb49cb119da">更多...</a><br /></td></tr>
+<tr class="separator:abfe88fe056a7cf0075138eb49cb119da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0317a39d0a6f36d3fe39cfcea40e4c6b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a0317a39d0a6f36d3fe39cfcea40e4c6b">hungup</a> )(UINT8_T sim_id)</td></tr>
+<tr class="memdesc:a0317a39d0a6f36d3fe39cfcea40e4c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">呼叫通话结束后，挂机接口函数  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a0317a39d0a6f36d3fe39cfcea40e4c6b">更多...</a><br /></td></tr>
+<tr class="separator:a0317a39d0a6f36d3fe39cfcea40e4c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5237a3b2c1303303e55484c26effd6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a9a5237a3b2c1303303e55484c26effd6">play_tone</a> )(<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a> tone, INT_T duration)</td></tr>
+<tr class="memdesc:a9a5237a3b2c1303303e55484c26effd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放电话的拨号音  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a9a5237a3b2c1303303e55484c26effd6">更多...</a><br /></td></tr>
+<tr class="separator:a9a5237a3b2c1303303e55484c26effd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b22ae12c17eda7a9f9df11b71f1586"><td class="memItemLeft" align="right" valign="top"><a id="a68b22ae12c17eda7a9f9df11b71f1586" name="a68b22ae12c17eda7a9f9df11b71f1586"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>reg_KTDetect</b> )(<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a3e3479a8b6ab73874fd902d520da87a5">TKL_CELLULAR_CALL_KTDETECH_CB</a> cb)</td></tr>
+<tr class="separator:a68b22ae12c17eda7a9f9df11b71f1586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995cccb7e2f44295d5db03471442691f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a995cccb7e2f44295d5db03471442691f">set_callin_mute</a> )(BOOL_T mute)</td></tr>
+<tr class="memdesc:a995cccb7e2f44295d5db03471442691f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置呼入时铃声静音  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a995cccb7e2f44295d5db03471442691f">更多...</a><br /></td></tr>
+<tr class="separator:a995cccb7e2f44295d5db03471442691f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8408f40c8ebdc71daf963d45eb29be"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#ada8408f40c8ebdc71daf963d45eb29be">set_voice_mute</a> )(BOOL_T mute)</td></tr>
+<tr class="memdesc:ada8408f40c8ebdc71daf963d45eb29be"><td class="mdescLeft">&#160;</td><td class="mdescRight">通话过程中，上行音频是否设置静音 When the current voice call is finished, the property will be kept. 当前的语音呼叫结束后，这个属性会被保存下来。下次再进行语音通话的过程中，如果 上次被设置为静音，则继续静音。但是重启后，会被默认恢复成非静音  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#ada8408f40c8ebdc71daf963d45eb29be">更多...</a><br /></td></tr>
+<tr class="separator:ada8408f40c8ebdc71daf963d45eb29be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007382ee03a51b49ec95fd4611d0292f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a007382ee03a51b49ec95fd4611d0292f">set_voice_vol</a> )(INT_T vol)</td></tr>
+<tr class="memdesc:a007382ee03a51b49ec95fd4611d0292f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置语音通话音频的音量  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a007382ee03a51b49ec95fd4611d0292f">更多...</a><br /></td></tr>
+<tr class="separator:a007382ee03a51b49ec95fd4611d0292f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44413bb17a879f179634f5bb353106d1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a44413bb17a879f179634f5bb353106d1">set_volte</a> )(UINT8_T sim_id, BOOL_T enable)</td></tr>
+<tr class="memdesc:a44413bb17a879f179634f5bb353106d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动或者关闭volte功能  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#a44413bb17a879f179634f5bb353106d1">更多...</a><br /></td></tr>
+<tr class="separator:a44413bb17a879f179634f5bb353106d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccacc1bdffca8485b8f033facf0fcb3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#abccacc1bdffca8485b8f033facf0fcb3">stop_tone</a> )(VOID)</td></tr>
+<tr class="memdesc:abccacc1bdffca8485b8f033facf0fcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止电话的拨号音  <a href="../../d0/d9e/structTKL__CELL__CALL__INTF__T.html#abccacc1bdffca8485b8f033facf0fcb3">更多...</a><br /></td></tr>
+<tr class="separator:abccacc1bdffca8485b8f033facf0fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组电话拨号API接口定义 </p>
+</div><h2 class="groupheader">结构体成员变量说明</h2>
+<a id="aa42682ad20aefc89788a76096df17f0f" name="aa42682ad20aefc89788a76096df17f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42682ad20aefc89788a76096df17f0f">&#9670;&nbsp;</a></span>answer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::answer) (UINT8_T sim_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>外部呼叫到来时，应答接听接口函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sim_id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 应答成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a26328759851eb38961eda7e2b552a873" name="a26328759851eb38961eda7e2b552a873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26328759851eb38961eda7e2b552a873">&#9670;&nbsp;</a></span>call</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::call) (UINT8_T sim_id, CHAR_T call_number[<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#aa7cb8d469f48276c18861493e408865c">TKL_CELLULAR_CALLNUM_LEN_MAX</a>])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>呼出拨号接口函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td>sim卡ID号 </td></tr>
+    <tr><td class="paramname">callNum</td><td>呼叫号码，字符串形式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 发起呼叫成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a0134b9656f7b288264f9a316615c9166" name="a0134b9656f7b288264f9a316615c9166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0134b9656f7b288264f9a316615c9166">&#9670;&nbsp;</a></span>call_service_available</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T(* TKL_CELL_CALL_INTF_T::call_service_available) (UINT8_T sim_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询呼叫服务是否可用 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>1 呼叫服务可用 0 呼叫服务不可用 </dd></dl>
+
+</div>
+</div>
+<a id="a2d0a07307f8bbb551edb4c89343b2f14" name="a2d0a07307f8bbb551edb4c89343b2f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0a07307f8bbb551edb4c89343b2f14">&#9670;&nbsp;</a></span>cb_register</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::cb_register) (<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a4b3f435c5cb1f957f41bcdf78bab6267">TKL_CELLULAR_CALL_CB</a> callback)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册呼叫回调处理接口函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>呼叫回调处理函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 注册成功 其它 注册失败 </dd></dl>
+
+</div>
+</div>
+<a id="a3326d2a00fcf89b55cc9700e4a1bc7d6" name="a3326d2a00fcf89b55cc9700e4a1bc7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3326d2a00fcf89b55cc9700e4a1bc7d6">&#9670;&nbsp;</a></span>dtmf2voice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::dtmf2voice) (<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a> dtmfTone, UINT_T duration)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将DTMF数字按键音频发送到语音通道 </p>
+<dl class="section note"><dt>注解</dt><dd>1、该函数用于实现10086之类的语音交互，语音提示后，用户操作按键，调用该函数 将按键音频发送到语音通道，该函数只能在通话状态后调用，否则将引起系统异常。 2、dtmfTone只能是TKL_TONE_DTMF_0 ~ TKL_TONE_DTMF_STAR中的一种。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dtmfTone</td><td>拨号按键 </td></tr>
+    <tr><td class="paramname">duration</td><td>音频持续时长 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功 -1 dtmfTone 类型错误 -2 分配内存失败 OPRT_TIMEOUT 获取信号量超时 OPRT_BASE_OS_ADAPTER_REG_NULL_ERROR 函数未适配 </dd></dl>
+
+</div>
+</div>
+<a id="a1f5f30af5eab76e3db0a2fee94f2268e" name="a1f5f30af5eab76e3db0a2fee94f2268e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5f30af5eab76e3db0a2fee94f2268e">&#9670;&nbsp;</a></span>get_voice_mute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::get_voice_mute) (PBOOL_T mute)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取通话过程中的上行声音的静音状态。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mute</td><td>: TRUE 静音 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功，其他失败 </dd></dl>
+
+</div>
+</div>
+<a id="abfe88fe056a7cf0075138eb49cb119da" name="abfe88fe056a7cf0075138eb49cb119da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe88fe056a7cf0075138eb49cb119da">&#9670;&nbsp;</a></span>get_voice_vol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::get_voice_vol) (PINT_T vol)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取语音通话音频的音量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>（0~100） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功，其他失败 </dd></dl>
+
+</div>
+</div>
+<a id="a0317a39d0a6f36d3fe39cfcea40e4c6b" name="a0317a39d0a6f36d3fe39cfcea40e4c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0317a39d0a6f36d3fe39cfcea40e4c6b">&#9670;&nbsp;</a></span>hungup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::hungup) (UINT8_T sim_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>呼叫通话结束后，挂机接口函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sim_id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 挂机成功 其它 失败 </dd></dl>
+
+</div>
+</div>
+<a id="a9a5237a3b2c1303303e55484c26effd6" name="a9a5237a3b2c1303303e55484c26effd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5237a3b2c1303303e55484c26effd6">&#9670;&nbsp;</a></span>play_tone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::play_tone) (<a class="el" href="../../d2/d96/tkl__cellular__call_8h.html#a1a0409b28fa498a07b2bbf9ecc183452">TUYA_TONE_TYPE_E</a> tone, INT_T duration)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>播放电话的拨号音 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tone</td><td>拨号音的特征值 </td></tr>
+    <tr><td class="paramname">duration</td><td>播放音的持续时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功，其他失败 </dd></dl>
+
+</div>
+</div>
+<a id="a995cccb7e2f44295d5db03471442691f" name="a995cccb7e2f44295d5db03471442691f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995cccb7e2f44295d5db03471442691f">&#9670;&nbsp;</a></span>set_callin_mute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::set_callin_mute) (BOOL_T mute)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置呼入时铃声静音 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mute</td><td>TRUE 静音 FALSE 非静音 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 设置成功 其它 设置失败 </dd></dl>
+
+</div>
+</div>
+<a id="ada8408f40c8ebdc71daf963d45eb29be" name="ada8408f40c8ebdc71daf963d45eb29be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8408f40c8ebdc71daf963d45eb29be">&#9670;&nbsp;</a></span>set_voice_mute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::set_voice_mute) (BOOL_T mute)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通话过程中，上行音频是否设置静音 When the current voice call is finished, the property will be kept. 当前的语音呼叫结束后，这个属性会被保存下来。下次再进行语音通话的过程中，如果 上次被设置为静音，则继续静音。但是重启后，会被默认恢复成非静音 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TRUE</td><td>for mute uplink of voice call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功，其他失败 </dd></dl>
+
+</div>
+</div>
+<a id="a007382ee03a51b49ec95fd4611d0292f" name="a007382ee03a51b49ec95fd4611d0292f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007382ee03a51b49ec95fd4611d0292f">&#9670;&nbsp;</a></span>set_voice_vol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::set_voice_vol) (INT_T vol)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置语音通话音频的音量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>（0~100） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功，其他失败 </dd></dl>
+
+</div>
+</div>
+<a id="a44413bb17a879f179634f5bb353106d1" name="a44413bb17a879f179634f5bb353106d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44413bb17a879f179634f5bb353106d1">&#9670;&nbsp;</a></span>set_volte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::set_volte) (UINT8_T sim_id, BOOL_T enable)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启动或者关闭volte功能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sim_id</td><td></td></tr>
+    <tr><td class="paramname">enable</td><td>TRUE启用volte,false关闭volte </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 设置成功 其它 设置失败 </dd></dl>
+
+</div>
+</div>
+<a id="abccacc1bdffca8485b8f033facf0fcb3" name="abccacc1bdffca8485b8f033facf0fcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccacc1bdffca8485b8f033facf0fcb3">&#9670;&nbsp;</a></span>stop_tone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET(* TKL_CELL_CALL_INTF_T::stop_tone) (VOID)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止电话的拨号音 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 成功，其他失败 </dd></dl>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/init/include/<a class="el" href="../../df/d89/tkl__init__cellular_8h_source.html">tkl_init_cellular.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

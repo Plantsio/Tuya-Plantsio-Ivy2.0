@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 事件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">事件 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >涂鸦<code>TuyaOS</code> Event是一个轻量级的事件通知库。其特点是：</p>
+<ul>
+<li>支持订阅-发布模式的事件机制，使用非常简单方便，可以在任意位置、任意时间进行时间的订阅；</li>
+<li>轻量级，专注于进程内部的事件通知，代码小巧，仅400行。</li>
+<li>跨平台，基于涂鸦<code>TuyaOS</code>的跨平台特性，可以在任意平台上运行。</li>
+<li>有弹性，默认情况下，事件是同步调用，基于涂鸦<code>TuyaOS</code>的跨平台特性，可以在订阅函数里使用Work Queue实现多线程的异步机制。</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md137"></a>
+接口描述</h3>
+<h4><a class="anchor" id="autotoc_md138"></a>
+发布事件</h4>
+<p >发布一个事件通知，包含了事件的数据，告知所有订阅者进行处理。事件发布首先会去搜索是否当前事件是否已经创建。</p>
+<ul>
+<li>没有被创建：说明之前并没有发布过相同的事件，但是可能会存在订阅者，由于他们没有找到事件，会被暂存到<code>free_subscribe_root</code>。因此需要从<code>free_subscribe_root</code>里查找是否有该事件的订阅者，如果有则把这些订阅者从<code>free_subscribe_root</code>里拿出来，挂载到事件的<code>subscribe_root</code>，然后再进行事件的发布。</li>
+<li>已经被创建：说之前已经有发布过相同的事件，所有的订阅者都已经被正常处理，不需要再关心是否有订阅者在<code>free_subscribe_root</code>中，可以直接进行事件发布。</li>
+<li>事件发布，遍历事件<code>subscribe_root</code>，对于每个订阅者，发布事件的数据，调用订阅者的回调函数，判断并记录回调函数的返回值。<ul>
+<li>如果不存在订阅者，意味着不需要发布，也不需要创建事件的资源</li>
+</ul>
+</li>
+</ul>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">ty_publish_event</a>(CONST CHAR_T* name, VOID_T *data);</div>
+<div class="ttc" id="abase__event_8h_html_a98cc73eef15f1a737167aaa3a456c7b4"><div class="ttname"><a href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">ty_publish_event</a></div><div class="ttdeci">OPERATE_RET ty_publish_event(CONST CHAR_T *name, VOID_T *data)</div><div class="ttdoc">: publish event</div></div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md139"></a>
+订阅事件</h4>
+<p >关注一个事件，包含了事件的名称、关注的用途以及处理数据的回调函数。事件订阅首先会去搜索是否当前事件是否已经创建。</p>
+<ul>
+<li>没有被创建：说明此事件没有产生过，需要把订阅者暂存到<code>free_subscribe_root</code>。</li>
+<li>已经被创建：说明此时间已经产生过，可以直接把订阅者挂载到事件的<code>subscribe_root</code></li>
+</ul>
+<p >可以订阅的事件分为3种，可以按照实际需求选择：</p><ul>
+<li>SUBSCRIBE_TYPE_NORMAL， 普通订阅，按照顺序处理</li>
+<li>SUBSCRIBE_TYPE_EMERGENCY，紧急订阅，优先处理</li>
+<li>SUBSCRIBE_TYPE_ONETIME，一次性订阅，处理一次即取消</li>
+</ul>
+<p >订阅事件不会拿到事件的上一次状态，一个原因是如果暂存数据会消耗较大的资源，另外一个原因是没有必要。</p>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">ty_subscribe_event</a>(CONST CHAR_T *name, CONST CHAR_T *desc, CONST <a class="code hl_typedef" href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a> cb, <a class="code hl_typedef" href="../../d6/da6/base__event_8h.html#a74a40b7c5e2f7df3950347ecad2aa1ca">SUBSCRIBE_TYPE_E</a> type);</div>
+<div class="ttc" id="abase__event_8h_html_a0fd854097ac58b07033aeaa8fba636ec"><div class="ttname"><a href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">ty_subscribe_event</a></div><div class="ttdeci">OPERATE_RET ty_subscribe_event(CONST CHAR_T *name, CONST CHAR_T *desc, CONST EVENT_SUBSCRIBE_CB cb, SUBSCRIBE_TYPE_E type)</div><div class="ttdoc">: subscribe event</div></div>
+<div class="ttc" id="abase__event_8h_html_a74a40b7c5e2f7df3950347ecad2aa1ca"><div class="ttname"><a href="../../d6/da6/base__event_8h.html#a74a40b7c5e2f7df3950347ecad2aa1ca">SUBSCRIBE_TYPE_E</a></div><div class="ttdeci">BYTE_T SUBSCRIBE_TYPE_E</div><div class="ttdoc">subscriber type</div><div class="ttdef"><b>Definition:</b> base_event.h:42</div></div>
+<div class="ttc" id="abase__event_8h_html_ab5b06d4026f6458cc18a8d2b7103d917"><div class="ttname"><a href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a></div><div class="ttdeci">INT_T(* EVENT_SUBSCRIBE_CB)(VOID_T *data)</div><div class="ttdoc">event subscribe callback function type</div><div class="ttdef"><b>Definition:</b> base_event.h:61</div></div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md140"></a>
+取消订阅</h4>
+<p >取消关注一个事件，包含了事件的名称、关注的用途以及处理数据的回调函数。如果当前订阅者没有绑定事件，则从<code>free_subscribe_root</code>移除；</p>
+<p >如果订阅者绑定了事件，且为最后一个订阅者，则需要从事件的<code>subscribe_root</code>移除，并销毁该事件。否则，仅从事件的<code>subscribe_root</code>中移除订阅者。</p>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d6/da6/base__event_8h.html#ab1357c5db9e9b0b4edf5bad16c5846ab">ty_unsubscribe_event</a>(CONST CHAR_T *name, CONST CHAR_T *desc, <a class="code hl_typedef" href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a> cb);</div>
+<div class="ttc" id="abase__event_8h_html_ab1357c5db9e9b0b4edf5bad16c5846ab"><div class="ttname"><a href="../../d6/da6/base__event_8h.html#ab1357c5db9e9b0b4edf5bad16c5846ab">ty_unsubscribe_event</a></div><div class="ttdeci">OPERATE_RET ty_unsubscribe_event(CONST CHAR_T *name, CONST CHAR_T *desc, EVENT_SUBSCRIBE_CB cb)</div><div class="ttdoc">: unsubscribe event</div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md141"></a>
+示例代码</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#define EVENT_SAMPLE &quot;publish.sample&quot;</span></div>
+<div class="line">OPERATE_RET sample_subcribe_cb(event_data_t *raw_data)</div>
+<div class="line">{</div>
+<div class="line">    event_data_t *data = (event_data_t*)raw_data;</div>
+<div class="line">    </div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;recv event&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> OPRT_OK;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET sample_subcribe_emergence_cb(event_data_t *raw_data)</div>
+<div class="line">{</div>
+<div class="line">    event_data_t *data = (event_data_t*)raw_data;</div>
+<div class="line">    </div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;recv event emergence&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> OPRT_OK;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET sample_subcribe_onetime_cb(event_data_t *raw_data)</div>
+<div class="line">{</div>
+<div class="line">    event_data_t *data = (event_data_t*)raw_data;</div>
+<div class="line">    </div>
+<div class="line">    TAL_PR_DEBUG(<span class="stringliteral">&quot;recv event emergence&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> OPRT_OK;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET sample_event_test()</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">       </div>
+<div class="line">     <span class="comment">// 发布事件EVENT_SAMPLE，没有订阅者，不会创建事件</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">ty_publish_event</a>(EVENT_SAMPLE, NULL);  </div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 订阅事件EVENT_SAMPLE,实际不存在，会暂存</span></div>
+<div class="line">    <span class="keywordtype">char</span> desc[] = <span class="stringliteral">&quot;subscribe.sample&quot;</span>;</div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">ty_subscribe_event</a>(EVENT_SAMPLE, desc, sample_subcribe_cb, EVENT_TYPE_NORMAL);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);     </div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 发布事件EVENT_SAMPLE，有订阅者，会处理</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">ty_publish_event</a>(EVENT_SAMPLE, NULL);  </div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);</div>
+<div class="line">     </div>
+<div class="line">    <span class="comment">// 紧急订阅事件EVENT_SAMPLE</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">ty_subscribe_event</a>(EVENT_SAMPLE, desc, sample_subcribe_emergence_cb,                                       SUBSCRIBE_TYPE_EMERGENCY);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);     </div>
+<div class="line">     </div>
+<div class="line">    <span class="comment">// 订阅事件一次性事件，一次性事件不需要手动取消订阅，处理之后会自动销毁</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">ty_subscribe_event</a>(EVENT_SAMPLE, desc, sample_subcribe_onetime_cb,                                         EVENT_TYPE_ONETIME);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);     </div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 发布事件EVENT_SAMPLE</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">ty_publish_event</a>(EVENT_SAMPLE, NULL);  </div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 取消紧急订阅，删除订阅者</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#ab1357c5db9e9b0b4edf5bad16c5846ab">ty_unsubscribe_event</a>(EVENT_SAMPLE, desc, sample_subcribe_emergence_cb);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 取消订阅，当事件没有订阅者，事件节点EVENT_SAMPLE会自动销毁</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../d6/da6/base__event_8h.html#ab1357c5db9e9b0b4edf5bad16c5846ab">ty_unsubscribe_event</a>(EVENT_SAMPLE, desc, sample_subcribe_cb);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);    </div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span> OPRT_OK;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

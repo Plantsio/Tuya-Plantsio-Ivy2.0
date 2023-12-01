@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system/include/tal_memory.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_756eea2d6c45abe335e6af16c38cccfe.html">tal_system</a></li><li class="navelem"><a class="el" href="../../dir_a80ab866e44074dee44459bfafedc0dc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_memory.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the memory api provide by OS  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_memory.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d45/tal__memory_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__memory_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__memory_8h" id="ainclude_2components_2tal__system_2include_2tal__memory_8h">
+<area shape="rect" title="Common process &#45; adapter the memory api provide by OS" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d31/tal__memory_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__memory_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__memory_8hdep" id="ainclude_2components_2tal__system_2include_2tal__memory_8hdep">
+<area shape="rect" title="Common process &#45; adapter the memory api provide by OS" alt="" coords="427,5,581,61"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="425,109,583,180"/>
+<area shape="rect" href="../../d6/da6/base__event_8h.html" title="tuya simple event module" alt="" coords="243,228,397,284"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="552,332,720,388"/>
+<area shape="rect" href="../../d2/dac/tuya__svc__upgrade__http_8h.html" title="TUYA OTA service" alt="" coords="541,228,731,284"/>
+<area shape="rect" href="../../df/d34/tuya__svc__netmgr_8h.html" title="TUYA network manager service" alt="" coords="243,332,397,388"/>
+<area shape="rect" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html" title="TUYA mqtt direct service" alt="" coords="5,332,219,388"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="293,436,472,492"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="133,540,310,596"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="7,436,219,492"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="335,540,497,596"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="1330,436,1486,492"/>
+<area shape="rect" href="../../da/d19/tuya__devos__utils_8h.html" title="Utilities of DevOS" alt="" coords="547,436,725,492"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="750,436,917,492"/>
+<area shape="rect" href="../../df/d69/smart__frame_8h.html" title="Common process &#45; Initialization" alt="" coords="941,436,1105,492"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="1129,436,1306,492"/>
+</map>
+</div>
+</div>
+<p><a href="../../d1/db6/tal__memory_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afb717f8524f659b3e136d3a54a2ffe70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#afb717f8524f659b3e136d3a54a2ffe70">Calloc</a>(req_count,  req_size)&#160;&#160;&#160;<a class="el" href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">tal_calloc</a>(req_count, req_size)</td></tr>
+<tr class="memdesc:afb717f8524f659b3e136d3a54a2ffe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">malloc consecutive memory, the size is reqCount*reqSize  <a href="../../d1/db6/tal__memory_8h.html#afb717f8524f659b3e136d3a54a2ffe70">更多...</a><br /></td></tr>
+<tr class="separator:afb717f8524f659b3e136d3a54a2ffe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8e3b7d52eecc10d64e8242fc30c816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">Free</a>(ptr)&#160;&#160;&#160;<a class="el" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a>(ptr)</td></tr>
+<tr class="memdesc:a0b8e3b7d52eecc10d64e8242fc30c816"><td class="mdescLeft">&#160;</td><td class="mdescRight">free memory  <a href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816">更多...</a><br /></td></tr>
+<tr class="separator:a0b8e3b7d52eecc10d64e8242fc30c816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6680b29e31ae0ce8627f5a12b31e11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">Malloc</a>(req_size)&#160;&#160;&#160;<a class="el" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a>(req_size)</td></tr>
+<tr class="memdesc:a0d6680b29e31ae0ce8627f5a12b31e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">malloc memory  <a href="../../d1/db6/tal__memory_8h.html#a0d6680b29e31ae0ce8627f5a12b31e11">更多...</a><br /></td></tr>
+<tr class="separator:a0d6680b29e31ae0ce8627f5a12b31e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aaa7401c13ac3664410e190ecafb37f23"><td class="memItemLeft" align="right" valign="top">VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">tal_calloc</a> (SIZE_T nitems, SIZE_T size)</td></tr>
+<tr class="memdesc:aaa7401c13ac3664410e190ecafb37f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and clear the memory  <a href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">更多...</a><br /></td></tr>
+<tr class="separator:aaa7401c13ac3664410e190ecafb37f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0e4741554159aa4c9e1fc68e09bb23"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a> (VOID_T *ptr)</td></tr>
+<tr class="memdesc:a5e0e4741554159aa4c9e1fc68e09bb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of system  <a href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">更多...</a><br /></td></tr>
+<tr class="separator:a5e0e4741554159aa4c9e1fc68e09bb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e0bcc120599603d9dae091abc5a36d"><td class="memItemLeft" align="right" valign="top">VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a> (SIZE_T size)</td></tr>
+<tr class="memdesc:a46e0bcc120599603d9dae091abc5a36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc memory of system  <a href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">更多...</a><br /></td></tr>
+<tr class="separator:a46e0bcc120599603d9dae091abc5a36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bbc7daca42a2bec7bd72c9305a470e"><td class="memItemLeft" align="right" valign="top">VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db6/tal__memory_8h.html#a42bbc7daca42a2bec7bd72c9305a470e">tal_realloc</a> (VOID_T *ptr, SIZE_T size)</td></tr>
+<tr class="memdesc:a42bbc7daca42a2bec7bd72c9305a470e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-allocate the memory  <a href="../../d1/db6/tal__memory_8h.html#a42bbc7daca42a2bec7bd72c9305a470e">更多...</a><br /></td></tr>
+<tr class="separator:a42bbc7daca42a2bec7bd72c9305a470e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the memory api provide by OS </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-24</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2031 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="afb717f8524f659b3e136d3a54a2ffe70" name="afb717f8524f659b3e136d3a54a2ffe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb717f8524f659b3e136d3a54a2ffe70">&#9670;&nbsp;</a></span>Calloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Calloc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">req_count, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">req_size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../d1/db6/tal__memory_8h.html#aaa7401c13ac3664410e190ecafb37f23">tal_calloc</a>(req_count, req_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>malloc consecutive memory, the size is reqCount*reqSize </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reqCount</td><td>the required memory count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reqSize</td><td>the required memory szie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL on failed, others on the address of the memory </dd></dl>
+
+</div>
+</div>
+<a id="a0b8e3b7d52eecc10d64e8242fc30c816" name="a0b8e3b7d52eecc10d64e8242fc30c816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8e3b7d52eecc10d64e8242fc30c816">&#9670;&nbsp;</a></span>Free</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Free</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d1/db6/tal__memory_8h.html#a5e0e4741554159aa4c9e1fc68e09bb23">tal_free</a>(ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free memory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pReqMem</td><td>the memory address which got from Malloc or Calloc function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a0d6680b29e31ae0ce8627f5a12b31e11" name="a0d6680b29e31ae0ce8627f5a12b31e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6680b29e31ae0ce8627f5a12b31e11">&#9670;&nbsp;</a></span>Malloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Malloc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">req_size</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a>(req_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>malloc memory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reqSize</td><td>the required memory size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL on failed, others on the address of the memory </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aaa7401c13ac3664410e190ecafb37f23" name="aaa7401c13ac3664410e190ecafb37f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7401c13ac3664410e190ecafb37f23">&#9670;&nbsp;</a></span>tal_calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T * tal_calloc </td>
+          <td>(</td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>nitems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate and clear the memory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nitems</td><td>the numbers of memory block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>the size of the memory block</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the memory address calloced </dd></dl>
+
+</div>
+</div>
+<a id="a5e0e4741554159aa4c9e1fc68e09bb23" name="a5e0e4741554159aa4c9e1fc68e09bb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0e4741554159aa4c9e1fc68e09bb23">&#9670;&nbsp;</a></span>tal_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tal_free </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free memory of system </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>memory point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to free memory of system.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>VOID_T </dd></dl>
+
+</div>
+</div>
+<a id="a46e0bcc120599603d9dae091abc5a36d" name="a46e0bcc120599603d9dae091abc5a36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e0bcc120599603d9dae091abc5a36d">&#9670;&nbsp;</a></span>tal_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T * tal_malloc </td>
+          <td>(</td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alloc memory of system </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>memory size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to alloc memory of system.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the memory address malloced </dd></dl>
+
+</div>
+</div>
+<a id="a42bbc7daca42a2bec7bd72c9305a470e" name="a42bbc7daca42a2bec7bd72c9305a470e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42bbc7daca42a2bec7bd72c9305a470e">&#9670;&nbsp;</a></span>tal_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T * tal_realloc </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SIZE_T&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Re-allocate the memory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nitems</td><td>source memory address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>the size after re-allocate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID_T </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

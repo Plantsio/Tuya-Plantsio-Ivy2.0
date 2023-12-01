@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/timer_task/tuya_svc_timer_task.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_8586a3670b0460b706cf58270ff5f328.html">timer_task</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_svc_timer_task.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_svc_timer_task.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d56/tuya__svc__timer__task_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2timer__task_2tuya__svc__timer__task_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2timer__task_2tuya__svc__timer__task_8h" id="ainclude_2components_2svc__tuya__cloud_2include_2timer__task_2tuya__svc__timer__task_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="319,5,566,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../db/d5d/tuya__svc__timer__task_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/structALARM__TIMER__S.html">ALARM_TIMER_S</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6806a5fe1da53df0793f7488fd22bd46"><td class="memItemLeft" align="right" valign="top"><a id="a6806a5fe1da53df0793f7488fd22bd46" name="a6806a5fe1da53df0793f7488fd22bd46"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE_DAILY</b>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a6806a5fe1da53df0793f7488fd22bd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1ea15fd0bccb976c0e1881470875b5"><td class="memItemLeft" align="right" valign="top"><a id="a6c1ea15fd0bccb976c0e1881470875b5" name="a6c1ea15fd0bccb976c0e1881470875b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE_EVEN_ODD</b>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:a6c1ea15fd0bccb976c0e1881470875b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4843f20fab937bc42544c774694de44b"><td class="memItemLeft" align="right" valign="top"><a id="a4843f20fab937bc42544c774694de44b" name="a4843f20fab937bc42544c774694de44b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE_HOURLY</b>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:a4843f20fab937bc42544c774694de44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254caee82bd4afea2b76c4461ab56729"><td class="memItemLeft" align="right" valign="top"><a id="a254caee82bd4afea2b76c4461ab56729" name="a254caee82bd4afea2b76c4461ab56729"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE_INVALID</b>&#160;&#160;&#160;(0xFE)</td></tr>
+<tr class="separator:a254caee82bd4afea2b76c4461ab56729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1222c233a6dff5e016decca99866dc1e"><td class="memItemLeft" align="right" valign="top"><a id="a1222c233a6dff5e016decca99866dc1e" name="a1222c233a6dff5e016decca99866dc1e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE_WEEKLY</b>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a1222c233a6dff5e016decca99866dc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a2ba9cf5c89ae8d952a7e0fd3b4676d54"><td class="memItemLeft" align="right" valign="top"><a id="a2ba9cf5c89ae8d952a7e0fd3b4676d54" name="a2ba9cf5c89ae8d952a7e0fd3b4676d54"></a>
+typedef BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE_T</b></td></tr>
+<tr class="separator:a2ba9cf5c89ae8d952a7e0fd3b4676d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a867107655c30915e47998dff8ba4335e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#a867107655c30915e47998dff8ba4335e">tuya_svc_timer_add</a> (<a class="el" href="../../d8/d75/structALARM__TIMER__S.html">ALARM_TIMER_S</a> *pTimer, BOOL_T update_flash)</td></tr>
+<tr class="memdesc:a867107655c30915e47998dff8ba4335e"><td class="mdescLeft">&#160;</td><td class="mdescRight">add timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#a867107655c30915e47998dff8ba4335e">更多...</a><br /></td></tr>
+<tr class="separator:a867107655c30915e47998dff8ba4335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27a2b7656c54e69fb10c949fed5491a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#ab27a2b7656c54e69fb10c949fed5491a">tuya_svc_timer_delete</a> (CHAR_T *timer_id, BOOL_T update_flash)</td></tr>
+<tr class="memdesc:ab27a2b7656c54e69fb10c949fed5491a"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#ab27a2b7656c54e69fb10c949fed5491a">更多...</a><br /></td></tr>
+<tr class="separator:ab27a2b7656c54e69fb10c949fed5491a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df575d635f3dc77dc798daa002661eb"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#a5df575d635f3dc77dc798daa002661eb">tuya_svc_timer_get_capacity</a> (VOID_T)</td></tr>
+<tr class="memdesc:a5df575d635f3dc77dc798daa002661eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the capacity of timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#a5df575d635f3dc77dc798daa002661eb">更多...</a><br /></td></tr>
+<tr class="separator:a5df575d635f3dc77dc798daa002661eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addacc10694431cec39e835a829c1aa57"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#addacc10694431cec39e835a829c1aa57">tuya_svc_timer_get_data</a> (uint8_t *timer_data)</td></tr>
+<tr class="memdesc:addacc10694431cec39e835a829c1aa57"><td class="mdescLeft">&#160;</td><td class="mdescRight">get timer task data.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#addacc10694431cec39e835a829c1aa57">更多...</a><br /></td></tr>
+<tr class="separator:addacc10694431cec39e835a829c1aa57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8145d11197c32234575ac91b834088a"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#ad8145d11197c32234575ac91b834088a">tuya_svc_timer_get_num</a> (VOID_T)</td></tr>
+<tr class="memdesc:ad8145d11197c32234575ac91b834088a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the num of timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#ad8145d11197c32234575ac91b834088a">更多...</a><br /></td></tr>
+<tr class="separator:ad8145d11197c32234575ac91b834088a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586c49e5aa013601ac3455f5c113176f"><td class="memItemLeft" align="right" valign="top">UINT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#a586c49e5aa013601ac3455f5c113176f">tuya_svc_timer_get_task_count</a> (VOID_T)</td></tr>
+<tr class="memdesc:a586c49e5aa013601ac3455f5c113176f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#a586c49e5aa013601ac3455f5c113176f">更多...</a><br /></td></tr>
+<tr class="separator:a586c49e5aa013601ac3455f5c113176f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb5ade3c423c7456c83d3bcfb12ec9a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#a8cb5ade3c423c7456c83d3bcfb12ec9a">tuya_svc_timer_task_clear_db</a> (VOID_T)</td></tr>
+<tr class="memdesc:a8cb5ade3c423c7456c83d3bcfb12ec9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear up the timer task data in flash.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#a8cb5ade3c423c7456c83d3bcfb12ec9a">更多...</a><br /></td></tr>
+<tr class="separator:a8cb5ade3c423c7456c83d3bcfb12ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7665bffb5cd7fb7aa27562d081edeeb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#ae7665bffb5cd7fb7aa27562d081edeeb">tuya_svc_timer_task_init</a> (UINT_T increase_unit)</td></tr>
+<tr class="memdesc:ae7665bffb5cd7fb7aa27562d081edeeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#ae7665bffb5cd7fb7aa27562d081edeeb">更多...</a><br /></td></tr>
+<tr class="separator:ae7665bffb5cd7fb7aa27562d081edeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab91372bf2b1301577b73554771c0d1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5d/tuya__svc__timer__task_8h.html#a1ab91372bf2b1301577b73554771c0d1">tuya_svc_timer_task_reset</a> (VOID_T)</td></tr>
+<tr class="memdesc:a1ab91372bf2b1301577b73554771c0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the timer task.  <a href="../../db/d5d/tuya__svc__timer__task_8h.html#a1ab91372bf2b1301577b73554771c0d1">更多...</a><br /></td></tr>
+<tr class="separator:a1ab91372bf2b1301577b73554771c0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section author"><dt>作者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'liu'+'ka'+'ng@'+'tu'+'ya.'+'co'+'m'; return false;">liuka<span class="obfuscator">.nosp@m.</span>ng@t<span class="obfuscator">.nosp@m.</span>uya.c<span class="obfuscator">.nosp@m.</span>om</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a867107655c30915e47998dff8ba4335e" name="a867107655c30915e47998dff8ba4335e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867107655c30915e47998dff8ba4335e">&#9670;&nbsp;</a></span>tuya_svc_timer_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_timer_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d75/structALARM__TIMER__S.html">ALARM_TIMER_S</a> *&#160;</td>
+          <td class="paramname"><em>pTimer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>update_flash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pTimer</td><td>timer info </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">update_flash</td><td>if need update timer to flash</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for adding timer task. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab27a2b7656c54e69fb10c949fed5491a" name="ab27a2b7656c54e69fb10c949fed5491a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27a2b7656c54e69fb10c949fed5491a">&#9670;&nbsp;</a></span>tuya_svc_timer_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_timer_delete </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>timer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>update_flash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer_id</td><td>timer id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">update_flash</td><td>if need update timer to flash</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for deleting the timer task. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5df575d635f3dc77dc798daa002661eb" name="a5df575d635f3dc77dc798daa002661eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df575d635f3dc77dc798daa002661eb">&#9670;&nbsp;</a></span>tuya_svc_timer_get_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_svc_timer_get_capacity </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the capacity of timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting the capacity of timer task. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the capacity of timer task. </dd></dl>
+
+</div>
+</div>
+<a id="addacc10694431cec39e835a829c1aa57" name="addacc10694431cec39e835a829c1aa57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addacc10694431cec39e835a829c1aa57">&#9670;&nbsp;</a></span>tuya_svc_timer_get_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tuya_svc_timer_get_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>timer_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get timer task data. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">timer_data</td><td>timer id and crc32</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting timer task data. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ad8145d11197c32234575ac91b834088a" name="ad8145d11197c32234575ac91b834088a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8145d11197c32234575ac91b834088a">&#9670;&nbsp;</a></span>tuya_svc_timer_get_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_svc_timer_get_num </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the num of timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting the num of timer task. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the capacity of timer task. </dd></dl>
+
+</div>
+</div>
+<a id="a586c49e5aa013601ac3455f5c113176f" name="a586c49e5aa013601ac3455f5c113176f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586c49e5aa013601ac3455f5c113176f">&#9670;&nbsp;</a></span>tuya_svc_timer_get_task_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT_T tuya_svc_timer_get_task_count </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the count of timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for getting the count of timer task. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>the count of timer task. </dd></dl>
+
+</div>
+</div>
+<a id="a8cb5ade3c423c7456c83d3bcfb12ec9a" name="a8cb5ade3c423c7456c83d3bcfb12ec9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb5ade3c423c7456c83d3bcfb12ec9a">&#9670;&nbsp;</a></span>tuya_svc_timer_task_clear_db()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_timer_task_clear_db </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear up the timer task data in flash. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to clear up the timer task data in flash. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae7665bffb5cd7fb7aa27562d081edeeb" name="ae7665bffb5cd7fb7aa27562d081edeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7665bffb5cd7fb7aa27562d081edeeb">&#9670;&nbsp;</a></span>tuya_svc_timer_task_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_timer_task_init </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>increase_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init a timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">increase_unit</td><td>increase unit</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used for initializing the timer task. when the task queue is full, it will expand the size with the unit user input. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1ab91372bf2b1301577b73554771c0d1" name="a1ab91372bf2b1301577b73554771c0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab91372bf2b1301577b73554771c0d1">&#9670;&nbsp;</a></span>tuya_svc_timer_task_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_timer_task_reset </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the timer task. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to reset the timer task. the resource of timer task will be released. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

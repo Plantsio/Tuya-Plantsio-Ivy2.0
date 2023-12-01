@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/pwm/include/tkl_pwm.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_e49ff952a8f0f73943ea71a86592bd64.html">pwm</a></li><li class="navelem"><a class="el" href="../../dir_cddc6b6b24fcaffa2dc5bbadf07fb09c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_pwm.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the pwm api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_pwm.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/de8/tkl__pwm_8h__incl.png" border="0" usemap="#ainclude_2adapter_2pwm_2include_2tkl__pwm_8h" alt=""/></div>
+<map name="ainclude_2adapter_2pwm_2include_2tkl__pwm_8h" id="ainclude_2adapter_2pwm_2include_2tkl__pwm_8h">
+<area shape="rect" title="Common process &#45; adapter the pwm api" alt="" coords="363,5,522,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/dc2/tkl__pwm_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a32559666ea1f8ecbbe844e68f76a8880"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#a32559666ea1f8ecbbe844e68f76a8880">tkl_pwm_deinit</a> (TUYA_PWM_NUM_E ch_id)</td></tr>
+<tr class="memdesc:a32559666ea1f8ecbbe844e68f76a8880"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm deinit  <a href="../../d2/dc2/tkl__pwm_8h.html#a32559666ea1f8ecbbe844e68f76a8880">更多...</a><br /></td></tr>
+<tr class="separator:a32559666ea1f8ecbbe844e68f76a8880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810084a0e9a79458d6b3ac93529e840f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#a810084a0e9a79458d6b3ac93529e840f">tkl_pwm_duty_set</a> (TUYA_PWM_NUM_E ch_id, UINT32_T duty)</td></tr>
+<tr class="memdesc:a810084a0e9a79458d6b3ac93529e840f"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm duty set  <a href="../../d2/dc2/tkl__pwm_8h.html#a810084a0e9a79458d6b3ac93529e840f">更多...</a><br /></td></tr>
+<tr class="separator:a810084a0e9a79458d6b3ac93529e840f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab95884ed2d7d662bb7a1eaca1149cc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#adab95884ed2d7d662bb7a1eaca1149cc">tkl_pwm_frequency_set</a> (TUYA_PWM_NUM_E ch_id, UINT32_T frequency)</td></tr>
+<tr class="memdesc:adab95884ed2d7d662bb7a1eaca1149cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm frequency set  <a href="../../d2/dc2/tkl__pwm_8h.html#adab95884ed2d7d662bb7a1eaca1149cc">更多...</a><br /></td></tr>
+<tr class="separator:adab95884ed2d7d662bb7a1eaca1149cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba0651c2c3ec28d563cafd861e6497c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#a5ba0651c2c3ec28d563cafd861e6497c">tkl_pwm_info_get</a> (TUYA_PWM_NUM_E ch_id, <a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> *info)</td></tr>
+<tr class="memdesc:a5ba0651c2c3ec28d563cafd861e6497c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get pwm info  <a href="../../d2/dc2/tkl__pwm_8h.html#a5ba0651c2c3ec28d563cafd861e6497c">更多...</a><br /></td></tr>
+<tr class="separator:a5ba0651c2c3ec28d563cafd861e6497c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7ec9c59e554ccbd5d91815f19450c5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#a6d7ec9c59e554ccbd5d91815f19450c5">tkl_pwm_info_set</a> (TUYA_PWM_NUM_E ch_id, CONST <a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> *info)</td></tr>
+<tr class="memdesc:a6d7ec9c59e554ccbd5d91815f19450c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set pwm info  <a href="../../d2/dc2/tkl__pwm_8h.html#a6d7ec9c59e554ccbd5d91815f19450c5">更多...</a><br /></td></tr>
+<tr class="separator:a6d7ec9c59e554ccbd5d91815f19450c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0309ee0e371b7fc57f0533c78519d9d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#af0309ee0e371b7fc57f0533c78519d9d">tkl_pwm_init</a> (TUYA_PWM_NUM_E ch_id, CONST <a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> *cfg)</td></tr>
+<tr class="memdesc:af0309ee0e371b7fc57f0533c78519d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm init  <a href="../../d2/dc2/tkl__pwm_8h.html#af0309ee0e371b7fc57f0533c78519d9d">更多...</a><br /></td></tr>
+<tr class="separator:af0309ee0e371b7fc57f0533c78519d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab044a6e666d8f9077cb4a7c71da6809d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#ab044a6e666d8f9077cb4a7c71da6809d">tkl_pwm_multichannel_start</a> (TUYA_PWM_NUM_E *ch_id, UINT8_T num)</td></tr>
+<tr class="memdesc:ab044a6e666d8f9077cb4a7c71da6809d"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiple pwm channel start  <a href="../../d2/dc2/tkl__pwm_8h.html#ab044a6e666d8f9077cb4a7c71da6809d">更多...</a><br /></td></tr>
+<tr class="separator:ab044a6e666d8f9077cb4a7c71da6809d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbc7d2d62fde1f3f72fd874fc26ca24"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#a8fbc7d2d62fde1f3f72fd874fc26ca24">tkl_pwm_multichannel_stop</a> (TUYA_PWM_NUM_E *ch_id, UINT8_T num)</td></tr>
+<tr class="memdesc:a8fbc7d2d62fde1f3f72fd874fc26ca24"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiple pwm channel stop  <a href="../../d2/dc2/tkl__pwm_8h.html#a8fbc7d2d62fde1f3f72fd874fc26ca24">更多...</a><br /></td></tr>
+<tr class="separator:a8fbc7d2d62fde1f3f72fd874fc26ca24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea000dd73c88f4ecc87f66a9db713bb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#adea000dd73c88f4ecc87f66a9db713bb">tkl_pwm_polarity_set</a> (TUYA_PWM_NUM_E ch_id, TUYA_PWM_POLARITY_E polarity)</td></tr>
+<tr class="memdesc:adea000dd73c88f4ecc87f66a9db713bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm polarity set  <a href="../../d2/dc2/tkl__pwm_8h.html#adea000dd73c88f4ecc87f66a9db713bb">更多...</a><br /></td></tr>
+<tr class="separator:adea000dd73c88f4ecc87f66a9db713bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabce27fc08498163004fd2bd7942e9a9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#aabce27fc08498163004fd2bd7942e9a9">tkl_pwm_start</a> (TUYA_PWM_NUM_E ch_id)</td></tr>
+<tr class="memdesc:aabce27fc08498163004fd2bd7942e9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm start  <a href="../../d2/dc2/tkl__pwm_8h.html#aabce27fc08498163004fd2bd7942e9a9">更多...</a><br /></td></tr>
+<tr class="separator:aabce27fc08498163004fd2bd7942e9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aee102b4812413c7459999b4cf6213"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/tkl__pwm_8h.html#a52aee102b4812413c7459999b4cf6213">tkl_pwm_stop</a> (TUYA_PWM_NUM_E ch_id)</td></tr>
+<tr class="memdesc:a52aee102b4812413c7459999b4cf6213"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm stop  <a href="../../d2/dc2/tkl__pwm_8h.html#a52aee102b4812413c7459999b4cf6213">更多...</a><br /></td></tr>
+<tr class="separator:a52aee102b4812413c7459999b4cf6213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the pwm api </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-06</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a32559666ea1f8ecbbe844e68f76a8880" name="a32559666ea1f8ecbbe844e68f76a8880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32559666ea1f8ecbbe844e68f76a8880">&#9670;&nbsp;</a></span>tkl_pwm_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_deinit </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm deinit </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a810084a0e9a79458d6b3ac93529e840f" name="a810084a0e9a79458d6b3ac93529e840f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810084a0e9a79458d6b3ac93529e840f">&#9670;&nbsp;</a></span>tkl_pwm_duty_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_duty_set </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>duty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm duty set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>pwm duty cycle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="adab95884ed2d7d662bb7a1eaca1149cc" name="adab95884ed2d7d662bb7a1eaca1149cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab95884ed2d7d662bb7a1eaca1149cc">&#9670;&nbsp;</a></span>tkl_pwm_frequency_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_frequency_set </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT32_T&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm frequency set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frequency</td><td>pwm frequency</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5ba0651c2c3ec28d563cafd861e6497c" name="a5ba0651c2c3ec28d563cafd861e6497c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba0651c2c3ec28d563cafd861e6497c">&#9670;&nbsp;</a></span>tkl_pwm_info_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_info_get </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get pwm info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>pwm info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6d7ec9c59e554ccbd5d91815f19450c5" name="a6d7ec9c59e554ccbd5d91815f19450c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7ec9c59e554ccbd5d91815f19450c5">&#9670;&nbsp;</a></span>tkl_pwm_info_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_info_set </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set pwm info </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>pwm info</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af0309ee0e371b7fc57f0533c78519d9d" name="af0309ee0e371b7fc57f0533c78519d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0309ee0e371b7fc57f0533c78519d9d">&#9670;&nbsp;</a></span>tkl_pwm_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_init </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../dd/dc0/structTUYA__PWM__BASE__CFG__T.html">TUYA_PWM_BASE_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm init </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>pwm config</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab044a6e666d8f9077cb4a7c71da6809d" name="ab044a6e666d8f9077cb4a7c71da6809d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab044a6e666d8f9077cb4a7c71da6809d">&#9670;&nbsp;</a></span>tkl_pwm_multichannel_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_multichannel_start </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E *&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>multiple pwm channel start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>: num of pwm channal to start</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8fbc7d2d62fde1f3f72fd874fc26ca24" name="a8fbc7d2d62fde1f3f72fd874fc26ca24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbc7d2d62fde1f3f72fd874fc26ca24">&#9670;&nbsp;</a></span>tkl_pwm_multichannel_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_multichannel_stop </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E *&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>multiple pwm channel stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>: num of pwm channal to stop</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="adea000dd73c88f4ecc87f66a9db713bb" name="adea000dd73c88f4ecc87f66a9db713bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea000dd73c88f4ecc87f66a9db713bb">&#9670;&nbsp;</a></span>tkl_pwm_polarity_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_polarity_set </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TUYA_PWM_POLARITY_E&#160;</td>
+          <td class="paramname"><em>polarity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm polarity set </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>pwm polarity</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aabce27fc08498163004fd2bd7942e9a9" name="aabce27fc08498163004fd2bd7942e9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabce27fc08498163004fd2bd7942e9a9">&#9670;&nbsp;</a></span>tkl_pwm_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_start </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a52aee102b4812413c7459999b4cf6213" name="a52aee102b4812413c7459999b4cf6213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52aee102b4812413c7459999b4cf6213">&#9670;&nbsp;</a></span>tkl_pwm_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_pwm_stop </td>
+          <td>(</td>
+          <td class="paramtype">TUYA_PWM_NUM_E&#160;</td>
+          <td class="paramname"><em>ch_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_id</td><td>pwm channal id, id index starts at 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

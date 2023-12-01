@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_api_wifi/include/tuya_iot_wifi_api.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e96088b47b3528e83967bda6c2f1d804.html">svc_api_wifi</a></li><li class="navelem"><a class="el" href="../../dir_5522e41ab4ade147e8267c5979438af8.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_iot_wifi_api.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d1/d49/tuya__iot__wifi__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _TUYA_IOT_WIFI_API_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _TUYA_IOT_WIFI_API_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html">tuya_cloud_wifi_defs.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d01/tuya__iot__com__api_8h.html">tuya_iot_com_api.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/***********************************************************</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">*************************micro define***********************</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">***********************************************************/</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/***********************************************************</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">*************************variable define********************</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">***********************************************************/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/***********************************************************</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">*************************function define********************</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">***********************************************************/</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a18529b0142ebc8f0f364ace5d592bc54">   42</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a18529b0142ebc8f0f364ace5d592bc54">tuya_iot_set_wf_gw_prod_info</a>(IN CONST <a class="code hl_struct" href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a> *wf_prod_info);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1e894786a0598e7c91b4b933c609c4d7">   54</a></span>VOID <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1e894786a0598e7c91b4b933c609c4d7">tuya_iot_wf_timeout_set</a>(IN CONST UINT_T timeout);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a9853d2c2ad7c7e95fa36f0fe270ed498">   70</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a9853d2c2ad7c7e95fa36f0fe270ed498">tuya_iot_wf_dev_init</a>(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                 IN CONST <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs, IN CHAR_T *firmware_key,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                 IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver, IN CONST DEV_TYPE_T tp,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                 IN <a class="code hl_struct" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attr, IN CONST UINT_T attr_num);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a4fc85c1734aeb70ddbe27262754ebe5a">   88</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a4fc85c1734aeb70ddbe27262754ebe5a">tuya_iot_wf_mcu_dev_init</a>(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                     IN CONST <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs, IN CHAR_T *p_firmware_key,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                     IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver, IN CONST CHAR_T *mcu_sw_ver);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1cd64f8d2f9729b63ca1265fcb05dad3">  104</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1cd64f8d2f9729b63ca1265fcb05dad3">tuya_iot_wf_soc_dev_init_param</a>(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                                           IN CONST <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs, IN CHAR_T *firmware_key,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                                           IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#define tuya_iot_wf_soc_dev_init(cfg, start_mode,cbs,product_key,wf_sw_ver) \</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">        tuya_iot_wf_soc_dev_init_param(cfg, start_mode,cbs,NULL,product_key,wf_sw_ver)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1d98347ba473e17f104990e0d53ce452">  119</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1d98347ba473e17f104990e0d53ce452">tuya_iot_reg_get_wf_nw_stat_cb_params</a>(IN CONST <a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a> wf_nw_stat_cb, IN CONST INT_T min_interval_s);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#define tuya_iot_reg_get_wf_nw_stat_cb(wf_nw_stat_cb) \</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">    tuya_iot_reg_get_wf_nw_stat_cb_params(wf_nw_stat_cb, 1)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a0a88af4f2bad607f61017962cac68f21">  130</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a0a88af4f2bad607f61017962cac68f21">tuya_iot_set_wf_cfg_err_code_cb</a>(IN CONST <a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">WF_NW_CFG_ERR_CODE_CB</a> wf_nw_cfg_err_code_cb);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a05df1c3d4d016a9ae4974ae1f99b6dae">  137</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a05df1c3d4d016a9ae4974ae1f99b6dae">tuya_iot_wf_gw_unactive</a>(VOID);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1546c3cc4640e12010b69a4b309065fe">  144</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1546c3cc4640e12010b69a4b309065fe">tuya_iot_wf_gw_reset</a>(VOID);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#ae46384a6a74d46b6ea65ded85f25f3c1">  154</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#ae46384a6a74d46b6ea65ded85f25f3c1">tuya_iot_wf_gw_fast_unactive</a>(IN CONST GW_WF_CFG_MTHD_SEL mthd, IN CONST GW_WF_START_MODE wifi_start_mode);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#aa8354e1b29591c5816542ff111d90560">  163</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#aa8354e1b29591c5816542ff111d90560">tuya_iot_wf_fast_get_nc_type</a>(GW_WF_NWC_FAST_STAT_T *nc_type);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#ac09924291fd0e05efb51773442f8d237">  175</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#ac09924291fd0e05efb51773442f8d237">tuya_iot_set_user_def_ap_if</a>(IN CONST CHAR_T *ssid, IN CONST CHAR_T *passwd);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a68be62cdd8373e8542849264d5bcf2ad">  186</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a68be62cdd8373e8542849264d5bcf2ad">tuya_iot_get_dev_ap_if</a>(OUT CHAR_T *ssid, OUT CHAR_T *passwd);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a6dac6cd3671167289138054ea1b4e4e8">  199</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a6dac6cd3671167289138054ea1b4e4e8">tuya_iot_gw_wf_user_cfg</a>(IN CONST CHAR_T *ssid, IN CONST CHAR_T *passwd, IN CONST CHAR_T *token);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a6d601a510a64bd8f0961463ba4a05a5d">  210</a></span>VOID <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a6d601a510a64bd8f0961463ba4a05a5d">tuya_iot_set_max_sta_conn</a>(IN CONST UCHAR_T max_conn);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#aed1fc755581a96f8707966c223cb3240">  223</a></span>VOID <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#aed1fc755581a96f8707966c223cb3240">tuya_iot_set_nw_ip</a>(IN CONST CHAR_T* ip, IN CONST CHAR_T* mask, IN CONST CHAR_T* gw);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a020df9ec3b09830e97769d4eb0556c38">  232</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a020df9ec3b09830e97769d4eb0556c38">tuya_iot_netcfg_init</a>(IN CONST GW_WF_START_MODE start_mode, IN <a class="code hl_struct" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a>* p_gw_wsm);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a8f2d9bec17372ca33438a5bc749273d2">  241</a></span>OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a8f2d9bec17372ca33438a5bc749273d2">iot_wf_gw_unactive_custom_mode</a>(GW_WF_START_MODE wifi_mode);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#endif  </span><span class="comment">/*_TUYA_IOT_API_H*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="ttc" id="agw__intf_8h_html"><div class="ttname"><a href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a></div><div class="ttdoc">Facility of DevOS definitions</div></div>
+<div class="ttc" id="astructGW__ATTACH__ATTR__T_html"><div class="ttname"><a href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a></div><div class="ttdoc">Definition of attach moudule attribute</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:175</div></div>
+<div class="ttc" id="astructGW__WORK__STAT__MAG__S_html"><div class="ttname"><a href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a></div><div class="ttdoc">Definition of device work state</div><div class="ttdef"><b>Definition:</b> gw_intf.h:94</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a></div><div class="ttdoc">Definition of gateway callback funtions</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:731</div></div>
+<div class="ttc" id="astructWF__GW__PROD__INFO__S_html"><div class="ttname"><a href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:116</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html">tuya_cloud_wifi_defs.h</a></div><div class="ttdoc">Common definitions of TUYA cloud</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a06238119f7279eaaf7f2c0be948b3cd5"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">WF_NW_CFG_ERR_CODE_CB</a></div><div class="ttdeci">VOID(* WF_NW_CFG_ERR_CODE_CB)(IN CONST NW_CFG_ERR_CODE_E err_code)</div><div class="ttdoc">Handler when network configuration error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:144</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a2e8a6875b865838ae5efa2edebce6b71"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a></div><div class="ttdeci">VOID(* GET_WF_NW_STAT_CB)(IN CONST GW_WIFI_NW_STAT_E stat)</div><div class="ttdoc">Handler when network connection error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:137</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html">tuya_iot_com_api.h</a></div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a020df9ec3b09830e97769d4eb0556c38"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a020df9ec3b09830e97769d4eb0556c38">tuya_iot_netcfg_init</a></div><div class="ttdeci">OPERATE_RET tuya_iot_netcfg_init(IN CONST GW_WF_START_MODE start_mode, IN GW_WORK_STAT_MAG_S *p_gw_wsm)</div><div class="ttdoc">tuya_iot_netcfg_init</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a05df1c3d4d016a9ae4974ae1f99b6dae"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a05df1c3d4d016a9ae4974ae1f99b6dae">tuya_iot_wf_gw_unactive</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_gw_unactive(VOID)</div><div class="ttdoc">tuya_iot_wf_gw_unactive</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a0a88af4f2bad607f61017962cac68f21"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a0a88af4f2bad607f61017962cac68f21">tuya_iot_set_wf_cfg_err_code_cb</a></div><div class="ttdeci">OPERATE_RET tuya_iot_set_wf_cfg_err_code_cb(IN CONST WF_NW_CFG_ERR_CODE_CB wf_nw_cfg_err_code_cb)</div><div class="ttdoc">tuya_iot_set_wf_cfg_err_code_cb</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a1546c3cc4640e12010b69a4b309065fe"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1546c3cc4640e12010b69a4b309065fe">tuya_iot_wf_gw_reset</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_gw_reset(VOID)</div><div class="ttdoc">tuya_iot_wf_gw_reset</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a18529b0142ebc8f0f364ace5d592bc54"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a18529b0142ebc8f0f364ace5d592bc54">tuya_iot_set_wf_gw_prod_info</a></div><div class="ttdeci">OPERATE_RET tuya_iot_set_wf_gw_prod_info(IN CONST WF_GW_PROD_INFO_S *wf_prod_info)</div><div class="ttdoc">tuya_iot_set_wf_gw_prod_info</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a1cd64f8d2f9729b63ca1265fcb05dad3"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1cd64f8d2f9729b63ca1265fcb05dad3">tuya_iot_wf_soc_dev_init_param</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_soc_dev_init_param(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode, IN CONST TY_IOT_CBS_S *cbs, IN CHAR_T *firmware_key, IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver)</div><div class="ttdoc">tuya_iot_wf_soc_dev_init_param</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a1d98347ba473e17f104990e0d53ce452"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1d98347ba473e17f104990e0d53ce452">tuya_iot_reg_get_wf_nw_stat_cb_params</a></div><div class="ttdeci">OPERATE_RET tuya_iot_reg_get_wf_nw_stat_cb_params(IN CONST GET_WF_NW_STAT_CB wf_nw_stat_cb, IN CONST INT_T min_interval_s)</div><div class="ttdoc">tuya_iot_reg_get_wf_nw_stat_cb_params</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a1e894786a0598e7c91b4b933c609c4d7"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1e894786a0598e7c91b4b933c609c4d7">tuya_iot_wf_timeout_set</a></div><div class="ttdeci">VOID tuya_iot_wf_timeout_set(IN CONST UINT_T timeout)</div><div class="ttdoc">tuya_iot_wf_timeout_set @desc set wifi timeout</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a4fc85c1734aeb70ddbe27262754ebe5a"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a4fc85c1734aeb70ddbe27262754ebe5a">tuya_iot_wf_mcu_dev_init</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_mcu_dev_init(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode, IN CONST TY_IOT_CBS_S *cbs, IN CHAR_T *p_firmware_key, IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver, IN CONST CHAR_T *mcu_sw_ver)</div><div class="ttdoc">tuya_iot_wf_mcu_dev_init</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a68be62cdd8373e8542849264d5bcf2ad"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a68be62cdd8373e8542849264d5bcf2ad">tuya_iot_get_dev_ap_if</a></div><div class="ttdeci">OPERATE_RET tuya_iot_get_dev_ap_if(OUT CHAR_T *ssid, OUT CHAR_T *passwd)</div><div class="ttdoc">tuya_iot_get_dev_ap_if</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a6d601a510a64bd8f0961463ba4a05a5d"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a6d601a510a64bd8f0961463ba4a05a5d">tuya_iot_set_max_sta_conn</a></div><div class="ttdeci">VOID tuya_iot_set_max_sta_conn(IN CONST UCHAR_T max_conn)</div><div class="ttdoc">tuya_iot_set_max_sta_conn</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a6dac6cd3671167289138054ea1b4e4e8"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a6dac6cd3671167289138054ea1b4e4e8">tuya_iot_gw_wf_user_cfg</a></div><div class="ttdeci">OPERATE_RET tuya_iot_gw_wf_user_cfg(IN CONST CHAR_T *ssid, IN CONST CHAR_T *passwd, IN CONST CHAR_T *token)</div><div class="ttdoc">tuya_iot_gw_wf_user_cfg</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a8f2d9bec17372ca33438a5bc749273d2"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a8f2d9bec17372ca33438a5bc749273d2">iot_wf_gw_unactive_custom_mode</a></div><div class="ttdeci">OPERATE_RET iot_wf_gw_unactive_custom_mode(GW_WF_START_MODE wifi_mode)</div><div class="ttdoc">iot_wf_gw_unactive_custom_mode</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a9853d2c2ad7c7e95fa36f0fe270ed498"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a9853d2c2ad7c7e95fa36f0fe270ed498">tuya_iot_wf_dev_init</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_dev_init(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode, IN CONST TY_IOT_CBS_S *cbs, IN CHAR_T *firmware_key, IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver, IN CONST DEV_TYPE_T tp, IN GW_ATTACH_ATTR_T *attr, IN CONST UINT_T attr_num)</div><div class="ttdoc">tuya_iot_wf_dev_init</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_aa8354e1b29591c5816542ff111d90560"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#aa8354e1b29591c5816542ff111d90560">tuya_iot_wf_fast_get_nc_type</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_fast_get_nc_type(GW_WF_NWC_FAST_STAT_T *nc_type)</div><div class="ttdoc">tuya_iot_wf_fast_get_nc_type</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_ac09924291fd0e05efb51773442f8d237"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#ac09924291fd0e05efb51773442f8d237">tuya_iot_set_user_def_ap_if</a></div><div class="ttdeci">OPERATE_RET tuya_iot_set_user_def_ap_if(IN CONST CHAR_T *ssid, IN CONST CHAR_T *passwd)</div><div class="ttdoc">tuya_iot_set_user_def_ap_if</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_ae46384a6a74d46b6ea65ded85f25f3c1"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#ae46384a6a74d46b6ea65ded85f25f3c1">tuya_iot_wf_gw_fast_unactive</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_gw_fast_unactive(IN CONST GW_WF_CFG_MTHD_SEL mthd, IN CONST GW_WF_START_MODE wifi_start_mode)</div><div class="ttdoc">tuya_iot_wf_gw_fast_unactive</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_aed1fc755581a96f8707966c223cb3240"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#aed1fc755581a96f8707966c223cb3240">tuya_iot_set_nw_ip</a></div><div class="ttdeci">VOID tuya_iot_set_nw_ip(IN CONST CHAR_T *ip, IN CONST CHAR_T *mask, IN CONST CHAR_T *gw)</div><div class="ttdoc">tuya_iot_set_nw_ip</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

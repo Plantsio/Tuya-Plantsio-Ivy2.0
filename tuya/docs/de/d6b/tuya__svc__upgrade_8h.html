@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_upgrade/include/tuya_svc_upgrade.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_557ed152a545ef6641a1f65e246dbe3b.html">svc_upgrade</a></li><li class="navelem"><a class="el" href="../../dir_b4bd9adc5ce54bd374e08c89a9d416be.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_svc_upgrade.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TUYA OTA service  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tuya_cloud_com_defs.h&quot;</code><br />
+<code>#include &quot;ty_cJSON.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_svc_upgrade.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d27/tuya__svc__upgrade_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__upgrade_2include_2tuya__svc__upgrade_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__upgrade_2include_2tuya__svc__upgrade_8h" id="ainclude_2components_2svc__upgrade_2include_2tuya__svc__upgrade_8h">
+<area shape="rect" title="TUYA OTA service" alt="" coords="539,5,698,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="419,184,567,211"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="531,109,706,136"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="697,184,791,211"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="817,259,892,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,427,285"/>
+<area shape="rect" title=" " alt="" coords="452,259,535,285"/>
+<area shape="rect" title=" " alt="" coords="559,259,630,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="655,259,793,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d83/tuya__svc__upgrade_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__upgrade_2include_2tuya__svc__upgrade_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__upgrade_2include_2tuya__svc__upgrade_8hdep" id="ainclude_2components_2svc__upgrade_2include_2tuya__svc__upgrade_8hdep">
+<area shape="rect" title="TUYA OTA service" alt="" coords="21,5,179,61"/>
+<area shape="rect" href="../../d2/dac/tuya__svc__upgrade__http_8h.html" title="TUYA OTA service" alt="" coords="5,109,195,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../de/d6b/tuya__svc__upgrade_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d02/structfile__info.html">file_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aec7e7fd675a0992643642c6c0bd125a7"><td class="memItemLeft" align="right" valign="top"><a id="aec7e7fd675a0992643642c6c0bd125a7" name="aec7e7fd675a0992643642c6c0bd125a7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STACK_SIZE_UPGRADE</b>&#160;&#160;&#160;(4096)</td></tr>
+<tr class="separator:aec7e7fd675a0992643642c6c0bd125a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b228d8ddebec7b73c572f974f61094"><td class="memItemLeft" align="right" valign="top"><a id="a56b228d8ddebec7b73c572f974f61094" name="a56b228d8ddebec7b73c572f974f61094"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SVC_UPGRADE_SIGN_CONTENT_MAX_LEN</b>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a56b228d8ddebec7b73c572f974f61094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2677db4c2504dd464e0a5f51fd73a0ae"><td class="memItemLeft" align="right" valign="top"><a id="a2677db4c2504dd464e0a5f51fd73a0ae" name="a2677db4c2504dd464e0a5f51fd73a0ae"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_COMPLETE</b>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:a2677db4c2504dd464e0a5f51fd73a0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc26e5dd8fbd29c0b6cddc65e5506d2"><td class="memItemLeft" align="right" valign="top"><a id="abfc26e5dd8fbd29c0b6cddc65e5506d2" name="abfc26e5dd8fbd29c0b6cddc65e5506d2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_ERROR_HMAC</b>&#160;&#160;&#160;45</td></tr>
+<tr class="separator:abfc26e5dd8fbd29c0b6cddc65e5506d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b1f6d26d008d3a34455db7948e23f8"><td class="memItemLeft" align="right" valign="top"><a id="a05b1f6d26d008d3a34455db7948e23f8" name="a05b1f6d26d008d3a34455db7948e23f8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_ERROR_LOW_BATTERY</b>&#160;&#160;&#160;41</td></tr>
+<tr class="separator:a05b1f6d26d008d3a34455db7948e23f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af641b5ac95af5125c9d88e1ccb5b67de"><td class="memItemLeft" align="right" valign="top"><a id="af641b5ac95af5125c9d88e1ccb5b67de" name="af641b5ac95af5125c9d88e1ccb5b67de"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_ERROR_MALLOC_FAIL</b>&#160;&#160;&#160;43</td></tr>
+<tr class="separator:af641b5ac95af5125c9d88e1ccb5b67de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc2c8e90e2e647de1a6acb64627fe7a"><td class="memItemLeft" align="right" valign="top"><a id="aecc2c8e90e2e647de1a6acb64627fe7a" name="aecc2c8e90e2e647de1a6acb64627fe7a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_ERROR_STORAGE_NOT_ENOUGH</b>&#160;&#160;&#160;42</td></tr>
+<tr class="separator:aecc2c8e90e2e647de1a6acb64627fe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4a45e15842b1ea03ea5a34a7c910a1"><td class="memItemLeft" align="right" valign="top"><a id="a0e4a45e15842b1ea03ea5a34a7c910a1" name="a0e4a45e15842b1ea03ea5a34a7c910a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_ERROR_TIMEOUT</b>&#160;&#160;&#160;44</td></tr>
+<tr class="separator:a0e4a45e15842b1ea03ea5a34a7c910a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d852021d1de0b6d25147d3c73ffedf9"><td class="memItemLeft" align="right" valign="top"><a id="a1d852021d1de0b6d25147d3c73ffedf9" name="a1d852021d1de0b6d25147d3c73ffedf9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_ERROR_UNKONW</b>&#160;&#160;&#160;40</td></tr>
+<tr class="separator:a1d852021d1de0b6d25147d3c73ffedf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e71293397a9b7c6b274bc94fc54b8f"><td class="memItemLeft" align="right" valign="top"><a id="a88e71293397a9b7c6b274bc94fc54b8f" name="a88e71293397a9b7c6b274bc94fc54b8f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_DOWNLOAD_START</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a88e71293397a9b7c6b274bc94fc54b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7789393409cd33df667b6b068a55b64"><td class="memItemLeft" align="right" valign="top"><a id="aa7789393409cd33df667b6b068a55b64" name="aa7789393409cd33df667b6b068a55b64"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_RD</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa7789393409cd33df667b6b068a55b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f128e4d61a9b3c6e122bca0eebfe270"><td class="memItemLeft" align="right" valign="top"><a id="a3f128e4d61a9b3c6e122bca0eebfe270" name="a3f128e4d61a9b3c6e122bca0eebfe270"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRADE_ERROR_HMAC</b>&#160;&#160;&#160;49</td></tr>
+<tr class="separator:a3f128e4d61a9b3c6e122bca0eebfe270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f9c8250fbce5e508a25f1c44830888"><td class="memItemLeft" align="right" valign="top"><a id="ae4f9c8250fbce5e508a25f1c44830888" name="ae4f9c8250fbce5e508a25f1c44830888"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRADE_ERROR_LOW_BATTERY</b>&#160;&#160;&#160;46</td></tr>
+<tr class="separator:ae4f9c8250fbce5e508a25f1c44830888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045a6fbf95490693d724e5d958111e57"><td class="memItemLeft" align="right" valign="top"><a id="a045a6fbf95490693d724e5d958111e57" name="a045a6fbf95490693d724e5d958111e57"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRADE_ERROR_MALLOC_FAIL</b>&#160;&#160;&#160;47</td></tr>
+<tr class="separator:a045a6fbf95490693d724e5d958111e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac933b71a11d09eb846bac26a6cb082df"><td class="memItemLeft" align="right" valign="top"><a id="ac933b71a11d09eb846bac26a6cb082df" name="ac933b71a11d09eb846bac26a6cb082df"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRADE_ERROR_VERSION</b>&#160;&#160;&#160;48</td></tr>
+<tr class="separator:ac933b71a11d09eb846bac26a6cb082df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ec4a649b684eaa46306723159a88f9"><td class="memItemLeft" align="right" valign="top"><a id="a67ec4a649b684eaa46306723159a88f9" name="a67ec4a649b684eaa46306723159a88f9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRADE_START</b>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a67ec4a649b684eaa46306723159a88f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fb4da3620507cb45d3186edf56a593"><td class="memItemLeft" align="right" valign="top"><a id="ab6fb4da3620507cb45d3186edf56a593" name="ab6fb4da3620507cb45d3186edf56a593"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRADE_SUCCESS</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ab6fb4da3620507cb45d3186edf56a593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5a42065f0cc8b200b15f060a366b42"><td class="memItemLeft" align="right" valign="top"><a id="aae5a42065f0cc8b200b15f060a366b42" name="aae5a42065f0cc8b200b15f060a366b42"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRD_EXEC</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:aae5a42065f0cc8b200b15f060a366b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac874f4420fcf85c052c5fb6423ec9ef1"><td class="memItemLeft" align="right" valign="top"><a id="ac874f4420fcf85c052c5fb6423ec9ef1" name="ac874f4420fcf85c052c5fb6423ec9ef1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRD_FINI</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ac874f4420fcf85c052c5fb6423ec9ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d0f7390f7a386b81da7d5a934be29a"><td class="memItemLeft" align="right" valign="top"><a id="a53d0f7390f7a386b81da7d5a934be29a" name="a53d0f7390f7a386b81da7d5a934be29a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TUS_UPGRDING</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a53d0f7390f7a386b81da7d5a934be29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aae747ca2168748edc175782d2ffdab72"><td class="memItemLeft" align="right" valign="top">typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#aae747ca2168748edc175782d2ffdab72">DEV_UPGRADE_INFORM_CB</a>) (CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw)</td></tr>
+<tr class="memdesc:aae747ca2168748edc175782d2ffdab72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler of GW upgrade inform  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#aae747ca2168748edc175782d2ffdab72">更多...</a><br /></td></tr>
+<tr class="separator:aae747ca2168748edc175782d2ffdab72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a73f7c0cfe26533f2fcdf4dcc01010"><td class="memItemLeft" align="right" valign="top">typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a68a73f7c0cfe26533f2fcdf4dcc01010">dev_upgrade_mq15_inform_cb</a>) (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *root_json)</td></tr>
+<tr class="memdesc:a68a73f7c0cfe26533f2fcdf4dcc01010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler of process inform for some upgrade type  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a68a73f7c0cfe26533f2fcdf4dcc01010">更多...</a><br /></td></tr>
+<tr class="separator:a68a73f7c0cfe26533f2fcdf4dcc01010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5d43efcd10ee5127f4f0ef01bdc23f"><td class="memItemLeft" align="right" valign="top"><a id="a0b5d43efcd10ee5127f4f0ef01bdc23f" name="a0b5d43efcd10ee5127f4f0ef01bdc23f"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>DEV_UPGRADE_PRE_INFORM_CB</b>) (BOOL_T *handled, CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw)</td></tr>
+<tr class="memdesc:a0b5d43efcd10ee5127f4f0ef01bdc23f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler of pre-process inform <br /></td></tr>
+<tr class="separator:a0b5d43efcd10ee5127f4f0ef01bdc23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f0c4279d79514c73de71a7f772f276"><td class="memItemLeft" align="right" valign="top">typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a91f0c4279d79514c73de71a7f772f276">SUBDEV_UPGRADE_INFORM_CB</a>) (CONST CHAR_T *dev_id, CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw)</td></tr>
+<tr class="memdesc:a91f0c4279d79514c73de71a7f772f276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler of sub-device upgrade inform  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a91f0c4279d79514c73de71a7f772f276">更多...</a><br /></td></tr>
+<tr class="separator:a91f0c4279d79514c73de71a7f772f276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24005a1237e7534ce8e1b7b244c5890c"><td class="memItemLeft" align="right" valign="top"><a id="a24005a1237e7534ce8e1b7b244c5890c" name="a24005a1237e7534ce8e1b7b244c5890c"></a>
+typedef BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><b>TI_UPGRD_STAT_S</b></td></tr>
+<tr class="separator:a24005a1237e7534ce8e1b7b244c5890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8f8c80645d89ff911cfd85c4de2da4"><td class="memItemLeft" align="right" valign="top"><a id="a4a8f8c80645d89ff911cfd85c4de2da4" name="a4a8f8c80645d89ff911cfd85c4de2da4"></a>
+typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><b>UPGRADE_DETECT_RESULT</b>) (IN BOOL_T is_err, IN BOOL_T is_exe, IN UINT_T detect_interval)</td></tr>
+<tr class="separator:a4a8f8c80645d89ff911cfd85c4de2da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a2bccf71ea3b579cfcd24056d18804"><td class="memItemLeft" align="right" valign="top"><a id="a81a2bccf71ea3b579cfcd24056d18804" name="a81a2bccf71ea3b579cfcd24056d18804"></a>
+typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>UPGRADE_GET_DEV</b>) (OUT CHAR_T dev_id[DEV_ID_LEN+1])</td></tr>
+<tr class="separator:a81a2bccf71ea3b579cfcd24056d18804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:abd367f9316a507be0ea582ac8a98978d"><td class="memItemLeft" align="right" valign="top"><a id="abd367f9316a507be0ea582ac8a98978d" name="abd367f9316a507be0ea582ac8a98978d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SignContent_TYPE</b> { <b>SignContent_TYPE_USER</b> = 0
+, <b>SignContent_TYPE_TUYA</b> = 1
+ }</td></tr>
+<tr class="separator:abd367f9316a507be0ea582ac8a98978d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a35149f8bd467b24c206422fc89535e22"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a35149f8bd467b24c206422fc89535e22">tuya_lan_upgrade_data_proc</a> (BYTE_T *p_data_block, UINT_T u_data_block_len)</td></tr>
+<tr class="memdesc:a35149f8bd467b24c206422fc89535e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">局域网升级数据处理  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a35149f8bd467b24c206422fc89535e22">更多...</a><br /></td></tr>
+<tr class="separator:a35149f8bd467b24c206422fc89535e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a6be7e33aa37b56b1d34e656f2d07a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#af1a6be7e33aa37b56b1d34e656f2d07a">tuya_lan_upgrade_data_request_string</a> (CHAR_T *request_string)</td></tr>
+<tr class="memdesc:af1a6be7e33aa37b56b1d34e656f2d07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">局域网升级数据请求  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#af1a6be7e33aa37b56b1d34e656f2d07a">更多...</a><br /></td></tr>
+<tr class="separator:af1a6be7e33aa37b56b1d34e656f2d07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae70a3e54696a6ec823c01377663b27f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#aae70a3e54696a6ec823c01377663b27f">tuya_lan_upgrade_start</a> (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *p_upgrade_info)</td></tr>
+<tr class="memdesc:aae70a3e54696a6ec823c01377663b27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">局域网升级启动  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#aae70a3e54696a6ec823c01377663b27f">更多...</a><br /></td></tr>
+<tr class="separator:aae70a3e54696a6ec823c01377663b27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d02d066c76973a3f4e0a1ab363441f5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a9d02d066c76973a3f4e0a1ab363441f5">tuya_svc_upgrade_active</a> (VOID_T)</td></tr>
+<tr class="memdesc:a9d02d066c76973a3f4e0a1ab363441f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run firmware upgrade framework, workloads registered will be executed  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a9d02d066c76973a3f4e0a1ab363441f5">更多...</a><br /></td></tr>
+<tr class="separator:a9d02d066c76973a3f4e0a1ab363441f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f62984157151949103996c32d6482a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a35f62984157151949103996c32d6482a">tuya_svc_upgrade_continue</a> (VOID_T)</td></tr>
+<tr class="memdesc:a35f62984157151949103996c32d6482a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue to process multi section upgrade  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a35f62984157151949103996c32d6482a">更多...</a><br /></td></tr>
+<tr class="separator:a35f62984157151949103996c32d6482a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aefd9ac4b55f9935605572a3884fed8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a3aefd9ac4b55f9935605572a3884fed8">tuya_svc_upgrade_detect_register</a> (<a class="el" href="../../dc/dec/structTUYA__UPGRADE__DETECT__T.html">TUYA_UPGRADE_DETECT_T</a> *detect)</td></tr>
+<tr class="memdesc:a3aefd9ac4b55f9935605572a3884fed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new firmware upgrade workload  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a3aefd9ac4b55f9935605572a3884fed8">更多...</a><br /></td></tr>
+<tr class="separator:a3aefd9ac4b55f9935605572a3884fed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86c8f4681f070dc26a687e7b2ac26c0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#ad86c8f4681f070dc26a687e7b2ac26c0">tuya_svc_upgrade_detect_reset</a> (CONST INT_T upgrade_interval)</td></tr>
+<tr class="memdesc:ad86c8f4681f070dc26a687e7b2ac26c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset firmware upgrade check interval  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#ad86c8f4681f070dc26a687e7b2ac26c0">更多...</a><br /></td></tr>
+<tr class="separator:ad86c8f4681f070dc26a687e7b2ac26c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d802e8ccb65f4acb1c24ba1f93a56d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#ae9d802e8ccb65f4acb1c24ba1f93a56d">tuya_svc_upgrade_init</a> (<a class="el" href="../../d1/d07/structTUYA__UPGRADE__PARAM__T.html">TUYA_UPGRADE_PARAM_T</a> *ota_param)</td></tr>
+<tr class="memdesc:ae9d802e8ccb65f4acb1c24ba1f93a56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initilize firmware upgrade framework  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#ae9d802e8ccb65f4acb1c24ba1f93a56d">更多...</a><br /></td></tr>
+<tr class="separator:ae9d802e8ccb65f4acb1c24ba1f93a56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcbef46eb72b8088d0da3cc35b6db6c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#abfcbef46eb72b8088d0da3cc35b6db6c">tuya_svc_upgrade_mqtt_notify</a> (CHAR_T *dev_id, DEV_TYPE_T tp)</td></tr>
+<tr class="memdesc:abfcbef46eb72b8088d0da3cc35b6db6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify to upgrade immediately like mqtt15  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#abfcbef46eb72b8088d0da3cc35b6db6c">更多...</a><br /></td></tr>
+<tr class="separator:abfcbef46eb72b8088d0da3cc35b6db6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1e0e1dc68f78ffe9818464574e8252"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#aab1e0e1dc68f78ffe9818464574e8252">tuya_svc_upgrade_refuse</a> (CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, CONST CHAR_T *dev_id)</td></tr>
+<tr class="memdesc:aab1e0e1dc68f78ffe9818464574e8252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refuse to download the specific firmware  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#aab1e0e1dc68f78ffe9818464574e8252">更多...</a><br /></td></tr>
+<tr class="separator:aab1e0e1dc68f78ffe9818464574e8252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c918b21f0ee74f4bbaddfcdf1cf4fb1"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a7c918b21f0ee74f4bbaddfcdf1cf4fb1">tuya_svc_upgrade_register_mq15_cb</a> (<a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a68a73f7c0cfe26533f2fcdf4dcc01010">dev_upgrade_mq15_inform_cb</a> mq15_cb)</td></tr>
+<tr class="memdesc:a7c918b21f0ee74f4bbaddfcdf1cf4fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register process handler for some upgrade type  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a7c918b21f0ee74f4bbaddfcdf1cf4fb1">更多...</a><br /></td></tr>
+<tr class="separator:a7c918b21f0ee74f4bbaddfcdf1cf4fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10658287fa62d991e032df4a5d6f0236"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a10658287fa62d991e032df4a5d6f0236">tuya_svc_upgrade_register_pre_cb</a> (<a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a0b5d43efcd10ee5127f4f0ef01bdc23f">DEV_UPGRADE_PRE_INFORM_CB</a> pre_ug_cb)</td></tr>
+<tr class="memdesc:a10658287fa62d991e032df4a5d6f0236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register pre-precess handler to replace the default one  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a10658287fa62d991e032df4a5d6f0236">更多...</a><br /></td></tr>
+<tr class="separator:a10658287fa62d991e032df4a5d6f0236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9d10125a4d20b1400c5588144b1847"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a1e9d10125a4d20b1400c5588144b1847">tuya_svc_upgrade_result_report</a> (CONST CHAR_T *dev_id, CONST DEV_TYPE_T type, CONST int result)</td></tr>
+<tr class="memdesc:a1e9d10125a4d20b1400c5588144b1847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync dowload result to cloud  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a1e9d10125a4d20b1400c5588144b1847">更多...</a><br /></td></tr>
+<tr class="separator:a1e9d10125a4d20b1400c5588144b1847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c1e393e0f8f2f1bbefe0cd29f2231"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a8b7c1e393e0f8f2f1bbefe0cd29f2231">tuya_svc_upgrade_start</a> (CONST CHAR_T *dev_id, CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, CONST GET_FILE_DATA_CB get_file_cb, VOID *pri_data, CONST UPGRADE_NOTIFY_CB upgrd_nofity_cb, CONST BOOL_T upload_upgrade_percent, CONST UINT_T download_buf_size)</td></tr>
+<tr class="memdesc:a8b7c1e393e0f8f2f1bbefe0cd29f2231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to download the specific firmware  <a href="../../de/d6b/tuya__svc__upgrade_8h.html#a8b7c1e393e0f8f2f1bbefe0cd29f2231">更多...</a><br /></td></tr>
+<tr class="separator:a8b7c1e393e0f8f2f1bbefe0cd29f2231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd15075b3d7001359e1713c7ff27e518"><td class="memItemLeft" align="right" valign="top"><a id="abd15075b3d7001359e1713c7ff27e518" name="abd15075b3d7001359e1713c7ff27e518"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_svc_upgrade_ug_info_parse</b> (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *result, UPGRADE_TYPE_T type, <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *ug_info)</td></tr>
+<tr class="separator:abd15075b3d7001359e1713c7ff27e518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31278ab13212a0ecacdbf911ddfea14"><td class="memItemLeft" align="right" valign="top"><a id="af31278ab13212a0ecacdbf911ddfea14" name="af31278ab13212a0ecacdbf911ddfea14"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_svc_upgrade_verify_end</b> (IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST INT_T download_result, IN PVOID_T pri_data)</td></tr>
+<tr class="separator:af31278ab13212a0ecacdbf911ddfea14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71b48f63cde59f26c06ad63cb58e52c"><td class="memItemLeft" align="right" valign="top"><a id="ae71b48f63cde59f26c06ad63cb58e52c" name="ae71b48f63cde59f26c06ad63cb58e52c"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_svc_upgrade_verify_init</b> (void)</td></tr>
+<tr class="separator:ae71b48f63cde59f26c06ad63cb58e52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d36a83a9e2235b89691d4594371e66"><td class="memItemLeft" align="right" valign="top"><a id="a73d36a83a9e2235b89691d4594371e66" name="a73d36a83a9e2235b89691d4594371e66"></a>
+OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_svc_upgrade_verify_process</b> (IN CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw, IN CONST UINT_T total_len, IN CONST UINT_T offset, IN CONST BYTE_T *data, IN CONST UINT_T len, OUT UINT_T *remain_len, IN PVOID_T pri_data)</td></tr>
+<tr class="separator:a73d36a83a9e2235b89691d4594371e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >TUYA OTA service </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-08-28</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2019-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="aae747ca2168748edc175782d2ffdab72" name="aae747ca2168748edc175782d2ffdab72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae747ca2168748edc175782d2ffdab72">&#9670;&nbsp;</a></span>DEV_UPGRADE_INFORM_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef INT_T(* DEV_UPGRADE_INFORM_CB) (CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handler of GW upgrade inform </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a68a73f7c0cfe26533f2fcdf4dcc01010" name="a68a73f7c0cfe26533f2fcdf4dcc01010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a73f7c0cfe26533f2fcdf4dcc01010">&#9670;&nbsp;</a></span>dev_upgrade_mq15_inform_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef INT_T(* dev_upgrade_mq15_inform_cb) (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *root_json)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handler of process inform for some upgrade type </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on had handled. Others should process by svc_upgrade </dd></dl>
+
+</div>
+</div>
+<a id="a91f0c4279d79514c73de71a7f772f276" name="a91f0c4279d79514c73de71a7f772f276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f0c4279d79514c73de71a7f772f276">&#9670;&nbsp;</a></span>SUBDEV_UPGRADE_INFORM_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef INT_T(* SUBDEV_UPGRADE_INFORM_CB) (CONST CHAR_T *dev_id, CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handler of sub-device upgrade inform </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a35149f8bd467b24c206422fc89535e22" name="a35149f8bd467b24c206422fc89535e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35149f8bd467b24c206422fc89535e22">&#9670;&nbsp;</a></span>tuya_lan_upgrade_data_proc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_lan_upgrade_data_proc </td>
+          <td>(</td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>p_data_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>u_data_block_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>局域网升级数据处理 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_data_block</td><td>升级固件数据块指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u_data_block_len</td><td>数据块长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af1a6be7e33aa37b56b1d34e656f2d07a" name="af1a6be7e33aa37b56b1d34e656f2d07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a6be7e33aa37b56b1d34e656f2d07a">&#9670;&nbsp;</a></span>tuya_lan_upgrade_data_request_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_lan_upgrade_data_request_string </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>request_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>局域网升级数据请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">request_string</td><td>升级固件数据请求字符串，包括file_offset, data_block_len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aae70a3e54696a6ec823c01377663b27f" name="aae70a3e54696a6ec823c01377663b27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae70a3e54696a6ec823c01377663b27f">&#9670;&nbsp;</a></span>tuya_lan_upgrade_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_lan_upgrade_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *&#160;</td>
+          <td class="paramname"><em>p_upgrade_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>局域网升级启动 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_ug_info</td><td>升级固件信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9d02d066c76973a3f4e0a1ab363441f5" name="a9d02d066c76973a3f4e0a1ab363441f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d02d066c76973a3f4e0a1ab363441f5">&#9670;&nbsp;</a></span>tuya_svc_upgrade_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_active </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run firmware upgrade framework, workloads registered will be executed </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a35f62984157151949103996c32d6482a" name="a35f62984157151949103996c32d6482a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f62984157151949103996c32d6482a">&#9670;&nbsp;</a></span>tuya_svc_upgrade_continue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_continue </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Continue to process multi section upgrade </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3aefd9ac4b55f9935605572a3884fed8" name="a3aefd9ac4b55f9935605572a3884fed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aefd9ac4b55f9935605572a3884fed8">&#9670;&nbsp;</a></span>tuya_svc_upgrade_detect_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_detect_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/dec/structTUYA__UPGRADE__DETECT__T.html">TUYA_UPGRADE_DETECT_T</a> *&#160;</td>
+          <td class="paramname"><em>detect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a new firmware upgrade workload </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">detect</td><td>The workload, see tuya_upgrade_detect_t</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad86c8f4681f070dc26a687e7b2ac26c0" name="ad86c8f4681f070dc26a687e7b2ac26c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86c8f4681f070dc26a687e7b2ac26c0">&#9670;&nbsp;</a></span>tuya_svc_upgrade_detect_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_detect_reset </td>
+          <td>(</td>
+          <td class="paramtype">CONST INT_T&#160;</td>
+          <td class="paramname"><em>upgrade_interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset firmware upgrade check interval </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">upgrade_interval</td><td>Next interval to check(unit sec)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae9d802e8ccb65f4acb1c24ba1f93a56d" name="ae9d802e8ccb65f4acb1c24ba1f93a56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d802e8ccb65f4acb1c24ba1f93a56d">&#9670;&nbsp;</a></span>tuya_svc_upgrade_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d07/structTUYA__UPGRADE__PARAM__T.html">TUYA_UPGRADE_PARAM_T</a> *&#160;</td>
+          <td class="paramname"><em>ota_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initilize firmware upgrade framework </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abfcbef46eb72b8088d0da3cc35b6db6c" name="abfcbef46eb72b8088d0da3cc35b6db6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfcbef46eb72b8088d0da3cc35b6db6c">&#9670;&nbsp;</a></span>tuya_svc_upgrade_mqtt_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_mqtt_notify </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DEV_TYPE_T&#160;</td>
+          <td class="paramname"><em>tp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify to upgrade immediately like mqtt15 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>ID of sub-device, or NULL for GW </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>type to upgrade </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aab1e0e1dc68f78ffe9818464574e8252" name="aab1e0e1dc68f78ffe9818464574e8252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1e0e1dc68f78ffe9818464574e8252">&#9670;&nbsp;</a></span>tuya_svc_upgrade_refuse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_refuse </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *&#160;</td>
+          <td class="paramname"><em>fw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refuse to download the specific firmware </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>ID of sub-device, or NULL for GW </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw</td><td>Firmware info to download</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7c918b21f0ee74f4bbaddfcdf1cf4fb1" name="a7c918b21f0ee74f4bbaddfcdf1cf4fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c918b21f0ee74f4bbaddfcdf1cf4fb1">&#9670;&nbsp;</a></span>tuya_svc_upgrade_register_mq15_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_svc_upgrade_register_mq15_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a68a73f7c0cfe26533f2fcdf4dcc01010">dev_upgrade_mq15_inform_cb</a>&#160;</td>
+          <td class="paramname"><em>mq15_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register process handler for some upgrade type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mq15_cb</td><td>The process handler </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10658287fa62d991e032df4a5d6f0236" name="a10658287fa62d991e032df4a5d6f0236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10658287fa62d991e032df4a5d6f0236">&#9670;&nbsp;</a></span>tuya_svc_upgrade_register_pre_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_svc_upgrade_register_pre_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d6b/tuya__svc__upgrade_8h.html#a0b5d43efcd10ee5127f4f0ef01bdc23f">DEV_UPGRADE_PRE_INFORM_CB</a>&#160;</td>
+          <td class="paramname"><em>pre_ug_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register pre-precess handler to replace the default one </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pre_ug_cb</td><td>The new handler </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e9d10125a4d20b1400c5588144b1847" name="a1e9d10125a4d20b1400c5588144b1847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9d10125a4d20b1400c5588144b1847">&#9670;&nbsp;</a></span>tuya_svc_upgrade_result_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_result_report </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST DEV_TYPE_T&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST int&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sync dowload result to cloud </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>ID of sub-device, or NULL for GW </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tp</td><td>OTA channel, see DEV_TYPE_T </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>See TI_UPGRD_STAT_S</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8b7c1e393e0f8f2f1bbefe0cd29f2231" name="a8b7c1e393e0f8f2f1bbefe0cd29f2231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7c1e393e0f8f2f1bbefe0cd29f2231">&#9670;&nbsp;</a></span>tuya_svc_upgrade_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_upgrade_start </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *&#160;</td>
+          <td class="paramname"><em>fw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST GET_FILE_DATA_CB&#160;</td>
+          <td class="paramname"><em>get_file_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>pri_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UPGRADE_NOTIFY_CB&#160;</td>
+          <td class="paramname"><em>upgrd_nofity_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>upload_upgrade_percent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>download_buf_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start to download the specific firmware </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_id</td><td>ID of sub-device, or NULL for GW </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw</td><td>Firmware info to download </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">get_file_cb</td><td>Callback to transfer data while downloading </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upgrd_nofity_cb</td><td>Callback when upgrade complete or error </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upload_upgrade_percent</td><td>Upload upgrade percent or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">download_buf_size</td><td>Buffer size allocated for OTA</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

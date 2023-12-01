@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/security/include/tkl_hash.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_cf7cbb8e235eb63d31f2743fd9ac457a.html">security</a></li><li class="navelem"><a class="el" href="../../dir_ca31ddca70388c6aabbe6684c570024b.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_hash.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the hash api provide by OS  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_hash.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/tkl__hash_8h__incl.png" border="0" usemap="#ainclude_2adapter_2security_2include_2tkl__hash_8h" alt=""/></div>
+<map name="ainclude_2adapter_2security_2include_2tkl__hash_8h" id="ainclude_2adapter_2security_2include_2tkl__hash_8h">
+<area shape="rect" title="Common process &#45; adapter the hash api provide by OS" alt="" coords="353,5,532,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d3b/tkl__hash_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2security_2include_2tkl__hash_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2security_2include_2tkl__hash_8hdep" id="ainclude_2adapter_2security_2include_2tkl__hash_8hdep">
+<area shape="rect" title="Common process &#45; adapter the hash api provide by OS" alt="" coords="5,5,184,47"/>
+<area shape="rect" href="../../db/d54/tal__hash_8h.html" title="Common process &#45; adapter the hash api provide by OS" alt="" coords="18,95,171,151"/>
+<area shape="rect" href="../../d9/df0/tal__security_8h.html" title="tal_security file include" alt="" coords="18,199,171,255"/>
+</map>
+</div>
+</div>
+<p><a href="../../db/d64/tkl__hash_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a6794a861fdf2e0982a682addcd39ae62"><td class="memItemLeft" align="right" valign="top"><a id="a6794a861fdf2e0982a682addcd39ae62" name="a6794a861fdf2e0982a682addcd39ae62"></a>
+typedef VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_HASH_HANDLE</b></td></tr>
+<tr class="separator:a6794a861fdf2e0982a682addcd39ae62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0d60c277fe7e78877b31b80f70c5a4b9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a0d60c277fe7e78877b31b80f70c5a4b9">tkl_md5_create_init</a> (TKL_HASH_HANDLE *ctx)</td></tr>
+<tr class="memdesc:a0d60c277fe7e78877b31b80f70c5a4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Create&amp;initializes a md5 context.  <a href="../../db/d64/tkl__hash_8h.html#a0d60c277fe7e78877b31b80f70c5a4b9">更多...</a><br /></td></tr>
+<tr class="separator:a0d60c277fe7e78877b31b80f70c5a4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800490d7e122592a6ad4aaa93cdb3569"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a800490d7e122592a6ad4aaa93cdb3569">tkl_md5_finish_ret</a> (TKL_HASH_HANDLE ctx, UINT8_T output[16])</td></tr>
+<tr class="memdesc:a800490d7e122592a6ad4aaa93cdb3569"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finishes the md5 operation, and writes the result to the output buffer.  <a href="../../db/d64/tkl__hash_8h.html#a800490d7e122592a6ad4aaa93cdb3569">更多...</a><br /></td></tr>
+<tr class="separator:a800490d7e122592a6ad4aaa93cdb3569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f536711665bb7462c37888c2ee6ae50"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a5f536711665bb7462c37888c2ee6ae50">tkl_md5_free</a> (TKL_HASH_HANDLE ctx)</td></tr>
+<tr class="memdesc:a5f536711665bb7462c37888c2ee6ae50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears a md5 context.  <a href="../../db/d64/tkl__hash_8h.html#a5f536711665bb7462c37888c2ee6ae50">更多...</a><br /></td></tr>
+<tr class="separator:a5f536711665bb7462c37888c2ee6ae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d5e8a659a0d49a0a731cb9f433c119"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a77d5e8a659a0d49a0a731cb9f433c119">tkl_md5_starts_ret</a> (TKL_HASH_HANDLE ctx)</td></tr>
+<tr class="memdesc:a77d5e8a659a0d49a0a731cb9f433c119"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a md5 checksum calculation.  <a href="../../db/d64/tkl__hash_8h.html#a77d5e8a659a0d49a0a731cb9f433c119">更多...</a><br /></td></tr>
+<tr class="separator:a77d5e8a659a0d49a0a731cb9f433c119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37502def0a1a0d7b4047db4f19e11172"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a37502def0a1a0d7b4047db4f19e11172">tkl_md5_update_ret</a> (TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</td></tr>
+<tr class="memdesc:a37502def0a1a0d7b4047db4f19e11172"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing md5 checksum calculation.  <a href="../../db/d64/tkl__hash_8h.html#a37502def0a1a0d7b4047db4f19e11172">更多...</a><br /></td></tr>
+<tr class="separator:a37502def0a1a0d7b4047db4f19e11172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede421f37504968f83653356685b29b4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#aede421f37504968f83653356685b29b4">tkl_sha1_create_init</a> (TKL_HASH_HANDLE *ctx)</td></tr>
+<tr class="memdesc:aede421f37504968f83653356685b29b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Create&amp;initializes a sha1 context.  <a href="../../db/d64/tkl__hash_8h.html#aede421f37504968f83653356685b29b4">更多...</a><br /></td></tr>
+<tr class="separator:aede421f37504968f83653356685b29b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27b5b7fa122bfdab10c30c0c3e38662"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#ab27b5b7fa122bfdab10c30c0c3e38662">tkl_sha1_finish_ret</a> (TKL_HASH_HANDLE ctx, UINT8_T output[20])</td></tr>
+<tr class="memdesc:ab27b5b7fa122bfdab10c30c0c3e38662"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finishes the sha1 operation, and writes the result to the output buffer.  <a href="../../db/d64/tkl__hash_8h.html#ab27b5b7fa122bfdab10c30c0c3e38662">更多...</a><br /></td></tr>
+<tr class="separator:ab27b5b7fa122bfdab10c30c0c3e38662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acead611e809906c4d137eb8eddf38520"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#acead611e809906c4d137eb8eddf38520">tkl_sha1_free</a> (TKL_HASH_HANDLE ctx)</td></tr>
+<tr class="memdesc:acead611e809906c4d137eb8eddf38520"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears a sha1 context.  <a href="../../db/d64/tkl__hash_8h.html#acead611e809906c4d137eb8eddf38520">更多...</a><br /></td></tr>
+<tr class="separator:acead611e809906c4d137eb8eddf38520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3674c751a17a13b4110c1f0faf90f7f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#aa3674c751a17a13b4110c1f0faf90f7f">tkl_sha1_starts_ret</a> (TKL_HASH_HANDLE ctx)</td></tr>
+<tr class="memdesc:aa3674c751a17a13b4110c1f0faf90f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a sha224 or sha1 checksum calculation.  <a href="../../db/d64/tkl__hash_8h.html#aa3674c751a17a13b4110c1f0faf90f7f">更多...</a><br /></td></tr>
+<tr class="separator:aa3674c751a17a13b4110c1f0faf90f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c914970cedc52bcaeff708f34b39a1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a78c914970cedc52bcaeff708f34b39a1">tkl_sha1_update_ret</a> (TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</td></tr>
+<tr class="memdesc:a78c914970cedc52bcaeff708f34b39a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing sha1 checksum calculation.  <a href="../../db/d64/tkl__hash_8h.html#a78c914970cedc52bcaeff708f34b39a1">更多...</a><br /></td></tr>
+<tr class="separator:a78c914970cedc52bcaeff708f34b39a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a63ab212f9e9e8bb803fe4f14433d59"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a0a63ab212f9e9e8bb803fe4f14433d59">tkl_sha256_create_init</a> (TKL_HASH_HANDLE *ctx)</td></tr>
+<tr class="memdesc:a0a63ab212f9e9e8bb803fe4f14433d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Create&amp;initializes a sha256 context.  <a href="../../db/d64/tkl__hash_8h.html#a0a63ab212f9e9e8bb803fe4f14433d59">更多...</a><br /></td></tr>
+<tr class="separator:a0a63ab212f9e9e8bb803fe4f14433d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a6c1a92a9b8fb512f98855a6481c36"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#ac6a6c1a92a9b8fb512f98855a6481c36">tkl_sha256_finish_ret</a> (TKL_HASH_HANDLE ctx, UINT8_T output[32])</td></tr>
+<tr class="memdesc:ac6a6c1a92a9b8fb512f98855a6481c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finishes the sha256 operation, and writes the result to the output buffer.  <a href="../../db/d64/tkl__hash_8h.html#ac6a6c1a92a9b8fb512f98855a6481c36">更多...</a><br /></td></tr>
+<tr class="separator:ac6a6c1a92a9b8fb512f98855a6481c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f3e3ac3773dbc250b8a2a8aab88f60"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#ae5f3e3ac3773dbc250b8a2a8aab88f60">tkl_sha256_free</a> (TKL_HASH_HANDLE ctx)</td></tr>
+<tr class="memdesc:ae5f3e3ac3773dbc250b8a2a8aab88f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears a sha256 context.  <a href="../../db/d64/tkl__hash_8h.html#ae5f3e3ac3773dbc250b8a2a8aab88f60">更多...</a><br /></td></tr>
+<tr class="separator:ae5f3e3ac3773dbc250b8a2a8aab88f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b518361f57ea2cac4b7a1f8a680105"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#a96b518361f57ea2cac4b7a1f8a680105">tkl_sha256_starts_ret</a> (TKL_HASH_HANDLE ctx, INT32_T is224)</td></tr>
+<tr class="memdesc:a96b518361f57ea2cac4b7a1f8a680105"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a sha224 or sha256 checksum calculation.  <a href="../../db/d64/tkl__hash_8h.html#a96b518361f57ea2cac4b7a1f8a680105">更多...</a><br /></td></tr>
+<tr class="separator:a96b518361f57ea2cac4b7a1f8a680105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfae81fcb9e8d5e19c8f742821fb0753"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/tkl__hash_8h.html#acfae81fcb9e8d5e19c8f742821fb0753">tkl_sha256_update_ret</a> (TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</td></tr>
+<tr class="memdesc:acfae81fcb9e8d5e19c8f742821fb0753"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing sha256 checksum calculation.  <a href="../../db/d64/tkl__hash_8h.html#acfae81fcb9e8d5e19c8f742821fb0753">更多...</a><br /></td></tr>
+<tr class="separator:acfae81fcb9e8d5e19c8f742821fb0753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the hash api provide by OS </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-04-22</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a0d60c277fe7e78877b31b80f70c5a4b9" name="a0d60c277fe7e78877b31b80f70c5a4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d60c277fe7e78877b31b80f70c5a4b9">&#9670;&nbsp;</a></span>tkl_md5_create_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_md5_create_init </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Create&amp;initializes a md5 context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctx</td><td>md5 handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to create and init md5.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a800490d7e122592a6ad4aaa93cdb3569" name="a800490d7e122592a6ad4aaa93cdb3569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800490d7e122592a6ad4aaa93cdb3569">&#9670;&nbsp;</a></span>tkl_md5_finish_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_md5_finish_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>output</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finishes the md5 operation, and writes the result to the output buffer. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>The sha224 or md5 checksum result. This must be a writable buffer of length <code>16</code> Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to out md5 result.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5f536711665bb7462c37888c2ee6ae50" name="a5f536711665bb7462c37888c2ee6ae50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f536711665bb7462c37888c2ee6ae50">&#9670;&nbsp;</a></span>tkl_md5_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_md5_free </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function clears a md5 context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>md5 handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to release md5.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a77d5e8a659a0d49a0a731cb9f433c119" name="a77d5e8a659a0d49a0a731cb9f433c119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d5e8a659a0d49a0a731cb9f433c119">&#9670;&nbsp;</a></span>tkl_md5_starts_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_md5_starts_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function starts a md5 checksum calculation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to start md5.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a37502def0a1a0d7b4047db4f19e11172" name="a37502def0a1a0d7b4047db4f19e11172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37502def0a1a0d7b4047db4f19e11172">&#9670;&nbsp;</a></span>tkl_md5_update_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_md5_update_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT8_T *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ilen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function feeds an input buffer into an ongoing md5 checksum calculation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>The buffer holding the data. This must be a readable buffer of length <code>ilen</code> Bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ilen</td><td>The length of the input data in Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to update md5.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aede421f37504968f83653356685b29b4" name="aede421f37504968f83653356685b29b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede421f37504968f83653356685b29b4">&#9670;&nbsp;</a></span>tkl_sha1_create_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha1_create_init </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Create&amp;initializes a sha1 context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctx</td><td>sha1 handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to create and init sha1.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab27b5b7fa122bfdab10c30c0c3e38662" name="ab27b5b7fa122bfdab10c30c0c3e38662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27b5b7fa122bfdab10c30c0c3e38662">&#9670;&nbsp;</a></span>tkl_sha1_finish_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha1_finish_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>output</em>[20]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finishes the sha1 operation, and writes the result to the output buffer. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>The sha224 or sha1 checksum result. This must be a writable buffer of length <code>20</code> Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to out sha1 result.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acead611e809906c4d137eb8eddf38520" name="acead611e809906c4d137eb8eddf38520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acead611e809906c4d137eb8eddf38520">&#9670;&nbsp;</a></span>tkl_sha1_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha1_free </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function clears a sha1 context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>sha1 handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to release sha1.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa3674c751a17a13b4110c1f0faf90f7f" name="aa3674c751a17a13b4110c1f0faf90f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3674c751a17a13b4110c1f0faf90f7f">&#9670;&nbsp;</a></span>tkl_sha1_starts_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha1_starts_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function starts a sha224 or sha1 checksum calculation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to start sha1.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a78c914970cedc52bcaeff708f34b39a1" name="a78c914970cedc52bcaeff708f34b39a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c914970cedc52bcaeff708f34b39a1">&#9670;&nbsp;</a></span>tkl_sha1_update_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha1_update_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT8_T *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ilen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function feeds an input buffer into an ongoing sha1 checksum calculation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>The buffer holding the data. This must be a readable buffer of length <code>ilen</code> Bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ilen</td><td>The length of the input data in Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to update sha1.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0a63ab212f9e9e8bb803fe4f14433d59" name="a0a63ab212f9e9e8bb803fe4f14433d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a63ab212f9e9e8bb803fe4f14433d59">&#9670;&nbsp;</a></span>tkl_sha256_create_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha256_create_init </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Create&amp;initializes a sha256 context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctx</td><td>sha256 handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to create and init sha256.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac6a6c1a92a9b8fb512f98855a6481c36" name="ac6a6c1a92a9b8fb512f98855a6481c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a6c1a92a9b8fb512f98855a6481c36">&#9670;&nbsp;</a></span>tkl_sha256_finish_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha256_finish_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>output</em>[32]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function finishes the sha256 operation, and writes the result to the output buffer. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>The sha224 or sha256 checksum result. This must be a writable buffer of length <code>32</code> Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to out sha256 result.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae5f3e3ac3773dbc250b8a2a8aab88f60" name="ae5f3e3ac3773dbc250b8a2a8aab88f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f3e3ac3773dbc250b8a2a8aab88f60">&#9670;&nbsp;</a></span>tkl_sha256_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha256_free </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function clears a sha256 context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>sha256 handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to release sha256.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a96b518361f57ea2cac4b7a1f8a680105" name="a96b518361f57ea2cac4b7a1f8a680105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b518361f57ea2cac4b7a1f8a680105">&#9670;&nbsp;</a></span>tkl_sha256_starts_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha256_starts_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT32_T&#160;</td>
+          <td class="paramname"><em>is224</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function starts a sha224 or sha256 checksum calculation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is224</td><td>This determines which function to use. This must be either <code>0</code> for sha256, or <code>1</code> for sha224.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to start sha256 or sha224.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acfae81fcb9e8d5e19c8f742821fb0753" name="acfae81fcb9e8d5e19c8f742821fb0753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfae81fcb9e8d5e19c8f742821fb0753">&#9670;&nbsp;</a></span>tkl_sha256_update_ret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_sha256_update_ret </td>
+          <td>(</td>
+          <td class="paramtype">TKL_HASH_HANDLE&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT8_T *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ilen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function feeds an input buffer into an ongoing sha256 checksum calculation. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>The context to use. This must be initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>The buffer holding the data. This must be a readable buffer of length <code>ilen</code> Bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ilen</td><td>The length of the input data in Bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>This API is used to update sha256 or sha224.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

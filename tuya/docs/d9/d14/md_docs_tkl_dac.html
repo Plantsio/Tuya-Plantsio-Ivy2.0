@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: DAC 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">DAC 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md210"></a>
+简要说明</h1>
+<p >DAC（Digital to analog converter）即数字模拟转换器，它可以将数字信号转换为模拟信号。它的功能与ADC相反。</p>
+<p >在常见的数字信号系统中，大部分传感器信号被转化成电压信号，而 ADC 把电压模拟信号转换成易于计算机存储、处理的数字编码，由计算机处理完成后，再由 DAC 输出电压模拟信号，该电压模拟信号常常用来驱动某些执行器件，使人类易于感知。如音频信号的采集及还原就是这样一个过程。</p>
+<h1><a class="anchor" id="autotoc_md211"></a>
+Api描述</h1>
+<h3><a class="anchor" id="autotoc_md212"></a>
+tkl_dac_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_dac_init(TUYA_DAC_NUM_E port_num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>通过端口号初始化对应的dac实例，返回初始化结果 。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li>port_num: 端口号</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md213"></a>
+tkl_dac_deinit</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_dac_deinit(TUYA_DAC_NUM_E port_num);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>dac实例反初始化。该接口会停止dac。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li>port_num: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md214"></a>
+tkl_dac_controller_config</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_dac_controller_config(TUYA_DAC_NUM_E port_num, TUYA_DAC_CMD_E cmd, VOID * argu);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>配置相应的dac设备。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li>port_num: 端口号。</li>
+<li><p class="startli">cmd: 命令字</p>
+<p class="startli">**TUYA_DAC_CMD_E**：</p>
+</li>
+</ul>
+</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">名字   </th><th class="markdownTableHeadNone">含义    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TUYA_DAC_WRITE_FIFO   </td><td class="markdownTableBodyNone">设置DAC的fifo数据    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">TUYA_DAC_SET_BASE_CFG   </td><td class="markdownTableBodyNone">设置DAC的基本配置   </td></tr>
+</table>
+<ul>
+<li>argu：参数 可为下面的两个结构体</li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span>{   </div>
+<div class="line">  UINT8_T *data;       <span class="comment">//data</span></div>
+<div class="line">  UINT32_T len;        <span class="comment">// data length</span></div>
+<div class="line">}<a class="code hl_struct" href="../../d3/dfa/structTUYA__DAC__DATA__T.html">TUYA_DAC_DATA_T</a>;</div>
+<div class="ttc" id="astructTUYA__DAC__DATA__T_html"><div class="ttname"><a href="../../d3/dfa/structTUYA__DAC__DATA__T.html">TUYA_DAC_DATA_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:337</div></div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line">    <a class="code hl_union" href="../../d2/dcb/unionTUYA__AD__DA__CH__LIST__U.html">TUYA_AD_DA_CH_LIST_U</a>  ch_list;       <span class="comment">// dac channel list</span></div>
+<div class="line">    UINT8_T  ch_nums;       <span class="comment">// dac channel number</span></div>
+<div class="line">    UINT8_T  width;         <span class="comment">// output width</span></div>
+<div class="line">    UINT32_T freq;          <span class="comment">// convert freq</span></div>
+<div class="line">} <a class="code hl_struct" href="../../de/d28/structTUYA__DAC__BASE__CFG__T.html">TUYA_DAC_BASE_CFG_T</a>;</div>
+<div class="ttc" id="astructTUYA__DAC__BASE__CFG__T_html"><div class="ttname"><a href="../../de/d28/structTUYA__DAC__BASE__CFG__T.html">TUYA_DAC_BASE_CFG_T</a></div><div class="ttdoc">dac config //xbf</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:330</div></div>
+<div class="ttc" id="aunionTUYA__AD__DA__CH__LIST__U_html"><div class="ttname"><a href="../../d2/dcb/unionTUYA__AD__DA__CH__LIST__U.html">TUYA_AD_DA_CH_LIST_U</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:294</div></div>
+</div><!-- fragment --><ul>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md215"></a>
+tkl_dac_base_cfg_get</h3>
+<div class="fragment"><div class="line">OPERATE_RET  tkl_dac_base_cfg_get (TUYA_DAC_NUM_E port_num,TUYA_DAC_BASE_CFG_T *cfg);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>获取相应DAC的基本配置</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port_num</code>: 端口号。</li>
+<li><p class="startli"><code>cfg</code>：dac基本配置结构体</p>
+<p class="startli">```c typedef struct { <a class="el" href="../../d2/dcb/unionTUYA__AD__DA__CH__LIST__U.html">TUYA_AD_DA_CH_LIST_U</a> ch_list; // dac channel list UINT8_T ch_nums; // dac channel number UINT8_T width; // output width UINT32_T freq; // convert freq } <a class="el" href="../../de/d28/structTUYA__DAC__BASE__CFG__T.html" title="dac config //xbf">TUYA_DAC_BASE_CFG_T</a>; </p><div class="fragment"><div class="line">- 返回值:</div>
+<div class="line">  </div>
+<div class="line">  - OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</div>
+<div class="line"> </div>
+<div class="line">### tkl_dac_start</div>
+</div><!-- fragment --><p> OPERATE_RET tkl_dac_start(TUYA_DAC_NUM_E port_num); </p><div class="fragment"><div class="line">- 功能描述:</div>
+<div class="line">  - 启动相应的DAC 开始转换</div>
+<div class="line">- 参数:</div>
+<div class="line">  - `port_num`: 端口号</div>
+<div class="line">- 返回值:</div>
+<div class="line">  - OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</div>
+<div class="line"> </div>
+<div class="line">### tkl_dac_stop</div>
+</div><!-- fragment --><p> OPERATE_RET tkl_dac_stop(TUYA_DAC_NUM_E port_num); </p><div class="fragment"><div class="line">- 功能描述:</div>
+<div class="line">  - 停止相应的DAC </div>
+<div class="line">- 参数:</div>
+<div class="line">  - `port_num`: 端口号。</div>
+<div class="line">- 返回值:</div>
+<div class="line">  - 错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</div>
+<div class="line"> </div>
+<div class="line">### tkl_dac_fifo_reset</div>
+</div><!-- fragment --><p> OPERATE_RET tkl_dac_fifo_reset (TUYA_DAC_NUM_E port_num); </p><div class="fragment"><div class="line">- 功能描述:相应的DAC的FIFO 重置</div>
+<div class="line">- 参数:</div>
+<div class="line">  - `port_num`: 端口号。</div>
+<div class="line">- 返回值:</div>
+<div class="line">  - 错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h定义部分。</div>
+<div class="line"> </div>
+<div class="line"># 示例</div>
+<div class="line"> </div>
+<div class="line">## 1.dac示例一</div>
+<div class="line"> </div>
+<div class="line">```c</div>
+<div class="line">/*初始化第0个dac外设*/</div>
+<div class="line">tkl_dac_init(0);</div>
+<div class="line"> </div>
+<div class="line">/*配置第0个DAC的基本配置*/</div>
+<div class="line">TUYA_DAC_BASE_CFG_T dac_base_cfg;</div>
+<div class="line"> </div>
+<div class="line">dac_base_cfg.freq = 8000;  /*DAC的转换速度为1秒8000次*/</div>
+<div class="line">dac_base_cfg.width = 16;   /*DAC的精度为16*/</div>
+<div class="line">dac_base_cfg.ch_nums = 1;  /*dac为单通道输出  端口号为2（chs_cfg = 2）*/</div>
+<div class="line">dac_base_cfg.ch_list.bits.ch_2 = 1;</div>
+<div class="line"> </div>
+<div class="line">tkl_dac_controller_config(0,TUYA_DAC_SET_BASE_CFG, &amp;dac_base_cfg);</div>
+<div class="line"> </div>
+<div class="line">/*写DAC的FIFO*/</div>
+<div class="line">TUYA_DAC_DATA_T data_fifo;</div>
+<div class="line">UINT8_T dac_data[1024];</div>
+<div class="line"> </div>
+<div class="line">data_fifo.len = sizeof(dac_data);</div>
+<div class="line">data_fifo.data = dac_data;</div>
+<div class="line">tkl_dac_controller_config(0,TUYA_DAC_WRITE_FIFO, &amp;data_fifo);</div>
+<div class="line"> </div>
+<div class="line">/*启动第0个dac开始转换*/</div>
+<div class="line">tkl_dac_start(0);</div>
+<div class="line"> </div>
+<div class="line">/*持续的往DAC的FIFO 写数据 让DAC转换*/</div>
+<div class="line">while(1)</div>
+<div class="line">{</div>
+<div class="line">    data_fifo.len = sizeof(dac_data);</div>
+<div class="line">    data_fifo.data = dac_data;</div>
+<div class="line">    tkl_dac_controller_config(0,TUYA_DAC_WRITE_FIFO, &amp;data_fifo);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">/*停止第0个dac开始转换*/</div>
+<div class="line">tkl_dac_stop(0);</div>
+<div class="line"> </div>
+<div class="line">/*deinit 第0个DAC*/</div>
+<div class="line">tkl_dac_deinit(0);</div>
+</div><!-- fragment --> </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

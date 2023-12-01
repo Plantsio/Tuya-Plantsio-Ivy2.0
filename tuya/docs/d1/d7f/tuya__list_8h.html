@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_list.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_list.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya bidirection list module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_list.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d60/tuya__list_8h__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__list_8h" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__list_8h" id="ainclude_2adapter_2utilities_2include_2tuya__list_8h">
+<area shape="rect" title="tuya bidirection list module" alt="" coords="355,5,531,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dac/tuya__list_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__list_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__list_8hdep" id="ainclude_2adapter_2utilities_2include_2tuya__list_8hdep">
+<area shape="rect" title="tuya bidirection list module" alt="" coords="509,5,685,47"/>
+<area shape="rect" href="../../de/d05/tkl__pm_8h_source.html" title=" " alt="" coords="135,109,283,151"/>
+<area shape="rect" href="../../dc/d9c/tuya__devos__health_8h.html" title="Tuya Device OS设备健康监控" alt="" coords="315,102,493,158"/>
+<area shape="rect" href="../../dc/d51/log__seq_8h.html" title="provide log sequence api" alt="" coords="1010,102,1187,158"/>
+<area shape="rect" href="../../d1/d86/netcfg__module_8h.html" title="tuya netcfg module" alt="" coords="1211,102,1386,158"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="518,95,677,165"/>
+<area shape="rect" href="../../d9/d42/tkl__init__pm_8h.html" title="Common process &#45; tkl init cellular description" alt="" coords="28,221,191,262"/>
+<area shape="rect" href="../../dc/d26/http__inf_8h.html" title="Wrapper of HTTP request and response" alt="" coords="1462,221,1653,262"/>
+<area shape="rect" href="../../dc/d12/log__seq__http_8h_source.html" title=" " alt="" coords="1677,213,1854,269"/>
+<area shape="rect" href="../../d7/d73/log__seq__mqtt_8h_source.html" title=" " alt="" coords="799,213,979,269"/>
+<area shape="rect" href="../../d4/d8e/log__seq__netcfg_8h.html" title="provide netcfg log sequence" alt="" coords="1003,213,1194,269"/>
+<area shape="rect" href="../../de/df8/log__seq__timer__task_8h.html" title="provide timer task log sequence" alt="" coords="1219,213,1437,269"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="1415,317,1593,373"/>
+<area shape="rect" href="../../d6/da6/base__event_8h.html" title="tuya simple event module" alt="" coords="429,213,582,269"/>
+<area shape="rect" href="../../d4/d62/gw__intf_8h.html" title="Facility of DevOS definitions" alt="" coords="607,213,775,269"/>
+<area shape="rect" href="../../d2/dac/tuya__svc__upgrade__http_8h.html" title="TUYA OTA service" alt="" coords="215,213,404,269"/>
+<area shape="rect" href="../../df/d34/tuya__svc__netmgr_8h.html" title="TUYA network manager service" alt="" coords="243,317,397,373"/>
+<area shape="rect" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html" title="TUYA mqtt direct service" alt="" coords="5,317,219,373"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="1235,421,1413,477"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="374,525,551,581"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="357,421,569,477"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="1243,525,1405,581"/>
+<area shape="rect" href="../../d1/d49/tuya__iot__wifi__api_8h.html" title=" " alt="" coords="421,317,577,373"/>
+<area shape="rect" href="../../da/d19/tuya__devos__utils_8h.html" title="Utilities of DevOS" alt="" coords="601,317,780,373"/>
+<area shape="rect" href="../../de/d76/ws__db__gw_8h.html" title="TUYA storage service" alt="" coords="805,317,971,373"/>
+<area shape="rect" href="../../df/d69/smart__frame_8h.html" title="Common process &#45; Initialization" alt="" coords="995,317,1159,373"/>
+</map>
+</div>
+</div>
+<p><a href="../../d1/d7f/tuya__list_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d4e/structtuya__list__head.html">tuya_list_head</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">bidirection list head  <a href="../../dd/d4e/structtuya__list__head.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a7e25fb1290ede86511414516eefa4ccf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a7e25fb1290ede86511414516eefa4ccf">DeleteNode</a>(pDelNode,  list_name)</td></tr>
+<tr class="memdesc:a7e25fb1290ede86511414516eefa4ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the object from the bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a7e25fb1290ede86511414516eefa4ccf">更多...</a><br /></td></tr>
+<tr class="separator:a7e25fb1290ede86511414516eefa4ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa020e89281038e5917606a606e4da676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#aa020e89281038e5917606a606e4da676">DeleteNodeAndFree</a>(pDelNode,  list_name)</td></tr>
+<tr class="memdesc:aa020e89281038e5917606a606e4da676"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the object from bidirection list and free the memory  <a href="../../d1/d7f/tuya__list_8h.html#aa020e89281038e5917606a606e4da676">更多...</a><br /></td></tr>
+<tr class="separator:aa020e89281038e5917606a606e4da676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518ca94e4bdd2105224f83b8ccbf967d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a518ca94e4bdd2105224f83b8ccbf967d">FREE_LIST</a>(type,  p,  list_name)</td></tr>
+<tr class="memdesc:a518ca94e4bdd2105224f83b8ccbf967d"><td class="mdescLeft">&#160;</td><td class="mdescRight">free all objects in the bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a518ca94e4bdd2105224f83b8ccbf967d">更多...</a><br /></td></tr>
+<tr class="separator:a518ca94e4bdd2105224f83b8ccbf967d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b9715211b67e762d7baf1356c90c61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a67b9715211b67e762d7baf1356c90c61">FreeNode</a>(pDelNode)</td></tr>
+<tr class="memdesc:a67b9715211b67e762d7baf1356c90c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the object in bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a67b9715211b67e762d7baf1356c90c61">更多...</a><br /></td></tr>
+<tr class="separator:a67b9715211b67e762d7baf1356c90c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b81ad3b7f2331ccebd519602aec1a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a23b81ad3b7f2331ccebd519602aec1a7">GetFirstNode</a>(type,  p,  list_name,  pGetNode)</td></tr>
+<tr class="memdesc:a23b81ad3b7f2331ccebd519602aec1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the first object of the bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a23b81ad3b7f2331ccebd519602aec1a7">更多...</a><br /></td></tr>
+<tr class="separator:a23b81ad3b7f2331ccebd519602aec1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffe9d28c36d7b018a9cfae33bae45c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a0ffe9d28c36d7b018a9cfae33bae45c0">INIT_LIST_HEAD</a>(ptr)</td></tr>
+<tr class="memdesc:a0ffe9d28c36d7b018a9cfae33bae45c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">bidirection list initialization  <a href="../../d1/d7f/tuya__list_8h.html#a0ffe9d28c36d7b018a9cfae33bae45c0">更多...</a><br /></td></tr>
+<tr class="separator:a0ffe9d28c36d7b018a9cfae33bae45c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f0e72af970a790b60a740af8c9ecd0"><td class="memItemLeft" align="right" valign="top"><a id="a42f0e72af970a790b60a740af8c9ecd0" name="a42f0e72af970a790b60a740af8c9ecd0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIST_HEAD</b>(name)&#160;&#160;&#160;<a class="el" href="../../d1/d7f/tuya__list_8h.html#a184282a62181299b10a805be1e6c8545">LIST_HEAD</a> name = <a class="el" href="../../d1/d7f/tuya__list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(name)</td></tr>
+<tr class="separator:a42f0e72af970a790b60a740af8c9ecd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4642d4b7df28478bb762fe43c85b5c63"><td class="memItemLeft" align="right" valign="top"><a id="a4642d4b7df28478bb762fe43c85b5c63" name="a4642d4b7df28478bb762fe43c85b5c63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIST_HEAD_INIT</b>(name)&#160;&#160;&#160;{ &amp;(name), &amp;(name) }</td></tr>
+<tr class="memdesc:a4642d4b7df28478bb762fe43c85b5c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">define and initialize bidirection list head <br /></td></tr>
+<tr class="separator:a4642d4b7df28478bb762fe43c85b5c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ce7109bacc55df0c2ee5f3c235468f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a24ce7109bacc55df0c2ee5f3c235468f">NEW_LIST_NODE</a>(type,  node)</td></tr>
+<tr class="memdesc:a24ce7109bacc55df0c2ee5f3c235468f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a new bidirection list, will call malloc  <a href="../../d1/d7f/tuya__list_8h.html#a24ce7109bacc55df0c2ee5f3c235468f">更多...</a><br /></td></tr>
+<tr class="separator:a24ce7109bacc55df0c2ee5f3c235468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83434a9ca28333ce9dbff572d77aad54"><td class="memItemLeft" align="right" valign="top"><a id="a83434a9ca28333ce9dbff572d77aad54" name="a83434a9ca28333ce9dbff572d77aad54"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_list_entry</b>(ptr,  type,  member)&#160;&#160;&#160;((type *)((char *)(ptr)-(size_t)(&amp;((type *)0)-&gt;member)))</td></tr>
+<tr class="memdesc:a83434a9ca28333ce9dbff572d77aad54"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast the bidirection list node to object <br /></td></tr>
+<tr class="separator:a83434a9ca28333ce9dbff572d77aad54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9d2f6f17a75b759a28616326a61c4d"><td class="memItemLeft" align="right" valign="top"><a id="a7b9d2f6f17a75b759a28616326a61c4d" name="a7b9d2f6f17a75b759a28616326a61c4d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_list_for_each</b>(pos,  head)&#160;&#160;&#160;for (pos = (head)-&gt;next; (pos != NULL) &amp;&amp; (pos != (head)); pos = pos-&gt;next)</td></tr>
+<tr class="memdesc:a7b9d2f6f17a75b759a28616326a61c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the bidirection list, cannot change the bidiretion list during traverse <br /></td></tr>
+<tr class="separator:a7b9d2f6f17a75b759a28616326a61c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae5c7e2f020421bb7074b2421facc75"><td class="memItemLeft" align="right" valign="top"><a id="afae5c7e2f020421bb7074b2421facc75" name="afae5c7e2f020421bb7074b2421facc75"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_list_for_each_safe</b>(p,  n,  head)&#160;&#160;&#160;for (p = (head)-&gt;next; n = p-&gt;next, p != (head); p = n)</td></tr>
+<tr class="memdesc:afae5c7e2f020421bb7074b2421facc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the bidirection list, can change the bidiretion list during traverse <br /></td></tr>
+<tr class="separator:afae5c7e2f020421bb7074b2421facc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a184282a62181299b10a805be1e6c8545"><td class="memItemLeft" align="right" valign="top"><a id="a184282a62181299b10a805be1e6c8545" name="a184282a62181299b10a805be1e6c8545"></a>
+typedef struct <a class="el" href="../../dd/d4e/structtuya__list__head.html">tuya_list_head</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LIST_HEAD</b></td></tr>
+<tr class="memdesc:a184282a62181299b10a805be1e6c8545"><td class="mdescLeft">&#160;</td><td class="mdescRight">bidirection list head <br /></td></tr>
+<tr class="separator:a184282a62181299b10a805be1e6c8545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bac374e0080b10be23b909abce18df9"><td class="memItemLeft" align="right" valign="top"><a id="a6bac374e0080b10be23b909abce18df9" name="a6bac374e0080b10be23b909abce18df9"></a>
+typedef struct <a class="el" href="../../dd/d4e/structtuya__list__head.html">tuya_list_head</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>P_LIST_HEAD</b></td></tr>
+<tr class="separator:a6bac374e0080b10be23b909abce18df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9baea178d65648f09702d5f2a3405990"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a9baea178d65648f09702d5f2a3405990">tuya_list_add</a> (const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pNew, const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead)</td></tr>
+<tr class="memdesc:a9baea178d65648f09702d5f2a3405990"><td class="mdescLeft">&#160;</td><td class="mdescRight">add new list node into bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a9baea178d65648f09702d5f2a3405990">更多...</a><br /></td></tr>
+<tr class="separator:a9baea178d65648f09702d5f2a3405990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79faf52c03b003c55feded698d015841"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a79faf52c03b003c55feded698d015841">tuya_list_add_tail</a> (const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pNew, const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead)</td></tr>
+<tr class="memdesc:a79faf52c03b003c55feded698d015841"><td class="mdescLeft">&#160;</td><td class="mdescRight">add new list node to the tail of the bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a79faf52c03b003c55feded698d015841">更多...</a><br /></td></tr>
+<tr class="separator:a79faf52c03b003c55feded698d015841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f2084debc2ba29a55adef9f4d9219a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a30f2084debc2ba29a55adef9f4d9219a">tuya_list_del</a> (const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pEntry)</td></tr>
+<tr class="memdesc:a30f2084debc2ba29a55adef9f4d9219a"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a list node from bidirection list  <a href="../../d1/d7f/tuya__list_8h.html#a30f2084debc2ba29a55adef9f4d9219a">更多...</a><br /></td></tr>
+<tr class="separator:a30f2084debc2ba29a55adef9f4d9219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae792a27b5b73eaa006b83f6f55cee16e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#ae792a27b5b73eaa006b83f6f55cee16e">tuya_list_del_init</a> (const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pEntry)</td></tr>
+<tr class="memdesc:ae792a27b5b73eaa006b83f6f55cee16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a list node from bidirection list and initialize it  <a href="../../d1/d7f/tuya__list_8h.html#ae792a27b5b73eaa006b83f6f55cee16e">更多...</a><br /></td></tr>
+<tr class="separator:ae792a27b5b73eaa006b83f6f55cee16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1480c640a93d9f9d89c9da517455e0ba"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">tuya_list_empty</a> (const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead)</td></tr>
+<tr class="memdesc:a1480c640a93d9f9d89c9da517455e0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the bidirection list is empty  <a href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">更多...</a><br /></td></tr>
+<tr class="separator:a1480c640a93d9f9d89c9da517455e0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0c18291034484bc68176f19cb3b5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7f/tuya__list_8h.html#a7c0c18291034484bc68176f19cb3b5d1">tuya_list_splice</a> (const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pList, const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead)</td></tr>
+<tr class="memdesc:a7c0c18291034484bc68176f19cb3b5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">splice two dibrection list  <a href="../../d1/d7f/tuya__list_8h.html#a7c0c18291034484bc68176f19cb3b5d1">更多...</a><br /></td></tr>
+<tr class="separator:a7c0c18291034484bc68176f19cb3b5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya bidirection list module </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2025 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a7e25fb1290ede86511414516eefa4ccf" name="a7e25fb1290ede86511414516eefa4ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e25fb1290ede86511414516eefa4ccf">&#9670;&nbsp;</a></span>DeleteNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DeleteNode</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pDelNode, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list_name&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    tuya_list_del(&amp;(pDelNode-&gt;list_name));\</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>remove the object from the bidirection list </p>
+
+</div>
+</div>
+<a id="aa020e89281038e5917606a606e4da676" name="aa020e89281038e5917606a606e4da676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa020e89281038e5917606a606e4da676">&#9670;&nbsp;</a></span>DeleteNodeAndFree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DeleteNodeAndFree</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pDelNode, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list_name&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    tuya_list_del(&amp;(pDelNode-&gt;list_name));\</div>
+<div class="line">    tal_free(pDelNode);\</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>remove the object from bidirection list and free the memory </p>
+<dl class="section note"><dt>注解</dt><dd>the pDelNode must be the object pointer </dd></dl>
+
+</div>
+</div>
+<a id="a518ca94e4bdd2105224f83b8ccbf967d" name="a518ca94e4bdd2105224f83b8ccbf967d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518ca94e4bdd2105224f83b8ccbf967d">&#9670;&nbsp;</a></span>FREE_LIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FREE_LIST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list_name&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    type *posnode;\</div>
+<div class="line">    while(!<a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">tuya_list_empty</a>(&amp;(p)-&gt;list_name)) {\</div>
+<div class="line">    posnode = <a class="code hl_define" href="../../d1/d7f/tuya__list_8h.html#a83434a9ca28333ce9dbff572d77aad54">tuya_list_entry</a>((&amp;(p)-&gt;list_name)-&gt;next, type, list_name);\</div>
+<div class="line">    tuya_list_del((&amp;(p)-&gt;list_name)-&gt;next);\</div>
+<div class="line">    tal_free(posnode);\</div>
+<div class="line">    }\</div>
+<div class="line">}</div>
+<div class="ttc" id="atuya__list_8h_html_a1480c640a93d9f9d89c9da517455e0ba"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">tuya_list_empty</a></div><div class="ttdeci">INT_T tuya_list_empty(const P_LIST_HEAD pHead)</div><div class="ttdoc">check if the bidirection list is empty</div></div>
+<div class="ttc" id="atuya__list_8h_html_a83434a9ca28333ce9dbff572d77aad54"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a83434a9ca28333ce9dbff572d77aad54">tuya_list_entry</a></div><div class="ttdeci">#define tuya_list_entry(ptr, type, member)</div><div class="ttdoc">cast the bidirection list node to object</div><div class="ttdef"><b>Definition:</b> tuya_list.h:114</div></div>
+</div><!-- fragment -->
+<p>free all objects in the bidirection list </p>
+
+</div>
+</div>
+<a id="a67b9715211b67e762d7baf1356c90c61" name="a67b9715211b67e762d7baf1356c90c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b9715211b67e762d7baf1356c90c61">&#9670;&nbsp;</a></span>FreeNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FreeNode</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pDelNode</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    tal_free(pDelNode);\</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>free the object in bidirection list </p>
+
+</div>
+</div>
+<a id="a23b81ad3b7f2331ccebd519602aec1a7" name="a23b81ad3b7f2331ccebd519602aec1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b81ad3b7f2331ccebd519602aec1a7">&#9670;&nbsp;</a></span>GetFirstNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetFirstNode</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pGetNode&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    pGetNode = NULL;\</div>
+<div class="line">    while(!<a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">tuya_list_empty</a>(&amp;(p)-&gt;list_name)){\</div>
+<div class="line">    pGetNode = <a class="code hl_define" href="../../d1/d7f/tuya__list_8h.html#a83434a9ca28333ce9dbff572d77aad54">tuya_list_entry</a>((&amp;(p)-&gt;list_name)-&gt;next, type, list_name);\</div>
+<div class="line">    break;\</div>
+<div class="line">    }\</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>get the first object of the bidirection list </p>
+
+</div>
+</div>
+<a id="a0ffe9d28c36d7b018a9cfae33bae45c0" name="a0ffe9d28c36d7b018a9cfae33bae45c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ffe9d28c36d7b018a9cfae33bae45c0">&#9670;&nbsp;</a></span>INIT_LIST_HEAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INIT_LIST_HEAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
+<div class="line">(ptr)-&gt;next = (ptr); (ptr)-&gt;prev = (ptr); \</div>
+<div class="line">} <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+<p>bidirection list initialization </p>
+
+</div>
+</div>
+<a id="a24ce7109bacc55df0c2ee5f3c235468f" name="a24ce7109bacc55df0c2ee5f3c235468f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ce7109bacc55df0c2ee5f3c235468f">&#9670;&nbsp;</a></span>NEW_LIST_NODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_LIST_NODE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    node = (type *)<a class="code hl_function" href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a>(<span class="keyword">sizeof</span>(type));\</div>
+<div class="line">}</div>
+<div class="ttc" id="atal__memory_8h_html_a46e0bcc120599603d9dae091abc5a36d"><div class="ttname"><a href="../../d1/db6/tal__memory_8h.html#a46e0bcc120599603d9dae091abc5a36d">tal_malloc</a></div><div class="ttdeci">VOID_T * tal_malloc(SIZE_T size)</div><div class="ttdoc">Alloc memory of system</div></div>
+</div><!-- fragment -->
+<p>create a new bidirection list, will call malloc </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a9baea178d65648f09702d5f2a3405990" name="a9baea178d65648f09702d5f2a3405990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9baea178d65648f09702d5f2a3405990">&#9670;&nbsp;</a></span>tuya_list_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_list_add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pHead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add new list node into bidirection list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pNew</td><td>the new list node </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pHead</td><td>the bidirection list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a79faf52c03b003c55feded698d015841" name="a79faf52c03b003c55feded698d015841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79faf52c03b003c55feded698d015841">&#9670;&nbsp;</a></span>tuya_list_add_tail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_list_add_tail </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pHead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add new list node to the tail of the bidirection list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pNew</td><td>the new list node </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pHead</td><td>the bidirection list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a30f2084debc2ba29a55adef9f4d9219a" name="a30f2084debc2ba29a55adef9f4d9219a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f2084debc2ba29a55adef9f4d9219a">&#9670;&nbsp;</a></span>tuya_list_del()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_list_del </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pEntry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove a list node from bidirection list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pEntry</td><td>the list node need to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="ae792a27b5b73eaa006b83f6f55cee16e" name="ae792a27b5b73eaa006b83f6f55cee16e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae792a27b5b73eaa006b83f6f55cee16e">&#9670;&nbsp;</a></span>tuya_list_del_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_list_del_init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pEntry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove a list node from bidirection list and initialize it </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pEntry</td><td>the list node need to remove and initialize </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="a1480c640a93d9f9d89c9da517455e0ba" name="a1480c640a93d9f9d89c9da517455e0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1480c640a93d9f9d89c9da517455e0ba">&#9670;&nbsp;</a></span>tuya_list_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T tuya_list_empty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pHead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if the bidirection list is empty </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pHead</td><td>the bidirection list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 means empty, others means empty </dd></dl>
+
+</div>
+</div>
+<a id="a7c0c18291034484bc68176f19cb3b5d1" name="a7c0c18291034484bc68176f19cb3b5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0c18291034484bc68176f19cb3b5d1">&#9670;&nbsp;</a></span>tuya_list_splice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tuya_list_splice </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>&#160;</td>
+          <td class="paramname"><em>pHead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>splice two dibrection list </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pList</td><td>the bidirection list need to splice </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pHead</td><td>the bidirection list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

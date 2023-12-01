@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_rf_data_transceiver.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_rf_data_transceiver.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - raw data transceiver  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_rf_data_transceiver.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d69/tkl__rf__data__transceiver_8h__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tkl__rf__data__transceiver_8h" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tkl__rf__data__transceiver_8h" id="ainclude_2adapter_2zigbee_2include_2tkl__rf__data__transceiver_8h">
+<area shape="rect" title="Common process &#45; raw data transceiver" alt="" coords="323,5,562,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../db/d3c/tkl__rf__data__transceiver_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ae05d52c4bfb4d1227a50045bc874f3f4"><td class="memItemLeft" align="right" valign="top"><a id="ae05d52c4bfb4d1227a50045bc874f3f4" name="ae05d52c4bfb4d1227a50045bc874f3f4"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_RF_RECV_CB</b>) (UINT8_T *packet, UINT8_T lqi, INT8_T rssi)</td></tr>
+<tr class="separator:ae05d52c4bfb4d1227a50045bc874f3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7a862f03ee46c74e49b0ea563a38a2b8"><td class="memItemLeft" align="right" valign="top">UINT8_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a7a862f03ee46c74e49b0ea563a38a2b8">tkl_rf_channel_get</a> (VOID_T)</td></tr>
+<tr class="memdesc:a7a862f03ee46c74e49b0ea563a38a2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">RF raw data transmission channel get  <a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a7a862f03ee46c74e49b0ea563a38a2b8">更多...</a><br /></td></tr>
+<tr class="separator:a7a862f03ee46c74e49b0ea563a38a2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf08700a706dda4dd16123745c64ccc"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#accf08700a706dda4dd16123745c64ccc">tkl_rf_channel_set</a> (UINT8_T channel)</td></tr>
+<tr class="memdesc:accf08700a706dda4dd16123745c64ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">RF raw data transmission channel setting  <a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#accf08700a706dda4dd16123745c64ccc">更多...</a><br /></td></tr>
+<tr class="separator:accf08700a706dda4dd16123745c64ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031a955e7b0cda29beeb968aa2ac1757"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a031a955e7b0cda29beeb968aa2ac1757">tkl_rf_data_send</a> (UINT8_T *packet)</td></tr>
+<tr class="memdesc:a031a955e7b0cda29beeb968aa2ac1757"><td class="mdescLeft">&#160;</td><td class="mdescRight">RF raw data send  <a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a031a955e7b0cda29beeb968aa2ac1757">更多...</a><br /></td></tr>
+<tr class="separator:a031a955e7b0cda29beeb968aa2ac1757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9128bcadf5ef238fb2b00880f2c806"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#aeb9128bcadf5ef238fb2b00880f2c806">tkl_rf_transeiver_end</a> (VOID_T)</td></tr>
+<tr class="memdesc:aeb9128bcadf5ef238fb2b00880f2c806"><td class="mdescLeft">&#160;</td><td class="mdescRight">RF raw data transmission stop  <a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#aeb9128bcadf5ef238fb2b00880f2c806">更多...</a><br /></td></tr>
+<tr class="separator:aeb9128bcadf5ef238fb2b00880f2c806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b2c986ae10314fa8fd293939f95ee0"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad4b2c986ae10314fa8fd293939f95ee0">tkl_rf_transeiver_start</a> (TKL_RF_RECV_CB recv_cb)</td></tr>
+<tr class="memdesc:ad4b2c986ae10314fa8fd293939f95ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">RF raw data transmission start  <a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad4b2c986ae10314fa8fd293939f95ee0">更多...</a><br /></td></tr>
+<tr class="separator:ad4b2c986ae10314fa8fd293939f95ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76f14224a9e84a8f90a67ed72b03453"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad76f14224a9e84a8f90a67ed72b03453">tkl_rf_tx_power_set</a> (INT8_T power)</td></tr>
+<tr class="memdesc:ad76f14224a9e84a8f90a67ed72b03453"><td class="mdescLeft">&#160;</td><td class="mdescRight">RF raw data transmit power setting  <a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad76f14224a9e84a8f90a67ed72b03453">更多...</a><br /></td></tr>
+<tr class="separator:ad76f14224a9e84a8f90a67ed72b03453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - raw data transceiver </p>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-04-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2018-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a7a862f03ee46c74e49b0ea563a38a2b8" name="a7a862f03ee46c74e49b0ea563a38a2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a862f03ee46c74e49b0ea563a38a2b8">&#9670;&nbsp;</a></span>tkl_rf_channel_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT8_T tkl_rf_channel_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RF raw data transmission channel get </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>RF channel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>channel </dd></dl>
+
+</div>
+</div>
+<a id="accf08700a706dda4dd16123745c64ccc" name="accf08700a706dda4dd16123745c64ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf08700a706dda4dd16123745c64ccc">&#9670;&nbsp;</a></span>tkl_rf_channel_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_rf_channel_set </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RF raw data transmission channel setting </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>RF channel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: success FALSE: fail </dd></dl>
+
+</div>
+</div>
+<a id="a031a955e7b0cda29beeb968aa2ac1757" name="a031a955e7b0cda29beeb968aa2ac1757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031a955e7b0cda29beeb968aa2ac1757">&#9670;&nbsp;</a></span>tkl_rf_data_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_rf_data_send </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RF raw data send </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>point to data to be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: success FALSE: fail </dd></dl>
+
+</div>
+</div>
+<a id="aeb9128bcadf5ef238fb2b00880f2c806" name="aeb9128bcadf5ef238fb2b00880f2c806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9128bcadf5ef238fb2b00880f2c806">&#9670;&nbsp;</a></span>tkl_rf_transeiver_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_rf_transeiver_end </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RF raw data transmission stop </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: success FALSE: fail </dd></dl>
+
+</div>
+</div>
+<a id="ad4b2c986ae10314fa8fd293939f95ee0" name="ad4b2c986ae10314fa8fd293939f95ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b2c986ae10314fa8fd293939f95ee0">&#9670;&nbsp;</a></span>tkl_rf_transeiver_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_rf_transeiver_start </td>
+          <td>(</td>
+          <td class="paramtype">TKL_RF_RECV_CB&#160;</td>
+          <td class="paramname"><em>recv_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RF raw data transmission start </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv_cb</td><td>data receive callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: success FALSE: fail </dd></dl>
+
+</div>
+</div>
+<a id="ad76f14224a9e84a8f90a67ed72b03453" name="ad76f14224a9e84a8f90a67ed72b03453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76f14224a9e84a8f90a67ed72b03453">&#9670;&nbsp;</a></span>tkl_rf_tx_power_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T tkl_rf_tx_power_set </td>
+          <td>(</td>
+          <td class="paramtype">INT8_T&#160;</td>
+          <td class="paramname"><em>power</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RF raw data transmit power setting </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">power</td><td>RF power </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE: success FALSE: fail </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

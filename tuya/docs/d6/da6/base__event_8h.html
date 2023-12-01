@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/base_event/include/base_event.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e9a5613f4d6f2d8696a90439e9ab64e2.html">base_event</a></li><li class="navelem"><a class="el" href="../../dir_482c78aa4bca68a8ad1e004237944ba3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">base_event.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya simple event module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_iot_config.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d35/tuya__base__utilities_8h_source.html">tuya_base_utilities.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/dad/base__event__info_8h_source.html">base_event_info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dd7/tal__mutex_8h_source.html">tal_mutex.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+base_event.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dc9/base__event_8h__incl.png" border="0" usemap="#ainclude_2components_2base__event_2include_2base__event_8h" alt=""/></div>
+<map name="ainclude_2components_2base__event_2include_2base__event_8h" id="ainclude_2components_2base__event_2include_2base__event_8h">
+<area shape="rect" title="tuya simple event module" alt="" coords="1143,5,1297,61"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,408,139,435"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="825,109,983,136"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="1350,259,1450,285"/>
+<area shape="rect" href="../../d9/dad/base__event__info_8h.html" title="tuya simple event module" alt="" coords="1489,109,1631,136"/>
+<area shape="rect" href="../../d1/db6/tal__memory_8h.html" title="Common process &#45; adapter the memory api provide by OS" alt="" coords="513,259,623,285"/>
+<area shape="rect" href="../../d1/d82/cJSON_8h_source.html" title=" " alt="" coords="1490,184,1563,211"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="1475,259,1568,285"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="296,259,387,285"/>
+<area shape="rect" href="../../d0/d7d/tuya__smartpointer_8h.html" title="tuya reference data module" alt="" coords="742,184,895,211"/>
+<area shape="rect" href="../../d6/d5e/uni__queue_8h.html" title="tuya common queue module" alt="" coords="1263,184,1364,211"/>
+<area shape="rect" href="../../d6/d14/tuya__slist_8h.html" title="tuya sigle direciton list module" alt="" coords="647,259,745,285"/>
+<area shape="rect" href="../../d0/da4/tuya__hlist_8h.html" title="tuya hash list module" alt="" coords="1125,259,1224,285"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="919,184,1062,211"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="1138,184,1238,211"/>
+<area shape="rect" href="../../d2/d5e/uni__network_8h.html" title="Tuya iotdns module is the DNS service module provided by Tuya, which ensures that developers can prov..." alt="" coords="109,184,224,211"/>
+<area shape="rect" href="../../de/d25/mix__method_8h.html" title="tuya common api module" alt="" coords="345,184,461,211"/>
+<area shape="rect" href="../../de/de7/tuya__hashmap_8h.html" title="tuya hasmap module" alt="" coords="485,184,616,211"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="745,333,893,360"/>
+<area shape="rect" title=" " alt="" coords="976,408,1051,435"/>
+<area shape="rect" title=" " alt="" coords="1075,408,1146,435"/>
+<area shape="rect" title=" " alt="" coords="1484,408,1559,435"/>
+<area shape="rect" title=" " alt="" coords="515,408,586,435"/>
+<area shape="rect" title=" " alt="" coords="611,408,693,435"/>
+<area shape="rect" title=" " alt="" coords="718,408,789,435"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="813,408,952,435"/>
+<area shape="rect" href="../../da/dd9/tkl__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="769,259,869,285"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="995,259,1101,285"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="161,259,271,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d78/base__event_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2base__event_2include_2base__event_8hdep" alt=""/></div>
+<map name="ainclude_2components_2base__event_2include_2base__event_8hdep" id="ainclude_2components_2base__event_2include_2base__event_8hdep">
+<area shape="rect" title="tuya simple event module" alt="" coords="249,5,402,61"/>
+<area shape="rect" href="../../df/d34/tuya__svc__netmgr_8h.html" title="TUYA network manager service" alt="" coords="145,109,298,165"/>
+<area shape="rect" href="../../dc/dfa/tuya__svc__mqtt__direct_8h.html" title="TUYA mqtt direct service" alt="" coords="323,109,536,165"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="5,213,184,269"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="238,317,415,373"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="258,213,470,269"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="13,317,176,373"/>
+</map>
+</div>
+</div>
+<p><a href="../../d6/da6/base__event_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfb/structEVENT__MANAGE__T.html">EVENT_MANAGE_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the event manage node  <a href="../../d5/dfb/structEVENT__MANAGE__T.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a7f6998ac9f217123480d4c960664c415"><td class="memItemLeft" align="right" valign="top"><a id="a7f6998ac9f217123480d4c960664c415" name="a7f6998ac9f217123480d4c960664c415"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_DESC_MAX_LEN</b>&#160;&#160;&#160;(32)</td></tr>
+<tr class="memdesc:a7f6998ac9f217123480d4c960664c415"><td class="mdescLeft">&#160;</td><td class="mdescRight">max length of event description <br /></td></tr>
+<tr class="separator:a7f6998ac9f217123480d4c960664c415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec230a2665c656014a0d48466d4be28"><td class="memItemLeft" align="right" valign="top"><a id="acec230a2665c656014a0d48466d4be28" name="acec230a2665c656014a0d48466d4be28"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_NAME_MAX_LEN</b>&#160;&#160;&#160;(16)</td></tr>
+<tr class="memdesc:acec230a2665c656014a0d48466d4be28"><td class="mdescLeft">&#160;</td><td class="mdescRight">max length of event name <br /></td></tr>
+<tr class="separator:acec230a2665c656014a0d48466d4be28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed93d3b6d6604f152f8d7540ea21c47"><td class="memItemLeft" align="right" valign="top"><a id="a4ed93d3b6d6604f152f8d7540ea21c47" name="a4ed93d3b6d6604f152f8d7540ea21c47"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUBSCRIBE_TYPE_EMERGENCY</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4ed93d3b6d6604f152f8d7540ea21c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f1c5b252b2ae0caebfe311af2b46d9"><td class="memItemLeft" align="right" valign="top"><a id="ab0f1c5b252b2ae0caebfe311af2b46d9" name="ab0f1c5b252b2ae0caebfe311af2b46d9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUBSCRIBE_TYPE_NORMAL</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab0f1c5b252b2ae0caebfe311af2b46d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d106cb9402fbaa499cf4c62286e9fa"><td class="memItemLeft" align="right" valign="top"><a id="a81d106cb9402fbaa499cf4c62286e9fa" name="a81d106cb9402fbaa499cf4c62286e9fa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUBSCRIBE_TYPE_ONETIME</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a81d106cb9402fbaa499cf4c62286e9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab5b06d4026f6458cc18a8d2b7103d917"><td class="memItemLeft" align="right" valign="top"><a id="ab5b06d4026f6458cc18a8d2b7103d917" name="ab5b06d4026f6458cc18a8d2b7103d917"></a>
+typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_SUBSCRIBE_CB</b>) (VOID_T *data)</td></tr>
+<tr class="memdesc:ab5b06d4026f6458cc18a8d2b7103d917"><td class="mdescLeft">&#160;</td><td class="mdescRight">event subscribe callback function type <br /></td></tr>
+<tr class="separator:ab5b06d4026f6458cc18a8d2b7103d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a40b7c5e2f7df3950347ecad2aa1ca"><td class="memItemLeft" align="right" valign="top"><a id="a74a40b7c5e2f7df3950347ecad2aa1ca" name="a74a40b7c5e2f7df3950347ecad2aa1ca"></a>
+typedef BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><b>SUBSCRIBE_TYPE_E</b></td></tr>
+<tr class="memdesc:a74a40b7c5e2f7df3950347ecad2aa1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscriber type <br /></td></tr>
+<tr class="separator:a74a40b7c5e2f7df3950347ecad2aa1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a49369cc69d3c55e8381536c194bbd0dd"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da6/base__event_8h.html#a49369cc69d3c55e8381536c194bbd0dd">ty_event_init</a> (VOID)</td></tr>
+<tr class="memdesc:a49369cc69d3c55e8381536c194bbd0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">event initialization  <a href="../../d6/da6/base__event_8h.html#a49369cc69d3c55e8381536c194bbd0dd">更多...</a><br /></td></tr>
+<tr class="separator:a49369cc69d3c55e8381536c194bbd0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cc73eef15f1a737167aaa3a456c7b4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">ty_publish_event</a> (CONST CHAR_T *name, VOID_T *data)</td></tr>
+<tr class="memdesc:a98cc73eef15f1a737167aaa3a456c7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">: publish event  <a href="../../d6/da6/base__event_8h.html#a98cc73eef15f1a737167aaa3a456c7b4">更多...</a><br /></td></tr>
+<tr class="separator:a98cc73eef15f1a737167aaa3a456c7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd854097ac58b07033aeaa8fba636ec"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">ty_subscribe_event</a> (CONST CHAR_T *name, CONST CHAR_T *desc, CONST <a class="el" href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a> cb, <a class="el" href="../../d6/da6/base__event_8h.html#a74a40b7c5e2f7df3950347ecad2aa1ca">SUBSCRIBE_TYPE_E</a> type)</td></tr>
+<tr class="memdesc:a0fd854097ac58b07033aeaa8fba636ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">: subscribe event  <a href="../../d6/da6/base__event_8h.html#a0fd854097ac58b07033aeaa8fba636ec">更多...</a><br /></td></tr>
+<tr class="separator:a0fd854097ac58b07033aeaa8fba636ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1357c5db9e9b0b4edf5bad16c5846ab"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da6/base__event_8h.html#ab1357c5db9e9b0b4edf5bad16c5846ab">ty_unsubscribe_event</a> (CONST CHAR_T *name, CONST CHAR_T *desc, <a class="el" href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a> cb)</td></tr>
+<tr class="memdesc:ab1357c5db9e9b0b4edf5bad16c5846ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">: unsubscribe event  <a href="../../d6/da6/base__event_8h.html#ab1357c5db9e9b0b4edf5bad16c5846ab">更多...</a><br /></td></tr>
+<tr class="separator:ab1357c5db9e9b0b4edf5bad16c5846ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya simple event module </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2019 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a49369cc69d3c55e8381536c194bbd0dd" name="a49369cc69d3c55e8381536c194bbd0dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49369cc69d3c55e8381536c194bbd0dd">&#9670;&nbsp;</a></span>ty_event_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_event_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>event initialization </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a98cc73eef15f1a737167aaa3a456c7b4" name="a98cc73eef15f1a737167aaa3a456c7b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cc73eef15f1a737167aaa3a456c7b4">&#9670;&nbsp;</a></span>ty_publish_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_publish_event </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>: publish event </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>event name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>event data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0fd854097ac58b07033aeaa8fba636ec" name="a0fd854097ac58b07033aeaa8fba636ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd854097ac58b07033aeaa8fba636ec">&#9670;&nbsp;</a></span>ty_subscribe_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_subscribe_event </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/da6/base__event_8h.html#a74a40b7c5e2f7df3950347ecad2aa1ca">SUBSCRIBE_TYPE_E</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>: subscribe event </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>event name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desc</td><td>subscribe description </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>subscribe callback function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>subscribe type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab1357c5db9e9b0b4edf5bad16c5846ab" name="ab1357c5db9e9b0b4edf5bad16c5846ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1357c5db9e9b0b4edf5bad16c5846ab">&#9670;&nbsp;</a></span>ty_unsubscribe_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET ty_unsubscribe_event </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/da6/base__event_8h.html#ab5b06d4026f6458cc18a8d2b7103d917">EVENT_SUBSCRIBE_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>: unsubscribe event </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>event name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desc</td><td>subscribe description </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>subscribe callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system/include/tal_workqueue.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_756eea2d6c45abe335e6af16c38cccfe.html">tal_system</a></li><li class="navelem"><a class="el" href="../../dir_a80ab866e44074dee44459bfafedc0dc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_workqueue.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya workqueue module  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tal_thread.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_workqueue.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da3/tal__workqueue_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__workqueue_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__workqueue_8h" id="ainclude_2components_2tal__system_2include_2tal__workqueue_8h">
+<area shape="rect" title="tuya workqueue module" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,184,517,211"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="437,109,537,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,432,285"/>
+<area shape="rect" title=" " alt="" coords="457,259,527,285"/>
+<area shape="rect" title=" " alt="" coords="552,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,730,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,259,893,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d0f/tal__workqueue_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__workqueue_8hdep" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__workqueue_8hdep" id="ainclude_2components_2tal__system_2include_2tal__workqueue_8hdep">
+<area shape="rect" title="tuya workqueue module" alt="" coords="219,5,373,61"/>
+<area shape="rect" href="../../dd/d56/tal__workq__service_8h.html" title=" " alt="" coords="193,109,399,165"/>
+<area shape="rect" href="../../d6/d1f/rpc__base_8h.html" title="Common process &#45; base rpc" alt="" coords="219,213,373,269"/>
+<area shape="rect" href="../../dd/d94/svc__rpc_8h.html" title="rcp relate" alt="" coords="201,317,391,359"/>
+<area shape="rect" href="../../d2/d9a/lan__rpc_8h.html" title="Common process &#45; json rpc" alt="" coords="5,414,195,455"/>
+<area shape="rect" href="../../d6/d85/rpc__node_8h_source.html" title=" " alt="" coords="219,407,373,463"/>
+<area shape="rect" href="../../db/d49/rpc__pipe_8h.html" title="rcp pipe" alt="" coords="277,511,430,567"/>
+</map>
+</div>
+</div>
+<p><a href="../../df/d01/tal__workqueue_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/structWORK__ITEM__T.html">WORK_ITEM_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:abfad743f5b7c72970c9f8d25df08b057"><td class="memItemLeft" align="right" valign="top"><a id="abfad743f5b7c72970c9f8d25df08b057" name="abfad743f5b7c72970c9f8d25df08b057"></a>
+typedef VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><b>DELAYED_WORK_HANDLE</b></td></tr>
+<tr class="separator:abfad743f5b7c72970c9f8d25df08b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a1955eb5a73621424c72695368863b"><td class="memItemLeft" align="right" valign="top"><a id="af1a1955eb5a73621424c72695368863b" name="af1a1955eb5a73621424c72695368863b"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>WORKQUEUE_CB</b>) (VOID_T *data)</td></tr>
+<tr class="separator:af1a1955eb5a73621424c72695368863b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1838f083c1299778aa768b8bbe19869"><td class="memItemLeft" align="right" valign="top"><a id="ae1838f083c1299778aa768b8bbe19869" name="ae1838f083c1299778aa768b8bbe19869"></a>
+typedef VOID_T *&#160;</td><td class="memItemRight" valign="bottom"><b>WORKQUEUE_HANDLE</b></td></tr>
+<tr class="separator:ae1838f083c1299778aa768b8bbe19869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e5a158c563eb5496529a22f2250cfd"><td class="memItemLeft" align="right" valign="top"><a id="a14e5a158c563eb5496529a22f2250cfd" name="a14e5a158c563eb5496529a22f2250cfd"></a>
+typedef BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>WORKQUEUE_TRAVERSE_CB</b>) (<a class="el" href="../../dc/d0f/structWORK__ITEM__T.html">WORK_ITEM_T</a> *item, VOID_T *ctx)</td></tr>
+<tr class="separator:a14e5a158c563eb5496529a22f2250cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a628efd0db9c137b264a6d613398ca15a"><td class="memItemLeft" align="right" valign="top"><a id="a628efd0db9c137b264a6d613398ca15a" name="a628efd0db9c137b264a6d613398ca15a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>LOOP_TYPE</b> { <b>LOOP_ONCE</b>
+, <b>LOOP_CYCLE</b>
+ }</td></tr>
+<tr class="separator:a628efd0db9c137b264a6d613398ca15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a728837470566ceaa376e9c6a0fd60c4f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a728837470566ceaa376e9c6a0fd60c4f">tal_workqueue_cancel</a> (WORKQUEUE_HANDLE handle, WORKQUEUE_CB cb, VOID_T *data)</td></tr>
+<tr class="memdesc:a728837470566ceaa376e9c6a0fd60c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancel work task in workqueue  <a href="../../df/d01/tal__workqueue_8h.html#a728837470566ceaa376e9c6a0fd60c4f">更多...</a><br /></td></tr>
+<tr class="separator:a728837470566ceaa376e9c6a0fd60c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac077a7578a3cee1e53dfbb7555d12401"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#ac077a7578a3cee1e53dfbb7555d12401">tal_workqueue_cancel_delayed</a> (DELAYED_WORK_HANDLE delayed_work)</td></tr>
+<tr class="memdesc:ac077a7578a3cee1e53dfbb7555d12401"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancel delayed work  <a href="../../df/d01/tal__workqueue_8h.html#ac077a7578a3cee1e53dfbb7555d12401">更多...</a><br /></td></tr>
+<tr class="separator:ac077a7578a3cee1e53dfbb7555d12401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7830179174d31d6ccc876dc0c870eb64"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a7830179174d31d6ccc876dc0c870eb64">tal_workqueue_create</a> (CONST UINT16_T queue_len, <a class="el" href="../../d0/d90/structTHREAD__CFG__T.html">THREAD_CFG_T</a> *thread_cfg, WORKQUEUE_HANDLE *handle)</td></tr>
+<tr class="memdesc:a7830179174d31d6ccc876dc0c870eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">create and initialize a workqueue which runs in thread context  <a href="../../df/d01/tal__workqueue_8h.html#a7830179174d31d6ccc876dc0c870eb64">更多...</a><br /></td></tr>
+<tr class="separator:a7830179174d31d6ccc876dc0c870eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcb0479293ac406e3d8b42cc10d9cc5"><td class="memItemLeft" align="right" valign="top">UINT16_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a5fcb0479293ac406e3d8b42cc10d9cc5">tal_workqueue_get_num</a> (WORKQUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:a5fcb0479293ac406e3d8b42cc10d9cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the workqueue item number  <a href="../../df/d01/tal__workqueue_8h.html#a5fcb0479293ac406e3d8b42cc10d9cc5">更多...</a><br /></td></tr>
+<tr class="separator:a5fcb0479293ac406e3d8b42cc10d9cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0310fc0c44d4a2aca10f8dfcc567f379"><td class="memItemLeft" align="right" valign="top">THREAD_HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a0310fc0c44d4a2aca10f8dfcc567f379">tal_workqueue_get_thread</a> (WORKQUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:a0310fc0c44d4a2aca10f8dfcc567f379"><td class="mdescLeft">&#160;</td><td class="mdescRight">get thread handle of the workqueue  <a href="../../df/d01/tal__workqueue_8h.html#a0310fc0c44d4a2aca10f8dfcc567f379">更多...</a><br /></td></tr>
+<tr class="separator:a0310fc0c44d4a2aca10f8dfcc567f379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad027b81c45fd07d29a3b320c8b59555f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#ad027b81c45fd07d29a3b320c8b59555f">tal_workqueue_init_delayed</a> (WORKQUEUE_HANDLE handle, WORKQUEUE_CB cb, VOID_T *data, DELAYED_WORK_HANDLE *delayed_work)</td></tr>
+<tr class="memdesc:ad027b81c45fd07d29a3b320c8b59555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">init delayed work in workqueue  <a href="../../df/d01/tal__workqueue_8h.html#ad027b81c45fd07d29a3b320c8b59555f">更多...</a><br /></td></tr>
+<tr class="separator:ad027b81c45fd07d29a3b320c8b59555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5984a9076897cccd1d9a610145e0734"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#af5984a9076897cccd1d9a610145e0734">tal_workqueue_release</a> (WORKQUEUE_HANDLE handle)</td></tr>
+<tr class="memdesc:af5984a9076897cccd1d9a610145e0734"><td class="mdescLeft">&#160;</td><td class="mdescRight">release the workqueue  <a href="../../df/d01/tal__workqueue_8h.html#af5984a9076897cccd1d9a610145e0734">更多...</a><br /></td></tr>
+<tr class="separator:af5984a9076897cccd1d9a610145e0734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b9b93f1c9a0db5feb2a70e7cdc3d2a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a11b9b93f1c9a0db5feb2a70e7cdc3d2a">tal_workqueue_schedule</a> (WORKQUEUE_HANDLE handle, WORKQUEUE_CB cb, VOID_T *data)</td></tr>
+<tr class="memdesc:a11b9b93f1c9a0db5feb2a70e7cdc3d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">put work task in workqueue  <a href="../../df/d01/tal__workqueue_8h.html#a11b9b93f1c9a0db5feb2a70e7cdc3d2a">更多...</a><br /></td></tr>
+<tr class="separator:a11b9b93f1c9a0db5feb2a70e7cdc3d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95b974576fb093ceb8780f9c9a68f22"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#ae95b974576fb093ceb8780f9c9a68f22">tal_workqueue_schedule_instant</a> (WORKQUEUE_HANDLE handle, WORKQUEUE_CB cb, VOID_T *data)</td></tr>
+<tr class="memdesc:ae95b974576fb093ceb8780f9c9a68f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">put work task in workqueue, instant will be dequeued first  <a href="../../df/d01/tal__workqueue_8h.html#ae95b974576fb093ceb8780f9c9a68f22">更多...</a><br /></td></tr>
+<tr class="separator:ae95b974576fb093ceb8780f9c9a68f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea9c41b9fa3082294660b1737e0f225"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#acea9c41b9fa3082294660b1737e0f225">tal_workqueue_start_delayed</a> (DELAYED_WORK_HANDLE delayed_work, TIME_MS interval, LOOP_TYPE type)</td></tr>
+<tr class="memdesc:acea9c41b9fa3082294660b1737e0f225"><td class="mdescLeft">&#160;</td><td class="mdescRight">put work in workqueue after delay  <a href="../../df/d01/tal__workqueue_8h.html#acea9c41b9fa3082294660b1737e0f225">更多...</a><br /></td></tr>
+<tr class="separator:acea9c41b9fa3082294660b1737e0f225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a85dbe333507567ce29e47e80050bad"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a0a85dbe333507567ce29e47e80050bad">tal_workqueue_stop_delayed</a> (DELAYED_WORK_HANDLE delayed_work)</td></tr>
+<tr class="memdesc:a0a85dbe333507567ce29e47e80050bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop delayed work  <a href="../../df/d01/tal__workqueue_8h.html#a0a85dbe333507567ce29e47e80050bad">更多...</a><br /></td></tr>
+<tr class="separator:a0a85dbe333507567ce29e47e80050bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e0a20a8a7fa3ab5b43450f178bdc0e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d01/tal__workqueue_8h.html#a68e0a20a8a7fa3ab5b43450f178bdc0e">tal_workqueue_traverse</a> (WORKQUEUE_HANDLE handle, WORKQUEUE_TRAVERSE_CB cb, VOID_T *ctx)</td></tr>
+<tr class="memdesc:a68e0a20a8a7fa3ab5b43450f178bdc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the queue with specific callback  <a href="../../df/d01/tal__workqueue_8h.html#a68e0a20a8a7fa3ab5b43450f178bdc0e">更多...</a><br /></td></tr>
+<tr class="separator:a68e0a20a8a7fa3ab5b43450f178bdc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya workqueue module </p>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019-10-30</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2031 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a728837470566ceaa376e9c6a0fd60c4f" name="a728837470566ceaa376e9c6a0fd60c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728837470566ceaa376e9c6a0fd60c4f">&#9670;&nbsp;</a></span>tal_workqueue_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_cancel </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORKQUEUE_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cancel work task in workqueue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the work callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the work data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac077a7578a3cee1e53dfbb7555d12401" name="ac077a7578a3cee1e53dfbb7555d12401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac077a7578a3cee1e53dfbb7555d12401">&#9670;&nbsp;</a></span>tal_workqueue_cancel_delayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_cancel_delayed </td>
+          <td>(</td>
+          <td class="paramtype">DELAYED_WORK_HANDLE&#160;</td>
+          <td class="paramname"><em>delayed_work</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cancel delayed work </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delayed_work</td><td>handle of delayed work</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7830179174d31d6ccc876dc0c870eb64" name="a7830179174d31d6ccc876dc0c870eb64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7830179174d31d6ccc876dc0c870eb64">&#9670;&nbsp;</a></span>tal_workqueue_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_create </td>
+          <td>(</td>
+          <td class="paramtype">CONST UINT16_T&#160;</td>
+          <td class="paramname"><em>queue_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d90/structTHREAD__CFG__T.html">THREAD_CFG_T</a> *&#160;</td>
+          <td class="paramname"><em>thread_cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORKQUEUE_HANDLE *&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create and initialize a workqueue which runs in thread context </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue_len</td><td>the maximum number of items that the workqueue can contain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_cfg</td><td>thread param </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>the workqueue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5fcb0479293ac406e3d8b42cc10d9cc5" name="a5fcb0479293ac406e3d8b42cc10d9cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcb0479293ac406e3d8b42cc10d9cc5">&#9670;&nbsp;</a></span>tal_workqueue_get_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT16_T tal_workqueue_get_num </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the workqueue item number </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>the current item counts </dd></dl>
+
+</div>
+</div>
+<a id="a0310fc0c44d4a2aca10f8dfcc567f379" name="a0310fc0c44d4a2aca10f8dfcc567f379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0310fc0c44d4a2aca10f8dfcc567f379">&#9670;&nbsp;</a></span>tal_workqueue_get_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_HANDLE tal_workqueue_get_thread </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get thread handle of the workqueue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>thread handle </dd></dl>
+
+</div>
+</div>
+<a id="ad027b81c45fd07d29a3b320c8b59555f" name="ad027b81c45fd07d29a3b320c8b59555f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad027b81c45fd07d29a3b320c8b59555f">&#9670;&nbsp;</a></span>tal_workqueue_init_delayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_init_delayed </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORKQUEUE_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DELAYED_WORK_HANDLE *&#160;</td>
+          <td class="paramname"><em>delayed_work</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init delayed work in workqueue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the work callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the work data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">delayed_work</td><td>handle of delayed work</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af5984a9076897cccd1d9a610145e0734" name="af5984a9076897cccd1d9a610145e0734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5984a9076897cccd1d9a610145e0734">&#9670;&nbsp;</a></span>tal_workqueue_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_release </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>release the workqueue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a11b9b93f1c9a0db5feb2a70e7cdc3d2a" name="a11b9b93f1c9a0db5feb2a70e7cdc3d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b9b93f1c9a0db5feb2a70e7cdc3d2a">&#9670;&nbsp;</a></span>tal_workqueue_schedule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_schedule </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORKQUEUE_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>put work task in workqueue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the work callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the work data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae95b974576fb093ceb8780f9c9a68f22" name="ae95b974576fb093ceb8780f9c9a68f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95b974576fb093ceb8780f9c9a68f22">&#9670;&nbsp;</a></span>tal_workqueue_schedule_instant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_schedule_instant </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORKQUEUE_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>put work task in workqueue, instant will be dequeued first </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the work callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the work data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acea9c41b9fa3082294660b1737e0f225" name="acea9c41b9fa3082294660b1737e0f225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea9c41b9fa3082294660b1737e0f225">&#9670;&nbsp;</a></span>tal_workqueue_start_delayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_start_delayed </td>
+          <td>(</td>
+          <td class="paramtype">DELAYED_WORK_HANDLE&#160;</td>
+          <td class="paramname"><em>delayed_work</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TIME_MS&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LOOP_TYPE&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>put work in workqueue after delay </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delayed_work</td><td>handle of delayed work </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>number of ms to wait or 0 for immediate execution </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>see @LOOP_TYPE</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0a85dbe333507567ce29e47e80050bad" name="a0a85dbe333507567ce29e47e80050bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a85dbe333507567ce29e47e80050bad">&#9670;&nbsp;</a></span>tal_workqueue_stop_delayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_stop_delayed </td>
+          <td>(</td>
+          <td class="paramtype">DELAYED_WORK_HANDLE&#160;</td>
+          <td class="paramname"><em>delayed_work</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop delayed work </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delayed_work</td><td>handle of delayed work</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a68e0a20a8a7fa3ab5b43450f178bdc0e" name="a68e0a20a8a7fa3ab5b43450f178bdc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e0a20a8a7fa3ab5b43450f178bdc0e">&#9670;&nbsp;</a></span>tal_workqueue_traverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_workqueue_traverse </td>
+          <td>(</td>
+          <td class="paramtype">WORKQUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORKQUEUE_TRAVERSE_CB&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>traverse the queue with specific callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the workqueue handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the traverse callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>the traverse context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

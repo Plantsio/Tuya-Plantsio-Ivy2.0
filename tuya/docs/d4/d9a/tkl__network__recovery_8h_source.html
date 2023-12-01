@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_network_recovery.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_network_recovery.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d4/d9a/tkl__network__recovery_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_NETWORK_RECOVERY_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_NETWORK_RECOVERY_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    NWK_RECOVERY_SUCESS = 0,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    NWK_RECOVERY_FAILED</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} TKL_RECOVERY_STATUS_E;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ac2cac9f1a2d8ff3db43bc7cddc57a9cd">   27</a></span>    UINT16_T <a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ac2cac9f1a2d8ff3db43bc7cddc57a9cd">node_id</a>;           </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#aa076a3ec52b998bb7d4af67ca1c5b651">   28</a></span>    UINT8_T <a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#aa076a3ec52b998bb7d4af67ca1c5b651">channel</a>;            </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#afb4b0d0f4d9c292b1430305dfd204079">   29</a></span>    INT8_T <a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#afb4b0d0f4d9c292b1430305dfd204079">tx_power</a>;            </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#affc7d418e47bd581e9f3064c5f2616ce">   30</a></span>    <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a> <a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#affc7d418e47bd581e9f3064c5f2616ce">node_type</a>;   </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ad90d9f402e94bea6b64ec3593e4940ed">   31</a></span>    <a class="code hl_enumeration" href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a> <a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ad90d9f402e94bea6b64ec3593e4940ed">nwk_type</a>;     </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a60a57b80c7032a6831a7a169d642564d">   32</a></span>    UINT16_T <a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a60a57b80c7032a6831a7a169d642564d">panid</a>;             </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a5a52c546dcbdd4c684d21c4a2d8d18a9">   33</a></span>    UINT8_T *<a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a5a52c546dcbdd4c684d21c4a2d8d18a9">ext_panid</a>;         </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ac9754506baf84dcac48971ad74cc33c6">   34</a></span>    UINT8_T *<a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ac9754506baf84dcac48971ad74cc33c6">tc_mac</a>;            </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a02a5ffd00501017ef9c872b83af690cf">   35</a></span>    UINT8_T *<a class="code hl_variable" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a02a5ffd00501017ef9c872b83af690cf">nwk_key</a>;           </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} <a class="code hl_struct" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html">TKL_OUTOF_BAND_JOIN_T</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#ae0fdde9343608136281e6408e68adaff">   44</a></span>VOID_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#ae0fdde9343608136281e6408e68adaff">tkl_zg_nwk_recovery_init</a>(VOID_T);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#acf11b46fda5d1aa55d987fb1b6f3dfdc">   53</a></span>VOID_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#acf11b46fda5d1aa55d987fb1b6f3dfdc">tkl_zg_nwk_recovery_disable</a>(BOOL_T en);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#af39c2a0bef2d901e0965612920807d53">   62</a></span>VOID_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#af39c2a0bef2d901e0965612920807d53">tkl_zg_nwk_recovery_start</a>(VOID_T);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#afc234f4291d32d9ed7b8cac5fd963466">   70</a></span>VOID_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#afc234f4291d32d9ed7b8cac5fd963466">tkl_zg_nwk_recovery_info_save</a>(VOID_T);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#a626fce06f1226af51d3e7c1d06d5a08a">   78</a></span>VOID_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#a626fce06f1226af51d3e7c1d06d5a08a">tkl_zg_nwk_recovery_info_clear</a>(VOID_T);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#a8f4e6429f7ae134d24eb3dcb3e8c1a92">   86</a></span>BOOL_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#a8f4e6429f7ae134d24eb3dcb3e8c1a92">tkl_zg_nwk_recovery_is_available</a>(VOID_T);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d4/d9a/tkl__network__recovery_8h.html#a8c3e4600585ff2d878997764d53e1e8d">   94</a></span>BOOL_T <a class="code hl_function" href="../../d4/d9a/tkl__network__recovery_8h.html#a8c3e4600585ff2d878997764d53e1e8d">tkl_zg_nwk_out_of_band_join</a>(<a class="code hl_struct" href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html">TKL_OUTOF_BAND_JOIN_T</a> *info);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html">TKL_OUTOF_BAND_JOIN_T</a></div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:26</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_a02a5ffd00501017ef9c872b83af690cf"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a02a5ffd00501017ef9c872b83af690cf">TKL_OUTOF_BAND_JOIN_T::nwk_key</a></div><div class="ttdeci">UINT8_T * nwk_key</div><div class="ttdoc">network key</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:35</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_a5a52c546dcbdd4c684d21c4a2d8d18a9"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a5a52c546dcbdd4c684d21c4a2d8d18a9">TKL_OUTOF_BAND_JOIN_T::ext_panid</a></div><div class="ttdeci">UINT8_T * ext_panid</div><div class="ttdoc">target network extend panid</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:33</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_a60a57b80c7032a6831a7a169d642564d"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#a60a57b80c7032a6831a7a169d642564d">TKL_OUTOF_BAND_JOIN_T::panid</a></div><div class="ttdeci">UINT16_T panid</div><div class="ttdoc">target network panid</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:32</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_aa076a3ec52b998bb7d4af67ca1c5b651"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#aa076a3ec52b998bb7d4af67ca1c5b651">TKL_OUTOF_BAND_JOIN_T::channel</a></div><div class="ttdeci">UINT8_T channel</div><div class="ttdoc">target network channel(11~26)</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:28</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_ac2cac9f1a2d8ff3db43bc7cddc57a9cd"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ac2cac9f1a2d8ff3db43bc7cddc57a9cd">TKL_OUTOF_BAND_JOIN_T::node_id</a></div><div class="ttdeci">UINT16_T node_id</div><div class="ttdoc">node short addr,if 0xffff random generation, otherwise user specified</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:27</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_ac9754506baf84dcac48971ad74cc33c6"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ac9754506baf84dcac48971ad74cc33c6">TKL_OUTOF_BAND_JOIN_T::tc_mac</a></div><div class="ttdeci">UINT8_T * tc_mac</div><div class="ttdoc">gateway or trust center mac address</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:34</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_ad90d9f402e94bea6b64ec3593e4940ed"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#ad90d9f402e94bea6b64ec3593e4940ed">TKL_OUTOF_BAND_JOIN_T::nwk_type</a></div><div class="ttdeci">ZG_NWK_TYPE_E nwk_type</div><div class="ttdoc">target network type</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:31</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_afb4b0d0f4d9c292b1430305dfd204079"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#afb4b0d0f4d9c292b1430305dfd204079">TKL_OUTOF_BAND_JOIN_T::tx_power</a></div><div class="ttdeci">INT8_T tx_power</div><div class="ttdoc">node tx power value</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:29</div></div>
+<div class="ttc" id="astructTKL__OUTOF__BAND__JOIN__T_html_affc7d418e47bd581e9f3064c5f2616ce"><div class="ttname"><a href="../../d1/d0d/structTKL__OUTOF__BAND__JOIN__T.html#affc7d418e47bd581e9f3064c5f2616ce">TKL_OUTOF_BAND_JOIN_T::node_type</a></div><div class="ttdeci">ZG_NODE_TYPE_E node_type</div><div class="ttdoc">node type</div><div class="ttdef"><b>Definition:</b> tkl_network_recovery.h:30</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_a626fce06f1226af51d3e7c1d06d5a08a"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#a626fce06f1226af51d3e7c1d06d5a08a">tkl_zg_nwk_recovery_info_clear</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_recovery_info_clear(VOID_T)</div><div class="ttdoc">zigbee network recovery information clear</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_a8c3e4600585ff2d878997764d53e1e8d"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#a8c3e4600585ff2d878997764d53e1e8d">tkl_zg_nwk_out_of_band_join</a></div><div class="ttdeci">BOOL_T tkl_zg_nwk_out_of_band_join(TKL_OUTOF_BAND_JOIN_T *info)</div><div class="ttdoc">zigbee out of band network join</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_a8f4e6429f7ae134d24eb3dcb3e8c1a92"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#a8f4e6429f7ae134d24eb3dcb3e8c1a92">tkl_zg_nwk_recovery_is_available</a></div><div class="ttdeci">BOOL_T tkl_zg_nwk_recovery_is_available(VOID_T)</div><div class="ttdoc">zigbee network recovery is available</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_acf11b46fda5d1aa55d987fb1b6f3dfdc"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#acf11b46fda5d1aa55d987fb1b6f3dfdc">tkl_zg_nwk_recovery_disable</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_recovery_disable(BOOL_T en)</div><div class="ttdoc">zigbee network recovery disable</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_ae0fdde9343608136281e6408e68adaff"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#ae0fdde9343608136281e6408e68adaff">tkl_zg_nwk_recovery_init</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_recovery_init(VOID_T)</div><div class="ttdoc">zigbee network recovery init</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_af39c2a0bef2d901e0965612920807d53"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#af39c2a0bef2d901e0965612920807d53">tkl_zg_nwk_recovery_start</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_recovery_start(VOID_T)</div><div class="ttdoc">zigbee network recovery start it must be used in the no network state</div></div>
+<div class="ttc" id="atkl__network__recovery_8h_html_afc234f4291d32d9ed7b8cac5fd963466"><div class="ttname"><a href="../../d4/d9a/tkl__network__recovery_8h.html#afc234f4291d32d9ed7b8cac5fd963466">tkl_zg_nwk_recovery_info_save</a></div><div class="ttdeci">VOID_T tkl_zg_nwk_recovery_info_save(VOID_T)</div><div class="ttdoc">zigbee network recovery information save</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a40bf7f86bb8604c0a92bd6de70a6e447"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a40bf7f86bb8604c0a92bd6de70a6e447">ZG_NODE_TYPE_E</a></div><div class="ttdeci">ZG_NODE_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:67</div></div>
+<div class="ttc" id="atuya__zigbee__stack_8h_html_a6adac7d0c69ec2af755dfd20c79c5acd"><div class="ttname"><a href="../../d8/dba/tuya__zigbee__stack_8h.html#a6adac7d0c69ec2af755dfd20c79c5acd">ZG_NWK_TYPE_E</a></div><div class="ttdeci">ZG_NWK_TYPE_E</div><div class="ttdef"><b>Definition:</b> tuya_zigbee_stack.h:77</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

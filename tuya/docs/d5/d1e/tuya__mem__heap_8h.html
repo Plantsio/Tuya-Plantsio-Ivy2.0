@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_mem_heap.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_mem_heap.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TUYA memory heap management  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_mem_heap.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/da8/tuya__mem__heap_8h__incl.png" border="0" usemap="#ainclude_2adapter_2utilities_2include_2tuya__mem__heap_8h" alt=""/></div>
+<map name="ainclude_2adapter_2utilities_2include_2tuya__mem__heap_8h" id="ainclude_2adapter_2utilities_2include_2tuya__mem__heap_8h">
+<area shape="rect" title="TUYA memory heap management" alt="" coords="343,5,542,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d5/d1e/tuya__mem__heap_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dae/structheap__state__t.html">heap_state_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a78640b888508886a9c030873906fe5ba"><td class="memItemLeft" align="right" valign="top"><a id="a78640b888508886a9c030873906fe5ba" name="a78640b888508886a9c030873906fe5ba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MEM_HEAP_LIST_NUM</b>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a78640b888508886a9c030873906fe5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aefbb6eeed78cf4268ef248902fb95058"><td class="memItemLeft" align="right" valign="top"><a id="aefbb6eeed78cf4268ef248902fb95058" name="aefbb6eeed78cf4268ef248902fb95058"></a>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>HEAP_HANDLE</b></td></tr>
+<tr class="separator:aefbb6eeed78cf4268ef248902fb95058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a20209635be3a28146fbd29f2410e5619"><td class="memItemLeft" align="right" valign="top"><a id="a20209635be3a28146fbd29f2410e5619" name="a20209635be3a28146fbd29f2410e5619"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_available</b> (HEAP_HANDLE handle)</td></tr>
+<tr class="separator:a20209635be3a28146fbd29f2410e5619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc88d0e56c506353fd5b7b0899606526"><td class="memItemLeft" align="right" valign="top"><a id="acc88d0e56c506353fd5b7b0899606526" name="acc88d0e56c506353fd5b7b0899606526"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_calloc</b> (HEAP_HANDLE handle, unsigned int size)</td></tr>
+<tr class="separator:acc88d0e56c506353fd5b7b0899606526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c051bfc8540710e4731e5f6a0b30e1"><td class="memItemLeft" align="right" valign="top"><a id="a27c051bfc8540710e4731e5f6a0b30e1" name="a27c051bfc8540710e4731e5f6a0b30e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_create</b> (void *start_addr, unsigned int size, HEAP_HANDLE *handle)</td></tr>
+<tr class="separator:a27c051bfc8540710e4731e5f6a0b30e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32aabff62b212b42c12172d051e8217e"><td class="memItemLeft" align="right" valign="top"><a id="a32aabff62b212b42c12172d051e8217e" name="a32aabff62b212b42c12172d051e8217e"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_debug_calloc</b> (HEAP_HANDLE handle, unsigned int size, char *filename, int line)</td></tr>
+<tr class="separator:a32aabff62b212b42c12172d051e8217e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2fa5c3be6ee3fd4570179d771a61f7"><td class="memItemLeft" align="right" valign="top"><a id="a6a2fa5c3be6ee3fd4570179d771a61f7" name="a6a2fa5c3be6ee3fd4570179d771a61f7"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_debug_malloc</b> (HEAP_HANDLE handle, unsigned int size, char *filename, int line)</td></tr>
+<tr class="separator:a6a2fa5c3be6ee3fd4570179d771a61f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67caf355e4fa51131e62ff93e567f65d"><td class="memItemLeft" align="right" valign="top"><a id="a67caf355e4fa51131e62ff93e567f65d" name="a67caf355e4fa51131e62ff93e567f65d"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_debug_realloc</b> (HEAP_HANDLE handle, void *ptr, unsigned int size, char *filename, int line)</td></tr>
+<tr class="separator:a67caf355e4fa51131e62ff93e567f65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff2bd474a9ddee64887eae0d7219640"><td class="memItemLeft" align="right" valign="top"><a id="afff2bd474a9ddee64887eae0d7219640" name="afff2bd474a9ddee64887eae0d7219640"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_delete</b> (HEAP_HANDLE handle)</td></tr>
+<tr class="separator:afff2bd474a9ddee64887eae0d7219640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649f7af6761b5fbef90cff25cd3df48b"><td class="memItemLeft" align="right" valign="top"><a id="a649f7af6761b5fbef90cff25cd3df48b" name="a649f7af6761b5fbef90cff25cd3df48b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_diagnose</b> (HEAP_HANDLE handle)</td></tr>
+<tr class="separator:a649f7af6761b5fbef90cff25cd3df48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96928dbef40378e962dab950b216cbc"><td class="memItemLeft" align="right" valign="top"><a id="ad96928dbef40378e962dab950b216cbc" name="ad96928dbef40378e962dab950b216cbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_free</b> (HEAP_HANDLE handle, void *ptr)</td></tr>
+<tr class="separator:ad96928dbef40378e962dab950b216cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c5db7dc6afdfa695dd2c245a3a41e2"><td class="memItemLeft" align="right" valign="top"><a id="ae3c5db7dc6afdfa695dd2c245a3a41e2" name="ae3c5db7dc6afdfa695dd2c245a3a41e2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_init</b> (<a class="el" href="../../d5/d3e/structheap__context__t.html">heap_context_t</a> *ctx)</td></tr>
+<tr class="separator:ae3c5db7dc6afdfa695dd2c245a3a41e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ac12b86330d436bb015823706a6ac7"><td class="memItemLeft" align="right" valign="top"><a id="a47ac12b86330d436bb015823706a6ac7" name="a47ac12b86330d436bb015823706a6ac7"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_malloc</b> (HEAP_HANDLE handle, unsigned int size)</td></tr>
+<tr class="separator:a47ac12b86330d436bb015823706a6ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf3ac9634c7c4c6f591d88b56e38467"><td class="memItemLeft" align="right" valign="top"><a id="a7bf3ac9634c7c4c6f591d88b56e38467" name="a7bf3ac9634c7c4c6f591d88b56e38467"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_realloc</b> (HEAP_HANDLE handle, void *ptr, unsigned int size)</td></tr>
+<tr class="separator:a7bf3ac9634c7c4c6f591d88b56e38467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acecf08fd5d288b344bb48958afed37"><td class="memItemLeft" align="right" valign="top"><a id="a8acecf08fd5d288b344bb48958afed37" name="a8acecf08fd5d288b344bb48958afed37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_mem_heap_state</b> (HEAP_HANDLE handle, <a class="el" href="../../db/dae/structheap__state__t.html">heap_state_t</a> *state)</td></tr>
+<tr class="separator:a8acecf08fd5d288b344bb48958afed37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >TUYA memory heap management </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-05-05</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

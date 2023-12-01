@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/utilities/include/tuya_list.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_489418621f80f446cea0d9c942e0b2f9.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_ec90b9ca71270a0dd3aeb7d4a0583e19.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_list.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d1/d7f/tuya__list_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TUYA_LIST_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TUYA_LIST_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../dd/d4e/structtuya__list__head.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">tuya_list_head</a> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">tuya_list_head</a> *next, *prev;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a184282a62181299b10a805be1e6c8545">   27</a></span>}<a class="code hl_typedef" href="../../d1/d7f/tuya__list_8h.html#a184282a62181299b10a805be1e6c8545">LIST_HEAD</a>,*<a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">   33</a></span><span class="preprocessor">#define LIST_HEAD_INIT(name) { &amp;(name), &amp;(name) }</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define LIST_HEAD(name) \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">LIST_HEAD name = LIST_HEAD_INIT(name)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a0ffe9d28c36d7b018a9cfae33bae45c0">   41</a></span><span class="preprocessor">#define INIT_LIST_HEAD(ptr) do { \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">(ptr)-&gt;next = (ptr); (ptr)-&gt;prev = (ptr); \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">} while (0)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a24ce7109bacc55df0c2ee5f3c235468f">   49</a></span><span class="preprocessor">#define NEW_LIST_NODE(type, node) \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">{\</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">    node = (type *)tal_malloc(sizeof(type));\</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a518ca94e4bdd2105224f83b8ccbf967d">   58</a></span><span class="preprocessor">#define FREE_LIST(type, p, list_name)\</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">{\</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">    type *posnode;\</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">    while(!tuya_list_empty(&amp;(p)-&gt;list_name)) {\</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">    posnode = tuya_list_entry((&amp;(p)-&gt;list_name)-&gt;next, type, list_name);\</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">    tuya_list_del((&amp;(p)-&gt;list_name)-&gt;next);\</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">    tal_free(posnode);\</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">    }\</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a23b81ad3b7f2331ccebd519602aec1a7">   72</a></span><span class="preprocessor">#define GetFirstNode(type,p,list_name,pGetNode)\</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">{\</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">    pGetNode = NULL;\</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">    while(!tuya_list_empty(&amp;(p)-&gt;list_name)){\</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">    pGetNode = tuya_list_entry((&amp;(p)-&gt;list_name)-&gt;next, type, list_name);\</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">    break;\</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">    }\</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#aa020e89281038e5917606a606e4da676">   86</a></span><span class="preprocessor">#define DeleteNodeAndFree(pDelNode,list_name)\</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">{\</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">    tuya_list_del(&amp;(pDelNode-&gt;list_name));\</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">    tal_free(pDelNode);\</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a7e25fb1290ede86511414516eefa4ccf">   96</a></span><span class="preprocessor">#define DeleteNode(pDelNode,list_name)\</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">{\</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">    tuya_list_del(&amp;(pDelNode-&gt;list_name));\</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a67b9715211b67e762d7baf1356c90c61">  105</a></span><span class="preprocessor">#define FreeNode(pDelNode)\</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">{\</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">    tal_free(pDelNode);\</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a83434a9ca28333ce9dbff572d77aad54">  114</a></span><span class="preprocessor">#define tuya_list_entry(ptr, type, member) \</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">((type *)((char *)(ptr)-(size_t)(&amp;((type *)0)-&gt;member)))</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a7b9d2f6f17a75b759a28616326a61c4d">  121</a></span><span class="preprocessor">#define tuya_list_for_each(pos, head) \</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">for (pos = (head)-&gt;next; (pos != NULL) &amp;&amp; (pos != (head)); pos = pos-&gt;next)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#afae5c7e2f020421bb7074b2421facc75">  128</a></span><span class="preprocessor">#define tuya_list_for_each_safe(p, n, head) \</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">for (p = (head)-&gt;next; n = p-&gt;next, p != (head); p = n)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">  137</a></span>INT_T <a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">tuya_list_empty</a>(IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a9baea178d65648f09702d5f2a3405990">  146</a></span>VOID <a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a9baea178d65648f09702d5f2a3405990">tuya_list_add</a>(IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pNew, IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a79faf52c03b003c55feded698d015841">  155</a></span>VOID <a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a79faf52c03b003c55feded698d015841">tuya_list_add_tail</a>(IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pNew, IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a7c0c18291034484bc68176f19cb3b5d1">  164</a></span>VOID <a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a7c0c18291034484bc68176f19cb3b5d1">tuya_list_splice</a>(IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pList, IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pHead);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#a30f2084debc2ba29a55adef9f4d9219a">  172</a></span>VOID <a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#a30f2084debc2ba29a55adef9f4d9219a">tuya_list_del</a>(IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pEntry);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="../../d1/d7f/tuya__list_8h.html#ae792a27b5b73eaa006b83f6f55cee16e">  180</a></span>VOID <a class="code hl_function" href="../../d1/d7f/tuya__list_8h.html#ae792a27b5b73eaa006b83f6f55cee16e">tuya_list_del_init</a>(IN CONST <a class="code hl_struct" href="../../dd/d4e/structtuya__list__head.html">P_LIST_HEAD</a> pEntry);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructtuya__list__head_html"><div class="ttname"><a href="../../dd/d4e/structtuya__list__head.html">tuya_list_head</a></div><div class="ttdoc">bidirection list head</div><div class="ttdef"><b>Definition:</b> tuya_list.h:25</div></div>
+<div class="ttc" id="atuya__list_8h_html_a1480c640a93d9f9d89c9da517455e0ba"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a1480c640a93d9f9d89c9da517455e0ba">tuya_list_empty</a></div><div class="ttdeci">INT_T tuya_list_empty(const P_LIST_HEAD pHead)</div><div class="ttdoc">check if the bidirection list is empty</div></div>
+<div class="ttc" id="atuya__list_8h_html_a184282a62181299b10a805be1e6c8545"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a184282a62181299b10a805be1e6c8545">LIST_HEAD</a></div><div class="ttdeci">struct tuya_list_head LIST_HEAD</div><div class="ttdoc">bidirection list head</div></div>
+<div class="ttc" id="atuya__list_8h_html_a30f2084debc2ba29a55adef9f4d9219a"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a30f2084debc2ba29a55adef9f4d9219a">tuya_list_del</a></div><div class="ttdeci">void tuya_list_del(const P_LIST_HEAD pEntry)</div><div class="ttdoc">remove a list node from bidirection list</div></div>
+<div class="ttc" id="atuya__list_8h_html_a79faf52c03b003c55feded698d015841"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a79faf52c03b003c55feded698d015841">tuya_list_add_tail</a></div><div class="ttdeci">void tuya_list_add_tail(const P_LIST_HEAD pNew, const P_LIST_HEAD pHead)</div><div class="ttdoc">add new list node to the tail of the bidirection list</div></div>
+<div class="ttc" id="atuya__list_8h_html_a7c0c18291034484bc68176f19cb3b5d1"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a7c0c18291034484bc68176f19cb3b5d1">tuya_list_splice</a></div><div class="ttdeci">void tuya_list_splice(const P_LIST_HEAD pList, const P_LIST_HEAD pHead)</div><div class="ttdoc">splice two dibrection list</div></div>
+<div class="ttc" id="atuya__list_8h_html_a9baea178d65648f09702d5f2a3405990"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#a9baea178d65648f09702d5f2a3405990">tuya_list_add</a></div><div class="ttdeci">void tuya_list_add(const P_LIST_HEAD pNew, const P_LIST_HEAD pHead)</div><div class="ttdoc">add new list node into bidirection list</div></div>
+<div class="ttc" id="atuya__list_8h_html_ae792a27b5b73eaa006b83f6f55cee16e"><div class="ttname"><a href="../../d1/d7f/tuya__list_8h.html#ae792a27b5b73eaa006b83f6f55cee16e">tuya_list_del_init</a></div><div class="ttdeci">void tuya_list_del_init(const P_LIST_HEAD pEntry)</div><div class="ttdoc">remove a list node from bidirection list and initialize it</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

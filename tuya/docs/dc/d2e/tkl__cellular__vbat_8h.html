@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/cellular_catx/include/tkl_cellular_vbat.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_b8ba071ca5cc1b1b8caa71befc3b9668.html">cellular_catx</a></li><li class="navelem"><a class="el" href="../../dir_cd70872c9112a79b6f8c2f63fe603ee2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_cellular_vbat.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组电池功能API实现接口。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_cellular_vbat.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d50/tkl__cellular__vbat_8h__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__vbat_8h" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__vbat_8h" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__vbat_8h">
+<area shape="rect" title="蜂窝模组电池功能API实现接口。" alt="" coords="101,5,333,47"/>
+<area shape="rect" title=" " alt="" coords="5,169,76,196"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="319,95,467,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="101,169,234,196"/>
+<area shape="rect" title=" " alt="" coords="258,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,428,196"/>
+<area shape="rect" title=" " alt="" coords="453,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="551,169,634,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,729,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="754,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d15/tkl__cellular__vbat_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__vbat_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__vbat_8hdep" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__vbat_8hdep">
+<area shape="rect" title="蜂窝模组电池功能API实现接口。" alt="" coords="5,5,237,47"/>
+<area shape="rect" href="../../df/d89/tkl__init__cellular_8h_source.html" title=" " alt="" coords="27,95,215,136"/>
+</map>
+</div>
+</div>
+<p><a href="../../dc/d2e/tkl__cellular__vbat_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a6437862b19e0e292e14933bedf93f140"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a6437862b19e0e292e14933bedf93f140">TKL_CELLULAR_VBAT_CHARGE_CB</a>) (<a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a9a7400c6286fbb726d625a0a0131d62b">TKL_CELLULAR_VBAT_CHG_MSG_T</a> msg)</td></tr>
+<tr class="memdesc:a6437862b19e0e292e14933bedf93f140"><td class="mdescLeft">&#160;</td><td class="mdescRight">电池及充电器消息回调函数原型定义  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a6437862b19e0e292e14933bedf93f140">更多...</a><br /></td></tr>
+<tr class="separator:a6437862b19e0e292e14933bedf93f140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a9a7400c6286fbb726d625a0a0131d62b"><td class="memItemLeft" align="right" valign="top"><a id="a9a7400c6286fbb726d625a0a0131d62b" name="a9a7400c6286fbb726d625a0a0131d62b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a9a7400c6286fbb726d625a0a0131d62b">TKL_CELLULAR_VBAT_CHG_MSG_T</a> { <br />
+&#160;&#160;<b>TKL_CELLULAR_VBAT_CHG_START</b> = 0x01
+, <b>TKL_CELLULAR_VBAT_CHG_FINISH</b>
+, <b>TKL_CELLULAR_VBAT_CHG_WARNING</b>
+, <b>TKL_CELLULAR_VBAT_CHG_SHUTDOWN</b>
+, <br />
+&#160;&#160;<b>TKL_CELLULAR_VBAT_CHG_BATT_OFF</b>
+, <b>TKL_CELLULAR_VBAT_CHG_CAPACITY</b>
+, <b>TKL_CELLULAR_VBAT_CHG_DISCONNECT</b>
+, <b>TKL_CELLULAR_VBAT_CHG_FAULT</b>
+, <br />
+&#160;&#160;<b>TKL_CELLULAR_VBAT_CHG_MAX</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a9a7400c6286fbb726d625a0a0131d62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">电池及充电器消息定义 <br /></td></tr>
+<tr class="separator:a9a7400c6286fbb726d625a0a0131d62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676332eef29dcf8177f19836a6ccfa29"><td class="memItemLeft" align="right" valign="top"><a id="a676332eef29dcf8177f19836a6ccfa29" name="a676332eef29dcf8177f19836a6ccfa29"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a676332eef29dcf8177f19836a6ccfa29">TKL_CELLULAR_VBAT_CHG_STATE_E</a> { <b>TKL_CELLULAR_CHG_STATE_UNCONNECTED</b> = 0x01
+, <b>TKL_CELLULAR_CHG_STATE_CHARGING</b>
+, <b>TKL_CELLULAR_CHG_STATE_CHARGE_OVER</b>
+, <b>TKL_CELLULAR_CHG_STATE_MAX</b>
+ }</td></tr>
+<tr class="memdesc:a676332eef29dcf8177f19836a6ccfa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">充电器状态定义 <br /></td></tr>
+<tr class="separator:a676332eef29dcf8177f19836a6ccfa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:adbf5e101e51324ccbbd2219b809f9ad8"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#adbf5e101e51324ccbbd2219b809f9ad8">tkl_cellular_vbat_cb_register</a> (<a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a6437862b19e0e292e14933bedf93f140">TKL_CELLULAR_VBAT_CHARGE_CB</a> callback)</td></tr>
+<tr class="memdesc:adbf5e101e51324ccbbd2219b809f9ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册电池及充电器消息回调处理函数  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#adbf5e101e51324ccbbd2219b809f9ad8">更多...</a><br /></td></tr>
+<tr class="separator:adbf5e101e51324ccbbd2219b809f9ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cf1c1c3124c7e4d73119187544a34f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a676332eef29dcf8177f19836a6ccfa29">TKL_CELLULAR_VBAT_CHG_STATE_E</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#ac6cf1c1c3124c7e4d73119187544a34f">tkl_cellular_vbat_get_charger_state</a> (VOID)</td></tr>
+<tr class="memdesc:ac6cf1c1c3124c7e4d73119187544a34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取充电器状态  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#ac6cf1c1c3124c7e4d73119187544a34f">更多...</a><br /></td></tr>
+<tr class="separator:ac6cf1c1c3124c7e4d73119187544a34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2019562d8835b9b5d1e82837feac3c22"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a2019562d8835b9b5d1e82837feac3c22">tkl_cellular_vbat_get_rsoc</a> (UINT8_T *rsoc)</td></tr>
+<tr class="memdesc:a2019562d8835b9b5d1e82837feac3c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取电池剩余电量百分比  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a2019562d8835b9b5d1e82837feac3c22">更多...</a><br /></td></tr>
+<tr class="separator:a2019562d8835b9b5d1e82837feac3c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5277e095a5ac3ec6b4ce6f533c600391"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a5277e095a5ac3ec6b4ce6f533c600391">tkl_cellular_vbat_get_voltage</a> (UINT_T *voltage)</td></tr>
+<tr class="memdesc:a5277e095a5ac3ec6b4ce6f533c600391"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取电池电压  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a5277e095a5ac3ec6b4ce6f533c600391">更多...</a><br /></td></tr>
+<tr class="separator:a5277e095a5ac3ec6b4ce6f533c600391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a20d314c125e10d11f2873ece52802"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a74a20d314c125e10d11f2873ece52802">tkl_cellular_vbat_low_volt_poweroff_enable</a> (BOOL_T enable)</td></tr>
+<tr class="memdesc:a74a20d314c125e10d11f2873ece52802"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启电池低电压关机功能  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a74a20d314c125e10d11f2873ece52802">更多...</a><br /></td></tr>
+<tr class="separator:a74a20d314c125e10d11f2873ece52802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35143d94c79c67a15570c08cf293e408"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a35143d94c79c67a15570c08cf293e408">tkl_cellular_vbat_ntc_enable</a> (BOOL_T enable)</td></tr>
+<tr class="memdesc:a35143d94c79c67a15570c08cf293e408"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否开启NTC检测电池温度  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a35143d94c79c67a15570c08cf293e408">更多...</a><br /></td></tr>
+<tr class="separator:a35143d94c79c67a15570c08cf293e408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519951745c9881e6b630c7fc492523db"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a519951745c9881e6b630c7fc492523db">tkl_cellular_vbat_set_charge_current</a> (UINT_T current)</td></tr>
+<tr class="memdesc:a519951745c9881e6b630c7fc492523db"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置恒流充电阶段，电池充电电流  <a href="../../dc/d2e/tkl__cellular__vbat_8h.html#a519951745c9881e6b630c7fc492523db">更多...</a><br /></td></tr>
+<tr class="separator:a519951745c9881e6b630c7fc492523db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组电池功能API实现接口。 </p>
+<dl class="section author"><dt>作者</dt><dd>www.tuya.com</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2021 </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a6437862b19e0e292e14933bedf93f140" name="a6437862b19e0e292e14933bedf93f140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6437862b19e0e292e14933bedf93f140">&#9670;&nbsp;</a></span>TKL_CELLULAR_VBAT_CHARGE_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* TKL_CELLULAR_VBAT_CHARGE_CB) (<a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a9a7400c6286fbb726d625a0a0131d62b">TKL_CELLULAR_VBAT_CHG_MSG_T</a> msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电池及充电器消息回调函数原型定义 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>电池及充电器消息，查看 @TKL_CELLULAR_VBAT_CHG_MSG_T 定义 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="adbf5e101e51324ccbbd2219b809f9ad8" name="adbf5e101e51324ccbbd2219b809f9ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf5e101e51324ccbbd2219b809f9ad8">&#9670;&nbsp;</a></span>tkl_cellular_vbat_cb_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_vbat_cb_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a6437862b19e0e292e14933bedf93f140">TKL_CELLULAR_VBAT_CHARGE_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册电池及充电器消息回调处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 注册成功 其它 注册失败 </dd></dl>
+
+</div>
+</div>
+<a id="ac6cf1c1c3124c7e4d73119187544a34f" name="ac6cf1c1c3124c7e4d73119187544a34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6cf1c1c3124c7e4d73119187544a34f">&#9670;&nbsp;</a></span>tkl_cellular_vbat_get_charger_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d2e/tkl__cellular__vbat_8h.html#a676332eef29dcf8177f19836a6ccfa29">TKL_CELLULAR_VBAT_CHG_STATE_E</a> tkl_cellular_vbat_get_charger_state </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取充电器状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>充电器状态，查看 @TKL_CELLULAR_VBAT_CHG_STATE_E定义 </dd></dl>
+
+</div>
+</div>
+<a id="a2019562d8835b9b5d1e82837feac3c22" name="a2019562d8835b9b5d1e82837feac3c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2019562d8835b9b5d1e82837feac3c22">&#9670;&nbsp;</a></span>tkl_cellular_vbat_get_rsoc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_vbat_get_rsoc </td>
+          <td>(</td>
+          <td class="paramtype">UINT8_T *&#160;</td>
+          <td class="paramname"><em>rsoc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取电池剩余电量百分比 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rsoc</td><td>剩余电量百分比</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK 获取成功 其它 获取失败 </dd></dl>
+
+</div>
+</div>
+<a id="a5277e095a5ac3ec6b4ce6f533c600391" name="a5277e095a5ac3ec6b4ce6f533c600391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5277e095a5ac3ec6b4ce6f533c600391">&#9670;&nbsp;</a></span>tkl_cellular_vbat_get_voltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_vbat_get_voltage </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>voltage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取电池电压 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">voltage</td><td>当前电池电压，单位mV</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK 获取成功 其它 获取失败 </dd></dl>
+
+</div>
+</div>
+<a id="a74a20d314c125e10d11f2873ece52802" name="a74a20d314c125e10d11f2873ece52802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a20d314c125e10d11f2873ece52802">&#9670;&nbsp;</a></span>tkl_cellular_vbat_low_volt_poweroff_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_vbat_low_volt_poweroff_enable </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否开启电池低电压关机功能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>TRUE 开启，FLASE关闭</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK 设置成功 其它 设置失败 </dd></dl>
+
+</div>
+</div>
+<a id="a35143d94c79c67a15570c08cf293e408" name="a35143d94c79c67a15570c08cf293e408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35143d94c79c67a15570c08cf293e408">&#9670;&nbsp;</a></span>tkl_cellular_vbat_ntc_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_vbat_ntc_enable </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否开启NTC检测电池温度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>NTC检测电池温度开/关</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK 设置成功 其它 设置失败 </dd></dl>
+
+</div>
+</div>
+<a id="a519951745c9881e6b630c7fc492523db" name="a519951745c9881e6b630c7fc492523db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519951745c9881e6b630c7fc492523db">&#9670;&nbsp;</a></span>tkl_cellular_vbat_set_charge_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_vbat_set_charge_current </td>
+          <td>(</td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>current</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置恒流充电阶段，电池充电电流 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>充电电流，单位毫安（mA)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK 设置成功 其它 设置失败 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

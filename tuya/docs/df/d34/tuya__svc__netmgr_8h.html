@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_netmgr/include/tuya_svc_netmgr.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_81666d4b4ea8e73053dc1b44528428b3.html">svc_netmgr</a></li><li class="navelem"><a class="el" href="../../dir_b78478f552edd682c4491dd3f56c5dd6.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_svc_netmgr.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TUYA network manager service  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/da6/base__event_8h_source.html">base_event.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h_source.html">tuya_svc_netmgr_linkage.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_svc_netmgr.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dc8/tuya__svc__netmgr_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__netmgr_2include_2tuya__svc__netmgr_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__netmgr_2include_2tuya__svc__netmgr_8h" id="ainclude_2components_2svc__netmgr_2include_2tuya__svc__netmgr_8h">
+<area shape="rect" title="TUYA network manager service" alt="" coords="903,5,1057,61"/>
+<area shape="rect" href="../../d6/da6/base__event_8h.html" title="tuya simple event module" alt="" coords="836,109,945,136"/>
+<area shape="rect" href="../../d7/d0a/tuya__svc__netmgr__linkage_8h.html" title="TUYA network linkage abstract" alt="" coords="1203,109,1405,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="112,483,245,509"/>
+<area shape="rect" href="../../d3/d35/tuya__base__utilities_8h.html" title="tuya utilities module" alt="" coords="812,184,969,211"/>
+<area shape="rect" href="../../df/dd7/tal__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="1337,333,1437,360"/>
+<area shape="rect" href="../../d9/dad/base__event__info_8h.html" title="tuya simple event module" alt="" coords="647,184,788,211"/>
+<area shape="rect" href="../../d1/db6/tal__memory_8h.html" title="Common process &#45; adapter the memory api provide by OS" alt="" coords="758,333,869,360"/>
+<area shape="rect" href="../../d1/d82/cJSON_8h_source.html" title=" " alt="" coords="1443,259,1517,285"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="1512,333,1605,360"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="1171,333,1261,360"/>
+<area shape="rect" href="../../d0/d7d/tuya__smartpointer_8h.html" title="tuya reference data module" alt="" coords="898,259,1051,285"/>
+<area shape="rect" href="../../d6/d5e/uni__queue_8h.html" title="tuya common queue module" alt="" coords="1267,259,1368,285"/>
+<area shape="rect" href="../../d6/d14/tuya__slist_8h.html" title="tuya sigle direciton list module" alt="" coords="43,333,141,360"/>
+<area shape="rect" href="../../d0/da4/tuya__hlist_8h.html" title="tuya hash list module" alt="" coords="453,333,552,360"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="525,259,667,285"/>
+<area shape="rect" href="../../d8/d9b/tal__thread_8h_source.html" title=" " alt="" coords="182,259,282,285"/>
+<area shape="rect" href="../../d2/d5e/uni__network_8h.html" title="Tuya iotdns module is the DNS service module provided by Tuya, which ensures that developers can prov..." alt="" coords="311,259,425,285"/>
+<area shape="rect" href="../../de/d25/mix__method_8h.html" title="tuya common api module" alt="" coords="1075,259,1191,285"/>
+<area shape="rect" href="../../de/de7/tuya__hashmap_8h.html" title="tuya hasmap module" alt="" coords="743,259,873,285"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="786,408,934,435"/>
+<area shape="rect" title=" " alt="" coords="677,483,752,509"/>
+<area shape="rect" title=" " alt="" coords="777,483,847,509"/>
+<area shape="rect" title=" " alt="" coords="1437,483,1512,509"/>
+<area shape="rect" title=" " alt="" coords="871,483,942,509"/>
+<area shape="rect" title=" " alt="" coords="967,483,1049,509"/>
+<area shape="rect" title=" " alt="" coords="1074,483,1145,509"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="515,483,653,509"/>
+<area shape="rect" href="../../da/dd9/tkl__mutex_8h.html" title="Common process &#45; adapter the mutex api provide by OS" alt="" coords="945,333,1045,360"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="576,333,683,360"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="318,333,429,360"/>
+<area shape="rect" href="../../da/dde/tuya__cloud__com__defs_8h_source.html" title=" " alt="" coords="1593,259,1767,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d10/tuya__svc__netmgr_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__netmgr_2include_2tuya__svc__netmgr_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__netmgr_2include_2tuya__svc__netmgr_8hdep" id="ainclude_2components_2svc__netmgr_2include_2tuya__svc__netmgr_8hdep">
+<area shape="rect" title="TUYA network manager service" alt="" coords="145,5,298,61"/>
+<area shape="rect" href="../../d7/dd6/tuya__devos__data_8h_source.html" title=" " alt="" coords="5,109,184,165"/>
+<area shape="rect" href="../../d7/d25/mqc__app_8h_source.html" title=" " alt="" coords="238,213,415,269"/>
+<area shape="rect" href="../../df/dc9/tuya__svc__mqtt__client_8h.html" title=" " alt="" coords="258,109,470,165"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="13,213,176,269"/>
+</map>
+</div>
+</div>
+<p><a href="../../df/d34/tuya__svc__netmgr_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac20a55096840ba166b9f7f35f7534515"><td class="memItemLeft" align="right" valign="top"><a id="ac20a55096840ba166b9f7f35f7534515" name="ac20a55096840ba166b9f7f35f7534515"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_LINK_ACTIVATE</b>&#160;&#160;&#160;&quot;link.activate&quot;</td></tr>
+<tr class="separator:ac20a55096840ba166b9f7f35f7534515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5baa1bb87268a66018840586ce1ac7f"><td class="memItemLeft" align="right" valign="top"><a id="ad5baa1bb87268a66018840586ce1ac7f" name="ad5baa1bb87268a66018840586ce1ac7f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_LINK_DOWN</b>&#160;&#160;&#160;&quot;link.down&quot;</td></tr>
+<tr class="separator:ad5baa1bb87268a66018840586ce1ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd12eb0d48fdfaca1931a880228d9a4e"><td class="memItemLeft" align="right" valign="top"><a id="abd12eb0d48fdfaca1931a880228d9a4e" name="abd12eb0d48fdfaca1931a880228d9a4e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_LINK_SWITCH</b>&#160;&#160;&#160;&quot;link.switch&quot;</td></tr>
+<tr class="separator:abd12eb0d48fdfaca1931a880228d9a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227b3fce73a111fe7de978878cb50641"><td class="memItemLeft" align="right" valign="top"><a id="a227b3fce73a111fe7de978878cb50641" name="a227b3fce73a111fe7de978878cb50641"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EVENT_LINK_UP</b>&#160;&#160;&#160;&quot;link.up&quot;</td></tr>
+<tr class="memdesc:a227b3fce73a111fe7de978878cb50641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of linkage event <br /></td></tr>
+<tr class="separator:a227b3fce73a111fe7de978878cb50641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be988e2035b7ed63ae155f8ff210a3b"><td class="memItemLeft" align="right" valign="top"><a id="a2be988e2035b7ed63ae155f8ff210a3b" name="a2be988e2035b7ed63ae155f8ff210a3b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETWORK_STATUS_LOCAL</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a2be988e2035b7ed63ae155f8ff210a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2724c01ac808a31a292d354676492a"><td class="memItemLeft" align="right" valign="top"><a id="a4c2724c01ac808a31a292d354676492a" name="a4c2724c01ac808a31a292d354676492a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETWORK_STATUS_MQTT</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a4c2724c01ac808a31a292d354676492a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad950e4291e714ae13c9e5c8eeb2cbd7d"><td class="memItemLeft" align="right" valign="top"><a id="ad950e4291e714ae13c9e5c8eeb2cbd7d" name="ad950e4291e714ae13c9e5c8eeb2cbd7d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NETWORK_STATUS_OFFLINE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad950e4291e714ae13c9e5c8eeb2cbd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a9d9ce041f1182ef6dd83609ab507721e"><td class="memItemLeft" align="right" valign="top"><a id="a9d9ce041f1182ef6dd83609ab507721e" name="a9d9ce041f1182ef6dd83609ab507721e"></a>
+typedef BYTE_T&#160;</td><td class="memItemRight" valign="bottom"><b>NETWORK_STATUS_E</b></td></tr>
+<tr class="memdesc:a9d9ce041f1182ef6dd83609ab507721e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of network status <br /></td></tr>
+<tr class="separator:a9d9ce041f1182ef6dd83609ab507721e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aedb5076369ce266531ebe932878f1618"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#aedb5076369ce266531ebe932878f1618">tuya_svc_netmgr_cfg_get</a> (IN LINKAGE_CFG_E cfg, IN VOID *data)</td></tr>
+<tr class="memdesc:aedb5076369ce266531ebe932878f1618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current activte linkage cfg  <a href="../../df/d34/tuya__svc__netmgr_8h.html#aedb5076369ce266531ebe932878f1618">更多...</a><br /></td></tr>
+<tr class="separator:aedb5076369ce266531ebe932878f1618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8186c5ac7439129f045c3c46df0e7069"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#a8186c5ac7439129f045c3c46df0e7069">tuya_svc_netmgr_cfg_set</a> (IN LINKAGE_CFG_E cfg, IN VOID *data)</td></tr>
+<tr class="memdesc:a8186c5ac7439129f045c3c46df0e7069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current activte linkage cfg  <a href="../../df/d34/tuya__svc__netmgr_8h.html#a8186c5ac7439129f045c3c46df0e7069">更多...</a><br /></td></tr>
+<tr class="separator:a8186c5ac7439129f045c3c46df0e7069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8a84551680c8eb9bc3c85ed5f79183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#a9d9ce041f1182ef6dd83609ab507721e">NETWORK_STATUS_E</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#aff8a84551680c8eb9bc3c85ed5f79183">tuya_svc_netmgr_get_status</a> (VOID)</td></tr>
+<tr class="memdesc:aff8a84551680c8eb9bc3c85ed5f79183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get network status  <a href="../../df/d34/tuya__svc__netmgr_8h.html#aff8a84551680c8eb9bc3c85ed5f79183">更多...</a><br /></td></tr>
+<tr class="separator:aff8a84551680c8eb9bc3c85ed5f79183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4088e445a03474ae558ef480a8d61b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#a0d4088e445a03474ae558ef480a8d61b">tuya_svc_netmgr_init</a> (LINKAGE_CAP_E cap)</td></tr>
+<tr class="memdesc:a0d4088e445a03474ae558ef480a8d61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init network manager  <a href="../../df/d34/tuya__svc__netmgr_8h.html#a0d4088e445a03474ae558ef480a8d61b">更多...</a><br /></td></tr>
+<tr class="separator:a0d4088e445a03474ae558ef480a8d61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad59f5801fbc580c51bf3197471a63b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#a3ad59f5801fbc580c51bf3197471a63b">tuya_svc_netmgr_reset</a> (IN GW_RESET_TYPE_E reset_type)</td></tr>
+<tr class="memdesc:a3ad59f5801fbc580c51bf3197471a63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all linkage config  <a href="../../df/d34/tuya__svc__netmgr_8h.html#a3ad59f5801fbc580c51bf3197471a63b">更多...</a><br /></td></tr>
+<tr class="separator:a3ad59f5801fbc580c51bf3197471a63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >TUYA network manager service </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-03-10</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="aedb5076369ce266531ebe932878f1618" name="aedb5076369ce266531ebe932878f1618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb5076369ce266531ebe932878f1618">&#9670;&nbsp;</a></span>tuya_svc_netmgr_cfg_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_netmgr_cfg_get </td>
+          <td>(</td>
+          <td class="paramtype">IN LINKAGE_CFG_E&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current activte linkage cfg </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>see LINKAGE_CFG_E for details </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>see LINKAGE_CFG_E for details</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8186c5ac7439129f045c3c46df0e7069" name="a8186c5ac7439129f045c3c46df0e7069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8186c5ac7439129f045c3c46df0e7069">&#9670;&nbsp;</a></span>tuya_svc_netmgr_cfg_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_netmgr_cfg_set </td>
+          <td>(</td>
+          <td class="paramtype">IN LINKAGE_CFG_E&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set current activte linkage cfg </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>see LINKAGE_CFG_E for details </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>see LINKAGE_CFG_E for details</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aff8a84551680c8eb9bc3c85ed5f79183" name="aff8a84551680c8eb9bc3c85ed5f79183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8a84551680c8eb9bc3c85ed5f79183">&#9670;&nbsp;</a></span>tuya_svc_netmgr_get_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d34/tuya__svc__netmgr_8h.html#a9d9ce041f1182ef6dd83609ab507721e">NETWORK_STATUS_E</a> tuya_svc_netmgr_get_status </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get network status </p>
+<dl class="section return"><dt>返回</dt><dd>see NETWORK_STATUS_E for details </dd></dl>
+
+</div>
+</div>
+<a id="a0d4088e445a03474ae558ef480a8d61b" name="a0d4088e445a03474ae558ef480a8d61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4088e445a03474ae558ef480a8d61b">&#9670;&nbsp;</a></span>tuya_svc_netmgr_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_netmgr_init </td>
+          <td>(</td>
+          <td class="paramtype">LINKAGE_CAP_E&#160;</td>
+          <td class="paramname"><em>cap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init network manager </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3ad59f5801fbc580c51bf3197471a63b" name="a3ad59f5801fbc580c51bf3197471a63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad59f5801fbc580c51bf3197471a63b">&#9670;&nbsp;</a></span>tuya_svc_netmgr_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_netmgr_reset </td>
+          <td>(</td>
+          <td class="paramtype">IN GW_RESET_TYPE_E&#160;</td>
+          <td class="paramname"><em>reset_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset all linkage config </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reset_type</td><td>see GW_RESET_TYPE_E</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

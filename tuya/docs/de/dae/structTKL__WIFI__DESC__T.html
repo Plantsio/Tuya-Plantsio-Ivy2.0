@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_WIFI_DESC_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_WIFI_DESC_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>the description of tuya kernel adapter layer wifi api  
+ <a href="../../de/dae/structTKL__WIFI__DESC__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d16/tkl__init__wifi_8h_source.html">tkl_init_wifi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:adbd8ae4dad6a92caaa600f309035f28b"><td class="memItemLeft" align="right" valign="top"><a id="adbd8ae4dad6a92caaa600f309035f28b" name="adbd8ae4dad6a92caaa600f309035f28b"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_bssid</b> )(UCHAR_T *mac)</td></tr>
+<tr class="separator:adbd8ae4dad6a92caaa600f309035f28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5b672221a3982b341fc7dfb3b6681a"><td class="memItemLeft" align="right" valign="top"><a id="a0b5b672221a3982b341fc7dfb3b6681a" name="a0b5b672221a3982b341fc7dfb3b6681a"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_connected_ap_info</b> )(<a class="el" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> **fast_ap_info)</td></tr>
+<tr class="separator:a0b5b672221a3982b341fc7dfb3b6681a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718f62700b8fccac7fbc176dd0ffe079"><td class="memItemLeft" align="right" valign="top"><a id="a718f62700b8fccac7fbc176dd0ffe079" name="a718f62700b8fccac7fbc176dd0ffe079"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_cur_channel</b> )(UCHAR_T *chan)</td></tr>
+<tr class="separator:a718f62700b8fccac7fbc176dd0ffe079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05931253ac60059a8bc637519f216ce9"><td class="memItemLeft" align="right" valign="top"><a id="a05931253ac60059a8bc637519f216ce9" name="a05931253ac60059a8bc637519f216ce9"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_ip</b> )(CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip)</td></tr>
+<tr class="separator:a05931253ac60059a8bc637519f216ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a716b136d34eeb1d3511ca3ee6c903a"><td class="memItemLeft" align="right" valign="top"><a id="a5a716b136d34eeb1d3511ca3ee6c903a" name="a5a716b136d34eeb1d3511ca3ee6c903a"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_mac</b> )(CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac)</td></tr>
+<tr class="separator:a5a716b136d34eeb1d3511ca3ee6c903a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e5b60978fa5170886d00ea37f62ba7"><td class="memItemLeft" align="right" valign="top"><a id="ab8e5b60978fa5170886d00ea37f62ba7" name="ab8e5b60978fa5170886d00ea37f62ba7"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_work_mode</b> )(<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> *mode)</td></tr>
+<tr class="separator:ab8e5b60978fa5170886d00ea37f62ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001b5e3afa5e2f7d912f218acf600a60"><td class="memItemLeft" align="right" valign="top"><a id="a001b5e3afa5e2f7d912f218acf600a60" name="a001b5e3afa5e2f7d912f218acf600a60"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> )(<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">WIFI_EVENT_CB</a> cb)</td></tr>
+<tr class="separator:a001b5e3afa5e2f7d912f218acf600a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade02a96c69ee8e9f7d5663b37ae88d23"><td class="memItemLeft" align="right" valign="top"><a id="ade02a96c69ee8e9f7d5663b37ae88d23" name="ade02a96c69ee8e9f7d5663b37ae88d23"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>ioctl</b> )(<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a> cmd, VOID *args)</td></tr>
+<tr class="separator:ade02a96c69ee8e9f7d5663b37ae88d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155891a86a1286e5fe311b7259e00bb6"><td class="memItemLeft" align="right" valign="top"><a id="a155891a86a1286e5fe311b7259e00bb6" name="a155891a86a1286e5fe311b7259e00bb6"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>register_recv_mgnt_callback</b> )(CONST BOOL_T enable, CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a> recv_cb)</td></tr>
+<tr class="separator:a155891a86a1286e5fe311b7259e00bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0c811ab2b3ca873b74e3f89d59611d"><td class="memItemLeft" align="right" valign="top"><a id="abb0c811ab2b3ca873b74e3f89d59611d" name="abb0c811ab2b3ca873b74e3f89d59611d"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>release_ap</b> )(<a class="el" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> *ap)</td></tr>
+<tr class="separator:abb0c811ab2b3ca873b74e3f89d59611d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a85beded1903321db54f63ba613601b"><td class="memItemLeft" align="right" valign="top"><a id="a5a85beded1903321db54f63ba613601b" name="a5a85beded1903321db54f63ba613601b"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>scan_ap</b> )(CONST SCHAR_T *ssid, <a class="el" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> **ap_ary, UINT_T *num)</td></tr>
+<tr class="separator:a5a85beded1903321db54f63ba613601b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963084ddf167be38afa2195ec4c276be"><td class="memItemLeft" align="right" valign="top"><a id="a963084ddf167be38afa2195ec4c276be" name="a963084ddf167be38afa2195ec4c276be"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>send_mgnt</b> )(CONST UCHAR_T *buf, CONST UINT_T len)</td></tr>
+<tr class="separator:a963084ddf167be38afa2195ec4c276be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eebd9ee5a6013f644a53570c3ce6b6a"><td class="memItemLeft" align="right" valign="top"><a id="a4eebd9ee5a6013f644a53570c3ce6b6a" name="a4eebd9ee5a6013f644a53570c3ce6b6a"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_country_code</b> )(CONST COUNTRY_CODE_E ccode)</td></tr>
+<tr class="separator:a4eebd9ee5a6013f644a53570c3ce6b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9255bc384eb10c970e952c64d277fa7"><td class="memItemLeft" align="right" valign="top"><a id="ab9255bc384eb10c970e952c64d277fa7" name="ab9255bc384eb10c970e952c64d277fa7"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_cur_channel</b> )(CONST UCHAR_T chan)</td></tr>
+<tr class="separator:ab9255bc384eb10c970e952c64d277fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a461bf7fa0988956de7496d318118b0"><td class="memItemLeft" align="right" valign="top"><a id="a9a461bf7fa0988956de7496d318118b0" name="a9a461bf7fa0988956de7496d318118b0"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_lp_mode</b> )(CONST BOOL_T en, CONST UCHAR_T dtim)</td></tr>
+<tr class="separator:a9a461bf7fa0988956de7496d318118b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34759a1bcf57bc08245559c5c5b49c4"><td class="memItemLeft" align="right" valign="top"><a id="aa34759a1bcf57bc08245559c5c5b49c4" name="aa34759a1bcf57bc08245559c5c5b49c4"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_mac</b> )(CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, CONST <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac)</td></tr>
+<tr class="separator:aa34759a1bcf57bc08245559c5c5b49c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec624d739b09f41a56f09d0ec85c871"><td class="memItemLeft" align="right" valign="top"><a id="a6ec624d739b09f41a56f09d0ec85c871" name="a6ec624d739b09f41a56f09d0ec85c871"></a>
+BOOL_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_rf_calibrated</b> )(VOID_T)</td></tr>
+<tr class="separator:a6ec624d739b09f41a56f09d0ec85c871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95824a72c8db0d75269f7cc35895d65"><td class="memItemLeft" align="right" valign="top"><a id="ab95824a72c8db0d75269f7cc35895d65" name="ab95824a72c8db0d75269f7cc35895d65"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_sniffer</b> )(CONST BOOL_T en, CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">SNIFFER_CALLBACK</a> cb)</td></tr>
+<tr class="separator:ab95824a72c8db0d75269f7cc35895d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4efba7c8229edc8a0a17e4792beb47"><td class="memItemLeft" align="right" valign="top"><a id="a9c4efba7c8229edc8a0a17e4792beb47" name="a9c4efba7c8229edc8a0a17e4792beb47"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>set_work_mode</b> )(CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> mode)</td></tr>
+<tr class="separator:a9c4efba7c8229edc8a0a17e4792beb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b4a86faa3bc51000477e435e65178c"><td class="memItemLeft" align="right" valign="top"><a id="ab2b4a86faa3bc51000477e435e65178c" name="ab2b4a86faa3bc51000477e435e65178c"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>start_ap</b> )(CONST <a class="el" href="../../d5/de4/structWF__AP__CFG__IF__S.html">WF_AP_CFG_IF_S</a> *cfg)</td></tr>
+<tr class="separator:ab2b4a86faa3bc51000477e435e65178c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d780ca0ce56dd2f5f496cc38021ec14"><td class="memItemLeft" align="right" valign="top"><a id="a2d780ca0ce56dd2f5f496cc38021ec14" name="a2d780ca0ce56dd2f5f496cc38021ec14"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>station_connect</b> )(CONST SCHAR_T *ssid, CONST SCHAR_T *passwd)</td></tr>
+<tr class="separator:a2d780ca0ce56dd2f5f496cc38021ec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83745e8f3919ced97dbb8c08a8bb0c56"><td class="memItemLeft" align="right" valign="top"><a id="a83745e8f3919ced97dbb8c08a8bb0c56" name="a83745e8f3919ced97dbb8c08a8bb0c56"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>station_disconnect</b> )(VOID_T)</td></tr>
+<tr class="separator:a83745e8f3919ced97dbb8c08a8bb0c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd05972f6d8ecde2c1163a87f690666b"><td class="memItemLeft" align="right" valign="top"><a id="abd05972f6d8ecde2c1163a87f690666b" name="abd05972f6d8ecde2c1163a87f690666b"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>station_fast_connect</b> )(CONST <a class="el" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> *fast_ap_info)</td></tr>
+<tr class="separator:abd05972f6d8ecde2c1163a87f690666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2622fc3ed9a5045b1a598ce0113a8494"><td class="memItemLeft" align="right" valign="top"><a id="a2622fc3ed9a5045b1a598ce0113a8494" name="a2622fc3ed9a5045b1a598ce0113a8494"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>station_get_conn_ap_rssi</b> )(SCHAR_T *rssi)</td></tr>
+<tr class="separator:a2622fc3ed9a5045b1a598ce0113a8494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c73db3c4b886a957c0a9d9e4b8e7b2"><td class="memItemLeft" align="right" valign="top"><a id="aa8c73db3c4b886a957c0a9d9e4b8e7b2" name="aa8c73db3c4b886a957c0a9d9e4b8e7b2"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>station_get_status</b> )(<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a> *stat)</td></tr>
+<tr class="separator:aa8c73db3c4b886a957c0a9d9e4b8e7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fa49c43a0f2c5e49b250e48ae4c028"><td class="memItemLeft" align="right" valign="top"><a id="ae3fa49c43a0f2c5e49b250e48ae4c028" name="ae3fa49c43a0f2c5e49b250e48ae4c028"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>stop_ap</b> )(VOID_T)</td></tr>
+<tr class="separator:ae3fa49c43a0f2c5e49b250e48ae4c028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >the description of tuya kernel adapter layer wifi api </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/init/include/<a class="el" href="../../da/d16/tkl__init__wifi_8h_source.html">tkl_init_wifi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

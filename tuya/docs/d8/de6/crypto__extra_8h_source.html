@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/lib_tls/include/psa/crypto_extra.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e0ad759426b81a2a916f0c214904fb04.html">lib_tls</a></li><li class="navelem"><a class="el" href="../../dir_f30d89c772c5acecb10afd330b16abb6.html">include</a></li><li class="navelem"><a class="el" href="../../dir_eefea1140a0d03ec06557abf451e332b.html">psa</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">crypto_extra.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/de6/crypto__extra_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *  Copyright The Mbed TLS Contributors</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *  SPDX-License-Identifier: Apache-2.0</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *  not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *  You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *  http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *  Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> *  distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *  See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *  limitations under the License.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifndef PSA_CRYPTO_EXTRA_H</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define PSA_CRYPTO_EXTRA_H</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;mbedtls/private_access.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;mbedtls/platform_util.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/d1a/crypto__types_8h.html">crypto_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/d14/crypto__compat_8h.html">crypto_compat.h</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/* UID for secure storage seed */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define PSA_CRYPTO_ITS_RANDOM_SEED_UID 0xFFFFFF52</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/* See mbedtls_config.h for definition */</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#if !defined(MBEDTLS_PSA_KEY_SLOT_COUNT)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define MBEDTLS_PSA_KEY_SLOT_COUNT 32</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> psa_set_key_enrollment_algorithm(</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> alg2)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    attributes-&gt;MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(policy).MBEDTLS_PRIVATE(alg2) = alg2;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> psa_get_key_enrollment_algorithm(</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span>( attributes-&gt;MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(policy).MBEDTLS_PRIVATE(alg2) );</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#if defined(MBEDTLS_PSA_CRYPTO_SE_C)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> psa_get_key_slot_number(</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_typedef" href="../../da/d6f/group__se__init.html#ga90828ba6e282dd39260c81af68532e1d">psa_key_slot_number_t</a> *slot_number );</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> psa_set_key_slot_number(</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_typedef" href="../../da/d6f/group__se__init.html#ga90828ba6e282dd39260c81af68532e1d">psa_key_slot_number_t</a> slot_number )</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    attributes-&gt;MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(flags) |= MBEDTLS_PSA_KA_FLAG_HAS_SLOT_NUMBER;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    attributes-&gt;MBEDTLS_PRIVATE(slot_number) = slot_number;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> psa_clear_key_slot_number(</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes )</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>{</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    attributes-&gt;MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(flags) &amp;= ~MBEDTLS_PSA_KA_FLAG_HAS_SLOT_NUMBER;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> mbedtls_psa_register_se_key(</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_PSA_CRYPTO_SE_C */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#a00f4837e0253580c83b4d93ea91aa48b">  220</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/de6/crypto__extra_8h.html#a00f4837e0253580c83b4d93ea91aa48b">mbedtls_psa_crypto_free</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html">  228</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../df/d7d/structmbedtls__psa__stats__s.html">mbedtls_psa_stats_s</a></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>{</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#a7e4edf3d1ccd20d2b5d5bf1dc6255a97">  231</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#a7e4edf3d1ccd20d2b5d5bf1dc6255a97">MBEDTLS_PRIVATE</a>(volatile_slots);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#af637062ce9b794563bf86822d38a0deb">  234</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#af637062ce9b794563bf86822d38a0deb">MBEDTLS_PRIVATE</a>(persistent_slots);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#af53ffae07b8819c377c188aa0f521ac2">  237</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#af53ffae07b8819c377c188aa0f521ac2">MBEDTLS_PRIVATE</a>(external_slots);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#ae728e01d96fdccaae8ff6705abcc908d">  240</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#ae728e01d96fdccaae8ff6705abcc908d">MBEDTLS_PRIVATE</a>(half_filled_slots);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#af7f9009724766831f26c0d8d502807ac">  242</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#af7f9009724766831f26c0d8d502807ac">MBEDTLS_PRIVATE</a>(cache_slots);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#ad17c3d802ee0704abf8c718e8564fec2">  244</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#ad17c3d802ee0704abf8c718e8564fec2">MBEDTLS_PRIVATE</a>(empty_slots);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#ad1438b84e59f8673bf24dde0a41bf104">  246</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#ad1438b84e59f8673bf24dde0a41bf104">MBEDTLS_PRIVATE</a>(locked_slots);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#addc8313b501428d9fee7f0f2fd2aec2e">  248</a></span>    <a class="code hl_typedef" href="../../db/ddf/group__key__lifetimes.html#ga11e986351c65bd3dc3c0fe2cd9926e4b">psa_key_id_t</a> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#addc8313b501428d9fee7f0f2fd2aec2e">MBEDTLS_PRIVATE</a>(max_open_internal_key_id);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="../../df/d7d/structmbedtls__psa__stats__s.html#acc093db047088c7a92ee76457e30a502">  250</a></span>    <a class="code hl_typedef" href="../../db/ddf/group__key__lifetimes.html#ga11e986351c65bd3dc3c0fe2cd9926e4b">psa_key_id_t</a> <a class="code hl_function" href="../../df/d7d/structmbedtls__psa__stats__s.html#acc093db047088c7a92ee76457e30a502">MBEDTLS_PRIVATE</a>(max_open_external_key_id);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#aa9b95eb371f975f041d50f1a662357fe">  251</a></span>} <a class="code hl_typedef" href="../../d8/de6/crypto__extra_8h.html#aa9b95eb371f975f041d50f1a662357fe">mbedtls_psa_stats_t</a>;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#aa4d160ae9c02a60317702832a828e4b7">  260</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/de6/crypto__extra_8h.html#aa4d160ae9c02a60317702832a828e4b7">mbedtls_psa_get_stats</a>( <a class="code hl_struct" href="../../df/d7d/structmbedtls__psa__stats__s.html">mbedtls_psa_stats_t</a> *stats );</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#af4f09c8f08db9e2d881f465c432a300d">  331</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d8/de6/crypto__extra_8h.html#af4f09c8f08db9e2d881f465c432a300d">mbedtls_psa_inject_entropy</a>(<span class="keyword">const</span> uint8_t *seed,</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                                        <span class="keywordtype">size_t</span> seed_size);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#ga5e7439c2905136366c3a876e62e5ddfc">  345</a></span><span class="preprocessor">#define PSA_KEY_TYPE_DSA_PUBLIC_KEY                 ((psa_key_type_t)0x4002)</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#ga7d4a45c147cb0ecb55d01d9c04bfed76">  363</a></span><span class="preprocessor">#define PSA_KEY_TYPE_DSA_KEY_PAIR                    ((psa_key_type_t)0x7002)</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#ga273fdfcf23eb0624f8b63d2321cf95c1">  366</a></span><span class="preprocessor">#define PSA_KEY_TYPE_IS_DSA(type)                                       \</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="preprocessor">    (PSA_KEY_TYPE_PUBLIC_KEY_OF_KEY_PAIR(type) == PSA_KEY_TYPE_DSA_PUBLIC_KEY)</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="preprocessor">#define PSA_ALG_DSA_BASE                        ((psa_algorithm_t)0x06000400)</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#ga9a68efdddff5ae95f104a1416b12742e">  384</a></span><span class="preprocessor">#define PSA_ALG_DSA(hash_alg)                             \</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="preprocessor">    (PSA_ALG_DSA_BASE | ((hash_alg) &amp; PSA_ALG_HASH_MASK))</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="preprocessor">#define PSA_ALG_DETERMINISTIC_DSA_BASE          ((psa_algorithm_t)0x06000500)</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#define PSA_ALG_DSA_DETERMINISTIC_FLAG PSA_ALG_ECDSA_DETERMINISTIC_FLAG</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#gab8eb98fb6d2e094e47f3b44dfe128f94">  402</a></span><span class="preprocessor">#define PSA_ALG_DETERMINISTIC_DSA(hash_alg)                             \</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="preprocessor">    (PSA_ALG_DETERMINISTIC_DSA_BASE | ((hash_alg) &amp; PSA_ALG_HASH_MASK))</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="preprocessor">#define PSA_ALG_IS_DSA(alg)                                             \</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="preprocessor">    (((alg) &amp; ~PSA_ALG_HASH_MASK &amp; ~PSA_ALG_DSA_DETERMINISTIC_FLAG) ==  \</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">     PSA_ALG_DSA_BASE)</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="preprocessor">#define PSA_ALG_DSA_IS_DETERMINISTIC(alg)               \</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="preprocessor">    (((alg) &amp; PSA_ALG_DSA_DETERMINISTIC_FLAG) != 0)</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="preprocessor">#define PSA_ALG_IS_DETERMINISTIC_DSA(alg)                       \</span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="preprocessor">    (PSA_ALG_IS_DSA(alg) &amp;&amp; PSA_ALG_DSA_IS_DETERMINISTIC(alg))</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="preprocessor">#define PSA_ALG_IS_RANDOMIZED_DSA(alg)                          \</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="preprocessor">    (PSA_ALG_IS_DSA(alg) &amp;&amp; !PSA_ALG_DSA_IS_DETERMINISTIC(alg))</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">/* We need to expand the sample definition of this macro from</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment"> * the API definition. */</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="preprocessor">#undef PSA_ALG_IS_VENDOR_HASH_AND_SIGN</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="preprocessor">#define PSA_ALG_IS_VENDOR_HASH_AND_SIGN(alg)    \</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="preprocessor">    PSA_ALG_IS_DSA(alg)</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno"><a class="line" href="../../d4/d86/group__attributes.html#gab930304ccac92e0729fb5535c87a9fc2">  433</a></span><span class="preprocessor">#define PSA_DH_FAMILY_CUSTOM             ((psa_dh_family_t) 0x7e)</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno"><a class="line" href="../../d4/d86/group__attributes.html#ga8909d3f2ee48121ea0dff198276bdd38">  502</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d4/d86/group__attributes.html#ga8909d3f2ee48121ea0dff198276bdd38">psa_set_key_domain_parameters</a>(<a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes,</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>                                           <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#ga63fce6880ca5933b5d6baa257febf1f6">psa_key_type_t</a> type,</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>                                           <span class="keyword">const</span> uint8_t *data,</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                                           <span class="keywordtype">size_t</span> data_length);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno"><a class="line" href="../../d4/d86/group__attributes.html#gae42b480d8ffa161eb2a0a3e391010347">  530</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d4/d86/group__attributes.html#gae42b480d8ffa161eb2a0a3e391010347">psa_get_key_domain_parameters</a>(</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_t</a> *attributes,</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    uint8_t *data,</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    <span class="keywordtype">size_t</span> data_size,</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    <span class="keywordtype">size_t</span> *data_length);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno"><a class="line" href="../../d4/d86/group__attributes.html#ga59089e39970e89191105bd3b3294c3bd">  561</a></span><span class="preprocessor">#define PSA_KEY_DOMAIN_PARAMETERS_SIZE(key_type, key_bits)              \</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="preprocessor">    (PSA_KEY_TYPE_IS_RSA(key_type) ? sizeof(int) :                      \</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">     PSA_KEY_TYPE_IS_DH(key_type) ? PSA_DH_KEY_DOMAIN_PARAMETERS_SIZE(key_bits) : \</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">     PSA_KEY_TYPE_IS_DSA(key_type) ? PSA_DSA_KEY_DOMAIN_PARAMETERS_SIZE(key_bits) : \</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor">     0)</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor">#define PSA_DH_KEY_DOMAIN_PARAMETERS_SIZE(key_bits)     \</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="preprocessor">    (4 + (PSA_BITS_TO_BYTES(key_bits) + 5) * 3 </span><span class="comment">/*without optional parts*/</span><span class="preprocessor">)</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="preprocessor">#define PSA_DSA_KEY_DOMAIN_PARAMETERS_SIZE(key_bits)    \</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="preprocessor">    (4 + (PSA_BITS_TO_BYTES(key_bits) + 5) * 2 </span><span class="comment">/*p, g*/</span><span class="preprocessor"> + 34 </span><span class="comment">/*q*/</span><span class="preprocessor">)</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">#if defined(MBEDTLS_ECP_C)</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="preprocessor">#include &lt;mbedtls/ecp.h&gt;</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gae7ad3569cb9c91b1ebe59a056edb2fc6">psa_ecc_family_t</a> mbedtls_ecc_group_to_psa( mbedtls_ecp_group_id grpid,</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                                                        <span class="keywordtype">size_t</span> *bits )</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>{</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="keywordflow">switch</span>( grpid )</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    {</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP192R1:</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            *bits = 192;</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga48bb340b5544ba617b0f5b89542665a7">PSA_ECC_FAMILY_SECP_R1</a> );</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP224R1:</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>            *bits = 224;</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga48bb340b5544ba617b0f5b89542665a7">PSA_ECC_FAMILY_SECP_R1</a> );</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP256R1:</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            *bits = 256;</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga48bb340b5544ba617b0f5b89542665a7">PSA_ECC_FAMILY_SECP_R1</a> );</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP384R1:</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            *bits = 384;</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga48bb340b5544ba617b0f5b89542665a7">PSA_ECC_FAMILY_SECP_R1</a> );</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP521R1:</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>            *bits = 521;</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga48bb340b5544ba617b0f5b89542665a7">PSA_ECC_FAMILY_SECP_R1</a> );</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_BP256R1:</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>            *bits = 256;</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#gac1643f1baf38b30d07c20a6eac697f15">PSA_ECC_FAMILY_BRAINPOOL_P_R1</a> );</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_BP384R1:</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>            *bits = 384;</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#gac1643f1baf38b30d07c20a6eac697f15">PSA_ECC_FAMILY_BRAINPOOL_P_R1</a> );</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_BP512R1:</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>            *bits = 512;</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#gac1643f1baf38b30d07c20a6eac697f15">PSA_ECC_FAMILY_BRAINPOOL_P_R1</a> );</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_CURVE25519:</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>            *bits = 255;</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga1f624c5cdaf25b21287af33024e1aff8">PSA_ECC_FAMILY_MONTGOMERY</a> );</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP192K1:</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            *bits = 192;</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga5cf2405c6e23b93cea0aac092d1aa0f7">PSA_ECC_FAMILY_SECP_K1</a> );</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP224K1:</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>            *bits = 224;</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga5cf2405c6e23b93cea0aac092d1aa0f7">PSA_ECC_FAMILY_SECP_K1</a> );</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_SECP256K1:</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>            *bits = 256;</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga5cf2405c6e23b93cea0aac092d1aa0f7">PSA_ECC_FAMILY_SECP_K1</a> );</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>        <span class="keywordflow">case</span> MBEDTLS_ECP_DP_CURVE448:</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>            *bits = 448;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>            <span class="keywordflow">return</span>( <a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga1f624c5cdaf25b21287af33024e1aff8">PSA_ECC_FAMILY_MONTGOMERY</a> );</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>            *bits = 0;</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>            <span class="keywordflow">return</span>( 0 );</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    }</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>}</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>mbedtls_ecp_group_id mbedtls_ecc_group_of_psa( <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gae7ad3569cb9c91b1ebe59a056edb2fc6">psa_ecc_family_t</a> curve,</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>                                               <span class="keywordtype">size_t</span> bits,</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>                                               <span class="keywordtype">int</span> bits_is_sloppy );</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_ECP_C */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span> </div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span><span class="preprocessor">#if defined(MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG)</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> mbedtls_psa_external_get_random(</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    mbedtls_psa_external_random_context_t *context,</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    uint8_t *output, <span class="keywordtype">size_t</span> output_size, <span class="keywordtype">size_t</span> *output_length );</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span> </div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno"><a class="line" href="../../d4/dbc/group__psa__builtin__keys.html#gaa0cdcd889aaaca7d78c378deb1e14353">  735</a></span><span class="preprocessor">#define MBEDTLS_PSA_KEY_ID_BUILTIN_MIN          ((psa_key_id_t)0x7fff0000)</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno"><a class="line" href="../../d4/dbc/group__psa__builtin__keys.html#ga0af04ffbbc3f6bc08562381205b8ef5e">  742</a></span><span class="preprocessor">#define MBEDTLS_PSA_KEY_ID_BUILTIN_MAX          ((psa_key_id_t)0x7fffefff)</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span> </div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="../../d4/dbc/group__psa__builtin__keys.html#ga1eb805bebc295cc2f7132679fa85d43d">  748</a></span><span class="keyword">typedef</span> uint64_t <a class="code hl_typedef" href="../../d4/dbc/group__psa__builtin__keys.html#ga1eb805bebc295cc2f7132679fa85d43d">psa_drv_slot_number_t</a>;</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="preprocessor">#if defined(MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS)</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> psa_key_id_is_builtin( <a class="code hl_typedef" href="../../db/ddf/group__key__lifetimes.html#ga11e986351c65bd3dc3c0fe2cd9926e4b">psa_key_id_t</a> key_id )</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>{</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keywordflow">return</span>( ( key_id &gt;= <a class="code hl_define" href="../../d4/dbc/group__psa__builtin__keys.html#gaa0cdcd889aaaca7d78c378deb1e14353">MBEDTLS_PSA_KEY_ID_BUILTIN_MIN</a> ) &amp;&amp;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>            ( key_id &lt;= <a class="code hl_define" href="../../d4/dbc/group__psa__builtin__keys.html#ga0af04ffbbc3f6bc08562381205b8ef5e">MBEDTLS_PSA_KEY_ID_BUILTIN_MAX</a> ) );</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>}</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span> </div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> mbedtls_psa_platform_get_builtin_key(</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    mbedtls_svc_key_id_t key_id,</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    <a class="code hl_typedef" href="../../db/ddf/group__key__lifetimes.html#ga6821ff6dd39dc2bc370ded760ad8b0cf">psa_key_lifetime_t</a> *lifetime,</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <a class="code hl_typedef" href="../../d4/dbc/group__psa__builtin__keys.html#ga1eb805bebc295cc2f7132679fa85d43d">psa_drv_slot_number_t</a> *slot_number );</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="preprocessor">#define PSA_ALG_CATEGORY_PAKE                   ((psa_algorithm_t)0x0a000000)</span></div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">  833</a></span><span class="preprocessor">#define PSA_ALG_IS_PAKE(alg)                                        \</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="preprocessor">    (((alg) &amp; PSA_ALG_CATEGORY_MASK) == PSA_ALG_CATEGORY_PAKE)</span></div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno"><a class="line" href="../../d5/db0/group__crypto__types.html#gaa2ae65388d11e23b3676570337a69926">  951</a></span><span class="preprocessor">#define PSA_ALG_JPAKE                   ((psa_algorithm_t)0x0a000100)</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga3962836732c4f835a7767d678efd0391">  972</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga3962836732c4f835a7767d678efd0391">psa_pake_side_t</a>;</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gac16be59e5b1acb89c26709eed001ef35">  980</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gac16be59e5b1acb89c26709eed001ef35">psa_pake_step_t</a>;</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span> </div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gad8b29b6efa90ad2887d7b1252d23e5bc">  990</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gad8b29b6efa90ad2887d7b1252d23e5bc">psa_pake_primitive_type_t</a>;</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span> </div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gae20cc74390755f28b6f2b893a936d893">  997</a></span><span class="keyword">typedef</span> uint8_t <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gae20cc74390755f28b6f2b893a936d893">psa_pake_family_t</a>;</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c"> 1003</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c">psa_pake_primitive_t</a>;</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span> </div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gaded355f6ca5e295062a4222f3e238b83"> 1012</a></span><span class="preprocessor">#define PSA_PAKE_SIDE_FIRST                ((psa_pake_side_t)0x01)</span></div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span> </div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga937c851c7a5cf46d191fcafbbd73ec39"> 1021</a></span><span class="preprocessor">#define PSA_PAKE_SIDE_SECOND                ((psa_pake_side_t)0x02)</span></div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga59277c0169253b847b9a79dc89acfd32"> 1027</a></span><span class="preprocessor">#define PSA_PAKE_SIDE_CLIENT                ((psa_pake_side_t)0x11)</span></div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span> </div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga911d548e3f789f9941b35634274ea7e5"> 1033</a></span><span class="preprocessor">#define PSA_PAKE_SIDE_SERVER                ((psa_pake_side_t)0x12)</span></div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span> </div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga6da014bd15742c5463bf32c7759788d0"> 1053</a></span><span class="preprocessor">#define PSA_PAKE_PRIMITIVE_TYPE_ECC       ((psa_pake_primitive_type_t)0x01)</span></div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span> </div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga96803ecc85799a0d070861b9f86d579f"> 1073</a></span><span class="preprocessor">#define PSA_PAKE_PRIMITIVE_TYPE_DH       ((psa_pake_primitive_type_t)0x02)</span></div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span> </div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gaf49527ceec65d3927f4ef2a589bade04"> 1094</a></span><span class="preprocessor">#define PSA_PAKE_PRIMITIVE(pake_type, pake_family, pake_bits) \</span></div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span><span class="preprocessor">    ((pake_bits &amp; 0xFFFF) != pake_bits) ? 0 :                 \</span></div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span><span class="preprocessor">    ((psa_pake_primitive_t) (((pake_type) &lt;&lt; 24 |             \</span></div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span><span class="preprocessor">            (pake_family) &lt;&lt; 16) | (pake_bits)))</span></div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span> </div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga043357cc339a34134089e9c8be93bfdb"> 1111</a></span><span class="preprocessor">#define PSA_PAKE_STEP_KEY_SHARE                 ((psa_pake_step_t)0x01)</span></div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gaeb14d80e6d8a0716ed04d42dcc94af82"> 1128</a></span><span class="preprocessor">#define PSA_PAKE_STEP_ZK_PUBLIC                 ((psa_pake_step_t)0x02)</span></div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span> </div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga8b483c7638f927f1c858cfcfe32569f9"> 1149</a></span><span class="preprocessor">#define PSA_PAKE_STEP_ZK_PROOF                  ((psa_pake_step_t)0x03)</span></div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span> </div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga11606af917145770bbdb0ae16adf7704"> 1157</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_s</a> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>;</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span> </div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span><span class="keyword">static</span> <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> psa_pake_cs_get_algorithm(</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>                           <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>* cipher_suite</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>                           );</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span> </div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span><span class="keyword">static</span> <span class="keywordtype">void</span> psa_pake_cs_set_algorithm(</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>                           <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>* cipher_suite,</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>                           <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> algorithm</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>                           );</div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span> </div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span><span class="keyword">static</span> <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c">psa_pake_primitive_t</a> psa_pake_cs_get_primitive(</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>                           <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>* cipher_suite</div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>                           );</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span> </div>
+<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span><span class="keyword">static</span> <span class="keywordtype">void</span> psa_pake_cs_set_primitive(</div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>                           <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>* cipher_suite,</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>                           <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c">psa_pake_primitive_t</a> primitive</div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>                           );</div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span> </div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span><span class="keyword">static</span> <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> psa_pake_cs_get_hash(</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>                           <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>* cipher_suite</div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>                           );</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span> </div>
+<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span><span class="keyword">static</span> <span class="keywordtype">void</span> psa_pake_cs_set_hash(</div>
+<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>                           <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a>* cipher_suite,</div>
+<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>                           <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> hash</div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>                           );</div>
+<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span> </div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga2b408ef3a7b22400e4590a2c98a503df"> 1295</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_s</a> <a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a>;</div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span> </div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span><span class="keyword">static</span> <a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> psa_pake_operation_init(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span> </div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gada744c91ef1930e2e61cdb66013b0f39"> 1364</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#gada744c91ef1930e2e61cdb66013b0f39">psa_pake_setup</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>                            <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> cipher_suite);</div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span> </div>
+<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga070417b83e6d602e9a6cc6748a14ea91"> 1404</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#ga070417b83e6d602e9a6cc6748a14ea91">psa_pake_set_password_key</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>                                       mbedtls_svc_key_id_t password);</div>
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span> </div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga64fe9f62b09d39056e169325a9d33aac"> 1443</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>                               <span class="keyword">const</span> uint8_t *user_id,</div>
+<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>                               <span class="keywordtype">size_t</span> user_id_len);</div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span> </div>
+<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gabae9a3e54d1c895032a4ee543b494958"> 1485</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#gabae9a3e54d1c895032a4ee543b494958">psa_pake_set_peer</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span>                               <span class="keyword">const</span> uint8_t *peer_id,</div>
+<div class="line"><a id="l01487" name="l01487"></a><span class="lineno"> 1487</span>                               <span class="keywordtype">size_t</span> peer_id_len);</div>
+<div class="line"><a id="l01488" name="l01488"></a><span class="lineno"> 1488</span> </div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gab0039acd0be73a905704fe27dd07f3df"> 1525</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#gab0039acd0be73a905704fe27dd07f3df">psa_pake_set_side</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>                               <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga3962836732c4f835a7767d678efd0391">psa_pake_side_t</a> side);</div>
+<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span> </div>
+<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga592e6102db23692862d800f569a8f1fe"> 1574</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#ga592e6102db23692862d800f569a8f1fe">psa_pake_output</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01575" name="l01575"></a><span class="lineno"> 1575</span>                             <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gac16be59e5b1acb89c26709eed001ef35">psa_pake_step_t</a> step,</div>
+<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"> 1576</span>                             uint8_t *output,</div>
+<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span>                             <span class="keywordtype">size_t</span> output_size,</div>
+<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span>                             <span class="keywordtype">size_t</span> *output_length);</div>
+<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span> </div>
+<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#ga2a5c5a8b9c30bdf3ddc59f0a03224fe4"> 1620</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#ga2a5c5a8b9c30bdf3ddc59f0a03224fe4">psa_pake_input</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>                            <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gac16be59e5b1acb89c26709eed001ef35">psa_pake_step_t</a> step,</div>
+<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>                            uint8_t *input,</div>
+<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span>                            <span class="keywordtype">size_t</span> input_length);</div>
+<div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span> </div>
+<div class="line"><a id="l01681" name="l01681"></a><span class="lineno"><a class="line" href="../../d5/dcf/group__pake.html#gae1e7c28c10bf767f4b6927f820740103"> 1681</a></span><a class="code hl_typedef" href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a> <a class="code hl_function" href="../../d5/dcf/group__pake.html#gae1e7c28c10bf767f4b6927f820740103">psa_pake_get_implicit_key</a>(<a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_t</a> *operation,</div>
+<div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>                                       <a class="code hl_struct" href="../../d6/d63/structpsa__key__derivation__s.html">psa_key_derivation_operation_t</a> *output);</div>
+<div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span> </div>
+<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#a50919659323674b8d803621d8eb51268"> 1705</a></span><span class="preprocessor">#define PSA_PAKE_OUTPUT_SIZE(alg, primitive, output_step) 0</span></div>
+<div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span> </div>
+<div class="line"><a id="l01726" name="l01726"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#a83988684b5f8206af1121f51e30a71fc"> 1726</a></span><span class="preprocessor">#define PSA_PAKE_INPUT_SIZE(alg, primitive, input_step) 0</span></div>
+<div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span> </div>
+<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#a878628cebacd7123211337da96fcd1db"> 1735</a></span><span class="preprocessor">#define PSA_PAKE_OUTPUT_MAX_SIZE 0</span></div>
+<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span> </div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"><a class="line" href="../../d8/de6/crypto__extra_8h.html#aa9bc89c6c98e76ccbfcecd7d44d6f3b0"> 1744</a></span><span class="preprocessor">#define PSA_PAKE_INPUT_MAX_SIZE 0</span></div>
+<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span> </div>
+<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"><a class="line" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html"> 1746</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_s</a></div>
+<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>{</div>
+<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>    <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> algorithm;</div>
+<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>    <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gad8b29b6efa90ad2887d7b1252d23e5bc">psa_pake_primitive_type_t</a> type;</div>
+<div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>    <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gae20cc74390755f28b6f2b893a936d893">psa_pake_family_t</a> family;</div>
+<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>    uint16_t  bits;</div>
+<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>    <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> hash;</div>
+<div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>};</div>
+<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span> </div>
+<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> psa_pake_cs_get_algorithm(</div>
+<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> *cipher_suite)</div>
+<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>{</div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>    <span class="keywordflow">return</span>(cipher_suite-&gt;algorithm);</div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>}</div>
+<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span> </div>
+<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> psa_pake_cs_set_algorithm(</div>
+<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>    <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> *cipher_suite,</div>
+<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span>    <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> algorithm)</div>
+<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>{</div>
+<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>    <span class="keywordflow">if</span>(!<a class="code hl_define" href="../../d5/db0/group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">PSA_ALG_IS_PAKE</a>(algorithm))</div>
+<div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>        cipher_suite-&gt;algorithm = 0;</div>
+<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>        cipher_suite-&gt;algorithm = algorithm;</div>
+<div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>}</div>
+<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span> </div>
+<div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c">psa_pake_primitive_t</a> psa_pake_cs_get_primitive(</div>
+<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> *cipher_suite)</div>
+<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>{</div>
+<div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>    <span class="keywordflow">return</span>(<a class="code hl_define" href="../../d5/dcf/group__pake.html#gaf49527ceec65d3927f4ef2a589bade04">PSA_PAKE_PRIMITIVE</a>(cipher_suite-&gt;type, cipher_suite-&gt;family,</div>
+<div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>                cipher_suite-&gt;bits));</div>
+<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>}</div>
+<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span> </div>
+<div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> psa_pake_cs_set_primitive(</div>
+<div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span>    <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> *cipher_suite,</div>
+<div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>    <a class="code hl_typedef" href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c">psa_pake_primitive_t</a> primitive)</div>
+<div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span>{</div>
+<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>    cipher_suite-&gt;type = (<a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gad8b29b6efa90ad2887d7b1252d23e5bc">psa_pake_primitive_type_t</a>) (primitive &gt;&gt; 24);</div>
+<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>    cipher_suite-&gt;family = (<a class="code hl_typedef" href="../../d5/dcf/group__pake.html#gae20cc74390755f28b6f2b893a936d893">psa_pake_family_t</a>) (0xFF &amp; (primitive &gt;&gt; 16));</div>
+<div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>    cipher_suite-&gt;bits = (uint16_t) (0xFFFF &amp; primitive);</div>
+<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>}</div>
+<div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span> </div>
+<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> psa_pake_cs_get_hash(</div>
+<div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>    <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> *cipher_suite)</div>
+<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>{</div>
+<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>    <span class="keywordflow">return</span>(cipher_suite-&gt;hash);</div>
+<div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>}</div>
+<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span> </div>
+<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> psa_pake_cs_set_hash(</div>
+<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>    <a class="code hl_struct" href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_t</a> *cipher_suite,</div>
+<div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span>    <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> hash)</div>
+<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>{</div>
+<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>    <span class="keywordflow">if</span>(!<a class="code hl_define" href="../../d5/db0/group__crypto__types.html#gac9280662bb482590b4b33d1dcd32930f">PSA_ALG_IS_HASH</a>(hash))</div>
+<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>        cipher_suite-&gt;hash = 0;</div>
+<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        cipher_suite-&gt;hash = hash;</div>
+<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>}</div>
+<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span> </div>
+<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"><a class="line" href="../../d3/de0/structpsa__pake__operation__s.html"> 1803</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_s</a></div>
+<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>{</div>
+<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>    <a class="code hl_typedef" href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a> alg;</div>
+<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>    <span class="keyword">union</span></div>
+<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>    {</div>
+<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>        <span class="comment">/* Make the union non-empty even with no supported algorithms. */</span></div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>        uint8_t dummy;</div>
+<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>    } ctx;</div>
+<div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>};</div>
+<div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span> </div>
+<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span><span class="comment">/* This only zeroes out the first byte in the union, the rest is unspecified. */</span></div>
+<div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span><span class="preprocessor">#define PSA_PAKE_OPERATION_INIT {0, {0}}</span></div>
+<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_s</a> psa_pake_operation_init(void)</div>
+<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>{</div>
+<div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_s</a> v = PSA_PAKE_OPERATION_INIT;</div>
+<div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>    <span class="keywordflow">return</span>(v);</div>
+<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>}</div>
+<div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span> </div>
+<div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span>}</div>
+<div class="line"><a id="l01823" name="l01823"></a><span class="lineno"> 1823</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01824" name="l01824"></a><span class="lineno"> 1824</span> </div>
+<div class="line"><a id="l01825" name="l01825"></a><span class="lineno"> 1825</span><span class="preprocessor">#endif </span><span class="comment">/* PSA_CRYPTO_EXTRA_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="acrypto__compat_8h_html"><div class="ttname"><a href="../../d1/d14/crypto__compat_8h.html">crypto_compat.h</a></div><div class="ttdoc">PSA cryptography module: Backward compatibility aliases</div></div>
+<div class="ttc" id="acrypto__extra_8h_html_a00f4837e0253580c83b4d93ea91aa48b"><div class="ttname"><a href="../../d8/de6/crypto__extra_8h.html#a00f4837e0253580c83b4d93ea91aa48b">mbedtls_psa_crypto_free</a></div><div class="ttdeci">void mbedtls_psa_crypto_free(void)</div><div class="ttdoc">Library deinitialization.</div></div>
+<div class="ttc" id="acrypto__extra_8h_html_aa4d160ae9c02a60317702832a828e4b7"><div class="ttname"><a href="../../d8/de6/crypto__extra_8h.html#aa4d160ae9c02a60317702832a828e4b7">mbedtls_psa_get_stats</a></div><div class="ttdeci">void mbedtls_psa_get_stats(mbedtls_psa_stats_t *stats)</div><div class="ttdoc">Get statistics about resource consumption related to the PSA keystore.</div></div>
+<div class="ttc" id="acrypto__extra_8h_html_aa9b95eb371f975f041d50f1a662357fe"><div class="ttname"><a href="../../d8/de6/crypto__extra_8h.html#aa9b95eb371f975f041d50f1a662357fe">mbedtls_psa_stats_t</a></div><div class="ttdeci">struct mbedtls_psa_stats_s mbedtls_psa_stats_t</div><div class="ttdoc">Statistics about resource consumption related to the PSA keystore.</div></div>
+<div class="ttc" id="acrypto__extra_8h_html_af4f09c8f08db9e2d881f465c432a300d"><div class="ttname"><a href="../../d8/de6/crypto__extra_8h.html#af4f09c8f08db9e2d881f465c432a300d">mbedtls_psa_inject_entropy</a></div><div class="ttdeci">psa_status_t mbedtls_psa_inject_entropy(const uint8_t *seed, size_t seed_size)</div><div class="ttdoc">Inject an initial entropy seed for the random generator into secure storage.</div></div>
+<div class="ttc" id="acrypto__types_8h_html"><div class="ttname"><a href="../../d1/d1a/crypto__types_8h.html">crypto_types.h</a></div><div class="ttdoc">PSA cryptography module: type aliases.</div></div>
+<div class="ttc" id="agroup__attributes_html_ga8909d3f2ee48121ea0dff198276bdd38"><div class="ttname"><a href="../../d4/d86/group__attributes.html#ga8909d3f2ee48121ea0dff198276bdd38">psa_set_key_domain_parameters</a></div><div class="ttdeci">psa_status_t psa_set_key_domain_parameters(psa_key_attributes_t *attributes, psa_key_type_t type, const uint8_t *data, size_t data_length)</div><div class="ttdoc">Set domain parameters for a key.</div></div>
+<div class="ttc" id="agroup__attributes_html_gae42b480d8ffa161eb2a0a3e391010347"><div class="ttname"><a href="../../d4/d86/group__attributes.html#gae42b480d8ffa161eb2a0a3e391010347">psa_get_key_domain_parameters</a></div><div class="ttdeci">psa_status_t psa_get_key_domain_parameters(const psa_key_attributes_t *attributes, uint8_t *data, size_t data_size, size_t *data_length)</div><div class="ttdoc">Get domain parameters for a key.</div></div>
+<div class="ttc" id="agroup__crypto__types_html_ga1f624c5cdaf25b21287af33024e1aff8"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#ga1f624c5cdaf25b21287af33024e1aff8">PSA_ECC_FAMILY_MONTGOMERY</a></div><div class="ttdeci">#define PSA_ECC_FAMILY_MONTGOMERY</div><div class="ttdef"><b>Definition:</b> crypto_values.h:627</div></div>
+<div class="ttc" id="agroup__crypto__types_html_ga48bb340b5544ba617b0f5b89542665a7"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#ga48bb340b5544ba617b0f5b89542665a7">PSA_ECC_FAMILY_SECP_R1</a></div><div class="ttdeci">#define PSA_ECC_FAMILY_SECP_R1</div><div class="ttdef"><b>Definition:</b> crypto_values.h:574</div></div>
+<div class="ttc" id="agroup__crypto__types_html_ga5cf2405c6e23b93cea0aac092d1aa0f7"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#ga5cf2405c6e23b93cea0aac092d1aa0f7">PSA_ECC_FAMILY_SECP_K1</a></div><div class="ttdeci">#define PSA_ECC_FAMILY_SECP_K1</div><div class="ttdef"><b>Definition:</b> crypto_values.h:564</div></div>
+<div class="ttc" id="agroup__crypto__types_html_ga63fce6880ca5933b5d6baa257febf1f6"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#ga63fce6880ca5933b5d6baa257febf1f6">psa_key_type_t</a></div><div class="ttdeci">uint16_t psa_key_type_t</div><div class="ttdoc">Encoding of a key type.</div><div class="ttdef"><b>Definition:</b> crypto_types.h:74</div></div>
+<div class="ttc" id="agroup__crypto__types_html_ga947bd13805e0243541e586b7b7d803ae"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">PSA_ALG_IS_PAKE</a></div><div class="ttdeci">#define PSA_ALG_IS_PAKE(alg)</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:833</div></div>
+<div class="ttc" id="agroup__crypto__types_html_gac1643f1baf38b30d07c20a6eac697f15"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#gac1643f1baf38b30d07c20a6eac697f15">PSA_ECC_FAMILY_BRAINPOOL_P_R1</a></div><div class="ttdeci">#define PSA_ECC_FAMILY_BRAINPOOL_P_R1</div><div class="ttdef"><b>Definition:</b> crypto_values.h:615</div></div>
+<div class="ttc" id="agroup__crypto__types_html_gac2e4d47f1300d73c2f829a6d99252d69"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69">psa_algorithm_t</a></div><div class="ttdeci">uint32_t psa_algorithm_t</div><div class="ttdoc">Encoding of a cryptographic algorithm.</div><div class="ttdef"><b>Definition:</b> crypto_types.h:106</div></div>
+<div class="ttc" id="agroup__crypto__types_html_gac9280662bb482590b4b33d1dcd32930f"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#gac9280662bb482590b4b33d1dcd32930f">PSA_ALG_IS_HASH</a></div><div class="ttdeci">#define PSA_ALG_IS_HASH(alg)</div><div class="ttdef"><b>Definition:</b> crypto_values.h:749</div></div>
+<div class="ttc" id="agroup__crypto__types_html_gae7ad3569cb9c91b1ebe59a056edb2fc6"><div class="ttname"><a href="../../d5/db0/group__crypto__types.html#gae7ad3569cb9c91b1ebe59a056edb2fc6">psa_ecc_family_t</a></div><div class="ttdeci">uint8_t psa_ecc_family_t</div><div class="ttdef"><b>Definition:</b> crypto_types.h:85</div></div>
+<div class="ttc" id="agroup__error_html_ga05676e70ba5c6a7565aff3c36677c1f9"><div class="ttname"><a href="../../d9/d19/group__error.html#ga05676e70ba5c6a7565aff3c36677c1f9">psa_status_t</a></div><div class="ttdeci">int32_t psa_status_t</div><div class="ttdoc">Function return status.</div><div class="ttdef"><b>Definition:</b> crypto_types.h:63</div></div>
+<div class="ttc" id="agroup__key__lifetimes_html_ga11e986351c65bd3dc3c0fe2cd9926e4b"><div class="ttname"><a href="../../db/ddf/group__key__lifetimes.html#ga11e986351c65bd3dc3c0fe2cd9926e4b">psa_key_id_t</a></div><div class="ttdeci">uint32_t psa_key_id_t</div><div class="ttdef"><b>Definition:</b> crypto_types.h:225</div></div>
+<div class="ttc" id="agroup__key__lifetimes_html_ga6821ff6dd39dc2bc370ded760ad8b0cf"><div class="ttname"><a href="../../db/ddf/group__key__lifetimes.html#ga6821ff6dd39dc2bc370ded760ad8b0cf">psa_key_lifetime_t</a></div><div class="ttdeci">uint32_t psa_key_lifetime_t</div><div class="ttdef"><b>Definition:</b> crypto_types.h:147</div></div>
+<div class="ttc" id="agroup__pake_html_ga070417b83e6d602e9a6cc6748a14ea91"><div class="ttname"><a href="../../d5/dcf/group__pake.html#ga070417b83e6d602e9a6cc6748a14ea91">psa_pake_set_password_key</a></div><div class="ttdeci">psa_status_t psa_pake_set_password_key(psa_pake_operation_t *operation, mbedtls_svc_key_id_t password)</div></div>
+<div class="ttc" id="agroup__pake_html_ga2a5c5a8b9c30bdf3ddc59f0a03224fe4"><div class="ttname"><a href="../../d5/dcf/group__pake.html#ga2a5c5a8b9c30bdf3ddc59f0a03224fe4">psa_pake_input</a></div><div class="ttdeci">psa_status_t psa_pake_input(psa_pake_operation_t *operation, psa_pake_step_t step, uint8_t *input, size_t input_length)</div></div>
+<div class="ttc" id="agroup__pake_html_ga37ed4ea6bba6bacc72d0ecb9b95af96c"><div class="ttname"><a href="../../d5/dcf/group__pake.html#ga37ed4ea6bba6bacc72d0ecb9b95af96c">psa_pake_primitive_t</a></div><div class="ttdeci">uint32_t psa_pake_primitive_t</div><div class="ttdoc">Encoding of the primitive associated with the PAKE.</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:1003</div></div>
+<div class="ttc" id="agroup__pake_html_ga3962836732c4f835a7767d678efd0391"><div class="ttname"><a href="../../d5/dcf/group__pake.html#ga3962836732c4f835a7767d678efd0391">psa_pake_side_t</a></div><div class="ttdeci">uint8_t psa_pake_side_t</div><div class="ttdoc">Encoding of the side of PAKE</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:972</div></div>
+<div class="ttc" id="agroup__pake_html_ga592e6102db23692862d800f569a8f1fe"><div class="ttname"><a href="../../d5/dcf/group__pake.html#ga592e6102db23692862d800f569a8f1fe">psa_pake_output</a></div><div class="ttdeci">psa_status_t psa_pake_output(psa_pake_operation_t *operation, psa_pake_step_t step, uint8_t *output, size_t output_size, size_t *output_length)</div></div>
+<div class="ttc" id="agroup__pake_html_ga64fe9f62b09d39056e169325a9d33aac"><div class="ttname"><a href="../../d5/dcf/group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user</a></div><div class="ttdeci">psa_status_t psa_pake_set_user(psa_pake_operation_t *operation, const uint8_t *user_id, size_t user_id_len)</div></div>
+<div class="ttc" id="agroup__pake_html_gab0039acd0be73a905704fe27dd07f3df"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gab0039acd0be73a905704fe27dd07f3df">psa_pake_set_side</a></div><div class="ttdeci">psa_status_t psa_pake_set_side(psa_pake_operation_t *operation, psa_pake_side_t side)</div></div>
+<div class="ttc" id="agroup__pake_html_gabae9a3e54d1c895032a4ee543b494958"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gabae9a3e54d1c895032a4ee543b494958">psa_pake_set_peer</a></div><div class="ttdeci">psa_status_t psa_pake_set_peer(psa_pake_operation_t *operation, const uint8_t *peer_id, size_t peer_id_len)</div></div>
+<div class="ttc" id="agroup__pake_html_gac16be59e5b1acb89c26709eed001ef35"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gac16be59e5b1acb89c26709eed001ef35">psa_pake_step_t</a></div><div class="ttdeci">uint8_t psa_pake_step_t</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:980</div></div>
+<div class="ttc" id="agroup__pake_html_gad8b29b6efa90ad2887d7b1252d23e5bc"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gad8b29b6efa90ad2887d7b1252d23e5bc">psa_pake_primitive_type_t</a></div><div class="ttdeci">uint8_t psa_pake_primitive_type_t</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:990</div></div>
+<div class="ttc" id="agroup__pake_html_gada744c91ef1930e2e61cdb66013b0f39"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gada744c91ef1930e2e61cdb66013b0f39">psa_pake_setup</a></div><div class="ttdeci">psa_status_t psa_pake_setup(psa_pake_operation_t *operation, psa_pake_cipher_suite_t cipher_suite)</div></div>
+<div class="ttc" id="agroup__pake_html_gae1e7c28c10bf767f4b6927f820740103"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gae1e7c28c10bf767f4b6927f820740103">psa_pake_get_implicit_key</a></div><div class="ttdeci">psa_status_t psa_pake_get_implicit_key(psa_pake_operation_t *operation, psa_key_derivation_operation_t *output)</div></div>
+<div class="ttc" id="agroup__pake_html_gae20cc74390755f28b6f2b893a936d893"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gae20cc74390755f28b6f2b893a936d893">psa_pake_family_t</a></div><div class="ttdeci">uint8_t psa_pake_family_t</div><div class="ttdoc">Encoding of the family of the primitive associated with the PAKE.</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:997</div></div>
+<div class="ttc" id="agroup__pake_html_gaf49527ceec65d3927f4ef2a589bade04"><div class="ttname"><a href="../../d5/dcf/group__pake.html#gaf49527ceec65d3927f4ef2a589bade04">PSA_PAKE_PRIMITIVE</a></div><div class="ttdeci">#define PSA_PAKE_PRIMITIVE(pake_type, pake_family, pake_bits)</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:1094</div></div>
+<div class="ttc" id="agroup__psa__builtin__keys_html_ga0af04ffbbc3f6bc08562381205b8ef5e"><div class="ttname"><a href="../../d4/dbc/group__psa__builtin__keys.html#ga0af04ffbbc3f6bc08562381205b8ef5e">MBEDTLS_PSA_KEY_ID_BUILTIN_MAX</a></div><div class="ttdeci">#define MBEDTLS_PSA_KEY_ID_BUILTIN_MAX</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:742</div></div>
+<div class="ttc" id="agroup__psa__builtin__keys_html_ga1eb805bebc295cc2f7132679fa85d43d"><div class="ttname"><a href="../../d4/dbc/group__psa__builtin__keys.html#ga1eb805bebc295cc2f7132679fa85d43d">psa_drv_slot_number_t</a></div><div class="ttdeci">uint64_t psa_drv_slot_number_t</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:748</div></div>
+<div class="ttc" id="agroup__psa__builtin__keys_html_gaa0cdcd889aaaca7d78c378deb1e14353"><div class="ttname"><a href="../../d4/dbc/group__psa__builtin__keys.html#gaa0cdcd889aaaca7d78c378deb1e14353">MBEDTLS_PSA_KEY_ID_BUILTIN_MIN</a></div><div class="ttdeci">#define MBEDTLS_PSA_KEY_ID_BUILTIN_MIN</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:735</div></div>
+<div class="ttc" id="agroup__se__init_html_ga90828ba6e282dd39260c81af68532e1d"><div class="ttname"><a href="../../da/d6f/group__se__init.html#ga90828ba6e282dd39260c81af68532e1d">psa_key_slot_number_t</a></div><div class="ttdeci">uint64_t psa_key_slot_number_t</div><div class="ttdef"><b>Definition:</b> crypto_se_driver.h:149</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html">mbedtls_psa_stats_s</a></div><div class="ttdoc">Statistics about resource consumption related to the PSA keystore.</div><div class="ttdef"><b>Definition:</b> crypto_extra.h:229</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_a7e4edf3d1ccd20d2b5d5bf1dc6255a97"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#a7e4edf3d1ccd20d2b5d5bf1dc6255a97">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(volatile_slots)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_acc093db047088c7a92ee76457e30a502"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#acc093db047088c7a92ee76457e30a502">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">psa_key_id_t MBEDTLS_PRIVATE(max_open_external_key_id)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_ad1438b84e59f8673bf24dde0a41bf104"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#ad1438b84e59f8673bf24dde0a41bf104">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(locked_slots)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_ad17c3d802ee0704abf8c718e8564fec2"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#ad17c3d802ee0704abf8c718e8564fec2">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(empty_slots)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_addc8313b501428d9fee7f0f2fd2aec2e"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#addc8313b501428d9fee7f0f2fd2aec2e">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">psa_key_id_t MBEDTLS_PRIVATE(max_open_internal_key_id)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_ae728e01d96fdccaae8ff6705abcc908d"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#ae728e01d96fdccaae8ff6705abcc908d">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(half_filled_slots)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_af53ffae07b8819c377c188aa0f521ac2"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#af53ffae07b8819c377c188aa0f521ac2">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(external_slots)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_af637062ce9b794563bf86822d38a0deb"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#af637062ce9b794563bf86822d38a0deb">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(persistent_slots)</div></div>
+<div class="ttc" id="astructmbedtls__psa__stats__s_html_af7f9009724766831f26c0d8d502807ac"><div class="ttname"><a href="../../df/d7d/structmbedtls__psa__stats__s.html#af7f9009724766831f26c0d8d502807ac">mbedtls_psa_stats_s::MBEDTLS_PRIVATE</a></div><div class="ttdeci">size_t MBEDTLS_PRIVATE(cache_slots)</div></div>
+<div class="ttc" id="astructpsa__key__attributes__s_html"><div class="ttname"><a href="../../d9/ddd/structpsa__key__attributes__s.html">psa_key_attributes_s</a></div><div class="ttdef"><b>Definition:</b> crypto_struct.h:338</div></div>
+<div class="ttc" id="astructpsa__key__derivation__s_html"><div class="ttname"><a href="../../d6/d63/structpsa__key__derivation__s.html">psa_key_derivation_s</a></div><div class="ttdef"><b>Definition:</b> crypto_struct.h:244</div></div>
+<div class="ttc" id="astructpsa__pake__cipher__suite__s_html"><div class="ttname"><a href="../../d7/dd3/structpsa__pake__cipher__suite__s.html">psa_pake_cipher_suite_s</a></div><div class="ttdef"><b>Definition:</b> crypto_extra.h:1747</div></div>
+<div class="ttc" id="astructpsa__pake__operation__s_html"><div class="ttname"><a href="../../d3/de0/structpsa__pake__operation__s.html">psa_pake_operation_s</a></div><div class="ttdef"><b>Definition:</b> crypto_extra.h:1804</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

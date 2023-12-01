@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 初始化(Wi-Fi)</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">初始化(Wi-Fi) </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >初始化是指设备上电、启动之后，调用一系列接口，完成设备硬件环境的初始化、涂鸦<code>TuyaOS</code>软件的初始化、应用功能初始化等工作。</p>
+<p >一般来说，软件启动会执行main函数，对于涂鸦<code>TuyaOS</code>来说，不同场景，入口不一样，比如说在<code>Linux</code>操作系统环境下，我们需要自己实现main函数；在<code>RTOS</code>系统下，我们需要实现<code>user_main</code>函数。并在<code>user main</code>函数里对<code>TuyaOS</code>软件和设备应用能力进行初始化。</p>
+<h1><a class="anchor" id="autotoc_md13"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md14"></a>
+TuyaOS初始化</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">tuya_iot_init_params</a>(IN CONST CHAR_T *fs_storge_path, IN CONST <a class="code hl_struct" href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a> *p_param);</div>
+<div class="ttc" id="astructTY__INIT__PARAMS__S_html"><div class="ttname"><a href="../../d0/d79/structTY__INIT__PARAMS__S.html">TY_INIT_PARAMS_S</a></div><div class="ttdoc">Definition of TUYA DevOS init param</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:163</div></div>
+<div class="ttc" id="atuya__iot__com__api_8h_html_a48b0e6c593dc2261515ddbbf8c330421"><div class="ttname"><a href="../../d9/d01/tuya__iot__com__api_8h.html#a48b0e6c593dc2261515ddbbf8c330421">tuya_iot_init_params</a></div><div class="ttdeci">OPERATE_RET tuya_iot_init_params(IN CONST CHAR_T *fs_storge_path, IN CONST TY_INIT_PARAMS_S *p_param)</div><div class="ttdoc">TuyaOS system service init</div></div>
+</div><!-- fragment --><p >此接口是涂鸦<code>TuyaOS</code>的初始化接口，不区分模式，有线、<code>Wi-Fi</code>、<code>Wi-Fi&amp;BLE</code>、蜂窝网络都会使用。接口内部会对<code>TuyaOS</code>的内部基础功能进行资源分配、初始化。一般来说，这个接口会第一个调用，但是在一些场景下，可以在此接口之前进行一些功能配置、事件关注等工作，可以在<code>TuyaOS</code>初始化过程中进行一些特殊的业务逻辑处理。例如在开发照明产品的时候，需要基础功能初始化完成之后立即将灯点亮，则可以在调用此接口之前关注一下<code>early_init</code>事件，并在此事件回调里执行点灯逻辑，就可以实现此功能。</p>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Wi-Fi 通用对接初始化</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a4fc85c1734aeb70ddbe27262754ebe5a">tuya_iot_wf_mcu_dev_init</a>(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode,</div>
+<div class="line">                                     IN CONST <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs, IN CHAR_T *p_firmware_key,</div>
+<div class="line">                                     IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver, IN CONST CHAR_T *mcu_sw_ver);</div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a></div><div class="ttdoc">Definition of gateway callback funtions</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:731</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a4fc85c1734aeb70ddbe27262754ebe5a"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a4fc85c1734aeb70ddbe27262754ebe5a">tuya_iot_wf_mcu_dev_init</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_mcu_dev_init(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode, IN CONST TY_IOT_CBS_S *cbs, IN CHAR_T *p_firmware_key, IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver, IN CONST CHAR_T *mcu_sw_ver)</div><div class="ttdoc">tuya_iot_wf_mcu_dev_init</div></div>
+</div><!-- fragment --><p >此接口对<code>tuya_iot_wf_dev_init</code>进行了封装，实现了专门用于<code>mcu</code>通用对接的初始化接口。在<code>mcu</code>通用对接场景下，可以使用该接口，在收到<code>mcu</code>通过串口发送过来的<code>product key</code>和<code>mcu</code>版本信息，对设备进行初始化。</p>
+<p >在<code>Wi-Fi</code>设备初始化接口，可以配置初始化的配网模式和<code>Wi-Fi</code>工作模式。</p>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Wi-Fi SOC初始化</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1cd64f8d2f9729b63ca1265fcb05dad3">tuya_iot_wf_soc_dev_init_param</a>(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode,</div>
+<div class="line">                                           IN CONST <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs, IN CHAR_T *firmware_key,</div>
+<div class="line">                                           IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver);</div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a1cd64f8d2f9729b63ca1265fcb05dad3"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1cd64f8d2f9729b63ca1265fcb05dad3">tuya_iot_wf_soc_dev_init_param</a></div><div class="ttdeci">OPERATE_RET tuya_iot_wf_soc_dev_init_param(IN CONST GW_WF_CFG_MTHD_SEL cfg, IN CONST GW_WF_START_MODE start_mode, IN CONST TY_IOT_CBS_S *cbs, IN CHAR_T *firmware_key, IN CHAR_T *product_key, IN CHAR_T *wf_sw_ver)</div><div class="ttdoc">tuya_iot_wf_soc_dev_init_param</div></div>
+</div><!-- fragment --><p >此接口对<code>tuya_iot_wf_dev_init</code>进行了封装，实现了专门用于<code>soc</code>方案的初始化接口。在<code>soc</code>场景下，可以使用该接口，用本地保存的<code>product key</code>和固件版本信息，对设备进行初始化。</p>
+<p >在<code>Wi-Fi</code>设备初始化接口，可以配置初始化的配网模式和<code>Wi-Fi</code>工作模式。</p>
+<h2><a class="anchor" id="autotoc_md17"></a>
+Wi-Fi网络状态回调设置</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1d98347ba473e17f104990e0d53ce452">tuya_iot_reg_get_wf_nw_stat_cb_params</a>(IN CONST <a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a> wf_nw_stat_cb, IN CONST INT_T min_interval_s);</div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a2e8a6875b865838ae5efa2edebce6b71"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a></div><div class="ttdeci">VOID(* GET_WF_NW_STAT_CB)(IN CONST GW_WIFI_NW_STAT_E stat)</div><div class="ttdoc">Handler when network connection error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:137</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a1d98347ba473e17f104990e0d53ce452"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1d98347ba473e17f104990e0d53ce452">tuya_iot_reg_get_wf_nw_stat_cb_params</a></div><div class="ttdeci">OPERATE_RET tuya_iot_reg_get_wf_nw_stat_cb_params(IN CONST GET_WF_NW_STAT_CB wf_nw_stat_cb, IN CONST INT_T min_interval_s)</div><div class="ttdoc">tuya_iot_reg_get_wf_nw_stat_cb_params</div></div>
+</div><!-- fragment --><p >此接口注册网络状态变化回调函数。<code>TuyaOS</code>在网络状态变化的时候，调用此接口注册进来的<code>nw_stat_cb</code>，通知应用进行相应的处理。</p>
+<h2><a class="anchor" id="autotoc_md18"></a>
+Wi-Fi授权信息设置</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a18529b0142ebc8f0f364ace5d592bc54">tuya_iot_set_wf_gw_prod_info</a>(IN CONST <a class="code hl_struct" href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a> *wf_prod_info);</div>
+<div class="ttc" id="astructWF__GW__PROD__INFO__S_html"><div class="ttname"><a href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:116</div></div>
+<div class="ttc" id="atuya__iot__wifi__api_8h_html_a18529b0142ebc8f0f364ace5d592bc54"><div class="ttname"><a href="../../d1/d49/tuya__iot__wifi__api_8h.html#a18529b0142ebc8f0f364ace5d592bc54">tuya_iot_set_wf_gw_prod_info</a></div><div class="ttdeci">OPERATE_RET tuya_iot_set_wf_gw_prod_info(IN CONST WF_GW_PROD_INFO_S *wf_prod_info)</div><div class="ttdoc">tuya_iot_set_wf_gw_prod_info</div></div>
+</div><!-- fragment --><p >此接口设置涂鸦授权信息。<code>TuyaOS</code>在激活的时候需要使用授权信息到涂鸦云进行设备认证，因此需要设置授权信息。授权信息里包含了产品信息，唯一标识和认证密钥，使用涂鸦产测软件进行产测授权可以不需要调用此接口，否则则需要自行获取授权信息，并在初始化的时候写入。</p>
+<h1><a class="anchor" id="autotoc_md19"></a>
+示例代码</h1>
+<p >Wi-Fi设备初始化的时候，需要设置回调，指定工作模式和配网模式，以下是一段示例代码，在初始化的时候设置了<code>ap_ssid</code>和<code>ap_passwd</code>，并以<code>GWCM_SPCL_AUTOCFG</code>工作模式和<code>WF_START_AP_FIRST</code>配网模式启动设备。</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#define UUID                &quot;f2*************b0&quot;</span></div>
+<div class="line"><span class="preprocessor">#define AUTHKEY             &quot;6P**************************MX&quot;</span></div>
+<div class="line"><span class="preprocessor">#define PRODUCT_KEY         &quot;U0**************Zy&quot;</span>  <span class="comment">//DP控制开关</span></div>
+<div class="line"><span class="preprocessor">#define USER_SW_VER         &quot;1.0.0&quot;</span></div>
+<div class="line"><span class="preprocessor">#define AP_SSID             &quot;SmartLife&quot;</span></div>
+<div class="line"><span class="preprocessor">#define AP_PASSWD           &quot;tuya_wf_sample&quot;</span></div>
+<div class="line"><span class="preprocessor">#define CFG_STORAGE_PATH    &quot;./tuya_db_files/&quot;</span></div>
+<div class="line"><span class="preprocessor">#define WIFI_NETCFG_TIMEOUT     3</span></div>
+<div class="line"> </div>
+<div class="line">STATIC VOID __soc_dev_rev_upgrade_info_cb(IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw);<span class="comment">// SOC设备升级入口</span></div>
+<div class="line">STATIC VOID __soc_dev_status_changed_cb(IN CONST GW_STATUS_E status);<span class="comment">// SOC设备云端状态变更回调</span></div>
+<div class="line">STATIC VOID __soc_dev_dp_query_cb(IN CONST <a class="code hl_struct" href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a> *dp_qry);<span class="comment">// SOC设备特定数据查询入口</span></div>
+<div class="line">STATIC VOID __soc_dev_obj_dp_cmd_cb(IN CONST <a class="code hl_struct" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> *dp);<span class="comment">// SOC设备格式化指令数据下发入口</span></div>
+<div class="line">STATIC VOID __soc_dev_raw_dp_cmd_cb(IN CONST <a class="code hl_struct" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> *dp);<span class="comment">// SOC设备透传指令数据下发入口</span></div>
+<div class="line">STATIC VOID __soc_dev_restart_req_cb(GW_RESET_TYPE_E type);<span class="comment">// SOC设备进程重启请求入口</span></div>
+<div class="line">STATIC VOID __soc_dev_net_status_cb(IN CONST GW_BASE_NW_STAT_T stat);<span class="comment">// SOC外网状态变动回调</span></div>
+<div class="line">STATIC VOID __soc_dev_reset_cb(event_raw_data_t *data);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> sample_wifidevice_test(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">int</span> rt = OPRT_OK;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 此处为涂鸦TuyaOS初始化之前的一些特殊工作，代码每一个应用场景可能不同，按需实现</span></div>
+<div class="line">    <span class="comment">// TBD</span></div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 此处为涂鸦TuyaOS基础功能初始化，为TuyaOS分配资源，并启动一些最基础的能力</span></div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_init_param(CFG_STORAGE_PATH, NULL));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 此处为涂鸦TuyaOS授权信息写入，仅在Linux Demo代码使用，因为正式产品是在生产测试的时候写入授权信息</span></div>
+<div class="line">    <span class="comment">// 此处代码是为了避免使用产测授权</span></div>
+<div class="line">    <a class="code hl_struct" href="../../d9/df8/structWF__GW__PROD__INFO__S.html">WF_GW_PROD_INFO_S</a> prod_info = {UUID, AUTHKEY, AP_SSID, AP_PASSWD};</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(<a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a18529b0142ebc8f0f364ace5d592bc54">tuya_iot_set_wf_gw_prod_info</a>(&amp;prod_info));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 此处为设备初始化，实现了一些基础的回调功能，满足一个设备的基本能力需求，并注册获取连接状态回调函数</span></div>
+<div class="line">    <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> iot_cbs = {0};</div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#acd8b6c871c9bb3a461e21f108c80e4fd">gw_status_cb</a> = __soc_dev_status_changed_cb;</div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#ae74ccddc0a11bbabe6c980cfc92d2034">gw_ug_cb</a> = __soc_dev_rev_upgrade_info_cb;</div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a476efdda2cf043200b930d7b269cc102">gw_reset_cb</a> = __soc_dev_restart_req_cb;</div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#ab337413f61769667188f22a7d9f040f0">dev_obj_dp_cb</a> = __soc_dev_obj_dp_cmd_cb;</div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a7fcc69eca7a5eb7642668f11a83d320a">dev_raw_dp_cb</a> = __soc_dev_raw_dp_cmd_cb;</div>
+<div class="line">    iot_cbs.<a class="code hl_variable" href="../../d4/da4/structTY__IOT__CBS__S.html#a9375f7cfdd0f803e68ff4fb02e1e6f3a">dev_dp_query_cb</a> = __soc_dev_dp_query_cb;   TUYA_CALL_ERR_RETURN(<a class="code hl_function" href="../../d1/d49/tuya__iot__wifi__api_8h.html#a1cd64f8d2f9729b63ca1265fcb05dad3">tuya_iot_wf_soc_dev_init_param</a>(GWCM_SPCL_AUTOCFG,WF_START_AP_FIRST,&amp;iot_cbs,NULL,PRODUCT_KEY,DEV_SW_VERSION));</div>
+<div class="line">    TUYA_CALL_ERR_RETURN(tuya_iot_reg_get_nw_stat_cb_params(__soc_dev_net_status_cb, 1));</div>
+<div class="line">     </div>
+<div class="line">    <span class="comment">// 此处为设备初始化后的一些设备应用功能初始化，，代码每一个应用场景可能不同，按需实现</span></div>
+<div class="line">    <span class="comment">// TBD</span></div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// demo状态监控</span></div>
+<div class="line">    <span class="keywordflow">while</span> (1)</div>
+<div class="line">    {</div>
+<div class="line">        sleep(10);        </div>
+<div class="line">        <span class="comment">// 监控设备状态，打印状态提示</span></div>
+<div class="line">        ty_devos_monitor();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="astructFW__UG__S_html"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a></div><div class="ttdoc">tuya sdk ota firmware info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:589</div></div>
+<div class="ttc" id="astructTY__DP__QUERY__S_html"><div class="ttname"><a href="../../d8/d73/structTY__DP__QUERY__S.html">TY_DP_QUERY_S</a></div><div class="ttdoc">Definition of DP query</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:500</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a476efdda2cf043200b930d7b269cc102"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a476efdda2cf043200b930d7b269cc102">TY_IOT_CBS_S::gw_reset_cb</a></div><div class="ttdeci">GW_RESET_IFM_CB gw_reset_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:737</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a7fcc69eca7a5eb7642668f11a83d320a"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a7fcc69eca7a5eb7642668f11a83d320a">TY_IOT_CBS_S::dev_raw_dp_cb</a></div><div class="ttdeci">DEV_RAW_DP_CMD_CB dev_raw_dp_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:741</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_a9375f7cfdd0f803e68ff4fb02e1e6f3a"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#a9375f7cfdd0f803e68ff4fb02e1e6f3a">TY_IOT_CBS_S::dev_dp_query_cb</a></div><div class="ttdeci">DEV_DP_QUERY_CB dev_dp_query_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:743</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_ab337413f61769667188f22a7d9f040f0"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#ab337413f61769667188f22a7d9f040f0">TY_IOT_CBS_S::dev_obj_dp_cb</a></div><div class="ttdeci">DEV_OBJ_DP_CMD_CB dev_obj_dp_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:739</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_acd8b6c871c9bb3a461e21f108c80e4fd"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#acd8b6c871c9bb3a461e21f108c80e4fd">TY_IOT_CBS_S::gw_status_cb</a></div><div class="ttdeci">GW_STATUS_CHANGED_CB gw_status_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:733</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html_ae74ccddc0a11bbabe6c980cfc92d2034"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html#ae74ccddc0a11bbabe6c980cfc92d2034">TY_IOT_CBS_S::gw_ug_cb</a></div><div class="ttdeci">GW_UG_INFORM_CB gw_ug_cb</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:735</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a></div><div class="ttdoc">Definition of recved structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:462</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a></div><div class="ttdoc">Definition of recved raw dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:480</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

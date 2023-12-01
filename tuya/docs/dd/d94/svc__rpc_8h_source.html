@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_rpc/include/svc_rpc.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_e4ad71b8cc97fe2e4a95227cc389988e.html">svc_rpc</a></li><li class="navelem"><a class="el" href="../../dir_48bf1703043dd255f84e45145260ba0d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">svc_rpc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d94/svc__rpc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __SVC_RPC_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __SVC_RPC_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d14/tuya__slist_8h.html">tuya_slist.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d1f/rpc__base_8h.html">rpc_base.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;json_rpc.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;tal_thread.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define OPRT_RPC_CALL_TIMEOUT       -10</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define OPRT_RPC_CALL_NOT_FOUND     -11</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define OPRT_RPC_CALL_ERROR         -11</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define TUYA_RPC_DEFAULT_BUFSZ      256</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define TUYA_RPC_ID_LEN             (GW_ID_LEN)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define TUYA_RPC_KEY_LEN            (LOCAL_KEY_LEN)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    TUYA_RPC_ENCRYPT,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    TUYA_RPC_DECRYPT,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    TUYA_RPC_FREECRYPT,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} tuya_rpc_crypt_mode_t;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    RPC_BUFSIZE_SET_CMD,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} tuya_rpc_cmd_t;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">typedef</span> int (*rpc_crypt_cb)(uint8_t **data, uint32_t *len, uint8_t key[16], tuya_rpc_crypt_mode_t mode);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dd/d1b/structtuya__rpc__t.html">   44</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a>      base;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">int</span>             fd;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    uint32_t        flag;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    MUTEX_HANDLE    mutex;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    MUTEX_HANDLE    node_mutex;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    THREAD_HANDLE   thread;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_struct" href="../../db/d28/structslist__head.html">SLIST_HEAD</a>      node_list;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_struct" href="../../db/d28/structslist__head.html">SLIST_HEAD</a>      declare_list;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_struct" href="../../db/d28/structslist__head.html">SLIST_HEAD</a>      publish_list;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_struct" href="../../db/d28/structslist__head.html">SLIST_HEAD</a>      subscribe_list;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    rpc_crypt_cb    crypt_cb;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">char</span>            <span class="keywordtype">id</span> [TUYA_RPC_ID_LEN + 1];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    uint8_t         key[16];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    uint16_t        buffer_size;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    uint8_t        *buffer;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    uint8_t         default_buffer[TUYA_RPC_DEFAULT_BUFSZ];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span>           *pipe_recv_cb;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span>           *pipe_args;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">   73</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">rpc_method_cb</a>)(<a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *request, <span class="keywordtype">void</span> *arg, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *reply);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a196281d4c45e9d996bf20f101c48e3d2">   82</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a196281d4c45e9d996bf20f101c48e3d2">rpc_subscribe_cb</a>)(<a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *request, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">   91</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">rpc_async_cb</a>)(<a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *result, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a8ca44db468cf763645231332f3e79872">  104</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a8ca44db468cf763645231332f3e79872">tuya_rpc_init</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <span class="keywordtype">char</span> *addr);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#aca9beb2efaf7800390ac356f769c3b94">  117</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#aca9beb2efaf7800390ac356f769c3b94">tuya_rpc_control</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, uint8_t cmd, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a53be170082a449b68953218401175141">  130</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a53be170082a449b68953218401175141">tuya_rpc_run</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, uint32_t stack_size, uint32_t prio);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#afae56eb2e9273d62fb87ad4493da6fca">  146</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#afae56eb2e9273d62fb87ad4493da6fca">tuya_rpc_call_async</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a>      *rpc,  <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *requset, <a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">rpc_async_cb</a> cb, <span class="keywordtype">void</span> *arg, uint32_t sec);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a370d75277e3bdee812c3a2b1dc66d627">  161</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a370d75277e3bdee812c3a2b1dc66d627">tuya_rpc_call_sync</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a>       *rpc, <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *requset, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *reply, uint32_t sec);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a375a70c10f54de8b560c5a3769a46ccb">  174</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a375a70c10f54de8b560c5a3769a46ccb">tuya_rpc_call_notify</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *requset);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a260e848174ac476862426869448883b6">  188</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a260e848174ac476862426869448883b6">tuya_rpc_declare</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *name, <a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">rpc_method_cb</a> cb, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#aeb47ac19d558f96b7626e4f788dbc18e">  200</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#aeb47ac19d558f96b7626e4f788dbc18e">tuya_rpc_undeclare</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#abf3d625dc5650efc5d2b36bcbda74d6f">  213</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#abf3d625dc5650efc5d2b36bcbda74d6f">tuya_rpc_publish</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a>  *rpc, <span class="keywordtype">char</span> *name, <a class="code hl_struct" href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a> *msg);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a686c01099c04f1f6cea5f0e4395e5e70">  228</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a686c01099c04f1f6cea5f0e4395e5e70">tuya_rpc_subscribe</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <span class="keywordtype">char</span> *name, <a class="code hl_typedef" href="../../dd/d94/svc__rpc_8h.html#a196281d4c45e9d996bf20f101c48e3d2">rpc_subscribe_cb</a> cb, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a523f2193d790b4da9b4210627089c7eb">  241</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a523f2193d790b4da9b4210627089c7eb">tuya_rpc_unsubscribe</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, <span class="keywordtype">char</span> *<span class="keywordtype">id</span>, <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#af4757ad2afaff05ab68d3e94a241b158">  254</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#af4757ad2afaff05ab68d3e94a241b158">tuya_rpc_set_crypt</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, rpc_crypt_cb  crypt_cb, uint8_t key[TUYA_RPC_KEY_LEN]);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a276a25d327511d947dd53914c348e4b1">  266</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a276a25d327511d947dd53914c348e4b1">tuya_rpc_set_crypt_key</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc, uint8_t key[TUYA_RPC_KEY_LEN]);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="../../dd/d94/svc__rpc_8h.html#a107c5c4d12492ecd4b2ef109604e2bc7">  278</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../dd/d94/svc__rpc_8h.html#a107c5c4d12492ecd4b2ef109604e2bc7">tuya_rpc_set_crypt_cb</a>(<a class="code hl_struct" href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a> *rpc,  rpc_crypt_cb        crypt_cb);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="arpc__base_8h_html"><div class="ttname"><a href="../../d6/d1f/rpc__base_8h.html">rpc_base.h</a></div><div class="ttdoc">Common process - base rpc</div></div>
+<div class="ttc" id="astructjrpc__msg__t_html"><div class="ttname"><a href="../../d2/d1d/structjrpc__msg__t.html">jrpc_msg_t</a></div><div class="ttdef"><b>Definition:</b> json_rpc.h:42</div></div>
+<div class="ttc" id="astructrpc__base__t_html"><div class="ttname"><a href="../../d4/d17/structrpc__base__t.html">rpc_base_t</a></div><div class="ttdef"><b>Definition:</b> rpc_base.h:82</div></div>
+<div class="ttc" id="astructslist__head_html"><div class="ttname"><a href="../../db/d28/structslist__head.html">slist_head</a></div><div class="ttdoc">sigle list head</div><div class="ttdef"><b>Definition:</b> tuya_slist.h:24</div></div>
+<div class="ttc" id="astructtuya__rpc__t_html"><div class="ttname"><a href="../../dd/d1b/structtuya__rpc__t.html">tuya_rpc_t</a></div><div class="ttdef"><b>Definition:</b> svc_rpc.h:44</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a107c5c4d12492ecd4b2ef109604e2bc7"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a107c5c4d12492ecd4b2ef109604e2bc7">tuya_rpc_set_crypt_cb</a></div><div class="ttdeci">int tuya_rpc_set_crypt_cb(tuya_rpc_t *rpc, rpc_crypt_cb crypt_cb)</div><div class="ttdoc">set encryption callback</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a196281d4c45e9d996bf20f101c48e3d2"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a196281d4c45e9d996bf20f101c48e3d2">rpc_subscribe_cb</a></div><div class="ttdeci">void(* rpc_subscribe_cb)(jrpc_msg_t *request, void *arg)</div><div class="ttdoc">rpc subscribe callback</div><div class="ttdef"><b>Definition:</b> svc_rpc.h:82</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a260e848174ac476862426869448883b6"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a260e848174ac476862426869448883b6">tuya_rpc_declare</a></div><div class="ttdeci">int tuya_rpc_declare(tuya_rpc_t *rpc, char *name, rpc_method_cb cb, void *arg)</div><div class="ttdoc">declare one rpc according name</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a27262c947c776cf98421b132ec5bb8b6"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a27262c947c776cf98421b132ec5bb8b6">rpc_method_cb</a></div><div class="ttdeci">void(* rpc_method_cb)(jrpc_msg_t *request, void *arg, jrpc_msg_t *reply)</div><div class="ttdoc">rpc method callback</div><div class="ttdef"><b>Definition:</b> svc_rpc.h:73</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a276a25d327511d947dd53914c348e4b1"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a276a25d327511d947dd53914c348e4b1">tuya_rpc_set_crypt_key</a></div><div class="ttdeci">int tuya_rpc_set_crypt_key(tuya_rpc_t *rpc, uint8_t key[(LOCAL_KEY_LEN)])</div><div class="ttdoc">set encryption key</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a27dda3c52dc98766350f1eb634feeed3"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a27dda3c52dc98766350f1eb634feeed3">rpc_async_cb</a></div><div class="ttdeci">void(* rpc_async_cb)(jrpc_msg_t *result, void *arg)</div><div class="ttdoc">rpc async callback</div><div class="ttdef"><b>Definition:</b> svc_rpc.h:91</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a370d75277e3bdee812c3a2b1dc66d627"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a370d75277e3bdee812c3a2b1dc66d627">tuya_rpc_call_sync</a></div><div class="ttdeci">int tuya_rpc_call_sync(tuya_rpc_t *rpc, char *id, jrpc_msg_t *requset, jrpc_msg_t *reply, uint32_t sec)</div><div class="ttdoc">rpc synchronous call</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a375a70c10f54de8b560c5a3769a46ccb"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a375a70c10f54de8b560c5a3769a46ccb">tuya_rpc_call_notify</a></div><div class="ttdeci">int tuya_rpc_call_notify(tuya_rpc_t *rpc, char *id, jrpc_msg_t *requset)</div><div class="ttdoc">rpc call notify</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a523f2193d790b4da9b4210627089c7eb"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a523f2193d790b4da9b4210627089c7eb">tuya_rpc_unsubscribe</a></div><div class="ttdeci">int tuya_rpc_unsubscribe(tuya_rpc_t *rpc, char *id, char *name)</div><div class="ttdoc">unsubscribe one rpc</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a53be170082a449b68953218401175141"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a53be170082a449b68953218401175141">tuya_rpc_run</a></div><div class="ttdeci">int tuya_rpc_run(tuya_rpc_t *rpc, uint32_t stack_size, uint32_t prio)</div><div class="ttdoc">create rpc task</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a686c01099c04f1f6cea5f0e4395e5e70"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a686c01099c04f1f6cea5f0e4395e5e70">tuya_rpc_subscribe</a></div><div class="ttdeci">int tuya_rpc_subscribe(tuya_rpc_t *rpc, char *id, char *name, rpc_subscribe_cb cb, void *arg)</div><div class="ttdoc">subscribe one rpc</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_a8ca44db468cf763645231332f3e79872"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#a8ca44db468cf763645231332f3e79872">tuya_rpc_init</a></div><div class="ttdeci">int tuya_rpc_init(tuya_rpc_t *rpc, char *id, char *addr)</div><div class="ttdoc">rpc function init</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_abf3d625dc5650efc5d2b36bcbda74d6f"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#abf3d625dc5650efc5d2b36bcbda74d6f">tuya_rpc_publish</a></div><div class="ttdeci">int tuya_rpc_publish(tuya_rpc_t *rpc, char *name, jrpc_msg_t *msg)</div><div class="ttdoc">publish one rpc</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_aca9beb2efaf7800390ac356f769c3b94"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#aca9beb2efaf7800390ac356f769c3b94">tuya_rpc_control</a></div><div class="ttdeci">int tuya_rpc_control(tuya_rpc_t *rpc, uint8_t cmd, void *arg)</div><div class="ttdoc">rpc control</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_aeb47ac19d558f96b7626e4f788dbc18e"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#aeb47ac19d558f96b7626e4f788dbc18e">tuya_rpc_undeclare</a></div><div class="ttdeci">int tuya_rpc_undeclare(tuya_rpc_t *rpc, char *name)</div><div class="ttdoc">undeclare one rpc according name</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_af4757ad2afaff05ab68d3e94a241b158"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#af4757ad2afaff05ab68d3e94a241b158">tuya_rpc_set_crypt</a></div><div class="ttdeci">int tuya_rpc_set_crypt(tuya_rpc_t *rpc, rpc_crypt_cb crypt_cb, uint8_t key[(LOCAL_KEY_LEN)])</div><div class="ttdoc">set encryption key and callback</div></div>
+<div class="ttc" id="asvc__rpc_8h_html_afae56eb2e9273d62fb87ad4493da6fca"><div class="ttname"><a href="../../dd/d94/svc__rpc_8h.html#afae56eb2e9273d62fb87ad4493da6fca">tuya_rpc_call_async</a></div><div class="ttdeci">int tuya_rpc_call_async(tuya_rpc_t *rpc, char *id, jrpc_msg_t *requset, rpc_async_cb cb, void *arg, uint32_t sec)</div><div class="ttdoc">rpc asynchronous call</div></div>
+<div class="ttc" id="atuya__slist_8h_html"><div class="ttname"><a href="../../d6/d14/tuya__slist_8h.html">tuya_slist.h</a></div><div class="ttdoc">tuya sigle direciton list module</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/hci/include/tkl_hci.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_d6879fe555abf8c477ee0940d5216e25.html">hci</a></li><li class="navelem"><a class="el" href="../../dir_02e4dd4af5246d629ecf22b82dd77570.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_hci.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Host-Controller Interface, Sync with Tuya Host Stack  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;tuya_error_code.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_hci.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dc8/tkl__hci_8h__incl.png" border="0" usemap="#ainclude_2adapter_2hci_2include_2tkl__hci_8h" alt=""/></div>
+<map name="ainclude_2adapter_2hci_2include_2tkl__hci_8h" id="ainclude_2adapter_2hci_2include_2tkl__hci_8h">
+<area shape="rect" title="Host&#45;Controller Interface, Sync with Tuya Host Stack" alt="" coords="475,5,621,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="418,95,566,121"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d04/tkl__hci_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a193e856b32153670380919189ee1f3df"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#a193e856b32153670380919189ee1f3df">TKL_HCI_FUNC_CB</a>) (UCHAR_T *p_buf, USHORT_T buf_len)</td></tr>
+<tr class="separator:a193e856b32153670380919189ee1f3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a267c428f14c4b076c54ad46236414c73"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#a267c428f14c4b076c54ad46236414c73">tkl_hci_acl_packet_send</a> (CONST UCHAR_T *p_buf, USHORT_T buf_len)</td></tr>
+<tr class="memdesc:a267c428f14c4b076c54ad46236414c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send HCI-Command Packet to controller from host. HCI ACL Data packets are used to exchange data between the Host and Controller. Hosts and Controllers shall be able to accept HCI ACL Data packets with up to 27 bytes of data excluding the HCI ACL Data packet header on Connection_Handles associated with an LE-U logical link.The HCI ACL Data packet header is the first 4 octets of the packet.  <a href="../../d2/d04/tkl__hci_8h.html#a267c428f14c4b076c54ad46236414c73">更多...</a><br /></td></tr>
+<tr class="separator:a267c428f14c4b076c54ad46236414c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1686172ce1f78f9c318de4aea8c6f54"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#aa1686172ce1f78f9c318de4aea8c6f54">tkl_hci_callback_register</a> (CONST <a class="el" href="../../d2/d04/tkl__hci_8h.html#a193e856b32153670380919189ee1f3df">TKL_HCI_FUNC_CB</a> hci_evt_cb, CONST <a class="el" href="../../d2/d04/tkl__hci_8h.html#a193e856b32153670380919189ee1f3df">TKL_HCI_FUNC_CB</a> acl_pkt_cb)</td></tr>
+<tr class="memdesc:aa1686172ce1f78f9c318de4aea8c6f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the hci callback, while receiving "hci-event" or "acl-packet" data from controller, we will post these data into host stack. hci_evt_cb: The Host shall be able to accept HCI Event packets with up to 255 octets of data excluding the HCI Event packet header acl_pkt_cb: Refer to @tkl_hci_acl_packet_send  <a href="../../d2/d04/tkl__hci_8h.html#aa1686172ce1f78f9c318de4aea8c6f54">更多...</a><br /></td></tr>
+<tr class="separator:aa1686172ce1f78f9c318de4aea8c6f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5553b5a68209815da640abd5dba715d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#ae5553b5a68209815da640abd5dba715d">tkl_hci_cmd_packet_send</a> (CONST UCHAR_T *p_buf, USHORT_T buf_len)</td></tr>
+<tr class="memdesc:ae5553b5a68209815da640abd5dba715d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send HCI-Command Packet to controller from host. The HCI Command packet is used to send commands to the Controller from the Host. The format of the HCI Command packet is shown @Rule Controllers shall be able to accept HCI Command packets with up to 255 bytes of data excluding the HCI Command packet header. The HCI Command packet header is the first 3 octets of the packet.  <a href="../../d2/d04/tkl__hci_8h.html#ae5553b5a68209815da640abd5dba715d">更多...</a><br /></td></tr>
+<tr class="separator:ae5553b5a68209815da640abd5dba715d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f081263ed51fb13bcefa2012f92096"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#ab3f081263ed51fb13bcefa2012f92096">tkl_hci_deinit</a> (VOID)</td></tr>
+<tr class="memdesc:ab3f081263ed51fb13bcefa2012f92096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for de-initializing the bluetooth host-controller interface  <a href="../../d2/d04/tkl__hci_8h.html#ab3f081263ed51fb13bcefa2012f92096">更多...</a><br /></td></tr>
+<tr class="separator:ab3f081263ed51fb13bcefa2012f92096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ea4440188584839665cbc8d7d2722d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#a85ea4440188584839665cbc8d7d2722d">tkl_hci_init</a> (VOID)</td></tr>
+<tr class="memdesc:a85ea4440188584839665cbc8d7d2722d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for initializing the bluetooth host-controller interface  <a href="../../d2/d04/tkl__hci_8h.html#a85ea4440188584839665cbc8d7d2722d">更多...</a><br /></td></tr>
+<tr class="separator:a85ea4440188584839665cbc8d7d2722d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a640ac8abf04f8d060eea42d3e92eee"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/tkl__hci_8h.html#a5a640ac8abf04f8d060eea42d3e92eee">tkl_hci_reset</a> (VOID)</td></tr>
+<tr class="memdesc:a5a640ac8abf04f8d060eea42d3e92eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Linux/Android] Function for reseting the bluetooth host-controller interface Try to recover socket or reopen uart/usb interface.  <a href="../../d2/d04/tkl__hci_8h.html#a5a640ac8abf04f8d060eea42d3e92eee">更多...</a><br /></td></tr>
+<tr class="separator:a5a640ac8abf04f8d060eea42d3e92eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Host-Controller Interface, Sync with Tuya Host Stack </p>
+<dl class="section version"><dt>版本</dt><dd><br  />
+ </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-10-11</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a193e856b32153670380919189ee1f3df" name="a193e856b32153670380919189ee1f3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193e856b32153670380919189ee1f3df">&#9670;&nbsp;</a></span>TKL_HCI_FUNC_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* TKL_HCI_FUNC_CB) (UCHAR_T *p_buf, USHORT_T buf_len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >&lt; HCI Callback Register function definition </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a267c428f14c4b076c54ad46236414c73" name="a267c428f14c4b076c54ad46236414c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267c428f14c4b076c54ad46236414c73">&#9670;&nbsp;</a></span>tkl_hci_acl_packet_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_hci_acl_packet_send </td>
+          <td>(</td>
+          <td class="paramtype">CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>p_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT_T&#160;</td>
+          <td class="paramname"><em>buf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send HCI-Command Packet to controller from host. HCI ACL Data packets are used to exchange data between the Host and Controller. Hosts and Controllers shall be able to accept HCI ACL Data packets with up to 27 bytes of data excluding the HCI ACL Data packet header on Connection_Handles associated with an LE-U logical link.The HCI ACL Data packet header is the first 4 octets of the packet. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_buf</td><td>Follow Core Spec. Refer to @Rule length Indicate the length of the buffer. it can be "Handle + PB Flag 
+                             + PC Flag + Data Total Length"; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS Initialized successfully. ERROR</dd></dl>
+<p>@Spec BLUETOOTH CORE SPECIFICATION Version 5.2 | Vol 4, Part E, 5-4.2 @Rule 2 bytes 2 bytes N bytes (Connection Handle + PB Flag(12-14bit) + PC Flag(14-16bit)) + Data Total Length + Data @Note PB Flag: Packet_Boundary_Flag; PB Flag: Broadcast_Flag; </p>
+
+</div>
+</div>
+<a id="aa1686172ce1f78f9c318de4aea8c6f54" name="aa1686172ce1f78f9c318de4aea8c6f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1686172ce1f78f9c318de4aea8c6f54">&#9670;&nbsp;</a></span>tkl_hci_callback_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_hci_callback_register </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d2/d04/tkl__hci_8h.html#a193e856b32153670380919189ee1f3df">TKL_HCI_FUNC_CB</a>&#160;</td>
+          <td class="paramname"><em>hci_evt_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d2/d04/tkl__hci_8h.html#a193e856b32153670380919189ee1f3df">TKL_HCI_FUNC_CB</a>&#160;</td>
+          <td class="paramname"><em>acl_pkt_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the hci callback, while receiving "hci-event" or "acl-packet" data from controller, we will post these data into host stack. hci_evt_cb: The Host shall be able to accept HCI Event packets with up to 255 octets of data excluding the HCI Event packet header acl_pkt_cb: Refer to @tkl_hci_acl_packet_send </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hci_evt_cb</td><td>Indicate the HCI Event callback. acl_pkt_cb Indicate the ACL packet callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS Initialized successfully. ERROR</dd></dl>
+<p>@Spec BLUETOOTH CORE SPECIFICATION Version 5.2 | Vol 4, Part E, 5-4.4 For More Event And Commnad Details: BLUETOOTH CORE SPECIFICATION Version 5.2 | Vol 4, Part E, 7-x</p>
+<p >@Rule hci_evt_cb: 1 byte 1 byte 1 byte N bytes Event Code + Parameter Total Length+ Event Parameter 0 + ... + Event Parameter N </p>
+
+</div>
+</div>
+<a id="ae5553b5a68209815da640abd5dba715d" name="ae5553b5a68209815da640abd5dba715d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5553b5a68209815da640abd5dba715d">&#9670;&nbsp;</a></span>tkl_hci_cmd_packet_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_hci_cmd_packet_send </td>
+          <td>(</td>
+          <td class="paramtype">CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>p_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT_T&#160;</td>
+          <td class="paramname"><em>buf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send HCI-Command Packet to controller from host. The HCI Command packet is used to send commands to the Controller from the Host. The format of the HCI Command packet is shown @Rule Controllers shall be able to accept HCI Command packets with up to 255 bytes of data excluding the HCI Command packet header. The HCI Command packet header is the first 3 octets of the packet. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_buf</td><td>Follow Core Spec. Refer to @Rule length Indicate the length of the buffer. it can be "opcode + 1(len) + Parameter len"; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS Initialized successfully. ERROR</dd></dl>
+<p>@Spec BLUETOOTH CORE SPECIFICATION Version 5.2 | Vol 4, Part E, 5-4.1 @Rule 2 bytes 1 byte 1 byte N bytes OpCode(OCF+OGF) + Parameter Total Length + Parameter 0 ... + Parameter N @Note The OpCode Group Field (OGF), OpCode Command Field (OCF). </p>
+
+</div>
+</div>
+<a id="ab3f081263ed51fb13bcefa2012f92096" name="ab3f081263ed51fb13bcefa2012f92096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f081263ed51fb13bcefa2012f92096">&#9670;&nbsp;</a></span>tkl_hci_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_hci_deinit </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function for de-initializing the bluetooth host-controller interface </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS De-initialized successfully. ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a85ea4440188584839665cbc8d7d2722d" name="a85ea4440188584839665cbc8d7d2722d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ea4440188584839665cbc8d7d2722d">&#9670;&nbsp;</a></span>tkl_hci_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_hci_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function for initializing the bluetooth host-controller interface </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS Initialized successfully. ERROR </dd></dl>
+
+</div>
+</div>
+<a id="a5a640ac8abf04f8d060eea42d3e92eee" name="a5a640ac8abf04f8d060eea42d3e92eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a640ac8abf04f8d060eea42d3e92eee">&#9670;&nbsp;</a></span>tkl_hci_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_hci_reset </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[Linux/Android] Function for reseting the bluetooth host-controller interface Try to recover socket or reopen uart/usb interface. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VOID</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>SUCCESS Reset successfully. ERROR </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>[Special Interface] If running in RTOS, we may not support this feature. And you can report OPRT_NOT_SUPPORT if you dont need it. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_dp/include/smart_frame.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_46bae2021096f4d663d9b075cda6debc.html">svc_dp</a></li><li class="navelem"><a class="el" href="../../dir_2a425bbde037564e27c200010d27d4d4.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">smart_frame.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/d69/smart__frame_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef _SMART_FRAME_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define _SMART_FRAME_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d4/dd3/structSF__GW__DEV__CMD__S.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    DP_CMD_TYPE_E tp; <span class="comment">//command source</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *cmd_js; <span class="comment">//command content</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <a class="code hl_struct" href="../../d4/dd3/structSF__GW__DEV__CMD__S.html">SF_GW_DEV_CMD_S</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dc/d03/structmsg__data__s.html">   32</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../dc/d03/structmsg__data__s.html">msg_data_s</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    UINT_T serno;  <span class="comment">//serial number</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    UINT_T len;    <span class="comment">//message data lenth</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    BYTE_T data[0];<span class="comment">//message data</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a575fa0d1800cca8fdbcc439cae8521b2">   36</a></span>} <a class="code hl_typedef" href="../../df/d69/smart__frame_8h.html#a575fa0d1800cca8fdbcc439cae8521b2">MSG_DATA_S</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a68b46a87e00e87e28e4283836480d077">   47</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a68b46a87e00e87e28e4283836480d077">smart_frame_init</a>(VOID);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#aa46fba6af197be257f4b2478cf7f9587">   58</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#aa46fba6af197be257f4b2478cf7f9587">sf_send_gw_dev_cmd</a>(IN <a class="code hl_struct" href="../../d4/dd3/structSF__GW__DEV__CMD__S.html">SF_GW_DEV_CMD_S</a> *gd_cmd);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a931f1148c366b0de9df711611f19f995">   69</a></span>VOID <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a931f1148c366b0de9df711611f19f995">sf_start_sync_obj_dp</a>(VOID);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#ae05688b4c0da8c87a0522651c6f8e1b7">   85</a></span>CHAR_T *<a class="code hl_function" href="../../df/d69/smart__frame_8h.html#ae05688b4c0da8c87a0522651c6f8e1b7">sf_pack_local_obj_dp_data</a>(IN <a class="code hl_struct" href="../../d3/d9f/structdev__cntl__n__s.html">DEV_CNTL_N_S</a> *dev_cntl, IN CONST UINT_T max_len, IN CONST BOOL_T addDevId, OUT BOOL_T *p_all_data_packed, BOOL_T reset_flow_ctl, IN CONST BOOL_T is_lan);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a2011c8395bece92ad30545150b399edd">   96</a></span>UINT_T <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a2011c8395bece92ad30545150b399edd">sf_get_serial_no</a>(VOID);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#ad60799615e3fb214057e71e3f5e3a02e">  108</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#ad60799615e3fb214057e71e3f5e3a02e">sf_respone_obj_dp_query</a>(IN UINT_T cmd_tp, IN CONST <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *pCidArr, IN CONST <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *pDpIdArr);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a6e2f2258e8e19cec12c2383c3950ddee">  120</a></span><a class="code hl_struct" href="../../d2/da3/structDP__CNTL__S.html">DP_CNTL_S</a> * <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a6e2f2258e8e19cec12c2383c3950ddee">sf_dp_data_get</a>(IN CHAR_T *<span class="keywordtype">id</span>, IN CONST uint8_t dp_id);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#ab8b35da377b0d95cf7595b9b8a178c42">  131</a></span>BOOL_T <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#ab8b35da377b0d95cf7595b9b8a178c42">sf_dp_data_is_equl</a>(IN <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *dp_cmd);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">//special dp callback function</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">typedef</span> OPERATE_RET(*sf_special_dp_cb)(IN CONST UINT16_T dpid, IN CONST <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *dp_obj);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a60706d9c8686ccd41cfd532163f8b93f">  145</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a60706d9c8686ccd41cfd532163f8b93f">sf_special_dp_register_cb</a>(IN sf_special_dp_cb handler);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a5b7d24076d9c2de2766db71c5fcb78d7">  159</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a5b7d24076d9c2de2766db71c5fcb78d7">sf_dp_low_power_query</a>(IN CONST UCHAR_T *dps, IN CONST UINT_T cnt,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                                  OUT <a class="code hl_struct" href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a> **obj_dps, OUT <a class="code hl_struct" href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a> **raw_dps);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">//callback function by different kind of transport type</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">typedef</span> OPERATE_RET(*sf_trans_type_cb)(IN CONST UINT16_T dpid, IN CONST <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *data_js);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a2be0cb29515b28c43bcb106e899a715f">  175</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a2be0cb29515b28c43bcb106e899a715f">sf_trans_type_register_cb</a>(IN CONST DP_TRANS_TYPE_T trans, IN sf_trans_type_cb handler);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a28ea5818b8332b00434351ec794c858d">  186</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a28ea5818b8332b00434351ec794c858d">sf_dp_set_delete_null_dp</a>(BOOL_T enable);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a33612725b32ac0139db91fed59a4d588">  195</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a33612725b32ac0139db91fed59a4d588">sf_dp_set_report_timeout</a>(UINT_T timeout_s);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">//callback function for subdevice</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">typedef</span> OPERATE_RET(*subdev_dev_cntl_cb)(IN <a class="code hl_struct" href="../../d3/d9f/structdev__cntl__n__s.html">DEV_CNTL_N_S</a> *subdev_cntl, VOID *param);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">//callback function for traversal subdevice</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="keyword">typedef</span> OPERATE_RET(*sf_subdev_dev_cntl_traversal_cb)(subdev_dev_cntl_cb, VOID *param);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">//callback function for checking whether the subdevice needs to execute the reliable trasmission</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keyword">typedef</span> BOOL_T(*sf_subdev_reliable_transfer_check_cb)(IN CHAR_T *id);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">//callback function for getting the time of subdevice&#39;s reliable trasmission</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="keyword">typedef</span> UINT_T(*sf_subdev_reliable_transfer_time_get_cb)(IN CHAR_T *id);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//callback function for checking whether the subdevice nedds report</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">typedef</span> BOOL_T(*sf_subdev_report_check_cb)(IN CHAR_T *id);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html">  215</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html#ae76a5b9cd12f6d06186dc27ef93cfbb0">  217</a></span>    sf_subdev_dev_cntl_traversal_cb traversal_cb;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html#a6d74589d658cbf85b8de0e421969f396">  219</a></span>    sf_subdev_reliable_transfer_check_cb rt_check_cb;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html#a140201886b7318263513a12881c33445">  221</a></span>    sf_subdev_reliable_transfer_time_get_cb rt_time_get_cb;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html#a64a8c4bc0a39c5945456660471678860">  223</a></span>    sf_subdev_report_check_cb rpt_check_cb;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>} <a class="code hl_struct" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html">SF_SUBDEV_HANDLE_CB_S</a>;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#ac52c9243017ea056ac0f90ae114a8eb1">  235</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#ac52c9243017ea056ac0f90ae114a8eb1">sf_subdev_register_cb</a>(IN <a class="code hl_struct" href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html">SF_SUBDEV_HANDLE_CB_S</a> *cbs);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="../../d4/dc4/structTY__OBJ__DP__DATA__S.html">  240</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    CHAR_T*      dev_id;        <span class="comment">// device id</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>* data;          <span class="comment">// dp data</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    UINT_T       cnt;           <span class="comment">// dp count</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>} <a class="code hl_struct" href="../../d4/dc4/structTY__OBJ__DP__DATA__S.html">TY_OBJ_DP_DATA_S</a>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">  249</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <a class="code hl_struct" href="../../d4/dc4/structTY__OBJ__DP__DATA__S.html">TY_OBJ_DP_DATA_S</a> obj_dp;      <span class="comment">// dp data information</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    BOOL_T           force_send;  <span class="comment">// if report dp forcely or not</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>} <a class="code hl_struct" href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">TY_OBJ_DP_REPT_S</a>;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="../../df/db0/structTY__STAT__DP__REPT__S.html">  257</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <a class="code hl_struct" href="../../d4/dc4/structTY__OBJ__DP__DATA__S.html">TY_OBJ_DP_DATA_S</a> obj_dp;         <span class="comment">// dp data information</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    UINT_T           timeout;        <span class="comment">// report timeout</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    BOOL_T           auto_retrans;   <span class="comment">// if re-report or not</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>} <a class="code hl_struct" href="../../df/db0/structTY__STAT__DP__REPT__S.html">TY_STAT_DP_REPT_S</a>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../d6/d64/structTY__RAW__DP__REPT__S.html">  266</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    CHAR_T*      dev_id;        <span class="comment">// device id</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    BYTE_T       dpid;          <span class="comment">// dp id</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    BYTE_T*      data;          <span class="comment">// dp data</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    UINT_T       len;           <span class="comment">// dp data lenth</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    CHAR_T*      time_str;      <span class="comment">// dp report time</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    UINT_T       timeout;       <span class="comment">// report timeout</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    BOOL_T       auto_retrans;  <span class="comment">// if re-report or not</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>} <a class="code hl_struct" href="../../d6/d64/structTY__RAW__DP__REPT__S.html">TY_RAW_DP_REPT_S</a>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#afc8388fa12c953071fe8d10b63a8537e">  285</a></span>VOID_T <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#afc8388fa12c953071fe8d10b63a8537e">ty_print_dp_time</a>(VOID_T);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a5a57cc275514c75eae3236a363dd0416">  296</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a5a57cc275514c75eae3236a363dd0416">sf_regist_dp_rept_cb</a>(IN <a class="code hl_struct" href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a>* dp_rept_cbs);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">  309</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a>(IN CONST DP_REPT_TYPE_E dp_rept_type, IN VOID_T* dp_rept, IN CONST BYTE_T is_query);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a0a8269588bda581684c41c530b43935e">  326</a></span>OPERATE_RET <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a0a8269588bda581684c41c530b43935e">ty_get_obj_dp_from_json</a>(IN CHAR_T *dev_id, IN CONST CHAR_T *json_str, OUT <a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a> **dp_data, OUT UINT_T *cnt);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a5d6e896f0ac00bc7786755227a86c480">  339</a></span>VOID_T <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a5d6e896f0ac00bc7786755227a86c480">ty_free_obj_dp_data</a>(<a class="code hl_struct" href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a>* dp_data, UINT_T cnt);</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a2fa173ef29b367253b2f7c0bba83e019">  350</a></span>VOID <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a2fa173ef29b367253b2f7c0bba83e019">ty_set_dpid_rept_rule</a>(UINT8_T rept_rule);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#a1c7d780604c1ecb759d1a6eec714bfbc">  357</a></span>UINT8_T <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#a1c7d780604c1ecb759d1a6eec714bfbc">ty_get_dpid_rept_rule</a>(VOID_T);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="../../df/d69/smart__frame_8h.html#ab2f66a87b132c7d3a26be6382b0e8aee">  371</a></span>BOOL_T <a class="code hl_function" href="../../df/d69/smart__frame_8h.html#ab2f66a87b132c7d3a26be6382b0e8aee">ty_check_dpid_need_rept</a>(CHAR_T *dev_id, BYTE_T dpid, DP_CMD_TYPE_E type, <a class="code hl_struct" href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a> *dp_desc);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="preprocessor">#if defined(ENABLE_COMMUNICATE_PRIORITY) &amp;&amp; (ENABLE_COMMUNICATE_PRIORITY==1)</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>OPERATE_RET ty_set_dp_rept_chan(IN UINT8_T chan[], UINT8_T cnt, BOOL_T only);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>UINT8_T* ty_get_dp_rept_chan(UINT8_T* cnt);</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>}</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="ttc" id="agw__intf_8h_html"><div class="ttname"><a href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a></div><div class="ttdoc">Facility of DevOS definitions</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a0a8269588bda581684c41c530b43935e"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a0a8269588bda581684c41c530b43935e">ty_get_obj_dp_from_json</a></div><div class="ttdeci">OPERATE_RET ty_get_obj_dp_from_json(IN CHAR_T *dev_id, IN CONST CHAR_T *json_str, OUT TY_OBJ_DP_S **dp_data, OUT UINT_T *cnt)</div><div class="ttdoc">ty_dp_json_to_obj @desc transfer json format dp to object</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a165f543d19f7abd5231d3788d68c964f"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a165f543d19f7abd5231d3788d68c964f">ty_dp_report</a></div><div class="ttdeci">OPERATE_RET ty_dp_report(IN CONST DP_REPT_TYPE_E dp_rept_type, IN VOID_T *dp_rept, IN CONST BYTE_T is_query)</div><div class="ttdoc">Report dp data</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a1c7d780604c1ecb759d1a6eec714bfbc"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a1c7d780604c1ecb759d1a6eec714bfbc">ty_get_dpid_rept_rule</a></div><div class="ttdeci">UINT8_T ty_get_dpid_rept_rule(VOID_T)</div><div class="ttdoc">get dp id report rule</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a2011c8395bece92ad30545150b399edd"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a2011c8395bece92ad30545150b399edd">sf_get_serial_no</a></div><div class="ttdeci">UINT_T sf_get_serial_no(VOID)</div><div class="ttdoc">Get serial number for dp report</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a28ea5818b8332b00434351ec794c858d"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a28ea5818b8332b00434351ec794c858d">sf_dp_set_delete_null_dp</a></div><div class="ttdeci">OPERATE_RET sf_dp_set_delete_null_dp(BOOL_T enable)</div><div class="ttdoc">Set enable switch for deleting null dp</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a2be0cb29515b28c43bcb106e899a715f"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a2be0cb29515b28c43bcb106e899a715f">sf_trans_type_register_cb</a></div><div class="ttdeci">OPERATE_RET sf_trans_type_register_cb(IN CONST DP_TRANS_TYPE_T trans, IN sf_trans_type_cb handler)</div><div class="ttdoc">Register callback function for different kind of transport type</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a2fa173ef29b367253b2f7c0bba83e019"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a2fa173ef29b367253b2f7c0bba83e019">ty_set_dpid_rept_rule</a></div><div class="ttdeci">VOID ty_set_dpid_rept_rule(UINT8_T rept_rule)</div><div class="ttdoc">set dp id report rule</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a33612725b32ac0139db91fed59a4d588"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a33612725b32ac0139db91fed59a4d588">sf_dp_set_report_timeout</a></div><div class="ttdeci">OPERATE_RET sf_dp_set_report_timeout(UINT_T timeout_s)</div><div class="ttdoc">Set default dp report timeout</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a575fa0d1800cca8fdbcc439cae8521b2"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a575fa0d1800cca8fdbcc439cae8521b2">MSG_DATA_S</a></div><div class="ttdeci">struct msg_data_s MSG_DATA_S</div><div class="ttdoc">info of dp message data</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a5a57cc275514c75eae3236a363dd0416"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a5a57cc275514c75eae3236a363dd0416">sf_regist_dp_rept_cb</a></div><div class="ttdeci">OPERATE_RET sf_regist_dp_rept_cb(IN DP_REPT_HADLE_CB_S *dp_rept_cbs)</div><div class="ttdoc">Register callback function for dp report</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a5b7d24076d9c2de2766db71c5fcb78d7"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a5b7d24076d9c2de2766db71c5fcb78d7">sf_dp_low_power_query</a></div><div class="ttdeci">OPERATE_RET sf_dp_low_power_query(IN CONST UCHAR_T *dps, IN CONST UINT_T cnt, OUT TY_RECV_OBJ_DP_S **obj_dps, OUT TY_RECV_RAW_DP_S **raw_dps)</div><div class="ttdoc">Query dp for low power</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a5d6e896f0ac00bc7786755227a86c480"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a5d6e896f0ac00bc7786755227a86c480">ty_free_obj_dp_data</a></div><div class="ttdeci">VOID_T ty_free_obj_dp_data(TY_OBJ_DP_S *dp_data, UINT_T cnt)</div><div class="ttdoc">ty_free_obj_dp_data @desc free memory of object dp</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a60706d9c8686ccd41cfd532163f8b93f"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a60706d9c8686ccd41cfd532163f8b93f">sf_special_dp_register_cb</a></div><div class="ttdeci">OPERATE_RET sf_special_dp_register_cb(IN sf_special_dp_cb handler)</div><div class="ttdoc">Register special dp callback function</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a68b46a87e00e87e28e4283836480d077"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a68b46a87e00e87e28e4283836480d077">smart_frame_init</a></div><div class="ttdeci">OPERATE_RET smart_frame_init(VOID)</div><div class="ttdoc">Smart frame init</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a6e2f2258e8e19cec12c2383c3950ddee"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a6e2f2258e8e19cec12c2383c3950ddee">sf_dp_data_get</a></div><div class="ttdeci">DP_CNTL_S * sf_dp_data_get(IN CHAR_T *id, IN CONST uint8_t dp_id)</div><div class="ttdoc">Get dp control information</div></div>
+<div class="ttc" id="asmart__frame_8h_html_a931f1148c366b0de9df711611f19f995"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#a931f1148c366b0de9df711611f19f995">sf_start_sync_obj_dp</a></div><div class="ttdeci">VOID sf_start_sync_obj_dp(VOID)</div><div class="ttdoc">Start to synchronize dp data</div></div>
+<div class="ttc" id="asmart__frame_8h_html_aa46fba6af197be257f4b2478cf7f9587"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#aa46fba6af197be257f4b2478cf7f9587">sf_send_gw_dev_cmd</a></div><div class="ttdeci">OPERATE_RET sf_send_gw_dev_cmd(IN SF_GW_DEV_CMD_S *gd_cmd)</div><div class="ttdoc">Send dp command</div></div>
+<div class="ttc" id="asmart__frame_8h_html_ab2f66a87b132c7d3a26be6382b0e8aee"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#ab2f66a87b132c7d3a26be6382b0e8aee">ty_check_dpid_need_rept</a></div><div class="ttdeci">BOOL_T ty_check_dpid_need_rept(CHAR_T *dev_id, BYTE_T dpid, DP_CMD_TYPE_E type, DP_DESC_IF_S *dp_desc)</div><div class="ttdoc">check dp id need report</div></div>
+<div class="ttc" id="asmart__frame_8h_html_ab8b35da377b0d95cf7595b9b8a178c42"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#ab8b35da377b0d95cf7595b9b8a178c42">sf_dp_data_is_equl</a></div><div class="ttdeci">BOOL_T sf_dp_data_is_equl(IN ty_cJSON *dp_cmd)</div><div class="ttdoc">Check the dp data is same</div></div>
+<div class="ttc" id="asmart__frame_8h_html_ac52c9243017ea056ac0f90ae114a8eb1"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#ac52c9243017ea056ac0f90ae114a8eb1">sf_subdev_register_cb</a></div><div class="ttdeci">OPERATE_RET sf_subdev_register_cb(IN SF_SUBDEV_HANDLE_CB_S *cbs)</div><div class="ttdoc">Register callback function for subdevice</div></div>
+<div class="ttc" id="asmart__frame_8h_html_ad60799615e3fb214057e71e3f5e3a02e"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#ad60799615e3fb214057e71e3f5e3a02e">sf_respone_obj_dp_query</a></div><div class="ttdeci">OPERATE_RET sf_respone_obj_dp_query(IN UINT_T cmd_tp, IN CONST ty_cJSON *pCidArr, IN CONST ty_cJSON *pDpIdArr)</div><div class="ttdoc">Response for dp query</div></div>
+<div class="ttc" id="asmart__frame_8h_html_ae05688b4c0da8c87a0522651c6f8e1b7"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#ae05688b4c0da8c87a0522651c6f8e1b7">sf_pack_local_obj_dp_data</a></div><div class="ttdeci">CHAR_T * sf_pack_local_obj_dp_data(IN DEV_CNTL_N_S *dev_cntl, IN CONST UINT_T max_len, IN CONST BOOL_T addDevId, OUT BOOL_T *p_all_data_packed, BOOL_T reset_flow_ctl, IN CONST BOOL_T is_lan)</div><div class="ttdoc">Packed the local dp data as string in json format</div></div>
+<div class="ttc" id="asmart__frame_8h_html_afc8388fa12c953071fe8d10b63a8537e"><div class="ttname"><a href="../../df/d69/smart__frame_8h.html#afc8388fa12c953071fe8d10b63a8537e">ty_print_dp_time</a></div><div class="ttdeci">VOID_T ty_print_dp_time(VOID_T)</div><div class="ttdoc">Print the key time for dp report</div></div>
+<div class="ttc" id="astructDP__CNTL__S_html"><div class="ttname"><a href="../../d2/da3/structDP__CNTL__S.html">DP_CNTL_S</a></div><div class="ttdoc">Definition of dp control</div><div class="ttdef"><b>Definition:</b> gw_intf.h:291</div></div>
+<div class="ttc" id="astructDP__DESC__IF__S_html"><div class="ttname"><a href="../../d0/ddb/structDP__DESC__IF__S.html">DP_DESC_IF_S</a></div><div class="ttdoc">Definition of dp description</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:392</div></div>
+<div class="ttc" id="astructDP__REPT__HADLE__CB__S_html"><div class="ttname"><a href="../../dd/d8f/structDP__REPT__HADLE__CB__S.html">DP_REPT_HADLE_CB_S</a></div><div class="ttdoc">Definition of DP handlers</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:570</div></div>
+<div class="ttc" id="astructSF__GW__DEV__CMD__S_html"><div class="ttname"><a href="../../d4/dd3/structSF__GW__DEV__CMD__S.html">SF_GW_DEV_CMD_S</a></div><div class="ttdoc">info of dp command</div><div class="ttdef"><b>Definition:</b> smart_frame.h:24</div></div>
+<div class="ttc" id="astructSF__SUBDEV__HANDLE__CB__S_html"><div class="ttname"><a href="../../d7/d81/structSF__SUBDEV__HANDLE__CB__S.html">SF_SUBDEV_HANDLE_CB_S</a></div><div class="ttdoc">callback function of subdevice handle</div><div class="ttdef"><b>Definition:</b> smart_frame.h:215</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__DATA__S_html"><div class="ttname"><a href="../../d4/dc4/structTY__OBJ__DP__DATA__S.html">TY_OBJ_DP_DATA_S</a></div><div class="ttdoc">dp data information</div><div class="ttdef"><b>Definition:</b> smart_frame.h:240</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__REPT__S_html"><div class="ttname"><a href="../../d0/d86/structTY__OBJ__DP__REPT__S.html">TY_OBJ_DP_REPT_S</a></div><div class="ttdoc">dp data report information for object type</div><div class="ttdef"><b>Definition:</b> smart_frame.h:249</div></div>
+<div class="ttc" id="astructTY__OBJ__DP__S_html"><div class="ttname"><a href="../../d8/d6d/structTY__OBJ__DP__S.html">TY_OBJ_DP_S</a></div><div class="ttdoc">Definition of structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:448</div></div>
+<div class="ttc" id="astructTY__RAW__DP__REPT__S_html"><div class="ttname"><a href="../../d6/d64/structTY__RAW__DP__REPT__S.html">TY_RAW_DP_REPT_S</a></div><div class="ttdoc">dp data report information for raw type</div><div class="ttdef"><b>Definition:</b> smart_frame.h:266</div></div>
+<div class="ttc" id="astructTY__RECV__OBJ__DP__S_html"><div class="ttname"><a href="../../d7/dde/structTY__RECV__OBJ__DP__S.html">TY_RECV_OBJ_DP_S</a></div><div class="ttdoc">Definition of recved structured dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:462</div></div>
+<div class="ttc" id="astructTY__RECV__RAW__DP__S_html"><div class="ttname"><a href="../../da/d9a/structTY__RECV__RAW__DP__S.html">TY_RECV_RAW_DP_S</a></div><div class="ttdoc">Definition of recved raw dp</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:480</div></div>
+<div class="ttc" id="astructTY__STAT__DP__REPT__S_html"><div class="ttname"><a href="../../df/db0/structTY__STAT__DP__REPT__S.html">TY_STAT_DP_REPT_S</a></div><div class="ttdoc">dp data report information for statistic type</div><div class="ttdef"><b>Definition:</b> smart_frame.h:257</div></div>
+<div class="ttc" id="astructdev__cntl__n__s_html"><div class="ttname"><a href="../../d3/d9f/structdev__cntl__n__s.html">dev_cntl_n_s</a></div><div class="ttdoc">Definition of device control info</div><div class="ttdef"><b>Definition:</b> gw_intf.h:380</div></div>
+<div class="ttc" id="astructmsg__data__s_html"><div class="ttname"><a href="../../dc/d03/structmsg__data__s.html">msg_data_s</a></div><div class="ttdoc">info of dp message data</div><div class="ttdef"><b>Definition:</b> smart_frame.h:32</div></div>
+<div class="ttc" id="astructty__cJSON_html"><div class="ttname"><a href="../../d4/d53/structty__cJSON.html">ty_cJSON</a></div><div class="ttdef"><b>Definition:</b> ty_cJSON.h:104</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

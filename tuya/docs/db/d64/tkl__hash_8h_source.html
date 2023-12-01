@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/security/include/tkl_hash.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_cf7cbb8e235eb63d31f2743fd9ac457a.html">security</a></li><li class="navelem"><a class="el" href="../../dir_ca31ddca70388c6aabbe6684c570024b.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_hash.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d64/tkl__hash_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_HASH_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_HASH_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> VOID_T* TKL_HASH_HANDLE;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a0a63ab212f9e9e8bb803fe4f14433d59">   33</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a0a63ab212f9e9e8bb803fe4f14433d59">tkl_sha256_create_init</a>( TKL_HASH_HANDLE *ctx );</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#ae5f3e3ac3773dbc250b8a2a8aab88f60">   44</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#ae5f3e3ac3773dbc250b8a2a8aab88f60">tkl_sha256_free</a>( TKL_HASH_HANDLE ctx );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a96b518361f57ea2cac4b7a1f8a680105">   58</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a96b518361f57ea2cac4b7a1f8a680105">tkl_sha256_starts_ret</a>( TKL_HASH_HANDLE ctx, INT32_T is224 );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#acfae81fcb9e8d5e19c8f742821fb0753">   73</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#acfae81fcb9e8d5e19c8f742821fb0753">tkl_sha256_update_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                               <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                               <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#ac6a6c1a92a9b8fb512f98855a6481c36">   89</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#ac6a6c1a92a9b8fb512f98855a6481c36">tkl_sha256_finish_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                               UINT8_T output[32] );</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a0d60c277fe7e78877b31b80f70c5a4b9">  102</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a0d60c277fe7e78877b31b80f70c5a4b9">tkl_md5_create_init</a>( TKL_HASH_HANDLE *ctx );</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a5f536711665bb7462c37888c2ee6ae50">  113</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a5f536711665bb7462c37888c2ee6ae50">tkl_md5_free</a>( TKL_HASH_HANDLE ctx );</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a77d5e8a659a0d49a0a731cb9f433c119">  125</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a77d5e8a659a0d49a0a731cb9f433c119">tkl_md5_starts_ret</a>( TKL_HASH_HANDLE ctx);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a37502def0a1a0d7b4047db4f19e11172">  140</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a37502def0a1a0d7b4047db4f19e11172">tkl_md5_update_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                               <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                               <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a800490d7e122592a6ad4aaa93cdb3569">  156</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a800490d7e122592a6ad4aaa93cdb3569">tkl_md5_finish_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                               UINT8_T output[16] );</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#aede421f37504968f83653356685b29b4">  168</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#aede421f37504968f83653356685b29b4">tkl_sha1_create_init</a>( TKL_HASH_HANDLE *ctx );</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#acead611e809906c4d137eb8eddf38520">  179</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#acead611e809906c4d137eb8eddf38520">tkl_sha1_free</a>( TKL_HASH_HANDLE ctx );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#aa3674c751a17a13b4110c1f0faf90f7f">  191</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#aa3674c751a17a13b4110c1f0faf90f7f">tkl_sha1_starts_ret</a>( TKL_HASH_HANDLE ctx);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#a78c914970cedc52bcaeff708f34b39a1">  206</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#a78c914970cedc52bcaeff708f34b39a1">tkl_sha1_update_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                               <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                               <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="../../db/d64/tkl__hash_8h.html#ab27b5b7fa122bfdab10c30c0c3e38662">  222</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d64/tkl__hash_8h.html#ab27b5b7fa122bfdab10c30c0c3e38662">tkl_sha1_finish_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                               UINT8_T output[20] );</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>}</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="ttc" id="atkl__hash_8h_html_a0a63ab212f9e9e8bb803fe4f14433d59"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a0a63ab212f9e9e8bb803fe4f14433d59">tkl_sha256_create_init</a></div><div class="ttdeci">OPERATE_RET tkl_sha256_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a sha256 context.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a0d60c277fe7e78877b31b80f70c5a4b9"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a0d60c277fe7e78877b31b80f70c5a4b9">tkl_md5_create_init</a></div><div class="ttdeci">OPERATE_RET tkl_md5_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a md5 context.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a37502def0a1a0d7b4047db4f19e11172"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a37502def0a1a0d7b4047db4f19e11172">tkl_md5_update_ret</a></div><div class="ttdeci">OPERATE_RET tkl_md5_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing md5 checksum calculation.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a5f536711665bb7462c37888c2ee6ae50"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a5f536711665bb7462c37888c2ee6ae50">tkl_md5_free</a></div><div class="ttdeci">OPERATE_RET tkl_md5_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a md5 context.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a77d5e8a659a0d49a0a731cb9f433c119"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a77d5e8a659a0d49a0a731cb9f433c119">tkl_md5_starts_ret</a></div><div class="ttdeci">OPERATE_RET tkl_md5_starts_ret(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function starts a md5 checksum calculation.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a78c914970cedc52bcaeff708f34b39a1"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a78c914970cedc52bcaeff708f34b39a1">tkl_sha1_update_ret</a></div><div class="ttdeci">OPERATE_RET tkl_sha1_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha1 checksum calculation.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a800490d7e122592a6ad4aaa93cdb3569"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a800490d7e122592a6ad4aaa93cdb3569">tkl_md5_finish_ret</a></div><div class="ttdeci">OPERATE_RET tkl_md5_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[16])</div><div class="ttdoc">This function finishes the md5 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_a96b518361f57ea2cac4b7a1f8a680105"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#a96b518361f57ea2cac4b7a1f8a680105">tkl_sha256_starts_ret</a></div><div class="ttdeci">OPERATE_RET tkl_sha256_starts_ret(TKL_HASH_HANDLE ctx, INT32_T is224)</div><div class="ttdoc">This function starts a sha224 or sha256 checksum calculation.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_aa3674c751a17a13b4110c1f0faf90f7f"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#aa3674c751a17a13b4110c1f0faf90f7f">tkl_sha1_starts_ret</a></div><div class="ttdeci">OPERATE_RET tkl_sha1_starts_ret(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function starts a sha224 or sha1 checksum calculation.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_ab27b5b7fa122bfdab10c30c0c3e38662"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#ab27b5b7fa122bfdab10c30c0c3e38662">tkl_sha1_finish_ret</a></div><div class="ttdeci">OPERATE_RET tkl_sha1_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[20])</div><div class="ttdoc">This function finishes the sha1 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_ac6a6c1a92a9b8fb512f98855a6481c36"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#ac6a6c1a92a9b8fb512f98855a6481c36">tkl_sha256_finish_ret</a></div><div class="ttdeci">OPERATE_RET tkl_sha256_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[32])</div><div class="ttdoc">This function finishes the sha256 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_acead611e809906c4d137eb8eddf38520"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#acead611e809906c4d137eb8eddf38520">tkl_sha1_free</a></div><div class="ttdeci">OPERATE_RET tkl_sha1_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a sha1 context.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_acfae81fcb9e8d5e19c8f742821fb0753"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#acfae81fcb9e8d5e19c8f742821fb0753">tkl_sha256_update_ret</a></div><div class="ttdeci">OPERATE_RET tkl_sha256_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha256 checksum calculation.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_ae5f3e3ac3773dbc250b8a2a8aab88f60"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#ae5f3e3ac3773dbc250b8a2a8aab88f60">tkl_sha256_free</a></div><div class="ttdeci">OPERATE_RET tkl_sha256_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a sha256 context.</div></div>
+<div class="ttc" id="atkl__hash_8h_html_aede421f37504968f83653356685b29b4"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html#aede421f37504968f83653356685b29b4">tkl_sha1_create_init</a></div><div class="ttdeci">OPERATE_RET tkl_sha1_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a sha1 context.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

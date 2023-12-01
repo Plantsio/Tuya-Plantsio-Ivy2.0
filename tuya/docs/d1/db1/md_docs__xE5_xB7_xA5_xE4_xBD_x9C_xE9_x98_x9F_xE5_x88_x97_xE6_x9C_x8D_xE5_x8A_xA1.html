@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 工作队列服务</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">工作队列服务 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >工作队列服务是<code>TuyaOS</code>基于<code>workqueue</code>实现的，满足一般的异步任务处理需求的基础能力。<code>TuyaOS</code> 在自身初始化的时候，已经完成了工作队列服务的创建，不需要开发者进行额外的操作，可以直接进行任务处理。</p>
+<h1><a class="anchor" id="autotoc_md175"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md176"></a>
+工作队列优先级</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line">    <a class="code hl_enumvalue" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">WORKQ_SYSTEM</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf">WORKQ_HIGHTPRI</a></div>
+<div class="line">}<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a>;</div>
+<div class="ttc" id="atal__workq__service_8h_html_a820afe6285b996db650db54e19c2cfdf"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a></div><div class="ttdeci">WORKQ_SERVICE_E</div><div class="ttdoc">TuyaOS provides developers with two workqueue service for convenience.</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:19</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">WORKQ_SYSTEM</a></div><div class="ttdeci">@ WORKQ_SYSTEM</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:23</div></div>
+<div class="ttc" id="atal__workq__service_8h_html_a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa4df6b75d01bbb56de253ed4a044752cf">WORKQ_HIGHTPRI</a></div><div class="ttdeci">@ WORKQ_HIGHTPRI</div><div class="ttdef"><b>Definition:</b> tal_workq_service.h:27</div></div>
+</div><!-- fragment --><p> <code>TuyaOS</code>提供了两种工作队列，分别为：</p><ul>
+<li>WORKQ_SYSTEM：低优先级服务，允许进行阻塞任务。</li>
+<li>WORKQ_HIGHTPRI：高优先级服务，不允许进行阻塞任务。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md177"></a>
+添加任务到工作队列服务</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#aee7cba2daf4df874edc16e362bab19fe">tal_workq_schedule</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data);</div>
+<div class="ttc" id="atal__workq__service_8h_html_aee7cba2daf4df874edc16e362bab19fe"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#aee7cba2daf4df874edc16e362bab19fe">tal_workq_schedule</a></div><div class="ttdeci">OPERATE_RET tal_workq_schedule(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data)</div><div class="ttdoc">add work to work queue</div></div>
+</div><!-- fragment --><p >添加一个任务。提供回调函数以及处理参数。任务会被放在尾部，并按照<code>FIFO</code>的顺序执行。</p>
+<p >注意：任务是一次性的，异步处理的，所以参数<code>data</code>需要使用<code>Malloc</code>申请堆内存，并在<code>cb</code>中释放内存，避免内存泄露。</p>
+<h2><a class="anchor" id="autotoc_md178"></a>
+添加紧急工作到工作队列</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a77789fbeb37773652230eca4ac450dc1">tal_workq_schedule_instant</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data);</div>
+<div class="ttc" id="atal__workq__service_8h_html_a77789fbeb37773652230eca4ac450dc1"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a77789fbeb37773652230eca4ac450dc1">tal_workq_schedule_instant</a></div><div class="ttdeci">OPERATE_RET tal_workq_schedule_instant(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data)</div><div class="ttdoc">put work task in workqueue, instant will be dequeued first</div></div>
+</div><!-- fragment --><p >添加一个紧急任务。提供回调函数以及处理参数。紧急任务会被放在头部部，立即执行。</p>
+<p >注意：任务是一次性的，异步处理的，所以参数<code>data</code>需要使用<code>Malloc</code>申请堆内存，并在<code>cb</code>中释放内存，避免内存泄露。</p>
+<h2><a class="anchor" id="autotoc_md179"></a>
+获取队列成员数量</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">UINT16_T <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a5bda74aae07e1a12cab8b57dc35312f4">tal_workq_get_num</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service);</div>
+<div class="ttc" id="atal__workq__service_8h_html_a5bda74aae07e1a12cab8b57dc35312f4"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a5bda74aae07e1a12cab8b57dc35312f4">tal_workq_get_num</a></div><div class="ttdeci">UINT16_T tal_workq_get_num(WORKQ_SERVICE_E service)</div><div class="ttdoc">get current work number in work queue.</div></div>
+</div><!-- fragment --><p >获取当前工作队列服务的剩余任务数量。</p>
+<h2><a class="anchor" id="autotoc_md180"></a>
+删除队列中的成员</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a0e603fb7c6f1d1bf3feb2409980240f5">tal_workq_cancel</a>(<a class="code hl_enumeration" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdf">WORKQ_SERVICE_E</a> service, WORKQUEUE_CB cb, VOID_T *data);</div>
+<div class="ttc" id="atal__workq__service_8h_html_a0e603fb7c6f1d1bf3feb2409980240f5"><div class="ttname"><a href="../../dd/d56/tal__workq__service_8h.html#a0e603fb7c6f1d1bf3feb2409980240f5">tal_workq_cancel</a></div><div class="ttdeci">OPERATE_RET tal_workq_cancel(WORKQ_SERVICE_E service, WORKQUEUE_CB cb, VOID_T *data)</div><div class="ttdoc">cancel work task in workqueue</div></div>
+</div><!-- fragment --><p >删除一个特定的任务，必须满足<code>cb</code>和<code>data</code>完全一致，如果删除成功，需要自行释放<code>data</code>（因为<code>data</code>在<code>cb</code>执行的时候释放，删除成功意味着<code>cb</code>没有执行）。</p>
+<h1><a class="anchor" id="autotoc_md181"></a>
+示例代码</h1>
+<div class="fragment"><div class="line">VOID __sample_work_cb(VOID *data)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;work is here %p&quot;</span>, data);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">VOID __sample_instant_work_cb(VOID *data)</div>
+<div class="line">{</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;instant work is here %p&quot;</span>, data);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">OPERATE_RET sample_workqueue_service_test()</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET rt = OPRT_OK;</div>
+<div class="line">     </div>
+<div class="line">    <span class="comment">// 添加待执行任务</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#aee7cba2daf4df874edc16e362bab19fe">tal_workq_schedule</a>(<a class="code hl_enumvalue" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">WORKQ_SYSTEM</a>, __sample_work_cb, NULL);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 添加待执行紧急任务</span></div>
+<div class="line">    rt = <a class="code hl_function" href="../../dd/d56/tal__workq__service_8h.html#a77789fbeb37773652230eca4ac450dc1">tal_workq_schedule_instant</a>(<a class="code hl_enumvalue" href="../../dd/d56/tal__workq__service_8h.html#a820afe6285b996db650db54e19c2cfdfa1af11ba979c7168d586b7d4fc8ff5d6b">WORKQ_SYSTEM</a>, __sample_instant_work_cb, NULL);</div>
+<div class="line">    EXPECT_EQ(rt, OPRT_OK);</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span> OPRT_OK;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

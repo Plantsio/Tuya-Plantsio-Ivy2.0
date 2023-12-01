@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/lib_transport/include/tuya_transporter.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_fffc5003420dbdca74f204baeb229d88.html">lib_transport</a></li><li class="navelem"><a class="el" href="../../dir_9172657de2df7cff65dcb4c011b5990e.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_transporter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __TRANSPORT_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __TRANSPORT_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">/*tuya transporter command definitions*/</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define TUYA_TRANSPORTER_SET_TLS_CERT               0x0001</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define TUYA_TRANSPORTER_GET_TCP_SOCKET             0x0002</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define TUYA_TRANSPORTER_SET_TCP_CONFIG             0x0003</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define TUYA_TRANSPORTER_SET_WEBSOCKET_CONFIG       0x0004</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define TUYA_TRANSPORTER_SET_TLS_CONFIG             0x0005</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../dc/d5b/structsocket__config__t.html">   57</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../dc/d5b/structsocket__config__t.html">socket_config_t</a> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    uint8_t isBlock;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    uint8_t isReuse;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    uint8_t isDisableNagle;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    uint8_t isKeepAlive;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    uint16_t bindPort;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    TUYA_IP_ADDR_T bindAddr;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    uint32_t sendTimeoutMs;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    uint32_t recvTimeoutMs;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    uint32_t keepAliveIdleTime;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    uint32_t keepAliveInterval;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    uint32_t keepAliveCount;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../dc/d5b/structsocket__config__t.html">socket_config_t</a> <a class="code hl_struct" href="../../dc/d5b/structsocket__config__t.html">tuya_tcp_config_t</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//struct tuya_transport_array_handle;</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// struct tuya_transporter_inter_t;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">typedef</span> <span class="keyword">struct </span>tuya_transport_array_handle* tuya_transport_array_handle_t;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_inter_t</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_inter_t</a>* <a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>tuya_transport_array_handle_t tuya_transport_array_create();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>OPERATE_RET tuya_transport_array_destroy(tuya_transport_array_handle_t transport_handle);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>OPERATE_RET tuya_transport_array_add_transporter(tuya_transport_array_handle_t transport_handle, <a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, <span class="keywordtype">char</span>* scheme);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>OPERATE_RET tuya_transport_array_remove_transporter(tuya_transport_array_handle_t transport_handle, <a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> tuya_transport_array_get_transporter(tuya_transport_array_handle_t transport_handle, <span class="keywordtype">char</span>* scheme);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">typedef</span> uint8_t TUYA_TRANSPORT_TYPE_E;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#define TRANSPORT_TYPE_TCP         (1) </span><span class="comment">//tcp transporter</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#define TRANSPORT_TYPE_TLS         (2) </span><span class="comment">//tls transporter</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#define TRANSPORT_TYPE_WEBSOCKET   (3) </span><span class="comment">//websocket transporter </span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> tuya_transporter_create(TUYA_TRANSPORT_TYPE_E transport_type, <a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> dependency);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>OPERATE_RET tuya_transporter_destroy(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>OPERATE_RET tuya_transporter_connect(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, <span class="keyword">const</span> <span class="keywordtype">char</span>* host, <span class="keywordtype">int</span> port, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>OPERATE_RET tuya_transporter_read(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, uint8_t* buf, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>OPERATE_RET tuya_transporter_write(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, uint8_t* buf, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>OPERATE_RET tuya_transporter_poll_read(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>OPERATE_RET tuya_transporter_close(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>OPERATE_RET tuya_transporter_ctrl(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, uint32_t cmd, <span class="keywordtype">void</span>* args);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_destroy_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> t);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_connect_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, <span class="keyword">const</span> <span class="keywordtype">char</span>* host, <span class="keywordtype">int</span> port, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_read_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, uint8_t* buf, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_write_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, uint8_t* buf, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_poll_read_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_poll_write_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, <span class="keywordtype">int</span> timeout_ms);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_close_fn)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="keyword">typedef</span> OPERATE_RET(*transporter_ctrl)(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter, uint32_t cmd, <span class="keywordtype">void</span>* args);</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>OPERATE_RET tuya_transporter_set_func(<a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_t</a> transporter,</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                                      transporter_connect_fn connect, transporter_close_fn close,</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                                      transporter_read_fn read, transporter_write_fn write, transporter_poll_read_fn poll_read,</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>                                      transporter_poll_read_fn poll_write, transporter_destroy_fn destroy, transporter_ctrl ctrl);</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="../../db/d45/structtuya__transporter__inter__t.html">  387</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_inter_t</a> {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keywordtype">char</span>* scheme;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    transporter_connect_fn f_connect;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    transporter_read_fn f_read;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    transporter_write_fn f_write;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    transporter_poll_read_fn f_poll_read;</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    transporter_poll_write_fn f_poll_write;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    transporter_close_fn f_close;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    transporter_destroy_fn f_destroy;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    transporter_ctrl f_ctrl;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>};</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructsocket__config__t_html"><div class="ttname"><a href="../../dc/d5b/structsocket__config__t.html">socket_config_t</a></div><div class="ttdoc">定义了tcp transporter配置选项</div><div class="ttdef"><b>Definition:</b> tuya_transporter.h:57</div></div>
+<div class="ttc" id="astructtuya__transporter__inter__t_html"><div class="ttname"><a href="../../db/d45/structtuya__transporter__inter__t.html">tuya_transporter_inter_t</a></div><div class="ttdef"><b>Definition:</b> tuya_transporter.h:387</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

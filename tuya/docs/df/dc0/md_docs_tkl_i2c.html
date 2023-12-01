@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: I2C 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">I2C 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md231"></a>
+简要说明</h1>
+<p >i2c (Inter-Integrated Circuit,或i2c) 是一种串行的同步通信总线。 i2c串行总线有两根信号线，一根是双向的数据线SDA，另一根是时钟线SCL。所有接到i2c总线设备上的串行数据SDA都接到总线的SDA上，各设备的时钟线SCL接到总线的SCL上。i2c典型接线方式如下:</p>
+<p ><img src="https://images.tuyacn.com/fe-static/docs/img/fd7da59e-749b-4a3a-b171-411459568eed.png" alt="image-20220406143504112" class="inline"/></p>
+<p >总线的通信由主机控制，即主机是数据的传送（发出启动信号）、发出时钟信号以及传送结束时发出停止信号的设备。被主机寻访的设备称为从机。每个接到i2c总线的设备都有一个唯一的地址，以便于主机寻访。主机和从机的数据传送，可以由主机发送数据到从机，也可以由从机发到主机。i2c支持7位或者10位从设备地址模式。i2c总线在开始条件后的首字节决定哪个被控器将被主控器选择，当主机输出一地址时，系统中的每一从设备都将开始条件后的地址和自己的地址进行比较，如果相同，该从机即认为自己被主机寻址。</p>
+<h1><a class="anchor" id="autotoc_md232"></a>
+索引</h1>
+<h2><a class="anchor" id="autotoc_md233"></a>
+tkl_i2c_init</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_init(TUYA_I2C_NUM_E port, CONST TUYA_IIC_BASE_CFG_T *cfg);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>通过端口号和基础配置初始化对应的i2c实例，返回初始化结果 。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><p class="startli"><code>cfg</code>: i2c基础配置，包含角色，速率，地址宽度 。</p>
+<p class="startli">``` typedef struct { TUYA_IIC_ROLE_E role; TUYA_IIC_SPEED_E speed; TUYA_IIC_ADDR_MODE_E addr_width; } <a class="el" href="../../dc/df1/structTUYA__IIC__BASE__CFG__T.html" title="i2c cfg">TUYA_IIC_BASE_CFG_T</a>; ```</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md234"></a>
+TUYA_IIC_ROLE_E:</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_MODE_MASTER   </td><td class="markdownTableBodyLeft">i2c主机模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_MODE_MASTER   </td><td class="markdownTableBodyLeft">i2c从机模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md235"></a>
+TUYA_IIC_SPEED_E：</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_BUS_SPEED_100K   </td><td class="markdownTableBodyLeft">i2c标准速度(100KHz)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_BUS_SPEED_400K   </td><td class="markdownTableBodyLeft">i2c快速速度(400KHz)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_BUS_SPEED_1M   </td><td class="markdownTableBodyLeft">i2c标准+速度(1MHz)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_BUS_SPEED_3_4M   </td><td class="markdownTableBodyLeft">i2c高速速度(3.4MHz)   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md236"></a>
+TUYA_IIC_ADDR_MODE_E：</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_ADDRESS_7BIT   </td><td class="markdownTableBodyLeft">7bit 地址模式   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_ADDRESS_10BIT   </td><td class="markdownTableBodyLeft">10bit 地址模式   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md237"></a>
+tkl_i2c_deinit</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_deinit(TUYA_I2C_NUM_E port)</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2c实例反初始化。该接口会停止i2c。</li>
+<li>实例正在进行的传输（如果有），并且释放相关的软硬件资源。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md238"></a>
+tkl_i2c_irq_init</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_irq_init(TUYA_I2C_NUM_E port, TUYA_I2C_IRQ_CB cb);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2c中断初始化。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><p class="startli"><code>cb</code>: i2c中断回调函数。</p>
+<p class="startli">回调函数类型TUYA_I2C_IRQ_CB定义如下：</p>
+<p class="startli">``` typedef VOID_T (*TUYA_I2C_IRQ_CB)(TUYA_I2C_NUM_E port, TUYA_i2c_IRQ_EVT_E event); ```</p>
+<p class="startli">其中port为端口号，event 为传给回调函数的事件类型。</p>
+<p class="startli">i2c回调事件枚举类型TUYA_i2c_IRQ_EVT_E定义如下：</p>
+</li>
+</ul>
+</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_TRANSFER_DONE   </td><td class="markdownTableBodyLeft">传输完成事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_TRANSFER_INCOMPLETE   </td><td class="markdownTableBodyLeft">传输未完成事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_SLAVE_TRANSMIT   </td><td class="markdownTableBodyLeft">从设备发送操作请求事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_SLAVE_RECEIVE   </td><td class="markdownTableBodyLeft">从设备接收操作请求事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_ADDRESS_NACK   </td><td class="markdownTableBodyLeft">地址未应答事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_GENERAL_CALL   </td><td class="markdownTableBodyLeft">指示收到general call（地址为0）事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_ARBITRATION_LOST   </td><td class="markdownTableBodyLeft">主机仲裁丢失事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_BUS_ERROR   </td><td class="markdownTableBodyLeft">总线错误事件   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_IIC_EVENT_BUS_CLEAR   </td><td class="markdownTableBodyLeft">总线清除完成事件   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md239"></a>
+tkl_i2c_irq_enable</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_irq_enable(TUYA_I2C_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>打开i2c中断。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md240"></a>
+tkl_i2c_irq_disable</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_irq_disable(TUYA_I2C_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>关闭i2c中断。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md241"></a>
+tkl_i2c_master_send</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_master_send(TUYA_I2C_NUM_E port, UINT16_T dev_addr, CONST VOID_T *data, UINT32_T size, BOOL_T xfer_pending);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2c作为主机时启动数据发送。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>dev_addr</code>: Slave设备地址。</li>
+<li><code>data</code>: 待发送数据的缓冲区地址。</li>
+<li><code>size</code>: 待发送数据的长度。</li>
+<li><code>xfer_pending</code>:</li>
+<li>发送完成后是否发送停止位。1-不发送停止位，0-发送停止位。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md242"></a>
+tkl_i2c_master_receive</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_master_receive(TUYA_I2C_NUM_E port, UINT16_T dev_addr, VOID *data, UINT32_T size, BOOL_T xfer_pending);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>dev_addr</code>: Slave设备地址。</li>
+<li><code>data</code>: 待接收数据的缓冲区地址。</li>
+<li><code>size</code>: 待接收数据的长度。</li>
+<li><code>xfer_pending</code>:</li>
+<li>接收完成后是否发送停止位。1-不发送停止位，0-发送停止位。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md243"></a>
+tkl_i2c_set_slave_addr</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_set_slave_addr(TUYA_I2C_NUM_E port, UINT16_T dev_addr);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>配置i2c的从设备地址。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>dev_addr</code>: i2c从设备通信地址。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md244"></a>
+tkl_i2c_slave_send</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_slave_send(TUYA_I2C_NUM_E port, CONST VOID *data, UINT32_T size);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2c作为从机时启动数据发送。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>data</code>: 待发送数据的缓冲区地址。</li>
+<li><code>size</code>: 从机待发送数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md245"></a>
+tkl_i2c_slave_receive</h2>
+<div class="fragment"><div class="line">OPERATE_RET tkl_i2c_slave_receive(TUYA_I2C_NUM_E port, VOID *data, UINT32_T size);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>i2c作为从机时启动数据接收。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+<li><code>data</code>: 待接收数据的缓冲区地址。</li>
+<li><code>size</code>: 待接收数据的长度。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md246"></a>
+tkl_i2c_get_status</h2>
+<div class="fragment"><div class="line">TUYA_IIC_STATUS_T tkl_i2c_get_status(TUYA_I2C_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>获取当前时刻i2c 的状态。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>i2c状态的结构体。i2c的状态定义见 TUYA_i2c_STATUS_T</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md247"></a>
+tkl_i2c_get_data_count</h2>
+<div class="fragment"><div class="line">INT32_T tkl_i2c_get_data_count(TUYA_I2C_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>获取i2c已传输得数据个数。</li>
+<li>针对tkl_i2c_master_send，传输或发送的字节数。</li>
+<li>针对tkl_i2c_master_receive，接收到的字节数。</li>
+<li>针对tkl_i2c_slave_send，传输的字节数。</li>
+<li>针对tkl_i2c_slave_receive，接收的字节数。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>已传输数据个数</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md248"></a>
+TUYA_IIC_STATUS_T:</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">busy : 1   </td><td class="markdownTableBodyLeft">传输或发送忙状态位   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">mode : 1   </td><td class="markdownTableBodyLeft">模式位。1-主，0-从   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">direction : 1   </td><td class="markdownTableBodyLeft">传输方向：1-接收，0-发送   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">general_call : 1   </td><td class="markdownTableBodyLeft">general call 指示   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">arbitration_lost : 1   </td><td class="markdownTableBodyLeft">主机失去仲裁   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">bus_error : 1   </td><td class="markdownTableBodyLeft">总线错误   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md249"></a>
+tkl_i2c_reset</h2>
+<div class="fragment"><div class="line">OPERATE_RET  tkl_i2c_reset(TUYA_I2C_NUM_E port);</div>
+</div><!-- fragment --><ul>
+<li>功能描述:<ul>
+<li>复位i2c。</li>
+</ul>
+</li>
+<li>参数:<ul>
+<li><code>port</code>: 端口号。</li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>错误码，OPRT_OK 成功，其他请参考文件tuya_error_code.h，OS_ADAPTER_I2C定义部分。</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md250"></a>
+示例</h1>
+<h1><a class="anchor" id="autotoc_md251"></a>
+1.i2c示例一</h1>
+<div class="fragment"><div class="line"><span class="keyword">static</span> UINT16_T cb_transfer_flag = 0xff;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> i2c_event_cb_fun(INT32_T idx, TUYA_IIC_IRQ_EVT_E event)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (idx == I2C_NUM_0){</div>
+<div class="line">        cb_transfer_flag = event;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> tuya_i2c_master_test(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    <a class="code hl_struct" href="../../dc/df1/structTUYA__IIC__BASE__CFG__T.html">TUYA_IIC_BASE_CFG_T</a> cfg;</div>
+<div class="line">    <span class="comment">//receive buffer</span></div>
+<div class="line">    <span class="keywordtype">char</span> rcv_buf[10] ;</div>
+<div class="line">    <span class="comment">//data to send</span></div>
+<div class="line">    <span class="keywordtype">char</span> send_buf[10] = {0,1,2,3,4,5,6,7,8,9};</div>
+<div class="line">    </div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_0, TUYA_IIC0_SCL);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_1, TUYA_IIC0_SDA);</div>
+<div class="line">    </div>
+<div class="line">    cfg.role = TUYA_IIC_MODE_MASTER;</div>
+<div class="line">    cfg.speed = TUYA_IIC_BUS_SPEED_100K;</div>
+<div class="line">    cfg.addr_width = TUYA_IIC_ADDRESS_7BIT;</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#ad4d08b70edc3d58c608a91d938663890">tkl_i2c_init</a>(I2C_NUM_0, &amp;cfg);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a5bde017ee9b15a5dd2d67dec783f0316">tkl_i2c_irq_init</a>(I2C_NUM_0, i2c_event_cb_fun);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a87851c583e3390abfa71bdb24b4cdb61">tkl_i2c_irq_enable</a>(I2C_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a243e33f9bfd52c9fb40ea67cdec08016">tkl_i2c_master_send</a>(I2C_NUM_0, 0x57, send_buf, <span class="keyword">sizeof</span>(send_buf), 0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">while</span> (cb_transfer_flag == 0xff);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//check transfer result</span></div>
+<div class="line">    <span class="keywordflow">if</span> (cb_transfer_flag == IIC_EVENT_TRANSFER_DONE) {</div>
+<div class="line">        <span class="comment">//transmit done</span></div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    cb_transfer_flag = 0xff;</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#ad360359cb66b272856c515bb98e9dfce">tkl_i2c_master_receive</a>(I2C_NUM_0, 0x57, rcv_buf, <span class="keyword">sizeof</span>(rcv_buf), 0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (cb_transfer_flag == 0xff);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//check transfer result</span></div>
+<div class="line">    <span class="keywordflow">if</span> (cb_transfer_flag == IIC_EVENT_TRANSFER_DONE) {</div>
+<div class="line">        <span class="comment">//transmit done</span></div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a526e25ef2ff1a3665aa2f704510da9e3">tkl_i2c_irq_disable</a>(I2C_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">//uninitialize iic </span></div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a0ef8472f252b6ca54d32edfa55151792">tkl_i2c_deinit</a>(I2C_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line">       <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="ttc" id="astructTUYA__IIC__BASE__CFG__T_html"><div class="ttname"><a href="../../dc/df1/structTUYA__IIC__BASE__CFG__T.html">TUYA_IIC_BASE_CFG_T</a></div><div class="ttdoc">i2c cfg</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:735</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a0ef8472f252b6ca54d32edfa55151792"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a0ef8472f252b6ca54d32edfa55151792">tkl_i2c_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_deinit(TUYA_I2C_NUM_E port)</div><div class="ttdoc">i2c deinit</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a243e33f9bfd52c9fb40ea67cdec08016"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a243e33f9bfd52c9fb40ea67cdec08016">tkl_i2c_master_send</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_master_send(TUYA_I2C_NUM_E port, UINT16_T dev_addr, CONST VOID_T *data, UINT32_T size, BOOL_T xfer_pending)</div><div class="ttdoc">i2c master send</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a526e25ef2ff1a3665aa2f704510da9e3"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a526e25ef2ff1a3665aa2f704510da9e3">tkl_i2c_irq_disable</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_irq_disable(TUYA_I2C_NUM_E port)</div><div class="ttdoc">i2c irq disable</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a5bde017ee9b15a5dd2d67dec783f0316"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a5bde017ee9b15a5dd2d67dec783f0316">tkl_i2c_irq_init</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_irq_init(TUYA_I2C_NUM_E port, TUYA_I2C_IRQ_CB cb)</div><div class="ttdoc">i2c irq init NOTE: call this API will not enable interrupt</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a87851c583e3390abfa71bdb24b4cdb61"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a87851c583e3390abfa71bdb24b4cdb61">tkl_i2c_irq_enable</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_irq_enable(TUYA_I2C_NUM_E port)</div><div class="ttdoc">i2c irq enable</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_ad360359cb66b272856c515bb98e9dfce"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#ad360359cb66b272856c515bb98e9dfce">tkl_i2c_master_receive</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_master_receive(TUYA_I2C_NUM_E port, UINT16_T dev_addr, VOID *data, UINT32_T size, BOOL_T xfer_pending)</div><div class="ttdoc">i2c master recv</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_ad4d08b70edc3d58c608a91d938663890"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#ad4d08b70edc3d58c608a91d938663890">tkl_i2c_init</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_init(TUYA_I2C_NUM_E port, CONST TUYA_IIC_BASE_CFG_T *cfg)</div><div class="ttdoc">i2c init</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md252"></a>
+1.i2c示例二</h1>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> tuya_i2c_slave_test(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    OPERATE_RET ret;</div>
+<div class="line">    <a class="code hl_struct" href="../../dc/df1/structTUYA__IIC__BASE__CFG__T.html">TUYA_IIC_BASE_CFG_T</a> cfg;</div>
+<div class="line">    <a class="code hl_struct" href="../../d1/de3/structTUYA__IIC__STATUS__T.html">TUYA_IIC_STATUS_T</a> st;</div>
+<div class="line">    <span class="comment">//receive buffer</span></div>
+<div class="line">    <span class="keywordtype">char</span> rcv_buf[10] ;</div>
+<div class="line">    <span class="comment">//data to send</span></div>
+<div class="line">    <span class="keywordtype">char</span> send_buf[10] = {0,1,2,3,4,5,6,7,8,9};</div>
+<div class="line">    INT32_T cnt = 100;</div>
+<div class="line">    </div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_0, TUYA_IIC0_SCL);</div>
+<div class="line">    tkl_io_pinmux_config(TUYA_IO_PIN_1, TUYA_IIC0_SDA);</div>
+<div class="line">    </div>
+<div class="line">    cfg.role = TUYA_IIC_MODE_SLAVE;</div>
+<div class="line">    cfg.speed = TUYA_IIC_BUS_SPEED_100K;</div>
+<div class="line">    cfg.addr_width = TUYA_IIC_ADDRESS_7BIT;</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#ad4d08b70edc3d58c608a91d938663890">tkl_i2c_init</a>(I2C_NUM_0, &amp;cfg);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a6fbae6c4da08ea901a3f0b079b75af36">tkl_i2c_set_slave_addr</a>(I2C_NUM_0, 0x57);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != OPRT_OK) {</div>
+<div class="line">        <span class="comment">//fail</span></div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">        </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#aabf09e0eb637f275267baad66385f935">tkl_i2c_slave_send</a>(I2C_NUM_0, send_buf, <span class="keyword">sizeof</span>(send_buf));</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">//wait send done, waiting for 100 ms max</span></div>
+<div class="line">    st.<a class="code hl_variable" href="../../d1/de3/structTUYA__IIC__STATUS__T.html#ac96ba88c4c7e1d4ed62ce29307668b95">busy</a> = 1;</div>
+<div class="line">    cnt = 100;</div>
+<div class="line">    <span class="keywordflow">while</span>(cnt--) {</div>
+<div class="line">        <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a>(1);</div>
+<div class="line">        <span class="comment">//check status</span></div>
+<div class="line">        st = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#ae489b4fb7f2d979645e9fd293fbc4341">tkl_i2c_get_status</a>(I2C_NUM_0);</div>
+<div class="line">        <span class="comment">//transmit done</span></div>
+<div class="line">        <span class="keywordflow">if</span> (st.<a class="code hl_variable" href="../../d1/de3/structTUYA__IIC__STATUS__T.html#ac96ba88c4c7e1d4ed62ce29307668b95">busy</a> == 0){</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a89d9239389fb57ba41c651c7460c42e5">tkl_i2c_slave_receive</a>(I2C_NUM_0, rcv_buf, <span class="keyword">sizeof</span>(rcv_buf));</div>
+<div class="line">    <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">        <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">//wait send done, waiting for 100 ms max</span></div>
+<div class="line">    st.<a class="code hl_variable" href="../../d1/de3/structTUYA__IIC__STATUS__T.html#ac96ba88c4c7e1d4ed62ce29307668b95">busy</a> = 1;</div>
+<div class="line">    cnt = 100;</div>
+<div class="line">    <span class="keywordflow">while</span>(cnt--) {</div>
+<div class="line">        <a class="code hl_function" href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a>(1);</div>
+<div class="line">        <span class="comment">//check status</span></div>
+<div class="line">        st = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#ae489b4fb7f2d979645e9fd293fbc4341">tkl_i2c_get_status</a>(I2C_NUM_0);</div>
+<div class="line">        <span class="comment">//transmit done</span></div>
+<div class="line">        <span class="keywordflow">if</span> (st.<a class="code hl_variable" href="../../d1/de3/structTUYA__IIC__STATUS__T.html#ac96ba88c4c7e1d4ed62ce29307668b95">busy</a> == 0){</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//uninitialize iic </span></div>
+<div class="line">    ret = <a class="code hl_function" href="../../d8/dec/tkl__i2c_8h.html#a0ef8472f252b6ca54d32edfa55151792">tkl_i2c_deinit</a>(I2C_NUM_0);</div>
+<div class="line">    <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line">       <span class="comment">//failed</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="ttc" id="astructTUYA__IIC__STATUS__T_html"><div class="ttname"><a href="../../d1/de3/structTUYA__IIC__STATUS__T.html">TUYA_IIC_STATUS_T</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:741</div></div>
+<div class="ttc" id="astructTUYA__IIC__STATUS__T_html_ac96ba88c4c7e1d4ed62ce29307668b95"><div class="ttname"><a href="../../d1/de3/structTUYA__IIC__STATUS__T.html#ac96ba88c4c7e1d4ed62ce29307668b95">TUYA_IIC_STATUS_T::busy</a></div><div class="ttdeci">UINT32_T busy</div><div class="ttdoc">Transmitter/Receiver busy flag,1 is busy.</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:742</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a6fbae6c4da08ea901a3f0b079b75af36"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a6fbae6c4da08ea901a3f0b079b75af36">tkl_i2c_set_slave_addr</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_set_slave_addr(TUYA_I2C_NUM_E port, UINT16_T dev_addr)</div><div class="ttdoc">i2c slave</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_a89d9239389fb57ba41c651c7460c42e5"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#a89d9239389fb57ba41c651c7460c42e5">tkl_i2c_slave_receive</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_slave_receive(TUYA_I2C_NUM_E port, VOID *data, UINT32_T size)</div><div class="ttdoc">IIC slave receive, Start receiving data as IIC Slave.</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_aabf09e0eb637f275267baad66385f935"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#aabf09e0eb637f275267baad66385f935">tkl_i2c_slave_send</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_slave_send(TUYA_I2C_NUM_E port, CONST VOID *data, UINT32_T size)</div><div class="ttdoc">i2c slave send</div></div>
+<div class="ttc" id="atkl__i2c_8h_html_ae489b4fb7f2d979645e9fd293fbc4341"><div class="ttname"><a href="../../d8/dec/tkl__i2c_8h.html#ae489b4fb7f2d979645e9fd293fbc4341">tkl_i2c_get_status</a></div><div class="ttdeci">OPERATE_RET tkl_i2c_get_status(TUYA_I2C_NUM_E port, TUYA_IIC_STATUS_T *status)</div><div class="ttdoc">IIC get status.</div></div>
+<div class="ttc" id="atkl__system_8h_html_a40368a68dded70ff7b869b20814925de"><div class="ttname"><a href="../../de/d57/tkl__system_8h.html#a40368a68dded70ff7b869b20814925de">tkl_system_sleep</a></div><div class="ttdeci">VOID_T tkl_system_sleep(UINT_T num_ms)</div><div class="ttdoc">system sleep</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

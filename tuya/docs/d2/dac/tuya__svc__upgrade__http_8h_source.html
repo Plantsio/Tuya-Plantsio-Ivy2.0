@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_upgrade/include/tuya_svc_upgrade_http.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_557ed152a545ef6641a1f65e246dbe3b.html">svc_upgrade</a></li><li class="navelem"><a class="el" href="../../dir_b4bd9adc5ce54bd374e08c89a9d416be.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_svc_upgrade_http.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/dac/tuya__svc__upgrade__http_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TUYA_SVC_UPGRADE_HTTP_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TUYA_SVC_UPGRADE_HTTP_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d6b/tuya__svc__upgrade_8h.html">tuya_svc_upgrade.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/d35/tuya__base__utilities_8h.html">tuya_base_utilities.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#a503600edf8f5733a1de97f611f9b681c">   28</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#a503600edf8f5733a1de97f611f9b681c">http_device_upgrade_info_get_silent</a>(CONST CHAR_T *sub_id, <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **result);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#aef761bc9ba935254721031501c4241fc">   39</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#aef761bc9ba935254721031501c4241fc">http_device_upgrade_info_get</a>(CONST CHAR_T *dev_id, CONST DEV_TYPE_T tp, <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **result);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#af5f6a4a45ebe5dddcec39574e55cc678">   50</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#af5f6a4a45ebe5dddcec39574e55cc678">http_device_upgrade_stat_update</a>(CONST CHAR_T *dev_id, CONST DEV_TYPE_T tp, CONST BYTE_T status);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#ae1c42efdb600966cf809976ddabe9d5e">   62</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#ae1c42efdb600966cf809976ddabe9d5e">http_device_schema_newest_get</a>(CONST CHAR_T* schemaId, CONST CHAR_T* version,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                          CONST CHAR_T* nodeId, <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **result);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#a206715dfea14cca6bd251303f2448fcf">   76</a></span>OPERATE_RET <a class="code hl_function" href="../../d2/dac/tuya__svc__upgrade__http_8h.html#a206715dfea14cca6bd251303f2448fcf">http_device_schema_version_update</a>(CONST CHAR_T* schemaId, CONST CHAR_T* version,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                              <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *nodeIds, CONST CHAR_T* result, CONST CHAR_T* reason);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="ttc" id="astructty__cJSON_html"><div class="ttname"><a href="../../d4/d53/structty__cJSON.html">ty_cJSON</a></div><div class="ttdef"><b>Definition:</b> ty_cJSON.h:104</div></div>
+<div class="ttc" id="atuya__base__utilities_8h_html"><div class="ttname"><a href="../../d3/d35/tuya__base__utilities_8h.html">tuya_base_utilities.h</a></div><div class="ttdoc">tuya utilities module</div></div>
+<div class="ttc" id="atuya__svc__upgrade_8h_html"><div class="ttname"><a href="../../de/d6b/tuya__svc__upgrade_8h.html">tuya_svc_upgrade.h</a></div><div class="ttdoc">TUYA OTA service</div></div>
+<div class="ttc" id="atuya__svc__upgrade__http_8h_html_a206715dfea14cca6bd251303f2448fcf"><div class="ttname"><a href="../../d2/dac/tuya__svc__upgrade__http_8h.html#a206715dfea14cca6bd251303f2448fcf">http_device_schema_version_update</a></div><div class="ttdeci">OPERATE_RET http_device_schema_version_update(CONST CHAR_T *schemaId, CONST CHAR_T *version, ty_cJSON *nodeIds, CONST CHAR_T *result, CONST CHAR_T *reason)</div><div class="ttdoc">Sync schema upgrade result to cloud</div></div>
+<div class="ttc" id="atuya__svc__upgrade__http_8h_html_a503600edf8f5733a1de97f611f9b681c"><div class="ttname"><a href="../../d2/dac/tuya__svc__upgrade__http_8h.html#a503600edf8f5733a1de97f611f9b681c">http_device_upgrade_info_get_silent</a></div><div class="ttdeci">OPERATE_RET http_device_upgrade_info_get_silent(CONST CHAR_T *sub_id, ty_cJSON **result)</div><div class="ttdoc">Retrieve silent upgrade info from cloud</div></div>
+<div class="ttc" id="atuya__svc__upgrade__http_8h_html_ae1c42efdb600966cf809976ddabe9d5e"><div class="ttname"><a href="../../d2/dac/tuya__svc__upgrade__http_8h.html#ae1c42efdb600966cf809976ddabe9d5e">http_device_schema_newest_get</a></div><div class="ttdeci">OPERATE_RET http_device_schema_newest_get(CONST CHAR_T *schemaId, CONST CHAR_T *version, CONST CHAR_T *nodeId, ty_cJSON **result)</div><div class="ttdoc">Retrieve lastest schema from cloud</div></div>
+<div class="ttc" id="atuya__svc__upgrade__http_8h_html_aef761bc9ba935254721031501c4241fc"><div class="ttname"><a href="../../d2/dac/tuya__svc__upgrade__http_8h.html#aef761bc9ba935254721031501c4241fc">http_device_upgrade_info_get</a></div><div class="ttdeci">OPERATE_RET http_device_upgrade_info_get(CONST CHAR_T *dev_id, CONST DEV_TYPE_T tp, ty_cJSON **result)</div><div class="ttdoc">Retrieve default upgrade info from cloud</div></div>
+<div class="ttc" id="atuya__svc__upgrade__http_8h_html_af5f6a4a45ebe5dddcec39574e55cc678"><div class="ttname"><a href="../../d2/dac/tuya__svc__upgrade__http_8h.html#af5f6a4a45ebe5dddcec39574e55cc678">http_device_upgrade_stat_update</a></div><div class="ttdeci">OPERATE_RET http_device_upgrade_stat_update(CONST CHAR_T *dev_id, CONST DEV_TYPE_T tp, CONST BYTE_T status)</div><div class="ttdoc">Sync upgrade status to cloud</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

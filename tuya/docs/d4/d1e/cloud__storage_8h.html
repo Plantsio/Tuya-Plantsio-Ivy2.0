@@ -1,0 +1,1276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/http/cloud_storage.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_6e12c89026136e4f2da971311aae5154.html">http</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">cloud_storage.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>cloud storage  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;ty_cJSON.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+cloud_storage.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d01/cloud__storage_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2http_2cloud__storage_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2http_2cloud__storage_8h" id="ainclude_2components_2svc__tuya__cloud_2include_2http_2cloud__storage_8h">
+<area shape="rect" title="cloud storage" alt="" coords="130,5,307,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="322,109,470,136"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="100,109,193,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="104,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="261,184,336,211"/>
+<area shape="rect" title=" " alt="" coords="361,184,431,211"/>
+<area shape="rect" title=" " alt="" coords="5,184,80,211"/>
+<area shape="rect" title=" " alt="" coords="455,184,526,211"/>
+<area shape="rect" title=" " alt="" coords="551,184,633,211"/>
+<area shape="rect" title=" " alt="" coords="658,184,729,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="753,184,892,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../d4/d1e/cloud__storage_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab4cd0f4fc9f4d04d08faab05f1d3a78a"><td class="memItemLeft" align="right" valign="top"><a id="ab4cd0f4fc9f4d04d08faab05f1d3a78a" name="ab4cd0f4fc9f4d04d08faab05f1d3a78a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AES128_CBC_LEN_WITH_PKCS7</b>(len)&#160;&#160;&#160;((len) + (16 - (len) % 16))</td></tr>
+<tr class="separator:ab4cd0f4fc9f4d04d08faab05f1d3a78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7f45edaca8da75902bb5a15d54a2cd"><td class="memItemLeft" align="right" valign="top"><a id="aca7f45edaca8da75902bb5a15d54a2cd" name="aca7f45edaca8da75902bb5a15d54a2cd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CLOUD_STORAGE_ENC_LEN</b>(len)&#160;&#160;&#160;AES128_CBC_LEN_WITH_PKCS7(len)</td></tr>
+<tr class="separator:aca7f45edaca8da75902bb5a15d54a2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a70be210eb4e11fafc4255b21745b1837"><td class="memItemLeft" align="right" valign="top"><a id="a70be210eb4e11fafc4255b21745b1837" name="a70be210eb4e11fafc4255b21745b1837"></a>
+typedef struct storage_ctx&#160;</td><td class="memItemRight" valign="bottom"><b>storage_ctx</b></td></tr>
+<tr class="separator:a70be210eb4e11fafc4255b21745b1837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9490dbc5f3f413b64085920acaaf5bac"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a9490dbc5f3f413b64085920acaaf5bac">cloud_storage_aes128_cbc_decrypt</a> (IN CONST storage_ctx *ctx, IN BYTE_T *data, IN CONST UINT_T len, OUT BYTE_T **dec_data, OUT UINT_T *dec_len)</td></tr>
+<tr class="memdesc:a9490dbc5f3f413b64085920acaaf5bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES128-CBC Decrypt  <a href="../../d4/d1e/cloud__storage_8h.html#a9490dbc5f3f413b64085920acaaf5bac">更多...</a><br /></td></tr>
+<tr class="separator:a9490dbc5f3f413b64085920acaaf5bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac931fac7163bc68364895818dc1b9ce0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#ac931fac7163bc68364895818dc1b9ce0">cloud_storage_aes128_cbc_encrypt</a> (IN CONST storage_ctx *ctx, IN BYTE_T *data, IN CONST UINT_T len, OUT BYTE_T **ec_data, OUT UINT_T *ec_len)</td></tr>
+<tr class="memdesc:ac931fac7163bc68364895818dc1b9ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES128-CBC Encrypt  <a href="../../d4/d1e/cloud__storage_8h.html#ac931fac7163bc68364895818dc1b9ce0">更多...</a><br /></td></tr>
+<tr class="separator:ac931fac7163bc68364895818dc1b9ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e1813acb956cf5eba8441d62233b3a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#ae7e1813acb956cf5eba8441d62233b3a">cloud_storage_backup</a> (storage_ctx *ctx, BYTE_T *data, UINT_T data_len, BOOL_T encrypt)</td></tr>
+<tr class="memdesc:ae7e1813acb956cf5eba8441d62233b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">backup uploading  <a href="../../d4/d1e/cloud__storage_8h.html#ae7e1813acb956cf5eba8441d62233b3a">更多...</a><br /></td></tr>
+<tr class="separator:ae7e1813acb956cf5eba8441d62233b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e1f0b09b0882a8949460b8d693052a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#aa9e1f0b09b0882a8949460b8d693052a">cloud_storage_backup_post</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:aa9e1f0b09b0882a8949460b8d693052a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data backup postpone  <a href="../../d4/d1e/cloud__storage_8h.html#aa9e1f0b09b0882a8949460b8d693052a">更多...</a><br /></td></tr>
+<tr class="separator:aa9e1f0b09b0882a8949460b8d693052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c2c816bfb9f88438cba06f5fdb90b4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a44c2c816bfb9f88438cba06f5fdb90b4">cloud_storage_backup_prepare</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:a44c2c816bfb9f88438cba06f5fdb90b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">backup prepare  <a href="../../d4/d1e/cloud__storage_8h.html#a44c2c816bfb9f88438cba06f5fdb90b4">更多...</a><br /></td></tr>
+<tr class="separator:a44c2c816bfb9f88438cba06f5fdb90b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6fff6e7a05fe97f81478b42f5e4356"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a0a6fff6e7a05fe97f81478b42f5e4356">cloud_storage_backup_raw_begin</a> (storage_ctx *ctx, UINT_T data_total_len)</td></tr>
+<tr class="memdesc:a0a6fff6e7a05fe97f81478b42f5e4356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backup data prepare  <a href="../../d4/d1e/cloud__storage_8h.html#a0a6fff6e7a05fe97f81478b42f5e4356">更多...</a><br /></td></tr>
+<tr class="separator:a0a6fff6e7a05fe97f81478b42f5e4356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a37db57ee50f28b0a2fb86dcfc0e72"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a24a37db57ee50f28b0a2fb86dcfc0e72">cloud_storage_backup_raw_end</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:a24a37db57ee50f28b0a2fb86dcfc0e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data backup  <a href="../../d4/d1e/cloud__storage_8h.html#a24a37db57ee50f28b0a2fb86dcfc0e72">更多...</a><br /></td></tr>
+<tr class="separator:a24a37db57ee50f28b0a2fb86dcfc0e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30ac92176cc13c2677cddff121cb0b0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#ab30ac92176cc13c2677cddff121cb0b0">cloud_storage_backup_raw_write</a> (storage_ctx *ctx, BYTE_T *data, UINT_T data_len, BOOL_T encrypt)</td></tr>
+<tr class="memdesc:ab30ac92176cc13c2677cddff121cb0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backup data to the cloud in raw mode  <a href="../../d4/d1e/cloud__storage_8h.html#ab30ac92176cc13c2677cddff121cb0b0">更多...</a><br /></td></tr>
+<tr class="separator:ab30ac92176cc13c2677cddff121cb0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1699cafdf616240d065f71fd4c611f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#aab1699cafdf616240d065f71fd4c611f">cloud_storage_backup_simple</a> (CONST CHAR_T *dev_id, CONST CHAR_T *scene_code, CONST CHAR_T *file_name, BOOL_T encrypt, BYTE_T *data, UINT_T data_len)</td></tr>
+<tr class="memdesc:aab1699cafdf616240d065f71fd4c611f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data backup(simple mode)  <a href="../../d4/d1e/cloud__storage_8h.html#aab1699cafdf616240d065f71fd4c611f">更多...</a><br /></td></tr>
+<tr class="separator:aab1699cafdf616240d065f71fd4c611f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb426db704de00dbe371e568ea129b83"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#abb426db704de00dbe371e568ea129b83">cloud_storage_ctx_free</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:abb426db704de00dbe371e568ea129b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">release storage context resource  <a href="../../d4/d1e/cloud__storage_8h.html#abb426db704de00dbe371e568ea129b83">更多...</a><br /></td></tr>
+<tr class="separator:abb426db704de00dbe371e568ea129b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0319fd55e0c22e7f495a79fadfbec9"><td class="memItemLeft" align="right" valign="top">storage_ctx *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a8d0319fd55e0c22e7f495a79fadfbec9">cloud_storage_ctx_new</a> (CONST CHAR_T *dev_id, CONST CHAR_T *scene_code, CONST CHAR_T *file_name)</td></tr>
+<tr class="memdesc:a8d0319fd55e0c22e7f495a79fadfbec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">create storage context  <a href="../../d4/d1e/cloud__storage_8h.html#a8d0319fd55e0c22e7f495a79fadfbec9">更多...</a><br /></td></tr>
+<tr class="separator:a8d0319fd55e0c22e7f495a79fadfbec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a1512286108b88377196c7def8b28b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#ae1a1512286108b88377196c7def8b28b">cloud_storage_destory</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:ae1a1512286108b88377196c7def8b28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data destory  <a href="../../d4/d1e/cloud__storage_8h.html#ae1a1512286108b88377196c7def8b28b">更多...</a><br /></td></tr>
+<tr class="separator:ae1a1512286108b88377196c7def8b28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb20b7d52cb13e83c0492c04384e6204"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#acb20b7d52cb13e83c0492c04384e6204">cloud_storage_destory_post</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:acb20b7d52cb13e83c0492c04384e6204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data destory postpone  <a href="../../d4/d1e/cloud__storage_8h.html#acb20b7d52cb13e83c0492c04384e6204">更多...</a><br /></td></tr>
+<tr class="separator:acb20b7d52cb13e83c0492c04384e6204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc5cea503b9b18d5afdae789abcaf08"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a7fc5cea503b9b18d5afdae789abcaf08">cloud_storage_destory_prepare</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:a7fc5cea503b9b18d5afdae789abcaf08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data destory prepare  <a href="../../d4/d1e/cloud__storage_8h.html#a7fc5cea503b9b18d5afdae789abcaf08">更多...</a><br /></td></tr>
+<tr class="separator:a7fc5cea503b9b18d5afdae789abcaf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d44348086f7a5aa79ef629f4a5165d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a04d44348086f7a5aa79ef629f4a5165d">cloud_storage_destory_simple</a> (CONST CHAR_T *dev_id, CONST CHAR_T *scene_code, CONST CHAR_T *file_name)</td></tr>
+<tr class="memdesc:a04d44348086f7a5aa79ef629f4a5165d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data destory(simple mode)  <a href="../../d4/d1e/cloud__storage_8h.html#a04d44348086f7a5aa79ef629f4a5165d">更多...</a><br /></td></tr>
+<tr class="separator:a04d44348086f7a5aa79ef629f4a5165d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9874fa6be21991c4c2eaed8387f81b"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#aeb9874fa6be21991c4c2eaed8387f81b">cloud_storage_get_sign_url</a> (IN CONST storage_ctx *ctx)</td></tr>
+<tr class="memdesc:aeb9874fa6be21991c4c2eaed8387f81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取签名URL, 返回值生命周期与ctx关联  <a href="../../d4/d1e/cloud__storage_8h.html#aeb9874fa6be21991c4c2eaed8387f81b">更多...</a><br /></td></tr>
+<tr class="separator:aeb9874fa6be21991c4c2eaed8387f81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c35153eaf8c5c3975ca4ef074eb87f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a00c35153eaf8c5c3975ca4ef074eb87f">cloud_storage_is_backup_exist</a> (CONST CHAR_T *dev_id, CONST CHAR_T *scene_code, CONST CHAR_T *file_name, BOOL_T *exist)</td></tr>
+<tr class="memdesc:a00c35153eaf8c5c3975ca4ef074eb87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking backup data exist  <a href="../../d4/d1e/cloud__storage_8h.html#a00c35153eaf8c5c3975ca4ef074eb87f">更多...</a><br /></td></tr>
+<tr class="separator:a00c35153eaf8c5c3975ca4ef074eb87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02bb35541bf9899ed50bfd0793b11176"><td class="memItemLeft" align="right" valign="top">BOOL_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a02bb35541bf9899ed50bfd0793b11176">cloud_storage_is_secret_key_exist</a> (IN CONST storage_ctx *ctx)</td></tr>
+<tr class="memdesc:a02bb35541bf9899ed50bfd0793b11176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking secret key is exist  <a href="../../d4/d1e/cloud__storage_8h.html#a02bb35541bf9899ed50bfd0793b11176">更多...</a><br /></td></tr>
+<tr class="separator:a02bb35541bf9899ed50bfd0793b11176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793e99b5f8b0da56a0e79089ec973538"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a793e99b5f8b0da56a0e79089ec973538">cloud_storage_meta_data_get</a> (CONST CHAR_T *dev_id, CONST CHAR_T *scene_code, CONST CHAR_T *file_name, <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **result)</td></tr>
+<tr class="memdesc:a793e99b5f8b0da56a0e79089ec973538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file meta data(json formatted)  <a href="../../d4/d1e/cloud__storage_8h.html#a793e99b5f8b0da56a0e79089ec973538">更多...</a><br /></td></tr>
+<tr class="separator:a793e99b5f8b0da56a0e79089ec973538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fa42e67229262ff3e58c2b2daac8c7"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a88fa42e67229262ff3e58c2b2daac8c7">cloud_storage_restore</a> (storage_ctx *ctx, BYTE_T **out_data, UINT_T *out_len, BOOL_T encrypt)</td></tr>
+<tr class="memdesc:a88fa42e67229262ff3e58c2b2daac8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data restore  <a href="../../d4/d1e/cloud__storage_8h.html#a88fa42e67229262ff3e58c2b2daac8c7">更多...</a><br /></td></tr>
+<tr class="separator:a88fa42e67229262ff3e58c2b2daac8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47562d7be59ee3caee7f63ab92cacea"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#aa47562d7be59ee3caee7f63ab92cacea">cloud_storage_restore_post</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:aa47562d7be59ee3caee7f63ab92cacea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data restore postpone  <a href="../../d4/d1e/cloud__storage_8h.html#aa47562d7be59ee3caee7f63ab92cacea">更多...</a><br /></td></tr>
+<tr class="separator:aa47562d7be59ee3caee7f63ab92cacea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05797b55fba9c8a3dc5b5e9fe157e1c3"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a05797b55fba9c8a3dc5b5e9fe157e1c3">cloud_storage_restore_prepare</a> (storage_ctx *ctx)</td></tr>
+<tr class="memdesc:a05797b55fba9c8a3dc5b5e9fe157e1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare for data restore  <a href="../../d4/d1e/cloud__storage_8h.html#a05797b55fba9c8a3dc5b5e9fe157e1c3">更多...</a><br /></td></tr>
+<tr class="separator:a05797b55fba9c8a3dc5b5e9fe157e1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d67b72e647f90b43457864740085dc"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#ab9d67b72e647f90b43457864740085dc">cloud_storage_restore_simple</a> (CONST CHAR_T *dev_id, CONST CHAR_T *scene_code, CONST CHAR_T *file_name, BOOL_T encrypt, BYTE_T **out_data, UINT_T *out_len)</td></tr>
+<tr class="memdesc:ab9d67b72e647f90b43457864740085dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data restore(simple mode)  <a href="../../d4/d1e/cloud__storage_8h.html#ab9d67b72e647f90b43457864740085dc">更多...</a><br /></td></tr>
+<tr class="separator:ab9d67b72e647f90b43457864740085dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd3fd90e434fc247da3955008f325d7"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#afcd3fd90e434fc247da3955008f325d7">cloud_storage_secret_iv_get</a> (IN CONST storage_ctx *ctx)</td></tr>
+<tr class="memdesc:afcd3fd90e434fc247da3955008f325d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch IV, for AES128-CBC  <a href="../../d4/d1e/cloud__storage_8h.html#afcd3fd90e434fc247da3955008f325d7">更多...</a><br /></td></tr>
+<tr class="separator:afcd3fd90e434fc247da3955008f325d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205f91484503639c78459584008cd75a"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#a205f91484503639c78459584008cd75a">cloud_storage_secret_iv_set</a> (IN storage_ctx *ctx, IN CONST CHAR_T *iv)</td></tr>
+<tr class="separator:a205f91484503639c78459584008cd75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded9252437772c7b8c21ea32bec81a37"><td class="memItemLeft" align="right" valign="top">CONST CHAR_T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#aded9252437772c7b8c21ea32bec81a37">cloud_storage_secret_key_get</a> (IN CONST storage_ctx *ctx)</td></tr>
+<tr class="memdesc:aded9252437772c7b8c21ea32bec81a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get secret key  <a href="../../d4/d1e/cloud__storage_8h.html#aded9252437772c7b8c21ea32bec81a37">更多...</a><br /></td></tr>
+<tr class="separator:aded9252437772c7b8c21ea32bec81a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab024b89235b253edbc64387b0bfe0997"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1e/cloud__storage_8h.html#ab024b89235b253edbc64387b0bfe0997">cloud_storage_secret_key_set</a> (IN storage_ctx *ctx, IN CONST CHAR_T *key)</td></tr>
+<tr class="memdesc:ab024b89235b253edbc64387b0bfe0997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set secret key  <a href="../../d4/d1e/cloud__storage_8h.html#ab024b89235b253edbc64387b0bfe0997">更多...</a><br /></td></tr>
+<tr class="separator:ab024b89235b253edbc64387b0bfe0997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >cloud storage </p>
+<dl class="section author"><dt>作者</dt><dd>Odin (<a href="#" onclick="location.href='mai'+'lto:'+'aod'+'in'+'g.x'+'ia'+'@tu'+'ya'+'.co'+'m'; return false;">aodin<span class="obfuscator">.nosp@m.</span>g.xi<span class="obfuscator">.nosp@m.</span>a@tuy<span class="obfuscator">.nosp@m.</span>a.co<span class="obfuscator">.nosp@m.</span>m</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-11-11</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) 2015-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a9490dbc5f3f413b64085920acaaf5bac" name="a9490dbc5f3f413b64085920acaaf5bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9490dbc5f3f413b64085920acaaf5bac">&#9670;&nbsp;</a></span>cloud_storage_aes128_cbc_decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_aes128_cbc_decrypt </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>dec_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>dec_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AES128-CBC Decrypt </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">data</td><td>data for decrypted </td></tr>
+    <tr><td class="paramname">len</td><td>data length for decrypted </td></tr>
+    <tr><td class="paramname">dec_data</td><td>data decrypted </td></tr>
+    <tr><td class="paramname">dec_len</td><td>data length decrypted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="ac931fac7163bc68364895818dc1b9ce0" name="ac931fac7163bc68364895818dc1b9ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac931fac7163bc68364895818dc1b9ce0">&#9670;&nbsp;</a></span>cloud_storage_aes128_cbc_encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_aes128_cbc_encrypt </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT BYTE_T **&#160;</td>
+          <td class="paramname"><em>ec_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OUT UINT_T *&#160;</td>
+          <td class="paramname"><em>ec_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AES128-CBC Encrypt </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">data</td><td>data for encrypt </td></tr>
+    <tr><td class="paramname">len</td><td>data length for encrypt </td></tr>
+    <tr><td class="paramname">ec_data</td><td>data encrypted </td></tr>
+    <tr><td class="paramname">ec_len</td><td>data length encrypted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="ae7e1813acb956cf5eba8441d62233b3a" name="ae7e1813acb956cf5eba8441d62233b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e1813acb956cf5eba8441d62233b3a">&#9670;&nbsp;</a></span>cloud_storage_backup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>encrypt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>backup uploading </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">data</td><td>data for backup </td></tr>
+    <tr><td class="paramname">data_len</td><td>data length </td></tr>
+    <tr><td class="paramname">encrypt</td><td>Set as TRUE if need data encrypted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa9e1f0b09b0882a8949460b8d693052a" name="aa9e1f0b09b0882a8949460b8d693052a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e1f0b09b0882a8949460b8d693052a">&#9670;&nbsp;</a></span>cloud_storage_backup_post()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup_post </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data backup postpone </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a44c2c816bfb9f88438cba06f5fdb90b4" name="a44c2c816bfb9f88438cba06f5fdb90b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c2c816bfb9f88438cba06f5fdb90b4">&#9670;&nbsp;</a></span>cloud_storage_backup_prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup_prepare </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>backup prepare </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0a6fff6e7a05fe97f81478b42f5e4356" name="a0a6fff6e7a05fe97f81478b42f5e4356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6fff6e7a05fe97f81478b42f5e4356">&#9670;&nbsp;</a></span>cloud_storage_backup_raw_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup_raw_begin </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>data_total_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Backup data prepare </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">data_total_len</td><td>total length for downloading </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a24a37db57ee50f28b0a2fb86dcfc0e72" name="a24a37db57ee50f28b0a2fb86dcfc0e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a37db57ee50f28b0a2fb86dcfc0e72">&#9670;&nbsp;</a></span>cloud_storage_backup_raw_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup_raw_end </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data backup </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab30ac92176cc13c2677cddff121cb0b0" name="ab30ac92176cc13c2677cddff121cb0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30ac92176cc13c2677cddff121cb0b0">&#9670;&nbsp;</a></span>cloud_storage_backup_raw_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup_raw_write </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>encrypt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Backup data to the cloud in raw mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">data</td><td>data for backup </td></tr>
+    <tr><td class="paramname">data_len</td><td>data length </td></tr>
+    <tr><td class="paramname">encrypt</td><td>Set as TRUE if need data encrypted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aab1699cafdf616240d065f71fd4c611f" name="aab1699cafdf616240d065f71fd4c611f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1699cafdf616240d065f71fd4c611f">&#9670;&nbsp;</a></span>cloud_storage_backup_simple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_backup_simple </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>scene_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>encrypt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data backup(simple mode) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_id</td><td>device id string </td></tr>
+    <tr><td class="paramname">scene_code</td><td>scene code string </td></tr>
+    <tr><td class="paramname">file_name</td><td>file name string, path name is not permit </td></tr>
+    <tr><td class="paramname">encrypt</td><td>Whether encrypted, AES128_CBC is the default encrypt algorithm </td></tr>
+    <tr><td class="paramname">data</td><td>data which want to upload to cloud </td></tr>
+    <tr><td class="paramname">data_len</td><td>data length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abb426db704de00dbe371e568ea129b83" name="abb426db704de00dbe371e568ea129b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb426db704de00dbe371e568ea129b83">&#9670;&nbsp;</a></span>cloud_storage_ctx_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_ctx_free </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>release storage context resource </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8d0319fd55e0c22e7f495a79fadfbec9" name="a8d0319fd55e0c22e7f495a79fadfbec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0319fd55e0c22e7f495a79fadfbec9">&#9670;&nbsp;</a></span>cloud_storage_ctx_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">storage_ctx * cloud_storage_ctx_new </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>scene_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create storage context </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_id</td><td>device id string </td></tr>
+    <tr><td class="paramname">scene_code</td><td>scene code string </td></tr>
+    <tr><td class="paramname">file_name</td><td>file name string, path name is not permit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>storage_ctx* </dd></dl>
+
+</div>
+</div>
+<a id="ae1a1512286108b88377196c7def8b28b" name="ae1a1512286108b88377196c7def8b28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a1512286108b88377196c7def8b28b">&#9670;&nbsp;</a></span>cloud_storage_destory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_destory </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data destory </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acb20b7d52cb13e83c0492c04384e6204" name="acb20b7d52cb13e83c0492c04384e6204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb20b7d52cb13e83c0492c04384e6204">&#9670;&nbsp;</a></span>cloud_storage_destory_post()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_destory_post </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data destory postpone </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7fc5cea503b9b18d5afdae789abcaf08" name="a7fc5cea503b9b18d5afdae789abcaf08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc5cea503b9b18d5afdae789abcaf08">&#9670;&nbsp;</a></span>cloud_storage_destory_prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_destory_prepare </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data destory prepare </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a04d44348086f7a5aa79ef629f4a5165d" name="a04d44348086f7a5aa79ef629f4a5165d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d44348086f7a5aa79ef629f4a5165d">&#9670;&nbsp;</a></span>cloud_storage_destory_simple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_destory_simple </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>scene_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data destory(simple mode) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_id</td><td>device id string </td></tr>
+    <tr><td class="paramname">scene_code</td><td>scene code string </td></tr>
+    <tr><td class="paramname">file_name</td><td>file name string, path name is not permit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aeb9874fa6be21991c4c2eaed8387f81b" name="aeb9874fa6be21991c4c2eaed8387f81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9874fa6be21991c4c2eaed8387f81b">&#9670;&nbsp;</a></span>cloud_storage_get_sign_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * cloud_storage_get_sign_url </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取签名URL, 返回值生命周期与ctx关联 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>CONST CHAR_T* </dd></dl>
+
+</div>
+</div>
+<a id="a00c35153eaf8c5c3975ca4ef074eb87f" name="a00c35153eaf8c5c3975ca4ef074eb87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c35153eaf8c5c3975ca4ef074eb87f">&#9670;&nbsp;</a></span>cloud_storage_is_backup_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_is_backup_exist </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>scene_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T *&#160;</td>
+          <td class="paramname"><em>exist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking backup data exist </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_id</td><td>device id string </td></tr>
+    <tr><td class="paramname">scene_code</td><td>scene code string </td></tr>
+    <tr><td class="paramname">file_name</td><td>file name string, path name is not permit </td></tr>
+    <tr><td class="paramname">exist</td><td>Exist status </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a02bb35541bf9899ed50bfd0793b11176" name="a02bb35541bf9899ed50bfd0793b11176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02bb35541bf9899ed50bfd0793b11176">&#9670;&nbsp;</a></span>cloud_storage_is_secret_key_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL_T cloud_storage_is_secret_key_exist </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking secret key is exist </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE or FALSE </dd></dl>
+
+</div>
+</div>
+<a id="a793e99b5f8b0da56a0e79089ec973538" name="a793e99b5f8b0da56a0e79089ec973538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793e99b5f8b0da56a0e79089ec973538">&#9670;&nbsp;</a></span>cloud_storage_meta_data_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_meta_data_get </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>scene_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get file meta data(json formatted) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_id</td><td>device id string </td></tr>
+    <tr><td class="paramname">file_name</td><td>file name string, path name is not permit </td></tr>
+    <tr><td class="paramname">scene_code</td><td>scene code string </td></tr>
+    <tr><td class="paramname">result</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a88fa42e67229262ff3e58c2b2daac8c7" name="a88fa42e67229262ff3e58c2b2daac8c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88fa42e67229262ff3e58c2b2daac8c7">&#9670;&nbsp;</a></span>cloud_storage_restore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_restore </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T **&#160;</td>
+          <td class="paramname"><em>out_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>out_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>encrypt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data restore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">out_data</td><td>output data point for restore, need Free manually </td></tr>
+    <tr><td class="paramname">out_len</td><td>output data lngth point for restore, need Free manually </td></tr>
+    <tr><td class="paramname">encrypt</td><td>Whether encrypted, AES128_CBC is the default encrypt algorithm </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa47562d7be59ee3caee7f63ab92cacea" name="aa47562d7be59ee3caee7f63ab92cacea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa47562d7be59ee3caee7f63ab92cacea">&#9670;&nbsp;</a></span>cloud_storage_restore_post()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_restore_post </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data restore postpone </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a05797b55fba9c8a3dc5b5e9fe157e1c3" name="a05797b55fba9c8a3dc5b5e9fe157e1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05797b55fba9c8a3dc5b5e9fe157e1c3">&#9670;&nbsp;</a></span>cloud_storage_restore_prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_restore_prepare </td>
+          <td>(</td>
+          <td class="paramtype">storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare for data restore </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab9d67b72e647f90b43457864740085dc" name="ab9d67b72e647f90b43457864740085dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d67b72e647f90b43457864740085dc">&#9670;&nbsp;</a></span>cloud_storage_restore_simple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET cloud_storage_restore_simple </td>
+          <td>(</td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>dev_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>scene_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>encrypt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE_T **&#160;</td>
+          <td class="paramname"><em>out_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>out_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data restore(simple mode) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_id</td><td>device id string </td></tr>
+    <tr><td class="paramname">scene_code</td><td>scene code string </td></tr>
+    <tr><td class="paramname">file_name</td><td>file name string, path name is not permit </td></tr>
+    <tr><td class="paramname">encrypt</td><td>Whether encrypted, AES128_CBC is the default encrypt algorithm </td></tr>
+    <tr><td class="paramname">out_data</td><td>data which restored from cloud, need manual <a class="el" href="../../d1/db6/tal__memory_8h.html#a0b8e3b7d52eecc10d64e8242fc30c816" title="free memory">Free()</a> by caller user </td></tr>
+    <tr><td class="paramname">out_len</td><td>data length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afcd3fd90e434fc247da3955008f325d7" name="afcd3fd90e434fc247da3955008f325d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd3fd90e434fc247da3955008f325d7">&#9670;&nbsp;</a></span>cloud_storage_secret_iv_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * cloud_storage_secret_iv_get </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch IV, for AES128-CBC </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>iv string </dd></dl>
+
+</div>
+</div>
+<a id="a205f91484503639c78459584008cd75a" name="a205f91484503639c78459584008cd75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205f91484503639c78459584008cd75a">&#9670;&nbsp;</a></span>cloud_storage_secret_iv_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID cloud_storage_secret_iv_set </td>
+          <td>(</td>
+          <td class="paramtype">IN storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>iv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">iv</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+<a id="aded9252437772c7b8c21ea32bec81a37" name="aded9252437772c7b8c21ea32bec81a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded9252437772c7b8c21ea32bec81a37">&#9670;&nbsp;</a></span>cloud_storage_secret_key_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST CHAR_T * cloud_storage_secret_key_get </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get secret key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>CONST CHAR_T* </dd></dl>
+
+</div>
+</div>
+<a id="ab024b89235b253edbc64387b0bfe0997" name="ab024b89235b253edbc64387b0bfe0997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab024b89235b253edbc64387b0bfe0997">&#9670;&nbsp;</a></span>cloud_storage_secret_key_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID cloud_storage_secret_key_set </td>
+          <td>(</td>
+          <td class="paramtype">IN storage_ctx *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set secret key </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud storage context handler </td></tr>
+    <tr><td class="paramname">key</td><td>secret key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

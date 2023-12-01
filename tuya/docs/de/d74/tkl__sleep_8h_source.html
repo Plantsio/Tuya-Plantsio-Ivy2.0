@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/system/include/tkl_sleep.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_a39e21aa9396c8c0621543b669869865.html">system</a></li><li class="navelem"><a class="el" href="../../dir_d0c8c0f816976a0124b7921a1be7b89f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_sleep.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d74/tkl__sleep_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_SLEEP_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_SLEEP_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../de/d74/tkl__sleep_8h.html#aa31283f22119a02b9f97ede62122bce6">   28</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d74/tkl__sleep_8h.html#aa31283f22119a02b9f97ede62122bce6">tkl_cpu_sleep_callback_register</a>(<a class="code hl_struct" href="../../da/dc1/structTUYA__SLEEP__CB__T.html">TUYA_SLEEP_CB_T</a> *sleep_cb);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../de/d74/tkl__sleep_8h.html#a215e65a371efd7d0b587624179655ebc">   37</a></span>VOID_T <a class="code hl_function" href="../../de/d74/tkl__sleep_8h.html#a215e65a371efd7d0b587624179655ebc">tkl_cpu_allow_sleep</a>(VOID_T);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../de/d74/tkl__sleep_8h.html#aab765c3894c78d8b698233b85bc4655c">   46</a></span>VOID_T <a class="code hl_function" href="../../de/d74/tkl__sleep_8h.html#aab765c3894c78d8b698233b85bc4655c">tkl_cpu_force_wakeup</a>(VOID_T);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../de/d74/tkl__sleep_8h.html#a1e70e0c4d6ea7b9cb0475648a12ff961">   58</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d74/tkl__sleep_8h.html#a1e70e0c4d6ea7b9cb0475648a12ff961">tkl_cpu_sleep_mode_set</a>(BOOL_T enable, TUYA_CPU_SLEEP_MODE_E mode);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="ttc" id="astructTUYA__SLEEP__CB__T_html"><div class="ttname"><a href="../../da/dc1/structTUYA__SLEEP__CB__T.html">TUYA_SLEEP_CB_T</a></div><div class="ttdoc">sleep callback</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:1030</div></div>
+<div class="ttc" id="atkl__sleep_8h_html_a1e70e0c4d6ea7b9cb0475648a12ff961"><div class="ttname"><a href="../../de/d74/tkl__sleep_8h.html#a1e70e0c4d6ea7b9cb0475648a12ff961">tkl_cpu_sleep_mode_set</a></div><div class="ttdeci">OPERATE_RET tkl_cpu_sleep_mode_set(BOOL_T enable, TUYA_CPU_SLEEP_MODE_E mode)</div><div class="ttdoc">Set the low power mode of CPU</div></div>
+<div class="ttc" id="atkl__sleep_8h_html_a215e65a371efd7d0b587624179655ebc"><div class="ttname"><a href="../../de/d74/tkl__sleep_8h.html#a215e65a371efd7d0b587624179655ebc">tkl_cpu_allow_sleep</a></div><div class="ttdeci">VOID_T tkl_cpu_allow_sleep(VOID_T)</div><div class="ttdoc">allow to sleep</div></div>
+<div class="ttc" id="atkl__sleep_8h_html_aa31283f22119a02b9f97ede62122bce6"><div class="ttname"><a href="../../de/d74/tkl__sleep_8h.html#aa31283f22119a02b9f97ede62122bce6">tkl_cpu_sleep_callback_register</a></div><div class="ttdeci">OPERATE_RET tkl_cpu_sleep_callback_register(TUYA_SLEEP_CB_T *sleep_cb)</div><div class="ttdoc">sleep callback register</div></div>
+<div class="ttc" id="atkl__sleep_8h_html_aab765c3894c78d8b698233b85bc4655c"><div class="ttname"><a href="../../de/d74/tkl__sleep_8h.html#aab765c3894c78d8b698233b85bc4655c">tkl_cpu_force_wakeup</a></div><div class="ttdeci">VOID_T tkl_cpu_force_wakeup(VOID_T)</div><div class="ttdoc">force wakeup</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

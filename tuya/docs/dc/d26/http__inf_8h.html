@@ -1,0 +1,1484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/lib_http/include/http_inf.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_8a7e0c2b53aaf1e6ed3ac5bc0b1202c0.html">lib_http</a></li><li class="navelem"><a class="el" href="../../dir_1e12de0a3a74b8281ee22ec6b9758111.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">http_inf.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Wrapper of HTTP request and response  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d1b/httpc_8h_source.html">httpc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d51/log__seq_8h_source.html">log_seq.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+http_inf.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d94/http__inf_8h__incl.png" border="0" usemap="#ainclude_2components_2lib__http_2include_2http__inf_8h" alt=""/></div>
+<map name="ainclude_2components_2lib__http_2include_2http__inf_8h" id="ainclude_2components_2lib__http_2include_2http__inf_8h">
+<area shape="rect" title="Wrapper of HTTP request and response" alt="" coords="611,5,801,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="395,319,543,345"/>
+<area shape="rect" href="../../d3/d1b/httpc_8h.html" title="HTTP Client Module" alt="" coords="465,95,531,121"/>
+<area shape="rect" href="../../dc/d51/log__seq_8h.html" title="provide log sequence api" alt="" coords="664,169,748,196"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="801,393,934,420"/>
+<area shape="rect" title=" " alt="" coords="146,393,221,420"/>
+<area shape="rect" title=" " alt="" coords="245,393,316,420"/>
+<area shape="rect" title=" " alt="" coords="47,393,122,420"/>
+<area shape="rect" title=" " alt="" coords="340,393,411,420"/>
+<area shape="rect" title=" " alt="" coords="435,393,518,420"/>
+<area shape="rect" title=" " alt="" coords="543,393,613,420"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="638,393,777,420"/>
+<area shape="rect" title=" " alt="" coords="466,169,530,196"/>
+<area shape="rect" href="../../da/df8/tal__time__service_8h.html" title="tuya time service, support UTC time, local time and summer time" alt="" coords="299,169,441,196"/>
+<area shape="rect" href="../../d5/d87/tal__network_8h.html" title="Common process &#45; Initialization" alt="" coords="499,244,609,271"/>
+<area shape="rect" href="../../d8/d4f/tuya__tls_8h.html" title="Common process &#45; tls include" alt="" coords="173,169,260,196"/>
+<area shape="rect" href="../../d3/dc2/tal__system_8h.html" title="Common process &#45; adpater some api which provide by OS" alt="" coords="317,244,423,271"/>
+<area shape="rect" title=" " alt="" coords="240,244,292,271"/>
+<area shape="rect" href="../../d1/dde/tuya__cert__manager_8h.html" title="Tuya Cert Manager include" alt="" coords="5,244,164,271"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="38,319,131,345"/>
+<area shape="rect" href="../../d1/d7f/tuya__list_8h.html" title="tuya bidirection list module" alt="" coords="634,244,725,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d78/http__inf_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2lib__http_2include_2http__inf_8hdep" alt=""/></div>
+<map name="ainclude_2components_2lib__http_2include_2http__inf_8hdep" id="ainclude_2components_2lib__http_2include_2http__inf_8hdep">
+<area shape="rect" title="Wrapper of HTTP request and response" alt="" coords="5,5,196,47"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="12,95,189,151"/>
+</map>
+</div>
+</div>
+<p><a href="../../dc/d26/http__inf_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of HTTP URL structure  <a href="../../dd/d97/structHTTP__URL__H__S.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a3d008728924c30bdcd630c28ffa35634"><td class="memItemLeft" align="right" valign="top"><a id="a3d008728924c30bdcd630c28ffa35634" name="a3d008728924c30bdcd630c28ffa35634"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEF_URL_LEN</b>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a3d008728924c30bdcd630c28ffa35634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1c87b4a270a3e8c5e832c2c469d0cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#aea1c87b4a270a3e8c5e832c2c469d0cd">http_inf_client_get</a>(url,  callback,  pri_data)&#160;&#160;&#160;    <a class="el" href="../../dc/d26/http__inf_8h.html#a09fa2a2b2d7d44889e1b6dcaa1d58499">http_inf_client_get_with_head</a>(url, callback, pri_data, NULL, NULL)</td></tr>
+<tr class="memdesc:aea1c87b4a270a3e8c5e832c2c469d0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#aea1c87b4a270a3e8c5e832c2c469d0cd">更多...</a><br /></td></tr>
+<tr class="separator:aea1c87b4a270a3e8c5e832c2c469d0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f81abf11d10fd56d40db01610a10fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#aa1f81abf11d10fd56d40db01610a10fa">http_inf_client_get_raw</a>(url,  p_inf,  offset,  total_len)&#160;&#160;&#160;    <a class="el" href="../../dc/d26/http__inf_8h.html#a292086ffc2c3f192beb4a7ff7971c783">http_inf_client_get_raw_with_head</a>(url, p_inf, offset, total_len, NULL, NULL)</td></tr>
+<tr class="memdesc:aa1f81abf11d10fd56d40db01610a10fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET raw HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#aa1f81abf11d10fd56d40db01610a10fa">更多...</a><br /></td></tr>
+<tr class="separator:aa1f81abf11d10fd56d40db01610a10fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07f6126e2752db2ee03f46232211d05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#af07f6126e2752db2ee03f46232211d05">http_inf_client_post</a>(url,  callback,  data,  len,  add_head_cb,  add_head_data,  p_decode_key,  pri_data)</td></tr>
+<tr class="separator:af07f6126e2752db2ee03f46232211d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88916175cdf59fb5d84868a6102267c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a88916175cdf59fb5d84868a6102267c4">http_inf_client_post_raw</a>(url,  len,  p_inf)</td></tr>
+<tr class="separator:a88916175cdf59fb5d84868a6102267c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb4a990ab9ae56c695131320185a4a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a9cb4a990ab9ae56c695131320185a4a3">http_inf_client_put_raw</a>(url,  len,  p_inf)&#160;&#160;&#160;    <a class="el" href="../../dc/d26/http__inf_8h.html#abf4b89d78d2a8409c85039bb1168e06a">http_inf_client_put_raw_field</a>(url, len, p_inf, NULL, NULL)</td></tr>
+<tr class="memdesc:a9cb4a990ab9ae56c695131320185a4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to PUT raw HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#a9cb4a990ab9ae56c695131320185a4a3">更多...</a><br /></td></tr>
+<tr class="separator:a9cb4a990ab9ae56c695131320185a4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a97c267fdf278a2f5cd59034e56493f3d"><td class="memItemLeft" align="right" valign="top">typedef INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a97c267fdf278a2f5cd59034e56493f3d">HTTP_DATA_RECV</a>) (PVOID_T hand, PVOID_T buf, UINT_T len)</td></tr>
+<tr class="memdesc:a97c267fdf278a2f5cd59034e56493f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to handle HTTP response content  <a href="../../dc/d26/http__inf_8h.html#a97c267fdf278a2f5cd59034e56493f3d">更多...</a><br /></td></tr>
+<tr class="separator:a97c267fdf278a2f5cd59034e56493f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4cba41f9a80aba70c6412062a63526"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>) (<a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *hand)</td></tr>
+<tr class="memdesc:aae4cba41f9a80aba70c6412062a63526"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to handle customized HTTP response  <a href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">更多...</a><br /></td></tr>
+<tr class="separator:aae4cba41f9a80aba70c6412062a63526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab2ee7d0daeede9fe2d9d445aaddf68fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#ab2ee7d0daeede9fe2d9d445aaddf68fe">create_http_url_h</a> (IN CONST USHORT_T buf_len, IN CONST USHORT_T param_cnt)</td></tr>
+<tr class="memdesc:ab2ee7d0daeede9fe2d9d445aaddf68fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create url of HTTP request  <a href="../../dc/d26/http__inf_8h.html#ab2ee7d0daeede9fe2d9d445aaddf68fe">更多...</a><br /></td></tr>
+<tr class="separator:ab2ee7d0daeede9fe2d9d445aaddf68fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab914811f4d624134a252af5643539722"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#ab914811f4d624134a252af5643539722">del_http_url_h</a> (IN <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *hu_h)</td></tr>
+<tr class="memdesc:ab914811f4d624134a252af5643539722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free url of HTTP request  <a href="../../dc/d26/http__inf_8h.html#ab914811f4d624134a252af5643539722">更多...</a><br /></td></tr>
+<tr class="separator:ab914811f4d624134a252af5643539722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd6466d9dc12b5cc9430d0709932d7a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#aadd6466d9dc12b5cc9430d0709932d7a">fill_url_head</a> (INOUT <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *hu_h, IN CONST CHAR_T *url_h)</td></tr>
+<tr class="memdesc:aadd6466d9dc12b5cc9430d0709932d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiaze url of HTTP request  <a href="../../dc/d26/http__inf_8h.html#aadd6466d9dc12b5cc9430d0709932d7a">更多...</a><br /></td></tr>
+<tr class="separator:aadd6466d9dc12b5cc9430d0709932d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100740c49174c4d469506eda46b98fe4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a100740c49174c4d469506eda46b98fe4">fill_url_param</a> (INOUT <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *hu_h, IN CONST CHAR_T *key, IN CONST CHAR_T *value)</td></tr>
+<tr class="memdesc:a100740c49174c4d469506eda46b98fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add key/value param to HTTP url  <a href="../../dc/d26/http__inf_8h.html#a100740c49174c4d469506eda46b98fe4">更多...</a><br /></td></tr>
+<tr class="separator:a100740c49174c4d469506eda46b98fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d55d4f0828c358b862753d518145e64"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a2d55d4f0828c358b862753d518145e64">http_inf_client_add_head_cb_post</a> (IN CONST char *url, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, IN CONST BYTE_T *data, IN CONST UINT_T len, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data, INOUT PVOID_T *pri_data)</td></tr>
+<tr class="memdesc:a2d55d4f0828c358b862753d518145e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to POST HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#a2d55d4f0828c358b862753d518145e64">更多...</a><br /></td></tr>
+<tr class="separator:a2d55d4f0828c358b862753d518145e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4f2be7d10e7adeb897ae58afc6e7fd"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#ade4f2be7d10e7adeb897ae58afc6e7fd">http_inf_client_get_file</a> (IN CONST CHAR_T *url, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, INOUT PVOID_T *pri_data, IN CONST UINT_T file_offset, IN CONST UINT_T file_size)</td></tr>
+<tr class="memdesc:ade4f2be7d10e7adeb897ae58afc6e7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET HTTP file  <a href="../../dc/d26/http__inf_8h.html#ade4f2be7d10e7adeb897ae58afc6e7fd">更多...</a><br /></td></tr>
+<tr class="separator:ade4f2be7d10e7adeb897ae58afc6e7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292086ffc2c3f192beb4a7ff7971c783"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a292086ffc2c3f192beb4a7ff7971c783">http_inf_client_get_raw_with_head</a> (IN CONST CHAR_T *url, INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf, IN UINT_T offset, IN UINT_T total_len, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data)</td></tr>
+<tr class="memdesc:a292086ffc2c3f192beb4a7ff7971c783"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET raw HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#a292086ffc2c3f192beb4a7ff7971c783">更多...</a><br /></td></tr>
+<tr class="separator:a292086ffc2c3f192beb4a7ff7971c783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fa2a2b2d7d44889e1b6dcaa1d58499"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a09fa2a2b2d7d44889e1b6dcaa1d58499">http_inf_client_get_with_head</a> (IN CONST CHAR_T *url, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, INOUT PVOID_T *pri_data, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data)</td></tr>
+<tr class="memdesc:a09fa2a2b2d7d44889e1b6dcaa1d58499"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to GET HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#a09fa2a2b2d7d44889e1b6dcaa1d58499">更多...</a><br /></td></tr>
+<tr class="separator:a09fa2a2b2d7d44889e1b6dcaa1d58499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe711336259046fcc3f064f6b4cb22ea"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#afe711336259046fcc3f064f6b4cb22ea">http_inf_client_post_field</a> (IN CONST CHAR_T *url, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, IN CONST BYTE_T *data, IN CONST UINT_T len, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data, IN CONST CHAR_T *p_decode_key, INOUT PVOID_T *pri_data, IN CONST <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags)</td></tr>
+<tr class="memdesc:afe711336259046fcc3f064f6b4cb22ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to POST HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#afe711336259046fcc3f064f6b4cb22ea">更多...</a><br /></td></tr>
+<tr class="separator:afe711336259046fcc3f064f6b4cb22ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6ee07ca39c72f56a7192d7ad721ff2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#afd6ee07ca39c72f56a7192d7ad721ff2">http_inf_client_post_raw_field</a> (IN CONST CHAR_T *url, IN CONST UINT_T len, INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf, IN <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags)</td></tr>
+<tr class="memdesc:afd6ee07ca39c72f56a7192d7ad721ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to POST raw HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#afd6ee07ca39c72f56a7192d7ad721ff2">更多...</a><br /></td></tr>
+<tr class="separator:afd6ee07ca39c72f56a7192d7ad721ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48fe805101ca8f1a1a9b81323e532f13"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a48fe805101ca8f1a1a9b81323e532f13">http_inf_client_put</a> (IN CONST CHAR_T *url, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, IN CONST BYTE_T *data, IN CONST UINT_T len, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data, INOUT PVOID_T *pri_data)</td></tr>
+<tr class="memdesc:a48fe805101ca8f1a1a9b81323e532f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to PUT HTTP request/response  <a href="../../dc/d26/http__inf_8h.html#a48fe805101ca8f1a1a9b81323e532f13">更多...</a><br /></td></tr>
+<tr class="separator:a48fe805101ca8f1a1a9b81323e532f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ad6af2ad666ee5c77c2fb0e832eced"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a51ad6af2ad666ee5c77c2fb0e832eced">http_inf_client_put_custom_content</a> (IN CONST CHAR_T *url, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, IN <a class="el" href="../../d2/d52/structhttp__custom__content__ctx__s.html">http_custom_content_ctx_s</a> *p_ctx, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data, INOUT PVOID_T *pri_data)</td></tr>
+<tr class="memdesc:a51ad6af2ad666ee5c77c2fb0e832eced"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to PUT HTTP request/response with customized content  <a href="../../dc/d26/http__inf_8h.html#a51ad6af2ad666ee5c77c2fb0e832eced">更多...</a><br /></td></tr>
+<tr class="separator:a51ad6af2ad666ee5c77c2fb0e832eced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4b89d78d2a8409c85039bb1168e06a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#abf4b89d78d2a8409c85039bb1168e06a">http_inf_client_put_raw_field</a> (IN CONST CHAR_T *url, IN INT_T len, INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data)</td></tr>
+<tr class="memdesc:abf4b89d78d2a8409c85039bb1168e06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to PUT raw HTTP request/response, extra header is supported  <a href="../../dc/d26/http__inf_8h.html#abf4b89d78d2a8409c85039bb1168e06a">更多...</a><br /></td></tr>
+<tr class="separator:abf4b89d78d2a8409c85039bb1168e06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bb7723e79023aaf1495b2885bdecee"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#ac9bb7723e79023aaf1495b2885bdecee">http_inf_close_raw</a> (INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf)</td></tr>
+<tr class="memdesc:ac9bb7723e79023aaf1495b2885bdecee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to close raw HTTP request  <a href="../../dc/d26/http__inf_8h.html#ac9bb7723e79023aaf1495b2885bdecee">更多...</a><br /></td></tr>
+<tr class="separator:ac9bb7723e79023aaf1495b2885bdecee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa99eb036847998b48cc8d6ded3b107"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#aeaa99eb036847998b48cc8d6ded3b107">http_inf_com_hanle_with_tls_config</a> (IN CONST <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *req, IN CONST CHAR_T *url, IN CONST <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *tls_config, IN CONST <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a> field_flags, IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a> callback, IN CONST CHAR_T *p_decode_key, INOUT PVOID_T *pri_data)</td></tr>
+<tr class="separator:aeaa99eb036847998b48cc8d6ded3b107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60fd5c557e02cd7f38aae2de438eda12"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a60fd5c557e02cd7f38aae2de438eda12">http_inf_write_content_raw</a> (INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf, IN CONST BYTE_T *p_data, IN CONST UINT_T len, BOOL_T chunked)</td></tr>
+<tr class="memdesc:a60fd5c557e02cd7f38aae2de438eda12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to write raw HTTP request content  <a href="../../dc/d26/http__inf_8h.html#a60fd5c557e02cd7f38aae2de438eda12">更多...</a><br /></td></tr>
+<tr class="separator:a60fd5c557e02cd7f38aae2de438eda12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c06bc85cbe136a1cb79ad425627d69"><td class="memItemLeft" align="right" valign="top">INT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#ab3c06bc85cbe136a1cb79ad425627d69">httpc_inf_read_content_raw</a> (IN <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf, IN BYTE_T *buf, IN CONST UINT_T buf_len)</td></tr>
+<tr class="memdesc:ab3c06bc85cbe136a1cb79ad425627d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to read raw HTTP response content  <a href="../../dc/d26/http__inf_8h.html#ab3c06bc85cbe136a1cb79ad425627d69">更多...</a><br /></td></tr>
+<tr class="separator:ab3c06bc85cbe136a1cb79ad425627d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ec7b8a816f9e892a19373ed3cda962"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d26/http__inf_8h.html#a76ec7b8a816f9e892a19373ed3cda962">httpc_inf_read_header_raw</a> (INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *p_inf)</td></tr>
+<tr class="memdesc:a76ec7b8a816f9e892a19373ed3cda962"><td class="mdescLeft">&#160;</td><td class="mdescRight">This API is used to read raw HTTP response header  <a href="../../dc/d26/http__inf_8h.html#a76ec7b8a816f9e892a19373ed3cda962">更多...</a><br /></td></tr>
+<tr class="separator:a76ec7b8a816f9e892a19373ed3cda962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Wrapper of HTTP request and response </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2016-10-28</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2016-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aea1c87b4a270a3e8c5e832c2c469d0cd" name="aea1c87b4a270a3e8c5e832c2c469d0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1c87b4a270a3e8c5e832c2c469d0cd">&#9670;&nbsp;</a></span>http_inf_client_get</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define http_inf_client_get</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">url, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">callback, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pri_data&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    <a class="el" href="../../dc/d26/http__inf_8h.html#a09fa2a2b2d7d44889e1b6dcaa1d58499">http_inf_client_get_with_head</a>(url, callback, pri_data, NULL, NULL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa1f81abf11d10fd56d40db01610a10fa" name="aa1f81abf11d10fd56d40db01610a10fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f81abf11d10fd56d40db01610a10fa">&#9670;&nbsp;</a></span>http_inf_client_get_raw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define http_inf_client_get_raw</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">url, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p_inf, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">offset, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">total_len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    <a class="el" href="../../dc/d26/http__inf_8h.html#a292086ffc2c3f192beb4a7ff7971c783">http_inf_client_get_raw_with_head</a>(url, p_inf, offset, total_len, NULL, NULL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET raw HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Offset of file content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">total_len</td><td>Max size to get from file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af07f6126e2752db2ee03f46232211d05" name="af07f6126e2752db2ee03f46232211d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af07f6126e2752db2ee03f46232211d05">&#9670;&nbsp;</a></span>http_inf_client_post</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define http_inf_client_post</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">url, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">callback, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">add_head_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">add_head_data, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p_decode_key, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pri_data&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">    <a class="code hl_function" href="../../dc/d26/http__inf_8h.html#afe711336259046fcc3f064f6b4cb22ea">http_inf_client_post_field</a>(url, callback, data, len, add_head_cb, add_head_data, p_decode_key, pri_data, \</div>
+<div class="line">        STANDARD_HDR_FLAGS|HDR_ADD_CONN_KEEP_ALIVE|HDR_ADD_CONTENT_TYPE_FORM_URLENCODE)</div>
+<div class="ttc" id="ahttp__inf_8h_html_afe711336259046fcc3f064f6b4cb22ea"><div class="ttname"><a href="../../dc/d26/http__inf_8h.html#afe711336259046fcc3f064f6b4cb22ea">http_inf_client_post_field</a></div><div class="ttdeci">OPERATE_RET http_inf_client_post_field(IN CONST CHAR_T *url, IN CONST HTTP_INF_CB callback, IN CONST BYTE_T *data, IN CONST UINT_T len, IN HTTP_HEAD_ADD_CB add_head_cb, IN VOID *add_head_data, IN CONST CHAR_T *p_decode_key, INOUT PVOID_T *pri_data, IN CONST http_hdr_field_sel_t field_flags)</div><div class="ttdoc">This API is used to POST HTTP request/response</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a88916175cdf59fb5d84868a6102267c4" name="a88916175cdf59fb5d84868a6102267c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88916175cdf59fb5d84868a6102267c4">&#9670;&nbsp;</a></span>http_inf_client_post_raw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define http_inf_client_post_raw</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">url, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p_inf&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">    <a class="code hl_function" href="../../dc/d26/http__inf_8h.html#afd6ee07ca39c72f56a7192d7ad721ff2">http_inf_client_post_raw_field</a>(url, len, p_inf, \</div>
+<div class="line">        HRD_ADD_HTTP_RAW | STANDARD_HDR_FLAGS | HDR_ADD_CONN_KEEP_ALIVE | HDR_ADD_CONTENT_TYPE_JSON)</div>
+<div class="ttc" id="ahttp__inf_8h_html_afd6ee07ca39c72f56a7192d7ad721ff2"><div class="ttname"><a href="../../dc/d26/http__inf_8h.html#afd6ee07ca39c72f56a7192d7ad721ff2">http_inf_client_post_raw_field</a></div><div class="ttdeci">OPERATE_RET http_inf_client_post_raw_field(IN CONST CHAR_T *url, IN CONST UINT_T len, INOUT HTTP_INF_H_S *p_inf, IN http_hdr_field_sel_t field_flags)</div><div class="ttdoc">This API is used to POST raw HTTP request/response</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9cb4a990ab9ae56c695131320185a4a3" name="a9cb4a990ab9ae56c695131320185a4a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb4a990ab9ae56c695131320185a4a3">&#9670;&nbsp;</a></span>http_inf_client_put_raw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define http_inf_client_put_raw</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">url, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p_inf&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    <a class="el" href="../../dc/d26/http__inf_8h.html#abf4b89d78d2a8409c85039bb1168e06a">http_inf_client_put_raw_field</a>(url, len, p_inf, NULL, NULL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to PUT raw HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Max length of HTTP response data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a97c267fdf278a2f5cd59034e56493f3d" name="a97c267fdf278a2f5cd59034e56493f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c267fdf278a2f5cd59034e56493f3d">&#9670;&nbsp;</a></span>HTTP_DATA_RECV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef INT_T(* HTTP_DATA_RECV) (PVOID_T hand, PVOID_T buf, UINT_T len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to handle HTTP response content </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hand</td><td>http_session_t </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer of HTTP response content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of buf</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aae4cba41f9a80aba70c6412062a63526" name="aae4cba41f9a80aba70c6412062a63526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4cba41f9a80aba70c6412062a63526">&#9670;&nbsp;</a></span>HTTP_INF_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* HTTP_INF_CB) (<a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *hand)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to handle customized HTTP response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hand</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab2ee7d0daeede9fe2d9d445aaddf68fe" name="ab2ee7d0daeede9fe2d9d445aaddf68fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ee7d0daeede9fe2d9d445aaddf68fe">&#9670;&nbsp;</a></span>create_http_url_h()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> * create_http_url_h </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST USHORT_T&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST USHORT_T&#160;</td>
+          <td class="paramname"><em>param_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create url of HTTP request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>max lenth of URL(include params) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param_cnt</td><td>max count of url params</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL on error. Pointer to <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html" title="Definition of HTTP URL structure">HTTP_URL_H_S</a> on success </dd></dl>
+
+</div>
+</div>
+<a id="ab914811f4d624134a252af5643539722" name="ab914811f4d624134a252af5643539722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab914811f4d624134a252af5643539722">&#9670;&nbsp;</a></span>del_http_url_h()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID del_http_url_h </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *&#160;</td>
+          <td class="paramname"><em>hu_h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free url of HTTP request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hu_h</td><td>A pointer that points to the structure returned from the call to create_http_url_h </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aadd6466d9dc12b5cc9430d0709932d7a" name="aadd6466d9dc12b5cc9430d0709932d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd6466d9dc12b5cc9430d0709932d7a">&#9670;&nbsp;</a></span>fill_url_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET fill_url_head </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *&#160;</td>
+          <td class="paramname"><em>hu_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url_h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initiaze url of HTTP request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hu_h</td><td>A pointer that points to the structure returned from the call to create_http_url_h </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">url_h</td><td>HTTP url</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a100740c49174c4d469506eda46b98fe4" name="a100740c49174c4d469506eda46b98fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100740c49174c4d469506eda46b98fe4">&#9670;&nbsp;</a></span>fill_url_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET fill_url_param </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../dd/d97/structHTTP__URL__H__S.html">HTTP_URL_H_S</a> *&#160;</td>
+          <td class="paramname"><em>hu_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add key/value param to HTTP url </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hu_h</td><td>A pointer that points to the structure returned from the call to create_http_url_h </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key to be added to url </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to be added to url</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2d55d4f0828c358b862753d518145e64" name="a2d55d4f0828c358b862753d518145e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d55d4f0828c358b862753d518145e64">&#9670;&nbsp;</a></span>http_inf_client_add_head_cb_post()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_add_head_cb_post </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST char *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to POST HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>data of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of HTTP request data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ade4f2be7d10e7adeb897ae58afc6e7fd" name="ade4f2be7d10e7adeb897ae58afc6e7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4f2be7d10e7adeb897ae58afc6e7fd">&#9670;&nbsp;</a></span>http_inf_client_get_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_get_file </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>file_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>file_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET HTTP file </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_offset</td><td>Offset of file content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_size</td><td>Max size to get from file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a292086ffc2c3f192beb4a7ff7971c783" name="a292086ffc2c3f192beb4a7ff7971c783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292086ffc2c3f192beb4a7ff7971c783">&#9670;&nbsp;</a></span>http_inf_client_get_raw_with_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_get_raw_with_head </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN UINT_T&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN UINT_T&#160;</td>
+          <td class="paramname"><em>total_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET raw HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Offset of file content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">total_len</td><td>Max size to get from file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a09fa2a2b2d7d44889e1b6dcaa1d58499" name="a09fa2a2b2d7d44889e1b6dcaa1d58499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fa2a2b2d7d44889e1b6dcaa1d58499">&#9670;&nbsp;</a></span>http_inf_client_get_with_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_get_with_head </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to GET HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afe711336259046fcc3f064f6b4cb22ea" name="afe711336259046fcc3f064f6b4cb22ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe711336259046fcc3f064f6b4cb22ea">&#9670;&nbsp;</a></span>http_inf_client_post_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_post_field </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_decode_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a>&#160;</td>
+          <td class="paramname"><em>field_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to POST HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>data of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of HTTP request data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_decode_key</td><td>Decode key of HTTP content </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">field_flags</td><td>The http_hdr_field_sel_t, OR of zero or more flags</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="afd6ee07ca39c72f56a7192d7ad721ff2" name="afd6ee07ca39c72f56a7192d7ad721ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6ee07ca39c72f56a7192d7ad721ff2">&#9670;&nbsp;</a></span>http_inf_client_post_raw_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_post_raw_field </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a>&#160;</td>
+          <td class="paramname"><em>field_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to POST raw HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Max length of HTTP response data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">field_flags</td><td>The http_hdr_field_sel_t, OR of zero or more flags</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a48fe805101ca8f1a1a9b81323e532f13" name="a48fe805101ca8f1a1a9b81323e532f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48fe805101ca8f1a1a9b81323e532f13">&#9670;&nbsp;</a></span>http_inf_client_put()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_put </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to PUT HTTP request/response </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>data of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of HTTP request data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a51ad6af2ad666ee5c77c2fb0e832eced" name="a51ad6af2ad666ee5c77c2fb0e832eced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ad6af2ad666ee5c77c2fb0e832eced">&#9670;&nbsp;</a></span>http_inf_client_put_custom_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_put_custom_content </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN <a class="el" href="../../d2/d52/structhttp__custom__content__ctx__s.html">http_custom_content_ctx_s</a> *&#160;</td>
+          <td class="paramname"><em>p_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to PUT HTTP request/response with customized content </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Handler of HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_ctx</td><td>Context of HTTP request customized </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri_data</td><td>Private data used by HTTP request</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="abf4b89d78d2a8409c85039bb1168e06a" name="abf4b89d78d2a8409c85039bb1168e06a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4b89d78d2a8409c85039bb1168e06a">&#9670;&nbsp;</a></span>http_inf_client_put_raw_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_client_put_raw_field </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN INT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN HTTP_HEAD_ADD_CB&#160;</td>
+          <td class="paramname"><em>add_head_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN VOID *&#160;</td>
+          <td class="paramname"><em>add_head_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to PUT raw HTTP request/response, extra header is supported </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Max length of HTTP response data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_cb</td><td>Hook before HTTP request sent, to add more HTTP header </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_head_data</td><td>Header data of add_head_cb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac9bb7723e79023aaf1495b2885bdecee" name="ac9bb7723e79023aaf1495b2885bdecee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9bb7723e79023aaf1495b2885bdecee">&#9670;&nbsp;</a></span>http_inf_close_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_close_raw </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to close raw HTTP request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aeaa99eb036847998b48cc8d6ded3b107" name="aeaa99eb036847998b48cc8d6ded3b107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa99eb036847998b48cc8d6ded3b107">&#9670;&nbsp;</a></span>http_inf_com_hanle_with_tls_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_inf_com_hanle_with_tls_config </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d8/d1b/structhttp__req__t.html">http_req_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d7/d3c/structtuya__tls__config__t.html">tuya_tls_config_t</a> *&#160;</td>
+          <td class="paramname"><em>tls_config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../d3/d1b/httpc_8h.html#a8153610e2ebebb71749b21f153c8e95c">http_hdr_field_sel_t</a>&#160;</td>
+          <td class="paramname"><em>field_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST <a class="el" href="../../dc/d26/http__inf_8h.html#aae4cba41f9a80aba70c6412062a63526">HTTP_INF_CB</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_decode_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INOUT PVOID_T *&#160;</td>
+          <td class="paramname"><em>pri_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[in/out]</td><td>req </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>url </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>tls_config </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>field_flags </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>callback </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>p_decode_key </td></tr>
+    <tr><td class="paramname">[in/out]</td><td>pri_data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPERATE_RET </dd></dl>
+
+</div>
+</div>
+<a id="a60fd5c557e02cd7f38aae2de438eda12" name="a60fd5c557e02cd7f38aae2de438eda12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60fd5c557e02cd7f38aae2de438eda12">&#9670;&nbsp;</a></span>http_inf_write_content_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T http_inf_write_content_raw </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>chunked</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to write raw HTTP request content </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_data</td><td>Buffer to write of HTTP request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>Max length of HTTP request data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">chunked</td><td>Chunk is enabled or not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab3c06bc85cbe136a1cb79ad425627d69" name="ab3c06bc85cbe136a1cb79ad425627d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c06bc85cbe136a1cb79ad425627d69">&#9670;&nbsp;</a></span>httpc_inf_read_content_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_T httpc_inf_read_content_raw </td>
+          <td>(</td>
+          <td class="paramtype">IN <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN BYTE_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>buf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to read raw HTTP response content </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer to read HTTP response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>Max length of HTTP response data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a76ec7b8a816f9e892a19373ed3cda962" name="a76ec7b8a816f9e892a19373ed3cda962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ec7b8a816f9e892a19373ed3cda962">&#9670;&nbsp;</a></span>httpc_inf_read_header_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET httpc_inf_read_header_raw </td>
+          <td>(</td>
+          <td class="paramtype">INOUT <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html">HTTP_INF_H_S</a> *&#160;</td>
+          <td class="paramname"><em>p_inf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This API is used to read raw HTTP response header </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p_inf</td><td>Pointer to <a class="el" href="../../d2/d52/structHTTP__INF__H__S.html" title="Definition of HTTP request/response structure">HTTP_INF_H_S</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_devos/include/ws_db_gw.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c5ad9f57be95c42b41325f1bc9ebae91.html">svc_devos</a></li><li class="navelem"><a class="el" href="../../dir_11ce8152c603a5102f0c89f0ddb7981a.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ws_db_gw.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d76/ws__db__gw_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TUYA_WS_DB_GW_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TUYA_WS_DB_GW_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d13/tuya__ws__db_8h.html">tuya_ws_db.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#aed02b2929e36fea525fad0590925bfa9">   27</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#aed02b2929e36fea525fad0590925bfa9">wd_gw_base_if_write</a>(IN <a class="code hl_struct" href="../../dd/d6b/structGW__BASE__IF__S.html">GW_BASE_IF_S</a> *bi);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a06d5449da9424e4313b66d892c332563">   36</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a06d5449da9424e4313b66d892c332563">wd_gw_base_if_read</a>(OUT <a class="code hl_struct" href="../../dd/d6b/structGW__BASE__IF__S.html">GW_BASE_IF_S</a> *bi);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a5e9a9bc60a197038266e15adac6c04da">   45</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a5e9a9bc60a197038266e15adac6c04da">wd_gw_wsm_write</a>(IN <a class="code hl_struct" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a> *wsm);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#afa5992559fbf1c3ab8cdacf56b00c385">   54</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#afa5992559fbf1c3ab8cdacf56b00c385">wd_gw_wsm_read</a>(OUT <a class="code hl_struct" href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a> *wsm);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a4555dc8635e5a351a95f81da948a4aea">   63</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a4555dc8635e5a351a95f81da948a4aea">wd_gw_desc_if_write</a>(IN <a class="code hl_struct" href="../../d6/d8e/structGW__DESC__IF__S.html">GW_DESC_IF_S</a> *di);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#af62e5d65852793e62353480589cd6f11">   72</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#af62e5d65852793e62353480589cd6f11">wd_gw_desc_if_read</a>(OUT <a class="code hl_struct" href="../../d6/d8e/structGW__DESC__IF__S.html">GW_DESC_IF_S</a> *di);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a5d00d0184788af8d9436992f9a68016a">   79</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a5d00d0184788af8d9436992f9a68016a">wd_gw_desc_if_delete</a>(VOID_T);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#ae842dd013ac50800cf123707be1d2ef1">   88</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#ae842dd013ac50800cf123707be1d2ef1">wd_gw_actv_if_write</a>(IN <a class="code hl_struct" href="../../db/d8e/structGW__ACTV__IF__S.html">GW_ACTV_IF_S</a> *ai);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#ad8d78c84c966149641ba80c457d54dbf">   97</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#ad8d78c84c966149641ba80c457d54dbf">wd_gw_actv_if_read</a>(OUT <a class="code hl_struct" href="../../db/d8e/structGW__ACTV__IF__S.html">GW_ACTV_IF_S</a> *ai);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#ab5f38a3813c2e2d617f5fbbfa9e6e1d4">  107</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#ab5f38a3813c2e2d617f5fbbfa9e6e1d4">wd_gw_schema_write</a>(IN CONST CHAR_T *s_id, IN CONST CHAR_T *schema);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a54864a9faf28927abc9079a8641ed75d">  119</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a54864a9faf28927abc9079a8641ed75d">wd_gw_schema_read</a>(IN CONST CHAR_T *s_id, OUT CHAR_T **schema);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#ae8fc33992cef21367cf2105d47f1c6f6">  128</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#ae8fc33992cef21367cf2105d47f1c6f6">wd_gw_schema_delete</a>(IN CONST CHAR_T *s_id);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a12fdb7cbd39196df7a7565a0e68fb3bf">  138</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a12fdb7cbd39196df7a7565a0e68fb3bf">wd_gw_schema_write_ver</a>(IN CONST CHAR_T *s_id, IN CONST CHAR_T *ver);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../de/d76/ws__db__gw_8h.html#a9567d579704ab1dd0401ba473a486ede">  150</a></span>OPERATE_RET <a class="code hl_function" href="../../de/d76/ws__db__gw_8h.html#a9567d579704ab1dd0401ba473a486ede">wd_gw_schema_read_ver</a>(IN CONST CHAR_T *s_id, OUT CHAR_T **ver);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#endif  </span><span class="comment">// __TUYA_WS_DB_GW_H__</span></div>
+<div class="ttc" id="agw__intf_8h_html"><div class="ttname"><a href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a></div><div class="ttdoc">Facility of DevOS definitions</div></div>
+<div class="ttc" id="astructGW__ACTV__IF__S_html"><div class="ttname"><a href="../../db/d8e/structGW__ACTV__IF__S.html">GW_ACTV_IF_S</a></div><div class="ttdoc">Definition of active info</div><div class="ttdef"><b>Definition:</b> gw_intf.h:173</div></div>
+<div class="ttc" id="astructGW__BASE__IF__S_html"><div class="ttname"><a href="../../dd/d6b/structGW__BASE__IF__S.html">GW_BASE_IF_S</a></div><div class="ttdoc">Definition gw BASE information</div><div class="ttdef"><b>Definition:</b> gw_intf.h:44</div></div>
+<div class="ttc" id="astructGW__DESC__IF__S_html"><div class="ttname"><a href="../../d6/d8e/structGW__DESC__IF__S.html">GW_DESC_IF_S</a></div><div class="ttdoc">Definition of device description info</div><div class="ttdef"><b>Definition:</b> gw_intf.h:122</div></div>
+<div class="ttc" id="astructGW__WORK__STAT__MAG__S_html"><div class="ttname"><a href="../../dd/dab/structGW__WORK__STAT__MAG__S.html">GW_WORK_STAT_MAG_S</a></div><div class="ttdoc">Definition of device work state</div><div class="ttdef"><b>Definition:</b> gw_intf.h:94</div></div>
+<div class="ttc" id="atuya__ws__db_8h_html"><div class="ttname"><a href="../../d2/d13/tuya__ws__db_8h.html">tuya_ws_db.h</a></div><div class="ttdoc">tuya key-value database module</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a06d5449da9424e4313b66d892c332563"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a06d5449da9424e4313b66d892c332563">wd_gw_base_if_read</a></div><div class="ttdeci">OPERATE_RET wd_gw_base_if_read(OUT GW_BASE_IF_S *bi)</div><div class="ttdoc">Read base info from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a12fdb7cbd39196df7a7565a0e68fb3bf"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a12fdb7cbd39196df7a7565a0e68fb3bf">wd_gw_schema_write_ver</a></div><div class="ttdeci">OPERATE_RET wd_gw_schema_write_ver(IN CONST CHAR_T *s_id, IN CONST CHAR_T *ver)</div><div class="ttdoc">Save schema version into storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a4555dc8635e5a351a95f81da948a4aea"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a4555dc8635e5a351a95f81da948a4aea">wd_gw_desc_if_write</a></div><div class="ttdeci">OPERATE_RET wd_gw_desc_if_write(IN GW_DESC_IF_S *di)</div><div class="ttdoc">Save description info into storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a54864a9faf28927abc9079a8641ed75d"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a54864a9faf28927abc9079a8641ed75d">wd_gw_schema_read</a></div><div class="ttdeci">OPERATE_RET wd_gw_schema_read(IN CONST CHAR_T *s_id, OUT CHAR_T **schema)</div><div class="ttdoc">Read schema info from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a5d00d0184788af8d9436992f9a68016a"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a5d00d0184788af8d9436992f9a68016a">wd_gw_desc_if_delete</a></div><div class="ttdeci">OPERATE_RET wd_gw_desc_if_delete(VOID_T)</div><div class="ttdoc">Delete description info from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a5e9a9bc60a197038266e15adac6c04da"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a5e9a9bc60a197038266e15adac6c04da">wd_gw_wsm_write</a></div><div class="ttdeci">OPERATE_RET wd_gw_wsm_write(IN GW_WORK_STAT_MAG_S *wsm)</div><div class="ttdoc">Save work state info into storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_a9567d579704ab1dd0401ba473a486ede"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#a9567d579704ab1dd0401ba473a486ede">wd_gw_schema_read_ver</a></div><div class="ttdeci">OPERATE_RET wd_gw_schema_read_ver(IN CONST CHAR_T *s_id, OUT CHAR_T **ver)</div><div class="ttdoc">Read schema version from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_ab5f38a3813c2e2d617f5fbbfa9e6e1d4"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#ab5f38a3813c2e2d617f5fbbfa9e6e1d4">wd_gw_schema_write</a></div><div class="ttdeci">OPERATE_RET wd_gw_schema_write(IN CONST CHAR_T *s_id, IN CONST CHAR_T *schema)</div><div class="ttdoc">Save schema info into storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_ad8d78c84c966149641ba80c457d54dbf"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#ad8d78c84c966149641ba80c457d54dbf">wd_gw_actv_if_read</a></div><div class="ttdeci">OPERATE_RET wd_gw_actv_if_read(OUT GW_ACTV_IF_S *ai)</div><div class="ttdoc">Read activation info from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_ae842dd013ac50800cf123707be1d2ef1"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#ae842dd013ac50800cf123707be1d2ef1">wd_gw_actv_if_write</a></div><div class="ttdeci">OPERATE_RET wd_gw_actv_if_write(IN GW_ACTV_IF_S *ai)</div><div class="ttdoc">Save activation info into storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_ae8fc33992cef21367cf2105d47f1c6f6"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#ae8fc33992cef21367cf2105d47f1c6f6">wd_gw_schema_delete</a></div><div class="ttdeci">OPERATE_RET wd_gw_schema_delete(IN CONST CHAR_T *s_id)</div><div class="ttdoc">Delete schema and its version from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_aed02b2929e36fea525fad0590925bfa9"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#aed02b2929e36fea525fad0590925bfa9">wd_gw_base_if_write</a></div><div class="ttdeci">OPERATE_RET wd_gw_base_if_write(IN GW_BASE_IF_S *bi)</div><div class="ttdoc">Save base info into storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_af62e5d65852793e62353480589cd6f11"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#af62e5d65852793e62353480589cd6f11">wd_gw_desc_if_read</a></div><div class="ttdeci">OPERATE_RET wd_gw_desc_if_read(OUT GW_DESC_IF_S *di)</div><div class="ttdoc">Read description info from storage</div></div>
+<div class="ttc" id="aws__db__gw_8h_html_afa5992559fbf1c3ab8cdacf56b00c385"><div class="ttname"><a href="../../de/d76/ws__db__gw_8h.html#afa5992559fbf1c3ab8cdacf56b00c385">wd_gw_wsm_read</a></div><div class="ttdeci">OPERATE_RET wd_gw_wsm_read(OUT GW_WORK_STAT_MAG_S *wsm)</div><div class="ttdoc">Read work state info from storage</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

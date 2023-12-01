@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/uart/include/tkl_uart.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_5fcd823f98e1b836416a29616160bb9e.html">uart</a></li><li class="navelem"><a class="el" href="../../dir_ff1dff8aa02e3e8a13f7420743cac414.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_uart.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d9/d41/tkl__uart_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_UART_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_UART_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">   33</a></span>OPERATE_RET <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">tkl_uart_init</a>(TUYA_UART_NUM_E port_id, <a class="code hl_struct" href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html">TUYA_UART_BASE_CFG_T</a> *cfg);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a3bd298db65cd99b7ec29c35123c62271">   46</a></span>OPERATE_RET <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a3bd298db65cd99b7ec29c35123c62271">tkl_uart_deinit</a>(TUYA_UART_NUM_E port_id);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">   62</a></span>INT_T <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">tkl_uart_write</a>(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#ab526b1aee021064b510691bd95d06a14">   77</a></span>VOID_T <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#ab526b1aee021064b510691bd95d06a14">tkl_uart_rx_irq_cb_reg</a>(TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB rx_cb);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#ab763a313b5dd290b986fcade69775561">   94</a></span>VOID_T <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#ab763a313b5dd290b986fcade69775561">tkl_uart_tx_irq_cb_reg</a>(TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB tx_cb);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a73452797d312a8366df4e9f2cbe0a089">  110</a></span>INT_T <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a73452797d312a8366df4e9f2cbe0a089">tkl_uart_read</a>(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a336c9ae88bc837a567826e0f25af0669">  125</a></span>OPERATE_RET <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a336c9ae88bc837a567826e0f25af0669">tkl_uart_set_tx_int</a>(TUYA_UART_NUM_E port_id, BOOL_T enable);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#afee640bd28425fd058deba160ce48247">  140</a></span>OPERATE_RET <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#afee640bd28425fd058deba160ce48247">tkl_uart_set_rx_flowctrl</a>(TUYA_UART_NUM_E port_id, BOOL_T enable);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a61d2a653102cfafd78ff113ed34a8012">  157</a></span>OPERATE_RET <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a61d2a653102cfafd78ff113ed34a8012">tkl_uart_wait_for_data</a>(TUYA_UART_NUM_E port_id, INT_T timeout_ms);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../d9/d41/tkl__uart_8h.html#a9c2f6c7678f155b57fc63331d325fd96">  168</a></span>OPERATE_RET <a class="code hl_function" href="../../d9/d41/tkl__uart_8h.html#a9c2f6c7678f155b57fc63331d325fd96">tkl_uart_ioctl</a>(TUYA_UART_NUM_E port_id, UINT32_T cmd, VOID *arg);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="ttc" id="astructTUYA__UART__BASE__CFG__T_html"><div class="ttname"><a href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html">TUYA_UART_BASE_CFG_T</a></div><div class="ttdoc">uart config</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:1175</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a336c9ae88bc837a567826e0f25af0669"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a336c9ae88bc837a567826e0f25af0669">tkl_uart_set_tx_int</a></div><div class="ttdeci">OPERATE_RET tkl_uart_set_tx_int(TUYA_UART_NUM_E port_id, BOOL_T enable)</div><div class="ttdoc">set uart transmit interrupt status</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a3bd298db65cd99b7ec29c35123c62271"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a3bd298db65cd99b7ec29c35123c62271">tkl_uart_deinit</a></div><div class="ttdeci">OPERATE_RET tkl_uart_deinit(TUYA_UART_NUM_E port_id)</div><div class="ttdoc">uart deinit</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a61d2a653102cfafd78ff113ed34a8012"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a61d2a653102cfafd78ff113ed34a8012">tkl_uart_wait_for_data</a></div><div class="ttdeci">OPERATE_RET tkl_uart_wait_for_data(TUYA_UART_NUM_E port_id, INT_T timeout_ms)</div><div class="ttdoc">wait for uart data</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a7225a561d40ddb8a84014d51998c0e90"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a7225a561d40ddb8a84014d51998c0e90">tkl_uart_write</a></div><div class="ttdeci">INT_T tkl_uart_write(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len)</div><div class="ttdoc">uart write data</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a73299fbc8e7e2d8627c3dd85d5db0c64"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a73299fbc8e7e2d8627c3dd85d5db0c64">tkl_uart_init</a></div><div class="ttdeci">OPERATE_RET tkl_uart_init(TUYA_UART_NUM_E port_id, TUYA_UART_BASE_CFG_T *cfg)</div><div class="ttdoc">uart init</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a73452797d312a8366df4e9f2cbe0a089"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a73452797d312a8366df4e9f2cbe0a089">tkl_uart_read</a></div><div class="ttdeci">INT_T tkl_uart_read(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len)</div><div class="ttdoc">uart read data</div></div>
+<div class="ttc" id="atkl__uart_8h_html_a9c2f6c7678f155b57fc63331d325fd96"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#a9c2f6c7678f155b57fc63331d325fd96">tkl_uart_ioctl</a></div><div class="ttdeci">OPERATE_RET tkl_uart_ioctl(TUYA_UART_NUM_E port_id, UINT32_T cmd, VOID *arg)</div><div class="ttdoc">uart control</div></div>
+<div class="ttc" id="atkl__uart_8h_html_ab526b1aee021064b510691bd95d06a14"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#ab526b1aee021064b510691bd95d06a14">tkl_uart_rx_irq_cb_reg</a></div><div class="ttdeci">VOID_T tkl_uart_rx_irq_cb_reg(TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB rx_cb)</div><div class="ttdoc">enable uart rx interrupt and regist interrupt callback</div></div>
+<div class="ttc" id="atkl__uart_8h_html_ab763a313b5dd290b986fcade69775561"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#ab763a313b5dd290b986fcade69775561">tkl_uart_tx_irq_cb_reg</a></div><div class="ttdeci">VOID_T tkl_uart_tx_irq_cb_reg(TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB tx_cb)</div><div class="ttdoc">regist uart tx interrupt callback If this function is called, it indicates that the data is sent asyn...</div></div>
+<div class="ttc" id="atkl__uart_8h_html_afee640bd28425fd058deba160ce48247"><div class="ttname"><a href="../../d9/d41/tkl__uart_8h.html#afee640bd28425fd058deba160ce48247">tkl_uart_set_rx_flowctrl</a></div><div class="ttdeci">OPERATE_RET tkl_uart_set_rx_flowctrl(TUYA_UART_NUM_E port_id, BOOL_T enable)</div><div class="ttdoc">set uart receive flowcontrol</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

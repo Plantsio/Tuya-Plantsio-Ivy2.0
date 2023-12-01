@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: mqtt_broker_handle_t结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">mqtt_broker_handle_t结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a9ab69668005e780ba5d967f9407a1226"><td class="memItemLeft" align="right" valign="top"><a id="a9ab69668005e780ba5d967f9407a1226" name="a9ab69668005e780ba5d967f9407a1226"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>alive</b></td></tr>
+<tr class="separator:a9ab69668005e780ba5d967f9407a1226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6a10fec995a17c758f57a47fdec3df"><td class="memItemLeft" align="right" valign="top"><a id="abe6a10fec995a17c758f57a47fdec3df" name="abe6a10fec995a17c758f57a47fdec3df"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>clean_session</b></td></tr>
+<tr class="separator:abe6a10fec995a17c758f57a47fdec3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5775a5d98521617889eec376cd6e7ef2"><td class="memItemLeft" align="right" valign="top"><a id="a5775a5d98521617889eec376cd6e7ef2" name="a5775a5d98521617889eec376cd6e7ef2"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>clientid</b> [50]</td></tr>
+<tr class="separator:a5775a5d98521617889eec376cd6e7ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d7cb52260bdbbd25b13a7d1f997f30"><td class="memItemLeft" align="right" valign="top"><a id="a07d7cb52260bdbbd25b13a7d1f997f30" name="a07d7cb52260bdbbd25b13a7d1f997f30"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>password</b> [16+1]</td></tr>
+<tr class="separator:a07d7cb52260bdbbd25b13a7d1f997f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f27194e939b861efeb63899c1ef295"><td class="memItemLeft" align="right" valign="top"><a id="a19f27194e939b861efeb63899c1ef295" name="a19f27194e939b861efeb63899c1ef295"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>sendBuf</b> )(void *socket_info, const void *buf, unsigned int count)</td></tr>
+<tr class="separator:a19f27194e939b861efeb63899c1ef295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7402c8cdef8cd741361db4408c4a7f"><td class="memItemLeft" align="right" valign="top"><a id="adb7402c8cdef8cd741361db4408c4a7f" name="adb7402c8cdef8cd741361db4408c4a7f"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>seq</b></td></tr>
+<tr class="separator:adb7402c8cdef8cd741361db4408c4a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92aed5f346d3407642bf44950727393f"><td class="memItemLeft" align="right" valign="top"><a id="a92aed5f346d3407642bf44950727393f" name="a92aed5f346d3407642bf44950727393f"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>socket_info</b></td></tr>
+<tr class="separator:a92aed5f346d3407642bf44950727393f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca46d016499ff4d55d5f98296125fc78"><td class="memItemLeft" align="right" valign="top"><a id="aca46d016499ff4d55d5f98296125fc78" name="aca46d016499ff4d55d5f98296125fc78"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>username</b> [40+1]</td></tr>
+<tr class="separator:aca46d016499ff4d55d5f98296125fc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e072b6ccb3d43b3900915b4a7a6de5b"><td class="memItemLeft" align="right" valign="top"><a id="a9e072b6ccb3d43b3900915b4a7a6de5b" name="a9e072b6ccb3d43b3900915b4a7a6de5b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>will_qos</b></td></tr>
+<tr class="separator:a9e072b6ccb3d43b3900915b4a7a6de5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c13600b493f9de4c681e8f613174e26"><td class="memItemLeft" align="right" valign="top"><a id="a8c13600b493f9de4c681e8f613174e26" name="a8c13600b493f9de4c681e8f613174e26"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>will_retain</b></td></tr>
+<tr class="separator:a8c13600b493f9de4c681e8f613174e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/components/lib_mqtt/include/<a class="el" href="../../d6/d81/libemqtt_8h_source.html">libemqtt.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/cellular_catx/include/tkl_cellular_keypad.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_b8ba071ca5cc1b1b8caa71befc3b9668.html">cellular_catx</a></li><li class="navelem"><a class="el" href="../../dir_cd70872c9112a79b6f8c2f63fe603ee2.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_cellular_keypad.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>蜂窝模组键盘功能API实现接口。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_cellular_keypad.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/tkl__cellular__keypad_8h__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__keypad_8h" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__keypad_8h" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__keypad_8h">
+<area shape="rect" title="蜂窝模组键盘功能API实现接口。" alt="" coords="125,5,309,61"/>
+<area shape="rect" title=" " alt="" coords="5,184,76,211"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="319,109,467,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="101,184,234,211"/>
+<area shape="rect" title=" " alt="" coords="258,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,428,211"/>
+<area shape="rect" title=" " alt="" coords="453,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="551,184,634,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,729,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="754,184,893,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dd4/tkl__cellular__keypad_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__keypad_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__keypad_8hdep" id="ainclude_2adapter_2cellular__catx_2include_2tkl__cellular__keypad_8hdep">
+<area shape="rect" title="蜂窝模组键盘功能API实现接口。" alt="" coords="7,5,191,61"/>
+<area shape="rect" href="../../df/d89/tkl__init__cellular_8h_source.html" title=" " alt="" coords="5,109,193,151"/>
+</map>
+</div>
+</div>
+<p><a href="../../d6/d52/tkl__cellular__keypad_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a9ae513ab11e691bc7554cf8b3a43c83b"><td class="memItemLeft" align="right" valign="top"><a id="a9ae513ab11e691bc7554cf8b3a43c83b" name="a9ae513ab11e691bc7554cf8b3a43c83b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELLULAR_KEY_CB</b>) (<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a> keyId, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a> state, void *ctx)</td></tr>
+<tr class="memdesc:a9ae513ab11e691bc7554cf8b3a43c83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya cat1 key event process callback defintion <br /></td></tr>
+<tr class="separator:a9ae513ab11e691bc7554cf8b3a43c83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693f16029e67de3ee68e09e0b3d25ffa"><td class="memItemLeft" align="right" valign="top"><a id="a693f16029e67de3ee68e09e0b3d25ffa" name="a693f16029e67de3ee68e09e0b3d25ffa"></a>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_CELLULAR_KEY_LISTENER</b></td></tr>
+<tr class="memdesc:a693f16029e67de3ee68e09e0b3d25ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya cellular key listener definition <br /></td></tr>
+<tr class="separator:a693f16029e67de3ee68e09e0b3d25ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a7fd3f0148e084dcfea263b2166924954"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954ab9fa270bdc52e1a67c869c3745897757">TUYA_KEY_MAP_POWER</a> = 0
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a60defb0ad79638941d61cf9e7d9c7bf3">TUYA_KEY_MAP_0</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954aa5161adc2e74833a8f161ca8f143417c">TUYA_KEY_MAP_1</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954ac21e5ee2e1d1f3adfdbfd8539815471b">TUYA_KEY_MAP_2</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a18cabdfc528ce9175539a4fc3f7a3083">TUYA_KEY_MAP_3</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a49f1b977224c0efaeff4c3b67232ed91">TUYA_KEY_MAP_4</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a8ade8c68fc0486aaae2c3eb0362e2fb7">TUYA_KEY_MAP_5</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a49c42e6300b4717c27e32d4face0119a">TUYA_KEY_MAP_6</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954abe2d83d9c5d6593dffadda3aa5c7e019">TUYA_KEY_MAP_7</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a9365b160d4aa62df2c8682385dfa1413">TUYA_KEY_MAP_8</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954afce2b6532fe16f6484de28ac112b2a83">TUYA_KEY_MAP_9</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a7a1447171f28b4cb59be520ebb6b65d1">TUYA_KEY_MAP_STAR</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a504e288c3ad2f5b8d2eacb3ef6073f8c">TUYA_KEY_MAP_SHARP</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954acf450739d9c7f24546ac55054ce58dda">TUYA_KEY_MAP_LEFT</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a412e7862cb71ec635a24588a08be7558">TUYA_KEY_MAP_RIGHT</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a12786d9038af49d8c9556809b93ee075">TUYA_KEY_MAP_UP</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a4737c5cce36fae80622ed4f580bfc847">TUYA_KEY_MAP_DOWN</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954abcbb61acf29f2016e36a692e2effbe91">TUYA_KEY_MAP_OK</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954adc1e68a9e112c8c14b56db9eca2a0f0c">TUYA_KEY_MAP_CANCLE</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954aee5e78ba9bb4d5d5159134f8052b579d">TUYA_KEY_MAP_SOFT_L</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954aa9bec6ac15460a9d5ad935e1c391f7a5">TUYA_KEY_MAP_SOFT_R</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954ad2be11ae9a4dc440fea8a0b184e2b7df">TUYA_KEY_MAP_SIM1</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954a428fbc5dcd68344fb3cac20d99e32684">TUYA_KEY_MAP_SIM2</a>
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954ac7cfdb11bf4eeabad714cd5a58bc96bd">TUYA_KEY_MAP_MAX_COUNT</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7fd3f0148e084dcfea263b2166924954"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya cellular module keypad logic definition  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">更多...</a><br /></td></tr>
+<tr class="separator:a7fd3f0148e084dcfea263b2166924954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3872649f21f55f6c5359ee9f90b805"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a> { <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805a28ab9b9b381a2b9da594b7c6d0ba6bf8">TUYA_KEY_PRESS</a> = (1 &lt;&lt; 0)
+, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805ad616691f286d3b51a1c39b97a2352039">TUYA_KEY_RELEASE</a> = (1 &lt;&lt; 1)
+ }</td></tr>
+<tr class="memdesc:aab3872649f21f55f6c5359ee9f90b805"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya cellular module key state definition  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">更多...</a><br /></td></tr>
+<tr class="separator:aab3872649f21f55f6c5359ee9f90b805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae95120b43da94120c2b10a008d542255"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#ae95120b43da94120c2b10a008d542255">tkl_cellular_keypad_init</a> (VOID *param)</td></tr>
+<tr class="memdesc:ae95120b43da94120c2b10a008d542255"><td class="mdescLeft">&#160;</td><td class="mdescRight">init tuya cellular keypad service.  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#ae95120b43da94120c2b10a008d542255">更多...</a><br /></td></tr>
+<tr class="separator:ae95120b43da94120c2b10a008d542255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2932431267053a21a36f6f7364ea385f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a2932431267053a21a36f6f7364ea385f">tkl_cellular_keypad_key_ioctl</a> (INT_T cmd, VOID *argv)</td></tr>
+<tr class="memdesc:a2932431267053a21a36f6f7364ea385f"><td class="mdescLeft">&#160;</td><td class="mdescRight">keypad ioctl.  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#a2932431267053a21a36f6f7364ea385f">更多...</a><br /></td></tr>
+<tr class="separator:a2932431267053a21a36f6f7364ea385f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8732a888b60c8e6a571c2f936b5978"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a4d8732a888b60c8e6a571c2f936b5978">tkl_cellular_keypad_key_listener_add</a> (<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a> keyId, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a9ae513ab11e691bc7554cf8b3a43c83b">TUYA_CELLULAR_KEY_CB</a> cb, void *ctx)</td></tr>
+<tr class="memdesc:a4d8732a888b60c8e6a571c2f936b5978"><td class="mdescLeft">&#160;</td><td class="mdescRight">add key event listener to keypad service.  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#a4d8732a888b60c8e6a571c2f936b5978">更多...</a><br /></td></tr>
+<tr class="separator:a4d8732a888b60c8e6a571c2f936b5978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcff2a955866c17f8b343071a49ec72"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aafcff2a955866c17f8b343071a49ec72">tkl_cellular_keypad_key_listener_delete</a> (<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a> listener)</td></tr>
+<tr class="memdesc:aafcff2a955866c17f8b343071a49ec72"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete key event listener from keypad service.  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#aafcff2a955866c17f8b343071a49ec72">更多...</a><br /></td></tr>
+<tr class="separator:aafcff2a955866c17f8b343071a49ec72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57a24b891d1472de8eed62d6bb528b1"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#ac57a24b891d1472de8eed62d6bb528b1">tkl_cellular_keypad_key_state_get</a> (<a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a> keyId, <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a> *state)</td></tr>
+<tr class="memdesc:ac57a24b891d1472de8eed62d6bb528b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current key state.  <a href="../../d6/d52/tkl__cellular__keypad_8h.html#ac57a24b891d1472de8eed62d6bb528b1">更多...</a><br /></td></tr>
+<tr class="separator:ac57a24b891d1472de8eed62d6bb528b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >蜂窝模组键盘功能API实现接口。 </p>
+<dl class="section author"><dt>作者</dt><dd>www.tuya.com</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (c) tuya.inc 2022 </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a7fd3f0148e084dcfea263b2166924954" name="a7fd3f0148e084dcfea263b2166924954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd3f0148e084dcfea263b2166924954">&#9670;&nbsp;</a></span>TUYA_KEYMAP_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya cellular module keypad logic definition </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954ab9fa270bdc52e1a67c869c3745897757" name="a7fd3f0148e084dcfea263b2166924954ab9fa270bdc52e1a67c869c3745897757"></a>TUYA_KEY_MAP_POWER&#160;</td><td class="fielddoc"><p >power key </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a60defb0ad79638941d61cf9e7d9c7bf3" name="a7fd3f0148e084dcfea263b2166924954a60defb0ad79638941d61cf9e7d9c7bf3"></a>TUYA_KEY_MAP_0&#160;</td><td class="fielddoc"><p >'0' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954aa5161adc2e74833a8f161ca8f143417c" name="a7fd3f0148e084dcfea263b2166924954aa5161adc2e74833a8f161ca8f143417c"></a>TUYA_KEY_MAP_1&#160;</td><td class="fielddoc"><p >'1' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954ac21e5ee2e1d1f3adfdbfd8539815471b" name="a7fd3f0148e084dcfea263b2166924954ac21e5ee2e1d1f3adfdbfd8539815471b"></a>TUYA_KEY_MAP_2&#160;</td><td class="fielddoc"><p >'2' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a18cabdfc528ce9175539a4fc3f7a3083" name="a7fd3f0148e084dcfea263b2166924954a18cabdfc528ce9175539a4fc3f7a3083"></a>TUYA_KEY_MAP_3&#160;</td><td class="fielddoc"><p >'3' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a49f1b977224c0efaeff4c3b67232ed91" name="a7fd3f0148e084dcfea263b2166924954a49f1b977224c0efaeff4c3b67232ed91"></a>TUYA_KEY_MAP_4&#160;</td><td class="fielddoc"><p >'4' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a8ade8c68fc0486aaae2c3eb0362e2fb7" name="a7fd3f0148e084dcfea263b2166924954a8ade8c68fc0486aaae2c3eb0362e2fb7"></a>TUYA_KEY_MAP_5&#160;</td><td class="fielddoc"><p >'5' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a49c42e6300b4717c27e32d4face0119a" name="a7fd3f0148e084dcfea263b2166924954a49c42e6300b4717c27e32d4face0119a"></a>TUYA_KEY_MAP_6&#160;</td><td class="fielddoc"><p >'6' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954abe2d83d9c5d6593dffadda3aa5c7e019" name="a7fd3f0148e084dcfea263b2166924954abe2d83d9c5d6593dffadda3aa5c7e019"></a>TUYA_KEY_MAP_7&#160;</td><td class="fielddoc"><p >'7' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a9365b160d4aa62df2c8682385dfa1413" name="a7fd3f0148e084dcfea263b2166924954a9365b160d4aa62df2c8682385dfa1413"></a>TUYA_KEY_MAP_8&#160;</td><td class="fielddoc"><p >'8' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954afce2b6532fe16f6484de28ac112b2a83" name="a7fd3f0148e084dcfea263b2166924954afce2b6532fe16f6484de28ac112b2a83"></a>TUYA_KEY_MAP_9&#160;</td><td class="fielddoc"><p >'9' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a7a1447171f28b4cb59be520ebb6b65d1" name="a7fd3f0148e084dcfea263b2166924954a7a1447171f28b4cb59be520ebb6b65d1"></a>TUYA_KEY_MAP_STAR&#160;</td><td class="fielddoc"><p >'*' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a504e288c3ad2f5b8d2eacb3ef6073f8c" name="a7fd3f0148e084dcfea263b2166924954a504e288c3ad2f5b8d2eacb3ef6073f8c"></a>TUYA_KEY_MAP_SHARP&#160;</td><td class="fielddoc"><p >'#' </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954acf450739d9c7f24546ac55054ce58dda" name="a7fd3f0148e084dcfea263b2166924954acf450739d9c7f24546ac55054ce58dda"></a>TUYA_KEY_MAP_LEFT&#160;</td><td class="fielddoc"><p >left </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a412e7862cb71ec635a24588a08be7558" name="a7fd3f0148e084dcfea263b2166924954a412e7862cb71ec635a24588a08be7558"></a>TUYA_KEY_MAP_RIGHT&#160;</td><td class="fielddoc"><p >right </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a12786d9038af49d8c9556809b93ee075" name="a7fd3f0148e084dcfea263b2166924954a12786d9038af49d8c9556809b93ee075"></a>TUYA_KEY_MAP_UP&#160;</td><td class="fielddoc"><p >up </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a4737c5cce36fae80622ed4f580bfc847" name="a7fd3f0148e084dcfea263b2166924954a4737c5cce36fae80622ed4f580bfc847"></a>TUYA_KEY_MAP_DOWN&#160;</td><td class="fielddoc"><p >down </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954abcbb61acf29f2016e36a692e2effbe91" name="a7fd3f0148e084dcfea263b2166924954abcbb61acf29f2016e36a692e2effbe91"></a>TUYA_KEY_MAP_OK&#160;</td><td class="fielddoc"><p >ok </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954adc1e68a9e112c8c14b56db9eca2a0f0c" name="a7fd3f0148e084dcfea263b2166924954adc1e68a9e112c8c14b56db9eca2a0f0c"></a>TUYA_KEY_MAP_CANCLE&#160;</td><td class="fielddoc"><p >cancel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954aee5e78ba9bb4d5d5159134f8052b579d" name="a7fd3f0148e084dcfea263b2166924954aee5e78ba9bb4d5d5159134f8052b579d"></a>TUYA_KEY_MAP_SOFT_L&#160;</td><td class="fielddoc"><p >left soft key </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954aa9bec6ac15460a9d5ad935e1c391f7a5" name="a7fd3f0148e084dcfea263b2166924954aa9bec6ac15460a9d5ad935e1c391f7a5"></a>TUYA_KEY_MAP_SOFT_R&#160;</td><td class="fielddoc"><p >rigfht soft key </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954ad2be11ae9a4dc440fea8a0b184e2b7df" name="a7fd3f0148e084dcfea263b2166924954ad2be11ae9a4dc440fea8a0b184e2b7df"></a>TUYA_KEY_MAP_SIM1&#160;</td><td class="fielddoc"><p >customized </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954a428fbc5dcd68344fb3cac20d99e32684" name="a7fd3f0148e084dcfea263b2166924954a428fbc5dcd68344fb3cac20d99e32684"></a>TUYA_KEY_MAP_SIM2&#160;</td><td class="fielddoc"><p >customized </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7fd3f0148e084dcfea263b2166924954ac7cfdb11bf4eeabad714cd5a58bc96bd" name="a7fd3f0148e084dcfea263b2166924954ac7cfdb11bf4eeabad714cd5a58bc96bd"></a>TUYA_KEY_MAP_MAX_COUNT&#160;</td><td class="fielddoc"><p >total count </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aab3872649f21f55f6c5359ee9f90b805" name="aab3872649f21f55f6c5359ee9f90b805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3872649f21f55f6c5359ee9f90b805">&#9670;&nbsp;</a></span>TUYA_KEYSTATE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tuya cellular module key state definition </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aab3872649f21f55f6c5359ee9f90b805a28ab9b9b381a2b9da594b7c6d0ba6bf8" name="aab3872649f21f55f6c5359ee9f90b805a28ab9b9b381a2b9da594b7c6d0ba6bf8"></a>TUYA_KEY_PRESS&#160;</td><td class="fielddoc"><p >key pressed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab3872649f21f55f6c5359ee9f90b805ad616691f286d3b51a1c39b97a2352039" name="aab3872649f21f55f6c5359ee9f90b805ad616691f286d3b51a1c39b97a2352039"></a>TUYA_KEY_RELEASE&#160;</td><td class="fielddoc"><p >key released </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ae95120b43da94120c2b10a008d542255" name="ae95120b43da94120c2b10a008d542255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95120b43da94120c2b10a008d542255">&#9670;&nbsp;</a></span>tkl_cellular_keypad_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_keypad_init </td>
+          <td>(</td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init tuya cellular keypad service. </p>
+<dl class="section note"><dt>注解</dt><dd>if keypad service init failed, system will be crash. </dd></dl>
+
+</div>
+</div>
+<a id="a2932431267053a21a36f6f7364ea385f" name="a2932431267053a21a36f6f7364ea385f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2932431267053a21a36f6f7364ea385f">&#9670;&nbsp;</a></span>tkl_cellular_keypad_key_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_keypad_key_ioctl </td>
+          <td>(</td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>keypad ioctl. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td></td></tr>
+    <tr><td class="paramname">argv</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4d8732a888b60c8e6a571c2f936b5978" name="a4d8732a888b60c8e6a571c2f936b5978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8732a888b60c8e6a571c2f936b5978">&#9670;&nbsp;</a></span>tkl_cellular_keypad_key_listener_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a> tkl_cellular_keypad_key_listener_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a>&#160;</td>
+          <td class="paramname"><em>keyId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a9ae513ab11e691bc7554cf8b3a43c83b">TUYA_CELLULAR_KEY_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add key event listener to keypad service. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyId</td><td>key id </td></tr>
+    <tr><td class="paramname">cb</td><td>user defined key event callback function </td></tr>
+    <tr><td class="paramname">ctx</td><td>argument for @cb </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>listener instance or NULL </dd></dl>
+
+</div>
+</div>
+<a id="aafcff2a955866c17f8b343071a49ec72" name="aafcff2a955866c17f8b343071a49ec72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcff2a955866c17f8b343071a49ec72">&#9670;&nbsp;</a></span>tkl_cellular_keypad_key_listener_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_keypad_key_listener_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a693f16029e67de3ee68e09e0b3d25ffa">TUYA_CELLULAR_KEY_LISTENER</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delete key event listener from keypad service. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>listener to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac57a24b891d1472de8eed62d6bb528b1" name="ac57a24b891d1472de8eed62d6bb528b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57a24b891d1472de8eed62d6bb528b1">&#9670;&nbsp;</a></span>tkl_cellular_keypad_key_state_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_cellular_keypad_key_state_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#a7fd3f0148e084dcfea263b2166924954">TUYA_KEYMAP_E</a>&#160;</td>
+          <td class="paramname"><em>keyId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d52/tkl__cellular__keypad_8h.html#aab3872649f21f55f6c5359ee9f90b805">TUYA_KEYSTATE_E</a> *&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get current key state. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyId[in]</td><td>key id </td></tr>
+    <tr><td class="paramname">state[out]</td><td>@TUYA_KEYSTATE_E TUYA_KEY_PRESS the key is pressed TUYA_KEY_RELEASE the key is released </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

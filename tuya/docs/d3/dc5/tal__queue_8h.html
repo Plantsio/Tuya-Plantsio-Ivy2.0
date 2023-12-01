@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_system/include/tal_queue.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_756eea2d6c45abe335e6af16c38cccfe.html">tal_system</a></li><li class="navelem"><a class="el" href="../../dir_a80ab866e44074dee44459bfafedc0dc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tal_queue.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - Initialization  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tal_queue.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dc0/tal__queue_8h__incl.png" border="0" usemap="#ainclude_2components_2tal__system_2include_2tal__queue_8h" alt=""/></div>
+<map name="ainclude_2components_2tal__system_2include_2tal__queue_8h" id="ainclude_2components_2tal__system_2include_2tal__queue_8h">
+<area shape="rect" title="Common process &#45; Initialization" alt="" coords="366,5,519,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,109,517,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,184,139,211"/>
+<area shape="rect" title=" " alt="" coords="163,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="262,184,333,211"/>
+<area shape="rect" title=" " alt="" coords="357,184,432,211"/>
+<area shape="rect" title=" " alt="" coords="457,184,527,211"/>
+<area shape="rect" title=" " alt="" coords="552,184,635,211"/>
+<area shape="rect" title=" " alt="" coords="659,184,730,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,184,893,211"/>
+</map>
+</div>
+</div>
+<p><a href="../../d3/dc5/tal__queue_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a036bdc674034f2b1352f03c258a525da"><td class="memItemLeft" align="right" valign="top"><a id="a036bdc674034f2b1352f03c258a525da" name="a036bdc674034f2b1352f03c258a525da"></a>
+typedef PVOID_T&#160;</td><td class="memItemRight" valign="bottom"><b>QUEUE_HANDLE</b></td></tr>
+<tr class="separator:a036bdc674034f2b1352f03c258a525da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a005f821491c9210b2059d7dbca432dd5"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/tal__queue_8h.html#a005f821491c9210b2059d7dbca432dd5">tal_queue_create_init</a> (QUEUE_HANDLE *queue, INT_T msgsize, INT_T msgcount)</td></tr>
+<tr class="memdesc:a005f821491c9210b2059d7dbca432dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create message queue  <a href="../../d3/dc5/tal__queue_8h.html#a005f821491c9210b2059d7dbca432dd5">更多...</a><br /></td></tr>
+<tr class="separator:a005f821491c9210b2059d7dbca432dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90660df5e3a3a522bf19bf5bde30afc2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/tal__queue_8h.html#a90660df5e3a3a522bf19bf5bde30afc2">tal_queue_fetch</a> (QUEUE_HANDLE queue, VOID_T *msg, UINT_T timeout)</td></tr>
+<tr class="memdesc:a90660df5e3a3a522bf19bf5bde30afc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch message from the message queue  <a href="../../d3/dc5/tal__queue_8h.html#a90660df5e3a3a522bf19bf5bde30afc2">更多...</a><br /></td></tr>
+<tr class="separator:a90660df5e3a3a522bf19bf5bde30afc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5024b1b68c81dd4f05c71d24404471ff"><td class="memItemLeft" align="right" valign="top">VOID_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/tal__queue_8h.html#a5024b1b68c81dd4f05c71d24404471ff">tal_queue_free</a> (QUEUE_HANDLE queue)</td></tr>
+<tr class="memdesc:a5024b1b68c81dd4f05c71d24404471ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the message queue  <a href="../../d3/dc5/tal__queue_8h.html#a5024b1b68c81dd4f05c71d24404471ff">更多...</a><br /></td></tr>
+<tr class="separator:a5024b1b68c81dd4f05c71d24404471ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32ca2b19ce9a1296b0a180abfe7e98a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc5/tal__queue_8h.html#ae32ca2b19ce9a1296b0a180abfe7e98a">tal_queue_post</a> (QUEUE_HANDLE queue, VOID_T *data, UINT_T timeout)</td></tr>
+<tr class="memdesc:ae32ca2b19ce9a1296b0a180abfe7e98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">post a message to the message queue  <a href="../../d3/dc5/tal__queue_8h.html#ae32ca2b19ce9a1296b0a180abfe7e98a">更多...</a><br /></td></tr>
+<tr class="separator:ae32ca2b19ce9a1296b0a180abfe7e98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - Initialization </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-08-24</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2031 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a005f821491c9210b2059d7dbca432dd5" name="a005f821491c9210b2059d7dbca432dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005f821491c9210b2059d7dbca432dd5">&#9670;&nbsp;</a></span>tal_queue_create_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_queue_create_init </td>
+          <td>(</td>
+          <td class="paramtype">QUEUE_HANDLE *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>msgsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_T&#160;</td>
+          <td class="paramname"><em>msgcount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create message queue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msgsize</td><td>message size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msgcount</td><td>message number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">queue</td><td>the queue handle created</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a90660df5e3a3a522bf19bf5bde30afc2" name="a90660df5e3a3a522bf19bf5bde30afc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90660df5e3a3a522bf19bf5bde30afc2">&#9670;&nbsp;</a></span>tal_queue_fetch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_queue_fetch </td>
+          <td>(</td>
+          <td class="paramtype">QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fetch message from the message queue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue</td><td>the message queue handle </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">msg</td><td>the message fetch form the message queue </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout time</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5024b1b68c81dd4f05c71d24404471ff" name="a5024b1b68c81dd4f05c71d24404471ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5024b1b68c81dd4f05c71d24404471ff">&#9670;&nbsp;</a></span>tal_queue_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID_T tal_queue_free </td>
+          <td>(</td>
+          <td class="paramtype">QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the message queue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue</td><td>the message queue handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>VOID_T </dd></dl>
+
+</div>
+</div>
+<a id="ae32ca2b19ce9a1296b0a180abfe7e98a" name="ae32ca2b19ce9a1296b0a180abfe7e98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32ca2b19ce9a1296b0a180abfe7e98a">&#9670;&nbsp;</a></span>tal_queue_post()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tal_queue_post </td>
+          <td>(</td>
+          <td class="paramtype">QUEUE_HANDLE&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>post a message to the message queue </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue</td><td>the handle of the queue </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the data of the message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout time</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

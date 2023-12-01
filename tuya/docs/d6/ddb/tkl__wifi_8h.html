@@ -1,0 +1,1382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/wifi/include/tkl_wifi.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_19dc2d4897d0e398c863d6b9d7cdfc55.html">wifi</a></li><li class="navelem"><a class="el" href="../../dir_864572b9ba758437d5056de1d46501fb.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_wifi.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - adapter the wi-fi api  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_wifi.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d7b/tkl__wifi_8h__incl.png" border="0" usemap="#ainclude_2adapter_2wifi_2include_2tkl__wifi_8h" alt=""/></div>
+<map name="ainclude_2adapter_2wifi_2include_2tkl__wifi_8h" id="ainclude_2adapter_2wifi_2include_2tkl__wifi_8h">
+<area shape="rect" title="Common process &#45; adapter the wi&#45;fi api" alt="" coords="367,5,518,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/de8/tkl__wifi_8h__dep__incl.png" border="0" usemap="#ainclude_2adapter_2wifi_2include_2tkl__wifi_8hdep" alt=""/></div>
+<map name="ainclude_2adapter_2wifi_2include_2tkl__wifi_8hdep" id="ainclude_2adapter_2wifi_2include_2tkl__wifi_8hdep">
+<area shape="rect" title="Common process &#45; adapter the wi&#45;fi api" alt="" coords="132,5,283,47"/>
+<area shape="rect" href="../../da/d16/tkl__init__wifi_8h.html" title="Common process &#45; tkl init wifi description" alt="" coords="5,102,169,143"/>
+<area shape="rect" href="../../d8/ddc/tal__wifi_8h.html" title="Common process" alt="" coords="188,199,341,255"/>
+<area shape="rect" href="../../d3/df4/tal__wifi__mgnt_8h.html" title="wifi interface" alt="" coords="245,95,399,151"/>
+<area shape="rect" href="../../d1/d86/netcfg__module_8h.html" title="tuya netcfg module" alt="" coords="71,303,245,359"/>
+<area shape="rect" href="../../da/dec/wifi__netcfg__frame__transporter_8h_source.html" title=" " alt="" coords="269,303,476,359"/>
+</map>
+</div>
+</div>
+<p><a href="../../d6/ddb/tkl__wifi_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d57/structWF__IOCTL__BEACON__T.html">WF_IOCTL_BEACON_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a1643a6bc0f91b134cf4561b405d3f9f8"><td class="memItemLeft" align="right" valign="top"><a id="a1643a6bc0f91b134cf4561b405d3f9f8" name="a1643a6bc0f91b134cf4561b405d3f9f8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_PASSWD_LEN</b>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a1643a6bc0f91b134cf4561b405d3f9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e9c7a361140f022b91384286bd4f65"><td class="memItemLeft" align="right" valign="top"><a id="a92e9c7a361140f022b91384286bd4f65" name="a92e9c7a361140f022b91384286bd4f65"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_SSID_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a92e9c7a361140f022b91384286bd4f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a92db2c303158e06a11b06e1a27d14a02"><td class="memItemLeft" align="right" valign="top">typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">SNIFFER_CALLBACK</a>) (CONST UINT8_T *buf, CONST UINT16_T len, CONST INT8_T rssi)</td></tr>
+<tr class="memdesc:a92db2c303158e06a11b06e1a27d14a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback function: SNIFFER_CALLBACK when wifi sniffers package from air, notify tuyaos with this callback. the package should include  <a href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">更多...</a><br /></td></tr>
+<tr class="separator:a92db2c303158e06a11b06e1a27d14a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224f2c57b0d7572ead60da6d5c918aba"><td class="memItemLeft" align="right" valign="top">typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">WIFI_EVENT_CB</a>) (WF_EVENT_E event, VOID_T *arg)</td></tr>
+<tr class="memdesc:a224f2c57b0d7572ead60da6d5c918aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback function: WIFI_STATUS_CHANGE_CB when wifi connect status changed, notify tuyaos with this callback.  <a href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">更多...</a><br /></td></tr>
+<tr class="separator:a224f2c57b0d7572ead60da6d5c918aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a34a7f37758e0e4f4b12ac99fb1e82"><td class="memItemLeft" align="right" valign="top">typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a>) (UCHAR_T *buf, UINT_T len)</td></tr>
+<tr class="memdesc:a18a34a7f37758e0e4f4b12ac99fb1e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback function: WIFI_REV_MGNT_CB when receive wifi management frame, notify tuyaos with this callback.  <a href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">更多...</a><br /></td></tr>
+<tr class="separator:a18a34a7f37758e0e4f4b12ac99fb1e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8fc9a1fb24175ebabbbe075844074bd9"><td class="memItemLeft" align="right" valign="top"><a id="a8fc9a1fb24175ebabbbe075844074bd9" name="a8fc9a1fb24175ebabbbe075844074bd9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>COUNTRY_CODE_E</b> { <b>COUNTRY_CODE_CN</b>
+, <b>COUNTRY_CODE_US</b>
+, <b>COUNTRY_CODE_JP</b>
+, <b>COUNTRY_CODE_EU</b>
+ }</td></tr>
+<tr class="separator:a8fc9a1fb24175ebabbbe075844074bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2469177ba0ae4083fb424b9aaf1ce8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8">WF_AP_AUTH_MODE_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8a436b4dfe2fedb4db3c767c9d773cf92c">WAAM_OPEN</a> = 0
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8aa692739e68e7f361b4c2fa7f2850afaf">WAAM_WEP</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8a9cb3a5065543b6efa8f2ab2e04513066">WAAM_WPA_PSK</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8a53c9ef041f7490c9e5c1090c6ebc7086">WAAM_WPA2_PSK</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8a58fabcc5e58f5f317afd544c656b536b">WAAM_WPA_WPA2_PSK</a>
+, <b>WAAM_WPA_WPA3_SAE</b>
+, <b>WAAM_UNKNOWN</b>
+<br />
+ }</td></tr>
+<tr class="separator:a1c2469177ba0ae4083fb424b9aaf1ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b5805f411ca7740ff25d99e08da41f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41f">WF_DISCONN_REASON_E</a> { <br />
+&#160;&#160;<b>TUYA_WLAN_REASON_NONE</b>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41faaa89554f6b5bff4e1e08e235b949ed2e">TUYA_WLAN_REASON_UNSPECIFIED</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa01c29a98706af2c6a22e2e91277fcca9">TUYA_WLAN_REASON_SSID_NOT_FOUND</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa699f3cb5d6923a05b5ef8f09b2351434">TUYA_WLAN_REASON_SAE_AUTH_FAILED</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa0f7f93430c471c2251989586aa5ab245">TUYA_WLAN_REASON_ASSOC_REJECTED_TEMPORARILY</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa1952b4eda6982b96f2798a45dc7f84e4">TUYA_WLAN_REASON_NOT_AUTHED</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa3dc66e5a54b51e8362e69a30c2b95375">TUYA_WLAN_REASON_INVALID_RSN_IE</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa3688a44da4b6eba6caef4e75e77b500c">TUYA_WLAN_REASON_GROUP_CIPHER_INVALID</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fad371ac7c1dc5aac2bcba73fb7c464fa5">TUYA_WLAN_REASON_PAIRWISE_CIPHER_INVALID</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fac5d02717cafa45e6f70b18e884989493">TUYA_WLAN_REASON_UNSPPORTED_RSN_IE_VERSION</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa5b4b741adcb0dbf8376df87d09843249">TUYA_WLAN_REASON_AKMP_INVALID</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fafc1e03d33a680ae93a2e7f5b621996fc">TUYA_WLAN_REASON_INVALID_RSN_IE_CAP</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fad68d203b8f0c5f185347e44d97b9563f">TUYA_WLAN_REASON_CIPHER_REJECTED_PER_POLICY</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa97b6f8eec039d610e8f92a69347c052e">TUYA_WLAN_REASON_PMF_REQUIRED</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fad856c0b6367c7d59c9fb62a031acb18d">TUYA_WLAN_REASON_PREV_AUTH_INVALID</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa0c32252d30211ef70dcda072ae689f77">TUYA_WLAN_REASON_NOT_ASSOCED</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41faf2eac1eec2c4704caaebed7d446e9a97">TUYA_WLAN_REASON_WRONG_PASSWORD</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fac85a1fdffd061632bb04277e146400b9">TUYA_WLAN_REASON_MIC_FAILURE</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41faf4917ba1ca6a33600bf95ab249c56a6d">TUYA_WLAN_REASON_RSN_IE_IN_4WAYS_MISMATCH</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fada772e3d8eb34b034b611b9838d65db4">TUYA_WLAN_REASON_4WAYS_HANDSHAKE_TIMEOUT</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41faf2dc298678cc9f4dd2bf25c9a040f21e">TUYA_WLAN_REASON_INACTIVITY_DISCONNECT</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41fa33858b935adc2452690463334c244b6a">TUYA_WLAN_REASON_DEAUTH_LEAVING</a>
+, <b>TUYA_WLAN_REASON_MAX</b>
+<br />
+ }</td></tr>
+<tr class="separator:a69b5805f411ca7740ff25d99e08da41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c02d8df0303f5e3a9ce1f3e7cb2ab3"><td class="memItemLeft" align="right" valign="top"><a id="ad1c02d8df0303f5e3a9ce1f3e7cb2ab3" name="ad1c02d8df0303f5e3a9ce1f3e7cb2ab3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WF_EVENT_E</b> { <b>WFE_CONNECTED</b>
+, <b>WFE_CONNECT_FAILED</b>
+, <b>WFE_DISCONNECTED</b>
+ }</td></tr>
+<tr class="separator:ad1c02d8df0303f5e3a9ce1f3e7cb2ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530e4e49af06998dc886844293cab8cc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> { <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cca1ff0cc7a9ba1bd0eec9466fe8168eb75">WF_STATION</a> = 0
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cca0ad8d23ac6a655507d70afd92735b835">WF_AP</a>
+ }</td></tr>
+<tr class="separator:a530e4e49af06998dc886844293cab8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234d52fe87590dc48d5087ce92d75153"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a> { <b>WFI_BEACON_CMD</b>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153a484b2483c112185c91d6d28bfe09f715">WFI_GET_LAST_DISCONN_REASON</a>
+ }</td></tr>
+<tr class="separator:a234d52fe87590dc48d5087ce92d75153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62114fe9fa3487aadaa136276ce601d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601da40981d88f40b942cdfe3628ca656ffcc">WSS_IDLE</a> = 0
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601daaa6af51ae7bd5bac317707c90289c898">WSS_CONNECTING</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601da68b35af1cfc94e4ca25769dd3dc6eb15">WSS_PASSWD_WRONG</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601da709caf81e67e0132fe98f44d4e101042">WSS_NO_AP_FOUND</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601dac97ba4fcb79201b3b064146ef3470495">WSS_CONN_FAIL</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601da877c991f04c4f3261873fd1f255104eb">WSS_CONN_SUCCESS</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601daf4066a39386cbc9b9ca31ba09b5456a3">WSS_GOT_IP</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601da45d784b755f4a05b4d175e78bcf60163">WSS_DHCP_FAIL</a>
+<br />
+ }</td></tr>
+<tr class="separator:af62114fe9fa3487aadaa136276ce601d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d2f1fa0399f809de7b01af96c64d0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> { <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0da24778887bc43bff0e7b762bbcade7c10">WWM_POWERDOWN</a> = 0
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0daa642615b7e2dc7d7066a704e21e15e15">WWM_SNIFFER</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0da7c4bafd7e4f4d562522b40aa834e3273">WWM_STATION</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0dab7d5e8053fa9e3ec705d7502b02a31cc">WWM_SOFTAP</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0da0f98790c15591fc4ae8cf96ed20b22ac">WWM_STATIONAP</a>
+, <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0daa8ca195dacbd3e017ad3b937c55186dc">WWM_UNKNOWN</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac7d2f1fa0399f809de7b01af96c64d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:afa89b7b5a8ee5f441e43272517e7fed2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#afa89b7b5a8ee5f441e43272517e7fed2">tkl_wifi_get_bssid</a> (UCHAR_T *mac)</td></tr>
+<tr class="memdesc:afa89b7b5a8ee5f441e43272517e7fed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi bssid  <a href="../../d6/ddb/tkl__wifi_8h.html#afa89b7b5a8ee5f441e43272517e7fed2">更多...</a><br /></td></tr>
+<tr class="separator:afa89b7b5a8ee5f441e43272517e7fed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4389be8dff161a3e360b98c25bd54b89"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a4389be8dff161a3e360b98c25bd54b89">tkl_wifi_get_connected_ap_info</a> (<a class="el" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> **fast_ap_info)</td></tr>
+<tr class="memdesc:a4389be8dff161a3e360b98c25bd54b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">: get ap info for fast connect  <a href="../../d6/ddb/tkl__wifi_8h.html#a4389be8dff161a3e360b98c25bd54b89">更多...</a><br /></td></tr>
+<tr class="separator:a4389be8dff161a3e360b98c25bd54b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af712aa02dd82ddcdc5313efa64a4ea73"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af712aa02dd82ddcdc5313efa64a4ea73">tkl_wifi_get_cur_channel</a> (UCHAR_T *chan)</td></tr>
+<tr class="memdesc:af712aa02dd82ddcdc5313efa64a4ea73"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi interface work channel  <a href="../../d6/ddb/tkl__wifi_8h.html#af712aa02dd82ddcdc5313efa64a4ea73">更多...</a><br /></td></tr>
+<tr class="separator:af712aa02dd82ddcdc5313efa64a4ea73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ac0019656e1186553c24f12c741e2c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac2ac0019656e1186553c24f12c741e2c">tkl_wifi_get_ip</a> (CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, <a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *ip)</td></tr>
+<tr class="memdesc:ac2ac0019656e1186553c24f12c741e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi ip info.when wifi works in ap+station mode, wifi has two ips.  <a href="../../d6/ddb/tkl__wifi_8h.html#ac2ac0019656e1186553c24f12c741e2c">更多...</a><br /></td></tr>
+<tr class="separator:ac2ac0019656e1186553c24f12c741e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6821dd9aa442fe0cb0821549c01bd3e9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a6821dd9aa442fe0cb0821549c01bd3e9">tkl_wifi_get_mac</a> (CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac)</td></tr>
+<tr class="memdesc:a6821dd9aa442fe0cb0821549c01bd3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi mac info.when wifi works in ap+station mode, wifi has two macs.  <a href="../../d6/ddb/tkl__wifi_8h.html#a6821dd9aa442fe0cb0821549c01bd3e9">更多...</a><br /></td></tr>
+<tr class="separator:a6821dd9aa442fe0cb0821549c01bd3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09214e5091dee00cb7f5aac1099fea4"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ad09214e5091dee00cb7f5aac1099fea4">tkl_wifi_get_work_mode</a> (<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> *mode)</td></tr>
+<tr class="memdesc:ad09214e5091dee00cb7f5aac1099fea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi work mode  <a href="../../d6/ddb/tkl__wifi_8h.html#ad09214e5091dee00cb7f5aac1099fea4">更多...</a><br /></td></tr>
+<tr class="separator:ad09214e5091dee00cb7f5aac1099fea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a3fb23776cd502f8cab42f61f6a43f"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a47a3fb23776cd502f8cab42f61f6a43f">tkl_wifi_init</a> (<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">WIFI_EVENT_CB</a> cb)</td></tr>
+<tr class="memdesc:a47a3fb23776cd502f8cab42f61f6a43f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi station work status changed callback  <a href="../../d6/ddb/tkl__wifi_8h.html#a47a3fb23776cd502f8cab42f61f6a43f">更多...</a><br /></td></tr>
+<tr class="separator:a47a3fb23776cd502f8cab42f61f6a43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5416ae9cacdf7b2efaf4c871775470"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a4a5416ae9cacdf7b2efaf4c871775470">tkl_wifi_ioctl</a> (<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a> cmd, VOID *args)</td></tr>
+<tr class="memdesc:a4a5416ae9cacdf7b2efaf4c871775470"><td class="mdescLeft">&#160;</td><td class="mdescRight">wifi ioctl  <a href="../../d6/ddb/tkl__wifi_8h.html#a4a5416ae9cacdf7b2efaf4c871775470">更多...</a><br /></td></tr>
+<tr class="separator:a4a5416ae9cacdf7b2efaf4c871775470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed30c7e43622fd64044dc9ff1159834a"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#aed30c7e43622fd64044dc9ff1159834a">tkl_wifi_register_recv_mgnt_callback</a> (CONST BOOL_T enable, CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a> recv_cb)</td></tr>
+<tr class="memdesc:aed30c7e43622fd64044dc9ff1159834a"><td class="mdescLeft">&#160;</td><td class="mdescRight">register receive wifi management callback  <a href="../../d6/ddb/tkl__wifi_8h.html#aed30c7e43622fd64044dc9ff1159834a">更多...</a><br /></td></tr>
+<tr class="separator:aed30c7e43622fd64044dc9ff1159834a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ed96cacd03f4217d996dddc68b0598"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac8ed96cacd03f4217d996dddc68b0598">tkl_wifi_release_ap</a> (<a class="el" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> *ap)</td></tr>
+<tr class="memdesc:ac8ed96cacd03f4217d996dddc68b0598"><td class="mdescLeft">&#160;</td><td class="mdescRight">release the memory malloced in &lt;tkl_wifi_ap_scan&gt; if needed. tuyaos will call this function when the ap info is no use.  <a href="../../d6/ddb/tkl__wifi_8h.html#ac8ed96cacd03f4217d996dddc68b0598">更多...</a><br /></td></tr>
+<tr class="separator:ac8ed96cacd03f4217d996dddc68b0598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f33d0a79dc6125c3fd4b95bec27eeb6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a7f33d0a79dc6125c3fd4b95bec27eeb6">tkl_wifi_scan_ap</a> (CONST SCHAR_T *ssid, <a class="el" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> **ap_ary, UINT_T *num)</td></tr>
+<tr class="memdesc:a7f33d0a79dc6125c3fd4b95bec27eeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">scan current environment and obtain the ap infos in current environment  <a href="../../d6/ddb/tkl__wifi_8h.html#a7f33d0a79dc6125c3fd4b95bec27eeb6">更多...</a><br /></td></tr>
+<tr class="separator:a7f33d0a79dc6125c3fd4b95bec27eeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9f2acd22350256232c98cb0863ccce"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#abf9f2acd22350256232c98cb0863ccce">tkl_wifi_send_mgnt</a> (CONST UCHAR_T *buf, CONST UINT_T len)</td></tr>
+<tr class="memdesc:abf9f2acd22350256232c98cb0863ccce"><td class="mdescLeft">&#160;</td><td class="mdescRight">send wifi management  <a href="../../d6/ddb/tkl__wifi_8h.html#abf9f2acd22350256232c98cb0863ccce">更多...</a><br /></td></tr>
+<tr class="separator:abf9f2acd22350256232c98cb0863ccce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af5396a45db9514ab971411d1d4d7d9"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a9af5396a45db9514ab971411d1d4d7d9">tkl_wifi_set_country_code</a> (CONST COUNTRY_CODE_E ccode)</td></tr>
+<tr class="memdesc:a9af5396a45db9514ab971411d1d4d7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi country code  <a href="../../d6/ddb/tkl__wifi_8h.html#a9af5396a45db9514ab971411d1d4d7d9">更多...</a><br /></td></tr>
+<tr class="separator:a9af5396a45db9514ab971411d1d4d7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12d424efc5cd7e2f2b6941752c7929e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ab12d424efc5cd7e2f2b6941752c7929e">tkl_wifi_set_cur_channel</a> (CONST UCHAR_T chan)</td></tr>
+<tr class="memdesc:ab12d424efc5cd7e2f2b6941752c7929e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi interface work channel  <a href="../../d6/ddb/tkl__wifi_8h.html#ab12d424efc5cd7e2f2b6941752c7929e">更多...</a><br /></td></tr>
+<tr class="separator:ab12d424efc5cd7e2f2b6941752c7929e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c036c3839efdc59e24088785e48902"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a06c036c3839efdc59e24088785e48902">tkl_wifi_set_lp_mode</a> (CONST BOOL_T enable, CONST UCHAR_T dtim)</td></tr>
+<tr class="memdesc:a06c036c3839efdc59e24088785e48902"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi lowpower mode  <a href="../../d6/ddb/tkl__wifi_8h.html#a06c036c3839efdc59e24088785e48902">更多...</a><br /></td></tr>
+<tr class="separator:a06c036c3839efdc59e24088785e48902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e18d5fe8caca040025a67fc7a2256ab"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a8e18d5fe8caca040025a67fc7a2256ab">tkl_wifi_set_mac</a> (CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a> wf, CONST <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *mac)</td></tr>
+<tr class="memdesc:a8e18d5fe8caca040025a67fc7a2256ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi mac info.when wifi works in ap+station mode, wifi has two macs.  <a href="../../d6/ddb/tkl__wifi_8h.html#a8e18d5fe8caca040025a67fc7a2256ab">更多...</a><br /></td></tr>
+<tr class="separator:a8e18d5fe8caca040025a67fc7a2256ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34dd77c97da16d0985e3424f32e75a72"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a34dd77c97da16d0985e3424f32e75a72">tkl_wifi_set_rf_calibrated</a> (VOID_T)</td></tr>
+<tr class="memdesc:a34dd77c97da16d0985e3424f32e75a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">do wifi calibration  <a href="../../d6/ddb/tkl__wifi_8h.html#a34dd77c97da16d0985e3424f32e75a72">更多...</a><br /></td></tr>
+<tr class="separator:a34dd77c97da16d0985e3424f32e75a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c87348720068f10ec444f623cbeb05"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ab7c87348720068f10ec444f623cbeb05">tkl_wifi_set_sniffer</a> (CONST BOOL_T en, CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">SNIFFER_CALLBACK</a> cb)</td></tr>
+<tr class="memdesc:ab7c87348720068f10ec444f623cbeb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable / disable wifi sniffer mode. if wifi sniffer mode is enabled, wifi recv from packages from the air, and user shoud send these packages to tuya-sdk with callback &lt;cb&gt;.  <a href="../../d6/ddb/tkl__wifi_8h.html#ab7c87348720068f10ec444f623cbeb05">更多...</a><br /></td></tr>
+<tr class="separator:ab7c87348720068f10ec444f623cbeb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa9ef141747c53ccdef150bcb1680c0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#acfa9ef141747c53ccdef150bcb1680c0">tkl_wifi_set_work_mode</a> (CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> mode)</td></tr>
+<tr class="memdesc:acfa9ef141747c53ccdef150bcb1680c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi work mode  <a href="../../d6/ddb/tkl__wifi_8h.html#acfa9ef141747c53ccdef150bcb1680c0">更多...</a><br /></td></tr>
+<tr class="separator:acfa9ef141747c53ccdef150bcb1680c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efbba1cf243ddc4509d7fe65c6890a6"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a8efbba1cf243ddc4509d7fe65c6890a6">tkl_wifi_start_ap</a> (CONST <a class="el" href="../../d5/de4/structWF__AP__CFG__IF__S.html">WF_AP_CFG_IF_S</a> *cfg)</td></tr>
+<tr class="memdesc:a8efbba1cf243ddc4509d7fe65c6890a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">start a soft ap  <a href="../../d6/ddb/tkl__wifi_8h.html#a8efbba1cf243ddc4509d7fe65c6890a6">更多...</a><br /></td></tr>
+<tr class="separator:a8efbba1cf243ddc4509d7fe65c6890a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15edbb9661ce467adcaec8efc66b2a54"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a15edbb9661ce467adcaec8efc66b2a54">tkl_wifi_station_connect</a> (CONST SCHAR_T *ssid, CONST SCHAR_T *passwd)</td></tr>
+<tr class="memdesc:a15edbb9661ce467adcaec8efc66b2a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">connect wifi with ssid and passwd  <a href="../../d6/ddb/tkl__wifi_8h.html#a15edbb9661ce467adcaec8efc66b2a54">更多...</a><br /></td></tr>
+<tr class="separator:a15edbb9661ce467adcaec8efc66b2a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7d82d3aedaf81202ef7bba96c2ec81"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a0e7d82d3aedaf81202ef7bba96c2ec81">tkl_wifi_station_disconnect</a> (VOID_T)</td></tr>
+<tr class="memdesc:a0e7d82d3aedaf81202ef7bba96c2ec81"><td class="mdescLeft">&#160;</td><td class="mdescRight">disconnect wifi from connect ap  <a href="../../d6/ddb/tkl__wifi_8h.html#a0e7d82d3aedaf81202ef7bba96c2ec81">更多...</a><br /></td></tr>
+<tr class="separator:a0e7d82d3aedaf81202ef7bba96c2ec81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799bf7660c5d9666fc97fc190d10a64e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a799bf7660c5d9666fc97fc190d10a64e">tkl_wifi_station_fast_connect</a> (CONST <a class="el" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> *fast_ap_info)</td></tr>
+<tr class="memdesc:a799bf7660c5d9666fc97fc190d10a64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">: fast connect  <a href="../../d6/ddb/tkl__wifi_8h.html#a799bf7660c5d9666fc97fc190d10a64e">更多...</a><br /></td></tr>
+<tr class="separator:a799bf7660c5d9666fc97fc190d10a64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b2d39ae7f0d7913ddd42763f94943"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a414b2d39ae7f0d7913ddd42763f94943">tkl_wifi_station_get_conn_ap_rssi</a> (SCHAR_T *rssi)</td></tr>
+<tr class="memdesc:a414b2d39ae7f0d7913ddd42763f94943"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi connect rssi  <a href="../../d6/ddb/tkl__wifi_8h.html#a414b2d39ae7f0d7913ddd42763f94943">更多...</a><br /></td></tr>
+<tr class="separator:a414b2d39ae7f0d7913ddd42763f94943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b25bf108a7a2d9a6c12ef17d3ceb37"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a98b25bf108a7a2d9a6c12ef17d3ceb37">tkl_wifi_station_get_status</a> (<a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a> *stat)</td></tr>
+<tr class="memdesc:a98b25bf108a7a2d9a6c12ef17d3ceb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi station work status  <a href="../../d6/ddb/tkl__wifi_8h.html#a98b25bf108a7a2d9a6c12ef17d3ceb37">更多...</a><br /></td></tr>
+<tr class="separator:a98b25bf108a7a2d9a6c12ef17d3ceb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe97bc2596dfe01541f59ade106f71e"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a5fe97bc2596dfe01541f59ade106f71e">tkl_wifi_stop_ap</a> (VOID_T)</td></tr>
+<tr class="memdesc:a5fe97bc2596dfe01541f59ade106f71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop a soft ap  <a href="../../d6/ddb/tkl__wifi_8h.html#a5fe97bc2596dfe01541f59ade106f71e">更多...</a><br /></td></tr>
+<tr class="separator:a5fe97bc2596dfe01541f59ade106f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - adapter the wi-fi api </p>
+<p >Common process - adapter the wi-fi hostap api</p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-11-09</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a92db2c303158e06a11b06e1a27d14a02" name="a92db2c303158e06a11b06e1a27d14a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92db2c303158e06a11b06e1a27d14a02">&#9670;&nbsp;</a></span>SNIFFER_CALLBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID_T(* SNIFFER_CALLBACK) (CONST UINT8_T *buf, CONST UINT16_T len, CONST INT8_T rssi)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback function: SNIFFER_CALLBACK when wifi sniffers package from air, notify tuyaos with this callback. the package should include </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buf wifi recv </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the len of buf </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a224f2c57b0d7572ead60da6d5c918aba" name="a224f2c57b0d7572ead60da6d5c918aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224f2c57b0d7572ead60da6d5c918aba">&#9670;&nbsp;</a></span>WIFI_EVENT_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID_T(* WIFI_EVENT_CB) (WF_EVENT_E event, VOID_T *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback function: WIFI_STATUS_CHANGE_CB when wifi connect status changed, notify tuyaos with this callback. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">is_up</td><td>the wifi link status is up or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18a34a7f37758e0e4f4b12ac99fb1e82" name="a18a34a7f37758e0e4f4b12ac99fb1e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a34a7f37758e0e4f4b12ac99fb1e82">&#9670;&nbsp;</a></span>WIFI_REV_MGNT_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID_T(* WIFI_REV_MGNT_CB) (UCHAR_T *buf, UINT_T len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback function: WIFI_REV_MGNT_CB when receive wifi management frame, notify tuyaos with this callback. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the buf wifi recv </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the len of buf </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a1c2469177ba0ae4083fb424b9aaf1ce8" name="a1c2469177ba0ae4083fb424b9aaf1ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2469177ba0ae4083fb424b9aaf1ce8">&#9670;&nbsp;</a></span>WF_AP_AUTH_MODE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a1c2469177ba0ae4083fb424b9aaf1ce8">WF_AP_AUTH_MODE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1c2469177ba0ae4083fb424b9aaf1ce8a436b4dfe2fedb4db3c767c9d773cf92c" name="a1c2469177ba0ae4083fb424b9aaf1ce8a436b4dfe2fedb4db3c767c9d773cf92c"></a>WAAM_OPEN&#160;</td><td class="fielddoc"><p >open </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c2469177ba0ae4083fb424b9aaf1ce8aa692739e68e7f361b4c2fa7f2850afaf" name="a1c2469177ba0ae4083fb424b9aaf1ce8aa692739e68e7f361b4c2fa7f2850afaf"></a>WAAM_WEP&#160;</td><td class="fielddoc"><p >WEP </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c2469177ba0ae4083fb424b9aaf1ce8a9cb3a5065543b6efa8f2ab2e04513066" name="a1c2469177ba0ae4083fb424b9aaf1ce8a9cb3a5065543b6efa8f2ab2e04513066"></a>WAAM_WPA_PSK&#160;</td><td class="fielddoc"><p >WPA—PSK </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c2469177ba0ae4083fb424b9aaf1ce8a53c9ef041f7490c9e5c1090c6ebc7086" name="a1c2469177ba0ae4083fb424b9aaf1ce8a53c9ef041f7490c9e5c1090c6ebc7086"></a>WAAM_WPA2_PSK&#160;</td><td class="fielddoc"><p >WPA2—PSK </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c2469177ba0ae4083fb424b9aaf1ce8a58fabcc5e58f5f317afd544c656b536b" name="a1c2469177ba0ae4083fb424b9aaf1ce8a58fabcc5e58f5f317afd544c656b536b"></a>WAAM_WPA_WPA2_PSK&#160;</td><td class="fielddoc"><p >WPA/WPA2 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a69b5805f411ca7740ff25d99e08da41f" name="a69b5805f411ca7740ff25d99e08da41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b5805f411ca7740ff25d99e08da41f">&#9670;&nbsp;</a></span>WF_DISCONN_REASON_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a69b5805f411ca7740ff25d99e08da41f">WF_DISCONN_REASON_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41faaa89554f6b5bff4e1e08e235b949ed2e" name="a69b5805f411ca7740ff25d99e08da41faaa89554f6b5bff4e1e08e235b949ed2e"></a>TUYA_WLAN_REASON_UNSPECIFIED&#160;</td><td class="fielddoc"><p >Unspecified reason <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa01c29a98706af2c6a22e2e91277fcca9" name="a69b5805f411ca7740ff25d99e08da41fa01c29a98706af2c6a22e2e91277fcca9"></a>TUYA_WLAN_REASON_SSID_NOT_FOUND&#160;</td><td class="fielddoc"><p >Cannot found the ssid for wlan scan </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa699f3cb5d6923a05b5ef8f09b2351434" name="a69b5805f411ca7740ff25d99e08da41fa699f3cb5d6923a05b5ef8f09b2351434"></a>TUYA_WLAN_REASON_SAE_AUTH_FAILED&#160;</td><td class="fielddoc"><p >WPA3 SAE auth failed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa0f7f93430c471c2251989586aa5ab245" name="a69b5805f411ca7740ff25d99e08da41fa0f7f93430c471c2251989586aa5ab245"></a>TUYA_WLAN_REASON_ASSOC_REJECTED_TEMPORARILY&#160;</td><td class="fielddoc"><p >Station has already been associated with MFP and SA Query timeout has not been reached. Reject the association attempt temporarily and start SA Query, if one is not pending. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa1952b4eda6982b96f2798a45dc7f84e4" name="a69b5805f411ca7740ff25d99e08da41fa1952b4eda6982b96f2798a45dc7f84e4"></a>TUYA_WLAN_REASON_NOT_AUTHED&#160;</td><td class="fielddoc"><p >Station tried to associate before authentication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa3dc66e5a54b51e8362e69a30c2b95375" name="a69b5805f411ca7740ff25d99e08da41fa3dc66e5a54b51e8362e69a30c2b95375"></a>TUYA_WLAN_REASON_INVALID_RSN_IE&#160;</td><td class="fielddoc"><p >No WPA/RSN IE in association request </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa3688a44da4b6eba6caef4e75e77b500c" name="a69b5805f411ca7740ff25d99e08da41fa3688a44da4b6eba6caef4e75e77b500c"></a>TUYA_WLAN_REASON_GROUP_CIPHER_INVALID&#160;</td><td class="fielddoc"><p >Group cipher invalid of WPA/RSN IE in in association request </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fad371ac7c1dc5aac2bcba73fb7c464fa5" name="a69b5805f411ca7740ff25d99e08da41fad371ac7c1dc5aac2bcba73fb7c464fa5"></a>TUYA_WLAN_REASON_PAIRWISE_CIPHER_INVALID&#160;</td><td class="fielddoc"><p >Pairwise cipher invalid of WPA/RSN IE in association request </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fac5d02717cafa45e6f70b18e884989493" name="a69b5805f411ca7740ff25d99e08da41fac5d02717cafa45e6f70b18e884989493"></a>TUYA_WLAN_REASON_UNSPPORTED_RSN_IE_VERSION&#160;</td><td class="fielddoc"><p >Invalid WPA/RSN IE version </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa5b4b741adcb0dbf8376df87d09843249" name="a69b5805f411ca7740ff25d99e08da41fa5b4b741adcb0dbf8376df87d09843249"></a>TUYA_WLAN_REASON_AKMP_INVALID&#160;</td><td class="fielddoc"><p >WPA/RSN information element rejected because of invalid auth key management <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fafc1e03d33a680ae93a2e7f5b621996fc" name="a69b5805f411ca7740ff25d99e08da41fafc1e03d33a680ae93a2e7f5b621996fc"></a>TUYA_WLAN_REASON_INVALID_RSN_IE_CAP&#160;</td><td class="fielddoc"><p >Invalid RSN Capabilities </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fad68d203b8f0c5f185347e44d97b9563f" name="a69b5805f411ca7740ff25d99e08da41fad68d203b8f0c5f185347e44d97b9563f"></a>TUYA_WLAN_REASON_CIPHER_REJECTED_PER_POLICY&#160;</td><td class="fielddoc"><p >Station tried to use TKIP with HT association </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa97b6f8eec039d610e8f92a69347c052e" name="a69b5805f411ca7740ff25d99e08da41fa97b6f8eec039d610e8f92a69347c052e"></a>TUYA_WLAN_REASON_PMF_REQUIRED&#160;</td><td class="fielddoc"><p >Rejected because of invalid PMF required </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fad856c0b6367c7d59c9fb62a031acb18d" name="a69b5805f411ca7740ff25d99e08da41fad856c0b6367c7d59c9fb62a031acb18d"></a>TUYA_WLAN_REASON_PREV_AUTH_INVALID&#160;</td><td class="fielddoc"><p >SA Query timed out </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa0c32252d30211ef70dcda072ae689f77" name="a69b5805f411ca7740ff25d99e08da41fa0c32252d30211ef70dcda072ae689f77"></a>TUYA_WLAN_REASON_NOT_ASSOCED&#160;</td><td class="fielddoc"><p >Station tried to 4-way handshake before associate </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41faf2eac1eec2c4704caaebed7d446e9a97" name="a69b5805f411ca7740ff25d99e08da41faf2eac1eec2c4704caaebed7d446e9a97"></a>TUYA_WLAN_REASON_WRONG_PASSWORD&#160;</td><td class="fielddoc"><p >Wrong password for 4-way handshake </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fac85a1fdffd061632bb04277e146400b9" name="a69b5805f411ca7740ff25d99e08da41fac85a1fdffd061632bb04277e146400b9"></a>TUYA_WLAN_REASON_MIC_FAILURE&#160;</td><td class="fielddoc"><p >Michael check failed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41faf4917ba1ca6a33600bf95ab249c56a6d" name="a69b5805f411ca7740ff25d99e08da41faf4917ba1ca6a33600bf95ab249c56a6d"></a>TUYA_WLAN_REASON_RSN_IE_IN_4WAYS_MISMATCH&#160;</td><td class="fielddoc"><p >RSN IE mismatch between AP and station of 4-way handshake </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fada772e3d8eb34b034b611b9838d65db4" name="a69b5805f411ca7740ff25d99e08da41fada772e3d8eb34b034b611b9838d65db4"></a>TUYA_WLAN_REASON_4WAYS_HANDSHAKE_TIMEOUT&#160;</td><td class="fielddoc"><p >Timeout of 4-way handshake </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41faf2dc298678cc9f4dd2bf25c9a040f21e" name="a69b5805f411ca7740ff25d99e08da41faf2dc298678cc9f4dd2bf25c9a040f21e"></a>TUYA_WLAN_REASON_INACTIVITY_DISCONNECT&#160;</td><td class="fielddoc"><p >Station disconnected to AP beacause of in activity </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69b5805f411ca7740ff25d99e08da41fa33858b935adc2452690463334c244b6a" name="a69b5805f411ca7740ff25d99e08da41fa33858b935adc2452690463334c244b6a"></a>TUYA_WLAN_REASON_DEAUTH_LEAVING&#160;</td><td class="fielddoc"><p >Deauth the station because it was left </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a530e4e49af06998dc886844293cab8cc" name="a530e4e49af06998dc886844293cab8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530e4e49af06998dc886844293cab8cc">&#9670;&nbsp;</a></span>WF_IF_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a530e4e49af06998dc886844293cab8cca1ff0cc7a9ba1bd0eec9466fe8168eb75" name="a530e4e49af06998dc886844293cab8cca1ff0cc7a9ba1bd0eec9466fe8168eb75"></a>WF_STATION&#160;</td><td class="fielddoc"><p >station type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a530e4e49af06998dc886844293cab8cca0ad8d23ac6a655507d70afd92735b835" name="a530e4e49af06998dc886844293cab8cca0ad8d23ac6a655507d70afd92735b835"></a>WF_AP&#160;</td><td class="fielddoc"><p >ap type </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a234d52fe87590dc48d5087ce92d75153" name="a234d52fe87590dc48d5087ce92d75153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a234d52fe87590dc48d5087ce92d75153">&#9670;&nbsp;</a></span>WF_IOCTL_CMD_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a234d52fe87590dc48d5087ce92d75153a484b2483c112185c91d6d28bfe09f715" name="a234d52fe87590dc48d5087ce92d75153a484b2483c112185c91d6d28bfe09f715"></a>WFI_GET_LAST_DISCONN_REASON&#160;</td><td class="fielddoc"><p >Get WiFi last disconnect reason </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af62114fe9fa3487aadaa136276ce601d" name="af62114fe9fa3487aadaa136276ce601d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62114fe9fa3487aadaa136276ce601d">&#9670;&nbsp;</a></span>WF_STATION_STAT_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601da40981d88f40b942cdfe3628ca656ffcc" name="af62114fe9fa3487aadaa136276ce601da40981d88f40b942cdfe3628ca656ffcc"></a>WSS_IDLE&#160;</td><td class="fielddoc"><p >not connected </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601daaa6af51ae7bd5bac317707c90289c898" name="af62114fe9fa3487aadaa136276ce601daaa6af51ae7bd5bac317707c90289c898"></a>WSS_CONNECTING&#160;</td><td class="fielddoc"><p >connecting wifi </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601da68b35af1cfc94e4ca25769dd3dc6eb15" name="af62114fe9fa3487aadaa136276ce601da68b35af1cfc94e4ca25769dd3dc6eb15"></a>WSS_PASSWD_WRONG&#160;</td><td class="fielddoc"><p >passwd not match </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601da709caf81e67e0132fe98f44d4e101042" name="af62114fe9fa3487aadaa136276ce601da709caf81e67e0132fe98f44d4e101042"></a>WSS_NO_AP_FOUND&#160;</td><td class="fielddoc"><p >ap is not found </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601dac97ba4fcb79201b3b064146ef3470495" name="af62114fe9fa3487aadaa136276ce601dac97ba4fcb79201b3b064146ef3470495"></a>WSS_CONN_FAIL&#160;</td><td class="fielddoc"><p >connect fail </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601da877c991f04c4f3261873fd1f255104eb" name="af62114fe9fa3487aadaa136276ce601da877c991f04c4f3261873fd1f255104eb"></a>WSS_CONN_SUCCESS&#160;</td><td class="fielddoc"><p >connect wifi success </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601daf4066a39386cbc9b9ca31ba09b5456a3" name="af62114fe9fa3487aadaa136276ce601daf4066a39386cbc9b9ca31ba09b5456a3"></a>WSS_GOT_IP&#160;</td><td class="fielddoc"><p >get ip success </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af62114fe9fa3487aadaa136276ce601da45d784b755f4a05b4d175e78bcf60163" name="af62114fe9fa3487aadaa136276ce601da45d784b755f4a05b4d175e78bcf60163"></a>WSS_DHCP_FAIL&#160;</td><td class="fielddoc"><p >dhcp fail </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac7d2f1fa0399f809de7b01af96c64d0d" name="ac7d2f1fa0399f809de7b01af96c64d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d2f1fa0399f809de7b01af96c64d0d">&#9670;&nbsp;</a></span>WF_WK_MD_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac7d2f1fa0399f809de7b01af96c64d0da24778887bc43bff0e7b762bbcade7c10" name="ac7d2f1fa0399f809de7b01af96c64d0da24778887bc43bff0e7b762bbcade7c10"></a>WWM_POWERDOWN&#160;</td><td class="fielddoc"><p >wifi work in powerdown mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac7d2f1fa0399f809de7b01af96c64d0daa642615b7e2dc7d7066a704e21e15e15" name="ac7d2f1fa0399f809de7b01af96c64d0daa642615b7e2dc7d7066a704e21e15e15"></a>WWM_SNIFFER&#160;</td><td class="fielddoc"><p >wifi work in sniffer mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac7d2f1fa0399f809de7b01af96c64d0da7c4bafd7e4f4d562522b40aa834e3273" name="ac7d2f1fa0399f809de7b01af96c64d0da7c4bafd7e4f4d562522b40aa834e3273"></a>WWM_STATION&#160;</td><td class="fielddoc"><p >wifi work in station mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac7d2f1fa0399f809de7b01af96c64d0dab7d5e8053fa9e3ec705d7502b02a31cc" name="ac7d2f1fa0399f809de7b01af96c64d0dab7d5e8053fa9e3ec705d7502b02a31cc"></a>WWM_SOFTAP&#160;</td><td class="fielddoc"><p >wifi work in ap mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac7d2f1fa0399f809de7b01af96c64d0da0f98790c15591fc4ae8cf96ed20b22ac" name="ac7d2f1fa0399f809de7b01af96c64d0da0f98790c15591fc4ae8cf96ed20b22ac"></a>WWM_STATIONAP&#160;</td><td class="fielddoc"><p >wifi work in station+ap mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac7d2f1fa0399f809de7b01af96c64d0daa8ca195dacbd3e017ad3b937c55186dc" name="ac7d2f1fa0399f809de7b01af96c64d0daa8ca195dacbd3e017ad3b937c55186dc"></a>WWM_UNKNOWN&#160;</td><td class="fielddoc"><p >wifi work in unknown mode </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="afa89b7b5a8ee5f441e43272517e7fed2" name="afa89b7b5a8ee5f441e43272517e7fed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa89b7b5a8ee5f441e43272517e7fed2">&#9670;&nbsp;</a></span>tkl_wifi_get_bssid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_get_bssid </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>mac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi bssid </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td>uplink mac </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4389be8dff161a3e360b98c25bd54b89" name="a4389be8dff161a3e360b98c25bd54b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4389be8dff161a3e360b98c25bd54b89">&#9670;&nbsp;</a></span>tkl_wifi_get_connected_ap_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_get_connected_ap_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> **&#160;</td>
+          <td class="paramname"><em>fast_ap_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>: get ap info for fast connect </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">fast_ap_info</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="af712aa02dd82ddcdc5313efa64a4ea73" name="af712aa02dd82ddcdc5313efa64a4ea73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af712aa02dd82ddcdc5313efa64a4ea73">&#9670;&nbsp;</a></span>tkl_wifi_get_cur_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_get_cur_channel </td>
+          <td>(</td>
+          <td class="paramtype">UCHAR_T *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi interface work channel </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">chan</td><td>the channel wifi works </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac2ac0019656e1186553c24f12c741e2c" name="ac2ac0019656e1186553c24f12c741e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ac0019656e1186553c24f12c741e2c">&#9670;&nbsp;</a></span>tkl_wifi_get_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_get_ip </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a>&#160;</td>
+          <td class="paramname"><em>wf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi ip info.when wifi works in ap+station mode, wifi has two ips. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wf</td><td>wifi function type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ip</td><td>the ip addr info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6821dd9aa442fe0cb0821549c01bd3e9" name="a6821dd9aa442fe0cb0821549c01bd3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6821dd9aa442fe0cb0821549c01bd3e9">&#9670;&nbsp;</a></span>tkl_wifi_get_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_get_mac </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a>&#160;</td>
+          <td class="paramname"><em>wf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi mac info.when wifi works in ap+station mode, wifi has two macs. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wf</td><td>wifi function type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td>the mac info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad09214e5091dee00cb7f5aac1099fea4" name="ad09214e5091dee00cb7f5aac1099fea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09214e5091dee00cb7f5aac1099fea4">&#9670;&nbsp;</a></span>tkl_wifi_get_work_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_get_work_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a> *&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi work mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mode</td><td>wifi work mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a47a3fb23776cd502f8cab42f61f6a43f" name="a47a3fb23776cd502f8cab42f61f6a43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a3fb23776cd502f8cab42f61f6a43f">&#9670;&nbsp;</a></span>tkl_wifi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a224f2c57b0d7572ead60da6d5c918aba">WIFI_EVENT_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi station work status changed callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the wifi station work status changed callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4a5416ae9cacdf7b2efaf4c871775470" name="a4a5416ae9cacdf7b2efaf4c871775470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5416ae9cacdf7b2efaf4c871775470">&#9670;&nbsp;</a></span>tkl_wifi_ioctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_ioctl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a234d52fe87590dc48d5087ce92d75153">WF_IOCTL_CMD_E</a>&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wifi ioctl </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>refer to WF_IOCTL_CMD_E </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>args associated with the command </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="aed30c7e43622fd64044dc9ff1159834a" name="aed30c7e43622fd64044dc9ff1159834a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed30c7e43622fd64044dc9ff1159834a">&#9670;&nbsp;</a></span>tkl_wifi_register_recv_mgnt_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_register_recv_mgnt_callback </td>
+          <td>(</td>
+          <td class="paramtype">CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a18a34a7f37758e0e4f4b12ac99fb1e82">WIFI_REV_MGNT_CB</a>&#160;</td>
+          <td class="paramname"><em>recv_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>register receive wifi management callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv_cb</td><td>receive callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac8ed96cacd03f4217d996dddc68b0598" name="ac8ed96cacd03f4217d996dddc68b0598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ed96cacd03f4217d996dddc68b0598">&#9670;&nbsp;</a></span>tkl_wifi_release_ap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_release_ap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> *&#160;</td>
+          <td class="paramname"><em>ap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>release the memory malloced in &lt;tkl_wifi_ap_scan&gt; if needed. tuyaos will call this function when the ap info is no use. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ap</td><td>the ap info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7f33d0a79dc6125c3fd4b95bec27eeb6" name="a7f33d0a79dc6125c3fd4b95bec27eeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f33d0a79dc6125c3fd4b95bec27eeb6">&#9670;&nbsp;</a></span>tkl_wifi_scan_ap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_scan_ap </td>
+          <td>(</td>
+          <td class="paramtype">CONST SCHAR_T *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d73/structAP__IF__S.html">AP_IF_S</a> **&#160;</td>
+          <td class="paramname"><em>ap_ary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T *&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>scan current environment and obtain the ap infos in current environment </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>the specific ssid </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ap_ary</td><td>current ap info array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">num</td><td>the num of ar_ary</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>if ssid == NULL means scan all ap, otherwise means scan the specific ssid </dd></dl>
+
+</div>
+</div>
+<a id="abf9f2acd22350256232c98cb0863ccce" name="abf9f2acd22350256232c98cb0863ccce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9f2acd22350256232c98cb0863ccce">&#9670;&nbsp;</a></span>tkl_wifi_send_mgnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_send_mgnt </td>
+          <td>(</td>
+          <td class="paramtype">CONST UCHAR_T *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send wifi management </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>pointer to buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9af5396a45db9514ab971411d1d4d7d9" name="a9af5396a45db9514ab971411d1d4d7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af5396a45db9514ab971411d1d4d7d9">&#9670;&nbsp;</a></span>tkl_wifi_set_country_code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_country_code </td>
+          <td>(</td>
+          <td class="paramtype">CONST COUNTRY_CODE_E&#160;</td>
+          <td class="paramname"><em>ccode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi country code </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ccode</td><td>country code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab12d424efc5cd7e2f2b6941752c7929e" name="ab12d424efc5cd7e2f2b6941752c7929e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12d424efc5cd7e2f2b6941752c7929e">&#9670;&nbsp;</a></span>tkl_wifi_set_cur_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_cur_channel </td>
+          <td>(</td>
+          <td class="paramtype">CONST UCHAR_T&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi interface work channel </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chan</td><td>the channel to set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a06c036c3839efdc59e24088785e48902" name="a06c036c3839efdc59e24088785e48902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c036c3839efdc59e24088785e48902">&#9670;&nbsp;</a></span>tkl_wifi_set_lp_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_lp_mode </td>
+          <td>(</td>
+          <td class="paramtype">CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST UCHAR_T&#160;</td>
+          <td class="paramname"><em>dtim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi lowpower mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>enbale lowpower mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dtim</td><td>the wifi dtim </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8e18d5fe8caca040025a67fc7a2256ab" name="a8e18d5fe8caca040025a67fc7a2256ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e18d5fe8caca040025a67fc7a2256ab">&#9670;&nbsp;</a></span>tkl_wifi_set_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_mac </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a530e4e49af06998dc886844293cab8cc">WF_IF_E</a>&#160;</td>
+          <td class="paramname"><em>wf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *&#160;</td>
+          <td class="paramname"><em>mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi mac info.when wifi works in ap+station mode, wifi has two macs. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wf</td><td>wifi function type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac</td><td>the mac info </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a34dd77c97da16d0985e3424f32e75a72" name="a34dd77c97da16d0985e3424f32e75a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34dd77c97da16d0985e3424f32e75a72">&#9670;&nbsp;</a></span>tkl_wifi_set_rf_calibrated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_rf_calibrated </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>do wifi calibration </p>
+<dl class="section note"><dt>注解</dt><dd>called when test wifi</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>true on success. faile on failure </dd></dl>
+
+</div>
+</div>
+<a id="ab7c87348720068f10ec444f623cbeb05" name="ab7c87348720068f10ec444f623cbeb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c87348720068f10ec444f623cbeb05">&#9670;&nbsp;</a></span>tkl_wifi_set_sniffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_sniffer </td>
+          <td>(</td>
+          <td class="paramtype">CONST BOOL_T&#160;</td>
+          <td class="paramname"><em>en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#a92db2c303158e06a11b06e1a27d14a02">SNIFFER_CALLBACK</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable / disable wifi sniffer mode. if wifi sniffer mode is enabled, wifi recv from packages from the air, and user shoud send these packages to tuya-sdk with callback &lt;cb&gt;. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">en</td><td>enable or disable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>notify callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="acfa9ef141747c53ccdef150bcb1680c0" name="acfa9ef141747c53ccdef150bcb1680c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa9ef141747c53ccdef150bcb1680c0">&#9670;&nbsp;</a></span>tkl_wifi_set_work_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_set_work_mode </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d6/ddb/tkl__wifi_8h.html#ac7d2f1fa0399f809de7b01af96c64d0d">WF_WK_MD_E</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi work mode </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>wifi work mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8efbba1cf243ddc4509d7fe65c6890a6" name="a8efbba1cf243ddc4509d7fe65c6890a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efbba1cf243ddc4509d7fe65c6890a6">&#9670;&nbsp;</a></span>tkl_wifi_start_ap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_start_ap </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../d5/de4/structWF__AP__CFG__IF__S.html">WF_AP_CFG_IF_S</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start a soft ap </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cfg</td><td>the soft ap config </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a15edbb9661ce467adcaec8efc66b2a54" name="a15edbb9661ce467adcaec8efc66b2a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15edbb9661ce467adcaec8efc66b2a54">&#9670;&nbsp;</a></span>tkl_wifi_station_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_station_connect </td>
+          <td>(</td>
+          <td class="paramtype">CONST SCHAR_T *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST SCHAR_T *&#160;</td>
+          <td class="paramname"><em>passwd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>connect wifi with ssid and passwd </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">passwd</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0e7d82d3aedaf81202ef7bba96c2ec81" name="a0e7d82d3aedaf81202ef7bba96c2ec81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7d82d3aedaf81202ef7bba96c2ec81">&#9670;&nbsp;</a></span>tkl_wifi_station_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_station_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>disconnect wifi from connect ap </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a799bf7660c5d9666fc97fc190d10a64e" name="a799bf7660c5d9666fc97fc190d10a64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799bf7660c5d9666fc97fc190d10a64e">&#9670;&nbsp;</a></span>tkl_wifi_station_fast_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_station_fast_connect </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../db/db4/structFAST__WF__CONNECTED__AP__INFO__T.html">FAST_WF_CONNECTED_AP_INFO_T</a> *&#160;</td>
+          <td class="paramname"><em>fast_ap_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>: fast connect </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fast_ap_info</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a414b2d39ae7f0d7913ddd42763f94943" name="a414b2d39ae7f0d7913ddd42763f94943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414b2d39ae7f0d7913ddd42763f94943">&#9670;&nbsp;</a></span>tkl_wifi_station_get_conn_ap_rssi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_station_get_conn_ap_rssi </td>
+          <td>(</td>
+          <td class="paramtype">SCHAR_T *&#160;</td>
+          <td class="paramname"><em>rssi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi connect rssi </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">rssi</td><td>the return rssi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a98b25bf108a7a2d9a6c12ef17d3ceb37" name="a98b25bf108a7a2d9a6c12ef17d3ceb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b25bf108a7a2d9a6c12ef17d3ceb37">&#9670;&nbsp;</a></span>tkl_wifi_station_get_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_station_get_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/ddb/tkl__wifi_8h.html#af62114fe9fa3487aadaa136276ce601d">WF_STATION_STAT_E</a> *&#160;</td>
+          <td class="paramname"><em>stat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi station work status </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">stat</td><td>the wifi station work status </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5fe97bc2596dfe01541f59ade106f71e" name="a5fe97bc2596dfe01541f59ade106f71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe97bc2596dfe01541f59ade106f71e">&#9670;&nbsp;</a></span>tkl_wifi_stop_ap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_wifi_stop_ap </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stop a soft ap </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_wifi/include/tuya_wifi_link.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_ac23facb638b8c78e3ea6a0534f0da5c.html">svc_wifi</a></li><li class="navelem"><a class="el" href="../../dir_2a60f5b8a54aa317a95a983f0f73d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_wifi_link.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>tuya wifi link interface:open/close,start/stop config,reset,etc.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/dfd/tuya__cloud__wifi__defs_8h_source.html">tuya_cloud_wifi_defs.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_wifi_link.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d99/tuya__wifi__link_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__wifi_2include_2tuya__wifi__link_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__wifi_2include_2tuya__wifi__link_8h" id="ainclude_2components_2svc__wifi_2include_2tuya__wifi__link_8h">
+<area shape="rect" title="tuya wifi link interface:open/close,start/stop config,reset,etc." alt="" coords="361,5,524,61"/>
+<area shape="rect" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html" title="Common definitions of TUYA cloud" alt="" coords="357,109,528,136"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,184,517,211"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,259,139,285"/>
+<area shape="rect" title=" " alt="" coords="163,259,237,285"/>
+<area shape="rect" title=" " alt="" coords="262,259,333,285"/>
+<area shape="rect" title=" " alt="" coords="357,259,432,285"/>
+<area shape="rect" title=" " alt="" coords="457,259,527,285"/>
+<area shape="rect" title=" " alt="" coords="552,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,730,285"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,259,893,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d64/tuya__wifi__link_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__wifi_2include_2tuya__wifi__link_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__wifi_2include_2tuya__wifi__link_8hdep" id="ainclude_2components_2svc__wifi_2include_2tuya__wifi__link_8hdep">
+<area shape="rect" title="tuya wifi link interface:open/close,start/stop config,reset,etc." alt="" coords="5,5,168,61"/>
+<area shape="rect" href="../../de/d68/tuya__wifi__netcfg_8h_source.html" title=" " alt="" coords="5,109,168,165"/>
+</map>
+</div>
+</div>
+<p><a href="../../d0/dd8/tuya__wifi__link_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d24/structtuya__wifi__cfg__param.html">tuya_wifi_cfg_param</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya wifi netcfg params, mthd and start mode  <a href="../../d3/d24/structtuya__wifi__cfg__param.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a37e903d07899d5377ede5c79986b7e93"><td class="memItemLeft" align="right" valign="top"><a id="a37e903d07899d5377ede5c79986b7e93" name="a37e903d07899d5377ede5c79986b7e93"></a>
+typedef struct <a class="el" href="../../d3/d24/structtuya__wifi__cfg__param.html">tuya_wifi_cfg_param</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>P_TUYA_WIFI_CFG_PARAM</b></td></tr>
+<tr class="separator:a37e903d07899d5377ede5c79986b7e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e88c955f53fa7198063990636574a4b"><td class="memItemLeft" align="right" valign="top"><a id="a3e88c955f53fa7198063990636574a4b" name="a3e88c955f53fa7198063990636574a4b"></a>
+typedef struct <a class="el" href="../../d3/d24/structtuya__wifi__cfg__param.html">tuya_wifi_cfg_param</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TUYA_WIFI_CFG_PARAM</b></td></tr>
+<tr class="memdesc:a3e88c955f53fa7198063990636574a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuya wifi netcfg params, mthd and start mode <br /></td></tr>
+<tr class="separator:a3e88c955f53fa7198063990636574a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:acbb5a40b3d201739b0ce7286831fd984"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#acbb5a40b3d201739b0ce7286831fd984">do_wifi_activate</a> (VOID *token, UINT_T t_len)</td></tr>
+<tr class="memdesc:acbb5a40b3d201739b0ce7286831fd984"><td class="mdescLeft">&#160;</td><td class="mdescRight">do wifi activate.  <a href="../../d0/dd8/tuya__wifi__link_8h.html#acbb5a40b3d201739b0ce7286831fd984">更多...</a><br /></td></tr>
+<tr class="separator:acbb5a40b3d201739b0ce7286831fd984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7682540dfd117af256d2cdbf845522b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d24/structtuya__wifi__cfg__param.html">P_TUYA_WIFI_CFG_PARAM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#ae7682540dfd117af256d2cdbf845522b">get_wifi_config_params</a> ()</td></tr>
+<tr class="memdesc:ae7682540dfd117af256d2cdbf845522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get wifi netcfg params.  <a href="../../d0/dd8/tuya__wifi__link_8h.html#ae7682540dfd117af256d2cdbf845522b">更多...</a><br /></td></tr>
+<tr class="separator:ae7682540dfd117af256d2cdbf845522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330fbf1fad55a15b54464504fbe16bf2"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#a330fbf1fad55a15b54464504fbe16bf2">set_wifi_config_params</a> (<a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#a3e88c955f53fa7198063990636574a4b">TUYA_WIFI_CFG_PARAM</a> cfg_param)</td></tr>
+<tr class="memdesc:a330fbf1fad55a15b54464504fbe16bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set wifi config para.  <a href="../../d0/dd8/tuya__wifi__link_8h.html#a330fbf1fad55a15b54464504fbe16bf2">更多...</a><br /></td></tr>
+<tr class="separator:a330fbf1fad55a15b54464504fbe16bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc5f283cebaae4dad08239cd07b7acb"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#adfc5f283cebaae4dad08239cd07b7acb">tuya_svc_wifi_init</a> (<a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#a3e88c955f53fa7198063990636574a4b">TUYA_WIFI_CFG_PARAM</a> cfg_param)</td></tr>
+<tr class="memdesc:adfc5f283cebaae4dad08239cd07b7acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">do wifi link init.  <a href="../../d0/dd8/tuya__wifi__link_8h.html#adfc5f283cebaae4dad08239cd07b7acb">更多...</a><br /></td></tr>
+<tr class="separator:adfc5f283cebaae4dad08239cd07b7acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d4e413dc14dcb1dcc5de85d2ea5cde"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#a45d4e413dc14dcb1dcc5de85d2ea5cde">tuya_wifi_send_link_event</a> (BOOL_T isLinkUp)</td></tr>
+<tr class="memdesc:a45d4e413dc14dcb1dcc5de85d2ea5cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">send wifi link up or down event to network manager layer  <a href="../../d0/dd8/tuya__wifi__link_8h.html#a45d4e413dc14dcb1dcc5de85d2ea5cde">更多...</a><br /></td></tr>
+<tr class="separator:a45d4e413dc14dcb1dcc5de85d2ea5cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d4cbea6a0e5db81f12d2884f612594"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#ad8d4cbea6a0e5db81f12d2884f612594">wifi_netcfg_start_ap_mode</a> (VOID_T)</td></tr>
+<tr class="memdesc:ad8d4cbea6a0e5db81f12d2884f612594"><td class="mdescLeft">&#160;</td><td class="mdescRight">start ap mode  <a href="../../d0/dd8/tuya__wifi__link_8h.html#ad8d4cbea6a0e5db81f12d2884f612594">更多...</a><br /></td></tr>
+<tr class="separator:ad8d4cbea6a0e5db81f12d2884f612594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >tuya wifi link interface:open/close,start/stop config,reset,etc. </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-03-15</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2020-2021 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="acbb5a40b3d201739b0ce7286831fd984" name="acbb5a40b3d201739b0ce7286831fd984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb5a40b3d201739b0ce7286831fd984">&#9670;&nbsp;</a></span>do_wifi_activate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET do_wifi_activate </td>
+          <td>(</td>
+          <td class="paramtype">VOID *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT_T&#160;</td>
+          <td class="paramname"><em>t_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>do wifi activate. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>token of netcfg.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t_len</td><td>length of token</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>refer to P_TUYA_WIFI_CFG_PARAM.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>P_TUYA_WIFI_CFG_PARAM on success. NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="ae7682540dfd117af256d2cdbf845522b" name="ae7682540dfd117af256d2cdbf845522b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7682540dfd117af256d2cdbf845522b">&#9670;&nbsp;</a></span>get_wifi_config_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d24/structtuya__wifi__cfg__param.html">P_TUYA_WIFI_CFG_PARAM</a> get_wifi_config_params </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get wifi netcfg params. </p>
+<dl class="section note"><dt>注解</dt><dd>refer to P_TUYA_WIFI_CFG_PARAM.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>P_TUYA_WIFI_CFG_PARAM on success. NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="a330fbf1fad55a15b54464504fbe16bf2" name="a330fbf1fad55a15b54464504fbe16bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330fbf1fad55a15b54464504fbe16bf2">&#9670;&nbsp;</a></span>set_wifi_config_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET set_wifi_config_params </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#a3e88c955f53fa7198063990636574a4b">TUYA_WIFI_CFG_PARAM</a>&#160;</td>
+          <td class="paramname"><em>cfg_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set wifi config para. </p>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="adfc5f283cebaae4dad08239cd07b7acb" name="adfc5f283cebaae4dad08239cd07b7acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc5f283cebaae4dad08239cd07b7acb">&#9670;&nbsp;</a></span>tuya_svc_wifi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_svc_wifi_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dd8/tuya__wifi__link_8h.html#a3e88c955f53fa7198063990636574a4b">TUYA_WIFI_CFG_PARAM</a>&#160;</td>
+          <td class="paramname"><em>cfg_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>do wifi link init. </p>
+<dl class="section note"><dt>注解</dt><dd>before using wifi, do wifi link init first.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a45d4e413dc14dcb1dcc5de85d2ea5cde" name="a45d4e413dc14dcb1dcc5de85d2ea5cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d4e413dc14dcb1dcc5de85d2ea5cde">&#9670;&nbsp;</a></span>tuya_wifi_send_link_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_wifi_send_link_event </td>
+          <td>(</td>
+          <td class="paramtype">BOOL_T&#160;</td>
+          <td class="paramname"><em>isLinkUp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send wifi link up or down event to network manager layer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">isLinkUp</td><td>wifi link is up or down</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad8d4cbea6a0e5db81f12d2884f612594" name="ad8d4cbea6a0e5db81f12d2884f612594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d4cbea6a0e5db81f12d2884f612594">&#9670;&nbsp;</a></span>wifi_netcfg_start_ap_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET wifi_netcfg_start_ap_mode </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start ap mode </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

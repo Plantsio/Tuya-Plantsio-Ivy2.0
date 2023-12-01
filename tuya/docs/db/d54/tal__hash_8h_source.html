@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/tal_security/include/tal_hash.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_152ff88ceaf92386bbbcab641a4b8ccf.html">tal_security</a></li><li class="navelem"><a class="el" href="../../dir_a488653c6eb5f2ff1d231bae86c2d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tal_hash.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d54/tal__hash_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TAL_HASH_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TAL_HASH_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d64/tkl__hash_8h.html">tkl_hash.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../dc/d16/structtal__hash__mac__context__t.html">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    TKL_HASH_HANDLE ctx;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../dc/d16/structtal__hash__mac__context__t.html#affa1fd92c82da99e420145c23705dbdb">   23</a></span>    UINT8_T ipad[64]; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../dc/d16/structtal__hash__mac__context__t.html#a34d5380b9c759953c2f7aaa80bfc0b00">   24</a></span>    UINT8_T opad[64]; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a532f88c5fe80d39cce52973e01c7ccf5">   37</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a532f88c5fe80d39cce52973e01c7ccf5">tal_sha256_create_init</a>( TKL_HASH_HANDLE *ctx );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#abb53962fae57d90f3601d9cb83b3866a">   48</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#abb53962fae57d90f3601d9cb83b3866a">tal_sha256_free</a>( TKL_HASH_HANDLE ctx );</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a7bc8d5cf94999e70f39dd6ada3653ece">   62</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a7bc8d5cf94999e70f39dd6ada3653ece">tal_sha256_starts_ret</a>( TKL_HASH_HANDLE ctx, INT32_T is224 );</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a9eb8503c9caa9d4a872b76ab0d1325e8">   77</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a9eb8503c9caa9d4a872b76ab0d1325e8">tal_sha256_update_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                               <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                               <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a0080493bc98e2cda860ebcf51f58fe3e">   93</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a0080493bc98e2cda860ebcf51f58fe3e">tal_sha256_finish_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                               UINT8_T output[32] );</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a858b5c8cb54460fb8b9d496fbabfe9c5">  106</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a858b5c8cb54460fb8b9d496fbabfe9c5">tal_md5_create_init</a>( TKL_HASH_HANDLE *ctx );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a814b7a5dd9f25096b6997f627929de1b">  117</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a814b7a5dd9f25096b6997f627929de1b">tal_md5_free</a>( TKL_HASH_HANDLE ctx );</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a71005ccdeb607656dc33a9b245719e8c">  129</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a71005ccdeb607656dc33a9b245719e8c">tal_md5_starts_ret</a>( TKL_HASH_HANDLE ctx);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a37d28c15d2a3ef1b11e8a160e6ea7e1e">  144</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a37d28c15d2a3ef1b11e8a160e6ea7e1e">tal_md5_update_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                               <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                               <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#aae6e34f3aacdce853c3b9dcb8aa24409">  160</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#aae6e34f3aacdce853c3b9dcb8aa24409">tal_md5_finish_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                               UINT8_T output[16] );</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a1525a0f96addd78da30f679f6f45ee53">  172</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a1525a0f96addd78da30f679f6f45ee53">tal_sha1_create_init</a>( TKL_HASH_HANDLE *ctx );</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a64d87e70fb7c9ce78721f115da177cef">  183</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a64d87e70fb7c9ce78721f115da177cef">tal_sha1_free</a>( TKL_HASH_HANDLE ctx );</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#ad37b57da4de22012ddf8716e8c518767">  195</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#ad37b57da4de22012ddf8716e8c518767">tal_sha1_starts_ret</a>( TKL_HASH_HANDLE ctx);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#aa82005686448371a8c29307f9f697a27">  210</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#aa82005686448371a8c29307f9f697a27">tal_sha1_update_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                               <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                               <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#ab199b45489ab8b0247ce24b56a830589">  226</a></span>OPERATE_RET  <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#ab199b45489ab8b0247ce24b56a830589">tal_sha1_finish_ret</a>( TKL_HASH_HANDLE ctx,</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                               UINT8_T output[16] );</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a4da1787e5c0f44c2ec8b12bcae3efd56">  248</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a4da1787e5c0f44c2ec8b12bcae3efd56">tal_sha256_ret</a>( <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                        <span class="keywordtype">size_t</span> ilen,</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                        UINT8_T output[32],</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                        INT32_T is224 );</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#acf48edac9ab5f73cc1947fa78e5e9bd3">  263</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#acf48edac9ab5f73cc1947fa78e5e9bd3">tal_md5_ret</a>( <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                        <span class="keywordtype">size_t</span> ilen,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                        UINT8_T output[16]);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#adc7199ff239e99ed5707cc52280de21e">  277</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#adc7199ff239e99ed5707cc52280de21e">tal_sha1_ret</a>( <span class="keyword">const</span> UINT8_T *input,</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                        <span class="keywordtype">size_t</span> ilen,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                        UINT8_T output[20]);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#ae476f22ab04a0c23a618b013349bf42c">  289</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#ae476f22ab04a0c23a618b013349bf42c">tal_sha256_mac_create_init</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle );</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#add49c1926baf75e794d810685e81374a">  299</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#add49c1926baf75e794d810685e81374a">tal_sha256_mac_free</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle );</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a6f241a34c0879522dd3f2b357e8fa7f9">  313</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a6f241a34c0879522dd3f2b357e8fa7f9">tal_sha256_mac_starts</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle, <span class="keyword">const</span> UINT8_T *key, <span class="keywordtype">size_t</span> keylen);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#adfa6a5a77f0fc29370c31f4666d058d3">  327</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#adfa6a5a77f0fc29370c31f4666d058d3">tal_sha256_mac_update</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle, <span class="keyword">const</span> UINT8_T *input, <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a8a23116553633ac5eafbffc9fa847490">  340</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a8a23116553633ac5eafbffc9fa847490">tal_sha256_mac_finish</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle, UINT8_T *output );</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a091ec87e8cb75de405f8f945da6e65b3">  363</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a091ec87e8cb75de405f8f945da6e65b3">tal_sha256_mac</a>( <span class="keyword">const</span> UINT8_T *key, <span class="keywordtype">size_t</span> keylen,</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                     <span class="keyword">const</span> UINT8_T *input, <span class="keywordtype">size_t</span> ilen,</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                     UINT8_T *output );</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a72c67b6abed5a1477918169557e55917">  377</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a72c67b6abed5a1477918169557e55917">tal_sha1_mac_create_init</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle );</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#ac1943a1fa148e30ef96801aeba4afe86">  387</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#ac1943a1fa148e30ef96801aeba4afe86">tal_sha1_mac_free</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle );</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#acbcad88dd5622f5597dcfa4b68346554">  401</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#acbcad88dd5622f5597dcfa4b68346554">tal_sha1_mac_starts</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle, <span class="keyword">const</span> UINT8_T *key, <span class="keywordtype">size_t</span> keylen);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#aaa2ae2834c42b49e2d7cec3def8e0d3d">  415</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#aaa2ae2834c42b49e2d7cec3def8e0d3d">tal_sha1_mac_update</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle, <span class="keyword">const</span> UINT8_T *input, <span class="keywordtype">size_t</span> ilen );</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#a879964e33de659d2e899c74ce5d9b042">  428</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#a879964e33de659d2e899c74ce5d9b042">tal_sha1_mac_finish</a>( <a class="code hl_struct" href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a> *hmac_handle, UINT8_T *output );</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno"><a class="line" href="../../db/d54/tal__hash_8h.html#aef6a652770bebb290383655139e6da25">  451</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d54/tal__hash_8h.html#aef6a652770bebb290383655139e6da25">tal_sha1_mac</a>( <span class="keyword">const</span> UINT8_T *key, <span class="keywordtype">size_t</span> keylen,</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>                     <span class="keyword">const</span> UINT8_T *input, <span class="keywordtype">size_t</span> ilen,</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>                     UINT8_T *output );</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>OPERATE_RET tal_sha256_self_test( INT32_T verbose );</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>OPERATE_RET tal_md5_self_test( INT32_T verbose );</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>OPERATE_RET tal_sha1_self_test( INT32_T verbose );</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>OPERATE_RET tal_sha256_mac_self_test( INT32_T verbose );</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span> </div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>OPERATE_RET tal_sha1_mac_self_test( INT32_T verbose );</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span> </div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>}</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
+<div class="ttc" id="astructtal__hash__mac__context__t_html"><div class="ttname"><a href="../../dc/d16/structtal__hash__mac__context__t.html">tal_hash_mac_context_t</a></div><div class="ttdef"><b>Definition:</b> tal_hash.h:21</div></div>
+<div class="ttc" id="atal__hash_8h_html_a0080493bc98e2cda860ebcf51f58fe3e"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a0080493bc98e2cda860ebcf51f58fe3e">tal_sha256_finish_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[32])</div><div class="ttdoc">This function finishes the sha256 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a091ec87e8cb75de405f8f945da6e65b3"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a091ec87e8cb75de405f8f945da6e65b3">tal_sha256_mac</a></div><div class="ttdeci">OPERATE_RET tal_sha256_mac(const UINT8_T *key, size_t keylen, const UINT8_T *input, size_t ilen, UINT8_T *output)</div><div class="ttdoc">This function calculates the SHA-256 MAC checksum of a buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a1525a0f96addd78da30f679f6f45ee53"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a1525a0f96addd78da30f679f6f45ee53">tal_sha1_create_init</a></div><div class="ttdeci">OPERATE_RET tal_sha1_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a sha1 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a37d28c15d2a3ef1b11e8a160e6ea7e1e"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a37d28c15d2a3ef1b11e8a160e6ea7e1e">tal_md5_update_ret</a></div><div class="ttdeci">OPERATE_RET tal_md5_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing md5 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a4da1787e5c0f44c2ec8b12bcae3efd56"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a4da1787e5c0f44c2ec8b12bcae3efd56">tal_sha256_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_ret(const UINT8_T *input, size_t ilen, UINT8_T output[32], INT32_T is224)</div><div class="ttdoc">This function calculates the SHA-224 or SHA-256 checksum of a buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a532f88c5fe80d39cce52973e01c7ccf5"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a532f88c5fe80d39cce52973e01c7ccf5">tal_sha256_create_init</a></div><div class="ttdeci">OPERATE_RET tal_sha256_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a sha256 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a64d87e70fb7c9ce78721f115da177cef"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a64d87e70fb7c9ce78721f115da177cef">tal_sha1_free</a></div><div class="ttdeci">OPERATE_RET tal_sha1_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a sha1 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a6f241a34c0879522dd3f2b357e8fa7f9"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a6f241a34c0879522dd3f2b357e8fa7f9">tal_sha256_mac_starts</a></div><div class="ttdeci">OPERATE_RET tal_sha256_mac_starts(tal_hash_mac_context_t *hmac_handle, const UINT8_T *key, size_t keylen)</div><div class="ttdoc">This function starts a sha256 mac checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a71005ccdeb607656dc33a9b245719e8c"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a71005ccdeb607656dc33a9b245719e8c">tal_md5_starts_ret</a></div><div class="ttdeci">OPERATE_RET tal_md5_starts_ret(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function starts a md5 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a72c67b6abed5a1477918169557e55917"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a72c67b6abed5a1477918169557e55917">tal_sha1_mac_create_init</a></div><div class="ttdeci">OPERATE_RET tal_sha1_mac_create_init(tal_hash_mac_context_t *hmac_handle)</div><div class="ttdoc">This function Create&amp;initializes a sha1 maccontext.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a7bc8d5cf94999e70f39dd6ada3653ece"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a7bc8d5cf94999e70f39dd6ada3653ece">tal_sha256_starts_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_starts_ret(TKL_HASH_HANDLE ctx, INT32_T is224)</div><div class="ttdoc">This function starts a sha224 or sha256 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a814b7a5dd9f25096b6997f627929de1b"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a814b7a5dd9f25096b6997f627929de1b">tal_md5_free</a></div><div class="ttdeci">OPERATE_RET tal_md5_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a md5 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a858b5c8cb54460fb8b9d496fbabfe9c5"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a858b5c8cb54460fb8b9d496fbabfe9c5">tal_md5_create_init</a></div><div class="ttdeci">OPERATE_RET tal_md5_create_init(TKL_HASH_HANDLE *ctx)</div><div class="ttdoc">This function Create&amp;initializes a md5 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a879964e33de659d2e899c74ce5d9b042"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a879964e33de659d2e899c74ce5d9b042">tal_sha1_mac_finish</a></div><div class="ttdeci">OPERATE_RET tal_sha1_mac_finish(tal_hash_mac_context_t *hmac_handle, UINT8_T *output)</div><div class="ttdoc">This function finishes the sha1 mac operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a8a23116553633ac5eafbffc9fa847490"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a8a23116553633ac5eafbffc9fa847490">tal_sha256_mac_finish</a></div><div class="ttdeci">OPERATE_RET tal_sha256_mac_finish(tal_hash_mac_context_t *hmac_handle, UINT8_T *output)</div><div class="ttdoc">This function finishes the sha256 mac operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_a9eb8503c9caa9d4a872b76ab0d1325e8"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#a9eb8503c9caa9d4a872b76ab0d1325e8">tal_sha256_update_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha256_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha256 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_aa82005686448371a8c29307f9f697a27"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#aa82005686448371a8c29307f9f697a27">tal_sha1_update_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_update_ret(TKL_HASH_HANDLE ctx, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha1 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_aaa2ae2834c42b49e2d7cec3def8e0d3d"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#aaa2ae2834c42b49e2d7cec3def8e0d3d">tal_sha1_mac_update</a></div><div class="ttdeci">OPERATE_RET tal_sha1_mac_update(tal_hash_mac_context_t *hmac_handle, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha1 mac checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_aae6e34f3aacdce853c3b9dcb8aa24409"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#aae6e34f3aacdce853c3b9dcb8aa24409">tal_md5_finish_ret</a></div><div class="ttdeci">OPERATE_RET tal_md5_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[16])</div><div class="ttdoc">This function finishes the md5 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_ab199b45489ab8b0247ce24b56a830589"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#ab199b45489ab8b0247ce24b56a830589">tal_sha1_finish_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_finish_ret(TKL_HASH_HANDLE ctx, UINT8_T output[16])</div><div class="ttdoc">This function finishes the sha1 operation, and writes the result to the output buffer.</div></div>
+<div class="ttc" id="atal__hash_8h_html_abb53962fae57d90f3601d9cb83b3866a"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#abb53962fae57d90f3601d9cb83b3866a">tal_sha256_free</a></div><div class="ttdeci">OPERATE_RET tal_sha256_free(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function clears a sha256 context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_ac1943a1fa148e30ef96801aeba4afe86"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#ac1943a1fa148e30ef96801aeba4afe86">tal_sha1_mac_free</a></div><div class="ttdeci">OPERATE_RET tal_sha1_mac_free(tal_hash_mac_context_t *hmac_handle)</div><div class="ttdoc">This function clears a sha1 mac context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_acbcad88dd5622f5597dcfa4b68346554"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#acbcad88dd5622f5597dcfa4b68346554">tal_sha1_mac_starts</a></div><div class="ttdeci">OPERATE_RET tal_sha1_mac_starts(tal_hash_mac_context_t *hmac_handle, const UINT8_T *key, size_t keylen)</div><div class="ttdoc">This function starts a sha1 mac checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_acf48edac9ab5f73cc1947fa78e5e9bd3"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#acf48edac9ab5f73cc1947fa78e5e9bd3">tal_md5_ret</a></div><div class="ttdeci">OPERATE_RET tal_md5_ret(const UINT8_T *input, size_t ilen, UINT8_T output[16])</div><div class="ttdoc">Output = MD5( input buffer )</div></div>
+<div class="ttc" id="atal__hash_8h_html_ad37b57da4de22012ddf8716e8c518767"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#ad37b57da4de22012ddf8716e8c518767">tal_sha1_starts_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_starts_ret(TKL_HASH_HANDLE ctx)</div><div class="ttdoc">This function starts a sha1 checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_adc7199ff239e99ed5707cc52280de21e"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#adc7199ff239e99ed5707cc52280de21e">tal_sha1_ret</a></div><div class="ttdeci">OPERATE_RET tal_sha1_ret(const UINT8_T *input, size_t ilen, UINT8_T output[20])</div><div class="ttdoc">Output = sha1( input buffer )</div></div>
+<div class="ttc" id="atal__hash_8h_html_add49c1926baf75e794d810685e81374a"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#add49c1926baf75e794d810685e81374a">tal_sha256_mac_free</a></div><div class="ttdeci">OPERATE_RET tal_sha256_mac_free(tal_hash_mac_context_t *hmac_handle)</div><div class="ttdoc">This function clears a sha256 mac context.</div></div>
+<div class="ttc" id="atal__hash_8h_html_adfa6a5a77f0fc29370c31f4666d058d3"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#adfa6a5a77f0fc29370c31f4666d058d3">tal_sha256_mac_update</a></div><div class="ttdeci">OPERATE_RET tal_sha256_mac_update(tal_hash_mac_context_t *hmac_handle, const UINT8_T *input, size_t ilen)</div><div class="ttdoc">This function feeds an input buffer into an ongoing sha256 mac checksum calculation.</div></div>
+<div class="ttc" id="atal__hash_8h_html_ae476f22ab04a0c23a618b013349bf42c"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#ae476f22ab04a0c23a618b013349bf42c">tal_sha256_mac_create_init</a></div><div class="ttdeci">OPERATE_RET tal_sha256_mac_create_init(tal_hash_mac_context_t *hmac_handle)</div><div class="ttdoc">This function Create&amp;initializes a sha256 maccontext.</div></div>
+<div class="ttc" id="atal__hash_8h_html_aef6a652770bebb290383655139e6da25"><div class="ttname"><a href="../../db/d54/tal__hash_8h.html#aef6a652770bebb290383655139e6da25">tal_sha1_mac</a></div><div class="ttdeci">OPERATE_RET tal_sha1_mac(const UINT8_T *key, size_t keylen, const UINT8_T *input, size_t ilen, UINT8_T *output)</div><div class="ttdoc">This function calculates the SHA-256 MAC checksum of a buffer.</div></div>
+<div class="ttc" id="atkl__hash_8h_html"><div class="ttname"><a href="../../db/d64/tkl__hash_8h.html">tkl_hash.h</a></div><div class="ttdoc">Common process - adapter the hash api provide by OS</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

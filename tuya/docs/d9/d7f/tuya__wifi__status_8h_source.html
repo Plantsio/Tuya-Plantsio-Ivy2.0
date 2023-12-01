@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_wifi/include/tuya_wifi_status.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_ac23facb638b8c78e3ea6a0534f0da5c.html">svc_wifi</a></li><li class="navelem"><a class="el" href="../../dir_2a60f5b8a54aa317a95a983f0f73d8fc.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_wifi_status.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __TUYA_WIFI_STATUS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __TUYA_WIFI_STATUS_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html">tuya_cloud_wifi_defs.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../dc/db4/structtuya__wifi__status__config.html">    8</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../dc/db4/structtuya__wifi__status__config.html">tuya_wifi_status_config</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../dc/db4/structtuya__wifi__status__config.html#a073fce121d4544e361d1c41e7e466c64">   10</a></span>    <a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a> <a class="code hl_variable" href="../../dc/db4/structtuya__wifi__status__config.html#a073fce121d4544e361d1c41e7e466c64">get_wf_nw_stat_cb</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../dc/db4/structtuya__wifi__status__config.html#a092f68ff2a9a72a4a0875661f2de6a8e">   12</a></span>    <a class="code hl_typedef" href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">WF_NW_CFG_ERR_CODE_CB</a> <a class="code hl_variable" href="../../dc/db4/structtuya__wifi__status__config.html#a092f68ff2a9a72a4a0875661f2de6a8e">wf_nw_err_code_cb</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>} <a class="code hl_struct" href="../../dc/db4/structtuya__wifi__status__config.html">TUYA_WIFI_STATUS_CONFIG</a>, *<a class="code hl_struct" href="../../dc/db4/structtuya__wifi__status__config.html">PTR_TUYA_WIFI_STATUS_CONFIG</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>OPERATE_RET wifi_get_network_status(OUT GW_WIFI_NW_STAT_E *nw_stat);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>VOID_T wifi_update_network_status(VOID_T);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> tuya_wifi_set_connect_status(NW_CFG_ERR_CODE_E e_status);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>OPERATE_RET get_wf_gw_nw_status(OUT GW_WIFI_NW_STAT_E *nw_stat);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>OPERATE_RET tuya_wifi_status_set_config(<a class="code hl_struct" href="../../dc/db4/structtuya__wifi__status__config.html">TUYA_WIFI_STATUS_CONFIG</a> wifi_status_config);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructtuya__wifi__status__config_html"><div class="ttname"><a href="../../dc/db4/structtuya__wifi__status__config.html">tuya_wifi_status_config</a></div><div class="ttdef"><b>Definition:</b> tuya_wifi_status.h:8</div></div>
+<div class="ttc" id="astructtuya__wifi__status__config_html_a073fce121d4544e361d1c41e7e466c64"><div class="ttname"><a href="../../dc/db4/structtuya__wifi__status__config.html#a073fce121d4544e361d1c41e7e466c64">tuya_wifi_status_config::get_wf_nw_stat_cb</a></div><div class="ttdeci">GET_WF_NW_STAT_CB get_wf_nw_stat_cb</div><div class="ttdef"><b>Definition:</b> tuya_wifi_status.h:10</div></div>
+<div class="ttc" id="astructtuya__wifi__status__config_html_a092f68ff2a9a72a4a0875661f2de6a8e"><div class="ttname"><a href="../../dc/db4/structtuya__wifi__status__config.html#a092f68ff2a9a72a4a0875661f2de6a8e">tuya_wifi_status_config::wf_nw_err_code_cb</a></div><div class="ttdeci">WF_NW_CFG_ERR_CODE_CB wf_nw_err_code_cb</div><div class="ttdef"><b>Definition:</b> tuya_wifi_status.h:12</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html">tuya_cloud_wifi_defs.h</a></div><div class="ttdoc">Common definitions of TUYA cloud</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a06238119f7279eaaf7f2c0be948b3cd5"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a06238119f7279eaaf7f2c0be948b3cd5">WF_NW_CFG_ERR_CODE_CB</a></div><div class="ttdeci">VOID(* WF_NW_CFG_ERR_CODE_CB)(IN CONST NW_CFG_ERR_CODE_E err_code)</div><div class="ttdoc">Handler when network configuration error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:144</div></div>
+<div class="ttc" id="atuya__cloud__wifi__defs_8h_html_a2e8a6875b865838ae5efa2edebce6b71"><div class="ttname"><a href="../../df/dfd/tuya__cloud__wifi__defs_8h.html#a2e8a6875b865838ae5efa2edebce6b71">GET_WF_NW_STAT_CB</a></div><div class="ttdeci">VOID(* GET_WF_NW_STAT_CB)(IN CONST GW_WIFI_NW_STAT_E stat)</div><div class="ttdoc">Handler when network connection error happens</div><div class="ttdef"><b>Definition:</b> tuya_cloud_wifi_defs.h:137</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_tuya_cloud/include/http/tuya_cert_manager.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_20b83204aec8329ee853c60b209c8f33.html">svc_tuya_cloud</a></li><li class="navelem"><a class="el" href="../../dir_05dfd07a9199e3d2b29b9c3ed13f92a7.html">include</a></li><li class="navelem"><a class="el" href="../../dir_6e12c89026136e4f2da971311aae5154.html">http</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tuya_cert_manager.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Tuya Cert Manager include  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+<code>#include &quot;ty_cJSON.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tuya_cert_manager.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d13/tuya__cert__manager_8h__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2http_2tuya__cert__manager_8h" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2http_2tuya__cert__manager_8h" id="ainclude_2components_2svc__tuya__cloud_2include_2http_2tuya__cert__manager_8h">
+<area shape="rect" title="Tuya Cert Manager include" alt="" coords="122,5,315,61"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="322,109,470,136"/>
+<area shape="rect" href="../../d8/d46/ty__cJSON_8h_source.html" title=" " alt="" coords="100,109,193,136"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="104,184,237,211"/>
+<area shape="rect" title=" " alt="" coords="261,184,336,211"/>
+<area shape="rect" title=" " alt="" coords="361,184,431,211"/>
+<area shape="rect" title=" " alt="" coords="5,184,80,211"/>
+<area shape="rect" title=" " alt="" coords="455,184,526,211"/>
+<area shape="rect" title=" " alt="" coords="551,184,633,211"/>
+<area shape="rect" title=" " alt="" coords="658,184,729,211"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="753,184,892,211"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d1a/tuya__cert__manager_8h__dep__incl.png" border="0" usemap="#ainclude_2components_2svc__tuya__cloud_2include_2http_2tuya__cert__manager_8hdep" alt=""/></div>
+<map name="ainclude_2components_2svc__tuya__cloud_2include_2http_2tuya__cert__manager_8hdep" id="ainclude_2components_2svc__tuya__cloud_2include_2http_2tuya__cert__manager_8hdep">
+<area shape="rect" title="Tuya Cert Manager include" alt="" coords="300,5,493,61"/>
+<area shape="rect" href="../../d8/d4f/tuya__tls_8h.html" title="Common process &#45; tls include" alt="" coords="308,109,485,165"/>
+<area shape="rect" href="../../d3/d1b/httpc_8h.html" title="HTTP Client Module" alt="" coords="112,221,287,262"/>
+<area shape="rect" href="../../dd/d1b/websocket__client_8h_source.html" title=" " alt="" coords="311,213,482,269"/>
+<area shape="rect" href="../../df/d64/tal__asymmetrical_8h.html" title="Common process &#45; adapter the asymmetrical api provide by OS" alt="" coords="507,213,660,269"/>
+<area shape="rect" href="../../dc/d26/http__inf_8h.html" title="Wrapper of HTTP request and response" alt="" coords="5,325,196,366"/>
+<area shape="rect" href="../../d9/d3a/http__manager_8h.html" title="wrapper for HTTP session manager" alt="" coords="220,317,376,373"/>
+<area shape="rect" href="../../d0/d43/iot__httpc_8h.html" title="HTTP APIs to interact with TUYA cloud" alt="" coords="12,421,189,477"/>
+<area shape="rect" href="../../d9/df0/tal__security_8h.html" title="tal_security file include" alt="" coords="507,317,660,373"/>
+</map>
+</div>
+</div>
+<p><a href="../../d1/dde/tuya__cert__manager_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4f/structDNS__QUERY__S.html">DNS_QUERY_S</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of domain's IP and cert structure  <a href="../../da/d4f/structDNS__QUERY__S.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a2ebda6371c09c86802c2af683c1a84e2"><td class="memItemLeft" align="right" valign="top">typedef OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a2ebda6371c09c86802c2af683c1a84e2">CERT_PARSE_CB</a>) (VOID_T *ctx, UCHAR_T *cert, UINT_T cert_len)</td></tr>
+<tr class="memdesc:a2ebda6371c09c86802c2af683c1a84e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">cert parse cb  <a href="../../d1/dde/tuya__cert__manager_8h.html#a2ebda6371c09c86802c2af683c1a84e2">更多...</a><br /></td></tr>
+<tr class="separator:a2ebda6371c09c86802c2af683c1a84e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c35663ebed1762451791f0e50183e89"><td class="memItemLeft" align="right" valign="top">typedef VOID(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a1c35663ebed1762451791f0e50183e89">tuya_tls_event_cb</a>) (TY_TLS_EVENT_E event, VOID *p_args)</td></tr>
+<tr class="memdesc:a1c35663ebed1762451791f0e50183e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">tls event cb  <a href="../../d1/dde/tuya__cert__manager_8h.html#a1c35663ebed1762451791f0e50183e89">更多...</a><br /></td></tr>
+<tr class="separator:a1c35663ebed1762451791f0e50183e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a5cc12573b1277a573cc7c765bf20ffee"><td class="memItemLeft" align="right" valign="top"><a id="a5cc12573b1277a573cc7c765bf20ffee" name="a5cc12573b1277a573cc7c765bf20ffee"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TY_TLS_EVENT_E</b> { <b>TY_TLS_CERT_EXPIRED</b>
+ }</td></tr>
+<tr class="separator:a5cc12573b1277a573cc7c765bf20ffee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab27cbe08aa58563286960fd2c255840b"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#ab27cbe08aa58563286960fd2c255840b">http_iot_dns_get_root_ca</a> ()</td></tr>
+<tr class="memdesc:ab27cbe08aa58563286960fd2c255840b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get root ca  <a href="../../d1/dde/tuya__cert__manager_8h.html#ab27cbe08aa58563286960fd2c255840b">更多...</a><br /></td></tr>
+<tr class="separator:ab27cbe08aa58563286960fd2c255840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a0722797e245669cb251918dda3d67"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#ab0a0722797e245669cb251918dda3d67">httpc_domain_certs_get</a> (OUT <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **result, IN CONST CHAR_T *url_msg)</td></tr>
+<tr class="memdesc:ab0a0722797e245669cb251918dda3d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">cert get accroding one url  <a href="../../d1/dde/tuya__cert__manager_8h.html#ab0a0722797e245669cb251918dda3d67">更多...</a><br /></td></tr>
+<tr class="separator:ab0a0722797e245669cb251918dda3d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f80d64e1c9da730d7d03d3e8c8d4ad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a1c35663ebed1762451791f0e50183e89">tuya_tls_event_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a8f80d64e1c9da730d7d03d3e8c8d4ad3">tuya_cert_get_tls_event_cb</a> ()</td></tr>
+<tr class="memdesc:a8f80d64e1c9da730d7d03d3e8c8d4ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get tls event cb  <a href="../../d1/dde/tuya__cert__manager_8h.html#a8f80d64e1c9da730d7d03d3e8c8d4ad3">更多...</a><br /></td></tr>
+<tr class="separator:a8f80d64e1c9da730d7d03d3e8c8d4ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa25a2bfdd22b142c69541f271fabcb4"><td class="memItemLeft" align="right" valign="top"><a id="aaa25a2bfdd22b142c69541f271fabcb4" name="aaa25a2bfdd22b142c69541f271fabcb4"></a>
+VOID&#160;</td><td class="memItemRight" valign="bottom"><b>tuya_cert_kv_to_ram</b> (void)</td></tr>
+<tr class="memdesc:aaa25a2bfdd22b142c69541f271fabcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cert resume from kv to ram <br /></td></tr>
+<tr class="separator:aaa25a2bfdd22b142c69541f271fabcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cbb788b386ea4e84752673dcc6dc5a"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a40cbb788b386ea4e84752673dcc6dc5a">tuya_cert_manager_deinit</a> ()</td></tr>
+<tr class="memdesc:a40cbb788b386ea4e84752673dcc6dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">cert manager deinit  <a href="../../d1/dde/tuya__cert__manager_8h.html#a40cbb788b386ea4e84752673dcc6dc5a">更多...</a><br /></td></tr>
+<tr class="separator:a40cbb788b386ea4e84752673dcc6dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60862e93f0b4dc711127eadc922f5977"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a60862e93f0b4dc711127eadc922f5977">tuya_cert_manager_init</a> ()</td></tr>
+<tr class="memdesc:a60862e93f0b4dc711127eadc922f5977"><td class="mdescLeft">&#160;</td><td class="mdescRight">cert manager init  <a href="../../d1/dde/tuya__cert__manager_8h.html#a60862e93f0b4dc711127eadc922f5977">更多...</a><br /></td></tr>
+<tr class="separator:a60862e93f0b4dc711127eadc922f5977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9eee1fa066608b3fd1a171a682d2d0"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a9f9eee1fa066608b3fd1a171a682d2d0">tuya_cert_manager_load</a> (CHAR_T *url, <a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a2ebda6371c09c86802c2af683c1a84e2">CERT_PARSE_CB</a> cb, VOID_T *p_ctx)</td></tr>
+<tr class="memdesc:a9f9eee1fa066608b3fd1a171a682d2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">cert load  <a href="../../d1/dde/tuya__cert__manager_8h.html#a9f9eee1fa066608b3fd1a171a682d2d0">更多...</a><br /></td></tr>
+<tr class="separator:a9f9eee1fa066608b3fd1a171a682d2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f178caba118be24459de900c2f5c943"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a5f178caba118be24459de900c2f5c943">tuya_cert_save_to_kv</a> (<a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *result)</td></tr>
+<tr class="memdesc:a5f178caba118be24459de900c2f5c943"><td class="mdescLeft">&#160;</td><td class="mdescRight">save cert to kv  <a href="../../d1/dde/tuya__cert__manager_8h.html#a5f178caba118be24459de900c2f5c943">更多...</a><br /></td></tr>
+<tr class="separator:a5f178caba118be24459de900c2f5c943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3accff17f9052a8292108c61c640ea26"><td class="memItemLeft" align="right" valign="top">CONST <a class="el" href="../../dc/d1d/structclient__cert__info__t.html">client_cert_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a3accff17f9052a8292108c61c640ea26">tuya_client_cert_get</a> (void)</td></tr>
+<tr class="memdesc:a3accff17f9052a8292108c61c640ea26"><td class="mdescLeft">&#160;</td><td class="mdescRight">get client cert  <a href="../../d1/dde/tuya__cert__manager_8h.html#a3accff17f9052a8292108c61c640ea26">更多...</a><br /></td></tr>
+<tr class="separator:a3accff17f9052a8292108c61c640ea26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89e46c03ef8abc7d22124c1516154ac"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#ae89e46c03ef8abc7d22124c1516154ac">tuya_client_cert_write</a> (IN CONST BYTE_T *value, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:ae89e46c03ef8abc7d22124c1516154ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">root ca write  <a href="../../d1/dde/tuya__cert__manager_8h.html#ae89e46c03ef8abc7d22124c1516154ac">更多...</a><br /></td></tr>
+<tr class="separator:ae89e46c03ef8abc7d22124c1516154ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6397f80e47604135899bcdcc45e70a6c"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a6397f80e47604135899bcdcc45e70a6c">tuya_client_private_key_write</a> (IN CONST BYTE_T *value, IN CONST UINT_T len)</td></tr>
+<tr class="memdesc:a6397f80e47604135899bcdcc45e70a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">client private key write  <a href="../../d1/dde/tuya__cert__manager_8h.html#a6397f80e47604135899bcdcc45e70a6c">更多...</a><br /></td></tr>
+<tr class="separator:a6397f80e47604135899bcdcc45e70a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b2ed93313d7d5b60212472890fc9a7"><td class="memItemLeft" align="right" valign="top">CONST <a class="el" href="../../d8/dcb/structclient__psk__info__t.html">client_psk_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a67b2ed93313d7d5b60212472890fc9a7">tuya_client_psk_get</a> (VOID)</td></tr>
+<tr class="memdesc:a67b2ed93313d7d5b60212472890fc9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get client psk  <a href="../../d1/dde/tuya__cert__manager_8h.html#a67b2ed93313d7d5b60212472890fc9a7">更多...</a><br /></td></tr>
+<tr class="separator:a67b2ed93313d7d5b60212472890fc9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07061acab95c44ec94b6b649cad8f7d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#ac07061acab95c44ec94b6b649cad8f7d">tuya_iot_get_third_cloud_ca</a> (CHAR_T *p_url)</td></tr>
+<tr class="memdesc:ac07061acab95c44ec94b6b649cad8f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">according url get third cloud ca  <a href="../../d1/dde/tuya__cert__manager_8h.html#ac07061acab95c44ec94b6b649cad8f7d">更多...</a><br /></td></tr>
+<tr class="separator:ac07061acab95c44ec94b6b649cad8f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Tuya Cert Manager include </p>
+<dl class="section author"><dt>作者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'fan'+'gw'+'eng'+'.h'+'u@t'+'uy'+'a.c'+'om'; return false;">fangw<span class="obfuscator">.nosp@m.</span>eng.<span class="obfuscator">.nosp@m.</span>hu@tu<span class="obfuscator">.nosp@m.</span>ya.c<span class="obfuscator">.nosp@m.</span>om</a> </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-04-08</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a id="a2ebda6371c09c86802c2af683c1a84e2" name="a2ebda6371c09c86802c2af683c1a84e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebda6371c09c86802c2af683c1a84e2">&#9670;&nbsp;</a></span>CERT_PARSE_CB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OPERATE_RET(* CERT_PARSE_CB) (VOID_T *ctx, UCHAR_T *cert, UINT_T cert_len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cert parse cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>contex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert</td><td>ca cert </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert_len</td><td>ca cert len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1c35663ebed1762451791f0e50183e89" name="a1c35663ebed1762451791f0e50183e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c35663ebed1762451791f0e50183e89">&#9670;&nbsp;</a></span>tuya_tls_event_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VOID(* tuya_tls_event_cb) (TY_TLS_EVENT_E event, VOID *p_args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tls event cb </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>event id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_args</td><td>cb args </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ab27cbe08aa58563286960fd2c255840b" name="ab27cbe08aa58563286960fd2c255840b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27cbe08aa58563286960fd2c255840b">&#9670;&nbsp;</a></span>http_iot_dns_get_root_ca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET http_iot_dns_get_root_ca </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get root ca </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab0a0722797e245669cb251918dda3d67" name="ab0a0722797e245669cb251918dda3d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a0722797e245669cb251918dda3d67">&#9670;&nbsp;</a></span>httpc_domain_certs_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET httpc_domain_certs_get </td>
+          <td>(</td>
+          <td class="paramtype">OUT <a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST CHAR_T *&#160;</td>
+          <td class="paramname"><em>url_msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cert get accroding one url </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>cert result </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">url_msg</td><td>url</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8f80d64e1c9da730d7d03d3e8c8d4ad3" name="a8f80d64e1c9da730d7d03d3e8c8d4ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f80d64e1c9da730d7d03d3e8c8d4ad3">&#9670;&nbsp;</a></span>tuya_cert_get_tls_event_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a1c35663ebed1762451791f0e50183e89">tuya_tls_event_cb</a> tuya_cert_get_tls_event_cb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get tls event cb </p>
+<dl class="section return"><dt>返回</dt><dd>event cb </dd></dl>
+
+</div>
+</div>
+<a id="a40cbb788b386ea4e84752673dcc6dc5a" name="a40cbb788b386ea4e84752673dcc6dc5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cbb788b386ea4e84752673dcc6dc5a">&#9670;&nbsp;</a></span>tuya_cert_manager_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_cert_manager_deinit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cert manager deinit </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a60862e93f0b4dc711127eadc922f5977" name="a60862e93f0b4dc711127eadc922f5977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60862e93f0b4dc711127eadc922f5977">&#9670;&nbsp;</a></span>tuya_cert_manager_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_cert_manager_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cert manager init </p>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9f9eee1fa066608b3fd1a171a682d2d0" name="a9f9eee1fa066608b3fd1a171a682d2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9eee1fa066608b3fd1a171a682d2d0">&#9670;&nbsp;</a></span>tuya_cert_manager_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_cert_manager_load </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dde/tuya__cert__manager_8h.html#a2ebda6371c09c86802c2af683c1a84e2">CERT_PARSE_CB</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VOID_T *&#160;</td>
+          <td class="paramname"><em>p_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cert load </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>hostname </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>cert parse cb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_ctx</td><td>contex</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5f178caba118be24459de900c2f5c943" name="a5f178caba118be24459de900c2f5c943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f178caba118be24459de900c2f5c943">&#9670;&nbsp;</a></span>tuya_cert_save_to_kv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_cert_save_to_kv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>save cert to kv </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>cert info </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3accff17f9052a8292108c61c640ea26" name="a3accff17f9052a8292108c61c640ea26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3accff17f9052a8292108c61c640ea26">&#9670;&nbsp;</a></span>tuya_client_cert_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST <a class="el" href="../../dc/d1d/structclient__cert__info__t.html">client_cert_info_t</a> * tuya_client_cert_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get client cert </p>
+<dl class="section return"><dt>返回</dt><dd>const client_cert_info_t* </dd></dl>
+
+</div>
+</div>
+<a id="ae89e46c03ef8abc7d22124c1516154ac" name="ae89e46c03ef8abc7d22124c1516154ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89e46c03ef8abc7d22124c1516154ac">&#9670;&nbsp;</a></span>tuya_client_cert_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_client_cert_write </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>root ca write </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>CA value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>CA len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6397f80e47604135899bcdcc45e70a6c" name="a6397f80e47604135899bcdcc45e70a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6397f80e47604135899bcdcc45e70a6c">&#9670;&nbsp;</a></span>tuya_client_private_key_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tuya_client_private_key_write </td>
+          <td>(</td>
+          <td class="paramtype">IN CONST BYTE_T *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IN CONST UINT_T&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>client private key write </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>private key value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>private key len</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK on success. Others on error, please refer to <a class="el" href="../../de/dfd/tuya__error__code_8h_source.html">tuya_error_code.h</a> </dd></dl>
+
+</div>
+</div>
+<a id="a67b2ed93313d7d5b60212472890fc9a7" name="a67b2ed93313d7d5b60212472890fc9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b2ed93313d7d5b60212472890fc9a7">&#9670;&nbsp;</a></span>tuya_client_psk_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CONST <a class="el" href="../../d8/dcb/structclient__psk__info__t.html">client_psk_info_t</a> * tuya_client_psk_get </td>
+          <td>(</td>
+          <td class="paramtype">VOID&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get client psk </p>
+<dl class="section return"><dt>返回</dt><dd>const client_psk_info_t* </dd></dl>
+
+</div>
+</div>
+<a id="ac07061acab95c44ec94b6b649cad8f7d" name="ac07061acab95c44ec94b6b649cad8f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07061acab95c44ec94b6b649cad8f7d">&#9670;&nbsp;</a></span>tuya_iot_get_third_cloud_ca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID tuya_iot_get_third_cloud_ca </td>
+          <td>(</td>
+          <td class="paramtype">CHAR_T *&#160;</td>
+          <td class="paramname"><em>p_url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>according url get third cloud ca </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>Third cloud url</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

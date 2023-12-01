@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/media/include/tkl_video_in.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_f035e8dac116664123d3c2a73ed2f457.html">media</a></li><li class="navelem"><a class="el" href="../../dir_c3870483c35fa4c017a1fc661583a339.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_video_in.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d8f/tkl__video__in_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef __TKL_VIDEO_IN_H__</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define __TKL_VIDEO_IN_H__</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/dd2/tkl__media_8h.html">tkl_media.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d61/tkl__isp_8h.html">tkl_isp.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d1/d0e/structTKL__VI__HARDWARE__SOURCE__T.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{   </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// 1个IIC+host 对应一个video设备   hardware_port[0] + host_port[0] 构造成1个video设备</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    UINT32_T * hardware_port;          <span class="comment">// 存放iic</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    UINT32_T * host_port;              <span class="comment">// 存放host dvp or mipi</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    UINT32_T   haraware_source_num;    <span class="comment">// 一共有多少对 iic + host</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// 视频内存池的分配方法 在RTOS系统有片外的PSRAM 所以需要支持这个</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    void (*v_mem_free)(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> *(*v_mem_malloc)(UINT32_T size);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}<a class="code hl_struct" href="../../d1/d0e/structTKL__VI__HARDWARE__SOURCE__T.html">TKL_VI_HARDWARE_SOURCE_T</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">   37</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{   </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    UINT32_T page;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    UINT32_T reg_index;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    UINT32_T val;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}<a class="code hl_struct" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    TKL_VI_SENSOR_TYPE_IIC,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    TKL_VI_SENSOR_TYPE_SPI,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}TKL_VI_SENSOR_CBUS_TYPE_E;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d9/d1e/structTKL__VI__ISP__CONFIG__T.html">   50</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    CHAR_T conf[128];                                             <span class="comment">// isp conf path</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    CHAR_T conf1[128];                                            <span class="comment">// isp conf1 path</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    CHAR_T conf2[128];                                            <span class="comment">// isp conf2 path</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    CHAR_T conf3[128];                                            <span class="comment">// isp conf3 path</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    CHAR_T version[32];                                           <span class="comment">// version num</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    CHAR_T name[16];                                              <span class="comment">// isp sensor num</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_struct" href="../../d0/d38/structTKL__ISP__DN__SWITCH__CONFIG__T.html">TKL_ISP_DN_SWITCH_CONFIG_T</a> isp_dn_switch_config;              <span class="comment">// ADN switch config</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    TKL_VI_SENSOR_CBUS_TYPE_E  sensor_type;                       <span class="comment">// sensor control bus type</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    INT32_T              addr;                                    <span class="comment">// sensor address</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    INT32_T              width;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    INT32_T              height;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}<a class="code hl_struct" href="../../d9/d1e/structTKL__VI__ISP__CONFIG__T.html">TKL_VI_ISP_CONFIG_T</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d9/d80/structTKL__VI__CONFIG__T.html">   65</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    INT32_T              enable;                                  <span class="comment">// 1,enable,0,disable</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    TKL_VI_CHN_E         chn;                                     <span class="comment">// video input channel</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    INT32_T              mirror;                                  <span class="comment">// mirror defaults</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    INT32_T              filp;                                    <span class="comment">// filp defaults</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_struct" href="../../d9/d1e/structTKL__VI__ISP__CONFIG__T.html">TKL_VI_ISP_CONFIG_T</a>  isp;                                     <span class="comment">// isp config</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    VOID * pdata;                                                 <span class="comment">// reserver data</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}<a class="code hl_struct" href="../../d9/d80/structTKL__VI__CONFIG__T.html">TKL_VI_CONFIG_T</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d9/d8c/structTKL__VI__RECT__T.html">   75</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    FLOAT_T x;                                                     <span class="comment">// 矩形框x坐标 | [0.0 - 1.0]</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    FLOAT_T y;                                                     <span class="comment">// 矩形框y坐标 | [0.0 - 1.0]</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    FLOAT_T width;                                                 <span class="comment">// 矩形框宽度　| [0.0 - 1.0]</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    FLOAT_T height;                                                <span class="comment">// 矩形框高度　| [0.0 - 1.0]</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} <a class="code hl_struct" href="../../d9/d8c/structTKL__VI__RECT__T.html">TKL_VI_RECT_T</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../da/d41/structTKL__VI__DETECT__TARGET__T.html">   83</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_struct" href="../../d9/d8c/structTKL__VI__RECT__T.html">TKL_VI_RECT_T</a>    draw_rect;                                   <span class="comment">// coordinate region</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    FLOAT_T          score;                                       <span class="comment">// score       | [0.0 - 1.0]</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    TKL_MEDIA_DETECT_TYPE_E type;                                 <span class="comment">// 目标类型，人形，宠物，火焰等</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <a class="code hl_struct" href="../../da/d41/structTKL__VI__DETECT__TARGET__T.html">TKL_VI_DETECT_TARGET_T</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../da/dd5/structTKL__VI__DETECT__RESULT__T.html">   90</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    INT32_T count;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_struct" href="../../da/d41/structTKL__VI__DETECT__TARGET__T.html">TKL_VI_DETECT_TARGET_T</a> target[TKL_VI_TARGET_MAX];</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>} <a class="code hl_struct" href="../../da/dd5/structTKL__VI__DETECT__RESULT__T.html">TKL_VI_DETECT_RESULT_T</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">   96</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    INT32_T sensitivity;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>} <a class="code hl_struct" href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">TKL_VI_DETECT_PARAM_T</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a78f181d1bd63fc2c55f144df2b658877">  109</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a78f181d1bd63fc2c55f144df2b658877">tkl_vi_init</a>(<a class="code hl_struct" href="../../d9/d80/structTKL__VI__CONFIG__T.html">TKL_VI_CONFIG_T</a> *pconfig, INT32_T count);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#aefd460ccd7f5695bbc80be77f22f13f1">  119</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#aefd460ccd7f5695bbc80be77f22f13f1">tkl_vi_set_mirror_flip</a>(TKL_VI_CHN_E chn, TKL_VI_MIRROR_FLIP_E flag);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a609963abbe5cd379ae06ef45a9b9fcf1">  129</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a609963abbe5cd379ae06ef45a9b9fcf1">tkl_vi_get_mirror_flip</a>(TKL_VI_CHN_E chn, TKL_VI_MIRROR_FLIP_E *flag);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a545a0ced7f6889ea39c111227c502814">  136</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a545a0ced7f6889ea39c111227c502814">tkl_vi_uninit</a>(VOID);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a319b5ad2d8b394b37943b1b227e695d3">  146</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a319b5ad2d8b394b37943b1b227e695d3">tkl_vi_sensor_reg_set</a>( TKL_VI_CHN_E chn, <a class="code hl_struct" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a> *parg);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a7b8ce1d8edcabe9aafb0fc7143099d93">  156</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a7b8ce1d8edcabe9aafb0fc7143099d93">tkl_vi_sensor_reg_get</a>( TKL_VI_CHN_E chn, <a class="code hl_struct" href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a> *parg);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a78f8cbbcb1ecdcbe8294e9767abcc7fa">  165</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a78f8cbbcb1ecdcbe8294e9767abcc7fa">tkl_vi_detect_start</a>(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a0e5f705404083b4d80ddbd88d135b28e">  174</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a0e5f705404083b4d80ddbd88d135b28e">tkl_vi_detect_stop</a>(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#aeb5d925966212cc02600d85d7b04666c">  185</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#aeb5d925966212cc02600d85d7b04666c">tkl_vi_detect_get_result</a>(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type, <a class="code hl_struct" href="../../da/dd5/structTKL__VI__DETECT__RESULT__T.html">TKL_VI_DETECT_RESULT_T</a> *presult);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../db/d8f/tkl__video__in_8h.html#a698111374cf9fcea54d060304dd377fb">  196</a></span>OPERATE_RET <a class="code hl_function" href="../../db/d8f/tkl__video__in_8h.html#a698111374cf9fcea54d060304dd377fb">tkl_vi_detect_set</a>(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type, <a class="code hl_struct" href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">TKL_VI_DETECT_PARAM_T</a> *pparam);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructTKL__ISP__DN__SWITCH__CONFIG__T_html"><div class="ttname"><a href="../../d0/d38/structTKL__ISP__DN__SWITCH__CONFIG__T.html">TKL_ISP_DN_SWITCH_CONFIG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_isp.h:80</div></div>
+<div class="ttc" id="astructTKL__VI__CONFIG__T_html"><div class="ttname"><a href="../../d9/d80/structTKL__VI__CONFIG__T.html">TKL_VI_CONFIG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:66</div></div>
+<div class="ttc" id="astructTKL__VI__DETECT__PARAM__T_html"><div class="ttname"><a href="../../d4/d96/structTKL__VI__DETECT__PARAM__T.html">TKL_VI_DETECT_PARAM_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:97</div></div>
+<div class="ttc" id="astructTKL__VI__DETECT__RESULT__T_html"><div class="ttname"><a href="../../da/dd5/structTKL__VI__DETECT__RESULT__T.html">TKL_VI_DETECT_RESULT_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:91</div></div>
+<div class="ttc" id="astructTKL__VI__DETECT__TARGET__T_html"><div class="ttname"><a href="../../da/d41/structTKL__VI__DETECT__TARGET__T.html">TKL_VI_DETECT_TARGET_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:84</div></div>
+<div class="ttc" id="astructTKL__VI__HARDWARE__SOURCE__T_html"><div class="ttname"><a href="../../d1/d0e/structTKL__VI__HARDWARE__SOURCE__T.html">TKL_VI_HARDWARE_SOURCE_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:25</div></div>
+<div class="ttc" id="astructTKL__VI__ISP__CONFIG__T_html"><div class="ttname"><a href="../../d9/d1e/structTKL__VI__ISP__CONFIG__T.html">TKL_VI_ISP_CONFIG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:51</div></div>
+<div class="ttc" id="astructTKL__VI__RECT__T_html"><div class="ttname"><a href="../../d9/d8c/structTKL__VI__RECT__T.html">TKL_VI_RECT_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:76</div></div>
+<div class="ttc" id="astructTKL__VI__SENSOR__REG__CONFIG__T_html"><div class="ttname"><a href="../../d2/d72/structTKL__VI__SENSOR__REG__CONFIG__T.html">TKL_VI_SENSOR_REG_CONFIG_T</a></div><div class="ttdef"><b>Definition:</b> tkl_video_in.h:38</div></div>
+<div class="ttc" id="atkl__isp_8h_html"><div class="ttname"><a href="../../dd/d61/tkl__isp_8h.html">tkl_isp.h</a></div><div class="ttdoc">isp</div></div>
+<div class="ttc" id="atkl__media_8h_html"><div class="ttname"><a href="../../df/dd2/tkl__media_8h.html">tkl_media.h</a></div><div class="ttdoc">Audio and video generic type definition header file</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a0e5f705404083b4d80ddbd88d135b28e"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a0e5f705404083b4d80ddbd88d135b28e">tkl_vi_detect_stop</a></div><div class="ttdeci">OPERATE_RET tkl_vi_detect_stop(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type)</div><div class="ttdoc">detect stop</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a319b5ad2d8b394b37943b1b227e695d3"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a319b5ad2d8b394b37943b1b227e695d3">tkl_vi_sensor_reg_set</a></div><div class="ttdeci">OPERATE_RET tkl_vi_sensor_reg_set(TKL_VI_CHN_E chn, TKL_VI_SENSOR_REG_CONFIG_T *parg)</div><div class="ttdoc">set sensor reg value</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a545a0ced7f6889ea39c111227c502814"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a545a0ced7f6889ea39c111227c502814">tkl_vi_uninit</a></div><div class="ttdeci">OPERATE_RET tkl_vi_uninit(VOID)</div><div class="ttdoc">vi uninit</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a609963abbe5cd379ae06ef45a9b9fcf1"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a609963abbe5cd379ae06ef45a9b9fcf1">tkl_vi_get_mirror_flip</a></div><div class="ttdeci">OPERATE_RET tkl_vi_get_mirror_flip(TKL_VI_CHN_E chn, TKL_VI_MIRROR_FLIP_E *flag)</div><div class="ttdoc">vi get mirror and flip</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a698111374cf9fcea54d060304dd377fb"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a698111374cf9fcea54d060304dd377fb">tkl_vi_detect_set</a></div><div class="ttdeci">OPERATE_RET tkl_vi_detect_set(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type, TKL_VI_DETECT_PARAM_T *pparam)</div><div class="ttdoc">set detection param</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a78f181d1bd63fc2c55f144df2b658877"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a78f181d1bd63fc2c55f144df2b658877">tkl_vi_init</a></div><div class="ttdeci">OPERATE_RET tkl_vi_init(TKL_VI_CONFIG_T *pconfig, INT32_T count)</div><div class="ttdoc">vi init</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a78f8cbbcb1ecdcbe8294e9767abcc7fa"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a78f8cbbcb1ecdcbe8294e9767abcc7fa">tkl_vi_detect_start</a></div><div class="ttdeci">OPERATE_RET tkl_vi_detect_start(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type)</div><div class="ttdoc">detect start</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_a7b8ce1d8edcabe9aafb0fc7143099d93"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#a7b8ce1d8edcabe9aafb0fc7143099d93">tkl_vi_sensor_reg_get</a></div><div class="ttdeci">OPERATE_RET tkl_vi_sensor_reg_get(TKL_VI_CHN_E chn, TKL_VI_SENSOR_REG_CONFIG_T *parg)</div><div class="ttdoc">get sensor reg value</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_aeb5d925966212cc02600d85d7b04666c"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#aeb5d925966212cc02600d85d7b04666c">tkl_vi_detect_get_result</a></div><div class="ttdeci">OPERATE_RET tkl_vi_detect_get_result(TKL_VI_CHN_E chn, TKL_MEDIA_DETECT_TYPE_E type, TKL_VI_DETECT_RESULT_T *presult)</div><div class="ttdoc">get detection results</div></div>
+<div class="ttc" id="atkl__video__in_8h_html_aefd460ccd7f5695bbc80be77f22f13f1"><div class="ttname"><a href="../../db/d8f/tkl__video__in_8h.html#aefd460ccd7f5695bbc80be77f22f13f1">tkl_vi_set_mirror_flip</a></div><div class="ttdeci">OPERATE_RET tkl_vi_set_mirror_flip(TKL_VI_CHN_E chn, TKL_VI_MIRROR_FLIP_E flag)</div><div class="ttdoc">vi set mirror and flip</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_api_iot/include/tuya_iot_internal_api.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_2f614bbe3ba3eda0deb0b4a36c9010ca.html">svc_api_iot</a></li><li class="navelem"><a class="el" href="../../dir_f2d8947984ed2c6831912f56fdf2350d.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_iot_internal_api.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d3e/tuya__iot__internal__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _TUYA_IOT_INTERNAL_API_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _TUYA_IOT_INTERNAL_API_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;ty_cJSON.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* cloud-storage api  */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//TODO</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ac98d0d1c20267cb028475bc900ca0221">   39</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ac98d0d1c20267cb028475bc900ca0221">iot_httpc_common_post_no_remalloc</a>(IN CONST CHAR_T *api_name, IN CONST CHAR_T *api_ver,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                              IN CONST CHAR_T *uuid, IN CONST CHAR_T *devid,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                              IN CHAR_T *post_data, IN UINT_T data_total_len,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                              IN CONST CHAR_T *p_head_other,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                              OUT <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **pp_result);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a30f7987c2a5fab17e938414097362d50">   58</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a30f7987c2a5fab17e938414097362d50">iot_httpc_common_post</a>(IN CONST CHAR_T *api_name, IN CONST CHAR_T *api_ver,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                  IN CONST CHAR_T *uuid, IN CONST CHAR_T *devid,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                  IN CHAR_T *post_data,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                  IN CONST CHAR_T *p_head_other,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                  OUT <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **pp_result);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a60217b45f805694ac0be66bba2092443">   75</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a60217b45f805694ac0be66bba2092443">iot_httpc_common_post_simple</a>(IN CONST CHAR_T *api_name, IN CONST CHAR_T *api_ver,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                         IN CHAR_T *post_data, IN CONST CHAR_T *p_head_other, OUT <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> **pp_result);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">typedef</span> OPERATE_RET(*IOT_HTTP_GET_FILE_DATA_CB)(IN PVOID_T priv_data, IN CONST UINT_T total_len, IN CONST UINT_T offset, \</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                                IN CONST BYTE_T *data, IN CONST UINT_T len, OUT UINT_T *remain_len);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a43c7db5ec3352b7da8ad9fbc0ff50045">   93</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a43c7db5ec3352b7da8ad9fbc0ff50045">iot_httpc_download_file</a>(IN CONST CHAR_T *url, IN CONST UINT_T mlk_buf_len, \</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                    IN CONST IOT_HTTP_GET_FILE_DATA_CB gfd_cb, IN PVOID_T priv_data, \</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                                    IN CONST UINT_T total_len, INOUT BYTE_T file_hmac[32]);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">/* mqtt api */</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">typedef</span> OPERATE_RET(*iot_mqc_protocol_handler_cb)(IN <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *root_json);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a7fd2607ef2aa60cff79183891c9685c3">  109</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a7fd2607ef2aa60cff79183891c9685c3">iot_mqc_app_register_cb</a>(UINT_T mq_pro, iot_mqc_protocol_handler_cb handler);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">typedef</span> VOID (*iot_mqc_publish_result_cb)(IN OPERATE_RET op_ret, IN VOID *prv_data);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a4bc49295412f7fdbe07fe63f8e4c00cf">  124</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a4bc49295412f7fdbe07fe63f8e4c00cf">iot_mqc_send_custom_msg</a>(IN CONST UINT_T protocol, IN CONST CHAR_T *data, IN CONST BYTE_T qos,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                                    IN CONST UINT_T to_lmt, IN CONST iot_mqc_publish_result_cb cb, IN VOID *prv_data);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ab39abfd1f29084e08725287eed5c03d1">  137</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ab39abfd1f29084e08725287eed5c03d1">iot_wd_common_write</a>(IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a4ab451d3275126c201e9899563dd4b5d">  149</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a4ab451d3275126c201e9899563dd4b5d">iot_wd_common_read</a>(IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ace89eb986474a2a25250820286f5c75f">  159</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ace89eb986474a2a25250820286f5c75f">iot_wd_common_free_data</a>(IN BYTE_T *data);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a30bcad4a5c8542d43cec927be04cf5b5">  169</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a30bcad4a5c8542d43cec927be04cf5b5">iot_wd_common_delete</a>(IN CONST CHAR_T *key);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ace90723d604b7c0a8523d96e99a9c9d6">  179</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ace90723d604b7c0a8523d96e99a9c9d6">iot_wd_gw_desc_if_read</a>(OUT VOID *di);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a6e8ece453d38ce1c69f69481efd4f4ca">  189</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a6e8ece453d38ce1c69f69481efd4f4ca">iot_wd_gw_write_country_code</a>(CHAR_T *country_code);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword">typedef</span> BYTE_T IOT_VAR_TP_T;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#define VT_CHAR 0</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#define VT_BYTE 1</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#define VT_SHORT 2</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#define VT_USHORT 3</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#define VT_INT 4</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#define VT_BOOL 5</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#define VT_STRING 6</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#define VT_RAW 7</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="../../d8/d50/structIOT__TY__DB__RW__S.html">  201</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    CHAR_T *key;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    IOT_VAR_TP_T vt;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    VOID *val;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    USHORT_T len;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>} <a class="code hl_struct" href="../../d8/d50/structIOT__TY__DB__RW__S.html">IOT_TY_DB_RW_S</a>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a2093e099458d93af2dc93bae71983cca">  218</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a2093e099458d93af2dc93bae71983cca">iot_wd_utils_serialize</a>(IN CONST <a class="code hl_struct" href="../../d8/d50/structIOT__TY__DB__RW__S.html">IOT_TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt, \</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                                   OUT CHAR_T **out, OUT UINT_T *out_len);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ad31d2ac9cea2865977327eadabec72f7">  228</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#ad31d2ac9cea2865977327eadabec72f7">iot_wd_utils_free_outbuf</a>(IN CHAR_T *out_buf);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#afbd0e73229d5252501c708568c3ca817">  239</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#afbd0e73229d5252501c708568c3ca817">iot_wd_utils_deserialize</a>(IN CONST CHAR_T *in, INOUT <a class="code hl_struct" href="../../d8/d50/structIOT__TY__DB__RW__S.html">IOT_TY_DB_RW_S</a> *rw, IN CONST UINT_T rw_cnt);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#aae1c109e37688a9962f19d22fd762c49">  248</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#aae1c109e37688a9962f19d22fd762c49">iot_gw_user_token_bind</a>(IN CHAR_T *token);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a7bf6dfbe01bbdc13e6c7e202528de23c">  258</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a7bf6dfbe01bbdc13e6c7e202528de23c">iot_put_cloud_config</a>(IN CONST CHAR_T *data);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">/***********************************************************</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">网关升级时增加的前置过滤处理函数</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">如果*handled返回为TRUE,那么就不在通过正常的用户回调通知用户升级</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">如果*handled返回为FALSE,那么仍然通过正常的用户回调通知用户升级</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">***********************************************************/</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keyword">typedef</span> VOID (*PRE_GW_UG_INFORM_CB)(INOUT BOOL_T *handled, IN CONST <a class="code hl_struct" href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a> *fw);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a63d6542248495349a4cf26483835450d">  274</a></span>VOID <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a63d6542248495349a4cf26483835450d">iot_register_pre_gw_ug_cb</a>(IN PRE_GW_UG_INFORM_CB pre_ug_cb);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">#define MBEDTLS_SSL_VERIFY_NONE                 0</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">#define MBEDTLS_SSL_VERIFY_OPTIONAL             1</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">#define MBEDTLS_SSL_VERIFY_REQUIRED             2</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a5423155d29e7633bf095c362709a7a6d">  292</a></span>INT_T <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a5423155d29e7633bf095c362709a7a6d">iot_tls_register_x509_crt_der</a>(VOID *p_ctx, UCHAR_T *p_der, UINT_T der_len);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a8d3102b0a6850f7927133fffdaa2ca7e">  299</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a8d3102b0a6850f7927133fffdaa2ca7e">iot_gw_update_versions</a>(VOID);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">/* RAW HTTP API */</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="keyword">typedef</span> PVOID_T IOT_RAW_HTTP_S;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a2550555167f07543af06ef6bc7430e59">  314</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a2550555167f07543af06ef6bc7430e59">iot_httpc_raw_post</a>(IN CONST CHAR_T *p_url, IN CONST UINT_T data_total_len, INOUT IOT_RAW_HTTP_S *pp_raw_http);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#adfdcf5aee3c75889391559f526d6e4b7">  326</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#adfdcf5aee3c75889391559f526d6e4b7">iot_httpc_raw_get</a>(IN CONST CHAR_T *p_url, INOUT IOT_RAW_HTTP_S *pp_raw_http, IN UINT_T offset, IN UINT_T total_len);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a6db0965264ec2029b99753450b7630f0">  337</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a6db0965264ec2029b99753450b7630f0">iot_httpc_raw_put</a>(IN CONST CHAR_T *p_url, IN CONST UINT_T data_total_len, INOUT IOT_RAW_HTTP_S *pp_raw_http);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#adb3755b9cd4612df235396f1a21a1866">  349</a></span>INT_T <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#adb3755b9cd4612df235396f1a21a1866">iot_httpc_raw_write_content</a>(IN IOT_RAW_HTTP_S p_raw_http, IN CONST BYTE_T *buf, IN CONST UINT_T buf_len, BOOL_T chunked);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a401cea48f364febab0ca4fa955c0b474">  361</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a401cea48f364febab0ca4fa955c0b474">iot_httpc_raw_read_resp_header</a>(INOUT IOT_RAW_HTTP_S p_raw_http, OUT INT_T *p_status_code, OUT BOOL_T *p_chunked, OUT UINT_T *p_content_len);</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a65e9622dc469524ed180ed8de0a33401">  372</a></span>INT_T <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a65e9622dc469524ed180ed8de0a33401">iot_httpc_raw_read_content</a>(IN IOT_RAW_HTTP_S p_raw_http, IN BYTE_T *buf, IN CONST UINT_T buf_len);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a275b9115b6e98b5e42de2830a22a1292">  381</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a275b9115b6e98b5e42de2830a22a1292">iot_httpc_raw_close</a>(IN IOT_RAW_HTTP_S p_raw_http);</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a78540f225230ce774a8a08a36550405c">  390</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a78540f225230ce774a8a08a36550405c">tuya_iot_put_cloud_config</a>(IN CONST CHAR_T *data);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#afb632e28764bbe92f046d056eb46beb7">  400</a></span>BOOL_T <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#afb632e28764bbe92f046d056eb46beb7">tuya_iot_compare_two_string</a>(IN CONST CHAR_T *cString1, IN CONST CHAR_T *cString2);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="keyword">typedef</span> OPERATE_RET(*iot_special_dp_cb)(IN CONST UINT16_T dpid, IN CONST <a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a> *dp_obj);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a271e5c9ee1bbd168275f57a9e648430d">  411</a></span>OPERATE_RET <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a271e5c9ee1bbd168275f57a9e648430d">iot_special_dp_register_cb</a>(IN iot_special_dp_cb handler);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>BOOL_T <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#afb632e28764bbe92f046d056eb46beb7">tuya_iot_compare_two_string</a>(IN CONST CHAR_T *cString1, IN CONST CHAR_T *cString2);</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno"><a class="line" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a0ceee82eaeb4feaeb80ad14ea1f35d70">  433</a></span>CHAR_T* <a class="code hl_function" href="../../d7/d3e/tuya__iot__internal__api_8h.html#a0ceee82eaeb4feaeb80ad14ea1f35d70">tuya_iot_get_json_safety_string</a>(IN CONST CHAR_T *json);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>}</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="preprocessor">#endif </span><span class="comment">/*_TUYA_IOT_INTERNAL_API_H*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="ttc" id="astructFW__UG__S_html"><div class="ttname"><a href="../../d4/d3f/structFW__UG__S.html">FW_UG_S</a></div><div class="ttdoc">tuya sdk ota firmware info</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:589</div></div>
+<div class="ttc" id="astructIOT__TY__DB__RW__S_html"><div class="ttname"><a href="../../d8/d50/structIOT__TY__DB__RW__S.html">IOT_TY_DB_RW_S</a></div><div class="ttdef"><b>Definition:</b> tuya_iot_internal_api.h:201</div></div>
+<div class="ttc" id="astructty__cJSON_html"><div class="ttname"><a href="../../d4/d53/structty__cJSON.html">ty_cJSON</a></div><div class="ttdef"><b>Definition:</b> ty_cJSON.h:104</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a0ceee82eaeb4feaeb80ad14ea1f35d70"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a0ceee82eaeb4feaeb80ad14ea1f35d70">tuya_iot_get_json_safety_string</a></div><div class="ttdeci">CHAR_T * tuya_iot_get_json_safety_string(IN CONST CHAR_T *json)</div><div class="ttdoc">tuya_iot_get_json_safety_string @desc will change the (&quot;) to the (\&quot;) in json file</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a2093e099458d93af2dc93bae71983cca"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a2093e099458d93af2dc93bae71983cca">iot_wd_utils_serialize</a></div><div class="ttdeci">OPERATE_RET iot_wd_utils_serialize(IN CONST IOT_TY_DB_RW_S *rw, IN CONST UINT_T rw_cnt, OUT CHAR_T **out, OUT UINT_T *out_len)</div><div class="ttdoc">iot_wd_utils_serialize</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a2550555167f07543af06ef6bc7430e59"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a2550555167f07543af06ef6bc7430e59">iot_httpc_raw_post</a></div><div class="ttdeci">OPERATE_RET iot_httpc_raw_post(IN CONST CHAR_T *p_url, IN CONST UINT_T data_total_len, INOUT IOT_RAW_HTTP_S *pp_raw_http)</div><div class="ttdoc">iot_httpc_raw_post</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a271e5c9ee1bbd168275f57a9e648430d"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a271e5c9ee1bbd168275f57a9e648430d">iot_special_dp_register_cb</a></div><div class="ttdeci">OPERATE_RET iot_special_dp_register_cb(IN iot_special_dp_cb handler)</div><div class="ttdoc">iot_special_dp_register_cb</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a275b9115b6e98b5e42de2830a22a1292"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a275b9115b6e98b5e42de2830a22a1292">iot_httpc_raw_close</a></div><div class="ttdeci">OPERATE_RET iot_httpc_raw_close(IN IOT_RAW_HTTP_S p_raw_http)</div><div class="ttdoc">iot_httpc_raw_close</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a30bcad4a5c8542d43cec927be04cf5b5"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a30bcad4a5c8542d43cec927be04cf5b5">iot_wd_common_delete</a></div><div class="ttdeci">OPERATE_RET iot_wd_common_delete(IN CONST CHAR_T *key)</div><div class="ttdoc">iot_wd_common_delete @desc wd delete</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a30f7987c2a5fab17e938414097362d50"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a30f7987c2a5fab17e938414097362d50">iot_httpc_common_post</a></div><div class="ttdeci">OPERATE_RET iot_httpc_common_post(IN CONST CHAR_T *api_name, IN CONST CHAR_T *api_ver, IN CONST CHAR_T *uuid, IN CONST CHAR_T *devid, IN CHAR_T *post_data, IN CONST CHAR_T *p_head_other, OUT ty_cJSON **pp_result)</div><div class="ttdoc">iot_httpc_common_post</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a401cea48f364febab0ca4fa955c0b474"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a401cea48f364febab0ca4fa955c0b474">iot_httpc_raw_read_resp_header</a></div><div class="ttdeci">OPERATE_RET iot_httpc_raw_read_resp_header(INOUT IOT_RAW_HTTP_S p_raw_http, OUT INT_T *p_status_code, OUT BOOL_T *p_chunked, OUT UINT_T *p_content_len)</div><div class="ttdoc">iot_httpc_raw_read_resp_header</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a43c7db5ec3352b7da8ad9fbc0ff50045"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a43c7db5ec3352b7da8ad9fbc0ff50045">iot_httpc_download_file</a></div><div class="ttdeci">OPERATE_RET iot_httpc_download_file(IN CONST CHAR_T *url, IN CONST UINT_T mlk_buf_len, IN CONST IOT_HTTP_GET_FILE_DATA_CB gfd_cb, IN PVOID_T priv_data, IN CONST UINT_T total_len, INOUT BYTE_T file_hmac[32])</div><div class="ttdoc">iot_httpc_download_file</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a4ab451d3275126c201e9899563dd4b5d"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a4ab451d3275126c201e9899563dd4b5d">iot_wd_common_read</a></div><div class="ttdeci">OPERATE_RET iot_wd_common_read(IN CONST CHAR_T *key, OUT BYTE_T **value, OUT UINT_T *p_len)</div><div class="ttdoc">iot_wd_common_read @desc wd read</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a4bc49295412f7fdbe07fe63f8e4c00cf"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a4bc49295412f7fdbe07fe63f8e4c00cf">iot_mqc_send_custom_msg</a></div><div class="ttdeci">OPERATE_RET iot_mqc_send_custom_msg(IN CONST UINT_T protocol, IN CONST CHAR_T *data, IN CONST BYTE_T qos, IN CONST UINT_T to_lmt, IN CONST iot_mqc_publish_result_cb cb, IN VOID *prv_data)</div><div class="ttdoc">iot_mqc_send_custom_msg</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a5423155d29e7633bf095c362709a7a6d"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a5423155d29e7633bf095c362709a7a6d">iot_tls_register_x509_crt_der</a></div><div class="ttdeci">INT_T iot_tls_register_x509_crt_der(VOID *p_ctx, UCHAR_T *p_der, UINT_T der_len)</div><div class="ttdoc">iot_tls_register_x509_crt_der @desc Parse one or more PEM certificates from a buffer and add them to ...</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a60217b45f805694ac0be66bba2092443"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a60217b45f805694ac0be66bba2092443">iot_httpc_common_post_simple</a></div><div class="ttdeci">OPERATE_RET iot_httpc_common_post_simple(IN CONST CHAR_T *api_name, IN CONST CHAR_T *api_ver, IN CHAR_T *post_data, IN CONST CHAR_T *p_head_other, OUT ty_cJSON **pp_result)</div><div class="ttdoc">iot_httpc_common_post_simple</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a63d6542248495349a4cf26483835450d"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a63d6542248495349a4cf26483835450d">iot_register_pre_gw_ug_cb</a></div><div class="ttdeci">VOID iot_register_pre_gw_ug_cb(IN PRE_GW_UG_INFORM_CB pre_ug_cb)</div><div class="ttdoc">iot_register_pre_gw_ug_cb</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a65e9622dc469524ed180ed8de0a33401"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a65e9622dc469524ed180ed8de0a33401">iot_httpc_raw_read_content</a></div><div class="ttdeci">INT_T iot_httpc_raw_read_content(IN IOT_RAW_HTTP_S p_raw_http, IN BYTE_T *buf, IN CONST UINT_T buf_len)</div><div class="ttdoc">iot_httpc_raw_read_content</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a6db0965264ec2029b99753450b7630f0"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a6db0965264ec2029b99753450b7630f0">iot_httpc_raw_put</a></div><div class="ttdeci">OPERATE_RET iot_httpc_raw_put(IN CONST CHAR_T *p_url, IN CONST UINT_T data_total_len, INOUT IOT_RAW_HTTP_S *pp_raw_http)</div><div class="ttdoc">iot_httpc_raw_put</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a6e8ece453d38ce1c69f69481efd4f4ca"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a6e8ece453d38ce1c69f69481efd4f4ca">iot_wd_gw_write_country_code</a></div><div class="ttdeci">OPERATE_RET iot_wd_gw_write_country_code(CHAR_T *country_code)</div><div class="ttdoc">iot_wd_gw_write_country_code @desc wd write country code</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a78540f225230ce774a8a08a36550405c"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a78540f225230ce774a8a08a36550405c">tuya_iot_put_cloud_config</a></div><div class="ttdeci">OPERATE_RET tuya_iot_put_cloud_config(IN CONST CHAR_T *data)</div><div class="ttdoc">tuya_iot_put_cloud_config</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a7bf6dfbe01bbdc13e6c7e202528de23c"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a7bf6dfbe01bbdc13e6c7e202528de23c">iot_put_cloud_config</a></div><div class="ttdeci">OPERATE_RET iot_put_cloud_config(IN CONST CHAR_T *data)</div><div class="ttdoc">iot_put_cloud_config @desc the project switches to the release, reporting configuration</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a7fd2607ef2aa60cff79183891c9685c3"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a7fd2607ef2aa60cff79183891c9685c3">iot_mqc_app_register_cb</a></div><div class="ttdeci">OPERATE_RET iot_mqc_app_register_cb(UINT_T mq_pro, iot_mqc_protocol_handler_cb handler)</div><div class="ttdoc">iot_mqc_app_register_cb @desc 注册mqtt事件回调函数</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_a8d3102b0a6850f7927133fffdaa2ca7e"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#a8d3102b0a6850f7927133fffdaa2ca7e">iot_gw_update_versions</a></div><div class="ttdeci">OPERATE_RET iot_gw_update_versions(VOID)</div><div class="ttdoc">iot_gw_update_versions</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_aae1c109e37688a9962f19d22fd762c49"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#aae1c109e37688a9962f19d22fd762c49">iot_gw_user_token_bind</a></div><div class="ttdeci">OPERATE_RET iot_gw_user_token_bind(IN CHAR_T *token)</div><div class="ttdoc">iot_gw_user_token_bind</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_ab39abfd1f29084e08725287eed5c03d1"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#ab39abfd1f29084e08725287eed5c03d1">iot_wd_common_write</a></div><div class="ttdeci">OPERATE_RET iot_wd_common_write(IN CONST CHAR_T *key, IN CONST BYTE_T *value, IN CONST UINT_T len)</div><div class="ttdoc">iot_wd_common_write @desc wd write</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_ac98d0d1c20267cb028475bc900ca0221"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#ac98d0d1c20267cb028475bc900ca0221">iot_httpc_common_post_no_remalloc</a></div><div class="ttdeci">OPERATE_RET iot_httpc_common_post_no_remalloc(IN CONST CHAR_T *api_name, IN CONST CHAR_T *api_ver, IN CONST CHAR_T *uuid, IN CONST CHAR_T *devid, IN CHAR_T *post_data, IN UINT_T data_total_len, IN CONST CHAR_T *p_head_other, OUT ty_cJSON **pp_result)</div><div class="ttdoc">iot_httpc_common_post_no_remalloc @desc http api</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_ace89eb986474a2a25250820286f5c75f"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#ace89eb986474a2a25250820286f5c75f">iot_wd_common_free_data</a></div><div class="ttdeci">OPERATE_RET iot_wd_common_free_data(IN BYTE_T *data)</div><div class="ttdoc">iot_wd_common_free_data @desc wd free</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_ace90723d604b7c0a8523d96e99a9c9d6"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#ace90723d604b7c0a8523d96e99a9c9d6">iot_wd_gw_desc_if_read</a></div><div class="ttdeci">OPERATE_RET iot_wd_gw_desc_if_read(OUT VOID *di)</div><div class="ttdoc">iot_wd_gw_desc_if_read @desc wd read gateway information</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_ad31d2ac9cea2865977327eadabec72f7"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#ad31d2ac9cea2865977327eadabec72f7">iot_wd_utils_free_outbuf</a></div><div class="ttdeci">OPERATE_RET iot_wd_utils_free_outbuf(IN CHAR_T *out_buf)</div><div class="ttdoc">iot_wd_utils_free_outbuf</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_adb3755b9cd4612df235396f1a21a1866"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#adb3755b9cd4612df235396f1a21a1866">iot_httpc_raw_write_content</a></div><div class="ttdeci">INT_T iot_httpc_raw_write_content(IN IOT_RAW_HTTP_S p_raw_http, IN CONST BYTE_T *buf, IN CONST UINT_T buf_len, BOOL_T chunked)</div><div class="ttdoc">iot_httpc_raw_write_content</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_adfdcf5aee3c75889391559f526d6e4b7"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#adfdcf5aee3c75889391559f526d6e4b7">iot_httpc_raw_get</a></div><div class="ttdeci">OPERATE_RET iot_httpc_raw_get(IN CONST CHAR_T *p_url, INOUT IOT_RAW_HTTP_S *pp_raw_http, IN UINT_T offset, IN UINT_T total_len)</div><div class="ttdoc">iot_httpc_raw_get</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_afb632e28764bbe92f046d056eb46beb7"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#afb632e28764bbe92f046d056eb46beb7">tuya_iot_compare_two_string</a></div><div class="ttdeci">BOOL_T tuya_iot_compare_two_string(IN CONST CHAR_T *cString1, IN CONST CHAR_T *cString2)</div><div class="ttdoc">tuya_iot_compare_two_string</div></div>
+<div class="ttc" id="atuya__iot__internal__api_8h_html_afbd0e73229d5252501c708568c3ca817"><div class="ttname"><a href="../../d7/d3e/tuya__iot__internal__api_8h.html#afbd0e73229d5252501c708568c3ca817">iot_wd_utils_deserialize</a></div><div class="ttdeci">OPERATE_RET iot_wd_utils_deserialize(IN CONST CHAR_T *in, INOUT IOT_TY_DB_RW_S *rw, IN CONST UINT_T rw_cnt)</div><div class="ttdoc">iot_wd_utils_deserialize</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

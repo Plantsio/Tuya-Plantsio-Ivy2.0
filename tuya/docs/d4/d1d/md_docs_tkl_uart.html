@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: UART 驱动</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">UART 驱动 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md325"></a>
+简要说明</h1>
+<p >UART(Universal Asynchronous Receiver/Transmitter)是一种通用串行数据总线，用于异步通信。该总线双向通信，可以实现全双工传输和接收。</p>
+<h1><a class="anchor" id="autotoc_md326"></a>
+Api 描述</h1>
+<h3><a class="anchor" id="autotoc_md327"></a>
+tkl_uart_init</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_uart_init(TUYA_UART_NUM_E port_id, TUYA_UART_BASE_CFG_T *cfg);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>通过端口号和基础配置初始化对应的uart实例，返回初始化结果 。</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><p class="startli"><code>port_id</code>: 端口号。</p>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,            // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,            // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,            // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,            // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,            // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,            // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><p class="startli"><code>cfg</code>: i2c基础配置，包含波特率，奇偶校验位，停止位，流控制</p>
+<p class="startli">``` typedef struct { UINT_T baudrate; TUYA_UART_PARITY_TYPE_E parity; TUYA_UART_DATA_LEN_E databits; TUYA_UART_STOP_LEN_E stopbits; TUYA_UART_FLOWCTRL_TYPE_E flowctrl; } <a class="el" href="../../dc/d4f/structTUYA__UART__BASE__CFG__T.html" title="uart config">TUYA_UART_BASE_CFG_T</a>; ```</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md328"></a>
+TUYA_UART_PARITY_TYPE_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_PARITY_TYPE_NONE   </td><td class="markdownTableBodyLeft">0x0 (没有校验位)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_PARITY_TYPE_ODD   </td><td class="markdownTableBodyLeft">0x1 (奇数校验位)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_PARITY_TYPE_EVEN   </td><td class="markdownTableBodyLeft">0x2 (偶数校验位)   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md329"></a>
+TUYA_UART_DATA_LEN_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_DATA_LEN_5BIT   </td><td class="markdownTableBodyLeft">0x5 (5位数据长度)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_DATA_LEN_6BIT   </td><td class="markdownTableBodyLeft">0x6 (6位数据长度)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_DATA_LEN_7BIT   </td><td class="markdownTableBodyLeft">0x7 (7位数据长度)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_DATA_LEN_8BIT   </td><td class="markdownTableBodyLeft">0x8 (8位数据长度)   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md330"></a>
+TUYA_UART_STOP_LEN_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_STOP_LEN_1BIT   </td><td class="markdownTableBodyLeft">0x1 (1位停止位)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_STOP_LEN_1_5BIT1   </td><td class="markdownTableBodyLeft">0x2 (1.5位停止位)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_STOP_LEN_2BIT   </td><td class="markdownTableBodyLeft">0x3 (2位停止位)   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h4><a class="anchor" id="autotoc_md331"></a>
+TUYA_UART_FLOWCTRL_TYPE_E:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_FLOWCTRL_NONE   </td><td class="markdownTableBodyLeft">0x0 (没有进行流控制)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_FLOWCTRL_RTSCTS   </td><td class="markdownTableBodyLeft">0x1 (请求/清除发送)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_FLOWCTRL_XONXOFF   </td><td class="markdownTableBodyLeft">0x2 (暂停传输/回复传输)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_FLOWCTRL_DTRDSR   </td><td class="markdownTableBodyLeft">0x3 (数据终端准备好/数据准备好)   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li>返回值：<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，uart type 定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md332"></a>
+tkl_uart_deinit:</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_uart_deinit(TUYA_UART_NUM_E port_id);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>uart反初始化。该接口会停止uart。</li>
+<li>结束正在进行的传输（如果有），并且释放相关的软硬件资源。</li>
+</ul>
+</li>
+<li>参数：<ul>
+<li><p class="startli"><code>port_id</code>: 端口号。</p>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,         // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,         // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,         // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,         // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,         // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,         // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --></li>
+</ul>
+</li>
+<li>返回值:<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h，uart type 定义部分。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md333"></a>
+tkl_uart_write:</h3>
+<div class="fragment"><div class="line">INT_T tkl_uart_write(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>uart 发送数据。</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>part_id</code>: 端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><code>buff</code>: 发送数据缓冲。</li>
+<li><code>len</code>: 发送数据长度。</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li><code>&gt;=0</code> 发送数据长度。</li>
+<li><code>&lt; 0</code> 发送数据错误。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md334"></a>
+tkl_uart_rx_irq_cb_reg:</h3>
+<div class="fragment"><div class="line">VOID_T tkl_uart_rx_irq_cb_reg(TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB rx_cb);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>注册uart 接受中断回调函数。</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>part_id</code>: 端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><p class="startli"><code>rx_cb</code>: 接受中断回调函数。</p>
+<p class="startli">回调函数类型TUYA_UART_IRQ_CB定义如下：</p>
+<p class="startli">``` typedef VOID_T (*TUYA_UART_IRQ_CB)(TUYA_UART_NUM_E port_id); ```</p>
+<p class="startli">其中port_id为端口号。</p>
+</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li><code>VOID</code>: 空</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md335"></a>
+tkl_uart_tx_irq_cb_reg:</h3>
+<div class="fragment"><div class="line">VOID_T tkl_uart_tx_irq_cb_reg(TUYA_UART_NUM_E port_id, TUYA_UART_IRQ_CB tx_cb);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>注册uart 接受中断回调函数。</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>part_id</code>: 端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><p class="startli"><code>tx_cb</code>: 发送中断回调函数。</p>
+<p class="startli">回调函数类型TUYA_UART_IRQ_CB定义如下：</p>
+<p class="startli">``` typedef VOID_T (*TUYA_UART_IRQ_CB)(TUYA_UART_NUM_E port_id); ```</p>
+<p class="startli">其中port_id为端口号。</p>
+</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li><code>VOID</code>: 空</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md336"></a>
+tkl_uart_read:</h3>
+<div class="fragment"><div class="line">INT_T tkl_uart_read(TUYA_UART_NUM_E port_id, VOID_T *buff, UINT16_T len);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>读取uart中的数据。</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>part_id</code>: 端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><code>buff</code>: 数据接收缓冲区。</li>
+<li><code>len</code>: 需要接受的数据长度。</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li><code>&gt;=0</code> 发送数据长度。</li>
+<li><code>&lt; 0</code> 发送数据错误。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md337"></a>
+tkl_uart_set_tx_int:</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_uart_set_tx_int(TUYA_UART_NUM_E port_id, BOOL_T enable);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>enabe/disable uart 发送中断</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>port_id</code>:端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><code>enable</code>:中断enabel/disable<ul>
+<li>0: disable</li>
+<li>1: enable</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md338"></a>
+tkl_uart_set_rx_flowctrl:</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_uart_set_rx_flowctrl(TUYA_UART_NUM_E port_id, BOOL_T enable);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>enable/disable uart 接受流控制。</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>port_id</code>:端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><code>enable</code>:流控制 enabel/disable<ul>
+<li>0: disable</li>
+<li>1: enable</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md339"></a>
+tkl_uart_wait_for_data：</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_uart_wait_for_data(TUYA_UART_NUM_E port_id, INT_T timeout_ms);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>等待接受数据</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>port_id</code>:端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><code>timeout_ms</code>: 等待毫秒数。</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md340"></a>
+tkl_uart_ioctl：</h3>
+<div class="fragment"><div class="line">OPERATE_RET tkl_uart_ioctl(TUYA_UART_NUM_E port_id, UINT32_T cmd, VOID *arg);</div>
+</div><!-- fragment --><ul>
+<li>功能描述：<ul>
+<li>uart command control</li>
+</ul>
+</li>
+<li><p class="startli">参数：</p><ul>
+<li><code>port_id</code>:端口号。</li>
+</ul>
+<div class="fragment"><div class="line">typedef enum {</div>
+<div class="line">    TUYA_UART_NUM_0,          // UART 0</div>
+<div class="line">    TUYA_UART_NUM_1,          // UART 1</div>
+<div class="line">    TUYA_UART_NUM_2,          // UART 2</div>
+<div class="line">    TUYA_UART_NUM_3,          // UART 3</div>
+<div class="line">    TUYA_UART_NUM_4,          // UART 4</div>
+<div class="line">    TUYA_UART_NUM_5,          // UART 5</div>
+<div class="line">    TUYA_UART_NUM_MAX,</div>
+<div class="line">} TUYA_UART_NUM_E;</div>
+</div><!-- fragment --><ul>
+<li><code>cmd</code>: uart 控制命令。</li>
+</ul>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md341"></a>
+TUYA_UART_IOCTL_CMD_E：</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">名字   </th><th class="markdownTableHeadLeft">定义   </th><th class="markdownTableHeadLeft">备注    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_SUSPEND_CMD   </td><td class="markdownTableBodyLeft">0x0 (暂停UART)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_RESUME_CMD   </td><td class="markdownTableBodyLeft">0x1 (恢复UART)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_FLUSH_CMD   </td><td class="markdownTableBodyLeft">0x2 (刷新uart缓冲)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TUYA_UART_RECONFIG_CMD   </td><td class="markdownTableBodyLeft">0x3 (重新初始化uart)   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">TUYA_UART_USER_CMD   </td><td class="markdownTableBodyLeft">0x4 (用户自定义命令)   </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<ul>
+<li><code>arg</code>: 对应控制命令的参数</li>
+</ul>
+<p >返回值：</p><ul>
+<li>OPRT_OK 成功，其他请参考文件tuya_error_code.h。</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md342"></a>
+示例</h1>
+<h2><a class="anchor" id="autotoc_md343"></a>
+1.uart 示例一</h2>
+<div class="fragment"><div class="line">int uart_loopback_test(void)</div>
+<div class="line">{</div>
+<div class="line">    UINT_T port_id;</div>
+<div class="line">    TUYA_UART_BASE_CFG_T cfg;</div>
+<div class="line">    OPERATE_RET ret = OPRT_OK;</div>
+<div class="line">    const int bufsize = 8;</div>
+<div class="line">    unsigned char tx[bufsize], rx[bufsize];</div>
+<div class="line">    INT_T bytes;</div>
+<div class="line">    int i;</div>
+<div class="line"> </div>
+<div class="line">    // start </div>
+<div class="line"> </div>
+<div class="line">    port_id = TUYA_UART_NUM_0;</div>
+<div class="line"> </div>
+<div class="line">    cfg.baudrate = 115200;</div>
+<div class="line">    cfg.databits = TUYA_UART_DATA_LEN_8BIT;</div>
+<div class="line">    cfg.parity = TUYA_UART_PARITY_TYPE_NONE;</div>
+<div class="line">    cfg.stopbits = TUYA_UART_STOP_LEN_1BIT;</div>
+<div class="line">    cfg.flowctrl = TUYA_UART_FLOWCTRL_NONE;</div>
+<div class="line"> </div>
+<div class="line">    ret = tkl_uart_init(port_id, &amp;cfg);</div>
+<div class="line">    </div>
+<div class="line">    for (i = 0; i &lt; bufsize; i++) {</div>
+<div class="line">        tx[i] = &#39;A&#39; + i;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    // loop 3 times</div>
+<div class="line">    for(i=0;i&lt;3;i++) {</div>
+<div class="line">        bzero(rx, sizeof(rx));</div>
+<div class="line"> </div>
+<div class="line">        bytes = tkl_uart_write(port_id, tx, sizeof(tx));</div>
+<div class="line">        if (bytes &lt;= 0) {</div>
+<div class="line">            // fail</div>
+<div class="line">            ret = OPRT_COM_ERROR;</div>
+<div class="line">         } else {</div>
+<div class="line">             // wait at most 5 seconds until the data is ready</div>
+<div class="line">            ret = tkl_uart_wait_for_data(port_id, 5000);</div>
+<div class="line">            if (ret == OPRT_TIMEOUT) {</div>
+<div class="line">               // timeout</div>
+<div class="line">               tkl_uart_deinit(port_id);</div>
+<div class="line">               return OPRT_COM_ERROR;</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            bytes = tkl_uart_read(port_id, rx, sizeof(rx));</div>
+<div class="line">            if (bytes &lt; 0) {</div>
+<div class="line">                // fail</div>
+<div class="line">                ret = OPRT_COM_ERROR;</div>
+<div class="line">            } else {</div>
+<div class="line">                if (memcmp(tx, rx, bufsize) != 0) {</div>
+<div class="line">                    // data is not identical</div>
+<div class="line">                    ret = OPRT_COM_ERROR;</div>
+<div class="line">                } else {</div>
+<div class="line">                    ret = OPRT_OK;</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        if (ret != OPRT_OK) {</div>
+<div class="line">            // fail </div>
+<div class="line">        } else {</div>
+<div class="line">            // ok </div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    //deinit </div>
+<div class="line">    tkl_uart_deinit(port_id);</div>
+<div class="line">    return ret;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md344"></a>
+2.uart 示例二</h2>
+<div class="fragment"><div class="line">static int sg_rx_flag = 0;</div>
+<div class="line">static int sg_tx_flag = 0;</div>
+<div class="line"> </div>
+<div class="line">static VOID_T tuya_rx_cb(TUYA_UART_NUM_E port_id)</div>
+<div class="line">{</div>
+<div class="line">    // mutex lock ??</div>
+<div class="line">    sg_rx_flag = 1;</div>
+<div class="line">    // mutex unlock ??</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">static static VOID_T tuya_tx_cb(TUYA_UART_NUM_E port_id)</div>
+<div class="line">{</div>
+<div class="line">    // mutex lock ??</div>
+<div class="line">    sg_tx_flag = 1;</div>
+<div class="line">    // mutex unlock ??</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">int uart_loopback_test(void)</div>
+<div class="line">{</div>
+<div class="line">    UINT_T port_id;</div>
+<div class="line">    TUYA_UART_BASE_CFG_T cfg;</div>
+<div class="line">    OPERATE_RET ret = OPRT_OK;</div>
+<div class="line">    const int bufsize = 8;</div>
+<div class="line">    unsigned char tx[bufsize], rx[bufsize];</div>
+<div class="line">    INT_T bytes;</div>
+<div class="line">    static int sl_first_time =1;</div>
+<div class="line">    int i;</div>
+<div class="line"> </div>
+<div class="line">    // start </div>
+<div class="line"> </div>
+<div class="line">    sg_rx_flag = 0;</div>
+<div class="line">    sg_tx_flag = 0;</div>
+<div class="line"> </div>
+<div class="line">    port_id = TUYA_UART_NUM_0;</div>
+<div class="line"> </div>
+<div class="line">    cfg.baudrate = 115200;</div>
+<div class="line">    cfg.databits = TUYA_UART_DATA_LEN_8BIT;</div>
+<div class="line">    cfg.parity = TUYA_UART_PARITY_TYPE_NONE;</div>
+<div class="line">    cfg.stopbits = TUYA_UART_STOP_LEN_1BIT;</div>
+<div class="line">    cfg.flowctrl = TUYA_UART_FLOWCTRL_NONE;</div>
+<div class="line"> </div>
+<div class="line">    ret = tkl_uart_init(port_id, &amp;cfg);</div>
+<div class="line"> </div>
+<div class="line">    if(tkl_uart_set_tx_int(port_id,1) &lt; 0) {</div>
+<div class="line">        //fail</div>
+<div class="line">        tkl_uart_deinit(port_id);</div>
+<div class="line">        return OPRT_COM_ERROR;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    for (i = 0; i &lt; bufsize; i++) {</div>
+<div class="line">        tx[i] = &#39;A&#39; + i;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    // loop 3 times</div>
+<div class="line">    for(i=0;i&lt;3;i++) {</div>
+<div class="line"> </div>
+<div class="line">        bzero(rx, sizeof(rx));</div>
+<div class="line">     </div>
+<div class="line"> </div>
+<div class="line">        if(sl_first_time || sg_tx_flag) {</div>
+<div class="line">            bytes = tkl_uart_write(port_id, tx, sizeof(tx));</div>
+<div class="line">        }else {</div>
+<div class="line">            continue;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        if (bytes &lt;= 0) {</div>
+<div class="line">            // fail</div>
+<div class="line">             ret = OPRT_COM_ERROR;</div>
+<div class="line">        } else {</div>
+<div class="line">        // wait at most 5 seconds until the data is ready</div>
+<div class="line">        ret = tkl_uart_wait_for_data(port_id, 5000);</div>
+<div class="line">        </div>
+<div class="line">        if(sg_rx_flag) {</div>
+<div class="line">            bytes = tkl_uart_read(port_id, rx, sizeof(rx));</div>
+<div class="line">            if (bytes &lt; 0) {</div>
+<div class="line">               // fail</div>
+<div class="line">               ret = OPRT_COM_ERROR;</div>
+<div class="line">            } else {</div>
+<div class="line">                if (memcmp(tx, rx, bufsize) != 0) {</div>
+<div class="line">                // data is not identical</div>
+<div class="line">                ret = OPRT_COM_ERROR;</div>
+<div class="line">                } else {</div>
+<div class="line">                    ret = OPRT_OK;</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">            sg_rx_flag = 0;</div>
+<div class="line">           }</div>
+<div class="line">        }</div>
+<div class="line">        if (ret != OPRT_OK) {</div>
+<div class="line">        // fail </div>
+<div class="line">        } else {</div>
+<div class="line">        // ok </div>
+<div class="line">        } </div>
+<div class="line">    }  </div>
+<div class="line">    // disabe int </div>
+<div class="line">    tkl_uart_set_tx_int(port_id,0);</div>
+<div class="line">    //deinit </div>
+<div class="line">    tkl_uart_deinit(port_id);</div>
+<div class="line">    return ret;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

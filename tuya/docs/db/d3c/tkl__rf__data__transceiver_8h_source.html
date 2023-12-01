@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_rf_data_transceiver.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_rf_data_transceiver.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d3c/tkl__rf__data__transceiver_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> /*****************************************************************************</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">  * @Describe: RF API not not allowed to call in the joined network state.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">  * </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef __TKL_RF_DATA_TRANSCEIVER_H__</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define __TKL_RF_DATA_TRANSCEIVER_H__</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *  RF raw data receive callback</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">typedef</span> VOID_T (*TKL_RF_RECV_CB)(UINT8_T *packet, UINT8_T lqi, INT8_T rssi);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#accf08700a706dda4dd16123745c64ccc">   38</a></span>BOOL_T <a class="code hl_function" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#accf08700a706dda4dd16123745c64ccc">tkl_rf_channel_set</a>(UINT8_T channel);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a7a862f03ee46c74e49b0ea563a38a2b8">   46</a></span>UINT8_T <a class="code hl_function" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a7a862f03ee46c74e49b0ea563a38a2b8">tkl_rf_channel_get</a>(VOID_T);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad76f14224a9e84a8f90a67ed72b03453">   55</a></span>BOOL_T <a class="code hl_function" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad76f14224a9e84a8f90a67ed72b03453">tkl_rf_tx_power_set</a>(INT8_T power);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad4b2c986ae10314fa8fd293939f95ee0">   63</a></span>BOOL_T <a class="code hl_function" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad4b2c986ae10314fa8fd293939f95ee0">tkl_rf_transeiver_start</a>(TKL_RF_RECV_CB recv_cb);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#aeb9128bcadf5ef238fb2b00880f2c806">   71</a></span>BOOL_T <a class="code hl_function" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#aeb9128bcadf5ef238fb2b00880f2c806">tkl_rf_transeiver_end</a>(VOID_T);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a031a955e7b0cda29beeb968aa2ac1757">   79</a></span>BOOL_T <a class="code hl_function" href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a031a955e7b0cda29beeb968aa2ac1757">tkl_rf_data_send</a>(UINT8_T *packet);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="ttc" id="atkl__rf__data__transceiver_8h_html_a031a955e7b0cda29beeb968aa2ac1757"><div class="ttname"><a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a031a955e7b0cda29beeb968aa2ac1757">tkl_rf_data_send</a></div><div class="ttdeci">BOOL_T tkl_rf_data_send(UINT8_T *packet)</div><div class="ttdoc">RF raw data send</div></div>
+<div class="ttc" id="atkl__rf__data__transceiver_8h_html_a7a862f03ee46c74e49b0ea563a38a2b8"><div class="ttname"><a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#a7a862f03ee46c74e49b0ea563a38a2b8">tkl_rf_channel_get</a></div><div class="ttdeci">UINT8_T tkl_rf_channel_get(VOID_T)</div><div class="ttdoc">RF raw data transmission channel get</div></div>
+<div class="ttc" id="atkl__rf__data__transceiver_8h_html_accf08700a706dda4dd16123745c64ccc"><div class="ttname"><a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#accf08700a706dda4dd16123745c64ccc">tkl_rf_channel_set</a></div><div class="ttdeci">BOOL_T tkl_rf_channel_set(UINT8_T channel)</div><div class="ttdoc">RF raw data transmission channel setting</div></div>
+<div class="ttc" id="atkl__rf__data__transceiver_8h_html_ad4b2c986ae10314fa8fd293939f95ee0"><div class="ttname"><a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad4b2c986ae10314fa8fd293939f95ee0">tkl_rf_transeiver_start</a></div><div class="ttdeci">BOOL_T tkl_rf_transeiver_start(TKL_RF_RECV_CB recv_cb)</div><div class="ttdoc">RF raw data transmission start</div></div>
+<div class="ttc" id="atkl__rf__data__transceiver_8h_html_ad76f14224a9e84a8f90a67ed72b03453"><div class="ttname"><a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#ad76f14224a9e84a8f90a67ed72b03453">tkl_rf_tx_power_set</a></div><div class="ttdeci">BOOL_T tkl_rf_tx_power_set(INT8_T power)</div><div class="ttdoc">RF raw data transmit power setting</div></div>
+<div class="ttc" id="atkl__rf__data__transceiver_8h_html_aeb9128bcadf5ef238fb2b00880f2c806"><div class="ttname"><a href="../../db/d3c/tkl__rf__data__transceiver_8h.html#aeb9128bcadf5ef238fb2b00880f2c806">tkl_rf_transeiver_end</a></div><div class="ttdeci">BOOL_T tkl_rf_transeiver_end(VOID_T)</div><div class="ttdoc">RF raw data transmission stop</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

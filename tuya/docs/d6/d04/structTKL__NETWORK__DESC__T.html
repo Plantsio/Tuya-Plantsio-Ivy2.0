@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: TKL_NETWORK_DESC_T结构体 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle"><div class="title">TKL_NETWORK_DESC_T结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>the description of tuya kernel adapter layer network  
+ <a href="../../d6/d04/structTKL__NETWORK__DESC__T.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d04/tkl__init__network_8h_source.html">tkl_init_network.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:adac5230656b4a162d752fdf75095330c"><td class="memItemLeft" align="right" valign="top"><a id="adac5230656b4a162d752fdf75095330c" name="adac5230656b4a162d752fdf75095330c"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_accept</b> )(CONST INT_T fd, TUYA_IP_ADDR_T *addr, UINT16_T *port)</td></tr>
+<tr class="separator:adac5230656b4a162d752fdf75095330c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa61bef447457f5e4eee5a92ef3b2c2"><td class="memItemLeft" align="right" valign="top"><a id="afaa61bef447457f5e4eee5a92ef3b2c2" name="afaa61bef447457f5e4eee5a92ef3b2c2"></a>
+CHAR_T *(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_addr2str</b> )(CONST TUYA_IP_ADDR_T ipaddr)</td></tr>
+<tr class="separator:afaa61bef447457f5e4eee5a92ef3b2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9715ca59fada34e5810fbf4e4853af34"><td class="memItemLeft" align="right" valign="top"><a id="a9715ca59fada34e5810fbf4e4853af34" name="a9715ca59fada34e5810fbf4e4853af34"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_bind</b> )(CONST INT_T fd, CONST TUYA_IP_ADDR_T addr, CONST UINT16_T port)</td></tr>
+<tr class="separator:a9715ca59fada34e5810fbf4e4853af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8602b6f96481b97f95d1f8116760d4"><td class="memItemLeft" align="right" valign="top"><a id="ace8602b6f96481b97f95d1f8116760d4" name="ace8602b6f96481b97f95d1f8116760d4"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_close</b> )(CONST INT_T fd)</td></tr>
+<tr class="separator:ace8602b6f96481b97f95d1f8116760d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddd59121a8e49983a7006d53c304e09"><td class="memItemLeft" align="right" valign="top"><a id="afddd59121a8e49983a7006d53c304e09" name="afddd59121a8e49983a7006d53c304e09"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_connect</b> )(CONST INT_T fd, CONST TUYA_IP_ADDR_T addr, CONST UINT16_T port)</td></tr>
+<tr class="separator:afddd59121a8e49983a7006d53c304e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee19476dd62aeddea99633b8e4d10f58"><td class="memItemLeft" align="right" valign="top"><a id="aee19476dd62aeddea99633b8e4d10f58" name="aee19476dd62aeddea99633b8e4d10f58"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_connect_raw</b> )(CONST INT_T fd, VOID *p_socket, CONST INT_T len)</td></tr>
+<tr class="separator:aee19476dd62aeddea99633b8e4d10f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad642b11659312c908c80c3294a4cea66"><td class="memItemLeft" align="right" valign="top"><a id="ad642b11659312c908c80c3294a4cea66" name="ad642b11659312c908c80c3294a4cea66"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_disable_nagle</b> )(CONST INT_T fd)</td></tr>
+<tr class="separator:ad642b11659312c908c80c3294a4cea66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2791a606e00854c71b681400b13d7ad5"><td class="memItemLeft" align="right" valign="top"><a id="a2791a606e00854c71b681400b13d7ad5" name="a2791a606e00854c71b681400b13d7ad5"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_fd_clear</b> )(CONST INT_T fd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="separator:a2791a606e00854c71b681400b13d7ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ccd56d6a90757098e4cde9c294ca83"><td class="memItemLeft" align="right" valign="top"><a id="a20ccd56d6a90757098e4cde9c294ca83" name="a20ccd56d6a90757098e4cde9c294ca83"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_fd_isset</b> )(CONST INT_T fd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="separator:a20ccd56d6a90757098e4cde9c294ca83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6973fe19a155bb28d2c778d4690c97e"><td class="memItemLeft" align="right" valign="top"><a id="ae6973fe19a155bb28d2c778d4690c97e" name="ae6973fe19a155bb28d2c778d4690c97e"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_fd_set1</b> )(CONST INT_T fd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="separator:ae6973fe19a155bb28d2c778d4690c97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade4f6aeb68d251e56ff60daf89456b7"><td class="memItemLeft" align="right" valign="top"><a id="aade4f6aeb68d251e56ff60daf89456b7" name="aade4f6aeb68d251e56ff60daf89456b7"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_fd_zero</b> )(<a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *fds)</td></tr>
+<tr class="separator:aade4f6aeb68d251e56ff60daf89456b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a39aba49c4ec80790aebdb573dcac4"><td class="memItemLeft" align="right" valign="top"><a id="a65a39aba49c4ec80790aebdb573dcac4" name="a65a39aba49c4ec80790aebdb573dcac4"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_get_errno</b> )(VOID)</td></tr>
+<tr class="separator:a65a39aba49c4ec80790aebdb573dcac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd7ae87de4a875fdbca18ac2f3c4ead"><td class="memItemLeft" align="right" valign="top"><a id="a3cd7ae87de4a875fdbca18ac2f3c4ead" name="a3cd7ae87de4a875fdbca18ac2f3c4ead"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_get_nonblock</b> )(CONST INT_T fd)</td></tr>
+<tr class="separator:a3cd7ae87de4a875fdbca18ac2f3c4ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac545334a96ce5ecb6b99b9d7d1a6cffd"><td class="memItemLeft" align="right" valign="top"><a id="ac545334a96ce5ecb6b99b9d7d1a6cffd" name="ac545334a96ce5ecb6b99b9d7d1a6cffd"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_get_socket_ip</b> )(CONST INT_T fd, TUYA_IP_ADDR_T *addr)</td></tr>
+<tr class="separator:ac545334a96ce5ecb6b99b9d7d1a6cffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3aee674166558f53566cffcb1daf5f"><td class="memItemLeft" align="right" valign="top"><a id="acc3aee674166558f53566cffcb1daf5f" name="acc3aee674166558f53566cffcb1daf5f"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_gethostbyname</b> )(CONST CHAR_T *domain, TUYA_IP_ADDR_T *addr)</td></tr>
+<tr class="separator:acc3aee674166558f53566cffcb1daf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3e1d191aa4b0b26ce893587bcac9ff"><td class="memItemLeft" align="right" valign="top"><a id="a0f3e1d191aa4b0b26ce893587bcac9ff" name="a0f3e1d191aa4b0b26ce893587bcac9ff"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_getsockopt</b> )(CONST INT_T fd, CONST TUYA_OPT_LEVEL level, CONST TUYA_OPT_NAME optname, VOID_T *optval, INT_T *optlen)</td></tr>
+<tr class="separator:a0f3e1d191aa4b0b26ce893587bcac9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac253364b28ce2eb9f4f479037a53bebd"><td class="memItemLeft" align="right" valign="top"><a id="ac253364b28ce2eb9f4f479037a53bebd" name="ac253364b28ce2eb9f4f479037a53bebd"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_listen</b> )(CONST INT_T fd, CONST INT_T backlog)</td></tr>
+<tr class="separator:ac253364b28ce2eb9f4f479037a53bebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa455d8c718f6242069fbeb3896fad01b"><td class="memItemLeft" align="right" valign="top"><a id="aa455d8c718f6242069fbeb3896fad01b" name="aa455d8c718f6242069fbeb3896fad01b"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_recv</b> )(CONST INT_T fd, VOID *buf, CONST UINT_T nbytes)</td></tr>
+<tr class="separator:aa455d8c718f6242069fbeb3896fad01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96506ea832ee4094a9490819fb20388a"><td class="memItemLeft" align="right" valign="top"><a id="a96506ea832ee4094a9490819fb20388a" name="a96506ea832ee4094a9490819fb20388a"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_recv_nd_size</b> )(CONST INT_T fd, VOID *buf, CONST UINT_T buf_size, CONST UINT_T nd_size)</td></tr>
+<tr class="separator:a96506ea832ee4094a9490819fb20388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19b8d09bf3bf276a0d8aecdb059a012"><td class="memItemLeft" align="right" valign="top"><a id="ac19b8d09bf3bf276a0d8aecdb059a012" name="ac19b8d09bf3bf276a0d8aecdb059a012"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_recvfrom</b> )(CONST INT_T fd, VOID *buf, CONST UINT_T nbytes, TUYA_IP_ADDR_T *addr, UINT16_T *port)</td></tr>
+<tr class="separator:ac19b8d09bf3bf276a0d8aecdb059a012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb7123695fd2159b7e7c4d18b2bb0dc"><td class="memItemLeft" align="right" valign="top"><a id="addb7123695fd2159b7e7c4d18b2bb0dc" name="addb7123695fd2159b7e7c4d18b2bb0dc"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_select</b> )(CONST INT_T maxfd, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *readfds, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *writefds, <a class="el" href="../../d7/d4c/structTUYA__FD__SET__T.html">TUYA_FD_SET_T</a> *errorfds, CONST UINT_T ms_timeout)</td></tr>
+<tr class="separator:addb7123695fd2159b7e7c4d18b2bb0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7e57a0a783e973c7c127c84d9f8509"><td class="memItemLeft" align="right" valign="top"><a id="a1c7e57a0a783e973c7c127c84d9f8509" name="a1c7e57a0a783e973c7c127c84d9f8509"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_send</b> )(CONST INT_T fd, CONST VOID *buf, CONST UINT_T nbytes)</td></tr>
+<tr class="separator:a1c7e57a0a783e973c7c127c84d9f8509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eeae6add943b5e4e0008eefa08f7e38"><td class="memItemLeft" align="right" valign="top"><a id="a0eeae6add943b5e4e0008eefa08f7e38" name="a0eeae6add943b5e4e0008eefa08f7e38"></a>
+TUYA_ERRNO(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_send_to</b> )(CONST INT_T fd, CONST VOID *buf, CONST UINT_T nbytes, CONST TUYA_IP_ADDR_T addr, CONST UINT16_T port)</td></tr>
+<tr class="separator:a0eeae6add943b5e4e0008eefa08f7e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0174e31b4e41e527ed8924c23c3614"><td class="memItemLeft" align="right" valign="top"><a id="adf0174e31b4e41e527ed8924c23c3614" name="adf0174e31b4e41e527ed8924c23c3614"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_block</b> )(CONST INT_T fd, CONST BOOL_T block)</td></tr>
+<tr class="separator:adf0174e31b4e41e527ed8924c23c3614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4652f8907c8e9c58476fa0634dbbca2"><td class="memItemLeft" align="right" valign="top"><a id="ae4652f8907c8e9c58476fa0634dbbca2" name="ae4652f8907c8e9c58476fa0634dbbca2"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_broadcast</b> )(CONST INT_T fd)</td></tr>
+<tr class="separator:ae4652f8907c8e9c58476fa0634dbbca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f510b71079dfe71981c55d75a9ee52e"><td class="memItemLeft" align="right" valign="top"><a id="a5f510b71079dfe71981c55d75a9ee52e" name="a5f510b71079dfe71981c55d75a9ee52e"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_bufsize</b> )(CONST INT_T fd, CONST INT_T buf_size, CONST TUYA_TRANS_TYPE_E type)</td></tr>
+<tr class="separator:a5f510b71079dfe71981c55d75a9ee52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff84de4e2119b1e286962a3526da51b"><td class="memItemLeft" align="right" valign="top"><a id="a7ff84de4e2119b1e286962a3526da51b" name="a7ff84de4e2119b1e286962a3526da51b"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_cloexec</b> )(CONST INT_T fd)</td></tr>
+<tr class="separator:a7ff84de4e2119b1e286962a3526da51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97ed2f17db4628cecd37ee9545abc7f"><td class="memItemLeft" align="right" valign="top"><a id="ac97ed2f17db4628cecd37ee9545abc7f" name="ac97ed2f17db4628cecd37ee9545abc7f"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_keepalive</b> )(INT_T fd, CONST BOOL_T alive, CONST UINT_T idle, CONST UINT_T intr, CONST UINT_T cnt)</td></tr>
+<tr class="separator:ac97ed2f17db4628cecd37ee9545abc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cd03c48c06fa638a7576e010cd0729"><td class="memItemLeft" align="right" valign="top"><a id="ab6cd03c48c06fa638a7576e010cd0729" name="ab6cd03c48c06fa638a7576e010cd0729"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_reuse</b> )(CONST INT_T fd)</td></tr>
+<tr class="separator:ab6cd03c48c06fa638a7576e010cd0729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa405e2d1c4eb2ce35246f9c4c5121844"><td class="memItemLeft" align="right" valign="top"><a id="aa405e2d1c4eb2ce35246f9c4c5121844" name="aa405e2d1c4eb2ce35246f9c4c5121844"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_set_timeout</b> )(CONST INT_T fd, CONST INT_T ms_timeout, CONST TUYA_TRANS_TYPE_E type)</td></tr>
+<tr class="separator:aa405e2d1c4eb2ce35246f9c4c5121844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263cc618219669b7cf26f9872424f99f"><td class="memItemLeft" align="right" valign="top"><a id="a263cc618219669b7cf26f9872424f99f" name="a263cc618219669b7cf26f9872424f99f"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_setsockopt</b> )(CONST INT_T fd, CONST TUYA_OPT_LEVEL level, CONST TUYA_OPT_NAME optname, CONST VOID_T *optval, CONST INT_T optlen)</td></tr>
+<tr class="separator:a263cc618219669b7cf26f9872424f99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bfbe443eb32f4ec7f1c8b9353ee0f98"><td class="memItemLeft" align="right" valign="top"><a id="a0bfbe443eb32f4ec7f1c8b9353ee0f98" name="a0bfbe443eb32f4ec7f1c8b9353ee0f98"></a>
+OPERATE_RET(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_socket_bind</b> )(CONST INT_T fd, CONST CHAR_T *ip)</td></tr>
+<tr class="separator:a0bfbe443eb32f4ec7f1c8b9353ee0f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc989aaf67fe00d9fbd917d2b9b7382"><td class="memItemLeft" align="right" valign="top"><a id="a1dc989aaf67fe00d9fbd917d2b9b7382" name="a1dc989aaf67fe00d9fbd917d2b9b7382"></a>
+INT_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_socket_create</b> )(CONST TUYA_PROTOCOL_TYPE_E type)</td></tr>
+<tr class="separator:a1dc989aaf67fe00d9fbd917d2b9b7382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dcf4ec1b4d5b2942e6c8202670a5a0"><td class="memItemLeft" align="right" valign="top"><a id="a42dcf4ec1b4d5b2942e6c8202670a5a0" name="a42dcf4ec1b4d5b2942e6c8202670a5a0"></a>
+TUYA_IP_ADDR_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>tkl_str2addr</b> )(CONST CHAR_T *ip_str)</td></tr>
+<tr class="separator:a42dcf4ec1b4d5b2942e6c8202670a5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >the description of tuya kernel adapter layer network </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>include/adapter/init/include/<a class="el" href="../../d2/d04/tkl__init__network_8h_source.html">tkl_init_network.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

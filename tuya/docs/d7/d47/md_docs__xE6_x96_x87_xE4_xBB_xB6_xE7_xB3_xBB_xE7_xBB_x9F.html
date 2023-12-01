@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: 文件系统</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">文件系统 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >TuyaOS提供了一套文件系统接口，基本上是按照POSIX文件系统标准接口来对外提供文件系统服务。这一套文件系统不仅能够基于Flash来进行文件操作，也可以适配Linux平台的POSIX文件系统接口，同时也可以支持各个芯片平台自己实现的文件系统。</p>
+<h1><a class="anchor" id="autotoc_md66"></a>
+接口描述</h1>
+<h2><a class="anchor" id="autotoc_md67"></a>
+打开文件</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a>* <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a>(IN CHAR_T *filepath, IN CHAR_T *mode);</div>
+<div class="ttc" id="atuya__uf__db_8h_html_a0465ba7327d4da574ed5e5efbe6e4376"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a></div><div class="ttdeci">uFILE * ufopen(IN CHAR_T *filepath, IN CHAR_T *mode)</div><div class="ttdoc">open a unique file</div></div>
+<div class="ttc" id="atuya__uf__db_8h_html_a25420c33900c400dd875fb78ea629a6b"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a></div><div class="ttdeci">VOID uFILE</div><div class="ttdoc">unique file handle</div><div class="ttdef"><b>Definition:</b> tuya_uf_db.h:22</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md68"></a>
+关闭文件</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd);</div>
+<div class="ttc" id="atuya__uf__db_8h_html_a5f00d43fb0201c0bd692040d9e534859"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a></div><div class="ttdeci">OPERATE_RET ufclose(IN uFILE *fd)</div><div class="ttdoc">close a unique file</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md69"></a>
+读文件</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">UINT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">ufread</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UCHAR_T *buf, IN CONST UINT_T len);</div>
+<div class="ttc" id="atuya__uf__db_8h_html_a184dfd8e1512dba4615dbe9d8c0efe32"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">ufread</a></div><div class="ttdeci">UINT_T ufread(IN uFILE *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</div><div class="ttdoc">read from unique file</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md70"></a>
+写文件</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">UINT_T <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a>(IN <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> *fd, IN UCHAR_T *buf, IN CONST UINT_T len);</div>
+<div class="ttc" id="atuya__uf__db_8h_html_af97a9279316ced48c68512871b5f2839"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a></div><div class="ttdeci">UINT_T ufwrite(IN uFILE *fd, IN UCHAR_T *buf, IN CONST UINT_T len)</div><div class="ttdoc">write to unique file</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md71"></a>
+删除文件</h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line">OPERATE_RET <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">ufdelete</a>(IN CHAR_T *filepath);</div>
+<div class="ttc" id="atuya__uf__db_8h_html_a147b22c554979eeca1e275c9b42c136f"><div class="ttname"><a href="../../d3/d76/tuya__uf__db_8h.html#a147b22c554979eeca1e275c9b42c136f">ufdelete</a></div><div class="ttdeci">OPERATE_RET ufdelete(IN CHAR_T *filepath)</div><div class="ttdoc">delete the unique file</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md72"></a>
+使用示例</h1>
+<div class="fragment"><div class="line">VOID sample_fs_test()</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_typedef" href="../../d3/d76/tuya__uf__db_8h.html#a25420c33900c400dd875fb78ea629a6b">uFILE</a> * fp = NULL;</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 打开</span></div>
+<div class="line">    fp = <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a0465ba7327d4da574ed5e5efbe6e4376">ufopen</a>(<span class="stringliteral">&quot;oem_cfg&quot;</span>, <span class="stringliteral">&quot;w+&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">if</span>(NULL == fp) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;oem cfg uf file can&#39;t open and write data!&quot;</span>);</div>
+<div class="line">        return ;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 写</span></div>
+<div class="line">    uiWriteCnt = <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#af97a9279316ced48c68512871b5f2839">ufwrite</a>(fp, pData, usLen);</div>
+<div class="line">    <span class="keywordflow">if</span>(uiWriteCnt != usLen) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;oem cfg uf file write data error!&quot;</span>);</div>
+<div class="line">        return ;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 读</span></div>
+<div class="line">    uiReadCnt = <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a184dfd8e1512dba4615dbe9d8c0efe32">ufread</a>(fp, pData, 1024);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;oem cfg uf file read data %d!&quot;</span>, uiReadCnt);</div>
+<div class="line">    PR_DEBUG(<span class="stringliteral">&quot;oem cfg uf file %s&quot;</span>, pData);</div>
+<div class="line">    *pLen = uiReadCnt;</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 关闭</span></div>
+<div class="line">    opRet = <a class="code hl_function" href="../../d3/d76/tuya__uf__db_8h.html#a5f00d43fb0201c0bd692040d9e534859">ufclose</a>(fp);    </div>
+<div class="line">    <span class="keywordflow">if</span>(opRet != OPRT_OK) {</div>
+<div class="line">        PR_ERR(<span class="stringliteral">&quot;oem cfg uf file close error!&quot;</span>);</div>
+<div class="line">        return ;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

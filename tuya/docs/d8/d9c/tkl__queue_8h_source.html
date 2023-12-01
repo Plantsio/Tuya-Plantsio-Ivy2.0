@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/system/include/tkl_queue.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_a39e21aa9396c8c0621543b669869865.html">system</a></li><li class="navelem"><a class="el" href="../../dir_d0c8c0f816976a0124b7921a1be7b89f.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_queue.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d9c/tkl__queue_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef __TKL_QUEUE_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define __TKL_QUEUE_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define TKL_QUEUE_WAIT_FROEVER 0xFFFFFFFF</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">typedef</span> VOID_T* TKL_QUEUE_HANDLE;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d8/d9c/tkl__queue_8h.html#a9032938e5129a19f27b87169f8c36f5a">   33</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d9c/tkl__queue_8h.html#a9032938e5129a19f27b87169f8c36f5a">tkl_queue_create_init</a>(TKL_QUEUE_HANDLE *queue, INT_T msgsize, INT_T msgcount);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d8/d9c/tkl__queue_8h.html#afd52927a7909b7dc156eb54c7d69a827">   44</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d9c/tkl__queue_8h.html#afd52927a7909b7dc156eb54c7d69a827">tkl_queue_post</a>(CONST TKL_QUEUE_HANDLE queue, VOID_T *data, UINT_T timeout);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d8/d9c/tkl__queue_8h.html#aaa353a579d1cbbeef56f9a134f786c40">   55</a></span>OPERATE_RET <a class="code hl_function" href="../../d8/d9c/tkl__queue_8h.html#aaa353a579d1cbbeef56f9a134f786c40">tkl_queue_fetch</a>(CONST TKL_QUEUE_HANDLE queue, VOID_T *msg, UINT_T timeout);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d8/d9c/tkl__queue_8h.html#aceb217d6fed157886a2f8be999333b4e">   64</a></span>VOID_T <a class="code hl_function" href="../../d8/d9c/tkl__queue_8h.html#aceb217d6fed157886a2f8be999333b4e">tkl_queue_free</a>(CONST TKL_QUEUE_HANDLE queue);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="atkl__queue_8h_html_a9032938e5129a19f27b87169f8c36f5a"><div class="ttname"><a href="../../d8/d9c/tkl__queue_8h.html#a9032938e5129a19f27b87169f8c36f5a">tkl_queue_create_init</a></div><div class="ttdeci">OPERATE_RET tkl_queue_create_init(TKL_QUEUE_HANDLE *queue, INT_T msgsize, INT_T msgcount)</div><div class="ttdoc">Create message queue</div></div>
+<div class="ttc" id="atkl__queue_8h_html_aaa353a579d1cbbeef56f9a134f786c40"><div class="ttname"><a href="../../d8/d9c/tkl__queue_8h.html#aaa353a579d1cbbeef56f9a134f786c40">tkl_queue_fetch</a></div><div class="ttdeci">OPERATE_RET tkl_queue_fetch(CONST TKL_QUEUE_HANDLE queue, VOID_T *msg, UINT_T timeout)</div><div class="ttdoc">fetch message from the message queue</div></div>
+<div class="ttc" id="atkl__queue_8h_html_aceb217d6fed157886a2f8be999333b4e"><div class="ttname"><a href="../../d8/d9c/tkl__queue_8h.html#aceb217d6fed157886a2f8be999333b4e">tkl_queue_free</a></div><div class="ttdeci">VOID_T tkl_queue_free(CONST TKL_QUEUE_HANDLE queue)</div><div class="ttdoc">free the message queue</div></div>
+<div class="ttc" id="atkl__queue_8h_html_afd52927a7909b7dc156eb54c7d69a827"><div class="ttname"><a href="../../d8/d9c/tkl__queue_8h.html#afd52927a7909b7dc156eb54c7d69a827">tkl_queue_post</a></div><div class="ttdeci">OPERATE_RET tkl_queue_post(CONST TKL_QUEUE_HANDLE queue, VOID_T *data, UINT_T timeout)</div><div class="ttdoc">post a message to the message queue</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

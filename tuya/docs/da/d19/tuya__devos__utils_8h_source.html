@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/components/svc_devos/include/tuya_devos_utils.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_d66e8d5a7776834ccee339fd5fd3e729.html">components</a></li><li class="navelem"><a class="el" href="../../dir_c5ad9f57be95c42b41325f1bc9ebae91.html">svc_devos</a></li><li class="navelem"><a class="el" href="../../dir_11ce8152c603a5102f0c89f0ddb7981a.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tuya_devos_utils.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d19/tuya__devos__utils_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef TUYA_DEVOS_UTILS_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define TUYA_DEVOS_UTILS_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;tuya_cloud_com_defs.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;ty_cJSON.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a086b951e78156340d3ffa5ac1f51dfb2">   28</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a086b951e78156340d3ffa5ac1f51dfb2">gw_load_sum_time_zone_tbl</a>(IN CONST CHAR_T *tm_zone);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a8713a7b7c06d38260e5228c648b5272c">   35</a></span><a class="code hl_struct" href="../../d7/dbb/structDP__REPT__FLOW__CTRL__UNIT.html">DP_REPT_FLOW_CTRL_UNIT</a>* <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a8713a7b7c06d38260e5228c648b5272c">get_all_dp_flow_ctrl_rule</a>(VOID);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#aa1158572f69cf2034cffa6c6d32f653c">   44</a></span>CHAR_T* <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#aa1158572f69cf2034cffa6c6d32f653c">gw_dp_flow_ctrl_cfg_proc</a>(<a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a>* result);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a78734a5ea4117431a83a7d6febc75e79">   51</a></span>CHAR_T *<a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a78734a5ea4117431a83a7d6febc75e79">tuya_get_serialno</a>(VOID);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#ab38114067ed7f65735346eab53c5f2b1">   60</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#ab38114067ed7f65735346eab53c5f2b1">ty_init_rtc</a>(INT_T timeval);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#abf543f9e1ccecc366d723a26812ffa80">   67</a></span>VOID <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#abf543f9e1ccecc366d723a26812ffa80">set_gw_ext_stat</a>(IN CONST GW_EXT_STAT_T ext_stat);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a3720ae2001748e53ccff4a4382eb63ad">   74</a></span>GW_EXT_STAT_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a3720ae2001748e53ccff4a4382eb63ad">get_gw_ext_stat</a>(VOID);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a994735faa9c0264bf923450d3674f95e">   81</a></span>VOID <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a994735faa9c0264bf923450d3674f95e">gw_register_cbs</a>(IN CONST <a class="code hl_struct" href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a> *cbs);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#af47d08ccc8c2ea7045199fb6627e02e5">   90</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#af47d08ccc8c2ea7045199fb6627e02e5">gw_user_token_bind</a>(IN CONST CHAR_T *token);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a9040c3f00e5858cc24966ed36da7e8f0">   99</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a9040c3f00e5858cc24966ed36da7e8f0">gw_save_auth_token</a>(IN CONST CHAR_T *token, IN CONST CHAR_T *region, IN CONST CHAR_T *regist_key);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a5c6ff96cb114d36cb7d068cf64f2620a">  108</a></span>GW_NW_STAT_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a5c6ff96cb114d36cb7d068cf64f2620a">get_gw_nw_status</a>(VOID);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a43101058f8c4cdee1b035f93cb8f90f0">  115</a></span>VOID <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a43101058f8c4cdee1b035f93cb8f90f0">set_gw_active</a>(GW_WORK_STAT_T stat);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#add16e88a4057d25e25a1d41d05aecd7a">  122</a></span>GW_WORK_STAT_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#add16e88a4057d25e25a1d41d05aecd7a">get_gw_active</a>(VOID);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a7dfa485ef50d0abcfbc51bd984fe695e">  129</a></span>CONST CHAR_T *<a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a7dfa485ef50d0abcfbc51bd984fe695e">get_gw_dev_id</a>(VOID);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a02370851fda66e2e10f212c866274575">  138</a></span>CONST CHAR_T *<a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a02370851fda66e2e10f212c866274575">get_gw_sw_ver</a>(GW_PERMIT_DEV_TP_T tp);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#ac77ea7fac46cad55b4c83f432b4f463d">  145</a></span>BOOL_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#ac77ea7fac46cad55b4c83f432b4f463d">get_gw_bind_status</a>(VOID);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#ab6d0fadb22c991caf731230366adcc07">  152</a></span>CONST CHAR_T *<a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#ab6d0fadb22c991caf731230366adcc07">get_gw_ssid</a>(VOID);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a6549cd7f2dbc9e3432b8ccf81fa9d0ec">  159</a></span>CONST CHAR_T *<a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a6549cd7f2dbc9e3432b8ccf81fa9d0ec">get_gw_region</a>(VOID);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a62378bad015339d7bd7ee5f0032dd994">  166</a></span>CONST CHAR_T *<a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a62378bad015339d7bd7ee5f0032dd994">get_gw_country_code</a>(VOID);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#aed2fbe4f24bbcab312666c20695adfd9">  173</a></span>BOOL_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#aed2fbe4f24bbcab312666c20695adfd9">get_gw_auth_status</a>(VOID);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#acc808567143fa15afaabf5599ae763d3">  180</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#acc808567143fa15afaabf5599ae763d3">gw_set_udf</a>(IN CONST CHAR_T *udf);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a472d5f7baad8c75bbc3be4e40afb18cd">  187</a></span>CHAR_T * <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a472d5f7baad8c75bbc3be4e40afb18cd">gw_get_udf</a>(VOID);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a0e0856f91cb20c6b6dfab6a24652ce10">  196</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a0e0856f91cb20c6b6dfab6a24652ce10">gw_active_set_support_election</a>(BOOL_T enable);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a741b37827fc154bf85346e23688ee784">  203</a></span>BOOL_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a741b37827fc154bf85346e23688ee784">gw_active_get_support_election</a>(VOID);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a77a876181d1be3e2df0ea8f177b994e8">  212</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a77a876181d1be3e2df0ea8f177b994e8">gw_active_set_ext_param</a>(IN CHAR_T *param);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#afe983d3dace6361ee0c215eebf988d00">  219</a></span>CHAR_T * <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#afe983d3dace6361ee0c215eebf988d00">gw_active_get_ext_param</a>(VOID);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a650496bbfe8eed967f5f1b53e292ae6f">  228</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a650496bbfe8eed967f5f1b53e292ae6f">gw_get_ip</a>(<a class="code hl_struct" href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a> *p_ip);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a81531bc627313697be1b21ae7d6a3993">  237</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a81531bc627313697be1b21ae7d6a3993">gw_get_mac</a>(<a class="code hl_struct" href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a> *p_mac);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a87ec87d901e7726feabc708108423c2a">  246</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a87ec87d901e7726feabc708108423c2a">gw_get_rssi</a>(SCHAR_T *p_rssi);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a6362e236a952e899704cd79307c377de">  259</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a6362e236a952e899704cd79307c377de">tuya_iot_dev_update_attachs</a>(UINT_T attr_num, <a class="code hl_struct" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attrs);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>OPERATE_RET tuya_iot_dev_set_attach_attr(GW_PERMIT_DEV_TP_T tp, <a class="code hl_struct" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> * attr);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>OPERATE_RET tuya_iot_dev_get_attach_attr(GW_PERMIT_DEV_TP_T tp, <a class="code hl_struct" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> * attr);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#aaa34892fb57d767f20866c4706f1578f">  268</a></span>VOID <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#aaa34892fb57d767f20866c4706f1578f">gw_upload_rst_log_set</a>(IN CONST BOOL_T upload);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a6fca66199ea31209e911966d1ac7609a">  274</a></span>BOOL_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a6fca66199ea31209e911966d1ac7609a">gw_upload_rst_log_get</a>(VOID);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a2535f7f028060c7eff3b7c8e9a1902fc">  281</a></span>VOID <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a2535f7f028060c7eff3b7c8e9a1902fc">gw_oem_set</a>(IN CONST BOOL_T oem);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#aa40cadcfa3284a1262c048bae1932a98">  288</a></span>BOOL_T <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#aa40cadcfa3284a1262c048bae1932a98">is_gw_oem</a>(VOID);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#a35713bdb0a8bf9e614ee56186d7007ec">  295</a></span>OPERATE_RET <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#a35713bdb0a8bf9e614ee56186d7007ec">gw_update_versions</a>(VOID);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>OPERATE_RET gw_cad_ver_update(CHAR_T* old_ver, CHAR_T* new_ver,</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                              IN CONST DEV_TYPE_T tp, IN CONST <a class="code hl_struct" href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a> *attr, IN CONST UINT_T attr_num);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#ae78ca295776ddaff2da6b59175c372a8">  307</a></span><a class="code hl_struct" href="../../db/d07/structGW__STRIDE__UPDATE__S.html">GW_STRIDE_UPDATE_S</a>* <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#ae78ca295776ddaff2da6b59175c372a8">gw_get_new_pid_key</a>(VOID);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="../../da/d19/tuya__devos__utils_8h.html#abbd89ccfaa38a2c5b95d879eed1d6440">  315</a></span>VOID <a class="code hl_function" href="../../da/d19/tuya__devos__utils_8h.html#abbd89ccfaa38a2c5b95d879eed1d6440">gw_set_psk30_cfg</a>(BOOL_T flag);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><a class="code hl_struct" href="../../df/d27/structTY__EXT__AUTH__INFO.html">TY_EXT_AUTH_INFO</a>* gw_get_ext_auth_info(VOID_T);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>OPERATE_RET gw_init_auth_info(<a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a>* auth_info);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>OPERATE_RET gw_ext_active_start(<a class="code hl_struct" href="../../d4/d53/structty__cJSON.html">ty_cJSON</a>* root);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#endif </span><span class="comment">//TUYA_DEVOS_UTILS_H</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="ttc" id="agw__intf_8h_html"><div class="ttname"><a href="../../d4/d62/gw__intf_8h.html">gw_intf.h</a></div><div class="ttdoc">Facility of DevOS definitions</div></div>
+<div class="ttc" id="astructDP__REPT__FLOW__CTRL__UNIT_html"><div class="ttname"><a href="../../d7/dbb/structDP__REPT__FLOW__CTRL__UNIT.html">DP_REPT_FLOW_CTRL_UNIT</a></div><div class="ttdoc">Definition of dp report flow control unit</div><div class="ttdef"><b>Definition:</b> gw_intf.h:261</div></div>
+<div class="ttc" id="astructGW__ATTACH__ATTR__T_html"><div class="ttname"><a href="../../d9/d56/structGW__ATTACH__ATTR__T.html">GW_ATTACH_ATTR_T</a></div><div class="ttdoc">Definition of attach moudule attribute</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:175</div></div>
+<div class="ttc" id="astructGW__STRIDE__UPDATE__S_html"><div class="ttname"><a href="../../db/d07/structGW__STRIDE__UPDATE__S.html">GW_STRIDE_UPDATE_S</a></div><div class="ttdoc">Definition of stride update info</div><div class="ttdef"><b>Definition:</b> gw_intf.h:163</div></div>
+<div class="ttc" id="astructNW__IP__S_html"><div class="ttname"><a href="../../de/dbc/structNW__IP__S.html">NW_IP_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:201</div></div>
+<div class="ttc" id="astructNW__MAC__S_html"><div class="ttname"><a href="../../d3/dd0/structNW__MAC__S.html">NW_MAC_S</a></div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:208</div></div>
+<div class="ttc" id="astructTY__EXT__AUTH__INFO_html"><div class="ttname"><a href="../../df/d27/structTY__EXT__AUTH__INFO.html">TY_EXT_AUTH_INFO</a></div><div class="ttdoc">auth info for ext module</div><div class="ttdef"><b>Definition:</b> gw_intf.h:35</div></div>
+<div class="ttc" id="astructTY__IOT__CBS__S_html"><div class="ttname"><a href="../../d4/da4/structTY__IOT__CBS__S.html">TY_IOT_CBS_S</a></div><div class="ttdoc">Definition of gateway callback funtions</div><div class="ttdef"><b>Definition:</b> tuya_cloud_com_defs.h:731</div></div>
+<div class="ttc" id="astructty__cJSON_html"><div class="ttname"><a href="../../d4/d53/structty__cJSON.html">ty_cJSON</a></div><div class="ttdef"><b>Definition:</b> ty_cJSON.h:104</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a02370851fda66e2e10f212c866274575"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a02370851fda66e2e10f212c866274575">get_gw_sw_ver</a></div><div class="ttdeci">CONST CHAR_T * get_gw_sw_ver(GW_PERMIT_DEV_TP_T tp)</div><div class="ttdoc">Get gateway's mcu software version</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a086b951e78156340d3ffa5ac1f51dfb2"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a086b951e78156340d3ffa5ac1f51dfb2">gw_load_sum_time_zone_tbl</a></div><div class="ttdeci">OPERATE_RET gw_load_sum_time_zone_tbl(IN CONST CHAR_T *tm_zone)</div><div class="ttdoc">Load summer timezone talbe</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a0e0856f91cb20c6b6dfab6a24652ce10"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a0e0856f91cb20c6b6dfab6a24652ce10">gw_active_set_support_election</a></div><div class="ttdeci">OPERATE_RET gw_active_set_support_election(BOOL_T enable)</div><div class="ttdoc">Set election enable or not</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a2535f7f028060c7eff3b7c8e9a1902fc"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a2535f7f028060c7eff3b7c8e9a1902fc">gw_oem_set</a></div><div class="ttdeci">VOID gw_oem_set(IN CONST BOOL_T oem)</div><div class="ttdoc">Enable oem or not</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a35713bdb0a8bf9e614ee56186d7007ec"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a35713bdb0a8bf9e614ee56186d7007ec">gw_update_versions</a></div><div class="ttdeci">OPERATE_RET gw_update_versions(VOID)</div><div class="ttdoc">Force to upload all versions</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a3720ae2001748e53ccff4a4382eb63ad"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a3720ae2001748e53ccff4a4382eb63ad">get_gw_ext_stat</a></div><div class="ttdeci">GW_EXT_STAT_T get_gw_ext_stat(VOID)</div><div class="ttdoc">Get DevOS extension state</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a43101058f8c4cdee1b035f93cb8f90f0"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a43101058f8c4cdee1b035f93cb8f90f0">set_gw_active</a></div><div class="ttdeci">VOID set_gw_active(GW_WORK_STAT_T stat)</div><div class="ttdoc">Set activation state</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a472d5f7baad8c75bbc3be4e40afb18cd"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a472d5f7baad8c75bbc3be4e40afb18cd">gw_get_udf</a></div><div class="ttdeci">CHAR_T * gw_get_udf(VOID)</div><div class="ttdoc">Get user defined features(udf) for activation</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a5c6ff96cb114d36cb7d068cf64f2620a"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a5c6ff96cb114d36cb7d068cf64f2620a">get_gw_nw_status</a></div><div class="ttdeci">GW_NW_STAT_T get_gw_nw_status(VOID)</div><div class="ttdoc">Get device network linkage state</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a62378bad015339d7bd7ee5f0032dd994"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a62378bad015339d7bd7ee5f0032dd994">get_gw_country_code</a></div><div class="ttdeci">CONST CHAR_T * get_gw_country_code(VOID)</div><div class="ttdoc">Get gateway country code</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a6362e236a952e899704cd79307c377de"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a6362e236a952e899704cd79307c377de">tuya_iot_dev_update_attachs</a></div><div class="ttdeci">OPERATE_RET tuya_iot_dev_update_attachs(UINT_T attr_num, GW_ATTACH_ATTR_T *attrs)</div><div class="ttdoc">Update versions of all attach modules.</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a650496bbfe8eed967f5f1b53e292ae6f"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a650496bbfe8eed967f5f1b53e292ae6f">gw_get_ip</a></div><div class="ttdeci">OPERATE_RET gw_get_ip(NW_IP_S *p_ip)</div><div class="ttdoc">Get device IP</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a6549cd7f2dbc9e3432b8ccf81fa9d0ec"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a6549cd7f2dbc9e3432b8ccf81fa9d0ec">get_gw_region</a></div><div class="ttdeci">CONST CHAR_T * get_gw_region(VOID)</div><div class="ttdoc">Get gateway region</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a6fca66199ea31209e911966d1ac7609a"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a6fca66199ea31209e911966d1ac7609a">gw_upload_rst_log_get</a></div><div class="ttdeci">BOOL_T gw_upload_rst_log_get(VOID)</div><div class="ttdoc">Enable reset log upload or not</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a741b37827fc154bf85346e23688ee784"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a741b37827fc154bf85346e23688ee784">gw_active_get_support_election</a></div><div class="ttdeci">BOOL_T gw_active_get_support_election(VOID)</div><div class="ttdoc">Get election enable or not</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a77a876181d1be3e2df0ea8f177b994e8"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a77a876181d1be3e2df0ea8f177b994e8">gw_active_set_ext_param</a></div><div class="ttdeci">OPERATE_RET gw_active_set_ext_param(IN CHAR_T *param)</div><div class="ttdoc">Set extension params for activation</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a78734a5ea4117431a83a7d6febc75e79"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a78734a5ea4117431a83a7d6febc75e79">tuya_get_serialno</a></div><div class="ttdeci">CHAR_T * tuya_get_serialno(VOID)</div><div class="ttdoc">Get serial number</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a7dfa485ef50d0abcfbc51bd984fe695e"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a7dfa485ef50d0abcfbc51bd984fe695e">get_gw_dev_id</a></div><div class="ttdeci">CONST CHAR_T * get_gw_dev_id(VOID)</div><div class="ttdoc">Get gateway's device id</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a81531bc627313697be1b21ae7d6a3993"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a81531bc627313697be1b21ae7d6a3993">gw_get_mac</a></div><div class="ttdeci">OPERATE_RET gw_get_mac(NW_MAC_S *p_mac)</div><div class="ttdoc">Get device MAC</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a8713a7b7c06d38260e5228c648b5272c"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a8713a7b7c06d38260e5228c648b5272c">get_all_dp_flow_ctrl_rule</a></div><div class="ttdeci">DP_REPT_FLOW_CTRL_UNIT * get_all_dp_flow_ctrl_rule(VOID)</div><div class="ttdoc">Get DP flow control rules</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a87ec87d901e7726feabc708108423c2a"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a87ec87d901e7726feabc708108423c2a">gw_get_rssi</a></div><div class="ttdeci">OPERATE_RET gw_get_rssi(SCHAR_T *p_rssi)</div><div class="ttdoc">Get device RSSI level</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a9040c3f00e5858cc24966ed36da7e8f0"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a9040c3f00e5858cc24966ed36da7e8f0">gw_save_auth_token</a></div><div class="ttdeci">OPERATE_RET gw_save_auth_token(IN CONST CHAR_T *token, IN CONST CHAR_T *region, IN CONST CHAR_T *regist_key)</div><div class="ttdoc">Save network configuration token</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_a994735faa9c0264bf923450d3674f95e"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#a994735faa9c0264bf923450d3674f95e">gw_register_cbs</a></div><div class="ttdeci">VOID gw_register_cbs(IN CONST TY_IOT_CBS_S *cbs)</div><div class="ttdoc">Set DevOS event handlers</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_aa1158572f69cf2034cffa6c6d32f653c"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#aa1158572f69cf2034cffa6c6d32f653c">gw_dp_flow_ctrl_cfg_proc</a></div><div class="ttdeci">CHAR_T * gw_dp_flow_ctrl_cfg_proc(ty_cJSON *result)</div><div class="ttdoc">Parse DP flow control rules</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_aa40cadcfa3284a1262c048bae1932a98"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#aa40cadcfa3284a1262c048bae1932a98">is_gw_oem</a></div><div class="ttdeci">BOOL_T is_gw_oem(VOID)</div><div class="ttdoc">Whether oem is enabled or not</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_aaa34892fb57d767f20866c4706f1578f"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#aaa34892fb57d767f20866c4706f1578f">gw_upload_rst_log_set</a></div><div class="ttdeci">VOID gw_upload_rst_log_set(IN CONST BOOL_T upload)</div><div class="ttdoc">Enable reset log upload or not</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_ab38114067ed7f65735346eab53c5f2b1"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#ab38114067ed7f65735346eab53c5f2b1">ty_init_rtc</a></div><div class="ttdeci">OPERATE_RET ty_init_rtc(INT_T timeval)</div><div class="ttdoc">Initialize rtc module</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_ab6d0fadb22c991caf731230366adcc07"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#ab6d0fadb22c991caf731230366adcc07">get_gw_ssid</a></div><div class="ttdeci">CONST CHAR_T * get_gw_ssid(VOID)</div><div class="ttdoc">Get gateway's ssid</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_abbd89ccfaa38a2c5b95d879eed1d6440"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#abbd89ccfaa38a2c5b95d879eed1d6440">gw_set_psk30_cfg</a></div><div class="ttdeci">VOID gw_set_psk30_cfg(BOOL_T flag)</div><div class="ttdoc">set psk30 cfg flag</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_abf543f9e1ccecc366d723a26812ffa80"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#abf543f9e1ccecc366d723a26812ffa80">set_gw_ext_stat</a></div><div class="ttdeci">VOID set_gw_ext_stat(IN CONST GW_EXT_STAT_T ext_stat)</div><div class="ttdoc">Set DevOS extension state</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_ac77ea7fac46cad55b4c83f432b4f463d"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#ac77ea7fac46cad55b4c83f432b4f463d">get_gw_bind_status</a></div><div class="ttdeci">BOOL_T get_gw_bind_status(VOID)</div><div class="ttdoc">Get gateway's dp bind status</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_acc808567143fa15afaabf5599ae763d3"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#acc808567143fa15afaabf5599ae763d3">gw_set_udf</a></div><div class="ttdeci">OPERATE_RET gw_set_udf(IN CONST CHAR_T *udf)</div><div class="ttdoc">Set user defined features(udf) for activation</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_add16e88a4057d25e25a1d41d05aecd7a"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#add16e88a4057d25e25a1d41d05aecd7a">get_gw_active</a></div><div class="ttdeci">GW_WORK_STAT_T get_gw_active(VOID)</div><div class="ttdoc">Get activation state</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_ae78ca295776ddaff2da6b59175c372a8"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#ae78ca295776ddaff2da6b59175c372a8">gw_get_new_pid_key</a></div><div class="ttdeci">GW_STRIDE_UPDATE_S * gw_get_new_pid_key(VOID)</div><div class="ttdoc">Get stride info</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_aed2fbe4f24bbcab312666c20695adfd9"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#aed2fbe4f24bbcab312666c20695adfd9">get_gw_auth_status</a></div><div class="ttdeci">BOOL_T get_gw_auth_status(VOID)</div><div class="ttdoc">Get gateway's authentication status</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_af47d08ccc8c2ea7045199fb6627e02e5"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#af47d08ccc8c2ea7045199fb6627e02e5">gw_user_token_bind</a></div><div class="ttdeci">OPERATE_RET gw_user_token_bind(IN CONST CHAR_T *token)</div><div class="ttdoc">Set network configuration token</div></div>
+<div class="ttc" id="atuya__devos__utils_8h_html_afe983d3dace6361ee0c215eebf988d00"><div class="ttname"><a href="../../da/d19/tuya__devos__utils_8h.html#afe983d3dace6361ee0c215eebf988d00">gw_active_get_ext_param</a></div><div class="ttdeci">CHAR_T * gw_active_get_ext_param(VOID)</div><div class="ttdoc">Get extension params for activation</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

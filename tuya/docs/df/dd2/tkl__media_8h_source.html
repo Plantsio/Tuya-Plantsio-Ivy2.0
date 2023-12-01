@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/media/include/tkl_media.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_f035e8dac116664123d3c2a73ed2f457.html">media</a></li><li class="navelem"><a class="el" href="../../dir_c3870483c35fa4c017a1fc661583a339.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tkl_media.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/dd2/tkl__media_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __TKL_MEDIA_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define __TKL_MEDIA_H__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tuya_cloud_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define TKL_VI_TARGET_MAX    3</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    TKL_VIDEO_PB_FRAME = 0,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    TKL_VIDEO_I_FRAME,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    TKL_VIDEO_TS_FRAME,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    TKL_AUDIO_FRAME,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    TKL_CMD_FRAME,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TKL_MEDIA_FRAME_MAX,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}TKL_MEDIA_FRAME_TYPE_E;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    TKL_CODEC_VIDEO_MPEG4 = 0,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    TKL_CODEC_VIDEO_H263,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    TKL_CODEC_VIDEO_H264,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    TKL_CODEC_VIDEO_MJPEG,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    TKL_CODEC_VIDEO_H265,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    TKL_CODEC_VIDEO_YUV420,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    TKL_CODEC_VIDEO_YUV422,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    TKL_CODEC_VIDEO_MAX = 99,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    TKL_CODEC_AUDIO_ADPCM,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    TKL_CODEC_AUDIO_PCM,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    TKL_CODEC_AUDIO_AAC_RAW,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    TKL_CODEC_AUDIO_AAC_ADTS,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    TKL_CODEC_AUDIO_AAC_LATM,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    TKL_CODEC_AUDIO_G711U,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    TKL_CODEC_AUDIO_G711A,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    TKL_CODEC_AUDIO_G726,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    TKL_CODEC_AUDIO_SPEEX,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    TKL_CODEC_AUDIO_MP3,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    TKL_CODEC_AUDIO_MAX = 199,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    TKL_CODEC_TYPE_MAX</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}TKL_MEDIA_CODEC_TYPE_E;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// VI</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    TKL_VI_0     = 0,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    TKL_VI_1,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    TKL_VI_2,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    TKL_VI_3,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    TKL_VI_MAX,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}TKL_VI_CHN_E;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    TKL_VI_MIRROR_FLIP_NONE = 0,                                  <span class="comment">// default</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    TKL_VI_MIRROR,                                                <span class="comment">// mirror enable</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    TKL_VI_FLIP,                                                  <span class="comment">// flip enable</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    TKL_VI_MIRROR_FLIP,                                           <span class="comment">// flip and mirror enable</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}TKL_VI_MIRROR_FLIP_E;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    TKL_MEDIA_DETECT_TYPE_HUMAN = 0,                                    <span class="comment">// 人形，human</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    TKL_MEDIA_DETECT_TYPE_PET,                                          <span class="comment">// 宠物，一般指猫狗，cat，dog</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    TKL_MEDIA_DETECT_TYPE_CAR,                                          <span class="comment">// 车形，car</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    TKL_MEDIA_DETECT_TYPE_FACE,                                         <span class="comment">// 人脸，face</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    TKL_MEDIA_DETECT_TYPE_FLAME,                                        <span class="comment">// 火焰，flame</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    TKL_MEDIA_DETECT_TYPE_BABY_CRY,                                     <span class="comment">// 婴儿哭声，baby cry</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    TKL_MEDIA_DETECT_TYPE_DB,                                           <span class="comment">// 声音分贝，audio decibel</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>} TKL_MEDIA_DETECT_TYPE_E;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

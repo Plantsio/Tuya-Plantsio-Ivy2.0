@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TuyaOS: include/adapter/zigbee/include/tkl_poll_manager.h 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TuyaOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="../../dir_9c618848e0c1156a0d81fed751ff16a8.html">zigbee</a></li><li class="navelem"><a class="el" href="../../dir_0ca21adb61c9ad9fad38567a6768e9e3.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">tkl_poll_manager.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common process - poll manager  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;tuya_cloud_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tkl_poll_manager.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d33/tkl__poll__manager_8h__incl.png" border="0" usemap="#ainclude_2adapter_2zigbee_2include_2tkl__poll__manager_8h" alt=""/></div>
+<map name="ainclude_2adapter_2zigbee_2include_2tkl__poll__manager_8h" id="ainclude_2adapter_2zigbee_2include_2tkl__poll__manager_8h">
+<area shape="rect" title="Common process &#45; poll manager" alt="" coords="342,5,543,47"/>
+<area shape="rect" href="../../df/d90/tuya__cloud__types_8h_source.html" title=" " alt="" coords="369,95,517,121"/>
+<area shape="rect" href="../../d7/d63/tuya__iot__config_8h_source.html" title=" " alt="" coords="5,169,139,196"/>
+<area shape="rect" title=" " alt="" coords="163,169,237,196"/>
+<area shape="rect" title=" " alt="" coords="262,169,333,196"/>
+<area shape="rect" title=" " alt="" coords="357,169,432,196"/>
+<area shape="rect" title=" " alt="" coords="457,169,527,196"/>
+<area shape="rect" title=" " alt="" coords="552,169,635,196"/>
+<area shape="rect" title=" " alt="" coords="659,169,730,196"/>
+<area shape="rect" href="../../de/dfd/tuya__error__code_8h_source.html" title=" " alt="" coords="755,169,893,196"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d6d/tkl__poll__manager_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="structs" name="structs"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d27/structTKL__POLL__CB__T.html">TKL_POLL_CB_T</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ae3ed57b6e157fc76c9bef6f1a02e3a75"><td class="memItemLeft" align="right" valign="top"><a id="ae3ed57b6e157fc76c9bef6f1a02e3a75" name="ae3ed57b6e157fc76c9bef6f1a02e3a75"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZG_POLL_CMP_CB</b>) (<a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#ac0ab3affc09e6834f2ca757ae1ac93db">TKL_POLL_STATUS_E</a> status)</td></tr>
+<tr class="separator:ae3ed57b6e157fc76c9bef6f1a02e3a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b586c5bd109063bc456fb95b7d8565"><td class="memItemLeft" align="right" valign="top"><a id="a90b586c5bd109063bc456fb95b7d8565" name="a90b586c5bd109063bc456fb95b7d8565"></a>
+typedef VOID_T(*&#160;</td><td class="memItemRight" valign="bottom"><b>TKL_ZG_POLL_MGR_CB</b>) (VOID_T)</td></tr>
+<tr class="separator:a90b586c5bd109063bc456fb95b7d8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ac0ab3affc09e6834f2ca757ae1ac93db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#ac0ab3affc09e6834f2ca757ae1ac93db">TKL_POLL_STATUS_E</a> { <b>TKL_POLL_IDLE</b> = 0
+, <a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#ac0ab3affc09e6834f2ca757ae1ac93dbafc899f6217a18df1db06bb975810a30a">TKL_POLL_SUCESS</a>
+, <a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#ac0ab3affc09e6834f2ca757ae1ac93dbaab194ca86bdeadb81ec62dfa75a12276">TKL_POLL_BUSY_FAIL</a>
+, <a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#ac0ab3affc09e6834f2ca757ae1ac93dbaba40391b3e5fcecc8f5c9172a533dd40">TKL_POLL_NO_ACK_FAIL</a>
+ }</td></tr>
+<tr class="separator:ac0ab3affc09e6834f2ca757ae1ac93db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:abcbacd14db2eec36d87358ea306d7e93"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#abcbacd14db2eec36d87358ea306d7e93">tkl_zg_poll_cb_register</a> (<a class="el" href="../../d2/d27/structTKL__POLL__CB__T.html">TKL_POLL_CB_T</a> *poll_cb)</td></tr>
+<tr class="memdesc:abcbacd14db2eec36d87358ea306d7e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">register zigbee poll callback  <a href="../../d2/d6d/tkl__poll__manager_8h.html#abcbacd14db2eec36d87358ea306d7e93">更多...</a><br /></td></tr>
+<tr class="separator:abcbacd14db2eec36d87358ea306d7e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef38bf9dcef961229a71aff4bb5e40d"><td class="memItemLeft" align="right" valign="top">OPERATE_RET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#a1ef38bf9dcef961229a71aff4bb5e40d">tkl_zg_poll_data_send</a> (VOID_T)</td></tr>
+<tr class="memdesc:a1ef38bf9dcef961229a71aff4bb5e40d"><td class="mdescLeft">&#160;</td><td class="mdescRight">send zigbee data request  <a href="../../d2/d6d/tkl__poll__manager_8h.html#a1ef38bf9dcef961229a71aff4bb5e40d">更多...</a><br /></td></tr>
+<tr class="separator:a1ef38bf9dcef961229a71aff4bb5e40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Common process - poll manager </p>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-05-13</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright 2021-2022 Tuya Inc. All Rights Reserved. </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="ac0ab3affc09e6834f2ca757ae1ac93db" name="ac0ab3affc09e6834f2ca757ae1ac93db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ab3affc09e6834f2ca757ae1ac93db">&#9670;&nbsp;</a></span>TKL_POLL_STATUS_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/d6d/tkl__poll__manager_8h.html#ac0ab3affc09e6834f2ca757ae1ac93db">TKL_POLL_STATUS_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac0ab3affc09e6834f2ca757ae1ac93dbafc899f6217a18df1db06bb975810a30a" name="ac0ab3affc09e6834f2ca757ae1ac93dbafc899f6217a18df1db06bb975810a30a"></a>TKL_POLL_SUCESS&#160;</td><td class="fielddoc"><p >poll succeeded and get remote data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac0ab3affc09e6834f2ca757ae1ac93dbaab194ca86bdeadb81ec62dfa75a12276" name="ac0ab3affc09e6834f2ca757ae1ac93dbaab194ca86bdeadb81ec62dfa75a12276"></a>TKL_POLL_BUSY_FAIL&#160;</td><td class="fielddoc"><p >poll failed because the data could not be sent out for some reasons(CCA fail or not low buff) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac0ab3affc09e6834f2ca757ae1ac93dbaba40391b3e5fcecc8f5c9172a533dd40" name="ac0ab3affc09e6834f2ca757ae1ac93dbaba40391b3e5fcecc8f5c9172a533dd40"></a>TKL_POLL_NO_ACK_FAIL&#160;</td><td class="fielddoc"><p >poll failed because no MAC ack receive </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="abcbacd14db2eec36d87358ea306d7e93" name="abcbacd14db2eec36d87358ea306d7e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbacd14db2eec36d87358ea306d7e93">&#9670;&nbsp;</a></span>tkl_zg_poll_cb_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zg_poll_cb_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d27/structTKL__POLL__CB__T.html">TKL_POLL_CB_T</a> *&#160;</td>
+          <td class="paramname"><em>poll_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>register zigbee poll callback </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poll_cb</td><td>poll callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+<a id="a1ef38bf9dcef961229a71aff4bb5e40d" name="a1ef38bf9dcef961229a71aff4bb5e40d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef38bf9dcef961229a71aff4bb5e40d">&#9670;&nbsp;</a></span>tkl_zg_poll_data_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPERATE_RET tkl_zg_poll_data_send </td>
+          <td>(</td>
+          <td class="paramtype">VOID_T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send zigbee data request </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OPRT_OK: success Other: fail </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>
