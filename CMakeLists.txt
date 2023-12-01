@@ -10,6 +10,7 @@ list(APPEND EXTRA_COMPONENT_DIRS
         #${CMAKE_CURRENT_SOURCE_DIR}/ivy
         #${CMAKE_CURRENT_SOURCE_DIR}/app
         ${CMAKE_CURRENT_SOURCE_DIR}/arduino
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs
         )
 
 
