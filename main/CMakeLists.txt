@@ -1,5 +1,5 @@
 
-set(srcs "main.cpp")
+set(srcs "app_main.cpp")
 
 idf_component_register(SRCS "${srcs}"
-        REQUIRES arduino nvs_flash tuya)
+        REQUIRES arduino nvs_flash tuya Audio)

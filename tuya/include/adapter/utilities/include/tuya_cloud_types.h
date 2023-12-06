@@ -968,11 +968,11 @@ typedef enum {
 } TUYA_I2S_CHANNEL_FMT_E;
 
 typedef enum {
-    I2S_COMM_FORMAT_STAND_I2S        = 0X01, /*!< I2S communication I2S Philips standard, data launch at second BCK*/
-    I2S_COMM_FORMAT_STAND_MSB        = 0X02, /*!< I2S communication MSB alignment standard, data launch at first BCK*/
-    I2S_COMM_FORMAT_STAND_PCM_SHORT  = 0x04, /*!< PCM Short standard, also known as DSP mode. The period of synchronization signal (WS) is 1 bck cycle.*/
-    I2S_COMM_FORMAT_STAND_PCM_LONG   = 0x0C, /*!< PCM Long standard. The period of synchronization signal (WS) is channel_bit*bck cycles.*/
-    I2S_COMM_FORMAT_STAND_MAX,               /*!< standard max*/
+    TUYA_I2S_COMM_FORMAT_STAND_I2S        = 0X01, /*!< I2S communication I2S Philips standard, data launch at second BCK*/
+    TUYA_I2S_COMM_FORMAT_STAND_MSB        = 0X02, /*!< I2S communication MSB alignment standard, data launch at first BCK*/
+    TUYA_I2S_COMM_FORMAT_STAND_PCM_SHORT  = 0x04, /*!< PCM Short standard, also known as DSP mode. The period of synchronization signal (WS) is 1 bck cycle.*/
+    TUYA_I2S_COMM_FORMAT_STAND_PCM_LONG   = 0x0C, /*!< PCM Long standard. The period of synchronization signal (WS) is channel_bit*bck cycles.*/
+    TUYA_I2S_COMM_FORMAT_STAND_MAX,               /*!< standard max*/
 } TUYA_I2S_COMM_FORMAT_E;
 
 typedef struct {
@@ -982,7 +982,7 @@ typedef struct {
     TUYA_I2S_BITS_PER_SAMP_E    bits_per_sample;            /*!< I2S sample bits in one channel */
     TUYA_I2S_CHANNEL_FMT_E      channel_format;             /*!< I2S channel format.*/
     TUYA_I2S_COMM_FORMAT_E      communication_format;       /*!< I2S communication format */
-    UINT32_T                    i2s_dma_flags;              /*!< I2S dma format , 1 use dma */  
+    UINT32_T                    i2s_dma_flags;              /*!< I2S dma format , 1 use dma */
 }TUYA_I2S_BASE_CFG_T;
 
     // 文件访问权限

@@ -154,7 +154,7 @@ typedef struct {
 #endif
 
 #if CONFIG_ESP32_WIFI_NVS_ENABLED
-#error xxxxxx
+//#error xxxxxx
 #define WIFI_NVS_ENABLED          1
 #else
 #define WIFI_NVS_ENABLED          0
