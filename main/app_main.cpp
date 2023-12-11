@@ -30,6 +30,7 @@
 #include "driver/uart.h"
 #include "driver/gpio.h"
 #include "esp_log.h"
+#include "freertos/task.h"
 
 //Arduino
 #include "Arduino.h"
@@ -58,12 +59,7 @@
 #define SD_CMD      47
 #define SD_CLK      45
 
-#define Motor_Control_Pin 12
-const char *mount_name = "/sd";
-
 Audio audio;
-bool isPlaying = true; // 用于追踪音频是否正在播放
-bool isFileFinished = false; // 用于追踪音频文件是否播放完成
 
 void test_tuysos()
 {
@@ -93,110 +89,51 @@ void test_tuysos()
     esp_wifi_start();
 }
 
+void file_read_task(void *param)
+{
+    File file = SD_MMC.open("/test.mp3");
+
+    if (file.available())
+    {
+        int32_t file_length = file.size();
+
+        while (file_length --)
+        {
+            file.read();
+            log_e("read one byte");
+            vTaskDelay(200);
+        }
+
+        file.close();
+    }
+    else
+    {
+        log_e("Failed to open file");
+    }
+
+
+}
+
 void setup()
 {
-//    Serial.begin(115200);
-//    pinMode(12, OUTPUT);
-//    SD_MMC.setPins(SD_CLK,SD_CMD,SD_D0);
-//    SD_MMC.begin("/sd",true);
-//    digitalWrite(12, 0);
-//    audio.setPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
-//    audio.setVolume(12);
-//
-//    uint8_t cardType = SD_MMC.cardType();
-//    Serial.print("SD_MMC Card Type: ");
-//    if(cardType == CARD_MMC){
-//        Serial.println("MMC");
-//    } else if(cardType == CARD_SD){
-//        Serial.println("SDSC");
-//    } else if(cardType == CARD_SDHC){
-//        Serial.println("SDHC");
-//    } else {
-//        Serial.println("UNKNOWN");
-//    }
-
-//    const char* audiopath = "/testB.mp3";
-//    audio.connecttoFS(SD_MMC,audiopath);
-
     Serial.begin(115200);
-    //esp_log_level_set("*", ESP_LOG_VERBOSE);
-    pinMode(Motor_Control_Pin, OUTPUT);
-//    digitalWrite(Motor_Control_Pin, 0);
+
     SD_MMC.setPins(SD_CLK,SD_CMD,SD_D0);
-    SD_MMC.begin(mount_name, true);
-    digitalWrite(Motor_Control_Pin, 0);
-    uint8_t cardType = SD_MMC.cardType();
+    SD_MMC.begin("/sd",true);
 
-    if(cardType == CARD_NONE){
-        Serial.println("No SD_MMC card attached");
-        return;
-    }
-
-    Serial.print("SD_MMC Card Type: ");
-    if(cardType == CARD_MMC){
-        Serial.println("MMC");
-    } else if(cardType == CARD_SD){
-        Serial.println("SDSC");
-    } else if(cardType == CARD_SDHC){
-        Serial.println("SDHC");
-    } else {
-        Serial.println("UNKNOWN");
-    }
-
-    uint64_t cardSize = SD_MMC.cardSize() / (1024 * 1024);
-    Serial.printf("SD_MMC Card Size: %lluMB\n", cardSize);
-
-
-    // Setup I2S
     audio.setPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
-
-    // Set Volume
-    audio.setVolume(8);
-
-    // Open music file
-    const char sdpath = '/sd/';
-//    listDir(SD_MMC,&sdpath,0);
-//    File audioFile = SD_MMC.open("/music/test16.mp3");
-//    if (!audioFile) {
-//        Serial.println("Failed to open audio file");
-//        return;
-//    }
-//    audio.connecttoFS(SD_MMC,"/test.mp3");
-    int32_t timestamp1 = millis();
-    log_e("begin to open file: %d",timestamp1);
-//    audio.connecttoFS(SD_MMC,"/music/test16.mp3");
+    audio.setVolume(7);
 
     const char* audiopath = "/testB.mp3";
     audio.connecttoFS(SD_MMC,audiopath);
+
+    xTaskCreatePinnedToCore(file_read_task,"FileRead",2048, nullptr,5, nullptr,1);
+
 }
 
-int beginloop = false;
-int32_t timestamp2 = millis();
 void loop()
 {
-//    audio.loop();
-//    vTaskDelay(1); // 适当的延迟，以避免任务看门狗触发
-
-    if(!beginloop) {
-        log_i("begin to loop: %d", timestamp2);
-        beginloop = true;
-    }
-    if (audio.isRunning()) {
-//        log_i("print m_f_running: %",audio.m_f_running);
-        audio.loop();
-
-        // 检查音频是否播放完成
-        if (isFileFinished) {
-            isPlaying = false;
-            // 处理音频播放完成事件，例如停止播放、跳转到下一个文件等
-            // ...
-        }
-    } else{
-        vTaskDelay(100);
-    }
-
-    // 其他代码逻辑
-
+    audio.loop();
     vTaskDelay(1); // 适当的延迟，以避免任务看门狗触发
 }
 
