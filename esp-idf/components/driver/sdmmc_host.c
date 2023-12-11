@@ -131,7 +131,7 @@ static void sdmmc_host_set_clk_div(int div)
 #endif
     // Set phases for in/out clocks
     SDMMC.clock.phase_dout = inout_clock_phase;
-    SDMMC.clock.phase_din = inout_clock_phase;
+    SDMMC.clock.phase_din = 0;
     SDMMC.clock.phase_core = 0;
     // Wait for the clock to propagate
     esp_rom_delay_us(10);
