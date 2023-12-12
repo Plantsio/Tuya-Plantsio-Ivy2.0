@@ -99,8 +99,8 @@ void file_read_task(void *param)
 
         while (file_length --)
         {
-            file.read();
-            log_e("read one byte");
+            uint8_t  c = file.read();
+            log_e("read one byte = %c",c);
             vTaskDelay(200);
         }
 
@@ -122,12 +122,12 @@ void setup()
     SD_MMC.begin("/sd",true);
 
     audio.setPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
-    audio.setVolume(7);
+    audio.setVolume(2);
 
-    const char* audiopath = "/testB.mp3";
+    const char* audiopath = "mixuebingcheng.mp3";
     audio.connecttoFS(SD_MMC,audiopath);
 
-    xTaskCreatePinnedToCore(file_read_task,"FileRead",2048, nullptr,5, nullptr,1);
+    //xTaskCreatePinnedToCore(file_read_task,"FileRead",2048, nullptr,5, nullptr,1);
 
 }
 
