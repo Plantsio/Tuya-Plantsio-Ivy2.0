@@ -6,7 +6,7 @@
 #define FIRMWARE_AUDIOCODEC_H
 
 #include <string>
-#include "audio/AACDecoderHelix.h"
+#include "AACDecoderHelix.h"
 
 #include "FS.h"
 

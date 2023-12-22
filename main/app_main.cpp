@@ -45,7 +45,6 @@
 #include "uni_log.h"
 #include "tuya_iot_com_api.h"
 
-#include "Audio.h"
 
 //#define I2S_DOUT    13
 //#define I2S_BCLK    40
@@ -58,8 +57,6 @@
 #define SD_D0       48
 #define SD_CMD      47
 #define SD_CLK      45
-
-Audio audio;
 
 void test_tuysos()
 {
@@ -121,19 +118,12 @@ void setup()
     SD_MMC.setPins(SD_CLK,SD_CMD,SD_D0);
     SD_MMC.begin("/sd",true);
 
-    audio.setPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
-    audio.setVolume(2);
-
-    const char* audiopath = "mixuebingcheng.mp3";
-    audio.connecttoFS(SD_MMC,audiopath);
-
     //xTaskCreatePinnedToCore(file_read_task,"FileRead",2048, nullptr,5, nullptr,1);
 
 }
 
 void loop()
 {
-    audio.loop();
     vTaskDelay(1); // 适当的延迟，以避免任务看门狗触发
 }
 
