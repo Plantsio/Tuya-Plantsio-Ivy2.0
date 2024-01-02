@@ -3,8 +3,6 @@ FILE(GLOB_RECURSE anim_src ${CMAKE_CURRENT_LIST_DIR}/*.*)
 
 set(anim_inc
         "."
-        "audio"
-        "audio/libs"
         "video"
         "video/libs"
 )
