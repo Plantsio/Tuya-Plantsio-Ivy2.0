@@ -45,6 +45,8 @@
 #include "uni_log.h"
 #include "tuya_iot_com_api.h"
 
+#include "IvyAnim.h"
+
 
 //#define I2S_DOUT    13
 //#define I2S_BCLK    40
@@ -54,9 +56,9 @@
 #define I2S_BCLK    13
 #define I2S_LRC     14
 
-#define SD_D0       48
-#define SD_CMD      47
-#define SD_CLK      45
+//#define SD_D0       48
+//#define SD_CMD      47
+//#define SD_CLK      45
 
 void test_tuysos()
 {
@@ -110,52 +112,18 @@ void file_read_task(void *param)
 
 
 }
+static IvyAnim anim;
 
 void setup()
 {
     Serial.begin(115200);
-
-    SD_MMC.setPins(SD_CLK,SD_CMD,SD_D0);
-    SD_MMC.begin("/sd",true);
-
-    //xTaskCreatePinnedToCore(file_read_task,"FileRead",2048, nullptr,5, nullptr,1);
-
+    anim.init_file_sys();
+    anim.bind_assets("calorie");
+    anim.play();
 }
 
 void loop()
 {
-    vTaskDelay(1); // 适当的延迟，以避免任务看门狗触发
-}
-
-void audio_info(const char *info){
-    Serial.print("info        "); Serial.println(info);
-}
-void audio_id3data(const char *info){  //id3 metadata
-    Serial.print("id3data     ");Serial.println(info);
-}
-void audio_eof_mp3(const char *info){  //end of file
-    Serial.print("eof_mp3     ");Serial.println(info);
-}
-void audio_showstation(const char *info){
-    Serial.print("station     ");Serial.println(info);
-}
-void audio_showstreamtitle(const char *info){
-    Serial.print("streamtitle ");Serial.println(info);
-}
-void audio_bitrate(const char *info){
-    Serial.print("bitrate     ");Serial.println(info);
-}
-void audio_commercial(const char *info){  //duration in sec
-    Serial.print("commercial  ");Serial.println(info);
-}
-void audio_icyurl(const char *info){  //homepage
-    Serial.print("icyurl      ");Serial.println(info);
-}
-void audio_lasthost(const char *info){  //stream URL played
-    Serial.print("lasthost    ");Serial.println(info);
-}
-void audio_eof_speech(const char *info){
-    Serial.print("eof_speech  ");Serial.println(info);
 }
 
 //extern "C" void app_main(void)
@@ -164,3 +132,4 @@ void audio_eof_speech(const char *info){
 //    Audio audio;
 //    //init sd
 //}
+

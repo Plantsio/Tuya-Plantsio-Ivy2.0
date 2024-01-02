@@ -4,72 +4,58 @@
 
 #include "AnimDriver.h"
 
-#define SCR_BCK_GPIO 1
+AnimDriver::AnimDriver()
+{
+}
 
-Bck::Bck() : LED(SCR_BCK_GPIO) {
+AnimDriver::~AnimDriver()
+{
 
 }
 
-Screen::Screen() : TFT_eSPI() {
-    /* tft initialization */
-    fade_off(true, 10);
-    init();
-    setRotation(1);
-    fillScreen(TFT_BLACK);
-    initDMA();
-    setSwapBytes(true);
-    /* todo
-     * should ensure visible brightness under:
-     * 1. normal boot
-     * 2. reconfigure, re-activation and their related ui
-     * 3. tutorial
-     * 4. OTA
-     * 5. other situations where manual setting of brightness is not possible
-     * */
+void AnimDriver::prepare_resource()
+{
+
 }
 
-void
-Screen::print_raw(const char *content, uint16_t fg_color, uint16_t bg_color, uint16_t delay, int16_t x, int16_t y) {
-    fillScreen(TFT_BLACK);
-    if (delay) {
-        vTaskDelay(delay);
+void AnimDriver::release_resource()
+{
+
+}
+
+void AnimDriver::stop()
+{
+
+}
+
+bool AnimDriver::anim_bind_assets(const char *assets_name)
+{
+    m_anim_file = SD_MMC.open(assets_name);
+    if (!m_anim_file.available())
+    {
+        return false;
     }
-    setCursor(x, y, 4);
-    setTextColor(fg_color, bg_color);
-    setTextSize(1);
-    println(content);
+    return true;
 }
 
-void Screen::clear() {
-    fillScreen(TFT_BLACK);
-}
-
-void Screen::sleep() {
-    writecommand(0x10);
-    delay(5);
-}
-
-void Screen::wakeup() {
-    writecommand(0x11);
-    delay(120);
-}
-
-void Screen::set_idle(bool set) {
-    if (set) {
-        writecommand(0x38);
-        delay(120);
-    } else {
-        writecommand(0x39);
-        delay(120);
-
+void AnimDriver::begin()
+{
+    int ret = xTaskCreatePinnedToCore(play_routine_wrapper,std::to_string((int)this).c_str(),1024 * 6, this,6,
+                                      nullptr,1);
+    if (ret != pdPASS) {
+        log_e("Decoder task ret %d", ret);
     }
-
 }
 
-void Screen::fade_off(bool block, int t) {
-    Bck::instance().fade_to_end(false, block, t);
+void AnimDriver::play_routine_wrapper(void *param)
+{
+    static_cast<AnimDriver *>(param)->play_routine();
 }
 
+void AnimDriver::play_routine()
+{
+    vTaskDelete(nullptr);
+}
 
 
 

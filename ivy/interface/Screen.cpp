@@ -8,7 +8,7 @@
 // Created by Huwensong on 2023/12/22.
 //
 
-#include "AnimDriver.h"
+//#include "AnimDriver.h"
 
 #define SCR_BCK_GPIO 1
 
@@ -18,7 +18,7 @@ Bck::Bck() : LED(SCR_BCK_GPIO) {
 
 Screen::Screen() : TFT_eSPI() {
     /* tft initialization */
-    fade_off(true, 10);
+    //fade_off(true, 10);
     init();
     setRotation(1);
     fillScreen(TFT_BLACK);

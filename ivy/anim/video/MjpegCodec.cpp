@@ -204,9 +204,12 @@ void MjpegCodec::draw_task() {
             log_v("debug draw exit");
             break;
         }
+        Screen::instance().startWrite();
         Screen::instance().pushImageDMA(pDraw->x, pDraw->y, pDraw->iWidth, pDraw->iHeight, pDraw->pPixels,
                                         pDraw->pPixels);
+        Screen::instance().endWrite();
         Screen::instance().dmaWait();
+
         free(pDraw->pPixels);
         free(pDraw);
         xEventGroupSetBits(m_event_group, draw_task_finish_processing);

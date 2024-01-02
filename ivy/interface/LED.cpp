@@ -8,11 +8,11 @@
 
 
 LED::LED(int t_pin) :
-        m_channel({t_pin, LEDC_SPEED_MODE_MAX, LEDC_CHANNEL_0,
+        m_channel({t_pin, LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0,
                    LEDC_INTR_DISABLE, LEDC_TIMER_0, 0, 0, {0}}) {
     static bool initialized = false;
     if (!initialized) {
-        m_timer.speed_mode = LEDC_SPEED_MODE_MAX;
+        m_timer.speed_mode = LEDC_LOW_SPEED_MODE;
         m_timer.duty_resolution = LEDC_TIMER_11_BIT;
         m_timer.timer_num = LEDC_TIMER_0;
         m_timer.freq_hz = 20000;
