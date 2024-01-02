@@ -7,17 +7,8 @@
 
 #include <string>
 
-#include "AACDecoderHelix.h"
+#include "Audio.h"
 #include "AnimDriver.h"
-
-typedef enum CodecType
-{
-    AAC,
-    MP3,
-}codec_type_t;
-
-
-using namespace libhelix;
 
 class AudioDriver : public AnimDriver
 {
@@ -30,23 +21,21 @@ public:
 
     void release_resource() override;
 
+    void begin()override;
+
     void stop() override;
 
-private:
-    void play_routine() ;
+    bool anim_bind_assets(const char *assets_name) override;
 
 private:
-    bool init_i2s();
+    static void play_routine_wrapper(void *param);
 
-    static void data_callback(AACFrameInfo &info,int16_t *pwm_buffer,size_t len,void* caller);
+    void play_routine();
+
 
 private:
-    AACDecoderHelix aac_decoder;
+    Audio *aac_decoder = nullptr;
 
-    uint8_t *audio_buffer = nullptr;
-
-    bool init_finish = false;
-    bool file_ready  = false;
 };
 
 #endif //FIRMWARE_AUDIODRIVER_H

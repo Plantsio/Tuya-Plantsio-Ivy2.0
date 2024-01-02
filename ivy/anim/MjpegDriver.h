@@ -26,9 +26,11 @@ public:
 
     void release_resource() override;
 
-    bool anim_bind_assets(const char *assets_name) override;
+    void begin() override;
 
     void stop() override;
+
+    bool anim_bind_assets(const char *assets_name) override;
 
 public:
     typedef enum {
@@ -56,7 +58,9 @@ private:
 
     play_status_t play_frame();
 
-    void play_routine() override;
+    static void play_routine_wrapper(void *param);
+
+    void play_routine();
 
 private:
     std::mutex m_lock;

@@ -116,7 +116,6 @@ static IvyAnim anim;
 
 void setup()
 {
-    Serial.begin(115200);
     anim.init_file_sys();
     anim.bind_assets("calorie");
     anim.play();

@@ -10,6 +10,6 @@ set(anim_inc
 idf_component_register(
         SRCS ${anim_src}
         INCLUDE_DIRS ${anim_inc}
-        REQUIRES TFT_eSPI interface
+        REQUIRES TFT_eSPI interface audio
         PRIV_REQUIRES
 )

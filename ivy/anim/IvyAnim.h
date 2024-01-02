@@ -22,6 +22,8 @@ private:
 private:
     std::shared_ptr<AudioDriver> m_audio_decoder;
     std::shared_ptr<MjpegDriver> m_video_decoder;
+
+    string anim_name;
 };
 
 #endif //FIRMWARE_IVYANIM_H

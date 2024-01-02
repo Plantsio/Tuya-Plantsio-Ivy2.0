@@ -133,6 +133,15 @@ void MjpegDriver::reset_play_status()
     m_faded = false;
 }
 
+void MjpegDriver::begin()
+{
+    int ret = xTaskCreatePinnedToCore(play_routine_wrapper,"VideoDecoder",1024 * 6, this,6,
+                                      nullptr,1);
+    if (ret != pdPASS) {
+        log_e("Decoder task ret %d", ret);
+    }
+}
+
 void MjpegDriver::stop() {
     log_v("debug-player stopping %s", m_anim_file.name());
     if (m_playing) {
@@ -147,7 +156,10 @@ void MjpegDriver::stop() {
     }
 }
 
-
+void MjpegDriver::play_routine_wrapper(void *param)
+{
+    static_cast<MjpegDriver *>(param)->play_routine();
+}
 
 void MjpegDriver::play_routine()
 {

@@ -196,7 +196,7 @@ Audio::Audio(bool internalDAC /* = false */, uint8_t channelEnabled /* = I2S_SLO
     i2s_channel_init_std_mode(m_i2s_tx_handle, &m_i2s_std_cfg);
     I2Sstart(0);
 #else
-    m_i2s_config.sample_rate          = 16000;
+    m_i2s_config.sample_rate          = 44100;
     m_i2s_config.bits_per_sample      = I2S_BITS_PER_SAMPLE_16BIT;
     m_i2s_config.channel_format       = I2S_CHANNEL_FMT_RIGHT_LEFT;
     m_i2s_config.intr_alloc_flags     = ESP_INTR_FLAG_LEVEL1; // interrupt priority
@@ -204,7 +204,7 @@ Audio::Audio(bool internalDAC /* = false */, uint8_t channelEnabled /* = I2S_SLO
     m_i2s_config.dma_buf_len          = 512;
     m_i2s_config.use_apll             = APLL_DISABLE; // must be disabled in V2.0.1-RC1
     m_i2s_config.tx_desc_auto_clear   = true;   // new in V1.0.1
-    m_i2s_config.fixed_mclk           = true;
+    m_i2s_config.fixed_mclk           = I2S_PIN_NO_CHANGE;
     m_i2s_config.mclk_multiple        = I2S_MCLK_MULTIPLE_128;
 
     if (internalDAC)  {
